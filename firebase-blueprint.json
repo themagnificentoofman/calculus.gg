@@ -1,0 +1,232 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Represents a user's account, stats, and rating.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The user's unique ID."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The user's display name."
+        },
+        "email": {
+          "type": "string",
+          "description": "The user's email address."
+        },
+        "rating": {
+          "type": "number",
+          "description": "The user's Elo rating."
+        },
+        "classification": {
+          "type": "string",
+          "description": "The user's rank/classification (e.g., Novice, Master)."
+        },
+        "gamesPlayed": {
+          "type": "number",
+          "description": "Total games played."
+        },
+        "wins": {
+          "type": "number",
+          "description": "Total wins."
+        },
+        "losses": {
+          "type": "number",
+          "description": "Total losses."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the user account was created."
+        },
+        "handle": {
+          "type": "string",
+          "description": "The user's unique handle/username."
+        },
+        "photoURL": {
+          "type": "string",
+          "description": "The user's profile picture URL."
+        },
+        "xp": {
+          "type": "number",
+          "description": "The user's total experience points."
+        },
+        "topicXp": {
+          "type": "object",
+          "description": "The user's experience points per topic."
+        },
+        "topicRatings": {
+          "type": "object",
+          "description": "The user's Elo rating per topic."
+        },
+        "settings": {
+          "type": "object",
+          "description": "The user's personal settings."
+        },
+        "friends": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of user UIDs that are friends."
+        },
+        "lastActive": {
+          "type": "number",
+          "description": "Timestamp of the user's last activity."
+        },
+        "color": {
+          "type": "string",
+          "description": "The user's display color."
+        }
+      },
+      "required": ["uid", "displayName", "email", "rating", "classification", "gamesPlayed", "wins", "losses", "createdAt"]
+    },
+    "Game": {
+      "title": "Game Session",
+      "description": "Represents a multiplayer or single-player game session.",
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["test", "rapid", "pvp", "multiplayer"],
+          "description": "The game mode."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["waiting", "active", "finished"],
+          "description": "The current status of the game."
+        },
+        "players": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of user UIDs in the game."
+        },
+        "scores": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "Map of user UID to their current score."
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "category": { "type": "string" },
+              "topic": { "type": "string" },
+              "difficulty": { "type": "string" },
+              "latexProblem": { "type": "string" },
+              "latexSolution": { "type": "string" },
+              "answer": { "type": "string" },
+              "explanation": { "type": "string" }
+            }
+          },
+          "description": "The questions generated for this game."
+        },
+        "startTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "endTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "winner": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["mode", "status", "players", "scores", "createdAt"]
+    },
+    "FriendRequest": {
+      "title": "Friend Request",
+      "description": "Represents a pending friend request.",
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "The UID of the user sending the request."
+        },
+        "to": {
+          "type": "string",
+          "description": "The UID of the user receiving the request."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "accepted", "rejected"],
+          "description": "The status of the request."
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp of when the request was created."
+        }
+      },
+      "required": ["from", "to", "status", "createdAt"]
+    },
+    "GameInvite": {
+      "title": "Game Invite",
+      "description": "Represents an invitation to join a game.",
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "description": "The UID of the user sending the invite."
+        },
+        "to": {
+          "type": "string",
+          "description": "The UID of the user receiving the invite."
+        },
+        "gameId": {
+          "type": "string",
+          "description": "The ID of the game."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "accepted", "rejected"],
+          "description": "The status of the invite."
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp of when the invite was created."
+        }
+      },
+      "required": ["from", "to", "gameId", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Stores user profiles and statistics."
+    },
+    "/games/{gameId}": {
+      "schema": {
+        "$ref": "#/entities/Game"
+      },
+      "description": "Stores game sessions."
+    },
+    "/friendRequests/{requestId}": {
+      "schema": {
+        "$ref": "#/entities/FriendRequest"
+      },
+      "description": "Stores friend requests."
+    },
+    "/gameInvites/{inviteId}": {
+      "schema": {
+        "$ref": "#/entities/GameInvite"
+      },
+      "description": "Stores game invites."
+    }
+  }
+}

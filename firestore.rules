@@ -1,0 +1,160 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function uidUnchanged() {
+      return !('uid' in request.resource.data) || request.resource.data.uid == request.auth.uid;
+    }
+
+    function uidNotModified() {
+      return !('uid' in request.resource.data) || request.resource.data.uid == resource.data.uid;
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+    function isValidUser(data) {
+      return (!('uid' in data) || (data.uid is string && data.uid.size() > 0 && data.uid.size() < 100)) &&
+             (!('displayName' in data) || data.displayName == null || (data.displayName is string && data.displayName.size() >= 0 && data.displayName.size() < 100)) &&
+             (!('handle' in data) || data.handle == null || (data.handle is string && data.handle.size() >= 0 && data.handle.size() < 100)) &&
+             (!('photoURL' in data) || data.photoURL == null || (data.photoURL is string && data.photoURL.size() >= 0 && data.photoURL.size() <= 1048576)) &&
+             (!('email' in data) || data.email == null || (data.email is string && data.email.size() >= 0 && data.email.size() < 100)) &&
+             (!('rating' in data) || (data.rating is number)) &&
+             (!('classification' in data) || (data.classification is string && data.classification.size() > 0 && data.classification.size() < 50)) &&
+             (!('gamesPlayed' in data) || (data.gamesPlayed is number && data.gamesPlayed >= 0)) &&
+             (!('wins' in data) || (data.wins is number && data.wins >= 0)) &&
+             (!('losses' in data) || (data.losses is number && data.losses >= 0)) &&
+             (!('xp' in data) || (data.xp is number && data.xp >= 0)) &&
+             (!('topicXp' in data) || (data.topicXp is map)) &&
+             (!('topicRatings' in data) || (data.topicRatings is map)) &&
+             (!('settings' in data) || (data.settings is map)) &&
+             (!('friends' in data) || (data.friends is list)) &&
+             (!('lastActive' in data) || (data.lastActive is number)) &&
+             (!('color' in data) || data.color == null || (data.color is string && data.color.size() > 0 && data.color.size() < 20)) &&
+             (!('createdAt' in data) || (data.createdAt is timestamp || data.createdAt is string));
+    }
+
+    function isValidGame(data) {
+      return (!('mode' in data) || (data.mode in ['test', 'rapid', 'pvp', 'multiplayer'])) &&
+             (!('status' in data) || (data.status in ['waiting', 'active', 'finished'])) &&
+             (!('players' in data) || (data.players is list && data.players.size() >= 0 && data.players.size() <= 10)) &&
+             (!('scores' in data) || (data.scores is map)) &&
+             (!('createdAt' in data) || (data.createdAt is timestamp || data.createdAt is string));
+    }
+
+    function isValidFriendRequest(data) {
+      return (!('from' in data) || (data.from is string && data.from.size() > 0 && data.from.size() < 100)) &&
+             (!('to' in data) || (data.to is string && data.to.size() > 0 && data.to.size() < 100)) &&
+             (!('status' in data) || (data.status in ['pending', 'accepted', 'rejected'])) &&
+             (!('createdAt' in data) || (data.createdAt is number || data.createdAt is timestamp || data.createdAt is string));
+    }
+
+    function isValidGameInvite(data) {
+      return (!('from' in data) || (data.from is string && data.from.size() > 0 && data.from.size() < 100)) &&
+             (!('to' in data) || (data.to is string && data.to.size() > 0 && data.to.size() < 100)) &&
+             (!('gameId' in data) || (data.gameId is string && data.gameId.size() > 0 && data.gameId.size() < 100)) &&
+             (!('status' in data) || (data.status in ['pending', 'accepted', 'rejected'])) &&
+             (!('createdAt' in data) || (data.createdAt is number || data.createdAt is timestamp || data.createdAt is string));
+    }
+
+    function isOnlyModifyingOwnFriendship() {
+      let isAdding = request.resource.data.friends.size() == resource.data.friends.size() + 1 &&
+                     request.resource.data.friends.hasAll(resource.data.friends) &&
+                     request.resource.data.friends.hasAll([request.auth.uid]);
+      let isRemoving = request.resource.data.friends.size() == resource.data.friends.size() - 1 &&
+                       resource.data.friends.hasAll(request.resource.data.friends) &&
+                       !request.resource.data.friends.hasAny([request.auth.uid]) &&
+                       resource.data.friends.hasAny([request.auth.uid]);
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['friends']) &&
+             (isAdding || isRemoving);
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+    match /users/{userId} {
+      // Anyone authenticated can read user profiles (for leaderboards, etc.)
+      allow read: if isAuthenticated();
+      
+      // Users can create their own profile
+      allow create: if isOwner(userId) && 
+                    hasRequiredFields(['uid', 'displayName', 'email', 'rating', 'classification', 'gamesPlayed', 'wins', 'losses', 'createdAt']) &&
+                    isValidUser(request.resource.data) &&
+                    uidUnchanged();
+                    
+      // Users can update their own profile, or modify their own friendship status with this user
+      allow update: if (isOwner(userId) && isValidUser(request.resource.data) && uidNotModified()) ||
+                    (isAuthenticated() && isOnlyModifyingOwnFriendship());
+    }
+
+    match /friendRequests/{requestId} {
+      // Users can read requests sent to or from them
+      allow read: if isAuthenticated() && (resource.data.from == request.auth.uid || resource.data.to == request.auth.uid);
+      
+      // Users can create requests sent from them
+      allow create: if isAuthenticated() && 
+                    hasRequiredFields(['from', 'to', 'status', 'createdAt']) &&
+                    isValidFriendRequest(request.resource.data) &&
+                    request.resource.data.from == request.auth.uid;
+                    
+      // Users can update requests sent to them (to accept/reject) or from them (to cancel)
+      allow update: if isAuthenticated() && 
+                    isValidFriendRequest(request.resource.data) &&
+                    (resource.data.to == request.auth.uid || resource.data.from == request.auth.uid);
+                    
+      // Users can delete requests sent to or from them
+      allow delete: if isAuthenticated() && (resource.data.from == request.auth.uid || resource.data.to == request.auth.uid);
+    }
+
+    match /gameInvites/{inviteId} {
+      allow read: if isAuthenticated() && (resource.data.from == request.auth.uid || resource.data.to == request.auth.uid);
+      
+      allow create: if isAuthenticated() && 
+                    hasRequiredFields(['from', 'to', 'gameId', 'status', 'createdAt']) &&
+                    isValidGameInvite(request.resource.data) &&
+                    request.resource.data.from == request.auth.uid;
+                    
+      allow update: if isAuthenticated() && 
+                    isValidGameInvite(request.resource.data) &&
+                    (resource.data.to == request.auth.uid || resource.data.from == request.auth.uid);
+                    
+      allow delete: if isAuthenticated() && (resource.data.from == request.auth.uid || resource.data.to == request.auth.uid);
+    }
+
+    match /games/{gameId} {
+      // Anyone authenticated can read games
+      allow read: if isAuthenticated();
+      
+      // Anyone authenticated can create a game
+      allow create: if isAuthenticated() && 
+                    hasRequiredFields(['mode', 'status', 'players', 'scores', 'createdAt']) &&
+                    isValidGame(request.resource.data);
+                    
+      // Anyone authenticated can update a game (e.g., joining, updating scores)
+      // In a real app, this would be more locked down (e.g., only players in the game can update it).
+      // For this prototype, we allow authenticated users to update it to join or play.
+      allow update: if isAuthenticated() && 
+                    isValidGame(request.resource.data);
+    }
+  }
+}
