@@ -55,6 +55,7 @@ export default function PvPMode() {
   const [gameId, setGameId] = useState<string | null>(null);
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [loading, setLoading] = useState(false);
+  const [generationError, setGenerationError] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -244,6 +245,7 @@ export default function PvPMode() {
   }, [user]);
 
   const createGame = async () => {
+    setGenerationError('');
     if (!user) return;
     setLoading(true);
     try {
@@ -279,7 +281,7 @@ export default function PvPMode() {
         }
       }
     } catch (error) {
-      console.error(error);
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -480,7 +482,8 @@ export default function PvPMode() {
           )}
         </div>
         
-        <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
+        {generationError && <p role="alert" className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-300">{generationError}</p>}
+      <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
           <div className="space-y-6">
             <div>
               <label className="flex items-center gap-2 text-sm font-bold text-zinc-300 mb-3 uppercase tracking-wider group relative w-fit">

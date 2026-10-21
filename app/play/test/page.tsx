@@ -27,6 +27,7 @@ export default function TestMode() {
   const [count, setCount] = useState(5);
   
   const [loading, setLoading] = useState(false);
+  const [generationError, setGenerationError] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
@@ -60,6 +61,7 @@ export default function TestMode() {
   }, [profile?.color]);
 
   const startGame = async () => {
+    setGenerationError('');
     setLoading(true);
     try {
       const generatedQuestions = await generateQuestions(category, difficulty, count);
@@ -73,7 +75,7 @@ export default function TestMode() {
         setSolvedProblems([]);
       }
     } catch (error) {
-      console.error(error);
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -357,6 +359,7 @@ export default function TestMode() {
         <p className="text-zinc-400 mt-4 text-lg">Configure your test session parameters.</p>
       </div>
       
+      {generationError && <p role="alert" className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-300">{generationError}</p>}
       <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
         <div className="space-y-6">
           <div>
