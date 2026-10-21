@@ -28,6 +28,7 @@ export default function RapidMode() {
   const [timeLimit, setTimeLimit] = useState(60); // seconds
   
   const [loading, setLoading] = useState(false);
+  const [generationError, setGenerationError] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -65,6 +66,7 @@ export default function RapidMode() {
   const countdownRef = useRef<NodeJS.Timeout | null>(null);
 
   const startGame = async () => {
+    setGenerationError('');
     setLoading(true);
     try {
       // Generate 20 questions, which should be enough for a rapid mode
@@ -80,7 +82,7 @@ export default function RapidMode() {
         setCountdown(3);
       }
     } catch (error) {
-      console.error(error);
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -382,6 +384,7 @@ export default function RapidMode() {
         <p className="text-zinc-400 mt-4 text-lg">Race against the clock. How many can you solve?</p>
       </div>
       
+      {generationError && <p role="alert" className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-300">{generationError}</p>}
       <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
         <div className="space-y-6">
           <div>

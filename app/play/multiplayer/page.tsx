@@ -56,6 +56,7 @@ export default function MultiplayerMode() {
   const [gameId, setGameId] = useState<string | null>(null);
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [loading, setLoading] = useState(false);
+  const [generationError, setGenerationError] = useState('');
   const [loadingMessage, setLoadingMessage] = useState('Setting up arena...');
   const [xpEarned, setXpEarned] = useState<number | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -268,6 +269,7 @@ export default function MultiplayerMode() {
   }, [gameData?.status, gameData?.settings, gameData?.startTime, hostId, gameId, user?.uid]);
 
   const createGame = async () => {
+    setGenerationError('');
     if (!user) return;
     setLoadingMessage('Generating questions...');
     setLoading(true);
@@ -299,7 +301,7 @@ export default function MultiplayerMode() {
         }
       }
     } catch (error) {
-      console.error(error);
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -532,7 +534,8 @@ export default function MultiplayerMode() {
           <p className="text-zinc-400 mt-4 text-lg">Join a global arena and compete against multiple players.</p>
         </div>
         
-        <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
+        {generationError && <p role="alert" className="mb-6 rounded-xl border border-red-500/30 bg-red-500/10 p-4 text-red-300">{generationError}</p>}
+      <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-3xl p-6 sm:p-10 space-y-8 backdrop-blur-sm shadow-xl">
           <div className="space-y-6">
             <div>
               <label className="flex items-center gap-2 text-sm font-bold text-zinc-300 mb-3 uppercase tracking-wider group relative w-fit">
