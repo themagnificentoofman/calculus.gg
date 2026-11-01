@@ -5,7 +5,7 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
-import { generateQuestions } from '@/lib/gemini';
+import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { calculateProblemXp } from '@/lib/progression';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';

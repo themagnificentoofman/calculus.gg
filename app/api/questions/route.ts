@@ -2,7 +2,7 @@ import { env } from 'cloudflare:workers';
 import firebaseConfig from '@/firebase-applet-config.json';
 import { verifyFirebaseToken } from '@/lib/server/firebase-token.mjs';
 import { readBoundedJson, validateQuestionRequest, validQuestionResponse } from '@/lib/server/questions-policy.mjs';
-import { generateQuestionsOnServer } from '@/lib/server/generate-questions';
+import { DEFAULT_OPENAI_MODEL, generateQuestionsOnServer, QuestionGenerationError } from '@/lib/server/generate-questions';
 import { consumeQuota } from '@/lib/server/quota';
 
 export const dynamic = 'force-dynamic';
@@ -25,16 +25,17 @@ export async function POST(request: Request) {
     return json({ error: 'Send a valid question request as JSON (maximum 4 KB).' }, message === 'too-large' ? 413 : 400);
   }
   if (!input) return json({ error: 'Choose a supported category, difficulty, and 1–20 questions.' }, 400);
-  if (!env.GEMINI_API_KEY || !env.DB) return json({ error: 'Question generation has not been configured yet. Please contact the site owner.' }, 503);
+  if (!env.OPENAI_API_KEY || !env.DB) return json({ error: 'Question generation has not been configured yet. Please contact the site owner.' }, 503);
   let uid: string;
   try { uid = await verifyFirebaseToken(match[1], firebaseConfig.projectId); }
   catch { return json({ error: 'Your sign-in has expired. Please sign in again.' }, 401); }
   try {
     if (!await consumeQuota(env.DB, uid)) return json({ error: 'Question generation limit reached. Please try again later.' }, 429, { 'Retry-After': '60' });
-    const questions = await generateQuestionsOnServer(input.category, input.difficulty, input.count, env.GEMINI_API_KEY, env.GEMINI_MODEL || 'gemini-3.1-pro-preview');
+    const questions = await generateQuestionsOnServer(input.category, input.difficulty, input.count, env.OPENAI_API_KEY, env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL);
     if (!validQuestionResponse(questions, input)) return json({ error: 'The AI returned an incomplete question set. Please try again.' }, 502);
     return json({ questions });
-  } catch {
+  } catch (error) {
+    if (error instanceof QuestionGenerationError && error.kind === 'invalid-output') return json({ error: 'The AI returned an incomplete question set. Please try again.' }, 502);
     // Do not return upstream error bodies, request text, or API key details.
     return json({ error: 'Question generation is temporarily unavailable. Please try again.' }, 502);
   }
