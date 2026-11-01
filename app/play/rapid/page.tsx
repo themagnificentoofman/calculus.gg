@@ -7,7 +7,7 @@ import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, Zap, RefreshCw, Home, Timer, Info } from 'lucide-react';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
-import { generateQuestions } from '@/lib/gemini';
+import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { calculateProblemXp, SolvedProblem } from '@/lib/progression';
 

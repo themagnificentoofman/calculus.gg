@@ -10,7 +10,7 @@ import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { db } from '@/firebase';
 import { collection, addDoc, doc, onSnapshot, updateDoc, arrayUnion, serverTimestamp, getDoc, query, where, limit, getDocs, increment } from 'firebase/firestore';
-import { generateQuestions } from '@/lib/gemini';
+import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { calculateProblemXp, calculateMatchRatingChanges, calculateOverallRating } from '@/lib/progression';
 import { Chat } from '@/components/Chat';
