@@ -10,7 +10,7 @@ The source is prepared for Sites-managed Cloudflare Workers with a D1 `DB` bindi
 | `GEMINI_MODEL` | Optional model override; defaults to the original `gemini-3.1-pro-preview` |
 | `DB` | Sites-provisioned D1 binding for shared AI usage counters |
 
-The initial Site is private. Expected host: `calculus-gg.honeybox19.chatgpt.site`. Registration alone does not confirm a successful deployment.
+The Site retains its existing access settings. Primary domain: `calculus.ninja`. Custom-domain registration alone does not confirm DNS validation, certificate issuance, or successful routing.
 
 `GET /api/health` reports `status: "ok"` and an `aiConfigured` boolean; it never returns secret values. A healthy response does not verify Firebase console settings, Gemini quota, or model access.
 
@@ -18,7 +18,7 @@ The initial Site is private. Expected host: `calculus-gg.honeybox19.chatgpt.site
 
 `firebase-applet-config.json` is the existing browser Firebase configuration and named Firestore database. It is intentionally retained so accounts and game history are not silently moved to an empty database.
 
-Before testing Google sign-in, add `calculus-gg.honeybox19.chatgpt.site` to the existing project's **Authentication → Settings → Authorized domains** in the Firebase console. Add any later custom domain there as well. Confirm Google and email/password providers remain enabled. If the Firebase browser API key has HTTP-referrer restrictions, authorize the new origin. No production Firebase settings or records were changed by the code migration.
+Before testing Google sign-in, add `calculus.ninja` to the existing project's **Authentication → Settings → Authorized domains** in the Firebase console. After verifying sign-in on the primary domain, remove obsolete application hostnames from Authorized domains. Keep the Firebase service domains required for authentication. Confirm Google and email/password providers remain enabled. If the Firebase browser API key has HTTP-referrer restrictions, authorize the new origin. No production Firebase settings or records were changed by the code migration.
 
 AI endpoints independently verify Firebase ID tokens with Google's public signing keys, the existing project audience/issuer, expiration, subject, issued-at and authentication-time claims. Tokens are not checked for revocation or account disablement on every request; they can remain valid until expiry. Firebase continues to enforce database access rules.
 
@@ -46,3 +46,7 @@ Then run `npm run start`. Local data is separate from hosted data. Keep generate
 Use the Sites source helper to push the exact source commit, package the matching build and publish a saved version. Roll back by deploying a prior saved version. D1 schema changes are not automatically reversed by a code rollback; this initial migration adds only the independent quota table. GitHub remains the reviewable source; a GitHub push by itself is not configured to publish the Site automatically.
 
 After secrets/domain setup, verify Google and email sign-in, question generation in each mode, joining a game, chat, leaderboard and existing history. These checks must be performed before calling the migration fully operational.
+
+## Custom domain
+
+Attach `calculus.ninja` to the existing Site. At the registrar, set both apex A records returned by Sites and the TXT ownership-verification records. Retain unrelated DNS records. Refresh the custom-domain status until domain validation and TLS are active, then verify the homepage and sign-in at https://calculus.ninja. DNS and Firebase console changes are separate from source publication.

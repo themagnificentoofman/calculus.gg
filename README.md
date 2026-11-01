@@ -1,4 +1,4 @@
-# calculus.gg
+# calculus.ninja
 
 Competitive calculus practice and multiplayer games, hosted independently of Google AI Studio. The existing React App Router interface runs with Vinext on Cloudflare Workers through Sites. Firebase continues to hold the existing accounts, profiles, games and chat; this migration does not copy or erase that data.
 
@@ -26,4 +26,4 @@ The CI workflow performs these checks without an API key or access to production
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for hosting, Firebase domain setup, scaling limits and the rollback process.
 
-Original AI Studio project: https://ai.studio/apps/2e3c04a9-27fc-4403-91e0-7e7c677e3ee6
+Primary domain: https://calculus.ninja
