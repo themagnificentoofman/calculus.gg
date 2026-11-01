@@ -23,7 +23,7 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
   Categories: integration, differentiation, limits, series, differential equations, multivariable. If "all" is selected, mix problems from all categories.
   
   For each question, provide:
-  1. The problem statement in LaTeX (do not include $ or $$ wrappers). Make it as concise as possible. Omit unnecessary plaintext instructions if the mathematical notation implies the task (e.g., just write "\\int x^2 dx" instead of "Evaluate the integral \\textnormal{...}"). Only use plaintext when absolutely necessary for context or word problems.
+  1. The problem statement in LaTeX (do not include $ or $$ wrappers). Make it as concise as possible. Omit unnecessary plaintext instructions if the mathematical notation implies the task (e.g., just write "\\int x^2 dx" instead of "Evaluate the integral \\textnormal{...}"). Always state the requested operation explicitly (for derivatives, include the derivative operator, not just y=f(x)). Only use plaintext when necessary for context or word problems.
   2. 4 multiple choice options in LaTeX (do not include $ or $$ wrappers).
   3. The index of the correct option (0-3).
   4. A step-by-step explanation, where each step or sentence is a separate string in an array. Each string must be valid LaTeX (do not include $ or $$ wrappers).
@@ -65,7 +65,7 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
       body: JSON.stringify({
         model,
         store: false,
-        instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Exactly one distinct option must be correct, and the explanation must agree with correctIndex. Return only the requested JSON structure.',
+        instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Check domains and endpoint conditions. Use absolute values in logarithmic antiderivatives unless a positive domain is explicitly stated. All four options must be algebraically distinct. Exactly one option must be correct, and every explanation step must agree with it and correctIndex. Return only the requested JSON structure.',
         input: prompt,
         // Leave room for reasoning as well as the visible question JSON.
         max_output_tokens: Math.min(24000, 2400 + count * 1200),

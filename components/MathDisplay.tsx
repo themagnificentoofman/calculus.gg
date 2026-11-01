@@ -1,7 +1,17 @@
 'use client';
 
-import React, { Component, ErrorInfo, ReactNode } from 'react';
-import { InlineMath, BlockMath } from 'react-katex';
+import React, { Component, ErrorInfo, ReactNode, useMemo } from 'react';
+import { renderMath } from '@/lib/render-math';
+
+function InlineMath({ math }: { math: string }) {
+  const html = useMemo(() => renderMath(math), [math]);
+  return <span dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+function BlockMath({ math }: { math: string }) {
+  const html = useMemo(() => renderMath(math, true), [math]);
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+}
 
 interface MathDisplayProps {
   math: string;

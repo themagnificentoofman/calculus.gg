@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { InlineMath, BlockMath } from 'react-katex';
+import { MathDisplay } from './MathDisplay';
 
 interface LatexTextProps {
   text: string;
@@ -16,9 +16,9 @@ export function LatexText({ text }: LatexTextProps) {
     <span>
       {parts.map((part, index) => {
         if (part.startsWith('$$') && part.endsWith('$$')) {
-          return <BlockMath key={index} math={part.slice(2, -2)} />;
+          return <MathDisplay block key={index} math={part.slice(2, -2)} />;
         } else if (part.startsWith('$') && part.endsWith('$')) {
-          return <InlineMath key={index} math={part.slice(1, -1)} />;
+          return <MathDisplay key={index} math={part.slice(1, -1)} />;
         } else {
           return <span key={index}>{part}</span>;
         }
