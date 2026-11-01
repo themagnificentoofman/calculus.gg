@@ -18,7 +18,7 @@ export default function HelpPage() {
           {/* Header */}
           <div>
             <h1 className="text-4xl font-bold tracking-tight mb-4">Help & Information</h1>
-            <p className="text-xl text-zinc-400">Everything you need to know about calculus.gg.</p>
+            <p className="text-xl text-zinc-400">Everything you need to know about calculus.ninja.</p>
           </div>
 
           {/* Rules */}
