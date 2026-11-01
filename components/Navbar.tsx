@@ -23,7 +23,7 @@ export function Navbar() {
             <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
               <Calculator className="w-5 h-5 text-emerald-500" />
             </div>
-            <span className="text-lg font-bold tracking-tight text-white">calculus.gg</span>
+            <span className="text-lg font-bold tracking-tight text-white">calculus.ninja</span>
           </div>
           
           <div className="hidden md:flex items-center gap-1">
