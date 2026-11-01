@@ -50,3 +50,7 @@ After secrets/domain setup, verify Google and email sign-in, question generation
 ## Custom domain
 
 Attach `calculus.ninja` to the existing Site. At the registrar, set both apex A records returned by Sites and the TXT ownership-verification records. Retain unrelated DNS records. Refresh the custom-domain status until domain validation and TLS are active, then verify the homepage and sign-in at https://calculus.ninja. DNS and Firebase console changes are separate from source publication.
+
+## Browser navigation
+
+Page links use standard HTML anchors, and sign-in and game invitation redirects use browser navigation. This avoids the deployed Vinext client router failing with `TypeError: ... is not a function` when loading its navigation module. Full page loads retain Firebase sign-in state. Settings waits for Firebase authentication initialization before redirecting signed-out visitors.

@@ -5,7 +5,6 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
-import Link from 'next/link';
 import { generateQuestions } from '@/lib/gemini';
 import { playSound } from '@/lib/sounds';
 import { calculateProblemXp } from '@/lib/progression';
@@ -179,9 +178,9 @@ export default function TestMode() {
             >
               Change Settings
             </button>
-            <Link href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
+            <a href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
               Back to Dashboard
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
@@ -209,9 +208,9 @@ export default function TestMode() {
         </AnimatePresence>
 
         <div className="flex justify-between items-center mb-8">
-          <Link href="/" className="text-zinc-400 hover:text-white flex items-center gap-2">
+          <a href="/" className="text-zinc-400 hover:text-white flex items-center gap-2">
             <Home className="w-5 h-5" /> Dashboard
-          </Link>
+          </a>
           <div className="text-zinc-400 font-mono">
             Question {currentIndex + 1} of {questions.length}
           </div>
@@ -346,9 +345,9 @@ export default function TestMode() {
 
   return (
     <div className="min-h-screen max-w-3xl mx-auto px-4 py-12 flex flex-col justify-center">
-      <Link href="/" className="text-zinc-400 hover:text-white flex items-center gap-2 mb-12 w-fit transition-colors">
+      <a href="/" className="text-zinc-400 hover:text-white flex items-center gap-2 mb-12 w-fit transition-colors">
         <Home className="w-5 h-5" /> Back to Dashboard
-      </Link>
+      </a>
       
       <div className="mb-10">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-4">

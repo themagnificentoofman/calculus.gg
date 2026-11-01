@@ -3,7 +3,6 @@
 import { useAuth } from '@/components/AuthProvider';
 import { motion } from 'motion/react';
 import { Calculator, Play, Trophy, Users, Zap, ArrowRight, Activity, Target, Brain, Flame, Swords, HelpCircle, Star, Settings } from 'lucide-react';
-import Link from 'next/link';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { getXpProgress, getLevelFromXp } from '@/lib/progression';
 
@@ -44,14 +43,14 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
               A competitive calculus trainer featuring real-time multiplayer, Elo ratings, and step-by-step LaTeX explanations powered by AI.
             </p>
-            <Link
+            <a
               href="/auth"
               className="group relative px-8 py-4 bg-white text-black rounded-full font-bold text-lg transition-all hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] inline-block"
             >
               <span className="flex items-center gap-2">
                 Start Grinding <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
-            </Link>
+            </a>
           </motion.div>
         ) : (
           <motion.div
@@ -63,9 +62,9 @@ export default function Home() {
             <div className="xl:col-span-4 space-y-6">
               <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-6 backdrop-blur-sm">
                 <div className="flex items-center gap-5 mb-6 relative">
-                  <Link href="/settings" className="absolute top-0 right-0 p-2 text-zinc-500 hover:text-white transition-colors">
+                  <a href="/settings" className="absolute top-0 right-0 p-2 text-zinc-500 hover:text-white transition-colors">
                     <Settings className="w-5 h-5" />
-                  </Link>
+                  </a>
                   {profile?.photoURL ? (
                     /* eslint-disable-next-line @next/next/no-img-element */
                     <img src={profile.photoURL} alt="Profile" className="w-20 h-20 rounded-2xl object-cover border border-emerald-500/30 shadow-inner" referrerPolicy="no-referrer" />
@@ -213,7 +212,7 @@ function StatCard({ label, value, icon }: { label: string, value: number | strin
 
 function ModeCard({ title, description, icon, href, color, borderColor, iconColor, bgImage }: { title: string, description: string, icon: React.ReactNode, href: string, color: string, borderColor: string, iconColor: string, bgImage?: string }) {
   return (
-    <Link href={href} className="block h-full group">
+    <a href={href} className="block h-full group">
       <div className={`relative h-full p-6 rounded-3xl border ${borderColor} bg-zinc-900/40 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl overflow-hidden`}>
         {/* Background Gradient */}
         <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
@@ -235,7 +234,7 @@ function ModeCard({ title, description, icon, href, color, borderColor, iconColo
           <p className="text-zinc-400 text-sm leading-relaxed flex-grow">{description}</p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
 

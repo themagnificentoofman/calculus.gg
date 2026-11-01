@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, Play, Trophy, Settings, Calculator, HelpCircle } from 'lucide-react';
 import { useAuth } from '@/components/AuthProvider';
@@ -31,7 +30,7 @@ export function Navbar() {
               const Icon = link.icon;
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
               return (
-                <Link
+                <a
                   key={link.href}
                   href={link.href}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
@@ -42,17 +41,17 @@ export function Navbar() {
                 >
                   <Icon className="w-4 h-4" />
                   {link.label}
-                </Link>
+                </a>
               );
             })}
           </div>
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/help" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
+          <a href="/help" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
             <HelpCircle className="w-5 h-5" />
             <span className="text-sm font-medium hidden sm:inline">Help & Info</span>
-          </Link>
+          </a>
           
           {user ? (
             <div className="flex items-center gap-4">
@@ -68,12 +67,12 @@ export function Navbar() {
               </button>
             </div>
           ) : (
-            <Link
+            <a
               href="/auth"
               className="px-5 py-2 bg-gradient-to-r from-emerald-400 to-cyan-400 text-black hover:from-emerald-300 hover:to-cyan-300 rounded-full text-sm font-bold transition-transform hover:scale-105 shadow-lg shadow-emerald-500/20"
             >
               Sign In
-            </Link>
+            </a>
           )}
         </div>
       </div>
