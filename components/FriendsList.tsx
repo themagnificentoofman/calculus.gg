@@ -7,7 +7,6 @@ import { db } from '@/firebase';
 import { collection, query, where, getDocs, doc, updateDoc, arrayUnion, arrayRemove, onSnapshot, addDoc, deleteDoc, or } from 'firebase/firestore';
 import { UserPlus, UserMinus, Users, Search, X, Check, XCircle, Swords } from 'lucide-react';
 import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
-import { useRouter } from 'next/navigation';
 
 interface FriendProfile {
   uid: string;
@@ -37,7 +36,6 @@ interface GameInvite {
 
 export function FriendsList() {
   const { user, profile } = useAuth();
-  const router = useRouter();
   const [friends, setFriends] = useState<FriendProfile[]>([]);
   const [friendRequests, setFriendRequests] = useState<FriendRequest[]>([]);
   const [sentRequests, setSentRequests] = useState<FriendRequest[]>([]);
@@ -317,7 +315,7 @@ export function FriendsList() {
         status: 'accepted'
       });
       setIsOpen(false);
-      router.push(`/play/pvp?join=${invite.gameId}`);
+      window.location.assign(`/play/pvp?join=${invite.gameId}`);
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `gameInvites/${invite.id}`);
     }
@@ -350,7 +348,7 @@ export function FriendsList() {
 
   const inviteToGame = (friendId: string) => {
     setIsOpen(false);
-    router.push(`/play/pvp?invite=${friendId}`);
+    window.location.assign(`/play/pvp?invite=${friendId}`);
   };
 
   const isOnline = (lastActive?: number) => {

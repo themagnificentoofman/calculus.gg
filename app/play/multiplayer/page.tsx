@@ -5,7 +5,6 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { MathDisplay } from '@/components/MathDisplay';
 import { Trophy, RefreshCw, Home, Play, CheckCircle2, XCircle, ArrowRight, Globe, Users, Info } from 'lucide-react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
@@ -521,9 +520,9 @@ export default function MultiplayerMode() {
   if (!gameId) {
     return (
       <div className="min-h-screen max-w-3xl mx-auto px-4 py-12 flex flex-col justify-center">
-        <Link href="/" className="text-zinc-400 hover:text-white flex items-center gap-2 mb-12 w-fit transition-colors">
+        <a href="/" className="text-zinc-400 hover:text-white flex items-center gap-2 mb-12 w-fit transition-colors">
           <Home className="w-5 h-5" /> Back to Dashboard
-        </Link>
+        </a>
         
         <div className="mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-4">
@@ -876,9 +875,9 @@ export default function MultiplayerMode() {
             <p className="text-zinc-400 mb-4 animate-pulse">Waiting for host to start...</p>
           )}
 
-          <Link href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
+          <a href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
             Leave Lobby
-          </Link>
+          </a>
         </motion.div>
       </div>
     );
@@ -957,9 +956,9 @@ export default function MultiplayerMode() {
             >
               Play Again
             </button>
-            <Link href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
+            <a href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
               Back to Dashboard
-            </Link>
+            </a>
           </div>
         </motion.div>
         <Chat gameId={gameId!} messages={gameData.messages || []} />

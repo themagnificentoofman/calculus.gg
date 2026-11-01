@@ -2,14 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useAuth } from '@/components/AuthProvider';
-import { useRouter } from 'next/navigation';
 import { motion } from 'motion/react';
 import { Settings, User, Image as ImageIcon, ArrowLeft, Save, Shield, Bell, Volume2 } from 'lucide-react';
-import Link from 'next/link';
 
 export default function SettingsPage() {
-  const { user, profile, updateUserProfile, linkGoogleAccount } = useAuth();
-  const router = useRouter();
+  const { user, profile, loading: authLoading, updateUserProfile, linkGoogleAccount } = useAuth();
   
   const [displayName, setDisplayName] = useState('');
   const [handle, setHandle] = useState('');
@@ -22,8 +19,8 @@ export default function SettingsPage() {
   const [message, setMessage] = useState({ text: '', type: '' });
 
   useEffect(() => {
-    if (!user && !loading) {
-      router.push('/auth');
+    if (!user && !authLoading) {
+      window.location.replace('/auth');
     }
     if (profile) {
       setDisplayName(profile.displayName || '');
@@ -33,7 +30,7 @@ export default function SettingsPage() {
       setSoundEnabled(profile.settings?.soundEnabled ?? true);
       setHasUnsavedChanges(false);
     }
-  }, [user, profile, router, loading]);
+  }, [user, profile, authLoading]);
 
   useEffect(() => {
     const handleBeforeUnload = (e: BeforeUnloadEvent) => {
@@ -112,10 +109,10 @@ export default function SettingsPage() {
   return (
     <main className="min-h-screen dark:text-white text-zinc-900 p-4 sm:p-8">
       <div className="max-w-3xl mx-auto">
-        <Link href="/" className="inline-flex items-center gap-2 dark:text-zinc-400 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors mb-8">
+        <a href="/" className="inline-flex items-center gap-2 dark:text-zinc-400 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
           Back to Dashboard
-        </Link>
+        </a>
 
         <div className="flex items-center gap-3 mb-8">
           <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">

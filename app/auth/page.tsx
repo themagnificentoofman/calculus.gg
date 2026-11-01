@@ -2,10 +2,8 @@
 
 import { useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
-import { useRouter } from 'next/navigation';
 import { motion } from 'motion/react';
 import { Calculator, ArrowRight, Mail, Lock, User, Github } from 'lucide-react';
-import Link from 'next/link';
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -16,7 +14,6 @@ export default function AuthPage() {
   const [loading, setLoading] = useState(false);
   
   const { login, loginWithEmail, signupWithEmail } = useAuth();
-  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +32,7 @@ export default function AuthPage() {
       } else {
         await signupWithEmail(email, password, name);
       }
-      router.push('/');
+      window.location.assign('/');
     } catch (err: any) {
       setError(err.message || 'Authentication failed');
     } finally {
@@ -46,7 +43,7 @@ export default function AuthPage() {
   const handleGoogleLogin = async () => {
     try {
       await login();
-      router.push('/');
+      window.location.assign('/');
     } catch (err: any) {
       setError(err.message || 'Google login failed');
     }
@@ -54,10 +51,10 @@ export default function AuthPage() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-4 dark:text-zinc-50 text-zinc-900 font-sans selection:bg-emerald-500/30">
-      <Link href="/" className="absolute top-8 left-8 flex items-center gap-2 dark:text-zinc-400 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
+      <a href="/" className="absolute top-8 left-8 flex items-center gap-2 dark:text-zinc-400 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
         <Calculator className="w-6 h-6 text-emerald-500" />
         <span className="font-bold text-xl tracking-tight">CalcArena</span>
-      </Link>
+      </a>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
