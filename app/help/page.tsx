@@ -2,7 +2,6 @@
 
 import { motion } from 'motion/react';
 import { BookOpen, Trophy, Lightbulb, Shield, ArrowLeft, Star, Medal, Crown, Zap } from 'lucide-react';
-import Link from 'next/link';
 
 import { RankIcon } from '@/components/RankDisplay';
 
