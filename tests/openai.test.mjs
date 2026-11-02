@@ -46,3 +46,9 @@ test('provider and transport errors never disclose keys or upstream details and 
   t.mock.method(globalThis, 'fetch', async () => { throw new DOMException('sensitive', 'TimeoutError'); });
   await assert.rejects(generateQuestionsOnServer('integration', 'easy', 1, 'test-only'), e => e.kind === 'timeout' && !e.message.includes('sensitive'));
 });
+
+test('unrenderable model explanations are rejected before the game starts', async t => {
+  const bad = { ...question, explanation: [String.raw`\frac{x^{3}}{`] };
+  t.mock.method(globalThis, 'fetch', async () => Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ questions: [bad] }) }] }] }));
+  await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'), e => e.kind === 'invalid-output');
+});

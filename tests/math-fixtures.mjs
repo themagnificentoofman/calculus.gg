@@ -1,0 +1,17 @@
+export const renderingSamples = [
+  { name: 'integral from screenshot', math: String.raw`\int x^2\,dx` },
+  { name: 'power rule explanation', math: String.raw`\textnormal{Use the power rule: }\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\textnormal{ for }n\ne-1.` },
+  { name: 'nested text below a fraction', math: String.raw`\textnormal{Set }n=2:\quad \underbrace{\frac{x^{2+1}}{2+1}}_{\textnormal{power rule}}+C=\frac{x^3}{3}+C.` },
+  { name: 'text inside a fraction', math: String.raw`\frac{\textnormal{change in }y}{\textnormal{change in }x}` },
+  { name: 'nested braces inside text', math: String.raw`\textnormal{Use {the power rule} with }n=2.` },
+  { name: 'escaped braces', math: String.raw`\textnormal{The set is \{0,1\}.}` },
+  { name: 'paired delimiters around text', math: String.raw`\left(\textnormal{area}\right)=\int_0^1x^2\,dx` },
+  { name: 'piecewise cases', math: String.raw`f(x)=\begin{cases}x^2&\textnormal{if }x\ge0\\-x&\textnormal{otherwise}\end{cases}` },
+  { name: 'aligned explanation', math: String.raw`\begin{aligned}\int 2x\,dx&=x^2+C\\\textnormal{Check: }\frac{d}{dx}(x^2+C)&=2x\end{aligned}` },
+  { name: 'series', math: String.raw`\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}` },
+  { name: 'matrix', math: String.raw`\begin{pmatrix}1&2\\3&4\end{pmatrix}` },
+  { name: 'logarithm domain', math: String.raw`\int\frac{dx}{x}=\ln|x|+C,\quad x\ne0` },
+  { name: 'legacy display delimiters', math: String.raw`$$\frac{x^3}{3}+C$$` },
+  { name: 'legacy bracket delimiters', math: String.raw`\[\sqrt{x^2+1}\]` },
+  { name: 'legacy inline delimiters', math: String.raw`\(\frac{d}{dx}x^2=2x\)` },
+];
