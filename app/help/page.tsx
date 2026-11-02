@@ -30,7 +30,7 @@ export default function HelpPage() {
             </div>
             <ul className="space-y-4 text-zinc-300 list-disc list-inside">
               <li><strong>No cheating:</strong> Using external calculators (like WolframAlpha, Symbolab) or AI tools during ranked matches is strictly prohibited.</li>
-              <li><strong>Time limits:</strong> Each mode has specific time constraints. In Rapid mode, you have 60 seconds to answer as many questions as possible. In PvP and Multiplayer, you race against others.</li>
+              <li><strong>Time limits:</strong> Rapid uses the time limit you choose, and each incorrect answer removes 5 seconds. In PvP and Multiplayer, you race against others.</li>
               <li><strong>Scoring:</strong> Correct answers increase your score and earn XP. Rating changes only after competitive matches. Incorrect answers may result in penalties depending on the game mode.</li>
               <li><strong>Respect others:</strong> Maintain a positive environment in multiplayer modes.</li>
             </ul>
