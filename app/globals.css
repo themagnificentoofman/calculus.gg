@@ -74,3 +74,14 @@ body {
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #52525b;
 }
+
+/* Reserve space for fraction descenders inside horizontally scrollable math. */
+.math-display {
+  padding-block: 0.25em;
+}
+
+/* Let KaTeX wrap at mathematical relations/operators without splitting TeX. */
+.math-display .katex-display > .katex,
+.math-display .katex-display > .katex > .katex-html {
+  white-space: normal;
+}

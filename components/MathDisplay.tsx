@@ -1,110 +1,29 @@
 'use client';
 
-import React, { Component, ErrorInfo, ReactNode, useMemo } from 'react';
-import { renderMath } from '@/lib/render-math';
-
-function InlineMath({ math }: { math: string }) {
-  const html = useMemo(() => renderMath(math), [math]);
-  return <span dangerouslySetInnerHTML={{ __html: html }} />;
-}
-
-function BlockMath({ math }: { math: string }) {
-  const html = useMemo(() => renderMath(math, true), [math]);
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
-}
+import { useMemo } from 'react';
+import { normalizeMath, renderMath } from '@/lib/render-math.mjs';
 
 interface MathDisplayProps {
   math: string;
   block?: boolean;
 }
 
-class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
-  constructor(props: { children: ReactNode }) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError(_: Error) {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.error("KaTeX Error:", error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return <span className="text-red-500 font-mono text-sm">[Math Render Error]</span>;
-    }
-    return this.props.children;
-  }
-}
-
-function parseMathText(input: string) {
-  // Match \text{...} or \textnormal{...} or \textbf{...}
-  // We use a simple regex that assumes no nested braces inside the text block.
-  const regex = /\\text(?:normal|bf)?\{([^}]*)\}/g;
-  const parts: { type: 'math' | 'text'; content: string }[] = [];
-  let lastIndex = 0;
-  let match;
-  
-  while ((match = regex.exec(input)) !== null) {
-    if (match.index > lastIndex) {
-      const mathPart = input.substring(lastIndex, match.index);
-      if (mathPart.trim()) {
-        parts.push({ type: 'math', content: mathPart });
-      }
-    }
-    if (match[1]) {
-      parts.push({ type: 'text', content: match[1] });
-    }
-    lastIndex = regex.lastIndex;
-  }
-  
-  if (lastIndex < input.length) {
-    const mathPart = input.substring(lastIndex);
-    if (mathPart.trim()) {
-      parts.push({ type: 'math', content: mathPart });
-    }
-  }
-  
-  // If no text blocks were found, just return the whole thing as math
-  if (parts.length === 0) {
-    return [{ type: 'math', content: input }];
-  }
-  
-  return parts;
-}
-
 export function MathDisplay({ math, block = false }: MathDisplayProps) {
-  const cleanMath = math ? math.trim() : '';
-  
-  // Parse the math string to separate text and math blocks
-  const parts = parseMathText(cleanMath);
+  const source = normalizeMath(math);
+  const html = useMemo(() => {
+    try {
+      // Render the complete expression. Splitting around \\text{...} can sever
+      // fractions, nested groups, environments, or paired \\left / \\right.
+      return renderMath(source, block);
+    } catch {
+      return null;
+    }
+  }, [source, block]);
 
-  // If it's just one math block, render it normally
-  if (parts.length === 1 && parts[0].type === 'math') {
-    return (
-      <ErrorBoundary>
-        {block ? <BlockMath math={parts[0].content} /> : <InlineMath math={parts[0].content} />}
-      </ErrorBoundary>
-    );
+  // Old saved games can contain unsupported LaTeX. Keep their content visible
+  // as escaped React text, and recover automatically when the formula changes.
+  if (html === null) {
+    return <span className="math-source whitespace-pre-wrap break-words font-mono text-sm" role="note" aria-label="Formula shown as source">{source}</span>;
   }
-
-  // Otherwise, render a mix of HTML text and inline math to allow natural wrapping
-  return (
-    <ErrorBoundary>
-      <div className={`${block ? 'flex justify-center w-full my-4' : 'inline-flex'} flex-wrap items-baseline leading-relaxed`}>
-        {parts.map((part, i) => (
-          part.type === 'text' ? (
-            <span key={i} className="whitespace-pre-wrap">{part.content}</span>
-          ) : (
-            <span key={i} className="inline-block">
-              <InlineMath math={part.content} />
-            </span>
-          )
-        ))}
-      </div>
-    </ErrorBoundary>
-  );
+  return <span className={`math-display max-w-full min-w-0 overflow-x-auto overflow-y-hidden ${block ? 'block' : 'inline-block align-middle'}`} dangerouslySetInnerHTML={{ __html: html }} />;
 }
