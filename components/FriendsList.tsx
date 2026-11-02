@@ -399,6 +399,15 @@ export function FriendsList() {
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 className="min-w-0 flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-base focus:outline-none focus:border-indigo-500 transition-colors"
               />
+              {searchQuery && (
+                <button
+                  aria-label="Clear search"
+                  onClick={() => { setSearchQuery(''); setSearchResults([]); }}
+                  className="min-h-11 min-w-11 shrink-0 flex items-center justify-center rounded-lg dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
               <button
                 aria-label="Search users"
                 onClick={handleSearch}
@@ -408,14 +417,6 @@ export function FriendsList() {
                 <Search className="w-4 h-4" />
               </button>
             </div>
-            {searchQuery && (
-              <button 
-                onClick={() => { setSearchQuery(''); setSearchResults([]); }}
-                className="min-h-11 text-xs dark:text-zinc-500 text-zinc-400 dark:hover:text-zinc-300 hover:text-zinc-600 mt-2 transition-colors"
-              >
-                Clear search
-              </button>
-            )}
           </div>
 
           <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain p-3 space-y-6">
