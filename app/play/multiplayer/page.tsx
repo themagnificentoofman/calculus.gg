@@ -10,11 +10,12 @@ import Image from 'next/image';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { db } from '@/firebase';
-import { collection, addDoc, doc, onSnapshot, updateDoc, arrayUnion, serverTimestamp, getDoc, query, where, limit, getDocs, increment } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
+import { loadWaitingGames } from '@/lib/stat-queries';
 import { hasRating } from '@/lib/progression';
-import { gameProgress } from '@/lib/game-session';
+import { apiRequest, gameProgress } from '@/lib/game-session';
 import { gameStandings, nextUnanswered, type GameSession } from '@/lib/game-progress';
 import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { Chat } from '@/components/Chat';
@@ -78,7 +79,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     setPlayerColor(color);
     if (user) {
       try {
-        await updateDoc(doc(db, 'users', user.uid), { color });
+        await apiRequest('profile', { patch: { color } });
       } catch (error) {
         console.error('Failed to update color', error);
       }
@@ -126,15 +127,15 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
   }, [category, difficulty, winCondition, targetScore, timeLimit, penalties]);
 
   useEffect(() => {
-    if (!gameId) return;
+    if (!gameId || !user) return;
 
-    const unsub = onSnapshot(doc(db, 'games', gameId), async (docSnap) => {
-      if (docSnap.exists()) {
-        const data = docSnap.data() as GameData;
+    const unsub = gameProgress.watchGame(gameId, user!.uid, async (view) => {
+      {
+        const data = view as GameData;
         setGameData(data);
         if (user && restoredGame.current !== gameId) {
           restoredGame.current = gameId;
-          setCurrentIndex(data.progressionVersion === 2 ? nextUnanswered(data, user.uid) : 0);
+          setCurrentIndex(data.progressionVersion === 3 ? nextUnanswered(data, user.uid) : 0);
           setSelectedOption(null); setShowExplanation(false);
         }
         
@@ -142,7 +143,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         for (const uid of data.players) {
           setPlayerProfiles(prev => {
             if (!prev[uid]) {
-              getDoc(doc(db, 'users', uid)).then(pSnap => {
+              getDoc(doc(db, 'users_public', uid)).then(pSnap => {
                 if (pSnap.exists()) {
                   setPlayerProfiles(p => ({ ...p, [uid]: pSnap.data() }));
                 }
@@ -183,11 +184,11 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     setLoading(true);
     try {
       const questionsCount = winCondition === 'first_to_n' ? Math.min(targetScore * 3, 20) : 20;
-      const generatedQuestions = await generateQuestions(category, difficulty, questionsCount);
+      const generatedQuestions = await generateQuestions(category, difficulty, questionsCount, 'multiplayer');
       
       if (generatedQuestions) {
         try {
-          const docRef = { id: await gameProgress.createGame(user.uid, 'multiplayer', generatedQuestions, { category, difficulty, settings: { category, difficulty, winCondition, targetScore, timeLimit, penalties } }) };
+          const docRef = { id: await gameProgress.createGame(user.uid, 'multiplayer', generatedQuestions, { category, difficulty, settings: { winCondition, targetScore, timeLimit, penalties } }) };
           setGameId(docRef.id);
         } catch (error) {
           handleFirestoreError(error, OperationType.CREATE, 'games');
@@ -212,29 +213,26 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     finally { setLoading(false); }
   };
 
+  const joiningFromLink = useRef(false);
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get('join');
+    if (user && id && !joiningFromLink.current) { joiningFromLink.current = true; void joinGame(id); }
+  }, [user]);
+
   const joinRandomGame = async () => {
     if (!user) return;
     setLoadingMessage('Finding an available arena...');
     setLoading(true);
     try {
-      const gamesRef = collection(db, 'games');
-      const q = query(gamesRef, where('mode', '==', 'multiplayer'), where('status', '==', 'waiting'), limit(10));
-      let querySnapshot;
-      try {
-        querySnapshot = await getDocs(q);
-      } catch (error) {
-        handleFirestoreError(error, OperationType.LIST, 'games');
-        return;
-      }
-      
+      const matches = await loadWaitingGames(db, user.uid, 'multiplayer');
+
       let joined = false;
-      for (const docSnap of querySnapshot.docs) {
-        const data = docSnap.data() as GameData;
+      for (const data of matches) {
         if (data.players.length < 10 && !data.players.includes(user.uid)) {
           try {
-            await gameProgress.joinGame(docSnap.id, user.uid, 'multiplayer');
+            await gameProgress.joinGame(data.id, user.uid, 'multiplayer');
           } catch { continue; }
-          setGameId(docSnap.id);
+          setGameId(data.id);
           joined = true;
           break;
         }
@@ -270,7 +268,8 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
       const result = await gameProgress.submitAnswer(gameId, user.uid, currentIndex, selectedOption);
       if (!result.answer) return;
       setSelectedOption(result.answer.selectedOption);
-      setLastAnswer({ question: q, selectedOption: result.answer.selectedOption });
+      setGameData(result.game as GameData);
+      setLastAnswer({ question: result.game.questions[currentIndex], selectedOption: result.answer.selectedOption });
       playSound(result.answer.correct ? 'correct' : 'incorrect');
       if (result.answer.xp && !result.duplicate) {
         setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
@@ -282,7 +281,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   const nextQuestion = () => {
     if (saving || !showExplanation) return;
-    setCurrentIndex(i => i + 1); setSelectedOption(null); setShowExplanation(false);
+    setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
   };
 
   if (!user) {
@@ -590,11 +589,11 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-zinc-400">Category:</span>
-                <span className="text-white capitalize">{gameData.settings?.category || 'Integration'}</span>
+                <span className="text-white capitalize">{gameData.category || 'all'}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-zinc-400">Difficulty:</span>
-                <span className="text-white capitalize">{gameData.settings?.difficulty || 'Hard'}</span>
+                <span className="text-white capitalize">{gameData.difficulty || 'medium'}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-zinc-400">Win Condition:</span>
