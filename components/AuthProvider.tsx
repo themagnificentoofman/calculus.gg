@@ -3,8 +3,8 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { auth, db } from '@/firebase';
 import { onAuthStateChanged, User, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, linkWithPopup, updateProfile as updateAuthProfile } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc, onSnapshot, runTransaction } from 'firebase/firestore';
-import { gameProgress } from '@/lib/game-session';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { apiRequest, gameProgress } from '@/lib/game-session';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 
 interface UserProfile {
@@ -79,37 +79,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (!firebaseUser) { setLoading(false); return; }
       const userRef = doc(db, 'users', firebaseUser.uid);
       try {
-        const userSnap = await getDoc(userRef);
-        if (!userSnap.exists()) {
-          const newProfile: UserProfile = {
-            uid: firebaseUser.uid,
-            displayName: firebaseUser.displayName || 'Anonymous Calc Bro',
-            handle: `user${firebaseUser.uid.substring(0, 6)}`,
-            photoURL: firebaseUser.photoURL || '',
-            email: firebaseUser.email || '',
-            rating: 0,
-            classification: 'Novice',
-            gamesPlayed: 0,
-            wins: 0,
-            losses: 0,
-            draws: 0, ratedGames: 0, answeredQuestions: 0, correctAnswers: 0,
-            createdAt: new Date().toISOString(),
-            xp: 0,
-            topicXp: { integration: 0, differentiation: 0, limits: 0 },
-            topicRatings: { integration: 0, differentiation: 0, limits: 0 },
-            settings: {
-              theme: 'dark',
-              notifications: true,
-              soundEnabled: true
-            },
-            friends: [],
-            lastActive: Date.now()
-          };
-          await runTransaction(db, async tx => {
-            const existing = await tx.get(userRef);
-            if (!existing.exists()) tx.set(userRef, newProfile);
-          });
-        }
+        await apiRequest('profile', {});
         if (current !== revision) return;
         // Keep XP/rating live; never delete or subtract legacy earned progress.
         stopProfile = onSnapshot(userRef, snapshot => {
@@ -131,9 +101,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const updateLastActive = async () => {
       try {
-        await updateDoc(doc(db, 'users', user.uid), {
-          lastActive: Date.now()
-        });
+        await apiRequest('profile', {});
       } catch (error) {
         // Silently fail for lastActive updates to not spam errors
         console.error('Failed to update lastActive', error);
@@ -172,26 +140,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
       await updateAuthProfile(userCredential.user, { displayName: name });
       
-      // Update the firestore document if it was already created by onAuthStateChanged
-      const userRef = doc(db, 'users', userCredential.user.uid);
-      let userSnap;
-      try {
-        userSnap = await getDoc(userRef);
-      } catch (error) {
-        handleFirestoreError(error, OperationType.GET, `users/${userCredential.user.uid}`);
-        return;
-      }
-      
-      if (userSnap.exists()) {
-        try {
-          await updateDoc(userRef, { displayName: name });
-        } catch (error) {
-          handleFirestoreError(error, OperationType.UPDATE, `users/${userCredential.user.uid}`);
-        }
-        if (profile && profile.uid === userCredential.user.uid) {
-          setProfile({ ...profile, displayName: name });
-        }
-      }
+      await apiRequest('profile', { patch: { displayName: name } });
     } catch (error: any) {
       console.error('Signup failed', error);
       let errorMessage = 'An error occurred during signup.';
@@ -241,7 +190,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       const userRef = doc(db, 'users', user.uid);
       try {
-        await updateDoc(userRef, data);
+        await apiRequest('profile', { patch: data });
       } catch (error) {
         handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`);
       }

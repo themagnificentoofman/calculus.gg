@@ -9,11 +9,12 @@ import { Users, RefreshCw, Home, Play, CheckCircle2, XCircle, ArrowRight, Swords
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { db } from '@/firebase';
-import { collection, addDoc, doc, onSnapshot, updateDoc, arrayUnion, serverTimestamp, getDoc, getDocs, query, where, limit, increment } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
+import { loadWaitingGames } from '@/lib/stat-queries';
 import { hasRating } from '@/lib/progression';
-import { gameProgress } from '@/lib/game-session';
+import { apiRequest, gameProgress } from '@/lib/game-session';
 import { gameStandings, nextUnanswered, type GameSession } from '@/lib/game-progress';
 import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { Chat } from '@/components/Chat';
@@ -76,7 +77,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     setPlayerColor(color);
     if (user) {
       try {
-        await updateDoc(doc(db, 'users', user.uid), { color });
+        await apiRequest('profile', { patch: { color } });
       } catch (error) {
         console.error('Failed to update color', error);
       }
@@ -102,15 +103,15 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
   }, [gameData?.status, gameData?.startTime]);
 
   useEffect(() => {
-    if (!gameId) return;
+    if (!gameId || !user) return;
 
-    const unsub = onSnapshot(doc(db, 'games', gameId), async (docSnap) => {
-      if (docSnap.exists()) {
-        const data = docSnap.data() as GameData;
+    const unsub = gameProgress.watchGame(gameId, user!.uid, async (view) => {
+      {
+        const data = view as GameData;
         setGameData(data);
         if (user && restoredGame.current !== gameId) {
           restoredGame.current = gameId;
-          setCurrentIndex(data.progressionVersion === 2 ? nextUnanswered(data, user.uid) : 0);
+          setCurrentIndex(data.progressionVersion === 3 ? nextUnanswered(data, user.uid) : 0);
           setSelectedOption(null); setShowExplanation(false);
         }
 
@@ -118,7 +119,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         for (const uid of data.players) {
           setPlayerProfiles(prev => {
             if (!prev[uid]) {
-              getDoc(doc(db, 'users', uid)).then(pSnap => {
+              getDoc(doc(db, 'users_public', uid)).then(pSnap => {
                 if (pSnap.exists()) {
                   setPlayerProfiles(p => ({ ...p, [uid]: pSnap.data() }));
                 }
@@ -173,7 +174,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     setLoading(true);
     try {
       // Generate questions first
-      const generatedQuestions = await generateQuestions(category, difficulty, count);
+      const generatedQuestions = await generateQuestions(category, difficulty, count, 'pvp');
 
       if (generatedQuestions) {
         try {
@@ -182,13 +183,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
           // Send invite if invitedFriendId is set
           if (invitedFriendId) {
-            await addDoc(collection(db, 'gameInvites'), {
-              from: user.uid,
-              to: invitedFriendId,
-              gameId: docRef.id,
-              status: 'pending',
-              createdAt: Date.now()
-            });
+            await apiRequest('social', { action: 'invite', to: invitedFriendId, gameId: docRef.id });
           }
         } catch (error) {
           handleFirestoreError(error, OperationType.CREATE, 'games');
@@ -222,23 +217,14 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     if (!user) return;
     setLoading(true);
     try {
-      const q = query(
-        collection(db, 'games'),
-        where('status', '==', 'waiting'),
-        where('mode', '==', 'pvp'),
-        where('category', '==', category),
-        where('difficulty', '==', difficulty),
-        limit(5)
-      );
-      const querySnapshot = await getDocs(q);
+      const matches = await loadWaitingGames(db, user.uid, 'pvp', category, difficulty);
 
       let joined = false;
-      for (const docSnap of querySnapshot.docs) {
-        const data = docSnap.data() as GameData;
+      for (const data of matches) {
         if (data.players.length < 2 && !data.players.includes(user.uid)) {
           try {
-            await gameProgress.joinGame(docSnap.id, user.uid, 'pvp');
-            setGameId(docSnap.id);
+            await gameProgress.joinGame(data.id, user.uid, 'pvp');
+            setGameId(data.id);
             joined = true;
             break;
           } catch (e) {
@@ -266,7 +252,8 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
       const result = await gameProgress.submitAnswer(gameId, user.uid, currentIndex, selectedOption);
       if (!result.answer) return;
       setSelectedOption(result.answer.selectedOption);
-      setLastAnswer({ question: q, selectedOption: result.answer.selectedOption });
+      setGameData(result.game as GameData);
+      setLastAnswer({ question: result.game.questions[currentIndex], selectedOption: result.answer.selectedOption });
       playSound(result.answer.correct ? 'correct' : 'incorrect');
       if (result.answer.xp && !result.duplicate) {
         setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
@@ -278,7 +265,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   const nextQuestion = () => {
     if (saving || !showExplanation) return;
-    setCurrentIndex(i => i + 1); setSelectedOption(null); setShowExplanation(false);
+    setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
   };
 
   if (!user) {

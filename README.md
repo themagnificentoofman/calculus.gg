@@ -12,7 +12,7 @@ cp .env.example .dev.vars
 npm run dev
 ```
 
-Set `OPENAI_API_KEY` in the untracked `.dev.vars` file. Never prefix it with `NEXT_PUBLIC_`: AI requests now pass through `/api/questions` on the server. `OPENAI_MODEL` optionally overrides the existing `gpt-5-mini` model.
+Set `OPENAI_API_KEY` in the untracked `.dev.vars` file. Never prefix it with `NEXT_PUBLIC_`: AI requests pass through `/api/questions`; it returns an opaque question-set ID. Answer validation, XP and ratings run on authenticated server endpoints. Configure `FIREBASE_SERVICE_ACCOUNT_JSON` with a dedicated database-scoped identity for real Firebase use. `OPENAI_MODEL` optionally overrides the existing `gpt-5-mini` model.
 
 Apply D1 migrations locally before testing AI requests, using the generated local Worker configuration as described in [DEPLOYMENT.md](DEPLOYMENT.md).
 
