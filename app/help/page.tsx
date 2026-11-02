@@ -31,7 +31,7 @@ export default function HelpPage() {
             <ul className="space-y-4 text-zinc-300 list-disc list-inside">
               <li><strong>No cheating:</strong> Using external calculators (like WolframAlpha, Symbolab) or AI tools during ranked matches is strictly prohibited.</li>
               <li><strong>Time limits:</strong> Each mode has specific time constraints. In Rapid mode, you have 60 seconds to answer as many questions as possible. In PvP and Multiplayer, you race against others.</li>
-              <li><strong>Scoring:</strong> Correct answers increase your score and rating. Incorrect answers may result in penalties depending on the game mode.</li>
+              <li><strong>Scoring:</strong> Correct answers increase your score and earn XP. Rating changes only after competitive matches. Incorrect answers may result in penalties depending on the game mode.</li>
               <li><strong>Respect others:</strong> Maintain a positive environment in multiplayer modes.</li>
             </ul>
           </section>
@@ -45,7 +45,7 @@ export default function HelpPage() {
               <h2 className="text-2xl font-bold">Problem Sources</h2>
             </div>
             <p className="text-zinc-300 mb-4">
-              Our calculus problems are dynamically generated using advanced AI models (Gemini) to ensure an infinite variety of questions. The problems cover a wide range of topics including:
+              Our calculus problems are dynamically generated using OpenAI to provide varied practice questions. The problems cover a wide range of topics including:
             </p>
             <ul className="space-y-2 text-zinc-300 list-disc list-inside">
               <li>Integration</li>
@@ -66,21 +66,27 @@ export default function HelpPage() {
               <h2 className="text-2xl font-bold">Ratings & Ranks</h2>
             </div>
             <p className="text-zinc-300 mb-6">
-              Your rating reflects your calculus proficiency. Compete in ranked modes to climb the leaderboard and earn new ranks. Ratings are calculated based on your performance on individual problems, taking into account the difficulty of the problem, your placement in the match, and the ratings of your opponents. You also earn XP for every problem you solve correctly, which contributes to your overall level and topic mastery.
+              Rating measures competitive results in PvP and Multiplayer. Each opponent is compared separately using both players’ ratings from the start of the match. An upset earns more than an expected win; a tie counts as half a win. Changes are balanced between players and bounded by 32 points per match, regardless of room size. Difficulty rewards XP, not extra rating. Empty and all-wrong games do not transfer rating. PvP ends when both players finish; target-score Multiplayer ends when the target is reached. Timed games use a shared deadline, and other competitive games have a 30-minute limit.
+            </p>
+            <p className="text-zinc-400 mb-4 leading-relaxed">
+              Overall rating is independent of topic ratings. Topic ratings compare only the same questions that both players attempted; unseen questions do not count as mistakes. Equal scores share a position. A player who never answers cannot win over someone who participated. Existing ratings are preserved, start at zero for new players, and can go below zero. Unrated means no qualifying competitive result yet.
+            </p>
+            <p className="text-zinc-400 mb-4 leading-relaxed">
+              Every correct answer earns 10 XP (Easy), 20 XP (Medium), 30 XP (Hard), or 50 XP (Olympiad), in every mode. There are no placement bonuses. Level L requires 100 × L² total XP: level 1 needs 100, level 2 needs 400, and level 3 needs 900. Topic levels follow the same curve. Previously earned XP and historical records are preserved. The revised scoring rules apply to new games.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-4 p-4 bg-zinc-950 rounded-2xl border border-zinc-800">
                 <RankIcon rating={0} className="w-8 h-8" />
                 <div>
                   <div className="font-bold text-zinc-500">Unrated</div>
-                  <div className="text-sm text-zinc-500 font-mono">0</div>
+                  <div className="text-sm text-zinc-500 font-mono">No rated matches</div>
                 </div>
               </div>
               <div className="flex items-center gap-4 p-4 bg-zinc-950 rounded-2xl border border-zinc-800">
                 <RankIcon rating={1} className="w-8 h-8" />
                 <div>
                   <div className="font-bold text-amber-700">Bronze</div>
-                  <div className="text-sm text-zinc-500 font-mono">1 - 499</div>
+                  <div className="text-sm text-zinc-500 font-mono">Below 500 (rated)</div>
                 </div>
               </div>
               <div className="flex items-center gap-4 p-4 bg-zinc-950 rounded-2xl border border-zinc-800">

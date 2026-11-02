@@ -3,7 +3,8 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { auth, db } from '@/firebase';
 import { onAuthStateChanged, User, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, linkWithPopup, updateProfile as updateAuthProfile } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, onSnapshot, runTransaction } from 'firebase/firestore';
+import { gameProgress } from '@/lib/game-session';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 
 interface UserProfile {
@@ -17,6 +18,11 @@ interface UserProfile {
   gamesPlayed: number;
   wins: number;
   losses: number;
+  draws?: number;
+  ratedGames?: number;
+  topicRatedGames?: Record<string, number>;
+  answeredQuestions?: number;
+  correctAnswers?: number;
   createdAt: string;
   xp?: number;
   topicXp?: Record<string, number>;
@@ -63,53 +69,18 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      setUser(firebaseUser);
-      if (firebaseUser) {
-        // Fetch or create user profile
-        const userRef = doc(db, 'users', firebaseUser.uid);
-        let userSnap;
-        try {
-          userSnap = await getDoc(userRef);
-        } catch (error) {
-          handleFirestoreError(error, OperationType.GET, `users/${firebaseUser.uid}`);
-          return;
-        }
-        
-        if (userSnap.exists()) {
-          const data = userSnap.data() as UserProfile;
-          
-          // Reset 'All' topic XP if it exists
-          if (data.topicXp && (data.topicXp['All'] !== undefined || data.topicXp['all'] !== undefined)) {
-            const allXp = (data.topicXp['All'] || 0) + (data.topicXp['all'] || 0);
-            const newXp = Math.max(0, (data.xp || 0) - allXp);
-            
-            const newTopicXp = { ...data.topicXp };
-            delete newTopicXp['All'];
-            delete newTopicXp['all'];
-            
-            const newTopicRatings = { ...data.topicRatings };
-            if (newTopicRatings) {
-              delete newTopicRatings['All'];
-              delete newTopicRatings['all'];
-            }
-            
-            try {
-              await updateDoc(userRef, {
-                xp: newXp,
-                topicXp: newTopicXp,
-                topicRatings: newTopicRatings || {}
-              });
-              data.xp = newXp;
-              data.topicXp = newTopicXp;
-              data.topicRatings = newTopicRatings;
-            } catch (error) {
-              console.error('Failed to reset All topic XP', error);
-            }
-          }
-          
-          setProfile(data);
-        } else {
+    let revision = 0;
+    let stopProfile = () => {};
+    let stopResults = () => {};
+    const unsubscribe = onAuthStateChanged(auth, async firebaseUser => {
+      const current = ++revision;
+      stopProfile(); stopResults();
+      setUser(firebaseUser); setProfile(null); setLoading(true);
+      if (!firebaseUser) { setLoading(false); return; }
+      const userRef = doc(db, 'users', firebaseUser.uid);
+      try {
+        const userSnap = await getDoc(userRef);
+        if (!userSnap.exists()) {
           const newProfile: UserProfile = {
             uid: firebaseUser.uid,
             displayName: firebaseUser.displayName || 'Anonymous Calc Bro',
@@ -121,6 +92,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             gamesPlayed: 0,
             wins: 0,
             losses: 0,
+            draws: 0, ratedGames: 0, answeredQuestions: 0, correctAnswers: 0,
             createdAt: new Date().toISOString(),
             xp: 0,
             topicXp: { integration: 0, differentiation: 0, limits: 0 },
@@ -133,24 +105,29 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             friends: [],
             lastActive: Date.now()
           };
-          try {
-            await setDoc(userRef, newProfile);
-          } catch (error) {
-            handleFirestoreError(error, OperationType.CREATE, `users/${firebaseUser.uid}`);
-          }
-          setProfile(newProfile);
+          await runTransaction(db, async tx => {
+            const existing = await tx.get(userRef);
+            if (!existing.exists()) tx.set(userRef, newProfile);
+          });
         }
-      } else {
-        setProfile(null);
+        if (current !== revision) return;
+        // Keep XP/rating live; never delete or subtract legacy earned progress.
+        stopProfile = onSnapshot(userRef, snapshot => {
+          if (current !== revision) return;
+          if (snapshot.exists()) setProfile(snapshot.data() as UserProfile);
+          setLoading(false);
+        }, error => { console.error('Profile sync failed', error); setLoading(false); });
+        stopResults = gameProgress.watchPendingResults(firebaseUser.uid, error => console.error('Pending result sync failed', error));
+      } catch (error) {
+        console.error('Profile setup failed', error);
+        if (current === revision) setLoading(false);
       }
-      setLoading(false);
     });
-
-    return () => unsubscribe();
+    return () => { revision++; unsubscribe(); stopProfile(); stopResults(); };
   }, []);
 
   useEffect(() => {
-    if (!user) return;
+    if (!user || profile?.uid !== user.uid) return;
 
     const updateLastActive = async () => {
       try {
@@ -170,7 +147,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const interval = setInterval(updateLastActive, 60000);
 
     return () => clearInterval(interval);
-  }, [user]);
+  }, [user, profile?.uid]);
 
   const login = async () => {
     const provider = new GoogleAuthProvider();
@@ -268,7 +245,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       } catch (error) {
         handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`);
       }
-      setProfile({ ...profile, ...data });
+      setProfile(current => current ? { ...current, ...data } : current);
       
       if (data.displayName !== undefined || data.photoURL !== undefined) {
         const authUpdates: { displayName?: string; photoURL?: string } = {};

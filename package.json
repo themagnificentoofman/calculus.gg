@@ -10,7 +10,8 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/*.test.mjs"
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:integration": "node --experimental-strip-types --test tests/game-progress.test.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",

@@ -1,13 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
-import { calculateProblemXp } from '@/lib/progression';
+import { gameProgress } from '@/lib/game-session';
+import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 
 interface Question {
@@ -25,6 +26,10 @@ export default function TestMode() {
   const [difficulty, setDifficulty] = useState('medium');
   const [count, setCount] = useState(5);
   
+  const [gameId, setGameId] = useState<string | null>(null);
+  const busy = useRef(false);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
   const [loading, setLoading] = useState(false);
   const [generationError, setGenerationError] = useState('');
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -36,7 +41,6 @@ export default function TestMode() {
   const [finished, setFinished] = useState(false);
   const { profile } = useAuth();
   const [playerColor, setPlayerColor] = useState(profile?.color || '#3b82f6');
-  const [solvedProblems, setSolvedProblems] = useState<{topic: string, difficulty: string}[]>([]);
   
   const colors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#06b6d4', '#3b82f6', '#8b5cf6', '#d946ef', '#f43f5e'];
 
@@ -60,18 +64,20 @@ export default function TestMode() {
   }, [profile?.color]);
 
   const startGame = async () => {
-    setGenerationError('');
+    if (!user || busy.current) return;
+    setGenerationError(''); setSaveError('');
     setLoading(true);
     try {
       const generatedQuestions = await generateQuestions(category, difficulty, count);
       if (generatedQuestions) {
+        setGameId(await gameProgress.createGame(user.uid, 'test', generatedQuestions, { category, difficulty }));
         setQuestions(generatedQuestions);
         setCurrentIndex(0);
         setScore(0);
         setFinished(false);
         setSelectedOption(null);
         setShowExplanation(false);
-        setSolvedProblems([]);
+
       }
     } catch (error) {
       setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
@@ -81,59 +87,32 @@ export default function TestMode() {
   };
 
   const handleOptionSelect = (index: number) => {
-    if (showExplanation) return;
+    if (saving || showExplanation) return;
     setSelectedOption(index);
   };
 
-  const checkAnswer = () => {
-    if (selectedOption === null || showExplanation) return;
-    
-    if (selectedOption === questions[currentIndex].correctIndex) {
-      playSound('correct');
-      setScore(s => s + 1);
-      setSolvedProblems(prev => [...prev, { topic: questions[currentIndex].topic, difficulty: questions[currentIndex].difficulty }]);
-      
-      // Auto-save XP continuously
-      if (user) {
-        import('firebase/firestore').then(({ doc, updateDoc, increment }) => {
-          import('@/firebase').then(({ db }) => {
-            const xp = calculateProblemXp('test', questions[currentIndex].difficulty);
-            const topicKey = `topicXp.${questions[currentIndex].topic.toLowerCase()}`;
-            
-            setXpEarned(xp);
-            setTimeout(() => setXpEarned(null), 2000);
-            
-            updateDoc(doc(db, 'users', user.uid), {
-              xp: increment(xp),
-              [topicKey]: increment(xp)
-            }).catch(error => handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`));
-          });
-        });
+  const checkAnswer = async () => {
+    if (busy.current || selectedOption === null || showExplanation || !user || !gameId) return;
+    busy.current = true; setSaving(true); setSaveError('');
+    try {
+      const result = await gameProgress.submitAnswer(gameId, user.uid, currentIndex, selectedOption);
+      if (!result.answer) return;
+      setSelectedOption(result.answer.selectedOption);
+      setScore(result.game.scores[user.uid]);
+      playSound(result.answer.correct ? 'correct' : 'incorrect');
+      if (result.answer.xp && !result.duplicate) {
+        setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
       }
-    } else {
-      playSound('incorrect');
-    }
-    setShowExplanation(true);
+      setShowExplanation(true);
+    } catch (error) { setSaveError(error instanceof Error ? error.message : 'Answer was not saved. Please retry.'); }
+    finally { busy.current = false; setSaving(false); }
   };
 
-  const nextQuestion = async () => {
+  const nextQuestion = () => {
+    if (saving || !showExplanation) return;
     if (currentIndex < questions.length - 1) {
-      setCurrentIndex(i => i + 1);
-      setSelectedOption(null);
-      setShowExplanation(false);
-    } else {
-      playSound('end');
-      setFinished(true);
-      if (user) {
-        import('firebase/firestore').then(({ doc, updateDoc, increment }) => {
-          import('@/firebase').then(({ db }) => {
-            updateDoc(doc(db, 'users', user.uid), {
-              gamesPlayed: increment(1)
-            }).catch(error => handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`));
-          });
-        });
-      }
-    }
+      setCurrentIndex(i => i + 1); setSelectedOption(null); setShowExplanation(false);
+    } else { playSound('end'); setFinished(true); }
   };
 
   if (!user) {
@@ -165,6 +144,7 @@ export default function TestMode() {
           <h2 className="text-3xl font-bold mb-2">Test Complete!</h2>
           <p className="text-zinc-400 mb-8">You scored <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> out of {questions.length}</p>
           
+          <GameResultStatus gameId={gameId} />
           <div className="flex flex-col gap-4">
             <button 
               onClick={startGame}
@@ -193,6 +173,7 @@ export default function TestMode() {
 
     return (
       <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
+        <GameSaveError error={saveError} />
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 
