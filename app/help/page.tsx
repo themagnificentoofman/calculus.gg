@@ -72,7 +72,7 @@ export default function HelpPage() {
               Overall rating is independent of topic ratings. Topic ratings compare only the same questions that both players attempted; unseen questions do not count as mistakes. Equal scores share a position. A player who never answers cannot win over someone who participated. Existing ratings are preserved, start at zero for new players, and can go below zero. Unrated means no qualifying competitive result yet.
             </p>
             <p className="text-zinc-400 mb-4 leading-relaxed">
-              Every correct answer earns 10 XP (Easy), 20 XP (Medium), 30 XP (Hard), or 50 XP (Olympiad), in every mode. There are no placement bonuses. Level L requires 100 × L² total XP: level 1 needs 100, level 2 needs 400, and level 3 needs 900. Topic levels follow the same curve. Previously earned XP and historical records are preserved. The revised scoring rules apply to new games.
+              Every correct answer earns 10 XP (Easy), 20 XP (Medium), 30 XP (Hard), or 50 XP (Olympiad), in every mode. There are no placement bonuses. Level L requires 100 × L² total XP: level 1 needs 100, level 2 needs 400, and level 3 needs 900. Topic levels follow the same curve.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-4 p-4 bg-zinc-950 rounded-2xl border border-zinc-800">

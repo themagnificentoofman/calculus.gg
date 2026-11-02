@@ -77,3 +77,11 @@ test('rated zero and negative values remain rated; untouched new accounts do not
   assert.equal(hasRating({rating:0,ratedGames:0,draws:1}),false);
   assert.equal(hasRating({rating:0}),false);
 });
+
+
+test('live standings rank scores before applying final inactivity forfeits', async () => {
+  const { gameStandings } = await import('../lib/game-progress.ts');
+  const game = { mode: 'multiplayer', status: 'active', progressionVersion: 3, players: ['idle', 'played'], scores: { idle: 0, played: -1 }, answers: { played: { 0: { correct: false } } } };
+  assert.equal(gameStandings(game)[0].uid, 'idle');
+  assert.equal(gameStandings({ ...game, status: 'finished' })[0].uid, 'played');
+});

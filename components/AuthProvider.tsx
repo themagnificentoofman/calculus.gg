@@ -67,6 +67,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
+  const [profileError, setProfileError] = useState('');
+  const [retry, setRetry] = useState(0);
 
   useEffect(() => {
     let revision = 0;
@@ -75,7 +77,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const unsubscribe = onAuthStateChanged(auth, async firebaseUser => {
       const current = ++revision;
       stopProfile(); stopResults();
-      setUser(firebaseUser); setProfile(null); setLoading(true);
+      setUser(firebaseUser); setProfile(null); setLoading(true); setProfileError('');
       if (!firebaseUser) { setLoading(false); return; }
       const userRef = doc(db, 'users', firebaseUser.uid);
       try {
@@ -86,15 +88,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           if (current !== revision) return;
           if (snapshot.exists()) setProfile(snapshot.data() as UserProfile);
           setLoading(false);
-        }, error => { console.error('Profile sync failed', error); setLoading(false); });
+        }, error => { if (current === revision) { setProfileError('Your profile could not be refreshed.'); setLoading(false); } });
         stopResults = gameProgress.watchPendingResults(firebaseUser.uid, error => console.error('Pending result sync failed', error));
       } catch (error) {
         console.error('Profile setup failed', error);
-        if (current === revision) setLoading(false);
+        if (current === revision) { setLoading(false); setProfileError('Your profile could not be loaded.'); }
       }
     });
     return () => { revision++; unsubscribe(); stopProfile(); stopResults(); };
-  }, []);
+  }, [retry]);
 
   useEffect(() => {
     if (!user || profile?.uid !== user.uid) return;
@@ -116,6 +118,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     return () => clearInterval(interval);
   }, [user, profile?.uid]);
+
+  useEffect(() => {
+    try { localStorage.setItem('soundEnabled', String(profile?.settings?.soundEnabled !== false)); } catch {}
+  }, [profile?.settings?.soundEnabled, user?.uid]);
 
   const login = async () => {
     const provider = new GoogleAuthProvider();
@@ -213,6 +219,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthContext.Provider value={{ user, profile, loading, login, logout, updateUserProfile, signupWithEmail, loginWithEmail, linkGoogleAccount }}>
+      {profileError && <div role="alert" className="border-b border-red-500/30 bg-red-950 px-4 py-3 text-center text-sm text-red-100">{profileError} <button onClick={() => setRetry(value => value + 1)} className="ml-3 min-h-11 rounded-lg px-3 font-bold underline">Retry</button></div>}
       {children}
     </AuthContext.Provider>
   );

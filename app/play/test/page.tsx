@@ -21,7 +21,7 @@ interface Question {
 }
 
 export default function TestMode() {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const [category, setCategory] = useState('all');
   const [difficulty, setDifficulty] = useState('medium');
   const [count, setCount] = useState(5);
@@ -114,6 +114,8 @@ export default function TestMode() {
       setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
     } else { playSound('end'); setFinished(true); }
   };
+
+  if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
 
   if (!user) {
     return (
@@ -351,7 +353,7 @@ export default function TestMode() {
               </div>
             </label>
             <div className="relative">
-              <select 
+              <select aria-label="Category"
                 value={category} 
                 onChange={e => setCategory(e.target.value)}
                 className="w-full appearance-none bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
@@ -430,6 +432,7 @@ export default function TestMode() {
               {colors.map(color => (
                 <button
                   key={color}
+                  aria-label={`Choose ${color} color`} aria-pressed={playerColor === color}
                   onClick={() => handleColorSelect(color)}
                   className={`w-10 h-10 rounded-full transition-transform ${playerColor === color ? 'scale-110 ring-2 ring-white ring-offset-2 ring-offset-zinc-900' : 'hover:scale-105'}`}
                   style={{ backgroundColor: color }}

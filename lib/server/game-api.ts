@@ -8,7 +8,7 @@ import type { GameMode } from '../progression.ts';
 const response = (body: unknown, status = 200) => Response.json(body, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } });
 const only = (body: Data, keys: string[]) => { if (!body || typeof body !== 'object' || Array.isArray(body) || Object.keys(body).some(k => !keys.includes(k))) throw new GameError('Unexpected request fields.'); };
 const modes = ['test', 'rapid', 'pvp', 'multiplayer'];
-export function createGameApi(deps: { store: Store; verify: (token: string) => Promise<Data>; generate: (category: string, difficulty: string, count: number) => Promise<GameQuestion[]>; quota: (uid: string) => Promise<boolean>; now?: () => number }) {
+export function createGameApi(deps: { store: Store; verify: (token: string) => Promise<Data>; generate: (category: string, difficulty: string, count: number) => Promise<GameQuestion[]>; quota: (uid: string) => Promise<boolean>; mutationQuota?: (uid: string) => Promise<boolean>; now?: () => number }) {
   const games = createServerGames(deps.store, deps.now);
   return async (resource: 'games' | 'profile' | 'questions' | 'social', request: Request) => {
     if (request.method !== 'POST') return response({ error: 'Use POST.' }, 405);
@@ -23,6 +23,7 @@ export function createGameApi(deps: { store: Store; verify: (token: string) => P
       let body: Data;
       try { body = await readBoundedJson(request, resource === 'profile' ? 320000 : 8192); } catch { throw new GameError('Send a valid JSON request.'); }
       if (!body || typeof body !== 'object' || Array.isArray(body)) throw new GameError('Send a JSON object.');
+      if (deps.mutationQuota && !await deps.mutationQuota(uid)) throw new GameError('Too many requests. Please wait a moment and retry.', 429);
       if (resource === 'profile') { only(body, ['patch']); return response({ profile: await games.profile(uid, claims, body.patch ?? {}) }); }
       if (resource === 'questions') {
         only(body, ['mode', 'category', 'difficulty', 'count']);
@@ -38,9 +39,10 @@ export function createGameApi(deps: { store: Store; verify: (token: string) => P
         if (typeof body.action !== 'string' || !Object.hasOwn(fields, body.action)) throw new GameError('Unsupported social action.');
         only(body, ['action', ...fields[body.action]]);
         for (const key of fields[body.action]) identifier(body[key]);
+        if (body.action === 'invite_accept') return response(await games.acceptInvite(uid, body.id));
         return response(await socialAction(deps.store, uid, body.action, body, deps.now?.()));
       }
-      const fields: Record<string, string[]> = { create: ['questionSetId', 'mode', 'options'], join: ['gameId', 'mode'], answer: ['gameId', 'index', 'selectedOption'], start: ['gameId'], view: ['gameId'], complete: ['gameId'], claim: ['gameId'], chat: ['gameId', 'text'], sync: [] };
+      const fields: Record<string, string[]> = { create: ['questionSetId', 'mode', 'options'], join: ['gameId', 'mode'], answer: ['gameId', 'index', 'selectedOption'], start: ['gameId'], leave: ['gameId'], view: ['gameId'], complete: ['gameId'], claim: ['gameId'], chat: ['gameId', 'text'], sync: [] };
       if (typeof body.action !== 'string' || !Object.hasOwn(fields, body.action)) throw new GameError('Unsupported game action.');
       only(body, ['action', ...fields[body.action]]);
       if (body.action === 'sync') { await games.sync(uid); return response({ ok: true }); }

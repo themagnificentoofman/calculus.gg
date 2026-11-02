@@ -1,550 +1,130 @@
-import { searchPublicProfiles } from '@/lib/stat-queries';
-/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { db } from '@/firebase';
 import { apiRequest } from '@/lib/game-session';
-import { collection, query, where, doc, onSnapshot, getDocs } from 'firebase/firestore';
-import { UserPlus, UserMinus, Users, Search, X, Check, XCircle, Swords } from 'lucide-react';
-import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
+import { searchPublicProfiles } from '@/lib/stat-queries';
+import { usePanel } from '@/lib/use-panel';
+import { collection, query, where, orderBy, limit, doc, onSnapshot, getDoc } from 'firebase/firestore';
+import { Users, Search, X, Check, Swords, UserMinus } from 'lucide-react';
 
-interface FriendProfile {
-  uid: string;
-  displayName: string;
-  photoURL: string;
-  lastActive?: number;
+type Person = { uid: string; displayName: string; photoURL?: string; lastActive?: number };
+type RequestRow = { id: string; from: string; to: string; gameId?: string; mode?: string; person?: Person };
+const avatar = (p?: Person) => p?.photoURL || '/ninja-logo.png';
+const actionClass = 'min-h-11 min-w-11 shrink-0 rounded-lg px-3 text-xs font-semibold text-indigo-300 hover:bg-indigo-500/20 disabled:opacity-40';
+const rowClass = 'flex flex-wrap items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-950/60 p-3';
+function PersonLabel({ person, detail }: { person?: Person; detail?: string }) {
+  return <div className="flex min-w-0 flex-1 basis-36 items-center gap-3"><img src={avatar(person)} alt="" className="h-10 w-10 shrink-0 rounded-full bg-zinc-800 object-cover" /><div className="min-w-0"><span className="block break-words text-sm font-medium">{person?.displayName || 'Player'}</span>{detail && <span className="text-xs text-zinc-400">{detail}</span>}</div></div>;
 }
-
-interface FriendRequest {
-  id: string;
-  from: string;
-  to: string;
-  status: 'pending' | 'accepted' | 'rejected';
-  createdAt: number;
-  fromProfile?: FriendProfile;
-}
-
-interface GameInvite {
-  id: string;
-  from: string;
-  to: string;
-  gameId: string;
-  status: 'pending' | 'accepted' | 'rejected';
-  createdAt: number;
-  fromProfile?: FriendProfile;
-}
-
 export function FriendsList() {
   const { user, profile } = useAuth();
-  const [friends, setFriends] = useState<FriendProfile[]>([]);
-  const [friendRequests, setFriendRequests] = useState<FriendRequest[]>([]);
-  const [sentRequests, setSentRequests] = useState<FriendRequest[]>([]);
-  const [gameInvites, setGameInvites] = useState<GameInvite[]>([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<FriendProfile[]>([]);
-  const [isSearching, setIsSearching] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const isOpenRef = useRef(isOpen);
+  const [isOpen, setIsOpen] = usePanel('friends');
+  const [friends, setFriends] = useState<Person[]>([]);
+  const [incoming, setIncoming] = useState<RequestRow[]>([]);
+  const [sent, setSent] = useState<RequestRow[]>([]);
+  const [invites, setInvites] = useState<RequestRow[]>([]);
+  const [toast, setToast] = useState<RequestRow | null>(null);
+  const [search, setSearch] = useState('');
+  const [results, setResults] = useState<Person[]>([]);
+  const [searched, setSearched] = useState(false);
+  const [searching, setSearching] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState('');
+  const [status, setStatus] = useState('');
+  const [removeId, setRemoveId] = useState<string | null>(null);
+  const [now, setNow] = useState(Date.now());
+  const scope = useRef(user?.uid); scope.current = user?.uid;
+  const busy = useRef(false), searchVersion = useRef(0);
+  const notify = useRef(true); notify.current = profile?.settings?.notifications !== false;
+  const open = useRef(isOpen); open.current = isOpen;
+  const friendIds = (profile?.friends || []).join(',');
 
   useEffect(() => {
-    isOpenRef.current = isOpen;
-  }, [isOpen]);
-  const [newInvite, setNewInvite] = useState<GameInvite | null>(null);
+    setFriends([]); setIncoming([]); setSent([]); setInvites([]); setToast(null);
+    setResults([]); setSearch(''); setSearched(false); setError(''); setStatus(''); setRemoveId(null); setPending(false); busy.current = false;
+    searchVersion.current++;
+    if (!user) return;
+    let active = true;
+    const revisions = { incoming: 0, sent: 0, invites: 0 };
+    let initialInvites = true;
+    const seen = new Set<string>();
+    const failure = () => { if (active) setError('Friends could not be refreshed. Check your connection and reload to retry.'); };
+    const listen = (kind: keyof typeof revisions, name: string, field: 'from' | 'to', setter: (rows: RequestRow[]) => void) => onSnapshot(query(collection(db, name), where(field, '==', user.uid), where('status', '==', 'pending'), orderBy('createdAt', 'desc'), limit(100)), async snapshot => {
+      const revision = ++revisions[kind];
+      const rows = await Promise.all(snapshot.docs.map(async record => {
+        const data = record.data();
+        const other = field === 'to' ? data.from : data.to;
+        const person = await getDoc(doc(db, 'users_public', other)).catch(() => null);
+        return { ...data, id: record.id, person: person?.exists() ? { ...person.data(), uid: other } as Person : { uid: other, displayName: 'Player' } } as RequestRow;
+      }));
+      if (!active || revision !== revisions[kind]) return;
+      setter(rows);
+      if (kind === 'invites') {
+        const newest = rows.find(row => !seen.has(row.id));
+        if (!initialInvites && newest && notify.current && !open.current) setToast(newest);
+        initialInvites = false; rows.forEach(row => seen.add(row.id));
+        setToast(previous => previous && rows.some(row => row.id === previous.id) ? previous : null);
+      }
+    }, failure);
+    const stops = [listen('incoming', 'friendRequests', 'to', setIncoming), listen('sent', 'friendRequests', 'from', setSent), listen('invites', 'gameInvites', 'to', setInvites)];
+    return () => { active = false; stops.forEach(stop => stop()); };
+  }, [user?.uid]);
 
   useEffect(() => {
-    if (newInvite) {
-      const timer = setTimeout(() => setNewInvite(null), 5000);
-      return () => clearTimeout(timer);
-    }
-  }, [newInvite]);
+    setFriends([]); if (!user) return;
+    let active = true;
+    const stops = (profile?.friends || []).map(uid => onSnapshot(doc(db, 'users_public', uid), snapshot => {
+      if (!active) return;
+      setFriends(previous => [...previous.filter(p => p.uid !== uid), ...(snapshot.exists() ? [{ ...snapshot.data(), uid } as Person] : [])].sort((a,b) => a.displayName.localeCompare(b.displayName)));
+    }, () => { if (active) setError('A friend profile could not be loaded. Please reload to retry.'); }));
+    return () => { active = false; stops.forEach(stop => stop()); };
+  }, [user?.uid, friendIds]);
+  useEffect(() => { const timer = setInterval(() => setNow(Date.now()), 30000); return () => clearInterval(timer); }, []);
+  useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(null), 8000); return () => clearTimeout(timer); }, [toast]);
+  useEffect(() => { if (!notify.current) setToast(null); }, [profile?.settings?.notifications]);
 
-  useEffect(() => {
-    if (!user) return;
-
-    // Fetch friends
-    const unsubscribes: (() => void)[] = [];
-    const fetchFriends = async () => {
-      if (!profile?.friends) {
-        setFriends([]);
-        return;
-      }
-
-      const currentFriendIds = new Set(profile.friends);
-      setFriends(prev => prev.filter(f => currentFriendIds.has(f.uid)));
-
-      for (const friendId of profile.friends) {
-        const unsub = onSnapshot(doc(db, 'users_public', friendId), (docSnap) => {
-          if (docSnap.exists()) {
-            const data = docSnap.data();
-            setFriends(prev => {
-              const existing = prev.filter(f => f.uid !== friendId);
-              return [...existing, {
-                uid: friendId,
-                displayName: data.displayName || 'Unknown',
-                photoURL: data.photoURL || '',
-                lastActive: data.lastActive
-              }].sort((a, b) => a.displayName.localeCompare(b.displayName));
-            });
-          }
-        }, (error) => handleFirestoreError(error, OperationType.GET, `users/${friendId}`));
-        unsubscribes.push(unsub);
-      }
-    };
-
-    fetchFriends();
-
-    // Fetch pending friend requests
-    const requestsQuery = query(
-      collection(db, 'friendRequests'),
-      where('to', '==', user.uid),
-      where('status', '==', 'pending')
-    );
-
-    const unsubRequests = onSnapshot(requestsQuery, async (snapshot) => {
-      const requests: FriendRequest[] = [];
-      for (const docSnap of snapshot.docs) {
-        const data = docSnap.data() as Omit<FriendRequest, 'id'>;
-
-        // Fetch profile of the sender
-        try {
-          const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
-          let fromProfile: FriendProfile | undefined;
-          if (!senderDoc.empty) {
-            const senderData = senderDoc.docs[0].data();
-            fromProfile = {
-              uid: data.from,
-              displayName: senderData.displayName || 'Unknown',
-              photoURL: senderData.photoURL || '',
-            };
-          }
-
-          requests.push({
-            id: docSnap.id,
-            ...data,
-            fromProfile
-          });
-        } catch (error) {
-          console.error("Failed to fetch sender profile", error);
-        }
-      }
-      setFriendRequests(requests);
-    }, (error) => handleFirestoreError(error, OperationType.LIST, 'friendRequests'));
-
-    // Fetch sent friend requests
-    const sentRequestsQuery = query(
-      collection(db, 'friendRequests'),
-      where('from', '==', user.uid),
-      where('status', '==', 'pending')
-    );
-
-    const unsubSentRequests = onSnapshot(sentRequestsQuery, (snapshot) => {
-      const requests: FriendRequest[] = [];
-      snapshot.forEach((docSnap) => {
-        requests.push({ id: docSnap.id, ...docSnap.data() } as FriendRequest);
-      });
-      setSentRequests(requests);
-    }, (error) => handleFirestoreError(error, OperationType.LIST, 'friendRequests'));
-
-    // Fetch pending game invites
-    const invitesQuery = query(
-      collection(db, 'gameInvites'),
-      where('to', '==', user.uid),
-      where('status', '==', 'pending')
-    );
-
-    const unsubInvites = onSnapshot(invitesQuery, async (snapshot) => {
-      const invites: GameInvite[] = [];
-      let addedInvite: GameInvite | null = null;
-      for (const change of snapshot.docChanges()) {
-        if (change.type === 'added') {
-          const data = change.doc.data() as Omit<GameInvite, 'id'>;
-          try {
-            const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
-            let fromProfile: FriendProfile | undefined;
-            if (!senderDoc.empty) {
-              const senderData = senderDoc.docs[0].data();
-              fromProfile = {
-                uid: data.from,
-                displayName: senderData.displayName || 'Unknown',
-                photoURL: senderData.photoURL || '',
-              };
-            }
-            addedInvite = { id: change.doc.id, ...data, fromProfile };
-          } catch (error) {
-            console.error("Failed to fetch sender profile", error);
-          }
-        }
-      }
-
-      for (const docSnap of snapshot.docs) {
-        const data = docSnap.data() as Omit<GameInvite, 'id'>;
-
-        try {
-          const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
-          let fromProfile: FriendProfile | undefined;
-          if (!senderDoc.empty) {
-            const senderData = senderDoc.docs[0].data();
-            fromProfile = {
-              uid: data.from,
-              displayName: senderData.displayName || 'Unknown',
-              photoURL: senderData.photoURL || '',
-            };
-          }
-
-          invites.push({
-            id: docSnap.id,
-            ...data,
-            fromProfile
-          });
-        } catch (error) {
-          console.error("Failed to fetch sender profile", error);
-        }
-      }
-      setGameInvites(invites);
-      if (addedInvite && !isOpenRef.current) {
-        setNewInvite(addedInvite);
-      }
-    }, (error) => handleFirestoreError(error, OperationType.LIST, 'gameInvites'));
-
-    return () => {
-      unsubscribes.forEach(unsub => unsub());
-      unsubRequests();
-      unsubSentRequests();
-      unsubInvites();
-    };
-  }, [user, profile?.friends]);
-
-  const handleSearch = async () => {
-    if (!searchQuery.trim() || !user) return;
-    setIsSearching(true);
+  async function run(action: string, body: Record<string, unknown>, message: string, after?: (result: any) => void) {
+    if (!user || busy.current) return;
+    const uid = user.uid; busy.current = true; setPending(true); setError(''); setStatus('');
     try {
-      const results = await searchPublicProfiles(db, user.uid, searchQuery);
-      setSearchResults(results.map(p => ({ uid: p.uid, displayName: p.displayName || 'Unknown', photoURL: p.photoURL || '' })));
-    } catch (error) {
-      handleFirestoreError(error, OperationType.LIST, 'users');
-    } finally {
-      setIsSearching(false);
-    }
-  };
-
-  const sendFriendRequest = async (friendId: string) => {
-    if (!user) return;
+      const result = await apiRequest('social', { action, ...body });
+      if (scope.current !== uid) return;
+      setStatus(message); after?.(result);
+    } catch (e) { if (scope.current === uid) { setError(e instanceof Error ? e.message : 'Could not complete this action. Please retry.'); setIsOpen(true); } }
+    finally { if (scope.current === uid) { busy.current = false; setPending(false); } }
+  }
+  async function findPlayers() {
+    if (!user || !search.trim()) return;
+    const uid = user.uid, version = ++searchVersion.current;
+    setSearching(true); setError(''); setStatus('');
     try {
-      await apiRequest('social', { action: 'request', to: friendId });
-      // Optionally show a success toast here
-      setSearchQuery('');
-      setSearchResults([]);
-    } catch (error) {
-      handleFirestoreError(error, OperationType.CREATE, 'friendRequests');
-    }
-  };
-
-  const acceptRequest = async (request: FriendRequest) => {
-    if (!user) return;
-    try {
-      await apiRequest('social', { action: 'accept', id: request.id });
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `friendRequests/${request.id}`);
-    }
-  };
-
-  const rejectRequest = async (requestId: string) => {
-    try {
-      await apiRequest('social', { action: 'reject', id: requestId });
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `friendRequests/${requestId}`);
-    }
-  };
-
-  const cancelRequest = async (requestId: string) => {
-    try {
-      await apiRequest('social', { action: 'cancel', id: requestId });
-    } catch (error) {
-      handleFirestoreError(error, OperationType.DELETE, `friendRequests/${requestId}`);
-    }
-  };
-
-  const acceptInvite = async (invite: GameInvite) => {
-    try {
-      const accepted = await apiRequest('social', { action: 'invite_accept', id: invite.id });
-      setIsOpen(false);
-      window.location.assign(`/play/${accepted.mode === 'multiplayer' ? 'multiplayer' : 'pvp'}?join=${invite.gameId}`);
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `gameInvites/${invite.id}`);
-    }
-  };
-
-  const rejectInvite = async (inviteId: string) => {
-    try {
-      await apiRequest('social', { action: 'invite_reject', id: inviteId });
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `gameInvites/${inviteId}`);
-    }
-  };
-
-  const removeFriend = async (friendId: string) => {
-    if (!user) return;
-    try {
-      await apiRequest('social', { action: 'remove', friendId });
-      setFriends(prev => prev.filter(f => f.uid !== friendId));
-    } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`);
-    }
-  };
-
-  const inviteToGame = (friendId: string) => {
-    setIsOpen(false);
-    window.location.assign(`/play/pvp?invite=${friendId}`);
-  };
-
-  const isOnline = (lastActive?: number) => {
-    if (!lastActive) return false;
-    return (Date.now() - lastActive) < 5 * 60 * 1000;
-  };
-
+      const rows = await searchPublicProfiles(db, uid, search);
+      if (scope.current === uid && version === searchVersion.current) { setResults(rows.map(p => ({ ...p, displayName: p.displayName || 'Player' }) as Person)); setSearched(true); }
+    } catch { if (scope.current === uid && version === searchVersion.current) setError('Search failed. Please retry.'); }
+    finally { if (scope.current === uid && version === searchVersion.current) setSearching(false); }
+  }
+  const acceptInvite = (invite: RequestRow) => run('invite_accept', { id: invite.id }, 'Invitation accepted.', result => {
+    setToast(null); window.location.assign(`/play/${result.mode === 'multiplayer' ? 'multiplayer' : 'pvp'}?join=${result.gameId}`);
+  });
+  const controls = (row: RequestRow, invitation = false) => <div className="ml-auto flex shrink-0"><button disabled={pending} aria-label={invitation ? 'Accept game invitation' : 'Accept friend request'} className={actionClass} onClick={() => invitation ? acceptInvite(row) : run('accept', { id: row.id }, 'Friend request accepted.')}><Check className="h-4 w-4" /></button><button disabled={pending} aria-label={invitation ? 'Decline game invitation' : 'Decline friend request'} className={actionClass} onClick={() => run(invitation ? 'invite_reject' : 'reject', { id: row.id }, invitation ? 'Invitation declined.' : 'Friend request declined.')}><X className="h-4 w-4" /></button></div>;
+  const section = (title: string, children: React.ReactNode) => <section className="space-y-2"><h4 className="px-1 text-xs font-bold uppercase tracking-wide text-zinc-400">{title}</h4>{children}</section>;
   if (!user) return null;
-
-  return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-4">
-      {newInvite && !isOpen && (
-        <div className="bg-indigo-600 text-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-in slide-in-from-bottom-5 fade-in duration-300">
-          <img src={newInvite.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${newInvite.from}`} alt="Profile" className="w-10 h-10 rounded-full bg-indigo-800" />
-          <div className="flex flex-col">
-            <span className="font-bold">{newInvite.fromProfile?.displayName || 'Someone'}</span>
-            <span className="text-sm text-indigo-200">Invited you to play!</span>
-          </div>
-          <div className="flex gap-2 ml-2">
-            <button onClick={() => { acceptInvite(newInvite); setNewInvite(null); }} className="p-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
-              <Check className="w-4 h-4" />
-            </button>
-            <button onClick={() => { rejectInvite(newInvite.id); setNewInvite(null); }} className="p-2 bg-black/20 hover:bg-black/30 rounded-lg transition-colors">
-              <X className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      )}
-      {isOpen ? (
-        <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 sm:w-96 max-w-[calc(100vw-2rem)] overflow-hidden flex flex-col h-[32rem] max-h-[calc(100dvh-6rem)]">
-          <div className="shrink-0 p-4 border-b dark:border-zinc-800 border-zinc-200 flex justify-between items-center dark:bg-zinc-950 bg-zinc-50">
-            <h3 className="font-bold flex items-center gap-2">
-              <Users className="w-5 h-5 text-indigo-500" />
-              Friends
-            </h3>
-            <button aria-label="Close friends" onClick={() => setIsOpen(false)} className="-m-2 h-11 w-11 shrink-0 flex items-center justify-center dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-
-          <div className="shrink-0 p-4 border-b dark:border-zinc-800 border-zinc-200 dark:bg-zinc-900 bg-white/50">
-            <div className="flex gap-2">
-              <input
-                type="text"
-                placeholder="Search users by name or handle..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                className="min-w-0 flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-base focus:outline-none focus:border-indigo-500 transition-colors"
-              />
-              {searchQuery && (
-                <button
-                  aria-label="Clear search"
-                  onClick={() => { setSearchQuery(''); setSearchResults([]); }}
-                  className="min-h-11 min-w-11 shrink-0 flex items-center justify-center rounded-lg dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-              <button
-                aria-label="Search users"
-                onClick={handleSearch}
-                disabled={isSearching}
-                className="min-h-11 min-w-11 shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg transition-colors disabled:opacity-50"
-              >
-                <Search className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-
-          <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain p-3 space-y-6">
-            {/* Search Results */}
-            {searchResults.length > 0 && (
-              <div className="space-y-2">
-                <div className="px-2 text-xs font-bold dark:text-zinc-500 text-zinc-400 uppercase tracking-wider">Search Results</div>
-                {searchResults.map(result => {
-                  const isFriend = profile?.friends?.includes(result.uid);
-                  const sentReq = sentRequests.find(r => r.to === result.uid);
-                  const receivedReq = friendRequests.find(r => r.from === result.uid);
-
-                  return (
-                  <div key={result.uid} className="flex flex-wrap items-center justify-between gap-2 p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:border-zinc-700 border-zinc-300 transition-colors">
-                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
-                      <img src={result.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${result.uid}`} alt={result.displayName} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <span className="min-w-0 break-words text-sm font-medium">{result.displayName}</span>
-                    </div>
-                    {isFriend ? (
-                      <span className="shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 px-2">Friend</span>
-                    ) : sentReq ? (
-                      <button
-                        onClick={() => cancelRequest(sentReq.id)}
-                        className="min-h-11 shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 hover:text-red-400 px-2 transition-colors"
-                      >
-                        Cancel Request
-                      </button>
-                    ) : receivedReq ? (
-                      <div className="shrink-0 ml-auto flex items-center gap-1">
-                        <button
-                          onClick={() => acceptRequest(receivedReq)}
-                          aria-label="Accept friend request"
-                          className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
-                        >
-                          <Check className="w-4 h-4" />
-                        </button>
-                      </div>
-                    ) : (
-                      <button
-                        onClick={() => sendFriendRequest(result.uid)}
-                        className="min-h-11 shrink-0 ml-auto flex items-center gap-1 px-3 py-1.5 bg-indigo-600/20 text-indigo-400 hover:bg-indigo-600 hover:text-white rounded-lg text-xs font-bold transition-colors"
-                      >
-                        <UserPlus className="w-3.5 h-3.5" /> Add
-                      </button>
-                    )}
-                  </div>
-                )})}
-              </div>
-            )}
-
-            {/* Pending Requests */}
-            {!searchQuery && friendRequests.length > 0 && (
-              <div className="space-y-2">
-                <div className="px-2 text-xs font-bold text-amber-500 uppercase tracking-wider">Pending Requests</div>
-                {friendRequests.map(request => (
-                  <div key={request.id} className="flex flex-wrap items-center justify-between gap-2 p-3 bg-amber-500/5 border border-amber-500/20 rounded-xl">
-                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
-                      <img src={request.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${request.from}`} alt={request.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <span className="min-w-0 break-words text-sm font-medium">{request.fromProfile?.displayName || 'Unknown'}</span>
-                    </div>
-                    <div className="shrink-0 ml-auto flex items-center gap-1">
-                      <button
-                        onClick={() => acceptRequest(request)}
-                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
-                        title="Accept"
-                      >
-                        <Check className="w-4 h-4" />
-                      </button>
-                      <button
-                        onClick={() => rejectRequest(request.id)}
-                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
-                        title="Reject"
-                      >
-                        <XCircle className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Game Invites */}
-            {!searchQuery && gameInvites.length > 0 && (
-              <div className="space-y-2">
-                <div className="px-2 text-xs font-bold text-indigo-500 uppercase tracking-wider">Game Invites</div>
-                {gameInvites.map(invite => (
-                  <div key={invite.id} className="flex flex-wrap items-center justify-between gap-2 p-3 bg-indigo-500/5 border border-indigo-500/20 rounded-xl">
-                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
-                      <img src={invite.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${invite.from}`} alt={invite.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <div className="min-w-0 flex-1 flex flex-col">
-                        <span className="min-w-0 break-words text-sm font-medium">{invite.fromProfile?.displayName || 'Unknown'}</span>
-                        <span className="text-xs text-indigo-400">Invited you to play</span>
-                      </div>
-                    </div>
-                    <div className="shrink-0 ml-auto flex items-center gap-1">
-                      <button
-                        onClick={() => acceptInvite(invite)}
-                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
-                        title="Accept"
-                      >
-                        <Check className="w-4 h-4" />
-                      </button>
-                      <button
-                        onClick={() => rejectInvite(invite.id)}
-                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
-                        title="Reject"
-                      >
-                        <XCircle className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* Friends List */}
-            {!searchQuery && (
-              <div className="space-y-2">
-                <div className="px-2 text-xs font-bold dark:text-zinc-500 text-zinc-400 uppercase tracking-wider">Your Friends</div>
-                {friends.length === 0 ? (
-                  <div className="p-6 text-center text-sm dark:text-zinc-500 text-zinc-400 dark:bg-zinc-950 bg-zinc-50/30 rounded-xl border dark:border-zinc-800 border-zinc-200/30 dashed">
-                    No friends yet. Search for users to add them!
-                  </div>
-                ) : (
-                  friends.map(friend => {
-                    const hasInvite = gameInvites.some(i => i.from === friend.uid);
-                    return (
-                    <div key={friend.uid} className="flex flex-wrap items-center justify-between gap-2 p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:bg-zinc-900 bg-white/80 hover:dark:border-zinc-600 border-zinc-400 transition-colors group">
-                      <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
-                        <div className="relative shrink-0">
-                          <img src={friend.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${friend.uid}`} alt={friend.displayName} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                          {isOnline(friend.lastActive) ? (
-                            <div className="w-3.5 h-3.5 absolute -bottom-0.5 -right-0.5 bg-green-500 rounded-full border-2 border-zinc-900" />
-                          ) : (
-                            <div className="w-3.5 h-3.5 absolute -bottom-0.5 -right-0.5 dark:bg-zinc-900 bg-white border-2 border-zinc-500 rounded-full" />
-                          )}
-                        </div>
-                        <div className="min-w-0 flex-1 flex flex-col">
-                          <div className="min-w-0 flex items-center gap-2">
-                            <span className="min-w-0 break-words text-sm font-medium dark:text-zinc-200 text-zinc-800">{friend.displayName}</span>
-                            {hasInvite && <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" title="Sent you an invite" />}
-                          </div>
-                          <span className="text-xs dark:text-zinc-500 text-zinc-400">{isOnline(friend.lastActive) ? 'Online' : 'Offline'}</span>
-                        </div>
-                      </div>
-                      <div className="shrink-0 ml-auto flex items-center gap-1">
-                        <button
-                          onClick={() => inviteToGame(friend.uid)}
-                          className="min-h-11 flex items-center gap-1 px-2 py-1.5 text-xs font-medium text-indigo-400 hover:text-white hover:bg-indigo-600 rounded-lg transition-colors"
-                          title="Challenge to PvP"
-                        >
-                          <Swords className="w-3.5 h-3.5" /> Challenge
-                        </button>
-                        <button
-                          onClick={() => removeFriend(friend.uid)}
-                          className="min-h-11 min-w-11 flex items-center justify-center p-1.5 text-zinc-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
-                          title="Remove Friend"
-                        >
-                          <UserMinus className="w-4 h-4" />
-                        </button>
-                      </div>
-                    </div>
-                  )})
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-      ) : (
-        <button
-          aria-label="Open friends"
-          onClick={() => setIsOpen(true)}
-          className="bg-indigo-600 hover:bg-indigo-500 text-white p-4 rounded-full shadow-lg shadow-indigo-500/20 transition-transform hover:scale-105 flex items-center justify-center relative"
-        >
-          <Users className="w-6 h-6" />
-          {friendRequests.length > 0 && (
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-zinc-900" />
-          )}
-        </button>
-      )}
-    </div>
-  );
+  return <div className="fixed bottom-4 right-4 z-40 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3">
+    {toast && !isOpen && <div role="status" className="flex w-80 max-w-full flex-wrap items-center gap-2 rounded-2xl border border-indigo-400/30 bg-indigo-950 p-3 text-white shadow-xl"><PersonLabel person={toast.person} detail="Invited you to play" />{controls(toast, true)}</div>}
+    {isOpen ? <section role="region" aria-label="Friends panel" className="flex h-[32rem] max-h-[calc(100dvh-6rem)] w-80 max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-zinc-700 bg-zinc-900 text-zinc-100 shadow-2xl sm:w-96">
+      <header className="flex shrink-0 items-center justify-between border-b border-zinc-800 bg-zinc-950 px-4 py-2"><h3 className="flex items-center gap-2 font-bold"><Users className="h-5 w-5 text-indigo-400" />Friends</h3><button aria-label="Close friends" onClick={() => setIsOpen(false)} className={actionClass}><X className="h-5 w-5" /></button></header>
+      <form onSubmit={e => { e.preventDefault(); void findPlayers(); }} className="flex shrink-0 gap-1 border-b border-zinc-800 p-3"><input aria-label="Search users by name or handle" placeholder="Name or handle…" maxLength={99} value={search} onChange={e => { searchVersion.current++; setSearch(e.target.value); setSearched(false); setSearching(false); setResults([]); }} className="min-w-0 flex-1 rounded-lg border border-zinc-700 bg-zinc-950 px-3 text-base" />{search && <button type="button" aria-label="Clear search" className={actionClass} onClick={() => { searchVersion.current++; setSearch(''); setResults([]); setSearched(false); setSearching(false); }}><X className="h-4 w-4" /></button>}<button aria-label="Search users" disabled={searching || !search.trim()} className={actionClass}><Search className="h-4 w-4" /></button></form>
+      {error && <p role="alert" className="shrink-0 border-b border-zinc-800 px-3 py-2 text-sm text-red-300">{error}</p>}
+      {status && <p role="status" className="shrink-0 px-3 py-2 text-sm text-emerald-300">{status}</p>}
+      <div className="min-h-0 min-w-0 flex-1 space-y-5 overflow-x-hidden overflow-y-auto overscroll-contain p-3">
+        {search ? section('Search results', <>{searching ? <p role="status" className="p-3 text-sm text-zinc-400">Searching…</p> : !searched ? <p className="p-3 text-sm text-zinc-400">Search by a player's name or handle.</p> : !results.length ? <p className="p-3 text-sm text-zinc-400">No matching players.</p> : results.map(person => { const request = incoming.find(r => r.from === person.uid), outgoing = sent.find(r => r.to === person.uid); return <div key={person.uid} className={rowClass}><PersonLabel person={person} />{profile?.friends?.includes(person.uid) ? <span className="ml-auto text-xs text-zinc-400">Friend</span> : request ? controls(request) : outgoing ? <button disabled={pending} className={actionClass} onClick={() => run('cancel', { id: outgoing.id }, 'Request cancelled.')}>Cancel Request</button> : <button disabled={pending} className={actionClass} onClick={() => run('request', { to: person.uid }, 'Friend request sent.')}>Add</button>}</div>; })}</>) : <>
+          {incoming.length > 0 && section('Pending requests', incoming.map(row => <div key={row.id} className={rowClass}><PersonLabel person={row.person} />{controls(row)}</div>))}
+          {invites.length > 0 && section('Game invites', invites.map(row => <div key={row.id} className={rowClass}><PersonLabel person={row.person} detail={row.mode === 'multiplayer' ? 'Multiplayer invitation' : 'PvP invitation'} />{controls(row, true)}</div>))}
+          {sent.length > 0 && section('Sent requests', sent.map(row => <div key={row.id} className={rowClass}><PersonLabel person={row.person} detail="Request pending" /><button disabled={pending} className={actionClass} onClick={() => run('cancel', { id: row.id }, 'Request cancelled.')}>Cancel Request</button></div>))}
+          {section('Your friends', !friends.length ? <p className="p-4 text-sm text-zinc-400">No friends yet. Search for a player to add them.</p> : friends.map(person => <div key={person.uid} className={rowClass}><PersonLabel person={person} detail={person.lastActive && now - person.lastActive < 5 * 60000 ? 'Online' : 'Offline'} />{removeId === person.uid ? <div className="flex w-full flex-wrap items-center justify-end gap-1"><span className="mr-auto text-xs text-zinc-400">Remove this friend?</span><button disabled={pending} className={actionClass} onClick={() => run('remove', { friendId: person.uid }, 'Friend removed.', () => setRemoveId(null))}>Remove</button><button className={actionClass} onClick={() => setRemoveId(null)}>Keep</button></div> : <div className="ml-auto flex shrink-0 items-center"><button className={actionClass} onClick={() => window.location.assign(`/play/pvp?invite=${person.uid}`)}><Swords className="mr-1 inline h-4 w-4" />Challenge</button><button aria-label={`Remove ${person.displayName}`} className={actionClass} onClick={() => setRemoveId(person.uid)}><UserMinus className="h-4 w-4" /></button></div>}</div>))}
+        </>}
+      </div>
+    </section> : <button aria-label="Open friends" aria-expanded={false} onClick={() => setIsOpen(true)} className="relative flex h-14 w-14 items-center justify-center rounded-full bg-indigo-600 text-white shadow-lg hover:bg-indigo-500"><Users className="h-6 w-6" />{incoming.length + invites.length > 0 && <span className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-zinc-950 bg-red-400" />}</button>}
+  </div>;
 }

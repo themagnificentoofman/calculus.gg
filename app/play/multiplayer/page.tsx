@@ -44,7 +44,8 @@ export default function MultiplayerMode() {
 }
 
 function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
-  const { user, profile } = useAuth();
+  const { user, profile, loading: authLoading } = useAuth();
+  const [leaving, setLeaving] = useState(false);
   const [gameId, setGameId] = useState<string | null>(null);
   const [gameData, setGameData] = useState<GameData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -127,11 +128,12 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
   }, [category, difficulty, winCondition, targetScore, timeLimit, penalties]);
 
   useEffect(() => {
-    if (!gameId || !user) return;
+    if (!gameId || !user || leaving) return;
 
     const unsub = gameProgress.watchGame(gameId, user!.uid, async (view) => {
       {
         const data = view as GameData;
+        if (data.status === 'cancelled') { setGameId(null); setGameData(null); setGenerationError('This lobby was cancelled or expired. Start or join a new game.'); return; }
         setGameData(data);
         if (user && restoredGame.current !== gameId) {
           restoredGame.current = gameId;
@@ -147,16 +149,16 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                 if (pSnap.exists()) {
                   setPlayerProfiles(p => ({ ...p, [uid]: pSnap.data() }));
                 }
-              }).catch(error => handleFirestoreError(error, OperationType.GET, `users/${uid}`));
+              }).catch(() => setSaveError('A player profile could not be loaded. Please reconnect.'));
             }
             return prev;
           });
         }
       }
-    }, (error) => handleFirestoreError(error, OperationType.GET, `games/${gameId}`));
+    }, () => setSaveError('Game sync failed. Please reconnect.'));
 
     return () => unsub();
-  }, [gameId, user]);
+  }, [gameId, user, leaving]);
 
   const hostId = gameData?.players?.[0];
 
@@ -284,6 +286,16 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
   };
 
+  const leaveLobby = async () => {
+    if (!gameId || leaving) return;
+    setLeaving(true); setSaveError('');
+    try { await gameProgress.leaveGame(gameId); setGameId(null); setGameData(null); }
+    catch (error) { setSaveError(error instanceof Error ? error.message : 'Could not leave the lobby. Please retry.'); }
+    finally { setLeaving(false); }
+  };
+
+  if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
+
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -329,7 +341,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                 </div>
               </label>
               <div className="relative">
-                <select 
+                <select aria-label="Category"
                   value={category} 
                   onChange={e => setCategory(e.target.value)}
                   className="w-full appearance-none bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all"
@@ -660,9 +672,10 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
           )}
 
           <GameSaveError error={saveError} />
-          <a href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
-            Leave Lobby
-          </a>
+          {saveError && <p role="alert" className="my-3 text-sm text-red-300">{saveError}</p>}
+          <button disabled={leaving} onClick={leaveLobby} className="w-full min-h-11 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors disabled:opacity-50">
+            {leaving ? 'Leaving…' : 'Leave Lobby'}
+          </button>
         </motion.div>
       </div>
     );
