@@ -19,8 +19,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://calculus.ninja'),
-  title: 'calculus.ninja',
-  applicationName: 'calculus.ninja',
+  title: 'Calculus Ninja',
+  applicationName: 'Calculus Ninja',
   icons: { icon: '/ninja-logo.png', apple: '/ninja-logo.png' },
   description: 'A competitive calculus trainer and multiplayer game with various modes, ratings, and step-by-step LaTeX explanations.',
 };

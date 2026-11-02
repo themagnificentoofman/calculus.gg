@@ -16,6 +16,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   --bg-color: #09090b;
   --card-bg: #18181b;
   --text-primary: #fafafa;
@@ -26,6 +27,20 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
+}
+
+/* Keep shared controls clear to keyboard and pointer users. */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 3px;
+}
+
+button:not(:disabled), [role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 .hexagon-bg {

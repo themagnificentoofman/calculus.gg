@@ -136,7 +136,7 @@ export default function SettingsPage() {
             <motion.section
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-6 shadow-sm"
+              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-5 sm:p-6 shadow-sm"
             >
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <User className="w-5 h-5 text-emerald-500" />
@@ -169,8 +169,8 @@ export default function SettingsPage() {
 
                 <div>
                   <label htmlFor="photoURL" className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Profile Picture URL</label>
-                  <div className="flex gap-2">
-                    <div className="relative flex-1">
+                  <div className="flex flex-col gap-2 sm:flex-row">
+                    <div className="relative min-w-0 flex-1">
                       <ImageIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                       <input
                         type="url"
@@ -180,7 +180,7 @@ export default function SettingsPage() {
                         className="w-full dark:bg-zinc-950 bg-white border dark:border-zinc-800 border-zinc-300 rounded-xl py-2.5 pl-10 pr-4 dark:text-white text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors"
                       />
                     </div>
-                    <label className="cursor-pointer flex items-center justify-center px-4 py-2.5 dark:bg-zinc-800 bg-zinc-200 dark:hover:bg-zinc-700 hover:bg-zinc-300 dark:text-white text-zinc-900 rounded-xl font-medium transition-colors border dark:border-zinc-700 border-zinc-300">
+                    <label className="cursor-pointer self-start sm:self-stretch shrink-0 flex items-center justify-center px-4 py-2.5 dark:bg-zinc-800 bg-zinc-200 dark:hover:bg-zinc-700 hover:bg-zinc-300 dark:text-white text-zinc-900 rounded-xl font-medium transition-colors border dark:border-zinc-700 border-zinc-300">
                       Upload
                       <input 
                         type="file" 
@@ -245,7 +245,7 @@ export default function SettingsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-6 shadow-sm"
+              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-5 sm:p-6 shadow-sm"
             >
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-purple-500" />
@@ -286,7 +286,7 @@ export default function SettingsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-6 shadow-sm"
+              className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-5 sm:p-6 shadow-sm"
             >
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <Bell className="w-5 h-5 text-blue-500" />
@@ -294,38 +294,38 @@ export default function SettingsPage() {
               </h2>
               
               <div className="space-y-4">
-                <label className="flex items-center justify-between cursor-pointer">
+                <label className="flex min-h-11 items-center justify-between gap-3 cursor-pointer">
                   <div>
                     <div className="font-bold text-sm">Notifications</div>
                     <div className="text-xs dark:text-zinc-400 text-zinc-500">In-app game invitation alerts</div>
                   </div>
-                  <div className="relative">
+                  <div className="relative shrink-0">
                     <input
                       type="checkbox"
-                      className="sr-only"
+                      className="peer sr-only"
                       checked={notifications}
                       onChange={handleCheckboxChange(setNotifications)}
                     />
-                    <div className={`block w-10 h-6 rounded-full transition-colors ${notifications ? 'bg-emerald-500' : 'dark:bg-zinc-700 bg-zinc-300'}`}></div>
+                    <div className={`block w-10 h-6 rounded-full transition-colors peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-emerald-400 ${notifications ? 'bg-emerald-500' : 'dark:bg-zinc-700 bg-zinc-300'}`}></div>
                     <div className={`absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform ${notifications ? 'translate-x-4' : ''}`}></div>
                   </div>
                 </label>
 
-                <label className="flex items-center justify-between cursor-pointer">
+                <label className="flex min-h-11 items-center justify-between gap-3 cursor-pointer">
                   <div>
                     <div className="font-bold text-sm flex items-center gap-1.5">
                       <Volume2 className="w-4 h-4" /> Sound Effects
                     </div>
                     <div className="text-xs dark:text-zinc-400 text-zinc-500">In-game audio</div>
                   </div>
-                  <div className="relative">
+                  <div className="relative shrink-0">
                     <input
                       type="checkbox"
-                      className="sr-only"
+                      className="peer sr-only"
                       checked={soundEnabled}
                       onChange={handleCheckboxChange(setSoundEnabled)}
                     />
-                    <div className={`block w-10 h-6 rounded-full transition-colors ${soundEnabled ? 'bg-emerald-500' : 'dark:bg-zinc-700 bg-zinc-300'}`}></div>
+                    <div className={`block w-10 h-6 rounded-full transition-colors peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-emerald-400 ${soundEnabled ? 'bg-emerald-500' : 'dark:bg-zinc-700 bg-zinc-300'}`}></div>
                     <div className={`absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform ${soundEnabled ? 'translate-x-4' : ''}`}></div>
                   </div>
                 </label>

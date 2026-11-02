@@ -16,19 +16,19 @@ export default function HelpPage() {
         >
           {/* Header */}
           <div>
-            <h1 className="text-4xl font-bold tracking-tight mb-4">Help & Information</h1>
-            <p className="text-xl text-zinc-400">Everything you need to know about calculus.ninja.</p>
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Help & Information</h1>
+            <p className="text-lg sm:text-xl text-zinc-400">Everything you need to know about Calculus Ninja.</p>
           </div>
 
           {/* Rules */}
-          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-8">
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
+              <div className="w-10 h-10 shrink-0 rounded-xl bg-blue-500/10 flex items-center justify-center">
                 <Shield className="w-5 h-5 text-blue-500" />
               </div>
-              <h2 className="text-2xl font-bold">Rules & Guidelines</h2>
+              <h2 className="text-xl sm:text-2xl font-bold">Rules & Guidelines</h2>
             </div>
-            <ul className="space-y-4 text-zinc-300 list-disc list-inside">
+            <ul className="space-y-4 text-zinc-300 leading-relaxed list-disc list-inside">
               <li><strong>No cheating:</strong> Using external calculators (like WolframAlpha, Symbolab) or AI tools during ranked matches is strictly prohibited.</li>
               <li><strong>Time limits:</strong> Rapid uses the time limit you choose, and each incorrect answer removes 5 seconds. In PvP and Multiplayer, you race against others.</li>
               <li><strong>Scoring:</strong> Correct answers increase your score and earn XP. Rating changes only after competitive matches. Incorrect answers may result in penalties depending on the game mode.</li>
@@ -37,14 +37,14 @@ export default function HelpPage() {
           </section>
 
           {/* Problem Sources */}
-          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-8">
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+              <div className="w-10 h-10 shrink-0 rounded-xl bg-emerald-500/10 flex items-center justify-center">
                 <BookOpen className="w-5 h-5 text-emerald-500" />
               </div>
-              <h2 className="text-2xl font-bold">Problem Sources</h2>
+              <h2 className="text-xl sm:text-2xl font-bold">Problem Sources</h2>
             </div>
-            <p className="text-zinc-300 mb-4">
+            <p className="text-zinc-300 leading-relaxed mb-4">
               Our calculus problems are dynamically generated using OpenAI to provide varied practice questions. The problems cover a wide range of topics including:
             </p>
             <ul className="space-y-2 text-zinc-300 list-disc list-inside">
@@ -58,14 +58,14 @@ export default function HelpPage() {
           </section>
 
           {/* Ratings */}
-          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-8">
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center">
+              <div className="w-10 h-10 shrink-0 rounded-xl bg-purple-500/10 flex items-center justify-center">
                 <Trophy className="w-5 h-5 text-purple-500" />
               </div>
-              <h2 className="text-2xl font-bold">Ratings & Ranks</h2>
+              <h2 className="text-xl sm:text-2xl font-bold">Ratings & Ranks</h2>
             </div>
-            <p className="text-zinc-300 mb-6">
+            <p className="text-zinc-300 leading-relaxed mb-6">
               Rating measures competitive results in PvP and Multiplayer. Each opponent is compared separately using both players’ ratings from the start of the match. An upset earns more than an expected win; a tie counts as half a win. Changes are balanced between players and bounded by 32 points per match, regardless of room size. Difficulty rewards XP, not extra rating. Empty and all-wrong games do not transfer rating. PvP ends when both players finish; target-score Multiplayer ends when the target is reached. Timed games use a shared deadline, and other competitive games have a 30-minute limit.
             </p>
             <p className="text-zinc-400 mb-4 leading-relaxed">
@@ -85,7 +85,7 @@ export default function HelpPage() {
               <div className="flex items-center gap-4 p-4 bg-zinc-950 rounded-2xl border border-zinc-800">
                 <RankIcon rating={1} className="w-8 h-8" />
                 <div>
-                  <div className="font-bold text-amber-700">Bronze</div>
+                  <div className="font-bold text-amber-500">Bronze</div>
                   <div className="text-sm text-zinc-500 font-mono">Below 500 (rated)</div>
                 </div>
               </div>
@@ -128,14 +128,14 @@ export default function HelpPage() {
           </section>
 
           {/* Tips */}
-          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-8">
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center">
+              <div className="w-10 h-10 shrink-0 rounded-xl bg-yellow-500/10 flex items-center justify-center">
                 <Lightbulb className="w-5 h-5 text-yellow-500" />
               </div>
-              <h2 className="text-2xl font-bold">Tips & How to Practice</h2>
+              <h2 className="text-xl sm:text-2xl font-bold">Tips & How to Practice</h2>
             </div>
-            <div className="space-y-6 text-zinc-300">
+            <div className="space-y-6 text-zinc-300 leading-relaxed">
               <div>
                 <h3 className="text-lg font-bold text-white mb-2">1. Start with Test Mode</h3>
                 <p>Use the Test mode to practice without time pressure. Review the step-by-step LaTeX explanations after answering to understand the methodology.</p>
