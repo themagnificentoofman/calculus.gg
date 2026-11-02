@@ -26,4 +26,12 @@ The CI workflow performs these checks without an API key or access to production
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for hosting, Firebase domain setup, scaling limits and the rollback process.
 
+## Contact form
+
+`/contact` sends bug reports, balance feedback, and questions to the owner's fixed inbox through Resend. Set the encrypted server secret `RESEND_API_KEY` and `CONTACT_FROM_EMAIL` to a sending address authorized by that Resend account. No browser credential or public email relay is used. See the [Resend email API](https://resend.com/docs/api-reference/emails/send-email) for sender setup.
+
+The authenticated `/api/contact` endpoint verifies Firebase tokens and takes the reply-to address from the account claims. Existing D1 quota storage enforces a rolling 60-second account cooldown, 10 submissions per account per UTC day, and 100 total per UTC day, including failed delivery attempts. Conditional SQL updates enforce limits across concurrent requests and Worker instances. GET returns the remaining server cooldown after reload. Provider idempotency keys protect an unchanged message retried after an ambiguous delivery failure. The form retains failed messages and never reports delivery success on provider errors.
+
+Local tests use an in-memory SQLite database and fake email delivery; they do not send email. Live delivery requires the two production environment settings above.
+
 Primary domain: https://calculus.ninja
