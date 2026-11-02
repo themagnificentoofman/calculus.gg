@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { usePanel } from '@/lib/use-panel';
 import { apiRequest } from '@/lib/game-session';
-import { Send, MessageSquare } from 'lucide-react';
+import { Send, MessageSquare, X } from 'lucide-react';
 
 interface ChatMessage {
   senderId: string;
@@ -55,8 +55,8 @@ export function Chat({ gameId, messages }: ChatProps) {
               <MessageSquare className="w-4 h-4 text-indigo-500" />
               Game Chat
             </h3>
-            <button aria-label="Close game chat" onClick={() => setIsOpen(false)} className="-m-2 h-11 w-11 shrink-0 flex items-center justify-center dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button aria-label="Close game chat" onClick={() => setIsOpen(false)} className="-m-2 h-11 w-11 shrink-0 flex items-center justify-center rounded-lg hover:bg-zinc-800 dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
+              <X className="w-5 h-5" />
             </button>
           </div>
           
@@ -109,9 +109,9 @@ export function Chat({ gameId, messages }: ChatProps) {
         <button
           aria-label="Open game chat"
           onClick={() => setIsOpen(true)}
-          className="dark:bg-zinc-800 bg-white dark:hover:bg-zinc-700 hover:bg-zinc-50 dark:text-white text-zinc-900 p-3 rounded-full shadow-lg transition-transform hover:scale-105 flex items-center justify-center relative border dark:border-zinc-700 border-zinc-200"
+          className="dark:bg-zinc-800 bg-white dark:hover:bg-zinc-700 hover:bg-zinc-50 dark:text-white text-zinc-900 h-14 w-14 rounded-full shadow-lg transition-transform hover:scale-105 flex items-center justify-center relative border dark:border-zinc-700 border-zinc-200"
         >
-          <MessageSquare className="w-5 h-5" />
+          <MessageSquare className="w-6 h-6" />
           {messages.length > 0 && (
             <span className="absolute -top-1 -right-1 w-3 h-3 bg-indigo-500 rounded-full border-2 dark:border-zinc-900 border-white" />
           )}

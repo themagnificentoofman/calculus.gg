@@ -56,8 +56,8 @@ export default function LeaderboardPage() {
         >
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <h1 className="text-4xl font-bold tracking-tight mb-2 flex items-center gap-3">
-                <Trophy className="shrink-0 w-10 h-10 text-yellow-500" />
+              <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2 flex items-center gap-3">
+                <Trophy className="shrink-0 w-8 h-8 sm:w-10 sm:h-10 text-yellow-500" />
                 Leaderboard
               </h1>
               <p className="dark:text-zinc-400 text-zinc-500">Top players ranked by rating.</p>
@@ -66,11 +66,11 @@ export default function LeaderboardPage() {
             <span className="text-sm text-zinc-500">All-time rating</span>
           </div>
 
-          <div className="dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl overflow-hidden backdrop-blur-sm shadow-sm">
-            <div className="grid grid-cols-12 gap-4 p-4 border-b dark:border-zinc-800/50 border-zinc-200 text-xs font-bold dark:text-zinc-500 text-zinc-400 uppercase tracking-wider">
-              <div className="col-span-2 sm:col-span-1 text-center">Rank</div>
-              <div className="col-span-6 sm:col-span-7">Player</div>
-              <div className="col-span-4 sm:col-span-4 text-right pr-4">Rating</div>
+          <div className="dark:bg-zinc-900/90 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl overflow-hidden backdrop-blur-sm shadow-sm">
+            <div className="grid grid-cols-[2.5rem_minmax(0,1fr)_4.5rem] gap-2 p-3 sm:grid-cols-12 sm:gap-4 sm:p-4 border-b dark:border-zinc-800/50 border-zinc-200 text-xs font-bold dark:text-zinc-500 text-zinc-400 uppercase tracking-wider">
+              <div className="sm:col-span-1 text-center">Rank</div>
+              <div className="sm:col-span-7">Player</div>
+              <div className="sm:col-span-4 text-right sm:pr-4">Rating</div>
             </div>
 
             {error ? <p role="alert" className="p-6 text-red-400">{error}</p> : loading ? (
@@ -92,30 +92,30 @@ export default function LeaderboardPage() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.05 }}
                       key={user.id}
-                      className="grid grid-cols-12 gap-4 p-4 items-center dark:hover:bg-zinc-800/20 hover:bg-zinc-50 transition-colors"
+                      className="grid grid-cols-[2.5rem_minmax(0,1fr)_4.5rem] gap-2 p-3 sm:grid-cols-12 sm:gap-4 sm:p-4 items-center dark:hover:bg-zinc-800/20 hover:bg-zinc-50 transition-colors"
                     >
-                      <div className="col-span-2 sm:col-span-1 flex justify-center">
+                      <div className="sm:col-span-1 flex justify-center">
                         <span className="text-lg font-bold dark:text-zinc-500 text-zinc-400">#{position}</span>
                       </div>
                       
-                      <div className="col-span-6 sm:col-span-7 min-w-0 flex items-center gap-3">
+                      <div className="sm:col-span-7 min-w-0 flex items-center gap-2 sm:gap-3">
                         {user.photoURL ? (
                           /* eslint-disable-next-line @next/next/no-img-element */
-                          <img src={user.photoURL} alt={user.displayName} className="shrink-0 w-10 h-10 rounded-full object-cover border dark:border-zinc-700 border-zinc-200" referrerPolicy="no-referrer" />
+                          <img src={user.photoURL} alt={user.displayName} className="shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover border dark:border-zinc-700 border-zinc-200" referrerPolicy="no-referrer" />
                         ) : (
-                          <div className="shrink-0 w-10 h-10 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-full flex items-center justify-center border border-emerald-500/30">
+                          <div className="shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-full flex items-center justify-center border border-emerald-500/30">
                             <span className="text-sm font-bold text-emerald-500">
                               {user.displayName.charAt(0).toUpperCase()}
                             </span>
                           </div>
                         )}
-                        <span className="min-w-0 font-bold dark:text-zinc-200 text-zinc-800 truncate">{user.displayName}</span>
+                        <span title={user.displayName} className="min-w-0 text-sm sm:text-base font-bold dark:text-zinc-200 text-zinc-800 truncate">{user.displayName}</span>
                       </div>
 
-                      <div className="col-span-4 sm:col-span-4 flex items-center justify-end gap-3 pr-2">
+                      <div className="sm:col-span-4 flex items-center justify-end gap-2 sm:gap-3 sm:pr-2">
                         <div className="flex flex-col items-end">
                           <span className="font-mono font-bold text-emerald-400">{Math.round(user.rating)}</span>
-                          <span className={`text-[10px] font-bold uppercase tracking-wider ${rankInfo.textColor}`}>
+                          <span className={`text-[10px] font-bold tracking-normal sm:uppercase sm:tracking-wider ${rankInfo.textColor}`}>
                             {rankInfo.name}
                           </span>
                         </div>
