@@ -75,3 +75,37 @@ test('legacy JSON control escapes recover the intended commands before trimming'
   assert.equal(normalizeMath('x +\ny'), 'x +\ny');
   assert.equal(questionMathIsRenderable({latexProblem:'$$',options:['1','2','3','4'],explanation:['x=1']}),false);
 });
+
+test('post-match review preserves the submitted answer and renders legacy and structured explanations', async () => {
+  const result = await build({
+    configFile: false, logLevel: 'silent',
+    resolve: { alias: { '@': process.cwd() } },
+    build: { write: false, minify: true, lib: { entry: 'components/LastAnswerReview.tsx', formats: ['es'] }, rolldownOptions: { external: ['react', 'react/jsx-runtime'] } },
+  });
+  const chunk = result[0].output.find(item => item.type === 'chunk' && item.isEntry);
+  await mkdir('.sites-runtime/tests', { recursive: true });
+  const filename = path.resolve('.sites-runtime/tests/last-answer-review.mjs');
+  await writeFile(filename, chunk.code);
+  try {
+    const { LastAnswerReview } = await import(pathToFileURL(filename).href + '?test=' + Date.now());
+    assert.equal(renderToStaticMarkup(createElement(LastAnswerReview, { answer: null })), '');
+    const question = {
+      latexProblem: String.raw`\int x^2\,dx`,
+      options: [String.raw`\frac{x^3}{3}+C`, String.raw`\frac{x^2}{2}+C`],
+      correctIndex: 0,
+    };
+    for (const explanation of [
+      JSON.parse(String.raw`"\textnormal{Use }\frac{x^3}{3}+C"`),
+      [String.raw`\textnormal{Power rule: }\frac{x^{2+1}}{2+1}+C`, String.raw`\underbrace{\frac{x^3}{3}}_{\text{antiderivative}}+C`],
+    ]) for (const selectedOption of [0, 1]) {
+      const html = renderToStaticMarkup(createElement(LastAnswerReview, { answer: { question: { ...question, explanation }, selectedOption } }));
+      assert.ok(html.includes('Review last answer'));
+      assert.ok(html.includes(selectedOption === 0 ? 'Your answer · Correct' : 'Your answer · Incorrect'));
+      assert.equal(html.includes('Correct answer'), selectedOption === 1);
+      for (const math of [question.latexProblem, question.options[selectedOption], ...(Array.isArray(explanation) ? explanation : [explanation])]) {
+        assert.ok(html.includes(renderMath(normalizeMath(math), true)));
+      }
+      assert.ok(!html.includes('math-source'));
+    }
+  } finally { await unlink(filename); }
+});

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { MathDisplay } from '@/components/MathDisplay';
+import { LastAnswerReview, type AnsweredQuestion } from '@/components/LastAnswerReview';
 import { Users, RefreshCw, Home, Play, CheckCircle2, XCircle, ArrowRight, Swords, Info } from 'lucide-react';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
@@ -50,6 +51,11 @@ interface GameData {
 }
 
 export default function PvPMode() {
+  const [match, setMatch] = useState(0);
+  return <PvPMatch key={match} onPlayAgain={() => setMatch(value => value + 1)} />;
+}
+
+function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
   const { user, profile } = useAuth();
   const [gameId, setGameId] = useState<string | null>(null);
   const [gameData, setGameData] = useState<GameData | null>(null);
@@ -58,6 +64,7 @@ export default function PvPMode() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [lastAnswer, setLastAnswer] = useState<AnsweredQuestion | null>(null);
   const [xpEarned, setXpEarned] = useState<number | null>(null);
   const [playerProfiles, setPlayerProfiles] = useState<Record<string, any>>({});
   const [statsUpdated, setStatsUpdated] = useState(false);
@@ -382,6 +389,7 @@ export default function PvPMode() {
     
     const q = gameData.questions[currentIndex];
     const isCorrect = selectedOption === q.correctIndex;
+    setLastAnswer({ question: q, selectedOption });
     
     setSolvedProblems(prev => [...prev, {
       topic: q.topic,
@@ -808,9 +816,11 @@ export default function PvPMode() {
             return null;
           })()}
 
+          <LastAnswerReview answer={lastAnswer} />
+
           <div className="flex flex-col gap-4">
             <button 
-              onClick={() => setGameId(null)}
+              onClick={onPlayAgain}
               className="w-full py-3 bg-red-600 hover:bg-red-500 rounded-xl font-bold transition-colors"
             >
               Play Again
@@ -968,7 +978,7 @@ export default function PvPMode() {
                       <span className="w-8 h-8 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold shrink-0">
                         {String.fromCharCode(65 + i)}
                       </span>
-                      <div className="w-full">
+                      <div className="min-w-0 flex-1">
                         <MathDisplay math={opt} />
                       </div>
                     </button>
