@@ -379,17 +379,17 @@ export function FriendsList() {
       )}
       {isOpen ? (
         <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 sm:w-96 max-w-[calc(100vw-2rem)] overflow-hidden flex flex-col h-[32rem] max-h-[calc(100dvh-6rem)]">
-          <div className="p-4 border-b dark:border-zinc-800 border-zinc-200 flex justify-between items-center dark:bg-zinc-950 bg-zinc-50">
+          <div className="shrink-0 p-4 border-b dark:border-zinc-800 border-zinc-200 flex justify-between items-center dark:bg-zinc-950 bg-zinc-50">
             <h3 className="font-bold flex items-center gap-2">
               <Users className="w-5 h-5 text-indigo-500" />
               Friends
             </h3>
-            <button aria-label="Close friends" onClick={() => setIsOpen(false)} className="dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
+            <button aria-label="Close friends" onClick={() => setIsOpen(false)} className="-m-2 h-11 w-11 shrink-0 flex items-center justify-center dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
               <X className="w-5 h-5" />
             </button>
           </div>
 
-          <div className="p-4 border-b dark:border-zinc-800 border-zinc-200 dark:bg-zinc-900 bg-white/50">
+          <div className="shrink-0 p-4 border-b dark:border-zinc-800 border-zinc-200 dark:bg-zinc-900 bg-white/50">
             <div className="flex gap-2">
               <input
                 type="text"
@@ -397,28 +397,29 @@ export function FriendsList() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                className="min-w-0 flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+                className="min-w-0 flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-base focus:outline-none focus:border-indigo-500 transition-colors"
               />
+              {searchQuery && (
+                <button
+                  aria-label="Clear search"
+                  onClick={() => { setSearchQuery(''); setSearchResults([]); }}
+                  className="min-h-11 min-w-11 shrink-0 flex items-center justify-center rounded-lg dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
               <button
                 aria-label="Search users"
                 onClick={handleSearch}
                 disabled={isSearching}
-                className="bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg transition-colors disabled:opacity-50"
+                className="min-h-11 min-w-11 shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg transition-colors disabled:opacity-50"
               >
                 <Search className="w-4 h-4" />
               </button>
             </div>
-            {searchQuery && (
-              <button 
-                onClick={() => { setSearchQuery(''); setSearchResults([]); }}
-                className="text-xs dark:text-zinc-500 text-zinc-400 dark:hover:text-zinc-300 hover:text-zinc-600 mt-2 transition-colors"
-              >
-                Clear search
-              </button>
-            )}
           </div>
 
-          <div className="flex-1 overflow-y-auto p-3 space-y-6">
+          <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain p-3 space-y-6">
             {/* Search Results */}
             {searchResults.length > 0 && (
               <div className="space-y-2">
@@ -429,25 +430,26 @@ export function FriendsList() {
                   const receivedReq = friendRequests.find(r => r.from === result.uid);
                   
                   return (
-                  <div key={result.uid} className="flex items-center justify-between p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:border-zinc-700 border-zinc-300 transition-colors">
-                    <div className="flex items-center gap-3">
-                      <img src={result.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${result.uid}`} alt={result.displayName} className="w-10 h-10 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <span className="text-sm font-medium">{result.displayName}</span>
+                  <div key={result.uid} className="flex flex-wrap items-center justify-between gap-2 p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:border-zinc-700 border-zinc-300 transition-colors">
+                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
+                      <img src={result.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${result.uid}`} alt={result.displayName} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
+                      <span className="min-w-0 break-words text-sm font-medium">{result.displayName}</span>
                     </div>
                     {isFriend ? (
-                      <span className="text-xs dark:text-zinc-500 text-zinc-400 px-2">Friend</span>
+                      <span className="shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 px-2">Friend</span>
                     ) : sentReq ? (
                       <button 
                         onClick={() => cancelRequest(sentReq.id)}
-                        className="text-xs dark:text-zinc-500 text-zinc-400 hover:text-red-400 px-2 transition-colors"
+                        className="min-h-11 shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 hover:text-red-400 px-2 transition-colors"
                       >
                         Cancel Request
                       </button>
                     ) : receivedReq ? (
-                      <div className="flex items-center gap-1">
+                      <div className="shrink-0 ml-auto flex items-center gap-1">
                         <button 
                           onClick={() => acceptRequest(receivedReq)} 
-                          className="p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
+                          aria-label="Accept friend request"
+                          className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         >
                           <Check className="w-4 h-4" />
                         </button>
@@ -455,7 +457,7 @@ export function FriendsList() {
                     ) : (
                       <button 
                         onClick={() => sendFriendRequest(result.uid)} 
-                        className="flex items-center gap-1 px-3 py-1.5 bg-indigo-600/20 text-indigo-400 hover:bg-indigo-600 hover:text-white rounded-lg text-xs font-bold transition-colors"
+                        className="min-h-11 shrink-0 ml-auto flex items-center gap-1 px-3 py-1.5 bg-indigo-600/20 text-indigo-400 hover:bg-indigo-600 hover:text-white rounded-lg text-xs font-bold transition-colors"
                       >
                         <UserPlus className="w-3.5 h-3.5" /> Add
                       </button>
@@ -470,22 +472,22 @@ export function FriendsList() {
               <div className="space-y-2">
                 <div className="px-2 text-xs font-bold text-amber-500 uppercase tracking-wider">Pending Requests</div>
                 {friendRequests.map(request => (
-                  <div key={request.id} className="flex items-center justify-between p-3 bg-amber-500/5 border border-amber-500/20 rounded-xl">
-                    <div className="flex items-center gap-3">
-                      <img src={request.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${request.from}`} alt={request.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <span className="text-sm font-medium">{request.fromProfile?.displayName || 'Unknown'}</span>
+                  <div key={request.id} className="flex flex-wrap items-center justify-between gap-2 p-3 bg-amber-500/5 border border-amber-500/20 rounded-xl">
+                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
+                      <img src={request.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${request.from}`} alt={request.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
+                      <span className="min-w-0 break-words text-sm font-medium">{request.fromProfile?.displayName || 'Unknown'}</span>
                     </div>
-                    <div className="flex items-center gap-1">
+                    <div className="shrink-0 ml-auto flex items-center gap-1">
                       <button 
                         onClick={() => acceptRequest(request)} 
-                        className="p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
+                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         title="Accept"
                       >
                         <Check className="w-4 h-4" />
                       </button>
                       <button 
                         onClick={() => rejectRequest(request.id)} 
-                        className="p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
+                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
                         title="Reject"
                       >
                         <XCircle className="w-4 h-4" />
@@ -501,25 +503,25 @@ export function FriendsList() {
               <div className="space-y-2">
                 <div className="px-2 text-xs font-bold text-indigo-500 uppercase tracking-wider">Game Invites</div>
                 {gameInvites.map(invite => (
-                  <div key={invite.id} className="flex items-center justify-between p-3 bg-indigo-500/5 border border-indigo-500/20 rounded-xl">
-                    <div className="flex items-center gap-3">
-                      <img src={invite.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${invite.from}`} alt={invite.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 rounded-full dark:bg-zinc-800 bg-zinc-200" />
-                      <div className="flex flex-col">
-                        <span className="text-sm font-medium">{invite.fromProfile?.displayName || 'Unknown'}</span>
+                  <div key={invite.id} className="flex flex-wrap items-center justify-between gap-2 p-3 bg-indigo-500/5 border border-indigo-500/20 rounded-xl">
+                    <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
+                      <img src={invite.fromProfile?.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${invite.from}`} alt={invite.fromProfile?.displayName || 'Unknown'} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
+                      <div className="min-w-0 flex-1 flex flex-col">
+                        <span className="min-w-0 break-words text-sm font-medium">{invite.fromProfile?.displayName || 'Unknown'}</span>
                         <span className="text-xs text-indigo-400">Invited you to play</span>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1">
+                    <div className="shrink-0 ml-auto flex items-center gap-1">
                       <button 
                         onClick={() => acceptInvite(invite)} 
-                        className="p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
+                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         title="Accept"
                       >
                         <Check className="w-4 h-4" />
                       </button>
                       <button 
                         onClick={() => rejectInvite(invite.id)} 
-                        className="p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
+                        className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
                         title="Reject"
                       >
                         <XCircle className="w-4 h-4" />
@@ -542,35 +544,35 @@ export function FriendsList() {
                   friends.map(friend => {
                     const hasInvite = gameInvites.some(i => i.from === friend.uid);
                     return (
-                    <div key={friend.uid} className="flex items-center justify-between p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:bg-zinc-900 bg-white/80 hover:dark:border-zinc-600 border-zinc-400 transition-colors group">
-                      <div className="flex items-center gap-3">
-                        <div className="relative">
-                          <img src={friend.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${friend.uid}`} alt={friend.displayName} className="w-10 h-10 rounded-full dark:bg-zinc-800 bg-zinc-200" />
+                    <div key={friend.uid} className="flex flex-wrap items-center justify-between gap-2 p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:bg-zinc-900 bg-white/80 hover:dark:border-zinc-600 border-zinc-400 transition-colors group">
+                      <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
+                        <div className="relative shrink-0">
+                          <img src={friend.photoURL || `https://api.dicebear.com/7.x/avataaars/svg?seed=${friend.uid}`} alt={friend.displayName} className="w-10 h-10 shrink-0 rounded-full dark:bg-zinc-800 bg-zinc-200" />
                           {isOnline(friend.lastActive) ? (
                             <div className="w-3.5 h-3.5 absolute -bottom-0.5 -right-0.5 bg-green-500 rounded-full border-2 border-zinc-900" />
                           ) : (
                             <div className="w-3.5 h-3.5 absolute -bottom-0.5 -right-0.5 dark:bg-zinc-900 bg-white border-2 border-zinc-500 rounded-full" />
                           )}
                         </div>
-                        <div className="flex flex-col">
-                          <div className="flex items-center gap-2">
-                            <span className="text-sm font-medium dark:text-zinc-200 text-zinc-800">{friend.displayName}</span>
+                        <div className="min-w-0 flex-1 flex flex-col">
+                          <div className="min-w-0 flex items-center gap-2">
+                            <span className="min-w-0 break-words text-sm font-medium dark:text-zinc-200 text-zinc-800">{friend.displayName}</span>
                             {hasInvite && <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" title="Sent you an invite" />}
                           </div>
                           <span className="text-xs dark:text-zinc-500 text-zinc-400">{isOnline(friend.lastActive) ? 'Online' : 'Offline'}</span>
                         </div>
                       </div>
-                      <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="shrink-0 ml-auto flex items-center gap-1">
                         <button 
                           onClick={() => inviteToGame(friend.uid)} 
-                          className="flex items-center gap-1 px-2 py-1.5 text-xs font-medium text-indigo-400 hover:text-white hover:bg-indigo-600 rounded-lg transition-colors"
+                          className="min-h-11 flex items-center gap-1 px-2 py-1.5 text-xs font-medium text-indigo-400 hover:text-white hover:bg-indigo-600 rounded-lg transition-colors"
                           title="Challenge to PvP"
                         >
                           <Swords className="w-3.5 h-3.5" /> Challenge
                         </button>
                         <button 
                           onClick={() => removeFriend(friend.uid)} 
-                          className="p-1.5 text-zinc-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                          className="min-h-11 min-w-11 flex items-center justify-center p-1.5 text-zinc-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
                           title="Remove Friend"
                         >
                           <UserMinus className="w-4 h-4" />
