@@ -121,6 +121,67 @@ test('Server-authoritative games and Firestore attack tests', {skip:!enabled,tim
    await b.call('social',{action:'remove',friendId:a.uid});assert.ok(!(await a.profile()).friends.includes(b.uid));
    const waiting=await game(a,'multiplayer');assert.ok((await getDocs(query(collection(b.db,'games'),where('status','==','waiting'),where('mode','==','multiplayer'),where('progressionVersion','==',3)))).docs.some(d=>d.id===waiting));
   });
+
+  await t.test('Friend request send, duplicate, reciprocal, cancel, decline, accept and removal preserve consent',async()=>{
+   const a=await actor(),b=await actor(),c=await actor();
+   const r=await a.call('social',{action:'request',to:b.uid});
+   await a.call('social',{action:'request',to:b.uid});
+   await b.call('social',{action:'request',to:a.uid},409);
+   await b.call('social',{action:'cancel',id:r.id},403);
+   await a.call('social',{action:'cancel',id:r.id});
+   assert.equal(await store.get(`friendRequests/${r.id}`),null);
+   clock+=2001;const declined=await a.call('social',{action:'request',to:b.uid});
+   await b.call('social',{action:'reject',id:declined.id});
+   await b.call('social',{action:'accept',id:declined.id});
+   assert.deepEqual((await a.profile()).friends,[]);
+   clock+=2001;const accepted=await a.call('social',{action:'request',to:b.uid});
+   // Reconcile a crossed request created by the previous release.
+   await store.transaction(async tx=>{await tx.get(`friendRequests/${b.uid}_${a.uid}`);tx.set(`friendRequests/${b.uid}_${a.uid}`,{from:b.uid,to:a.uid,status:'pending',createdAt:new Date(clock)});});
+   await b.call('social',{action:'accept',id:accepted.id});
+   assert.equal(await store.get(`friendRequests/${b.uid}_${a.uid}`),null);
+   await b.call('social',{action:'remove',friendId:a.uid});
+   await a.call('social',{action:'accept',id:`${b.uid}_${a.uid}`},404);
+   assert.deepEqual((await a.profile()).friends,[]);assert.deepEqual((await b.profile()).friends,[]);
+   const before=await c.profile();await a.call('social',{action:'remove',friendId:c.uid});assert.deepEqual(await c.profile(),before);
+   await a.call('social',{action:'request',to:a.uid},400);
+   assert.deepEqual(await searchPublicProfiles(a.db,a.uid,'no-match-xyz'),[]);
+  });
+  await t.test('Invitations join atomically, reject full/expired/nonfriend rooms and cannot be replayed',async()=>{
+   const a=await actor(),b=await actor(),c=await actor();const request=await a.call('social',{action:'request',to:b.uid});await b.call('social',{action:'accept',id:request.id});
+   const full=await game(a,'pvp');const invite=await a.call('social',{action:'invite',to:b.uid,gameId:full});
+   await c.call('games',{action:'join',gameId:full,mode:'pvp'});
+   await b.call('social',{action:'invite_accept',id:invite.id},409);
+   assert.equal((await store.get(`gameInvites/${invite.id}`)).status,'pending');
+   await b.call('social',{action:'invite_reject',id:invite.id});
+   clock+=2001;const id=await game(a,'pvp');const next=await a.call('social',{action:'invite',to:b.uid,gameId:id});
+   const accepted=await b.call('social',{action:'invite_accept',id:next.id});assert.equal(accepted.gameId,id);assert.equal((await a.game(id)).status,'active');
+   await b.call('social',{action:'invite_accept',id:next.id});assert.equal((await a.game(id)).players.length,2);
+   clock+=2001;const waiting=await game(a,'multiplayer');const stale=await a.call('social',{action:'invite',to:b.uid,gameId:waiting});
+   await b.call('social',{action:'remove',friendId:a.uid});await b.call('social',{action:'invite_accept',id:stale.id},409);
+   await b.call('social',{action:'invite_reject',id:stale.id});
+   await a.call('social',{action:'invite',to:c.uid,gameId:waiting},403);
+  });
+  await t.test('Leaving and cancelling lobbies changes server membership; abandoned lobbies expire',async()=>{
+   const a=await actor(),b=await actor(),c=await actor();const id=await game(a,'multiplayer');
+   await b.call('games',{action:'join',gameId:id,mode:'multiplayer'});
+   await c.call('games',{action:'leave',gameId:id},403);
+   await b.call('games',{action:'leave',gameId:id});assert.deepEqual((await a.game(id)).players,[a.uid]);
+   await denied(getDoc(doc(b.db,'games',id,'reviews',b.uid)));
+   await a.call('games',{action:'start',gameId:id},400);
+   await a.call('games',{action:'leave',gameId:id});assert.equal((await a.game(id)).status,'cancelled');
+   await c.call('games',{action:'join',gameId:id,mode:'multiplayer'},409);
+   assert.ok(!(await loadWaitingGames(c.db,c.uid,'multiplayer')).some(g=>g.id===id));
+   const expired=await game(a,'pvp');clock+=30*60000+1;await b.call('games',{action:'join',gameId:expired,mode:'pvp'},409);
+   await a.call('games',{action:'view',gameId:expired});assert.equal((await a.game(expired)).status,'cancelled');
+   const active=await game(a,'pvp');await b.call('games',{action:'join',gameId:active,mode:'pvp'});await a.call('games',{action:'leave',gameId:active},409);
+   assert.equal((await a.profile()).xp,0);assert.equal((await a.profile()).ratedGames,0);
+  });
+  await t.test('Mutation throttling rejects before any profile or game database work',async()=>{
+   const a=await actor();const before=await a.profile();
+   const limited=createGameApi({store,verify:async()=>({sub:a.uid}),generate:async()=>[],quota:async()=>true,mutationQuota:async()=>false});
+   const response=await limited('profile',new Request('https://test.invalid/api/profile',{method:'POST',headers:{authorization:`Bearer ${a.token}`,'content-type':'application/json'},body:JSON.stringify({patch:{displayName:'Should not change'}})}));
+   assert.equal(response.status,429);assert.deepEqual(await a.profile(),before);
+  });
   await t.test('Missing/forged authentication, cross-site requests and unbounded bodies fail closed',async()=>{
    for(const authorization of ['', 'Bearer forged']) {const r=await api('games',new Request('https://test.invalid/api/games',{method:'POST',headers:{authorization,'content-type':'application/json'},body:'{"action":"sync"}'}));assert.equal(r.status,401);}
    const a=await actor();const r=await api('games',new Request('https://test.invalid/api/games',{method:'POST',headers:{authorization:`Bearer ${a.token}`,origin:'https://evil.invalid','content-type':'application/json'},body:'{}'}));assert.equal(r.status,403);

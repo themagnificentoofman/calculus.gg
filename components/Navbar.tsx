@@ -1,81 +1,39 @@
 'use client';
 
+import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { Home, Play, Trophy, Settings, Calculator, HelpCircle } from 'lucide-react';
+import { Home, Trophy, Settings, HelpCircle, Menu, X } from 'lucide-react';
 import { useAuth } from '@/components/AuthProvider';
 
 export function Navbar() {
   const pathname = usePathname();
-  const { user, profile, logout } = useAuth();
-
-  const navLinks = [
+  const { user, profile, logout, loading } = useAuth();
+  const [open, setOpen] = useState(false);
+  const links = [
     { href: '/', label: 'Home', icon: Home },
     { href: '/leaderboard', label: 'Leaderboard', icon: Trophy },
     { href: '/settings', label: 'Settings', icon: Settings },
   ];
-
-  return (
-    <nav className="border-b border-zinc-800/50 bg-zinc-950/50 backdrop-blur-xl sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
-        <div className="flex items-center gap-8">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
-              <Calculator className="w-5 h-5 text-emerald-500" />
-            </div>
-            <span className="text-lg font-bold tracking-tight text-white">calculus.ninja</span>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => {
-              const Icon = link.icon;
-              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
-              return (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                    isActive 
-                      ? 'bg-zinc-800/50 text-emerald-500' 
-                      : 'text-zinc-400 hover:text-white hover:bg-zinc-800/30'
-                  }`}
-                >
-                  <Icon className="w-4 h-4" />
-                  {link.label}
-                </a>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <a aria-label="Help & Info" href="/help" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
-            <HelpCircle className="w-5 h-5" />
-            <span className="text-sm font-medium hidden sm:inline">Help & Info</span>
-          </a>
-          
-          {user ? (
-            <div className="flex items-center gap-4">
-              <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800">
-                <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-medium text-zinc-300">{profile?.displayName}</span>
-              </div>
-              <button
-                onClick={logout}
-                className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-              >
-                Sign Out
-              </button>
-            </div>
-          ) : (
-            <a
-              href="/auth"
-              className="px-5 py-2 bg-gradient-to-r from-emerald-400 to-cyan-400 text-black hover:from-emerald-300 hover:to-cyan-300 rounded-full text-sm font-bold transition-transform hover:scale-105 shadow-lg shadow-emerald-500/20"
-            >
-              Sign In
-            </a>
-          )}
-        </div>
+  const navigation = links.map(({ href, label, icon: Icon }) => {
+    const active = pathname === href;
+    return <a key={href} href={href} aria-current={active ? 'page' : undefined} className={`min-h-11 flex items-center gap-2 rounded-xl px-3 text-sm font-medium ${active ? 'bg-zinc-800 text-emerald-400' : 'text-zinc-300 hover:bg-zinc-800 hover:text-white'}`}><Icon className="h-4 w-4 shrink-0" />{label}</a>;
+  });
+  return <nav aria-label="Main navigation" className="sticky top-0 z-30 border-b border-zinc-800/70 bg-zinc-950/95 backdrop-blur-xl">
+    <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-3 sm:px-6 lg:px-8">
+      <a href="/" aria-label="calculus.ninja home" className="flex min-w-0 shrink-0 items-center gap-2 rounded-lg">
+        <img src="/ninja-logo.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 object-contain" />
+        <span className="text-base font-bold tracking-tight text-white sm:text-lg">calculus.ninja</span>
+      </a>
+      <div className="hidden xl:flex items-center gap-1">{navigation}</div>
+      <div className="flex shrink-0 items-center gap-1 sm:gap-3">
+        <a aria-label="Help & Info" href="/help" className="flex h-11 min-w-11 items-center justify-center gap-2 rounded-lg text-zinc-300 hover:bg-zinc-800"><HelpCircle className="h-5 w-5" /><span className="hidden lg:inline text-sm">Help & Info</span></a>
+        {loading ? <span role="status" className="hidden sm:block text-xs text-zinc-400">Loading…</span> : user ? <>
+          <span className="hidden lg:block max-w-32 truncate text-sm text-zinc-400">{profile?.displayName}</span>
+          <button onClick={logout} className="hidden sm:block min-h-11 rounded-lg px-2 text-sm text-zinc-300 hover:bg-zinc-800">Sign Out</button>
+        </> : <a href="/auth" className="hidden sm:flex min-h-11 items-center rounded-xl bg-emerald-400 px-4 text-sm font-bold text-zinc-950">Sign In</a>}
+        <button aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)} className="flex h-11 w-11 items-center justify-center rounded-lg text-zinc-300 hover:bg-zinc-800 xl:hidden">{open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}</button>
       </div>
-    </nav>
-  );
+    </div>
+    {open && <div id="mobile-navigation" className="border-t border-zinc-800 p-3 xl:hidden"><div className="grid grid-cols-1 gap-1 sm:grid-cols-3">{navigation}</div>{!loading && <div className="mt-2 border-t border-zinc-800 pt-2 sm:hidden">{user ? <button onClick={logout} className="min-h-11 w-full rounded-xl px-3 text-left text-sm text-zinc-300">Sign Out</button> : <a href="/auth" className="flex min-h-11 items-center rounded-xl px-3 text-sm text-emerald-400">Sign In</a>}</div>}</div>}
+  </nav>;
 }

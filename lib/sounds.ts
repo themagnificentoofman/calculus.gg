@@ -10,6 +10,7 @@ export const playSound = (type: 'correct' | 'incorrect' | 'start' | 'end' | 'tic
     const osc = ctx.createOscillator();
     const gain = ctx.createGain();
     
+    osc.onended = () => { void ctx.close(); };
     osc.connect(gain);
     gain.connect(ctx.destination);
     

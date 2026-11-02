@@ -25,6 +25,7 @@ export const gameProgress = {
   },
   async getGame(id: string) { return (await command('view', id)).game as GameSession; },
   joinGame: (id: string, _uid: string, mode: string) => command('join', id, { mode }),
+  leaveGame: (id: string) => command('leave', id),
   startGame: (id: string, _uid: string) => command('start', id),
   submitAnswer: (id: string, _uid: string, index: number, selectedOption: number) => command('answer', id, { index, selectedOption }),
   completeGame: (id: string, _uid: string) => command('complete', id),
