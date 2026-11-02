@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { BookOpen, Trophy, Lightbulb, Shield, ArrowLeft, Star, Medal, Crown, Zap } from 'lucide-react';
+import { BookOpen, Trophy, Lightbulb, Shield, Mail, ArrowRight } from 'lucide-react';
 
 import { RankIcon } from '@/components/RankDisplay';
 
@@ -19,6 +19,14 @@ export default function HelpPage() {
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Help & Information</h1>
             <p className="text-lg sm:text-xl text-zinc-400">Everything you need to know about Calculus Ninja.</p>
           </div>
+
+          <section className="flex flex-col gap-5 rounded-3xl border border-emerald-400/20 bg-emerald-400/5 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+            <div>
+              <h2 className="text-lg font-semibold">Have a question or feedback?</h2>
+              <p className="mt-1 text-sm leading-relaxed text-zinc-400">Report a bug, flag a balance issue, or get in touch.</p>
+            </div>
+            <a href="/contact" className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-emerald-400 px-4 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-emerald-300"><Mail className="h-4 w-4" aria-hidden="true" />Contact Us<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
+          </section>
 
           {/* Rules */}
           <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
