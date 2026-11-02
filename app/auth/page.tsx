@@ -60,7 +60,7 @@ export default function AuthPage() {
           {isLogin ? 'Welcome Back' : 'Create Account'}
         </h1>
         <p className="dark:text-zinc-400 text-zinc-500 text-center mb-8">
-          {isLogin ? 'Sign in to practice and compete.' : 'Create your calculus.ninja account.'}
+          {isLogin ? 'Sign in to practice and compete.' : 'Create your Calculus Ninja account.'}
         </p>
 
         {error && (

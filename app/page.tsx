@@ -2,7 +2,7 @@
 
 import { useAuth } from '@/components/AuthProvider';
 import { motion } from 'motion/react';
-import { Calculator, Play, Trophy, Users, Zap, ArrowRight, Activity, Target, Brain, Flame, Swords, HelpCircle, Star, Settings } from 'lucide-react';
+import { Calculator, Play, Trophy, Users, Zap, ArrowRight, Activity, Target, Brain, Swords, HelpCircle, Star, Settings } from 'lucide-react';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { getXpProgress, getLevelFromXp, hasRating } from '@/lib/progression';
 
@@ -30,10 +30,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center max-w-4xl mx-auto mt-16 sm:mt-24"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-sm font-medium mb-8">
-              <Flame className="w-4 h-4" />
-              <span>The ultimate calculus training platform</span>
-            </div>
             <h1 className="text-5xl sm:text-7xl font-bold tracking-tighter mb-8 leading-tight">
               Master Calculus.<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
@@ -61,8 +57,8 @@ export default function Home() {
             {/* Profile Sidebar */}
             <div className="xl:col-span-4 space-y-6">
               <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-6 backdrop-blur-sm">
-                <div className="flex min-w-0 items-center gap-3 sm:gap-5 mb-6 relative pr-8">
-                  <a href="/settings" aria-label="Profile settings" className="absolute top-0 right-0 p-2 text-zinc-500 hover:text-white transition-colors">
+                <div className="flex min-w-0 items-center gap-3 sm:gap-5 mb-6 relative pr-10">
+                  <a href="/settings" aria-label="Profile settings" className="absolute top-0 right-0 inline-flex h-11 w-11 items-center justify-center rounded-xl text-zinc-500 hover:bg-zinc-800 hover:text-white transition-colors">
                     <Settings className="w-5 h-5" />
                   </a>
                   {profile?.photoURL ? (
@@ -126,9 +122,9 @@ export default function Home() {
                     
                     return (
                       <div key={topic} className="p-3 rounded-xl bg-zinc-950/50 border border-zinc-800/50">
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex flex-wrap justify-between items-center gap-x-3 gap-y-1 mb-2">
                           <span className="text-sm font-bold capitalize">{topic}</span>
-                          <span className="text-xs font-bold text-emerald-400">Rating: {topicRating !== 0 || (profile?.topicRatedGames?.[topic] || 0) > 0 ? Math.round(topicRating) : 'Unrated'}</span>
+                          <span className="shrink-0 text-xs font-bold text-emerald-400">Rating: {topicRating !== 0 || (profile?.topicRatedGames?.[topic] || 0) > 0 ? Math.round(topicRating) : 'Unrated'}</span>
                         </div>
                         <div className="flex justify-between text-[10px] font-bold text-zinc-500 mb-1 uppercase tracking-wider">
                           <span>Level {topicLevel}</span>
