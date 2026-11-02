@@ -534,7 +534,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         
         <div className="mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium mb-4">
-            <Trophy className="w-4 h-4" />
+            <Trophy className="w-4 h-4 shrink-0" />
             <span>Multiplayer</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Multiplayer</h1>
@@ -714,8 +714,8 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                       className="absolute inset-[-10px] w-[200%] h-[200%] cursor-pointer opacity-0"
                     />
                   </div>
-                  <div className="flex-1 flex gap-2">
-                    <div className="flex-1 bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 flex items-center gap-2">
+                  <div className="min-w-0 flex-1 flex gap-2">
+                    <div className="min-w-0 flex-1 bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 flex items-center gap-2">
                       <span className="text-zinc-500 font-mono text-xs">HEX</span>
                       <input 
                         type="text" 
@@ -769,7 +769,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                 type="text" 
                 id="join-id"
                 placeholder="Enter Game ID..."
-                className="flex-1 bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 font-mono transition-all"
+                className="min-w-0 flex-1 bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 font-mono transition-all"
               />
               <button 
                 onClick={() => {
@@ -798,13 +798,13 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl max-w-md w-full text-center"
+          className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           <Trophy className="w-20 h-20 text-purple-500 mx-auto mb-6 animate-pulse" />
           <h2 className="text-3xl font-bold mb-2">Lobby</h2>
           <p className="text-zinc-400 mb-8">Share this Game ID with your friends:</p>
           
-          <div className="bg-zinc-950 border border-zinc-800 p-4 rounded-xl mb-8 font-mono text-xl text-purple-400 select-all">
+          <div className="bg-zinc-950 border border-zinc-800 p-4 rounded-xl mb-8 font-mono text-base sm:text-xl break-all text-purple-400 select-all">
             {gameId}
           </div>
 
@@ -856,17 +856,17 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                       referrerPolicy="no-referrer"
                     />
                   ) : (
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold">
+                    <div className="w-8 h-8 shrink-0 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold">
                       {playerProfiles[p]?.displayName?.charAt(0) || '?'}
                     </div>
                   )}
-                  <div className="flex items-center gap-2">
-                    <span>{playerProfiles[p]?.displayName || 'Loading...'}</span>
+                  <div className="min-w-0 flex-1 flex items-center gap-2">
+                    <span className="min-w-0 break-words">{playerProfiles[p]?.displayName || 'Loading...'}</span>
                     {playerProfiles[p]?.rating !== undefined && (
-                      <RankIcon rating={playerProfiles[p]?.rating} className="w-4 h-4" />
+                      <RankIcon rating={playerProfiles[p]?.rating} className="w-4 h-4 shrink-0" />
                     )}
                   </div>
-                  {p === gameData.players[0] && <span className="ml-auto text-xs bg-purple-500/20 text-purple-400 px-2 py-1 rounded">HOST</span>}
+                  {p === gameData.players[0] && <span className="ml-auto shrink-0 text-xs bg-purple-500/20 text-purple-400 px-2 py-1 rounded">HOST</span>}
                 </div>
               ))}
             </div>
@@ -902,7 +902,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl max-w-md w-full text-center"
+          className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           {isWinner ? (
             <div className="text-purple-500 text-6xl mb-6">👑</div>
@@ -917,9 +917,9 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
           <div className="space-y-3 mb-8 text-left">
             {sortedPlayers.map((p, i) => (
               <div key={p} className={`flex items-center justify-between p-4 rounded-xl border ${p === user.uid ? 'bg-purple-500/10 border-purple-500/30' : 'bg-zinc-950 border-zinc-800'}`}>
-                <div className="flex items-center gap-3">
+                <div className="min-w-0 flex-1 flex items-center gap-3">
                   <span className="text-zinc-500 font-mono font-bold w-4">{i + 1}.</span>
-                  <div className="flex items-center gap-2">
+                  <div className="min-w-0 flex-1 flex items-center gap-2">
                     {playerProfiles[p]?.photoURL ? (
                       <Image 
                         src={playerProfiles[p].photoURL} 
@@ -930,15 +930,15 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                         referrerPolicy="no-referrer"
                       />
                     ) : (
-                      <div className="w-6 h-6 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold text-xs">
+                      <div className="w-6 h-6 shrink-0 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold text-xs">
                         {playerProfiles[p]?.displayName?.charAt(0) || '?'}
                       </div>
                     )}
-                    <span className={p === user.uid ? 'font-bold' : 'text-white'} style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#ffffff' }}>
+                    <span className={`min-w-0 break-words ${p === user.uid ? 'font-bold' : 'text-white'}`} style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#ffffff' }}>
                       {playerProfiles[p]?.displayName || 'Unknown'}
                     </span>
                     {playerProfiles[p]?.rating !== undefined && (
-                      <RankIcon rating={playerProfiles[p]?.rating} className="w-4 h-4" />
+                      <RankIcon rating={playerProfiles[p]?.rating} className="w-4 h-4 shrink-0" />
                     )}
                   </div>
                 </div>
@@ -947,7 +947,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                   initial={{ scale: 1.5, opacity: 0, y: -10 }}
                   animate={{ scale: 1, opacity: 1, y: 0 }}
                   transition={{ type: 'spring', stiffness: 500, damping: 15 }}
-                  className="font-mono font-bold inline-block"
+                  className="shrink-0 ml-3 whitespace-nowrap font-mono font-bold inline-block"
                   style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#ffffff' }}
                 >
                   {gameData.scores[p] || 0}
@@ -984,7 +984,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     const sortedPlayers = [...gameData.players].sort((a, b) => (gameData.scores[b] || 0) - (gameData.scores[a] || 0));
 
     return (
-      <div className="min-h-screen max-w-6xl mx-auto px-4 py-12 flex gap-8 flex-col lg:flex-row relative">
+      <div className="min-h-screen max-w-6xl mx-auto px-4 py-12 flex gap-8 flex-col lg:flex-row relative overflow-x-clip">
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 
@@ -1000,7 +1000,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         </AnimatePresence>
         
         {/* Main Game Area */}
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <div className="flex justify-between items-center mb-8 bg-zinc-900/50 p-4 rounded-2xl border border-zinc-800">
             <div className="text-zinc-400 font-mono text-sm">
               Question {currentIndex + 1} of {gameData.questions.length}
@@ -1025,15 +1025,15 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -20, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8"
+                className="bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8 mb-8"
               >
-                <div className="text-2xl mb-12 w-full overflow-x-auto py-4">
+                <div className="text-xl sm:text-2xl mb-6 sm:mb-12 w-full overflow-x-auto py-4">
                   <MathDisplay math={q.latexProblem} block />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {q.options.map((opt, i) => {
-                    let btnClass = "p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-4 ";
+                    let btnClass = "p-4 sm:p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-3 sm:gap-4 ";
                     
                     if (!showExplanation) {
                       if (selectedOption === i) {
@@ -1091,7 +1091,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             <motion.div 
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              className={`p-6 rounded-2xl border mb-8 ${isCorrect ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}
+              className={`p-4 sm:p-6 rounded-2xl border mb-8 ${isCorrect ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}
             >
               <div className="flex items-center gap-3 mb-4">
                 {isCorrect ? (
@@ -1141,9 +1141,9 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             <div className="space-y-3">
               {sortedPlayers.map((p, i) => (
                 <div key={p} className={`flex items-center justify-between p-3 rounded-xl border ${p === user.uid ? 'bg-purple-500/10 border-purple-500/30' : 'bg-zinc-950 border-zinc-800'}`}>
-                  <div className="flex items-center gap-3">
+                  <div className="min-w-0 flex-1 flex items-center gap-3">
                     <span className="text-zinc-500 font-mono font-bold w-4">{i + 1}.</span>
-                    <div className="flex items-center gap-1.5">
+                    <div className="min-w-0 flex-1 flex items-center gap-1.5">
                       {playerProfiles[p]?.photoURL ? (
                         <Image 
                           src={playerProfiles[p].photoURL} 
@@ -1154,15 +1154,15 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                           referrerPolicy="no-referrer"
                         />
                       ) : (
-                        <div className="w-5 h-5 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold text-[10px]">
+                        <div className="w-5 h-5 shrink-0 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-500 font-bold text-[10px]">
                           {playerProfiles[p]?.displayName?.charAt(0) || '?'}
                         </div>
                       )}
-                      <span className={`text-sm ${p === user.uid ? 'font-bold' : 'text-zinc-300'}`} style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#d4d4d8' }}>
+                      <span title={playerProfiles[p]?.displayName} className={`min-w-0 truncate text-sm ${p === user.uid ? 'font-bold' : 'text-zinc-300'}`} style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#d4d4d8' }}>
                         {playerProfiles[p]?.displayName?.split(' ')[0] || 'Unknown'}
                       </span>
                       {playerProfiles[p]?.rating !== undefined && (
-                        <RankIcon rating={playerProfiles[p]?.rating} className="w-3 h-3" />
+                        <RankIcon rating={playerProfiles[p]?.rating} className="w-3 h-3 shrink-0" />
                       )}
                     </div>
                   </div>
@@ -1171,7 +1171,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                     initial={{ scale: 1.5, opacity: 0, y: -10 }}
                     animate={{ scale: 1, opacity: 1, y: 0 }}
                     transition={{ type: 'spring', stiffness: 500, damping: 15 }}
-                    className="font-mono font-bold inline-block"
+                    className="shrink-0 ml-3 whitespace-nowrap font-mono font-bold inline-block"
                     style={p === user.uid ? { color: playerColor } : { color: playerProfiles[p]?.color || '#c084fc' }}
                   >
                     {gameData.scores[p] || 0}

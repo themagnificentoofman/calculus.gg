@@ -588,8 +588,8 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                     className="absolute inset-[-10px] w-[200%] h-[200%] cursor-pointer opacity-0"
                   />
                 </div>
-                <div className="flex-1 flex gap-2">
-                  <div className="flex-1 bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 flex items-center gap-2">
+                <div className="min-w-0 flex-1 flex gap-2">
+                  <div className="min-w-0 flex-1 bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2 flex items-center gap-2">
                     <span className="text-zinc-500 font-mono text-xs">HEX</span>
                     <input 
                       type="text" 
@@ -642,7 +642,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
                 type="text" 
                 id="join-id"
                 placeholder="Enter Game ID..."
-                className="flex-1 bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 font-mono transition-all"
+                className="min-w-0 flex-1 bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 font-mono transition-all"
               />
               <button 
                 onClick={() => {
@@ -666,13 +666,13 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl max-w-md w-full text-center"
+          className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           <Users className="w-20 h-20 text-red-500 mx-auto mb-6 animate-pulse" />
           <h2 className="text-3xl font-bold mb-2">Waiting for Opponent...</h2>
           <p className="text-zinc-400 mb-6">Share this Game ID with your friend:</p>
           
-          <div className="bg-zinc-950 border border-zinc-800 p-4 rounded-xl mb-6 font-mono text-xl text-red-400 select-all">
+          <div className="bg-zinc-950 border border-zinc-800 p-4 rounded-xl mb-6 font-mono text-base sm:text-xl break-all text-red-400 select-all">
             {gameId}
           </div>
 
@@ -723,7 +723,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl max-w-md w-full text-center"
+          className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           {isWinner ? (
             <div className="text-red-500 text-6xl mb-6">🏆</div>
@@ -875,7 +875,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     const myRating = profile?.rating || 0;
 
     return (
-      <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative">
+      <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 
@@ -890,11 +890,11 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
           )}
         </AnimatePresence>
 
-        <div className="flex justify-between items-center mb-8 bg-zinc-900/50 p-4 rounded-2xl border border-zinc-800">
-          <div className="flex items-center gap-4">
-            <div className="text-center">
+        <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-3 items-center mb-8 bg-zinc-900/50 p-4 rounded-2xl border border-zinc-800">
+          <div className="min-w-0 flex items-center justify-center gap-4">
+            <div className="min-w-0 text-center">
               <div className="flex items-center gap-1.5 justify-center mb-1">
-                <RankIcon rating={myRating} className="w-3 h-3" />
+                <RankIcon rating={myRating} className="w-3 h-3 shrink-0" />
                 <p className="text-xs text-zinc-500 uppercase font-bold tracking-wider">You</p>
               </div>
               <motion.p 
@@ -910,15 +910,15 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             </div>
           </div>
           
-          <div className="text-zinc-400 font-mono text-sm">
+          <div className="text-zinc-400 font-mono text-sm whitespace-nowrap">
             Q {currentIndex + 1} / {gameData.questions.length}
           </div>
           
-          <div className="flex items-center gap-4">
-            <div className="text-center">
+          <div className="min-w-0 flex items-center justify-center gap-4">
+            <div className="min-w-0 text-center">
               <div className="flex items-center gap-1.5 justify-center mb-1">
-                <p className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{opponentName}</p>
-                <RankIcon rating={opponentRating} className="w-3 h-3" />
+                <p title={opponentName} className="min-w-0 truncate text-xs text-zinc-500 uppercase font-bold tracking-wider">{opponentName}</p>
+                <RankIcon rating={opponentRating} className="w-3 h-3 shrink-0" />
               </div>
               <motion.p 
                 key={opponentScore}
@@ -942,15 +942,15 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -20, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8"
+              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8 mb-8"
             >
-              <div className="text-2xl mb-12 w-full overflow-x-auto py-4">
+              <div className="text-xl sm:text-2xl mb-6 sm:mb-12 w-full overflow-x-auto py-4">
                 <MathDisplay math={q.latexProblem} block />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {q.options.map((opt, i) => {
-                  let btnClass = "p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-4 ";
+                  let btnClass = "p-4 sm:p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-3 sm:gap-4 ";
                   
                   if (!showExplanation) {
                     if (selectedOption === i) {
@@ -1008,7 +1008,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className={`p-6 rounded-2xl border mb-8 ${isCorrect ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}
+            className={`p-4 sm:p-6 rounded-2xl border mb-8 ${isCorrect ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-red-500/10 border-red-500/30'}`}
           >
             <div className="flex items-center gap-3 mb-4">
               {isCorrect ? (
