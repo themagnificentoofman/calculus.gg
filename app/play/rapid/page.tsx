@@ -340,7 +340,7 @@ export default function RapidMode() {
                     <span className="w-8 h-8 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold shrink-0">
                       {String.fromCharCode(65 + i)}
                     </span>
-                    <div className="w-full">
+                    <div className="min-w-0 flex-1">
                       <MathDisplay math={opt} />
                     </div>
                   </button>
