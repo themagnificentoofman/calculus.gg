@@ -1,5 +1,5 @@
 import { normalizeMath, questionMathIsRenderable } from '../render-math.mjs';
-import { latexJsonPattern, topics, validQuestionResponse } from './questions-policy.mjs';
+import { latexJsonPattern, shuffleQuestionOptions, topics, validQuestionResponse } from './questions-policy.mjs';
 
 export const DEFAULT_OPENAI_MODEL = 'gpt-5-mini';
 
@@ -71,7 +71,7 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
         body: JSON.stringify({
           model,
           store: false,
-          instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Check domains and endpoint conditions. Use absolute values in logarithmic antiderivatives unless a positive domain is explicitly stated. All four options must be algebraically distinct. Exactly one option must be correct, and every explanation step must agree with it and correctIndex. Return only the requested JSON structure.',
+          instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Check domains and endpoint conditions. Use absolute values in logarithmic antiderivatives unless a positive domain is explicitly stated. All four options must be algebraically distinct. Exactly one option must be correct, and every explanation step must agree with it and correctIndex. Explain using mathematical expressions, never option letters or indices, because options will be shuffled after generation. Return only the requested JSON structure.',
           input,
           // Leave room for reasoning as well as the visible question JSON.
           max_output_tokens: maxOutputTokens,
@@ -113,7 +113,7 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
 
   const questions = await requestQuestions(prompt, count, Math.min(24000, 2400 + count * 1200));
   const invalid = questions.map((q, index) => questionMathIsRenderable(q) ? -1 : index).filter(index => index >= 0);
-  if (!invalid.length) return questions;
+  if (!invalid.length) return questions.map(q => shuffleQuestionOptions(q));
   // Repair only a small invalid subset once. Do not retry transport failures,
   // refusals, truncated output, or a second malformed result.
   if (invalid.length > 3) throw new QuestionGenerationError('invalid-output');
@@ -129,5 +129,5 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
     }
     questions[index] = corrected;
   }
-  return questions;
+  return questions.map(q => shuffleQuestionOptions(q));
 }
