@@ -25,7 +25,7 @@ test('production-minified math renders the same as unbundled KaTeX', async () =>
 });
 
 import { renderingSamples } from './math-fixtures.mjs';
-import { questionMathIsRenderable } from '../lib/render-math.mjs';
+import { normalizeMath, questionMathIsRenderable } from '../lib/render-math.mjs';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { mkdir, writeFile, unlink } from 'node:fs/promises';
@@ -66,4 +66,12 @@ test('question render validation checks the problem, every option and every expl
   assert.equal(questionMathIsRenderable({ ...q, latexProblem: String.raw`\frac{1}{` }), false);
   assert.equal(questionMathIsRenderable({ ...q, options: ['1',String.raw`\unknown{x}`,'3','4'] }), false);
   assert.equal(questionMathIsRenderable({ ...q, explanation: ['x=1',String.raw`\frac{1}{`] }), false);
+});
+
+
+test('legacy JSON control escapes recover the intended commands before trimming', () => {
+  assert.equal(normalizeMath(JSON.parse(String.raw`"\frac{d}{dx}\bigl(\tan x\bigr)"`)), String.raw`\frac{d}{dx}\bigl(\tan x\bigr)`);
+  assert.equal(normalizeMath(JSON.parse(String.raw`"\textnormal{Use }\frac{x^3}{3}+C"`)), String.raw`\textnormal{Use }\frac{x^3}{3}+C`);
+  assert.equal(normalizeMath('x +\ny'), 'x +\ny');
+  assert.equal(questionMathIsRenderable({latexProblem:'$$',options:['1','2','3','4'],explanation:['x=1']}),false);
 });

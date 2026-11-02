@@ -1,5 +1,5 @@
 import { questionMathIsRenderable } from '../render-math.mjs';
-import { topics, validQuestionResponse } from './questions-policy.mjs';
+import { latexJsonPattern, topics, validQuestionResponse } from './questions-policy.mjs';
 
 export const DEFAULT_OPENAI_MODEL = 'gpt-5-mini';
 
@@ -35,6 +35,7 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
   - You MUST use \\textnormal{...} for any plaintext words or sentences so they aren't italicized as math variables.
   - Do NOT use markdown formatting (like **bold**) inside the LaTeX strings.
   - Break down the explanation into logical steps, providing one step per array item. This ensures proper line breaks and readability.
+  - Escape every LaTeX backslash correctly in JSON (two backslash characters in the JSON source). Never encode a TeX command as a JSON tab, newline, backspace, carriage return, or form feed.
   - Ensure proper spacing using \\quad or \\, where necessary.`;
 
   const schema = {
@@ -46,10 +47,10 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
           type: 'object', additionalProperties: false,
           required: ['latexProblem', 'options', 'correctIndex', 'explanation', 'topic', 'difficulty'],
           properties: {
-            latexProblem: { type: 'string', minLength: 1, maxLength: 8000 },
-            options: { type: 'array', minItems: 4, maxItems: 4, items: { type: 'string', minLength: 1, maxLength: 4000 } },
+            latexProblem: { type: 'string', minLength: 1, maxLength: 8000, pattern: latexJsonPattern },
+            options: { type: 'array', minItems: 4, maxItems: 4, items: { type: 'string', minLength: 1, maxLength: 4000, pattern: latexJsonPattern } },
             correctIndex: { type: 'integer', minimum: 0, maximum: 3 },
-            explanation: { type: 'array', minItems: 1, maxItems: 40, items: { type: 'string', minLength: 1, maxLength: 8000 } },
+            explanation: { type: 'array', minItems: 1, maxItems: 40, items: { type: 'string', minLength: 1, maxLength: 8000, pattern: latexJsonPattern } },
             topic: { type: 'string', enum: category === 'all' ? topics : [category] },
             difficulty: { type: 'string', enum: [difficulty] },
           },
