@@ -1,9 +1,35 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { generateQuestionsOnServer } from '../lib/server/generate-questions.ts';
+import { shuffleQuestionOptions } from '../lib/server/questions-policy.mjs';
 
 const question = { latexProblem: '\\int 2x\\,dx', options: ['x^2+C', '2+C', 'x+C', '2x^2+C'], correctIndex: 0, explanation: ['\\int 2x\\,dx=x^2+C'], topic: 'integration', difficulty: 'easy' };
 const complete = { status: 'completed', output: [{ type: 'reasoning' }, { type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ questions: [question] }) }] }] };
+
+function assertSameQuestion(actual, expected) {
+  const { options: actualOptions, correctIndex: actualIndex, ...actualRest } = actual;
+  const { options: expectedOptions, correctIndex: expectedIndex, ...expectedRest } = expected;
+  assert.deepEqual(actualRest, expectedRest);
+  assert.deepEqual([...actualOptions].sort(), [...expectedOptions].sort());
+  assert.equal(actualOptions[actualIndex], expectedOptions[expectedIndex]);
+}
+
+test('all 24 option permutations preserve the answer, explanation and original question', () => {
+  for (let correctIndex = 0; correctIndex < 4; correctIndex++) {
+    const original = { ...question, correctIndex };
+    const before = structuredClone(original), permutations = new Set(), slots = [0, 0, 0, 0];
+    for (let a = 0; a < 4; a++) for (let b = 0; b < 3; b++) for (let c = 0; c < 2; c++) {
+      const rolls = [(a + 0.5) / 4, (b + 0.5) / 3, (c + 0.5) / 2];
+      const result = shuffleQuestionOptions(original, () => rolls.shift());
+      assertSameQuestion(result, original);
+      permutations.add(JSON.stringify(result.options));
+      slots[result.correctIndex]++;
+    }
+    assert.equal(permutations.size, 24);
+    assert.deepEqual(slots, [6, 6, 6, 6]);
+    assert.deepEqual(original, before);
+  }
+});
 
 test('Responses request uses a server credential and strict schema; extracts output after reasoning', async t => {
   t.mock.method(globalThis, 'fetch', async (url, init) => {
@@ -24,7 +50,10 @@ test('Responses request uses a server credential and strict schema; extracts out
     assert.ok(init.signal instanceof AbortSignal);
     return Response.json(complete);
   });
-  assert.deepEqual(await generateQuestionsOnServer('integration', 'easy', 1, 'test-only'), [question]);
+  t.mock.method(Math, 'random', () => 0);
+  const [result] = await generateQuestionsOnServer('integration', 'easy', 1, 'test-only');
+  assertSameQuestion(result, question);
+  assert.equal(result.correctIndex, 3);
 });
 
 test('refusals, incomplete responses, invalid JSON and wrong question content fail closed', async t => {
@@ -81,7 +110,8 @@ test('one bounded notation repair shares the original deadline and retains valid
     return calls.length===1 ? responseWith([question,bad]) : responseWith([question]);
   });
   const result=await generateQuestionsOnServer('integration','easy',2,'test-only');
-  assert.deepEqual(result,[question,question]);
+  assert.equal(result.length, 2);
+  result.forEach(q => assertSameQuestion(q, question));
   assert.equal(calls.length,2);
   assert.equal(calls[0].signal,calls[1].signal);
   const repair=JSON.parse(calls[1].body);
