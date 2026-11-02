@@ -1,4 +1,4 @@
-import { questionMathIsRenderable } from '../render-math.mjs';
+import { normalizeMath, questionMathIsRenderable } from '../render-math.mjs';
 import { latexJsonPattern, topics, validQuestionResponse } from './questions-policy.mjs';
 
 export const DEFAULT_OPENAI_MODEL = 'gpt-5-mini';
@@ -59,42 +59,75 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
     },
   };
 
-  let response: Response;
-  try {
-    response = await fetch('https://api.openai.com/v1/responses', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model,
-        store: false,
-        instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Check domains and endpoint conditions. Use absolute values in logarithmic antiderivatives unless a positive domain is explicitly stated. All four options must be algebraically distinct. Exactly one option must be correct, and every explanation step must agree with it and correctIndex. Return only the requested JSON structure.',
-        input: prompt,
-        // Leave room for reasoning as well as the visible question JSON.
-        max_output_tokens: Math.min(24000, 2400 + count * 1200),
-        ...(model.startsWith('gpt-5') ? { reasoning: { effort: 'low' } } : {}),
-        text: { format: { type: 'json_schema', name: 'calculus_questions', strict: true, schema } },
-      }),
-      signal: AbortSignal.timeout(70000),
-    });
-  } catch (error) {
-    throw new QuestionGenerationError(error instanceof Error && ['TimeoutError', 'AbortError'].includes(error.name) ? 'timeout' : 'unavailable');
-  }
-  if (!response.ok) throw new QuestionGenerationError('unavailable');
+  type Question = Parameters<typeof questionMathIsRenderable>[0] & { correctIndex: number; topic: string; difficulty: string };
+  // Initial generation and the optional notation repair share one total deadline.
+  const requestSignal = AbortSignal.timeout(70000);
+  async function requestQuestions(input: string, expectedCount: number, maxOutputTokens: number): Promise<Question[]> {
+    let response: Response;
+    try {
+      response = await fetch('https://api.openai.com/v1/responses', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model,
+          store: false,
+          instructions: 'You are a precise calculus problem author. Solve every problem before writing choices. Check domains and endpoint conditions. Use absolute values in logarithmic antiderivatives unless a positive domain is explicitly stated. All four options must be algebraically distinct. Exactly one option must be correct, and every explanation step must agree with it and correctIndex. Return only the requested JSON structure.',
+          input,
+          // Leave room for reasoning as well as the visible question JSON.
+          max_output_tokens: maxOutputTokens,
+          ...(model.startsWith('gpt-5') ? { reasoning: { effort: 'low' } } : {}),
+          text: { format: { type: 'json_schema', name: 'calculus_questions', strict: true, schema: { ...schema, properties: { questions: { ...schema.properties.questions, minItems: expectedCount, maxItems: expectedCount } } } } },
+        }),
+        signal: requestSignal,
+      });
+    } catch (error) {
+      throw new QuestionGenerationError(error instanceof Error && ['TimeoutError', 'AbortError'].includes(error.name) ? 'timeout' : 'unavailable');
+    }
+    if (!response.ok) throw new QuestionGenerationError('unavailable');
 
-  try {
-    const result = await response.json() as {
-      status?: string;
-      output?: Array<{ type: string; content?: Array<{ type: string; text?: string }> }>;
-    };
-    if (result.status !== 'completed' || !Array.isArray(result.output)) throw new Error();
-    const content = result.output.filter(item => item.type === 'message').flatMap(item => item.content || []);
-    if (content.some(item => item.type === 'refusal')) throw new Error();
-    const text = content.filter(item => item.type === 'output_text').map(item => item.text || '').join('');
-    const questions: unknown = JSON.parse(text).questions;
-    if (!validQuestionResponse(questions, { category, difficulty, count })) throw new Error();
-    if (!(questions as Parameters<typeof questionMathIsRenderable>[0][]).every(questionMathIsRenderable)) throw new Error();
-    return questions;
-  } catch {
-    throw new QuestionGenerationError('invalid-output');
+    try {
+      const result = await response.json() as {
+        status?: string;
+        output?: Array<{ type: string; content?: Array<{ type: string; text?: string }> }>;
+      };
+      if (result.status !== 'completed' || !Array.isArray(result.output)) throw new Error();
+      const content = result.output.filter(item => item.type === 'message').flatMap(item => item.content || []);
+      if (content.some(item => item.type === 'refusal')) throw new Error();
+      const text = content.filter(item => item.type === 'output_text').map(item => item.text || '').join('');
+      const raw: unknown = JSON.parse(text).questions;
+      const normalize = (value: unknown) => typeof value === 'string' ? normalizeMath(value) : value;
+      // Normalize recognized JSON escape corruption before checking the canonical
+      // strings. Unrecognized controls remain invalid; no formula is silently lost.
+      const questions = Array.isArray(raw) ? raw.map(q => q && typeof q === 'object' ? {
+        ...q,
+        latexProblem: normalize(q.latexProblem),
+        options: Array.isArray(q.options) ? q.options.map(normalize) : q.options,
+        explanation: Array.isArray(q.explanation) ? q.explanation.map(normalize) : q.explanation,
+      } : q) : raw;
+      if (!validQuestionResponse(questions, { category, difficulty, count: expectedCount })) throw new Error();
+      return questions as Question[];
+    } catch {
+      throw new QuestionGenerationError('invalid-output');
+    }
   }
+
+  const questions = await requestQuestions(prompt, count, Math.min(24000, 2400 + count * 1200));
+  const invalid = questions.map((q, index) => questionMathIsRenderable(q) ? -1 : index).filter(index => index >= 0);
+  if (!invalid.length) return questions;
+  // Repair only a small invalid subset once. Do not retry transport failures,
+  // refusals, truncated output, or a second malformed result.
+  if (invalid.length > 3) throw new QuestionGenerationError('invalid-output');
+  const repaired = await requestQuestions(
+    `Correct only invalid or unsupported LaTeX in these ${invalid.length} calculus questions. Each complete problem, option, and explanation must render directly in KaTeX. Preserve the mathematical meaning, correctIndex, topic, difficulty, and question order. Keep prose inside textnormal commands, balance all groups, and escape each backslash correctly in JSON. Return the corrected questions in the required JSON structure.\n${JSON.stringify(invalid.map(index => questions[index]))}`,
+    invalid.length,
+    Math.min(6000, 2400 + invalid.length * 1200),
+  );
+  for (const [offset, index] of invalid.entries()) {
+    const original = questions[index], corrected = repaired[offset];
+    if (!questionMathIsRenderable(corrected) || corrected.correctIndex !== original.correctIndex || corrected.topic !== original.topic || corrected.difficulty !== original.difficulty) {
+      throw new QuestionGenerationError('invalid-output');
+    }
+    questions[index] = corrected;
+  }
+  return questions;
 }

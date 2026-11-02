@@ -23,7 +23,8 @@ export function MathDisplay({ math, block = false }: MathDisplayProps) {
   // Old saved games can contain unsupported LaTeX. Keep their content visible
   // as escaped React text, and recover automatically when the formula changes.
   if (html === null) {
-    return <span className="math-source whitespace-pre-wrap break-words font-mono text-sm" role="note" aria-label="Formula shown as source">{source}</span>;
+    const readableSource = /[\u0000-\u001f\u007f]/.test(source) ? JSON.stringify(source).slice(1, -1) : source;
+    return <span className="math-source whitespace-pre-wrap break-words font-mono text-sm" role="note" aria-label="Formula shown as source">{readableSource}</span>;
   }
   return <span className={`math-display max-w-full min-w-0 overflow-x-auto overflow-y-hidden ${block ? 'block' : 'inline-block align-middle'}`} dangerouslySetInnerHTML={{ __html: html }} />;
 }
