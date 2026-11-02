@@ -1,10 +1,12 @@
+import { searchPublicProfiles } from '@/lib/stat-queries';
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { db } from '@/firebase';
-import { collection, query, where, getDocs, doc, updateDoc, arrayUnion, arrayRemove, onSnapshot, addDoc, deleteDoc, or } from 'firebase/firestore';
+import { apiRequest } from '@/lib/game-session';
+import { collection, query, where, doc, onSnapshot, getDocs } from 'firebase/firestore';
 import { UserPlus, UserMinus, Users, Search, X, Check, XCircle, Swords } from 'lucide-react';
 import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 
@@ -45,7 +47,7 @@ export function FriendsList() {
   const [isSearching, setIsSearching] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const isOpenRef = useRef(isOpen);
-  
+
   useEffect(() => {
     isOpenRef.current = isOpen;
   }, [isOpen]);
@@ -68,12 +70,12 @@ export function FriendsList() {
         setFriends([]);
         return;
       }
-      
+
       const currentFriendIds = new Set(profile.friends);
       setFriends(prev => prev.filter(f => currentFriendIds.has(f.uid)));
 
       for (const friendId of profile.friends) {
-        const unsub = onSnapshot(doc(db, 'users', friendId), (docSnap) => {
+        const unsub = onSnapshot(doc(db, 'users_public', friendId), (docSnap) => {
           if (docSnap.exists()) {
             const data = docSnap.data();
             setFriends(prev => {
@@ -104,10 +106,10 @@ export function FriendsList() {
       const requests: FriendRequest[] = [];
       for (const docSnap of snapshot.docs) {
         const data = docSnap.data() as Omit<FriendRequest, 'id'>;
-        
+
         // Fetch profile of the sender
         try {
-          const senderDoc = await getDocs(query(collection(db, 'users'), where('__name__', '==', data.from)));
+          const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
           let fromProfile: FriendProfile | undefined;
           if (!senderDoc.empty) {
             const senderData = senderDoc.docs[0].data();
@@ -117,7 +119,7 @@ export function FriendsList() {
               photoURL: senderData.photoURL || '',
             };
           }
-          
+
           requests.push({
             id: docSnap.id,
             ...data,
@@ -159,7 +161,7 @@ export function FriendsList() {
         if (change.type === 'added') {
           const data = change.doc.data() as Omit<GameInvite, 'id'>;
           try {
-            const senderDoc = await getDocs(query(collection(db, 'users'), where('__name__', '==', data.from)));
+            const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
             let fromProfile: FriendProfile | undefined;
             if (!senderDoc.empty) {
               const senderData = senderDoc.docs[0].data();
@@ -178,9 +180,9 @@ export function FriendsList() {
 
       for (const docSnap of snapshot.docs) {
         const data = docSnap.data() as Omit<GameInvite, 'id'>;
-        
+
         try {
-          const senderDoc = await getDocs(query(collection(db, 'users'), where('__name__', '==', data.from)));
+          const senderDoc = await getDocs(query(collection(db, 'users_public'), where('__name__', '==', data.from)));
           let fromProfile: FriendProfile | undefined;
           if (!senderDoc.empty) {
             const senderData = senderDoc.docs[0].data();
@@ -190,7 +192,7 @@ export function FriendsList() {
               photoURL: senderData.photoURL || '',
             };
           }
-          
+
           invites.push({
             id: docSnap.id,
             ...data,
@@ -218,35 +220,8 @@ export function FriendsList() {
     if (!searchQuery.trim() || !user) return;
     setIsSearching(true);
     try {
-      const usersRef = collection(db, 'users');
-      // Query by displayName or handle
-      const q = query(
-        usersRef, 
-        or(
-          where('displayName', '>=', searchQuery),
-          where('handle', '>=', searchQuery)
-        )
-      );
-      const querySnapshot = await getDocs(q);
-      
-      const results: FriendProfile[] = [];
-      querySnapshot.forEach((doc) => {
-        if (doc.id !== user.uid) {
-          const data = doc.data();
-          // Client-side filter to ensure it matches either displayName or handle
-          const matchesName = data.displayName?.toLowerCase().includes(searchQuery.toLowerCase());
-          const matchesHandle = data.handle?.toLowerCase().includes(searchQuery.toLowerCase());
-          
-          if (matchesName || matchesHandle) {
-            results.push({
-              uid: doc.id,
-              displayName: data.displayName || 'Unknown',
-              photoURL: data.photoURL || '',
-            });
-          }
-        }
-      });
-      setSearchResults(results);
+      const results = await searchPublicProfiles(db, user.uid, searchQuery);
+      setSearchResults(results.map(p => ({ uid: p.uid, displayName: p.displayName || 'Unknown', photoURL: p.photoURL || '' })));
     } catch (error) {
       handleFirestoreError(error, OperationType.LIST, 'users');
     } finally {
@@ -257,12 +232,7 @@ export function FriendsList() {
   const sendFriendRequest = async (friendId: string) => {
     if (!user) return;
     try {
-      await addDoc(collection(db, 'friendRequests'), {
-        from: user.uid,
-        to: friendId,
-        status: 'pending',
-        createdAt: Date.now()
-      });
+      await apiRequest('social', { action: 'request', to: friendId });
       // Optionally show a success toast here
       setSearchQuery('');
       setSearchResults([]);
@@ -274,18 +244,7 @@ export function FriendsList() {
   const acceptRequest = async (request: FriendRequest) => {
     if (!user) return;
     try {
-      // Update request status
-      await updateDoc(doc(db, 'friendRequests', request.id), {
-        status: 'accepted'
-      });
-      
-      // Add to each other's friends list
-      await updateDoc(doc(db, 'users', user.uid), {
-        friends: arrayUnion(request.from)
-      });
-      await updateDoc(doc(db, 'users', request.from), {
-        friends: arrayUnion(user.uid)
-      });
+      await apiRequest('social', { action: 'accept', id: request.id });
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `friendRequests/${request.id}`);
     }
@@ -293,9 +252,7 @@ export function FriendsList() {
 
   const rejectRequest = async (requestId: string) => {
     try {
-      await updateDoc(doc(db, 'friendRequests', requestId), {
-        status: 'rejected'
-      });
+      await apiRequest('social', { action: 'reject', id: requestId });
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `friendRequests/${requestId}`);
     }
@@ -303,7 +260,7 @@ export function FriendsList() {
 
   const cancelRequest = async (requestId: string) => {
     try {
-      await deleteDoc(doc(db, 'friendRequests', requestId));
+      await apiRequest('social', { action: 'cancel', id: requestId });
     } catch (error) {
       handleFirestoreError(error, OperationType.DELETE, `friendRequests/${requestId}`);
     }
@@ -311,11 +268,9 @@ export function FriendsList() {
 
   const acceptInvite = async (invite: GameInvite) => {
     try {
-      await updateDoc(doc(db, 'gameInvites', invite.id), {
-        status: 'accepted'
-      });
+      const accepted = await apiRequest('social', { action: 'invite_accept', id: invite.id });
       setIsOpen(false);
-      window.location.assign(`/play/pvp?join=${invite.gameId}`);
+      window.location.assign(`/play/${accepted.mode === 'multiplayer' ? 'multiplayer' : 'pvp'}?join=${invite.gameId}`);
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `gameInvites/${invite.id}`);
     }
@@ -323,9 +278,7 @@ export function FriendsList() {
 
   const rejectInvite = async (inviteId: string) => {
     try {
-      await updateDoc(doc(db, 'gameInvites', inviteId), {
-        status: 'rejected'
-      });
+      await apiRequest('social', { action: 'invite_reject', id: inviteId });
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `gameInvites/${inviteId}`);
     }
@@ -334,12 +287,7 @@ export function FriendsList() {
   const removeFriend = async (friendId: string) => {
     if (!user) return;
     try {
-      await updateDoc(doc(db, 'users', user.uid), {
-        friends: arrayRemove(friendId)
-      });
-      await updateDoc(doc(db, 'users', friendId), {
-        friends: arrayRemove(user.uid)
-      });
+      await apiRequest('social', { action: 'remove', friendId });
       setFriends(prev => prev.filter(f => f.uid !== friendId));
     } catch (error) {
       handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`);
@@ -428,7 +376,7 @@ export function FriendsList() {
                   const isFriend = profile?.friends?.includes(result.uid);
                   const sentReq = sentRequests.find(r => r.to === result.uid);
                   const receivedReq = friendRequests.find(r => r.from === result.uid);
-                  
+
                   return (
                   <div key={result.uid} className="flex flex-wrap items-center justify-between gap-2 p-3 dark:bg-zinc-950 bg-zinc-50/50 border dark:border-zinc-800 border-zinc-200/50 rounded-xl hover:dark:border-zinc-700 border-zinc-300 transition-colors">
                     <div className="min-w-0 flex-1 basis-40 flex items-center gap-3">
@@ -438,7 +386,7 @@ export function FriendsList() {
                     {isFriend ? (
                       <span className="shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 px-2">Friend</span>
                     ) : sentReq ? (
-                      <button 
+                      <button
                         onClick={() => cancelRequest(sentReq.id)}
                         className="min-h-11 shrink-0 ml-auto text-xs dark:text-zinc-500 text-zinc-400 hover:text-red-400 px-2 transition-colors"
                       >
@@ -446,8 +394,8 @@ export function FriendsList() {
                       </button>
                     ) : receivedReq ? (
                       <div className="shrink-0 ml-auto flex items-center gap-1">
-                        <button 
-                          onClick={() => acceptRequest(receivedReq)} 
+                        <button
+                          onClick={() => acceptRequest(receivedReq)}
                           aria-label="Accept friend request"
                           className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         >
@@ -455,8 +403,8 @@ export function FriendsList() {
                         </button>
                       </div>
                     ) : (
-                      <button 
-                        onClick={() => sendFriendRequest(result.uid)} 
+                      <button
+                        onClick={() => sendFriendRequest(result.uid)}
                         className="min-h-11 shrink-0 ml-auto flex items-center gap-1 px-3 py-1.5 bg-indigo-600/20 text-indigo-400 hover:bg-indigo-600 hover:text-white rounded-lg text-xs font-bold transition-colors"
                       >
                         <UserPlus className="w-3.5 h-3.5" /> Add
@@ -478,15 +426,15 @@ export function FriendsList() {
                       <span className="min-w-0 break-words text-sm font-medium">{request.fromProfile?.displayName || 'Unknown'}</span>
                     </div>
                     <div className="shrink-0 ml-auto flex items-center gap-1">
-                      <button 
-                        onClick={() => acceptRequest(request)} 
+                      <button
+                        onClick={() => acceptRequest(request)}
                         className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         title="Accept"
                       >
                         <Check className="w-4 h-4" />
                       </button>
-                      <button 
-                        onClick={() => rejectRequest(request.id)} 
+                      <button
+                        onClick={() => rejectRequest(request.id)}
                         className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
                         title="Reject"
                       >
@@ -512,15 +460,15 @@ export function FriendsList() {
                       </div>
                     </div>
                     <div className="shrink-0 ml-auto flex items-center gap-1">
-                      <button 
-                        onClick={() => acceptInvite(invite)} 
+                      <button
+                        onClick={() => acceptInvite(invite)}
                         className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500 hover:text-white rounded-lg transition-colors"
                         title="Accept"
                       >
                         <Check className="w-4 h-4" />
                       </button>
-                      <button 
-                        onClick={() => rejectInvite(invite.id)} 
+                      <button
+                        onClick={() => rejectInvite(invite.id)}
                         className="min-h-11 min-w-11 flex items-center justify-center p-1.5 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors"
                         title="Reject"
                       >
@@ -563,15 +511,15 @@ export function FriendsList() {
                         </div>
                       </div>
                       <div className="shrink-0 ml-auto flex items-center gap-1">
-                        <button 
-                          onClick={() => inviteToGame(friend.uid)} 
+                        <button
+                          onClick={() => inviteToGame(friend.uid)}
                           className="min-h-11 flex items-center gap-1 px-2 py-1.5 text-xs font-medium text-indigo-400 hover:text-white hover:bg-indigo-600 rounded-lg transition-colors"
                           title="Challenge to PvP"
                         >
                           <Swords className="w-3.5 h-3.5" /> Challenge
                         </button>
-                        <button 
-                          onClick={() => removeFriend(friend.uid)} 
+                        <button
+                          onClick={() => removeFriend(friend.uid)}
                           className="min-h-11 min-w-11 flex items-center justify-center p-1.5 text-zinc-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
                           title="Remove Friend"
                         >

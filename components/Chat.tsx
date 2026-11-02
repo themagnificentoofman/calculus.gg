@@ -2,10 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
-import { db } from '@/firebase';
-import { doc, updateDoc, arrayUnion, onSnapshot } from 'firebase/firestore';
+import { apiRequest } from '@/lib/game-session';
 import { Send, MessageSquare } from 'lucide-react';
-import { handleFirestoreError, OperationType } from '@/lib/firestore-errors';
 
 interface ChatMessage {
   senderId: string;
@@ -20,9 +18,11 @@ interface ChatProps {
 }
 
 export function Chat({ gameId, messages }: ChatProps) {
-  const { user, profile } = useAuth();
+  const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const [newMessage, setNewMessage] = useState('');
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,24 +33,15 @@ export function Chat({ gameId, messages }: ChatProps) {
 
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newMessage.trim() || !user) return;
-
-    const message: ChatMessage = {
-      senderId: user.uid,
-      senderName: profile?.displayName || 'Player',
-      text: newMessage.trim(),
-      timestamp: Date.now()
-    };
-
-    setNewMessage('');
-
+    if (sending || !newMessage.trim() || !user) return;
+    setSending(true); setSendError('');
     try {
-      await updateDoc(doc(db, 'games', gameId), {
-        messages: arrayUnion(message)
-      });
+      await apiRequest('games', { action: 'chat', gameId, text: newMessage.trim() });
+      setNewMessage('');
     } catch (error) {
-      handleFirestoreError(error, OperationType.UPDATE, `games/${gameId}`);
-    }
+      setSendError(error instanceof Error ? error.message : 'Message could not be sent. Please retry.');
+    } finally { setSending(false); }
+
   };
 
   return (
@@ -90,9 +81,11 @@ export function Chat({ gameId, messages }: ChatProps) {
             <div ref={messagesEndRef} />
           </div>
 
+          {sendError && <p role="alert" className="shrink-0 px-3 py-2 text-xs text-red-400">{sendError}</p>}
           <form onSubmit={sendMessage} className="shrink-0 p-3 border-t dark:border-zinc-800 border-zinc-200 dark:bg-zinc-950 bg-zinc-50 flex gap-2">
             <input
               type="text"
+              disabled={sending}
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Type a message..."
@@ -102,7 +95,7 @@ export function Chat({ gameId, messages }: ChatProps) {
             <button
               aria-label="Send message"
               type="submit"
-              disabled={!newMessage.trim()}
+              disabled={sending || !newMessage.trim()}
               className="min-h-11 min-w-11 shrink-0 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:hover:bg-indigo-600 text-white p-2 rounded-lg transition-colors flex items-center justify-center"
             >
               <Send className="w-4 h-4" />

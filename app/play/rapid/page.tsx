@@ -9,7 +9,8 @@ import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
-import { gameProgress } from '@/lib/game-session';
+import { apiRequest, gameProgress } from '@/lib/game-session';
+import { nextUnanswered } from '@/lib/game-progress';
 import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { db } from '@/firebase';
 import { doc, onSnapshot } from 'firebase/firestore';
@@ -55,9 +56,7 @@ export default function RapidMode() {
     setPlayerColor(color);
     if (user) {
       try {
-        const { doc, updateDoc } = await import('firebase/firestore');
-        const { db } = await import('@/firebase');
-        await updateDoc(doc(db, 'users', user.uid), { color });
+        await apiRequest('profile', { patch: { color } });
       } catch (error) {
         console.error('Failed to update color', error);
       }
@@ -74,10 +73,10 @@ export default function RapidMode() {
     if (!user || busy.current) return;
     setGenerationError(''); setSaveError(''); setLoading(true);
     try {
-      const generated = await generateQuestions(category, difficulty, 20);
+      const generated = await generateQuestions(category, difficulty, 20, 'rapid');
       const id = await gameProgress.createGame(user.uid, 'rapid', generated, { category, difficulty, timeLimit });
       finishedRef.current = false;
-      setQuestions(generated); setCurrentIndex(0); setSelectedOption(null); setScore(0);
+      setQuestions((await gameProgress.getGame(id)).questions || []); setCurrentIndex(0); setSelectedOption(null); setScore(0);
       setTimeLeft(timeLimit); setFinished(false); setCountdown(3); setGameId(id);
     } catch (error) { setGenerationError(error instanceof Error ? error.message : 'Could not start the game.'); }
     finally { setLoading(false); }
@@ -87,8 +86,9 @@ export default function RapidMode() {
     if (!gameId || !user || finishedRef.current) return;
     finishedRef.current = true;
     try {
-      await gameProgress.completeGame(gameId, user.uid);
-      setFinished(true); playSound('end');
+      const result = await gameProgress.completeGame(gameId, user.uid);
+      if (result.game.status === 'finished') { setFinished(true); playSound('end'); }
+      else { deadlineRef.current = result.game.deadline || 0; finishedRef.current = false; }
     } catch (error) {
       finishedRef.current = false;
       setSaveError('Could not finish the game. Reconnecting…');
@@ -97,10 +97,8 @@ export default function RapidMode() {
 
   useEffect(() => {
     if (!gameId || !user) return;
-    return onSnapshot(doc(db, 'games', gameId), snapshot => {
-      if (!snapshot.exists()) return;
-      const game = snapshot.data();
-      deadlineRef.current = game.deadline; startTimeRef.current = game.startTime;
+    return gameProgress.watchGame(gameId, user.uid, game => {
+      deadlineRef.current = game.deadline || 0; startTimeRef.current = game.startTime || 0;
       setScore(game.scores[user.uid] || 0);
       if (game.status === 'finished') { finishedRef.current = true; setFinished(true); }
     }, () => setSaveError('Game sync failed. Please reconnect.'));
@@ -137,7 +135,7 @@ export default function RapidMode() {
       deadlineRef.current = result.game.deadline || 0;
       setScore(result.game.scores[user.uid]); setSelectedOption(null);
       if (result.game.status === 'finished') { setFinished(true); finishedRef.current = true; }
-      else setCurrentIndex(i => i + 1);
+      else setCurrentIndex(nextUnanswered(result.game, user.uid));
     } catch (error) { setSaveError(error instanceof Error ? error.message : 'Answer was not saved. Please retry.'); }
     finally { busy.current = false; setSaving(false); }
   };

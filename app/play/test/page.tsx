@@ -7,7 +7,7 @@ import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
-import { gameProgress } from '@/lib/game-session';
+import { apiRequest, gameProgress } from '@/lib/game-session';
 import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 
@@ -48,9 +48,7 @@ export default function TestMode() {
     setPlayerColor(color);
     if (user) {
       try {
-        const { doc, updateDoc } = await import('firebase/firestore');
-        const { db } = await import('@/firebase');
-        await updateDoc(doc(db, 'users', user.uid), { color });
+        await apiRequest('profile', { patch: { color } });
       } catch (error) {
         console.error('Failed to update color', error);
       }
@@ -68,10 +66,11 @@ export default function TestMode() {
     setGenerationError(''); setSaveError('');
     setLoading(true);
     try {
-      const generatedQuestions = await generateQuestions(category, difficulty, count);
+      const generatedQuestions = await generateQuestions(category, difficulty, count, 'test');
       if (generatedQuestions) {
-        setGameId(await gameProgress.createGame(user.uid, 'test', generatedQuestions, { category, difficulty }));
-        setQuestions(generatedQuestions);
+        const id = await gameProgress.createGame(user.uid, 'test', generatedQuestions, { category, difficulty });
+        setGameId(id);
+        setQuestions((await gameProgress.getGame(id)).questions || []);
         setCurrentIndex(0);
         setScore(0);
         setFinished(false);
@@ -99,6 +98,7 @@ export default function TestMode() {
       if (!result.answer) return;
       setSelectedOption(result.answer.selectedOption);
       setScore(result.game.scores[user.uid]);
+      setQuestions(result.game.questions || []);
       playSound(result.answer.correct ? 'correct' : 'incorrect');
       if (result.answer.xp && !result.duplicate) {
         setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
@@ -111,7 +111,7 @@ export default function TestMode() {
   const nextQuestion = () => {
     if (saving || !showExplanation) return;
     if (currentIndex < questions.length - 1) {
-      setCurrentIndex(i => i + 1); setSelectedOption(null); setShowExplanation(false);
+      setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
     } else { playSound('end'); setFinished(true); }
   };
 

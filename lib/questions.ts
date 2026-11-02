@@ -1,28 +1,10 @@
-import { auth } from '@/firebase';
-
-export interface GeneratedQuestion {
-  latexProblem: string;
-  options: string[];
-  correctIndex: number;
-  explanation: string[];
-  topic: string;
-  difficulty: string;
-}
-
-export async function generateQuestions(category: string, difficulty: string, count: number): Promise<GeneratedQuestion[]> {
-  const user = auth.currentUser;
-  if (!user) throw new Error('Please sign in before starting a game.');
-  const token = await user.getIdToken();
-  const response = await fetch('/api/questions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-    body: JSON.stringify({ category, difficulty, count }),
-    signal: AbortSignal.timeout(85000),
-  });
-  const payload = await response.json().catch(() => null) as { error?: string; questions?: GeneratedQuestion[] } | null;
-  if (!response.ok) {
-    throw new Error(payload?.error || 'Question generation is unavailable. Please try again.');
-  }
-  if (!payload || !Array.isArray(payload.questions)) throw new Error('The server returned an invalid question set. Please try again.');
-  return payload.questions;
+import { apiRequest } from './game-session';
+import type { GameMode } from './progression';
+export interface GeneratedQuestion { latexProblem: string; options: string[]; correctIndex: number; explanation: string[]; topic: string; difficulty: string }
+// Generation returns an opaque, owner-bound, single-use reference. Answer keys
+// and explanations stay in server-only storage until the answer is committed.
+export async function generateQuestions(category: string, difficulty: string, count: number, mode: GameMode): Promise<{ questionSetId: string; questionCount: number }> {
+  const result = await apiRequest('questions', { category, difficulty, count, mode });
+  if (typeof result.questionSetId !== 'string' || !Number.isInteger(result.questionCount)) throw new Error('Invalid question set. Please retry.');
+  return { questionSetId: result.questionSetId, questionCount: result.questionCount };
 }
