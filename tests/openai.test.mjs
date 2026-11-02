@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { generateQuestionsOnServer } from '../lib/server/generate-questions.ts';
-import { shuffleQuestionOptions } from '../lib/server/questions-policy.mjs';
+import { questionOptionsAreDistinct, shuffleQuestionOptions } from '../lib/server/questions-policy.mjs';
 
 const question = { latexProblem: '\\int 2x\\,dx', options: ['x^2+C', '2+C', 'x+C', '2x^2+C'], correctIndex: 0, explanation: ['\\int 2x\\,dx=x^2+C'], topic: 'integration', difficulty: 'easy' };
 const complete = { status: 'completed', output: [{ type: 'reasoning' }, { type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ questions: [question] }) }] }] };
@@ -101,6 +101,21 @@ test('recoverable JSON control escapes are returned as canonical LaTeX', async t
 
 
 const responseWith = questions => Response.json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({questions})}]}]});
+
+test('duplicate choices are repaired once; persistent duplicates fail before a game starts', async t => {
+  const duplicate = { ...question, options: [question.options[0], question.options[0], ...question.options.slice(2)] };
+  assert.equal(questionOptionsAreDistinct({ options: [String.raw`\dfrac{x}{2}`, String.raw`\frac{x}{2}`, 'x', '2x'] }), false);
+  assert.equal(questionOptionsAreDistinct({ options: [String.raw`\left(x+1\right)`, '(x + 1)', 'x', '2x'] }), false);
+  for (const repaired of [question, duplicate]) {
+    let calls = 0;
+    t.mock.method(globalThis, 'fetch', async () => responseWith([++calls === 1 ? duplicate : repaired]));
+    const result = generateQuestionsOnServer('integration', 'easy', 1, 'test-only');
+    if (repaired === duplicate) await assert.rejects(result, e => e.kind === 'invalid-output');
+    else assertSameQuestion((await result)[0], question);
+    assert.equal(calls, 2);
+    t.mock.restoreAll();
+  }
+});
 
 test('one bounded notation repair shares the original deadline and retains valid questions', async t => {
   const bad = {...question, explanation:[String.raw`\frac{x^3}{`]};

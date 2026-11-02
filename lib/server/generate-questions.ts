@@ -1,5 +1,5 @@
 import { normalizeMath, questionMathIsRenderable } from '../render-math.mjs';
-import { latexJsonPattern, shuffleQuestionOptions, topics, validQuestionResponse } from './questions-policy.mjs';
+import { latexJsonPattern, questionOptionsAreDistinct, shuffleQuestionOptions, topics, validQuestionResponse } from './questions-policy.mjs';
 
 export const DEFAULT_OPENAI_MODEL = 'gpt-5-mini';
 
@@ -112,19 +112,20 @@ export async function generateQuestionsOnServer(category: string, difficulty: st
   }
 
   const questions = await requestQuestions(prompt, count, Math.min(24000, 2400 + count * 1200));
-  const invalid = questions.map((q, index) => questionMathIsRenderable(q) ? -1 : index).filter(index => index >= 0);
+  const isReady = (q: Question) => questionMathIsRenderable(q) && questionOptionsAreDistinct(q);
+  const invalid = questions.map((q, index) => isReady(q) ? -1 : index).filter(index => index >= 0);
   if (!invalid.length) return questions.map(q => shuffleQuestionOptions(q));
   // Repair only a small invalid subset once. Do not retry transport failures,
   // refusals, truncated output, or a second malformed result.
   if (invalid.length > 3) throw new QuestionGenerationError('invalid-output');
   const repaired = await requestQuestions(
-    `Correct only invalid or unsupported LaTeX in these ${invalid.length} calculus questions. Each complete problem, option, and explanation must render directly in KaTeX. Preserve the mathematical meaning, correctIndex, topic, difficulty, and question order. Keep prose inside textnormal commands, balance all groups, and escape each backslash correctly in JSON. Return the corrected questions in the required JSON structure.\n${JSON.stringify(invalid.map(index => questions[index]))}`,
+    `Repair these ${invalid.length} calculus questions. Correct invalid or unsupported LaTeX and replace duplicate distractors. Each complete problem, option, and explanation must render directly in KaTeX. All four options must be mathematically distinct with exactly one correct answer at correctIndex. Preserve the problem, the correct answer's mathematical meaning, correctIndex, topic, difficulty, and question order. Keep prose inside textnormal commands, balance all groups, and escape each backslash correctly in JSON. Return the corrected questions in the required JSON structure.\n${JSON.stringify(invalid.map(index => questions[index]))}`,
     invalid.length,
     Math.min(6000, 2400 + invalid.length * 1200),
   );
   for (const [offset, index] of invalid.entries()) {
     const original = questions[index], corrected = repaired[offset];
-    if (!questionMathIsRenderable(corrected) || corrected.correctIndex !== original.correctIndex || corrected.topic !== original.topic || corrected.difficulty !== original.difficulty) {
+    if (!isReady(corrected) || corrected.correctIndex !== original.correctIndex || corrected.topic !== original.topic || corrected.difficulty !== original.difficulty) {
       throw new QuestionGenerationError('invalid-output');
     }
     questions[index] = corrected;
