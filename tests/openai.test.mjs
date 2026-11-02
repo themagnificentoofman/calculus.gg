@@ -14,6 +14,12 @@ test('Responses request uses a server credential and strict schema; extracts out
     assert.equal(body.text.format.strict, true);
     assert.equal(body.text.format.schema.properties.questions.minItems, 1);
     assert.deepEqual(body.text.format.schema.properties.questions.items.properties.topic.enum, ['integration']);
+    const fields = body.text.format.schema.properties.questions.items.properties;
+    for (const field of [fields.latexProblem, fields.options.items, fields.explanation.items]) {
+      const allowed = new RegExp(field.pattern);
+      assert.ok(allowed.test(String.raw`\frac{x}{2}`));
+      assert.equal(allowed.test(JSON.parse(String.raw`"\frac{x}{2}"`)), false);
+    }
     assert.equal(body.max_output_tokens, 3600);
     assert.ok(init.signal instanceof AbortSignal);
     return Response.json(complete);
@@ -51,4 +57,14 @@ test('unrenderable model explanations are rejected before the game starts', asyn
   const bad = { ...question, explanation: [String.raw`\frac{x^{3}}{`] };
   t.mock.method(globalThis, 'fetch', async () => Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ questions: [bad] }) }] }] }));
   await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'), e => e.kind === 'invalid-output');
+});
+
+
+test('new model output cannot silently render JSON control escapes as different mathematics', async t => {
+  for (const source of [JSON.parse(String.raw`"\frac{x}{2}"`),JSON.parse(String.raw`"\textnormal{Test}"`)]) {
+    const bad = {...question, latexProblem:source};
+    t.mock.method(globalThis, 'fetch', async () => Response.json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({questions:[bad]})}]}]}));
+    await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'), e=>e.kind==='invalid-output');
+    t.mock.restoreAll();
+  }
 });

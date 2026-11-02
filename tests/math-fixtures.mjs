@@ -9,6 +9,8 @@ export const renderingSamples = [
   { name: 'piecewise cases', math: String.raw`f(x)=\begin{cases}x^2&\textnormal{if }x\ge0\\-x&\textnormal{otherwise}\end{cases}` },
   { name: 'aligned explanation', math: String.raw`\begin{aligned}\int 2x\,dx&=x^2+C\\\textnormal{Check: }\frac{d}{dx}(x^2+C)&=2x\end{aligned}` },
   { name: 'series', math: String.raw`\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}` },
+  { name: 'legacy JSON escape corruption', math: JSON.parse(String.raw`"\frac{d}{dx}\bigl(\tan x\bigr)"`) },
+  { name: 'legacy explanation escape corruption', math: JSON.parse(String.raw`"\textnormal{Use }\frac{x^3}{3}+C"`) },
   { name: 'matrix', math: String.raw`\begin{pmatrix}1&2\\3&4\end{pmatrix}` },
   { name: 'logarithm domain', math: String.raw`\int\frac{dx}{x}=\ln|x|+C,\quad x\ne0` },
   { name: 'legacy display delimiters', math: String.raw`$$\frac{x^3}{3}+C$$` },
