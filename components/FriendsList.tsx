@@ -378,13 +378,13 @@ export function FriendsList() {
         </div>
       )}
       {isOpen ? (
-        <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 sm:w-96 overflow-hidden flex flex-col h-[32rem]">
+        <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 sm:w-96 max-w-[calc(100vw-2rem)] overflow-hidden flex flex-col h-[32rem] max-h-[calc(100dvh-6rem)]">
           <div className="p-4 border-b dark:border-zinc-800 border-zinc-200 flex justify-between items-center dark:bg-zinc-950 bg-zinc-50">
             <h3 className="font-bold flex items-center gap-2">
               <Users className="w-5 h-5 text-indigo-500" />
               Friends
             </h3>
-            <button onClick={() => setIsOpen(false)} className="dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
+            <button aria-label="Close friends" onClick={() => setIsOpen(false)} className="dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
               <X className="w-5 h-5" />
             </button>
           </div>
@@ -397,9 +397,10 @@ export function FriendsList() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                className="flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+                className="min-w-0 flex-1 dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
               />
               <button
+                aria-label="Search users"
                 onClick={handleSearch}
                 disabled={isSearching}
                 className="bg-indigo-600 hover:bg-indigo-500 text-white p-2 rounded-lg transition-colors disabled:opacity-50"
@@ -584,6 +585,7 @@ export function FriendsList() {
         </div>
       ) : (
         <button
+          aria-label="Open friends"
           onClick={() => setIsOpen(true)}
           className="bg-indigo-600 hover:bg-indigo-500 text-white p-4 rounded-full shadow-lg shadow-indigo-500/20 transition-transform hover:scale-105 flex items-center justify-center relative"
         >

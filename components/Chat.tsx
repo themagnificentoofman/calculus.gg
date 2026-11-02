@@ -56,13 +56,13 @@ export function Chat({ gameId, messages }: ChatProps) {
   return (
     <div className="fixed bottom-4 left-4 z-40">
       {isOpen ? (
-        <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 flex flex-col h-96 overflow-hidden">
+        <div className="dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-2xl shadow-2xl w-80 max-w-[calc(100vw-2rem)] mb-16 sm:mb-0 flex flex-col h-96 max-h-[calc(100dvh-10rem)] sm:max-h-[calc(100dvh-6rem)] overflow-hidden">
           <div className="p-3 border-b dark:border-zinc-800 border-zinc-200 flex justify-between items-center dark:bg-zinc-950 bg-zinc-50">
             <h3 className="font-bold flex items-center gap-2 text-sm dark:text-white text-zinc-900">
               <MessageSquare className="w-4 h-4 text-indigo-500" />
               Game Chat
             </h3>
-            <button onClick={() => setIsOpen(false)} className="dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
+            <button aria-label="Close game chat" onClick={() => setIsOpen(false)} className="dark:text-zinc-400 text-zinc-500 dark:hover:text-white hover:text-zinc-900 transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
           </div>
@@ -96,10 +96,11 @@ export function Chat({ gameId, messages }: ChatProps) {
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 dark:text-white text-zinc-900 transition-colors"
+              className="min-w-0 flex-1 dark:bg-zinc-900 bg-white border dark:border-zinc-800 border-zinc-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 dark:text-white text-zinc-900 transition-colors"
               maxLength={100}
             />
             <button
+              aria-label="Send message"
               type="submit"
               disabled={!newMessage.trim()}
               className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:hover:bg-indigo-600 text-white p-2 rounded-lg transition-colors flex items-center justify-center"
@@ -110,6 +111,7 @@ export function Chat({ gameId, messages }: ChatProps) {
         </div>
       ) : (
         <button
+          aria-label="Open game chat"
           onClick={() => setIsOpen(true)}
           className="dark:bg-zinc-800 bg-white dark:hover:bg-zinc-700 hover:bg-zinc-50 dark:text-white text-zinc-900 p-3 rounded-full shadow-lg transition-transform hover:scale-105 flex items-center justify-center relative border dark:border-zinc-700 border-zinc-200"
         >
