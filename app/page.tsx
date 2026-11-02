@@ -4,7 +4,7 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion } from 'motion/react';
 import { Calculator, Play, Trophy, Users, Zap, ArrowRight, Activity, Target, Brain, Flame, Swords, HelpCircle, Star, Settings } from 'lucide-react';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
-import { getXpProgress, getLevelFromXp } from '@/lib/progression';
+import { getXpProgress, getLevelFromXp, hasRating } from '@/lib/progression';
 
 import { GameHistory } from '@/components/GameHistory';
 
@@ -41,7 +41,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-              A competitive calculus trainer featuring real-time multiplayer, Elo ratings, and step-by-step LaTeX explanations powered by AI.
+              A competitive calculus trainer featuring real-time multiplayer, ratings, and step-by-step LaTeX explanations powered by AI.
             </p>
             <a
               href="/auth"
@@ -81,9 +81,9 @@ export default function Home() {
                       <div className="text-sm text-zinc-400 mb-2">@{profile.handle}</div>
                     )}
                     <div className="flex flex-col gap-2">
-                      <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md ${getRankInfo(profile?.rating || 0).bgColor} ${getRankInfo(profile?.rating || 0).textColor} text-xs font-bold uppercase tracking-wider w-fit`}>
-                        <RankIcon rating={profile?.rating || 0} className="w-3 h-3" />
-                        {getRankInfo(profile?.rating || 0).name}
+                      <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md ${getRankInfo(profile?.rating || 0, hasRating(profile)).bgColor} ${getRankInfo(profile?.rating || 0, hasRating(profile)).textColor} text-xs font-bold uppercase tracking-wider w-fit`}>
+                        <RankIcon rated={hasRating(profile)} rating={profile?.rating || 0} className="w-3 h-3" />
+                        {getRankInfo(profile?.rating || 0, hasRating(profile)).name}
                       </div>
                       <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-zinc-800 text-zinc-300 text-xs font-bold uppercase tracking-wider w-fit">
                         Level {currentLevel}
@@ -107,9 +107,11 @@ export default function Home() {
                 
                 <div className="grid grid-cols-2 gap-3">
                   <StatCard label="Rating" value={Math.round(profile?.rating || 0)} icon={<Activity className="w-4 h-4 text-emerald-500" />} />
-                  <StatCard label="Matches" value={profile?.gamesPlayed || 0} icon={<Brain className="w-4 h-4 text-blue-500" />} />
+                  <StatCard label="Games" value={profile?.gamesPlayed || 0} icon={<Brain className="w-4 h-4 text-blue-500" />} />
                   <StatCard label="Wins" value={profile?.wins || 0} icon={<Trophy className="w-4 h-4 text-yellow-500" />} />
                   <StatCard label="Losses" value={profile?.losses || 0} icon={<XCircle className="w-4 h-4 text-red-500" />} />
+                  <StatCard label="Draws" value={profile?.draws || 0} icon={<Target className="w-4 h-4 text-cyan-500" />} />
+                  <StatCard label="Rated games" value={profile?.ratedGames ?? ((profile?.wins || 0) + (profile?.losses || 0) + (profile?.draws || 0))} icon={<Swords className="w-4 h-4 text-purple-500" />} />
                 </div>
               </div>
 
@@ -126,7 +128,7 @@ export default function Home() {
                       <div key={topic} className="p-3 rounded-xl bg-zinc-950/50 border border-zinc-800/50">
                         <div className="flex justify-between items-center mb-2">
                           <span className="text-sm font-bold capitalize">{topic}</span>
-                          <span className="text-xs font-bold text-emerald-400">Rating: {Math.round(topicRating)}</span>
+                          <span className="text-xs font-bold text-emerald-400">Rating: {topicRating !== 0 || (profile?.topicRatedGames?.[topic] || 0) > 0 ? Math.round(topicRating) : 'Unrated'}</span>
                         </div>
                         <div className="flex justify-between text-[10px] font-bold text-zinc-500 mb-1 uppercase tracking-wider">
                           <span>Level {topicLevel}</span>
@@ -173,7 +175,7 @@ export default function Home() {
                 />
                 <ModeCard
                   title="PvP"
-                  description="Head-to-head calculus battle. Race to solve the most problems. Winner takes Elo."
+                  description="Head-to-head calculus battle. Race to solve the most problems. Compete to improve your rating."
                   icon={<Swords className="w-6 h-6" />}
                   href="/play/pvp"
                   color="from-red-500/20 to-rose-500/5"

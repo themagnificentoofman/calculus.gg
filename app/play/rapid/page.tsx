@@ -9,7 +9,10 @@ import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
-import { calculateProblemXp, SolvedProblem } from '@/lib/progression';
+import { gameProgress } from '@/lib/game-session';
+import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
+import { db } from '@/firebase';
+import { doc, onSnapshot } from 'firebase/firestore';
 
 interface Question {
   latexProblem: string;
@@ -38,7 +41,13 @@ export default function RapidMode() {
   const [xpEarned, setXpEarned] = useState<number | null>(null);
   const { profile } = useAuth();
   const [playerColor, setPlayerColor] = useState(profile?.color || '#eab308');
-  const solvedProblemsRef = useRef<SolvedProblem[]>([]);
+  const [gameId, setGameId] = useState<string | null>(null);
+  const busy = useRef(false);
+  const finishedRef = useRef(false);
+  const deadlineRef = useRef(0);
+  const startTimeRef = useRef(0);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
   
   const colors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#06b6d4', '#3b82f6', '#8b5cf6', '#d946ef', '#f43f5e'];
 
@@ -61,129 +70,76 @@ export default function RapidMode() {
     }
   }, [profile?.color]);
   
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const countdownRef = useRef<NodeJS.Timeout | null>(null);
-
   const startGame = async () => {
-    setGenerationError('');
-    setLoading(true);
+    if (!user || busy.current) return;
+    setGenerationError(''); setSaveError(''); setLoading(true);
     try {
-      // Generate 20 questions, which should be enough for a rapid mode
-      const generatedQuestions = await generateQuestions(category, difficulty, 20);
-      if (generatedQuestions) {
-        setQuestions(generatedQuestions);
-        setCurrentIndex(0);
-        setSelectedOption(null);
-        setScore(0);
-        solvedProblemsRef.current = [];
-        setTimeLeft(timeLimit);
-        setFinished(false);
-        setCountdown(3);
-      }
-    } catch (error) {
-      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
-    } finally {
-      setLoading(false);
-    }
+      const generated = await generateQuestions(category, difficulty, 20);
+      const id = await gameProgress.createGame(user.uid, 'rapid', generated, { category, difficulty, timeLimit });
+      finishedRef.current = false;
+      setQuestions(generated); setCurrentIndex(0); setSelectedOption(null); setScore(0);
+      setTimeLeft(timeLimit); setFinished(false); setCountdown(3); setGameId(id);
+    } catch (error) { setGenerationError(error instanceof Error ? error.message : 'Could not start the game.'); }
+    finally { setLoading(false); }
   };
 
-  const finishGame = useCallback(() => {
-    setFinished(true);
-    if (timerRef.current) clearInterval(timerRef.current);
-    playSound('end');
-    
-    if (user) {
-      import('firebase/firestore').then(({ doc, updateDoc, increment }) => {
-        import('@/firebase').then(({ db }) => {
-          updateDoc(doc(db, 'users', user.uid), {
-            gamesPlayed: increment(1)
-          }).catch(error => handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`));
-        });
-      });
+  const finishGame = useCallback(async () => {
+    if (!gameId || !user || finishedRef.current) return;
+    finishedRef.current = true;
+    try {
+      await gameProgress.completeGame(gameId, user.uid);
+      setFinished(true); playSound('end');
+    } catch (error) {
+      finishedRef.current = false;
+      setSaveError('Could not finish the game. Reconnecting…');
     }
-  }, [user]);
-
-  const startTimer = useCallback(() => {
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!);
-          finishGame();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-  }, [finishGame]);
+  }, [gameId, user]);
 
   useEffect(() => {
-    if (countdown === null) return;
-    
-    if (countdown > 0) {
-      playSound('tick');
-      countdownRef.current = setTimeout(() => {
-        setCountdown(countdown - 1);
-      }, 1000);
-    } else if (countdown === 0) {
-      playSound('start');
-      setCountdown(null);
-      startTimer();
-    }
-    
-    return () => {
-      if (countdownRef.current) clearTimeout(countdownRef.current);
-    };
-  }, [countdown, startTimer]);
+    if (!gameId || !user) return;
+    return onSnapshot(doc(db, 'games', gameId), snapshot => {
+      if (!snapshot.exists()) return;
+      const game = snapshot.data();
+      deadlineRef.current = game.deadline; startTimeRef.current = game.startTime;
+      setScore(game.scores[user.uid] || 0);
+      if (game.status === 'finished') { finishedRef.current = true; setFinished(true); }
+    }, () => setSaveError('Game sync failed. Please reconnect.'));
+  }, [gameId, user]);
 
   useEffect(() => {
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-      if (countdownRef.current) clearTimeout(countdownRef.current);
+    if (!gameId || finished) return;
+    const tick = () => {
+      if (!deadlineRef.current) return;
+      const untilStart = Math.max(0, Math.ceil((startTimeRef.current - Date.now()) / 1000));
+      setCountdown(untilStart || null);
+      const remaining = Math.max(0, Math.ceil((deadlineRef.current - Math.max(Date.now(), startTimeRef.current)) / 1000));
+      setTimeLeft(remaining);
+      if (!untilStart && !remaining) void finishGame();
     };
-  }, []);
+    tick(); const interval = setInterval(tick, 200);
+    return () => clearInterval(interval);
+  }, [gameId, finished, finishGame]);
 
   const handleOptionSelect = (index: number) => {
-    setSelectedOption(index);
+    if (!saving && !finished && countdown === null) setSelectedOption(index);
   };
 
-  const checkAnswer = () => {
-    if (selectedOption === null) return;
-    
-    const q = questions[currentIndex];
-    if (selectedOption === q.correctIndex) {
-      playSound('correct');
-      setScore(s => s + 1);
-      solvedProblemsRef.current.push({ topic: q.topic, difficulty: q.difficulty });
-      
-      // Auto-save XP continuously
-      if (user) {
-        import('firebase/firestore').then(({ doc, updateDoc, increment }) => {
-          import('@/firebase').then(({ db }) => {
-            const xp = calculateProblemXp('rapid', q.difficulty);
-            const topicKey = `topicXp.${q.topic.toLowerCase()}`;
-            setXpEarned(xp);
-            setTimeout(() => setXpEarned(null), 2000);
-            updateDoc(doc(db, 'users', user.uid), {
-              xp: increment(xp),
-              [topicKey]: increment(xp)
-            }).catch(error => handleFirestoreError(error, OperationType.UPDATE, `users/${user.uid}`));
-          });
-        });
+  const checkAnswer = async () => {
+    if (busy.current || finishedRef.current || countdown !== null || selectedOption === null || !user || !gameId) return;
+    busy.current = true; setSaving(true); setSaveError('');
+    try {
+      const result = await gameProgress.submitAnswer(gameId, user.uid, currentIndex, selectedOption);
+      if (!result.answer) { setFinished(true); finishedRef.current = true; return; }
+      playSound(result.answer.correct ? 'correct' : 'incorrect');
+      if (result.answer.xp && !result.duplicate) {
+        setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
       }
-    } else {
-      playSound('incorrect');
-      // Penalty for wrong answer? Maybe -1 score or -5 seconds
-      setTimeLeft(prev => Math.max(0, prev - 5));
-    }
-    
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(i => i + 1);
-      setSelectedOption(null);
-    } else {
-      // Ran out of questions!
-      finishGame();
-    }
+      deadlineRef.current = result.game.deadline || 0;
+      setScore(result.game.scores[user.uid]); setSelectedOption(null);
+      if (result.game.status === 'finished') { setFinished(true); finishedRef.current = true; }
+      else setCurrentIndex(i => i + 1);
+    } catch (error) { setSaveError(error instanceof Error ? error.message : 'Answer was not saved. Please retry.'); }
+    finally { busy.current = false; setSaving(false); }
   };
 
   if (!user) {
@@ -212,9 +168,10 @@ export default function RapidMode() {
           className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           <Zap className="w-20 h-20 text-yellow-500 mx-auto mb-6" />
-          <h2 className="text-3xl font-bold mb-2">Time&apos;s Up!</h2>
-          <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> problems in {timeLimit} seconds.</p>
+          <h2 className="text-3xl font-bold mb-2">Rapid Complete!</h2>
+          <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> problems. This round allowed {timeLimit} seconds; wrong answers deducted 5 seconds.</p>
           
+          <GameResultStatus gameId={gameId} />
           <div className="flex flex-col gap-4">
             <button 
               onClick={startGame}
@@ -255,15 +212,7 @@ export default function RapidMode() {
             {countdown > 0 ? countdown : 'GO!'}
           </motion.div>
         </AnimatePresence>
-        <button
-          onClick={() => {
-            setCountdown(null);
-            startTimer();
-          }}
-          className="absolute bottom-10 px-6 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors text-zinc-400 hover:text-white"
-        >
-          Skip Countdown
-        </button>
+
       </div>
     );
   }
@@ -273,6 +222,7 @@ export default function RapidMode() {
 
     return (
       <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
+        <GameSaveError error={saveError} />
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 

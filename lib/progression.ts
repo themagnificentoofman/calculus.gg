@@ -1,145 +1,89 @@
-export interface SolvedProblem {
-  topic: string;
-  difficulty: string;
-}
-
-export interface ProgressionResult {
-  xpGained: number;
-  newXp: number;
-  newLevel: number;
-  topicXpGained: number;
-  newTopicXp: number;
-  newTopicLevel: number;
-  ratingChange: number;
-  newTopicRating: number;
-  newOverallRating: number;
-}
-
-export function getLevelFromXp(xp: number): number {
-  return Math.floor(Math.sqrt((xp || 0) / 100));
-}
-
-export function getXpForLevel(level: number): number {
-  return 100 * Math.pow(level, 2);
-}
-
-export function getXpProgress(xp: number): { current: number; max: number; percentage: number } {
+export type GameMode = 'test' | 'rapid' | 'pvp' | 'multiplayer';
+export interface SolvedProblem { topic: string; difficulty: string }
+export const PROBLEM_XP = { easy: 10, medium: 20, hard: 30, olympiad: 50 } as const;
+export const RATING_K = 32;
+export const TOPICS = ['integration', 'differentiation', 'limits', 'series', 'differential equations', 'multivariable'] as const;
+export const finite = (value: unknown, fallback = 0): number => typeof value === 'number' && Number.isFinite(value) ? value : fallback;
+const nonnegative = (value: number) => Math.min(Number.MAX_SAFE_INTEGER, Math.max(0, finite(value)));
+export const getLevelFromXp = (xp: number) => Math.floor(Math.sqrt(nonnegative(xp) / 100));
+export const getXpForLevel = (level: number) => 100 * Math.floor(nonnegative(level)) ** 2;
+export function getXpProgress(xp: number) {
   const level = getLevelFromXp(xp);
-  const currentLevelXp = getXpForLevel(level);
-  const nextLevelXp = getXpForLevel(level + 1);
-  const xpIntoLevel = xp - currentLevelXp;
-  const xpNeeded = nextLevelXp - currentLevelXp;
-  return {
-    current: xpIntoLevel,
-    max: xpNeeded,
-    percentage: Math.min(100, Math.max(0, (xpIntoLevel / xpNeeded) * 100))
-  };
+  const current = nonnegative(xp) - getXpForLevel(level);
+  const max = getXpForLevel(level + 1) - getXpForLevel(level);
+  return { current, max, percentage: Math.min(100, current / max * 100) };
 }
-
-export function calculateProblemXp(
-  mode: 'test' | 'rapid' | 'pvp' | 'multiplayer',
-  difficulty: string,
-  placement?: number,
-  totalPlayers?: number
-): number {
-  let base = 0;
-  switch (difficulty) {
-    case 'easy': base = 10; break;
-    case 'medium': base = 20; break;
-    case 'hard': base = 30; break;
-    case 'olympiad': base = 50; break;
-    default: base = 20;
-  }
-
-  let xp = base;
-
-  // Mode multipliers
-  if (mode === 'pvp') xp *= 1.5;
-  if (mode === 'multiplayer') xp *= 2.0;
-  if (mode === 'rapid') xp *= 1.2;
-
-  // Placement bonus is applied per problem to scale with performance
-  if (placement !== undefined && totalPlayers !== undefined && totalPlayers > 1) {
-    if (placement === 1) xp *= 1.5;
-    else if (placement === 2) xp *= 1.2;
-    else if (placement === 3) xp *= 1.1;
-  }
-
-  return Math.floor(xp);
+// XP measures practice; the same problem earns the same credit in every mode.
+export function calculateProblemXp(_mode: GameMode, difficulty: string): number {
+  const key = typeof difficulty === 'string' ? difficulty.toLowerCase() : '';
+  return Object.hasOwn(PROBLEM_XP, key) ? PROBLEM_XP[key as keyof typeof PROBLEM_XP] : 0;
 }
-
-export function calculateMatchRatingChanges(
-  playerRating: number,
-  opponentRatings: number[],
-  problems: { topic: string; difficulty: string; solved: boolean }[],
-  placement?: number,
-  totalPlayers?: number
-): Record<string, number> {
-  const avgOpponentRating = opponentRatings.length > 0 
-    ? opponentRatings.reduce((a, b) => a + b, 0) / opponentRatings.length 
-    : playerRating;
-
-  const expected = 1 / (1 + Math.pow(10, (avgOpponentRating - playerRating) / 400));
-
-  let actual = 0.5;
-  if (placement !== undefined && totalPlayers !== undefined && totalPlayers > 1) {
-    actual = (totalPlayers - placement) / (totalPlayers - 1); // 1st = 1, last = 0
-  }
-
-  const topicChanges: Record<string, number> = {};
-
-  // If no opponents (e.g. Test/Rapid mode), rating doesn't change based on Elo, 
-  // but we might want a small bump for solving hard problems. 
-  // The prompt implies Elo is for multiplayer/PvP.
-  if (opponentRatings.length === 0) {
-    return topicChanges; // No rating change in solo modes
-  }
-
-  const matchMultiplier = actual - expected;
-
-  problems.forEach(p => {
-    let k = 20;
-    switch (p.difficulty) {
-      case 'easy': k = 16; break;
-      case 'medium': k = 24; break;
-      case 'hard': k = 32; break;
-      case 'olympiad': k = 48; break;
-    }
-
-    // If they solved it, they get the positive/negative change based on match outcome.
-    // If they failed it, they get a negative change regardless of match outcome, or a scaled change.
-    // Let's simplify: the rating change is distributed across all problems encountered.
-    // If actual > expected (did well), solving hard problems gives more rating.
-    // If actual < expected (did poorly), failing easy problems loses more rating.
-    
-    let problemChange = k * matchMultiplier;
-    
-    // Adjust based on whether they solved this specific problem
-    if (p.solved) {
-      if (problemChange < 0) problemChange /= 2; // Penalized less for problems they actually solved
-    } else {
-      if (problemChange > 0) problemChange = 0; // Don't gain rating for problems they failed
-      else problemChange *= 1.5; // Penalized more for problems they failed
-    }
-
-    if (!topicChanges[p.topic]) topicChanges[p.topic] = 0;
-    topicChanges[p.topic] += problemChange;
+export function hasRating(profile?: { rating?: number; ratedGames?: number; wins?: number; losses?: number; draws?: number } | null) {
+  return !!profile && (finite(profile.rating) !== 0 || (profile.ratedGames !== undefined ? finite(profile.ratedGames) > 0 : finite(profile.wins) + finite(profile.losses) + finite(profile.draws) > 0));
+}
+export interface RatingPlayer {
+  uid: string;
+  rating: number;
+  score: number;
+  attempted: number;
+  correct: number;
+  topicRatings?: Record<string, number>;
+  answers: Record<string, { correct: boolean }>;
+}
+export interface Standing { uid: string; rank: number; outcome: 'win' | 'draw' | 'loss' | 'unplayed' }
+export function getStandings(players: Pick<RatingPlayer, 'uid' | 'score' | 'attempted'>[]): Standing[] {
+  // An inactive player cannot beat someone who participated and took a penalty.
+  const compare = (a: typeof players[number], b: typeof players[number]) =>
+    Number(b.attempted > 0) - Number(a.attempted > 0) || finite(b.score) - finite(a.score);
+  const sorted = [...players].sort((a, b) => compare(a, b) || a.uid.localeCompare(b.uid));
+  return sorted.map(p => {
+    const rank = 1 + sorted.filter(other => compare(other, p) < 0).length;
+    const tied = sorted.filter(other => compare(other, p) === 0).length > 1;
+    return { uid: p.uid, rank, outcome: sorted.every(x => x.attempted === 0) ? 'unplayed' : rank > 1 ? 'loss' : tied ? 'draw' : 'win' };
   });
-
-  // Normalize and cap changes per topic
-  Object.keys(topicChanges).forEach(topic => {
-    let change = Math.round(topicChanges[topic] / Math.max(1, problems.filter(p => p.topic === topic).length));
-    if (change < -30) change = -30;
-    if (change > 50) change = 50;
-    topicChanges[topic] = change;
-  });
-
-  return topicChanges;
 }
-
-export function calculateOverallRating(topicRatings: Record<string, number>): number {
-  const ratings = Object.values(topicRatings);
-  if (ratings.length === 0) return 0;
-  const sum = ratings.reduce((a, b) => a + b, 0);
-  return Math.round(sum / ratings.length);
+interface Pair { a: string; b: string; actual: number; ra: number; rb: number }
+function pairChanges(players: RatingPlayer[], pairs: Pair[]) {
+  const changes = Object.fromEntries(players.map(p => [p.uid, 0]));
+  const degrees: Record<string, number> = {};
+  for (const { a, b } of pairs) { degrees[a] = (degrees[a] || 0) + 1; degrees[b] = (degrees[b] || 0) + 1; }
+  for (const { a, b, actual, ra, rb } of pairs) {
+    const expected = 1 / (1 + 10 ** (Math.max(-4000, Math.min(4000, finite(rb) - finite(ra))) / 400));
+    // Symmetric weights preserve the rating pool and bound every player's change by K.
+    const delta = RATING_K * (actual - expected) / Math.max(degrees[a], degrees[b]);
+    changes[a] += delta;
+    changes[b] -= delta;
+  }
+  return changes;
+}
+export function calculateRatings(players: RatingPlayer[], questions: { topic: string }[]) {
+  const standings = getStandings(players);
+  const rank = Object.fromEntries(standings.map(p => [p.uid, p.rank]));
+  const pairs: Pair[] = [];
+  const topics: Record<string, Pair[]> = {};
+  for (let i = 0; i < players.length; i++) for (let j = i + 1; j < players.length; j++) {
+    const a = players[i], b = players[j];
+    // No evidence of a successful solve: no rating transfer for an idle/all-wrong draw.
+    if (a.correct + b.correct > 0) pairs.push({ a: a.uid, b: b.uid, actual: rank[a.uid] < rank[b.uid] ? 1 : rank[a.uid] === rank[b.uid] ? 0.5 : 0, ra: a.rating, rb: b.rating });
+    const shared: Record<string, [number, number]> = {};
+    questions.forEach((q, index) => {
+      const aa = a.answers[index], bb = b.answers[index];
+      const topic = q.topic.toLowerCase();
+      if (!aa || !bb || !TOPICS.includes(topic as typeof TOPICS[number])) return;
+      const scores = shared[topic] ||= [0, 0];
+      scores[0] += Number(aa.correct); scores[1] += Number(bb.correct);
+    });
+    for (const [topic, [sa, sb]] of Object.entries(shared)) {
+      if (sa + sb === 0) continue;
+      (topics[topic] ||= []).push({ a: a.uid, b: b.uid, actual: sa > sb ? 1 : sa === sb ? 0.5 : 0, ra: finite(a.topicRatings?.[topic]), rb: finite(b.topicRatings?.[topic]) });
+    }
+  }
+  const overall = pairChanges(players, pairs);
+  const topicChanges = Object.fromEntries(Object.entries(topics).map(([topic, ps]) => [topic, pairChanges(players, ps)]));
+  return Object.fromEntries(players.map(p => [p.uid, {
+    ratingChange: overall[p.uid],
+    rated: pairs.some(pair => pair.a === p.uid || pair.b === p.uid),
+    topicChanges: Object.fromEntries(Object.entries(topicChanges).filter(([topic]) => topics[topic].some(pair => pair.a === p.uid || pair.b === p.uid)).map(([topic, changes]) => [topic, changes[p.uid]])),
+    ...standings.find(s => s.uid === p.uid)!,
+  }]));
 }
