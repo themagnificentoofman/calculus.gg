@@ -14,6 +14,12 @@ test('Responses request uses a server credential and strict schema; extracts out
     assert.equal(body.text.format.strict, true);
     assert.equal(body.text.format.schema.properties.questions.minItems, 1);
     assert.deepEqual(body.text.format.schema.properties.questions.items.properties.topic.enum, ['integration']);
+    const fields = body.text.format.schema.properties.questions.items.properties;
+    for (const field of [fields.latexProblem, fields.options.items, fields.explanation.items]) {
+      const allowed = new RegExp(field.pattern);
+      assert.ok(allowed.test(String.raw`\frac{x}{2}`));
+      assert.equal(allowed.test(JSON.parse(String.raw`"\frac{x}{2}"`)), false);
+    }
     assert.equal(body.max_output_tokens, 3600);
     assert.ok(init.signal instanceof AbortSignal);
     return Response.json(complete);
@@ -45,4 +51,64 @@ test('provider and transport errors never disclose keys or upstream details and 
   }
   t.mock.method(globalThis, 'fetch', async () => { throw new DOMException('sensitive', 'TimeoutError'); });
   await assert.rejects(generateQuestionsOnServer('integration', 'easy', 1, 'test-only'), e => e.kind === 'timeout' && !e.message.includes('sensitive'));
+});
+
+test('unrenderable model explanations are rejected before the game starts', async t => {
+  const bad = { ...question, explanation: [String.raw`\frac{x^{3}}{`] };
+  t.mock.method(globalThis, 'fetch', async () => Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ questions: [bad] }) }] }] }));
+  await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'), e => e.kind === 'invalid-output');
+});
+
+
+test('recoverable JSON control escapes are returned as canonical LaTeX', async t => {
+  for (const source of [JSON.parse(String.raw`"\frac{x}{2}"`),JSON.parse(String.raw`"\textnormal{Test}"`)]) {
+    const bad = {...question, latexProblem:source};
+    t.mock.method(globalThis, 'fetch', async () => Response.json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({questions:[bad]})}]}]}));
+    const result = await generateQuestionsOnServer('integration','easy',1,'test-only');
+    assert.equal(result[0].latexProblem, source.includes('rac') ? String.raw`\frac{x}{2}` : String.raw`\textnormal{Test}`);
+    t.mock.restoreAll();
+  }
+});
+
+
+const responseWith = questions => Response.json({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({questions})}]}]});
+
+test('one bounded notation repair shares the original deadline and retains valid questions', async t => {
+  const bad = {...question, explanation:[String.raw`\frac{x^3}{`]};
+  const calls=[];
+  t.mock.method(globalThis,'fetch',async (url,init)=>{
+    calls.push(init);
+    return calls.length===1 ? responseWith([question,bad]) : responseWith([question]);
+  });
+  const result=await generateQuestionsOnServer('integration','easy',2,'test-only');
+  assert.deepEqual(result,[question,question]);
+  assert.equal(calls.length,2);
+  assert.equal(calls[0].signal,calls[1].signal);
+  const repair=JSON.parse(calls[1].body);
+  assert.equal(repair.text.format.schema.properties.questions.minItems,1);
+  assert.ok(repair.max_output_tokens<=6000);
+  assert.equal(repair.store,false);
+});
+
+test('notation repair stops after one attempt and cannot change the answer index', async t => {
+  const bad={...question,explanation:[String.raw`\unknown{x}`]};
+  for(const second of [bad,{...question,correctIndex:1}]){
+    let calls=0;
+    t.mock.method(globalThis,'fetch',async()=>responseWith([++calls===1?bad:second]));
+    await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'),e=>e.kind==='invalid-output');
+    assert.equal(calls,2);
+    t.mock.restoreAll();
+  }
+  let calls=0;
+  t.mock.method(globalThis,'fetch',async()=>{calls++;return responseWith(Array(4).fill(bad));});
+  await assert.rejects(generateQuestionsOnServer('integration','easy',4,'test-only'),e=>e.kind==='invalid-output');
+  assert.equal(calls,1);
+});
+
+test('unrecognized control characters remain invalid after normalization',async t=>{
+  for (const source of ['x\u0001','\fnotACommand','\bunknown']) {
+    t.mock.method(globalThis,'fetch',async()=>responseWith([{...question,latexProblem:source}]));
+    await assert.rejects(generateQuestionsOnServer('integration','easy',1,'test-only'),e=>e.kind==='invalid-output');
+    t.mock.restoreAll();
+  }
 });
