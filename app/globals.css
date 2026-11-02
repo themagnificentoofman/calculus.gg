@@ -43,6 +43,17 @@ button:disabled {
   cursor: not-allowed;
 }
 
+/* A touch hold moves the decorative nodes instead of selecting hero text. */
+.welcome-surface {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.welcome-surface a {
+  -webkit-touch-callout: default;
+}
+
 .hexagon-bg {
   position: relative;
 }
