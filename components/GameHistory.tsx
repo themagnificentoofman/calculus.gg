@@ -27,27 +27,32 @@ export function GameHistory() {
   const { user, profile } = useAuth();
   const [games, setGames] = useState<GameRecord[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+  const [retry, setRetry] = useState(0);
   const [sortBy, setSortBy] = useState<'date' | 'score' | 'opponents'>('date');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [filterMode, setFilterMode] = useState<string>('all');
   const [filterDate, setFilterDate] = useState<string>('all');
 
   useEffect(() => {
-    if (!user) return;
+    let active = true;
+    setGames([]); setError(''); setLoading(true);
+    if (!user) { setLoading(false); return; }
 
     const fetchGames = async () => {
       try {
         const gameData = await loadRecentGames(db, user.uid) as GameRecord[];
-        setGames(gameData);
+        if (active) setGames(gameData);
       } catch (error) {
-        console.error('Error fetching games:', error);
+        if (active) setError('Game history could not be loaded.');
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     };
 
     fetchGames();
-  }, [user, profile?.gamesPlayed]);
+    return () => { active = false; };
+  }, [user, profile?.gamesPlayed, retry]);
 
   const getModeIcon = (mode: string) => {
     switch (mode) {
@@ -93,6 +98,8 @@ export function GameHistory() {
     }
     return 0;
   });
+
+  if (error) return <div role="alert" className="rounded-xl border border-red-500/30 p-4 text-sm text-red-300">{error} <button onClick={() => setRetry(value => value + 1)} className="ml-2 min-h-11 px-3 underline">Retry</button></div>;
 
   if (loading) {
     return <div className="text-center text-zinc-500 py-4">Loading history...</div>;

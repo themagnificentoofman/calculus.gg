@@ -50,26 +50,21 @@ export default function AuthPage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-4 dark:text-zinc-50 text-zinc-900 font-sans selection:bg-emerald-500/30">
-      <a href="/" className="absolute top-8 left-8 flex items-center gap-2 dark:text-zinc-400 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-        <Calculator className="w-6 h-6 text-emerald-500" />
-        <span className="font-bold text-xl tracking-tight">CalcArena</span>
-      </a>
-
+    <main className="min-h-[calc(100dvh-4rem)] flex flex-col items-center justify-center p-4 dark:text-zinc-50 text-zinc-900 font-sans selection:bg-emerald-500/30">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-8 backdrop-blur-sm shadow-sm"
+        className="w-full max-w-md dark:bg-zinc-900/40 bg-white border dark:border-zinc-800/50 border-zinc-200 rounded-3xl p-5 sm:p-8 backdrop-blur-sm shadow-sm"
       >
         <h1 className="text-3xl font-bold mb-2 text-center">
           {isLogin ? 'Welcome Back' : 'Create Account'}
         </h1>
         <p className="dark:text-zinc-400 text-zinc-500 text-center mb-8">
-          {isLogin ? 'Sign in to continue your grind.' : 'Join the ultimate calculus arena.'}
+          {isLogin ? 'Sign in to practice and compete.' : 'Create your calculus.ninja account.'}
         </p>
 
         {error && (
-          <div className="mb-6 p-3 bg-red-500/10 border border-red-500/20 text-red-500 dark:text-red-400 rounded-xl text-sm text-center">
+          <div role="alert" className="mb-6 p-3 bg-red-500/10 border border-red-500/20 text-red-500 dark:text-red-400 rounded-xl text-sm text-center">
             {error}
           </div>
         )}
@@ -77,12 +72,12 @@ export default function AuthPage() {
         <form onSubmit={handleSubmit} className="space-y-4 mb-6">
           {!isLogin && (
             <div>
-              <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Display Name</label>
+              <label htmlFor="name" className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Display Name</label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 dark:text-zinc-500 text-zinc-400" />
                 <input
                   type="text"
-                  value={name}
+                  id="name" value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
                   className="w-full dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-xl py-3 pl-10 pr-4 dark:text-white text-zinc-900 dark:placeholder-zinc-600 placeholder-zinc-400 focus:outline-none focus:border-emerald-500 transition-colors"
@@ -93,12 +88,12 @@ export default function AuthPage() {
           )}
 
           <div>
-            <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Email</label>
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 dark:text-zinc-500 text-zinc-400" />
               <input
                 type="email"
-                value={email}
+                id="email" value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-xl py-3 pl-10 pr-4 dark:text-white text-zinc-900 dark:placeholder-zinc-600 placeholder-zinc-400 focus:outline-none focus:border-emerald-500 transition-colors"
@@ -108,12 +103,12 @@ export default function AuthPage() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Password</label>
+            <label htmlFor="password" className="block text-sm font-medium dark:text-zinc-400 text-zinc-500 mb-1">Password</label>
             <div className="relative">
               <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 dark:text-zinc-500 text-zinc-400" />
               <input
                 type="password"
-                value={password}
+                id="password" value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={6}

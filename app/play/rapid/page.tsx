@@ -25,7 +25,7 @@ interface Question {
 }
 
 export default function RapidMode() {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const [category, setCategory] = useState('all');
   const [difficulty, setDifficulty] = useState('medium');
   const [timeLimit, setTimeLimit] = useState(60); // seconds
@@ -140,6 +140,8 @@ export default function RapidMode() {
     finally { busy.current = false; setSaving(false); }
   };
 
+  if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
+
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -167,7 +169,7 @@ export default function RapidMode() {
         >
           <Zap className="w-20 h-20 text-yellow-500 mx-auto mb-6" />
           <h2 className="text-3xl font-bold mb-2">Rapid Complete!</h2>
-          <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> problems. This round allowed {timeLimit} seconds; wrong answers deducted 5 seconds.</p>
+          <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> {score === 1 ? 'problem' : 'problems'}. This round allowed {timeLimit} seconds; wrong answers deducted 5 seconds.</p>
           
           <GameResultStatus gameId={gameId} />
           <div className="flex flex-col gap-4">
@@ -343,7 +345,7 @@ export default function RapidMode() {
               </div>
             </label>
             <div className="relative">
-              <select 
+              <select aria-label="Category"
                 value={category} 
                 onChange={e => setCategory(e.target.value)}
                 className="w-full appearance-none bg-zinc-950 border border-zinc-800 rounded-2xl p-4 text-white focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 transition-all"
@@ -424,6 +426,7 @@ export default function RapidMode() {
               {colors.map(color => (
                 <button
                   key={color}
+                  aria-label={`Choose ${color} color`} aria-pressed={playerColor === color}
                   onClick={() => handleColorSelect(color)}
                   className={`w-10 h-10 rounded-full transition-transform ${playerColor === color ? 'scale-110 ring-2 ring-white ring-offset-2 ring-offset-zinc-900' : 'hover:scale-105'}`}
                   style={{ backgroundColor: color }}

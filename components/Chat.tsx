@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
+import { usePanel } from '@/lib/use-panel';
 import { apiRequest } from '@/lib/game-session';
 import { Send, MessageSquare } from 'lucide-react';
 
@@ -19,15 +20,16 @@ interface ChatProps {
 
 export function Chat({ gameId, messages }: ChatProps) {
   const { user } = useAuth();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = usePanel('chat');
   const [newMessage, setNewMessage] = useState('');
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState('');
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messageListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
-      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+      const list = messageListRef.current;
+      if (list) list.scrollTop = list.scrollHeight;
     }
   }, [messages, isOpen]);
 
@@ -58,7 +60,7 @@ export function Chat({ gameId, messages }: ChatProps) {
             </button>
           </div>
           
-          <div className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain p-4 space-y-4">
+          <div ref={messageListRef} aria-label="Chat messages" className="min-h-0 min-w-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain p-4 space-y-4">
             {messages.length === 0 ? (
               <div className="text-center text-xs dark:text-zinc-500 text-zinc-400 mt-4">No messages yet. Say hi!</div>
             ) : (
@@ -78,12 +80,13 @@ export function Chat({ gameId, messages }: ChatProps) {
                 );
               })
             )}
-            <div ref={messagesEndRef} />
+
           </div>
 
           {sendError && <p role="alert" className="shrink-0 px-3 py-2 text-xs text-red-400">{sendError}</p>}
           <form onSubmit={sendMessage} className="shrink-0 p-3 border-t dark:border-zinc-800 border-zinc-200 dark:bg-zinc-950 bg-zinc-50 flex gap-2">
             <input
+              aria-label="Message"
               type="text"
               disabled={sending}
               value={newMessage}

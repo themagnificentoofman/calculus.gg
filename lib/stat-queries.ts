@@ -30,7 +30,7 @@ export async function searchPublicProfiles(db: Firestore, uid: string, search: s
   return snapshot.results.map(row => ({ ...row.data(), uid: row.id! })) as Array<Record<string, any> & { uid: string }>;
 }
 export async function loadWaitingGames(db: Firestore, uid: string, mode: 'pvp' | 'multiplayer', category?: string, difficulty?: string) {
-  let pipeline = db.pipeline().collection('games').where(and(field('mode').equal(mode), field('status').equal('waiting'), field('progressionVersion').equal(3), field('players').arrayContains(uid).not(), field('players').arrayLength().lessThan(mode === 'pvp' ? 2 : 10)));
+  let pipeline = db.pipeline().collection('games').where(and(field('mode').equal(mode), field('status').equal('waiting'), field('progressionVersion').equal(3), field('createdAt').greaterThan(new Date(Date.now() - 30 * 60_000)), field('players').arrayContains(uid).not(), field('players').arrayLength().lessThan(mode === 'pvp' ? 2 : 10)));
   if (category) pipeline = pipeline.where(field('category').equal(category));
   if (difficulty) pipeline = pipeline.where(field('difficulty').equal(difficulty));
   const snapshot = await execute(pipeline.limit(10));

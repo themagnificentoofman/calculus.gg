@@ -6,6 +6,7 @@ export class GameError extends Error { status: number; constructor(message: stri
 export const identifier = (value: unknown) => { if (typeof value !== 'string' || (!/^[a-zA-Z0-9_-]{5,128}$/.test(value) || ['__proto__', 'constructor', 'prototype'].includes(value))) throw new GameError('Invalid identifier.'); return value; };
 const requireMember = (game: GameSession, uid: string) => { if (!game.players.includes(uid)) throw new GameError('You are not a player in this game.', 403); };
 const snapshot = (p: Data) => ({ rating: finite(p.rating), topicRatings: Object.fromEntries(TOPICS.map(t => [t, finite(p.topicRatings?.[t])])) });
+export const lobbyExpired = (g: GameSession, time: number) => g.status === 'waiting' && new Date(g.createdAt as any).getTime() + 30 * 60_000 <= time;
 const competitive = (g: GameSession) => ['pvp', 'multiplayer'].includes(g.mode);
 export function publicProfile(profile: Data) {
   const keys = ['uid', 'displayName', 'handle', 'photoURL', 'color', 'lastActive', 'createdAt', 'rating', 'classification', 'gamesPlayed', 'wins', 'losses', 'draws', 'ratedGames', 'xp', 'topicXp', 'topicRatings', 'topicRatedGames'];
@@ -14,7 +15,7 @@ export function publicProfile(profile: Data) {
 export function publicGame(game: GameSession) {
   const { questions = [], answers = {}, ratingSnapshot: _snapshots, ...rest } = game;
   return { ...rest, questionCount: questions.length,
-    questions: game.status === 'waiting' ? [] : questions.map(({ correctIndex: _key, explanation: _explanation, ...q }) => q),
+    questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(({ correctIndex: _key, explanation: _explanation, ...q }) => q),
     answers: Object.fromEntries(Object.entries(answers).map(([uid, values]) => [uid, Object.fromEntries(Object.entries(values).map(([i, { selectedOption: _selection, ...a }]) => [i, a]))])),
   };
 }
@@ -45,7 +46,8 @@ function patchProfile(profile: Data, patch: Data) {
     if (k === 'handle' && !/^[a-zA-Z0-9_]{3,32}$/.test(v)) throw new GameError('Handles must use 3–32 letters, numbers or underscores.');
     if (k === 'color' && !/^#[0-9a-fA-F]{6}$/.test(v)) throw new GameError('Invalid player color.');
     if (k === 'photoURL' && v && !/^https:\/\//.test(v) && !/^data:image\/(png|jpeg|webp);base64,[a-zA-Z0-9+/=]+$/.test(v)) throw new GameError('Invalid profile image.');
-    profile[k] = v;
+    if (k === 'displayName' && !v.trim()) throw new GameError('Enter a display name.');
+    profile[k] = k === 'displayName' ? v.trim() : v;
   }
 }
 function settingsFor(mode: GameMode, input: Data): { timeLimit?: number; settings?: MatchSettings } {
@@ -62,7 +64,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
   async function profile(uid: string, claims: Data, patch: Data = {}) {
     return store.transaction(async tx => {
       const existing = await tx.get(`users/${uid}`);
-      const p = existing || { uid, displayName: typeof claims.name === 'string' ? claims.name.slice(0, 99) : 'Anonymous Calc Bro', handle: `user${uid.slice(0, 6)}`, photoURL: typeof claims.picture === 'string' ? claims.picture : '', email: typeof claims.email === 'string' ? claims.email : '',
+      const p = existing || { uid, displayName: typeof claims.name === 'string' ? claims.name.slice(0, 99) : 'Calculus Ninja', handle: `user${uid.slice(0, 6)}`, photoURL: typeof claims.picture === 'string' ? claims.picture : '', email: typeof claims.email === 'string' ? claims.email : '',
         rating: 0, classification: 'Novice', gamesPlayed: 0, wins: 0, losses: 0, draws: 0, ratedGames: 0, answeredQuestions: 0, correctAnswers: 0, xp: 0, topicXp: {}, topicRatings: {}, topicRatedGames: {}, friends: [], settings: { theme: 'dark', notifications: true, soundEnabled: true }, createdAt: new Date(now()) };
       p.uid = uid; patchProfile(p, patch); p.lastActive = now(); saveProfile(tx, uid, p); return p;
     });
@@ -96,6 +98,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       const raw = await tx.get(`gameSecrets/${id}`);
       if (!raw || raw.progressionVersion !== 3) throw new GameError('This game uses an older version. Please create a new game.', 409);
       const game = raw as GameSession;
+      const invitation = input.inviteId ? await tx.get(`gameInvites/${identifier(input.inviteId)}`) : null;
       const joining = action === 'join' && !game.players.includes(uid);
       if (!joining) requireMember(game, uid);
       const ids = [...new Set([...game.players, ...(joining ? [uid] : [])])];
@@ -105,6 +108,24 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       const changed = new Set<string>();
       const time = now();
       let modified = false, duplicate = false, answer: any = null;
+      if (input.inviteId && (!invitation || invitation.to !== uid || invitation.gameId !== id || !['pending', 'accepted'].includes(invitation.status) || !game.players.includes(invitation.from) || !profiles[uid].friends?.includes(invitation.from) || !profiles[invitation.from]?.friends?.includes(uid))) throw new GameError('This invitation is no longer available.', 409);
+      if (lobbyExpired(game, time)) {
+        if (joining) throw new GameError('This lobby has expired. Start a new game.', 409);
+        game.status = 'cancelled'; modified = true;
+      }
+      if (action === 'leave') {
+        if (game.status === 'active') throw new GameError('This game has already started.', 409);
+        if (game.status === 'waiting') {
+          if (game.players[0] === uid) game.status = 'cancelled';
+          else {
+            game.players = game.players.filter(p => p !== uid);
+            delete game.scores[uid]; delete game.ratingSnapshot?.[uid];
+            tx.delete(`games/${id}/reviews/${uid}`);
+          }
+          saveGame(tx, id, game);
+        } else if (modified) saveGame(tx, id, game);
+        return { left: true };
+      }
       if (action === 'join') {
         if (input.mode !== game.mode || !competitive(game)) throw new GameError('This game belongs to a different mode.');
         if (joining) {
@@ -168,6 +189,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
           changed.add(p);
         }
       }
+      if (input.inviteId) tx.set(`gameInvites/${input.inviteId}`, { ...invitation, status: 'accepted' });
       if (action === 'claim' && game.status !== 'finished') throw new GameError('This game is still in progress.', 409);
       for (const p of changed) saveProfile(tx, p, profiles[p]);
       if (modified) saveGame(tx, id, game);
@@ -178,5 +200,11 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
     const active = await store.find('gameSecrets', [['players', 'ARRAY_CONTAINS', uid], ['status', 'EQUAL', 'active'], ['deadline', 'LESS_THAN_OR_EQUAL', now()]], 25);
     for (const g of active) if (g.data.deadline && g.data.deadline <= now()) await act(uid, g.id, 'complete');
   }
-  return { profile, storeQuestions, createGame, act, sync };
+  async function acceptInvite(uid: string, inviteId: string) {
+    const invitation = await store.get(`gameInvites/${identifier(inviteId)}`);
+    if (!invitation || invitation.to !== uid) throw new GameError('Invitation not found.', 404);
+    const result = await act(uid, identifier(invitation.gameId), 'join', { mode: invitation.mode, inviteId });
+    return { mode: invitation.mode, gameId: invitation.gameId, ...result };
+  }
+  return { profile, storeQuestions, createGame, act, sync, acceptInvite };
 }

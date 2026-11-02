@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion } from 'motion/react';
 import { Settings, User, Image as ImageIcon, ArrowLeft, Save, Shield, Bell, Volume2 } from 'lucide-react';
@@ -8,6 +8,7 @@ import { Settings, User, Image as ImageIcon, ArrowLeft, Save, Shield, Bell, Volu
 export default function SettingsPage() {
   const { user, profile, loading: authLoading, updateUserProfile, linkGoogleAccount } = useAuth();
   
+  const hydratedUser = useRef<string | null>(null);
   const [displayName, setDisplayName] = useState('');
   const [handle, setHandle] = useState('');
   const [photoURL, setPhotoURL] = useState('');
@@ -22,7 +23,8 @@ export default function SettingsPage() {
     if (!user && !authLoading) {
       window.location.replace('/auth');
     }
-    if (profile) {
+    if (profile && (hydratedUser.current !== user?.uid || !hasUnsavedChanges)) {
+      hydratedUser.current = user?.uid || null;
       setDisplayName(profile.displayName || '');
       setHandle(profile.handle || '');
       setPhotoURL(profile.photoURL || '');
@@ -30,7 +32,7 @@ export default function SettingsPage() {
       setSoundEnabled(profile.settings?.soundEnabled ?? true);
       setHasUnsavedChanges(false);
     }
-  }, [user, profile, authLoading]);
+  }, [user, profile, authLoading, hasUnsavedChanges]);
 
   useEffect(() => {
     const handleBeforeUnload = (e: BeforeUnloadEvent) => {
@@ -102,7 +104,7 @@ export default function SettingsPage() {
     }
   };
 
-  if (!profile) return null;
+  if (!profile) return <main className="p-8 text-center text-zinc-400"><p role="status">{authLoading ? 'Loading your account…' : 'Your profile could not be loaded.'}</p>{!authLoading && <button className="mt-4 min-h-11 rounded-xl bg-zinc-800 px-4 text-white" onClick={() => window.location.reload()}>Retry</button>}</main>;
 
   const isGoogleLinked = user?.providerData.some(p => p.providerId === 'google.com');
 
@@ -143,22 +145,22 @@ export default function SettingsPage() {
               
               <form onSubmit={handleSaveProfile} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Display Name</label>
+                  <label htmlFor="displayName" className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Display Name</label>
                   <input
                     type="text"
-                    value={displayName}
+                    id="displayName" value={displayName}
                     onChange={handleFieldChange(setDisplayName)}
                     className="w-full dark:bg-zinc-950 bg-white border dark:border-zinc-800 border-zinc-300 rounded-xl py-2.5 px-4 dark:text-white text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Username / Handle</label>
+                  <label htmlFor="handle" className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Username / Handle</label>
                   <div className="relative">
                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500">@</span>
                     <input
                       type="text"
-                      value={handle}
+                      id="handle" value={handle}
                       onChange={handleFieldChange(setHandle)}
                       className="w-full dark:bg-zinc-950 bg-white border dark:border-zinc-800 border-zinc-300 rounded-xl py-2.5 pl-8 pr-4 dark:text-white text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors"
                     />
@@ -166,13 +168,13 @@ export default function SettingsPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Profile Picture URL</label>
+                  <label htmlFor="photoURL" className="block text-sm font-medium dark:text-zinc-400 text-zinc-600 mb-1">Profile Picture URL</label>
                   <div className="flex gap-2">
                     <div className="relative flex-1">
                       <ImageIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                       <input
                         type="url"
-                        value={photoURL}
+                        id="photoURL" value={photoURL}
                         onChange={handleFieldChange(setPhotoURL)}
                         placeholder="https://example.com/image.png"
                         className="w-full dark:bg-zinc-950 bg-white border dark:border-zinc-800 border-zinc-300 rounded-xl py-2.5 pl-10 pr-4 dark:text-white text-zinc-900 focus:outline-none focus:border-emerald-500 transition-colors"
@@ -251,18 +253,18 @@ export default function SettingsPage() {
               </h2>
               
               <div className="space-y-4">
-                <div className="flex items-center justify-between p-4 dark:bg-zinc-950 bg-zinc-50 rounded-xl border dark:border-zinc-800 border-zinc-200">
+                <div className="flex flex-wrap items-center justify-between gap-3 p-4 dark:bg-zinc-950 bg-zinc-50 rounded-xl border dark:border-zinc-800 border-zinc-200">
                   <div>
                     <div className="font-bold">Email Address</div>
-                    <div className="text-sm dark:text-zinc-400 text-zinc-500">{user?.email}</div>
+                    <div className="break-all text-sm dark:text-zinc-400 text-zinc-500">{user?.email || 'No email linked'}</div>
                   </div>
                   <div className="px-3 py-1 dark:bg-zinc-800 bg-zinc-200 dark:text-zinc-300 text-zinc-700 text-xs font-bold rounded-md">
-                    Verified
+                    {user?.emailVerified ? 'Verified' : 'Not verified'}
                   </div>
                 </div>
 
                 {!isGoogleLinked && (
-                  <div className="flex items-center justify-between p-4 dark:bg-zinc-950 bg-zinc-50 rounded-xl border dark:border-zinc-800 border-zinc-200">
+                  <div className="flex flex-wrap items-center justify-between gap-3 p-4 dark:bg-zinc-950 bg-zinc-50 rounded-xl border dark:border-zinc-800 border-zinc-200">
                     <div>
                       <div className="font-bold">Google Account</div>
                       <div className="text-sm dark:text-zinc-400 text-zinc-500">Link your Google account for easier login</div>
@@ -295,7 +297,7 @@ export default function SettingsPage() {
                 <label className="flex items-center justify-between cursor-pointer">
                   <div>
                     <div className="font-bold text-sm">Notifications</div>
-                    <div className="text-xs dark:text-zinc-400 text-zinc-500">Match updates and news</div>
+                    <div className="text-xs dark:text-zinc-400 text-zinc-500">In-app game invitation alerts</div>
                   </div>
                   <div className="relative">
                     <input

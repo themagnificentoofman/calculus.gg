@@ -4,7 +4,7 @@ import { generateKeyPair, exportJWK, createLocalJWKSet, SignJWT } from 'jose';
 import { DatabaseSync } from 'node:sqlite';
 import { readBoundedJson, validateQuestionRequest, validQuestionResponse } from '../lib/server/questions-policy.mjs';
 import { verifyFirebaseToken } from '../lib/server/firebase-token.mjs';
-import { consumeQuota } from '../lib/server/quota.ts';
+import { consumeQuota, consumeMutationQuota } from '../lib/server/quota.ts';
 
 const request = { category: 'integration', difficulty: 'easy', count: 1 };
 
@@ -90,5 +90,25 @@ test('a delayed request cannot move a quota window backward and reset its count'
   assert.equal(sql.prepare("SELECT expires_at FROM ai_quota WHERE key = 'user:player-a:minute'").get().expires_at, 120000);
   const results = await Promise.all(Array.from({ length: 4 }, () => consumeQuota(db, 'player-a', 60001)));
   assert.equal(results.filter(Boolean).length, 3);
+  sql.close();
+});
+
+
+test('rejected per-user generations cannot exhaust the shared site budget', async () => {
+  const {sql,db}=quotaDatabase();
+  const outcomes=await Promise.all(Array.from({length:200},()=>consumeQuota(db,'abusive-user',86401000)));
+  assert.equal(outcomes.filter(Boolean).length,5);
+  assert.equal(sql.prepare("SELECT count FROM ai_quota WHERE key='site:day'").get().count,5);
+  assert.ok(await consumeQuota(db,'other-user',86401000));
+  sql.close();
+});
+
+test('mutation rate limit is atomic, account scoped and renews without consuming AI quota', async () => {
+  const {sql,db}=quotaDatabase();
+  const outcomes=await Promise.all(Array.from({length:125},()=>consumeMutationQuota(db,'player-a',86401000)));
+  assert.equal(outcomes.filter(Boolean).length,120);
+  assert.ok(await consumeMutationQuota(db,'player-b',86401000));
+  assert.ok(await consumeMutationQuota(db,'player-a',86461000));
+  assert.equal(sql.prepare("SELECT COUNT(*) AS count FROM ai_quota WHERE key='site:day'").get().count,0);
   sql.close();
 });

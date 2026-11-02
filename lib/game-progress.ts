@@ -5,8 +5,8 @@ export interface SavedAnswer { selectedOption: number; correct: boolean; xp: num
 export interface MatchSettings { category?: string; difficulty?: string; winCondition: 'first_to_n' | 'time_limit'; targetScore: number; timeLimit: number; penalties: boolean }
 export interface ResultReceipt { ratingChange: number; newRating: number; topicChanges: Record<string, number>; outcome: string; rank: number; rated: boolean; counted: boolean; legacy?: boolean }
 export interface GameSession {
-  mode: GameMode; status: 'waiting' | 'active' | 'finished'; players: string[]; scores: Record<string, number>;
-  questions?: GameQuestion[]; category?: string; difficulty?: string; settings?: MatchSettings;
+  mode: GameMode; status: 'waiting' | 'active' | 'finished' | 'cancelled'; players: string[]; scores: Record<string, number>;
+  questionCount?: number; questions?: GameQuestion[]; category?: string; difficulty?: string; settings?: MatchSettings;
   startTime?: number; deadline?: number; finishedAt?: number; createdAt?: unknown;
   progressionVersion?: number; answers?: Record<string, Record<string, SavedAnswer>>;
   ratingSnapshot?: Record<string, { rating: number; topicRatings: Record<string, number> }>;
@@ -22,7 +22,9 @@ export function gamePlayers(game: GameSession) {
       rating: finite(game.ratingSnapshot?.[uid]?.rating), topicRatings: game.ratingSnapshot?.[uid]?.topicRatings || {} };
   });
 }
-export const gameStandings = (game: GameSession) => getStandings(gamePlayers(game));
+export const gameStandings = (game: GameSession) => getStandings(gamePlayers(game).map(player =>
+  // During play, rank the current score. Apply inactivity forfeits only at the end.
+  game.status === 'active' ? { ...player, attempted: 1 } : player));
 export const isCompetitive = (game: GameSession) => game.mode === 'pvp' || game.mode === 'multiplayer';
 export const nextUnanswered = (game: GameSession, uid: string) => {
   const index = (game.questions || []).findIndex((_, i) => !game.answers?.[uid]?.[i]);
