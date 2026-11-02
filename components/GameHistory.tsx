@@ -5,6 +5,8 @@ import { useAuth } from '@/components/AuthProvider';
 import { db } from '@/firebase';
 import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
 import { Trophy, Calculator, Zap, Swords, Users, Calendar, Filter, ArrowUpDown } from 'lucide-react';
+import { loadRecentGames } from '@/lib/stat-queries';
+import { gameStandings, type GameSession } from '@/lib/game-progress';
 import { format } from 'date-fns';
 
 interface GameRecord {
@@ -17,10 +19,12 @@ interface GameRecord {
   category?: string;
   difficulty?: string;
   winner?: string;
+  progressionVersion?: number;
+  answers?: GameSession['answers'];
 }
 
 export function GameHistory() {
-  const { user } = useAuth();
+  const { user, profile } = useAuth();
   const [games, setGames] = useState<GameRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [sortBy, setSortBy] = useState<'date' | 'score' | 'opponents'>('date');
@@ -33,18 +37,7 @@ export function GameHistory() {
 
     const fetchGames = async () => {
       try {
-        const q = query(
-          collection(db, 'games'),
-          where('players', 'array-contains', user.uid),
-          where('status', '==', 'finished'),
-          limit(50)
-        );
-        const snapshot = await getDocs(q);
-        const gameData = snapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        })) as GameRecord[];
-        
+        const gameData = await loadRecentGames(db, user.uid) as GameRecord[];
         setGames(gameData);
       } catch (error) {
         console.error('Error fetching games:', error);
@@ -54,28 +47,29 @@ export function GameHistory() {
     };
 
     fetchGames();
-  }, [user]);
+  }, [user, profile?.gamesPlayed]);
 
   const getModeIcon = (mode: string) => {
     switch (mode) {
       case 'test': return <Calculator className="w-4 h-4 text-blue-500" />;
       case 'rapid': return <Zap className="w-4 h-4 text-yellow-500" />;
       case 'pvp': return <Swords className="w-4 h-4 text-red-500" />;
+      case 'ffa':
       case 'multiplayer': return <Trophy className="w-4 h-4 text-purple-500" />;
       default: return <Trophy className="w-4 h-4 text-emerald-500" />;
     }
   };
 
   const filteredGames = games.filter(game => {
-    if (filterMode !== 'all' && game.mode !== filterMode) return false;
+    if (filterMode !== 'all' && (game.mode === 'ffa' ? 'multiplayer' : game.mode) !== filterMode) return false;
     
     if (filterDate !== 'all' && game.createdAt) {
       const gameDate = game.createdAt.toDate ? game.createdAt.toDate() : new Date(game.createdAt);
       const now = new Date();
-      const diffTime = Math.abs(now.getTime() - gameDate.getTime());
+      const diffTime = now.getTime() - gameDate.getTime();
       const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
       
-      if (filterDate === 'today' && diffDays > 1) return false;
+      if (filterDate === 'today' && gameDate.toDateString() !== now.toDateString()) return false;
       if (filterDate === 'week' && diffDays > 7) return false;
       if (filterDate === 'month' && diffDays > 30) return false;
     }
@@ -107,7 +101,7 @@ export function GameHistory() {
   return (
     <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-6 backdrop-blur-sm">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-        <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Game History</h3>
+        <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Recent Games (up to 50)</h3>
         
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <div className="flex items-center gap-1 bg-zinc-950/50 border border-zinc-800/50 rounded-lg p-1">
@@ -168,24 +162,16 @@ export function GameHistory() {
         ) : (
           sortedGames.map(game => {
             const myScore = game.scores?.[user?.uid || ''] || 0;
-            const isMultiplayer = game.mode === 'pvp' || game.mode === 'multiplayer';
+            const isMultiplayer = game.mode === 'pvp' || game.mode === 'multiplayer' || game.mode === 'ffa';
             const opponentsCount = Math.max(0, game.players.length - 1);
             
             let resultText = 'Completed';
             let resultColor = 'text-zinc-400';
             
             if (isMultiplayer) {
-              const maxScore = Math.max(...Object.values(game.scores || {}));
-              if (myScore === maxScore && Object.values(game.scores || {}).filter(s => s === maxScore).length === 1) {
-                resultText = 'Victory';
-                resultColor = 'text-emerald-500';
-              } else if (myScore === maxScore) {
-                resultText = 'Draw';
-                resultColor = 'text-yellow-500';
-              } else {
-                resultText = 'Defeat';
-                resultColor = 'text-red-500';
-              }
+              const outcome = gameStandings(game as GameSession).find(p => p.uid === user?.uid)?.outcome;
+              resultText = outcome === 'win' ? 'Victory' : outcome === 'draw' ? 'Draw' : outcome === 'unplayed' ? 'Unplayed' : 'Defeat';
+              resultColor = outcome === 'win' ? 'text-emerald-500' : outcome === 'draw' ? 'text-yellow-500' : outcome === 'unplayed' ? 'text-zinc-400' : 'text-red-500';
             }
 
             const gameDate = game.createdAt?.toDate ? game.createdAt.toDate() : new Date(game.createdAt || Date.now());
@@ -198,13 +184,13 @@ export function GameHistory() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <p className="text-sm font-medium capitalize">{game.mode} Match</p>
+                      <p className="text-sm font-medium capitalize">{game.mode === 'ffa' ? 'Multiplayer' : game.mode === 'pvp' ? 'PvP' : game.mode} Game</p>
                       <span className={`text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-zinc-900 ${resultColor}`}>
                         {resultText}
                       </span>
                     </div>
                     <p className="text-xs text-zinc-500">
-                      {format(gameDate, 'MMM d, yyyy')} • {game.category || 'Mixed'}
+                      {Number.isNaN(gameDate.getTime()) ? 'Unknown date' : format(gameDate, 'MMM d, yyyy')} • {game.category || 'Mixed'}
                       {isMultiplayer && ` • ${opponentsCount} Opponent${opponentsCount !== 1 ? 's' : ''}`}
                     </p>
                   </div>

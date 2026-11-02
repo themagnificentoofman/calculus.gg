@@ -2,13 +2,13 @@ import { Crown, Gem, HelpCircle } from 'lucide-react';
 
 export type RankName = 'Bronze' | 'Silver' | 'Gold' | 'Platinum' | 'Diamond' | 'Grandmaster' | 'Unrated';
 
-export function getRankInfo(rating: number): { name: RankName; color: string; textColor: string; bgColor: string; borderColor: string } {
+export function getRankInfo(rating: number, rated = rating !== 0): { name: RankName; color: string; textColor: string; bgColor: string; borderColor: string } {
   if (rating >= 2500) return { name: 'Grandmaster', color: 'text-red-500', textColor: 'text-red-500', bgColor: 'bg-red-500/10', borderColor: 'border-red-500/20' };
   if (rating >= 2000) return { name: 'Diamond', color: 'text-purple-500', textColor: 'text-purple-500', bgColor: 'bg-purple-500/10', borderColor: 'border-purple-500/20' };
   if (rating >= 1500) return { name: 'Platinum', color: 'text-cyan-400', textColor: 'text-cyan-400', bgColor: 'bg-cyan-400/10', borderColor: 'border-cyan-400/20' };
   if (rating >= 1000) return { name: 'Gold', color: 'text-yellow-500', textColor: 'text-yellow-500', bgColor: 'bg-yellow-500/10', borderColor: 'border-yellow-500/20' };
   if (rating >= 500) return { name: 'Silver', color: 'text-zinc-300', textColor: 'text-zinc-300', bgColor: 'bg-zinc-300/10', borderColor: 'border-zinc-300/20' };
-  if (rating > 0) return { name: 'Bronze', color: 'text-amber-700', textColor: 'text-amber-700', bgColor: 'bg-amber-700/10', borderColor: 'border-amber-700/20' };
+  if (rated) return { name: 'Bronze', color: 'text-amber-700', textColor: 'text-amber-700', bgColor: 'bg-amber-700/10', borderColor: 'border-amber-700/20' };
   return { name: 'Unrated', color: 'text-zinc-500', textColor: 'text-zinc-500', bgColor: 'bg-zinc-500/10', borderColor: 'border-zinc-500/20' };
 }
 
@@ -40,8 +40,8 @@ function CustomStar({ points, className }: { points: number, className?: string 
   );
 }
 
-export function RankIcon({ rating, className = "w-8 h-8" }: { rating: number, className?: string }) {
-  const { name, color } = getRankInfo(rating);
+export function RankIcon({ rating, rated, className = "w-8 h-8" }: { rating: number, rated?: boolean, className?: string }) {
+  const { name, color } = getRankInfo(rating, rated);
   const iconClass = `${className} ${color}`;
 
   switch (name) {
