@@ -209,7 +209,7 @@ export default function RapidMode() {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl max-w-md w-full text-center"
+          className="bg-zinc-900 border border-zinc-800 p-4 sm:p-8 rounded-3xl max-w-md w-full text-center"
         >
           <Zap className="w-20 h-20 text-yellow-500 mx-auto mb-6" />
           <h2 className="text-3xl font-bold mb-2">Time&apos;s Up!</h2>
@@ -272,7 +272,7 @@ export default function RapidMode() {
     const q = questions[currentIndex];
 
     return (
-      <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative">
+      <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 
@@ -287,15 +287,15 @@ export default function RapidMode() {
           )}
         </AnimatePresence>
 
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center gap-3 mb-8">
           <a href="/" className="text-zinc-400 hover:text-white flex items-center gap-2">
             <Home className="w-5 h-5" /> Quit
           </a>
-          <div className={`flex items-center gap-2 font-mono text-2xl font-bold ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-yellow-500'}`}>
+          <div className={`flex items-center gap-2 font-mono text-xl sm:text-2xl font-bold ${timeLeft <= 10 ? 'text-red-500 animate-pulse' : 'text-yellow-500'}`}>
             <Timer className="w-6 h-6" />
             {timeLeft}s
           </div>
-          <div className="font-bold font-mono text-2xl flex items-center gap-2" style={{ color: playerColor }}>
+          <div className="font-bold font-mono text-xl sm:text-2xl flex items-center gap-2 whitespace-nowrap" style={{ color: playerColor }}>
             Score: 
             <motion.span
               key={score}
@@ -316,15 +316,15 @@ export default function RapidMode() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -20, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 mb-8"
+            className="bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8 mb-8"
           >
-            <div className="text-2xl mb-12 w-full overflow-x-auto py-4">
+            <div className="text-xl sm:text-2xl mb-6 sm:mb-12 w-full overflow-x-auto py-4">
               <MathDisplay math={q.latexProblem} block />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {q.options.map((opt, i) => {
-                let btnClass = "p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-4 ";
+                let btnClass = "p-4 sm:p-6 rounded-2xl border text-lg transition-all text-left flex items-center gap-3 sm:gap-4 ";
                 if (selectedOption === i) {
                   btnClass += "bg-zinc-800 border-yellow-500/50 text-white";
                 } else {

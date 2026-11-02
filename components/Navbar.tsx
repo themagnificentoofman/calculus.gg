@@ -48,7 +48,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <a href="/help" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
+          <a aria-label="Help & Info" href="/help" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2">
             <HelpCircle className="w-5 h-5" />
             <span className="text-sm font-medium hidden sm:inline">Help & Info</span>
           </a>
