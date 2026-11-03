@@ -1,0 +1,16 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { generateKeyPairSync, sign } from 'node:crypto';
+import { bankPreflight } from '../lib/server/bank-preflight.ts';
+test('temporary preflight requires a current signature, expires, rejects browser origins and executes only fixed reads', async () => {
+ const { publicKey, privateKey } = generateKeyPairSync('ed25519'), key = publicKey.export({ type:'spki', format:'der' }).toString('base64'), now=1793670000000, queries=[];
+ const db={prepare:sql=>{queries.push(sql);return {all:async()=>({results:[],meta:{size_after:16384}})};}};
+ const request=(timestamp=now,extra={})=>new Request('https://calculus.ninja/api/bank-preflight',{method:'POST',headers:{'x-bank-time':String(timestamp),'x-bank-signature':sign(null,Buffer.from(`calculus-ninja-d1-preflight-v1\nPOST\n/api/bank-preflight\n${timestamp}`),privateKey).toString('base64'),...extra}});
+ assert.equal((await bankPreflight(new Request('https://calculus.ninja/api/bank-preflight',{method:'POST'}),db,key,String(now+1000),now)).status,403);
+ assert.equal((await bankPreflight(request(now-61000),db,key,String(now+1000),now)).status,403);
+ assert.equal((await bankPreflight(request(now,{origin:'https://calculus.ninja'}),db,key,String(now+1000),now)).status,403);
+ assert.equal((await bankPreflight(request(),db,key,String(now),now)).status,404);
+ assert.equal(queries.length,0);
+ const response=await bankPreflight(request(),db,key,String(now+1000),now);assert.equal(response.status,200);assert.equal((await response.json()).capacityConfirmed,false);
+ assert.ok(queries.every(sql=>sql.startsWith('SELECT ')||sql==='PRAGMA page_size'||sql==='PRAGMA max_page_count'));
+});

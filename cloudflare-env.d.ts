@@ -7,5 +7,7 @@ declare namespace Cloudflare {
     OPENAI_MODEL?: string;
     RESEND_API_KEY?: string;
     CONTACT_FROM_EMAIL?: string;
+    BANK_OPS_PUBLIC_KEY?: string;
+    BANK_OPS_EXPIRES_AT?: string;
   }
 }
