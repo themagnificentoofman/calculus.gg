@@ -16,6 +16,6 @@ test('temporary preflight requires a current signature, expires, rejects browser
  const headers=request().headers;
  const emptyStream=new Request('https://calculus.ninja/api/bank-preflight',{method:'POST',headers,body:new Uint8Array(0)});
  assert.equal((await bankPreflight(emptyStream,db,key,String(now+1000),now)).status,200);
- const payload=new Request('https://calculus.ninja/api/bank-preflight',{method:'POST',headers,body:'unexpected'});
+ const payload=new Request('https://calculus.ninja/api/bank-preflight',{method:'POST',headers:{...Object.fromEntries(headers),'content-length':'10'},body:'unexpected'});
  assert.equal((await bankPreflight(payload,db,key,String(now+1000),now)).status,400);
 });
