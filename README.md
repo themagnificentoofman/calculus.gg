@@ -12,17 +12,19 @@ cp .env.example .dev.vars
 npm run dev
 ```
 
-Set `OPENAI_API_KEY` in the untracked `.dev.vars` file. Never prefix it with `NEXT_PUBLIC_`: AI requests pass through `/api/questions`; it returns an opaque question-set ID. Answer validation, XP and ratings run on authenticated server endpoints. Configure `FIREBASE_SERVICE_ACCOUNT_JSON` with a dedicated database-scoped identity for real Firebase use. `OPENAI_MODEL` optionally overrides the existing `gpt-5-mini` model.
+Normal gameplay uses the indexed problem bank and makes zero OpenAI selection or grading calls. Configure `FIREBASE_SERVICE_ACCOUNT_JSON` with the existing dedicated database-scoped identity. Apply the D1 migration and import/activate a verified bank release before starting games. An empty filter returns an explicit insufficient-content response.
 
-Apply D1 migrations locally before testing AI requests, using the generated local Worker configuration as described in [DEPLOYMENT.md](DEPLOYMENT.md).
+See [the problem-bank guide](docs/bank/README.md) for reproducible 1,008 / 10,080 / 100,800-instance stages, mathematical validation, immutable revisions, offline Batch authoring, reports, benchmarks and rollout. Private generated payloads stay outside Git and browser assets. `OPENAI_API_KEY` is only needed by the optional offline administrative authoring CLI.
 
 ```sh
+python3 -m venv .bank-venv
+.bank-venv/bin/python -m pip install -r scripts/bank/requirements.txt
 npm run typecheck
 npm test
 npm run build
 ```
 
-The CI workflow performs these checks without an API key or access to production data. Signed-in Firebase requests and live OpenAI results require runtime configuration and separate integration verification.
+The CI workflow performs these checks without an API key or access to production data. Signed-in production Firebase requests and hosted bank imports require runtime configuration and separate deployment verification.
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for hosting, Firebase domain setup, scaling limits and the rollback process.
 

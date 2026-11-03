@@ -3,11 +3,12 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
+import { ProblemReference } from '@/components/ProblemReference';
 import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, Zap, RefreshCw, Home, Timer, Info } from 'lucide-react';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
-import { generateQuestions } from '@/lib/questions';
+import { selectQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { apiRequest, gameProgress } from '@/lib/game-session';
 import { nextUnanswered } from '@/lib/game-progress';
@@ -16,6 +17,8 @@ import { db } from '@/firebase';
 import { doc, onSnapshot } from 'firebase/firestore';
 
 interface Question {
+  problemId?: string;
+  problemRevision?: number;
   latexProblem: string;
   options: string[];
   correctIndex: number;
@@ -32,6 +35,7 @@ export default function RapidMode() {
   
   const [loading, setLoading] = useState(false);
   const [generationError, setGenerationError] = useState('');
+  const [reviewedProblems, setReviewedProblems] = useState<Question[]>([]);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -73,9 +77,9 @@ export default function RapidMode() {
     if (!user || busy.current) return;
     setGenerationError(''); setSaveError(''); setLoading(true);
     try {
-      const generated = await generateQuestions(category, difficulty, 20, 'rapid');
+      const generated = await selectQuestions(category, difficulty, 20, 'rapid');
       const id = await gameProgress.createGame(user.uid, 'rapid', generated, { category, difficulty, timeLimit });
-      finishedRef.current = false;
+      finishedRef.current = false; setReviewedProblems([]);
       setQuestions((await gameProgress.getGame(id)).questions || []); setCurrentIndex(0); setSelectedOption(null); setScore(0);
       setTimeLeft(timeLimit); setFinished(false); setCountdown(3); setGameId(id);
     } catch (error) { setGenerationError(error instanceof Error ? error.message : 'Could not start the game.'); }
@@ -100,6 +104,7 @@ export default function RapidMode() {
     return gameProgress.watchGame(gameId, user.uid, game => {
       deadlineRef.current = game.deadline || 0; startTimeRef.current = game.startTime || 0;
       setScore(game.scores[user.uid] || 0);
+      setReviewedProblems((game.questions || []).filter((_, index) => Boolean(game.answers?.[user.uid]?.[index])));
       if (game.status === 'finished') { finishedRef.current = true; setFinished(true); }
     }, () => setSaveError('Game sync failed. Please reconnect.'));
   }, [gameId, user]);
@@ -154,7 +159,7 @@ export default function RapidMode() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center">
         <RefreshCw className="w-12 h-12 text-yellow-500 animate-spin mb-4" />
-        <p className="text-xl text-zinc-400 animate-pulse">Generating rapid problems...</p>
+        <p className="text-xl text-zinc-400 animate-pulse">Selecting rapid problems...</p>
       </div>
     );
   }
@@ -172,6 +177,9 @@ export default function RapidMode() {
           <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> {score === 1 ? 'problem' : 'problems'}. This round allowed {timeLimit} seconds; wrong answers deducted 5 seconds.</p>
           
           <GameResultStatus gameId={gameId} />
+          {reviewedProblems.length > 0 && <details className="my-4 text-left"><summary className="min-h-11 cursor-pointer text-sm text-zinc-400">Report an answered problem</summary>
+            {reviewedProblems.map((question, index) => <div key={question.problemId || index} className="my-3 rounded-xl border border-zinc-800 p-3"><MathDisplay math={question.latexProblem} block /><ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} /></div>)}
+          </details>}
           <div className="flex flex-col gap-4">
             <button 
               onClick={startGame}

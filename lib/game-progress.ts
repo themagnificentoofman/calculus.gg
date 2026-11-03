@@ -1,11 +1,13 @@
+import type { ProblemReference, RoundSnapshot } from './bank/contracts.ts';
 import { finite, getStandings, type GameMode } from './progression.ts';
 
-export interface GameQuestion { latexProblem: string; options: string[]; correctIndex: number; explanation: string | string[]; topic: string; difficulty: string }
+export interface GameQuestion extends Partial<ProblemReference> { latexProblem: string; options: string[]; correctIndex: number; explanation: string | string[]; topic: string; difficulty: string }
 export interface SavedAnswer { selectedOption: number; correct: boolean; xp: number; timeMs: number }
 export interface MatchSettings { category?: string; difficulty?: string; winCondition: 'first_to_n' | 'time_limit'; targetScore: number; timeLimit: number; penalties: boolean }
 export interface ResultReceipt { ratingChange: number; newRating: number; topicChanges: Record<string, number>; outcome: string; rank: number; rated: boolean; counted: boolean; legacy?: boolean }
 export interface GameSession {
   mode: GameMode; status: 'waiting' | 'active' | 'finished' | 'cancelled'; players: string[]; scores: Record<string, number>;
+  roundSnapshot?: RoundSnapshot;
   questionCount?: number; questions?: GameQuestion[]; category?: string; difficulty?: string; settings?: MatchSettings;
   startTime?: number; deadline?: number; finishedAt?: number; createdAt?: unknown;
   progressionVersion?: number; answers?: Record<string, Record<string, SavedAnswer>>;
