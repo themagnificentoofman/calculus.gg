@@ -8,9 +8,10 @@ export function WelcomeNetwork() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const host = canvas?.parentElement?.parentElement;
+    const surface = canvas?.parentElement;
+    const host = surface?.parentElement;
     const context = canvas?.getContext('2d');
-    if (!canvas || !host || !context) return;
+    if (!canvas || !surface || !host || !context) return;
 
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const pointer: NetworkPointer = { x: 0, y: 0, active: false, held: false };
@@ -79,14 +80,14 @@ export function WelcomeNetwork() {
     }
     function stop() { cancelAnimationFrame(frame); frame = 0; lastTime = 0; }
     function refreshPointer() {
-      if (!host) return;
-      const rect = host.getBoundingClientRect();
+      if (!surface) return;
+      const rect = surface.getBoundingClientRect();
       pointer.x = clientX - rect.left; pointer.y = clientY - rect.top;
       pointer.active = pointer.x >= 0 && pointer.y >= 0 && pointer.x <= width && pointer.y <= height;
     }
     function resize() {
-      if (!canvas || !host || !context || disposed) return;
-      const rect = host.getBoundingClientRect();
+      if (!canvas || !surface || !context || disposed) return;
+      const rect = surface.getBoundingClientRect();
       if (rect.width <= 0 || rect.height <= 0) return;
       const nextWidth = rect.width, nextHeight = rect.height;
       if (width && height) nodes.forEach(node => { node.x *= nextWidth / width; node.y *= nextHeight / height; });
@@ -129,7 +130,7 @@ export function WelcomeNetwork() {
     function motionChange() { stop(); nodes.forEach(node => { node.pushX = 0; node.pushY = 0; }); draw(0); start(); }
 
     const observer = new ResizeObserver(resize);
-    observer.observe(host);
+    observer.observe(surface);
     host.addEventListener('pointermove', move, { passive: true });
     host.addEventListener('pointerdown', press, { passive: true });
     host.addEventListener('pointerleave', clear, { passive: true });
@@ -152,7 +153,7 @@ export function WelcomeNetwork() {
     };
   }, []);
 
-  return <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+  return <div aria-hidden="true" className="pointer-events-none fixed inset-0 overflow-hidden">
     <canvas ref={canvasRef} className="block h-full w-full" />
     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_35%,rgba(9,9,11,0.5),transparent_65%)]" />
   </div>;
