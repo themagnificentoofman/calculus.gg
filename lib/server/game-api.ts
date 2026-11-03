@@ -44,7 +44,7 @@ export function createGameApi(deps: { store: Store; verify: (token: string) => P
         if (body.action === 'invite_accept') return response(await games.acceptInvite(uid, body.id));
         return response(await socialAction(deps.store, uid, body.action, body, deps.now?.()));
       }
-      const fields: Record<string, string[]> = { create: ['questionSetId', 'mode', 'options'], join: ['gameId', 'mode'], answer: ['gameId', 'index', 'selectedOption'], start: ['gameId'], leave: ['gameId'], view: ['gameId'], complete: ['gameId'], claim: ['gameId'], chat: ['gameId', 'text'], sync: [] };
+      const fields: Record<string, string[]> = { create: ['questionSetId', 'mode', 'options'], join: ['gameId', 'mode'], answer: ['gameId', 'index', 'selectedOption','requestId'], start: ['gameId'], leave: ['gameId'], view: ['gameId'], complete: ['gameId'], claim: ['gameId'], chat: ['gameId', 'text'], sync: [] };
       if (typeof body.action !== 'string' || !Object.hasOwn(fields, body.action)) throw new GameError('Unsupported game action.');
       only(body, ['action', ...fields[body.action]]);
       if (body.action === 'sync') { await games.sync(uid); return response({ ok: true }); }

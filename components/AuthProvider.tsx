@@ -1,5 +1,6 @@
 'use client';
 
+import {usePathname} from 'next/navigation';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { auth, db } from '@/firebase';
 import { onAuthStateChanged, User, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, linkWithPopup, updateProfile as updateAuthProfile } from 'firebase/auth';
@@ -64,6 +65,7 @@ const AuthContext = createContext<AuthContextType>({
 export const useAuth = () => useContext(AuthContext);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
+  const readOnlyReplay=usePathname().startsWith('/replay/');
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
@@ -81,7 +83,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (!firebaseUser) { setLoading(false); return; }
       const userRef = doc(db, 'users', firebaseUser.uid);
       try {
-        await apiRequest('profile', {});
+        if(!readOnlyReplay) await apiRequest('profile', {});
         if (current !== revision) return;
         // Keep XP/rating live; never delete or subtract legacy earned progress.
         stopProfile = onSnapshot(userRef, snapshot => {
@@ -89,17 +91,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           if (snapshot.exists()) setProfile(snapshot.data() as UserProfile);
           setLoading(false);
         }, error => { if (current === revision) { setProfileError('Your profile could not be refreshed.'); setLoading(false); } });
-        stopResults = gameProgress.watchPendingResults(firebaseUser.uid, error => console.error('Pending result sync failed', error));
+        if(!readOnlyReplay) stopResults = gameProgress.watchPendingResults(firebaseUser.uid, error => console.error('Pending result sync failed', error));
       } catch (error) {
         console.error('Profile setup failed', error);
         if (current === revision) { setLoading(false); setProfileError('Your profile could not be loaded.'); }
       }
     });
     return () => { revision++; unsubscribe(); stopProfile(); stopResults(); };
-  }, [retry]);
+  }, [retry,readOnlyReplay]);
 
   useEffect(() => {
-    if (!user || profile?.uid !== user.uid) return;
+    if (readOnlyReplay || !user || profile?.uid !== user.uid) return;
 
     const updateLastActive = async () => {
       try {
@@ -117,7 +119,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const interval = setInterval(updateLastActive, 60000);
 
     return () => clearInterval(interval);
-  }, [user, profile?.uid]);
+  }, [user, profile?.uid,readOnlyReplay]);
 
   useEffect(() => {
     try { localStorage.setItem('soundEnabled', String(profile?.settings?.soundEnabled !== false)); } catch {}

@@ -1,220 +1,39 @@
 'use client';
-
-import { useState, useEffect } from 'react';
-import { useAuth } from '@/components/AuthProvider';
-import { db } from '@/firebase';
-import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
-import { Trophy, Calculator, Zap, Swords, Users, Calendar, Filter, ArrowUpDown } from 'lucide-react';
-import { loadRecentGames } from '@/lib/stat-queries';
-import { gameStandings, type GameSession } from '@/lib/game-progress';
-import { format } from 'date-fns';
-
-interface GameRecord {
-  id: string;
-  mode: string;
-  status: string;
-  players: string[];
-  scores: Record<string, number>;
-  createdAt: any;
-  category?: string;
-  difficulty?: string;
-  winner?: string;
-  progressionVersion?: number;
-  answers?: GameSession['answers'];
-}
-
-export function GameHistory() {
-  const { user, profile } = useAuth();
-  const [games, setGames] = useState<GameRecord[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-  const [retry, setRetry] = useState(0);
-  const [sortBy, setSortBy] = useState<'date' | 'score' | 'opponents'>('date');
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
-  const [filterMode, setFilterMode] = useState<string>('all');
-  const [filterDate, setFilterDate] = useState<string>('all');
-
-  useEffect(() => {
-    let active = true;
-    setGames([]); setError(''); setLoading(true);
-    if (!user) { setLoading(false); return; }
-
-    const fetchGames = async () => {
-      try {
-        const gameData = await loadRecentGames(db, user.uid) as GameRecord[];
-        if (active) setGames(gameData);
-      } catch (error) {
-        if (active) setError('Game history could not be loaded.');
-      } finally {
-        if (active) setLoading(false);
-      }
-    };
-
-    fetchGames();
-    return () => { active = false; };
-  }, [user, profile?.gamesPlayed, retry]);
-
-  const getModeIcon = (mode: string) => {
-    switch (mode) {
-      case 'test': return <Calculator className="w-4 h-4 text-blue-500" />;
-      case 'rapid': return <Zap className="w-4 h-4 text-yellow-500" />;
-      case 'pvp': return <Swords className="w-4 h-4 text-red-500" />;
-      case 'ffa':
-      case 'multiplayer': return <Trophy className="w-4 h-4 text-purple-500" />;
-      default: return <Trophy className="w-4 h-4 text-emerald-500" />;
-    }
-  };
-
-  const filteredGames = games.filter(game => {
-    if (filterMode !== 'all' && (game.mode === 'ffa' ? 'multiplayer' : game.mode) !== filterMode) return false;
-    
-    if (filterDate !== 'all' && game.createdAt) {
-      const gameDate = game.createdAt.toDate ? game.createdAt.toDate() : new Date(game.createdAt);
-      const now = new Date();
-      const diffTime = now.getTime() - gameDate.getTime();
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      
-      if (filterDate === 'today' && gameDate.toDateString() !== now.toDateString()) return false;
-      if (filterDate === 'week' && diffDays > 7) return false;
-      if (filterDate === 'month' && diffDays > 30) return false;
-    }
-    
-    return true;
-  });
-
-  const sortedGames = [...filteredGames].sort((a, b) => {
-    if (sortBy === 'date') {
-      const dateA = a.createdAt?.toDate ? a.createdAt.toDate().getTime() : new Date(a.createdAt || 0).getTime();
-      const dateB = b.createdAt?.toDate ? b.createdAt.toDate().getTime() : new Date(b.createdAt || 0).getTime();
-      return sortOrder === 'asc' ? dateA - dateB : dateB - dateA;
-    } else if (sortBy === 'score') {
-      const scoreA = a.scores?.[user?.uid || ''] || 0;
-      const scoreB = b.scores?.[user?.uid || ''] || 0;
-      return sortOrder === 'asc' ? scoreA - scoreB : scoreB - scoreA;
-    } else if (sortBy === 'opponents') {
-      const oppA = a.players.length - 1;
-      const oppB = b.players.length - 1;
-      return sortOrder === 'asc' ? oppA - oppB : oppB - oppA;
-    }
-    return 0;
-  });
-
-  if (error) return <div role="alert" className="rounded-xl border border-red-500/30 p-4 text-sm text-red-300">{error} <button onClick={() => setRetry(value => value + 1)} className="ml-2 min-h-11 px-3 underline">Retry</button></div>;
-
-  if (loading) {
-    return <div className="text-center text-zinc-500 py-4">Loading history...</div>;
-  }
-
-  return (
-    <div className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-4 sm:p-6 backdrop-blur-sm">
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-        <h3 className="text-sm font-bold text-zinc-500 uppercase tracking-wider">Recent Games (up to 50)</h3>
-        
-        <div className="flex flex-wrap items-center gap-2 text-xs">
-          <div className="flex items-center gap-1 bg-zinc-950/50 border border-zinc-800/50 rounded-lg px-2">
-            <Filter className="w-3 h-3 text-zinc-400 ml-1" />
-            <select 
-              aria-label="Filter games by mode"
-              value={filterMode} 
-              onChange={e => setFilterMode(e.target.value)}
-              className="min-h-11 min-w-0 rounded-md bg-transparent text-zinc-300 border-none cursor-pointer"
-            >
-              <option value="all">All Modes</option>
-              <option value="test">Test</option>
-              <option value="rapid">Rapid</option>
-              <option value="pvp">PvP</option>
-              <option value="multiplayer">Multiplayer</option>
-            </select>
-          </div>
-          
-          <div className="flex items-center gap-1 bg-zinc-950/50 border border-zinc-800/50 rounded-lg px-2">
-            <Calendar className="w-3 h-3 text-zinc-400 ml-1" />
-            <select 
-              aria-label="Filter games by date"
-              value={filterDate} 
-              onChange={e => setFilterDate(e.target.value)}
-              className="min-h-11 min-w-0 rounded-md bg-transparent text-zinc-300 border-none cursor-pointer"
-            >
-              <option value="all">All Time</option>
-              <option value="today">Today</option>
-              <option value="week">Past Week</option>
-              <option value="month">Past Month</option>
-            </select>
-          </div>
-
-          <div className="flex items-center gap-1 bg-zinc-950/50 border border-zinc-800/50 rounded-lg px-2">
-            <ArrowUpDown className="w-3 h-3 text-zinc-400 ml-1" />
-            <select 
-              aria-label="Sort games by"
-              value={sortBy} 
-              onChange={e => setSortBy(e.target.value as any)}
-              className="min-h-11 min-w-0 rounded-md bg-transparent text-zinc-300 border-none cursor-pointer"
-            >
-              <option value="date">Date</option>
-              <option value="score">Score</option>
-              <option value="opponents">Opponents</option>
-            </select>
-            <button 
-              aria-label={sortOrder === 'asc' ? 'Sort descending' : 'Sort ascending'}
-              onClick={() => setSortOrder(o => o === 'asc' ? 'desc' : 'asc')}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-zinc-400 hover:bg-zinc-800 hover:text-white"
-            >
-              {sortOrder === 'asc' ? '↑' : '↓'}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-3 max-h-[400px] overflow-y-auto overscroll-contain pr-1 custom-scrollbar">
-        {sortedGames.length === 0 ? (
-          <div className="text-center text-zinc-500 py-8">
-            No games found. Play some matches to see your history!
-          </div>
-        ) : (
-          sortedGames.map(game => {
-            const myScore = game.scores?.[user?.uid || ''] || 0;
-            const isMultiplayer = game.mode === 'pvp' || game.mode === 'multiplayer' || game.mode === 'ffa';
-            const opponentsCount = Math.max(0, game.players.length - 1);
-            
-            let resultText = 'Completed';
-            let resultColor = 'text-zinc-400';
-            
-            if (isMultiplayer) {
-              const outcome = gameStandings(game as GameSession).find(p => p.uid === user?.uid)?.outcome;
-              resultText = outcome === 'win' ? 'Victory' : outcome === 'draw' ? 'Draw' : outcome === 'unplayed' ? 'Unplayed' : 'Defeat';
-              resultColor = outcome === 'win' ? 'text-emerald-500' : outcome === 'draw' ? 'text-yellow-500' : outcome === 'unplayed' ? 'text-zinc-400' : 'text-red-500';
-            }
-
-            const gameDate = game.createdAt?.toDate ? game.createdAt.toDate() : new Date(game.createdAt || Date.now());
-
-            return (
-              <div key={game.id} className="flex min-w-0 items-center justify-between gap-3 p-3 rounded-xl bg-zinc-950/50 border border-zinc-800/50 hover:border-zinc-700 transition-colors">
-                <div className="flex min-w-0 items-center gap-3">
-                  <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center bg-zinc-900`}>
-                    {getModeIcon(game.mode)}
-                  </div>
-                  <div className="min-w-0">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                      <p className="text-sm font-medium capitalize">{game.mode === 'ffa' ? 'Multiplayer' : game.mode === 'pvp' ? 'PvP' : game.mode} Game</p>
-                      <span className={`text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-zinc-900 ${resultColor}`}>
-                        {resultText}
-                      </span>
-                    </div>
-                    <p className="mt-1 break-words text-xs leading-relaxed text-zinc-400">
-                      {Number.isNaN(gameDate.getTime()) ? 'Unknown date' : format(gameDate, 'MMM d, yyyy')} • {game.category || 'Mixed'}
-                      {isMultiplayer && ` • ${opponentsCount} Opponent${opponentsCount !== 1 ? 's' : ''}`}
-                    </p>
-                  </div>
-                </div>
-                <div className="shrink-0 text-right">
-                  <span className="font-mono text-sm font-bold text-white">{myScore}</span>
-                  <p className="text-[10px] text-zinc-500 uppercase tracking-wider">Score</p>
-                </div>
-              </div>
-            );
-          })
-        )}
-      </div>
-    </div>
-  );
+import {useEffect,useState} from 'react';
+import {useAuth} from './AuthProvider';
+import {db} from '@/firebase';
+import {loadHistoryPage,historyDate,type HistoryCursor,type HistoryFilters,type HistoryRow,HISTORY_PAGE_SIZE} from '@/lib/history';
+import {apiRequest} from '@/lib/game-session';
+import {legacyMessage} from '@/lib/replay/contracts';
+const modeName=(mode:string)=>mode==='ffa'||mode==='multiplayer'?'Multiplayer':mode==='pvp'?'PvP':mode==='rapid'?'Rapid':mode==='test'?'Test':mode||'Unknown mode';
+export function GameHistory(){const {user}=useAuth();return user?<HistoryBrowser uid={user.uid}/>:null;}
+export function HistoryBrowser({uid,load=loadHistoryPage}:{uid:string;load?:typeof loadHistoryPage}){
+const [filters,setFilters]=useState<HistoryFilters>({}),[pages,setPages]=useState<HistoryCursor[]>([{}]),[page,setPage]=useState(0),[rows,setRows]=useState<HistoryRow[]>([]),[next,setNext]=useState<HistoryCursor>({}),[more,setMore]=useState(false),[loading,setLoading]=useState(false),[error,setError]=useState(''),[retry,setRetry]=useState(0),[statuses,setStatuses]=useState<Record<string,string>>({});
+ const change=(patch:HistoryFilters)=>{setFilters(f=>({...f,...patch}));setPages([{}]);setPage(0);};
+ useEffect(()=>{let active=true;if(!uid)return;setLoading(true);setError('');setStatuses({});
+  if(filters.from&&filters.to&&filters.from>filters.to){setError('The end date must be on or after the start date.');setLoading(false);return;}
+  void load(db,uid,filters,pages[page]).then(async result=>{if(!active)return;setRows(result.rows);setNext(result.cursor);setMore(result.hasMore);setLoading(false);const ids=result.rows.filter(r=>r.replayVersion===1).map(r=>r.id);if(ids.length){try{const response=await apiRequest('replay',{op:'statuses',roundIds:ids});if(active)setStatuses(response.statuses);}catch{if(active)setStatuses(Object.fromEntries(ids.map(id=>[id,'Status unavailable'])));}}}).catch(()=>{if(active){setError('History could not be loaded. Your stored rounds are unchanged.');setLoading(false);}});
+  return()=>{active=false;};
+ },[uid,filters,page,pages,retry]);
+ const select=(label:string,key:keyof HistoryFilters,options:[string,string][])=> <label className="grid gap-1 text-xs text-zinc-400">{label}<select className="min-h-11 min-w-0 rounded-lg border border-zinc-700 bg-zinc-950 px-2 text-white" value={filters[key]||'all'} onChange={e=>change({[key]:e.target.value})}>{options.map(([v,t])=><option key={v} value={v}>{t}</option>)}</select></label>;
+ return <section className="rounded-3xl border border-zinc-800 bg-zinc-900/40 p-4 sm:p-6" aria-label="Round history">
+  <h3 className="text-lg font-semibold">Round history</h3><p className="mb-4 text-sm text-zinc-400">All stored rounds remain available. Showing up to {HISTORY_PAGE_SIZE} per page. Filters search your full history.</p>
+  <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+   {select('Mode','mode',[['all','All modes'],['test','Test'],['rapid','Rapid'],['pvp','PvP'],['multiplayer','Multiplayer']])}
+   {select('Topic','topic',[['all','All topics'],['integration','Integration'],['differentiation','Differentiation'],['limits','Limits'],['series','Series'],['differential equations','Differential equations'],['multivariable','Multivariable'],['mixed','Mixed'],['unknown','Unknown']])}
+   {select('Difficulty','difficulty',[['all','All difficulties'],['easy','Easy'],['medium','Medium'],['hard','Hard'],['olympiad','Olympiad'],['unknown','Unknown']])}
+   {select('Recorded result','result',[['all','All results'],['win','Win'],['loss','Loss'],['draw','Draw'],['completed','Completed'],['unplayed','Unplayed'],['unknown','No recorded result']])}
+   {select('Replay capability','replay',[['all','All rounds'],['recorded','Recording enabled'],['legacy','Legacy']])}
+   <div className="flex items-end"><button className="min-h-11 rounded-lg border border-zinc-700 px-3" onClick={()=>{setFilters({});setPages([{}]);setPage(0);}}>Clear filters</button></div>
+   <form key={`${filters.from||''}:${filters.to||''}`} className="col-span-2 grid grid-cols-2 gap-3 sm:col-span-3 sm:grid-cols-3" onSubmit={event=>{event.preventDefault();const values=new FormData(event.currentTarget);change({from:String(values.get('from')||''),to:String(values.get('to')||'')});}}>
+    <label className="grid gap-1 text-xs text-zinc-400">From (UTC)<input name="from" aria-label="History start date" type="date" className="min-h-11 min-w-0 rounded-lg bg-zinc-950 px-2 text-white" defaultValue={filters.from||''}/></label>
+    <label className="grid gap-1 text-xs text-zinc-400">Through (UTC)<input name="to" aria-label="History end date" type="date" className="min-h-11 min-w-0 rounded-lg bg-zinc-950 px-2 text-white" defaultValue={filters.to||''}/></label>
+    <div className="flex items-end"><button type="submit" className="min-h-11 rounded-lg border border-emerald-700 px-3 text-sm text-emerald-300">Apply range</button></div>
+   </form>
+   <div className="col-span-2 flex flex-wrap gap-4 sm:col-span-3"><button className="min-h-11 text-sm underline" onClick={()=>{const now=new Date();change({from:new Date(now.getTime()-7*86400000).toISOString().slice(0,10),to:now.toISOString().slice(0,10)});}}>Last 7 days</button><button className="min-h-11 text-sm underline" onClick={()=>change({from:'',to:''})}>All dates</button></div>
+  </div>
+  <p className="mb-3 text-xs text-zinc-500">Unknown dates appear under All dates. Legacy results without a saved result receipt are labeled “No recorded result.” Replay capability filters do not imply a complete recording.</p>
+  {error?<p role="alert" className="text-red-300">{error} <button className="min-h-11 underline" onClick={()=>setRetry(n=>n+1)}>Retry</button></p>:loading?<p role="status">Loading history…</p>:<div className="space-y-3">{!rows.length&&<p className="py-6 text-zinc-400">No rounds match this range.</p>}{rows.map(g=>{const at=historyDate(g.createdAt),status=g.replayVersion===1?statuses[g.id]||'Checking…':'Legacy',outcome=g.receipts?.[uid]?.outcome;return <article key={g.id} className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-950/50 p-3"><div className="min-w-0"><p className="font-medium">{modeName(g.mode)} · <span className="capitalize">{g.status||'Unknown status'}</span></p><p className="text-xs text-zinc-400">{at===null?'Unknown date':new Date(at).toLocaleString(undefined,{timeZone:'UTC'})+' UTC'} · {g.category||'Unknown topic'} · {g.difficulty||'Unknown difficulty'}</p><p className="mt-1 text-xs text-zinc-400">{outcome||'No recorded result'} · Score {g.scores?.[uid]??'unknown'}</p><p className="mt-1 text-xs text-zinc-500">{status==='Legacy'?legacyMessage:`Replay: ${status}`}</p></div><div className="flex flex-wrap gap-3">{g.replayVersion===1&&['finished','cancelled'].includes(g.status)&&<a className="min-h-11 py-3 text-sm text-emerald-400 underline" href={`/replay/${g.id}`}>Replay &amp; analyze</a>}{['active','waiting'].includes(g.status)&&<a className="min-h-11 py-3 text-sm text-sky-400 underline" href={`/play/${g.mode==='ffa'?'multiplayer':g.mode}?round=${g.id}`}>Resume round</a>}</div></article>;})}</div>}
+  <nav aria-label="History pages" className="mt-5 flex items-center justify-between gap-3"><button className="min-h-11 rounded-lg border border-zinc-700 px-4 disabled:opacity-40" disabled={!page||loading} onClick={()=>setPage(p=>p-1)}>Previous</button><span className="text-sm">Page {page+1}</span><button className="min-h-11 rounded-lg border border-zinc-700 px-4 disabled:opacity-40" disabled={!more||loading||!!error} onClick={()=>{setPages(p=>[...p.slice(0,page+1),next]);setPage(p=>p+1);}}>Next</button></nav>
+ </section>;
 }

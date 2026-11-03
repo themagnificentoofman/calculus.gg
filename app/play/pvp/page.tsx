@@ -1,5 +1,6 @@
 'use client';
 
+import {useReplayCapture,ReplayCaptureStatus,observeReplay,useRoundUrl,capturedView,clearRoundUrl} from '@/components/ReplayCapture';
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
@@ -47,7 +48,7 @@ type GameData = GameSession;
 
 export default function PvPMode() {
   const [match, setMatch] = useState(0);
-  return <PvPMatch key={match} onPlayAgain={() => setMatch(value => value + 1)} />;
+  return <PvPMatch key={match} onPlayAgain={() => {clearRoundUrl();setMatch(value => value + 1);}} />;
 }
 
 function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
@@ -116,8 +117,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         setGameData(data);
         if (user && restoredGame.current !== gameId) {
           restoredGame.current = gameId;
-          setCurrentIndex(data.progressionVersion === 3 ? nextUnanswered(data, user.uid) : 0);
-          setSelectedOption(null); setShowExplanation(false);
+          const next=data.progressionVersion===3?nextUnanswered(data,user.uid):0,saved=await capturedView(user.uid,gameId);const index=saved?.index!==null&&saved?.index!==undefined?Math.min(saved.index,next):next;const answer=data.answers?.[user.uid]?.[index];setCurrentIndex(index);setSelectedOption(answer?.selectedOption??saved?.selectedOption??null);setShowExplanation(Boolean(answer));if(answer&&data.questions?.[index])setLastAnswer({question:data.questions[index],selectedOption:answer.selectedOption});
         }
 
         // Fetch profiles for players we don't have yet
@@ -215,6 +215,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   const handleOptionSelect = (index: number) => {
     if (saving || showExplanation || !gameData || !gameData.questions || !user || !gameId) return;
+    if(gameId)observeReplay(gameId,'selection_changed',{questionIndex:currentIndex,selectedOption:index});
     setSelectedOption(index);
   };
 
@@ -270,6 +271,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
   const nextQuestion = () => {
     if (saving || !showExplanation) return;
+    if(gameId)observeReplay(gameId,'next',{questionIndex:currentIndex});
     setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
   };
 
@@ -280,6 +282,10 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     catch (error) { setSaveError(error instanceof Error ? error.message : 'Could not leave the lobby. Please retry.'); }
     finally { setLeaving(false); }
   };
+
+  useRoundUrl(user?.uid,gameId,id=>{void gameProgress.getGame(id).then(g=>{if(g.mode!=='pvp')throw Error('This round belongs to another mode.');setGameId(id);}).catch(e=>setGenerationError(e.message));});
+  const capturedFeedbackIndex=showExplanation?currentIndex:gameData?.status==='finished'&&lastAnswer?gameData.questions?.findIndex(q=>!!q.problemId&&q.problemId===lastAnswer.question.problemId)??-1:-1;
+  const captureStatus=useReplayCapture(user?.uid,gameId,gameData?.replayVersion,{index:!loading&&gameData?.status==='active'&&gameStarted&&currentIndex<(gameData.questions?.length||0)?currentIndex:null,selectedOption,feedbackIndex:capturedFeedbackIndex>=0?capturedFeedbackIndex:null,serverEventId:gameData?.answers?.[user?.uid||'']?.[capturedFeedbackIndex]?.serverEventId,finished:gameData?.status==='finished',settled:!saving});
 
   if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
 
@@ -536,7 +542,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             </div>
           </div>
 
-          <GameSaveError error={saveError} />
+          <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
           {saveError && <p role="alert" className="my-3 text-sm text-red-300">{saveError}</p>}
           <button disabled={leaving} onClick={leaveLobby} className="w-full min-h-11 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors disabled:opacity-50">
             {leaving ? 'Leaving…' : 'Cancel'}
@@ -655,7 +661,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             return null;
           })()}
 
-          <GameResultStatus gameId={gameId} />
+          <ReplayCaptureStatus status={captureStatus} /><GameResultStatus gameId={gameId} />
           <LastAnswerReview answer={lastAnswer} />
 
           <div className="flex flex-col gap-4">
@@ -665,7 +671,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
             >
               Play Again
             </button>
-            <GameSaveError error={saveError} />
+            <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
           <a href="/" className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors block">
               Back to Dashboard
             </a>
@@ -700,7 +706,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
     return <div className="min-h-screen max-w-2xl mx-auto px-4 py-24 text-center">
       <h2 className="text-2xl font-bold mb-4">Your questions are complete</h2>
       <p className="text-zinc-400">Waiting for the other players or the match deadline. Your answers and XP are saved.</p>
-      <GameSaveError error={saveError} />
+      <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
       <a className="inline-block mt-6 underline" href="/">Back to Dashboard</a>
       <Chat gameId={gameId!} messages={gameData.messages || []} />
     </div>;
@@ -719,7 +725,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
 
     return (
       <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
-        <GameSaveError error={saveError} />
+        <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div

@@ -63,7 +63,7 @@ export async function selectBankQuestions(db: D1Database, input: { category: str
     if (!p || p.familyId!==candidate.family_id || p.difficulty!==input.difficulty || input.category!=='all' && p.topic!==input.category || input.tag && input.tag!=='*' && !p.techniqueTags.includes(input.tag)) throw Error('Bank pool/content mismatch');
     const choices=shuffled(p.choices,rng);
     return {problemId:p.problemId,problemRevision:p.problemRevision,contentHash:p.contentHash,bankRelease:pools[0].release_id,
-      familyId:p.familyId,choiceOrder:choices.map(c=>c.choiceId),latexProblem:p.statement,options:choices.map(c=>c.math),
+      familyId:p.familyId,context:{assumptions:p.assumptions,subtopic:p.subtopic,techniqueTags:p.techniqueTags,parameters:p.parameters},choiceOrder:choices.map(c=>c.choiceId),latexProblem:p.statement,options:choices.map(c=>c.math),
       correctIndex:choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty};
   });
   return {questions,relaxation};

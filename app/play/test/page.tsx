@@ -1,5 +1,6 @@
 'use client';
 
+import {useReplayCapture,ReplayCaptureStatus,observeReplay,useRoundUrl,capturedView} from '@/components/ReplayCapture';
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
@@ -30,6 +31,7 @@ export default function TestMode() {
   const [count, setCount] = useState(5);
   
   const [gameId, setGameId] = useState<string | null>(null);
+  const [roundGame,setRoundGame]=useState<import('@/lib/game-progress').GameSession|null>(null);
   const busy = useRef(false);
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState('');
@@ -73,7 +75,7 @@ export default function TestMode() {
       if (generatedQuestions) {
         const id = await gameProgress.createGame(user.uid, 'test', generatedQuestions, { category, difficulty });
         setGameId(id);
-        setQuestions((await gameProgress.getGame(id)).questions || []);
+        const round=await gameProgress.getGame(id);setRoundGame(round);setQuestions(round.questions || []);
         setCurrentIndex(0);
         setScore(0);
         setFinished(false);
@@ -90,6 +92,7 @@ export default function TestMode() {
 
   const handleOptionSelect = (index: number) => {
     if (saving || showExplanation) return;
+    if(gameId)observeReplay(gameId,'selection_changed',{questionIndex:currentIndex,selectedOption:index});
     setSelectedOption(index);
   };
 
@@ -101,7 +104,7 @@ export default function TestMode() {
       if (!result.answer) return;
       setSelectedOption(result.answer.selectedOption);
       setScore(result.game.scores[user.uid]);
-      setQuestions(result.game.questions || []);
+      setRoundGame(result.game);setQuestions(result.game.questions || []);
       playSound(result.answer.correct ? 'correct' : 'incorrect');
       if (result.answer.xp && !result.duplicate) {
         setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
@@ -113,10 +116,14 @@ export default function TestMode() {
 
   const nextQuestion = () => {
     if (saving || !showExplanation) return;
+    if(gameId)observeReplay(gameId,'next',{questionIndex:currentIndex});
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1); setSelectedOption(null); setShowExplanation(false);
     } else { playSound('end'); setFinished(true); }
   };
+
+  useRoundUrl(user?.uid,gameId,id=>{void gameProgress.getGame(id).then(async g=>{if(g.mode!=='test')throw Error('This round belongs to another mode.');setGameId(id);setRoundGame(g);setQuestions(g.questions||[]);setScore(g.scores[user!.uid]||0);const answers=g.answers?.[user!.uid]||{},next=Object.keys(answers).length;const saved=await capturedView(user!.uid,id);const index=saved?.index!==null&&saved?.index!==undefined?Math.min(saved.index,next):Math.max(0,next-1);setCurrentIndex(Math.min(index,(g.questions?.length||1)-1));const feedback=index<next;setShowExplanation(feedback);setSelectedOption(feedback?answers[String(index)]?.selectedOption??null:saved?.selectedOption??null);setFinished(g.status==='finished'&&saved?.finished===true);}).catch(e=>setGenerationError(e.message));});
+  const captureStatus=useReplayCapture(user?.uid,gameId,roundGame?.replayVersion,{index:!loading&&!finished&&questions.length?currentIndex:null,selectedOption,feedbackIndex:!finished&&showExplanation?currentIndex:null,serverEventId:roundGame?.answers?.[user?.uid||'']?.[currentIndex]?.serverEventId,finished,settled:!saving});
 
   if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
 
@@ -149,7 +156,7 @@ export default function TestMode() {
           <h2 className="text-3xl font-bold mb-2">Test Complete!</h2>
           <p className="text-zinc-400 mb-8">You scored <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> out of {questions.length}</p>
           
-          <GameResultStatus gameId={gameId} />
+          <ReplayCaptureStatus status={captureStatus} /><GameResultStatus gameId={gameId} />
           <div className="flex flex-col gap-4">
             <button 
               onClick={startGame}
@@ -158,7 +165,7 @@ export default function TestMode() {
               Play Again
             </button>
             <button 
-              onClick={() => { setQuestions([]); setFinished(false); }}
+              onClick={() => { setGameId(null);setRoundGame(null);setQuestions([]); setFinished(false); }}
               className="w-full py-3 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-bold transition-colors"
             >
               Change Settings
@@ -178,7 +185,7 @@ export default function TestMode() {
 
     return (
       <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
-        <GameSaveError error={saveError} />
+        <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 

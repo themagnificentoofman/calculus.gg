@@ -1,5 +1,6 @@
 import { calculateProblemXp, calculateRatings, finite, TOPICS, type GameMode } from '../progression.ts';
 import { gamePlayers, nextUnanswered, type GameQuestion, type GameSession, type MatchSettings } from '../game-progress.ts';
+import { recordTransition } from './replay-recording.ts';
 import type { RoundSnapshot } from '../bank/contracts.ts';
 import type { Store, Transaction, Data } from './firestore-admin.ts';
 
@@ -14,10 +15,10 @@ export function publicProfile(profile: Data) {
   return Object.fromEntries(keys.filter(k => profile[k] !== undefined).map(k => [k, profile[k]]));
 }
 export function publicGame(game: GameSession) {
-  const { questions = [], answers = {}, ratingSnapshot: _snapshots, roundSnapshot: _roundSnapshot, ...rest } = game;
+  const { questions = [], answers = {}, ratingSnapshot: _snapshots, roundSnapshot: _roundSnapshot, replaySequence: _replaySequence, replayChunkCount: _replayChunkCount, ...rest } = game;
   return { ...rest, questionCount: questions.length,
     questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(q => ({ latexProblem: q.latexProblem, options: q.options, topic: q.topic, difficulty: q.difficulty, ...(q.problemId ? { problemId: q.problemId, problemRevision: q.problemRevision } : {}) })),
-    answers: Object.fromEntries(Object.entries(answers).map(([uid, values]) => [uid, Object.fromEntries(Object.entries(values).map(([i, { selectedOption: _selection, ...a }]) => [i, a]))])),
+    answers: Object.fromEntries(Object.entries(answers).map(([uid, values]) => [uid, Object.fromEntries(Object.entries(values).map(([i, { selectedOption: _selection, requestId:_requestId, serverEventId:_serverEventId, acceptedAt:_acceptedAt, ...a }]) => [i, a]))])),
   };
 }
 function ownProgress(game: GameSession, uid: string) {
@@ -84,17 +85,18 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
   }
   async function createGame(uid: string, id: string, mode: GameMode, input: Data) {
     identifier(id); await sync(uid);
+    const requestId=crypto.randomUUID(),receivedAt=now();
     return store.transaction(async tx => {
       const [set, existing, p] = await Promise.all([tx.get(`questionSets/${id}`), tx.get(`gameSecrets/${id}`), tx.get(`users/${uid}`)]);
       if (!set || set.uid !== uid || set.mode !== mode) throw new GameError('This question set does not belong to this game.', 403);
       if (existing) { requireMember(existing as GameSession, uid); return { id, ...playerView(existing as GameSession, uid) }; }
       if (!p || set.used || new Date(set.expiresAt).getTime() <= now()) throw new GameError('This question set has expired. Please start again.');
       const configuration = settingsFor(mode, input), solo = mode === 'test' || mode === 'rapid', startTime = now() + (mode === 'rapid' ? 3000 : 0);
-      const game: GameSession = { mode, status: solo ? 'active' : 'waiting', progressionVersion: 3, players: [uid], scores: { [uid]: 0 }, questions: set.questions, ...(set.roundSnapshot ? { roundSnapshot: set.roundSnapshot } : {}), category: set.category, difficulty: set.difficulty,
+      const game: GameSession = { mode, status: solo ? 'active' : 'waiting', progressionVersion: 3, replayVersion:1, originalTimeLimit:configuration.timeLimit, players: [uid], scores: { [uid]: 0 }, questions: set.questions, ...(set.roundSnapshot ? { roundSnapshot: set.roundSnapshot } : {}), category: set.category, difficulty: set.difficulty,
         answers: {}, completedPlayers: [], pendingClaims: [], receipts: {}, ratingSnapshot: { [uid]: snapshot(p) }, createdAt: new Date(now()),
         ...(configuration.settings ? { settings: configuration.settings } : {}), ...(solo ? { startTime } : {}), ...(mode === 'rapid' ? { deadline: startTime + configuration.timeLimit! * 1000 } : {}) };
       const { questions: _questions, ...metadata } = set;
-      tx.set(`questionSets/${id}`, { ...metadata, used: true }); saveGame(tx, id, game);
+      tx.set(`questionSets/${id}`, { ...metadata, used: true }); recordTransition(tx,id,null,game,uid,requestId,receivedAt,now()); saveGame(tx, id, game);
       return { id, ...playerView(game, uid) };
     });
   }
@@ -102,10 +104,11 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
   // Score, XP and all result receipts commit together with the accepted answer.
   async function act(uid: string, id: string, action: string, input: Data = {}) {
     identifier(id);
-    return store.transaction(async tx => {
+    const requestId=typeof input.requestId==='string'?identifier(input.requestId):crypto.randomUUID(),receivedAt=now(),operationId=crypto.randomUUID();
+    const result=await store.transaction(async tx => {
       const raw = await tx.get(`gameSecrets/${id}`);
       if (!raw || raw.progressionVersion !== 3) throw new GameError('This game uses an older version. Please create a new game.', 409);
-      const game = raw as GameSession;
+      const game = raw as GameSession, before=structuredClone(raw) as GameSession;
       const invitation = input.inviteId ? await tx.get(`gameInvites/${identifier(input.inviteId)}`) : null;
       const joining = action === 'join' && !game.players.includes(uid);
       if (!joining) requireMember(game, uid);
@@ -120,19 +123,19 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       if (input.inviteId && (!invitation || invitation.to !== uid || invitation.gameId !== id || !['pending', 'accepted'].includes(invitation.status) || !game.players.includes(invitation.from) || !profiles[uid].friends?.includes(invitation.from) || !profiles[invitation.from]?.friends?.includes(uid))) throw new GameError('This invitation is no longer available.', 409);
       if (lobbyExpired(game, time)) {
         if (joining) throw new GameError('This lobby has expired. Start a new game.', 409);
-        game.status = 'cancelled'; modified = true;
+        game.status = 'cancelled'; game.logicalEndAt=new Date(game.createdAt as any).getTime()+30*60_000; game.endReason='lobby_expired'; modified = true;
       }
       if (action === 'leave') {
         if (game.status === 'active') throw new GameError('This game has already started.', 409);
         if (game.status === 'waiting') {
-          if (game.players[0] === uid) game.status = 'cancelled';
+          if (game.players[0] === uid) {game.status = 'cancelled';game.logicalEndAt=time;game.endReason='lobby_cancelled';}
           else {
             game.players = game.players.filter(p => p !== uid);
             delete game.scores[uid]; delete game.ratingSnapshot?.[uid];
             tx.delete(`games/${id}/reviews/${uid}`);
           }
-          saveGame(tx, id, game);
-        } else if (modified) saveGame(tx, id, game);
+          recordTransition(tx,id,before,game,uid,requestId,receivedAt,time,undefined,operationId);saveGame(tx, id, game);
+        } else if (modified) {recordTransition(tx,id,before,game,uid,requestId,receivedAt,time,undefined,operationId);saveGame(tx, id, game);}
         return { left: true };
       }
       if (action === 'join') {
@@ -156,8 +159,10 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
         if (!Number.isInteger(index) || index < 0 || !Number.isInteger(selectedOption) || selectedOption < 0 || selectedOption > 3) throw new GameError('Select a valid answer.');
         answer = game.answers?.[uid]?.[index];
         if (answer) { duplicate = true; }
-        else if (game.status !== 'active') throw new GameError('This game has ended.', 409);
-        else if (time < game.startTime!) throw new GameError('The game has not started yet.', 409);
+        else if(game.status!=='active'||time<game.startTime!||(!game.deadline||time<game.deadline)&&index!==nextUnanswered(game,uid)){
+          const message=game.status!=='active'?'This game has ended.':time<game.startTime!?'The game has not started yet.':'Please answer the current question.';
+          recordTransition(tx,id,before,game,uid,requestId,receivedAt,time,{index,selectedOption,reason:message},operationId);saveGame(tx,id,game);return {rejected:{message,status:409}};
+        }
         else if (!game.deadline || time < game.deadline) {
           if (index !== nextUnanswered(game, uid)) throw new GameError('Please answer the current question.', 409);
           const q = game.questions?.[index]; if (!q) throw new GameError('Question not found.');
@@ -183,6 +188,8 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       } else if (!['view', 'complete', 'claim'].includes(action)) throw new GameError('Unsupported game action.');
       const target = game.mode === 'multiplayer' && game.settings?.winCondition === 'first_to_n' && Object.values(game.scores).some(s => s >= game.settings!.targetScore);
       if (game.status === 'active' && (target || game.players.every(p => nextUnanswered(game, p) === game.questions!.length) || (game.deadline && time >= game.deadline))) {
+        game.logicalEndAt=game.deadline&&time>=game.deadline?(action==='answer'&&answer&&!duplicate&&before.deadline!>time?time:game.deadline):time;
+        game.endReason=game.deadline&&time>=game.deadline?'timeout':target?'target_reached':'all_answered';
         game.status = 'finished'; game.finishedAt = time; game.pendingClaims = []; modified = true;
         const players = gamePlayers(game), counted = players.some(p => p.attempted > 0), ranked = competitive(game) && players.length > 1;
         const ratings = ranked ? calculateRatings(players, game.questions!) : {};
@@ -202,9 +209,11 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       if (input.inviteId) tx.set(`gameInvites/${input.inviteId}`, { ...invitation, status: 'accepted' });
       if (action === 'claim' && game.status !== 'finished') throw new GameError('This game is still in progress.', 409);
       for (const p of changed) saveProfile(tx, p, profiles[p]);
-      if (modified) saveGame(tx, id, game);
+      if (modified) {recordTransition(tx,id,before,game,uid,requestId,receivedAt,time,undefined,operationId);saveGame(tx, id, game);}
       return { ...playerView(game, uid), answer: answer || null, duplicate, receipt: game.receipts?.[uid] || null, serverNow: time };
     });
+    if('rejected' in result&&result.rejected)throw new GameError(result.rejected.message,result.rejected.status);
+    return result;
   }
   async function sync(uid: string) {
     const active = await store.find('gameSecrets', [['players', 'ARRAY_CONTAINS', uid], ['status', 'EQUAL', 'active'], ['deadline', 'LESS_THAN_OR_EQUAL', now()]], 25);

@@ -4,6 +4,7 @@ import 'katex/dist/katex.min.css'; // KaTeX styles
 import { AuthProvider } from '@/components/AuthProvider';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { FriendsList } from '@/components/FriendsList';
+import {ReplayQueueSync} from '@/components/ReplayCapture';
 import { Navbar } from '@/components/Navbar';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 
@@ -31,7 +32,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body className="bg-background text-foreground min-h-screen font-sans antialiased hexagon-bg">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
           <AuthProvider>
-            <Navbar />
+            <ReplayQueueSync /><Navbar />
             {children}
             <FriendsList />
           </AuthProvider>
