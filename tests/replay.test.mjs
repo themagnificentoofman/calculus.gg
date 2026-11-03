@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createServerGames,publicGame} from '../lib/server/game-engine.ts';
 import {createReplayApi} from '../lib/server/replay-api.ts';
-import {initialState,compileReplay,reduceEvent,orderEvents,originalClock,problemEvidence} from '../lib/replay/engine.ts';
+import {initialState,compileReplay,reduceEvent,orderEvents,originalClock,problemEvidence,roundAnalysis} from '../lib/replay/engine.ts';
 import {PlaybackClock,loadReplay} from '../lib/replay/playback.ts';
 import {replayStatus,REPLAY_LIMITS,legacyMessage} from '../lib/replay/contracts.ts';
 import {CaptureQueue} from '../lib/replay/queue.ts';
@@ -96,4 +96,13 @@ test('Measure bounded replay overhead for a twenty-question Test round',async()=
  const documents=[...s.store.docs].filter(([path])=>path.startsWith('replay')),bytes=documents.reduce((n,[,v])=>n+new TextEncoder().encode(JSON.stringify(v)).length,0);let readRequests=0;const started=performance.now(),data=await loadReplay(id,b=>{readRequests++;return s.call('alice',b);}),loadMs=performance.now()-started;
  console.log(JSON.stringify({localReplayOverhead:{questions:20,clientEvents:events.length,serverEvents:data.events.filter(e=>e.source==='server').length,documents:documents.length,jsonBytes:bytes,replayDocumentWrites:replayWrites,loadHttpRequests:readRequests,inMemoryLoadMs:loadMs,providerBilling:'not measured; no production traffic'}}));
  assert.equal(replayWrites,52);assert.equal(readRequests,4);assert.ok(bytes<150000);
+});
+
+test('Analysis uses recorded verdicts and excludes unanswered questions and missing timing from aggregates',()=>{
+ const data=replayFixture();data.content.questions[1].topic='limits';data.content.questions[2].topic='series';
+ const accepted={...data.events.find(e=>e.type==='answer_accepted'),eventId:'accepted_second',at:10000,sequence:40,data:{index:1,selectedOption:2,correct:false,xp:0}};
+ data.events.push(accepted,{...accepted,eventId:'score_second',type:'score_progress',sequence:41,data:{scores:{alice:1},progress:{alice:2}}});
+ data.events.push({...accepted,source:'client',eventId:'untrusted_verdict',data:{index:2,correct:true,xp:900}});
+ const analysis=roundAnalysis(data);assert.equal(analysis.overall.attempted,2);assert.equal(analysis.overall.accuracy,50);assert.equal(analysis.overall.recordedXp,10);assert.equal(analysis.overall.timed,1);assert.equal(analysis.overall.meanExposureToSubmitMs,1000);
+ assert.equal(analysis.topics.find(t=>t.topic==='series').accuracy,null);assert.equal(analysis.topics.find(t=>t.topic==='limits').meanExposureToSubmitMs,null);assert.equal(analysis.problems[1].scoreAfter,1);assert.equal(analysis.problems[1].progressAfter,2);
 });
