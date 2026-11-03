@@ -54,3 +54,16 @@ export function problemEvidence(data:ReplayData,index:number){
   if(open)uncertain=true;
   return {exposedAt:exposure[0]?.at??null,submissionAt:submission?.at??null,acceptedAt:accepted?.at??null,feedbackAt:feedback?.at??null,feedbackDwellMs:feedback&&next&&feedback.segmentId===next.segmentId?Math.max(0,next.at!-feedback.at!):null,visibleExposureMs:exposure.length&&!uncertain?visibleMs:null,totalToSubmitMs:exposure[0]&&submission&&exposure[0].segmentId===submission.segmentId?Math.max(0,submission.at!-exposure[0].at!):null,answer:accepted?.data??null};
 }
+export function roundAnalysis(data:ReplayData){
+  const compiled=compileReplay(data);
+  const problems=data.content.questions.map((question,index)=>{
+    const evidence=problemEvidence(data,index),state=evidence.acceptedAt===null?null:compiled.seek(evidence.acceptedAt);
+    return {index,topic:question.topic||'Unknown topic',...evidence,scoreAfter:state?.scores[data.playerId]??null,progressAfter:state?.progress[data.playerId]??null};
+  });
+  const summarize=(items:typeof problems)=>{
+    const attempted=items.filter(p=>typeof p.answer?.correct==='boolean'),correct=attempted.filter(p=>p.answer!.correct).length;
+    const timed=attempted.filter(p=>p.totalToSubmitMs!==null),xp=attempted.filter(p=>typeof p.answer?.xp==='number'&&Number.isFinite(p.answer.xp));
+    return {questions:items.length,attempted:attempted.length,correct,accuracy:attempted.length?100*correct/attempted.length:null,timed:timed.length,meanExposureToSubmitMs:timed.length?timed.reduce((sum,p)=>sum+p.totalToSubmitMs!,0)/timed.length:null,recordedXp:xp.length?xp.reduce((sum,p)=>sum+p.answer!.xp,0):null};
+  };
+  return {problems,overall:summarize(problems),topics:[...new Set(problems.map(p=>p.topic))].map(topic=>({topic,...summarize(problems.filter(p=>p.topic===topic))}))};
+}
