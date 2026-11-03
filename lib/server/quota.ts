@@ -36,3 +36,16 @@ export async function consumeMutationQuota(db: D1Database, uid: string, now = Da
   `).bind(`mutation:${uid}:minute`, expires, now, now)]);
   return result.results.length > 0;
 }
+
+// Independent of paid authoring: there is no site-wide generation budget in play.
+export async function consumeBankReadQuota(db: D1Database, uid: string, now = Date.now()) {
+  const expires = (Math.floor(now / 60000) + 1) * 60000;
+  const [result] = await db.batch([db.prepare(`
+    INSERT INTO ai_quota (key, count, expires_at) VALUES (?, 1, ?)
+    ON CONFLICT(key) DO UPDATE SET
+      count = CASE WHEN ai_quota.expires_at <= ? THEN 1 ELSE ai_quota.count + 1 END,
+      expires_at = MAX(ai_quota.expires_at, excluded.expires_at)
+    WHERE ai_quota.expires_at <= ? OR ai_quota.count < 12 RETURNING count
+  `).bind(`bank-read:${uid}:minute`, expires, now, now)]);
+  return result.results.length > 0;
+}
