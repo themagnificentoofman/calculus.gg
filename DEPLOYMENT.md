@@ -21,6 +21,8 @@ The Site retains its existing access settings. Primary domain: `calculus.ninja`.
 
 Before testing Google sign-in, add `calculus.ninja` to the existing project's **Authentication → Settings → Authorized domains** in the Firebase console. After verifying sign-in on the primary domain, remove obsolete application hostnames from Authorized domains. Keep the Firebase service domains required for authentication. Confirm Google and email/password providers remain enabled. If the Firebase browser API key has HTTP-referrer restrictions, authorize the new origin. The secure-gameplay rollout also requires the coordinated rules and public-profile migration below; deploying only the Worker is insufficient.
 
+Email/password authentication is declared in `firebase.json`. Apply it with `firebase deploy --only auth --project gen-lang-client-0109864131`; publishing the website alone does not enable Firebase providers. This command enables email/password without changing the existing Google provider. Signed-in users can link Google under **Settings → Account Security → Link Google**. Linking retains the Firebase UID, password login, and progress; Google credentials already used by another account are rejected rather than merged.
+
 All game, question, profile and social endpoints independently verify Firebase ID tokens with Google's public signing keys, the existing project audience/issuer, expiration, subject, issued-at and authentication-time claims. Tokens are not checked for revocation or account disablement on every request; they can remain valid until expiry. Firestore rules deny all browser writes and restrict private reads; the server identity uses IAM and must remain limited to this database.
 
 ## Scaling and cost boundaries
