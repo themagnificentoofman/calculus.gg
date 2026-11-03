@@ -12,7 +12,7 @@ const store = firestoreStore(project, '(default)', async () => 'owner', 'http://
 let clock = Date.now(), sequence = 0;
 const actors = [], identities = new Map();
 const fixture = (difficulty, count) => Array.from({length:count},(_,i)=>({latexProblem:String.raw`\int x^2\,dx`,options:[String.raw`\frac{x^3}{3}+C`,'x+C','2x+C','3x+C'],correctIndex:0,explanation:[String.raw`\textnormal{Apply the power rule.}`],topic:'integration',difficulty}));
-const api = createGameApi({store,now:()=>clock,verify:async token=>{const c=identities.get(token);if(!c)throw Error('invalid');return c;},generate:async(_c,d,n)=>fixture(d,n),quota:async()=>true});
+const api = createGameApi({store,now:()=>clock,verify:async token=>{const c=identities.get(token);if(!c)throw Error('invalid');return c;},select:async({difficulty:d,count:n})=>({questions:fixture(d,n),relaxation:'none'}),quota:async()=>true});
 async function actor() {
  const app=initializeApp({projectId:project,apiKey:'emulator-only',authDomain:'localhost'},`secure-${Date.now()}-${sequence++}`);
  const auth=getAuth(app);connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});const db=getFirestore(app);connectFirestoreEmulator(db,'127.0.0.1',8080);
