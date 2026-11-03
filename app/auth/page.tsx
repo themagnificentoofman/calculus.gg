@@ -14,7 +14,6 @@ export default function AuthPage() {
   const [loading, setLoading] = useState(false);
   
   const { login, loginWithEmail, signupWithEmail } = useAuth();
-  const finishSignIn = () => window.location.assign(new URLSearchParams(window.location.search).get('next') === '/contact' ? '/contact' : '/');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,7 +32,7 @@ export default function AuthPage() {
       } else {
         await signupWithEmail(email, password, name);
       }
-      finishSignIn();
+      window.location.assign('/');
     } catch (err: any) {
       setError(err.message || 'Authentication failed');
     } finally {
@@ -44,7 +43,7 @@ export default function AuthPage() {
   const handleGoogleLogin = async () => {
     try {
       await login();
-      finishSignIn();
+      window.location.assign('/');
     } catch (err: any) {
       setError(err.message || 'Google login failed');
     }

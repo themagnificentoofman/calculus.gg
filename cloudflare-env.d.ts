@@ -5,7 +5,5 @@ declare namespace Cloudflare {
     OPENAI_API_KEY?: string;
     FIREBASE_SERVICE_ACCOUNT_JSON?: string;
     OPENAI_MODEL?: string;
-    RESEND_API_KEY?: string;
-    CONTACT_FROM_EMAIL?: string;
   }
 }
