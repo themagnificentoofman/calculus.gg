@@ -1,3 +1,4 @@
+import {observeReplay} from './replay/browser-events';
 import { auth, db } from '@/firebase';
 import { collection, doc, onSnapshot, query, where } from 'firebase/firestore';
 import type { GameMode } from './progression';
@@ -27,7 +28,13 @@ export const gameProgress = {
   joinGame: (id: string, _uid: string, mode: string) => command('join', id, { mode }),
   leaveGame: (id: string) => command('leave', id),
   startGame: (id: string, _uid: string) => command('start', id),
-  submitAnswer: (id: string, _uid: string, index: number, selectedOption: number) => command('answer', id, { index, selectedOption }),
+  async submitAnswer(id:string,uid:string,index:number,selectedOption:number){
+    const key=`answer-request:${uid}:${id}:${index}`;let requestId=crypto.randomUUID();
+    try{requestId=sessionStorage.getItem(key)||requestId;sessionStorage.setItem(key,requestId);}catch{}
+    observeReplay(id,'submission_started',{questionIndex:index,selectedOption,requestId});
+    try{const result=await command('answer',id,{index,selectedOption,requestId});observeReplay(id,'answer_response',{questionIndex:index,requestId,serverEventId:result.answer?.serverEventId});return result;}
+    catch(error){observeReplay(id,'submission_rejected',{questionIndex:index,requestId,reason:'transport-uncertain'});throw error;}
+  },
   completeGame: (id: string, _uid: string) => command('complete', id),
   async claimResult(id: string, _uid: string) { return (await command('claim', id)).receipt; },
   syncPendingResults: (_uid: string) => command('sync'),

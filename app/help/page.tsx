@@ -141,6 +141,18 @@ export default function HelpPage() {
             </div>
           </section>
 
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">History, replay &amp; analysis</h2>
+            <div className="space-y-4 text-zinc-300 leading-relaxed">
+              <p>Your stored round history has no automatic record limit. History displays 25 rounds per page; use date ranges, mode, topic, difficulty, recorded result, and replay capability to find older rounds. Filters search the full stored history. Unknown dates remain available under All dates.</p>
+              <p>New rounds capture the exact bank problem revision and choice order, server-confirmed answers and scores, and your browser’s observed interactions. Replay is private to participants; only your own detailed perspective and public opponent scores are shown. Solutions and analysis unlock after the entire match ends, including when you finish your questions first.</p>
+              <p>Recorded playback follows the original timeline, including countdowns, penalties and captured feedback. You can pause, seek, change speed, and jump between questions or events. Analysis shows saved solutions separately. Viewing a replay does not submit answers, generate problems, award XP, change ratings, or alter the match result.</p>
+              <p>Recording means the round is still in progress. Syncing means captured events are waiting to upload. Available means the expected evidence synchronized; Partial means some events or timing could not be recovered. Unavailable means the replay data could not be loaded. Legacy — replay was not recorded for this round. Rounds already in progress when replay launched remain Legacy.</p>
+              <p>Keep this device’s site data until synchronization finishes. Events are saved incrementally on this device and retried after reconnecting. Closing the browser, clearing site data, denied storage, or a crash can leave a partial replay. Unknown timings are shown as unknown. Reloads use separate clock segments; an unaligned segment is not given an invented time.</p>
+              <p>History and synchronized replays are not automatically deleted. To bound recording cost, capture allows up to 4,096 client events per player per round, 32 page sessions, and 128 chunks per session, with at most 32 events and 24 KB per chunk. Reaching a recording limit marks the replay partial and does not change gameplay or remove the round from history. Chat and account credentials are not recorded in replay events.</p>
+            </div>
+          </section>
+
           {/* Tips */}
           <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">

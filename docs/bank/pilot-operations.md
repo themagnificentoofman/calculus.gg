@@ -1,0 +1,15 @@
+# Four-batch hosted pilot
+
+> Historical checkpoint before the explicitly authorized [operator-budget mode](operator-budget.md). Its provider-allocation prerequisite is superseded for this existing bundle; preserve this record as pilot evidence.
+
+This operational branch preserves the live version 22 UI and gameplay implementation while adding the compact schema and an authenticated pilot writer. Do not merge its gameplay reversions into the bank application on main. The pilot does not publish or activate a release.
+
+`POST /api/bank-import` requires an Ed25519 signature over the Site ID, method, path, timestamp, and exact body SHA-256. Requests expire after 60 seconds; the entire endpoint returns 404 without the runtime public key or after `BANK_PILOT_EXPIRES_AT`. The operator private key is local only, mode 0600, and never committed. Public browser-origin requests are rejected. Configure only `BANK_PILOT_PUBLIC_KEY` and `BANK_PILOT_EXPIRES_AT` using Sites environment tools; preserve existing application credentials.
+
+The compiled allowlist accepts only batches 0–3 of bundle `ed08a3de9381d715d50f5a122a3eb23034d2b92dff2192be4aac198272e56f32`: 72 shared records and 928 problems. Raw SQL is accepted only if the complete original bytes match one of these four checksums. No arbitrary SQL, deletion, publication, or activation operation exists. Schema is created only by the existing additive migrations. The data and a unique immutable receipt commit in one D1 batch. In-order receipt guards and exact immutable content protect retries and concurrent duplicates.
+
+The local client supports baseline, status, pilot, and verification operations. It sends one import request at a time with a two-second gap and halts on errors, import server time above 2 seconds, import round trip above 10 seconds, or health latency above the greater of 2 seconds and three times baseline median. These are conservative pilot stop thresholds, not hosting quotas. A timeout may follow a commit: reconcile status/receipts before resuming. Never assume a rollback after a lost response.
+
+The pilot client records metrics and status, without logging signatures, credentials, SQL, or problem content. Available `rows_read`, `rows_written`, `size_after`, and durations measure operations only; they do not establish remaining shared allowance or reset timing. Verification compares every imported canonical problem and shared record with the preserved local serving database. It checks absence of publication/release activation and tests duplicate-safe retries. HTTP health/auth checks do not replace a signed-in end-to-end gameplay test.
+
+After verification, remove the two pilot environment keys and redeploy this same saved version to disable the endpoint while preserving current gameplay. Retain the four receipts and imported records for a later authorized full import. Never start that full import as part of this pilot. Rollback version 22 remains available; schema migrations and committed data survive a code rollback.

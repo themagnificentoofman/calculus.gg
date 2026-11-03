@@ -1,5 +1,6 @@
 'use client';
 
+import {useReplayCapture,ReplayCaptureStatus,observeReplay,useRoundUrl,capturedView} from '@/components/ReplayCapture';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
@@ -47,6 +48,7 @@ export default function RapidMode() {
   const { profile } = useAuth();
   const [playerColor, setPlayerColor] = useState(profile?.color || '#eab308');
   const [gameId, setGameId] = useState<string | null>(null);
+  const [roundGame,setRoundGame]=useState<import('@/lib/game-progress').GameSession|null>(null);
   const busy = useRef(false);
   const finishedRef = useRef(false);
   const deadlineRef = useRef(0);
@@ -80,7 +82,7 @@ export default function RapidMode() {
       const generated = await selectQuestions(category, difficulty, 20, 'rapid');
       const id = await gameProgress.createGame(user.uid, 'rapid', generated, { category, difficulty, timeLimit });
       finishedRef.current = false; setReviewedProblems([]);
-      setQuestions((await gameProgress.getGame(id)).questions || []); setCurrentIndex(0); setSelectedOption(null); setScore(0);
+      const round=await gameProgress.getGame(id);setRoundGame(round);setQuestions(round.questions || []); setCurrentIndex(0); setSelectedOption(null); setScore(0);
       setTimeLeft(timeLimit); setFinished(false); setCountdown(3); setGameId(id);
     } catch (error) { setGenerationError(error instanceof Error ? error.message : 'Could not start the game.'); }
     finally { setLoading(false); }
@@ -92,7 +94,7 @@ export default function RapidMode() {
     try {
       const result = await gameProgress.completeGame(gameId, user.uid);
       if (result.game.status === 'finished') { setFinished(true); playSound('end'); }
-      else { deadlineRef.current = result.game.deadline || 0; finishedRef.current = false; }
+      else { setRoundGame(result.game);deadlineRef.current = result.game.deadline || 0; finishedRef.current = false; }
     } catch (error) {
       finishedRef.current = false;
       setSaveError('Could not finish the game. Reconnecting…');
@@ -102,7 +104,7 @@ export default function RapidMode() {
   useEffect(() => {
     if (!gameId || !user) return;
     return gameProgress.watchGame(gameId, user.uid, game => {
-      deadlineRef.current = game.deadline || 0; startTimeRef.current = game.startTime || 0;
+      setRoundGame(game);deadlineRef.current = game.deadline || 0; startTimeRef.current = game.startTime || 0;
       setScore(game.scores[user.uid] || 0);
       setReviewedProblems((game.questions || []).filter((_, index) => Boolean(game.answers?.[user.uid]?.[index])));
       if (game.status === 'finished') { finishedRef.current = true; setFinished(true); }
@@ -124,7 +126,7 @@ export default function RapidMode() {
   }, [gameId, finished, finishGame]);
 
   const handleOptionSelect = (index: number) => {
-    if (!saving && !finished && countdown === null) setSelectedOption(index);
+    if (!saving && !finished && countdown === null) {if(gameId)observeReplay(gameId,'selection_changed',{questionIndex:currentIndex,selectedOption:index});setSelectedOption(index);}
   };
 
   const checkAnswer = async () => {
@@ -137,13 +139,17 @@ export default function RapidMode() {
       if (result.answer.xp && !result.duplicate) {
         setXpEarned(result.answer.xp); setTimeout(() => setXpEarned(null), 2000);
       }
-      deadlineRef.current = result.game.deadline || 0;
+      setRoundGame(result.game);deadlineRef.current = result.game.deadline || 0;
+      observeReplay(gameId,'automatic_advance',{questionIndex:currentIndex});
       setScore(result.game.scores[user.uid]); setSelectedOption(null);
       if (result.game.status === 'finished') { setFinished(true); finishedRef.current = true; }
       else setCurrentIndex(nextUnanswered(result.game, user.uid));
     } catch (error) { setSaveError(error instanceof Error ? error.message : 'Answer was not saved. Please retry.'); }
     finally { busy.current = false; setSaving(false); }
   };
+
+  useRoundUrl(user?.uid,gameId,id=>{void gameProgress.getGame(id).then(g=>{if(g.mode!=='rapid')throw Error('This round belongs to another mode.');setGameId(id);setRoundGame(g);setQuestions(g.questions||[]);setCurrentIndex(nextUnanswered(g,user!.uid));setScore(g.scores[user!.uid]||0);setFinished(g.status==='finished');}).catch(e=>setGenerationError(e.message));});
+  const captureStatus=useReplayCapture(user?.uid,gameId,roundGame?.replayVersion,{index:!loading&&!finished&&countdown===null&&questions.length?currentIndex:null,selectedOption,feedbackIndex:null,finished,settled:!saving});
 
   if (authLoading) return <main className="p-8 text-center text-zinc-400" role="status">Loading your account…</main>;
 
@@ -176,7 +182,7 @@ export default function RapidMode() {
           <h2 className="text-3xl font-bold mb-2">Rapid Complete!</h2>
           <p className="text-zinc-400 mb-8">You solved <span className="font-bold font-mono text-xl" style={{ color: playerColor }}>{score}</span> {score === 1 ? 'problem' : 'problems'}. This round allowed {timeLimit} seconds; wrong answers deducted 5 seconds.</p>
           
-          <GameResultStatus gameId={gameId} />
+          <ReplayCaptureStatus status={captureStatus} /><GameResultStatus gameId={gameId} />
           {reviewedProblems.length > 0 && <details className="my-4 text-left"><summary className="min-h-11 cursor-pointer text-sm text-zinc-400">Report an answered problem</summary>
             {reviewedProblems.map((question, index) => <div key={question.problemId || index} className="my-3 rounded-xl border border-zinc-800 p-3"><MathDisplay math={question.latexProblem} block /><ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} /></div>)}
           </details>}
@@ -230,7 +236,7 @@ export default function RapidMode() {
 
     return (
       <div className="min-h-screen max-w-4xl mx-auto px-4 py-12 relative overflow-x-clip">
-        <GameSaveError error={saveError} />
+        <ReplayCaptureStatus status={captureStatus} /><GameSaveError error={saveError} />
         <AnimatePresence>
           {xpEarned !== null && (
              <motion.div 

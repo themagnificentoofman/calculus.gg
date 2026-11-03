@@ -1,5 +1,6 @@
 # Dependencies
 /node_modules/
+/node_modules
 /.pnp
 .pnp.*
 # Keep authored Yarn tooling if the project adopts Yarn.
@@ -59,3 +60,6 @@ ui-debug.log
 
 __pycache__/
 *.pyc
+
+# Checkout-local Python environment, including a symlink.
+/.bank-venv

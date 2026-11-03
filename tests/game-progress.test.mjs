@@ -4,6 +4,7 @@ import { initializeApp, deleteApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator, signInAnonymously } from 'firebase/auth';
 import { getFirestore, connectFirestoreEmulator, doc, getDoc, setDoc, updateDoc, deleteDoc, collection, getDocs, query, where, terminate } from 'firebase/firestore';
 import { firestoreStore } from '../lib/server/firestore-admin.ts';
+import { createReplayApi } from '../lib/server/replay-api.ts';
 import { createGameApi } from '../lib/server/game-api.ts';
 import { loadLeaderboard, loadRecentGames, loadWaitingGames, searchPublicProfiles } from '../lib/stat-queries.ts';
 const enabled = process.env.FIRESTORE_EMULATOR_HOST === '127.0.0.1:8080';
@@ -40,6 +41,14 @@ test('Server-authoritative games and Firestore attack tests', {skip:!enabled,tim
    const p=await a.profile();assert.equal(p.xp,20);assert.equal(p.gamesPlayed,1);assert.equal(p.answeredQuestions,3);assert.equal(p.correctAnswers,2);
    assert.equal((await loadRecentGames(a.db,a.uid))[0].id,id);
    const publicDoc=await a.game(id);assert.ok(!JSON.stringify(publicDoc).includes('correctIndex'));assert.ok(!JSON.stringify(publicDoc).includes('selectedOption'));
+  });
+  await t.test('Private replay endpoints enforce the whole-match gate and persist real Firestore chunks',async()=>{
+   const a=await actor(),b=await actor(),c=await actor(),id=await game(a,'pvp');const replay=createReplayApi({store,now:()=>clock,verify:async token=>identities.get(token)});
+   const read=async(actor,body,expected=200)=>{const response=await replay(new Request('https://test.invalid/api/replay',{method:'POST',headers:{authorization:`Bearer ${actor.token}`,'content-type':'application/json'},body:JSON.stringify({roundId:id,...body})}));assert.equal(response.status,expected);return response.json();};
+   await b.call('games',{action:'join',gameId:id,mode:'pvp'});clock+=4000;await all(a,id);await read(a,{op:'read'},409);await read(c,{op:'read'},403);
+   for(const path of [`replayContent/${id}`,`replayManifests/${id}`,`replayServer/${id}_000000`,`replayCapture/${id}_${a.uid}`])await denied(getDoc(doc(a.db,path)));
+   await read(a,{op:'open',segmentId:'real_segment'});const payload={op:'upload',segmentId:'real_segment',chunkIndex:0,anchorMs:100,uncertaintyMs:5,closed:true,events:[{schemaVersion:1,eventId:'real_event_1',sequence:1,monotonicMs:100,type:'session_closed'}]};await read(a,payload);assert.equal((await read(a,payload)).duplicate,true);
+   await all(b,id);const before=await a.profile(),result=await read(a,{op:'read'}),server=await read(a,{op:'server',start:0});assert.equal(result.manifest.questionCount,3);assert.equal(result.replayStatus,'Partial');assert.ok(server.chunks.flatMap(c=>c.events).filter(e=>e.type==='answer_accepted').every(e=>e.playerId===a.uid));assert.deepEqual(await a.profile(),before);
   });
   await t.test('All score, key, receipt, UID and private-profile tampering paths are denied',async()=>{
    const a=await actor(),b=await actor(),id=await game(a);
