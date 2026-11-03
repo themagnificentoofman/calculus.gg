@@ -1,0 +1,26 @@
+{
+  "environment": "Local Node 26, in-memory transaction adapter; not provider billing or production latency",
+  "measurements": [
+    {
+      "replayBenchmark": {
+        "events": 4096,
+        "bytes": 899479,
+        "buildMs": 2.393540999999999,
+        "oneHundredSeeksMs": 1.504667000000012
+      }
+    },
+    {
+      "localReplayOverhead": {
+        "questions": 20,
+        "clientEvents": 124,
+        "serverEvents": 46,
+        "documents": 28,
+        "jsonBytes": 48739,
+        "replayDocumentWrites": 52,
+        "loadHttpRequests": 4,
+        "inMemoryLoadMs": 3.150209000000018,
+        "providerBilling": "not measured; no production traffic"
+      }
+    }
+  ]
+}

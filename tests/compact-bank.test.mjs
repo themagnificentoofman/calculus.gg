@@ -72,7 +72,8 @@ test('compact import checksums, atomic receipts, interruption resume, immutable 
   const f=fixture(),dir=mkdtempSync(join(tmpdir(),'compact-import-')),target=openCompact(':memory:');
   try{
     const folder=join(dir,'initial'),plan=exportCompact(f.target,folder,{rowsPerBatch:30}),db=localImportAdapter(target);
-    await assert.rejects(runImport(db,folder),/Supported Sites method/);
+    await assert.rejects(runImport(db,folder),/Explicit positive tranche/);
+    await assert.rejects(runImport(db,folder,{maxBatches:1}),/Supported Sites method/);
     let calls=0;const interrupted={...db,batch:async s=>{if(++calls===3)throw Error('Connection lost before commit');return db.batch(s);}};
     await assert.rejects(runImport(interrupted,folder,{local:true}),/Connection lost/);
     assert.equal(target.prepare('SELECT count(*) AS n FROM cbank_import_receipts').get().n,2);
@@ -101,6 +102,54 @@ test('compact import checksums, atomic receipts, interruption resume, immutable 
 test('resource counters remain unknown locally and preserve actual provider metadata',()=>{
   assert.deepEqual(collectMeta([{meta:{rows_read:2,rows_written:3,size_after:99,duration:1}},{meta:{rows_read:4,rows_written:5,size_after:123,duration:2}}]),{rowsRead:6,rowsWritten:8,sizeAfter:123,sqlDurationMs:3});
   assert.equal(collectMeta({results:[]}).rowsWritten,null);
+});
+test('tranches enforce exact boundaries and reconcile every previous receipt before writing',async()=>{
+  const f=fixture(),dir=mkdtempSync(join(tmpdir(),'compact-tranche-')),target=openCompact(':memory:');
+  try{
+    const folder=join(dir,'plan'),plan=exportCompact(f.target,folder,{rowsPerBatch:30}),db=localImportAdapter(target);
+    const first=await runImport(db,folder,{local:true,maxBatches:2});
+    assert.equal(first.completed,2);assert.equal(first.nextIndex,2);assert.equal(first.hasMore,true);
+    assert.equal(target.prepare('SELECT count(*) AS n FROM cbank_import_receipts').get().n,2);
+    await assert.rejects(runImport(db,folder,{local:true,startIndex:3,maxBatches:1}),/Missing earlier receipt at sequence 2/);
+    assert.equal(target.prepare('SELECT count(*) AS n FROM cbank_import_receipts').get().n,2);
+    const second=await runImport(db,folder,{local:true,startIndex:2,maxBatches:1});
+    assert.equal(second.completed,1);assert.equal(second.skipped,2);assert.equal(second.nextIndex,3);
+    const retry=await runImport(db,folder,{local:true,startIndex:2,maxBatches:1});
+    assert.equal(retry.completed,0);assert.equal(retry.skipped,3);
+    const last=await runImport(db,folder,{local:true,startIndex:3,maxBatches:plan.batches.length});
+    assert.equal(last.hasMore,false);assert.equal(last.nextIndex,plan.batches.length);
+    assert.equal((await verifyImported(db,plan)).verified,72);
+    assert.equal(target.prepare('SELECT count(*) AS n FROM cbank_config').get().n,0);
+  }finally{target.close();f.close();rmSync(dir,{recursive:true,force:true});}
+});
+test('remote tranches fail closed on absent, stale, mismatched or exhausted allowances and missing counters',async()=>{
+  // Synthetic counters exercise guard logic only. They are not production quota evidence.
+  const f=fixture(),dir=mkdtempSync(join(tmpdir(),'compact-allowance-')),target=openCompact(':memory:');
+  try{
+    const folder=join(dir,'plan'),plan=exportCompact(f.target,folder,{rowsPerBatch:30}),base=localImportAdapter(target);
+    let reads=0,writes=0,omitLookup=false,expireAfterLookup=false,omitWrite=false,current;
+    const db={
+      // Preserve real prepared statements for execution; attach synthetic test counters.
+      prepare(text){const create=stmt=>({...stmt,bind:(...v)=>create(stmt.bind(...v)),all:async()=>{reads++;const result=await stmt.all();if(expireAfterLookup)current.validUntil=new Date(Date.now()-1).toISOString();return {...result,...(omitLookup?{}:{meta:{rows_read:1,rows_written:0,size_after:4096,duration:1}})};}});return create(base.prepare(text));},
+      batch:async statements=>{writes++;const result=await base.batch(statements);return result.map(r=>({...r,...(omitWrite?{}:{meta:{rows_read:1,rows_written:2,size_after:8192,duration:1}})}));}
+    };
+    const grant=overrides=>({method:'synthetic-test-only',projectId:'appgprj_6ad91db3d4788191b3e73074e27447f5',binding:'DB',bundleId:plan.bundleId,startIndex:0,endIndexExclusive:1,remainingReads:10000,readReserve:100,remainingWrites:10000,writeReserve:100,currentSizeBytes:4096,estimatedImportBytes:100000,storageCeilingBytes:10000000,storageHeadroomBytes:4096,checkedAt:new Date().toISOString(),validUntil:new Date(Date.now()+60000).toISOString(),sharedUsageReservation:'synthetic-test-only',...overrides});
+    const run=overrides=>runImport(db,folder,{maxBatches:1,refreshAllowance:async()=>current=grant(overrides)});
+    await assert.rejects(runImport(db,folder,{maxBatches:1}),/Supported Sites method/);
+    await assert.rejects(run({remainingReads:undefined}),/Fresh read\/write/);
+    await assert.rejects(run({checkedAt:new Date(Date.now()-60000).toISOString()}),/Fresh read\/write/);
+    await assert.rejects(run({endIndexExclusive:2}),/exact tranche/);
+    await assert.rejects(run({remainingWrites:-1}),/Invalid resource/);
+    assert.equal(reads,0);assert.equal(writes,0);
+    await assert.rejects(run({remainingReads:100}),/next indexed receipt/);assert.equal(reads,0);
+    await assert.rejects(run({remainingWrites:100}),/Write allowance/);assert.equal(writes,0);
+    omitLookup=true;await assert.rejects(run({}),/Receipt-read allowance/);omitLookup=false;assert.equal(writes,0);
+    expireAfterLookup=true;await assert.rejects(run({}),/expired during receipt lookup/);expireAfterLookup=false;assert.equal(writes,0);
+    omitWrite=true;await assert.rejects(run({}),/Committed batch has no resource metadata/);omitWrite=false;
+    assert.equal(target.prepare('SELECT count(*) AS n FROM cbank_import_receipts').get().n,1);
+    const resumed=await run({});assert.equal(resumed.completed,0);assert.equal(resumed.skipped,1);assert.equal(writes,1);
+    assert.equal(resumed.remainingAllowance.reads,9999);assert.equal(resumed.remainingAllowance.writes,10000);
+  }finally{target.close();f.close();rmSync(dir,{recursive:true,force:true});}
 });
 test('compact gameplay preserves private snapshots, shared answer order, server XP and reports with no model calls',async()=>{
   const f=fixture(),data=new Map();let now=100000,queue=Promise.resolve();

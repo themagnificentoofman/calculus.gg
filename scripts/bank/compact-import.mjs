@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Provider-neutral batch format and executor. CLI supports LOCAL rehearsal only.
-// No hosted endpoint/credentials are invented here: Sites must supply the supported adapter.
+// A Sites application writer was proven by the four-batch pilot. Full hosted
+// execution still requires an authenticated adapter and a fresh managed allowance.
 import { createHash } from 'node:crypto';
 import { readFileSync,writeFileSync,mkdirSync,existsSync,appendFileSync,statSync } from 'node:fs';
 import { resolve,join } from 'node:path';
@@ -60,33 +61,70 @@ export function collectMeta(results) {
   const sum=key=>list.every(r=>Number.isFinite(r.meta?.[key]))?list.reduce((n,r)=>n+r.meta[key],0):null;
   return {rowsRead:sum('rows_read'),rowsWritten:sum('rows_written'),sizeAfter:list.at(-1)?.meta?.size_after??null,sqlDurationMs:sum('duration')};
 }
-export async function runImport(db,directory,{local=false,approval,refreshAllowance,checkpointPath,onProgress=()=>{}}={}) {
+export async function runImport(db,directory,{local=false,mode='provider-allowance',operator,approval,refreshAllowance,checkpointPath,onProgress=()=>{},startIndex=0,maxBatches}={}) {
   const plan=loadPlan(directory);
+  if(!Number.isSafeInteger(startIndex) || startIndex<0 || startIndex>=plan.batches.length)throw Error('Invalid tranche start index');
+  if(maxBatches===undefined && local)maxBatches=plan.batches.length-startIndex;
+  if(!Number.isSafeInteger(maxBatches) || maxBatches<1)throw Error('Explicit positive tranche batch limit required');
+  const endIndexExclusive=Math.min(plan.batches.length,startIndex+maxBatches),startedAt=new Date().toISOString();
+  if(mode==='operator-budget'){
+    if(local||typeof operator!=='function'||maxBatches>25)throw Error('Operator mode requires authenticated hosted execution and at most 25 batches');
+    let state=await operator({op:'status'});
+    if(state.budget?.mode!=='operator-budget'||state.bundleId!==plan.bundleId||state.nextSequence!==startIndex)throw Error('Operator checkpoint mismatch');
+    if(state.receipts.length!==startIndex||state.receipts.some((r,i)=>r.batch_id!==plan.bundleId+'/'+i||r.sha256!==plan.batches[i].sha256))throw Error('Operator receipt integrity mismatch');
+    if(state.nextSequence===state.trancheEnd)state=await operator({op:'open',start:startIndex,end:endIndexExclusive});
+    if(state.trancheStart>startIndex||state.trancheEnd!==endIndexExclusive||state.trancheEnd-state.trancheStart>25)throw Error('Operator tranche boundary mismatch');
+    let completed=0;
+    for(let index=startIndex;index<endIndexExclusive;index++){
+      state=await operator({op:'import',index,text:readFileSync(join(directory,plan.batches[index].file),'utf8')});
+      if(state.sha256!==plan.batches[index].sha256||state.nextSequence!==index+1||state.halted)throw Error('Operator commit verification failed');
+      completed++;if(checkpointPath)appendFileSync(checkpointPath,JSON.stringify({index,nextIndex:index+1,sha256:state.sha256,budget:state.budget,measurements:state.measurements,settlement:state.settlement})+'\n');
+      await onProgress({completed,total:endIndexExclusive-startIndex,nextIndex:index+1,budget:state.budget});
+    }
+    return {mode,bundleId:plan.bundleId,completed,startIndex,endIndexExclusive,nextIndex:endIndexExclusive,hasMore:endIndexExclusive<plan.batches.length,budget:state.budget,provider:state.budget.provider};
+  }
+  if(mode!=='provider-allowance')throw Error('Unknown import policy');
   // Every invocation/resume needs a new provider usage reading/reservation, including lost responses.
   if(!local){if(typeof refreshAllowance!=='function')throw Error('Supported Sites method and fresh resource allowance required');approval=await refreshAllowance(approval);}
   if(!local && (!approval?.method || approval.projectId!=='appgprj_6ad91db3d4788191b3e73074e27447f5' || approval.binding!=='DB' || approval.bundleId!==plan.bundleId || !Number.isFinite(approval.remainingWrites) || !Number.isFinite(approval.writeReserve) || !Number.isFinite(approval.storageCeilingBytes) || !Number.isFinite(approval.storageHeadroomBytes) || !Number.isFinite(approval.currentSizeBytes) || !Number.isFinite(approval.estimatedImportBytes) || !Number.isFinite(Date.parse(approval.validUntil)) || Date.parse(approval.validUntil)<=Date.now() || !approval.sharedUsageReservation)) throw Error('Supported Sites method and current resource allowance required');
   if(!local && (!Number.isFinite(approval.remainingReads) || !Number.isFinite(approval.readReserve) || !Number.isFinite(Date.parse(approval.checkedAt)) || Math.abs(Date.now()-Date.parse(approval.checkedAt))>30000))throw Error('Fresh read/write usage reservation required');
+  if(!local && (approval.startIndex!==startIndex || approval.endIndexExclusive!==endIndexExclusive))throw Error('Allowance must authorize this exact tranche boundary');
+  if(!local && [approval.remainingReads,approval.readReserve,approval.remainingWrites,approval.writeReserve,approval.currentSizeBytes,approval.estimatedImportBytes,approval.storageHeadroomBytes,approval.storageCeilingBytes].some(n=>!Number.isSafeInteger(n)||n<0))throw Error('Invalid resource allowance');
   let written=0,read=0,completed=0,skipped=0; const measurements=[];
+  let sizeAfter=local?null:approval.currentSizeBytes;
   if(!local && approval.currentSizeBytes+approval.estimatedImportBytes+approval.storageHeadroomBytes>approval.storageCeilingBytes) throw Error('Insufficient agreed storage headroom');
-  for (let index=0;index<plan.batches.length;index++) {
+  // Reconcile all earlier receipts before entering the authorized range. A
+  // missing earlier checkpoint is an integrity error, never permission to fill it.
+  for (let index=0;index<endIndexExclusive;index++) {
     const batch=plan.batches[index],batchId=plan.bundleId+'/'+index;
     if(!local && Date.parse(approval.validUntil)<=Date.now()) throw Error('Allowance window expired; refresh managed usage before resuming');
+    if(!local && read+1+approval.readReserve>approval.remainingReads)throw Error('Insufficient allowance for next indexed receipt lookup');
     const old=await db.prepare('SELECT sha256 FROM cbank_import_receipts WHERE batch_id=?').bind(batchId).all();
     const lookup=collectMeta(old);read+=lookup.rowsRead??0;
     if(!local && (lookup.rowsRead===null || read+approval.readReserve>approval.remainingReads))throw Error('Receipt-read allowance exhausted or unavailable; refresh usage before resuming');
+    if(!local && (lookup.rowsWritten===null || lookup.sizeAfter===null))throw Error('Receipt lookup lacks required usage counters');
+    written+=lookup.rowsWritten??0;sizeAfter=lookup.sizeAfter??sizeAfter;
+    if(!local && Date.parse(approval.validUntil)<=Date.now())throw Error('Allowance expired during receipt lookup; no batch written');
+    if(!local && (written+approval.writeReserve>approval.remainingWrites || sizeAfter+approval.storageHeadroomBytes>approval.storageCeilingBytes))throw Error('Resource headroom reached during receipt reconciliation');
     if(old.results[0]) {if(old.results[0].sha256!==batch.sha256) throw Error('Receipt conflict');skipped++;measurements.push({batchId,sha256:batch.sha256,skipped:true,receiptLookup:lookup});continue;}
+    if(index<startIndex)throw Error('Missing earlier receipt at sequence '+index+'; reconcile checkpoint before resuming');
     if(!local && written+batch.estimatedRowIndexWrites+1+approval.writeReserve>approval.remainingWrites) throw Error('Write allowance reached; resume after a confirmed refresh');
     const statements=JSON.parse(readFileSync(join(directory,batch.file),'utf8')).map(s=>db.prepare(s));
-    statements.push(db.prepare('INSERT INTO cbank_import_receipts VALUES (?,?) ON CONFLICT DO NOTHING').bind(batchId,batch.sha256));
+    // A concurrent duplicate must roll back, not silently ignore a conflicting receipt.
+    statements.push(db.prepare('INSERT INTO cbank_import_receipts VALUES (?,?)').bind(batchId,batch.sha256));
+    if(!local && Date.parse(approval.validUntil)<=Date.now())throw Error('Allowance expired before commit; no batch written');
     // D1 batch contract is atomic. Receipt and data commit together; retry after lost response reads receipt.
     const result=await db.batch(statements); if(result.some(r=>r.success===false)) throw Error('Batch failed');
-    const meta=collectMeta(result),entry={batchId,sha256:batch.sha256,receiptLookup:lookup,...meta};measurements.push(entry);completed++;
+    const meta=collectMeta(result),entry={batchId,index,nextIndex:index+1,sha256:batch.sha256,committedAt:new Date().toISOString(),receiptLookup:lookup,...meta};measurements.push(entry);completed++;
     if(checkpointPath) appendFileSync(checkpointPath,JSON.stringify(entry)+'\n');onProgress({completed,skipped,total:plan.batches.length,meta});
     if(!local && (meta.rowsRead===null || meta.rowsWritten===null || meta.sizeAfter===null)) throw Error('Committed batch has no resource metadata; reconcile usage before resuming');
-    written+=meta.rowsWritten??0;read+=meta.rowsRead??0;
+    written+=meta.rowsWritten??0;read+=meta.rowsRead??0;sizeAfter=meta.sizeAfter??sizeAfter;
     if(!local && (meta.sizeAfter+approval.storageHeadroomBytes>approval.storageCeilingBytes || written+approval.writeReserve>approval.remainingWrites || read+approval.readReserve>approval.remainingReads)) throw Error('Agreed resource headroom reached; refresh allowance before resuming');
   }
-  return {bundleId:plan.bundleId,completed,skipped,measuredD1Writes:local?null:written,measuredD1Reads:local?null:read,metadataAvailable:!local&&measurements.every(m=>m.skipped?m.receiptLookup.rowsRead!==null:m.rowsWritten!==null),measurements};
+  const finishedAt=new Date().toISOString();
+  return {bundleId:plan.bundleId,startIndex,endIndexExclusive,nextIndex:endIndexExclusive,hasMore:endIndexExclusive<plan.batches.length,startedAt,finishedAt,durationMs:Date.parse(finishedAt)-Date.parse(startedAt),completed,skipped,measuredD1Writes:local?null:written,measuredD1Reads:local?null:read,sizeAfter,
+    remainingAllowance:local?null:{reads:approval.remainingReads-read,writes:approval.remainingWrites-written,storageBytes:approval.storageCeilingBytes-sizeAfter,readReserve:approval.readReserve,writeReserve:approval.writeReserve,storageReserveBytes:approval.storageHeadroomBytes,validUntil:approval.validUntil,sharedUsageReservation:approval.sharedUsageReservation},
+    metadataAvailable:!local&&measurements.every(m=>m.skipped?m.receiptLookup.rowsRead!==null:m.rowsWritten!==null),measurements};
 }
 export function localImportAdapter(sql) {
   const prepare=(text,values=[])=>({text,values,bind:(...v)=>prepare(text,v),all:async()=>({success:true,results:sql.prepare(text).all(...values)}),run:async()=>({success:true,results:[],changes:sql.prepare(text).run(...values).changes})});
@@ -131,6 +169,6 @@ async function main(){
   if(command==='export') {const db=new DatabaseSync(path,{readOnly:true});try{const p=exportCompact(db,directory);console.log(JSON.stringify({bundleId:p.bundleId,batches:p.batches.length,bytes:p.totalBatchBytes,estimatedDataRowIndexWrites:p.estimatedDataRowIndexWrites,estimatedReceiptWrites:p.estimatedReceiptWrites,maxStatementBytes:p.maxStatementBytes}));}finally{db.close();}}
   else if(command==='apply-local') {const sql=openCompact(path);try{const report=await runImport(localImportAdapter(sql),directory,{local:true,checkpointPath:join(directory,'local-checkpoints.jsonl')});writeFileSync(join(directory,'local-import-report.json'),JSON.stringify({...report,databaseBytes:statSync(path).size},null,2)+'\n');console.log(JSON.stringify({completed:report.completed,skipped:report.skipped,measuredD1Writes:report.measuredD1Writes}));}finally{sql.close();}}
   else if(command==='verify-local') {const sql=new DatabaseSync(path,{readOnly:true});try{const report=await verifyImported(localImportAdapter(sql),loadPlan(directory));writeFileSync(join(directory,'local-verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({passed:report.passed,bundleId:report.bundleId,verified:report.verified}));}finally{sql.close();}}
-  else throw Error('Usage: compact-import.mjs export|apply-local|verify-local DATABASE DIRECTORY. Hosted execution is unavailable until Sites supplies a supported method.');
+  else throw Error('Usage: compact-import.mjs export|apply-local|verify-local DATABASE DIRECTORY. Hosted execution requires a Sites adapter, explicit tranche boundary, and fresh managed allowance.');
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))main().catch(e=>{console.error(e);process.exitCode=1;});
