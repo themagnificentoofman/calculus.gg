@@ -3,18 +3,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
-import { ProblemReference } from '@/components/ProblemReference';
 import { MathDisplay } from '@/components/MathDisplay';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
-import { selectQuestions } from '@/lib/questions';
+import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { apiRequest, gameProgress } from '@/lib/game-session';
 import { GameResultStatus, GameSaveError } from '@/components/GameResultStatus';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 
 interface Question {
-  problemId?: string;
-  problemRevision?: number;
   latexProblem: string;
   options: string[];
   correctIndex: number;
@@ -69,7 +66,7 @@ export default function TestMode() {
     setGenerationError(''); setSaveError('');
     setLoading(true);
     try {
-      const generatedQuestions = await selectQuestions(category, difficulty, count, 'test');
+      const generatedQuestions = await generateQuestions(category, difficulty, count, 'test');
       if (generatedQuestions) {
         const id = await gameProgress.createGame(user.uid, 'test', generatedQuestions, { category, difficulty });
         setGameId(id);
@@ -82,7 +79,7 @@ export default function TestMode() {
 
       }
     } catch (error) {
-      setGenerationError(error instanceof Error ? error.message : 'Could not select problems. Please try again.');
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -132,7 +129,7 @@ export default function TestMode() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center">
         <RefreshCw className="w-12 h-12 text-blue-500 animate-spin mb-4" />
-        <p className="text-xl text-zinc-400 animate-pulse">Selecting calculus problems...</p>
+        <p className="text-xl text-zinc-400 animate-pulse">Generating calculus problems...</p>
       </div>
     );
   }
@@ -300,7 +297,6 @@ export default function TestMode() {
             </div>
             
             <div className="prose prose-invert max-w-none">
-              <ProblemReference problemId={q.problemId} problemRevision={q.problemRevision} />
               <h4 className="text-zinc-300 font-medium mb-2">Explanation:</h4>
               <div className="text-zinc-400 leading-relaxed w-full flex flex-col gap-4">
                 {Array.isArray(q.explanation) ? (

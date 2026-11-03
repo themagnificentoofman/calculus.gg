@@ -1,6 +1,5 @@
 import { calculateProblemXp, calculateRatings, finite, TOPICS, type GameMode } from '../progression.ts';
 import { gamePlayers, nextUnanswered, type GameQuestion, type GameSession, type MatchSettings } from '../game-progress.ts';
-import type { RoundSnapshot } from '../bank/contracts.ts';
 import type { Store, Transaction, Data } from './firestore-admin.ts';
 
 export class GameError extends Error { status: number; constructor(message: string, status = 400) { super(message); this.status = status; } }
@@ -14,9 +13,9 @@ export function publicProfile(profile: Data) {
   return Object.fromEntries(keys.filter(k => profile[k] !== undefined).map(k => [k, profile[k]]));
 }
 export function publicGame(game: GameSession) {
-  const { questions = [], answers = {}, ratingSnapshot: _snapshots, roundSnapshot: _roundSnapshot, ...rest } = game;
+  const { questions = [], answers = {}, ratingSnapshot: _snapshots, ...rest } = game;
   return { ...rest, questionCount: questions.length,
-    questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(q => ({ latexProblem: q.latexProblem, options: q.options, topic: q.topic, difficulty: q.difficulty, ...(q.problemId ? { problemId: q.problemId, problemRevision: q.problemRevision } : {}) })),
+    questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(({ correctIndex: _key, explanation: _explanation, ...q }) => q),
     answers: Object.fromEntries(Object.entries(answers).map(([uid, values]) => [uid, Object.fromEntries(Object.entries(values).map(([i, { selectedOption: _selection, ...a }]) => [i, a]))])),
   };
 }
@@ -70,16 +69,9 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       p.uid = uid; patchProfile(p, patch); p.lastActive = now(); saveProfile(tx, uid, p); return p;
     });
   }
-  async function storeQuestions(uid: string, mode: GameMode, category: string, difficulty: string, questions: GameQuestion[], relaxation: RoundSnapshot['relaxation'] = 'none') {
+  async function storeQuestions(uid: string, mode: GameMode, category: string, difficulty: string, questions: GameQuestion[]) {
     const id = crypto.randomUUID().replaceAll('-', '').slice(0, 24);
-    await store.transaction(async tx => {
-      const recent = await tx.get(`bankRecent/${uid}`) || {};
-      await tx.get(`questionSets/${id}`);
-      const refs = questions.filter(q => q.problemId && q.choiceOrder).map((q, ordinal) => ({ ordinal, problemId: q.problemId!, problemRevision: q.problemRevision!, contentHash: q.contentHash!, bankRelease: q.bankRelease!, familyId: q.familyId!, choiceOrder: q.choiceOrder! }));
-      const roundSnapshot: RoundSnapshot | undefined = refs.length === questions.length ? { schemaVersion: 1, selectionPolicy: 'family-uniform-v1', relaxation, questions: refs } : undefined;
-      tx.set(`questionSets/${id}`, { uid, mode, category, difficulty, questions, ...(roundSnapshot ? { roundSnapshot } : {}), expiresAt: new Date(now() + 30 * 60_000) });
-      if (refs.length) tx.set(`bankRecent/${uid}`, { problems: [...(recent.problems || []), ...refs.map(q => q.problemId)].slice(-100), families: [...(recent.families || []), ...refs.map(q => q.familyId)].slice(-20) });
-    });
+    await store.transaction(async tx => { await tx.get(`questionSets/${id}`); tx.set(`questionSets/${id}`, { uid, mode, category, difficulty, questions, expiresAt: new Date(now() + 30 * 60_000) }); });
     return { questionSetId: id, questionCount: questions.length };
   }
   async function createGame(uid: string, id: string, mode: GameMode, input: Data) {
@@ -90,7 +82,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       if (existing) { requireMember(existing as GameSession, uid); return { id, ...playerView(existing as GameSession, uid) }; }
       if (!p || set.used || new Date(set.expiresAt).getTime() <= now()) throw new GameError('This question set has expired. Please start again.');
       const configuration = settingsFor(mode, input), solo = mode === 'test' || mode === 'rapid', startTime = now() + (mode === 'rapid' ? 3000 : 0);
-      const game: GameSession = { mode, status: solo ? 'active' : 'waiting', progressionVersion: 3, players: [uid], scores: { [uid]: 0 }, questions: set.questions, ...(set.roundSnapshot ? { roundSnapshot: set.roundSnapshot } : {}), category: set.category, difficulty: set.difficulty,
+      const game: GameSession = { mode, status: solo ? 'active' : 'waiting', progressionVersion: 3, players: [uid], scores: { [uid]: 0 }, questions: set.questions, category: set.category, difficulty: set.difficulty,
         answers: {}, completedPlayers: [], pendingClaims: [], receipts: {}, ratingSnapshot: { [uid]: snapshot(p) }, createdAt: new Date(now()),
         ...(configuration.settings ? { settings: configuration.settings } : {}), ...(solo ? { startTime } : {}), ...(mode === 'rapid' ? { deadline: startTime + configuration.timeLimit! * 1000 } : {}) };
       const { questions: _questions, ...metadata } = set;
@@ -111,7 +103,6 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       if (!joining) requireMember(game, uid);
       const ids = [...new Set([...game.players, ...(joining ? [uid] : [])])];
       const docs = await Promise.all(ids.map(p => tx.get(`users/${p}`)));
-      const recent = joining ? await tx.get(`bankRecent/${uid}`) || {} : null;
       if (docs.some(p => !p)) throw new GameError('A player profile is unavailable.', 409);
       const profiles = Object.fromEntries(ids.map((p, i) => [p, docs[i]!]));
       const changed = new Set<string>();
@@ -140,7 +131,6 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
         if (joining) {
           if (game.status !== 'waiting' || game.players.length >= (game.mode === 'pvp' ? 2 : 10)) throw new GameError('Game is full or already started.', 409);
           game.players.push(uid); game.scores[uid] = 0; modified = true;
-          if (recent && game.roundSnapshot) tx.set(`bankRecent/${uid}`, { problems: [...(recent.problems || []), ...game.roundSnapshot.questions.map(q => q.problemId)].slice(-100), families: [...(recent.families || []), ...game.roundSnapshot.questions.map(q => q.familyId)].slice(-20) });
           if (game.mode === 'pvp') { game.status = 'active'; game.startTime = time + 3000; game.deadline = game.startTime + 30 * 60_000; }
           game.ratingSnapshot = Object.fromEntries(game.players.map(p => [p, snapshot(profiles[p])]));
         }
