@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-02",
+  "stages": [
+    {
+      "stage": "pilot",
+      "releaseId": "cn-2026-11-02-pilot-v2",
+      "generatedThisRun": 1008,
+      "rejectedThisRun": 0,
+      "duplicatesThisRun": 0,
+      "approved": 1008,
+      "publishedLocal": 1008,
+      "renderValidated": 1008,
+      "humanReviewed": 0,
+      "productionPublished": 0
+    },
+    {
+      "stage": "expanded",
+      "releaseId": "cn-2026-11-02-expanded-v2",
+      "generatedThisRun": 9072,
+      "rejectedThisRun": 0,
+      "duplicatesThisRun": 0,
+      "approved": 10080,
+      "publishedLocal": 10080,
+      "renderValidated": 10080,
+      "humanReviewed": 0,
+      "productionPublished": 0
+    },
+    {
+      "stage": "full",
+      "releaseId": "cn-2026-11-02-full-v2",
+      "generatedThisRun": 90720,
+      "rejectedThisRun": 0,
+      "duplicatesThisRun": 0,
+      "approved": 100800,
+      "publishedLocal": 100800,
+      "renderValidated": 100800,
+      "humanReviewed": 0,
+      "productionPublished": 0
+    }
+  ],
+  "fullImport": {
+    "newRevisions": 90720,
+    "duplicateSafeExisting": 10080,
+    "independentlyReconstructed": 100800,
+    "renderValidated": 100800
+  },
+  "validation": {
+    "unitPassed": 57,
+    "unitSkippedEmulatorOnly": 1,
+    "emulatorPassed": 16,
+    "mathPassed": 8,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "publicHelpBrowserQA": "passed at narrow viewport",
+    "authenticatedProductionPlay": "not run; no deployment"
+  },
+  "existingPresetImports": 0,
+  "thirdPartySourceImports": 0,
+  "humanReviewed": 0,
+  "paidAuthoring": {
+    "requestsSubmitted": 0,
+    "actualUSD": 0,
+    "dryRunRequests": 100,
+    "reservedWorstCaseUSD": 0.528,
+    "authorizedUSD": 0
+  },
+  "production": {
+    "approvedBankRows": 0,
+    "deployed": false,
+    "blocker": "No authenticated Cloudflare operator access for D1 bulk writes; Sites connector database tools are read-only. Capacity check required for approximately 511 MiB local database.",
+    "nextStep": "Apply additive D1 migration, import prepared chunks, verify hosted corpus, activate, publish the reviewed Sites build, then verify signed-in modes."
+  }
+}
