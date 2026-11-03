@@ -1,10 +1,7 @@
 import { MathDisplay } from './MathDisplay';
-import { ProblemReference } from './ProblemReference';
 
 export interface AnsweredQuestion {
   question: {
-    problemId?: string;
-    problemRevision?: number;
     latexProblem: string;
     options: string[];
     correctIndex: number;
@@ -24,7 +21,6 @@ export function LastAnswerReview({ answer }: { answer: AnsweredQuestion | null }
     <details className="min-w-0 mb-8 rounded-xl border border-zinc-800 bg-zinc-950 p-4 text-left">
       <summary className="cursor-pointer font-bold text-white">Review last answer</summary>
       <div className="min-w-0 mt-4 space-y-4">
-        <ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} />
         <div>
           <h3 className="text-sm font-semibold text-zinc-400">Question</h3>
           <MathDisplay math={question.latexProblem} block />

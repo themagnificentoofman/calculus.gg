@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
-import { ProblemReference } from '@/components/ProblemReference';
 import { MathDisplay } from '@/components/MathDisplay';
 import { LastAnswerReview, type AnsweredQuestion } from '@/components/LastAnswerReview';
 import { Trophy, RefreshCw, Home, Play, CheckCircle2, XCircle, ArrowRight, Globe, Users, Info } from 'lucide-react';
@@ -12,7 +11,7 @@ import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
 import { RankIcon, getRankInfo } from '@/components/RankDisplay';
 import { db } from '@/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import { selectQuestions } from '@/lib/questions';
+import { generateQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
 import { loadWaitingGames } from '@/lib/stat-queries';
 import { hasRating } from '@/lib/progression';
@@ -29,8 +28,6 @@ interface ChatMessage {
 }
 
 interface Question {
-  problemId?: string;
-  problemRevision?: number;
   latexProblem: string;
   options: string[];
   correctIndex: number;
@@ -185,11 +182,11 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
   const createGame = async () => {
     setGenerationError('');
     if (!user) return;
-    setLoadingMessage('Selecting questions...');
+    setLoadingMessage('Generating questions...');
     setLoading(true);
     try {
       const questionsCount = winCondition === 'first_to_n' ? Math.min(targetScore * 3, 20) : 20;
-      const generatedQuestions = await selectQuestions(category, difficulty, questionsCount, 'multiplayer');
+      const generatedQuestions = await generateQuestions(category, difficulty, questionsCount, 'multiplayer');
       
       if (generatedQuestions) {
         try {
@@ -200,7 +197,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
         }
       }
     } catch (error) {
-      setGenerationError(error instanceof Error ? error.message : 'Could not select problems. Please try again.');
+      setGenerationError(error instanceof Error ? error.message : 'Could not generate questions. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -912,8 +909,7 @@ function MultiplayerMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
               </div>
               
               <div className="prose prose-invert max-w-none">
-                <ProblemReference problemId={q.problemId} problemRevision={q.problemRevision} />
-              <h4 className="text-zinc-300 font-medium mb-2">Explanation:</h4>
+                <h4 className="text-zinc-300 font-medium mb-2">Explanation:</h4>
                 <div className="text-zinc-400 leading-relaxed w-full flex flex-col gap-4">
                   {Array.isArray(q.explanation) ? (
                     q.explanation.map((step: string, idx: number) => (

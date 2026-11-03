@@ -3,7 +3,7 @@ import {createHash,sign,randomUUID} from 'node:crypto';
 import {join,resolve} from 'node:path';
 import {runImport,loadPlan} from './compact-import.mjs';
 const [mode,keyPath,importDirectory,stateDirectory]=process.argv.slice(2);
-if(!['init','import','verify','activate','status','qa'].includes(mode))throw Error('Use init|import|verify|activate|status|qa');
+if(!['init','import','verify','activate','status'].includes(mode))throw Error('Use init|import|verify|activate|status');
 const dir=resolve(stateDirectory);mkdirSync(dir,{recursive:true,mode:0o700});
 const lock=join(dir,'client.lock');
 if(existsSync(lock)){
@@ -77,11 +77,6 @@ try{
     for(let cell=current.selectionCells;cell<24;cell++)current=await call({op:'selection',cell});
   }
   if(mode==='activate')current=await call({op:'activate'});
-  if(mode==='qa'){
-    const {verifyHostedGameplay}=await import('./operator-gameplay.mjs');
-    state.gameplayResult=await verifyHostedGameplay(call,progress=>{state.gameplay=progress;save();},state.gameplay);
-    current=state.last;
-  }
   await health();state.last=current;save();console.log(JSON.stringify({mode,finished:true,nextSequence:current.nextSequence,problemPages:current.problemPages,membershipPages:current.membershipPages,selectionCells:current.selectionCells,activated:current.activated,budget:current.budget,clientMeasuredReads:state.measuredReads,clientMeasuredWrites:state.measuredWrites}));
 }catch(error){state.stopped={at:new Date().toISOString(),reason:error.message};save();console.error(error.message);process.exitCode=1;}
 finally{rmSync(lock,{recursive:true,force:true});}
