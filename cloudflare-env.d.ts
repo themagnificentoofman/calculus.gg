@@ -9,5 +9,7 @@ declare namespace Cloudflare {
     CONTACT_FROM_EMAIL?: string;
     BANK_PILOT_PUBLIC_KEY?: string;
     BANK_PILOT_EXPIRES_AT?: string;
+    BANK_OPERATOR_PUBLIC_KEY?: string;
+    BANK_OPERATOR_EXPIRES_AT?: string;
   }
 }

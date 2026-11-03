@@ -1,6 +1,6 @@
 import { env } from 'cloudflare:workers';
-import { bankPilot } from '../../../lib/server/bank-pilot.mjs';
+import { bankOperator } from '../../../lib/server/bank-operator.mjs';
 export const dynamic = 'force-dynamic';
 export function POST(request: Request) {
-  return bankPilot(request, env.DB, env.BANK_PILOT_PUBLIC_KEY, env.BANK_PILOT_EXPIRES_AT);
+  return bankOperator(request, env.DB, env.BANK_OPERATOR_PUBLIC_KEY, env.BANK_OPERATOR_EXPIRES_AT);
 }
