@@ -1,0 +1,214 @@
+{
+  "layout": "compact",
+  "payloadDecompressionsPerRound": 20,
+  "environment": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpu": "Apple M5",
+    "node": "v26.13.0",
+    "sqlite": "3.54.1"
+  },
+  "release": "cn-2026-11-02-full-v2",
+  "datasetSize": 100800,
+  "databaseBytes": 90050560,
+  "rounds": 1000,
+  "reports": [
+    {
+      "input": {
+        "category": "integration",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 1.4397500000000036,
+        "p95": 2.2439170000000104,
+        "p99": 3.9620409999999993,
+        "max": 24.212791000000003
+      },
+      "maxStatements": 8,
+      "maxReturnedCandidateRows": 263,
+      "distinctProblems": 2939,
+      "distinctFamilies": 3,
+      "maxFamilyShare": 0.3362,
+      "familyChiSquare": 0.18519999999999998,
+      "familyCounts": {
+        "exponential-area": 1659,
+        "polynomial-area": 1660,
+        "trig-area": 1681
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 1.2642090000000508,
+        "p95": 1.9442920000000186,
+        "p99": 3.2744169999999713,
+        "max": 6.65341699999999
+      },
+      "maxStatements": 6,
+      "maxReturnedCandidateRows": 198,
+      "distinctProblems": 4580,
+      "distinctFamilies": 18,
+      "maxFamilyShare": 0.0578,
+      "familyChiSquare": 1.5376000000000005,
+      "familyCounts": {
+        "zeta-even": 271,
+        "trig-cancellation": 279,
+        "log-differentiation": 283,
+        "trig-products": 277,
+        "quadratic-geometric": 275,
+        "high-mixed-partials": 268,
+        "curved-domain-integral": 289,
+        "laplacian-products": 276,
+        "cubic-telescoping": 279,
+        "fourth-derivative": 277,
+        "parametric-curvature": 286,
+        "euler-cauchy": 276,
+        "improper-rational": 281,
+        "resonant-second-order": 277,
+        "log-moments": 278,
+        "oscillator-resonance": 277,
+        "radical-cancellation": 279,
+        "third-order-exponential": 272
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "none": 100,
+        "recent-families": 150
+      }
+    },
+    {
+      "input": {
+        "category": "integration",
+        "difficulty": "medium",
+        "count": 20,
+        "tag": "substitution"
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 1.3208329999999933,
+        "p95": 1.9549580000000333,
+        "p99": 2.748583999999937,
+        "max": 6.739417000000003
+      },
+      "maxStatements": 8,
+      "maxReturnedCandidateRows": 261,
+      "distinctProblems": 1378,
+      "distinctFamilies": 1,
+      "maxFamilyShare": 1,
+      "familyChiSquare": 0,
+      "familyCounts": {
+        "quadratic-substitution": 5000
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 1.327541999999994,
+        "p95": 1.8958749999999327,
+        "p99": 2.8592499999999745,
+        "max": 5.87762500000008
+      },
+      "maxStatements": 8,
+      "maxReturnedCandidateRows": 263,
+      "distinctProblems": 2973,
+      "distinctFamilies": 3,
+      "maxFamilyShare": 0.3372,
+      "familyChiSquare": 0.5392,
+      "familyCounts": {
+        "radial-log-mixed-derivative": 1670,
+        "unbounded-dirichlet-integral": 1644,
+        "rotated-disk-moment": 1686
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    }
+  ],
+  "plans": {
+    "pool": [
+      {
+        "id": 6,
+        "parent": 0,
+        "notused": 45,
+        "detail": "SEARCH r USING PRIMARY KEY (release_id=?)"
+      },
+      {
+        "id": 9,
+        "parent": 0,
+        "notused": 0,
+        "detail": "SCALAR SUBQUERY 1"
+      },
+      {
+        "id": 13,
+        "parent": 9,
+        "notused": 39,
+        "detail": "SEARCH cbank_config USING PRIMARY KEY (key=?)"
+      },
+      {
+        "id": 26,
+        "parent": 0,
+        "notused": 61,
+        "detail": "SEARCH p USING INDEX sqlite_autoindex_cbank_pools_1 (release_id=? AND difficulty=? AND tag=?)"
+      },
+      {
+        "id": 27,
+        "parent": 0,
+        "notused": 0,
+        "detail": "REUSE SUBQUERY 1"
+      }
+    ],
+    "slot": [
+      {
+        "id": 7,
+        "parent": 0,
+        "notused": 45,
+        "detail": "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+      },
+      {
+        "id": 11,
+        "parent": 0,
+        "notused": 45,
+        "detail": "SEARCH s USING PRIMARY KEY (pool_id=? AND slot=?)"
+      },
+      {
+        "id": 20,
+        "parent": 0,
+        "notused": 45,
+        "detail": "SEARCH u USING INTEGER PRIMARY KEY (rowid=?)"
+      },
+      {
+        "id": 28,
+        "parent": 0,
+        "notused": 45,
+        "detail": "SEARCH b USING INTEGER PRIMARY KEY (rowid=?)"
+      }
+    ]
+  },
+  "comparison": {
+    "liveGenerationLatencyMs": null,
+    "reason": "No live generation run or authorized benchmark spend. Prior path had a 70,000 ms timeout; that is not a measured latency.",
+    "bankOpenAICalls": 0
+  },
+  "limits": "Local SQLite with the production SQL and sampler, excluding Cloudflare network, Worker/Firebase transactions, authentication, and cold start. Family-uniform policy intentionally differs from row-uniform sampling. Parameter-level uniformity is limited by bounded oversampling and recency exclusions."
+}

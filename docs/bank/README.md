@@ -4,6 +4,8 @@ Normal gameplay selects approved, persisted D1 revisions. It never imports the O
 
 ## Baseline and ownership
 
+The current serving layout is `compact-gzip-shared-v1`; see [the measured storage comparison](storage/README.md) and [controlled rollout](operations.md). The existing 100,800 records are preserved; do not regenerate them for this rollout. The following generation commands document authoring reproducibility, not a deployment prerequisite. Production import and activation counts are still **0**. Sites-managed read access works; the supported bulk-write method and managed resource allowances remain unknown. A personal Cloudflare account is not a prerequisite established by this project.
+
 Inspected GitHub `main` at `1397e5c` on November 2, 2026. The Sites source commit `ba3eb419` had an identical tree but divergent history; the feature branch reconciles both histories. The existing public Site is `appgprj_6ad91db3d4788191b3e73074e27447f5` at https://calculus.ninja. GitHub pushes do not automatically deploy it.
 
 There was **no actual curated/preset corpus** in the repository. `tests/math-fixtures.mjs`, mocked AI output and emulator fixtures are tests, not reusable approved content. Live D1 inspection found only `ai_quota`. Existing Firestore AI question snapshots were not promoted, reclassified, rewritten or assigned fabricated bank IDs. Initial retained/imported problem count: **0**. The new corpus is an explicit original seed.

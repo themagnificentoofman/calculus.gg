@@ -1,0 +1,214 @@
+{
+  "layout": "original",
+  "payloadDecompressionsPerRound": 0,
+  "environment": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "cpu": "Apple M5",
+    "node": "v26.13.0",
+    "sqlite": "3.54.1"
+  },
+  "release": "cn-2026-11-02-full-v2",
+  "datasetSize": 100800,
+  "databaseBytes": 535515136,
+  "rounds": 1000,
+  "reports": [
+    {
+      "input": {
+        "category": "integration",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 2.223292000000015,
+        "p95": 4.68004099999996,
+        "p99": 18.010291999999993,
+        "max": 45.647125
+      },
+      "maxStatements": 16,
+      "maxReturnedCandidateRows": 243,
+      "distinctProblems": 2939,
+      "distinctFamilies": 3,
+      "maxFamilyShare": 0.3362,
+      "familyChiSquare": 0.18519999999999998,
+      "familyCounts": {
+        "exponential-area": 1659,
+        "polynomial-area": 1660,
+        "trig-area": 1681
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 2.3294999999998254,
+        "p95": 4.0817089999999325,
+        "p99": 7.379708000000051,
+        "max": 14.62412500000005
+      },
+      "maxStatements": 11,
+      "maxReturnedCandidateRows": 178,
+      "distinctProblems": 4580,
+      "distinctFamilies": 18,
+      "maxFamilyShare": 0.0578,
+      "familyChiSquare": 1.5376000000000005,
+      "familyCounts": {
+        "zeta-even": 271,
+        "trig-cancellation": 279,
+        "log-differentiation": 283,
+        "trig-products": 277,
+        "quadratic-geometric": 275,
+        "high-mixed-partials": 268,
+        "curved-domain-integral": 289,
+        "laplacian-products": 276,
+        "cubic-telescoping": 279,
+        "fourth-derivative": 277,
+        "parametric-curvature": 286,
+        "euler-cauchy": 276,
+        "improper-rational": 281,
+        "resonant-second-order": 277,
+        "log-moments": 278,
+        "oscillator-resonance": 277,
+        "radical-cancellation": 279,
+        "third-order-exponential": 272
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "none": 100,
+        "recent-families": 150
+      }
+    },
+    {
+      "input": {
+        "category": "integration",
+        "difficulty": "medium",
+        "count": 20,
+        "tag": "substitution"
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 2.1451250000000073,
+        "p95": 2.920958000000155,
+        "p99": 5.844749999999976,
+        "max": 21.853417000000036
+      },
+      "maxStatements": 16,
+      "maxReturnedCandidateRows": 241,
+      "distinctProblems": 1378,
+      "distinctFamilies": 1,
+      "maxFamilyShare": 1,
+      "familyChiSquare": 0,
+      "familyCounts": {
+        "quadratic-substitution": 5000
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "rounds": 250,
+      "latencyMs": {
+        "p50": 2.4020000000000437,
+        "p95": 3.171041999999943,
+        "p99": 4.351250000000164,
+        "max": 11.155917000000272
+      },
+      "maxStatements": 16,
+      "maxReturnedCandidateRows": 243,
+      "distinctProblems": 2973,
+      "distinctFamilies": 3,
+      "maxFamilyShare": 0.3372,
+      "familyChiSquare": 0.5392,
+      "familyCounts": {
+        "radial-log-mixed-derivative": 1670,
+        "unbounded-dirichlet-integral": 1644,
+        "rotated-disk-moment": 1686
+      },
+      "recentProblemRepeats": 0,
+      "relaxations": {
+        "family-cap": 250
+      }
+    }
+  ],
+  "plans": {
+    "pool": [
+      {
+        "id": 7,
+        "parent": 0,
+        "notused": 47,
+        "detail": "SEARCH r USING INDEX sqlite_autoindex_bank_releases_1 (release_id=?)"
+      },
+      {
+        "id": 10,
+        "parent": 0,
+        "notused": 0,
+        "detail": "SCALAR SUBQUERY 1"
+      },
+      {
+        "id": 15,
+        "parent": 10,
+        "notused": 39,
+        "detail": "SEARCH bank_config USING INDEX sqlite_autoindex_bank_config_1 (key=?)"
+      },
+      {
+        "id": 32,
+        "parent": 0,
+        "notused": 0,
+        "detail": "REUSE SUBQUERY 1"
+      },
+      {
+        "id": 35,
+        "parent": 0,
+        "notused": 63,
+        "detail": "SEARCH p USING INDEX sqlite_autoindex_bank_pools_1 (release_id=?)"
+      },
+      {
+        "id": 70,
+        "parent": 0,
+        "notused": 0,
+        "detail": "USE TEMP B-TREE FOR LAST TERM OF ORDER BY"
+      }
+    ],
+    "slot": [
+      {
+        "id": 8,
+        "parent": 0,
+        "notused": 47,
+        "detail": "SEARCH s USING INDEX sqlite_autoindex_bank_slots_1 (release_id=? AND topic=? AND difficulty=? AND tag=? AND family_id=? AND slot=?)"
+      },
+      {
+        "id": 25,
+        "parent": 0,
+        "notused": 46,
+        "detail": "SEARCH b USING INDEX sqlite_autoindex_bank_problems_2 (problem_id=? AND revision=?)"
+      },
+      {
+        "id": 32,
+        "parent": 0,
+        "notused": 47,
+        "detail": "SEARCH p USING INDEX sqlite_autoindex_bank_publication_1 (problem_id=? AND revision=?)"
+      }
+    ]
+  },
+  "comparison": {
+    "liveGenerationLatencyMs": null,
+    "reason": "No live generation run or authorized benchmark spend. Prior path had a 70,000 ms timeout; that is not a measured latency.",
+    "bankOpenAICalls": 0
+  },
+  "limits": "Local SQLite with the production SQL and sampler, excluding Cloudflare network, Worker/Firebase transactions, authentication, and cold start. Family-uniform policy intentionally differs from row-uniform sampling. Parameter-level uniformity is limited by bounded oversampling and recency exclusions."
+}

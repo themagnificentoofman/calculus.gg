@@ -1,5 +1,5 @@
 import { readBoundedJson } from './questions-policy.mjs';
-export function createProblemReport(deps: { verify: (token: string) => Promise<{ sub?: string }>; quota: (uid: string) => Promise<boolean>; db: D1Database }) {
+export function createProblemReport(deps: { verify: (token: string) => Promise<{ sub?: string }>; quota: (uid: string) => Promise<boolean>; db: D1Database; layout?: 'original' | 'compact' }) {
   return async (request: Request) => {
     const respond = (body: unknown, status = 200) => Response.json(body, { status, headers: { 'Cache-Control': 'no-store' } });
     const origin = request.headers.get('origin');
@@ -14,7 +14,7 @@ export function createProblemReport(deps: { verify: (token: string) => Promise<{
       if (!body || Object.keys(body).some(k => !['problemId', 'problemRevision', 'reason'].includes(k)) || !/^cn_[a-f0-9]{20}$/.test(body.problemId) || !Number.isInteger(body.problemRevision) || body.problemRevision < 1 || typeof body.reason !== 'string' || body.reason.trim().length < 5 || body.reason.length > 2000) return respond({ error: 'Include a problem ID, revision, and a short description.' }, 400);
       if (!await deps.quota(uid)) return respond({ error: 'Please wait a minute before reporting again.' }, 429);
       await deps.db.prepare(`INSERT INTO bank_reports (uid,problem_id,revision,reason,created_at)
-        SELECT ?,problem_id,revision,?,? FROM bank_problems WHERE problem_id=? AND revision=?
+        SELECT ?,problem_id,revision,?,? FROM ${deps.layout==='original'?'bank_problems':'cbank_problems'} WHERE problem_id=? AND revision=?
         ON CONFLICT(uid,problem_id,revision) DO UPDATE SET reason=excluded.reason,status='open'`)
         .bind(uid, body.reason.trim(), Date.now(), body.problemId, body.problemRevision).run();
       // Never expose arbitrary-ID content or an answer lookup, even for a report.

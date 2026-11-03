@@ -1,6 +1,6 @@
 # Operator workflow and rollout
 
-The CLI is deliberately outside the Worker and browser. Access requires the operator's private artifact files and, for hosted import, the existing Cloudflare/Sites deployment permissions. There is no public authoring/import/search endpoint and no client-side admin flag.
+The CLI is deliberately outside the Worker and browser. Access requires the operator's private artifact files and, for hosted import, the supported Sites-managed database permissions. There is no public authoring/import/search endpoint and no client-side admin flag.
 
 ## Inspect, report, retire and correct
 
@@ -26,7 +26,7 @@ There were no retained legacy preset identifiers in the initial migration. `bank
 
 ## Selection policy
 
-The server reads only the active published release's small pool catalogue (hard limit 192 families), then samples exact slots through composite primary-key joins. Up to 80 candidates per stage, four stages and 20 result questions: at most 320 probes, 21 SELECT statements, and 96 bound parameters per statement. D1 `batch` reduces network round trips. No `ORDER BY RANDOM()`, full-corpus download, browser answer bank or per-session generation occurs. Cache scope is one selection, so release activation and retirement are checked on each request.
+The compact server reads only the active published release's small indexed pool catalogue (hard limit 192 families), then samples exact integer pool/slot keys. Up to 80 identity candidates per stage, four stages and 20 result questions: at most 320 probes, ten SELECT statements and 80 bound parameters per statement. Only the final selected payloads are fetched, decompressed and checked against their canonical content hashes. D1 `batch` reduces round trips. No `ORDER BY RANDOM()`, corpus scan/download, browser answer bank or per-session generation occurs. Cache scope is one selection, so activation and retirement are checked on each request. The original selector remains only for authoring-layout tests/comparisons; runtime uses `compact-bank-selection.ts`.
 
 Families receive equal selection opportunity within the requested filter, intentionally differing from uniform row sampling. A round initially caps each family at two questions, excludes the last 100 issued/participated problem IDs, and excludes families from the last 20 entries. Bounded relaxation is: recent families, then a per-family cap based on the number of eligible pools, and only finally recent problems. This preserves recent-problem exclusion when a populous category has few method families. The selected level is recorded in the private round snapshot. A small or heavily retired filter can return `409 INSUFFICIENT_CONTENT` even when a larger unbounded scan could find more rows. It never changes topic/difficulty/tags or starts paid generation.
 
@@ -34,23 +34,43 @@ The host's recent history informs competitive issuance because future participan
 
 ## Prepare a hosted release
 
-1. Run all checks and all three content stages, then benchmark the full materialized corpus. Inspect the stratified review and record its automatic/human status accurately.
-2. Back up the verified SQLite/JSONL artifacts privately. The committed source contains no full corpus or answer-key download.
-3. Apply the additive `drizzle/0001_problem_bank.sql` migration to the existing D1 `DB`. It does not touch quota, account or Firebase tables. This is an explicit SQL migration; preserve it and its journal entry rather than regenerating it from the quota-only Drizzle model.
-4. Export the verified release using the operator CLI:
+This Site is managed only through Sites. Read access is established. The supported authenticated bulk-import method, managed storage ceiling/remaining capacity and read/write allowances are separate unresolved questions. Native Sites database tools are read-only. A successful read or SQLite page diagnostic does not establish an allocation. Do not request a new personal Cloudflare account, substitute the placeholder Wrangler database ID, or assume vanilla Cloudflare plan limits apply. Use the [unsent capacity/import request](support-request.md) to obtain the actual supported path and allowance.
+
+1. Preserve the verified original corpus and its checksums. The current seed is already complete; **do not regenerate it**. Work on a copy. `storage-audit.py` provides read-only per-object `dbstat` allocation, payload, unused-space, page and index-write estimates. The original authoring format remains the mathematical verification source.
+2. Build the serving artifact from that verified copy, then verify/benchmark it. The output must be a new path. `sync` appends previously verified corrections/releases to the existing serving registry; it never renumbers existing references or revives retirement. `verify` compares every canonical reconstructed record, publication state and pool membership with the source. Keep pilot/expanded membership artifacts separately.
 
 ```sh
-node scripts/bank/admin.mjs export .bank-data/bank.sqlite .bank-data/d1-export
-# With the actual authorized D1 configuration, apply each bank-NNNNN.sql in order:
-npx wrangler d1 execute DB --remote --config YOUR_AUTHORIZED_CONFIG --file .bank-data/d1-export/bank-00000.sql
+node scripts/bank/compact.mjs build .bank-data/compact/source.sqlite .bank-data/compact/serving.sqlite cn-2026-11-02-full-v2 .bank-data/compact/conversion.json
+python3 scripts/bank/storage-audit.py .bank-data/compact/serving.sqlite .bank-data/compact/compact-audit.json
+node --experimental-strip-types scripts/bank/benchmark.mjs .bank-data/compact/serving.sqlite .bank-data/compact/benchmark.json compact
+node scripts/bank/compact-import.mjs export .bank-data/compact/serving.sqlite .bank-data/compact/import
 ```
 
-Keep a checkpoint of successful chunk filenames/hashes. A chunk is duplicate-safe; changed immutable content must be investigated, never overwritten. SQL exports stage release metadata first. Import every numbered chunk, then independently compare hosted counts, hashes, pool coverage and retired states to the manifest. The final `activate-after-verification.sql` includes a published-count guard and is applied **last**. Do not deploy the new gameplay path against an empty bank. A valid health configuration flag alone does not prove the corpus exists.
+`build` activates only the local artifact for benchmarking. Exports always stage release metadata and exclude active configuration. The initial export has 1,850 JSON batches of SQL statements, at most 250 data rows per batch, and a checksum manifest. The complete bank and compressed payloads are private artifacts outside Git, public assets and deployment archives. Shared metadata and payloads are append-only; immutable conflicts abort. The full export is 246,285,283 bytes of batch JSON; this transfer volume differs from the 90,337,280-byte rehearsed database allocation.
 
-5. Through the established Sites helper, package the exact reviewed GitHub feature commit, save the matching version, and deploy after the bank import/activation is verified. Preserve the existing Site ID and public audience. A Sites URL is production, not an isolated preview. A PR and local UI preview are the review surfaces for this milestone.
-6. Verify signed-in Test, Rapid, PvP and Multiplayer, joining shared sets, reporting an answered question, saved history, XP and ratings. Capture production D1 latency separately from the local benchmark. Remove any obsolete runtime OpenAI generation credential only through the normal secret-management process if it has no other authorized use.
+3. Rehearse against a fresh **local** target; a second run must skip completed receipts. Full verification decodes/re-hashes every record, checks the identity/publication/membership digests, coverage and release manifests, using indexed pagination. It does not infer correctness from counts alone.
 
-Cloudflare administrative write access is required for remote D1 import. The connected Sites database tools expose bounded reads, not arbitrary bulk SQL writes. No new Cloudflare credentials or production corpus import are implied by a local SQLite report.
+```sh
+node scripts/bank/compact-import.mjs apply-local .bank-data/compact/import-rehearsal.sqlite .bank-data/compact/import
+node scripts/bank/compact-import.mjs apply-local .bank-data/compact/import-rehearsal.sqlite .bank-data/compact/import
+node scripts/bank/compact-import.mjs verify-local .bank-data/compact/import-rehearsal.sqlite .bank-data/compact/import
+node scripts/bank/worker-smoke.mjs
+```
+
+4. Obtain a supported Sites import executor and a fresh allowance covering this exact bundle. Record the ceiling, occupancy, agreed storage/write/read reserves, reset window, shared usage reservation and validity deadline. The proposed initial support envelope is 113 MB for the bank with 25% headroom plus existing usage, and 1.3 million writes for the initial import plus overhead; neither is an approved allocation. Future releases/revisions need a fresh capacity assessment. Do not start hosted mutation while any required allowance or method is unknown.
+5. Through that executor, apply additive, bounded, schema-only migrations `0001_problem_bank.sql` and `0002_compact_bank.sql` after the existing quota migration. Never change already applied migrations or embed the corpus in migrations. Check supported statement/batch/payload limits before adapting the prepared format. `0002` does not modify original data.
+6. The provider-neutral `runImport` function requires the supported atomic `prepare`/`batch` adapter and a `refreshAllowance` callback for every hosted invocation/resume. It is **not a currently available hosted import path**. Its approval object binds the Site ID, `DB`, exact bundle ID, supported method, fresh occupancy/budgets/reserves, shared-usage reservation and expiry. No credential or guessed HTTP endpoint is configured. Local CLI commands deliberately expose no hosted switch.
+
+Every batch writes its checksum receipt in the same transaction as the data. On an interrupted response, read the receipt before retrying. Refresh actual usage on resume; a lost response can still have committed and consumed budget. Changed bytes/receipts or immutable conflicts stop the import. Replayed approvals cannot unretire content. `local-checkpoints.jsonl` and returned measurements record actual `rows_read`, `rows_written`, `size_after` and duration when supplied; missing provider counters remain null, never fabricated from SQLite changes. The hosted runner stops if counters disappear, the allowance expires or agreed headroom is reached. The adapter must also honor provider rate limits. Preserve application quota usage and the agreed shared-account reservation throughout.
+
+7. While still staging, use the supported read path to run `verifyImported` against the exact plan. Its `onPage` callback must account for actual read counters and stop before the separately reserved verification budget is exhausted. Verify all 100,800 records and 260,400 memberships, publication state, coverage and release manifests, and run representative selection in the supported staging environment. The current verification scans are bounded pages (100 payloads / 1,000 memberships); they are operator work, never a game request.
+8. Only after hosted verification succeeds, use `activateVerified` with a fresh verification result and the matching release. Activation uses an atomic approved-count/unique-ID guard, then publishes and sets the compact active release. A retired or incomplete release cannot activate. Capture activation resource metadata and confirm representative selection before deploying gameplay. Quota/account/Firebase data remains untouched.
+9. Package the exact reviewed commit through the established Sites source helper and save a **new matching version**. Saved version 23 uses the original schema and cannot serve the compact layout. Saving source/version is separate from deployment. Preserve the existing Site ID and public audience; every Sites deployment URL is production. The healthy live version stays available until data readiness and resource checks pass.
+10. Deploy only the matching saved version after activation. Verify signed-in Test, Rapid, PvP and Multiplayer, shared sets, reporting after answers, history, XP and ratings. Measure production latency/counters separately. Do not remove runtime credentials while the retained live path needs them. A health configuration flag alone proves neither bank contents nor capacity.
+
+## Corrections in the compact serving registry
+
+Use the original independently verified authoring correction workflow above, then `compact.mjs sync SOURCE EXISTING_SERVING_DB NEW_RELEASE`. Reuse that same serving database so internal IDs remain stable. Retain old content and publication reasons; create a new release for corrected memberships. New revision metadata may use a new immutable shared object. Re-export and apply changed state through the agreed operator path; stale approval exports cannot revive a retired revision. For an urgent retirement, the supported executor may apply a parameterized update to `cbank_publication` by the indexed external ID/revision in `cbank_problems`; there is no public admin endpoint. An existing active game uses its private snapshot and can still settle.
 
 ## Rollback
 

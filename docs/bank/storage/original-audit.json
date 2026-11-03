@@ -1,0 +1,250 @@
+{
+  "path": ".bank-data/compact/source.sqlite",
+  "bytes": 535515136,
+  "sha256": "952a8d036a623003da4117a40a1b6ef63487ac01a39ce8082ece510499d00d4d",
+  "sqliteVersion": "3.54.1",
+  "pageSize": 4096,
+  "pageCount": 130741,
+  "freelistCount": 0,
+  "objects": [
+    {
+      "name": "bank_problems",
+      "pages": 104105,
+      "allocatedBytes": 426414080,
+      "payloadBytes": 323794090,
+      "unusedBytes": 100246687
+    },
+    {
+      "name": "bank_slots",
+      "pages": 7781,
+      "allocatedBytes": 31870976,
+      "payloadBytes": 29516160,
+      "unusedBytes": 500643
+    },
+    {
+      "name": "sqlite_autoindex_bank_slots_1",
+      "pages": 6673,
+      "allocatedBytes": 27332608,
+      "payloadBytes": 23413341,
+      "unusedBytes": 2972063
+    },
+    {
+      "name": "sqlite_autoindex_bank_slots_2",
+      "pages": 5203,
+      "allocatedBytes": 21311488,
+      "payloadBytes": 17906019,
+      "unusedBytes": 2475905
+    },
+    {
+      "name": "sqlite_autoindex_bank_problems_1",
+      "pages": 2059,
+      "allocatedBytes": 8433664,
+      "payloadBytes": 7123905,
+      "unusedBytes": 982655
+    },
+    {
+      "name": "bank_semantics",
+      "pages": 2048,
+      "allocatedBytes": 8388608,
+      "payloadBytes": 7123905,
+      "unusedBytes": 937731
+    },
+    {
+      "name": "bank_publication",
+      "pages": 1040,
+      "allocatedBytes": 4259840,
+      "payloadBytes": 3628800,
+      "unusedBytes": 25265
+    },
+    {
+      "name": "sqlite_autoindex_bank_publication_1",
+      "pages": 893,
+      "allocatedBytes": 3657728,
+      "payloadBytes": 2991105,
+      "unusedBytes": 353511
+    },
+    {
+      "name": "sqlite_autoindex_bank_problems_2",
+      "pages": 893,
+      "allocatedBytes": 3657728,
+      "payloadBytes": 2991105,
+      "unusedBytes": 353511
+    },
+    {
+      "name": "sqlite_autoindex_bank_pools_1",
+      "pages": 16,
+      "allocatedBytes": 65536,
+      "payloadBytes": 43726,
+      "unusedBytes": 19948
+    },
+    {
+      "name": "bank_pools",
+      "pages": 13,
+      "allocatedBytes": 53248,
+      "payloadBytes": 43668,
+      "unusedBytes": 6723
+    },
+    {
+      "name": "bank_releases",
+      "pages": 4,
+      "allocatedBytes": 16384,
+      "payloadBytes": 14095,
+      "unusedBytes": 2242
+    },
+    {
+      "name": "sqlite_schema",
+      "pages": 3,
+      "allocatedBytes": 12288,
+      "payloadBytes": 4651,
+      "unusedBytes": 7371
+    },
+    {
+      "name": "sqlite_autoindex_bank_statistics_1",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "sqlite_autoindex_bank_reports_1",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "sqlite_autoindex_bank_releases_1",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 79,
+      "unusedBytes": 4000
+    },
+    {
+      "name": "sqlite_autoindex_bank_legacy_ids_1",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "sqlite_autoindex_bank_config_1",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 17,
+      "unusedBytes": 4068
+    },
+    {
+      "name": "bank_statistics",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "bank_reports",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "bank_legacy_ids",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "bank_import_checks",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 0,
+      "unusedBytes": 4088
+    },
+    {
+      "name": "bank_config",
+      "pages": 1,
+      "allocatedBytes": 4096,
+      "payloadBytes": 38,
+      "unusedBytes": 4046
+    }
+  ],
+  "tables": [
+    {
+      "table": "bank_config",
+      "rows": 1,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 2
+    },
+    {
+      "table": "bank_import_checks",
+      "rows": 0,
+      "additionalIndexes": 0,
+      "estimatedRowIndexWrites": 0
+    },
+    {
+      "table": "bank_legacy_ids",
+      "rows": 0,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 0
+    },
+    {
+      "table": "bank_pools",
+      "rows": 558,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 1116
+    },
+    {
+      "table": "bank_problems",
+      "rows": 100800,
+      "additionalIndexes": 3,
+      "estimatedRowIndexWrites": 403200
+    },
+    {
+      "table": "bank_publication",
+      "rows": 100800,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 201600
+    },
+    {
+      "table": "bank_releases",
+      "rows": 3,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 6
+    },
+    {
+      "table": "bank_reports",
+      "rows": 0,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 0
+    },
+    {
+      "table": "bank_slots",
+      "rows": 289044,
+      "additionalIndexes": 2,
+      "estimatedRowIndexWrites": 867132
+    },
+    {
+      "table": "bank_statistics",
+      "rows": 0,
+      "additionalIndexes": 1,
+      "estimatedRowIndexWrites": 0
+    }
+  ],
+  "estimatedRowIndexWrites": 1473056,
+  "writeEstimateCaveat": "Logical inserted rows plus secondary indexes, not measured D1 billing. Excludes schema, receipts, activation, verification scans, retries and application usage.",
+  "originalMemberships": [
+    {
+      "release_id": "cn-2026-11-02-expanded-v2",
+      "slots": 26040
+    },
+    {
+      "release_id": "cn-2026-11-02-full-v2",
+      "slots": 260400
+    },
+    {
+      "release_id": "cn-2026-11-02-pilot-v2",
+      "slots": 2604
+    }
+  ]
+}

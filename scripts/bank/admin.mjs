@@ -107,7 +107,7 @@ async function main(){
       const result=db.prepare("UPDATE bank_publication SET state='retired',retirement_reason=? WHERE problem_id=? AND revision=?").run(reason,id,Number(revision));if(!result.changes)throw Error('Revision not found');console.log('Retired from new selection; historical content retained.');
     } else if(command==='reports') console.log(JSON.stringify(db.prepare("SELECT * FROM bank_reports WHERE status='open' ORDER BY created_at LIMIT 100").all(),null,2));
     else if(command==='export') {
-      // Protected Cloudflare operator imports these chunks with wrangler d1 execute.
+      // Original-layout export. Hosted execution requires the Sites-supported operator path.
       // Keep artifacts outside Git and public assets: they contain answer keys.
       const dir=resolve(args[0]);mkdirSync(dir,{recursive:true});let chunks=0,lines=[],bytes=0;
       const flush=()=>{if(lines.length){writeFileSync(resolve(dir,`bank-${String(chunks++).padStart(5,'0')}.sql`),lines.join('\n')+'\n');lines=[];bytes=0;}};

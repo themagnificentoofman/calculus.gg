@@ -81,7 +81,7 @@ test('public projection is an allowlist even when a revision gains new secret fi
 test('read quotas are separate from authoring and reports never reveal content',async()=>{
  const {sql,db}=fixture();assert.equal((await Promise.all(Array.from({length:15},()=>consumeBankReadQuota(db,'player-one',1000)))).filter(Boolean).length,12);
  assert.equal(sql.prepare("SELECT COUNT(*) AS n FROM ai_quota WHERE key='site:day'").get().n,0);
- const p=samples[0];const report=createProblemReport({db,verify:async()=>({sub:'player-one'}),quota:async()=>true});
+ const p=samples[0];const report=createProblemReport({db,layout:'original',verify:async()=>({sub:'player-one'}),quota:async()=>true});
  const r=await report(request('problems/report',{problemId:p.problemId,problemRevision:1,reason:'Please check this solution.'}));assert.deepEqual(await r.json(),{ok:true});assert.equal(sql.prepare('SELECT count(*) AS n FROM bank_reports').get().n,1);
  assert.equal((await report(request('problems/report',{problemId:p.problemId,problemRevision:1,reason:'short',answer:true}))).status,400);sql.close();
 });

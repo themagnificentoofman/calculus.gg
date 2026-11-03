@@ -67,7 +67,7 @@
   "production": {
     "approvedBankRows": 0,
     "deployed": false,
-    "blocker": "No authenticated Cloudflare operator access for D1 bulk writes; Sites connector database tools are read-only. Capacity check required for approximately 511 MiB local database.",
+    "blocker": "Superseded checkpoint: Sites-managed read access is established; supported bulk-write method and managed capacity/write allowances remain unknown. See ../storage/README.md. Original artifact retained.",
     "nextStep": "Apply additive D1 migration, import prepared chunks, verify hosted corpus, activate, publish the reviewed Sites build, then verify signed-in modes."
   }
 }
