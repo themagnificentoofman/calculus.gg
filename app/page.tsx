@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <main className={`relative isolate min-h-screen bg-zinc-950 text-zinc-50 font-sans selection:bg-emerald-500/30 ${!user ? 'welcome-surface' : ''}`}>
-      {!user && <WelcomeNetwork />}
+      <WelcomeNetwork />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {!user ? (
           <motion.div
