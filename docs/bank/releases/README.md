@@ -1,8 +1,10 @@
 # Milestone verification — November 2, 2026
 
+Historical original-layout report. The current serving representation and hosting checkpoint are in the [November 3 storage report](../storage/README.md). Read access through Sites is established; the bulk method and managed allowances remain unknown. The original artifacts and measurements below are retained.
+
 **Infrastructure:** implemented and locally verified on `codex/indexed-problem-bank`. All four modes select bank revisions, with zero model calls for selection or grading. Server authority, round lengths, scoring, account ownership and historical results remain intact. The branch adds immutable revisions/releases, indexed sampling, private round snapshots, reports, retirement/corrections, offline authoring and operator tools.
 
-**Corpus:** 100,800 approved, materialized, distinct problems are persisted and selectable in the private local artifact. Independent reconstruction and rendering passed for every record. All 24 topic/difficulty cells selected a 20-question round successfully. **Production bank count remains 0; this is not a completed hosted rollout.** The current Site has not been changed.
+**Corpus:** 100,800 approved, materialized, distinct problems are persisted and selectable in the private local artifact. Independent reconstruction and rendering passed for every record. All 24 topic/difficulty cells selected a 20-question round successfully. **Production bank count remains 0; this is not a completed hosted rollout.** This original report predates the temporary read preflight; that authorization was subsequently removed and live version 22 restored.
 
 | Stage | Newly generated | Rejected | Duplicate generation | Approved / locally published |
 | --- | ---: | ---: | ---: | ---: |
@@ -50,4 +52,4 @@ Actual OpenAI API calls: **0**. Model spend: **$0**, including failed/retried pa
 
 Large answer-bearing payloads remain in private workspace artifact storage, outside Git and public assets. The delivery archive contains the materialized SQLite database, canonical full JSONL, all three manifests, stratified full review, audit/benchmark reports, and 273 duplicate-safe D1 SQL chunks plus a guarded activation script. `artifact-index.json` records checksums. Recipes, small fixtures and these reports are committed.
 
-The remaining blocker is authenticated Cloudflare operator access for bulk D1 writes. The available Sites database connector is read-only, and Wrangler reported no authenticated account. With authorized access and adequate D1 capacity, apply the additive migration, import the prepared chunks, independently verify hosted hashes/counts/coverage, activate the release, then publish the matching reviewed Sites build and verify signed-in Test/Rapid/PvP/Multiplayer. Detailed commands, retirement semantics and rollback are in [operations](../operations.md). No new credentials, hosting subscription or production migration were created implicitly.
+The current blocker is the supported authenticated bulk-import method and managed resource allowance for the existing Sites-owned D1 binding. Sites read access is established; the absence of a personal Wrangler login does not require creating a Cloudflare account. Use the [compact rollout](../operations.md), [measured comparison](../storage/README.md) and [unsent support request](../support-request.md). Production imported/active bank counts remain 0/0.

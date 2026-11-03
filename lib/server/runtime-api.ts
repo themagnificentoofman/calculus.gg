@@ -3,7 +3,7 @@ import config from '../../firebase-applet-config.json';
 import { verifyFirebaseIdentity } from './firebase-token.mjs';
 import { firestoreStore, serviceAccountToken } from './firestore-admin';
 import { createGameApi } from './game-api';
-import { selectBankQuestions, assertBankSetPlayable } from './bank-selection';
+import { selectBankQuestions, assertBankSetPlayable } from './compact-bank-selection';
 import { consumeBankReadQuota, consumeMutationQuota } from './quota';
 export function gameApi(resource: 'games' | 'profile' | 'questions' | 'social', request: Request) {
   if (!env.FIREBASE_SERVICE_ACCOUNT_JSON || !env.DB) return Response.json({ error: 'Secure gameplay has not been configured. Please contact the site owner.' }, { status: 503, headers: { 'Cache-Control': 'no-store' } });
