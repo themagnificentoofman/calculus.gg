@@ -1,6 +1,6 @@
-import { env } from 'cloudflare:workers';
-import { bankOperator } from '../../../lib/server/bank-operator.mjs';
 export const dynamic = 'force-dynamic';
-export function POST(request: Request) {
-  return bankOperator(request, env.DB, env.BANK_OPERATOR_PUBLIC_KEY, env.BANK_OPERATOR_EXPIRES_AT);
+// Milestone 1 is complete. No credential or request can reopen this endpoint.
+// Operator source and immutable receipts remain available for audited recovery.
+export function POST() {
+  return Response.json({error: 'Unavailable'}, {status: 404, headers: {'Cache-Control': 'no-store'}});
 }

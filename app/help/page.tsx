@@ -53,7 +53,7 @@ export default function HelpPage() {
               <h2 className="text-xl sm:text-2xl font-bold">Problem Sources</h2>
             </div>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Our calculus problems are dynamically generated using OpenAI to provide varied practice questions. The problems cover a wide range of topics including:
+              Calculus Ninja selects reusable problems from a versioned bank. Original templates are checked with exact mathematical methods and rendering tests before publication. Automatic validation does not mean every problem has been reviewed by a person. AI can assist offline authoring; gameplay selection and grading do not call OpenAI. The problems cover a wide range of topics including:
             </p>
             <ul className="space-y-2 text-zinc-300 list-disc list-inside">
               <li>Integration</li>
@@ -63,6 +63,12 @@ export default function HelpPage() {
               <li>Differential Equations</li>
               <li>Multivariable Calculus</li>
             </ul>
+          </section>
+
+          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
+            <h2 className="text-xl font-bold mb-4">Difficulty and problem reports</h2>
+            <p className="text-zinc-300 leading-relaxed">Easy uses fundamental rules; Medium combines standard techniques; Hard requires several steps or careful domain and convergence analysis; Olympiad asks you to discover a concealed identity or transformation. These are template estimates, not measured solve-time rankings. A category may be unavailable while content is under review.</p>
+            <p className="mt-4 text-zinc-400 leading-relaxed">Use the copyable problem ID and revision in an answer review to report an issue. Corrections create a new revision, so previous games and results keep their original questions. A round avoids duplicate problems and limits repeated families; small categories use a bounded relaxation of recent-history and family limits.</p>
           </section>
 
           {/* Ratings */}

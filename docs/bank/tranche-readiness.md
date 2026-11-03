@@ -1,5 +1,7 @@
 # Tranche resumption status
 
+> Historical checkpoint before the explicitly authorized [operator-budget mode](operator-budget.md). Its provider-allocation prerequisite is superseded for this existing bundle; preserve this record as pilot evidence.
+
 The Sites four-batch pilot established authenticated writes, transaction receipts, canonical-content readback, and per-query D1 counters. It did not establish a remaining managed read/write allowance, reset window, expiry, or shared usage reservation. There are no pilot remaining-budget figures to carry forward.
 
 The production checkpoint contains the original bundle's receipts 0–3. Next missing sequence is 4. The live pilot writer remains disabled and has a compiled four-batch cap. This local branch does not expand or deploy that endpoint.

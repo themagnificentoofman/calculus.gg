@@ -1,5 +1,7 @@
 # Four-batch hosted pilot
 
+> Historical checkpoint before the explicitly authorized [operator-budget mode](operator-budget.md). Its provider-allocation prerequisite is superseded for this existing bundle; preserve this record as pilot evidence.
+
 This operational branch preserves the live version 22 UI and gameplay implementation while adding the compact schema and an authenticated pilot writer. Do not merge its gameplay reversions into the bank application on main. The pilot does not publish or activate a release.
 
 `POST /api/bank-import` requires an Ed25519 signature over the Site ID, method, path, timestamp, and exact body SHA-256. Requests expire after 60 seconds; the entire endpoint returns 404 without the runtime public key or after `BANK_PILOT_EXPIRES_AT`. The operator private key is local only, mode 0600, and never committed. Public browser-origin requests are rejected. Configure only `BANK_PILOT_PUBLIC_KEY` and `BANK_PILOT_EXPIRES_AT` using Sites environment tools; preserve existing application credentials.
