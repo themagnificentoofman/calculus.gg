@@ -51,3 +51,11 @@ yarn-error.log*
 firebase-debug.log
 firestore-debug.log
 ui-debug.log
+
+# Private generated bank artifacts and verification environment
+/.bank-venv/
+/.bank-data/
+/.bank-*.log
+
+__pycache__/
+*.pyc

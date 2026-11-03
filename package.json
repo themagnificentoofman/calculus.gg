@@ -11,7 +11,10 @@
     "db:generate": "drizzle-kit generate",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "test:integration": "node --experimental-strip-types --test tests/game-progress.test.mjs"
+    "test:integration": "node --experimental-strip-types --test tests/game-progress.test.mjs",
+    "bank:verify": ".bank-venv/bin/python scripts/bank/test_math.py",
+    "bank:benchmark": "node --experimental-strip-types scripts/bank/benchmark.mjs",
+    "bank:pilot": ".bank-venv/bin/python scripts/bank/pipeline.py --stage pilot"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
