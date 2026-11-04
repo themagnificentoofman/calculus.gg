@@ -118,3 +118,13 @@ The final local Worker/D1 rehearsal passes 397 steps, all 28 staged pool checks,
 An independent bounded capacity review confirms no eligible reviewed Hard multivariable cases were omitted, identifies the two exhausted capacity distributions, and verifies the reservation argument and passing disjoint seed matrices. See ode-mv/capacity-reservation-review-v1.json.
 
 Final typecheck, production build, and five operator/delta regression tests pass. The final source has no temporary preview route or font allowlist. The code/content are ready for the established publication/import workflow; production activation and hosted verification are not yet claimed at this checkpoint.
+
+
+## Production verification checkpoint
+
+Sites version 38 deployed source f1844625fac01795bd78c99ea27c8fef1b719416. All 397 production import/verification steps pass, including all 28 staged selection checks. Before activation the current operation is charged 511,246 reads and 65,359 writes, with measured 128,516 reads; the previous cumulative charges remain intact. The final activation and disabled-operator receipt follow separately.
+
+The final CI binding command caught two newer nonmathematical evidence files: the optional Legacy badge and strengthened delta tests. A separate final evidence amendment preserves the prior historical review manifest, records the exact reviewed changes, and binds the final component QA and release tests. The complete source-binding gate now passes 103,304 records/408,839 expressions. CI now creates the same isolated Python environment required by the delta tests. The eight mathematical and thirteen content-contract tests also pass. No historical math, source hashes, grading or solution text was changed to repair this gate.
+
+
+Production activation succeeded for cn-2026-11-04-quality-v4: verified=1, activated=1, halted=null. The operation charged 551,914 reads and 65,425 writes, including preflight reserves; measured engine work is 144,646 reads and 42,695 writes. Cumulative charged totals are 4,970,200 reads and 1,176,228 writes. Database size is 107,151,360 bytes. The signed receipt and every hosted import event are retained in final-release-v1/. Temporary import access has been disabled in the next environment revision; applying that revision and checking404 are the final publication actions.

@@ -6,7 +6,12 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 const manifest=JSON.parse(readFileSync('docs/bank/solution-quality/review-manifest.json'));
 const amendment=JSON.parse(readFileSync('docs/bank/problem-quality/presentation-review-manifest.json'));
+const finalAmendment=JSON.parse(readFileSync('docs/bank/problem-quality/presentation-final-review-amendment.json'));
 const fileHash=path=>createHash('sha256').update(readFileSync(path)).digest('hex');
+assert.equal(finalAmendment.status,'reviewed-nonmathematical-evidence-amendment');
+assert.equal(finalAmendment.priorManifest,'docs/bank/problem-quality/presentation-review-manifest.json');
+assert.equal(fileHash(finalAmendment.priorManifest),finalAmendment.priorManifestSha256);
+for(const [path,expected]of Object.entries(finalAmendment.evidenceFiles))assert.equal(fileHash(path),expected,'Final presentation evidence changed: '+path);
 assert.equal(amendment.status,'reviewed-historical-presentation-only');
 assert.equal(amendment.baselineManifest,'docs/bank/solution-quality/review-manifest.json');
 assert.equal(fileHash(amendment.baselineManifest),amendment.baselineManifestSha256,'The immutable v37 review manifest changed');
@@ -15,7 +20,12 @@ for(const [path,expected]of Object.entries(manifest.files)){
  if(updated){assert.equal(updated.priorSha256,expected);assert.ok(updated.reviewedChange);}
  assert.equal(fileHash(path),updated?.sha256||expected,'Review binding changed: '+path);
 }
-for(const [path,expected]of Object.entries(amendment.evidenceFiles))assert.equal(fileHash(path),expected,'Presentation review evidence changed: '+path);
+for(const [path,expected]of Object.entries(amendment.evidenceFiles)){
+ const updated=finalAmendment.overrides[path];
+ if(updated){assert.equal(updated.priorSha256,expected);assert.ok(updated.reviewedChange);assert.ok(updated.evidencePaths.length);for(const evidence of updated.evidencePaths)assert.ok(finalAmendment.evidenceFiles[evidence]);}
+ assert.equal(fileHash(path),updated?.sha256||expected,'Presentation review evidence changed: '+path);
+}
+for(const path of Object.keys(finalAmendment.overrides))assert.ok(amendment.evidenceFiles[path],'Amend only explicitly bound prior evidence');
 const finite=JSON.parse(readFileSync('lib/server/solution-reviews/finite.json'));
 assert.equal(Object.keys(finite).length,2504);assert.equal(new Set(Object.values(finite).map(p=>p.familyId)).size,313);
 for(const [id,p]of Object.entries(finite)){assert.match(id,/^cn_[a-f0-9]{20}$/);assert.match(p.sourceContentHash,/^[a-f0-9]{64}$/);assert.equal(p.revision,1);assert.ok(p.steps.length>=2&&p.steps.length<=40);}

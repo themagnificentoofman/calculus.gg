@@ -1,0 +1,81 @@
+{
+  "sourceCommit": "f1844625fac01795bd78c99ea27c8fef1b719416",
+  "sitesVersion": 38,
+  "release": "cn-2026-11-04-quality-v4",
+  "result": {
+    "bundleId": "a2e35e6b320cc7754a4a8e74f590e38189eb12965d7198c4436b9d043e436d15",
+    "nextSequence": 397,
+    "totalSteps": 397,
+    "activated": 1,
+    "verified": 1,
+    "halted": null,
+    "allowance": {
+      "bundleId": "a2e35e6b320cc7754a4a8e74f590e38189eb12965d7198c4436b9d043e436d15",
+      "reads": 581714,
+      "writes": 189197,
+      "bytes": 150000000
+    },
+    "chargedReads": 551914,
+    "chargedWrites": 65425,
+    "measuredReads": 144646,
+    "measuredWrites": 42695,
+    "priorChargedReads": 4418286,
+    "priorChargedWrites": 1110803,
+    "databaseBytes": 107151360,
+    "providerRemainingReads": null,
+    "providerRemainingWrites": null,
+    "measurements": [
+      {
+        "rowsRead": 1,
+        "rowsWritten": 0,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.3265
+      },
+      {
+        "rowsRead": 2,
+        "rowsWritten": 1,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.4916
+      },
+      {
+        "rowsRead": 0,
+        "rowsWritten": 0,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.347
+      },
+      {
+        "rowsRead": 2,
+        "rowsWritten": 1,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.4316
+      },
+      {
+        "rowsRead": 1,
+        "rowsWritten": 0,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.431
+      },
+      {
+        "rowsRead": 16124,
+        "rowsWritten": 4,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 25.947200000000002
+      },
+      {
+        "rowsRead": 1,
+        "rowsWritten": 1,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.2821
+      },
+      {
+        "rowsRead": 1,
+        "rowsWritten": 0,
+        "sizeAfter": 107151360,
+        "sqlDurationMs": 0.2502
+      }
+    ],
+    "serverMs": 278
+  },
+  "temporaryImportAccess": "disable requested; final redeployment and404 verification recorded in final publication receipt",
+  "scope": "Actual production signed-operator receipt; charged reservations and measuredD1engineoperations are separate. Provider remaining quota is not exposed."
+}
