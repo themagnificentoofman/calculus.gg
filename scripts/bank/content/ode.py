@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse, hashlib, json, re, textwrap
 from pathlib import Path
 import sympy as s
+from authored_options import select_authored_triple, supplement_differentiation_pool
 R=s.Rational
 x=s.symbols('t', real=True)
 X,Y,D,D2=s.symbols('X Y D D2',real=True)
@@ -37,10 +38,8 @@ def pack(m,statement,answer,pool,steps,checks,conditions,analytic,structure,answ
   if exact(value,answer) or any(exact(value,v) for v,_ in clean):continue
   clean.append((value,label))
  assert len(clean)>=3,('distractor pool collapsed',statement,clean)
- # Rotate genuinely authored misconceptions; never manufacture an integer offset.
- offset=(int(m)-4)%len(clean)
- ordered=clean[offset:]+clean[:offset]
- chosen=ordered[:3]
+ # All feasible numerical ranks are eligible; exact inequivalence remains checked below.
+ chosen=select_authored_triple(answer,clean,m,structure)
  selected=[answer]+[v for v,_ in chosen]
  for a in selected:assert a.is_real is not False
  for j,a in enumerate(selected):
@@ -204,7 +203,7 @@ def h_normal(m):
 @reg('hard','step-forcing','ode-piecewise-input-response','match-at-input-switch','synthesis','Constructs a delayed response and enforces continuity of both state and velocity when forcing jumps.')
 def h_step(m):
  r=m*(1-s.cos(x-1));ans=2*m
- return pack(m,r'y\prime\prime+y=\begin{cases}0,&0\le t<1,\\'+L(m)+r',&t>1,\end{cases}\quad y(0)=y\prime(0)=0.\quad y(1+\pi)=?',ans,[(m,'return forcing amplitude'),(0,'reset response after the switch'),(4*m,'double response twice'),(-2*m,'wrong step-response sign')],[T('Before the switch the solution is zero. A finite step causes no jump in y or y prime.'),r'y(t)='+L(r)+r'\quad(t\ge1)'],[ck('post-switch forced residual',s.diff(r,x,2)+r,m),ck('state continuity at switch',r.subs(x,1)),ck('velocity continuity at switch',s.diff(r,x).subs(x,1)),ck('evaluation',r.subs(x,1+pi),ans)],['Piecewise classical solution; y and y prime continuous at t=1.'],['Integrating the equation over a shrinking interval around the switch gives zero derivative jump; continuity and the post-switch equation determine the response.'],'finite-step-forcing-matched-initial-data')
+ return pack(m,r'y\prime\prime+y=\begin{cases}0,&0\le t<1,\\'+L(m)+r',&t>1,\end{cases}\quad y(0)=y\prime(0)=0.\quad \textnormal{Take y and y prime continuous at t=1.}\quad y(1+\pi)=?',ans,[(m,'return forcing amplitude'),(0,'reset response after the switch'),(4*m,'double response twice'),(-2*m,'wrong step-response sign')],[T('Before the switch the solution is zero. A finite step causes no jump in y or y prime.'),r'y(t)='+L(r)+r'\quad(t\ge1)'],[ck('post-switch forced residual',s.diff(r,x,2)+r,m),ck('state continuity at switch',r.subs(x,1)),ck('velocity continuity at switch',s.diff(r,x).subs(x,1)),ck('evaluation',r.subs(x,1+pi),ans)],['Piecewise classical solution; y and y prime continuous at t=1.'],['Integrating the equation over a shrinking interval around the switch gives zero derivative jump; continuity and the post-switch equation determine the response.'],'finite-step-forcing-matched-initial-data')
 
 @reg('hard','impulse-jump','ode-distributional-impulse','jump-condition','synthesis','Distinguishes an impulse-induced velocity jump from a finite step in forcing.')
 def h_impulse(m):
@@ -234,7 +233,7 @@ def h_spectrum(m):
 @reg('hard','Wronskian-transport','ode-Abel-Wronskian','determinant-differentiation','reframing','Recovers a Wronskian without solving either homogeneous solution or knowing the zeroth-order coefficient.')
 def h_wronskian(m):
  f=x**(-m);ans=2**(-m)
- return pack(m,r'y\prime\prime+\frac{'+L(m)+r'}t y\prime+q(t)y=0\quad(t>0),\quad W(1)=1.\quad W(2)=?'+T(' Use W=y1*y2 prime-y1 prime*y2.'),ans,[(2**m,'wrong transport sign'),(1,'assume W is constant'),(2**(-m-1),'shift exponent'),(m/2,'replace exponential transport by linear scaling')],[T('Differentiate the determinant; the q terms cancel.'),r'W\prime=-\frac{'+L(m)+r'}tW,\quad W(t)=t^{-'+L(m)+r'}'],[ck('Wronskian transport residual',s.diff(f,x)+m*f/x),ck('normalization',f.subs(x,1),1),ck('evaluation',f.subs(x,2),ans)],['q continuous on the positive interval containing [1,2]; W uses the stated order.'],['For two solutions, W prime=y1*y2 second-y1 second*y2. Substituting the ODE leaves exactly -(m/t)W. The resulting scalar IVP determines W.'],'Wronskian-transport-with-unknown-q')
+ return pack(m,r'y\prime\prime+\frac{'+L(m)+r'}t y\prime+q(t)y=0\quad(t>0).'+T(' Let y1 and y2 be solutions on an interval containing [1,2], and define ')+r'W=y_1y_2\prime-y_1\prime y_2.\quad W(1)=1.\quad W(2)=?',ans,[(2**m,'wrong transport sign'),(1,'assume W is constant'),(2**(-m-1),'shift exponent'),(m/2,'replace exponential transport by linear scaling')],[T('Differentiate the determinant; the q terms cancel.'),r'W\prime=-\frac{'+L(m)+r'}tW,\quad W(t)=t^{-'+L(m)+r'}'],[ck('Wronskian transport residual',s.diff(f,x)+m*f/x),ck('normalization',f.subs(x,1),1),ck('evaluation',f.subs(x,2),ans)],['q continuous on the positive interval containing [1,2]; W uses the stated order.'],['For two solutions, W prime=y1*y2 second-y1 second*y2. Substituting the ODE leaves exactly -(m/t)W. The resulting scalar IVP determines W.'],'Wronskian-transport-with-unknown-q')
 
 @reg('olympiad','quartic-period','ode-nonlinear-period-energy-beta','energy-to-period-quadrature','synthesis','Finds a nonlinear period by an energy invariant, an improper quadrature and a beta reduction; a harmonic approximation does not answer the question.',prereq=('energy integrals','beta integral'))
 def o_period(m):

@@ -1,0 +1,28 @@
+{
+  "bundleId": "9b174c91c42b61dac5addcedb8224048ea004d2143c74f154d10e415763fb345",
+  "priorChargedReads": 3855202,
+  "priorChargedWrites": 1059527,
+  "cumulativeCeiling": {
+    "reads": 5000000,
+    "writes": 1300000,
+    "bytes": 150000000
+  },
+  "remainingBeforeThisDelta": {
+    "reads": 1144798,
+    "writes": 240473
+  },
+  "thisDeltaCap": {
+    "reads": 700000,
+    "writes": 80000,
+    "bytes": 110000000
+  },
+  "maximumCombinedCharged": {
+    "reads": 4555202,
+    "writes": 1139527
+  },
+  "rehearsalConservativeCharge": {
+    "reads": 563116,
+    "writes": 51284
+  },
+  "note": "New exact-bundle cap is carved from remaining cumulative headroom, not a fresh use of the old allowance. Includes 10,000 reads/1,000 writes for unmetered bounded preflight and schema overhead. Provider remaining/shared usage and reset time are unknown; this is an application operating ceiling, not a provider quota claim."
+}

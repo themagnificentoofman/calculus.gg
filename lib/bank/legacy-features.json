@@ -378,21 +378,21 @@
     "weight": 0.15
   },
   "transformed-beta-log": {
-    "idea": "transformed-beta-log",
+    "idea": "beta-parameter-moments",
     "structure": "integral-fixed-linear-basis",
     "technique": "parameter-differentiation",
     "combination": "improper-integral+parameter-differentiation+substitution",
     "weight": 0.15
   },
   "concealed-reflection": {
-    "idea": "concealed-reflection",
+    "idea": "reflection-invariant-measure",
     "structure": "integral-fixed-linear-basis",
     "technique": "symmetry",
     "combination": "beta-integral+symmetry",
     "weight": 0.15
   },
   "frullani-cancellation": {
-    "idea": "frullani-cancellation",
+    "idea": "frullani-scaling-cancellation",
     "structure": "integral-fixed-linear-basis",
     "technique": "frullani",
     "combination": "cancellation+frullani+improper-integral",

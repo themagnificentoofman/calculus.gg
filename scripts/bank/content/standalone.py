@@ -4,6 +4,7 @@ and three mathematical distractors. Every output is derived and checked.
 Other standalone routes require their own reviewed verifier, never a bypass.
 """
 import hashlib,json
+import re
 import sympy as s
 VERSION='standalone-polynomial-v1'
 x=s.Symbol('x',real=True)
@@ -15,6 +16,7 @@ def rational(value):
 def build(spec):
  if set(spec)-{'revision'}!={'slug','coefficients','operation','point','upper','distractors','pedagogy','topic','difficulty'}:raise ValueError('Unknown standalone contract field')
  revision=spec.get('revision',1)
+ if not isinstance(spec['slug'],str) or not re.fullmatch('[a-z][a-z0-9-]{2,79}',spec['slug']):raise ValueError('Bounded stable slug required')
  if type(revision)is not int or not 1<=revision<=1000000:raise ValueError('Invalid immutable revision')
  if not 1<=len(spec['coefficients'])<=21:raise ValueError('Polynomial degree bound')
  coeffs=list(map(rational,spec['coefficients']));f=sum(c*x**i for i,c in enumerate(coeffs));a=rational(spec['point']);b=rational(spec['upper'])
@@ -40,3 +42,18 @@ def build(spec):
 def verify(p):
  if p!=build(p['provenance']['authoring']['standaloneSpec']):raise ValueError('Standalone certificate/content mismatch')
  return True
+
+if __name__=='__main__':
+ import argparse
+ from pathlib import Path
+ ap=argparse.ArgumentParser(description='Verify an explicit standalone specification and emit a private delta artifact.')
+ ap.add_argument('--spec',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
+ ap.add_argument('--release',required=True);ap.add_argument('--parent',required=True);args=ap.parse_args()
+ if not re.fullmatch('[a-z][a-z0-9-]{2,99}',args.release):raise ValueError('Invalid release slug')
+ p=build(json.loads(args.spec.read_text()));verify(p);args.out.mkdir(parents=True,exist_ok=True)
+ artifact=args.out/(args.release+'.jsonl')
+ if artifact.exists():raise ValueError('Do not overwrite an existing release artifact')
+ artifact.write_text(canonical(p)+'\n')
+ manifest={'schemaVersion':2,'releaseId':args.release,'parentRelease':args.parent,'artifact':artifact.name,'artifactSha256':hashlib.sha256(artifact.read_bytes()).hexdigest(),'approvedCount':1,'coverage':{p['topic']+'/'+p['difficulty']:1},'families':{p['familyId']:1},'humanReviewedCount':0,'templateVersion':VERSION,'publishedCount':0,'importedCount':0,'activeCount':0}
+ (args.out/(args.release+'.manifest.json')).write_text(json.dumps(manifest,indent=2)+'\n')
+ print(json.dumps({'verified':1,'problemId':p['problemId'],'revision':p['problemRevision'],'artifact':str(artifact),'imported':0,'active':0}))

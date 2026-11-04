@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Local workerd + D1 compatibility check, with the committed 72-family fixture only.
 import { Miniflare } from 'miniflare';
-import { stripTypeScriptTypes } from 'node:module';
+import { build } from 'esbuild';
 import { readFileSync,mkdtempSync,rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -14,12 +14,12 @@ const samples=JSON.parse(readFileSync('tests/fixtures/bank/review-samples.json',
 source.prepare("INSERT INTO bank_releases VALUES ('smoke','{}',?,'published')").run(samples.length);
 for(const p of samples){insertProblem(source,p);for(const tag of ['*',...p.techniqueTags]){source.prepare('INSERT INTO bank_pools VALUES (?,?,?,?,?,?)').run('smoke',p.topic,p.difficulty,tag,p.familyId,1);source.prepare('INSERT INTO bank_slots VALUES (?,?,?,?,?,?,?,?)').run('smoke',p.topic,p.difficulty,tag,p.familyId,0,p.problemId,1);}}
 syncCompact(source,target,'smoke');const plan=exportCompact(target,join(dir,'import'));
-const modules=['lib/server/compact-bank-selection.ts','lib/server/bank-selection.ts','lib/bank/compact-codec.mjs'].map(path=>({type:'ESModule',path,contents:path.endsWith('.ts')?stripTypeScriptTypes(readFileSync(path,'utf8')):readFileSync(path,'utf8')}));
-modules.unshift({type:'ESModule',path:'index.mjs',contents:`import {selectBankQuestions} from './lib/server/compact-bank-selection.ts';export default {async fetch(request,env){const result=await selectBankQuestions(env.DB,{category:'integration',difficulty:'easy',count:3});return Response.json({count:result.questions.length,ids:result.questions.map(q=>q.problemId),hashes:result.questions.map(q=>q.contentHash)});}};`});
+const bundle=await build({stdin:{contents:`import {selectBankQuestions} from './lib/server/compact-bank-selection.ts';export default {async fetch(request,env){const result=await selectBankQuestions(env.DB,{category:'integration',difficulty:'easy',count:3});return Response.json({count:result.questions.length,ids:result.questions.map(q=>q.problemId),hashes:result.questions.map(q=>q.contentHash)});}};`,resolveDir:process.cwd()},bundle:true,write:false,format:'esm',platform:'browser',target:'es2022'});
+const modules=[{type:'ESModule',path:'index.mjs',contents:bundle.outputFiles[0].text}];
 const mf=new Miniflare({modules,modulesRoot:process.cwd(),compatibilityDate:'2026-04-01',d1Databases:{DB:'local-compact-smoke'}});
 try{
   const db=await mf.getD1Database('DB');
-  for(const migration of ['0001_problem_bank.sql','0002_compact_bank.sql'])await db.exec(readFileSync('drizzle/'+migration,'utf8').split('\n').filter(line=>!line.trim().startsWith('--')).join(' '));
+  for(const migration of ['0001_problem_bank.sql','0002_compact_bank.sql','0004_flimsy_carlie_cooper.sql','0005_brief_skaar.sql'])await db.exec(readFileSync('drizzle/'+migration,'utf8').replace(/--[^\n]*/g,'').replaceAll('\n',' '));
   await runImport(db,join(dir,'import'),{local:true});const verification=await verifyImported(db,plan);assert.equal(verification.verified,72);
   await activateVerified(db,plan,verification,'smoke');
   const response=await mf.dispatchFetch('http://local.invalid/'),body=await response.json();assert.equal(response.status,200);assert.equal(body.count,3);assert.equal(new Set(body.ids).size,3);assert.ok(body.hashes.every(h=>/^[a-f0-9]{64}$/.test(h)));

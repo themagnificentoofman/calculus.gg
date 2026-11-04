@@ -57,7 +57,8 @@ export async function prepareDelta(manifestPath,baselinePath,directory){
   const tuples=[];for(const row of page){const p=await decodeCompact(row);tuples.push([p.problemId,p.problemRevision,p.contentHash,row.state]);}
   pages.push({cursor,count:page.length,sha256:sha(canonical(tuples))});cursor=page.at(-1).problem_ref;
  }
- const planBody={format:'content-delta-v1',projectId:'appgprj_6ad91db3d4788191b3e73074e27447f5',priorBundleId:'ed08a3de9381d715d50f5a122a3eb23034d2b92dff2192be4aac198272e56f32',release:manifest.releaseId,parentRelease:manifest.parentRelease,newCount:manifest.approvedCount,before,batches,pages,tableHashes,coverage:counts,families};
+ const cells=Object.keys(counts).sort().map(cell=>{const split=cell.lastIndexOf('/'),input={category:cell.slice(0,split),difficulty:cell.slice(split+1),count:20};return {input,sha256:sha(canonical(input))};});
+ const planBody={format:'content-delta-v1',projectId:'appgprj_6ad91db3d4788191b3e73074e27447f5',priorBundleId:'ed08a3de9381d715d50f5a122a3eb23034d2b92dff2192be4aac198272e56f32',release:manifest.releaseId,parentRelease:manifest.parentRelease,newCount:manifest.approvedCount,before,batches,pages,tableHashes,cells,coverage:counts,families};
  const plan={...planBody,bundleId:sha(canonical(planBody)),status:'prepared, not imported or activated',localDatabaseBytes:statSync(serving).size,compression};
  writeFileSync(join(directory,'plan.json'),JSON.stringify(plan,null,2)+'\n');
  // Local-only activation for offline sampling; exported release remains staging.

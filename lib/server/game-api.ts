@@ -31,7 +31,9 @@ export function createGameApi(deps: { store: Store; verify: (token: string) => P
         const input = validateQuestionRequest(body);
         if (!input || !modes.includes(body.mode) || (body.tag !== undefined && (typeof body.tag !== 'string' || !/^[a-z][a-z0-9-]{1,63}$/.test(body.tag)))) throw new GameError('Choose a supported mode, category, difficulty and question count.');
         if (!await deps.quota(uid)) throw new GameError('Question selection limit reached. Please try again later.', 429);
-        const recent = await deps.store.get(`bankRecent/${uid}`) || {};
+        // Competitive sets use the common bank policy without adapting to the
+        // host's personal practice history. The immutable order is shared.
+        const recent = ['test','rapid'].includes(body.mode) ? await deps.store.get(`bankRecent/${uid}`) || {} : {};
         const { questions, relaxation, diagnostics } = await deps.select({ ...input, ...(body.tag ? { tag: body.tag } : {}) }, recent);
         if (!validQuestionResponse(questions, input)) throw new GameError('The problem bank returned an invalid set. Please retry.', 502);
         return response(await games.storeQuestions(uid, body.mode, input.category, input.difficulty, questions, relaxation, diagnostics));

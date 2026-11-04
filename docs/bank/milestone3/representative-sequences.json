@@ -1,0 +1,1202 @@
+{
+  "release": "cn-2026-11-03-ideas-v3",
+  "topic": "integration",
+  "difficulty": "olympiad",
+  "purpose": "Developer review: complete questions, options and worked answers. Never shipped as a public answer-bank asset.",
+  "rounds": [
+    [
+      {
+        "ordinal": 1,
+        "problemId": "cn_4f22ddefa690e455eb96",
+        "family": "io3-rearrangement",
+        "idea": "rearrangement-extremal-integral",
+        "structure": "equimeasurable-function:first-moment-extrema",
+        "technique": "rearrangement-inequality",
+        "combination": "reframing+synthesis:rearrangement-inequality",
+        "alternatives": [
+          "hardy-littlewood-inequality"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{Let measurable f:[0,1] to}\\\\\\textnormal{[0,1] satisfy}\\\\\\operatorname{length}\\{x:f(x)>t\\}=1-t^{1/3}\\ (0<t<1).\\\\\\textnormal{Find (minimum, maximum) of}\\\\\\int_0^1x f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\left( \\frac{1}{24}, \\  \\frac{1}{6}\\right)",
+          "\\left( \\frac{1}{20}, \\  \\frac{1}{5}\\right)",
+          "\\left( \\frac{1}{30}, \\  \\frac{1}{5}\\right)",
+          "\\left( \\frac{1}{8}, \\  \\frac{1}{5}\\right)"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Layer cake reduces each level}\\\\\\textnormal{set to a set of prescribed}\\\\\\textnormal{length.}\\end{gathered}",
+          "\\begin{gathered}\\textnormal{Placing every level set on the}\\\\\\textnormal{left minimizes the moment;}\\\\\\textnormal{placing it on the right}\\\\\\textnormal{maximizes it.}\\end{gathered}",
+          "f_{\\min}(x)=(1-x)^{3},\\quad f_{\\max}(x)=x^{3}",
+          "(I_{\\min},I_{\\max})=\\left( \\frac{1}{20}, \\  \\frac{1}{5}\\right)"
+        ]
+      },
+      {
+        "ordinal": 2,
+        "problemId": "cn_33fce2474f4c38bb0015",
+        "family": "io3-sech-fourier",
+        "idea": "hyperbolic-fourier-beta",
+        "structure": "hyperbolic-secant:cosine-transform",
+        "technique": "Mellin-transform",
+        "combination": "method-selection+synthesis:Mellin-transform",
+        "alternatives": [
+          "rectangular-residue-contour"
+        ],
+        "reasoning": [
+          "synthesis",
+          "method-selection"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{\\cos{\\left(2 x \\log{\\left(2 \\right)} \\right)}}{\\cosh{\\left(\\pi x \\right)}}\\,dx",
+        "choices": [
+          "\\frac{2}{5}",
+          "\\frac{4}{17}",
+          "\\frac{2}{3}",
+          "\\frac{4}{5}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "2I=\\int_{-\\infty}^{\\infty}\\frac{e^{ibx}}{\\cosh(\\pi x)}\\,dx",
+          "t=e^{2\\pi x},\\quad 2I=\\frac1\\pi B\\left(\\frac12+\\frac{ib}{2\\pi},\\frac12-\\frac{ib}{2\\pi}\\right)",
+          "I=\\frac1{2\\cosh(b/2)}=\\frac{2}{5}"
+        ]
+      },
+      {
+        "ordinal": 3,
+        "problemId": "cn_1938e56ce515c9ad0b27",
+        "family": "io3-binary-product",
+        "idea": "binary-product-combinatorics",
+        "structure": "dyadic-exponent-product",
+        "technique": "telescoping",
+        "combination": "recognition+reframing:telescoping",
+        "alternatives": [
+          "binary-expansion"
+        ],
+        "reasoning": [
+          "recognition",
+          "reframing"
+        ],
+        "statement": "\\begin{gathered}H_m=\\sum_{j=1}^m\\frac1j.\\\\\\textnormal{Evaluate}\\\\\\int_0^1\\prod_{k=0}^{6}(1+x^{2^k})\\,dx\\end{gathered}",
+        "choices": [
+          "H_{128}",
+          "H_{256}",
+          "\\frac{192}{65}",
+          "H_{127}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "(1-x)\\prod_{k=0}^{6}(1+x^{2^k})=1-x^{128}",
+          "I=\\sum_{j=0}^{127}\\frac1{j+1}=H_{128}",
+          "H_m=\\sum_{j=1}^m\\frac1j"
+        ]
+      },
+      {
+        "ordinal": 4,
+        "problemId": "cn_90e9f3033c76e902b760",
+        "family": "io3-arctan-parameter",
+        "idea": "arctan-log-transform",
+        "structure": "arctan-product:reciprocal-cauchy-weight",
+        "technique": "parameter-differentiation",
+        "combination": "method-selection+reframing:parameter-differentiation",
+        "alternatives": [
+          "fubini"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{\\operatorname{atan}{\\left(\\frac{9 x}{2} \\right)}}{x \\left(x^{2} + 1\\right)}\\,dx",
+        "choices": [
+          "\\frac{\\pi \\log{\\left(\\frac{85}{4} \\right)}}{2}",
+          "\\frac{\\pi \\log{\\left(\\frac{11}{2} \\right)}}{2}",
+          "\\frac{\\pi \\operatorname{atan}{\\left(\\frac{9}{2} \\right)}}{2}",
+          "\\pi \\log{\\left(\\frac{11}{2} \\right)}"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Differentiate with respect to}\\\\\\textnormal{the multiplier a.}\\end{gathered}",
+          "F^{\\prime}(a)=\\int_0^\\infty\\frac{dx}{(1+x^2)(1+a^2x^2)}=\\frac{\\pi}{2(1+a)}",
+          "F(0)=0,\\quad F(a)=\\frac\\pi2\\log(1+a).",
+          "I=\\frac{\\pi \\log{\\left(\\frac{11}{2} \\right)}}{2}"
+        ]
+      },
+      {
+        "ordinal": 5,
+        "problemId": "cn_da1aa3610c37343f5b9c",
+        "family": "io3-gaussian-fourier",
+        "idea": "gaussian-fourier-transform",
+        "structure": "gaussian-times-cosine",
+        "technique": "differential-equation-method",
+        "combination": "method-selection+synthesis:differential-equation-method",
+        "alternatives": [
+          "complex-completion-of-square"
+        ],
+        "reasoning": [
+          "synthesis",
+          "method-selection"
+        ],
+        "statement": "\\int_{0}^{\\infty} e^{- x^{2}} \\cos{\\left(4 x \\right)}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{\\pi}}{2 e^{4}}",
+          "\\frac{\\sqrt{\\pi}}{2 e^{16}}",
+          "\\frac{\\sqrt{\\pi}}{2 e^{8}}",
+          "\\frac{\\sqrt{\\pi} e^{4}}{2}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "F(b)=\\int_0^\\infty e^{-ax^2}\\cos(bx)\\,dx",
+          "F^{\\prime}(b)=-\\frac{b}{2a}F(b),\\qquad F(0)=\\frac{\\sqrt\\pi}{2\\sqrt a}",
+          "F(b)=\\frac{\\sqrt\\pi}{2\\sqrt a}e^{-b^2/(4a)}",
+          "I=\\frac{\\sqrt{\\pi}}{2 e^{4}}"
+        ]
+      },
+      {
+        "ordinal": 6,
+        "problemId": "cn_d081e9323df5bd6cf1b1",
+        "family": "io3-fresnel",
+        "idea": "fresnel-analytic-continuation",
+        "structure": "conditionally-convergent:quadratic-phase",
+        "technique": "complex-analysis",
+        "combination": "convergence+synthesis:complex-analysis",
+        "alternatives": [
+          "contour-rotation"
+        ],
+        "reasoning": [
+          "convergence",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\cos{\\left(\\frac{7 x^{2}}{2} \\right)}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{7} \\sqrt{\\pi}}{14}",
+          "\\frac{\\sqrt{7} \\sqrt{\\pi}}{28}",
+          "\\frac{\\sqrt{14} \\sqrt{\\pi}}{14}",
+          "\\frac{\\sqrt{7} \\sqrt{\\pi}}{7}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\int_0^\\infty e^{-(\\varepsilon-ia)x^2}\\,dx=\\frac{\\sqrt\\pi}{2\\sqrt{\\varepsilon-ia}}",
+          "\\begin{gathered}\\textnormal{Use the branch with positive}\\\\\\textnormal{real part and then take real}\\\\\\textnormal{parts.}\\end{gathered}",
+          "\\begin{gathered}\\textnormal{Integration by parts controls}\\\\\\textnormal{the oscillatory tail, so the}\\\\\\textnormal{regulator limit equals the}\\\\\\textnormal{improper integral.}\\end{gathered}",
+          "I=\\frac{\\sqrt{7} \\sqrt{\\pi}}{14}"
+        ]
+      },
+      {
+        "ordinal": 7,
+        "problemId": "cn_f86cebfd543643b2150e",
+        "family": "io3-reciprocal-gaussian",
+        "idea": "reciprocal-gaussian-transform",
+        "structure": "exponential:quadratic-plus-inverse-quadratic",
+        "technique": "differential-equation-method",
+        "combination": "reframing+synthesis:differential-equation-method",
+        "alternatives": [
+          "gaussian-substitution"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\infty} e^{- \\frac{x^{2}}{4} - \\frac{49}{9 x^{2}}}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{\\pi}}{2 e^{\\frac{7}{3}}}",
+          "\\frac{2 \\sqrt{\\pi}}{e^{\\frac{7}{3}}}",
+          "\\frac{\\sqrt{\\pi}}{e^{\\frac{7}{6}}}",
+          "\\frac{\\sqrt{\\pi}}{e^{\\frac{7}{3}}}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Differentiate in b, then use}\\\\\\textnormal{x=b/(a t) in the derivative}\\\\\\textnormal{integral.}\\end{gathered}",
+          "F^{\\prime}(b)=-2aF(b),\\quad F(0)=\\frac{\\sqrt\\pi}{2a}",
+          "I=\\frac{\\sqrt\\pi}{2a}e^{-2ab}=\\frac{\\sqrt{\\pi}}{e^{\\frac{7}{3}}}"
+        ]
+      },
+      {
+        "ordinal": 8,
+        "problemId": "cn_99931df7b12a9434db5a",
+        "family": "io3-integral-equation",
+        "idea": "green-kernel-integral-equation",
+        "structure": "min-kernel:fredholm-equation",
+        "technique": "differential-equation-method",
+        "combination": "reframing+synthesis:differential-equation-method",
+        "alternatives": [
+          "green-function"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A continuous f on [0,1]}\\\\\\textnormal{satisfies}\\\\f(x)+16\\int_0^1\\min(x,t)f(t)\\,dt=x.\\\\\\textnormal{Find}\\\\\\int_0^1 f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{-1 + \\cosh{\\left(4 \\right)}}{16 + 16 \\cosh{\\left(4 \\right)}}",
+          "\\frac{-1 + \\cosh{\\left(4 \\right)}}{16 \\sinh{\\left(4 \\right)}}",
+          "\\frac{-1 + \\cosh{\\left(4 \\right)}}{16 \\cosh{\\left(4 \\right)}}",
+          "\\frac{-1 + \\sinh{\\left(4 \\right)}}{16 \\cosh{\\left(4 \\right)}}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "(Kf)^{\\prime}(x)=\\int_x^1 f(t)\\,dt,\\quad(Kf)^{\\prime\\prime}(x)=-f(x)",
+          "f^{\\prime\\prime}=k^2f,\\quad f(0)=0,\\quad f^{\\prime}(1)=1",
+          "f(x)=\\frac{\\sinh(kx)}{k\\cosh k}",
+          "I=\\frac{-1 + \\cosh{\\left(4 \\right)}}{16 \\cosh{\\left(4 \\right)}}"
+        ]
+      },
+      {
+        "ordinal": 9,
+        "problemId": "cn_f784699544f486f2dee9",
+        "family": "io3-gaussian-fourier",
+        "idea": "gaussian-fourier-transform",
+        "structure": "gaussian-times-cosine",
+        "technique": "differential-equation-method",
+        "combination": "method-selection+synthesis:differential-equation-method",
+        "alternatives": [
+          "complex-completion-of-square"
+        ],
+        "reasoning": [
+          "synthesis",
+          "method-selection"
+        ],
+        "statement": "\\int_{0}^{\\infty} e^{- 3 x^{2}} \\cos{\\left(6 x \\right)}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{3} \\sqrt{\\pi}}{6 e^{12}}",
+          "\\frac{\\sqrt{3} \\sqrt{\\pi}}{6 e^{6}}",
+          "\\frac{\\sqrt{3} \\sqrt{\\pi} e^{3}}{6}",
+          "\\frac{\\sqrt{3} \\sqrt{\\pi}}{6 e^{3}}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "F(b)=\\int_0^\\infty e^{-ax^2}\\cos(bx)\\,dx",
+          "F^{\\prime}(b)=-\\frac{b}{2a}F(b),\\qquad F(0)=\\frac{\\sqrt\\pi}{2\\sqrt a}",
+          "F(b)=\\frac{\\sqrt\\pi}{2\\sqrt a}e^{-b^2/(4a)}",
+          "I=\\frac{\\sqrt{3} \\sqrt{\\pi}}{6 e^{3}}"
+        ]
+      },
+      {
+        "ordinal": 10,
+        "problemId": "cn_f7f736763d0eab1ada64",
+        "family": "io3-scaled-frullani",
+        "idea": "frullani-scaling-cancellation",
+        "structure": "difference-of-stretched-exponentials:log-measure",
+        "technique": "changing-order-of-integration",
+        "combination": "convergence+method-selection:changing-order-of-integration",
+        "alternatives": [
+          "parameter-differentiation"
+        ],
+        "reasoning": [
+          "method-selection",
+          "convergence"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{e^{- 3 x^{4}} - e^{- 5 x^{4}}}{x}\\,dx",
+        "choices": [
+          "\\frac{1}{30}",
+          "4 \\log{\\left(\\frac{5}{3} \\right)}",
+          "\\log{\\left(\\frac{5}{3} \\right)}",
+          "\\frac{\\log{\\left(\\frac{5}{3} \\right)}}{4}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "t=x^{4},\\quad\\frac{dx}{x}=\\frac{dt}{4t}",
+          "\\frac{e^{-at}-e^{-bt}}{t}=\\int_a^b e^{-ut}\\,du",
+          "I=\\frac1{4}\\int_a^b\\frac{du}{u}=\\frac{\\log{\\left(\\frac{5}{3} \\right)}}{4}"
+        ]
+      },
+      {
+        "ordinal": 11,
+        "problemId": "cn_8f9fc8343c48b77faffd",
+        "family": "io3-variational-energy",
+        "idea": "variational-dirichlet-energy",
+        "structure": "derivative-energy:fixed-endpoint-minimum",
+        "technique": "variational-methods",
+        "combination": "method-selection+synthesis:variational-methods",
+        "alternatives": [
+          "euler-lagrange-equation"
+        ],
+        "reasoning": [
+          "method-selection",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{Among real continuously}\\\\\\textnormal{differentiable f on [0,1] with}\\\\\\textnormal{f(0)=0, f(1)=1, find the}\\\\\\textnormal{minimum of}\\\\\\int_0^1\\left(f^{\\prime}(x)^2+\\frac{81}{4}f(x)^2\\right)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{9 \\coth{\\left(\\frac{9}{2} \\right)}}{2}",
+          "\\frac{9 \\tanh{\\left(\\frac{9}{2} \\right)}}{2}",
+          "- \\frac{81}{8 \\sinh^{2}{\\left(\\frac{9}{2} \\right)}} + \\frac{9 \\coth{\\left(\\frac{9}{2} \\right)}}{4}",
+          "1"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "g(x)=\\frac{\\sinh(kx)}{\\sinh k},\\quad g^{\\prime\\prime}=k^2g",
+          "E(g+h)-E(g)=\\int_0^1(h^{\\prime2}+k^2h^2)\\,dx\\ge0,\\quad h(0)=h(1)=0",
+          "\\begin{gathered}\\textnormal{The cross term vanishes by}\\\\\\textnormal{integration by parts.}\\end{gathered}",
+          "E(g)=[gg^{\\prime}]_0^1=k\\coth k=\\frac{9 \\coth{\\left(\\frac{9}{2} \\right)}}{2}"
+        ]
+      },
+      {
+        "ordinal": 12,
+        "problemId": "cn_0eb6aa6451a9fd376afd",
+        "family": "io3-fresnel",
+        "idea": "fresnel-analytic-continuation",
+        "structure": "conditionally-convergent:quadratic-phase",
+        "technique": "complex-analysis",
+        "combination": "convergence+synthesis:complex-analysis",
+        "alternatives": [
+          "contour-rotation"
+        ],
+        "reasoning": [
+          "convergence",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\cos{\\left(x^{2} \\right)}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{2} \\sqrt{\\pi}}{8}",
+          "\\frac{\\sqrt{\\pi}}{2}",
+          "\\frac{\\sqrt{2} \\sqrt{\\pi}}{4}",
+          "\\frac{\\sqrt{\\pi}}{4}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\int_0^\\infty e^{-(\\varepsilon-ia)x^2}\\,dx=\\frac{\\sqrt\\pi}{2\\sqrt{\\varepsilon-ia}}",
+          "\\begin{gathered}\\textnormal{Use the branch with positive}\\\\\\textnormal{real part and then take real}\\\\\\textnormal{parts.}\\end{gathered}",
+          "\\begin{gathered}\\textnormal{Integration by parts controls}\\\\\\textnormal{the oscillatory tail, so the}\\\\\\textnormal{regulator limit equals the}\\\\\\textnormal{improper integral.}\\end{gathered}",
+          "I=\\frac{\\sqrt{2} \\sqrt{\\pi}}{4}"
+        ]
+      },
+      {
+        "ordinal": 13,
+        "problemId": "cn_9f95d795a5c24fc9bd62",
+        "family": "io3-weighted-complement",
+        "idea": "reflection-invariant-measure",
+        "structure": "beta-half-weight:complementary-power-ratio",
+        "technique": "symmetry",
+        "combination": "recognition+reframing:symmetry",
+        "alternatives": [
+          "trigonometric-substitution"
+        ],
+        "reasoning": [
+          "recognition",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{1} \\frac{x^{\\frac{11}{2}}}{\\sqrt{1 - x} \\left(x^{6} + \\left(1 - x\\right)^{6}\\right)}\\,dx",
+        "choices": [
+          "\\frac{\\pi}{2}",
+          "\\frac{\\pi}{12}",
+          "\\frac{\\pi}{4}",
+          "6 \\pi"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Reflect the integration}\\\\\\textnormal{variable. The weight is}\\\\\\textnormal{unchanged.}\\end{gathered}",
+          "f(x)+f(1-x)=1",
+          "2I=\\int_0^1\\frac{dx}{\\sqrt{x(1-x)}}=\\pi",
+          "I=\\frac{\\pi}{2}"
+        ]
+      },
+      {
+        "ordinal": 14,
+        "problemId": "cn_cc5d75cf53bf088f438d",
+        "family": "io3-mixed-beta-log",
+        "idea": "beta-parameter-moments",
+        "structure": "beta-polynomial:two-endpoint-logarithms",
+        "technique": "parameter-differentiation",
+        "combination": "method-selection+synthesis:parameter-differentiation",
+        "alternatives": [
+          "finite-polynomial-expansion"
+        ],
+        "reasoning": [
+          "synthesis",
+          "method-selection"
+        ],
+        "statement": "\\int_{0}^{1} x^{2} \\left(1 - x\\right)^{3} \\log{\\left(x \\right)} \\log{\\left(1 - x \\right)}\\,dx",
+        "choices": [
+          "\\frac{3739}{108000} - \\frac{\\pi^{2}}{360}",
+          "\\frac{12847}{216000} - \\frac{\\pi^{2}}{180}",
+          "\\frac{3739}{216000} - \\frac{\\pi^{2}}{720}",
+          "- \\frac{5369}{216000} + \\frac{\\pi^{2}}{360}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Differentiate B(A,B) once in}\\\\\\textnormal{each parameter.}\\end{gathered}",
+          "\\partial_A\\partial_B B=B\\big((\\psi(A)-\\psi(A+B))(\\psi(B)-\\psi(A+B))-\\psi_1(A+B)\\big)",
+          "\\psi(k)=H_{k-1}-\\gamma,\\quad\\psi_1(k)=\\frac{\\pi^2}{6}-H_{k-1}^{(2)}",
+          "I=\\frac{3739}{108000} - \\frac{\\pi^{2}}{360}"
+        ]
+      },
+      {
+        "ordinal": 15,
+        "problemId": "cn_7aedf5f0abf5fe75389c",
+        "family": "io3-agm-parameter",
+        "idea": "elliptic-agm-invariance",
+        "structure": "elliptic-product-root:parameter-identification",
+        "technique": "substitution",
+        "combination": "reframing+synthesis:substitution",
+        "alternatives": [
+          "arithmetic-geometric-mean"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{Find the unique c>0 such that}\\\\\\int_0^\\infty\\frac{dx}{\\sqrt{(x^2+64)(x^2+100)}}\\\\=\\int_0^\\infty\\frac{dx}{\\sqrt{(x^2+81)(x^2+c^2)}}.\\end{gathered}",
+        "choices": [
+          "4 \\sqrt{5}",
+          "8",
+          "\\frac{80}{9}",
+          "\\sqrt{82}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "u=\\frac{x-ab/x}{2},\\quad A=\\frac{a+b}{2}",
+          "u^2+A^2=\\frac{(x^2+a^2)(x^2+b^2)}{4x^2},\\quad u^2+ab=\\frac{(x+ab/x)^2}{4}",
+          "I(a,b)=I\\left(\\frac{a+b}{2},\\sqrt{ab}\\right)",
+          "\\begin{gathered}\\textnormal{Strict decrease in c makes the}\\\\\\textnormal{solution unique.}\\end{gathered}",
+          "c=4 \\sqrt{5}"
+        ]
+      },
+      {
+        "ordinal": 16,
+        "problemId": "cn_d316b260691632a91ddb",
+        "family": "io3-abel-recovery",
+        "idea": "abel-integral-inversion",
+        "structure": "unknown-function:abel-half-integral",
+        "technique": "changing-order-of-integration",
+        "combination": "reframing+synthesis:changing-order-of-integration",
+        "alternatives": [
+          "fractional-calculus"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A continuous real f satisfies}\\\\\\int_0^t\\frac{f(x)}{\\sqrt{t-x}}\\,dx=t^{9}\\ (0\\le t\\le1).\\\\\\textnormal{Find}\\\\\\int_0^1f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{32768}{60775 \\pi}",
+          "\\frac{131072}{206635 \\pi}",
+          "\\frac{131072}{255255 \\pi}",
+          "\\frac{131072}{230945 \\pi}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Apply the same square-root}\\\\\\textnormal{kernel a second time and}\\\\\\textnormal{change integration order.}\\end{gathered}",
+          "\\int_x^1\\frac{dt}{\\sqrt{(t-x)(1-t)}}=\\pi",
+          "\\pi\\int_0^1 f(x)\\,dx=\\int_0^1\\frac{t^{9}}{\\sqrt{1-t}}\\,dt",
+          "I=\\frac{131072}{230945 \\pi}"
+        ]
+      },
+      {
+        "ordinal": 17,
+        "problemId": "cn_a99f29a2297d60e81809",
+        "family": "io3-bernoulli-product",
+        "idea": "bernoulli-endpoint-recurrence",
+        "structure": "bernoulli-polynomial-product",
+        "technique": "integration-by-parts",
+        "combination": "recognition+synthesis:integration-by-parts",
+        "alternatives": [
+          "exact-polynomial-integration"
+        ],
+        "reasoning": [
+          "recognition",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{3}(x)B_{5}(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "- \\frac{1}{30}",
+          "- \\frac{1}{1680}",
+          "0",
+          "\\frac{1}{1680}"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "B_j^{\\prime}=jB_{j-1},\\quad B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+          "\\begin{gathered}\\textnormal{Repeated integration by parts}\\\\\\textnormal{leaves the B1 endpoint jump.}\\end{gathered}",
+          "I=(-1)^{2}\\frac{3!5!}{8!}B_{8}=- \\frac{1}{1680}"
+        ]
+      },
+      {
+        "ordinal": 18,
+        "problemId": "cn_d89516c666c5d231c5ea",
+        "family": "io3-log-fourier-coefficient",
+        "idea": "analytic-log-circle",
+        "structure": "log-quadratic-on-circle:nonzero-fourier-mode",
+        "technique": "Fourier-analysis",
+        "combination": "method-selection+synthesis:Fourier-analysis",
+        "alternatives": [
+          "complex-power-series"
+        ],
+        "reasoning": [
+          "method-selection",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\pi} \\log{\\left(\\frac{29}{25} - \\frac{4 \\cos{\\left(x \\right)}}{5} \\right)} \\cos{\\left(4 x \\right)}\\,dx",
+        "choices": [
+          "- \\frac{4 \\pi}{625}",
+          "0",
+          "- \\frac{16 \\pi}{1875}",
+          "- \\frac{8 \\pi}{625}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\log(1-2r\\cos x+r^2)=-2\\sum_{k=1}^{\\infty}\\frac{r^k\\cos(kx)}{k},\\quad |r|<1.",
+          "\\begin{gathered}\\textnormal{Uniform convergence permits}\\\\\\textnormal{integration; only the}\\\\\\textnormal{requested harmonic survives.}\\end{gathered}",
+          "I=-\\frac{\\pi r^n}{n}=- \\frac{4 \\pi}{625}"
+        ]
+      },
+      {
+        "ordinal": 19,
+        "problemId": "cn_90bc732aa2a7ae509293",
+        "family": "io3-abel-recovery",
+        "idea": "abel-integral-inversion",
+        "structure": "unknown-function:abel-half-integral",
+        "technique": "changing-order-of-integration",
+        "combination": "reframing+synthesis:changing-order-of-integration",
+        "alternatives": [
+          "fractional-calculus"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A continuous real f satisfies}\\\\\\int_0^t\\frac{f(x)}{\\sqrt{t-x}}\\,dx=t^{2}\\ (0\\le t\\le1).\\\\\\textnormal{Find}\\\\\\int_0^1f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{4}{3 \\pi}",
+          "\\frac{16}{9 \\pi}",
+          "\\frac{8}{9 \\pi}",
+          "\\frac{16}{15 \\pi}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Apply the same square-root}\\\\\\textnormal{kernel a second time and}\\\\\\textnormal{change integration order.}\\end{gathered}",
+          "\\int_x^1\\frac{dt}{\\sqrt{(t-x)(1-t)}}=\\pi",
+          "\\pi\\int_0^1 f(x)\\,dx=\\int_0^1\\frac{t^{2}}{\\sqrt{1-t}}\\,dt",
+          "I=\\frac{16}{15 \\pi}"
+        ]
+      },
+      {
+        "ordinal": 20,
+        "problemId": "cn_6a76b80e438f24676386",
+        "family": "io3-gamma-unit-average",
+        "idea": "gamma-functional-average",
+        "structure": "log-gamma:unit-interval-average",
+        "technique": "functional-equations",
+        "combination": "method-selection+synthesis:functional-equations",
+        "alternatives": [
+          "gamma-reflection"
+        ],
+        "reasoning": [
+          "synthesis",
+          "method-selection"
+        ],
+        "statement": "\\begin{gathered}\\Gamma(s)=\\int_0^\\infty t^{s-1}e^{-t}\\,dt\\ (s>0).\\\\\\int_{\\frac{3}{2}}^{\\frac{5}{2}} \\log{\\left(\\Gamma\\left(x\\right) \\right)}\\,dx\\end{gathered}",
+        "choices": [
+          "- \\frac{3}{2} + \\frac{3 \\log{\\left(\\frac{3}{2} \\right)}}{2} + \\frac{\\log{\\left(2 \\pi \\right)}}{2}",
+          "- \\frac{3}{2} - \\frac{\\log{\\left(2 \\pi \\right)}}{2} + \\frac{3 \\log{\\left(\\frac{3}{2} \\right)}}{2}",
+          "- \\frac{3}{2} + \\frac{\\log{\\left(\\pi \\right)}}{2} + \\frac{3 \\log{\\left(\\frac{3}{2} \\right)}}{2}",
+          "- \\frac{3}{2} + \\frac{3 \\log{\\left(\\frac{3}{2} \\right)}}{2} + \\log{\\left(\\pi \\right)}"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Let F(a) be the integral over}\\\\\\textnormal{[a,a+1]. Gamma recurrence}\\\\\\textnormal{gives}\\end{gathered}F^{\\prime}(a)=\\log a.",
+          "F(a)=a\\log a-a+C.",
+          "\\begin{gathered}\\textnormal{Reflection and the log-sine}\\\\\\textnormal{integral give}\\end{gathered}C=\\frac12\\log(2\\pi).",
+          "I=- \\frac{3}{2} + \\frac{3 \\log{\\left(\\frac{3}{2} \\right)}}{2} + \\frac{\\log{\\left(2 \\pi \\right)}}{2}"
+        ]
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "problemId": "cn_89f2b6cc1c7b2aafa6c2",
+        "family": "io3-rodrigues-moment",
+        "idea": "rodrigues-orthogonal-moment",
+        "structure": "rodrigues-polynomial:off-diagonal-moment",
+        "technique": "integration-by-parts",
+        "combination": "method-selection+reframing:integration-by-parts",
+        "alternatives": [
+          "polynomial-expansion"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{-1}^1 x^{13}\\frac{d^{9}}{dx^{9}}(x^2-1)^{9}\\,dx",
+        "choices": [
+          "\\frac{6794772480}{7429}",
+          "\\frac{3397386240}{323}",
+          "- \\frac{6794772480}{7429}",
+          "0"
+        ],
+        "answerIndex": 0,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Integrate by parts 9 times;}\\\\\\textnormal{the endpoint terms vanish.}\\end{gathered}",
+          "I=\\frac{(13)!}{(4)!}\\int_{-1}^1 x^{4}(1-x^2)^{9}\\,dx",
+          "I=\\frac{(13)!}{(4)!}B\\left(\\frac{5}{2},10\\right)=\\frac{6794772480}{7429}"
+        ]
+      },
+      {
+        "ordinal": 2,
+        "problemId": "cn_08bd84b4494d7c93177d",
+        "family": "io3-reciprocal-quartic",
+        "idea": "reciprocal-rational-fold",
+        "structure": "positive-palindromic-quartic",
+        "technique": "substitution",
+        "combination": "method-selection+reframing:substitution",
+        "alternatives": [
+          "residues"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{1}{x^{4} + 4 x^{2} + 1}\\,dx",
+        "choices": [
+          "\\frac{\\sqrt{2} \\pi}{4}",
+          "\\frac{\\sqrt{6} \\pi}{6}",
+          "\\frac{\\sqrt{6} \\pi}{12}",
+          "\\frac{\\sqrt{6} \\pi}{24}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Pair the integral with its}\\\\\\textnormal{reciprocal substitution.}\\end{gathered}",
+          "2I=\\int_0^\\infty\\frac{1+x^2}{x^4+4x^2+1}\\,dx",
+          "u=x-x^{-1},\\quad 2I=\\int_{-\\infty}^\\infty\\frac{du}{u^2+6}",
+          "I=\\frac{\\sqrt{6} \\pi}{12}"
+        ]
+      },
+      {
+        "ordinal": 3,
+        "problemId": "cn_f9d01f87c06b77239b2a",
+        "family": "io3-bessel-laplace",
+        "idea": "bessel-angular-transform",
+        "structure": "bessel-J0:exponential-weight",
+        "technique": "changing-order-of-integration",
+        "combination": "recognition+synthesis:changing-order-of-integration",
+        "alternatives": [
+          "laplace-transform-ode"
+        ],
+        "reasoning": [
+          "recognition",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}J_0(z)=\\sum_{k=0}^\\infty\\frac{(-1)^k(z/2)^{2k}}{(k!)^2}.\\\\\\int_{0}^{\\infty} e^{- 4 x} J_{0}\\left(3 x\\right)\\,dx,\\\\J_0\\\\\\textnormal{ denotes the Bessel function}\\\\\\textnormal{of the first kind.}\\end{gathered}",
+        "choices": [
+          "\\frac{\\sqrt{7}}{7}",
+          "\\frac{1}{7}",
+          "\\frac{1}{5}",
+          "\\frac{1}{4}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "J_0(y)=\\frac1\\pi\\int_0^\\pi\\cos(y\\sin\\theta)\\,d\\theta",
+          "\\begin{gathered}\\textnormal{Absolute Fubini is justified}\\\\\\textnormal{by the exponential weight.}\\end{gathered}",
+          "I=\\frac1\\pi\\int_0^\\pi\\frac{a\\,d\\theta}{a^2+b^2\\sin^2\\theta}=\\frac1{\\sqrt{a^2+b^2}}",
+          "I=\\frac{1}{5}"
+        ]
+      },
+      {
+        "ordinal": 4,
+        "problemId": "cn_d901065f35676fbe5267",
+        "family": "io3-principal-value",
+        "idea": "interior-pole-convergence",
+        "structure": "simple-real-pole:mellin-weight",
+        "technique": "singular-integral-analysis",
+        "combination": "convergence+reframing:singular-integral-analysis",
+        "alternatives": [
+          "digamma-reflection"
+        ],
+        "reasoning": [
+          "convergence",
+          "reframing"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{For}\\\\I=\\int_0^\\infty\\frac{x^{1}}{1-x^{5}}\\,dx\\\\\\textnormal{, choose (ordinary integral,}\\\\\\textnormal{Cauchy principal value at}\\\\\\textnormal{x=1).}\\end{gathered}",
+        "choices": [
+          "\\left(\\textnormal{convergent},\\ \\frac{\\pi \\sqrt{1 - \\frac{2 \\sqrt{5}}{5}}}{5}\\right)",
+          "\\left(\\textnormal{divergent},\\ \\frac{\\pi \\sqrt{1 - \\frac{2 \\sqrt{5}}{5}}}{5}\\right)",
+          "\\left(\\textnormal{divergent},\\ - \\frac{\\pi \\sqrt{1 - \\frac{2 \\sqrt{5}}{5}}}{5}\\right)",
+          "\\left(\\textnormal{divergent},\\ \\frac{\\pi}{5 \\sqrt{\\frac{\\sqrt{5}}{8} + \\frac{5}{8}}}\\right)"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "\\lim_{x\\to1}(x-1)\\frac{x^{1}}{1-x^{5}}=-\\frac1{5}\\ne0",
+          "\\begin{gathered}\\textnormal{Thus the ordinary one-sided}\\\\\\textnormal{definition diverges.}\\end{gathered}",
+          "\\operatorname{PV}I=\\frac1{5}\\int_0^1\\frac{u^{- \\frac{3}{5}}-u^{- \\frac{2}{5}}}{1-u}\\,du",
+          "\\operatorname{PV}I=\\frac{\\pi \\sqrt{1 - \\frac{2 \\sqrt{5}}{5}}}{5}"
+        ]
+      },
+      {
+        "ordinal": 5,
+        "problemId": "cn_668a14c3be176d7fd164",
+        "family": "io3-arctan-parameter",
+        "idea": "arctan-log-transform",
+        "structure": "arctan-product:reciprocal-cauchy-weight",
+        "technique": "parameter-differentiation",
+        "combination": "method-selection+reframing:parameter-differentiation",
+        "alternatives": [
+          "fubini"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{\\operatorname{atan}{\\left(2 x \\right)}}{x \\left(x^{2} + 1\\right)}\\,dx",
+        "choices": [
+          "\\frac{\\pi \\log{\\left(5 \\right)}}{2}",
+          "\\frac{\\pi \\operatorname{atan}{\\left(2 \\right)}}{2}",
+          "\\frac{\\pi \\log{\\left(3 \\right)}}{2}",
+          "\\frac{\\pi \\log{\\left(3 \\right)}}{4}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Differentiate with respect to}\\\\\\textnormal{the multiplier a.}\\end{gathered}",
+          "F^{\\prime}(a)=\\int_0^\\infty\\frac{dx}{(1+x^2)(1+a^2x^2)}=\\frac{\\pi}{2(1+a)}",
+          "F(0)=0,\\quad F(a)=\\frac\\pi2\\log(1+a).",
+          "I=\\frac{\\pi \\log{\\left(3 \\right)}}{2}"
+        ]
+      },
+      {
+        "ordinal": 6,
+        "problemId": "cn_244887f9677d686d35f7",
+        "family": "io3-jensen-radius",
+        "idea": "analytic-log-circle",
+        "structure": "circle-logarithm:zero-crosses-unit-boundary",
+        "technique": "complex-analysis",
+        "combination": "convergence+recognition+reframing:complex-analysis",
+        "alternatives": [
+          "fourier-series"
+        ],
+        "reasoning": [
+          "recognition",
+          "convergence",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{2 \\pi} \\log{\\left(5 - 4 \\cos{\\left(x \\right)} \\right)}\\,dx",
+        "choices": [
+          "- 4 \\pi \\log{\\left(2 \\right)}",
+          "4 \\pi \\log{\\left(2 \\right)}",
+          "4 \\pi \\log{\\left(5 \\right)}",
+          "0"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "\\begin{gathered}\\textnormal{The radius exceeds one; factor}\\\\\\textnormal{r squared before expanding.}\\end{gathered}",
+          "\\log(1-2r\\cos x+r^2)=2\\log r+\\log(1-2r^{-1}\\cos x+r^{-2})",
+          "\\begin{gathered}\\textnormal{The remaining Fourier series}\\\\\\textnormal{has zero constant coefficient.}\\end{gathered}",
+          "I=4\\pi\\log r=4 \\pi \\log{\\left(2 \\right)}"
+        ]
+      },
+      {
+        "ordinal": 7,
+        "problemId": "cn_5a8a78e3d86133d3aff4",
+        "family": "io3-fresnel",
+        "idea": "fresnel-analytic-continuation",
+        "structure": "conditionally-convergent:quadratic-phase",
+        "technique": "complex-analysis",
+        "combination": "convergence+synthesis:complex-analysis",
+        "alternatives": [
+          "contour-rotation"
+        ],
+        "reasoning": [
+          "convergence",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\cos{\\left(\\frac{3 x^{2}}{2} \\right)}\\,dx",
+        "choices": [
+          "- \\frac{\\sqrt{3} \\sqrt{\\pi}}{6}",
+          "\\frac{\\sqrt{6} \\sqrt{\\pi}}{12}",
+          "\\frac{\\sqrt{3} \\sqrt{\\pi}}{6}",
+          "\\frac{\\sqrt{3} \\sqrt{\\pi}}{12}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\int_0^\\infty e^{-(\\varepsilon-ia)x^2}\\,dx=\\frac{\\sqrt\\pi}{2\\sqrt{\\varepsilon-ia}}",
+          "\\begin{gathered}\\textnormal{Use the branch with positive}\\\\\\textnormal{real part and then take real}\\\\\\textnormal{parts.}\\end{gathered}",
+          "\\begin{gathered}\\textnormal{Integration by parts controls}\\\\\\textnormal{the oscillatory tail, so the}\\\\\\textnormal{regulator limit equals the}\\\\\\textnormal{improper integral.}\\end{gathered}",
+          "I=\\frac{\\sqrt{3} \\sqrt{\\pi}}{6}"
+        ]
+      },
+      {
+        "ordinal": 8,
+        "problemId": "cn_35e13d99839fcbf17bc8",
+        "family": "io3-boundary-asymptotic",
+        "idea": "integral-boundary-layer",
+        "structure": "large-power:degenerate-endpoint-maximum",
+        "technique": "asymptotic-rescaling",
+        "combination": "convergence+method-selection+synthesis:asymptotic-rescaling",
+        "alternatives": [
+          "beta-asymptotics"
+        ],
+        "reasoning": [
+          "method-selection",
+          "convergence",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\Gamma(s)=\\int_0^\\infty t^{s-1}e^{-t}\\,dt\\ (s>0).\\\\\\lim_{n\\to\\infty} n^{1/9}\\int_0^1(1-x^{9})^n\\,dx\\end{gathered}",
+        "choices": [
+          "\\frac{\\Gamma\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{\\Gamma\\left(\\frac{1}{9}\\right)}{10}",
+          "\\Gamma\\left(\\frac{10}{9}\\right)",
+          "\\Gamma\\left(\\frac{11}{9}\\right)"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "x=n^{-1/9}u",
+          "(1-u^{9}/n)^n\\longrightarrow e^{-u^{9}},\\quad 0\\le(1-v/n)^n\\le e^{-v}",
+          "\\begin{gathered}\\textnormal{Dominated convergence now}\\\\\\textnormal{applies to the rescaled}\\\\\\textnormal{integral.}\\end{gathered}",
+          "I=\\int_0^\\infty e^{-u^{9}}\\,du=\\Gamma\\left(\\frac{10}{9}\\right)"
+        ]
+      },
+      {
+        "ordinal": 9,
+        "problemId": "cn_e0279f0bc9e04c4854f1",
+        "family": "io3-abel-recovery",
+        "idea": "abel-integral-inversion",
+        "structure": "unknown-function:abel-half-integral",
+        "technique": "changing-order-of-integration",
+        "combination": "reframing+synthesis:changing-order-of-integration",
+        "alternatives": [
+          "fractional-calculus"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A continuous real f satisfies}\\\\\\int_0^t\\frac{f(x)}{\\sqrt{t-x}}\\,dx=t^{6}\\ (0\\le t\\le1).\\\\\\textnormal{Find}\\\\\\int_0^1f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{1024}{1617 \\pi}",
+          "\\frac{2048}{2541 \\pi}",
+          "\\frac{2048}{3003 \\pi}",
+          "\\frac{512}{693 \\pi}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Apply the same square-root}\\\\\\textnormal{kernel a second time and}\\\\\\textnormal{change integration order.}\\end{gathered}",
+          "\\int_x^1\\frac{dt}{\\sqrt{(t-x)(1-t)}}=\\pi",
+          "\\pi\\int_0^1 f(x)\\,dx=\\int_0^1\\frac{t^{6}}{\\sqrt{1-t}}\\,dt",
+          "I=\\frac{2048}{3003 \\pi}"
+        ]
+      },
+      {
+        "ordinal": 10,
+        "problemId": "cn_a89b2a1c5bb93d11b00c",
+        "family": "io3-arctan-parameter",
+        "idea": "arctan-log-transform",
+        "structure": "arctan-product:reciprocal-cauchy-weight",
+        "technique": "parameter-differentiation",
+        "combination": "method-selection+reframing:parameter-differentiation",
+        "alternatives": [
+          "fubini"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{\\operatorname{atan}{\\left(\\frac{3 x}{2} \\right)}}{x \\left(x^{2} + 1\\right)}\\,dx",
+        "choices": [
+          "\\frac{\\pi \\log{\\left(\\frac{13}{4} \\right)}}{2}",
+          "\\frac{\\pi \\operatorname{atan}{\\left(\\frac{3}{2} \\right)}}{2}",
+          "\\frac{\\pi \\log{\\left(\\frac{5}{2} \\right)}}{2}",
+          "\\pi \\log{\\left(\\frac{5}{2} \\right)}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Differentiate with respect to}\\\\\\textnormal{the multiplier a.}\\end{gathered}",
+          "F^{\\prime}(a)=\\int_0^\\infty\\frac{dx}{(1+x^2)(1+a^2x^2)}=\\frac{\\pi}{2(1+a)}",
+          "F(0)=0,\\quad F(a)=\\frac\\pi2\\log(1+a).",
+          "I=\\frac{\\pi \\log{\\left(\\frac{5}{2} \\right)}}{2}"
+        ]
+      },
+      {
+        "ordinal": 11,
+        "problemId": "cn_fd74e215c1ba56aac731",
+        "family": "io3-sinc-overlap",
+        "idea": "fourier-interval-overlap",
+        "structure": "product-sines:inverse-square-weight",
+        "technique": "Fourier-analysis",
+        "combination": "method-selection+synthesis:Fourier-analysis",
+        "alternatives": [
+          "parseval"
+        ],
+        "reasoning": [
+          "method-selection",
+          "synthesis"
+        ],
+        "statement": "\\int_{0}^{\\infty} \\frac{\\sin{\\left(4 x \\right)} \\sin{\\left(5 x \\right)}}{x^{2}}\\,dx",
+        "choices": [
+          "\\frac{9 \\pi}{2}",
+          "2 \\pi",
+          "\\pi",
+          "\\frac{5 \\pi}{2}"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "2\\sin(ax)\\sin(bx)=\\cos((a-b)x)-\\cos((a+b)x)",
+          "\\int_0^\\infty\\frac{1-\\cos(cx)}{x^2}\\,dx=\\frac{\\pi|c|}{2}",
+          "I=\\frac\\pi4(a+b-|a-b|)=2 \\pi"
+        ]
+      },
+      {
+        "ordinal": 12,
+        "problemId": "cn_138953af31f68235ad54",
+        "family": "io3-concentration",
+        "idea": "integral-boundary-layer",
+        "structure": "shrinking-boundary-spike:fixed-total-mass",
+        "technique": "asymptotic-rescaling",
+        "combination": "convergence+reframing:asymptotic-rescaling",
+        "alternatives": [
+          "dominated-convergence-counterexample"
+        ],
+        "reasoning": [
+          "convergence",
+          "reframing"
+        ],
+        "statement": "\\lim_{n\\to\\infty}\\int_0^\\infty\\frac{n x^{1}}{1+n^2x^{4}}\\,dx",
+        "choices": [
+          "\\frac{\\pi}{2}",
+          "\\frac{\\pi}{6}",
+          "\\frac{\\pi}{4}",
+          "\\frac{\\pi}{3}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Pointwise convergence to zero}\\\\\\textnormal{does not justify exchanging}\\\\\\textnormal{the limit.}\\end{gathered}",
+          "\\int\\frac{nx^{1}}{1+n^2x^{4}}\\,dx=\\frac1{2}\\arctan(nx^{2})",
+          "I_n=\\frac\\pi{4}\\begin{gathered}\\textnormal{ for every n, hence the same}\\\\\\textnormal{limit.}\\end{gathered}"
+        ]
+      },
+      {
+        "ordinal": 13,
+        "problemId": "cn_803ebed69b14a26e9e62",
+        "family": "io3-fejer-fourth",
+        "idea": "fourier-autocorrelation-count",
+        "structure": "dirichlet-geometric-kernel:fourth-power",
+        "technique": "Fourier-analysis",
+        "combination": "reframing+synthesis:Fourier-analysis",
+        "alternatives": [
+          "laurent-constant-term"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\int_0^{2\\pi}\\left(\\frac{\\sin(7x/2)}{\\sin(x/2)}\\right)^4\\,dx\\\\\\textnormal{ (continuous endpoint values).}\\end{gathered}",
+        "choices": [
+          "14 \\pi",
+          "658 \\pi",
+          "98 \\pi",
+          "462 \\pi"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "\\left|\\sum_{j=0}^{6}e^{ijx}\\right|^2=\\sum_{k=-6}^{6}(7-|k|)e^{ikx}",
+          "\\begin{gathered}\\textnormal{Parseval squares the}\\\\\\textnormal{triangular Fourier}\\\\\\textnormal{coefficients.}\\end{gathered}",
+          "I=2\\pi\\left(49+2\\sum_{k=1}^{6}k^2\\right)=462 \\pi"
+        ]
+      },
+      {
+        "ordinal": 14,
+        "problemId": "cn_97f921b1707b5b2fde03",
+        "family": "io3-integral-equation",
+        "idea": "green-kernel-integral-equation",
+        "structure": "min-kernel:fredholm-equation",
+        "technique": "differential-equation-method",
+        "combination": "reframing+synthesis:differential-equation-method",
+        "alternatives": [
+          "green-function"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A continuous f on [0,1]}\\\\\\textnormal{satisfies}\\\\f(x)+\\frac{9}{4}\\int_0^1\\min(x,t)f(t)\\,dt=x.\\\\\\textnormal{Find}\\\\\\int_0^1 f(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{4 \\left(-1 + \\sinh{\\left(\\frac{3}{2} \\right)}\\right)}{9 \\cosh{\\left(\\frac{3}{2} \\right)}}",
+          "\\frac{4 \\left(-1 + \\cosh{\\left(\\frac{3}{2} \\right)}\\right)}{9 \\sinh{\\left(\\frac{3}{2} \\right)}}",
+          "\\frac{4 \\left(-1 + \\cosh{\\left(\\frac{3}{2} \\right)}\\right)}{9 \\cosh{\\left(\\frac{3}{2} \\right)}}",
+          "\\frac{4 \\left(1 + \\cosh{\\left(\\frac{3}{2} \\right)}\\right)}{9 \\cosh{\\left(\\frac{3}{2} \\right)}}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "(Kf)^{\\prime}(x)=\\int_x^1 f(t)\\,dt,\\quad(Kf)^{\\prime\\prime}(x)=-f(x)",
+          "f^{\\prime\\prime}=k^2f,\\quad f(0)=0,\\quad f^{\\prime}(1)=1",
+          "f(x)=\\frac{\\sinh(kx)}{k\\cosh k}",
+          "I=\\frac{4 \\left(-1 + \\cosh{\\left(\\frac{3}{2} \\right)}\\right)}{9 \\cosh{\\left(\\frac{3}{2} \\right)}}"
+        ]
+      },
+      {
+        "ordinal": 15,
+        "problemId": "cn_218664fe8f2e2cc042fe",
+        "family": "io3-agm-parameter",
+        "idea": "elliptic-agm-invariance",
+        "structure": "elliptic-product-root:parameter-identification",
+        "technique": "substitution",
+        "combination": "reframing+synthesis:substitution",
+        "alternatives": [
+          "arithmetic-geometric-mean"
+        ],
+        "reasoning": [
+          "reframing",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{Find the unique c>0 such that}\\\\\\int_0^\\infty\\frac{dx}{\\sqrt{(x^2+49)(x^2+81)}}\\\\=\\int_0^\\infty\\frac{dx}{\\sqrt{(x^2+64)(x^2+c^2)}}.\\end{gathered}",
+        "choices": [
+          "\\sqrt{65}",
+          "3 \\sqrt{7}",
+          "8",
+          "7"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "u=\\frac{x-ab/x}{2},\\quad A=\\frac{a+b}{2}",
+          "u^2+A^2=\\frac{(x^2+a^2)(x^2+b^2)}{4x^2},\\quad u^2+ab=\\frac{(x+ab/x)^2}{4}",
+          "I(a,b)=I\\left(\\frac{a+b}{2},\\sqrt{ab}\\right)",
+          "\\begin{gathered}\\textnormal{Strict decrease in c makes the}\\\\\\textnormal{solution unique.}\\end{gathered}",
+          "c=3 \\sqrt{7}"
+        ]
+      },
+      {
+        "ordinal": 16,
+        "problemId": "cn_cb01e968898a773791a4",
+        "family": "io3-rodrigues-moment",
+        "idea": "rodrigues-orthogonal-moment",
+        "structure": "rodrigues-polynomial:off-diagonal-moment",
+        "technique": "integration-by-parts",
+        "combination": "method-selection+reframing:integration-by-parts",
+        "alternatives": [
+          "polynomial-expansion"
+        ],
+        "reasoning": [
+          "method-selection",
+          "reframing"
+        ],
+        "statement": "\\int_{-1}^1 x^{8}\\frac{d^{6}}{dx^{6}}(x^2-1)^{6}\\,dx",
+        "choices": [
+          "\\frac{2048}{45045}",
+          "- \\frac{131072}{143}",
+          "\\frac{262144}{143}",
+          "\\frac{131072}{143}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "\\begin{gathered}\\textnormal{Integrate by parts 6 times;}\\\\\\textnormal{the endpoint terms vanish.}\\end{gathered}",
+          "I=\\frac{(8)!}{(2)!}\\int_{-1}^1 x^{2}(1-x^2)^{6}\\,dx",
+          "I=\\frac{(8)!}{(2)!}B\\left(\\frac{3}{2},7\\right)=\\frac{131072}{143}"
+        ]
+      },
+      {
+        "ordinal": 17,
+        "problemId": "cn_9d1c8a35283cff5e1cc0",
+        "family": "io3-chebyshev-absolute",
+        "idea": "orthogonal-polynomial-folding",
+        "structure": "absolute-chebyshev-second-kind",
+        "technique": "substitution",
+        "combination": "recognition+reframing:substitution",
+        "alternatives": [
+          "piecewise-integration"
+        ],
+        "reasoning": [
+          "recognition",
+          "reframing"
+        ],
+        "statement": "\\begin{gathered}U_0(x)=1,\\ U_1(x)=2x,\\ U_{k+1}(x)=2xU_k(x)-U_{k-1}(x).\\\\\\textnormal{Evaluate}\\\\\\int_{-1}^1 |U_{2}(x)|\\,dx\\end{gathered}",
+        "choices": [
+          "\\pi",
+          "2",
+          "6",
+          "\\frac{2}{3}"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "x=\\cos t,\\qquad U_{2}(\\cos t)=\\frac{\\sin(3t)}{\\sin t}",
+          "I=\\int_0^\\pi|\\sin(3t)|\\,dt=3\\frac{2}{3}=2"
+        ]
+      },
+      {
+        "ordinal": 18,
+        "problemId": "cn_40b55fae2b10b4e3fc18",
+        "family": "io3-oscillatory-regularization",
+        "idea": "oscillatory-tail-convergence",
+        "structure": "nonconvergent-phase:abel-damped-pair",
+        "technique": "regularization-and-convergence",
+        "combination": "convergence+reframing:regularization-and-convergence",
+        "alternatives": [
+          "laplace-transform"
+        ],
+        "reasoning": [
+          "convergence",
+          "reframing"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{Choose (ordinary convergence,}\\\\\\textnormal{damping limit) for}\\\\I=\\int_0^\\infty x^{1}\\sin(x^{2})\\,dx,\\\\L=\\lim_{\\varepsilon\\downarrow0}\\int_0^\\infty e^{-\\varepsilon x^{2}}x^{1}\\sin(x^{2})\\,dx.\\end{gathered}",
+        "choices": [
+          "\\left(\\textnormal{divergent},\\ 1\\right)",
+          "\\left(\\textnormal{divergent},\\ \\frac{1}{2}\\right)",
+          "\\left(\\textnormal{convergent},\\ \\frac{1}{2}\\right)",
+          "\\left(\\textnormal{divergent},\\ 0\\right)"
+        ],
+        "answerIndex": 1,
+        "solution": [
+          "\\int_0^R x^{1}\\sin(x^{2})\\,dx=\\frac{1-\\cos(R^{2})}{2}",
+          "\\begin{gathered}\\textnormal{The cutoff oscillates and has}\\\\\\textnormal{no limit.}\\end{gathered}",
+          "L=\\lim_{\\varepsilon\\downarrow0}\\frac1{2(1+\\varepsilon^2)}=\\frac1{2}"
+        ]
+      },
+      {
+        "ordinal": 19,
+        "problemId": "cn_d5267cc2a78ddfa1bfbd",
+        "family": "io3-quadrature-defect",
+        "idea": "gaussian-quadrature-defect",
+        "structure": "quartic:two-gaussian-nodes-and-leading-coefficient",
+        "technique": "orthogonal-polynomials",
+        "combination": "recognition+reframing:orthogonal-polynomials",
+        "alternatives": [
+          "gauss-legendre-quadrature"
+        ],
+        "reasoning": [
+          "recognition",
+          "reframing"
+        ],
+        "statement": "\\begin{gathered}\\textnormal{A real quartic p has leading}\\\\\\textnormal{coefficient}\\\\-8,\\\\p\\left(\\frac12-\\frac{\\sqrt3}{6}\\right)=5,\\\\p\\left(\\frac12+\\frac{\\sqrt3}{6}\\right)=0.\\\\\\textnormal{Find}\\\\\\int_0^1p(x)\\,dx.\\end{gathered}",
+        "choices": [
+          "\\frac{5}{2}",
+          "\\frac{211}{90}",
+          "\\frac{223}{90}",
+          "\\frac{221}{90}"
+        ],
+        "answerIndex": 3,
+        "solution": [
+          "q(x)=x^2-x+\\frac16,\\quad\\int_0^1q(x)^2\\,dx=\\frac1{180}",
+          "\\begin{gathered}\\textnormal{Subtract the leading}\\\\\\textnormal{coefficient times q squared;}\\\\\\textnormal{the remainder is cubic and its}\\\\\\textnormal{node values are unchanged.}\\end{gathered}",
+          "\\int_0^1p=\\frac{p(r_1)+p(r_2)}2+\\frac{c}{180}=\\frac{221}{90}"
+        ]
+      },
+      {
+        "ordinal": 20,
+        "problemId": "cn_545f742ee31132dee7ae",
+        "family": "io3-boundary-asymptotic",
+        "idea": "integral-boundary-layer",
+        "structure": "large-power:degenerate-endpoint-maximum",
+        "technique": "asymptotic-rescaling",
+        "combination": "convergence+method-selection+synthesis:asymptotic-rescaling",
+        "alternatives": [
+          "beta-asymptotics"
+        ],
+        "reasoning": [
+          "method-selection",
+          "convergence",
+          "synthesis"
+        ],
+        "statement": "\\begin{gathered}\\Gamma(s)=\\int_0^\\infty t^{s-1}e^{-t}\\,dt\\ (s>0).\\\\\\lim_{n\\to\\infty} n^{1/4}\\int_0^1(1-x^{4})^n\\,dx\\end{gathered}",
+        "choices": [
+          "0",
+          "\\frac{\\Gamma\\left(\\frac{1}{4}\\right)}{5}",
+          "\\Gamma\\left(\\frac{5}{4}\\right)",
+          "\\frac{\\sqrt{\\pi}}{2}"
+        ],
+        "answerIndex": 2,
+        "solution": [
+          "x=n^{-1/4}u",
+          "(1-u^{4}/n)^n\\longrightarrow e^{-u^{4}},\\quad 0\\le(1-v/n)^n\\le e^{-v}",
+          "\\begin{gathered}\\textnormal{Dominated convergence now}\\\\\\textnormal{applies to the rescaled}\\\\\\textnormal{integral.}\\end{gathered}",
+          "I=\\int_0^\\infty e^{-u^{4}}\\,du=\\Gamma\\left(\\frac{5}{4}\\right)"
+        ]
+      }
+    ]
+  ]
+}

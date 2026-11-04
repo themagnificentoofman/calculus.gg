@@ -1,0 +1,892 @@
+{
+  "scope": "Isolated pool-only proposal; no root or frozen source modified. Six families, all eight instances each.",
+  "frozenSourceSha256": "fb51dce954195e9987141cbedc20fb1568e17eec0f957e454313677414abb461",
+  "finding": "No six-family member has a single fixed numeric answer rank across all eight. Four always place the answer in a middle rank, and Cauchy allows only the smallest two ranks.",
+  "installation": [
+    "Insert rank-pool-additions.py.txt into authored_distractors immediately before the Tuple guard, after the existing per-family pool chain.",
+    "Keep the root all-feasible-ranks helper and width-30 prose display unchanged.",
+    "Regenerate trusted candidate records/imported hashes after applying the pool-only addition."
+  ],
+  "changedFamilies": [
+    "bernoulli-product",
+    "cauchy-convolution",
+    "moment-projection",
+    "quadrature-defect",
+    "variational-energy"
+  ],
+  "unchangedFamily": "mellin-cyclotomic already varies across the family; one single-feasible-rank instance is not a family invariant.",
+  "exactChecks": {
+    "checkedInstances": 48,
+    "pairwiseChoiceNonEquivalence": "Executed by make for all 48",
+    "builderCertificates": "Executed by each family builder for all eight parameter instances",
+    "additionalMisconceptionInterpretationIdentities": 32,
+    "numericalRankIsProof": false
+  },
+  "before": [
+    {
+      "family": "bernoulli-product",
+      "ranks": [
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "below": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "above": [
+        1,
+        2,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "family": "cauchy-convolution",
+      "ranks": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "below": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "above": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "family": "mellin-cyclotomic",
+      "ranks": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "below": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "above": [
+        2,
+        3,
+        4,
+        2,
+        4,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "family": "moment-projection",
+      "ranks": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "below": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "above": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "family": "quadrature-defect",
+      "ranks": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "below": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "above": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "family": "variational-energy",
+      "ranks": [
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "below": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "above": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "after": [
+    {
+      "family": "bernoulli-product",
+      "ranks": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        4,
+        1,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "below": [
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "above": [
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "family": "cauchy-convolution",
+      "ranks": [
+        1,
+        3,
+        3,
+        2,
+        2,
+        4,
+        1,
+        3
+      ],
+      "feasibleRanks": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "below": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ],
+      "above": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "family": "mellin-cyclotomic",
+      "ranks": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "below": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        2,
+        1
+      ],
+      "above": [
+        2,
+        3,
+        4,
+        2,
+        4,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "family": "moment-projection",
+      "ranks": [
+        2,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "feasibleRanks": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "below": [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "above": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "family": "quadrature-defect",
+      "ranks": [
+        2,
+        2,
+        4,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "feasibleRanks": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "below": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "above": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "family": "variational-energy",
+      "ranks": [
+        2,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3,
+        4
+      ],
+      "feasibleRanks": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "below": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "above": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "formatChecks": {
+    "candidates": 48,
+    "rendered": 408,
+    "syntaxErrors": [],
+    "formatProxyAudit": [
+      {
+        "family": "io3-bernoulli-product",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      },
+      {
+        "family": "io3-cauchy-convolution",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      },
+      {
+        "family": "io3-mellin-cyclotomic",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      },
+      {
+        "family": "io3-moment-projection",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      },
+      {
+        "family": "io3-quadrature-defect",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      },
+      {
+        "family": "io3-variational-energy",
+        "alwaysSoleLongestTex": false,
+        "alwaysSoleShortestTex": false
+      }
+    ]
+  },
+  "rootEdited": false,
+  "frozenSourceEdited": false
+}

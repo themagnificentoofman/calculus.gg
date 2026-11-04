@@ -634,6 +634,33 @@ def authored_distractors(slug,raw,seed,descriptions):
         P=p['p'];A,B=p['a'],p['b'];add(P*s.log(R(B,A)),'Reversing the power-substitution Jacobian')
     elif slug=='sech-fourier':
         q=p['q'];add(R(q,2*(q*q+1)),'Applying half-line evenness twice')
+    # Additional authored misconceptions; insert before the Tuple guard in
+    # authored_distractors, after the existing per-family pool construction.
+    if slug=='bernoulli-product':
+        m,n=p['m'],p['n']
+        add(a/m,'Omitting the factor m from differentiating the first Bernoulli polynomial in integration by parts')
+        add((m+n)*a,'Omitting the final primitive divisor m+n in the Bernoulli endpoint calculation')
+    elif slug=='cauchy-convolution':
+        A,B=s.Integer(p['a']),s.Integer(p['b'])
+        pool[1]=(pool[1][0],'Counting both upper and lower half-plane residue sums for the same real integral')
+        pool[2]=(pool[2][0],'Using the peak displacement in place of the Cauchy width in the normalization')
+        add(a/2,'Keeping only the real part of one upper-half-plane pole contribution')
+        add(pi/(2*B*(4*A*A+B*B)),'Using the full distance between the peaks where the half-separation belongs')
+    elif slug=='moment-projection':
+        m=p['m'];c=rat('c');mu=R(1,m+1);M2=R(1,2*m+1);V=M2-mu*mu
+        pool[1]=(pool[1][0],'Using the squared mean of x^m in place of its variance')
+        add(1+(c-mu)**2/M2,'Using the uncentered second moment in place of the variance of the centered basis')
+        add((c-mu)**2/V,'Keeping only the centered moment component and omitting the required unit-mean energy')
+        add(1+c*c/V,'Centering the basis but failing to center the prescribed moment')
+    elif slug=='quadrature-defect':
+        C=s.Integer(p['c']);G=R(p['A']+p['B'],2)
+        add(G+C/360,'Applying the interval-rescaling Jacobian twice to the squared-node-polynomial correction')
+        add(G+R(7,360)*C,'Omitting the cross term when squaring (x-1/2)^2-1/12')
+    elif slug=='variational-energy':
+        k=rat('k')
+        add(1+k*k/3,'Mistaking the energy of the admissible linear trial function f(x)=x for the minimum')
+        add((k*s.coth(k)-k*k/s.sinh(k)**2)/2,'Integrating only the potential energy of the minimizing hyperbolic function')
+        add(s.Integer(1),'Using the sharp derivative-only Cauchy bound while dropping the nonzero potential energy')
     if isinstance(a,s.Tuple):return raw['wrong'],descriptions,{'rankingApplicable':False}
     unique=[]
     for value,why in pool:
@@ -647,11 +674,12 @@ def authored_distractors(slug,raw,seed,descriptions):
     # estimates. The rank check is not used to certify their incorrectness.
     below.sort(key=lambda v:digest([slug,seed,s.srepr(v[0])]))
     above.sort(key=lambda v:digest([slug,seed,s.srepr(v[0])]))
-    want=1+(seed%2)
-    if len(below)>=want and len(above)>=3-want:chosen=below[:want]+above[:3-want]
-    else:chosen=unique[:3]
+    feasible=[k for k in range(4) if len(below)>=k and len(above)>=3-k]
+    assert feasible,'Need three distinct authored misconceptions'
+    want=feasible[seed%len(feasible)]
+    chosen=below[:want]+above[:3-want]
     assert len(chosen)==3
-    return [v for v,_ in chosen],[why for _,why in chosen],{'rankingApplicable':True,'correctAscendingRank':1+sum(float(s.N(v,40))<target for v,_ in chosen),'method':'Choose among authored misconceptions; numerical rank is an editorial audit, not mathematical proof.'}
+    return [v for v,_ in chosen],[why for _,why in chosen],{'rankingApplicable':True,'correctAscendingRank':1+want,'feasibleAscendingRanks':[k+1 for k in feasible],'fixedRankRisk':len(feasible)==1,'authoredPoolSize':len(unique),'method':'Choose among authored misconceptions across all feasible ranks; numerical rank is an editorial audit, not mathematical proof.'}
 
 
 # Coverage is deliberately stricter than the raw family count. These exclusions

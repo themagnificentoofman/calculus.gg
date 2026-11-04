@@ -1,0 +1,146 @@
+{
+  "scope": "Read-only AI-assisted source audit of coverage.py, multivariable.py, and the twelve ODE Olympiad builders; not human review or a full re-execution. Concrete findings were sent to the owning agents and parent while fixes were in progress.",
+  "coverageFindings": [
+    {
+      "severity": "blocker",
+      "id": "matrix-zero-comparison",
+      "location": "multivariable.surface / coverage.equal",
+      "finding": "Matrix difference compared to scalar zero rejects the tangent-plane identity.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "blocker",
+      "id": "filtered-infinite-distractor",
+      "location": "multivariable.path-dependent-directional",
+      "finding": "Infinity is filtered by proof(), leaving fewer than three wrong choices.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "blocker",
+      "id": "even-laplacian-option-duplicate",
+      "location": "multivariable.laplacian",
+      "finding": "For even m, the positive fourth-power option equals the answer; the original three-option pool then collapses.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "editorial-blocker",
+      "id": "misdescribed-advanced-methods",
+      "location": "multivariable.angular / gaussianmoment",
+      "finding": "Actual shortest solutions are affine scaling plus polar integration / square completion plus one Gaussian moment, not advertised angular-parameter differentiation / mixed Wick moments. Reclassify or replace.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "statement",
+      "id": "undefined-parameter-in-target",
+      "location": "multivariable.linearization-two-inputs",
+      "finding": "Target retains literal m despite substituting a numeric base point; substitute the numeric target as well.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "statement",
+      "id": "intended-integral-pre-evaluated",
+      "location": "differentiation.accumulation-derivative / moving-integral-endpoints",
+      "finding": "s.integrate executes before statement creation, so the displayed derivative is of an explicit expression and no longer tests FTC or moving-boundary recognition.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "editorial-blocker",
+      "id": "routine-differentiation-Olympiad",
+      "families": [
+        "dilation-functional-equation",
+        "Hermite-log-product",
+        "inverse-jet",
+        "Rodrigues-multiplicity"
+      ],
+      "finding": "Respectively one chain-rule differentiation, higher order of existing logarithmic-product strategy, elementary cubic inverse jet, and exact duplicate of the existing vanishing-Leibniz mechanism. Do not claim four independent Olympiad decisions.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "editorial-blocker",
+      "id": "routine-related-limits-Olympiad",
+      "finding": "Eight Taylor/correction/Stirling/single-IBP candidates require quarantine or hard classification. Four clear original decisions remain: growing triangular product, central-binomial shift, neutral recursion rate, endpoint Laplace rescaling. Parent assigned eight isolated substantive replacements.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "editorial",
+      "id": "series-related-resolvents",
+      "finding": "Ordinary and alternating lattice resolvents share whole-lattice normalization and should share a related group. Even-zeta identity substitution alone is not justified as Olympiad by unfamiliar notation.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "notation",
+      "id": "special-functions",
+      "finding": "Define rising factorial, elliptic K parameter convention, harmonic numbers, and Li2 before answering. Smoothness assumptions needed by supplied-function FTC must also be visible.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "options",
+      "id": "fixed-rank-tells",
+      "finding": "Static formula audit found fixed correct rank in differentiation dilation and Rodrigues; series Euler-product logarithm, dyadic tangent, elliptic series, and inverse-binomial arcsine. Owning agent is replacing broad option policy.",
+      "ownerNotified": true
+    },
+    {
+      "severity": "verification",
+      "id": "theorem-versus-automated-check",
+      "finding": "An actual=answer argument is not an executed independent mathematical check. Preserve explicit analytic theorem certificates and separately record derivation-specific residuals; certificates.py was being added by owner during review.",
+      "ownerNotified": true
+    }
+  ],
+  "odeOlympiadReview": {
+    "builderRange": "o_period through o_darboux",
+    "reviewedCount": 12,
+    "incorrectFinalFormulaFound": false,
+    "essentialAnalyticBridgeMissingFound": false,
+    "independentODEDecisionsDefensible": 12,
+    "followups": [
+      "Define Schwartz in pre-answer statement",
+      "Define sech in pre-answer statement",
+      "Define Gamma convention in quartic-period statement",
+      "Align switched-Riccati related group with differentiation Mobius iteration"
+    ],
+    "ownerNotified": true,
+    "executionAndOptionAudit": "Owned by source_research, not re-executed by this audit"
+  },
+  "supplementalDifferentiationReview": {
+    "builders": [
+      "sharp_endpoint",
+      "cyclic_determinant",
+      "oscillatory_regularity",
+      "newton_jet",
+      "moving_endpoint"
+    ],
+    "incorrectFormulaOrEssentialProofGapFound": false,
+    "fit": "Four Olympiad and one hard decisions defensible.",
+    "specificBridges": [
+      "Signed interpolation weights imply sharp endpoint bound; Chebyshev attains it.",
+      "Cyclic principal minors count unordered pairs correctly, including antipodal vertices.",
+      "Derivative existence and continuity thresholds are distinguished with nonzero oscillatory leading terms.",
+      "Newton jet order doubles2,4,8; coefficient exponent1,3,7; eighth derivative includes8!.",
+      "Second Leibniz derivative retains(m-1)e from the collapsing interval."
+    ],
+    "followups": [
+      "Align broad Chebyshev related group with limits minimax",
+      "Use30-character gathered prose for mobile"
+    ],
+    "execution": "Not re-executed; owning agent supplies exact build reports.",
+    "humanReviewed": false
+  },
+  "finalMultivariableReview": {
+    "builders": [
+      "cube_cap",
+      "winding",
+      "lemniscate",
+      "logsquare"
+    ],
+    "incorrectFormulaOrEssentialProofGapFound": false,
+    "fit": "All four Olympiad decisions defensible.",
+    "specificBridges": [
+      "Clipped-simplex inclusion-exclusion matches independent recursive CDF convolution and continuous integer-cut boundaries.",
+      "Decreasing positive coefficients after radius scaling prove root exclusion; an expanded radius establishes boundary exclusion.",
+      "Polar petal multiplicity cancels angular substitution factor; radial area factor and beta exponents correct.",
+      "Uniform log Fourier series can be squared and integrated; Parseval and radial denominator decomposition produce stated dilogarithm."
+    ],
+    "execution": "Read-only source review; final all-instance execution is owned by coverage_research.",
+    "humanReviewed": false
+  }
+}

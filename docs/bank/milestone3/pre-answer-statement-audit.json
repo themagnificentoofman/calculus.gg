@@ -1,0 +1,728 @@
+{
+  "auditDate": "2026-11-03",
+  "scope": "Read-only semantic comparison of learner-visible statement/choices against private domain metadata. One instance in each of91families plus17upper-domain samples. No frozen module edits. No new formal proof or browser-rendering claim.",
+  "review": "AI-authored bounded audit; no human review claimed.",
+  "snapshots": [
+    {
+      "asset": "integration",
+      "moduleSha256": "fb51dce954195e9987141cbedc20fb1568e17eec0f957e454313677414abb461",
+      "candidatesSha256": "0e525cb9a82ee0f379d756a85e6bffc8df7cdc5c6551621cbad5fa7e72a19ff2",
+      "familySamples": 38
+    },
+    {
+      "asset": "ode",
+      "moduleSha256": "8120a40129e0230805c41eeddbe153e7a8e4e777f164795f90be6d9247d8a98e",
+      "candidatesSha256": "d79ec99ba967a8cc9427273c0a16710ba72b3467aa2de762b1375d45ed1dc621",
+      "familySamples": 48
+    },
+    {
+      "asset": "differentiation",
+      "moduleSha256": "9270d6ba4d87792b6ed5a9577402e60a3fc97c4060621b276a209a1bad71bc34",
+      "candidatesSha256": "9197b5584bc77b6b361e876e2d78009381372e844580a83817fa1117c406e47d",
+      "familySamples": 5
+    }
+  ],
+  "findings": [
+    {
+      "id": "S1",
+      "severity": "required_condition",
+      "familyId": "m3-differential-equations-hard-step-forcing",
+      "instancesAffected": 8,
+      "omission": "The interface displays equations only off t=1 and initial data at zero, but gives no matching condition at the switch. The private domain says y and y prime are continuous there.",
+      "minimalAddition": "Take y and y prime continuous at t=1.",
+      "reason": "Without matching, the post-switch solution m+C cos(t-1)+D sin(t-1) can be chosen independently of the zero pre-switch solution; its value at 1+pi is m-C. Requiring both continuities also specifies the intended unique finite-step response class.",
+      "techniqueDisclosure": "States the solution class only; does not reveal the response formula."
+    },
+    {
+      "id": "S2",
+      "severity": "required_definition",
+      "familyId": "m3-differential-equations-hard-wronskian-transport",
+      "instancesAffected": 8,
+      "omission": "The statement never says y1 and y2 in W are solutions of the displayed ODE. It only supplies their determinant formula.",
+      "minimalReplacement": "Let y_1 and y_2 be solutions of this equation on an interval containing [1,2], and define W=y_1 y_2 prime-y_1 prime y_2. Given W(1)=1, find W(2).",
+      "reason": "The differential equation imposes no stated condition on the two newly introduced functions. W(1)=1 alone does not determine W(2). Once the two functions are specified as classical solutions on the common interval, the cancellation proof works; extra continuity assumptions on q need not be appended solely to solve the stated question.",
+      "techniqueDisclosure": "Defines the objects without naming Abel transport or providing the reduced equation."
+    },
+    {
+      "id": "S3",
+      "severity": "presentation_fix",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "instancesAffected": 8,
+      "omission": "No mathematical condition is missing, but display_statement inserts line breaks around textnormal{otherwise} inside the cases environment, separating the zero entry from its condition.",
+      "minimalReplacement": "Use mathrm{otherwise} inside this cases formula, or make the wrapping helper respect nested environments.",
+      "reason": "The current encoded result includes 0,& followed by an extra row break, then otherwise and another row. Strict KaTeX parsing alone does not detect this semantic layout defect.",
+      "techniqueDisclosure": "Formatting only."
+    }
+  ],
+  "familyResults": [
+    {
+      "asset": "integration",
+      "familyId": "io3-weighted-complement",
+      "sampleProblemId": "cn3_8eab3606c3f9b4a935f5",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-reciprocal-quartic",
+      "sampleProblemId": "cn3_04081797a0b84aa5191c",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-inverse-moment",
+      "sampleProblemId": "cn3_e001cc743b6ec28b5c16",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-chebyshev-absolute",
+      "sampleProblemId": "cn3_71ead9c3ece10b712eea",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-floor-laplace",
+      "sampleProblemId": "cn3_9443d5c1bee5df038122",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-gamma-unit-average",
+      "sampleProblemId": "cn3_dbb8e1f912fa8d487843",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-log-fourier-coefficient",
+      "sampleProblemId": "cn3_61972aea4bc4f604e3a1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-arctan-parameter",
+      "sampleProblemId": "cn3_ccc59fb8c6a4c699849a",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-gaussian-fourier",
+      "sampleProblemId": "cn3_356edc763f13b4eca634",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-reciprocal-gaussian",
+      "sampleProblemId": "cn3_e707bb8531fd85c3f5a2",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-sinc-overlap",
+      "sampleProblemId": "cn3_56ff7915ce28713544fe",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-mixed-beta-log",
+      "sampleProblemId": "cn3_bf90b8ed19cf2fad2663",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-thermal-derivative",
+      "sampleProblemId": "cn3_327df50cc152a4f836c1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-mellin-cyclotomic",
+      "sampleProblemId": "cn3_95a183338420143d0aec",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-cauchy-convolution",
+      "sampleProblemId": "cn3_d89ff19033a794bb7f67",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-binomial-exponential",
+      "sampleProblemId": "cn3_e6448f218a7a7d31590a",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-agm-parameter",
+      "sampleProblemId": "cn3_d2c7c4634573ee16db75",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-abel-recovery",
+      "sampleProblemId": "cn3_ba32b90c09846a1ef0c1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-boundary-asymptotic",
+      "sampleProblemId": "cn3_327df4d7b94f515a68de",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-integral-equation",
+      "sampleProblemId": "cn3_ea24eb09fd62cb9c55f2",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-convolution-laplace",
+      "sampleProblemId": "cn3_fbaaacc6fa74f4c1ce87",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-poisson-log-potential",
+      "sampleProblemId": "cn3_803e0e16f5087e500d03",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-jensen-radius",
+      "sampleProblemId": "cn3_fcc40e2fecb694d1dfdd",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-fresnel",
+      "sampleProblemId": "cn3_f207ced61d68d1cc8b8e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-bessel-laplace",
+      "sampleProblemId": "cn3_34b520f3899f6183990b",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-rodrigues-moment",
+      "sampleProblemId": "cn3_e2fc52f49e021f3eb41b",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-bernoulli-product",
+      "sampleProblemId": "cn3_32f50938f589ec05997e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-principal-value",
+      "sampleProblemId": "cn3_6b8df0cceb1859ffc0b1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-oscillatory-regularization",
+      "sampleProblemId": "cn3_eb6233cbddcedd48da77",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-concentration",
+      "sampleProblemId": "cn3_3b245fe022c70b633a07",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-binary-product",
+      "sampleProblemId": "cn3_8b8f44cdeef8c8077044",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-fejer-fourth",
+      "sampleProblemId": "cn3_90785db724c0bed0cfd7",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-scaled-frullani",
+      "sampleProblemId": "cn3_f686c6c2764b9a695766",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-sech-fourier",
+      "sampleProblemId": "cn3_e6df861cab6b0fd954f3",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-variational-energy",
+      "sampleProblemId": "cn3_3c5157523c64c51297f7",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-moment-projection",
+      "sampleProblemId": "cn3_520ba5c4c04c6e205808",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-quadrature-defect",
+      "sampleProblemId": "cn3_38fb0ce6ade6a48a592b",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "integration",
+      "familyId": "io3-rearrangement",
+      "sampleProblemId": "cn3_50cb1960a9b181a25654",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-field-slope",
+      "sampleProblemId": "cn_m3_795e80dcfd08a5ff49e3",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-rate-identification",
+      "sampleProblemId": "cn_m3_2b3a050bce08c1948f05",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-phase-line-stability",
+      "sampleProblemId": "cn_m3_a2ec5c949d2742846a41",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-euler-step",
+      "sampleProblemId": "cn_m3_8383301425c97eea3e55",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-primitive-initial-value",
+      "sampleProblemId": "cn_m3_dbe39f0ce158de1b785d",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-doubling-data",
+      "sampleProblemId": "cn_m3_c4f7d5bab419eb9c9ba1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-cooling-limit",
+      "sampleProblemId": "cn_m3_016882f89a46b52b6b8b",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-mixing-inflow",
+      "sampleProblemId": "cn_m3_43677c38d22a00f52b5a",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-constant-acceleration",
+      "sampleProblemId": "cn_m3_2b7e1e1b9ad257f2dc63",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-equation-order",
+      "sampleProblemId": "cn_m3_97618fc0b28b8a549de1",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-oscillator-initial-data",
+      "sampleProblemId": "cn_m3_5bc4008bac2178f24e75",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-easy-transfer-conservation",
+      "sampleProblemId": "cn_m3_d2fc3e015d627c558522",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-logistic-hitting",
+      "sampleProblemId": "cn_m3_324c66f9320e017acb33",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "sampleProblemId": "cn_m3_02a652bf4f077c05da1d",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-variable-integrating-factor",
+      "sampleProblemId": "cn_m3_cff4d244e075b7d1b33c",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-exact-curve",
+      "sampleProblemId": "cn_m3_a346e56cac4a358f9af9",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+      "sampleProblemId": "cn_m3_da94f3fd9b0ff8d3e629",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+      "sampleProblemId": "cn_m3_d15e6bf2e03be774a872",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-harvest-bifurcation",
+      "sampleProblemId": "cn_m3_f22c8485e2a2062084c9",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-distinct-characteristic-roots",
+      "sampleProblemId": "cn_m3_124d60605ad31797353e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "sampleProblemId": "cn_m3_6f6005620ec59189918e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-critical-damping",
+      "sampleProblemId": "cn_m3_3db18f61acab92e5307c",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "sampleProblemId": "cn_m3_1b3250e35790653bb6bc",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-medium-periodic-amplitude",
+      "sampleProblemId": "cn_m3_0ee66ceef9a9c9b4d026",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-riccati-particular",
+      "sampleProblemId": "cn_m3_b8aac84f2f9d70994261",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-nonlinear-energy-speed",
+      "sampleProblemId": "cn_m3_28c24df2b4e9ad93b418",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-euler-cauchy-resonance",
+      "sampleProblemId": "cn_m3_dde2128f866bf4728e6f",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "sampleProblemId": "cn_m3_54c115bc30f679adafab",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-remove-first-derivative",
+      "sampleProblemId": "cn_m3_391fed21610b8cd9128c",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-step-forcing",
+      "sampleProblemId": "cn_m3_28b41caab1be8488efef",
+      "result": "required_statement_fix",
+      "findingIds": [
+        "S1"
+      ]
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-impulse-jump",
+      "sampleProblemId": "cn_m3_503ec890e2d09317455f",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "sampleProblemId": "cn_m3_0dee71c9272dc40d670f",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-jordan-system",
+      "sampleProblemId": "cn_m3_4df5a9632cca7fd2e69e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-linear-stability-bound",
+      "sampleProblemId": "cn_m3_699d2c2fb384fe072b7e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-mixed-boundary-spectrum",
+      "sampleProblemId": "cn_m3_eac5c5559605c59f28f6",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-hard-wronskian-transport",
+      "sampleProblemId": "cn_m3_ba5fe868b53ef4cb6372",
+      "result": "required_statement_fix",
+      "findingIds": [
+        "S2"
+      ]
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-quartic-period",
+      "sampleProblemId": "cn_m3_5ca686b01acae0df8287",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-power-coordinate-lifetime",
+      "sampleProblemId": "cn_m3_53ed4a085607feed6240",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-pinney-energy",
+      "sampleProblemId": "cn_m3_a50ca09cfb236ac2db33",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-switched-riccati",
+      "sampleProblemId": "cn_m3_418bc204dfa65def6d2e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-periodic-product-average",
+      "sampleProblemId": "cn_m3_932559ee25ac7495ba0d",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-periodic-floquet-multiplier",
+      "sampleProblemId": "cn_m3_ffc5bb7433a94d9959f2",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-resonant-boundary-compatibility",
+      "sampleProblemId": "cn_m3_0a3706e00e349d82bc45",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-sharp-lifetime-comparison",
+      "sampleProblemId": "cn_m3_c7a114efd4ae4dcd1494",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-nonlinear-radial-asymptotic",
+      "sampleProblemId": "cn_m3_b6160105a7578d48e28e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "sampleProblemId": "cn_m3_30e7b38f60dd4ee7238c",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+      "sampleProblemId": "cn_m3_17687ae6e41a7743bd80",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "ode",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+      "sampleProblemId": "cn_m3_08264a37282a0f791b82",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "differentiation",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "sampleProblemId": "cn_m3_407d439f6cf68bd4d63e",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "differentiation",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "sampleProblemId": "cn_m3_643002528910693d895e",
+      "result": "presentation_fix",
+      "findingIds": [
+        "S3"
+      ]
+    },
+    {
+      "asset": "differentiation",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "sampleProblemId": "cn_m3_012dfda35e30c24dd6ad",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "differentiation",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "sampleProblemId": "cn_m3_d4a5d7808ef52f50d7e8",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    },
+    {
+      "asset": "differentiation",
+      "familyId": "m3-differentiation-hard-moving-endpoint-parameter-second",
+      "sampleProblemId": "cn_m3_a7e7923991b5b8c0fae8",
+      "result": "self_contained_for_domain_scope",
+      "findingIds": []
+    }
+  ],
+  "edgeSampleProblemIds": [
+    "cn3_8d25e9f38ace8a5cc020",
+    "cn3_7cd1c82fb9ef90c1fb4d",
+    "cn3_8cf80ba2cb318d9770d7",
+    "cn3_713169e8fa2ef3891352",
+    "cn3_79f35b305984164a7502",
+    "cn3_e7e1c40f913e230d50f0",
+    "cn3_81a07a6926c839437e09",
+    "cn3_4bedae01469d12752432",
+    "cn_m3_6a71dca8073c6aad3ff6",
+    "cn_m3_fe3b4640a8ee02ffcaa1",
+    "cn_m3_95b16609ed5edd06c689",
+    "cn_m3_9c20db084722ea58d494",
+    "cn_m3_1eb6331286c9a64eab58",
+    "cn_m3_2c9409d20ea29c919e3a",
+    "cn_m3_4aa01cda1d0a739cfe19",
+    "cn_m3_05212ca9a57e50d1ff00",
+    "cn_m3_74ece87c8e59f761fb40"
+  ],
+  "counts": {
+    "families": 91,
+    "additionalEdgeSamples": 17,
+    "requiredConditionOrDefinitionFamilies": 2,
+    "presentationOnlyFamilies": 1,
+    "otherFamiliesPassedDomainScope": 88
+  }
+}

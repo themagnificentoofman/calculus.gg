@@ -127,3 +127,12 @@ test('SQL exports resume without overwrites, propagate retirement and fail close
   assert.throws(()=>target.exec(initial[0].replace(samples[0].contentHash,'0'.repeat(64))),/CHECK constraint/);
  }finally{target.close();rmSync(dir,{recursive:true,force:true});}
 });
+
+test('personal exposure history affects individual practice but not a competitive host selection',async()=>{
+ const {sql,db}=fixture(),store=memoryStore(),seen=[];
+ store.data.set('bankRecent/player-one',{problems:['prior-problem'],families:['prior-family']});
+ const api=createGameApi({store,verify:async()=>({sub:'player-one'}),select:(input,recent)=>{seen.push(structuredClone(recent));return selectBankQuestions(db,input,{});},quota:async()=>true});
+ try{for(const mode of ['test','pvp','multiplayer','rapid']){const response=await api('questions',request('questions',{category:'integration',difficulty:'easy',count:1,mode}));assert.equal(response.status,200);}
+ assert.deepEqual(seen[0].problems,['prior-problem']);assert.deepEqual(seen[1],{});assert.deepEqual(seen[2],{});assert.equal(seen[3].version,2);
+ }finally{sql.close();}
+});

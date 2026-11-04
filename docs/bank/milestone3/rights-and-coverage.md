@@ -1,6 +1,6 @@
 # Milestone 3 source and coverage research
 
-Access date: 2026-11-03. This bounded review covers every named starting collection, with separate records for both Active Calculus editions, plus three additional references. The machine-readable register contains exact locators, repository revisions or document editions, solution types, license evidence, exceptions and empty destination mappings. No source-derived problem, explanation, figure or executable script has been imported. Research review was performed by agents, not humans.
+Access date: 2026-11-03. This bounded review covers every named starting collection, with separate records for both Active Calculus editions, plus six additional references. The machine-readable register contains exact locators, repository revisions or document editions, solution types, license evidence, exceptions and destination mappings for original problems that cite mathematical background. No source-derived problem, explanation, figure or executable script has been imported. Research review was performed by agents, not humans.
 
 ## Rights decisions
 
@@ -45,5 +45,7 @@ The original local `scripts/bank/families.py` shows why these directions matter:
 - The UF techniques handout credits exercises from other contests. The IBL existence/uniqueness module credits Lebl. Hosting and collection licenses must not erase these upstream attributions.
 - OpenStax's [current preface](https://openstax.org/books/calculus-volume-2/pages/preface) also states AI-inclusion and commercial-printing permission requirements, excludes trademarks, and specifies page/view attribution. These are recorded separately; this update proposes no source-content reuse.
 - Repository HEAD and the published website build are recorded separately where equivalence was not established. The Active landing URLs redirect using HTML meta refresh; the exact frontmatter and colophon pages are accessible.
+
+The register contains 18 collections and 35 inspected item records. Its 144 destination mappings are theorem-reference links to independently authored content, not copied or adapted source items. Supplemental references include CMU probability notes, Illinois occupancy notes, and MIT number-theory notes. Their exact locators and terms are in the register.
 
 No files in this research directory count toward playable coverage. Keep discovered, authored, verified, quarantined, imported and active counts separate. Destination mappings must be filled only when a real item is admitted; an original item can cite a source as mathematical background without claiming that it was adapted.
