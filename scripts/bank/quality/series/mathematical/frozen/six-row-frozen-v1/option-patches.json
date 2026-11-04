@@ -1,0 +1,824 @@
+[
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_07f9f8471f9274bac8b9",
+    "familyId": "m3-series-easy-taylor-coefficient-derivative",
+    "instanceIndex": 0,
+    "sourceRevision": 1,
+    "sourceContentHash": "51007233fff8e17f4d45a45154e3200dc48e159331cb95370d943ec5b905749f",
+    "sourceSemanticHash": "b877582986d3f79385c93596332a4ffa927c8a198f75102ca02870677a55103b",
+    "sourceRawSHA256": "405530ada2e58c21398eb16cfb8099fd9a279ea0aad4f6a305db02ab2b764547",
+    "sourceChoicesSHA256": "9d6ad8ff07087fd3ed472a721bf87c6a27113b0952210d0abbbe710f64fb3e2f",
+    "choices": [
+      {
+        "choiceId": "ch_a0b84e82b3cf4a53",
+        "math": "16",
+        "misconception": "Multiply by the derivative order after already applying its factorial"
+      },
+      {
+        "choiceId": "ch_177e7c5adea9785f",
+        "math": "4",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_dd88077aa0c05d7c",
+        "math": "\\frac{1}{6}",
+        "misconception": "return the coefficient without its factorial"
+      },
+      {
+        "choiceId": "ch_e17eeefedaa51ba5",
+        "math": "20",
+        "misconception": "use the next factorial"
+      }
+    ],
+    "answerChoiceId": "ch_177e7c5adea9785f",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_177e7c5adea9785f",
+      "math": "4",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_12f21b7fc056a5cb",
+      "math": "-4",
+      "misconception": "reverse the given coefficient sign"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_a0b84e82b3cf4a53",
+      "math": "16",
+      "misconception": "Multiply by the derivative order after already applying its factorial"
+    },
+    "reason": "Remove the lone correct-answer/sign-flip pair. The replacement is an unused factorial-conversion error with the same sign as the supplied coefficient; sign alone cannot identify the answer.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read the literal coefficient and derivative order",
+        "order": 4,
+        "coefficient": "1/6"
+      },
+      {
+        "description": "Derivative of the coefficient monomial at the center equals the preserved answer",
+        "value": "4",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_a0b84e82b3cf4a53",
+          "ch_177e7c5adea9785f"
+        ],
+        "difference": "Integer(12)",
+        "outwardRationalEnclosure": [
+          "12",
+          "12"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_a0b84e82b3cf4a53",
+          "ch_dd88077aa0c05d7c"
+        ],
+        "difference": "Rational(95, 6)",
+        "outwardRationalEnclosure": [
+          "1583333333333333333333333333333333333/100000000000000000000000000000000000",
+          "791666666666666666666666666666666667/50000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_a0b84e82b3cf4a53",
+          "ch_e17eeefedaa51ba5"
+        ],
+        "difference": "Integer(-4)",
+        "outwardRationalEnclosure": [
+          "-4",
+          "-4"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_177e7c5adea9785f",
+          "ch_dd88077aa0c05d7c"
+        ],
+        "difference": "Rational(23, 6)",
+        "outwardRationalEnclosure": [
+          "383333333333333333333333333333333333/100000000000000000000000000000000000",
+          "191666666666666666666666666666666667/50000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_177e7c5adea9785f",
+          "ch_e17eeefedaa51ba5"
+        ],
+        "difference": "Integer(-16)",
+        "outwardRationalEnclosure": [
+          "-16",
+          "-16"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_dd88077aa0c05d7c",
+          "ch_e17eeefedaa51ba5"
+        ],
+        "difference": "Rational(-119, 6)",
+        "outwardRationalEnclosure": [
+          "-991666666666666666666666666666666667/50000000000000000000000000000000000",
+          "-1983333333333333333333333333333333333/100000000000000000000000000000000000"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  },
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_5a178a9f09c990290769",
+    "familyId": "m3-series-easy-taylor-coefficient-derivative",
+    "instanceIndex": 9,
+    "sourceRevision": 1,
+    "sourceContentHash": "696a1d9baa8bfef84be1fb74528c7136ca18561569c34cd3f51a80f2c5c0581d",
+    "sourceSemanticHash": "f3afc1454098740d7d5bc180cd8a4ea956ee2e0aa89ab826fc503c5e69a80f22",
+    "sourceRawSHA256": "c775604453c902271454f3a91aa1d973eaf6ff584ef453035b929c04bec946da",
+    "sourceChoicesSHA256": "dc0c7e18eeb3b7a656da51b8a816b2a90eb805e21e398733287d07d49c455039",
+    "choices": [
+      {
+        "choiceId": "ch_56a0e0c9f4b45a92",
+        "math": "-62270208000",
+        "misconception": "omit the supplied coefficient denominator"
+      },
+      {
+        "choiceId": "ch_23f45cc6fd596856",
+        "math": "-4151347200",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_ca868a431b087bad",
+        "math": "-319334400",
+        "misconception": "use the preceding factorial"
+      },
+      {
+        "choiceId": "ch_47163146f5695b2b",
+        "math": "-58118860800",
+        "misconception": "Use the next factorial instead of the requested derivative-order factorial"
+      }
+    ],
+    "answerChoiceId": "ch_23f45cc6fd596856",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_23f45cc6fd596856",
+      "math": "-4151347200",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_7892db0d72e0556d",
+      "math": "4151347200",
+      "misconception": "reverse the supplied coefficient sign"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_47163146f5695b2b",
+      "math": "-58118860800",
+      "misconception": "Use the next factorial instead of the requested derivative-order factorial"
+    },
+    "reason": "Remove the lone correct-answer/sign-flip pair. The replacement is an unused factorial-conversion error with the same sign as the supplied coefficient; sign alone cannot identify the answer.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read the literal coefficient and derivative order",
+        "order": 13,
+        "coefficient": "-2/3"
+      },
+      {
+        "description": "Derivative of the coefficient monomial at the center equals the preserved answer",
+        "value": "-4151347200",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_56a0e0c9f4b45a92",
+          "ch_23f45cc6fd596856"
+        ],
+        "difference": "Integer(-58118860800)",
+        "outwardRationalEnclosure": [
+          "-58118860800",
+          "-58118860800"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_56a0e0c9f4b45a92",
+          "ch_ca868a431b087bad"
+        ],
+        "difference": "Integer(-61950873600)",
+        "outwardRationalEnclosure": [
+          "-61950873600",
+          "-61950873600"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_56a0e0c9f4b45a92",
+          "ch_47163146f5695b2b"
+        ],
+        "difference": "Integer(-4151347200)",
+        "outwardRationalEnclosure": [
+          "-4151347200",
+          "-4151347200"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_23f45cc6fd596856",
+          "ch_ca868a431b087bad"
+        ],
+        "difference": "Integer(-3832012800)",
+        "outwardRationalEnclosure": [
+          "-3832012800",
+          "-3832012800"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_23f45cc6fd596856",
+          "ch_47163146f5695b2b"
+        ],
+        "difference": "Integer(53967513600)",
+        "outwardRationalEnclosure": [
+          "53967513600",
+          "53967513600"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_ca868a431b087bad",
+          "ch_47163146f5695b2b"
+        ],
+        "difference": "Integer(57799526400)",
+        "outwardRationalEnclosure": [
+          "57799526400",
+          "57799526400"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  },
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_5dfc0a749b042bab1d75",
+    "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+    "instanceIndex": 7,
+    "sourceRevision": 1,
+    "sourceContentHash": "c93208a8dbd40f57fc5ba6a8ce97eaceeca1bac6fe755184596add49d4b0e170",
+    "sourceSemanticHash": "7fb31f66cfceff6f8e271ec4762b9faf418a5512704c138c13df11130994c308",
+    "sourceRawSHA256": "deb57149d52ea3ce876ad9259e763e190dab80ab1b9788ca0b4a0278a10df0b0",
+    "sourceChoicesSHA256": "43dac1b7339dff6c1d11b2a44bc48f5d7d8a02d600934bfa8b0a5cee06b33b1d",
+    "choices": [
+      {
+        "choiceId": "ch_9ae1aff22db90181",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{\\Gamma\\left(\\frac{4}{3}\\right)}",
+        "misconception": "Increase the denominator Gamma argument by one without the compensating recurrence factor"
+      },
+      {
+        "choiceId": "ch_28c6e5c517134674",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{2 \\Gamma\\left(\\frac{1}{3}\\right)}",
+        "misconception": "retain only one symmetric half"
+      },
+      {
+        "choiceId": "ch_b1da0d6d31cd2d0a",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{\\Gamma\\left(\\frac{1}{3}\\right)}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_182c316dd1ebaf96",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{11}{6}\\right)}{\\Gamma\\left(\\frac{11}{3}\\right)}",
+        "misconception": "reverse the signs of both singular exponents"
+      }
+    ],
+    "answerChoiceId": "ch_b1da0d6d31cd2d0a",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_b1da0d6d31cd2d0a",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{\\Gamma\\left(\\frac{1}{3}\\right)}",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_2cf0fe164a076a42",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{\\Gamma\\left(- \\frac{2}{3}\\right)}",
+      "misconception": "omit the final beta denominator shift"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_9ae1aff22db90181",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{6}\\right)}{\\Gamma\\left(\\frac{4}{3}\\right)}",
+      "misconception": "Increase the denominator Gamma argument by one without the compensating recurrence factor"
+    },
+    "reason": "The former wrong option used Gamma at a negative argument although the statement defines it only for positive arguments. The replacement keeps every Gamma input within that displayed definition.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read singular exponent and check endpoint integrability",
+        "alpha": "5/6",
+        "zeroLessAlphaLessOne": true
+      },
+      {
+        "description": "Preserved answer equals the convergent beta integral",
+        "expression": "Mul(Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_9ae1aff22db90181",
+          "ch_28c6e5c517134674"
+        ],
+        "difference": "Mul(Rational(5, 2), Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "2891189359160122002990128826570808361/100000000000000000000000000000000000",
+          "722918631508585380108318840803926551/25000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_9ae1aff22db90181",
+          "ch_b1da0d6d31cd2d0a"
+        ],
+        "difference": "Mul(Integer(2), Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "2312951487328097602392103061256646701/100000000000000000000000000000000000",
+          "2313339620827473216346620290572564951/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_9ae1aff22db90181",
+          "ch_182c316dd1ebaf96"
+        ],
+        "difference": "Mul(Integer(3), Add(Mul(Integer(-1), Rational(5, 64), Pow(gamma(Rational(2, 3)), Integer(-1)), Pow(gamma(Rational(5, 6)), Integer(2))), Mul(Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))))",
+        "outwardRationalEnclosure": [
+          "3447366767511094939783567709920344039/100000000000000000000000000000000000",
+          "3447962758677633000732082054038833187/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_28c6e5c517134674",
+          "ch_b1da0d6d31cd2d0a"
+        ],
+        "difference": "Mul(Integer(-1), Rational(1, 2), Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "-289167452603434152043327536321570627/50000000000000000000000000000000000",
+          "-578237871832024400598025765314161659/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_28c6e5c517134674",
+          "ch_182c316dd1ebaf96"
+        ],
+        "difference": "Mul(Rational(1, 64), Add(Mul(Integer(-1), Integer(15), Pow(gamma(Rational(2, 3)), Integer(-1)), Pow(gamma(Rational(5, 6)), Integer(2))), Mul(Integer(32), Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))))",
+        "outwardRationalEnclosure": [
+          "139044352087743234198359720837383917/25000000000000000000000000000000000",
+          "556288232643291480298806690823126997/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_b1da0d6d31cd2d0a",
+          "ch_182c316dd1ebaf96"
+        ],
+        "difference": "Add(Mul(Integer(-1), Rational(15, 64), Pow(gamma(Rational(2, 3)), Integer(-1)), Pow(gamma(Rational(5, 6)), Integer(2))), Mul(Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1))))",
+        "outwardRationalEnclosure": [
+          "567207640091498668695732324331848671/50000000000000000000000000000000000",
+          "226924627570031956877092352693253647/20000000000000000000000000000000000"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  },
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_7aff2c8e88ced577e84c",
+    "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+    "instanceIndex": 6,
+    "sourceRevision": 1,
+    "sourceContentHash": "b42564b83b2cb1365e4b73cfc388e977dc3ad8ca7a15985277519609e6c91c85",
+    "sourceSemanticHash": "6bec85b5ae4e989b7186f161240e0e6ef2d7d068a743ea9f1fdc351c6d9b9d1c",
+    "sourceRawSHA256": "e540bc4feddffa87f8849cd52febccce5a522d7b5a63ea2f70028d20f2455c0a",
+    "sourceChoicesSHA256": "6100c25e70a89c00f0f6918f8009c4fcbdfc4c5470cbe26b82545dd0e7344f9a",
+    "choices": [
+      {
+        "choiceId": "ch_fcfaa91f9ad86830",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{\\sqrt{\\pi}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_1db8e4e9e3072488",
+        "math": "\\frac{8 \\Gamma^{2}\\left(\\frac{7}{4}\\right)}{15 \\sqrt{\\pi}}",
+        "misconception": "reverse the signs of both singular exponents"
+      },
+      {
+        "choiceId": "ch_51b5890682909c89",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4 \\sqrt{\\pi}}",
+        "misconception": "Apply the symmetry half-factor twice instead of retaining the complete beta integral"
+      },
+      {
+        "choiceId": "ch_8fb0193fcb7d8a69",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{2 \\sqrt{\\pi}}",
+        "misconception": "retain only one symmetric half"
+      }
+    ],
+    "answerChoiceId": "ch_fcfaa91f9ad86830",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_fcfaa91f9ad86830",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{\\sqrt{\\pi}}",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_1649e6a8464e2c76",
+      "math": "- \\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{2 \\sqrt{\\pi}}",
+      "misconception": "omit the final beta denominator shift"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_51b5890682909c89",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4 \\sqrt{\\pi}}",
+      "misconception": "Apply the symmetry half-factor twice instead of retaining the complete beta integral"
+    },
+    "reason": "Remove the single pair of wrong opposite values. Both alternatives remain plausible positive beta-normalization errors; the correct choice and question are unchanged.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read singular exponent and check endpoint integrability",
+        "alpha": "3/4",
+        "zeroLessAlphaLessOne": true
+      },
+      {
+        "description": "Preserved answer equals the convergent beta integral",
+        "expression": "Mul(Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_fcfaa91f9ad86830",
+          "ch_1db8e4e9e3072488"
+        ],
+        "difference": "Mul(Pow(pi, Rational(-1, 2)), Add(Mul(Integer(-1), Rational(3, 10), Pow(gamma(Rational(3, 4)), Integer(2))), Pow(gamma(Rational(1, 4)), Integer(2))))",
+        "outwardRationalEnclosure": [
+          "716161727767203782333461463025639149/100000000000000000000000000000000000",
+          "358132617182559793427629152778791309/50000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_fcfaa91f9ad86830",
+          "ch_51b5890682909c89"
+        ],
+        "difference": "Mul(Rational(3, 4), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "outwardRationalEnclosure": [
+          "278093703974446916664843481011509527/50000000000000000000000000000000000",
+          "556257406011442253493919212065246953/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_fcfaa91f9ad86830",
+          "ch_8fb0193fcb7d8a69"
+        ],
+        "difference": "Mul(Rational(1, 2), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "outwardRationalEnclosure": [
+          "370791605299262555553124641348679369/100000000000000000000000000000000000",
+          "370838270674294835662612808043497969/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_1db8e4e9e3072488",
+          "ch_51b5890682909c89"
+        ],
+        "difference": "Mul(Rational(1, 20), Pow(pi, Rational(-1, 2)), Add(Mul(Integer(-1), Integer(5), Pow(gamma(Rational(1, 4)), Integer(2))), Mul(Integer(6), Pow(gamma(Rational(3, 4)), Integer(2)))))",
+        "outwardRationalEnclosure": [
+          "-32001565670735466672267818698467133/20000000000000000000000000000000000",
+          "-159974319818309949003774501002620037/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_1db8e4e9e3072488",
+          "ch_8fb0193fcb7d8a69"
+        ],
+        "difference": "Mul(Rational(1, 10), Pow(pi, Rational(-1, 2)), Add(Mul(Integer(-1), Integer(5), Pow(gamma(Rational(1, 4)), Integer(2))), Mul(Integer(3), Pow(gamma(Rational(3, 4)), Integer(2)))))",
+        "outwardRationalEnclosure": [
+          "-345426963690824751192645497514084649/100000000000000000000000000000000000",
+          "-345370122467941226780336821676959731/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_51b5890682909c89",
+          "ch_8fb0193fcb7d8a69"
+        ],
+        "difference": "Mul(Integer(-1), Rational(1, 4), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "outwardRationalEnclosure": [
+          "-37083827067429483566261280804349797/20000000000000000000000000000000000",
+          "-46348950662407819444140580168584921/25000000000000000000000000000000000"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  },
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_7b14effdf2336331644a",
+    "familyId": "m3-series-easy-taylor-coefficient-derivative",
+    "instanceIndex": 3,
+    "sourceRevision": 1,
+    "sourceContentHash": "3ead151b64aa3fd3f5d9a5a8fc842667964a13782ca42773693924ec302e0a4a",
+    "sourceSemanticHash": "b2a19ecbc3004d55055cd991bdd99a5556bf167528c80f733664cf134f8534d2",
+    "sourceRawSHA256": "0644f9d769e31402aa7ec672343652a9d4e640c98ec62d01bd51d65caa3163d8",
+    "sourceChoicesSHA256": "87a3c4b0972a7d4e8f767c1ca6c5d42c1e810b0b498f19a8d1022b4d157751cb",
+    "choices": [
+      {
+        "choiceId": "ch_583bfc07f3d9da85",
+        "math": "-320",
+        "misconception": "use the previous factorial"
+      },
+      {
+        "choiceId": "ch_ae5a88a74bbd28a4",
+        "math": "-11289600",
+        "misconception": "apply the factorial conversion twice"
+      },
+      {
+        "choiceId": "ch_b4778e8d8f66d754",
+        "math": "-17920",
+        "misconception": "Use the next factorial instead of the requested derivative-order factorial"
+      },
+      {
+        "choiceId": "ch_3f595c17b934c8db",
+        "math": "-2240",
+        "misconception": "correct"
+      }
+    ],
+    "answerChoiceId": "ch_3f595c17b934c8db",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_3f595c17b934c8db",
+      "math": "-2240",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_b38fc42fa54bb838",
+      "math": "2240",
+      "misconception": "reverse the given coefficient sign"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_b4778e8d8f66d754",
+      "math": "-17920",
+      "misconception": "Use the next factorial instead of the requested derivative-order factorial"
+    },
+    "reason": "Remove the lone correct-answer/sign-flip pair. The replacement is an unused factorial-conversion error with the same sign as the supplied coefficient; sign alone cannot identify the answer.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read the literal coefficient and derivative order",
+        "order": 7,
+        "coefficient": "-4/9"
+      },
+      {
+        "description": "Derivative of the coefficient monomial at the center equals the preserved answer",
+        "value": "-2240",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_583bfc07f3d9da85",
+          "ch_ae5a88a74bbd28a4"
+        ],
+        "difference": "Integer(11289280)",
+        "outwardRationalEnclosure": [
+          "11289280",
+          "11289280"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_583bfc07f3d9da85",
+          "ch_b4778e8d8f66d754"
+        ],
+        "difference": "Integer(17600)",
+        "outwardRationalEnclosure": [
+          "17600",
+          "17600"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_583bfc07f3d9da85",
+          "ch_3f595c17b934c8db"
+        ],
+        "difference": "Integer(1920)",
+        "outwardRationalEnclosure": [
+          "1920",
+          "1920"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_ae5a88a74bbd28a4",
+          "ch_b4778e8d8f66d754"
+        ],
+        "difference": "Integer(-11271680)",
+        "outwardRationalEnclosure": [
+          "-11271680",
+          "-11271680"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_ae5a88a74bbd28a4",
+          "ch_3f595c17b934c8db"
+        ],
+        "difference": "Integer(-11287360)",
+        "outwardRationalEnclosure": [
+          "-11287360",
+          "-11287360"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_b4778e8d8f66d754",
+          "ch_3f595c17b934c8db"
+        ],
+        "difference": "Integer(-15680)",
+        "outwardRationalEnclosure": [
+          "-15680",
+          "-15680"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  },
+  {
+    "patchVersion": "series-mathematical-sign-domain-options-v1",
+    "problemId": "cn_beb20410c10a5a949bde",
+    "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+    "instanceIndex": 4,
+    "sourceRevision": 1,
+    "sourceContentHash": "6e08279601fec5c957db04f709348c46134650ab86d2b4e275bffa5fa8e8422a",
+    "sourceSemanticHash": "ce51826a316073be2110e7e2442382d4038d65cfc246ac7b67f85b2b08dd7657",
+    "sourceRawSHA256": "99a12c61ce8baf51b91f1ed929ed0b925069f776fb8a961c3b557d4c5143b844",
+    "sourceChoicesSHA256": "41bee15e1359935f673807f58ac973e4e013f198ffbd48189a27d22784dc86de",
+    "choices": [
+      {
+        "choiceId": "ch_91e227853fa65ce1",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{\\Gamma\\left(\\frac{9}{5}\\right)}",
+        "misconception": "Increase the denominator Gamma argument by one without the compensating recurrence factor"
+      },
+      {
+        "choiceId": "ch_a188699a571f7a69",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{2 \\Gamma\\left(\\frac{4}{5}\\right)}",
+        "misconception": "retain only one symmetric half"
+      },
+      {
+        "choiceId": "ch_8882dfd321db337a",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{\\Gamma\\left(\\frac{4}{5}\\right)}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_8ea3e39db3e3fb31",
+        "math": "\\frac{\\Gamma^{2}\\left(\\frac{8}{5}\\right)}{\\Gamma\\left(\\frac{16}{5}\\right)}",
+        "misconception": "reverse the signs of both singular exponents"
+      }
+    ],
+    "answerChoiceId": "ch_8882dfd321db337a",
+    "preservedCorrectChoice": {
+      "choiceId": "ch_8882dfd321db337a",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{\\Gamma\\left(\\frac{4}{5}\\right)}",
+      "misconception": "correct"
+    },
+    "replacedChoice": {
+      "choiceId": "ch_596b400aa88bed5f",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{\\Gamma\\left(- \\frac{1}{5}\\right)}",
+      "misconception": "omit the final beta denominator shift"
+    },
+    "replacementChoice": {
+      "choiceId": "ch_91e227853fa65ce1",
+      "math": "\\frac{\\Gamma^{2}\\left(\\frac{2}{5}\\right)}{\\Gamma\\left(\\frac{9}{5}\\right)}",
+      "misconception": "Increase the denominator Gamma argument by one without the compensating recurrence factor"
+    },
+    "reason": "The former wrong option used Gamma at a negative argument although the statement defines it only for positive arguments. The replacement keeps every Gamma input within that displayed definition.",
+    "meaningChanged": false,
+    "preserveStatementSolutionAndLineage": true,
+    "mathematicalChecks": [
+      {
+        "description": "Read singular exponent and check endpoint integrability",
+        "alpha": "3/5",
+        "zeroLessAlphaLessOne": true
+      },
+      {
+        "description": "Preserved answer equals the convergent beta integral",
+        "expression": "Mul(Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))",
+        "result": true
+      }
+    ],
+    "sixChoiceInequalityCertificates": [
+      {
+        "choiceIds": [
+          "ch_91e227853fa65ce1",
+          "ch_a188699a571f7a69"
+        ],
+        "difference": "Mul(Rational(3, 4), Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "4951502610758402989037156966351023/1562500000000000000000000000000000",
+          "317029211561990268430833373334903167/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_91e227853fa65ce1",
+          "ch_8882dfd321db337a"
+        ],
+        "difference": "Mul(Rational(1, 4), Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "105632055696179263766126015282155157/100000000000000000000000000000000000",
+          "105676403853996756143611124444967723/100000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_91e227853fa65ce1",
+          "ch_8ea3e39db3e3fb31"
+        ],
+        "difference": "Mul(Rational(5, 44), Add(Mul(Integer(-1), Integer(6), Pow(gamma(Rational(1, 5)), Integer(-1)), Pow(gamma(Rational(3, 5)), Integer(2))), Mul(Integer(11), Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))))",
+        "outwardRationalEnclosure": [
+          "99043551266920452998722537363329999/20000000000000000000000000000000000",
+          "99090302723672245113004234723784193/20000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_a188699a571f7a69",
+          "ch_8882dfd321db337a"
+        ],
+        "difference": "Mul(Integer(-1), Rational(1, 2), Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))",
+        "outwardRationalEnclosure": [
+          "-42270561541598702457444449777987089/20000000000000000000000000000000000",
+          "-42252822278471705506450406112862063/20000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_a188699a571f7a69",
+          "ch_8ea3e39db3e3fb31"
+        ],
+        "difference": "Mul(Rational(1, 22), Add(Mul(Integer(-1), Integer(15), Pow(gamma(Rational(1, 5)), Integer(-1)), Pow(gamma(Rational(3, 5)), Integer(2))), Mul(Integer(11), Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))))",
+        "outwardRationalEnclosure": [
+          "44580397311516118423808660242546133/25000000000000000000000000000000000",
+          "44605575514092739283546950071004451/25000000000000000000000000000000000"
+        ]
+      },
+      {
+        "choiceIds": [
+          "ch_8882dfd321db337a",
+          "ch_8ea3e39db3e3fb31"
+        ],
+        "difference": "Add(Mul(Integer(-1), Rational(15, 22), Pow(gamma(Rational(1, 5)), Integer(-1)), Pow(gamma(Rational(3, 5)), Integer(2))), Mul(Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1))))",
+        "outwardRationalEnclosure": [
+          "24349106289901437576717916970905929/6250000000000000000000000000000000",
+          "389775109764364469421410049173953229/100000000000000000000000000000000000"
+        ]
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "newIndependentIdeas": 0,
+    "reviewStatus": "candidate-awaiting-independent-parent-review",
+    "humanReviewed": false,
+    "formalProof": false
+  }
+]

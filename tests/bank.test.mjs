@@ -77,7 +77,7 @@ test('bank mode makes zero model calls and keeps owner-bound sets, shared permut
  assert.ok(store.data.get('bankRecent/player-two').problems.length===3);
  }finally{globalThis.fetch=originalFetch;sql.close();}
 });
-test('public projection is an allowlist even when a revision gains new secret fields',()=>{const q={...samples[0],latexProblem:'x',options:['1','2','3','4'],correctIndex:0,explanation:['1']};const game=publicGame({mode:'test',status:'active',players:['u'],scores:{u:0},questions:[q]});assert.deepEqual(Object.keys(game.questions[0]).sort(),['difficulty','latexProblem','options','problemId','problemRevision','topic']);});
+test('public projection is an allowlist even when a revision gains new secret fields',()=>{const q={...samples[0],latexProblem:'x',options:['1','2','3','4'],correctIndex:0,explanation:['1']};const game=publicGame({mode:'test',status:'active',players:['u'],scores:{u:0},questions:[q]});assert.deepEqual(Object.keys(game.questions[0]).sort(),['difficulty','latexProblem','legacy','options','problemId','problemRevision','topic']);});
 test('read quotas are separate from authoring and reports never reveal content',async()=>{
  const {sql,db}=fixture();assert.equal((await Promise.all(Array.from({length:15},()=>consumeBankReadQuota(db,'player-one',1000)))).filter(Boolean).length,12);
  assert.equal(sql.prepare("SELECT COUNT(*) AS n FROM ai_quota WHERE key='site:day'").get().n,0);

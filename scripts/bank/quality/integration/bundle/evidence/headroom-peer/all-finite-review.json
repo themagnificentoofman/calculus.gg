@@ -1,0 +1,3067 @@
+{
+  "counts": {
+    "records": 22,
+    "checks": 231,
+    "pairwiseCertificates": 132,
+    "meaningfulAdditionalCapacity": 22,
+    "newIntegrationLocalIdeas": 1,
+    "newGlobalMethodClaims": 0
+  },
+  "sourceArtifactsSHA256": {
+    "moment-candidates.jsonl": "b6776dfd84696f4754c0b13f5935efe695caefe9bd73744019d54510f09f0ebd",
+    "hilbert-candidates.jsonl": "214ba888cf0cf1ac3f6cde709d0e47d397bf7c4d09b8fae2a0a8e2a3f9164105",
+    "moments.py": "c2b4dbab48021916f9df0bd9d38516853d3fb24e49cebe416c00571a430e9afc",
+    "hilbert.py": "0e1eb777013c180feb01dacf0cbda40a15d77d6b7a4dce0cb117818ae4572429"
+  },
+  "firstSolveEvidenceSHA256": "64f69c6e8a48eb2ca9393feeca47d89096f31ba64db026c6880cde0ae499b63e",
+  "baselineArtifactSHA256": "3d5fc04112b449d729a85594e68db4a2b2283d8657bd624510c7258b44856e9c",
+  "reviewCodeSHA256": "c84058e40dafcca0fb06253f8414be97c326ff2a283c9cb9bd1664749eb1201e",
+  "records": [
+    {
+      "problemId": "cn_qs_e55bf141711e7bee55d1",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 10,
+      "rawSHA256": "29df7dc9d2de9d9f8f706954585f218f60892c9b49f5a9ef3da8aecc33993c8c",
+      "sourceContentHash": "5d874b5eec5b2d7afde8c8db33b0a79069927f5b39f8574a00d5760dc2559a36",
+      "sourceSemanticHash": "6a285064385fab18c711bc01d6f173c997ca839df6b3d9ac5565018f991d1425",
+      "firstSolveRawSHA256": "29df7dc9d2de9d9f8f706954585f218f60892c9b49f5a9ef3da8aecc33993c8c",
+      "independentAnswer": [
+        "877/7680",
+        "233/1536"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_0959623a5af74077",
+            "ch_4873da9fcb880cfe"
+          ],
+          "coordinateDifferences": [
+            "125/12288",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_0959623a5af74077",
+            "ch_d5c2906201afccbc"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/1536"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_0959623a5af74077",
+            "ch_ad3ba7af97901f8c"
+          ],
+          "coordinateDifferences": [
+            "125/12288",
+            "-1/1536"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_4873da9fcb880cfe",
+            "ch_d5c2906201afccbc"
+          ],
+          "coordinateDifferences": [
+            "-125/12288",
+            "-1/1536"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_4873da9fcb880cfe",
+            "ch_ad3ba7af97901f8c"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/1536"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_d5c2906201afccbc",
+            "ch_ad3ba7af97901f8c"
+          ],
+          "coordinateDifferences": [
+            "125/12288",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:5/8;outer-fraction-up-to-reflection:1/5",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "961/10240",
+          "959/6144"
+        ],
+        "affineTrialSecondMoment": null,
+        "survivingChoiceIds": [
+          "ch_0959623a5af74077",
+          "ch_4873da9fcb880cfe",
+          "ch_d5c2906201afccbc",
+          "ch_ad3ba7af97901f8c"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_3848588e34f396af8f89",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 11,
+      "rawSHA256": "51a65560fa885220f5ce9c84b7a689865f4f050f5dd2c384c1b3ae305af10f36",
+      "sourceContentHash": "a14e64453a246cddc95615bdc95a03a203078bf0dc9973f8a9f855614888424a",
+      "sourceSemanticHash": "ea53bd1a283a2a27bfcb4bcb92a241d8d62997429b2bcbdc478bd60d52f42ef3",
+      "firstSolveRawSHA256": "51a65560fa885220f5ce9c84b7a689865f4f050f5dd2c384c1b3ae305af10f36",
+      "independentAnswer": [
+        "4171/36288",
+        "853/5184"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_681836cdd5915d9e",
+            "ch_8c6b0aab3305ab6a"
+          ],
+          "coordinateDifferences": [
+            "343/20736",
+            "-125/10368"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_681836cdd5915d9e",
+            "ch_a8cb50f254567330"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-125/10368"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_681836cdd5915d9e",
+            "ch_38f3a62c46365694"
+          ],
+          "coordinateDifferences": [
+            "343/20736",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_8c6b0aab3305ab6a",
+            "ch_a8cb50f254567330"
+          ],
+          "coordinateDifferences": [
+            "-343/20736",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_8c6b0aab3305ab6a",
+            "ch_38f3a62c46365694"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "125/10368"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_a8cb50f254567330",
+            "ch_38f3a62c46365694"
+          ],
+          "coordinateDifferences": [
+            "343/20736",
+            "125/10368"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:7/12;outer-fraction-up-to-reflection:2/7",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "529/5376",
+          "131/768"
+        ],
+        "affineTrialSecondMoment": "41/288",
+        "survivingChoiceIds": [
+          "ch_681836cdd5915d9e",
+          "ch_8c6b0aab3305ab6a",
+          "ch_a8cb50f254567330",
+          "ch_38f3a62c46365694"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_c86a54ffa5bd5534ddd6",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 12,
+      "rawSHA256": "2829f2a4424ca6591ee319e579cb0ce496657715b495c2dd7e6ed3b243f2fe2f",
+      "sourceContentHash": "1608fc38d39509377a21502c429bfcdc80c38fc2f93c6b642eead706007b034c",
+      "sourceSemanticHash": "58a6d444103fff58bfe02cb42945faae9980ea6100ed0033d0ec52d60dbc5648",
+      "firstSolveRawSHA256": "2829f2a4424ca6591ee319e579cb0ce496657715b495c2dd7e6ed3b243f2fe2f",
+      "independentAnswer": [
+        "37/1176",
+        "41/588"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_2a89f103210826a5",
+            "ch_e2fe3b8616a7fc54"
+          ],
+          "coordinateDifferences": [
+            "-1/1029",
+            "1/8232"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2a89f103210826a5",
+            "ch_57192244e073b5af"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "1/8232"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2a89f103210826a5",
+            "ch_a149e9050f970c6d"
+          ],
+          "coordinateDifferences": [
+            "-1/1029",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_e2fe3b8616a7fc54",
+            "ch_57192244e073b5af"
+          ],
+          "coordinateDifferences": [
+            "1/1029",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_e2fe3b8616a7fc54",
+            "ch_a149e9050f970c6d"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/8232"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_57192244e073b5af",
+            "ch_a149e9050f970c6d"
+          ],
+          "coordinateDifferences": [
+            "-1/1029",
+            "-1/8232"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:2/7;outer-fraction-up-to-reflection:1/4",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "81/2744",
+          "9/98"
+        ],
+        "affineTrialSecondMoment": null,
+        "survivingChoiceIds": [
+          "ch_2a89f103210826a5",
+          "ch_e2fe3b8616a7fc54",
+          "ch_57192244e073b5af",
+          "ch_a149e9050f970c6d"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_b5d5fbb1a82d5b7cdaeb",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 13,
+      "rawSHA256": "8130e03f87a54085429ef0ebae0222288823cff319b04fd9754bd26f8b7df1ba",
+      "sourceContentHash": "3135bbcf5148cc6e35f9302284035e5061be686e0816a1d86b95ec216ad1f73e",
+      "sourceSemanticHash": "94ddf42595dac3c917e4168cecd943005f45142a9587da014713b02ed3d98034",
+      "firstSolveRawSHA256": "8130e03f87a54085429ef0ebae0222288823cff319b04fd9754bd26f8b7df1ba",
+      "independentAnswer": [
+        "97/1536",
+        "59/512"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_0f80cc371103a5e8",
+            "ch_28912a61c33cf33d"
+          ],
+          "coordinateDifferences": [
+            "-9/2048",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_0f80cc371103a5e8",
+            "ch_9fe53192a4073b28"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/384"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_0f80cc371103a5e8",
+            "ch_78eb1a5725815fdf"
+          ],
+          "coordinateDifferences": [
+            "-9/2048",
+            "-1/384"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_28912a61c33cf33d",
+            "ch_9fe53192a4073b28"
+          ],
+          "coordinateDifferences": [
+            "9/2048",
+            "-1/384"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_28912a61c33cf33d",
+            "ch_78eb1a5725815fdf"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/384"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_9fe53192a4073b28",
+            "ch_78eb1a5725815fdf"
+          ],
+          "coordinateDifferences": [
+            "-9/2048",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:3/8;outer-fraction-up-to-reflection:1/3",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "361/6144",
+          "833/6144"
+        ],
+        "affineTrialSecondMoment": "11/128",
+        "survivingChoiceIds": [
+          "ch_0f80cc371103a5e8",
+          "ch_28912a61c33cf33d",
+          "ch_9fe53192a4073b28",
+          "ch_78eb1a5725815fdf"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_17fa149b0cf69f9d5a4e",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 14,
+      "rawSHA256": "043489f3dd10ee5f935e4d8aa4fb33bbbc7e1f680f8c7b4f4a298348bfb5ccd8",
+      "sourceContentHash": "d46a62dcd39f3444f6c22801841dffe8800914e17bbc726802ee161a3e65ae35",
+      "sourceSemanticHash": "57f4f28b1209e4c2ca908ddc2216865d841ad9b537394d3ff5ac8994cf5775f0",
+      "firstSolveRawSHA256": "043489f3dd10ee5f935e4d8aa4fb33bbbc7e1f680f8c7b4f4a298348bfb5ccd8",
+      "independentAnswer": [
+        "973/10935",
+        "281/2187"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_1650629db8c261ab",
+            "ch_2f69d591c6f2c8ca"
+          ],
+          "coordinateDifferences": [
+            "125/17496",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_1650629db8c261ab",
+            "ch_f38528b2abfc7e15"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_1650629db8c261ab",
+            "ch_ef67b62003b1f84f"
+          ],
+          "coordinateDifferences": [
+            "125/17496",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2f69d591c6f2c8ca",
+            "ch_f38528b2abfc7e15"
+          ],
+          "coordinateDifferences": [
+            "-125/17496",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2f69d591c6f2c8ca",
+            "ch_ef67b62003b1f84f"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_f38528b2abfc7e15",
+            "ch_ef67b62003b1f84f"
+          ],
+          "coordinateDifferences": [
+            "125/17496",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:5/9;outer-fraction-up-to-reflection:1/5",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "121/1620",
+          "11/81"
+        ],
+        "affineTrialSecondMoment": "1/9",
+        "survivingChoiceIds": [
+          "ch_1650629db8c261ab",
+          "ch_2f69d591c6f2c8ca",
+          "ch_f38528b2abfc7e15",
+          "ch_ef67b62003b1f84f"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_7edf1557dfd9f0bc5d9e",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 15,
+      "rawSHA256": "03f9c7080ed7f5c9fdf705b606cd208fe8efd66638eda01e4d0e4244f723a2b5",
+      "sourceContentHash": "3df8e95294b1eb3c3be5d0e861c0c3853c3941724de898dce9587362f4a1c4cd",
+      "sourceSemanticHash": "8806f1045d52a9b8d8175fa6dcb855ddf611775a2161eb7e2d7e5bebe2d921ee",
+      "firstSolveRawSHA256": "03f9c7080ed7f5c9fdf705b606cd208fe8efd66638eda01e4d0e4244f723a2b5",
+      "independentAnswer": [
+        "5521/70875",
+        "1303/10125"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_5ab3a226793df72f",
+            "ch_2515aca163bc0480"
+          ],
+          "coordinateDifferences": [
+            "343/40500",
+            "1/162"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_5ab3a226793df72f",
+            "ch_0ae72d0db33e404c"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "1/162"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_5ab3a226793df72f",
+            "ch_7079ada07f5e5eeb"
+          ],
+          "coordinateDifferences": [
+            "343/40500",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2515aca163bc0480",
+            "ch_0ae72d0db33e404c"
+          ],
+          "coordinateDifferences": [
+            "-343/40500",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_2515aca163bc0480",
+            "ch_7079ada07f5e5eeb"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/162"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_0ae72d0db33e404c",
+            "ch_7079ada07f5e5eeb"
+          ],
+          "coordinateDifferences": [
+            "343/40500",
+            "-1/162"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:7/15;outer-fraction-up-to-reflection:2/7",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "243/3500",
+          "53/375"
+        ],
+        "affineTrialSecondMoment": "23/225",
+        "survivingChoiceIds": [
+          "ch_5ab3a226793df72f",
+          "ch_2515aca163bc0480",
+          "ch_0ae72d0db33e404c",
+          "ch_7079ada07f5e5eeb"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_7de848f4393af8870cd1",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 16,
+      "rawSHA256": "96dceccfee3370611170fe26a6bc06bfcb736ac016c03d104139347899d3521e",
+      "sourceContentHash": "670bec57b57eeeb7910eba20f36fd8362c0312d1906e4f75705aebaaa4da7a15",
+      "sourceSemanticHash": "36b54003cffe85a97b6ca2923508c06d3a38397d71511aea9177b29a904c588d",
+      "firstSolveRawSHA256": "96dceccfee3370611170fe26a6bc06bfcb736ac016c03d104139347899d3521e",
+      "independentAnswer": [
+        "571/8748",
+        "244/2187"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_8d354fdc769c06e8",
+            "ch_41a8028bf17e1d42"
+          ],
+          "coordinateDifferences": [
+            "-8/2187",
+            "1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_8d354fdc769c06e8",
+            "ch_8c231908104e6876"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_8d354fdc769c06e8",
+            "ch_ecce4c76ebc5fba5"
+          ],
+          "coordinateDifferences": [
+            "-8/2187",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_41a8028bf17e1d42",
+            "ch_8c231908104e6876"
+          ],
+          "coordinateDifferences": [
+            "8/2187",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_41a8028bf17e1d42",
+            "ch_ecce4c76ebc5fba5"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_8c231908104e6876",
+            "ch_ecce4c76ebc5fba5"
+          ],
+          "coordinateDifferences": [
+            "-8/2187",
+            "-1/2187"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:4/9;outer-fraction-up-to-reflection:1/4",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "169/2916",
+          "367/2916"
+        ],
+        "affineTrialSecondMoment": "7/81",
+        "survivingChoiceIds": [
+          "ch_8d354fdc769c06e8",
+          "ch_41a8028bf17e1d42",
+          "ch_8c231908104e6876",
+          "ch_ecce4c76ebc5fba5"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_c5127c9cb8db36a06e34",
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "instanceIndex": 17,
+      "rawSHA256": "68a322f8bb9f5f9bfc4eb22160a799b46732f1068973802cb4763d9041866918",
+      "sourceContentHash": "a96429f39c8f7eac734dda7d09c1c541b77887c75cc38d477548ca31516941c7",
+      "sourceSemanticHash": "b0e4367b0b6266b3d218d652670a34bcae9ead021875a7fc65c3f6f18cac9d29",
+      "firstSolveRawSHA256": "68a322f8bb9f5f9bfc4eb22160a799b46732f1068973802cb4763d9041866918",
+      "independentAnswer": [
+        "1957/19965",
+        "629/3993"
+      ],
+      "checks": [
+        {
+          "check": "Both active geometries are strictly interior and nonempty",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Central support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Central support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact mass",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Outer support exact first moment",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Centered variance expression for minimum",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Minimum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Maximum dual polynomial has the required leading and constraint terms",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Final selected literal pair matches independent integrals",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Displayed mass and first moment match the checked rational constraints",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "New constraint geometry is not an old mass/reflection alias",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_a965c50bee80bea4",
+            "ch_ee978a6f52c00260"
+          ],
+          "coordinateDifferences": [
+            "125/15972",
+            "9/2662"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_a965c50bee80bea4",
+            "ch_594683c31dbeaf5f"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "9/2662"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_a965c50bee80bea4",
+            "ch_534a75716fe63be0"
+          ],
+          "coordinateDifferences": [
+            "125/15972",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_ee978a6f52c00260",
+            "ch_594683c31dbeaf5f"
+          ],
+          "coordinateDifferences": [
+            "-125/15972",
+            "0"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_ee978a6f52c00260",
+            "ch_534a75716fe63be0"
+          ],
+          "coordinateDifferences": [
+            "0",
+            "-9/2662"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        },
+        {
+          "choiceIds": [
+            "ch_594683c31dbeaf5f",
+            "ch_534a75716fe63be0"
+          ],
+          "coordinateDifferences": [
+            "125/15972",
+            "-9/2662"
+          ],
+          "method": "nonzero exact rational coordinate difference"
+        }
+      ],
+      "normalizedTaskKey": "bounded-density-mass:5/11;outer-fraction-up-to-reflection:2/5",
+      "advancedFit": "olympiad",
+      "newTopicLocalIdeas": 0,
+      "meaningfulAdditionalCapacity": 1,
+      "simpleBoundReview": {
+        "necessaryMomentInterval": [
+          "2401/26620",
+          "683/3993"
+        ],
+        "affineTrialSecondMoment": "46/363",
+        "survivingChoiceIds": [
+          "ch_a965c50bee80bea4",
+          "ch_ee978a6f52c00260",
+          "ch_594683c31dbeaf5f",
+          "ch_534a75716fe63be0"
+        ]
+      },
+      "analyticProofReview": "Bounded measurable densities give finite moments. The two exact active geometries meet both constraints. The quadratic with those boundaries has the correct sign on filled/unfilled sets, and constant/linear terms cancel by the two constraints. Both indicators are admissible, proving attained global extrema. No continuity is assumed or needed."
+    },
+    {
+      "problemId": "cn_qs_449fe738c5b136a72caa",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 0,
+      "rawSHA256": "6b0dfe0cd694062b272a6c489a0db3a760e9e5a1329a9a7b27c1e2c5559d4c6b",
+      "sourceContentHash": "f4b504c5e4cf51a9cb1f117a42c7c0904cfe88440fc0422983683cde93da4287",
+      "sourceSemanticHash": "b1f01b9879834264f6cb88b1f2a03e52e09c02d66e6692a23e77d37e709915e1",
+      "firstSolveRawSHA256": "5066ac9bb4f929d4ba082b87415d40d7970b3d2fbc8802e77befb219fcaa5723",
+      "independentAnswer": [
+        "Mul(Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_34ba9628be86f22f",
+            "ch_242b32887911968a"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_34ba9628be86f22f",
+            "ch_25336d11599c47ea"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_34ba9628be86f22f",
+            "ch_bdb2a3bc4faceba8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_242b32887911968a",
+            "ch_25336d11599c47ea"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_242b32887911968a",
+            "ch_bdb2a3bc4faceba8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_25336d11599c47ea",
+            "ch_bdb2a3bc4faceba8"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:1/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 1,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_89d05d4ea99280f3a56b",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 1,
+      "rawSHA256": "a86201ef6629608a78d51f9628624983885e75577d0249d22f5e9e40c0eaf988",
+      "sourceContentHash": "55ded56f401f3302823c8b683b55066b0cc79f951cd83c19b3b19607ea68e4c9",
+      "sourceSemanticHash": "0cfca25f15b96cb0c4928bea88144c07cb5a2d2b25db9219e5c7cbf29ebe4971",
+      "firstSolveRawSHA256": "2eca25c4161f3e24691ccbe2339c25a52f50590a9cf0d7c5be7d30173e8b6058",
+      "independentAnswer": [
+        "pi",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_b5c08676f6b35bbf",
+            "ch_12a55fa13563e472"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_b5c08676f6b35bbf",
+            "ch_a8a5cb92f66c39a5"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_b5c08676f6b35bbf",
+            "ch_9c028a0ad5b7a742"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_12a55fa13563e472",
+            "ch_a8a5cb92f66c39a5"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_12a55fa13563e472",
+            "ch_9c028a0ad5b7a742"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_a8a5cb92f66c39a5",
+            "ch_9c028a0ad5b7a742"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:1",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_6a3cf76f66fa622d1615",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 2,
+      "rawSHA256": "8aa3ed06dd901f498d37219ccd0c80fc67e2b1498c076e1a574896533adecdcc",
+      "sourceContentHash": "9bb466ebb39808ec879cbbc53c184c9a581df9ad8a1d033726b7298091f8ec4b",
+      "sourceSemanticHash": "00f1e62ae52348d9a0e798b2e7d65ddc8d27f519ff1bac60e24f79528dbca74f",
+      "firstSolveRawSHA256": "153db9b9aa6c1f91e749ff028f500e7172af66fec38a0224212e2269779851aa",
+      "independentAnswer": [
+        "Mul(Integer(2), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(3, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_1c9150fd2c0c436e",
+            "ch_126750240d4c8e20"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_1c9150fd2c0c436e",
+            "ch_d9c186ef9a8665ba"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_1c9150fd2c0c436e",
+            "ch_56e2f7f63ded8547"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_126750240d4c8e20",
+            "ch_d9c186ef9a8665ba"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_126750240d4c8e20",
+            "ch_56e2f7f63ded8547"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d9c186ef9a8665ba",
+            "ch_56e2f7f63ded8547"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:3/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_6e27ffb36f290db318b0",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 3,
+      "rawSHA256": "ab9bb585f22ec4ccef2b3fb4510abc5f39f4d699e72d778cd0362fcf62f0d8ff",
+      "sourceContentHash": "1c634c34b0d6cc010ae4379c6b1443ae91ab6399b02d4d9c8ad37ae8d1a3395d",
+      "sourceSemanticHash": "1c2bf74302d4edb1089c1f6f989d5240a54e0ae43c102692d38e8e340c582ef0",
+      "firstSolveRawSHA256": "c33716dcbb0e9b86351e2a1865877afaec69bbeef59fa3e75f5e49a5472ebf69",
+      "independentAnswer": [
+        "Integer(1)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Independent polynomial beta integral for even integer shape",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_fb500ba8129175b0",
+            "ch_66a55cbb7cfc06ae"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_fb500ba8129175b0",
+            "ch_2f1e9e62fa68970f"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_fb500ba8129175b0",
+            "ch_e9367c671f3a6d72"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_66a55cbb7cfc06ae",
+            "ch_2f1e9e62fa68970f"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_66a55cbb7cfc06ae",
+            "ch_e9367c671f3a6d72"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_2f1e9e62fa68970f",
+            "ch_e9367c671f3a6d72"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_f6058301bd9ca79b9fa2",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 4,
+      "rawSHA256": "d916e564b9259fb17cb9c6b6224d24ad7ab9e7708284baa5da6ef7b75f20d9ec",
+      "sourceContentHash": "bd3cc1cfdcfdbe744619f7c709955185afa012a3ea3a26c7fbc534d7d7b0bab4",
+      "sourceSemanticHash": "69368bb6f2d01aee10b77c77f3d5729c8d0848c6e1abc2f6520d84180ede21b4",
+      "firstSolveRawSHA256": "1ca51a06eca8d3daacb04aca69970620851d04cde30c201a781473ba2cfb517e",
+      "independentAnswer": [
+        "Mul(Rational(1, 12), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_d716c9c6fdfb3171",
+            "ch_7ee5487ece3191c6"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_d716c9c6fdfb3171",
+            "ch_017de0898a5bc8f8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d716c9c6fdfb3171",
+            "ch_01d259a4ea435d5a"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_7ee5487ece3191c6",
+            "ch_017de0898a5bc8f8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_7ee5487ece3191c6",
+            "ch_01d259a4ea435d5a"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_017de0898a5bc8f8",
+            "ch_01d259a4ea435d5a"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:5/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_381675d2e5fb4378e65c",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 5,
+      "rawSHA256": "2fac91a8b136c98dd0a917eb2a84fbd863b54f48df34506a8283cd198748e2dc",
+      "sourceContentHash": "c11108ab6cae0304342c3318d8768030855a8a3f96cdc9cc1e7fbbb1e3684b71",
+      "sourceSemanticHash": "5cce8f308c80ac3be2762a75ed780516f78a7d370a4d13f8c9dd26543433b4ec",
+      "firstSolveRawSHA256": "f069fa9326ccc16278cd6d91a385145c8f5bfc068bd33c56a2c090692ca58c8e",
+      "independentAnswer": [
+        "Mul(Rational(1, 8), pi)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_13abfca749a281cb",
+            "ch_140b3ebd89b8fcd4"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_13abfca749a281cb",
+            "ch_b40cd4e52d0a26de"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_13abfca749a281cb",
+            "ch_0287afd4f4a5f1a5"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_140b3ebd89b8fcd4",
+            "ch_b40cd4e52d0a26de"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_140b3ebd89b8fcd4",
+            "ch_0287afd4f4a5f1a5"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_b40cd4e52d0a26de",
+            "ch_0287afd4f4a5f1a5"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:3",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_33aff548bef7cc8a511d",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 6,
+      "rawSHA256": "a2d7d3c0ccc1ced648b4897a5e79a5434bf873b3dcabe05f73d448b342c69115",
+      "sourceContentHash": "4ac9531e476464e3fa50c893eadda082db9609b24840f2eac15696712c70d725",
+      "sourceSemanticHash": "a68562bfb889dabee987797719c23b6a4a7261e3471e746a75f1be0fbee0c2c4",
+      "firstSolveRawSHA256": "e121644ef7ccba332eba4f66b88c203c009e6f94d3bc28dec069631f9dc65106",
+      "independentAnswer": [
+        "Mul(Rational(3, 10), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(3, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_858cce37ac3d26c6",
+            "ch_ba389493e56a75eb"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_858cce37ac3d26c6",
+            "ch_47e2510d0ce0f39a"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_858cce37ac3d26c6",
+            "ch_3a6745c8bc927b38"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_ba389493e56a75eb",
+            "ch_47e2510d0ce0f39a"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_ba389493e56a75eb",
+            "ch_3a6745c8bc927b38"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_47e2510d0ce0f39a",
+            "ch_3a6745c8bc927b38"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:7/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_eb9f523109489b522360",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 7,
+      "rawSHA256": "e32f93e51122bce13997ca5f9aa585833813e4bd9df8593771d0c6eba19384d7",
+      "sourceContentHash": "f8ff9b3bc145705a4ad9cf3a0dafc010bab72959a88bab03d232553e06a84d5d",
+      "sourceSemanticHash": "77072a3fa1af0dbc4ce5c901ea9106aa5ebd247e5f7d5b17dceb9008ea4de1d9",
+      "firstSolveRawSHA256": "bd63060c86b604525b90da5887230841ef634c3d270fc67636d9dc6923fd64d9",
+      "independentAnswer": [
+        "Rational(1, 6)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Independent polynomial beta integral for even integer shape",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_033bc6b6a5dde475",
+            "ch_7d4e0bbece6830e2"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_033bc6b6a5dde475",
+            "ch_f2991fc410c3545f"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_033bc6b6a5dde475",
+            "ch_d0db659eee117684"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_7d4e0bbece6830e2",
+            "ch_f2991fc410c3545f"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_7d4e0bbece6830e2",
+            "ch_d0db659eee117684"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_f2991fc410c3545f",
+            "ch_d0db659eee117684"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:4",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_815f4f1738fd4f0356b2",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 8,
+      "rawSHA256": "2e738e72a080d6f0e9b7242a64c9ccc2303e288cd63345b3b44f5458e6aff3e0",
+      "sourceContentHash": "99ddaf9d47bf2843716361bdd9a334b43ed5d66edc707fd96bb5c1c937220977",
+      "sourceSemanticHash": "807d98103f8915ab05a29612e953b98b7d8751f508ac422a26c0ae053b7bb0ca",
+      "firstSolveRawSHA256": "8e82ef1ebec956cff9c9c725bf9ddb4dd45c5d59d5ff87bbfcddbee4f5334655",
+      "independentAnswer": [
+        "Mul(Rational(5, 336), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_46fa9566d25f2472",
+            "ch_e0fc6bf4daa6f69d"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_46fa9566d25f2472",
+            "ch_0ed4461af3e92677"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_46fa9566d25f2472",
+            "ch_984664bb00fcb009"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_e0fc6bf4daa6f69d",
+            "ch_0ed4461af3e92677"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_e0fc6bf4daa6f69d",
+            "ch_984664bb00fcb009"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_0ed4461af3e92677",
+            "ch_984664bb00fcb009"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:9/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_47c517d5644f52aa05fb",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 9,
+      "rawSHA256": "b00c471b2f2f61d6d93def4c5361e2e8eeab8fa06b146e2a33303aafd272d766",
+      "sourceContentHash": "187c02363005be6917c12eaf9a9455645da054b1c5993a237e5b2164f6071465",
+      "sourceSemanticHash": "d35856917f66bdd15c71db5f1b0befaca93f5e2499e7f676f5493e3662d77703",
+      "firstSolveRawSHA256": "de1c21798cfd03898c8df01795c7e4c1daac5266ba5f3ac3a6b2877d8332181d",
+      "independentAnswer": [
+        "Mul(Rational(3, 128), pi)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_579ee8dec319d395",
+            "ch_e5f69519bfd118b8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_579ee8dec319d395",
+            "ch_792d5a2159e19fea"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_579ee8dec319d395",
+            "ch_832f158e718f7ba8"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_e5f69519bfd118b8",
+            "ch_792d5a2159e19fea"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_e5f69519bfd118b8",
+            "ch_832f158e718f7ba8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_792d5a2159e19fea",
+            "ch_832f158e718f7ba8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:5",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_00a14b57ea1f1abc89b6",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 10,
+      "rawSHA256": "9ca2851e892ec046879dc895bd7eb70684d45fb3dedcbfd9efa83284a63978d6",
+      "sourceContentHash": "d3a9717d7c10bdfb826e2b103be266c56d13c33c690560c29f569cc8584cae7e",
+      "sourceSemanticHash": "90771ebf4372e7ffbbd4381f91f24c740e9f4b37a4a16fb33a37b5f366e71b03",
+      "firstSolveRawSHA256": "f8677cc570170ca309c2ffc14fa5e11b7fcd70662b1e7a5d577a95dcaa40c899",
+      "independentAnswer": [
+        "Mul(Rational(7, 120), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(3, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_54c7797eb696a905",
+            "ch_300396d8dfc0a94a"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_54c7797eb696a905",
+            "ch_2d18ed3d7c83c617"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_54c7797eb696a905",
+            "ch_d0e4363165a3c136"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_300396d8dfc0a94a",
+            "ch_2d18ed3d7c83c617"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_300396d8dfc0a94a",
+            "ch_d0e4363165a3c136"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_2d18ed3d7c83c617",
+            "ch_d0e4363165a3c136"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:11/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_9606cd6e2c7169478709",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 11,
+      "rawSHA256": "fe60380207a3e0d9c48e349c43f3f44626dd91b325ab8bb27609e4d9b387e176",
+      "sourceContentHash": "f1ac46feff94ee27be438b33f4ea1622077bd3c10bccbddce8c60f01898e91c6",
+      "sourceSemanticHash": "4194f99af090ee2c1ad73caecaa44a51516d060da30ff12db4b0dd5346c8adfd",
+      "firstSolveRawSHA256": "25b304ba664a8373df3334b82f5ae0c4dd8aabee1216df214c8d4a0738fe5fd5",
+      "independentAnswer": [
+        "Rational(1, 30)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Independent polynomial beta integral for even integer shape",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_a886b9762ed99a5e",
+            "ch_aff74fee2714fde5"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_a886b9762ed99a5e",
+            "ch_3c993a52ad7b858d"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_a886b9762ed99a5e",
+            "ch_2d43ea6386be6785"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_aff74fee2714fde5",
+            "ch_3c993a52ad7b858d"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_aff74fee2714fde5",
+            "ch_2d43ea6386be6785"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_3c993a52ad7b858d",
+            "ch_2d43ea6386be6785"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:6",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_4137e173b17a4f743036",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 12,
+      "rawSHA256": "51928a77adb89b85c877a6779e4c425ba7b88df40699dd9ab6263b6e82f24e86",
+      "sourceContentHash": "651ed132ea34f9973da9350840799c7f2898d14d5ee66ea6d08e261d670b317a",
+      "sourceSemanticHash": "3a7c5712918bc4caabd0d6de303b0ea7bca1a1121c66ba5fb3ef10bc49b7e6d2",
+      "firstSolveRawSHA256": "8efe4fb372c4ebea6e70f72382bc3135ae76729c1ab8261a6515b9cd44a2a15a",
+      "independentAnswer": [
+        "Mul(Rational(15, 4928), Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_d42ac070f9e7015d",
+            "ch_ff1ce495f80298a8"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d42ac070f9e7015d",
+            "ch_a6f97695f94bfc9c"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d42ac070f9e7015d",
+            "ch_1e3c8aa6c3424313"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_ff1ce495f80298a8",
+            "ch_a6f97695f94bfc9c"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "-1",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_ff1ce495f80298a8",
+            "ch_1e3c8aa6c3424313"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_a6f97695f94bfc9c",
+            "ch_1e3c8aa6c3424313"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1",
+          "attainmentDiffers": true
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:13/2",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    },
+    {
+      "problemId": "cn_qs_87c1ead92412b79ea9e5",
+      "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "instanceIndex": 13,
+      "rawSHA256": "d62658f8ed008d678a5e7d24a4952f8a43fe15ca2d46ae16fedc39a57ba2608e",
+      "sourceContentHash": "fda7165dbdc46c8fa9176b9a23babb4a0b8bffd1e96b41130e68a42cff9b7ac5",
+      "sourceSemanticHash": "cc38d960f412fb8547517981f1725306d9dd1366a60d0df68cddcf072d7cbf8a",
+      "firstSolveRawSHA256": "6ca68873fe2fd3602e2025b150530a748b6d864e0fbdadacd833080e20276722",
+      "independentAnswer": [
+        "Mul(Rational(5, 1024), pi)",
+        "no"
+      ],
+      "checks": [
+        {
+          "check": "Positive shape makes the convolution kernel integrable at both tails",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Degree-minus-one homogeneity preserves the L2 quadratic form",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Log-coordinate transformed kernel via positive ratio z",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Beta substitution z=u/(1-u) gives symmetric endpoint powers",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Translation-defect algebra contains the exact half factor",
+          "method": "independently encoded exact identity",
+          "passed": true
+        },
+        {
+          "check": "Literal kernel exponent matches actual finite shape",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Nonnegative and finite nonzero L2 domain is explicit",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The preserved correct literal choice is the independently derived constant and nonattainment",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "The unnamed requested quadratic form is explicitly named before use",
+          "method": "exact rational/domain condition",
+          "passed": true
+        },
+        {
+          "check": "Gamma is defined in statement or explanation before its special-function evaluation",
+          "method": "exact rational/domain condition",
+          "passed": true
+        }
+      ],
+      "pairwiseCertificates": [
+        {
+          "choiceIds": [
+            "ch_86c935d7b03f6b7f",
+            "ch_d44cf4e211fedcb5"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        },
+        {
+          "choiceIds": [
+            "ch_86c935d7b03f6b7f",
+            "ch_0980ff5c6bbcb512"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_86c935d7b03f6b7f",
+            "ch_a9b831667cd72caf"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d44cf4e211fedcb5",
+            "ch_0980ff5c6bbcb512"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "-1/2",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_d44cf4e211fedcb5",
+            "ch_a9b831667cd72caf"
+          ],
+          "method": "Different attainment labels",
+          "constantMultiplierDifference": "0",
+          "attainmentDiffers": true
+        },
+        {
+          "choiceIds": [
+            "ch_0980ff5c6bbcb512",
+            "ch_a9b831667cd72caf"
+          ],
+          "method": "Distinct rational multiples of the strictly positive beta integral",
+          "constantMultiplierDifference": "1/2",
+          "attainmentDiffers": false
+        }
+      ],
+      "normalizedTaskKey": "continuous-homogeneous-Hilbert-shape:7",
+      "advancedFit": "olympiad",
+      "meaningfulAdditionalCapacity": 1,
+      "newTopicLocalIdeas": 0,
+      "globalRelatedLineage": "Hilbert-Schur sharpness, shared with the existing series Hilbert inequality; not a new global method",
+      "analyticProofReview": "The logarithmic map is an L2 isometry. Nonnegativity permits Tonelli before finiteness is known. Cauchy-Schwarz bounds every translation correlation and the exponentially decaying positive kernel has finite beta mass. Unit-norm long interval indicators have triangular correlations converging pointwise to1, with the kernel as an integrable majorant. Thus the exact bound is sharp. Equality forces translation defects to vanish for almost every nonzero shift; even one such shift makes a nonzero L2 function periodic, impossible. Strong continuity extends the stated argument to every shift. This is a complete sharpness/nonattainment proof, not just a formal candidate eigenfunction."
+    }
+  ],
+  "scope": "Independent mathematical and options-visible review of all22 root-authored headroom cases, with no author constructor/answer-function imports. Statement-first solves preceded reading supplied proof steps; the intended Hilbert method had already been disclosed.",
+  "limits": "Exact algebra and domain checks support separately reviewed analytic arguments. No formal or human proof is claimed. Parent owns final canonical import, syntax/form screening and global taxonomy.",
+  "humanReviewed": false,
+  "formalProof": false,
+  "admitted": false
+}

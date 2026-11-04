@@ -1,0 +1,14 @@
+{
+  "status": "preserved-failed-assertion",
+  "command": "node scripts/bank/quality/peer/series_baseline_rebind.mjs",
+  "assertion": "Baseline option source mismatch cn_14548a4bde5e733dd489",
+  "cause": "The initial reconciliation incorrectly expected baseline-options.jsonl choice math to equal unpresented published canonical choice math. The export retains the exact published contentHash and choice IDs but applies the pinned baseline presenter, including log to ln notation normalization.",
+  "observedExample": {
+    "problemId": "cn_14548a4bde5e733dd489",
+    "publishedAndExportContentHash": "f9101163e83f85f9f1a53e0a5dfe924c60b41b600c5a6779e6c51ec9158748f8",
+    "canonicalCorrectMath": "\\log{\\left(\\frac{4}{3} \\right)}",
+    "exportCorrectMath": "\\ln{\\left(\\frac{4}{3} \\right)}"
+  },
+  "resolution": "Keep the exact published hash/revision/answer-choice join and compare export choices to the pinned presentBankProblem output, not raw canonical math. No published record, export, prior audit, or threshold is changed.",
+  "scope": "This failure concerns source representation, not a mathematical answer discrepancy. Final source checks must pass for every one of the 384 published series records."
+}

@@ -1,7 +1,7 @@
 import type { ProblemReference, RoundSnapshot, ProblemPedagogy } from './bank/contracts.ts';
 import { finite, getStandings, type GameMode } from './progression.ts';
 
-export interface GameQuestion extends Partial<ProblemReference> { templateVersion?:string; solutionReviewVersion?:string; pedagogy?: ProblemPedagogy; context?: {assumptions:string[];subtopic:string;techniqueTags:string[];parameters:Record<string,number>}; latexProblem: string; options: string[]; correctIndex: number; explanation: string | string[]; topic: string; difficulty: string }
+export interface GameQuestion extends Partial<ProblemReference> { legacy?:boolean; contentNotice?:import('./bank/contracts.ts').ContentNotice; contentAttribution?:import('./bank/contracts.ts').ContentCredit; templateVersion?:string; solutionReviewVersion?:string; pedagogy?: ProblemPedagogy; context?: {assumptions:string[];subtopic:string;techniqueTags:string[];parameters:Record<string,number>}; latexProblem: string; options: string[]; correctIndex: number; explanation: string | string[]; topic: string; difficulty: string }
 export interface SavedAnswer { selectedOption: number; correct: boolean; xp: number; timeMs: number; serverEventId?:string; requestId?:string; acceptedAt?:number }
 export interface MatchSettings { category?: string; difficulty?: string; winCondition: 'first_to_n' | 'time_limit'; targetScore: number; timeLimit: number; penalties: boolean }
 export interface ResultReceipt { ratingChange: number; newRating: number; topicChanges: Record<string, number>; outcome: string; rank: number; rated: boolean; counted: boolean; legacy?: boolean }

@@ -1,0 +1,309 @@
+[
+  {
+    "label": "Short: split at a cusp",
+    "problemId": "cn_e42ff62e23e39eb36731",
+    "statement": "\\int_0^{24}|x-12|\\,\\mathrm{d}x",
+    "choices": [
+      {
+        "choiceId": "ch_122492ea6f5a7276",
+        "math": "144",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_e1b1db02fca799bd",
+        "math": "0",
+        "misconception": "omit absolute value"
+      },
+      {
+        "choiceId": "ch_620387ea28ecf97b",
+        "math": "288",
+        "misconception": "use rectangles instead of triangles"
+      },
+      {
+        "choiceId": "ch_51229bb4fd60a7de",
+        "math": "216",
+        "misconception": "treat one lobe as a rectangle and the other as a triangle"
+      }
+    ],
+    "answerChoiceId": "ch_122492ea6f5a7276",
+    "steps": [
+      "|x-12|=\\begin{cases}12-x,&0\\le x\\le 12,\\\\x-12,&12\\le x\\le 24.\\end{cases}",
+      "\\int_0^{24}|x-12|\\,\\mathrm dx=\\int_0^{12}(12-x)\\,\\mathrm dx+\\int_{12}^{24}(x-12)\\,\\mathrm dx",
+      "72+72=144",
+      "144"
+    ]
+  },
+  {
+    "label": "Long solution",
+    "problemId": "cn_f1b8cd7a5424bcf6bad3",
+    "statement": "\\textnormal{Let f range over nonnegative measurable real functions with the stated finite nonzero squared integral. Find the ordered pair consisting of the smallest constant C valid for every such f and yes or no to whether equality holds for any such f.}\\quad0<\\int_0^\\infty f(x)^2\\,\\mathrm dx<\\infty,\\qquad\\int_0^\\infty\\int_0^\\infty \\frac{(xy)^{\\frac{11}{4}}}{(x+y)^{\\frac{13}{2}}}f(x)f(y)\\,\\mathrm dx\\,\\mathrm dy\\le C\\int_0^\\infty f(x)^2\\,\\mathrm dx.\\quad\\Gamma(z)=\\int_0^\\infty t^{z-1}e^{-t}\\,\\mathrm dt\\quad(z>0).",
+    "choices": [
+      {
+        "choiceId": "ch_d42ac070f9e7015d",
+        "math": "\\left(\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{2464 \\sqrt{\\pi}},\\ \\textnormal{no}\\right)",
+        "misconception": "Count both logarithmic orientations twice"
+      },
+      {
+        "choiceId": "ch_ff1ce495f80298a8",
+        "math": "\\left(\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4928 \\sqrt{\\pi}},\\ \\textnormal{yes}\\right)",
+        "misconception": "Treat the nonintegrable constant in logarithmic coordinates as an admissible extremizer"
+      },
+      {
+        "choiceId": "ch_a6f97695f94bfc9c",
+        "math": "\\left(\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{2464 \\sqrt{\\pi}},\\ \\textnormal{yes}\\right)",
+        "misconception": "Combine the kernel normalization and attainment mistakes"
+      },
+      {
+        "choiceId": "ch_1e3c8aa6c3424313",
+        "math": "\\left(\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4928 \\sqrt{\\pi}},\\ \\textnormal{no}\\right)",
+        "misconception": "correct"
+      }
+    ],
+    "answerChoiceId": "ch_1e3c8aa6c3424313",
+    "steps": [
+      "\\textnormal{Denote the double integral in the question by J. Define the Gamma function used below.}",
+      "J(f)=\\int_0^\\infty\\int_0^\\infty \\frac{(xy)^{\\frac{11}{4}}}{(x+y)^{\\frac{13}{2}}}f(x)f(y)\\,\\mathrm dx\\,\\mathrm dy,\\qquad\\Gamma(z)=\\int_0^\\infty t^{z-1}e^{-t}\\,\\mathrm dt\\quad(z>0).",
+      "\\textnormal{Use logarithmic coordinates to expose the scale invariance. Define the positive shape parameter and the isometric change of unknown.}",
+      "p=\\frac{13}{2},\\quad x=e^u,\\quad g(u)=e^{u/2}f(e^u),\\qquad\\int_0^\\infty f(x)^2\\,\\mathrm dx=\\int_{\\mathbb R}g(u)^2\\,\\mathrm du.",
+      "\\textnormal{All original factors, including both Jacobians, combine into a kernel depending only on the difference of the logarithmic coordinates.}",
+      "k_p(t)=(2\\cosh(t/2))^{-p}>0,\\qquad J(f)=\\int_{\\mathbb R}k_p(t)\\left(\\int_{\\mathbb R}g(u)g(u-t)\\,\\mathrm du\\right)\\mathrm dt.",
+      "\\textnormal{Translation preserves the squared integral. Cauchy\u2013Schwarz bounds each inner correlation by that integral. Tonelli applies because the functions and kernel are nonnegative.}",
+      "J(f)\\le C_p\\int_{\\mathbb R}g(u)^2\\,\\mathrm du,\\qquad C_p=\\int_{\\mathbb R}k_p(t)\\,\\mathrm dt.",
+      "\\textnormal{With the exponential substitution, the kernel mass is an Euler beta integral. Both endpoints converge because the shape parameter is positive.}",
+      "z=e^t,\\qquad C_p=\\int_0^\\infty\\frac{z^{p/2-1}}{(1+z)^p}\\,\\mathrm dz=\\frac{\\Gamma(p/2)^2}{\\Gamma(p)}=\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4928 \\sqrt{\\pi}}.",
+      "\\textnormal{To prove this constant cannot be lowered, use normalized indicators of longer and longer intervals in logarithmic coordinates.}",
+      "g_L(u)=\\frac{\\mathbf1_{[-L,L]}(u)}{\\sqrt{2L}},\\quad\\int_{\\mathbb R}g_L^2=1,\\quad\\int_{\\mathbb R}g_L(u)g_L(u-t)\\,\\mathrm du=\\max\\!\\left(1-\\frac{|t|}{2L},0\\right).",
+      "f_L(x)=\\frac{\\mathbf1_{[e^{-L},e^L]}(x)}{\\sqrt{2Lx}},\\qquad J(f_L)\\longrightarrow C_p\\quad(L\\to\\infty).",
+      "\\textnormal{Dominated convergence applies with the integrable kernel as majorant. These are admissible nonzero functions for every positive L, so the bound is sharp.}",
+      "\\textnormal{Finally, equality would make every translation defect vanish for almost every shift. The following nonnegative identity makes the obstruction explicit.}",
+      "C_p\\int_{\\mathbb R}g^2-J(f)=\\frac12\\int_{\\mathbb R}k_p(t)\\int_{\\mathbb R}(g(u)-g(u-t))^2\\,\\mathrm du\\,\\mathrm dt.",
+      "\\textnormal{Translations are continuous in the L2 norm. Since the kernel is strictly positive, equality forces translation invariance for every shift. A translation-invariant L2 function on the real line is constant almost everywhere, and the only such square-integrable constant is zero. This contradicts the required nonzero squared integral.}",
+      "\\left(\\frac{15 \\Gamma^{2}\\left(\\frac{1}{4}\\right)}{4928 \\sqrt{\\pi}},\\ \\textnormal{no}\\right)"
+    ]
+  },
+  {
+    "label": "Piecewise",
+    "problemId": "cn_0a0cb78a9a9213d83144",
+    "statement": "\\int_0^{26}|x-13|\\,\\mathrm{d}x",
+    "choices": [
+      {
+        "choiceId": "ch_3e643767a32e53a2",
+        "math": "169",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_baa46fd56e770f40",
+        "math": "\\frac{169}{2}",
+        "misconception": "count only one lobe"
+      },
+      {
+        "choiceId": "ch_e1b1db02fca799bd",
+        "math": "0",
+        "misconception": "omit absolute value"
+      },
+      {
+        "choiceId": "ch_b71fa6d90426eba3",
+        "math": "\\frac{507}{2}",
+        "misconception": "treat one lobe as a rectangle and the other as a triangle"
+      }
+    ],
+    "answerChoiceId": "ch_3e643767a32e53a2",
+    "steps": [
+      "|x-13|=\\begin{cases}13-x,&0\\le x\\le 13,\\\\x-13,&13\\le x\\le 26.\\end{cases}",
+      "\\int_0^{26}|x-13|\\,\\mathrm dx=\\int_0^{13}(13-x)\\,\\mathrm dx+\\int_{13}^{26}(x-13)\\,\\mathrm dx",
+      "\\frac{169}{2}+\\frac{169}{2}=169",
+      "169"
+    ]
+  },
+  {
+    "label": "Special function",
+    "problemId": "cn_ade3ca2ed01c195ca600",
+    "statement": "\\begin{gathered}\\Gamma(s)=\\int_0^\\infty t^{s-1}e^{-t}\\,\\mathrm{d}t\\ (s>0).\\\\\\int_{1}^{2} \\ln{\\left(\\Gamma\\left(x\\right) \\right)}\\,\\mathrm{d}x\\end{gathered}",
+    "choices": [
+      {
+        "choiceId": "ch_d0fb66d672cdbf66",
+        "math": "\\frac12\\ln\\!\\left(\\left(2 \\pi\\right)\\left(1\\right)^{2}\\right)-1",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_873c54e6861dfe49",
+        "math": "\\frac12\\ln\\!\\left(\\left(\\pi\\right)\\left(1\\right)^{2}\\right)-1",
+        "misconception": "Omit the factor two from the log-sine normalization"
+      },
+      {
+        "choiceId": "ch_d6e2d89a635409fd",
+        "math": "\\frac12\\ln\\!\\left(\\left(4 \\pi\\right)\\left(1\\right)^{2}\\right)-1",
+        "misconception": "Count the double-angle normalization twice"
+      },
+      {
+        "choiceId": "ch_76460c6aa9ae4fee",
+        "math": "\\frac12\\ln\\!\\left(\\left(\\pi^{2}\\right)\\left(1\\right)^{2}\\right)-1",
+        "misconception": "Miss the reflected averaging factor and the log-sine factor two"
+      }
+    ],
+    "answerChoiceId": "ch_d0fb66d672cdbf66",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "F(t)=\\int_t^{t+1}\\ln\\Gamma(x)\\,\\mathrm{d}x\\quad(t>0),\\qquad I=F(1)",
+      "F^{\\prime}(t)=\\ln\\Gamma(t+1)-\\ln\\Gamma(t)=\\ln t",
+      "F(t)=t\\ln t-t+C,\\quad C\\in\\mathbb R",
+      "F(0):=\\int_0^1\\ln\\Gamma(x)\\,\\mathrm{d}x=\\lim_{t\\downarrow0}F(t)",
+      "\\Gamma(x)\\Gamma(1-x)=\\frac\\pi{\\sin\\pi x}\\quad(0<x<1)",
+      "2F(0)=\\ln\\pi-\\int_0^1\\ln\\sin(\\pi x)\\,\\mathrm{d}x=\\ln(2\\pi)",
+      "\\text{Here the endpoint integral is improper and converges.}",
+      "S:=\\int_0^{\\pi/2}\\ln(\\sin t)dt=\\int_0^{\\pi/2}\\ln(\\cos t)dt",
+      "2S=\\frac12\\int_0^\\pi\\ln(\\sin u)du-\\frac\\pi2\\ln2=S-\\frac\\pi2\\ln2",
+      "\\int_0^1\\ln\\sin(\\pi x)dx=\\frac{2S}\\pi=-\\ln2",
+      "F(t)=t\\ln t-t+\\tfrac12\\ln(2\\pi)",
+      "I=-1 + \\frac{\\ln{\\left(2 \\pi \\right)}}{2}",
+      "-1 + \\frac{\\ln{\\left(2 \\pi \\right)}}{2}",
+      "\\textnormal{In the common form used by the choices, the result is}",
+      "\\frac12\\ln\\!\\left(\\left(2 \\pi\\right)\\left(1\\right)^{2}\\right)-1"
+    ]
+  },
+  {
+    "label": "Lattice sum",
+    "problemId": "cn_539984f19c83ba12793e",
+    "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 16}",
+    "choices": [
+      {
+        "choiceId": "ch_2914c5aa44785613",
+        "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{4}",
+        "misconception": "Return the full lattice expression without removing its zero mode or halving"
+      },
+      {
+        "choiceId": "ch_556dc40ff19270d3",
+        "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} + \\frac{15}{544}",
+        "misconception": "include the first term twice"
+      },
+      {
+        "choiceId": "ch_00a794a2e762dc5e",
+        "math": "\\frac{1}{17}",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_f0344da1a38f514e",
+        "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} - \\frac{1}{32}",
+        "misconception": "correct"
+      }
+    ],
+    "answerChoiceId": "ch_f0344da1a38f514e",
+    "steps": [
+      "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+      "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+      "z=4\\pi\\quad\\Longrightarrow\\quad\\coth(4\\pi)=\\frac1{4\\pi}+\\frac{8}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+16}",
+      "\\sum_{k=1}^\\infty\\frac1{k^2+16}=\\frac\\pi{8}\\left(\\coth(4\\pi)-\\frac1{4\\pi}\\right)=- \\frac{1}{32} + \\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8}",
+      "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} - \\frac{1}{32}"
+    ]
+  },
+  {
+    "label": "Licensed adaptation",
+    "problemId": "cn_55d76b4aca9fbbf4a573",
+    "statement": "\\textnormal{Approximate the integral by the first N terms of the displayed series, beginning with }n=0\\textnormal{. What is the least positive integer N for which the alternating-series remainder bound guarantees absolute error less than the stated tolerance?}\\quad I=\\int_0^1 e^{-x^2}\\,\\mathrm{d}x=\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{n!(2n+1)},\\qquad\\varepsilon=10^{-4}.",
+    "choices": [
+      {
+        "choiceId": "ch_ade1a1c2a61af0f2",
+        "math": "8",
+        "misconception": "Add an unnecessary term after the first omitted term already satisfies the tolerance"
+      },
+      {
+        "choiceId": "ch_d10a4bc9e0c1fa4e",
+        "math": "5",
+        "misconception": "Use the factorial alone and miscount the included zero-index term"
+      },
+      {
+        "choiceId": "ch_92e9e7e5922d26e1",
+        "math": "6",
+        "misconception": "Return the last included index rather than the number of terms"
+      },
+      {
+        "choiceId": "ch_266aa5886067fbbc",
+        "math": "7",
+        "misconception": "correct"
+      }
+    ],
+    "answerChoiceId": "ch_266aa5886067fbbc",
+    "steps": [
+      "\\textnormal{Let }S_N\\textnormal{ include the terms with indices zero through N minus one. The first omitted magnitude is }b_N\\textnormal{.}",
+      "S_N=\\sum_{n=0}^{N-1}\\frac{(-1)^n}{n!(2n+1)},\\qquad b_N=\\frac1{N!(2N+1)}.",
+      "\\textnormal{The magnitudes decrease to zero. The alternating-series theorem therefore bounds the error by the first omitted magnitude.}",
+      "\\frac{b_{n+1}}{b_n}=\\frac{2n+1}{(n+1)(2n+3)}<1\\quad(n\\ge0),\\qquad |I-S_N|\\le b_N.",
+      "b_6=\\frac1{9360}>10^{-4},\\qquad b_7=\\frac1{75600}<10^{-4}.",
+      "\\textnormal{Since these bounds decrease with N, every smaller positive N also fails the requested guarantee.}",
+      "N=7.",
+      "7"
+    ]
+  },
+  {
+    "label": "Harmonic notation",
+    "problemId": "cn_f8fee4a0ef3aef500028",
+    "statement": "H_n=\\sum_{j=1}^{n}\\frac1j,\\qquad\\zeta(3)=\\sum_{n=1}^{\\infty}\\frac1{n^3}.\\quad\\sum_{n=2}^{\\infty}\\frac{H_n}{n^2}=?",
+    "choices": [
+      {
+        "choiceId": "ch_91abe6ace0bb3b2c",
+        "math": "-1 + 2 \\zeta\\left(3\\right)",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_b94a258992d7e325",
+        "math": "-1 + 3 \\zeta\\left(3\\right)",
+        "misconception": "count the diagonal twice"
+      },
+      {
+        "choiceId": "ch_58f6fddc21a048d9",
+        "math": "2 \\zeta\\left(3\\right)",
+        "misconception": "retain the last excluded term"
+      },
+      {
+        "choiceId": "ch_51b787c925b202c8",
+        "math": "-2 + 4 \\zeta\\left(3\\right)",
+        "misconception": "double both symmetric and diagonal contributions"
+      }
+    ],
+    "answerChoiceId": "ch_91abe6ace0bb3b2c",
+    "steps": [
+      "S=\\sum_{n=1}^{\\infty}\\frac{H_n}{n^2},\\qquad B=\\sum_{u,v\\ge1}\\frac1{uv(u+v)}.",
+      "\\textnormal{The harmonic bound by one plus the natural logarithm proves S is finite. All terms in the double sum are nonnegative, allowing both regroupings.}",
+      "\\textnormal{First sum over v for fixed u. A telescoping reciprocal difference evaluates the inner sum.}",
+      "\\sum_{v=1}^{\\infty}\\frac1{v(u+v)}=\\frac{H_u}{u},\\qquad B=S.",
+      "\\textnormal{Next group by the total index n. The reciprocal numerator splits symmetrically, and the missing diagonal becomes a zeta term.}",
+      "\\sum_{u=1}^{n-1}\\frac1{u(n-u)}=\\frac{2H_{n-1}}n,\\qquad B=2\\sum_{n=1}^{\\infty}\\frac{H_{n-1}}{n^2}=2S-2\\zeta(3),\\quad H_0=0.",
+      "S=2\\zeta(3),\\qquad\\sum_{n=2}^{\\infty}\\frac{H_n}{n^2}=2\\zeta(3)-1=-1 + 2 \\zeta\\left(3\\right).",
+      "-1 + 2 \\zeta\\left(3\\right)"
+    ]
+  },
+  {
+    "label": "Multivariable",
+    "problemId": "cn_4aba2ca90b89ea3e653f",
+    "statement": "f(x,y)=\\frac{1x^2y}{x^4+y^2}+\\frac{2xy^2}{x^2+y^4}\\quad((x,y)\\ne(0,0)).\\textnormal{Find }\\limsup_{(x,y)\\to(0,0)}f(x,y).",
+    "choices": [
+      {
+        "choiceId": "ch_3f02791adb171778",
+        "math": "1",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_990c7a08d446fe59",
+        "math": "\\frac{3}{2}",
+        "misconception": "add incompatible individual maxima"
+      },
+      {
+        "choiceId": "ch_6256ec8daacb9116",
+        "math": "\\frac{\\sqrt{5}}{2}",
+        "misconception": "assume simultaneous circular tradeoff"
+      },
+      {
+        "choiceId": "ch_213066d977a04814",
+        "math": "2",
+        "misconception": "omit the sharp factor one half"
+      }
+    ],
+    "answerChoiceId": "ch_3f02791adb171778",
+    "steps": [
+      "\\textnormal{Denote the two fractions without their numerical coefficients by A and B. The square inequalities give }|A|\\le\\frac12,\\quad |B|\\le\\frac12,\\quad |AB|\\le|xy|.",
+      "\\textnormal{Consequently the smaller of their magnitudes tends to zero. Therefore }\\limsup f\\le\\frac12\\max\\{1,2\\}.",
+      "\\textnormal{Along }y=\\operatorname{sgn}(1)x^2,\\quad x>0,\\textnormal{ the first contribution tends to }\\frac{1}{2}\\textnormal{ and the second vanishes. Along }x=\\operatorname{sgn}(2)y^2,\\quad y>0,\\textnormal{ the roles reverse. The larger bound is attained as a path limit.}",
+      "1"
+    ]
+  }
+]

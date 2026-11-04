@@ -1,0 +1,2474 @@
+{
+  "status": "complete-source-bound-baseline-evidence-reconciliation",
+  "reviewer": "series_final_review",
+  "purpose": "Baseline metrics only; not admission, publication, new authorship or a fresh solution review of all 384 problems.",
+  "baselinePresenter": {
+    "pinnedCommit": "23825701acf97fdc0be425f350d0dc7030f3eb0b",
+    "codeRoot": ".bank-data/quality/baseline-source",
+    "currentCodeUsedOnlyAsFinalReference": true
+  },
+  "sourceArtifacts": [
+    {
+      "role": "published",
+      "path": "../milestone3/.bank-data/milestone3/release-v3/cn-2026-11-03-ideas-v3.jsonl",
+      "sha256": "1ede867c4db4d21a5e147824604ac9dd63241d3031371c465125975ab2d99677"
+    },
+    {
+      "role": "baselineOptions",
+      "path": ".bank-data/quality/baseline-options.jsonl",
+      "sha256": "227c032723662aa4ffcfde00dbab9dc511c909a6b80b5e4982ac28a8afe8de2b"
+    },
+    {
+      "role": "baselineOptionSummary",
+      "path": "docs/bank/problem-quality/baseline-option-summary.json",
+      "sha256": "6caf12bae17515c0b0e4955655922c66b1e28a9537d5a3d7d563dcafb0b73e04"
+    },
+    {
+      "role": "frozen",
+      "path": "scripts/bank/quality/series/bundles/existing/frozen-olympiad-review-input.json",
+      "sha256": "db0f9eceaa9e9b0ef9897e93349f68548d56ff348b37d41f16c1c93dd93ddb9e"
+    },
+    {
+      "role": "preview",
+      "path": "../quality-research/series-sources/existing-frozen/revision-candidates.jsonl",
+      "sha256": "3a147bdff751bfa8bdae2f7b1d2db6b8bbe0c6b95a03be13e81d8740d0e0a763"
+    },
+    {
+      "role": "peer",
+      "path": "docs/bank/problem-quality/series/existing-series-peer-review.json",
+      "sha256": "c2c5121ed10d33ba019892c225e380983323ed6b26de9532e69d32e82b84354a"
+    },
+    {
+      "role": "candidates",
+      "path": ".bank-data/quality/series-previews-v7/canonical-previews.jsonl",
+      "sha256": "3c7dc9001da42156891b6192ce4ba7df1f8359d97110559f02f49c095a4b63d3"
+    },
+    {
+      "role": "retained",
+      "path": ".bank-data/quality/series-previews-v7/retained-originals.jsonl",
+      "sha256": "2f60384e2d888c78afffa56e2c025635cebdf89105873c053a5f95ba22beada4"
+    },
+    {
+      "role": "map",
+      "path": "docs/bank/problem-quality/series/final-v7/item-group-map.json",
+      "sha256": "db300da7e85ae116c448087a2a340e0852fdbd248d99903ffeb604ef01adfd33"
+    },
+    {
+      "role": "finalReview",
+      "path": "docs/bank/problem-quality/series/final-v7/final-option-review.json",
+      "sha256": "4f06b5509ea69d6732afd8636065468d2892ba53d21ff6b5ae33136383d21509"
+    },
+    {
+      "role": "served",
+      "path": "docs/bank/problem-quality/series/final-v7/served-records.jsonl",
+      "sha256": "55858623d2c1e4ab0398b50c6e2bb339c013bfa10b1235092222f309507f4582"
+    },
+    {
+      "role": "pinnedDigests",
+      "path": "docs/bank/problem-quality/baseline-source-digests.json",
+      "sha256": "7a0673bdb24b63923f00ab985de81f56da142b889108b488ba71a917f8274b29"
+    },
+    {
+      "role": "script",
+      "path": "scripts/bank/quality/peer/series_baseline_rebind.mjs",
+      "sha256": "24cf4be9014359dab09c6360300ca47b101c1c6d0f9b52100d5c6a1d8794cd9f"
+    },
+    {
+      "role": "preservedFailure",
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-failures/baseline-option-canonical-menu-assumption.json",
+      "sha256": "810ae2133a474c8aa326853fe653f63ebfbfecdbdbe43dcafb54f86acbea536b"
+    },
+    {
+      "role": "preservedSerializationFailure",
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-failures/python-json-number-serialization.json",
+      "sha256": "bfd5ad7bb6fb86689da77e1024451ddd856a05d1861083216321e9abaf683d34"
+    },
+    {
+      "role": "pinned:lib/server/solution-presentation.mjs",
+      "path": ".bank-data/quality/baseline-source/lib/server/solution-presentation.mjs",
+      "sha256": "0ea218d8d7526380e6e1fff7929891319ed301b72c68cf51e963af736950e97b"
+    },
+    {
+      "role": "current:lib/server/solution-presentation.mjs",
+      "path": "lib/server/solution-presentation.mjs",
+      "sha256": "8a1dbac33d47beb914f405e32b55228bea617cf55ae8ff89e3718a04f2301ae8"
+    },
+    {
+      "role": "pinned:lib/server/solution-reviews/finite.json",
+      "path": ".bank-data/quality/baseline-source/lib/server/solution-reviews/finite.json",
+      "sha256": "bea0389f482fa1fbab1c148ce89b072a47b5b72629e8068419c37a76152a8fe4"
+    },
+    {
+      "role": "current:lib/server/solution-reviews/finite.json",
+      "path": "lib/server/solution-reviews/finite.json",
+      "sha256": "2ab83daa91c23507f007cfdc26c0861c3cf27099b5843713983c30c3d898ecd8"
+    },
+    {
+      "role": "pinned:lib/server/solution-reviews/legacy.mjs",
+      "path": ".bank-data/quality/baseline-source/lib/server/solution-reviews/legacy.mjs",
+      "sha256": "0efb0411fe080d3a60c45f8883069d256c24cc7d22b6ce0bfee3724bb5339375"
+    },
+    {
+      "role": "current:lib/server/solution-reviews/legacy.mjs",
+      "path": "lib/server/solution-reviews/legacy.mjs",
+      "sha256": "0efb0411fe080d3a60c45f8883069d256c24cc7d22b6ce0bfee3724bb5339375"
+    },
+    {
+      "role": "pinned:lib/server/solution-reviews/legacy-hashes.json",
+      "path": ".bank-data/quality/baseline-source/lib/server/solution-reviews/legacy-hashes.json",
+      "sha256": "7ff8723eec77bf7a8dc043c93ffec5ac3d170138b2c83835a8cf97f1d1f93b1c"
+    },
+    {
+      "role": "current:lib/server/solution-reviews/legacy-hashes.json",
+      "path": "lib/server/solution-reviews/legacy-hashes.json",
+      "sha256": "7ff8723eec77bf7a8dc043c93ffec5ac3d170138b2c83835a8cf97f1d1f93b1c"
+    },
+    {
+      "role": "pinned:lib/math-notation.mjs",
+      "path": ".bank-data/quality/baseline-source/lib/math-notation.mjs",
+      "sha256": "9f5a1ea3fe2a47c52307e4cf0e50b574cfd9fb6809f87d2e4ee5376cc4e37dca"
+    },
+    {
+      "role": "current:lib/math-notation.mjs",
+      "path": "lib/math-notation.mjs",
+      "sha256": "9f5a1ea3fe2a47c52307e4cf0e50b574cfd9fb6809f87d2e4ee5376cc4e37dca"
+    },
+    {
+      "role": "current:quality.json",
+      "path": "lib/server/solution-reviews/quality.json",
+      "sha256": "09b1de5b9e86471d7c29fa409ef798443709eb81846db9be88b8c30e16b8b950"
+    }
+  ],
+  "counts": {
+    "publishedReleaseRecords": 2504,
+    "publishedSeriesRecords": 384,
+    "publishedFamilies": 48,
+    "publishedDifficulties": {
+      "easy": 96,
+      "hard": 96,
+      "medium": 96,
+      "olympiad": 96
+    },
+    "sameIdAndSemanticGroupJoins": 384,
+    "exactPublishedOptionSourceJoins": 384,
+    "unchangedFinalCanonicalContentHashes": 132,
+    "frozenSolutionBindingsToFullPublishedRecord": 128,
+    "oldPeerRows": 72,
+    "oldPeerRowsWhoseCoverageHashMatchesPublished": 0,
+    "oldPeerRowsWhoseCoverageHashMatchesPreview": 72,
+    "oldPeerRawMenuMatchesPublished": 1,
+    "pinnedStatementMatchesFinal": 336,
+    "pinnedMenuMatchesFinal": 142,
+    "pinnedCorrectMathMatchesFinal": 368,
+    "pinnedWorkedStepsMatchFinal": 336,
+    "exactPinnedTaskWithEqualAssumptions": 122,
+    "exactPinnedTaskWithProvedImpliedAssumptions": 3,
+    "taskLevelReviewBindings": 125,
+    "publishedLabelFallbacks": 259,
+    "taskLevelOnlyOlympiad": 2,
+    "fullyQualifiedBaselineOlympiad": 0,
+    "fullyQualifiedBaselineOlympiadGroups": 0,
+    "fullyQualifiedBaselineOlympiadNormalizedTasks": 0,
+    "currentPresenterDiffersFromPinnedOriginal": 48,
+    "recommendedDifficultiesIncludingExplicitFallbacks": {
+      "easy": 96,
+      "hard": 97,
+      "medium": 96,
+      "olympiad": 95
+    }
+  },
+  "conclusion": "The 72-row peer coverage is authentic but binds a 128-record unpublished revision preview, including 71 changed menus. The frozen solution review separately binds 128 full published records exactly. Every original series row has a truthful published-hash group/task map. Only 125 exact pinned visible tasks can reuse later task-level review, including two theta tasks; original theta family menu context prevents transferring full qualification. Zero fully qualified original baseline series Olympiad records are currently demonstrated by this evidence.",
+  "limitations": [
+    "No fresh blind solving of all 384 problems; no human or player-calibration claim.",
+    "Same semantic hashes justify the same-mathematics lineage join, not menu, easiest-level or admission transfer.",
+    "Unsupported qualification means insufficient exact evidence in this report, not a proof that the mathematical problem cannot be Olympiad-level.",
+    "Recommended difficulty on 259 unmatched displays is explicitly the published-label fallback, not a new quality finding.",
+    "Choice order and choice IDs may differ where the literal math menu is the same; production shuffling makes author order irrelevant to this task equivalence, while immutable historical choice IDs remain unchanged.",
+    "The exact theta rank diagnostic is bounded to eight published cases. No general classifier or thresholds were changed."
+  ],
+  "families": [
+    {
+      "familyId": "m3-series-easy-alternating-absolute-conditional",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-arithmetic-triangle",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "integer-divisible-3",
+          "learnedOnlyFromTraining": true,
+          "training": {
+            "items": 4,
+            "applicable": 3,
+            "expectedTieBrokenAccuracy": 0.6458333333333334,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 1,
+            "expectedTieBrokenAccuracy": 0.3125,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-rank-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-binomial-total",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-direct-comparison-information",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-geometric-tail",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-linearity-given-convergent-sums",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "negative-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5208333333333333,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 1
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5208333333333333,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-nth-term-test",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 2,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-p-series-pair",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-power-series-radius",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5833333333333334,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 1
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-ratio-test-data",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 1,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 4
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "integerForm-min",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "length-minority",
+            "accuracy": 0.625,
+            "unique": 3,
+            "uniqueCorrect": 2
+          },
+          {
+            "rule": "integerForm-minority",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-rational-telescope",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-rank-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "shuffled-position-1",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "records": 8,
+      "publishedDifficulties": {
+        "easy": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "easy": 8
+      },
+      "exactPinnedTaskReviewBindings": 6,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "absolute-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-3",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-Catalan-generating",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-binomial-alternating-difference",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-rank-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-binomial-beta-cancellation",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.625,
+            "unique": 3,
+            "uniqueCorrect": 2
+          },
+          {
+            "rule": "numeric-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "numeric-rank-4",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-rank-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-conditional-block-rearrangement",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "fraction-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.625,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 1
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.875,
+            "uniquePredictions": 3,
+            "uniqueCorrect": 3
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "fraction-max",
+            "accuracy": 0.875,
+            "unique": 3,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "fraction-minority",
+            "accuracy": 0.8125,
+            "unique": 3,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-harmonic-generating",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-3",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-log-integrated-geometric",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "logarithm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.31249999999999994,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.2708333333333333,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-series-beta-integral",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-1",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-telescoping-arctan",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 6,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-1",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-hard-trig-geometric",
+      "records": 8,
+      "publishedDifficulties": {
+        "hard": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-alternating-error",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-arctangent-series",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-cosine-series",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-3",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-cubic-telescope",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-exponential-Taylor",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 1,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-rank-3",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "shuffled-position-2",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-logarithmic-series",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-negative-binomial",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-max",
+            "accuracy": 0.625,
+            "unique": 1,
+            "uniqueCorrect": 1
+          },
+          {
+            "rule": "numeric-rank-3",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-power-series-ratio-radius",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 2,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-quadratic-weight",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 1,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [
+          {
+            "rule": "shuffled-position-1",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-weighted-binomial-total",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "integer-divisible-8",
+            "accuracy": 0.7083333333333333,
+            "unique": 2,
+            "uniqueCorrect": 2
+          },
+          {
+            "rule": "integer-divisible-16",
+            "accuracy": 0.7083333333333333,
+            "unique": 2,
+            "uniqueCorrect": 2
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-medium-weighted-geometric",
+      "records": 8,
+      "publishedDifficulties": {
+        "medium": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "medium": 8
+      },
+      "exactPinnedTaskReviewBindings": 8,
+      "allFamilyVisibleTasksMatchFinal": true,
+      "frozenPublishedSolutionBindings": 0,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-Fourier-fourth-sine",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "hard": 1,
+        "olympiad": 7
+      },
+      "exactPinnedTaskReviewBindings": 1,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.75,
+            "unique": 2,
+            "uniqueCorrect": 2
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 1
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.125,
+            "uniquePredictions": 3,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-elliptic-central-binomial-square",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-over-shift",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-square-generating",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-hypergeometric-beta",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-inverse-binomial-arcsine",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "negative-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 1,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 4
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-log-sine-product",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 0,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 2,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "length-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.29166666666666663,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.20833333333333331,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 0
+          }
+        },
+        "flags": [],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    },
+    {
+      "familyId": "m3-series-olympiad-totient-Lambert",
+      "records": 8,
+      "publishedDifficulties": {
+        "olympiad": 8
+      },
+      "recommendedDifficultiesWithFallback": {
+        "olympiad": 8
+      },
+      "exactPinnedTaskReviewBindings": 0,
+      "allFamilyVisibleTasksMatchFinal": false,
+      "frozenPublishedSolutionBindings": 8,
+      "oldPreviewPeerBindings": 8,
+      "qualifiedOlympiad": 0,
+      "baselineGenericAudit": {
+        "items": 8,
+        "trainingCount": 4,
+        "heldoutCount": 4,
+        "selectedUsingTrainingOnly": {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.75,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        "flags": [
+          {
+            "rule": "numeric-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "absolute-max",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          },
+          {
+            "rule": "numeric-rank-4",
+            "accuracy": 0.75,
+            "unique": 4,
+            "uniqueCorrect": 3
+          }
+        ],
+        "limitedSample": true
+      },
+      "baselineGenericAuditScope": "Actual published choices after the pinned baseline presenter, original audit parser and finite split. No-flag does not prove absence of all cues.",
+      "baselineFamilyReviewInherited": false
+    }
+  ],
+  "humanReviewed": false,
+  "admitted": false,
+  "imported": false,
+  "active": false,
+  "outputs": [
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/assumption-implication-evidence.json",
+      "sha256": "f4eb72431cb6dd0a61ac65da5b5ac6f0be5cd98487efbed0ca1276d19b2af946"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/normalized-record-map.jsonl",
+      "sha256": "cb28e49c782909e3420705013c0bc192b0f0e1be8cfcbe797e384adec51ef127"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/peer-preview-joins.json",
+      "sha256": "f6452c874ee8dc432d8a7ddbc7a45e559e99f714d1fbc32a2edbe51ab68caa33"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/pinned-served-series.jsonl",
+      "sha256": "6fcf03fe3e80e9dad9e9870320271608df8db6f24f01f8ceb4c094f01c596af5"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/pinned-versus-current-original.json",
+      "sha256": "dd48ddf2871f9e4d5bd016a015bf2f08ba34876466ca74161d7bc6e890d2b854"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/published-series.jsonl",
+      "sha256": "baf31ac9cca265334c8a9f4ceec821e6a37042015433e5528fed7a4e7f5dfc7c"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/theta-baseline-family-rank.json",
+      "sha256": "abb3fcff34171cd8fe6759f7ebc383ba93d38e12ceabf508bca8767f3d3c9baa"
+    }
+  ]
+}

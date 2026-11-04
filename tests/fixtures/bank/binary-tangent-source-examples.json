@@ -1,0 +1,1754 @@
+[
+  {
+    "answerChoiceId": "ch_e0dbcded4236552a",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_e0dbcded4236552a",
+        "math": "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_7c3ac15a72dd9af4",
+        "math": "\\frac{1}{4} - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_aabf47fbffccb1b4",
+        "math": "\\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + 4",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_d6ed52ce9f3e26b7",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{8} \\right)}}{2} + 4",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "851b4872e95317cf6a627870e5ab3b8c88d55825126e7bef4df4e5d164726c87",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_fb6efac19477e8bfcbe5",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 4
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "a1097fdd90e33d58c762fd714a5ab64345c99c8f826b05cba2c66b9185f23f60",
+    "solutionSteps": [
+      "\\textnormal{Here }m=4.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{4} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 2,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "4",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "4"
+            },
+            {
+              "left": "4 - \\cot{\\left(\\frac{1}{4} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 2,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_8553b5170521ff53",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_8553b5170521ff53",
+        "math": "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_0816eccba792890d",
+        "math": "\\frac{5}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{5} \\right)}}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_0591419076b699c3",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_9e4adff77b900ad2",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "8759c1978a2d19752a4ba402bfaca37e3e9c98b196c54b2b9a2924b27aac953d",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_84a3f0b901bc6d22d72b",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 5
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "b667627597cd2149a5604b38ac960f1d5a67f47200d2966776ae9c15b8589f06",
+    "solutionSteps": [
+      "\\textnormal{Here }m=5.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{5} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "5",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "5"
+            },
+            {
+              "left": "5 - \\cot{\\left(\\frac{1}{5} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_71e98f2a0420fb36",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_71e98f2a0420fb36",
+        "math": "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_3a0d8da0058d4b3e",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2} + 6",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_ebb17b0946b98618",
+        "math": "\\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2}",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_2fc6b4c45e2441b7",
+        "math": "\\frac{1}{6} - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+        "misconception": "wrong differentiation or integration factor"
+      }
+    ],
+    "contentHash": "f669d351e230aa15034617be921b92a098779435d2f85f13338e12ff47cf08e7",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_f6773739ddb0c4c4283b",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 6
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "8da807601c63a0e1fb66f5d73167df84bd0db3402b57efa44d1a7dd7ccf7c8ef",
+    "solutionSteps": [
+      "\\textnormal{Here }m=6.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{6} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "6",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "6"
+            },
+            {
+              "left": "6 - \\cot{\\left(\\frac{1}{6} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_3e0b05d0a85b12e3",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_3e0b05d0a85b12e3",
+        "math": "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_c52f8154dc758caf",
+        "math": "\\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2}",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_1a33134d8e969efc",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2} + 7",
+        "misconception": "include the first term twice"
+      },
+      {
+        "choiceId": "ch_d23ec6d46bc1be28",
+        "math": "\\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + 7",
+        "misconception": "wrong starting index or omitted endpoint"
+      }
+    ],
+    "contentHash": "10dff706a96cbc0adf26fbc07686554a6d4bfd6755e61acdfd27c1503a68f4dd",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 3
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_bfa2bb14b0f03e050627",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 7
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "ebc4a48ff7ebfe616855de2b3192df790e0ea3a42fcc2a69c1f4accdfadd3d29",
+    "solutionSteps": [
+      "\\textnormal{Here }m=7.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{7} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 2,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "7",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "7"
+            },
+            {
+              "left": "7 - \\cot{\\left(\\frac{1}{7} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 2,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_0d131ee8345cbdea",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_0d131ee8345cbdea",
+        "math": "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_b5b6af9f2bdecccf",
+        "math": "\\frac{1}{8} - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_532c37d3eb55174e",
+        "math": "4 - \\frac{1}{2 \\tan{\\left(\\frac{1}{8} \\right)}}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_9cc656c7f96f75ce",
+        "math": "\\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}} + 8",
+        "misconception": "wrong starting index or omitted endpoint"
+      }
+    ],
+    "contentHash": "be195844609e54a0e1682176665f45119bde5d429d3563fe18d939e157911c67",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 4
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_59b96a09cb74e517a91f",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 8
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "b8d6cbeee5d9dfd085396a4689b9d041c3defa5357a9f5b58a62afbc9e96c7a8",
+    "solutionSteps": [
+      "\\textnormal{Here }m=8.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{8} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "8",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "8"
+            },
+            {
+              "left": "8 - \\cot{\\left(\\frac{1}{8} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_b4b5bda084fae4d8",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_b4b5bda084fae4d8",
+        "math": "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_0078691aa82fe754",
+        "math": "\\frac{9}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{9} \\right)}}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_e320cb85881d52a8",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2} + 9",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_301b93b9dbf33850",
+        "math": "\\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2}",
+        "misconception": "return only the first term"
+      }
+    ],
+    "contentHash": "f60256f85ea48d3f38b40ed20c37b4c9ce07ed7254a298e59b45b63902c9193c",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 5
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_3b07434ee15a968ad479",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 9
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "99ccf6adf873ad056bc80edb99f96938def4e9bbf257c64b799166257c0d4002",
+    "solutionSteps": [
+      "\\textnormal{Here }m=9.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{9} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "9",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "9"
+            },
+            {
+              "left": "9 - \\cot{\\left(\\frac{1}{9} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_2a6731302eb2b27e",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_2a6731302eb2b27e",
+        "math": "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_74e6dbd3697faf19",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_e2ddd5e0384108b2",
+        "math": "\\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + 10",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_3a5ba28cef15c96d",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "c9414bb27df595f0d0127c3853ad3cf774794d4bea2b79abd7eeaff8ee4f9839",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 6
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_12f8c08d90251975c780",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 10
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "7169f4253bffb6fe40238a398a7a12dc89d7248fafe232eb14dab2c2dda279b0",
+    "solutionSteps": [
+      "\\textnormal{Here }m=10.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{10} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 2,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "10",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "10"
+            },
+            {
+              "left": "10 - \\cot{\\left(\\frac{1}{10} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 2,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_036aaf69f6f368fa",
+    "assumptions": [
+      "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_036aaf69f6f368fa",
+        "math": "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_83f16d3deae975d9",
+        "math": "\\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2}",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_bc55c5bda0470db6",
+        "math": "\\frac{1}{11} - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_1645451cd9121035",
+        "math": "- \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2} + 11",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "18ecb3d832c07bc77249464326edcf3a785c645867cd7bb18384c707ef505035",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The cancellation is across scales, with a nonzero limiting boundary term. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-binary-tangent-telescope",
+    "parameters": {
+      "instance": 7
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-binary-tangent-telescope",
+      "difficultyRationale": "The cancellation is across scales, with a nonzero limiting boundary term.",
+      "prerequisites": [],
+      "primaryTechnique": "cotangent-doubling",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "dyadic-trigonometric-telescope"
+    },
+    "problemId": "cn_2008c16f13329aac12aa",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 11
+        },
+        "detailedTechnique": "cotangent-doubling",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "aa9d6cbbd425c77e0d1c878c706624e41f25dcfc96723131341ff8b33ca610ef",
+    "solutionSteps": [
+      "\\textnormal{Here }m=11.",
+      "\\textnormal{Use tan u=cot u-2cot(2u), then telescope the scaled terms. The endpoint is lim 2\\textasciicircum{}-N cot(1/(m2\\textasciicircum{}N))=m.}",
+      "\\begin{gathered}\\textnormal{Arguments lie in (0,1/8], so}\\\\\\textnormal{no poles occur, and terms are}\\\\\\textnormal{bounded by a geometric}\\\\\\textnormal{multiple.}\\end{gathered}",
+      "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}"
+    ],
+    "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{11} \\right)}",
+    "subtopic": "scale-telescoping-trig",
+    "techniqueTags": [
+      "cotangent-doubling"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+          "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m).",
+          "finite telescoping and standard sine/cosine limits"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "0",
+              "reason": "Cotangent doubling identity",
+              "result": "exact-equality",
+              "right": "0"
+            },
+            {
+              "left": "11",
+              "reason": "Nonzero boundary term under dyadic scaling",
+              "result": "exact-equality",
+              "right": "11"
+            },
+            {
+              "left": "11 - \\cot{\\left(\\frac{1}{11} \\right)}",
+              "reason": "Difference of telescoping endpoint terms",
+              "result": "exact-equality",
+              "right": "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}"
+            }
+          ],
+          "hypotheses": [
+            "All finite-sum arguments lie in (0,1/m]; none meet a sine zero.",
+            "The finite sum equals 2^-N cot(1/(m2^N))-cot(1/m)."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "finite telescoping and standard sine/cosine limits"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  }
+]

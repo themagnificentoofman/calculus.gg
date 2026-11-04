@@ -1,3 +1,6 @@
+import {legacyPolicy,legacyEligibilitySql} from './legacy-selection.mjs';
+import {selectionFeatures,assertSelectionVocabularySource,historicalSelectionFeatures} from './selection-vocabulary.mjs';
+import {contentAttribution} from '../bank/content-attribution.mjs';
 import {presentBankProblem} from './solution-presentation.mjs';
 import type { BankProblem, RoundSnapshot, SelectionDiagnostics } from '../bank/contracts.ts';
 import type { GameQuestion } from '../game-progress.ts';
@@ -5,19 +8,34 @@ import { decodeCompact } from '../bank/compact-codec.mjs';
 import { exposureWeight } from '../bank/exposure.ts';
 import legacyFeatures from '../bank/legacy-features.json' with { type: 'json' };
 import { BankUnavailableError, type RecentProblems } from './bank-selection.ts';
-type Pool = { pool_id: number; release_id: string; active_release: string; family_id: string; item_count: number };
+type Pool = { pool_id: number; release_id: string; active_release: string; family_id: string; construction_id: string; item_count: number };
 type Features = { idea: string; structure: string; technique: string; combination: string; weight: number };
-type Candidate = { problem_ref: number; problem_id: string; family_id: string } & Features;
-export const POOL_SQL = `SELECT p.*,c.value AS active_release FROM cbank_config c
+type Candidate = { problem_ref: number; problem_id: string; revision: number; lineage_id: string; source_family: string; family_id: string } & Features;
+export const MAX_CATALOG_POOLS=1024, MAX_CATALOG_ITEMS=250000;
+export const POOL_SQL = `SELECT p.*,COALESCE(fl.construction_id,p.family_id) AS construction_id,c.value AS active_release FROM cbank_config c
  JOIN cbank_pools p ON p.release_id IN (SELECT c.value UNION SELECT source_release_id FROM cbank_release_sources WHERE release_id=c.value)
  JOIN cbank_releases r ON r.release_id=p.release_id JOIN cbank_releases active ON active.release_id=c.value
+ LEFT JOIN cbank_family_lineage fl USING(family_id)
  WHERE c.key='active_release' AND active.state='published' AND r.state='published'
- AND p.difficulty=? AND p.tag=? AND (?='all' OR p.topic=?) ORDER BY p.topic,p.family_id LIMIT 193`;
+ AND p.difficulty=? AND p.tag=? AND (?='all' OR p.topic=?)
+ AND p.family_id NOT IN (SELECT value FROM json_each(?5))
+ AND COALESCE(fl.construction_id,p.family_id) NOT IN (SELECT value FROM json_each(?5))
+ AND NOT EXISTS(SELECT 1 FROM cbank_withdrawn_families w JOIN cbank_releases wr ON wr.release_id=w.introduced_by
+ WHERE w.source_release_id=p.release_id AND w.family_id=p.family_id AND (wr.state='published' OR w.introduced_by=c.value))
+ ORDER BY p.topic,p.family_id,p.pool_id LIMIT ${MAX_CATALOG_POOLS+1}`;
 export const SLOT_SQL = `SELECT b.problem_ref,b.problem_id,p.family_id FROM cbank_slots s
  JOIN cbank_problems b USING(problem_ref) JOIN cbank_publication u USING(problem_ref) JOIN cbank_pools p USING(pool_id)
  WHERE s.pool_id=? AND s.slot=? AND u.state='approved'`;
 export const PAYLOAD_SQL = `SELECT b.*,m.metadata_json FROM cbank_problems b JOIN cbank_shared m USING(shared_id)
  JOIN cbank_publication u USING(problem_ref) WHERE u.state='approved' AND b.problem_ref IN `;
+export const candidateColumns=`b.problem_ref,b.problem_id,b.revision,COALESCE(l.lineage_id,b.problem_id) AS lineage_id,
+ p.family_id AS source_family,COALESCE(fl.construction_id,p.family_id) AS family_id,f.idea,f.structure,f.technique,f.combination,f.weight`;
+export const candidateJoins=`JOIN cbank_problems b USING(problem_ref) JOIN cbank_publication u USING(problem_ref)
+ JOIN cbank_pools p USING(pool_id) LEFT JOIN cbank_selection_features f USING(problem_ref)
+ LEFT JOIN cbank_problem_lineage l USING(problem_id) LEFT JOIN cbank_family_lineage fl USING(family_id)`;
+export const eligibleSql=`u.state='approved' AND NOT EXISTS(SELECT 1 FROM cbank_release_exclusions e
+ JOIN cbank_releases er ON er.release_id=e.release_id WHERE e.problem_ref=b.problem_ref
+ AND (e.release_id=(SELECT active_release FROM context) OR e.scope='global' AND er.state='published'))`;
 const random = () => crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
 function shuffled<T>(values: T[], rng: () => number): T[] {
  const copy=[...values]; for(let i=copy.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];} return copy;
@@ -28,18 +46,18 @@ function weighted<T>(items: T[], score: (item:T)=>number, rng:()=>number):T {
 }
 const gcd=(a:number,b:number):number=>b?gcd(b,a%b):a;
 function features(row:Candidate):Candidate {
- const fallback=(legacyFeatures as Record<string,Features>)[row.family_id];
- return {...row,idea:row.idea||fallback?.idea||row.family_id,structure:row.structure||fallback?.structure||row.family_id,
- technique:row.technique||fallback?.technique||row.family_id,combination:row.combination||fallback?.combination||row.family_id,weight:row.weight??fallback?.weight??.15};
+ const fallback=(legacyFeatures as Record<string,Features>)[row.source_family||row.family_id];
+ return selectionFeatures({...row,idea:row.idea||fallback?.idea||row.family_id,structure:row.structure||fallback?.structure||row.family_id,
+ technique:row.technique||fallback?.technique||row.family_id,combination:row.combination||fallback?.combination||row.family_id,weight:row.weight??fallback?.weight??.15});
 }
 function historyWeights(recent:RecentProblems,now:number) {
  const ids=new Set<string>(),weights=new Map<string,number>();
  const add=(key:string,value:number)=>weights.set(key,(weights.get(key)||0)+value);
  if(recent.version===2){
-  for(const e of recent.exposures||[]){const w=exposureWeight(e,now);if(!w)continue;
+  for(const saved of recent.exposures||[]){const e=historicalSelectionFeatures(saved),w=exposureWeight(e,now);if(!w)continue;
    // Only short-lived issued sets, reported displays, and actual attempts in
    // their respective windows participate. A report is never a graded attempt.
-   ids.add(e.problemId);add('f:'+e.familyId,w);add('i:'+e.idea,w);add('s:'+e.structure,w);add('t:'+e.technique,w);add('c:'+e.combination,w);
+   ids.add(e.lineageId||e.problemId);add('f:'+e.familyId,w);add('i:'+e.idea,w);add('s:'+e.structure,w);add('t:'+e.technique,w);add('c:'+e.combination,w);
   }
  }else{
   for(const id of recent.problems||[])ids.add(id);
@@ -47,10 +65,15 @@ function historyWeights(recent:RecentProblems,now:number) {
  }
  return {ids,weights};
 }
-function choose(candidates:Candidate[],count:number,cap:number,history:ReturnType<typeof historyWeights>,allowRecent:boolean,rng:()=>number,drill:boolean) {
+function choose(candidates:Candidate[],count:number,cap:number,history:ReturnType<typeof historyWeights>,allowRecent:boolean,rng:()=>number,drill:boolean,reserveRounds=1) {
  const selected:Candidate[]=[],used=new Set<string>(),counts=new Map<string,number>();
+ const remaining=new Map<string,number>();
+ for(const c of candidates)if(allowRecent||!history.ids.has(c.lineage_id))remaining.set(c.family_id,(remaining.get(c.family_id)||0)+1);
+ const futureCap=cap*(reserveRounds-1),futureNeed=count*(reserveRounds-1);
+ let futureCapacity=[...remaining.values()].reduce((n,u)=>n+Math.min(u,futureCap),0);
  while(selected.length<count){
-  const eligible=candidates.filter(c=>!used.has(c.problem_id)&&(counts.get(c.family_id)||0)<cap&&(allowRecent||!history.ids.has(c.problem_id)));
+  const eligible=candidates.filter(c=>!used.has(c.lineage_id)&&(counts.get(c.family_id)||0)<cap&&(allowRecent||!history.ids.has(c.lineage_id))
+   &&futureCapacity-Number((remaining.get(c.family_id)||0)<=futureCap)>=futureNeed);
   if(!eligible.length)return null;
   const last=selected.at(-1),groups=new Map<string,Candidate[]>();
   for(const c of eligible){const g=groups.get(c.family_id)||[];g.push(c);groups.set(c.family_id,g);}
@@ -65,7 +88,8 @@ function choose(candidates:Candidate[],count:number,cap:number,history:ReturnTyp
   // Normalize within each family: 1,400 variants never get 175 times the
   // opportunity of eight carefully authored instances.
   const family=weighted(families,f=>groups.get(f)!.reduce((n,c)=>n+score(c),0)/groups.get(f)!.length,rng);
-  const item=weighted(groups.get(family)!,score,rng);selected.push(item);used.add(item.problem_id);counts.set(family,(counts.get(family)||0)+1);
+  const item=weighted(groups.get(family)!,score,rng);selected.push(item);used.add(item.lineage_id);counts.set(family,(counts.get(family)||0)+1);
+  const left=remaining.get(family)!;futureCapacity-=Number(left<=futureCap);remaining.set(family,left-1);
  }
  return selected;
 }
@@ -85,15 +109,38 @@ function order(selected:Candidate[],rng:()=>number) {
  }
  return result;
 }
-/** <=192 pool rows, <=320 distinct indexed slot probes, exactly count decodes. */
-export async function selectBankQuestions(db:D1Database,input:{category:string;difficulty:string;count:number;tag?:string},recent:RecentProblems={},rng=random,now=Date.now()) {
+/** Bounded catalog; 320 random slot probes, then at most count metadata rows per
+ * pool using indexed retrieval if needed. No extra payload decodes. Catalog
+ * overflow is explicit, never silent truncation or false exhaustion. */
+export async function selectBankQuestions(db:D1Database,input:{category:string;difficulty:string;count:number;tag?:string;includeLegacy?:boolean},recent:RecentProblems={},rng=random,now=Date.now(),originPolicy=legacyPolicy) {
  if(!Number.isInteger(input.count)||input.count<1||input.count>20)throw new BankUnavailableError();
- const pools=(await db.prepare(POOL_SQL).bind(input.difficulty,input.tag||'*',input.category,input.category).all<Pool>()).results;
- if(!pools.length||pools.length>192)throw new BankUnavailableError();
- const familyCount=new Set(pools.map(p=>p.family_id)).size,history=historyWeights(recent,now),candidates=new Map<string,Candidate>();
+ const originScope=originPolicy.selection(input.includeLegacy);
+ const eligibleOriginSql=legacyEligibilitySql(eligibleSql);
+ const pools=(await db.prepare(POOL_SQL).bind(input.difficulty,input.tag||'*',input.category,input.category,originScope.excludedFamilies).all<Pool>()).results;
+ if(!pools.length)throw new BankUnavailableError();
+ if(pools.length>MAX_CATALOG_POOLS||pools.reduce((n,p)=>n+p.item_count,0)>MAX_CATALOG_ITEMS)throw new BankUnavailableError('This problem catalog exceeds the supported selection bound. Please report this issue.');
+ const familyCount=new Set(pools.map(p=>p.construction_id)).size,history=historyWeights(recent,now),candidates=new Map<string,Candidate>();
  const slots=new Map(pools.map(p=>{let step=Math.max(1,Math.floor(rng()*p.item_count));while(gcd(step,p.item_count)!==1)step=step%p.item_count+1;return [p.pool_id,{start:Math.floor(rng()*p.item_count),step,used:0}];}));
- let probes=0,statements=1,chosen:Candidate[]|null=null,relaxation:RoundSnapshot['relaxation']='none';
+ let probes=0,statements=1,fallbackRows=0,chosen:Candidate[]|null=null,relaxation:RoundSnapshot['relaxation']='none';
+ if(history.ids.size){
+  const aliases=(await db.prepare(`SELECT problem_id,lineage_id FROM cbank_problem_lineage WHERE problem_id IN (SELECT value FROM json_each(?))`).bind(JSON.stringify([...history.ids])).all<{problem_id:string;lineage_id:string}>()).results;statements++;
+  for(const alias of aliases)history.ids.add(alias.lineage_id);
+ }
+ const addCandidate=(row:Candidate)=>{const old=candidates.get(row.lineage_id);if(!old||row.revision>old.revision||row.revision===old.revision&&row.problem_ref<old.problem_ref)candidates.set(row.lineage_id,features(row));};
  const reasons:SelectionDiagnostics['reasons']=[];
+ // Small broad catalogs can be enumerated inside the existing 320-probe bound.
+ // Reserve feasible future capped capacity with 20% inventory headroom rather
+ // than randomly exhausting scarce families early. No family/method rotation
+ // is prescribed: the existing weights and fresh randomness choose among all
+ // feasible candidates. Large catalogs retain the bounded sampling path.
+ const completeSmallCatalog=input.count===20&&!input.tag&&pools.reduce((n,p)=>n+p.item_count,0)<=320;
+ const plannedRounds=()=>{
+  if(!completeSmallCatalog||cap!==2)return 1;
+  const unseen=new Map<string,number>();for(const c of candidates.values())if(!history.ids.has(c.lineage_id))unseen.set(c.family_id,(unseen.get(c.family_id)||0)+1);
+  let rounds=Math.max(1,Math.floor([...unseen.values()].reduce((a,b)=>a+b,0)/(input.count*1.2)));
+  while(rounds>1&&[...unseen.values()].reduce((n,u)=>n+Math.min(u,cap*rounds),0)<input.count*rounds)rounds--;
+  return rounds;
+ };
  // A catalogue with fewer than ten families proves a 20-question cap of two
  // impossible. Candidate sampling alone never proves that the pool is empty.
  let cap=Math.max(2,Math.ceil(input.count/familyCount));
@@ -107,29 +154,51 @@ export async function selectBankQuestions(db:D1Database,input:{category:string;d
    }if(!added)break;
   }
   const requests=[];for(let i=0;i<wanted.length;i+=40){const chunk=wanted.slice(i,i+40);
-   requests.push(db.prepare(`WITH wanted(pool_id,slot) AS (VALUES ${chunk.map(()=>'(?,?)').join(',')})
-    SELECT b.problem_ref,b.problem_id,p.family_id,f.idea,f.structure,f.technique,f.combination,f.weight
-    FROM wanted w JOIN cbank_slots s USING(pool_id,slot) JOIN cbank_problems b USING(problem_ref)
-    JOIN cbank_publication u USING(problem_ref) JOIN cbank_pools p USING(pool_id)
-    LEFT JOIN cbank_selection_features f USING(problem_ref) WHERE u.state='approved'`).bind(...chunk.flat()));
+   requests.push(db.prepare(`WITH context(active_release,legacy_families,legacy_revisions) AS (VALUES (?,?,?)),wanted(pool_id,slot) AS (VALUES ${chunk.map(()=>'(?,?)').join(',')})
+    SELECT ${candidateColumns} FROM wanted w JOIN cbank_slots s USING(pool_id,slot) ${candidateJoins}
+    WHERE ${eligibleOriginSql}`).bind(pools[0].active_release,originPolicy.familyJson,originScope.revisions,...chunk.flat()));
   }
   probes+=wanted.length;statements+=requests.length;
-  if(requests.length)for(const result of await db.batch<Candidate>(requests))for(const row of result.results)candidates.set(row.problem_id,features(row));
-  chosen=choose([...candidates.values()],input.count,cap,history,false,rng,!!input.tag);
+  if(requests.length)for(const result of await db.batch<Candidate>(requests))for(const row of result.results)addCandidate(row);
+  const complete=pools.every(p=>slots.get(p.pool_id)!.used===p.item_count);
+  chosen=completeSmallCatalog&&!complete?null:choose([...candidates.values()],input.count,cap,history,false,rng,!!input.tag,complete?plannedRounds():1);
   if(chosen||wanted.length===0)break;
  }
- const exhausted=pools.every(p=>slots.get(p.pool_id)!.used===p.item_count);
- if(!chosen&&exhausted){
-  const availableCounts=new Map<string,number>();for(const c of candidates.values())availableCounts.set(c.family_id,(availableCounts.get(c.family_id)||0)+1);
-  const cappedCapacity=[...availableCounts.values()].reduce((n,size)=>n+Math.min(cap,size),0);
-  // Retirement or a genuinely narrow inventory can require more than two.
-  if(cappedCapacity<input.count){
-   for(let trial=cap+1;trial<=input.count;trial++){chosen=choose([...candidates.values()],input.count,trial,history,false,rng,!!input.tag);if(chosen){cap=trial;relaxation='family-cap';if(!reasons.includes('family-cap-impossible'))reasons.push('family-cap-impossible');break;}}
+ let exhausted=pools.every(p=>slots.get(p.pool_id)!.used===p.item_count);
+ // A sample miss is not exhaustion. Retrieve up to count distinct eligible
+ // mathematical items per pool, excluding retained history in SQL. This proves
+ // capped capacity without decoding a corpus or shortening attempted history.
+ const retrieve=async(allowRecent:boolean)=>{
+  const blocked=allowRecent?[]:[...history.ids];
+  for(let start=0;start<pools.length;start+=40){
+   const chunk=pools.slice(start,start+40);
+   const sql=`WITH context(active_release,legacy_families,legacy_revisions) AS (VALUES (?,?,?)),blocked AS MATERIALIZED (SELECT value FROM json_each(?)) `+
+    chunk.map(()=>`SELECT * FROM (SELECT ${candidateColumns} FROM cbank_slots s ${candidateJoins}
+     WHERE s.pool_id=? AND ${eligibleOriginSql} AND COALESCE(l.lineage_id,b.problem_id) NOT IN (SELECT value FROM blocked)
+     GROUP BY COALESCE(l.lineage_id,b.problem_id) ORDER BY s.slot LIMIT ${input.count})`).join(' UNION ALL ');
+   const result=await db.prepare(sql).bind(pools[0].active_release,originPolicy.familyJson,originScope.revisions,JSON.stringify(blocked),...chunk.map(p=>p.pool_id)).all<Candidate>();
+   statements++;fallbackRows+=result.results.length;for(const row of result.results)addCandidate(row);
   }
+ };
+ if(!chosen){
+  await retrieve(false);
+  chosen=choose([...candidates.values()],input.count,cap,history,false,rng,!!input.tag,plannedRounds());
  }
  if(!chosen){
-  chosen=choose([...candidates.values()],input.count,cap,history,true,rng,!!input.tag);
-  if(chosen){relaxation='recent-problems';reasons.push(exhausted?'recent-items-exhausted':'candidate-sampling-limit');}
+  // At this point bounded retrieval has established insufficient unseen capped
+  // capacity. Only narrow/exhausted pools can enter an explicit relaxation.
+  await retrieve(true);
+  const counts=new Map<string,number>();for(const c of candidates.values())counts.set(c.family_id,(counts.get(c.family_id)||0)+1);
+  const capacity=[...counts.values()].reduce((n,size)=>n+Math.min(cap,size),0);
+  if(capacity<input.count){
+   for(let trial=cap+1;trial<=input.count;trial++){
+    chosen=choose([...candidates.values()],input.count,trial,history,false,rng,!!input.tag);
+    if(chosen){cap=trial;relaxation='family-cap';if(!reasons.includes('family-cap-impossible'))reasons.push('family-cap-impossible');break;}
+   }
+   if(!chosen){cap=input.count;if(!reasons.includes('family-cap-impossible'))reasons.push('family-cap-impossible');}
+  }
+  if(!chosen){chosen=choose([...candidates.values()],input.count,cap,history,true,rng,!!input.tag);
+   if(chosen){relaxation='recent-problems';reasons.push([...candidates.values()].some(c=>!history.ids.has(c.lineage_id))?'unseen-family-capacity-exhausted':'recent-items-exhausted');}}
  }
  if(!chosen)throw new BankUnavailableError();
  const selected=order(chosen,rng);
@@ -139,18 +208,21 @@ export async function selectBankQuestions(db:D1Database,input:{category:string;d
  const decoded=await Promise.all(rows.map(async row=>await decodeCompact(row) as BankProblem)),byId=new Map(decoded.map(p=>[p.problemId,p]));
  const questions:GameQuestion[]=selected.map(candidate=>{
   const original=byId.get(candidate.problem_id);
+  if(original)assertSelectionVocabularySource(original);
+  const legacy=original?originPolicy.check(original,candidate.family_id,input.includeLegacy):false;
   const p=original?presentBankProblem(original) as BankProblem & {solutionQuality?:{version:string}}:null;
-  if(!p||p.familyId!==candidate.family_id||p.difficulty!==input.difficulty||input.category!=='all'&&p.topic!==input.category||input.tag&&input.tag!=='*'&&!p.techniqueTags.includes(input.tag))throw Error('Bank pool/content mismatch');
-  const choices=shuffled(p.choices,rng);
-  return {problemId:p.problemId,problemRevision:p.problemRevision,contentHash:p.contentHash,bankRelease:pools[0].active_release,
-   familyId:p.familyId,templateVersion:p.templateVersion,...(p.solutionQuality?{solutionReviewVersion:p.solutionQuality.version}:{}),...(p.pedagogy?{pedagogy:p.pedagogy}:{}),context:{assumptions:p.assumptions,subtopic:p.subtopic,techniqueTags:p.techniqueTags,parameters:p.parameters},
+  if(!p||p.familyId!==candidate.source_family||p.difficulty!==input.difficulty||input.category!=='all'&&p.topic!==input.category||input.tag&&input.tag!=='*'&&!p.techniqueTags.includes(input.tag))throw Error('Bank pool/content mismatch');
+  const choices=shuffled(p.choices,rng),credit=contentAttribution(p);
+  return {...(legacy?{legacy:true}:{}),...(credit?{contentAttribution:credit}:{}),problemId:p.problemId,problemRevision:p.problemRevision,contentHash:p.contentHash,bankRelease:pools[0].active_release,
+   familyId:p.familyId,lineageId:candidate.lineage_id,constructionFamilyId:candidate.family_id,templateVersion:p.templateVersion,...(p.solutionQuality?{solutionReviewVersion:p.solutionQuality.version}:{}),...(p.pedagogy?{pedagogy:{...p.pedagogy,relatedIdeaGroupId:candidate.idea,structuralSignature:candidate.structure,primaryTechnique:candidate.technique}}:{}),context:{assumptions:p.assumptions,subtopic:p.subtopic,techniqueTags:p.techniqueTags,parameters:p.parameters},
    choiceOrder:choices.map(c=>c.choiceId),latexProblem:p.statement,options:choices.map(c=>c.math),correctIndex:choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty};
  });
- return {questions,relaxation,diagnostics:{policy:'exposure-weighted-v2' as const,candidateCount:candidates.size,probes,statements,catalogFamilies:familyCount,exhaustedInventory:exhausted,reasons}};
+ return {questions,relaxation,diagnostics:{policy:'exposure-weighted-v2' as const,candidateCount:candidates.size,probes,statements,catalogFamilies:familyCount,catalogPools:pools.length,fallbackRows,exhaustedInventory:exhausted,reasons}};
 }
 export async function assertBankSetPlayable(db:D1Database,questions:GameQuestion[]) {
  if(!questions.length||questions.length>20||questions.some(q=>!q.problemId||!q.problemRevision))throw new BankUnavailableError();
  const result=await db.prepare(`SELECT COUNT(*) AS n FROM cbank_problems b JOIN cbank_publication u USING(problem_ref)
- WHERE u.state='approved' AND (b.problem_id,b.revision) IN (${questions.map(()=>'(?,?)').join(',')})`).bind(...questions.flatMap(q=>[q.problemId!,q.problemRevision!])).all<{n:number}>();
+ WHERE u.state='approved' AND NOT EXISTS(SELECT 1 FROM cbank_release_exclusions e JOIN cbank_releases er ON er.release_id=e.release_id WHERE e.problem_ref=b.problem_ref AND e.scope='global' AND er.state='published')
+ AND (b.problem_id,b.revision) IN (${questions.map(()=>'(?,?)').join(',')})`).bind(...questions.flatMap(q=>[q.problemId!,q.problemRevision!])).all<{n:number}>();
  if(result.results[0]?.n!==questions.length)throw new BankUnavailableError();
 }

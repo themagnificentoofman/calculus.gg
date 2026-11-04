@@ -1,0 +1,972 @@
+{
+  "cn_11ffcd0912375b15bbf8": {
+    "sourceContentHash": "609d913fe28fbb83f3edda5620e888492768cac8e4a80675a637bd71ba17e6e5",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{x + 12}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The denominator is positive throughout the interval, so its natural logarithm is an antiderivative.}",
+      "F(x)=\\ln{\\left(x + 12 \\right)},\\qquad F\\prime(x)=\\frac{1}{x + 12}",
+      "\\int_{0}^{1}\\frac{1}{x + 12}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\ln{\\left(13 \\right)}-\\left(\\ln{\\left(12 \\right)}\\right)=\\ln{\\left(\\frac{13}{12} \\right)}",
+      "\\ln{\\left(\\frac{13}{12} \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_646566ac106b24a8342f": {
+    "sourceContentHash": "2c237ba0571028e7aa8300bf11c32296459dbe6e4f941ceed02f6fbd1df9e9ce",
+    "revision": 1,
+    "statement": "\\int_0^{\\pi/2}\\frac{dx}{1+13\\sin x}",
+    "steps": [
+      "t=\\tan\\frac x2,\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\mathrm dx=\\frac{2\\,\\mathrm dt}{1+t^2},\\quad x:0\\to\\frac\\pi2\\ \\Longrightarrow\\ t:0\\to1",
+      "\\int_0^{\\pi/2}\\frac{\\mathrm dx}{1+13\\sin x}=\\int_0^1\\frac{2\\,\\mathrm dt}{t^2+26t+1}",
+      "G(t)=\\frac{\\sqrt{42} \\ln{\\left(\\frac{t - 2 \\sqrt{42} + 13}{t + 2 \\sqrt{42} + 13} \\right)}}{84},\\qquad G\\prime(t)=\\frac2{t^2+26t+1}",
+      "\\textnormal{Both linear factors inside the logarithm are positive throughout the transformed interval.}",
+      "G(1)-G(0)=\\frac{\\sqrt{42} \\ln{\\left(\\frac{14 - 2 \\sqrt{42}}{2 \\sqrt{42} + 14} \\right)}}{84} - \\frac{\\sqrt{42} \\ln{\\left(\\frac{13 - 2 \\sqrt{42}}{2 \\sqrt{42} + 13} \\right)}}{84}",
+      "\\frac{\\sqrt{42} \\ln{\\left(\\frac{14 - 2 \\sqrt{42}}{2 \\sqrt{42} + 14} \\right)}}{84} - \\frac{\\sqrt{42} \\ln{\\left(\\frac{13 - 2 \\sqrt{42}}{2 \\sqrt{42} + 13} \\right)}}{84}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_81cb788105834bb476f3": {
+    "sourceContentHash": "76570dd853e61f1d0da88bc4fcd4f16dc94a994219f0dfd609b9136f9b7fc408",
+    "revision": 1,
+    "statement": "\\int_0^1x^{12}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{12}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+13)^2}",
+      "\\frac1{k(k+13)^2}=\\frac1{169}\\left(\\frac1k-\\frac1{k+13}\\right)-\\frac1{13(k+13)^2}",
+      "\\frac1{169}\\sum_{j=1}^{13}\\frac1j-\\frac1{13}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{13}\\frac1{j^2}\\right)=\\frac{47152428293}{337634256960} - \\frac{\\pi^{2}}{78}",
+      "\\frac{47152428293}{337634256960} - \\frac{\\pi^{2}}{78}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_26dd497d25b27cc4afe6": {
+    "sourceContentHash": "5d42ad8b1daa207bf070a603a3fdaba1a0a94766744381d449250ddf1633d351",
+    "revision": 1,
+    "statement": "\\int_0^1x^{13}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{13}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+14)^2}",
+      "\\frac1{k(k+14)^2}=\\frac1{196}\\left(\\frac1k-\\frac1{k+14}\\right)-\\frac1{14(k+14)^2}",
+      "\\frac1{196}\\sum_{j=1}^{14}\\frac1j-\\frac1{14}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{14}\\frac1{j^2}\\right)=\\frac{9392726821}{72721224576} - \\frac{\\pi^{2}}{84}",
+      "\\frac{9392726821}{72721224576} - \\frac{\\pi^{2}}{84}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_341f164f3c5586ddc074": {
+    "sourceContentHash": "014835de316f52cbfc97430e042908269bc0d8637512999884b2b989487e958d",
+    "revision": 1,
+    "statement": "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 144\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x^2+1)(x^2+144)}=\\frac1{143}\\left(\\frac1{x^2+1}-\\frac1{x^2+144}\\right)",
+      "\\lim_{b\\to\\infty}\\arctan b=\\lim_{b\\to\\infty}\\arctan\\frac{b}{12}=\\frac\\pi2",
+      "F(x)=- \\frac{\\arctan{\\left(\\frac{x}{12} \\right)}}{1716} + \\frac{\\arctan{\\left(x \\right)}}{143},\\qquad F\\prime(x)=\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 144\\right)}",
+      "\\lim_{b\\to\\infty}F(b)=\\frac{\\pi}{312}",
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 144\\right)}\\,\\mathrm dx=\\frac{\\pi}{312}-\\left(0\\right)=\\frac{\\pi}{312}",
+      "\\frac{\\pi}{312}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_50f9a12c8f0192d37486": {
+    "sourceContentHash": "c50e05838e57fb90c3119d41cd9257c47355bf4e4c5d2dbac633ffa81d8793c8",
+    "revision": 1,
+    "statement": "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(12 x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "I(x)=\\int_0^xe^t\\cos(12t)\\,\\mathrm dt,\\quad J(x)=\\int_0^xe^t\\sin(12t)\\,\\mathrm dt",
+      "\\textnormal{Integration by parts gives a pair of equations for these definite primitives.}",
+      "I(x)=e^x\\cos(12x)-1+12J(x),\\quad J(x)=e^x\\sin(12x)-12I(x)",
+      "(145)I(x)=e^x\\big(\\cos(12x)+12\\sin(12x)\\big)-1",
+      "F(x)=\\frac{\\left(12 \\sin{\\left(12 x \\right)} + \\cos{\\left(12 x \\right)}\\right) e^{x}}{145},\\qquad F\\prime(x)=e^{x} \\cos{\\left(12 x \\right)}",
+      "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(12 x \\right)}\\,\\mathrm dx=F\\left(2 \\pi\\right)-F\\left(0\\right)=\\frac{e^{2 \\pi}}{145}-\\left(\\frac{1}{145}\\right)=- \\frac{1}{145} + \\frac{e^{2 \\pi}}{145}",
+      "- \\frac{1}{145} + \\frac{e^{2 \\pi}}{145}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_effbfd65bae02015f301": {
+    "sourceContentHash": "3e76c0adec8d5d6b76b04269ce8a5a413cf4cae63d869f32cc8250994d643546",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 12\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x+1)(x+12)}=\\frac1{11}\\left(\\frac1{x+1}-\\frac1{x+12}\\right)",
+      "F(x)=\\frac{\\ln{\\left(\\frac{x + 1}{x + 12} \\right)}}{11},\\qquad F\\prime(x)=\\frac{1}{\\left(x + 1\\right) \\left(x + 12\\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 12\\right)}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{\\ln{\\left(\\frac{2}{13} \\right)}}{11}-\\left(- \\frac{\\ln{\\left(12 \\right)}}{11}\\right)=\\frac{\\ln{\\left(\\frac{24}{13} \\right)}}{11}",
+      "\\frac{\\ln{\\left(\\frac{24}{13} \\right)}}{11}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_95f464b288d768febc49": {
+    "sourceContentHash": "9663a504ecf0241d7e2670b7009ad68bd3d8a921923dcc98890908b6ec8e2cff",
+    "revision": 1,
+    "statement": "\\int_{1}^{12}\\ln{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "u=\\ln x,\\quad \\mathrm dv=\\mathrm dx,\\quad \\mathrm du=\\frac{\\mathrm dx}{x},\\quad v=x",
+      "\\int\\ln x\\,\\mathrm dx=x\\ln x-\\int1\\,\\mathrm dx=x\\ln x-x+C,\\qquad C\\in\\mathbb R",
+      "F(x)=x \\ln{\\left(x \\right)} - x,\\qquad F\\prime(x)=\\ln{\\left(x \\right)}",
+      "\\int_{1}^{12}\\ln{\\left(x \\right)}\\,\\mathrm dx=F\\left(12\\right)-F\\left(1\\right)=-12 + 12 \\ln{\\left(12 \\right)}-\\left(-1\\right)=-11 + 12 \\ln{\\left(12 \\right)}",
+      "-11 + 12 \\ln{\\left(12 \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_edf4347aa95e4f152731": {
+    "sourceContentHash": "d1f8dd16d50687b1b4a888eabe561fb452eb4eb1e12ddcf30e60079f695adf52",
+    "revision": 1,
+    "statement": "\\int_{1}^{13}\\ln{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "u=\\ln x,\\quad \\mathrm dv=\\mathrm dx,\\quad \\mathrm du=\\frac{\\mathrm dx}{x},\\quad v=x",
+      "\\int\\ln x\\,\\mathrm dx=x\\ln x-\\int1\\,\\mathrm dx=x\\ln x-x+C,\\qquad C\\in\\mathbb R",
+      "F(x)=x \\ln{\\left(x \\right)} - x,\\qquad F\\prime(x)=\\ln{\\left(x \\right)}",
+      "\\int_{1}^{13}\\ln{\\left(x \\right)}\\,\\mathrm dx=F\\left(13\\right)-F\\left(1\\right)=-13 + 13 \\ln{\\left(13 \\right)}-\\left(-1\\right)=-12 + 13 \\ln{\\left(13 \\right)}",
+      "-12 + 13 \\ln{\\left(13 \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_fc4b09196e358b808750": {
+    "sourceContentHash": "b52532bf8339012c24e3eba8231d9629c021ccfd713881544f803fa6c7e421b6",
+    "revision": 2,
+    "statement": "\\int_{0}^{6}x - 5\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{A definite integral keeps the signs of the contributions and the orientation of its bounds.}",
+      "F(x)=\\frac{\\left(x - 5\\right)^{2}}{2},\\qquad F\\prime(x)=x - 5",
+      "F(6)-F(0)=\\frac{1}{2}-\\left(\\frac{25}{2}\\right)=-12",
+      "-12"
+    ],
+    "solutionQuality": null
+  },
+  "cn_ba5ba5fef825d2b909ef": {
+    "sourceContentHash": "d9b2b075ef67559d1ed9c02f436a282a5a2b154c4b1235d5b980c50ff07378bc",
+    "revision": 2,
+    "statement": "\\int_{7}^{11}20 - 2 x\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{A definite integral keeps the signs of the contributions and the orientation of its bounds.}",
+      "F(x)=- \\left(x - 10\\right)^{2},\\qquad F\\prime(x)=20 - 2 x",
+      "F(11)-F(7)=-1-\\left(-9\\right)=8",
+      "8"
+    ],
+    "solutionQuality": null
+  },
+  "cn_d5fa25ab7b9aba34116d": {
+    "sourceContentHash": "fec13aeb79256faf2e4a511e3a06f04dcaa9a9f1634d71bda875f6d13c083d69",
+    "revision": 2,
+    "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{2}(x)B_{2}(x)\\,\\mathrm{d}x.\\end{gathered}",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "B_j:=B_j(0),\\quad B_j^{\\prime}(x)=jB_{j-1}(x)\\quad(j\\ge1)",
+      "B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+      "\\text{For positive integer indices, define }I_{r,s}:=\\int_0^1B_r(x)B_s(x)\\,\\mathrm{d}x",
+      "I_{r,s}=-\\frac r{s+1}I_{r-1,s+1}\\quad(r\\ge2,\\ s\\ge1)",
+      "I_{1,s}=\\frac{B_{s+1}}{s+1}\\quad(s\\ge1)",
+      "\\text{The last identity uses the endpoint jump and the zero mean of higher Bernoulli polynomials.}",
+      "I=I_{2,2}=(-1)^{1}\\frac{2!\\,2!}{4!}B_{4}",
+      "I=\\frac{1}{180}",
+      "\\frac{1}{180}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_a045263dfcea892f6a32": {
+    "sourceContentHash": "78b2a5e25c7154878e013fdc6795a43fb110d2114925113162661f91376d2f79",
+    "revision": 2,
+    "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{3}(x)B_{3}(x)\\,\\mathrm{d}x.\\end{gathered}",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "B_j:=B_j(0),\\quad B_j^{\\prime}(x)=jB_{j-1}(x)\\quad(j\\ge1)",
+      "B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+      "\\text{For positive integer indices, define }I_{r,s}:=\\int_0^1B_r(x)B_s(x)\\,\\mathrm{d}x",
+      "I_{r,s}=-\\frac r{s+1}I_{r-1,s+1}\\quad(r\\ge2,\\ s\\ge1)",
+      "I_{1,s}=\\frac{B_{s+1}}{s+1}\\quad(s\\ge1)",
+      "\\text{The last identity uses the endpoint jump and the zero mean of higher Bernoulli polynomials.}",
+      "I=I_{3,3}=(-1)^{2}\\frac{3!\\,3!}{6!}B_{6}",
+      "I=\\frac{1}{840}",
+      "\\frac{1}{840}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_a99f29a2297d60e81809": {
+    "sourceContentHash": "2537b4794825949545bb9e09b56f1b1eb3773377fdefb4be6b3bdc8e91f41e9d",
+    "revision": 2,
+    "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{3}(x)B_{5}(x)\\,\\mathrm{d}x.\\end{gathered}",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "B_j:=B_j(0),\\quad B_j^{\\prime}(x)=jB_{j-1}(x)\\quad(j\\ge1)",
+      "B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+      "\\text{For positive integer indices, define }I_{r,s}:=\\int_0^1B_r(x)B_s(x)\\,\\mathrm{d}x",
+      "I_{r,s}=-\\frac r{s+1}I_{r-1,s+1}\\quad(r\\ge2,\\ s\\ge1)",
+      "I_{1,s}=\\frac{B_{s+1}}{s+1}\\quad(s\\ge1)",
+      "\\text{The last identity uses the endpoint jump and the zero mean of higher Bernoulli polynomials.}",
+      "I=I_{3,5}=(-1)^{2}\\frac{3!\\,5!}{8!}B_{8}",
+      "I=- \\frac{1}{1680}",
+      "- \\frac{1}{1680}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_05bedb9de25511724e32": {
+    "sourceContentHash": "1cb2482022d4989f2cce9cdd91f7729f2cf594b52fd729f2eed0b1958c2f3e8a",
+    "revision": 2,
+    "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{4}(x)B_{4}(x)\\,\\mathrm{d}x.\\end{gathered}",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "B_j:=B_j(0),\\quad B_j^{\\prime}(x)=jB_{j-1}(x)\\quad(j\\ge1)",
+      "B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+      "\\text{For positive integer indices, define }I_{r,s}:=\\int_0^1B_r(x)B_s(x)\\,\\mathrm{d}x",
+      "I_{r,s}=-\\frac r{s+1}I_{r-1,s+1}\\quad(r\\ge2,\\ s\\ge1)",
+      "I_{1,s}=\\frac{B_{s+1}}{s+1}\\quad(s\\ge1)",
+      "\\text{The last identity uses the endpoint jump and the zero mean of higher Bernoulli polynomials.}",
+      "I=I_{4,4}=(-1)^{3}\\frac{4!\\,4!}{8!}B_{8}",
+      "I=\\frac{1}{2100}",
+      "\\frac{1}{2100}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_f4f3cb61d8e0383400c0": {
+    "sourceContentHash": "fd2284874d6eb9abb529b347564d5018c30037b5da257aa8dda5ead1e4b0ddba",
+    "revision": 2,
+    "statement": "\\begin{gathered}\\frac{t e^{xt}}{e^t-1}=\\sum_{j=0}^{\\infty}B_j(x)\\frac{t^j}{j!}.\\\\\\textnormal{Evaluate}\\\\\\int_0^1B_{2}(x)B_{8}(x)\\,\\mathrm{d}x.\\end{gathered}",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "B_j:=B_j(0),\\quad B_j^{\\prime}(x)=jB_{j-1}(x)\\quad(j\\ge1)",
+      "B_j(1)=B_j(0)\\ (j\\ne1),\\quad B_1(1)-B_1(0)=1",
+      "\\text{For positive integer indices, define }I_{r,s}:=\\int_0^1B_r(x)B_s(x)\\,\\mathrm{d}x",
+      "I_{r,s}=-\\frac r{s+1}I_{r-1,s+1}\\quad(r\\ge2,\\ s\\ge1)",
+      "I_{1,s}=\\frac{B_{s+1}}{s+1}\\quad(s\\ge1)",
+      "\\text{The last identity uses the endpoint jump and the zero mean of higher Bernoulli polynomials.}",
+      "I=I_{2,8}=(-1)^{1}\\frac{2!\\,8!}{10!}B_{10}",
+      "I=- \\frac{1}{594}",
+      "- \\frac{1}{594}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_244887f9677d686d35f7": {
+    "sourceContentHash": "cae3a6ca5b5a416831c6581568781960a1e65226e518e58db47b363597b2ea57",
+    "revision": 2,
+    "statement": "\\int_{0}^{2 \\pi} \\ln{\\left(5 - 4 \\cos{\\left(x \\right)} \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "r=2>1,\\quad\\ln(1-2r\\cos x+r^2)=2\\ln r+\\ln(1-2r^{-1}\\cos x+r^{-2})",
+      "\\ln(1-2r^{-1}\\cos x+r^{-2})=-2\\sum_{j=1}^\\infty\\frac{r^{-j}\\cos(jx)}j",
+      "\\text{The series converges uniformly, and each cosine integrates to zero over a full period.}",
+      "I=\\int_0^{2\\pi}2\\ln r\\,\\mathrm{d}x=4\\pi\\ln r",
+      "I=4 \\pi \\ln{\\left(2 \\right)}",
+      "4 \\pi \\ln{\\left(2 \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_81a6b3715f0ca765dae9": {
+    "sourceContentHash": "749b66572e666117c631a0721329a75bcf4dee08464d8f93e77ae97dfc3ac7bf",
+    "revision": 2,
+    "statement": "\\int_{0}^{2 \\pi} \\ln{\\left(\\frac{29}{4} - 5 \\cos{\\left(x \\right)} \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "r=\\frac{5}{2}>1,\\quad\\ln(1-2r\\cos x+r^2)=2\\ln r+\\ln(1-2r^{-1}\\cos x+r^{-2})",
+      "\\ln(1-2r^{-1}\\cos x+r^{-2})=-2\\sum_{j=1}^\\infty\\frac{r^{-j}\\cos(jx)}j",
+      "\\text{The series converges uniformly, and each cosine integrates to zero over a full period.}",
+      "I=\\int_0^{2\\pi}2\\ln r\\,\\mathrm{d}x=4\\pi\\ln r",
+      "I=4 \\pi \\ln{\\left(\\frac{5}{2} \\right)}",
+      "4 \\pi \\ln{\\left(\\frac{5}{2} \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_b9e516e5b43b7fd02a43": {
+    "sourceContentHash": "08966e1bdce881c6ff27eee26d324e34b8c6cacd2cbc21e8e6819e466f1f36ab",
+    "revision": 2,
+    "statement": "\\int_{0}^{2 \\pi} \\ln{\\left(17 - 8 \\cos{\\left(x \\right)} \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "r=4>1,\\quad\\ln(1-2r\\cos x+r^2)=2\\ln r+\\ln(1-2r^{-1}\\cos x+r^{-2})",
+      "\\ln(1-2r^{-1}\\cos x+r^{-2})=-2\\sum_{j=1}^\\infty\\frac{r^{-j}\\cos(jx)}j",
+      "\\text{The series converges uniformly, and each cosine integrates to zero over a full period.}",
+      "I=\\int_0^{2\\pi}2\\ln r\\,\\mathrm{d}x=4\\pi\\ln r",
+      "I=4 \\pi \\ln{\\left(4 \\right)}",
+      "4 \\pi \\ln{\\left(4 \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_2f54e5e0f3b917a4371e": {
+    "sourceContentHash": "5d37ca7a6c642dbcc5ecf8fa4e4a02fffdb46c0fcf2f76187b17c0bf71a7ac0e",
+    "revision": 2,
+    "statement": "\\int_{0}^{2 \\pi} \\ln{\\left(\\frac{85}{4} - 9 \\cos{\\left(x \\right)} \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "r=\\frac{9}{2}>1,\\quad\\ln(1-2r\\cos x+r^2)=2\\ln r+\\ln(1-2r^{-1}\\cos x+r^{-2})",
+      "\\ln(1-2r^{-1}\\cos x+r^{-2})=-2\\sum_{j=1}^\\infty\\frac{r^{-j}\\cos(jx)}j",
+      "\\text{The series converges uniformly, and each cosine integrates to zero over a full period.}",
+      "I=\\int_0^{2\\pi}2\\ln r\\,\\mathrm{d}x=4\\pi\\ln r",
+      "I=4 \\pi \\ln{\\left(\\frac{9}{2} \\right)}",
+      "4 \\pi \\ln{\\left(\\frac{9}{2} \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_7b20e3a62c4a3c758405": {
+    "sourceContentHash": "c6a4288b60949ee395044482abe838285b8e20cbd6238958647117c4f10733de",
+    "revision": 2,
+    "statement": "\\int_{0}^{2 \\pi} \\ln{\\left(26 - 10 \\cos{\\left(x \\right)} \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\text{Let }I\\text{ denote the requested integral.}",
+      "r=5>1,\\quad\\ln(1-2r\\cos x+r^2)=2\\ln r+\\ln(1-2r^{-1}\\cos x+r^{-2})",
+      "\\ln(1-2r^{-1}\\cos x+r^{-2})=-2\\sum_{j=1}^\\infty\\frac{r^{-j}\\cos(jx)}j",
+      "\\text{The series converges uniformly, and each cosine integrates to zero over a full period.}",
+      "I=\\int_0^{2\\pi}2\\ln r\\,\\mathrm{d}x=4\\pi\\ln r",
+      "I=4 \\pi \\ln{\\left(5 \\right)}",
+      "4 \\pi \\ln{\\left(5 \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_6f73fb50f4d660d9b804": {
+    "sourceContentHash": "93d7d6f9c68cb5cdf0d13f82c3c4760a5ace0b664638676a89920c2ed43e71cb",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{x + 6}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The denominator is positive throughout the interval, so its natural logarithm is an antiderivative.}",
+      "F(x)=\\ln{\\left(x + 6 \\right)},\\qquad F\\prime(x)=\\frac{1}{x + 6}",
+      "\\int_{0}^{1}\\frac{1}{x + 6}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\ln{\\left(7 \\right)}-\\left(\\ln{\\left(6 \\right)}\\right)=\\ln{\\left(\\frac{7}{6} \\right)}",
+      "\\ln{\\left(\\frac{7}{6} \\right)}",
+      "\\ln{\\left(\\frac{7}{6} \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "93d7d6f9c68cb5cdf0d13f82c3c4760a5ace0b664638676a89920c2ed43e71cb"
+    }
+  },
+  "cn_4f1f826b9220236d040a": {
+    "sourceContentHash": "87bae4bedafb9a02527ca924f9d139496e051ada85a5af2185e9329d3f42e32f",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{x + 8}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The denominator is positive throughout the interval, so its natural logarithm is an antiderivative.}",
+      "F(x)=\\ln{\\left(x + 8 \\right)},\\qquad F\\prime(x)=\\frac{1}{x + 8}",
+      "\\int_{0}^{1}\\frac{1}{x + 8}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\ln{\\left(9 \\right)}-\\left(\\ln{\\left(8 \\right)}\\right)=\\ln{\\left(\\frac{9}{8} \\right)}",
+      "\\ln{\\left(\\frac{9}{8} \\right)}",
+      "\\ln{\\left(\\frac{9}{8} \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "87bae4bedafb9a02527ca924f9d139496e051ada85a5af2185e9329d3f42e32f"
+    }
+  },
+  "cn_4692d1ffb73ea45e750e": {
+    "sourceContentHash": "88eeb7cecf7ac4afc3815b4febc502d8cf0632c82d5731953c717b6deec6019a",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{x + 9}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The denominator is positive throughout the interval, so its natural logarithm is an antiderivative.}",
+      "F(x)=\\ln{\\left(x + 9 \\right)},\\qquad F\\prime(x)=\\frac{1}{x + 9}",
+      "\\int_{0}^{1}\\frac{1}{x + 9}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\ln{\\left(10 \\right)}-\\left(\\ln{\\left(9 \\right)}\\right)=\\ln{\\left(\\frac{10}{9} \\right)}",
+      "\\ln{\\left(\\frac{10}{9} \\right)}",
+      "\\ln{\\left(\\frac{10}{9} \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "88eeb7cecf7ac4afc3815b4febc502d8cf0632c82d5731953c717b6deec6019a"
+    }
+  },
+  "cn_59db9b208ed98e95669e": {
+    "sourceContentHash": "460a18f7d0ce7a5683f5e7d3c4574f44196f388b0a4ec6ff92b58fd272f971ed",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}e^{6 x}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac{\\mathrm d}{\\mathrm dx}e^{6x}=6e^{6x}",
+      "\\textnormal{Divide by the constant inner derivative before evaluating the endpoints.}",
+      "F(x)=\\frac{e^{6 x}}{6},\\qquad F\\prime(x)=e^{6 x}",
+      "\\int_{0}^{1}e^{6 x}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{e^{6}}{6}-\\left(\\frac{1}{6}\\right)=- \\frac{1}{6} + \\frac{e^{6}}{6}",
+      "- \\frac{1}{6} + \\frac{e^{6}}{6}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "460a18f7d0ce7a5683f5e7d3c4574f44196f388b0a4ec6ff92b58fd272f971ed"
+    }
+  },
+  "cn_f7ed86627f188ed82c39": {
+    "sourceContentHash": "359c3212d829a6dd22a6a201c0c1b875eb2d0b3e95b048ce43eb3666567a48d2",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}e^{7 x}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac{\\mathrm d}{\\mathrm dx}e^{7x}=7e^{7x}",
+      "\\textnormal{Divide by the constant inner derivative before evaluating the endpoints.}",
+      "F(x)=\\frac{e^{7 x}}{7},\\qquad F\\prime(x)=e^{7 x}",
+      "\\int_{0}^{1}e^{7 x}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{e^{7}}{7}-\\left(\\frac{1}{7}\\right)=- \\frac{1}{7} + \\frac{e^{7}}{7}",
+      "- \\frac{1}{7} + \\frac{e^{7}}{7}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "359c3212d829a6dd22a6a201c0c1b875eb2d0b3e95b048ce43eb3666567a48d2"
+    }
+  },
+  "cn_d4707b959c635dedb4f2": {
+    "sourceContentHash": "b63c8a83f823fe8fccb43283da8a6428da1fd7dbb34931cfde0ecfc4d9ce0d60",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}e^{9 x}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac{\\mathrm d}{\\mathrm dx}e^{9x}=9e^{9x}",
+      "\\textnormal{Divide by the constant inner derivative before evaluating the endpoints.}",
+      "F(x)=\\frac{e^{9 x}}{9},\\qquad F\\prime(x)=e^{9 x}",
+      "\\int_{0}^{1}e^{9 x}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{e^{9}}{9}-\\left(\\frac{1}{9}\\right)=- \\frac{1}{9} + \\frac{e^{9}}{9}",
+      "- \\frac{1}{9} + \\frac{e^{9}}{9}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "b63c8a83f823fe8fccb43283da8a6428da1fd7dbb34931cfde0ecfc4d9ce0d60"
+    }
+  },
+  "cn_a595c4caa05ff8057b88": {
+    "sourceContentHash": "95f9b5edf97cc74bc74c4cc5f447ac51d491ecaa0117b488784339ffba462491",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}e^{11 x}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac{\\mathrm d}{\\mathrm dx}e^{11x}=11e^{11x}",
+      "\\textnormal{Divide by the constant inner derivative before evaluating the endpoints.}",
+      "F(x)=\\frac{e^{11 x}}{11},\\qquad F\\prime(x)=e^{11 x}",
+      "\\int_{0}^{1}e^{11 x}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{e^{11}}{11}-\\left(\\frac{1}{11}\\right)=- \\frac{1}{11} + \\frac{e^{11}}{11}",
+      "- \\frac{1}{11} + \\frac{e^{11}}{11}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "95f9b5edf97cc74bc74c4cc5f447ac51d491ecaa0117b488784339ffba462491"
+    }
+  },
+  "cn_f111b1a09320852a58a9": {
+    "sourceContentHash": "fdecabd47bb3dcb128e7517bc19425721627315a6480e4a3879092157d7df5b1",
+    "revision": 1,
+    "statement": "\\int_{- \\frac{\\pi}{8}}^{\\frac{\\pi}{8}}x^{3} + \\cos{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The cubic term is odd, so its integral over the symmetric interval is zero. The cosine term is even.}",
+      "\\int_{-\\frac{\\pi}{8}}^{\\frac{\\pi}{8}}x^3\\,\\mathrm dx=0",
+      "\\int_{-\\frac{\\pi}{8}}^{\\frac{\\pi}{8}}\\cos x\\,\\mathrm dx=2\\int_0^{\\frac{\\pi}{8}}\\cos x\\,\\mathrm dx",
+      "2[\\sin x]_0^{\\frac{\\pi}{8}}=2\\sin\\left(\\frac{\\pi}{8}\\right)=2 \\sqrt{\\frac{1}{2} - \\frac{\\sqrt{2}}{4}}",
+      "2 \\sqrt{\\frac{1}{2} - \\frac{\\sqrt{2}}{4}}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "fdecabd47bb3dcb128e7517bc19425721627315a6480e4a3879092157d7df5b1"
+    }
+  },
+  "cn_49a5f0cb5e0b1a5af2ea": {
+    "sourceContentHash": "b3067095aaceb535896210aab5048cd6906bab9834da37d3594c425ef50e256d",
+    "revision": 1,
+    "statement": "\\int_{1}^{7}\\ln{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "u=\\ln x,\\quad \\mathrm dv=\\mathrm dx,\\quad \\mathrm du=\\frac{\\mathrm dx}{x},\\quad v=x",
+      "\\int\\ln x\\,\\mathrm dx=x\\ln x-\\int1\\,\\mathrm dx=x\\ln x-x+C,\\qquad C\\in\\mathbb R",
+      "F(x)=x \\ln{\\left(x \\right)} - x,\\qquad F\\prime(x)=\\ln{\\left(x \\right)}",
+      "\\int_{1}^{7}\\ln{\\left(x \\right)}\\,\\mathrm dx=F\\left(7\\right)-F\\left(1\\right)=-7 + 7 \\ln{\\left(7 \\right)}-\\left(-1\\right)=-6 + 7 \\ln{\\left(7 \\right)}",
+      "-6 + 7 \\ln{\\left(7 \\right)}",
+      "-6 + 7 \\ln{\\left(7 \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "b3067095aaceb535896210aab5048cd6906bab9834da37d3594c425ef50e256d"
+    }
+  },
+  "cn_94ca2c633b6c39827a61": {
+    "sourceContentHash": "ec4c52a86610cdcda8f468e02af60d28d1c9b2550e9ebd31bc9d7ccc77196e11",
+    "revision": 1,
+    "statement": "\\int_{1}^{8}\\ln{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "u=\\ln x,\\quad \\mathrm dv=\\mathrm dx,\\quad \\mathrm du=\\frac{\\mathrm dx}{x},\\quad v=x",
+      "\\int\\ln x\\,\\mathrm dx=x\\ln x-\\int1\\,\\mathrm dx=x\\ln x-x+C,\\qquad C\\in\\mathbb R",
+      "F(x)=x \\ln{\\left(x \\right)} - x,\\qquad F\\prime(x)=\\ln{\\left(x \\right)}",
+      "\\int_{1}^{8}\\ln{\\left(x \\right)}\\,\\mathrm dx=F\\left(8\\right)-F\\left(1\\right)=-8 + 8 \\ln{\\left(8 \\right)}-\\left(-1\\right)=-7 + 8 \\ln{\\left(8 \\right)}",
+      "-7 + 8 \\ln{\\left(8 \\right)}",
+      "-7 + 8 \\ln{\\left(8 \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "ec4c52a86610cdcda8f468e02af60d28d1c9b2550e9ebd31bc9d7ccc77196e11"
+    }
+  },
+  "cn_1fc24d267ef9a1e1bfdb": {
+    "sourceContentHash": "0cdd3bd857bd58bde16392727f2318ed8c1734e76ba1a7e2c4802fcb242723d2",
+    "revision": 1,
+    "statement": "\\int_{1}^{11}\\ln{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "u=\\ln x,\\quad \\mathrm dv=\\mathrm dx,\\quad \\mathrm du=\\frac{\\mathrm dx}{x},\\quad v=x",
+      "\\int\\ln x\\,\\mathrm dx=x\\ln x-\\int1\\,\\mathrm dx=x\\ln x-x+C,\\qquad C\\in\\mathbb R",
+      "F(x)=x \\ln{\\left(x \\right)} - x,\\qquad F\\prime(x)=\\ln{\\left(x \\right)}",
+      "\\int_{1}^{11}\\ln{\\left(x \\right)}\\,\\mathrm dx=F\\left(11\\right)-F\\left(1\\right)=-11 + 11 \\ln{\\left(11 \\right)}-\\left(-1\\right)=-10 + 11 \\ln{\\left(11 \\right)}",
+      "-10 + 11 \\ln{\\left(11 \\right)}",
+      "-10 + 11 \\ln{\\left(11 \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "0cdd3bd857bd58bde16392727f2318ed8c1734e76ba1a7e2c4802fcb242723d2"
+    }
+  },
+  "cn_63dfda9541957e471bc8": {
+    "sourceContentHash": "b9cc763299e9479ab0dedbcf751939735e1ebc9222e6df375ebeb50c36d358a3",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 4\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x+1)(x+4)}=\\frac1{3}\\left(\\frac1{x+1}-\\frac1{x+4}\\right)",
+      "F(x)=\\frac{\\ln{\\left(\\frac{x + 1}{x + 4} \\right)}}{3},\\qquad F\\prime(x)=\\frac{1}{\\left(x + 1\\right) \\left(x + 4\\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 4\\right)}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{\\ln{\\left(\\frac{2}{5} \\right)}}{3}-\\left(- \\frac{\\ln{\\left(4 \\right)}}{3}\\right)=\\frac{\\ln{\\left(\\frac{8}{5} \\right)}}{3}",
+      "\\frac{\\ln{\\left(\\frac{8}{5} \\right)}}{3}",
+      "\\frac{\\ln{\\left(\\frac{8}{5} \\right)}}{3}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "b9cc763299e9479ab0dedbcf751939735e1ebc9222e6df375ebeb50c36d358a3"
+    }
+  },
+  "cn_cebdc12e302ffdc75d85": {
+    "sourceContentHash": "31654f3a8482f133877c623049259b049076dda6ac7befc8933aadc9d6489ad5",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 6\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x+1)(x+6)}=\\frac1{5}\\left(\\frac1{x+1}-\\frac1{x+6}\\right)",
+      "F(x)=\\frac{\\ln{\\left(\\frac{x + 1}{x + 6} \\right)}}{5},\\qquad F\\prime(x)=\\frac{1}{\\left(x + 1\\right) \\left(x + 6\\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 6\\right)}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{\\ln{\\left(\\frac{2}{7} \\right)}}{5}-\\left(- \\frac{\\ln{\\left(6 \\right)}}{5}\\right)=\\frac{\\ln{\\left(\\frac{12}{7} \\right)}}{5}",
+      "\\frac{\\ln{\\left(\\frac{12}{7} \\right)}}{5}",
+      "\\frac{\\ln{\\left(\\frac{12}{7} \\right)}}{5}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "31654f3a8482f133877c623049259b049076dda6ac7befc8933aadc9d6489ad5"
+    }
+  },
+  "cn_e7ec0a3a1912746dc8be": {
+    "sourceContentHash": "ba6c507c233f121e583bdbe644aafcdaac95ea0a6af1d459d39615faae20e895",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 8\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x+1)(x+8)}=\\frac1{7}\\left(\\frac1{x+1}-\\frac1{x+8}\\right)",
+      "F(x)=\\frac{\\ln{\\left(\\frac{x + 1}{x + 8} \\right)}}{7},\\qquad F\\prime(x)=\\frac{1}{\\left(x + 1\\right) \\left(x + 8\\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 8\\right)}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=\\frac{\\ln{\\left(\\frac{2}{9} \\right)}}{7}-\\left(- \\frac{\\ln{\\left(8 \\right)}}{7}\\right)=\\frac{\\ln{\\left(\\frac{16}{9} \\right)}}{7}",
+      "\\frac{\\ln{\\left(\\frac{16}{9} \\right)}}{7}",
+      "\\frac{\\ln{\\left(\\frac{16}{9} \\right)}}{7}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "ba6c507c233f121e583bdbe644aafcdaac95ea0a6af1d459d39615faae20e895"
+    }
+  },
+  "cn_33370c61bb6ddaaf4df1": {
+    "sourceContentHash": "efce0f887e932181f2209a8f69217b2a23b16ee76c0e7dbf40e0b55858ad1a5a",
+    "revision": 1,
+    "statement": "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 11\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x+1)(x+11)}=\\frac1{10}\\left(\\frac1{x+1}-\\frac1{x+11}\\right)",
+      "F(x)=\\frac{\\ln{\\left(\\frac{x + 1}{x + 11} \\right)}}{10},\\qquad F\\prime(x)=\\frac{1}{\\left(x + 1\\right) \\left(x + 11\\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 11\\right)}\\,\\mathrm dx=F\\left(1\\right)-F\\left(0\\right)=- \\frac{\\ln{\\left(6 \\right)}}{10}-\\left(- \\frac{\\ln{\\left(11 \\right)}}{10}\\right)=\\frac{\\ln{\\left(\\frac{11}{6} \\right)}}{10}",
+      "\\frac{\\ln{\\left(\\frac{11}{6} \\right)}}{10}",
+      "\\frac{\\ln{\\left(\\frac{11}{6} \\right)}}{10}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "efce0f887e932181f2209a8f69217b2a23b16ee76c0e7dbf40e0b55858ad1a5a"
+    }
+  },
+  "cn_d087653df2426ab37097": {
+    "sourceContentHash": "5e800d153fcd4c57dcdb7059b0c0d0bfd2b35804f57f792e3504e50133aaf491",
+    "revision": 1,
+    "statement": "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(5 x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "I(x)=\\int_0^xe^t\\cos(5t)\\,\\mathrm dt,\\quad J(x)=\\int_0^xe^t\\sin(5t)\\,\\mathrm dt",
+      "\\textnormal{Integration by parts gives a pair of equations for these definite primitives.}",
+      "I(x)=e^x\\cos(5x)-1+5J(x),\\quad J(x)=e^x\\sin(5x)-5I(x)",
+      "(26)I(x)=e^x\\big(\\cos(5x)+5\\sin(5x)\\big)-1",
+      "F(x)=\\frac{\\left(5 \\sin{\\left(5 x \\right)} + \\cos{\\left(5 x \\right)}\\right) e^{x}}{26},\\qquad F\\prime(x)=e^{x} \\cos{\\left(5 x \\right)}",
+      "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(5 x \\right)}\\,\\mathrm dx=F\\left(2 \\pi\\right)-F\\left(0\\right)=\\frac{e^{2 \\pi}}{26}-\\left(\\frac{1}{26}\\right)=- \\frac{1}{26} + \\frac{e^{2 \\pi}}{26}",
+      "- \\frac{1}{26} + \\frac{e^{2 \\pi}}{26}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "5e800d153fcd4c57dcdb7059b0c0d0bfd2b35804f57f792e3504e50133aaf491"
+    }
+  },
+  "cn_11814ac4759e9aa8c83a": {
+    "sourceContentHash": "d1d3ef1b8bd19eae8ca78cb094a9f75898e7e9cc5fe7b7befcc823ac7cd4d3e0",
+    "revision": 1,
+    "statement": "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(6 x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "I(x)=\\int_0^xe^t\\cos(6t)\\,\\mathrm dt,\\quad J(x)=\\int_0^xe^t\\sin(6t)\\,\\mathrm dt",
+      "\\textnormal{Integration by parts gives a pair of equations for these definite primitives.}",
+      "I(x)=e^x\\cos(6x)-1+6J(x),\\quad J(x)=e^x\\sin(6x)-6I(x)",
+      "(37)I(x)=e^x\\big(\\cos(6x)+6\\sin(6x)\\big)-1",
+      "F(x)=\\frac{\\left(6 \\sin{\\left(6 x \\right)} + \\cos{\\left(6 x \\right)}\\right) e^{x}}{37},\\qquad F\\prime(x)=e^{x} \\cos{\\left(6 x \\right)}",
+      "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(6 x \\right)}\\,\\mathrm dx=F\\left(2 \\pi\\right)-F\\left(0\\right)=\\frac{e^{2 \\pi}}{37}-\\left(\\frac{1}{37}\\right)=- \\frac{1}{37} + \\frac{e^{2 \\pi}}{37}",
+      "- \\frac{1}{37} + \\frac{e^{2 \\pi}}{37}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "d1d3ef1b8bd19eae8ca78cb094a9f75898e7e9cc5fe7b7befcc823ac7cd4d3e0"
+    }
+  },
+  "cn_36d417c89af6232379ba": {
+    "sourceContentHash": "598b9dbd1c23ba5d0978b146246b130e231ceeaf08e5f21885564709eab692bc",
+    "revision": 1,
+    "statement": "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(9 x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "I(x)=\\int_0^xe^t\\cos(9t)\\,\\mathrm dt,\\quad J(x)=\\int_0^xe^t\\sin(9t)\\,\\mathrm dt",
+      "\\textnormal{Integration by parts gives a pair of equations for these definite primitives.}",
+      "I(x)=e^x\\cos(9x)-1+9J(x),\\quad J(x)=e^x\\sin(9x)-9I(x)",
+      "(82)I(x)=e^x\\big(\\cos(9x)+9\\sin(9x)\\big)-1",
+      "F(x)=\\frac{\\left(9 \\sin{\\left(9 x \\right)} + \\cos{\\left(9 x \\right)}\\right) e^{x}}{82},\\qquad F\\prime(x)=e^{x} \\cos{\\left(9 x \\right)}",
+      "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(9 x \\right)}\\,\\mathrm dx=F\\left(2 \\pi\\right)-F\\left(0\\right)=\\frac{e^{2 \\pi}}{82}-\\left(\\frac{1}{82}\\right)=- \\frac{1}{82} + \\frac{e^{2 \\pi}}{82}",
+      "- \\frac{1}{82} + \\frac{e^{2 \\pi}}{82}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "598b9dbd1c23ba5d0978b146246b130e231ceeaf08e5f21885564709eab692bc"
+    }
+  },
+  "cn_0a7311c341af1490b71f": {
+    "sourceContentHash": "2846d5039844e26c8f39f1ff185d57b268b7b0cfd43bda6ddb867b98b906ae42",
+    "revision": 1,
+    "statement": "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(11 x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "I(x)=\\int_0^xe^t\\cos(11t)\\,\\mathrm dt,\\quad J(x)=\\int_0^xe^t\\sin(11t)\\,\\mathrm dt",
+      "\\textnormal{Integration by parts gives a pair of equations for these definite primitives.}",
+      "I(x)=e^x\\cos(11x)-1+11J(x),\\quad J(x)=e^x\\sin(11x)-11I(x)",
+      "(122)I(x)=e^x\\big(\\cos(11x)+11\\sin(11x)\\big)-1",
+      "F(x)=\\frac{\\left(11 \\sin{\\left(11 x \\right)} + \\cos{\\left(11 x \\right)}\\right) e^{x}}{122},\\qquad F\\prime(x)=e^{x} \\cos{\\left(11 x \\right)}",
+      "\\int_{0}^{2 \\pi}e^{x} \\cos{\\left(11 x \\right)}\\,\\mathrm dx=F\\left(2 \\pi\\right)-F\\left(0\\right)=\\frac{e^{2 \\pi}}{122}-\\left(\\frac{1}{122}\\right)=- \\frac{1}{122} + \\frac{e^{2 \\pi}}{122}",
+      "- \\frac{1}{122} + \\frac{e^{2 \\pi}}{122}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "2846d5039844e26c8f39f1ff185d57b268b7b0cfd43bda6ddb867b98b906ae42"
+    }
+  },
+  "cn_567b583b15c3f003644d": {
+    "sourceContentHash": "d6edaf13d1e3b07778b4f2e7280eff7e8268bd8697a7fd044664eb158e85548b",
+    "revision": 1,
+    "statement": "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 25\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x^2+1)(x^2+25)}=\\frac1{24}\\left(\\frac1{x^2+1}-\\frac1{x^2+25}\\right)",
+      "\\lim_{b\\to\\infty}\\arctan b=\\lim_{b\\to\\infty}\\arctan\\frac{b}{5}=\\frac\\pi2",
+      "F(x)=- \\frac{\\arctan{\\left(\\frac{x}{5} \\right)}}{120} + \\frac{\\arctan{\\left(x \\right)}}{24},\\qquad F\\prime(x)=\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 25\\right)}",
+      "\\lim_{b\\to\\infty}F(b)=\\frac{\\pi}{60}",
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 25\\right)}\\,\\mathrm dx=\\frac{\\pi}{60}-\\left(0\\right)=\\frac{\\pi}{60}",
+      "\\frac{\\pi}{60}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "d6edaf13d1e3b07778b4f2e7280eff7e8268bd8697a7fd044664eb158e85548b"
+    }
+  },
+  "cn_8b396b8a3f60e08fcd9a": {
+    "sourceContentHash": "eff0b8a7c17acd480b6ea8b30191958a0be11cdf8672c7d89fb8dce9be31e14b",
+    "revision": 1,
+    "statement": "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 36\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x^2+1)(x^2+36)}=\\frac1{35}\\left(\\frac1{x^2+1}-\\frac1{x^2+36}\\right)",
+      "\\lim_{b\\to\\infty}\\arctan b=\\lim_{b\\to\\infty}\\arctan\\frac{b}{6}=\\frac\\pi2",
+      "F(x)=- \\frac{\\arctan{\\left(\\frac{x}{6} \\right)}}{210} + \\frac{\\arctan{\\left(x \\right)}}{35},\\qquad F\\prime(x)=\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 36\\right)}",
+      "\\lim_{b\\to\\infty}F(b)=\\frac{\\pi}{84}",
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 36\\right)}\\,\\mathrm dx=\\frac{\\pi}{84}-\\left(0\\right)=\\frac{\\pi}{84}",
+      "\\frac{\\pi}{84}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "eff0b8a7c17acd480b6ea8b30191958a0be11cdf8672c7d89fb8dce9be31e14b"
+    }
+  },
+  "cn_161efd61e7f9ae6feaa5": {
+    "sourceContentHash": "947e99f17af6cd7ef2ca5a5ee9498b2b7ed4ef3987856b11f2cc3c18a0480b79",
+    "revision": 1,
+    "statement": "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 81\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x^2+1)(x^2+81)}=\\frac1{80}\\left(\\frac1{x^2+1}-\\frac1{x^2+81}\\right)",
+      "\\lim_{b\\to\\infty}\\arctan b=\\lim_{b\\to\\infty}\\arctan\\frac{b}{9}=\\frac\\pi2",
+      "F(x)=- \\frac{\\arctan{\\left(\\frac{x}{9} \\right)}}{720} + \\frac{\\arctan{\\left(x \\right)}}{80},\\qquad F\\prime(x)=\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 81\\right)}",
+      "\\lim_{b\\to\\infty}F(b)=\\frac{\\pi}{180}",
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 81\\right)}\\,\\mathrm dx=\\frac{\\pi}{180}-\\left(0\\right)=\\frac{\\pi}{180}",
+      "\\frac{\\pi}{180}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "947e99f17af6cd7ef2ca5a5ee9498b2b7ed4ef3987856b11f2cc3c18a0480b79"
+    }
+  },
+  "cn_f62b3196a81b20dcb8c1": {
+    "sourceContentHash": "fc26a09bfb56c293a7fb1fd0b788d99630119ddb6a228057a40669cb90ab8cbe",
+    "revision": 1,
+    "statement": "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 121\\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\frac1{(x^2+1)(x^2+121)}=\\frac1{120}\\left(\\frac1{x^2+1}-\\frac1{x^2+121}\\right)",
+      "\\lim_{b\\to\\infty}\\arctan b=\\lim_{b\\to\\infty}\\arctan\\frac{b}{11}=\\frac\\pi2",
+      "F(x)=- \\frac{\\arctan{\\left(\\frac{x}{11} \\right)}}{1320} + \\frac{\\arctan{\\left(x \\right)}}{120},\\qquad F\\prime(x)=\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 121\\right)}",
+      "\\lim_{b\\to\\infty}F(b)=\\frac{\\pi}{264}",
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x^{2} + 1\\right) \\left(x^{2} + 121\\right)}\\,\\mathrm dx=\\frac{\\pi}{264}-\\left(0\\right)=\\frac{\\pi}{264}",
+      "\\frac{\\pi}{264}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "fc26a09bfb56c293a7fb1fd0b788d99630119ddb6a228057a40669cb90ab8cbe"
+    }
+  },
+  "cn_5bc7712b3ba7c3f51696": {
+    "sourceContentHash": "810f9a2b3fabe0b9ca9476a4f7ec4b3df30a8fac6749c6c57e08595d4754238e",
+    "revision": 1,
+    "statement": "\\int_0^1x^{4}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{4}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+5)^2}",
+      "\\frac1{k(k+5)^2}=\\frac1{25}\\left(\\frac1k-\\frac1{k+5}\\right)-\\frac1{5(k+5)^2}",
+      "\\frac1{25}\\sum_{j=1}^{5}\\frac1j-\\frac1{5}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{5}\\frac1{j^2}\\right)=\\frac{6913}{18000} - \\frac{\\pi^{2}}{30}",
+      "\\frac{6913}{18000} - \\frac{\\pi^{2}}{30}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "810f9a2b3fabe0b9ca9476a4f7ec4b3df30a8fac6749c6c57e08595d4754238e"
+    }
+  },
+  "cn_bb0ae9e7ca5014617d73": {
+    "sourceContentHash": "7d97fbd3fe2d2b67ba375d6607bf9b7b9da2bf53426b937c00d3cef71e7c16b2",
+    "revision": 1,
+    "statement": "\\int_0^1x^{5}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{5}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+6)^2}",
+      "\\frac1{k(k+6)^2}=\\frac1{36}\\left(\\frac1k-\\frac1{k+6}\\right)-\\frac1{6(k+6)^2}",
+      "\\frac1{36}\\sum_{j=1}^{6}\\frac1j-\\frac1{6}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{6}\\frac1{j^2}\\right)=\\frac{6839}{21600} - \\frac{\\pi^{2}}{36}",
+      "\\frac{6839}{21600} - \\frac{\\pi^{2}}{36}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "7d97fbd3fe2d2b67ba375d6607bf9b7b9da2bf53426b937c00d3cef71e7c16b2"
+    }
+  },
+  "cn_0bcccd2683b8e9d4315c": {
+    "sourceContentHash": "568284d166dad54dec192987b5cbb8393a5572ebf72b4c6358848ff9ae2421c9",
+    "revision": 1,
+    "statement": "\\int_0^1x^{6}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{6}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+7)^2}",
+      "\\frac1{k(k+7)^2}=\\frac1{49}\\left(\\frac1k-\\frac1{k+7}\\right)-\\frac1{7(k+7)^2}",
+      "\\frac1{49}\\sum_{j=1}^{7}\\frac1j-\\frac1{7}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{7}\\frac1{j^2}\\right)=\\frac{332021}{1234800} - \\frac{\\pi^{2}}{42}",
+      "\\frac{332021}{1234800} - \\frac{\\pi^{2}}{42}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "568284d166dad54dec192987b5cbb8393a5572ebf72b4c6358848ff9ae2421c9"
+    }
+  },
+  "cn_cb6b31fc6108616e1a09": {
+    "sourceContentHash": "503862f2b768cf20700c59b78750e9485ff0ee3eca2875523ff859f84c60b96b",
+    "revision": 1,
+    "statement": "\\int_0^1x^{7}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{7}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+8)^2}",
+      "\\frac1{k(k+8)^2}=\\frac1{64}\\left(\\frac1k-\\frac1{k+8}\\right)-\\frac1{8(k+8)^2}",
+      "\\frac1{64}\\sum_{j=1}^{8}\\frac1j-\\frac1{8}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{8}\\frac1{j^2}\\right)=\\frac{164683}{705600} - \\frac{\\pi^{2}}{48}",
+      "\\frac{164683}{705600} - \\frac{\\pi^{2}}{48}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "503862f2b768cf20700c59b78750e9485ff0ee3eca2875523ff859f84c60b96b"
+    }
+  },
+  "cn_566fcf3f129945be7713": {
+    "sourceContentHash": "d3607445cc74bcfd66c43ffd633fb5a5096d1f7cf61463b5206805e6cc4cf802",
+    "revision": 1,
+    "statement": "\\int_0^1x^{9}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{9}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+10)^2}",
+      "\\frac1{k(k+10)^2}=\\frac1{100}\\left(\\frac1k-\\frac1{k+10}\\right)-\\frac1{10(k+10)^2}",
+      "\\frac1{100}\\sum_{j=1}^{10}\\frac1j-\\frac1{10}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{10}\\frac1{j^2}\\right)=\\frac{11701657}{63504000} - \\frac{\\pi^{2}}{60}",
+      "\\frac{11701657}{63504000} - \\frac{\\pi^{2}}{60}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "d3607445cc74bcfd66c43ffd633fb5a5096d1f7cf61463b5206805e6cc4cf802"
+    }
+  },
+  "cn_563f68c5ef2ca83bc704": {
+    "sourceContentHash": "ec5e0e708078b6036fde73b13c280ec599f093f42ff2c3023e15f40bf0a3f842",
+    "revision": 1,
+    "statement": "\\int_0^1x^{10}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{10}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+11)^2}",
+      "\\frac1{k(k+11)^2}=\\frac1{121}\\left(\\frac1k-\\frac1{k+11}\\right)-\\frac1{11(k+11)^2}",
+      "\\frac1{121}\\sum_{j=1}^{11}\\frac1j-\\frac1{11}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{11}\\frac1{j^2}\\right)=\\frac{281628233}{1690476480} - \\frac{\\pi^{2}}{66}",
+      "\\frac{281628233}{1690476480} - \\frac{\\pi^{2}}{66}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "ec5e0e708078b6036fde73b13c280ec599f093f42ff2c3023e15f40bf0a3f842"
+    }
+  },
+  "cn_a4d9603697ec07b56c57": {
+    "sourceContentHash": "7c65877d8521b5818e022c77b1ff3588143d3282015b5c15ea1d65b003863b33",
+    "revision": 1,
+    "statement": "\\int_0^1x^{11}\\ln x\\ln(1-x)\\,\\mathrm{d}x",
+    "steps": [
+      "-\\ln(1-x)=\\sum_{k=1}^\\infty\\frac{x^k}{k}\\qquad(0\\le x<1)",
+      "\\textnormal{Multiply by the nonnegative power-logarithm factor and use Tonelli. Each resulting logarithmic moment follows by integration by parts.}",
+      "\\int_0^1-x^q\\ln x\\,\\mathrm dx=\\left[-\\frac{x^{q+1}\\ln x}{q+1}+\\frac{x^{q+1}}{(q+1)^2}\\right]_0^1=\\frac1{(q+1)^2}\\quad(q>-1)",
+      "\\textnormal{The lower endpoint is a limit: a positive power times the logarithm tends to zero.}",
+      "\\int_0^1x^{11}\\ln x\\ln(1-x)\\,\\mathrm dx=\\sum_{k=1}^\\infty\\frac1{k(k+12)^2}",
+      "\\frac1{k(k+12)^2}=\\frac1{144}\\left(\\frac1k-\\frac1{k+12}\\right)-\\frac1{12(k+12)^2}",
+      "\\frac1{144}\\sum_{j=1}^{12}\\frac1j-\\frac1{12}\\left(\\frac{\\pi^2}{6}-\\sum_{j=1}^{12}\\frac1{j^2}\\right)=\\frac{280246811}{1844156160} - \\frac{\\pi^{2}}{72}",
+      "\\frac{280246811}{1844156160} - \\frac{\\pi^{2}}{72}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "7c65877d8521b5818e022c77b1ff3588143d3282015b5c15ea1d65b003863b33"
+    }
+  },
+  "cn_dbb37722ef0155e7b66a": {
+    "sourceContentHash": "65f540e0f5cf39129f859e63e27aae04233b5c352166fecda338f32a9d6f47d9",
+    "revision": 1,
+    "statement": "\\int_0^{\\pi/2}\\frac{dx}{1+5\\sin x}",
+    "steps": [
+      "t=\\tan\\frac x2,\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\mathrm dx=\\frac{2\\,\\mathrm dt}{1+t^2},\\quad x:0\\to\\frac\\pi2\\ \\Longrightarrow\\ t:0\\to1",
+      "\\int_0^{\\pi/2}\\frac{\\mathrm dx}{1+5\\sin x}=\\int_0^1\\frac{2\\,\\mathrm dt}{t^2+10t+1}",
+      "G(t)=\\frac{\\sqrt{6} \\ln{\\left(\\frac{t - 2 \\sqrt{6} + 5}{t + 2 \\sqrt{6} + 5} \\right)}}{12},\\qquad G\\prime(t)=\\frac2{t^2+10t+1}",
+      "\\textnormal{Both linear factors inside the logarithm are positive throughout the transformed interval.}",
+      "G(1)-G(0)=\\frac{\\sqrt{6} \\ln{\\left(\\frac{6 - 2 \\sqrt{6}}{2 \\sqrt{6} + 6} \\right)}}{12} - \\frac{\\sqrt{6} \\ln{\\left(\\frac{5 - 2 \\sqrt{6}}{2 \\sqrt{6} + 5} \\right)}}{12}",
+      "\\frac{\\sqrt{6} \\ln{\\left(\\frac{6 - 2 \\sqrt{6}}{2 \\sqrt{6} + 6} \\right)}}{12} - \\frac{\\sqrt{6} \\ln{\\left(\\frac{5 - 2 \\sqrt{6}}{2 \\sqrt{6} + 5} \\right)}}{12}",
+      "\\frac{\\sqrt{6} \\ln{\\left(\\frac{6 - 2 \\sqrt{6}}{2 \\sqrt{6} + 6} \\right)}}{12} - \\frac{\\sqrt{6} \\ln{\\left(\\frac{5 - 2 \\sqrt{6}}{2 \\sqrt{6} + 5} \\right)}}{12}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "65f540e0f5cf39129f859e63e27aae04233b5c352166fecda338f32a9d6f47d9"
+    }
+  },
+  "cn_c3e8f587d5241dab3421": {
+    "sourceContentHash": "d306477c25c5a05e8ae4ca0ead7042c9598f9d39463485057b4d865946bcfe59",
+    "revision": 1,
+    "statement": "\\int_0^{\\pi/2}\\frac{dx}{1+7\\sin x}",
+    "steps": [
+      "t=\\tan\\frac x2,\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\mathrm dx=\\frac{2\\,\\mathrm dt}{1+t^2},\\quad x:0\\to\\frac\\pi2\\ \\Longrightarrow\\ t:0\\to1",
+      "\\int_0^{\\pi/2}\\frac{\\mathrm dx}{1+7\\sin x}=\\int_0^1\\frac{2\\,\\mathrm dt}{t^2+14t+1}",
+      "G(t)=\\frac{\\sqrt{3} \\ln{\\left(\\frac{t - 4 \\sqrt{3} + 7}{t + 4 \\sqrt{3} + 7} \\right)}}{12},\\qquad G\\prime(t)=\\frac2{t^2+14t+1}",
+      "\\textnormal{Both linear factors inside the logarithm are positive throughout the transformed interval.}",
+      "G(1)-G(0)=\\frac{\\sqrt{3} \\ln{\\left(\\frac{8 - 4 \\sqrt{3}}{4 \\sqrt{3} + 8} \\right)}}{12} - \\frac{\\sqrt{3} \\ln{\\left(\\frac{7 - 4 \\sqrt{3}}{4 \\sqrt{3} + 7} \\right)}}{12}",
+      "\\frac{\\sqrt{3} \\ln{\\left(\\frac{8 - 4 \\sqrt{3}}{4 \\sqrt{3} + 8} \\right)}}{12} - \\frac{\\sqrt{3} \\ln{\\left(\\frac{7 - 4 \\sqrt{3}}{4 \\sqrt{3} + 7} \\right)}}{12}",
+      "\\frac{\\sqrt{3} \\ln{\\left(\\frac{8 - 4 \\sqrt{3}}{4 \\sqrt{3} + 8} \\right)}}{12} - \\frac{\\sqrt{3} \\ln{\\left(\\frac{7 - 4 \\sqrt{3}}{4 \\sqrt{3} + 7} \\right)}}{12}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "d306477c25c5a05e8ae4ca0ead7042c9598f9d39463485057b4d865946bcfe59"
+    }
+  },
+  "cn_d0fdf2a44b875485483e": {
+    "sourceContentHash": "1cf586cb4a2cce68399986d8433cfdbce887796f07ccb065dd1747e107e14867",
+    "revision": 1,
+    "statement": "\\int_0^{\\pi/2}\\frac{dx}{1+9\\sin x}",
+    "steps": [
+      "t=\\tan\\frac x2,\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\mathrm dx=\\frac{2\\,\\mathrm dt}{1+t^2},\\quad x:0\\to\\frac\\pi2\\ \\Longrightarrow\\ t:0\\to1",
+      "\\int_0^{\\pi/2}\\frac{\\mathrm dx}{1+9\\sin x}=\\int_0^1\\frac{2\\,\\mathrm dt}{t^2+18t+1}",
+      "G(t)=\\frac{\\sqrt{5} \\ln{\\left(\\frac{t - 4 \\sqrt{5} + 9}{t + 4 \\sqrt{5} + 9} \\right)}}{20},\\qquad G\\prime(t)=\\frac2{t^2+18t+1}",
+      "\\textnormal{Both linear factors inside the logarithm are positive throughout the transformed interval.}",
+      "G(1)-G(0)=\\frac{\\sqrt{5} \\ln{\\left(\\frac{10 - 4 \\sqrt{5}}{4 \\sqrt{5} + 10} \\right)}}{20} - \\frac{\\sqrt{5} \\ln{\\left(\\frac{9 - 4 \\sqrt{5}}{4 \\sqrt{5} + 9} \\right)}}{20}",
+      "\\frac{\\sqrt{5} \\ln{\\left(\\frac{10 - 4 \\sqrt{5}}{4 \\sqrt{5} + 10} \\right)}}{20} - \\frac{\\sqrt{5} \\ln{\\left(\\frac{9 - 4 \\sqrt{5}}{4 \\sqrt{5} + 9} \\right)}}{20}",
+      "\\frac{\\sqrt{5} \\ln{\\left(\\frac{10 - 4 \\sqrt{5}}{4 \\sqrt{5} + 10} \\right)}}{20} - \\frac{\\sqrt{5} \\ln{\\left(\\frac{9 - 4 \\sqrt{5}}{4 \\sqrt{5} + 9} \\right)}}{20}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "1cf586cb4a2cce68399986d8433cfdbce887796f07ccb065dd1747e107e14867"
+    }
+  },
+  "cn_1670333ceb56dba84e50": {
+    "sourceContentHash": "009729bacbc2d39d1746e4b554bbbe393f27d3c5620bae0a85633dc22a9144f2",
+    "revision": 1,
+    "statement": "\\int_0^{\\pi/2}\\frac{dx}{1+11\\sin x}",
+    "steps": [
+      "t=\\tan\\frac x2,\\quad\\sin x=\\frac{2t}{1+t^2},\\quad\\mathrm dx=\\frac{2\\,\\mathrm dt}{1+t^2},\\quad x:0\\to\\frac\\pi2\\ \\Longrightarrow\\ t:0\\to1",
+      "\\int_0^{\\pi/2}\\frac{\\mathrm dx}{1+11\\sin x}=\\int_0^1\\frac{2\\,\\mathrm dt}{t^2+22t+1}",
+      "G(t)=\\frac{\\sqrt{30} \\ln{\\left(\\frac{t - 2 \\sqrt{30} + 11}{t + 2 \\sqrt{30} + 11} \\right)}}{60},\\qquad G\\prime(t)=\\frac2{t^2+22t+1}",
+      "\\textnormal{Both linear factors inside the logarithm are positive throughout the transformed interval.}",
+      "G(1)-G(0)=\\frac{\\sqrt{30} \\ln{\\left(\\frac{12 - 2 \\sqrt{30}}{2 \\sqrt{30} + 12} \\right)}}{60} - \\frac{\\sqrt{30} \\ln{\\left(\\frac{11 - 2 \\sqrt{30}}{2 \\sqrt{30} + 11} \\right)}}{60}",
+      "\\frac{\\sqrt{30} \\ln{\\left(\\frac{12 - 2 \\sqrt{30}}{2 \\sqrt{30} + 12} \\right)}}{60} - \\frac{\\sqrt{30} \\ln{\\left(\\frac{11 - 2 \\sqrt{30}}{2 \\sqrt{30} + 11} \\right)}}{60}",
+      "\\frac{\\sqrt{30} \\ln{\\left(\\frac{12 - 2 \\sqrt{30}}{2 \\sqrt{30} + 12} \\right)}}{60} - \\frac{\\sqrt{30} \\ln{\\left(\\frac{11 - 2 \\sqrt{30}}{2 \\sqrt{30} + 11} \\right)}}{60}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "009729bacbc2d39d1746e4b554bbbe393f27d3c5620bae0a85633dc22a9144f2"
+    }
+  }
+}

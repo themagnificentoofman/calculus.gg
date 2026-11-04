@@ -1,0 +1,32 @@
+{
+  "author": "source_research",
+  "reviewer": "root-independent-review",
+  "status": "independently-reviewed",
+  "sourceArtifactSha256": "1bf115b5d7856bae132b9c6e3d93b8e3e28010b70067e47a472adc5c615ff63e",
+  "verifierSha256": "bf30d542441c06a6a4fa6c7e176cd92b69044d0da10af66833690e40c10d07b7",
+  "results": [
+    {
+      "familyId": "quality-series-medium-ac-gaussian-truncation",
+      "passed": true,
+      "checks": [
+        "Exact recursive omitted-term magnitudes give the least certified count 7.",
+        "Uniform convergence on [0,1] permits integration; decreasing magnitudes tending to zero give the alternating remainder bound.",
+        "All four counts are distinct and the question explicitly asks for the first passing bound, not actual quadrature error."
+      ],
+      "easiestOptionsVisibleRoute": "Compute the consecutive omitted bounds at six and seven, then use monotonicity. Medium: theorem applicability and indexing are the challenge.",
+      "optionDisposition": "Single purposeful item: no held-out statistical claim is possible. All options manually compared; shuffled production order retained. No stable family rule can be inferred from this one-item family."
+    },
+    {
+      "familyId": "quality-series-medium-ac-erf-coefficient-radius",
+      "passed": true,
+      "checks": [
+        "Six derivatives of the defining derivative, divided by 7!, give -1/(21 sqrt(pi)).",
+        "The successive nonzero-term ratio tends to zero for every fixed x; radius infinity.",
+        "Each alternative changes exactly one coefficient sign, integration factor, or radius; all are inequivalent."
+      ],
+      "easiestOptionsVisibleRoute": "Integrate the exponential Taylor series and identify its seventh-power coefficient; the radius follows from factorial growth. Medium.",
+      "optionDisposition": "Single purposeful item: no held-out statistical claim is possible. All options manually compared; shuffled production order retained. No stable family rule can be inferred from this one-item family."
+    }
+  ],
+  "limitations": "Independent AI mathematical/editorial review with exact finite computations and stated analytic arguments; not human certification, formal proof, or player calibration."
+}

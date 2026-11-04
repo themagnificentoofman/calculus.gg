@@ -1,0 +1,1771 @@
+{
+  "author": "frozen-M3-content",
+  "reviewer": "root-independent-review",
+  "artifactSha256": "b29821e00915dc97f42caf8ede401e47c943db5f23a11ec9c15583d2f3ba62b4",
+  "verifierSha256": "04ae8ccebcdf58a17be0675f20e83a2cfae72814471c9e971e475248502a22b8",
+  "instances": 72,
+  "passed": 72,
+  "results": [
+    {
+      "problemId": "cn_2fcfcb80550c237213cf",
+      "sourceContentHash": "5594b0017a0e6082309caf4451ec3062e1d5189b32dbe82ebe4a0680bd06cd81",
+      "semanticHash": "b37a2c82637a27bffa123c84082cfa76f37d630552a213c4e7bae750ca6d8b4b",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(32)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Integer(32)",
+          "right": "Integer(32)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_8d95517163ea106fc850",
+      "sourceContentHash": "23cf12b817d8986804e042751c0b45deb93631f8e6ad37fd98ba4ae649cbb410",
+      "semanticHash": "7d7257f0ff8f2f6d34612a7fa9e857ec09aade678e2af535a79897a6d12cf8ac",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(125, 2)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Rational(125, 2)",
+          "right": "Rational(125, 2)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_20de745fe85d7344dca2",
+      "sourceContentHash": "dbdb3f57a0aa415d694ee741ab319539496fafaea1e97eb565584206a112f3d9",
+      "semanticHash": "e6a4564502f4d7bd21ad7af88aad9e057d3c3474898a37750199933a97cb6a81",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(108)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Integer(108)",
+          "right": "Integer(108)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_d625aa3c1aedd5e8aa05",
+      "sourceContentHash": "5d9cc8eb10aa48cd6c1a56a228b7738e37c06337b00a099c40f437d5dc5a577f",
+      "semanticHash": "8a4987de237d27dd83474e6ec9a607369bd35278d73b9044929d77dadc1dd90f",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(343, 2)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Rational(343, 2)",
+          "right": "Rational(343, 2)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_10376847a420914b9f13",
+      "sourceContentHash": "fbfe8be6d875a4066e5960001f0f5adb9f530c978fa0fac987b05423396e06ea",
+      "semanticHash": "8404a9ed296a305bac917c5bfd7e01d0e80e8f55df3cfeef96ac92f6cfcd16ef",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(256)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Integer(256)",
+          "right": "Integer(256)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_c0e47b57066fd35dafcd",
+      "sourceContentHash": "f8c1a7ad38251c20d39e7177da14acf652ddc10f308ff2bb6f37469caaea69b5",
+      "semanticHash": "e9b8a97b672c976f3d351f1b43dbdd68e4d013153bbd18e3d2e7c0555c89e633",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(729, 2)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Rational(729, 2)",
+          "right": "Rational(729, 2)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_2c976b0b1d5f1cc567c1",
+      "sourceContentHash": "574534a5f3da694b8f5580fe458668c84f69a49b2f432b14651008b819dd04d2",
+      "semanticHash": "07d521f8853e62320c6d7f366c4170caffdb31272a0f2926d41ea187b1563880",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(500)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Integer(500)",
+          "right": "Integer(500)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_be71ba6b39c9013fb92d",
+      "sourceContentHash": "36e0a899c12782dc00d21276f532a5fc8b4963f19dceb24a189c3a25eedba57f",
+      "semanticHash": "bfd82b3528c30482f9db9b1616236c4561c7f5f13b7548766097c2cdd0389a46",
+      "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(1331, 2)",
+      "checks": [
+        {
+          "description": "Discriminant under the exact linear constraint",
+          "left": "Add(Mul(Integer(27), Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Mul(Pow(Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True))), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(2), Symbol('y', real=True))), Integer(2))), Mul(Integer(-1), Rational(1, 2), Pow(Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(-1), Symbol('x', real=True)), Mul(Integer(-1), Symbol('y', real=True))), Integer(2))), Integer(3))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Feasible attaining triple",
+          "left": "Rational(1331, 2)",
+          "right": "Rational(1331, 2)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Convert the constrained product into a cubic discriminant and exhibit a zero-product triple attaining its bound.",
+      "nearestNeighbor": "The fixed sphere-radius changes are pure scaling: one advanced lineage, related to polynomial discriminant extremality.",
+      "normalizedLineageKey": "m3-multivariable-olympiad-Vandermonde-extremum:radius-normalized"
+    },
+    {
+      "problemId": "cn_3a58d81713959eeb6ce6",
+      "sourceContentHash": "b4dce6b6bde59f41c7f287c6271f3e423888196c4f53a4ce5a524786e8abcc90",
+      "semanticHash": "011990ef907657ca2be76ab63ed5febb64f0afbe00a9d0c4fd2c5627b1ffef25",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Rational(3, 4)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(8)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(8)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_3a58d81713959eeb6ce6"
+    },
+    {
+      "problemId": "cn_43be532a4f16f3133c5c",
+      "sourceContentHash": "b1b4d3707945c0848c259eb3c6a7d94c92213e8f2a4b1fbd83ba2dce9f7e5d3d",
+      "semanticHash": "42ea2f3c5c27040f2b60baca321557d726f0416b2473aa876bfe6a94674513ae",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(4, 5)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(10)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(10)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_43be532a4f16f3133c5c"
+    },
+    {
+      "problemId": "cn_bc5a930879db01b7d575",
+      "sourceContentHash": "4b63ea50a9351f330016d1f73d9db0adfba9c9e10a8e9f5605eddf153371f3d4",
+      "semanticHash": "b731441cd0962bc39cb84c0eb81d601b286b726b0c186418904d3f22e87fc322",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Rational(5, 6)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(12)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(12)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_bc5a930879db01b7d575"
+    },
+    {
+      "problemId": "cn_065f5db476612ef3b9f5",
+      "sourceContentHash": "61e1f9efc2a171cc6b0d1850df7187a7af7300c93f3083468d826098bcca1ed4",
+      "semanticHash": "1b4d991e78b7fd944ff80df50d6e57d0522f2a26a62587d447d2642ef2d857d1",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(6, 7)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(14)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(14)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_065f5db476612ef3b9f5"
+    },
+    {
+      "problemId": "cn_f1e05339beccab40bd29",
+      "sourceContentHash": "ae92e4552651e5dc4dd9491c0997ad41571aadf2ad919910f07f7129e914e60c",
+      "semanticHash": "81a42c95b4f397fa2cd08d489ad7a66406d3222fc2ceb9f77f4bd569248ff33a",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Rational(7, 8)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(16)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(16)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_f1e05339beccab40bd29"
+    },
+    {
+      "problemId": "cn_b2bf24e4c1c4174ffaf2",
+      "sourceContentHash": "6cbdc7634a79b74388ba27e8e1808592e196653ef5bf5f953c32138b2ba7ebdc",
+      "semanticHash": "0607873db3b0a49c74c1c295d72d7876004835d651c2a8868e7cd1841e885c58",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(8, 9)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(18)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(18)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_b2bf24e4c1c4174ffaf2"
+    },
+    {
+      "problemId": "cn_32de606d1c62df5f2952",
+      "sourceContentHash": "d74cc37042e08259a1c08b0ba6bb5a62b51b61def32c1c7406983cf6bf566d8a",
+      "semanticHash": "4c0872f543c20402159f1d5651b538413e55ba4c44b11b8522317516bc310341",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Rational(9, 10)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(20)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(20)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_32de606d1c62df5f2952"
+    },
+    {
+      "problemId": "cn_60076e5441d6041e7011",
+      "sourceContentHash": "70946656fa39fd7973ab358cd3e874ef1e7a05abdecab9788b2d2976b337bb35",
+      "semanticHash": "de839c59f6351284a7922172dc0bbc6cc3b5b6433b1f652ccf08f67ea318008e",
+      "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(10, 11)",
+      "checks": [
+        {
+          "description": "Matched denominator powers",
+          "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(22)), Pow(Symbol('x', real=True), Integer(2))), Pow(Symbol('x', real=True), Integer(2)))",
+          "right": "Mul(Pow(Symbol('x', real=True), Integer(2)), Add(Pow(Symbol('t', real=True), Integer(22)), Integer(1)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Match the two different denominator scales and establish two uniform positive bounds before testing the endpoint exponent.",
+      "nearestNeighbor": "Distinct from an isotropic polar power test: the anisotropic region requires a variable rescaling and uniform tail control.",
+      "normalizedLineageKey": "cn_60076e5441d6041e7011"
+    },
+    {
+      "problemId": "cn_36e3fb0490519ec66635",
+      "sourceContentHash": "575638728d1466ab0a9e29b4d17bc3721d146cc3c0a7b9ec17314a70f21eb5fb",
+      "semanticHash": "c55b32c1948cdc91267ff81a6721d383c658073edce4243b6f9bd08d4231bb4b",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(3, 8), Pow(Integer(2), Rational(1, 2)), pi)",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Rational(1, 2), Pow(Symbol('y', real=True), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Rational(1, 2), Pow(Integer(2), Rational(1, 2)), Symbol('y', real=True))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('x', real=True), Symbol('y', real=True)), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_36e3fb0490519ec66635"
+    },
+    {
+      "problemId": "cn_d18bab25f8fe8f72ee8d",
+      "sourceContentHash": "6a96c544ee06a7d688afb40c8506b08f793810c3a5f782fda7cfe45fdb57ebc9",
+      "semanticHash": "5e39e6663c8c68166085d25b7f7bd616bb0c076d10b91a352bb73adc25403824",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(2, 5), pi, Pow(Add(Rational(5, 8), Mul(Integer(-1), Rational(1, 8), Pow(Integer(5), Rational(1, 2)))), Rational(-1, 2)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Add(Rational(5, 8), Mul(Integer(-1), Rational(1, 8), Pow(Integer(5), Rational(1, 2))))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), Add(Rational(1, 4), Mul(Rational(1, 4), Pow(Integer(5), Rational(1, 2)))))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Symbol('x', real=True), Symbol('y', real=True), Add(Rational(1, 2), Mul(Rational(1, 2), Pow(Integer(5), Rational(1, 2))))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "Pow(Add(Rational(5, 8), Mul(Integer(-1), Rational(1, 8), Pow(Integer(5), Rational(1, 2)))), Rational(1, 2))",
+          "right": "Pow(Add(Rational(5, 8), Mul(Integer(-1), Rational(1, 8), Pow(Integer(5), Rational(1, 2)))), Rational(1, 2))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_d18bab25f8fe8f72ee8d"
+    },
+    {
+      "problemId": "cn_3c0a95cd363220e67eff",
+      "sourceContentHash": "a4f97b8b0e8080a912d20e24e1c0f466cf8306aba868f6a81477c0cb0949eb1f",
+      "semanticHash": "91f2de3f1424ef297cdf3845deeab3262d8cef92890714d4c84ae25b6cd16b54",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(5, 6), pi)",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Rational(1, 4), Pow(Symbol('y', real=True), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Rational(1, 2), Pow(Integer(3), Rational(1, 2)), Symbol('y', real=True))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Pow(Integer(3), Rational(1, 2)), Symbol('x', real=True), Symbol('y', real=True)), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "Rational(1, 2)",
+          "right": "Rational(1, 2)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_3c0a95cd363220e67eff"
+    },
+    {
+      "problemId": "cn_c94f4561391dac1b264c",
+      "sourceContentHash": "6d775917a6416f8782c9fa0bbb046c25eeafe07c0c71a941a140072edcf89337",
+      "semanticHash": "37d2b270eef2cd7095ee5ba2ec9ea9eb6e7d42b7eaf8f0515c7092372e29754c",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(3, 7), pi, Pow(sin(Mul(Rational(1, 7), pi)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Pow(sin(Mul(Rational(1, 7), pi)), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), cos(Mul(Rational(1, 7), pi)))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Integer(2), Symbol('x', real=True), Symbol('y', real=True), cos(Mul(Rational(1, 7), pi))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "sin(Mul(Rational(1, 7), pi))",
+          "right": "sin(Mul(Rational(1, 7), pi))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_c94f4561391dac1b264c"
+    },
+    {
+      "problemId": "cn_110d707a9c949f467043",
+      "sourceContentHash": "d3ec2205bff5c8a9e2a84390e6ac1cd94e6fce863d2f252215a56089cf92fbe7",
+      "semanticHash": "9e43e0c0d6822be8ee97719c5cc7a1ca059701fbc37da840fe5acf5d1781ebc3",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(7, 16), pi, Pow(Add(Rational(1, 2), Mul(Integer(-1), Rational(1, 4), Pow(Integer(2), Rational(1, 2)))), Rational(-1, 2)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Add(Rational(1, 2), Mul(Integer(-1), Rational(1, 4), Pow(Integer(2), Rational(1, 2))))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), Pow(Add(Mul(Rational(1, 4), Pow(Integer(2), Rational(1, 2))), Rational(1, 2)), Rational(1, 2)))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Integer(2), Symbol('x', real=True), Symbol('y', real=True), Pow(Add(Mul(Rational(1, 4), Pow(Integer(2), Rational(1, 2))), Rational(1, 2)), Rational(1, 2))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "Pow(Add(Rational(1, 2), Mul(Integer(-1), Rational(1, 4), Pow(Integer(2), Rational(1, 2)))), Rational(1, 2))",
+          "right": "Pow(Add(Rational(1, 2), Mul(Integer(-1), Rational(1, 4), Pow(Integer(2), Rational(1, 2)))), Rational(1, 2))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_110d707a9c949f467043"
+    },
+    {
+      "problemId": "cn_d69412da35b18854eddb",
+      "sourceContentHash": "f462c1a79a21e1cb41e7294f2eb5a078825920029d56c1e8a2edf8cddc25fe01",
+      "semanticHash": "9d62716ca39b328ace6aa9989a4cadd5da0f318c6c1c6b57570c3e46a89827de",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(4, 9), pi, Pow(sin(Mul(Rational(1, 9), pi)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Pow(sin(Mul(Rational(1, 9), pi)), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), cos(Mul(Rational(1, 9), pi)))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Integer(2), Symbol('x', real=True), Symbol('y', real=True), cos(Mul(Rational(1, 9), pi))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "sin(Mul(Rational(1, 9), pi))",
+          "right": "sin(Mul(Rational(1, 9), pi))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_d69412da35b18854eddb"
+    },
+    {
+      "problemId": "cn_9fb372fc405ae6d9c06d",
+      "sourceContentHash": "12da2a1bda0c239771024a332eb1715fbec63a38a03f0667920f0c9fcc742813",
+      "semanticHash": "ee417685917d2874e2d86b54676a89275cb183f2742952ce369883673503eb73",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(9, 10), pi, Pow(Add(Rational(-1, 2), Mul(Rational(1, 2), Pow(Integer(5), Rational(1, 2)))), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Rational(-1, 4), Mul(Rational(1, 4), Pow(Integer(5), Rational(1, 2)))), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), Pow(Add(Mul(Rational(1, 8), Pow(Integer(5), Rational(1, 2))), Rational(5, 8)), Rational(1, 2)))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Integer(2), Symbol('x', real=True), Symbol('y', real=True), Pow(Add(Mul(Rational(1, 8), Pow(Integer(5), Rational(1, 2))), Rational(5, 8)), Rational(1, 2))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "Add(Rational(-1, 4), Mul(Rational(1, 4), Pow(Integer(5), Rational(1, 2))))",
+          "right": "Add(Rational(-1, 4), Mul(Rational(1, 4), Pow(Integer(5), Rational(1, 2))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_9fb372fc405ae6d9c06d"
+    },
+    {
+      "problemId": "cn_f930d14ed19db5555c3c",
+      "sourceContentHash": "c710970fd637f377ccadc2f2b8193a3aca677915f502a30e6df2b80c576bb045",
+      "semanticHash": "6d5a8f54e861ff616aa1e1d6f015cd0f1a1e094d83d9da8a53e8b40359a46acb",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(5, 11), pi, Pow(sin(Mul(Rational(1, 11), pi)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Whitening quadratic form",
+          "left": "Add(Mul(Pow(Symbol('y', real=True), Integer(2)), Pow(sin(Mul(Rational(1, 11), pi)), Integer(2))), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True), cos(Mul(Rational(1, 11), pi)))), Integer(2)))",
+          "right": "Add(Pow(Symbol('x', real=True), Integer(2)), Mul(Integer(-1), Integer(2), Symbol('x', real=True), Symbol('y', real=True), cos(Mul(Rational(1, 11), pi))), Pow(Symbol('y', real=True), Integer(2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive Jacobian determinant",
+          "left": "sin(Mul(Rational(1, 11), pi))",
+          "right": "sin(Mul(Rational(1, 11), pi))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Whiten the quadratic form while tracking the image of the positive quadrant as an oblique wedge.",
+      "nearestNeighbor": "A whole-plane Gaussian determinant does not supply this truncated angular fraction; the boundary geometry is essential.",
+      "normalizedLineageKey": "cn_f930d14ed19db5555c3c"
+    },
+    {
+      "problemId": "cn_8d0743abbb7fe318b88a",
+      "sourceContentHash": "67254b57121742db1bbf686849d54551246ac2c3f4770caa25ddff1d8d194a09",
+      "semanticHash": "b52285fda985c876f85a2d6835caaa90018656eed63a24b1e8a9430eb2bf1f31",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(2), pi, Add(Rational(-15, 64), Mul(Integer(-1), Rational(1, 16), log(Integer(2))), Mul(Rational(1, 32), log(Integer(4)))))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_8d0743abbb7fe318b88a"
+    },
+    {
+      "problemId": "cn_0097de2a45ac54db2bf5",
+      "sourceContentHash": "6fb1ff1a1e17e6cca3a7e8f11e55946364b41e0be4fe999b82826ad1e3798758",
+      "semanticHash": "8dbc9e4164fcd5a6869f6688b84c7468d7313b44dcb2205a6c04a939430fa73a",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(-1), Rational(12, 25), pi)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_0097de2a45ac54db2bf5"
+    },
+    {
+      "problemId": "cn_c3d5f01ed14614c6d7ac",
+      "sourceContentHash": "3bf0ddac8b60ada4cf4b1e27f21b89f0dfdf97f5a1aeb4f5db9c6875e42004b2",
+      "semanticHash": "4206c4b1d89b3076f9dd6939ad5b7a06308811c6dfff1e9b422bc4f6f99ed2e5",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(-1), Rational(35, 72), pi)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_c3d5f01ed14614c6d7ac"
+    },
+    {
+      "problemId": "cn_07bcbae840aa717dd46e",
+      "sourceContentHash": "2180cac6b63546477de8b40c45f47eb29fd3b9cfd9ce3696899e72a9c6b3594c",
+      "semanticHash": "295bce556fa2d0449b35954e24884146d66d0851270d5a178bf3283d6b013866",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(-1), Rational(24, 49), pi)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_07bcbae840aa717dd46e"
+    },
+    {
+      "problemId": "cn_8382474db5ad51972307",
+      "sourceContentHash": "ff3c7793f6227d7b89e75d966feca457548afb97afa26c38d6c28e99e651e979",
+      "semanticHash": "0c0630e66daab60b338692116fffa81490a204b5a8c826488222c9b38a4d564d",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(2), pi, Add(Rational(-63, 256), Mul(Integer(-1), Rational(3, 128), log(Integer(2))), Mul(Rational(1, 128), log(Integer(8)))))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_8382474db5ad51972307"
+    },
+    {
+      "problemId": "cn_ebf189888160aa5a3e15",
+      "sourceContentHash": "97727365dc85cf205e63a3853d831ca17889883e5b0bdcebda9281ca6c331a63",
+      "semanticHash": "5452266eda9510e7b561b608fe0d6b15d5785315047f1df905244e5578a644b5",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(2), pi, Add(Rational(-20, 81), Mul(Integer(-1), Rational(1, 81), log(Integer(3))), Mul(Rational(1, 162), log(Integer(9)))))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_ebf189888160aa5a3e15"
+    },
+    {
+      "problemId": "cn_c503f0f44e856f78896b",
+      "sourceContentHash": "214b322270139b71e67467e2c5ac0cafcf25de253250f8bfc0560ad90466859d",
+      "semanticHash": "8b1842522669dbc043e97367d3f28c518d0499d0800cbcf77d02e6f8d561de82",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(-1), Rational(99, 200), pi)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_c503f0f44e856f78896b"
+    },
+    {
+      "problemId": "cn_3757fc67ddd35b83d795",
+      "sourceContentHash": "a3ce36d2300ec397847bc0e736ad13065cc923e39e26da400e26d79e697eca4b",
+      "semanticHash": "b8216bb6a86343edc40172b82d974499e9779a06fdf8377970a930d70b743863",
+      "familyId": "m3-multivariable-olympiad-planar-log-potential",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(-1), Rational(60, 121), pi)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive the logarithmic circle mean, split at the moving singularity radius and justify its local area integrability.",
+      "nearestNeighbor": "Related globally to log-circle/Fourier integration; the point lies inside the two-dimensional domain, forcing a radial split.",
+      "normalizedLineageKey": "cn_3757fc67ddd35b83d795"
+    },
+    {
+      "problemId": "cn_1208efde526fc6634006",
+      "sourceContentHash": "d4d05fec4745781cbb9e1a3e6bdca40e3d310c67657916e7eb7ebda6ae9af7d5",
+      "semanticHash": "9901d23544442ef9dd26f022c99ebddf757fc6d4819e1e19243c4883b0656225",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 10), Pow(Integer(5), Rational(1, 2)), pi, atanh(Mul(Rational(2, 5), Pow(Integer(5), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-4)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(16), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(4), Symbol('t', real=True)), Symbol('x', real=True), Integer(-4)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(1, 5), Pow(Add(Integer(1), Mul(Integer(-1), Rational(4, 5), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(16), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_1208efde526fc6634006"
+    },
+    {
+      "problemId": "cn_f84209421319a8a5f1d1",
+      "sourceContentHash": "07f7042af3f513c31d3a2bd5ebd93e2eae972f9e8cc5f91a67fd66e8bd81ae48",
+      "semanticHash": "f6ea66f7954277765db16b829d35cb99191e28f130529948c945d23a483f008a",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(4, 145), Pow(Integer(29), Rational(1, 2)), pi, atanh(Mul(Rational(5, 29), Pow(Integer(29), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-5)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(25), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(5), Symbol('t', real=True)), Symbol('x', real=True), Integer(-5)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(4, 29), Pow(Add(Integer(1), Mul(Integer(-1), Rational(25, 29), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(25), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_f84209421319a8a5f1d1"
+    },
+    {
+      "problemId": "cn_b036776bd11e6420104b",
+      "sourceContentHash": "769b2f34fb9070393d7cb724d5770d3d57c525a43d7a7b77ea8abff33f94c5cb",
+      "semanticHash": "71960499363c83a37b6a5c877f9810eece92575be9f11ce58ea10a1e63a1d3fd",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 30), Pow(Integer(10), Rational(1, 2)), pi, atanh(Mul(Rational(3, 10), Pow(Integer(10), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-6)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(36), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(6), Symbol('t', real=True)), Symbol('x', real=True), Integer(-6)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(1, 10), Pow(Add(Integer(1), Mul(Integer(-1), Rational(9, 10), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(36), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_b036776bd11e6420104b"
+    },
+    {
+      "problemId": "cn_87f70a349d00181139e7",
+      "sourceContentHash": "1c19556a3599c67029ee20273879dab4c5dd65c2d58c602122ae2a6919fa943f",
+      "semanticHash": "210efc0b12e624ce65619da7c4892c8dce3022ab5c2f4ce6fb2d81e84c129cd6",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(4, 371), Pow(Integer(53), Rational(1, 2)), pi, atanh(Mul(Rational(7, 53), Pow(Integer(53), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-7)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(49), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(7), Symbol('t', real=True)), Symbol('x', real=True), Integer(-7)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(4, 53), Pow(Add(Integer(1), Mul(Integer(-1), Rational(49, 53), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(49), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_87f70a349d00181139e7"
+    },
+    {
+      "problemId": "cn_1e212816e0b2b1a2b862",
+      "sourceContentHash": "4a6d683a5431912ad133318d94470c0ef49a6f60d451194b128b092e0c47d0de",
+      "semanticHash": "3a615b8b1ccd2487be892dbd5981f1c77ef65e976b7c9efb433a2bfaba006f04",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 68), Pow(Integer(17), Rational(1, 2)), pi, atanh(Mul(Rational(4, 17), Pow(Integer(17), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-8)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(64), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(8), Symbol('t', real=True)), Symbol('x', real=True), Integer(-8)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(1, 17), Pow(Add(Integer(1), Mul(Integer(-1), Rational(16, 17), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(64), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_1e212816e0b2b1a2b862"
+    },
+    {
+      "problemId": "cn_87368c15cbe916151c26",
+      "sourceContentHash": "7416cb1f6050493d374401e6addd08fa4477cb333d2853d29523e92f88a3aa44",
+      "semanticHash": "8a42ebbc8cc2622f0fd5658c31ad9a9760c9b331839332f1fcda91605e85b230",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(4, 765), Pow(Integer(85), Rational(1, 2)), pi, atanh(Mul(Rational(9, 85), Pow(Integer(85), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-9)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(81), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(9), Symbol('t', real=True)), Symbol('x', real=True), Integer(-9)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(4, 85), Pow(Add(Integer(1), Mul(Integer(-1), Rational(81, 85), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(81), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_87368c15cbe916151c26"
+    },
+    {
+      "problemId": "cn_0edbe939be4dc702d12c",
+      "sourceContentHash": "36158407d0a1149d2b153b390f4cdfc71c4eb930489b5d11af55b2ff5329eb77",
+      "semanticHash": "3fd54aad28ec605f576b75280c8890385e6e99e0791d70dc854b82697cfb119a",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 130), Pow(Integer(26), Rational(1, 2)), pi, atanh(Mul(Rational(5, 26), Pow(Integer(26), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-10)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(100), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(10), Symbol('t', real=True)), Symbol('x', real=True), Integer(-10)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(1, 26), Pow(Add(Integer(1), Mul(Integer(-1), Rational(25, 26), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(100), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_0edbe939be4dc702d12c"
+    },
+    {
+      "problemId": "cn_f0b8a1ef822cc1ba0e79",
+      "sourceContentHash": "8242da4923891f85bd8cdac6e1bbd48731d22b3ca50d44275773601d344cbc2f",
+      "semanticHash": "7088c3aec68969d070995fbbf48e5f055763183408aa61ac8c86442b4b2e5985",
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(4, 275), Pow(Integer(5), Rational(1, 2)), pi, atanh(Mul(Rational(11, 25), Pow(Integer(5), Rational(1, 2)))))",
+      "checks": [
+        {
+          "description": "Parameter-completed square",
+          "left": "Add(Mul(Symbol('t', real=True), Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Symbol('y', real=True), Integer(2)), Integer(1))), Mul(Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True))), Add(Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Integer(-11)), Integer(2)), Integer(1))))",
+          "right": "Add(Mul(Integer(121), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Pow(Symbol('y', real=True), Integer(2)), Pow(Add(Mul(Integer(11), Symbol('t', real=True)), Symbol('x', real=True), Integer(-11)), Integer(2)), Integer(1))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Primitive of the parameter integral",
+          "left": "Mul(Rational(4, 125), Pow(Add(Integer(1), Mul(Integer(-1), Rational(121, 125), Pow(Add(Mul(Integer(2), Symbol('t', real=True)), Integer(-1)), Integer(2)))), Integer(-1)))",
+          "right": "Pow(Add(Mul(Integer(121), Symbol('t', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('t', real=True)))), Integer(1)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Introduce a parameter to join two denominators, translate the plane integral and control the resulting inverse-hyperbolic branch.",
+      "nearestNeighbor": "A one-centre radial integral is insufficient; the parameter bridge removes the incompatible centres.",
+      "normalizedLineageKey": "cn_f0b8a1ef822cc1ba0e79"
+    },
+    {
+      "problemId": "cn_466327791d22afc8a149",
+      "sourceContentHash": "8cad40bed006d316c0ca9a3fd53e7fa67af16d1a15f55fa7f373ed7f650f57c3",
+      "semanticHash": "1a16e2a391a3c4b5badfaadec8df0085ef84f1ae13097f563bbc5f14e27e2603",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)), Pow(pi, Rational(1, 2)), gamma(Rational(3, 4)), Pow(gamma(Rational(5, 4)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_466327791d22afc8a149"
+    },
+    {
+      "problemId": "cn_b04b24695860a329f0d2",
+      "sourceContentHash": "d9439cff9932cf9265bf1f3691facd5d6fdfdab6eaa5d308baa49cb6cfc572a9",
+      "semanticHash": "726af87d912e8f2900b405a19f3c1ec23830931c9513adc193e3611f1e621513",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 5)), Pow(pi, Rational(1, 2)), gamma(Rational(7, 10)), Pow(gamma(Rational(6, 5)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 5)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 5)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_b04b24695860a329f0d2"
+    },
+    {
+      "problemId": "cn_49f17c6fc86a370a6fef",
+      "sourceContentHash": "da3da2ae6861eb1c00e71808179a2f08a9e23300462ae2ae2a2ae815db56f108",
+      "semanticHash": "ab4d3b9bd609f7af0d9c85f023604befc2fffb231fbfc3db142948f23d771225",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 3)), Pow(pi, Rational(1, 2)), gamma(Rational(2, 3)), Pow(gamma(Rational(7, 6)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 3)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 3)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_49f17c6fc86a370a6fef"
+    },
+    {
+      "problemId": "cn_1a213415ff4966fcf49e",
+      "sourceContentHash": "d611ee9aa9c5e74af41e67db7d3e73d87522fc85d95c9717f8fbc1635efacb54",
+      "semanticHash": "8031d9b66388fba225cc6ea87bed87e8e17e1c57e34241f7ec9187382e7120dd",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 7)), Pow(pi, Rational(1, 2)), gamma(Rational(9, 14)), Pow(gamma(Rational(8, 7)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 7)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 7)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_1a213415ff4966fcf49e"
+    },
+    {
+      "problemId": "cn_ea96002867f95fe7fb11",
+      "sourceContentHash": "0e1a2b434b7a1ebfca7392ef9f721ee2a73afe9b973bf0a00988c6eee6cb4647",
+      "semanticHash": "c0a17caebf4685c4fef4b122f1f780250887505a321126cae46581a612651c3e",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 4)), Pow(pi, Rational(1, 2)), gamma(Rational(5, 8)), Pow(gamma(Rational(9, 8)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 4)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 4)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_ea96002867f95fe7fb11"
+    },
+    {
+      "problemId": "cn_dada11a470f25f714659",
+      "sourceContentHash": "81222244a1992150c1c4dd6e05e35903a400d6a9694159031ebaaf344d99d3bd",
+      "semanticHash": "8384d4e827ba93134bdafea95d47d190e87e163a1ae9c097a54abc4e907bce06",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 9)), Pow(pi, Rational(1, 2)), gamma(Rational(11, 18)), Pow(gamma(Rational(10, 9)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 9)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 9)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_dada11a470f25f714659"
+    },
+    {
+      "problemId": "cn_b4ca42fc02504ff23b41",
+      "sourceContentHash": "eaad1a0b18a7675fb5f31321a9cb5aa4a9b5193f83c50f8de339917935c47b84",
+      "semanticHash": "362d383ca4d6acab144a0d3cd3109a5f6493ca4fb4f7840fb22e7e7adad623a4",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 5)), Pow(pi, Rational(1, 2)), gamma(Rational(3, 5)), Pow(gamma(Rational(11, 10)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 5)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 5)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_b4ca42fc02504ff23b41"
+    },
+    {
+      "problemId": "cn_dfd1355cc9d5840b6ba7",
+      "sourceContentHash": "63f0afb71ca8e0cb62c0ba163f6815fcfffa6ea9a1b2251cb309540a6ae3803f",
+      "semanticHash": "24b2fb4b8ef7258b6bfc268ff2f981b22c423d0f25a6d4f507d3a63cf3c81b92",
+      "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 11)), Pow(pi, Rational(1, 2)), gamma(Rational(13, 22)), Pow(gamma(Rational(12, 11)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "The petal angle substitution cancels multiplicity",
+          "left": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 11)))",
+          "right": "Mul(Rational(1, 2), Pow(Integer(2), Rational(2, 11)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Polar coordinates turn the defining inequality into an explicit radial bound; the petal count cancels in a single angle substitution, followed by a beta integral.",
+      "nearestNeighbor": "The standard polar/beta chain does not require optimization, a hidden branch decision, or a new sharpness argument.",
+      "normalizedLineageKey": "cn_dfd1355cc9d5840b6ba7"
+    },
+    {
+      "problemId": "cn_381d401cb0edb5e2140f",
+      "sourceContentHash": "5f202409f2306aea96658c063b9f29a9154c31bc185ed9e30ad96df38b99a6ea",
+      "semanticHash": "a69ebf67d1cdba56da35a03355204db58cfbb68671324bb5d1b29bc9bbde1aa9",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 16)), Mul(Integer(-1), Integer(15), log(Rational(15, 16)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_381d401cb0edb5e2140f"
+    },
+    {
+      "problemId": "cn_7a761d515f6945c8a55b",
+      "sourceContentHash": "0c1069bd4435d0c47f62994a87065a86af37044f706aac7ca62ef0a0b17dea8e",
+      "semanticHash": "66b46689ffa28c5c15bba2f809b1f420637e35344199ea8e73ec0586d26a250a",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 25)), Mul(Integer(-1), Integer(24), log(Rational(24, 25)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_7a761d515f6945c8a55b"
+    },
+    {
+      "problemId": "cn_bdc85c0589bf92ccf580",
+      "sourceContentHash": "fe36ec7574d9c1b3936edd003f5c9f9c217ce14e7482ee652fbea7b1de0f5618",
+      "semanticHash": "d17ac9895c48ea34687392f3045f71d2327d5ab98449ceb68f76cd874e1dda84",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 36)), Mul(Integer(-1), Integer(35), log(Rational(35, 36)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_bdc85c0589bf92ccf580"
+    },
+    {
+      "problemId": "cn_c7b376781824df58306e",
+      "sourceContentHash": "dacfc74a1081ce3d54c32eed0b4af4d22a47ab8cfd9760865d890499eec5f870",
+      "semanticHash": "c295fd876538aacc2acaec154ee17ff627fb6440f68f2368819d2c94a6ca8846",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 49)), Mul(Integer(-1), Integer(48), log(Rational(48, 49)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_c7b376781824df58306e"
+    },
+    {
+      "problemId": "cn_0d2d8d85e9d5a8c62004",
+      "sourceContentHash": "44bbff5346e464e2fada5c4a743bacd6b79ab82553c963497e5729860b199f5b",
+      "semanticHash": "f20823e4c24c1bd8c65060bf5082aaf5a361fc9b616a400d1bc3663ace2edb2f",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 64)), Mul(Integer(-1), Integer(63), log(Rational(63, 64)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_0d2d8d85e9d5a8c62004"
+    },
+    {
+      "problemId": "cn_7954c47b718d0830f996",
+      "sourceContentHash": "e52714641ec9239953157237c8f7524fcb9d2bd0d017ae0d3bc88fb2cb82bba1",
+      "semanticHash": "a5fb9b3f586c8c57b3adec638fe1bd3fa60c8fc160c51b862e16ebbde6a228a2",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 81)), Mul(Integer(-1), Integer(80), log(Rational(80, 81)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_7954c47b718d0830f996"
+    },
+    {
+      "problemId": "cn_4d239cb364f286068941",
+      "sourceContentHash": "82380435d0eb66bf14af1b85bbcbd00317ac045cf7672fbe514c9705998f8ef5",
+      "semanticHash": "33768bd5fc8d4949747577ed4607dfee6b2b585c4f5c68c652e9cf6f18059215",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 100)), Mul(Integer(-1), Integer(99), log(Rational(99, 100)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_4d239cb364f286068941"
+    },
+    {
+      "problemId": "cn_ecba4f3741dcbce286ea",
+      "sourceContentHash": "55f7a0ca6c45acf217f75c5222803fc5965d81e911c0fd11bfdda4abbb52fd2f",
+      "semanticHash": "d30384215187054494d92be9ba5eb098cc8d701abf8ba53eb965a94a6cc47268",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), pi, Add(Integer(-1), polylog(Integer(2), Rational(1, 121)), Mul(Integer(-1), Integer(120), log(Rational(120, 121)))))",
+      "checks": [
+        {
+          "description": "Coefficient partial fractions",
+          "left": "Add(Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)), Mul(Integer(-1), Pow(Symbol('n', positive=True), Integer(-1))), Pow(Symbol('n', positive=True), Integer(-2)))",
+          "right": "Mul(Pow(Symbol('n', positive=True), Integer(-2)), Pow(Add(Symbol('n', positive=True), Integer(1)), Integer(-1)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Radial moment",
+          "left": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "right": "Pow(Add(Mul(Integer(2), Symbol('n', positive=True)), Integer(2)), Integer(-1))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Expand the uniformly convergent harmonic logarithm, use angular orthogonality, then sum the radially weighted coefficient series.",
+      "nearestNeighbor": "Unlike a zero or single Fourier coefficient, the squared logarithm couples every mode before orthogonality removes cross terms.",
+      "normalizedLineageKey": "cn_ecba4f3741dcbce286ea"
+    },
+    {
+      "problemId": "cn_abd88c5ae8834b2222a8",
+      "sourceContentHash": "b48b41d183ee1f258b4c4f62f8090ce4a0038aacaf4c3322bb4c234077dc03af",
+      "semanticHash": "458f8761a239a324142f08f57b505ea648020beeca2d42cc1b797e6d8e9b0442",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Rational(7, 54)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 1
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_abd88c5ae8834b2222a8"
+    },
+    {
+      "problemId": "cn_bfe71d4cd34be44d8853",
+      "sourceContentHash": "b34ae8059c2d8ea0d4f304c1748bcc61aba774ff8ee7d3c02ce0e73d366a9cb5",
+      "semanticHash": "a808730bf62db6d7bd4cecbf2c0d89a1001ab9be9694ac98bb34b4c4ff3cb2a3",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(593, 5832)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 1
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_bfe71d4cd34be44d8853"
+    },
+    {
+      "problemId": "cn_8bb929dc84c71b327c56",
+      "sourceContentHash": "9f60fe20f4dc15e66263e0919bc80af747088ff9e79c69f6c1dbe2077c7dfff8",
+      "semanticHash": "e3aa0fb9322512bfbfd030ce3f5f02a2fce4ec7c21f8e1658135d1dd6f932cb5",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Rational(29, 360)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 2
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_8bb929dc84c71b327c56"
+    },
+    {
+      "problemId": "cn_b39396ded740cbc4cfc0",
+      "sourceContentHash": "666e66cc9076ec2308c4e378f25dd10f9f3de9481209329b4335df6ecb724eb2",
+      "semanticHash": "bf8f49aca0971b22e6f0b21faba56394d620ff37233bb8abfa717261efd71a37",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(2813, 43740)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 2
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_b39396ded740cbc4cfc0"
+    },
+    {
+      "problemId": "cn_1d324c9bd51eca5e7b93",
+      "sourceContentHash": "3ae1ba8e5257d8ce35bb17a5a8eacf05dfcdef650e13b3f15130663aa080a848",
+      "semanticHash": "7ab8b0d8e4047693a7b5d3963b1b6c3e8a0f42a76092847161f55b185bc9469a",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Rational(569141, 11022480)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 2
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_1d324c9bd51eca5e7b93"
+    },
+    {
+      "problemId": "cn_8941e99c199513a97d53",
+      "sourceContentHash": "ef5fbc2674cce5e337b4c6bd1bba7474a0d994324b6afe3b2d5bfe701836d1b2",
+      "semanticHash": "4895e38ce9a251ec298c93b6ad5afc423bdfca5f3b410e489ba4b68fcd05517a",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(1679, 40320)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 3
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_8941e99c199513a97d53"
+    },
+    {
+      "problemId": "cn_e53b828c41333c45cb0d",
+      "sourceContentHash": "f96975b5c8f30034e446bb63703621276a59f30bd9f11a7b90a680f71c7ff7ed",
+      "semanticHash": "64c313c699d48ddaf61da6943d214d7bc75cc2678015ddfbf949fab32e42270c",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Rational(26749753, 793618560)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 3
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_e53b828c41333c45cb0d"
+    },
+    {
+      "problemId": "cn_9d266cbd699dbb3d2b35",
+      "sourceContentHash": "24407f53fbc70a6ed2109dfcd16d966582b5c0a4ca5fd25eeea4259a0d4d0b9f",
+      "semanticHash": "878a355e77c63464bdbcfd5d1c16b962428f8afdec23fd52262db8f1d907fe1b",
+      "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(418847617, 15305500800)",
+      "checks": [
+        {
+          "description": "Exact signed sum over all coordinate-subset sizes with nonnegative residual cutoff",
+          "result": "passed",
+          "lastActiveSubsetSize": 3
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Translate the coordinate-violation regions and use inclusion-exclusion with the correct changing active cutoff.",
+      "nearestNeighbor": "Unlike a bare simplex volume, overlapping upper-coordinate cuts and their combinatorial multiplicities are decisive.",
+      "normalizedLineageKey": "cn_9d266cbd699dbb3d2b35"
+    },
+    {
+      "problemId": "cn_68e61b5f9b02ed3f11d0",
+      "sourceContentHash": "83ba146730767b41c1ed29a35a4f1452bbf5019ee4b39ed8e4722aa048b5d166",
+      "semanticHash": "e01378cfb2bf9e34504d386b1441c5d1d788200ed07d644c82789138366143ec",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(4)), Mul(Integer(-1), Integer(4), Symbol('z', real=True)), Integer(3))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(2)), Mul(Integer(2), Symbol('z', real=True)), Integer(3)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "5/4",
+          "outerRadius": "11/8"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_68e61b5f9b02ed3f11d0"
+    },
+    {
+      "problemId": "cn_d2bdd29d49c4cb8a2bd4",
+      "sourceContentHash": "002ea7c079775f6be3fe792e8390e5942ef389c25c5a2354d730e3c2f4040c68",
+      "semanticHash": "ce78c6878c6562aa4a0c1d7d45edb1f71746d16ad88227cfc7ca473616d493d7",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(5)), Mul(Integer(-1), Integer(5), Symbol('z', real=True)), Integer(4))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(3)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(3), Symbol('z', real=True)), Integer(4)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "6/5",
+          "outerRadius": "19/15"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_d2bdd29d49c4cb8a2bd4"
+    },
+    {
+      "problemId": "cn_05cce2ad7a1996dc1262",
+      "sourceContentHash": "89fa2909c277721e1b82e6e549f630a1ab27fb9a85cd893f757f88bfbdb7a51f",
+      "semanticHash": "178b36a8af8a574b21e410e94ccedf880e92c7c6ca196bc6574b681a14ae2936",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(6)), Mul(Integer(-1), Integer(6), Symbol('z', real=True)), Integer(5))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(4)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(4), Symbol('z', real=True)), Integer(5)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "7/6",
+          "outerRadius": "29/24"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_05cce2ad7a1996dc1262"
+    },
+    {
+      "problemId": "cn_e25320b1cfb0281bc3bf",
+      "sourceContentHash": "f2d0d317ba04aaf7815fb3f36f05e299a533a9873a61849c8850534624e5770f",
+      "semanticHash": "56a2fe65039a8de91525caa7716c3933c49c98330159c2cb6bd0658185640518",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(7)), Mul(Integer(-1), Integer(7), Symbol('z', real=True)), Integer(6))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(5)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(4))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(4), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(5), Symbol('z', real=True)), Integer(6)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "8/7",
+          "outerRadius": "41/35"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_e25320b1cfb0281bc3bf"
+    },
+    {
+      "problemId": "cn_6a859f2aa41fce43f1b3",
+      "sourceContentHash": "95b569aec7287c107930fe4c701a63d29fc7d4d399b7ea23d4574319e0a3738c",
+      "semanticHash": "523a30adfd3529c9b94a869971b0355107c39d524db1c7f33e9b013baf09d02e",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(8)), Mul(Integer(-1), Integer(8), Symbol('z', real=True)), Integer(7))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(6)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(5))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(4))), Mul(Integer(4), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(5), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(6), Symbol('z', real=True)), Integer(7)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "9/8",
+          "outerRadius": "55/48"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_6a859f2aa41fce43f1b3"
+    },
+    {
+      "problemId": "cn_fa31c312a9e6e615fab7",
+      "sourceContentHash": "d9b27bb8a98c8fb5c693b7e371196867140c10843031f788efd4af9a7ab8b327",
+      "semanticHash": "0217396b98d70336ab0121c643339f486637b924b885f5cd82e0030a2877c7b9",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(9)), Mul(Integer(-1), Integer(9), Symbol('z', real=True)), Integer(8))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(7)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(6))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(5))), Mul(Integer(4), Pow(Symbol('z', real=True), Integer(4))), Mul(Integer(5), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(6), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(7), Symbol('z', real=True)), Integer(8)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "10/9",
+          "outerRadius": "71/63"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_fa31c312a9e6e615fab7"
+    },
+    {
+      "problemId": "cn_7a202fcb7b222228e02b",
+      "sourceContentHash": "a798ed76c39c6f93d80900f337fcb9177c0dae5ccd7b9046dcce13b64d653314",
+      "semanticHash": "316e5de14e48846494290bf0e4f6c2adc3d02666730176aba36b25c99502decc",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(10)), Mul(Integer(-1), Integer(10), Symbol('z', real=True)), Integer(9))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(8)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(7))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(6))), Mul(Integer(4), Pow(Symbol('z', real=True), Integer(5))), Mul(Integer(5), Pow(Symbol('z', real=True), Integer(4))), Mul(Integer(6), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(7), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(8), Symbol('z', real=True)), Integer(9)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "11/10",
+          "outerRadius": "89/80"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_7a202fcb7b222228e02b"
+    },
+    {
+      "problemId": "cn_8aba26548ca702445a13",
+      "sourceContentHash": "94bbd6001842430c6a93f2bf20a48f5706a7b99899be64f2e9d8b0c23883beec",
+      "semanticHash": "667d09eaa2fcf25cedfd0c50ba9c3ab9d9a7d4dae7f25a045f859083cc2453d5",
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Integer(4), pi)",
+      "checks": [
+        {
+          "description": "Exact double-root factorization",
+          "left": "Add(Pow(Symbol('z', real=True), Integer(11)), Mul(Integer(-1), Integer(11), Symbol('z', real=True)), Integer(10))",
+          "right": "Mul(Pow(Add(Symbol('z', real=True), Integer(-1)), Integer(2)), Add(Pow(Symbol('z', real=True), Integer(9)), Mul(Integer(2), Pow(Symbol('z', real=True), Integer(8))), Mul(Integer(3), Pow(Symbol('z', real=True), Integer(7))), Mul(Integer(4), Pow(Symbol('z', real=True), Integer(6))), Mul(Integer(5), Pow(Symbol('z', real=True), Integer(5))), Mul(Integer(6), Pow(Symbol('z', real=True), Integer(4))), Mul(Integer(7), Pow(Symbol('z', real=True), Integer(3))), Mul(Integer(8), Pow(Symbol('z', real=True), Integer(2))), Mul(Integer(9), Symbol('z', real=True)), Integer(10)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Strict positive decreasing coefficients after scaling beyond the contour exclude all remaining interior and contour zeros",
+          "result": "passed",
+          "contourRadius": "12/11",
+          "outerRadius": "109/99"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Factor out a double root and prove all remaining zeros lie beyond the contour using a coefficient-ratio bound, then apply the argument principle.",
+      "nearestNeighbor": "Degree alone gives the wrong winding: controlling the remaining roots and absence of contour zeros is essential.",
+      "normalizedLineageKey": "cn_8aba26548ca702445a13"
+    }
+  ],
+  "scope": "Statement/options-first answer derivations, exact finite checks, literal-choice binding, pairwise inequality and subsequent reading of all nine source-bound solution recipes. Theorems and analytic convergence are prose arguments, not formal proofs. Final option-only screen and source-binding admission remain separate."
+}

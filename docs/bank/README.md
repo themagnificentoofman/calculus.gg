@@ -1,5 +1,7 @@
 # Indexed problem bank
 
+Before adding or revising content, follow the [standing problem-authoring standards and checklist](PROBLEM-AUTHORING-STANDARDS.md), [notation and solution rules](NOTATION-AND-SOLUTIONS.md), and [options-visible difficulty rubric](problem-quality/DIFFICULTY-AND-REVIEW.md). The standing guide records practices validated by review, the evidence behind them, and the checks future additions must preserve. Current quality-release progress is tracked [separately](problem-quality/STATUS.md).
+
 Normal gameplay selects approved, persisted D1 revisions. It never imports the OpenAI authoring module or calls a model for selection or grading. Firebase remains authoritative for identity, profiles, private question sets, game snapshots, clocks, XP, ratings, reviews and receipts. The original four modes and round termination rules are unchanged.
 
 ## Baseline and ownership

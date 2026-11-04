@@ -1,0 +1,4152 @@
+{
+  "version": "quality-option-screen-v1",
+  "records": 22,
+  "split": "SHA-256 quality-option-split-v1/id; lower half training, upper half held out; unchanged across reruns",
+  "limitations": [
+    "Small finite families need editorial review; this screen cannot prove absence of all option-only cues.",
+    "Numeric magnitude/divisibility are measured only for directly parsed integers, decimal constants and rational fractions. Unsupported expressions remain explicitly inapplicable; length/form screens still apply.",
+    "Position results use a deterministic audit permutation; production uses fresh shared shuffles.",
+    "All flagged families require documented options-visible disposition. A pooled average cannot clear a flagged family."
+  ],
+  "families": {
+    "quality-integration-olympiad-capped-two-moment-extrema": {
+      "items": 8,
+      "trainingIds": [
+        "cn_qs_c86a54ffa5bd5534ddd6",
+        "cn_qs_b5d5fbb1a82d5b7cdaeb",
+        "cn_qs_17fa149b0cf69f9d5a4e",
+        "cn_qs_7edf1557dfd9f0bc5d9e"
+      ],
+      "heldoutIds": [
+        "cn_qs_c5127c9cb8db36a06e34",
+        "cn_qs_7de848f4393af8870cd1",
+        "cn_qs_3848588e34f396af8f89",
+        "cn_qs_e55bf141711e7bee55d1"
+      ],
+      "chance": 0.25,
+      "selectedUsingTrainingOnly": {
+        "rule": "length-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.625,
+          "uniquePredictions": 2,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 1,
+          "uniqueCorrect": 0
+        }
+      },
+      "flags": [],
+      "results": [
+        {
+          "rule": "opposite-pair-positive",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "opposite-pair-negative",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.625,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.125,
+            "uniquePredictions": 2,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.125,
+            "uniquePredictions": 1,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.1875,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 1
+          }
+        },
+        {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 4,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-5",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-6",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-7",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-8",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-9",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-12",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-16",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-24",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-25",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-60",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-144",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-360",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-1000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-14400",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 4,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        }
+      ],
+      "reviewRequired": false,
+      "limitedSample": true,
+      "mathematicalEquivalence": "Not established by this screen; independently checked in the admission verifier."
+    },
+    "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm": {
+      "items": 14,
+      "trainingIds": [
+        "cn_qs_6a3cf76f66fa622d1615",
+        "cn_qs_f6058301bd9ca79b9fa2",
+        "cn_qs_4137e173b17a4f743036",
+        "cn_qs_381675d2e5fb4378e65c",
+        "cn_qs_eb9f523109489b522360",
+        "cn_qs_9606cd6e2c7169478709",
+        "cn_qs_89d05d4ea99280f3a56b"
+      ],
+      "heldoutIds": [
+        "cn_qs_6e27ffb36f290db318b0",
+        "cn_qs_815f4f1738fd4f0356b2",
+        "cn_qs_33aff548bef7cc8a511d",
+        "cn_qs_47c517d5644f52aa05fb",
+        "cn_qs_449fe738c5b136a72caa",
+        "cn_qs_00a14b57ea1f1abc89b6",
+        "cn_qs_87c1ead92412b79ea9e5"
+      ],
+      "chance": 0.25,
+      "selectedUsingTrainingOnly": {
+        "rule": "length-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 7,
+          "applicable": 7,
+          "expectedTieBrokenAccuracy": 0.6428571428571429,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 7,
+          "applicable": 7,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        }
+      },
+      "flags": [],
+      "results": [
+        {
+          "rule": "opposite-pair-positive",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "opposite-pair-negative",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.6428571428571429,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.5,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 2
+          }
+        },
+        {
+          "rule": "length-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 4,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.2857142857142857,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.2857142857142857,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.21428571428571427,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.21428571428571427,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.2857142857142857,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.21428571428571427,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.42857142857142855,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.5714285714285714,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 4
+          }
+        },
+        {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.5714285714285714,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 4
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 7,
+            "expectedTieBrokenAccuracy": 0.42857142857142855,
+            "uniquePredictions": 7,
+            "uniqueCorrect": 3
+          }
+        },
+        {
+          "rule": "integer-divisible-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-5",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-6",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-7",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-8",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-9",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-12",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-16",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-24",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-25",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-60",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-144",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-360",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-1000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-14400",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 7,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        }
+      ],
+      "reviewRequired": false,
+      "limitedSample": true,
+      "mathematicalEquivalence": "Not established by this screen; independently checked in the admission verifier."
+    }
+  },
+  "answerForms": {
+    "exact-expression": {
+      "items": 22,
+      "trainingIds": [
+        "cn_qs_6a3cf76f66fa622d1615",
+        "cn_qs_f6058301bd9ca79b9fa2",
+        "cn_qs_c86a54ffa5bd5534ddd6",
+        "cn_qs_4137e173b17a4f743036",
+        "cn_qs_b5d5fbb1a82d5b7cdaeb",
+        "cn_qs_17fa149b0cf69f9d5a4e",
+        "cn_qs_381675d2e5fb4378e65c",
+        "cn_qs_7edf1557dfd9f0bc5d9e",
+        "cn_qs_eb9f523109489b522360",
+        "cn_qs_9606cd6e2c7169478709",
+        "cn_qs_89d05d4ea99280f3a56b"
+      ],
+      "heldoutIds": [
+        "cn_qs_c5127c9cb8db36a06e34",
+        "cn_qs_7de848f4393af8870cd1",
+        "cn_qs_6e27ffb36f290db318b0",
+        "cn_qs_815f4f1738fd4f0356b2",
+        "cn_qs_33aff548bef7cc8a511d",
+        "cn_qs_3848588e34f396af8f89",
+        "cn_qs_47c517d5644f52aa05fb",
+        "cn_qs_449fe738c5b136a72caa",
+        "cn_qs_e55bf141711e7bee55d1",
+        "cn_qs_00a14b57ea1f1abc89b6",
+        "cn_qs_87c1ead92412b79ea9e5"
+      ],
+      "chance": 0.25,
+      "selectedUsingTrainingOnly": {
+        "rule": "length-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 11,
+          "applicable": 11,
+          "expectedTieBrokenAccuracy": 0.6363636363636364,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 5
+        },
+        "heldout": {
+          "items": 11,
+          "applicable": 11,
+          "expectedTieBrokenAccuracy": 0.4090909090909091,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        }
+      },
+      "flags": [],
+      "results": [
+        {
+          "rule": "opposite-pair-positive",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "opposite-pair-negative",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.6363636363636364,
+            "uniquePredictions": 6,
+            "uniqueCorrect": 5
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.4090909090909091,
+            "uniquePredictions": 5,
+            "uniqueCorrect": 2
+          }
+        },
+        {
+          "rule": "length-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.045454545454545456,
+            "uniquePredictions": 6,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.045454545454545456,
+            "uniquePredictions": 5,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "absolute-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.2727272727272727,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.2727272727272727,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.22727272727272727,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.22727272727272727,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-min",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-max",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "length-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.2727272727272727,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.20454545454545456,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalSquare-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "rationalCube-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "negative-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integerForm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "fraction-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "root-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "logarithm-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trigonometric-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "operator-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "units-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "decimalPlaces-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "trailingZeros-minority",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "numeric-rank-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "shuffled-position-1",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.18181818181818182,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.18181818181818182,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 2
+          }
+        },
+        {
+          "rule": "shuffled-position-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.18181818181818182,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 2
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.09090909090909091,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 1
+          }
+        },
+        {
+          "rule": "shuffled-position-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.2727272727272727,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 3
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.45454545454545453,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 5
+          }
+        },
+        {
+          "rule": "shuffled-position-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.36363636363636365,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 4
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 11,
+            "expectedTieBrokenAccuracy": 0.2727272727272727,
+            "uniquePredictions": 11,
+            "uniqueCorrect": 3
+          }
+        },
+        {
+          "rule": "integer-divisible-2",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-3",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-4",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-5",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-6",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-7",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-8",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-9",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-12",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-16",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-24",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-25",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-60",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-144",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-360",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-1000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-10000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-14400",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        },
+        {
+          "rule": "integer-divisible-100000",
+          "learnedOnlyFromTraining": false,
+          "training": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          },
+          "heldout": {
+            "items": 11,
+            "applicable": 0,
+            "expectedTieBrokenAccuracy": 0.25,
+            "uniquePredictions": 0,
+            "uniqueCorrect": 0
+          }
+        }
+      ],
+      "reviewRequired": false,
+      "limitedSample": true,
+      "mathematicalEquivalence": "Not established by this screen; independently checked in the admission verifier."
+    }
+  },
+  "artifactSha256": "e7402166403cf71baabfb542434299478fb9162ff5570a5dbc1e8038a32333c9"
+}

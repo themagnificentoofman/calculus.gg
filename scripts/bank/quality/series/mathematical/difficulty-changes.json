@@ -1,0 +1,478 @@
+[
+  {
+    "problemId": "cn_024f6a1c9707fc600bfa",
+    "familyId": "m3-series-hard-dyadic-infinite-product",
+    "index": 9,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+    "shortcutCertificates": [
+      {
+        "kind": "finite-positive-product-lower-bound",
+        "threeFactorLower": "67977560/62748517",
+        "strictlyBelowCorrect": "1/752982204",
+        "wrongChoiceDifferences": [
+          "-402234/62748517",
+          "-2380/62748517",
+          "-135955119/878479238"
+        ],
+        "proof": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_1ecbe5258ece7408a150",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 3,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/6",
+        "upper": "7/30",
+        "tighterStrictUpper": "49/216",
+        "uniqueChoiceInside": "ch_2b3455f85b2353b2",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_b150f40f094c0230",
+            "lowerDifference": "-5/36",
+            "upperDifference": "-37/180"
+          },
+          {
+            "choiceId": "ch_6245f1a795cb405f",
+            "lowerDifference": "-11/192",
+            "upperDifference": "-119/960"
+          },
+          {
+            "choiceId": "ch_1d1178e4e6d5bd00",
+            "lowerDifference": "43/36",
+            "upperDifference": "203/180"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_397681070e124f4b900f",
+    "familyId": "m3-series-hard-dyadic-infinite-product",
+    "index": 1,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+    "shortcutCertificates": [
+      {
+        "kind": "finite-positive-product-lower-bound",
+        "threeFactorLower": "97656/78125",
+        "strictlyBelowCorrect": "1/312500",
+        "wrongChoiceDifferences": [
+          "-3906/78125",
+          "-156/78125",
+          "-195311/468750"
+        ],
+        "proof": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_3fa8e615dd1511126543",
+    "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+    "index": 4,
+    "previousReviewedDifficulty": "olympiad",
+    "recommendedDifficulty": "hard",
+    "reason": "For n>6, discrete Fourier orthogonality gives odd cosine moments0 through degree5 and even moments1/2,3/8,5/16 through degree6. Expand1/(3/2−c)=(2/3)*Σ_{j=0}^5(2c/3)^j+(2c/3)^6/(3/2−c). Its remainder is nonnegative and at most2*(2c/3)^6. Summing gives n*70/81<S<n*670/729 and exactly excludes the actual wrong choices.",
+    "shortcutCertificates": [
+      {
+        "kind": "finite-cosine-moment-geometric-remainder",
+        "strictLower": "2030/81",
+        "strictUpper": "19430/729",
+        "choiceComparisons": [
+          {
+            "lowerDifference": "81650312/93137931",
+            "upperDifference": "-598974352/838241379"
+          },
+          {
+            "lowerDifference": "67725389888/93137931",
+            "upperDifference": "608194681832/838241379"
+          },
+          {
+            "lowerDifference": "267926174/93137931",
+            "upperDifference": "1077508406/838241379"
+          },
+          {
+            "lowerDifference": "2311222292/93137931",
+            "upperDifference": "19467173468/838241379"
+          }
+        ],
+        "proof": "For n>6, discrete Fourier orthogonality gives odd cosine moments0 through degree5 and even moments1/2,3/8,5/16 through degree6. Expand1/(3/2−c)=(2/3)*Σ_{j=0}^5(2c/3)^j+(2c/3)^6/(3/2−c). Its remainder is nonnegative and at most2*(2c/3)^6. Summing gives n*70/81<S<n*670/729 and exactly excludes the actual wrong choices.",
+        "recommendedDifficulty": "hard"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_5354a4a5b5bca052b1ad",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 7,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/10",
+        "upper": "11/90",
+        "tighterStrictUpper": "121/1000",
+        "uniqueChoiceInside": "ch_7cf1bd6d946e8b30",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_f863959eefb82c9b",
+            "lowerDifference": "0",
+            "upperDifference": "-1/45"
+          },
+          {
+            "choiceId": "ch_fab4579d13e3c609",
+            "lowerDifference": "-17/720",
+            "upperDifference": "-11/240"
+          },
+          {
+            "choiceId": "ch_f853e660c2bf50f4",
+            "lowerDifference": "3/25",
+            "upperDifference": "22/225"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_6883c81c5780d155aad7",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 6,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/9",
+        "upper": "5/36",
+        "tighterStrictUpper": "100/729",
+        "uniqueChoiceInside": "ch_255706f3a695b48e",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_8e9ce8b8d153a120",
+            "lowerDifference": "-31/1089",
+            "upperDifference": "-245/4356"
+          },
+          {
+            "choiceId": "ch_2eac4a643feb056b",
+            "lowerDifference": "91/81",
+            "upperDifference": "355/324"
+          },
+          {
+            "choiceId": "ch_f953d4cad9c93066",
+            "lowerDifference": "11/81",
+            "upperDifference": "35/324"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_774ce9469c1ae6156870",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 4,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/7",
+        "upper": "4/21",
+        "tighterStrictUpper": "64/343",
+        "uniqueChoiceInside": "ch_e807a4ab67a4bd66",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_88232edad46b3997",
+            "lowerDifference": "57/49",
+            "upperDifference": "164/147"
+          },
+          {
+            "choiceId": "ch_4766309d35be8c64",
+            "lowerDifference": "9/49",
+            "upperDifference": "20/147"
+          },
+          {
+            "choiceId": "ch_af55213a169f1e14",
+            "lowerDifference": "23/343",
+            "upperDifference": "20/1029"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_824401c78ea1d41daa44",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 0,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/3",
+        "upper": "2/3",
+        "tighterStrictUpper": "16/27",
+        "uniqueChoiceInside": "ch_9dad9f8ed7fecd4d",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_24cfaf37b47c8924",
+            "lowerDifference": "13/9",
+            "upperDifference": "10/9"
+          },
+          {
+            "choiceId": "ch_cfcdc076959c5df3",
+            "lowerDifference": "5/9",
+            "upperDifference": "2/9"
+          },
+          {
+            "choiceId": "ch_62de04a70bfb6b31",
+            "lowerDifference": "11/27",
+            "upperDifference": "2/27"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_864cbb278bef350c522b",
+    "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+    "index": 0,
+    "previousReviewedDifficulty": "olympiad",
+    "recommendedDifficulty": "hard",
+    "reason": "For n>6, discrete Fourier orthogonality gives odd cosine moments0 through degree5 and even moments1/2,3/8,5/16 through degree6. Expand1/(3/2−c)=(2/3)*Σ_{j=0}^5(2c/3)^j+(2c/3)^6/(3/2−c). Its remainder is nonnegative and at most2*(2c/3)^6. Summing gives n*70/81<S<n*670/729 and exactly excludes the actual wrong choices.",
+    "shortcutCertificates": [
+      {
+        "kind": "finite-cosine-moment-geometric-remainder",
+        "strictLower": "910/81",
+        "strictUpper": "8710/729",
+        "choiceComparisons": [
+          {
+            "lowerDifference": "16588/42201",
+            "upperDifference": "-121628/379809"
+          },
+          {
+            "lowerDifference": "5904964/42201",
+            "upperDifference": "52873756/379809"
+          },
+          {
+            "lowerDifference": "100990/42201",
+            "upperDifference": "637990/379809"
+          },
+          {
+            "lowerDifference": "422884/42201",
+            "upperDifference": "3535036/379809"
+          }
+        ],
+        "proof": "For n>6, discrete Fourier orthogonality gives odd cosine moments0 through degree5 and even moments1/2,3/8,5/16 through degree6. Expand1/(3/2−c)=(2/3)*Σ_{j=0}^5(2c/3)^j+(2c/3)^6/(3/2−c). Its remainder is nonnegative and at most2*(2c/3)^6. Summing gives n*70/81<S<n*670/729 and exactly excludes the actual wrong choices.",
+        "recommendedDifficulty": "hard"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_949a55f692ab46737cf2",
+    "familyId": "m3-series-hard-dyadic-infinite-product",
+    "index": 5,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+    "shortcutCertificates": [
+      {
+        "kind": "finite-positive-product-lower-bound",
+        "threeFactorLower": "5380840/4782969",
+        "strictlyBelowCorrect": "1/38263752",
+        "wrongChoiceDifferences": [
+          "-66430/4782969",
+          "-820/4782969",
+          "-10761679/47829690"
+        ],
+        "proof": "The first3 positive factors already exceed every wrong option, and every later factor is greater than1. Convergence follows from summable logarithms or the finite telescope.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_a4313930b523af66abfc",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 5,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/8",
+        "upper": "9/56",
+        "tighterStrictUpper": "81/512",
+        "uniqueChoiceInside": "ch_10204c6f993aff76",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_b9853dc1b8e3afa3",
+            "lowerDifference": "-7/64",
+            "upperDifference": "-65/448"
+          },
+          {
+            "choiceId": "ch_4ddae7f2cf7d7668",
+            "lowerDifference": "0",
+            "upperDifference": "-1/28"
+          },
+          {
+            "choiceId": "ch_a59264f0a0d498a8",
+            "lowerDifference": "-7/200",
+            "upperDifference": "-99/1400"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_bc08bd221e0fbf3ddf9f",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 1,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/4",
+        "upper": "5/12",
+        "tighterStrictUpper": "25/64",
+        "uniqueChoiceInside": "ch_104101eab01bd18a",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_3e168d4aeaa9f79d",
+            "lowerDifference": "-3/16",
+            "upperDifference": "-17/48"
+          },
+          {
+            "choiceId": "ch_2c71a71d2a57fc22",
+            "lowerDifference": "0",
+            "upperDifference": "-1/6"
+          },
+          {
+            "choiceId": "ch_eb545d0a6701a77a",
+            "lowerDifference": "-1/9",
+            "upperDifference": "-5/18"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  },
+  {
+    "problemId": "cn_bc884196e49190fa99b0",
+    "familyId": "m3-series-olympiad-totient-Lambert",
+    "index": 2,
+    "previousReviewedDifficulty": "hard",
+    "recommendedDifficulty": "medium",
+    "reason": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+    "shortcutCertificates": [
+      {
+        "kind": "certified-options-visible-geometric-bound",
+        "strictLower": "1/5",
+        "upper": "3/10",
+        "tighterStrictUpper": "36/125",
+        "uniqueChoiceInside": "ch_da244d258852dc06",
+        "excludedChoices": [
+          {
+            "choiceId": "ch_d79b1d154e44ccde",
+            "lowerDifference": "-4/25",
+            "upperDifference": "-13/50"
+          },
+          {
+            "choiceId": "ch_285a7d102c2b0745",
+            "lowerDifference": "7/25",
+            "upperDifference": "9/50"
+          },
+          {
+            "choiceId": "ch_f151b392eca5fb74",
+            "lowerDifference": "17/125",
+            "upperDifference": "9/250"
+          }
+        ],
+        "proof": "S>the k=1 term. For every k, φ(k)≤k≤2^(k−1) and1/(m^k−1)≤m^(−k)/(1−1/m); sum the resulting geometric series. Using k directly gives the sharper strict upper m²/(m−1)^3. All inequalities are exact rational comparisons.",
+        "recommendedDifficulty": "medium"
+      }
+    ],
+    "peerReport": {
+      "path": "evidence/last76-independent-peer.json",
+      "sha256": "61eabf5ed6eff51ef0b9a00c7fe462a1f2b6f1466df6a96080f94a52d6334a9b"
+    }
+  }
+]

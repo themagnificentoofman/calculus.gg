@@ -1,0 +1,35 @@
+{
+  "status": "passed-for-inspected-components",
+  "scope": "Actual ExperimentalSettings and ProblemStatement in a temporary local QA route. Local UI state only; authenticated profile persistence is separately covered by API tests. No production changes.",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "pageWidth": 382,
+      "saved": "on",
+      "switchChecked": true,
+      "saveDisabledAfterSave": true
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "pageWidth": 1280,
+      "saved": "off",
+      "switchChecked": false,
+      "saveDisabledAfterSave": true
+    }
+  ],
+  "defaultOff": true,
+  "legacyBadgeVisible": true,
+  "fontStatus": "Browser document.fonts.status reported loaded, but server logs show blocked KaTeX font assets in this symlinked local preview.",
+  "evidence": [
+    ".bank-data/quality/legacy-mobile.png",
+    ".bank-data/quality/legacy-desktop.png"
+  ],
+  "sourceDigests": {
+    "components/ExperimentalSettings.tsx": "79329f9322f21c36de3d0e9135e1f54fb9c368cd03d824a95e80620af64840d3",
+    "components/ProblemStatement.tsx": "23592324a2ab3647e51db646e8a41d7046d0b9df56279ebbfcaa89f3da7ac29a"
+  },
+  "cleanup": "Temporary route removed and viewport reset; owned preview closed.",
+  "observedLimitation": "Switch, text wrapping, save-state feedback and Legacy badge verified. Mathematical font fidelity is not cleared by this run; final formula-component verification requires the bounded KaTeX dev-server allowlist or built assets."
+}

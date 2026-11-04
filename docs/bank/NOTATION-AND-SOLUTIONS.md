@@ -4,6 +4,8 @@ Version: `calculus-ninja-notation-v1` / `worked-solutions-v1`.
 Player-facing reference: [Help → Mathematical notation](https://calculus.ninja/help#notation).
 These rules apply to statements, choices, explanations, new families, standalone questions, and source adaptations. A source textbook's conventions do not override the product conventions.
 
+The [standing problem-authoring standards](PROBLEM-AUTHORING-STANDARDS.md) extend these rules to construction variety, independent options-visible review, distractors, lineage, provenance, session quality, and safe publication. Follow their checklist for every addition and preserve newly demonstrated successes as documented rules with evidence.
+
 ## Reference policy
 
 Use widely accepted mathematical forms, consulting Wolfram MathWorld for definitions and conventions. A reference can document several valid notations; pick one consistent, explicit convention instead of claiming a universal notation. Prefer the established spelling and symbol for a special function, and state its definition/domain where readers may not know it. Never copy a computer-language function identifier into mathematical prose.
@@ -36,6 +38,8 @@ Checked references (2026-11-03): [Natural logarithm](https://mathworld.wolfram.c
 `lib/math-notation.mjs` implements conservative presentation normalization. It is not an algebraic simplifier and does not authorize changing a source's mathematical meaning. `lib/solution-format.mjs` separates top-level prose while preserving complete mathematical groups. `lib/bank/solution-quality.mjs` checks the mechanical rules; these checks cannot establish a proof's logic by themselves.
 
 `lib/server/solution-presentation.mjs` admits only registered, reviewed presentations: exact source-hash-bound finite corrections, the audited legacy constructor on its bounded domain, and the independently reconstructed standalone polynomial v2 constructor. A new family or a new finite instance needs a mathematical/editorial review and a source-bound registry entry before publication; self-declared approval flags do not bypass the gate. `scripts/bank/admin.mjs` applies the gate on every insert; the delta path uses this same insert, after independent Python reconstruction. Changing a frozen constructor, answer, statement meaning, or parameter domain requires fresh verification and a revision, not silent presentation substitution.
+
+The focused quality release adds `scripts/bank/quality/reviewed.json` and `quality/contract.py` for exact finite reviewed constructions and permitted adaptations, plus `lib/server/solution-reviews/quality.json` for their destination source bindings. A local registry entry is not evidence of production import. `ProblemStatement` uses the same protected mathematical grouping as `SolutionSteps`, with responsive prose and display treatment for long prompt equations.
 
 For each addition:
 

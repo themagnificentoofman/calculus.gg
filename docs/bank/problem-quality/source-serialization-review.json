@@ -1,0 +1,29 @@
+{
+  "scope": "Source serialization bridge correction; no mathematical or content-output change for the two already admitted pilots. Exact original canonical JSON bytes are hashed before language conversion; unsafe integral literals retain their exact decimal spelling in evidence.",
+  "changes": [
+    {
+      "file": "scripts/bank/quality/adapt.mjs",
+      "priorSha256": "515bff6fd8da8ef10d32a385b378462d6a015ae7a27063bd3aae3a3630094bd4",
+      "sha256": "f2f388ec9c35afebf23c7746b206388ed4cd963b519b29fdb09ede9165f4b164"
+    },
+    {
+      "file": "scripts/bank/quality/contract.py",
+      "priorSha256": "72debb2b6cf167cbfb1d645bbba2ade5e1b54dced4d2e582c2e1d13fb74fa5b2",
+      "sha256": "ae72e8e1deb0cf0dfe27a7f1fcfb83f9a6bd72a3addf17ec4f55e1ef8a7dd5d0"
+    }
+  ],
+  "unchangedAdmittedRecords": [
+    {
+      "reviewId": "quality-review:quality-series-medium-ac-gaussian-truncation:0",
+      "problemId": "cn_55d76b4aca9fbbf4a573",
+      "unchangedContentHash": "5c067db03fc4c84f9d87a1a060929c88e23b42b2a1e311a48ff621f392e82fca"
+    },
+    {
+      "reviewId": "quality-review:quality-series-medium-ac-erf-coefficient-radius:0",
+      "problemId": "cn_ae139dbaf08354b436f7",
+      "unchangedContentHash": "83034e114296f46a5e9bff9f0d324c15a7f36bad9bcc5300065564eb2c574e7b"
+    }
+  ],
+  "regression": "tests/quality-admission.test.mjs verifies4.0 versus4 byte binding and9007199254740993 preservation;4tests passed.",
+  "newSeriesRecordsAdmitted": 0
+}

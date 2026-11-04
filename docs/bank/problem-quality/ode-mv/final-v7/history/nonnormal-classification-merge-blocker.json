@@ -1,0 +1,48 @@
+{
+  "status": "three-required-demotions-not-propagated",
+  "records": [
+    {
+      "problemId": "cn_bf941d2c8a14359e496b",
+      "revision": 1,
+      "index": 2,
+      "rawSha256": "3bf46a6871b751222a381464ed3eb83388c5760d1132235b05b38129e9eb224a",
+      "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:2",
+      "currentContentHash": "321fcd584c4d3214873edee8df09b49d94ec4d4bed644ca8a39e306df73e5bce",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage.",
+      "report": "scripts/bank/quality/ode-mv/options/evidence/author/nonnormal-options-visible-demotions.json",
+      "reportSha256": "7a83669b70a948f3c4295deaf3e5f637d3d920196ce746f6c928ea5c6e72ef4b"
+    },
+    {
+      "problemId": "cn_ece8ec3b89e15d2e465b",
+      "revision": 1,
+      "index": 5,
+      "rawSha256": "57933829b802ad41eea0896e70bbea4b62d77f2b2b6450292475407bee32bd25",
+      "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:5",
+      "currentContentHash": "da1d1520a8689225eee9c32c43303ad9a01d4d6ab9ebafd3c4ee47ad30f5d4fe",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage.",
+      "report": "scripts/bank/quality/ode-mv/options/evidence/author/nonnormal-options-visible-demotions.json",
+      "reportSha256": "7a83669b70a948f3c4295deaf3e5f637d3d920196ce746f6c928ea5c6e72ef4b"
+    },
+    {
+      "problemId": "cn_ff9725d01be218687a7e",
+      "revision": 1,
+      "index": 8,
+      "rawSha256": "372d9a8560d3286f041b0155319f08614c5d7adb677fec80c7dfd0bde79eb445",
+      "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:8",
+      "currentContentHash": "10725d87d635fee20089edc529858d8f8509cd9df49a375ede52320d21eb8c08",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage.",
+      "report": "scripts/bank/quality/ode-mv/options/evidence/author/nonnormal-options-visible-demotions.json",
+      "reportSha256": "7a83669b70a948f3c4295deaf3e5f637d3d920196ce746f6c928ea5c6e72ef4b"
+    }
+  ],
+  "controlEnergyOverrides": "indices4,6,9 already Hard in v4; verified"
+}

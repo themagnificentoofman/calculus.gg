@@ -1,0 +1,48 @@
+{
+  "status": "independently-checked-meaning-preserving-presentation",
+  "reviewer": "root",
+  "inputSha256": "27c59ae85674c0851fcd9b63d4b61bf39400bbd5776d7efda251c01451a8570a",
+  "literalParserSha256": "01fa4134b233dd55fbce8587c616b8f62f9ff7700516341b6dfe468c79468437",
+  "items": {
+    "integration-sign:io3-scaled-frullani:2": {
+      "sourceRawSha256": "457667cbdd44b94c1d600382c7838b9077b6ff3cded9ac977dd48e2c02e9d661",
+      "destinationRawSha256": "7a58357e8c3dc247fadbc6e7eefd212b1eb357abe0d58d499a0ea9fc8bd55791",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{5}{3} \\right)}}{4}",
+      "newConclusion": "\\frac{- \\ln{\\left(3 \\right)} + \\ln{\\left(5 \\right)}}{4}",
+      "exactLogIdentity": true,
+      "argument": "Every logarithm argument is positive; real log product, quotient and rational-power identities reduce the difference exactly to zero. Only the already verified correct expression is appended."
+    },
+    "integration-sign:io3-scaled-frullani:3": {
+      "sourceRawSha256": "487bce1a64802c13551f58a7db519fb72416da004ef2933162e0f5a9393b67ee",
+      "destinationRawSha256": "1a6a090e30cd6087606a0042134f15a45bf09a31ea9e83c2ab80718341d6617f",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{3}{2} \\right)}}{5}",
+      "newConclusion": "\\frac{- \\ln{\\left(2 \\right)} + \\ln{\\left(3 \\right)}}{5}",
+      "exactLogIdentity": true,
+      "argument": "Every logarithm argument is positive; real log product, quotient and rational-power identities reduce the difference exactly to zero. Only the already verified correct expression is appended."
+    },
+    "integration-sign:io3-scaled-frullani:4": {
+      "sourceRawSha256": "b108e7fbda8597fde10a2068f24931c822a4872993c6137361f662b5d6e22bce",
+      "destinationRawSha256": "72d5864f705396bbf3755c4606a9a55b8612b12d6aaed36f9c8f1a42a099831d",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{7}{5} \\right)}}{2}",
+      "newConclusion": "- \\ln{\\left(5 \\right)} + \\frac{\\ln{\\left(35 \\right)}}{2}",
+      "exactLogIdentity": true,
+      "argument": "Every logarithm argument is positive; real log product, quotient and rational-power identities reduce the difference exactly to zero. Only the already verified correct expression is appended."
+    },
+    "integration-sign:io3-scaled-frullani:5": {
+      "sourceRawSha256": "46ed54fa8067567af5895cf0bcd9f54d3dc8838a02c0ef18a35cb5db19b17c65",
+      "destinationRawSha256": "ef5704b4e5214e4c75ab47cd006525e649ee0ffd749f5bdf81edd2403f465d96",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{4}{3} \\right)}}{3}",
+      "newConclusion": "\\ln{\\left(\\frac{6^{\\frac{2}{3}}}{3} \\right)}",
+      "exactLogIdentity": true,
+      "argument": "Every logarithm argument is positive; real log product, quotient and rational-power identities reduce the difference exactly to zero. Only the already verified correct expression is appended."
+    },
+    "integration-sign:io3-scaled-frullani:6": {
+      "sourceRawSha256": "11277a90f35428c0a9720f817933fcfa7396e5490817fbff4218eb79d7966cca",
+      "destinationRawSha256": "94b73a091f9549b747942bf3131ca7a41b8538db2e31fe2d59826e3c3b4cae56",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{9}{7} \\right)}}{4}",
+      "newConclusion": "\\frac{- \\ln{\\left(7 \\right)} + 2 \\ln{\\left(3 \\right)}}{4}",
+      "exactLogIdentity": true,
+      "argument": "Every logarithm argument is positive; real log product, quotient and rational-power identities reduce the difference exactly to zero. Only the already verified correct expression is appended."
+    }
+  }
+}

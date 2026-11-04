@@ -1,0 +1,116 @@
+{
+  "status": "frozen-presentation-repair-awaiting-peer-rebind",
+  "families": 27,
+  "newOlympiadFamilies": 23,
+  "newOlympiadFiniteInstances": 177,
+  "newHardFamilies": 4,
+  "newHardFiniteInstances": 40,
+  "contentHashPolicy": "Raw candidate hashes only; destination canonical identity/admission supplied by root.",
+  "rejectedDraftEvidence": "../rejected-initial/",
+  "capacityLimitations": [
+    "Euler harmonic weight-three retains one meaningful finite instance; seven prefix-only variants excluded.",
+    "Four standard generating-function/Euler-factor routes are Hard and do not count toward advanced coverage.",
+    "Old nine retained series groups are provisional pending independent options-visible review."
+  ],
+  "files": {
+    "option_audit.py": "8f210a0a98b46947f5583473a9542a3716fc4f26c799671451a92b879d0334a2",
+    "advanced.py": "c1d6009710e88b628d848dd84cf0ce943bc7eaba2955b7db75d193e718e33e6d",
+    "advanced-verification.json": "a6ca1285f172b492a14162a026cd550518322e2fedb345ddc9d8c944c58e71fd",
+    "advanced-catalog.json": "47a6095b4091c3104729a92b97917301171d44ce97357a5882a3670f64d391df",
+    "advanced-candidates.jsonl": "42d8a936054a0ee1999417af23f7ada46dce420c364df0bb79c580e12cef4e59",
+    "generate_advanced.py": "a2757bfd6a4085c897df44bc514eec1ee6c443c3de5868b0a136ad2d501030d2",
+    "advanced_replacements.py": "8bbd9adff69cfb3015e4e608ed12c64d8043818bb9f700c6141c698ca01df032",
+    "render-report.json": "3e60b4d3b727a78a067f028cc4ff9edfa5606cea6f2034d4eb0f29151eea1cc7",
+    "render-check.cjs": "55059b6c7c0b89a3f0bcacc6ccdbb7844d5eaf1185a0acf53ccd4421d8954acb",
+    "common.py": "31db8ad7e9aaca03d4950c2e375b7ac92595a0c69ebc0b76c8870312a0029e06",
+    "verify_advanced.py": "239b177211c0ddbe427b4d3d0026831adb849261b8425b2bda2ddaa37c890697",
+    "advanced-option-audit.json": "e91cef34e7290e1b440795d14e79878f7bc8780ef098cbd8ed800052070b5221"
+  },
+  "verification": {
+    "instances": 217,
+    "exactChecks": 1947,
+    "strictKatexExpressions": 2949,
+    "renderFailures": 0,
+    "perfectMultiInstanceOptionOnlyRules": 0,
+    "singleInstanceCaveat": "Euler one-item family has smallest correct rank in its only item; no cross-instance statistic is inferred."
+  },
+  "humanReviewed": false,
+  "formalProof": false,
+  "version": "advanced-frozen-v3",
+  "supersedes": "advanced-frozen-v2",
+  "reviewChanges": "Exactly eight finite-cycle solutions brace multidigit Chebyshev indices; statements, choices, answers, IDs and all other records unchanged.",
+  "changedRecords": [
+    {
+      "problemId": "cn_qs_9fa32c0f9cfce311a255",
+      "oldContentHash": "7eccf515ece790210af58966b62a22d47366f212074f7ef3fe27e5a8e7081bd0",
+      "contentHash": "2de85d281942c9f5e1acfcc87fc894b57c68c812c4e2f9cb811d4d1ee0d820e5",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_bda91b1f7708e81fe7b3",
+      "oldContentHash": "01cf1cfd4b96f13bf884ef7a38749c64b0a0fa518f465fecb39dc334cd1740dd",
+      "contentHash": "8fcc526cbfbc8f915256c9f794cdba339a2f9122130a98da1633cd54b4fa24e3",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_6c18c15e554ce7a0a329",
+      "oldContentHash": "4eed7c303b83d62d165b72b7909535462bf73d74e3f16aa66fe1e39c16fad65d",
+      "contentHash": "eb7a24b6f1961ad4a5a885dcf7577ba14e06c353360abe778b416d4a874b0c19",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_b1ce75f2fdbe36e6b87b",
+      "oldContentHash": "144df9425fe21897c3513fa1e5d273110e766e155bd83f7e7459d24872e85942",
+      "contentHash": "6fa6b5109f2bac2ba4f6a159df8749727e23112cb879207a034c010ca1ce3764",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_8dfe67b3475bb596b42c",
+      "oldContentHash": "f7b897a68e882527e01b3910fe31ebd9697784aa0e8ae71e7d4a460bef951f1a",
+      "contentHash": "7c08eaf1c8b4d844e581415629f099dbd94d86134b2135126417fdb3ee5c5c01",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_d2581243cb251fcc574a",
+      "oldContentHash": "dc643ec859ea88284dd8a537970e0c4ec56d8e7f6d4398bb1454393ce47683f1",
+      "contentHash": "3ea5611c7fc609180dfea6242a42ae2d64055529bc835143e9c6bb996dc903c0",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_8a00cd8f3bed4e438e65",
+      "oldContentHash": "974354310e122a4b55b25565c783fa1c7c84e83fc5a968bde6d97380b8b671ec",
+      "contentHash": "1c569a253732fdf0f402f9bce8068a874f6dbea131d70d22c32abc2aa5033ce9",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    },
+    {
+      "problemId": "cn_qs_bcabf59b3a0ff34c51f2",
+      "oldContentHash": "c4fb68c635e3bdc933c62696da57c5ab4d21b1530941f5b3168cb999bd2a48f4",
+      "contentHash": "7792b5ff2b33cbdeaeae15d6297886c38bb868dbc403e2a4e1e614a56664781d",
+      "changedFields": [
+        "contentHash",
+        "solutionSteps"
+      ]
+    }
+  ]
+}

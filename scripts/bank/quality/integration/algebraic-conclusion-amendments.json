@@ -1,0 +1,380 @@
+{
+  "status": "independently-checked-meaning-preserving-presentation",
+  "reviewer": "root",
+  "inputSha256": "f6fe8902b1bae0e920184e563cc02398b76e445f9dbcb59df552b9cb61f67ced",
+  "reviewSources": {
+    "scripts/bank/quality/peer/integration_conclusions.py": "2def53ac05d4e22b8b383ce334923b170bfb8ab9bbf65d346c3443a9b59632f8",
+    "scripts/bank/quality/peer/differentiation_literal_choices.py": "397e3969e5baf299f20c68290c4967b8b8064f773b58b74df878fe4f21d900a8"
+  },
+  "items": {
+    "main55:io3-jensen-radius:2": {
+      "sourceRawSha256": "e619da50bbd8b1adda72d939d0b6537a7cb7bfcec1ecdac74ba60d36e1e34eb4",
+      "destinationRawSha256": "b0337c8137225c1754875d8cad8b9af12f0a44d3a4b3a1bedfb57319f1f8581c",
+      "oldConclusion": "4 \\pi \\ln{\\left(\\frac{5}{2} \\right)}",
+      "newConclusion": "\\left(4 \\pi \\left(- \\ln{\\left(2 \\right)} + \\ln{\\left(5 \\right)}\\right)\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:io3-jensen-radius:5": {
+      "sourceRawSha256": "490c8a5dcab6e0427bcbdd2e1da34af40fb50c1987352a2c35faa5fb6397e244",
+      "destinationRawSha256": "aa80a31b69e21a1369f6a5164c73529b99186b4f32899e24b2a9dbf8c266dcf7",
+      "oldConclusion": "4 \\pi \\ln{\\left(4 \\right)}",
+      "newConclusion": "8 \\pi \\ln{\\left(2 \\right)}",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:io3-jensen-radius:6": {
+      "sourceRawSha256": "72b563efab5fbb4730deb8336fd1fcd51e5c6d1863cc304e7a4d3c1b5486957d",
+      "destinationRawSha256": "ad13d93136793966f85e08734566749179d09b44fac8cbb2dfa8d7e669d55e26",
+      "oldConclusion": "4 \\pi \\ln{\\left(\\frac{9}{2} \\right)}",
+      "newConclusion": "\\left(4 \\pi \\left(- \\ln{\\left(2 \\right)} + 2 \\ln{\\left(3 \\right)}\\right)\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-exponential-rate:2": {
+      "sourceRawSha256": "ec085611f45314510086a5a915e63c47511c890436076d1066756816f8e04f1f",
+      "destinationRawSha256": "bab2ac31d18570e03184d03b465ce96c2141323186aaa163e145c926f7e454b0",
+      "oldConclusion": "- \\frac{1}{6} + \\frac{e^{6}}{6}",
+      "newConclusion": "\\left(\\frac{-1 + e^{6}}{6}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-exponential-rate:3": {
+      "sourceRawSha256": "68c1f44d54127adb63830da0fadb9ec6d1aca16043ff98ae71919e430efd5460",
+      "destinationRawSha256": "6423d5c10371902a41f116c81a6649b9caeb444fb56770e4ea69547f57f77292",
+      "oldConclusion": "- \\frac{1}{7} + \\frac{e^{7}}{7}",
+      "newConclusion": "\\left(\\frac{-1 + e^{7}}{7}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-exponential-rate:5": {
+      "sourceRawSha256": "7623752df81fa250cc892ee0dde8ab5d4ae75800d31ea066f291de0718e0d121",
+      "destinationRawSha256": "46d705e44ad41bb2f643befdce3b319ce05d8adcecda5cfea300376c359752d2",
+      "oldConclusion": "- \\frac{1}{9} + \\frac{e^{9}}{9}",
+      "newConclusion": "\\left(\\frac{-1 + e^{9}}{9}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-exponential-rate:7": {
+      "sourceRawSha256": "bc8abce9f06dcf0d23dcbe29336b0fe31bcb39289f90daa0c34407688638c5b2",
+      "destinationRawSha256": "ab1d1219b4dbf12cea53f49469dbfa746fe081dee18215195d6af6a24e87b7e3",
+      "oldConclusion": "- \\frac{1}{11} + \\frac{e^{11}}{11}",
+      "newConclusion": "\\left(\\frac{-1 + e^{11}}{11}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-log-recognition:2": {
+      "sourceRawSha256": "4842abcab3359844858c9a4bb37b6bd67953f935f09f6805461ce2feccce6dcd",
+      "destinationRawSha256": "bacb4995c502b73c5914a5b286c432756a7a88ceb9235353e08ddad28c9896ee",
+      "oldConclusion": "\\ln{\\left(\\frac{7}{6} \\right)}",
+      "newConclusion": "\\left(- \\ln{\\left(6 \\right)} + \\ln{\\left(7 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-log-recognition:4": {
+      "sourceRawSha256": "ac358880bfc84cd87af46a31febc2e9de00f51b1980bb3f09b3fb55428272ec6",
+      "destinationRawSha256": "fcf51f43e4350a28eeb3fad51598d3729d6b4664c5efdcb00990a67726d71280",
+      "oldConclusion": "\\ln{\\left(\\frac{9}{8} \\right)}",
+      "newConclusion": "\\left(- 3 \\ln{\\left(2 \\right)} + 2 \\ln{\\left(3 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-log-recognition:5": {
+      "sourceRawSha256": "325c87f4cb61bb5c72e8c8c299ac0e297f243f679916c5cc6ed103246cd76946",
+      "destinationRawSha256": "00d8849a7b6502f5f8cf70d3d12b324ab5386d74d27e8ec99a5684ab7d01147b",
+      "oldConclusion": "\\ln{\\left(\\frac{10}{9} \\right)}",
+      "newConclusion": "\\left(- 2 \\ln{\\left(3 \\right)} + \\ln{\\left(10 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-log-recognition:8": {
+      "sourceRawSha256": "943d1d693f59db6f8811941f2b09a8155742eae2442135890e1584c307b7a9d1",
+      "destinationRawSha256": "3f2a14ad399a0b1afc2f6661d0853a85a82a99b90b77b083339785e59867eb1f",
+      "oldConclusion": "\\ln{\\left(\\frac{13}{12} \\right)}",
+      "newConclusion": "\\left(- \\ln{\\left(12 \\right)} + \\ln{\\left(13 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-easy-odd-even:4": {
+      "sourceRawSha256": "951767ef5ea45319a7d3a03b862f3e62d30fd8c8c3aa25602aff937d0e77a786",
+      "destinationRawSha256": "0d120abca3ae17acd3f4dbcfa1643d5da2d67cebf5292cab33c9dece584f0866",
+      "oldConclusion": "2 \\sqrt{\\frac{1}{2} - \\frac{\\sqrt{2}}{4}}",
+      "newConclusion": "\\sqrt{2 - \\sqrt{2}}",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-half-angle-quadratic:1": {
+      "sourceRawSha256": "fef767912a5c19a082cdc42b4357b236449f3ecf21f50f115c03b19f79b38ec8",
+      "destinationRawSha256": "90c697135616c32428950310ffe139d7c74d2987f9be7ab40c11526b7bd69ccd",
+      "oldConclusion": "\\frac{\\sqrt{6} \\ln{\\left(\\frac{6 - 2 \\sqrt{6}}{2 \\sqrt{6} + 6} \\right)}}{12} - \\frac{\\sqrt{6} \\ln{\\left(\\frac{5 - 2 \\sqrt{6}}{2 \\sqrt{6} + 5} \\right)}}{12}",
+      "newConclusion": "\\left(\\frac{\\sqrt{6} \\left(- \\ln{\\left(2 \\left(\\sqrt{6} + 3\\right) \\right)} + \\ln{\\left(2 \\left(3 - \\sqrt{6}\\right) \\right)} - \\ln{\\left(5 - 2 \\sqrt{6} \\right)} + \\ln{\\left(2 \\sqrt{6} + 5 \\right)}\\right)}{12}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-half-angle-quadratic:3": {
+      "sourceRawSha256": "ffa942d13a0f3c44abf911226bb49897663c709d20532423ea5f926e78ce248f",
+      "destinationRawSha256": "92fd751fb7fcf6922ee5e6ab9d0b4e5cccbe11356e81aadfebf5191b6c5da09a",
+      "oldConclusion": "\\frac{\\sqrt{3} \\ln{\\left(\\frac{8 - 4 \\sqrt{3}}{4 \\sqrt{3} + 8} \\right)}}{12} - \\frac{\\sqrt{3} \\ln{\\left(\\frac{7 - 4 \\sqrt{3}}{4 \\sqrt{3} + 7} \\right)}}{12}",
+      "newConclusion": "\\left(\\frac{\\sqrt{3} \\left(- \\ln{\\left(4 \\left(\\sqrt{3} + 2\\right) \\right)} + \\ln{\\left(4 \\left(2 - \\sqrt{3}\\right) \\right)} - \\ln{\\left(7 - 4 \\sqrt{3} \\right)} + \\ln{\\left(4 \\sqrt{3} + 7 \\right)}\\right)}{12}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-half-angle-quadratic:5": {
+      "sourceRawSha256": "23cbd4c1070a7d6bc9620d29108cffa8e4ebba72dea07c7853fb91c42c490aac",
+      "destinationRawSha256": "23a22906cadc53043f0abe03325c050a9c7e4edb44628c47706ece02b8db404e",
+      "oldConclusion": "\\frac{\\sqrt{5} \\ln{\\left(\\frac{10 - 4 \\sqrt{5}}{4 \\sqrt{5} + 10} \\right)}}{20} - \\frac{\\sqrt{5} \\ln{\\left(\\frac{9 - 4 \\sqrt{5}}{4 \\sqrt{5} + 9} \\right)}}{20}",
+      "newConclusion": "\\left(\\frac{\\sqrt{5} \\left(- \\ln{\\left(2 \\left(2 \\sqrt{5} + 5\\right) \\right)} + \\ln{\\left(2 \\left(5 - 2 \\sqrt{5}\\right) \\right)} - \\ln{\\left(9 - 4 \\sqrt{5} \\right)} + \\ln{\\left(4 \\sqrt{5} + 9 \\right)}\\right)}{20}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-half-angle-quadratic:7": {
+      "sourceRawSha256": "1a2bb4465268041eee931aa885466850ac6ecd98e02928fca2583fe8bcde9ec2",
+      "destinationRawSha256": "05e03dde2ac8b653d7a1b2840c6476424044a867b61a2eaf1ec25b67522cdfe9",
+      "oldConclusion": "\\frac{\\sqrt{30} \\ln{\\left(\\frac{12 - 2 \\sqrt{30}}{2 \\sqrt{30} + 12} \\right)}}{60} - \\frac{\\sqrt{30} \\ln{\\left(\\frac{11 - 2 \\sqrt{30}}{2 \\sqrt{30} + 11} \\right)}}{60}",
+      "newConclusion": "\\left(\\frac{\\sqrt{30} \\left(- \\ln{\\left(2 \\left(\\sqrt{30} + 6\\right) \\right)} + \\ln{\\left(2 \\left(6 - \\sqrt{30}\\right) \\right)} - \\ln{\\left(11 - 2 \\sqrt{30} \\right)} + \\ln{\\left(2 \\sqrt{30} + 11 \\right)}\\right)}{60}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-half-angle-quadratic:9": {
+      "sourceRawSha256": "005e6a9d84b4cc16efb0e148d07d04d88a348bd712993c28cd7998686f1b04c7",
+      "destinationRawSha256": "f8af13636575182d6d4643f3d3b97b6d649382a9ab64f37292d768902d73ebb2",
+      "oldConclusion": "\\frac{\\sqrt{42} \\ln{\\left(\\frac{14 - 2 \\sqrt{42}}{2 \\sqrt{42} + 14} \\right)}}{84} - \\frac{\\sqrt{42} \\ln{\\left(\\frac{13 - 2 \\sqrt{42}}{2 \\sqrt{42} + 13} \\right)}}{84}",
+      "newConclusion": "\\left(\\frac{\\sqrt{42} \\left(- \\ln{\\left(2 \\left(\\sqrt{42} + 7\\right) \\right)} + \\ln{\\left(2 \\left(7 - \\sqrt{42}\\right) \\right)} - \\ln{\\left(13 - 2 \\sqrt{42} \\right)} + \\ln{\\left(2 \\sqrt{42} + 13 \\right)}\\right)}{84}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:0": {
+      "sourceRawSha256": "a7c446ea4b5a40b45aa42d362635b5331d044d86d89bb5c671f598b8be9a4fd2",
+      "destinationRawSha256": "fafd513e9c65d155f37d49a30c81bedc333eae52af4ab3721cd1f3c054a21c10",
+      "oldConclusion": "\\frac{6913}{18000} - \\frac{\\pi^{2}}{30}",
+      "newConclusion": "\\left(\\frac{6913 - 600 \\pi^{2}}{18000}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:1": {
+      "sourceRawSha256": "fccb4719016ef1afcfd2f456e4ae539ec47e54dd5aa6e381ba256a5440efb4f2",
+      "destinationRawSha256": "0bbda9fe69eb06bdc896d879245418e7e98b4eeead6bb184684ec316f8520746",
+      "oldConclusion": "\\frac{6839}{21600} - \\frac{\\pi^{2}}{36}",
+      "newConclusion": "\\left(\\frac{6839 - 600 \\pi^{2}}{21600}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:2": {
+      "sourceRawSha256": "8b970f21348b576c265e1dff9ea8eb44c209baad300a295d9931c442709ca6a5",
+      "destinationRawSha256": "fef004347f62d7e037531be3cd53ebefd3dad4b34cfc5a5f45720a474f00783d",
+      "oldConclusion": "\\frac{332021}{1234800} - \\frac{\\pi^{2}}{42}",
+      "newConclusion": "\\left(\\frac{332021 - 29400 \\pi^{2}}{1234800}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:3": {
+      "sourceRawSha256": "ca1aeabd94f5ff6629f93093baf0e39ffd4259fa7c529040685d52721edb0eac",
+      "destinationRawSha256": "22ce2b5377bd49dabe35b2c35c4e3c63499d6ae892474723d0e80c5ce46bd431",
+      "oldConclusion": "\\frac{164683}{705600} - \\frac{\\pi^{2}}{48}",
+      "newConclusion": "\\left(\\frac{164683 - 14700 \\pi^{2}}{705600}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:5": {
+      "sourceRawSha256": "181d6b70f576179fd2e682adbcb1eb890d2b81ca3661a6d5dd95cef323423a80",
+      "destinationRawSha256": "c22270869865768b0d149d663850eb0af4810e287b69b21f8fb33ef65023842c",
+      "oldConclusion": "\\frac{11701657}{63504000} - \\frac{\\pi^{2}}{60}",
+      "newConclusion": "\\left(\\frac{11701657 - 1058400 \\pi^{2}}{63504000}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:6": {
+      "sourceRawSha256": "e7ee166781ebded71775e99ae0acdc3a0c35154b1043ef9daeb80a9b89d4103d",
+      "destinationRawSha256": "3a8dcc900d2e704c8f5b03ccccfd060fac655ebe3de2603b909e1a384a21494a",
+      "oldConclusion": "\\frac{281628233}{1690476480} - \\frac{\\pi^{2}}{66}",
+      "newConclusion": "\\left(\\frac{281628233 - 25613280 \\pi^{2}}{1690476480}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:7": {
+      "sourceRawSha256": "0095cf8ae6a9e8391042072c45d4ede721d06b23b5814f473fe53d91d0c293c7",
+      "destinationRawSha256": "2eaaceeddda6a0ca7ca07d60f6ab1ade70461946e2a01b6124e5b19343e77d79",
+      "oldConclusion": "\\frac{280246811}{1844156160} - \\frac{\\pi^{2}}{72}",
+      "newConclusion": "\\left(\\frac{280246811 - 25613280 \\pi^{2}}{1844156160}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:8": {
+      "sourceRawSha256": "f8cfa6ae2b34d638716871fcf7404d67bfb301c0dad21e1e4740e2191b35818e",
+      "destinationRawSha256": "427bb938d20b5b63236901c519d6c09e8389b7bec6e5f6779e29b5a0429a750a",
+      "oldConclusion": "\\frac{47152428293}{337634256960} - \\frac{\\pi^{2}}{78}",
+      "newConclusion": "\\left(\\frac{47152428293 - 4328644320 \\pi^{2}}{337634256960}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-hard-mixed-log-endpoints:9": {
+      "sourceRawSha256": "ac02369b5bad0f73fd0f31f7ccb099d479ad70a043c36a8c9bc12269f2588b28",
+      "destinationRawSha256": "f9511554af3ea86dca9976af7818d22b7135d2d7fcb6c8e5240f49a439f81158",
+      "oldConclusion": "\\frac{9392726821}{72721224576} - \\frac{\\pi^{2}}{84}",
+      "newConclusion": "\\left(\\frac{9392726821 - 865728864 \\pi^{2}}{72721224576}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-exponential-trig:1": {
+      "sourceRawSha256": "62263e4e846713f94117085d1e44172e8418a51a5ace9d232cd29c3979fb8c7d",
+      "destinationRawSha256": "dc6250fb397422a8f5072707311a2efaef4710831b738d4d7dfb009e7c0f8208",
+      "oldConclusion": "- \\frac{1}{26} + \\frac{e^{2 \\pi}}{26}",
+      "newConclusion": "\\left(\\frac{-1 + e^{2 \\pi}}{26}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-exponential-trig:2": {
+      "sourceRawSha256": "72c25648856fac87ccdcf6625f0cd1e670ed3d8c289dc40f389a5076f0f10ad7",
+      "destinationRawSha256": "a9eeb6fa8686b99bb592586e00e03f727a05b46d68d2eeb3d939ca454634ab8e",
+      "oldConclusion": "- \\frac{1}{37} + \\frac{e^{2 \\pi}}{37}",
+      "newConclusion": "\\left(\\frac{-1 + e^{2 \\pi}}{37}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-exponential-trig:5": {
+      "sourceRawSha256": "af45d0680062b4e70ccfa327bfdc9d376b63a5616b8a833b9b7de3ee766cedab",
+      "destinationRawSha256": "8ca399fe5ea5a56080973a1111791c036a6073d60ade8b376fb4c77cb1e852e9",
+      "oldConclusion": "- \\frac{1}{82} + \\frac{e^{2 \\pi}}{82}",
+      "newConclusion": "\\left(\\frac{-1 + e^{2 \\pi}}{82}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-exponential-trig:7": {
+      "sourceRawSha256": "bbaf467845c8a05540166692989a354a450b863dc65fe55b3a20b5dcbc435108",
+      "destinationRawSha256": "f3f5bc8099d89c68b8070cf91e2068022bde8a80b92c2d5597073d87ea74a39b",
+      "oldConclusion": "- \\frac{1}{122} + \\frac{e^{2 \\pi}}{122}",
+      "newConclusion": "\\left(\\frac{-1 + e^{2 \\pi}}{122}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-exponential-trig:8": {
+      "sourceRawSha256": "8801372a032cbf8acee50da492ab5d33ea7b55d7f2152ef94c640b7297238b40",
+      "destinationRawSha256": "bc10044721cb36b4cbb2ef4f5dc336f9bd4175d61ad1030c7eb39dbca2fb1efc",
+      "oldConclusion": "- \\frac{1}{145} + \\frac{e^{2 \\pi}}{145}",
+      "newConclusion": "\\left(\\frac{-1 + e^{2 \\pi}}{145}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-partial-fractions:0": {
+      "sourceRawSha256": "718cc7c12a8429a81640c926c3bb848c2bce50f95e97ec697914c3499f3071c5",
+      "destinationRawSha256": "d8ce963ebeb567eb8a9140e7110289e5063517d327613a44be61f6743b8eac38",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{8}{5} \\right)}}{3}",
+      "newConclusion": "\\left(- \\frac{\\ln{\\left(5 \\right)}}{3} + \\ln{\\left(2 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-partial-fractions:2": {
+      "sourceRawSha256": "1ead7b541064658d2143788d834424e11e76a7dc763a7eb50e53dcebeed162c5",
+      "destinationRawSha256": "1ff728c5b7596ce5efd7039fed1620d64117ac6e870aac49b49b281d50d307f9",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{12}{7} \\right)}}{5}",
+      "newConclusion": "\\left(\\frac{- \\ln{\\left(7 \\right)} + \\ln{\\left(12 \\right)}}{5}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-partial-fractions:4": {
+      "sourceRawSha256": "6d033e2e9a3444ad593f33190d87d72acedc99071db120b16e87c9fa2956821b",
+      "destinationRawSha256": "78eb302ab5f45c76acd8b70e3b3173a1ce338f0ee75e6eb484c1a75684a02143",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{16}{9} \\right)}}{7}",
+      "newConclusion": "\\left(\\frac{2 \\left(- \\ln{\\left(3 \\right)} + 2 \\ln{\\left(2 \\right)}\\right)}{7}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-partial-fractions:7": {
+      "sourceRawSha256": "29d269cd39eddfb76eb5725a16de9fc724bfbfb8539498abc3669c47ce7f12a8",
+      "destinationRawSha256": "4df4cbd673d623d29cc83ce236c4f8d25ddb1f66663bbe3dd8579c12192a62d3",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{11}{6} \\right)}}{10}",
+      "newConclusion": "\\left(\\frac{- \\ln{\\left(6 \\right)} + \\ln{\\left(11 \\right)}}{10}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-partial-fractions:8": {
+      "sourceRawSha256": "e67c673d010684c9449e925f4cfd3c8267d37e4ee22ae053884f658161668830",
+      "destinationRawSha256": "3cf74544a61328a7c8b8f4d8ae0c17c6082d9088e0694a71b8f463255b458908",
+      "oldConclusion": "\\frac{\\ln{\\left(\\frac{24}{13} \\right)}}{11}",
+      "newConclusion": "\\left(\\frac{- \\ln{\\left(13 \\right)} + \\ln{\\left(24 \\right)}}{11}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-parts-log:3": {
+      "sourceRawSha256": "4d8eca941639b0c96dec38aa8196e2f7131b87b8930889e452955cfad55c0c43",
+      "destinationRawSha256": "a8dfb036167ca067c1c1152a8924366b144141a93f0feeed71e36e725333d371",
+      "oldConclusion": "-6 + 7 \\ln{\\left(7 \\right)}",
+      "newConclusion": "\\left(-6 + 7 \\ln{\\left(7 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-parts-log:4": {
+      "sourceRawSha256": "456baf410455ad24206783176d8bf2efa3aeb512f0debc63b5979ae99cb9d130",
+      "destinationRawSha256": "526612edbc2c61c184619679c96c26a59b7f40cf1518d82bda4796ce6243a2de",
+      "oldConclusion": "-7 + 8 \\ln{\\left(8 \\right)}",
+      "newConclusion": "\\left(-7 + 24 \\ln{\\left(2 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-parts-log:7": {
+      "sourceRawSha256": "9459828f1ed41229828828bf7d3f1636722cf0f70a8b903dab31a2ff63a48e7f",
+      "destinationRawSha256": "d6945e8485ae7d48e748669fd2fdebf672734a747af88973fbfad4a19eacbb0c",
+      "oldConclusion": "-10 + 11 \\ln{\\left(11 \\right)}",
+      "newConclusion": "\\left(-10 + 11 \\ln{\\left(11 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-parts-log:8": {
+      "sourceRawSha256": "d935e32f4fca312326d6d13b0bf7119d64d86e4743601592794033e2ba676e50",
+      "destinationRawSha256": "f2cf42df30c056d0e27d3078b6ca4d9350c9185c975128fdfb3e594e43f2dcf4",
+      "oldConclusion": "-11 + 12 \\ln{\\left(12 \\right)}",
+      "newConclusion": "\\left(-11 + 12 \\ln{\\left(12 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    },
+    "main55:m3-integration-medium-parts-log:9": {
+      "sourceRawSha256": "0e59b97a790606c01a240347c1eaefaef566b45aab4b8e34bec24be8f3eee956",
+      "destinationRawSha256": "9e1afa5c2566b8c12736cc35731fad0c1decf3fbefd63c37838516e104ec8f38",
+      "oldConclusion": "-12 + 13 \\ln{\\left(13 \\right)}",
+      "newConclusion": "\\left(-12 + 13 \\ln{\\left(13 \\right)}\\right)",
+      "exactIdentity": true,
+      "realLogArgumentsPositive": true,
+      "argument": "Exact algebra, positive-real log product/quotient identities and principal nonnegative radicals. Append the independently verified choice without changing any earlier derivation."
+    }
+  }
+}

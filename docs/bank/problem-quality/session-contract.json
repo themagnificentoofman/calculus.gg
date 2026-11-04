@@ -1,0 +1,84 @@
+{
+  "version": "problem-quality-horizon-v1",
+  "baselineCommit": "23825701acf97fdc0be425f350d0dc7030f3eb0b",
+  "baselineRelease": "cn-2026-11-03-ideas-v3",
+  "initialHistory": "empty for main horizon; separate returning fixtures",
+  "historyPolicy": {
+    "maxEntries": 512,
+    "attemptedLifetimeDays": 14,
+    "issuedLifetimeMinutes": 10,
+    "displayedLifetimeDays": 1,
+    "roundSpacingMinutes": 20,
+    "secondsBetweenAttempts": 30
+  },
+  "rounds": {
+    "olympiad": 10,
+    "easy": 5,
+    "medium": 5,
+    "hard": 5
+  },
+  "count": 20,
+  "mainGates": {
+    "exactEquivalentRepeats": 0,
+    "withinRoundDuplicates": 0,
+    "familyCap": 2,
+    "sameFamilyAdjacency": 0,
+    "relaxedRounds": 0,
+    "requestFailures": 0,
+    "olympiadMeanQualifiedIdeas": 16
+  },
+  "headroomTarget": 1.2,
+  "integrationToleranceRule": {
+    "deriveFrom": "development-seed baseline sequence-mean variability before candidate evaluation",
+    "ideaMeanLoss": "max(0.25, 2 * baseline sequence-mean standard deviation)",
+    "methodMeanLoss": "max(0.5, 2 * baseline sequence-mean standard deviation)",
+    "nearCloneWindowMeanIncrease": "max(0.2, 2 * baseline sequence-mean standard deviation)"
+  },
+  "seeds": {
+    "development": [
+      3389428118,
+      1072249137,
+      223715838,
+      1243212945,
+      2955112825,
+      3121217868,
+      3974927231,
+      3618933400,
+      1523447866,
+      3072192746,
+      819689961,
+      3312668924,
+      853485420,
+      167290474,
+      3940890553,
+      3169285736,
+      3640766483,
+      1072422444,
+      1123942721,
+      3141538784
+    ],
+    "heldout": [
+      2551329136,
+      1705316699,
+      976427363,
+      2525387157,
+      1923434727,
+      4163668799,
+      1178137581,
+      2061734192,
+      3178929563,
+      2323805591,
+      2969673766,
+      2573491328,
+      2191688123,
+      1763755737,
+      1423884226,
+      232608566,
+      3044683353,
+      928707366,
+      2924285854,
+      2525363393
+    ]
+  },
+  "heldoutPolicy": "Fixed before tuning. Run after development gates pass. Preserve all failed attempts; do not replace seeds."
+}

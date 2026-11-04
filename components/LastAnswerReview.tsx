@@ -1,12 +1,16 @@
+import { ProblemStatement } from './ProblemStatement';
+import { ContentAttribution } from './ContentAttribution';
 import { MathDisplay } from './MathDisplay';
 import { SolutionSteps } from './SolutionSteps';
 import { ProblemReference } from './ProblemReference';
 
 export interface AnsweredQuestion {
   question: {
+    contentAttribution?:import('@/lib/bank/contracts').ContentCredit;
     problemId?: string;
     problemRevision?: number;
-    latexProblem: string;
+    legacy?: boolean;
+  latexProblem: string;
     options: string[];
     correctIndex: number;
     explanation: string | string[];
@@ -27,7 +31,7 @@ export function LastAnswerReview({ answer }: { answer: AnsweredQuestion | null }
         <ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} />
         <div>
           <h3 className="text-sm font-semibold text-zinc-400">Question</h3>
-          <MathDisplay math={question.latexProblem} block />
+          <ProblemStatement math={question.latexProblem} legacy={question.legacy} />
         </div>
         <div>
           <h3 className={correct ? 'text-emerald-400' : 'text-red-400'}>
@@ -44,6 +48,7 @@ export function LastAnswerReview({ answer }: { answer: AnsweredQuestion | null }
         <div className="min-w-0 space-y-4 text-zinc-400">
           <h3 className="text-sm font-semibold">Explanation</h3>
           <SolutionSteps steps={question.explanation} />
+          <ContentAttribution credit={question.contentAttribution} />
         </div>
       </div>
     </details>

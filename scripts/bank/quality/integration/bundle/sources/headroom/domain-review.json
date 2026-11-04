@@ -1,0 +1,25 @@
+{
+  "status": "candidate-awaiting-independent-review",
+  "initialRejectedCases": [
+    {
+      "mass": "7/8",
+      "rightEndpointLength": "1/4"
+    },
+    {
+      "mass": "7/9",
+      "rightEndpointLength": "2/9"
+    }
+  ],
+  "reason": "An authored wrong interval-variance value violates the known feasible moment bounds at these narrow domains. Rejected before candidate export; no admitted record changed.",
+  "replacementCases": [
+    {
+      "mass": "7/12",
+      "rightEndpointLength": "1/6"
+    },
+    {
+      "mass": "7/15",
+      "rightEndpointLength": "2/15"
+    }
+  ],
+  "newIndependentIdeas": 0
+}

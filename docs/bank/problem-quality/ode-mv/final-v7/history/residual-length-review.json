@@ -1,0 +1,1148 @@
+{
+  "status": "bounded-four-family-causal-review-and-concrete-proposals",
+  "sourceArtifact": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/final1531-v4/served-records.jsonl",
+  "sourceSha256": "171e2c6ee3a2a96e56364c2b13438b34864ad227f2e8284ea0a08598d98ed622",
+  "families": [
+    {
+      "familyId": "m3-differential-equations-hard-euler-cauchy-resonance",
+      "status": "retain-mathematical-two-sign-pair-structure-with-explicit-residual",
+      "cases": [
+        {
+          "problemId": "cn_461eac15e8d3207e2e8f",
+          "sourceContentHash": "8ae16339ba7b6413cb432e16d84e27b7e1dc5461986d5f88ee3845d5e84562a8",
+          "servedRawHash": "9456ce5ee33ab5677e11fd80cfc3f096646b2d5da5e50021ed1cefb04741bf1a",
+          "index": 0,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_b634975d3c5bcb64",
+              "math": "\\frac{e^{\\frac{1}{2}}}{32}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_d93646deb4fade7e",
+              "math": "\\frac{e^{\\frac{1}{2}}}{16}",
+              "misconception": "Omit the repeated-integration factor one half"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_b634975d3c5bcb64": 26,
+            "ch_d93646deb4fade7e": 26
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_1397a57f9416676a4378",
+          "sourceContentHash": "aab15f5380e88790c55c7f7c0458d8843425831b4a4b10ee470cd807a255b4c7",
+          "servedRawHash": "af7ebf220f0dd354cabaed4642b07ee924b177b356447ce52db8befa68a24357",
+          "index": 1,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_994aa7549181f4ad",
+              "math": "\\frac{e^{\\frac{2}{5}}}{50}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_59aaf582eb7d66bb",
+              "math": "\\frac{e^{\\frac{2}{5}}}{100}",
+              "misconception": "Apply the repeated-integration factor one half twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_994aa7549181f4ad": 26,
+            "ch_59aaf582eb7d66bb": 27
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_abf6434a79d42c9a1ced",
+          "sourceContentHash": "6a2aaf1deb2e860c0461ade2844d9ad5520b3e2216ee2656698b80b72ad24581",
+          "servedRawHash": "3e6773507bfab25681a80f7572f87dd936f3a5f619179b0996a6d1b9080c5dcc",
+          "index": 2,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_a8d7e2375d776789",
+              "math": "\\frac{e^{\\frac{1}{3}}}{72}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_75b1257cd491ea8b",
+              "math": "\\frac{e^{\\frac{1}{3}}}{36}",
+              "misconception": "Omit the repeated-integration factor one half"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_a8d7e2375d776789": 26,
+            "ch_75b1257cd491ea8b": 26
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_82f8633366127dcd3b7f",
+          "sourceContentHash": "1e2661f76011042c5279facb2cb85a3330841c113bc50435142a3c8400e2c236",
+          "servedRawHash": "aab4ca20a7468dfcd702ae70b4d23099f156bda675cf4f2193b14ebc140b77e7",
+          "index": 3,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_cf39784ab094653a",
+              "math": "\\frac{e^{\\frac{2}{7}}}{98}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_e75348a19781ebf5",
+              "math": "\\frac{e^{\\frac{2}{7}}}{196}",
+              "misconception": "Apply the repeated-integration factor one half twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_cf39784ab094653a": 26,
+            "ch_e75348a19781ebf5": 27
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_2da4004fa4ce530b7802",
+          "sourceContentHash": "2622934d04d40a47c32dbabf10f1a5ee73747f174230f6b7e94b16bfe219afcb",
+          "servedRawHash": "44aaa8a27bcefe64735252af0b13a28cbe07ee4cfa2081bf5f39321208070c54",
+          "index": 4,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_52b3dcbf550ef5fa",
+              "math": "\\frac{e^{\\frac{1}{4}}}{128}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_e9bb61e12f1d11bd",
+              "math": "\\frac{e^{\\frac{1}{4}}}{64}",
+              "misconception": "Omit the repeated-integration factor one half"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_52b3dcbf550ef5fa": 27,
+            "ch_e9bb61e12f1d11bd": 26
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_6fd680b5a8f0c276b52e",
+          "sourceContentHash": "6a4bd784d7efd8723782bb1e58150ce889621c6203d14146bf8a460af6f4439f",
+          "servedRawHash": "6a4afbfb97b8bb49b48655e2b6e3ec6e04ba784326a798617a4bcb7bca31c1e8",
+          "index": 5,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_716efbbfa960f4bf",
+              "math": "\\frac{e^{\\frac{2}{9}}}{162}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_51b49f986e345bba",
+              "math": "\\frac{e^{\\frac{2}{9}}}{324}",
+              "misconception": "Apply the repeated-integration factor one half twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_716efbbfa960f4bf": 27,
+            "ch_51b49f986e345bba": 27
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_28f5bbdf4b5747b2178f",
+          "sourceContentHash": "1048b54b22d2dc3f88458b36506f147cbc65ef436b7b6dbb2c077b5cc6887e8f",
+          "servedRawHash": "1d306ee24e367854f3750edb0a9f426da3d44506ca63750b47e36b6e85818368",
+          "index": 6,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_bed0975dc0fe1e3b",
+              "math": "\\frac{e^{\\frac{1}{5}}}{200}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_d7d7587cb516389e",
+              "math": "\\frac{e^{\\frac{1}{5}}}{100}",
+              "misconception": "Omit the repeated-integration factor one half"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_bed0975dc0fe1e3b": 27,
+            "ch_d7d7587cb516389e": 27
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_3f068e93ec9917764328",
+          "sourceContentHash": "cf56f2ba1d4cd609376655d511137fd350f5db00707b9eccaec1cf65944bd74e",
+          "servedRawHash": "1bebaa800ba338fe60ac434f945fe4cc3703f37e71473cc946f391b133b444af",
+          "index": 7,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_504ca1a9bd874662",
+              "math": "\\frac{e^{\\frac{2}{11}}}{242}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_5bece85f5f6d81aa",
+              "math": "\\frac{e^{\\frac{2}{11}}}{484}",
+              "misconception": "Apply the repeated-integration factor one half twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_504ca1a9bd874662": 28,
+            "ch_5bece85f5f6d81aa": 28
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_3c1e3ed094e97ced26d9",
+          "sourceContentHash": "ae6f8f393d723d0dd1d6a2ebbfe9a520e5123320e433ddd5aac0c00b259e9930",
+          "servedRawHash": "7ac5ff4a9db4746f49701ef3dc2666909e1385dd438767c74c1b3f906f5314f0",
+          "index": 8,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_98894ac0083fccc2",
+              "math": "\\frac{e^{\\frac{1}{6}}}{288}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_82c6593bf1a30d3d",
+              "math": "\\frac{e^{\\frac{1}{6}}}{144}",
+              "misconception": "Omit the repeated-integration factor one half"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_98894ac0083fccc2": 27,
+            "ch_82c6593bf1a30d3d": 27
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_f0bb5887e6bab34ee56e",
+          "sourceContentHash": "313da42341fc4dbcdd836b2dcb53a98c5e67bb6461aedc3e10f8dbfc6128dfbb",
+          "servedRawHash": "e2b07ec90d44530cdc1d3fdadb7f2eed823b7b6930420dd9a57bc22c92188f6c",
+          "index": 9,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_0350657cf6156154",
+              "math": "\\frac{e^{\\frac{2}{13}}}{338}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_b75537f0b69778cb",
+              "math": "\\frac{e^{\\frac{2}{13}}}{676}",
+              "misconception": "Apply the repeated-integration factor one half twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_0350657cf6156154": 28,
+            "ch_b75537f0b69778cb": 28
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        }
+      ],
+      "causalDiagnostic": {
+        "positiveCandidatesEveryMenu": 2,
+        "positiveShorterCorrect": 2,
+        "positiveLongerCorrect": 1,
+        "positiveLengthsTie": 7,
+        "shortestWithinPositiveAccuracy": 0.55,
+        "positiveOnlyChance": 0.5
+      },
+      "finding": "The main replicated shortest signal is the one-character minus sign, not a unique matching pair tied only to the correct answer: every menu includes both signs of both magnitudes. Conditioning on the mathematically justified positive sign leaves two candidates in every case. The incremental finite digit-length advantage is .55 versus the .50 two-positive baseline; it cannot universally decide the task.",
+      "proposal": "No menu rewrite solely to hide ordinary minus signs or force equal digit widths. Preserve the literal residual and keep the existing non-Olympiad ceiling. A later substantive menu refresh should add independent magnitude mistakes rather than cosmetic padding or awkward unsimplified constants."
+    },
+    {
+      "familyId": "m3-differential-equations-hard-mixed-boundary-spectrum",
+      "status": "retain-mathematical-two-sign-pair-structure-with-explicit-residual",
+      "cases": [
+        {
+          "problemId": "cn_25a0150eedb173f101f0",
+          "sourceContentHash": "b718f9c6b72b356edae8b7ec3e256c92e3638e36316c95d0d2da2a9358cd71e8",
+          "servedRawHash": "8fad1640cd042024a232413295fd5ee7a550bd339fa772f6c9eb90a8b4c88894",
+          "index": 0,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_3ecd13cea596e641",
+              "math": "\\frac{\\pi^{2}}{64}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_05665d8ee94f8f74",
+              "math": "\\frac{\\pi^{2}}{16}",
+              "misconception": "Use two Dirichlet endpoints instead of the mixed boundary conditions"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_3ecd13cea596e641": 18,
+            "ch_05665d8ee94f8f74": 18
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_4bc83fa17e18c3d0982d",
+          "sourceContentHash": "3a6bfc62197edfd63660340f848fe7e8395f8d2c997dba52c72b267a7345b60c",
+          "servedRawHash": "17a34ab6192dd1bfe8c682a088b67549aa5c268c1589a45126c13230b3233983",
+          "index": 1,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_bc8dff9f1ccc1493",
+              "math": "\\frac{\\pi^{2}}{100}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_3d22d8e00d6ccedd",
+              "math": "\\frac{\\pi^{2}}{400}",
+              "misconception": "Double the interval length in the first mixed mode"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_bc8dff9f1ccc1493": 19,
+            "ch_3d22d8e00d6ccedd": 19
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_21547b2006c544b4d11e",
+          "sourceContentHash": "ba47c266dfc4303ee82297d848c1e5885bee70a345d7a7b71880fd764714d8ed",
+          "servedRawHash": "0b27b142c211bd88c04cf40c3eb383487e1dcff047591730e6b81874affe56db",
+          "index": 2,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_e706c2d1a4ddf536",
+              "math": "\\frac{\\pi^{2}}{144}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_bfe2950598d4a2ec",
+              "math": "\\frac{\\pi^{2}}{36}",
+              "misconception": "Use two Dirichlet endpoints instead of the mixed boundary conditions"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_e706c2d1a4ddf536": 19,
+            "ch_bfe2950598d4a2ec": 18
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_b11a5baa255d604f4df2",
+          "sourceContentHash": "11e9c86abe899a77820b3dbd7bce10d6af2ba5a098a394b37c07d8c7dcb667eb",
+          "servedRawHash": "2d0c55244a0e7ee6454c3af91da884d422f29fee14cb7ee82955cd68572a15ef",
+          "index": 3,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_d2d9196928a7b0b4",
+              "math": "\\frac{\\pi^{2}}{196}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_5cf4c74319007916",
+              "math": "\\frac{\\pi^{2}}{784}",
+              "misconception": "Double the interval length in the first mixed mode"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_d2d9196928a7b0b4": 19,
+            "ch_5cf4c74319007916": 19
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_15aedcc8c4480a60b565",
+          "sourceContentHash": "098bed3dfec43aee6344d832f45de2bba53fde6384a3b1d5bf534d04f7f1026d",
+          "servedRawHash": "53de405ef314933b48c45a3b6f6a5ddf398fbdc98ba70a6550bbfef446adff47",
+          "index": 4,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_81688cbe4d5f2d9f",
+              "math": "\\frac{\\pi^{2}}{256}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_3ecd13cea596e641",
+              "math": "\\frac{\\pi^{2}}{64}",
+              "misconception": "Use two Dirichlet endpoints instead of the mixed boundary conditions"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_81688cbe4d5f2d9f": 19,
+            "ch_3ecd13cea596e641": 18
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_3b065577c32ca5502d94",
+          "sourceContentHash": "8ffd829f36ff20e8823ca7b713e70cf075301c3e5ee723f67dff1f0d57aef35b",
+          "servedRawHash": "d952cb73955cfdbc3f1a8d265c1548324ff3671d7a5b08a58e35a7ebd15a8681",
+          "index": 5,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_955c0d0809a33ef6",
+              "math": "\\frac{\\pi^{2}}{324}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_b374a6c37bb59d90",
+              "math": "\\frac{\\pi^{2}}{1296}",
+              "misconception": "Double the interval length in the first mixed mode"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_955c0d0809a33ef6": 19,
+            "ch_b374a6c37bb59d90": 20
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_d9f93b40ef0bf3a05fd6",
+          "sourceContentHash": "d8bb76b050d66962889a4dc1eb1b516acb72d8739ae00e928f65d036d9d2cdcc",
+          "servedRawHash": "53f3d6ab9bcddb67961b34bcb778ebbe28401635263d61f26cef83433422a780",
+          "index": 6,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_3d22d8e00d6ccedd",
+              "math": "\\frac{\\pi^{2}}{400}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_bc8dff9f1ccc1493",
+              "math": "\\frac{\\pi^{2}}{100}",
+              "misconception": "Use two Dirichlet endpoints instead of the mixed boundary conditions"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_3d22d8e00d6ccedd": 19,
+            "ch_bc8dff9f1ccc1493": 19
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_9f483e26ed30b2b90528",
+          "sourceContentHash": "d2304c0b1875495f8c6fabe5c8cc977ecefedee50c739450083db01d79001152",
+          "servedRawHash": "ba935a5734b689ddb31a349f939f1ddf56940cedaf16c238b2f706232c651866",
+          "index": 7,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_b4a55810c75cfea4",
+              "math": "\\frac{\\pi^{2}}{484}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_3e487723836fc222",
+              "math": "\\frac{\\pi^{2}}{1936}",
+              "misconception": "Double the interval length in the first mixed mode"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_b4a55810c75cfea4": 19,
+            "ch_3e487723836fc222": 20
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_58f6ca00c3562d4e584d",
+          "sourceContentHash": "da119205516f671c133beeea6668b2a4f5c03d8175a5f3d7605099627a916f33",
+          "servedRawHash": "f8f5c5a1f1eb3d1a0d9c6d88ed831abb6ace7eaa71d262ff34767cc5ed5fdb42",
+          "index": 8,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_9167d38f9cf53aea",
+              "math": "\\frac{\\pi^{2}}{576}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_e706c2d1a4ddf536",
+              "math": "\\frac{\\pi^{2}}{144}",
+              "misconception": "Use two Dirichlet endpoints instead of the mixed boundary conditions"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_9167d38f9cf53aea": 19,
+            "ch_e706c2d1a4ddf536": 19
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_002c0d4001c1df4560f0",
+          "sourceContentHash": "c4c6aaf3014c6353fecbb64b270a7a73ea879e8c3b033991a0abeb0ee1eaa655",
+          "servedRawHash": "d4945e7ad227a37b770186e362ff477880abadee0b8de39cca9ebb72319bc564",
+          "index": 9,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_46cabd19e0d93886",
+              "math": "\\frac{\\pi^{2}}{676}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_9df3f5c28f3812ef",
+              "math": "\\frac{\\pi^{2}}{2704}",
+              "misconception": "Double the interval length in the first mixed mode"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_46cabd19e0d93886": 19,
+            "ch_9df3f5c28f3812ef": 20
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        }
+      ],
+      "causalDiagnostic": {
+        "positiveCandidatesEveryMenu": 2,
+        "positiveShorterCorrect": 3,
+        "positiveLongerCorrect": 2,
+        "positiveLengthsTie": 5,
+        "shortestWithinPositiveAccuracy": 0.55,
+        "positiveOnlyChance": 0.5
+      },
+      "finding": "The main replicated shortest signal is the one-character minus sign, not a unique matching pair tied only to the correct answer: every menu includes both signs of both magnitudes. Conditioning on the mathematically justified positive sign leaves two candidates in every case. The incremental finite digit-length advantage is .55 versus the .50 two-positive baseline; it cannot universally decide the task.",
+      "proposal": "No menu rewrite solely to hide ordinary minus signs or force equal digit widths. Preserve the literal residual and keep the existing non-Olympiad ceiling. A later substantive menu refresh should add independent magnitude mistakes rather than cosmetic padding or awkward unsimplified constants."
+    },
+    {
+      "familyId": "m3-multivariable-medium-Green-circulation",
+      "status": "retain-mathematical-two-sign-pair-structure-with-explicit-residual",
+      "cases": [
+        {
+          "problemId": "cn_7b809c82d0fc60f6132c",
+          "sourceContentHash": "9ef63f8a299f51e142ab86a5f82e020b20021955a8b00977f06af5965bbc5048",
+          "servedRawHash": "c36f61c3e2b8340bb4c78b4aadb238d2e2fe08fac2a9fcfdeb66c493834f41e3",
+          "index": 0,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_957063da0e9cc814",
+              "math": "32 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_20482e3766a26769",
+              "math": "16 \\pi",
+              "misconception": "Omit one of the two curl derivatives"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_957063da0e9cc814": 5,
+            "ch_20482e3766a26769": 5
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_cb7a80d29e77a27c69da",
+          "sourceContentHash": "f12c30c92f55bb577027c59488870dbf3646a2a2eb643f4e978ce2d32fd0665c",
+          "servedRawHash": "81270bedf4f187e290d99a499101c8557ca141a725aab3633cf88f07c378ff89",
+          "index": 1,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_4a862da4cce3c8c2",
+              "math": "50 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_5962edac5a149ecc",
+              "math": "100 \\pi",
+              "misconception": "Count the curl derivative contributions twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_4a862da4cce3c8c2": 5,
+            "ch_5962edac5a149ecc": 6
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_3330a7a8e78d860b16fd",
+          "sourceContentHash": "7ab7668d1498230a948b4f2cb67215e035f7de15319e40fec8e0ec6fe9b1bb30",
+          "servedRawHash": "79bda637a0a20a10b8547bc4833498e2889329e83611c6b256d7b32a386d4330",
+          "index": 2,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_260e5b224c253aa2",
+              "math": "72 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_04bca6c64814fc23",
+              "math": "36 \\pi",
+              "misconception": "Omit one of the two curl derivatives"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_260e5b224c253aa2": 5,
+            "ch_04bca6c64814fc23": 5
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_44c28f4ab6f5229ababb",
+          "sourceContentHash": "8aa9ff47069e647e142bee1225fca113cae665249023298b1bba940c5c95ee60",
+          "servedRawHash": "be5509916383711f7c596a0f9f54eea12e20bdc1ddc9943dcb2a0fd785996766",
+          "index": 3,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_ee113309ddac88fb",
+              "math": "98 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_864d1686d7faa7e5",
+              "math": "196 \\pi",
+              "misconception": "Count the curl derivative contributions twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_ee113309ddac88fb": 5,
+            "ch_864d1686d7faa7e5": 6
+          },
+          "correctStrictlyShortest": true,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_ccd730ac977cddf46bbb",
+          "sourceContentHash": "89e9e7c99c8cc122e5a7c651d782974115f23772a96652b661bed181f6844128",
+          "servedRawHash": "07521556981737f9b82f9f7054418ee2001f67e0eb1c4987fbba827649338434",
+          "index": 4,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_cc916448f294f275",
+              "math": "128 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_65c32a4a6de166a5",
+              "math": "64 \\pi",
+              "misconception": "Omit one of the two curl derivatives"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_cc916448f294f275": 6,
+            "ch_65c32a4a6de166a5": 5
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_525b4c677d8ba0e0ac73",
+          "sourceContentHash": "11bd6decc0dcb3266fb65fafe7d51c8c0d9e385ad143c6c9c56a24117abc2ba8",
+          "servedRawHash": "e7b7419824e25d8e152baa3f5de8381ea1d04de4a59bb5546b979fe21f012811",
+          "index": 5,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_b4b04f48996feeb9",
+              "math": "162 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_d246de497dce80e7",
+              "math": "324 \\pi",
+              "misconception": "Count the curl derivative contributions twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_b4b04f48996feeb9": 6,
+            "ch_d246de497dce80e7": 6
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_cb3abeb4f0af8527800d",
+          "sourceContentHash": "812e2272f0136e990c1cfd14d3ec03b6f49981b90cf8cf38b51462f8557bdfeb",
+          "servedRawHash": "4baee30760918d391e116620e0a84c03d4fdd5af6e911b24ed3144b0f385f787",
+          "index": 6,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_f33a07a03b6ed189",
+              "math": "200 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_5962edac5a149ecc",
+              "math": "100 \\pi",
+              "misconception": "Omit one of the two curl derivatives"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_f33a07a03b6ed189": 6,
+            "ch_5962edac5a149ecc": 6
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_1f9839c327e72b356a1d",
+          "sourceContentHash": "a5d34e4f6b175991ff995163a6e3ee612095f073c3f04ca473ce603b277ec6fb",
+          "servedRawHash": "9e6f4f5eefea808171c1359e2e6108318211f9716f822e1d713f99a2d9f908c5",
+          "index": 7,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_04045d7c80838ac2",
+              "math": "242 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_5e815340f3a99a0d",
+              "math": "484 \\pi",
+              "misconception": "Count the curl derivative contributions twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_04045d7c80838ac2": 6,
+            "ch_5e815340f3a99a0d": 6
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_c2efb4643a3e11225e2f",
+          "sourceContentHash": "c9e257e7eea5dc0368d41b4221518ab90afe03df02f68d2219ddaf5755f7d9fc",
+          "servedRawHash": "2d5c739e0aa0257469ee6944338aa302af8749fcb751890864739f3d3fd65340",
+          "index": 8,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_4c43e723340a7a2a",
+              "math": "288 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_ecf32baac651880b",
+              "math": "144 \\pi",
+              "misconception": "Omit one of the two curl derivatives"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_4c43e723340a7a2a": 6,
+            "ch_ecf32baac651880b": 6
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        },
+        {
+          "problemId": "cn_b16d4a725c1d2571a50c",
+          "sourceContentHash": "0065551e40844840e1e8ac17655950ff138dbf4fc357f850db7e2073fdb43145",
+          "servedRawHash": "ad2555294173b4ea576865a1110b5e3693381d5382a1e5ec491c98a24eec0eeb",
+          "index": 9,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_b43fae22fa1ad53b",
+              "math": "338 \\pi",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_babd97ca5d775542",
+              "math": "676 \\pi",
+              "misconception": "Count the curl derivative contributions twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_b43fae22fa1ad53b": 6,
+            "ch_babd97ca5d775542": 6
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 2
+        }
+      ],
+      "causalDiagnostic": {
+        "positiveCandidatesEveryMenu": 2,
+        "positiveShorterCorrect": 2,
+        "positiveLongerCorrect": 1,
+        "positiveLengthsTie": 7,
+        "shortestWithinPositiveAccuracy": 0.55,
+        "positiveOnlyChance": 0.5
+      },
+      "finding": "The main replicated shortest signal is the one-character minus sign, not a unique matching pair tied only to the correct answer: every menu includes both signs of both magnitudes. Conditioning on the mathematically justified positive sign leaves two candidates in every case. The incremental finite digit-length advantage is .55 versus the .50 two-positive baseline; it cannot universally decide the task.",
+      "proposal": "No menu rewrite solely to hide ordinary minus signs or force equal digit widths. Preserve the literal residual and keep the existing non-Olympiad ceiling. A later substantive menu refresh should add independent magnitude mistakes rather than cosmetic padding or awkward unsimplified constants."
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "status": "propose-three-minimal-substantive-distractor-repairs",
+      "cases": [
+        {
+          "problemId": "cn_d1fde80b47e019b57a1e",
+          "sourceContentHash": "9a8b38dc2bf54538d85ff7e1f74587085c40766ac18cdca2ceae4f1e0ab580af",
+          "servedRawHash": "609fb359c299baa116b59a279ebe34692e86dd42420f1e8f2ae5d69490f0082d",
+          "index": 0,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_be5c14b1e1e2e645",
+              "math": "\\frac{1}{16}",
+              "misconception": "double the Gaussian exponent twice"
+            },
+            {
+              "choiceId": "ch_213066d977a04814",
+              "math": "2",
+              "misconception": "invert the frequency scale"
+            },
+            {
+              "choiceId": "ch_8f624d39e8401f84",
+              "math": "\\frac{1}{8}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_9af801d618a4e37b",
+              "math": "\\frac{1}{4}",
+              "misconception": "use variance of y instead of y squared"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_be5c14b1e1e2e645": 12,
+            "ch_213066d977a04814": 1,
+            "ch_8f624d39e8401f84": 11,
+            "ch_9af801d618a4e37b": 11
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_a67e97e327fad11b0f9c",
+          "sourceContentHash": "d40daed5c00565b5537c2e31bf20f6665a524eab01530d671eafeac4ce664090",
+          "servedRawHash": "1a22e7b7b4c34d3e0e4f211ba68b788025f26f917042da424798d1b72c3fa378",
+          "index": 1,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_a97d973330d36673",
+              "math": "\\frac{1}{2}",
+              "misconception": "ignore frequency dependence"
+            },
+            {
+              "choiceId": "ch_572900b0b8ad7a36",
+              "math": "\\frac{2}{5}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_cb23a9c66f4984ce",
+              "math": "\\frac{1}{10}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_dec1a8bfd48f69a1",
+              "math": "\\frac{5}{2}",
+              "misconception": "invert the frequency scale"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_a97d973330d36673": 11,
+            "ch_572900b0b8ad7a36": 11,
+            "ch_cb23a9c66f4984ce": 12,
+            "ch_dec1a8bfd48f69a1": 11
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_073507c287be51239b64",
+          "sourceContentHash": "98bab96c2e862d1375f99c409d79b9a4ab38907784b4724908b309373ea4c9f3",
+          "servedRawHash": "a7df6be261c24649b8d1ba66e38971fa7526ccea7101a7c5290719bcd869308c",
+          "index": 2,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_f67fcd19dceb7142",
+              "math": "\\frac{1}{3}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_b10b8d7603d1bb49",
+              "math": "\\frac{1}{12}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_dd88077aa0c05d7c",
+              "math": "\\frac{1}{6}",
+              "misconception": "use variance of y instead of y squared"
+            },
+            {
+              "choiceId": "ch_ee0cb4496fff4d88",
+              "math": "\\frac{1}{24}",
+              "misconception": "double the Gaussian exponent twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_f67fcd19dceb7142": 11,
+            "ch_b10b8d7603d1bb49": 12,
+            "ch_dd88077aa0c05d7c": 11,
+            "ch_ee0cb4496fff4d88": 12
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_857773ad4151b93219e9",
+          "sourceContentHash": "96e282d86d5c4b1f4263b05600c0676fbf5abce3fd96d54771a8563c68762e6c",
+          "servedRawHash": "20a87895aad77b50a3cfe891c1297f3f89a93d7807c50cf5b0c40098ee4f206e",
+          "index": 3,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_87fb39e30d169925",
+              "math": "\\frac{1}{7}",
+              "misconception": "use variance of y instead of y squared"
+            },
+            {
+              "choiceId": "ch_f052cdf469582263",
+              "math": "\\frac{7}{2}",
+              "misconception": "invert the frequency scale"
+            },
+            {
+              "choiceId": "ch_d66fed62761af60a",
+              "math": "\\frac{2}{7}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_617d04471441c12d",
+              "math": "\\frac{1}{14}",
+              "misconception": "correct"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_87fb39e30d169925": 11,
+            "ch_f052cdf469582263": 11,
+            "ch_d66fed62761af60a": 11,
+            "ch_617d04471441c12d": 12
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_8e507839507bb40c8e4a",
+          "sourceContentHash": "ff848af18e1392f405499ddbff0cbde490522c014169afa17bdb1bd7a109f3b2",
+          "servedRawHash": "b2fd4c39b52bdd9c6891ddf931d5336ab8d85eb46d4f334f30b1e98d5f590053",
+          "index": 4,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_177e7c5adea9785f",
+              "math": "4",
+              "misconception": "invert the frequency scale"
+            },
+            {
+              "choiceId": "ch_9af801d618a4e37b",
+              "math": "\\frac{1}{4}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_be5c14b1e1e2e645",
+              "math": "\\frac{1}{16}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_d1d33b4d450d2ebe",
+              "math": "\\frac{1}{32}",
+              "misconception": "double the Gaussian exponent twice"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_177e7c5adea9785f": 1,
+            "ch_9af801d618a4e37b": 11,
+            "ch_be5c14b1e1e2e645": 12,
+            "ch_d1d33b4d450d2ebe": 12
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_aca24ccb738ac54c1fc3",
+          "sourceContentHash": "b9d4bf8d93e7427faefab40c35095e18411865a9820b3fe77b7f15af7d907e10",
+          "servedRawHash": "f02421a76b0c09c760f5b94d524bff4d3a7c759622b2e69282c7620c0cf4152c",
+          "index": 5,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_a97d973330d36673",
+              "math": "\\frac{1}{2}",
+              "misconception": "ignore frequency dependence"
+            },
+            {
+              "choiceId": "ch_bc8af8a0dd3efc4c",
+              "math": "\\frac{2}{9}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_777d212e39967c59",
+              "math": "\\frac{1}{18}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_a3e993afaacfaf58",
+              "math": "\\frac{9}{2}",
+              "misconception": "invert the frequency scale"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_a97d973330d36673": 11,
+            "ch_bc8af8a0dd3efc4c": 11,
+            "ch_777d212e39967c59": 12,
+            "ch_a3e993afaacfaf58": 11
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": true,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_c30752d71fef3ab58d3d",
+          "sourceContentHash": "9d1ae297260d5fa52590871bc5715b957a004b522f3f735650517beb1ce0e28a",
+          "servedRawHash": "9888b3eab09a1b0e37087baca3c3df70722bc571a3680c448a8c831a694d0ac8",
+          "index": 6,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_cb23a9c66f4984ce",
+              "math": "\\frac{1}{10}",
+              "misconception": "use variance of y instead of y squared"
+            },
+            {
+              "choiceId": "ch_90466b801e620791",
+              "math": "\\frac{1}{40}",
+              "misconception": "double the Gaussian exponent twice"
+            },
+            {
+              "choiceId": "ch_f64ff85199b316c8",
+              "math": "5",
+              "misconception": "invert the frequency scale"
+            },
+            {
+              "choiceId": "ch_00f4c1bb2a427097",
+              "math": "\\frac{1}{20}",
+              "misconception": "correct"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_cb23a9c66f4984ce": 12,
+            "ch_90466b801e620791": 12,
+            "ch_f64ff85199b316c8": 1,
+            "ch_00f4c1bb2a427097": 12
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 4
+        },
+        {
+          "problemId": "cn_62a8c8cc4087f74b5c33",
+          "sourceContentHash": "846289c7995b91c8eef25515b63e696cb0f2dd85d7a0405cc9549578020f1089",
+          "servedRawHash": "20ba093e796153c57aebfc6879caa15502b23d8afe5b049806357e51e6c8b76f",
+          "index": 7,
+          "positiveChoices": [
+            {
+              "choiceId": "ch_6320d7afb5e5a145",
+              "math": "\\frac{2}{11}",
+              "misconception": "confuse the second moment with its doubled value"
+            },
+            {
+              "choiceId": "ch_71c46e5fff44427a",
+              "math": "\\frac{1}{22}",
+              "misconception": "correct"
+            },
+            {
+              "choiceId": "ch_6ce9548ccc860454",
+              "math": "\\frac{1}{11}",
+              "misconception": "use variance of y instead of y squared"
+            },
+            {
+              "choiceId": "ch_52a7bcc890e5cc45",
+              "math": "\\frac{11}{2}",
+              "misconception": "invert the frequency scale"
+            }
+          ],
+          "positiveChoiceLengths": {
+            "ch_6320d7afb5e5a145": 12,
+            "ch_71c46e5fff44427a": 12,
+            "ch_6ce9548ccc860454": 12,
+            "ch_52a7bcc890e5cc45": 12
+          },
+          "correctStrictlyShortest": false,
+          "correctStrictlyLongest": false,
+          "positiveChoicesRemaining": 4
+        }
+      ],
+      "finding": "All choices are positive, so the length signal has no minus-sign explanation. In exactly three menus, every wrong choice has a one-digit fraction component while the answer alone has a two-digit denominator. This is an exploitable construction cue independent of the differential equation.",
+      "proposal": [
+        {
+          "sourceProblemId": "cn_a67e97e327fad11b0f9c",
+          "sourceContentHash": "d40daed5c00565b5537c2e31bf20f6665a524eab01530d671eafeac4ce664090",
+          "sourceServedRawHash": "1a22e7b7b4c34d3e0e4f211ba68b788025f26f917042da424798d1b72c3fa378",
+          "sourceIndex": 1,
+          "frequency": 5,
+          "replaceChoiceId": "ch_a97d973330d36673",
+          "oldMath": "\\frac{1}{2}",
+          "proposedMath": "\\frac{1}{50}",
+          "misconception": "Treat the potential coefficient a\u00b2 as the Gaussian frequency instead of taking its positive square root, yielding variance1/(2a\u00b2).",
+          "reason": "This genuine parameter-identification mistake makes the answer cease to be the unique longest literal without padding, changing the correct value, or introducing a new idea."
+        },
+        {
+          "sourceProblemId": "cn_857773ad4151b93219e9",
+          "sourceContentHash": "96e282d86d5c4b1f4263b05600c0676fbf5abce3fd96d54771a8563c68762e6c",
+          "sourceServedRawHash": "20a87895aad77b50a3cfe891c1297f3f89a93d7807c50cf5b0c40098ee4f206e",
+          "sourceIndex": 3,
+          "frequency": 7,
+          "replaceChoiceId": "ch_87fb39e30d169925",
+          "oldMath": "\\frac{1}{7}",
+          "proposedMath": "\\frac{1}{98}",
+          "misconception": "Treat the potential coefficient a\u00b2 as the Gaussian frequency instead of taking its positive square root, yielding variance1/(2a\u00b2).",
+          "reason": "This genuine parameter-identification mistake makes the answer cease to be the unique longest literal without padding, changing the correct value, or introducing a new idea."
+        },
+        {
+          "sourceProblemId": "cn_aca24ccb738ac54c1fc3",
+          "sourceContentHash": "b9d4bf8d93e7427faefab40c35095e18411865a9820b3fe77b7f15af7d907e10",
+          "sourceServedRawHash": "f02421a76b0c09c760f5b94d524bff4d3a7c759622b2e69282c7620c0cf4152c",
+          "sourceIndex": 5,
+          "frequency": 9,
+          "replaceChoiceId": "ch_a97d973330d36673",
+          "oldMath": "\\frac{1}{2}",
+          "proposedMath": "\\frac{1}{162}",
+          "misconception": "Treat the potential coefficient a\u00b2 as the Gaussian frequency instead of taking its positive square root, yielding variance1/(2a\u00b2).",
+          "reason": "This genuine parameter-identification mistake makes the answer cease to be the unique longest literal without padding, changing the correct value, or introducing a new idea."
+        }
+      ],
+      "requiredFollowup": "Parent authorization/authoring, exact6pair certificates for each changed menu, independent answer/classification review, immutable public revision and full actual-ID served screen. The proposal is not an admitted repair."
+    }
+  ],
+  "scope": "A bounded conditioning check of already flagged length rules only; no additional generic classifier search. The findings preserve earlier flags rather than overwriting failed evidence."
+}

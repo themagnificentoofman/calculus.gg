@@ -44,3 +44,17 @@ test('delta is staged, sequential, checksum locked, retry safe, verified before 
  assert.equal(f.sql.prepare("SELECT state FROM cbank_releases WHERE release_id='delta'").get().state,'published');
  assert.equal(steps(f.plan).length,3);
 }finally{f.sql.close();}});
+
+test('a composed delta carries prior charged usage and cannot reuse the old allowance',async()=>{
+ const f=fixture();try{
+  const cols=f.sql.prepare('PRAGMA table_info(cbank_delta_ledger)').all();
+  const row=Object.fromEntries(cols.filter(c=>c.notnull||c.pk).map(c=>[c.name,c.type==='TEXT'?'settled-delta':0]));
+  Object.assign(row,{bundle_id:'settled-delta',verified:1,activated:1,charged_reads:563084,charged_writes:51276,prior_reads:3855202,prior_writes:1059527,database_bytes:96092160});
+  f.sql.prepare(`INSERT INTO cbank_delta_ledger (${Object.keys(row).join(',')}) VALUES (${Object.keys(row).map(()=>'?').join(',')})`).run(...Object.values(row));
+  f.plan.priorOperation={kind:'delta',bundleId:'settled-delta'};
+  const tooMuch=await f.call({op:'init'},{allowance:JSON.stringify({bundleId:f.plan.bundleId,reads:600000,writes:10000,bytes:120000000})});
+  assert.equal(tooMuch.status,409);assert.match(tooMuch.body.error,/cumulative/);
+  const ok=await f.call({op:'init'});assert.equal(ok.status,200,JSON.stringify(ok));
+  assert.equal(ok.body.priorChargedReads,4418286);assert.equal(ok.body.priorChargedWrites,1110803);
+ }finally{f.sql.close();}
+});

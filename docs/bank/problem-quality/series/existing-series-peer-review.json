@@ -1,0 +1,775 @@
+{
+  "scope": "Nine old provisional series Olympiad groups only;72 source-bound rows, one isolated blind sample per group, then each general proof read. Other56 rows in the128-record artifact are outside this bounded pass.",
+  "sourceArtifactSha256": "3a147bdff751bfa8bdae2f7b1d2db6b8bbe0c6b95a03be13e81d8740d0e0a763",
+  "families": [
+    {
+      "familyId": "m3-series-olympiad-Fourier-fourth-sine",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "retainedOlympiadInstanceIndices": [],
+      "shortestVisibleRoute": "At the first instance the sine weights are periodic with period four, so odd and2mod4 reciprocal-square sums give pi\u00b2/16 directly. At other indices the standard finite-angle cosine Fourier formula plus the sin-fourth identity is a Hard substitution route.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\sin^{4}{\\left(\\frac{\\pi k}{4} \\right)}}{k^{2}}",
+        "choices": [
+          "\\frac{\\pi^{2}}{8}",
+          "\\frac{1}{4} + \\frac{\\pi^{2}}{16}",
+          "\\frac{1}{4}",
+          "\\frac{\\pi^{2}}{16}"
+        ],
+        "derivedAnswer": "\\frac{\\pi^{2}}{16}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_050a50fdbd275ae86520",
+          "instanceIndex": 0,
+          "rawHash": "8e333b672573f31ca6eb256a2dca5de406211132cf7d9832d43d1001ad684d5e",
+          "contentHash": "58d92a713bca72f6b02b0b0c9c63195abd0bba2612c9a5f68220407d63dcf5d7",
+          "semanticHash": "c152aa99506aa6a6089ff1fdb5c12c0146f205dbae18abe445a498497687a688"
+        },
+        {
+          "problemId": "cn_71c63c55c3b407df744f",
+          "instanceIndex": 1,
+          "rawHash": "eb3741dce406016931e0539fa52425fb2803a9dc9a2bfbf1789fb2fce2d95d9a",
+          "contentHash": "2b6deabe98844107e00e4f766ca981d4750467ebdb6cfe7e1266fe8c14983a95",
+          "semanticHash": "66702226a2f8d7560065b56266369fc1a170bbd97a2f02204e0e28151f3015e6"
+        },
+        {
+          "problemId": "cn_e4b050067795dade3e09",
+          "instanceIndex": 2,
+          "rawHash": "3ace4b2348adfa4c3d8da35f760ea8f62bac87209a959304f28175d6e1d9879a",
+          "contentHash": "974a963d0a736141250ea087d72a1b0c1faef76173b463c2ad1603afc138fa3d",
+          "semanticHash": "e08a4a7c495934a08866ea93e24edec58d9b7077c112565c30568b5a5f034e14"
+        },
+        {
+          "problemId": "cn_4e2c4b4732ded83b7bb3",
+          "instanceIndex": 3,
+          "rawHash": "9334a8237c6665934d96dd40f3cfc9c3073aa01728e005d1539436bfb856d1e0",
+          "contentHash": "bdb5d4464c510dc128241a244b4bf6fb7d52d6df6c07ff1f83914eb54d5a79fc",
+          "semanticHash": "77b6dc904a0e17b667ca0873c7c71f1634cab3968ca36cba117be5da58534f38"
+        },
+        {
+          "problemId": "cn_9554ff6027b3aa203d61",
+          "instanceIndex": 4,
+          "rawHash": "e66a37eb55a2ca8c88e6d32df8caf5e9aecf76ae3c329ffdde9195cdb2d1991c",
+          "contentHash": "75b5bd6766ee77058ec0061a929ba96d97ec3fc2265466bf22e48b05f300608d",
+          "semanticHash": "21de60124a64e3ea1ce588c8255239656f432e19854601f0b6b4bfc9ffbd16f6"
+        },
+        {
+          "problemId": "cn_7646a501f02662867948",
+          "instanceIndex": 5,
+          "rawHash": "0a23b02f4d81f353bdc1f673b1d42bc4dc01a24842df3e88a5d9d0cde21a2756",
+          "contentHash": "96a1215147277a76536da285663dcfd5e56e82ce12ec797fb20930d4a45b413f",
+          "semanticHash": "9c294bb98e5c8d6138b37db06737efa4d44bcffc8f7c34316918516a1c16ca6c"
+        },
+        {
+          "problemId": "cn_f324992408eeb168f5ee",
+          "instanceIndex": 6,
+          "rawHash": "0f5cf6fa77027885c65a6bd5fbb0323404775e3b7a99b6456e3bd7770f821532",
+          "contentHash": "137b3051a29e4fb0b4dfd5c594dc73ba453741ec7fab3b079c630c99d9ee08a9",
+          "semanticHash": "edc73167aa9085aa708aea5831657fcfe9d00f059b45882841f771b39f2d946d"
+        },
+        {
+          "problemId": "cn_3d632aff7d4865745d70",
+          "instanceIndex": 7,
+          "rawHash": "f560851ad454471e96bb5f97e74277b500a1267f3bb34f41eb31966a561a7cb9",
+          "contentHash": "1037b43aec26730d5d9c0ade8cfb21be7ec907ae047106d30bf8716a7c2b59c1",
+          "semanticHash": "1cba55dff2fc0010d4d324f2881ab44b7334c7637bb28b4ae290365ab55339ce"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Discover tan(u)=cot(u)-2cot(2u), telescope the dyadic scale, and control the small-angle endpoint. This remains a substantive recognition problem; current displayed denominators require the explicit-multiplication repair.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{4} \\right)}",
+        "choices": [
+          "\\frac{1}{4} - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+          "2 - \\frac{1}{2 \\tan{\\left(\\frac{1}{4} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{8} \\right)}}{2}",
+          "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+        ],
+        "derivedAnswer": "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": "All8 solutions concatenate the numeric parameter and2 in dyadic denominators; insert an explicit multiplication sign before2. No statement/answer change.",
+      "coverage": [
+        {
+          "problemId": "cn_fb6efac19477e8bfcbe5",
+          "instanceIndex": 0,
+          "rawHash": "ca06e78fba5e10725e2479da07a95e268b169e1f5655599dfb566dfeb402402f",
+          "contentHash": "941c9b1b224ade8d0225749d7df8ae7be53390642119518e0ebb7bdd00d4b56a",
+          "semanticHash": "a1097fdd90e33d58c762fd714a5ab64345c99c8f826b05cba2c66b9185f23f60"
+        },
+        {
+          "problemId": "cn_84a3f0b901bc6d22d72b",
+          "instanceIndex": 1,
+          "rawHash": "ff2fee673322b2d136483e0e96b5e1510de5df74b3ec75ab5143c42c62cc6628",
+          "contentHash": "8a01f2aa8581f845ff8efcb8c9133d1e7bd969cb605623f4fc0d1d3fb533fec0",
+          "semanticHash": "b667627597cd2149a5604b38ac960f1d5a67f47200d2966776ae9c15b8589f06"
+        },
+        {
+          "problemId": "cn_f6773739ddb0c4c4283b",
+          "instanceIndex": 2,
+          "rawHash": "0631486ef8e081ee06160cc6154af7dda4206b79176c0b3939584eeb04ff5bd5",
+          "contentHash": "1eaebf336580d9c9cd8ec49e64329d564949a94b326235aaf3cfb60a516375d2",
+          "semanticHash": "8da807601c63a0e1fb66f5d73167df84bd0db3402b57efa44d1a7dd7ccf7c8ef"
+        },
+        {
+          "problemId": "cn_bfa2bb14b0f03e050627",
+          "instanceIndex": 3,
+          "rawHash": "d512591fd3b5c5a8de22d4cd8c604151264a5ecae2e949ac209acc1c2894d36d",
+          "contentHash": "a729885218f730f6b7a286d31d8d64737d39c1b5394424d338b78630a35e189e",
+          "semanticHash": "ebc4a48ff7ebfe616855de2b3192df790e0ea3a42fcc2a69c1f4accdfadd3d29"
+        },
+        {
+          "problemId": "cn_59b96a09cb74e517a91f",
+          "instanceIndex": 4,
+          "rawHash": "1098e68f293abed8fd2311d20b70892cfa9fcddb6a049bddfd766edb3ace63d4",
+          "contentHash": "2d63994c3dd0c5e170359bfc5ce81b059d62cd9fd8e9ddbf4c15b420e97a7e2a",
+          "semanticHash": "b8d6cbeee5d9dfd085396a4689b9d041c3defa5357a9f5b58a62afbc9e96c7a8"
+        },
+        {
+          "problemId": "cn_3b07434ee15a968ad479",
+          "instanceIndex": 5,
+          "rawHash": "4f36025736d3d9a81395af0b751445fcdde3cb71fe0215f9dad273288ff340e2",
+          "contentHash": "81851f60f6815007b405fc7d68729171db98be9afd4f0b182ac1b5e7d0e0a1a9",
+          "semanticHash": "99ccf6adf873ad056bc80edb99f96938def4e9bbf257c64b799166257c0d4002"
+        },
+        {
+          "problemId": "cn_12f8c08d90251975c780",
+          "instanceIndex": 6,
+          "rawHash": "6ca10c018045c15442e7ed3a8f3109fc21723eaed6ee49e7ca163c6f346a14f4",
+          "contentHash": "27c1a9e6c98298f9d5e7a86b1825e4026fdfd23252aecf607b763c4cc2da31ab",
+          "semanticHash": "7169f4253bffb6fe40238a398a7a12dc89d7248fafe232eb14dab2c2dda279b0"
+        },
+        {
+          "problemId": "cn_2008c16f13329aac12aa",
+          "instanceIndex": 7,
+          "rawHash": "0aeccbf71d982ad26db76e744038cb20175b6278e8915f29ec938ca4392bfdd9",
+          "contentHash": "982febd337eda032b52263f1c1c9061aa81995feda4f3f4e23773773aeffd92b",
+          "semanticHash": "aa9d6cbbd425c77e0d1c878c706624e41f25dcfc96723131341ff8b33ca610ef"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "retainedOlympiadInstanceIndices": [],
+      "shortestVisibleRoute": "The ordinary three-root exponential filter alone evaluates the series. This is useful Hard generating-function fluency, consistent with reclassifying ordinary Legendre and q-binomial routes.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=0}^\\infty \\frac{4^{3 k}}{\\left(3 k\\right)!}",
+        "choices": [
+          "\\frac{2 \\cos{\\left(2 \\sqrt{3} \\right)}}{3 e^{2}} + \\frac{e^{4}}{3}",
+          "- \\frac{2 \\cos{\\left(2 \\sqrt{3} \\right)}}{3 e^{2}} + \\frac{e^{4}}{3}",
+          "-1 + \\frac{2 \\cos{\\left(2 \\sqrt{3} \\right)}}{3 e^{2}} + \\frac{e^{4}}{3}",
+          "1"
+        ],
+        "derivedAnswer": "\\frac{2 \\cos{\\left(2 \\sqrt{3} \\right)}}{3 e^{2}} + \\frac{e^{4}}{3}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_517d3898b558d522c245",
+          "instanceIndex": 0,
+          "rawHash": "afd23eabb5a035fc09b6a902e81c8a084f514ba839cf01d1142a58b507f7642a",
+          "contentHash": "87fe072e25becf370e420ce4528f90acbc1b547689fe99fcb03a7d46f26329cd",
+          "semanticHash": "a4a51e5331fc145eba7c0450822ad041e4be28a665d75f6d8161eed4da7f4457"
+        },
+        {
+          "problemId": "cn_5be3250db7c7c54d5579",
+          "instanceIndex": 1,
+          "rawHash": "4eb7bb4c10bff895ca708a3bd581cf63b74b7632a3e8999408b4c5f40f3b2a4f",
+          "contentHash": "95034aaea6f8eca6410b4537922148aec2142251756e008105a8fa4c79e65c3d",
+          "semanticHash": "782f15066654d165af2c5a22fbb022e279129fc1d4b51e49dfb1475d81c3d57a"
+        },
+        {
+          "problemId": "cn_9af48b172b84ce7d06fc",
+          "instanceIndex": 2,
+          "rawHash": "d66f3edf7300dbe190586ad5940b28b0364f35c9352f479f500e480036d5b917",
+          "contentHash": "1e18c25bdf4d6f72163444b810d2861d311a8a67df14a3618ca463c6bcace1d1",
+          "semanticHash": "6e5e27cb67720a648252ab5fc353f7da3c58b86631a2c68e6564644a6a82f972"
+        },
+        {
+          "problemId": "cn_411d00c9e8cbfd505316",
+          "instanceIndex": 3,
+          "rawHash": "f40a54e4463213f735374e0102cdb1a552e3a7879c2f784c9a4619729fddf8c9",
+          "contentHash": "3cd1b9a40dba62e5a6e968921e0b53a406ed879a043442160d265a6633bb6fbb",
+          "semanticHash": "034dc3147a87ac133a6cf33dc3252ef6df668f16041a9035a651b83aa1ee202e"
+        },
+        {
+          "problemId": "cn_83309d6f83df33ab1d91",
+          "instanceIndex": 4,
+          "rawHash": "1a0518428aab08914b702a4be7e77cf4cfdebab0a9ff31d363f9d9c0e0aa6e12",
+          "contentHash": "990ea8af71150d8f6054cbaa4b2fda35759a6b8948591a708880cb187311ed93",
+          "semanticHash": "8e06fec86528a4563dd55644afdc5c062b8b9bf2c577d6af4215b6d5e8be0ab2"
+        },
+        {
+          "problemId": "cn_d0704f381e206e7adb09",
+          "instanceIndex": 5,
+          "rawHash": "06a063d073cd5330b2247b5eb0f60815f255c584c58ae24acc262857a6acd8f0",
+          "contentHash": "76c423c09c992ffca81639fe9797acc0de3b1dadac1ff28acf8bfe3fb051bc61",
+          "semanticHash": "03240b72750c3f68bd67f7aae5770c220b65847d37ee7fadc35a863b27395497"
+        },
+        {
+          "problemId": "cn_5d44aa7d99a1eec3b247",
+          "instanceIndex": 6,
+          "rawHash": "f5c4c71bba30996f2bbdf0660ecf00451e11cc3511fd46edb6e2d14f33eaa3aa",
+          "contentHash": "75cb64a056871ef6fe6cfe6068470b64e9ab31f6f914df1928345037863d9b97",
+          "semanticHash": "f0584760e1d783fb940354df81b1574aa232ea217781620b7efce48573e3fbd5"
+        },
+        {
+          "problemId": "cn_37a1f5ab96009a79c7ee",
+          "instanceIndex": 7,
+          "rawHash": "5e9d9f84cd9deb67e2f9530014e2a5495cea7420d21b4429f1f3b248524a70d5",
+          "contentHash": "6c8bd5daa626297f8a44efd81cc15944f09d3e351503ca0bc49ad43713124c19",
+          "semanticHash": "5b0e523d3a4fbd178cfc21133d8ebb863b3f87ba0a5c54b77415c5d4f81740f7"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-over-shift",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Tonelli reverses the harmonic expansion, the index difference telescopes, and a finite triangular reciprocal sum produces the exact harmonic-square correction. The denominator shift affects all weights, not just a finite excluded prefix.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 4\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "choices": [
+          "\\frac{281}{720} + \\frac{\\pi^{2}}{24}",
+          "\\frac{1}{5}",
+          "\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+          "\\frac{1}{4} + \\frac{\\pi^{2}}{24}"
+        ],
+        "derivedAnswer": "\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_9d39d3aad34f9b90103b",
+          "instanceIndex": 0,
+          "rawHash": "36e8b68249fd1a8353e151a8ec9f1c7b67fbbb946e4d677454eec626ec6cc0a1",
+          "contentHash": "5f671a19efe86123b382fc13d1ee83ad7d13d1d08cd2b8178bbc2fffdd2493ae",
+          "semanticHash": "406e6053c0c8ea25dbf8404a79225e425fd67e8692eabb5f09cd8032f816490b"
+        },
+        {
+          "problemId": "cn_1a7632ac5d58298fa17e",
+          "instanceIndex": 1,
+          "rawHash": "1e29e99836755f462b8bea9b147a20f7f36526c328953f67f1da76cf89b4203e",
+          "contentHash": "b9bc8bc2984ec89349c6f351fec124e3d2070ef6cb27597ed6e9edfc72ffeaee",
+          "semanticHash": "2206e66db4e2ac05d1fa724fd0850bf4b108e9d232ee3162d4a689da83f2bda0"
+        },
+        {
+          "problemId": "cn_f6a6e83623534a77f080",
+          "instanceIndex": 2,
+          "rawHash": "27fbd157ab89b471785b5d8b2b3ff15900140c53690a6b98a3da688a82733da6",
+          "contentHash": "bfa1e6f2cdfc324fd888647cfe6575ea099c7e275acd2218e841ca740b8549a3",
+          "semanticHash": "fe4d3406ea41c740ad55d0d8bdc11de39f6fe7d6b9f55702ffe48dd08a926c3e"
+        },
+        {
+          "problemId": "cn_a3bdd7ae9a532248902d",
+          "instanceIndex": 3,
+          "rawHash": "d65be8d02978b079a60e04d3ae3256fb81af7803fbd5f4bfec63f98dd0e15c98",
+          "contentHash": "6efa42ff4de843303694dc0e7ca9069d72607b0201cbc5e540dcb044b78f2348",
+          "semanticHash": "023e0b63a57f6745ce09b20cba7f5918d99e15e73b110e41ad183914488e655e"
+        },
+        {
+          "problemId": "cn_26e5c958665a412b6b4f",
+          "instanceIndex": 4,
+          "rawHash": "069c12ba2119298a0bfab8fe7762b169bf5de10cb0279ee781e848380a8ce746",
+          "contentHash": "84fda569099a14c8e282c8993b7b6190ced4663f3a101a821a3612a87cfa6b92",
+          "semanticHash": "ec4763174933da1beb1701fe062a5f9153dcf137dd6bbd3660e7a71eb6ce5c4d"
+        },
+        {
+          "problemId": "cn_1bae0781f3ffd8f3f624",
+          "instanceIndex": 5,
+          "rawHash": "7e388fe746d80445e5a77fc3bb6071639be1f0c7e84503d4142ae559827d71dd",
+          "contentHash": "8f76112e5bb9598d4600f85436c7737d9630a7af105e428e65eaf53ddccb684d",
+          "semanticHash": "bf3ac34162c1c8eaa826e31a2151197cd5a42f0c26c1e579f40e67995f58d701"
+        },
+        {
+          "problemId": "cn_36f27d67491ff0919528",
+          "instanceIndex": 6,
+          "rawHash": "5882f12714228b8d1a8e30881eb0ac36282009ee5148b9d518f63a73297de6aa",
+          "contentHash": "8641e6dede59b7e39bc81ddc3a50a2573f2827e318703ce97e258dbb225986f6",
+          "semanticHash": "3065634e1eed539665be9bd16bbf0e896054ae434513a541b2d5421003d50dec"
+        },
+        {
+          "problemId": "cn_dbe920c347621e958afe",
+          "instanceIndex": 7,
+          "rawHash": "2950303a8823c082e146f40425e04c6d4e6c7371a3ab2c5f6d8d1c75112c69d6",
+          "contentHash": "cef6ce22f3fbbf35b8c29fde15dfa6d996f712f02c64baa5a189d2550962d9b4",
+          "semanticHash": "7a99c8a57170a76617b282613c5c4cce39ab842223eb9571046bffdd3c473917"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-square-generating",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Take a discrete difference of the harmonic square, identify an integrated harmonic generating function, and restore the geometric factor. Absolute convergence inside the unit disk justifies the operations.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^\\infty 4^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "choices": [
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{1}{4}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}"
+        ],
+        "derivedAnswer": "\\frac{4 \\operatorname{Li}_{2}{\\left(\\frac{1}{4} \\right)}}{3} + \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_7924a7325881d4ccd942",
+          "instanceIndex": 0,
+          "rawHash": "e1b93e41ed76fc902a211dfa50003d1f387df4dc3693593a31c35f02d63c754e",
+          "contentHash": "c74356ee6e7535ec0758b663aca37d0b585c42fed68773b40281026fbcbc9d2b",
+          "semanticHash": "6fc26f6b46f38e2a380b847192184186d18fc963a0dd6a99309e58c229b15854"
+        },
+        {
+          "problemId": "cn_a4caec79afc2a401d35e",
+          "instanceIndex": 1,
+          "rawHash": "40f3c1dcc7b5af5da44bef9b7f0a9e90c7202ed7bdb82244c9035acb112c3a2f",
+          "contentHash": "0e51cf4b2098f28810606a61bb8e9bafcfb2e7eaae016e93ca1d1465fad7168a",
+          "semanticHash": "9416599315954f3ca9ef5fed0384456c9af9f8e0bd319f8724a9bb7a7496e0d7"
+        },
+        {
+          "problemId": "cn_0fdd36ec13a6516b5081",
+          "instanceIndex": 2,
+          "rawHash": "5fbe753a56ad96890a9b0267f8aff0f3da69c86e33265cd4901744d96f5f83ca",
+          "contentHash": "45b91f049e15280e79e5c4f52952ffd98d97d0af2f2f5b85bcf36ded0c0e9aa6",
+          "semanticHash": "d0d89faf5d9f9f2aa8a453a569296483973c9fb8409c2a6c098eb1a1bd0fd929"
+        },
+        {
+          "problemId": "cn_7de1fab07d7706f1a551",
+          "instanceIndex": 3,
+          "rawHash": "913504235e9b65cbccb9bcfa8ce04bff2ca95bc8aad1e3d5a5ca3df1b8147ff9",
+          "contentHash": "01e8d6981ed22bd94a7428b19cd4293f4a0b6e6768f0b37cc2f1c6f778f207c4",
+          "semanticHash": "97be6d14daf564e73c7999d99a882a7b75115482031ebb19bf68a10fe049dde5"
+        },
+        {
+          "problemId": "cn_c4559552176acdfb57d6",
+          "instanceIndex": 4,
+          "rawHash": "17767c5cf8e2d31475cbd95ec0b24ff6e7a76b584d5272f12f6aa02e124a188a",
+          "contentHash": "ce32cbe6a7315067a061a28fd0422ddde2638cdb65c63ecb24f314579def2174",
+          "semanticHash": "038df0540f94d3e239c2013d0e0843db1681eb645c127df046b1d0a9851115dc"
+        },
+        {
+          "problemId": "cn_b6120328eba27ea84ef4",
+          "instanceIndex": 5,
+          "rawHash": "2d356f4c3c24ddb964d944de2a8f806816ba87a4c5c7d920678e6782d96ef382",
+          "contentHash": "c57294f8b97582bcab5bb5158febd5353af1e92e65dec1ccfe9507b98a38df27",
+          "semanticHash": "21bd244a7bbd3ff27240cc8c9a4e8cebff86ed00a233789edd119b17d2dbdb02"
+        },
+        {
+          "problemId": "cn_2721a1096ee04deef393",
+          "instanceIndex": 6,
+          "rawHash": "6e878fad5449d99f146919fc1653c5a000ffd810a74d6ddce93d793939562fc8",
+          "contentHash": "c0b4b36b980ebeb75546877df88bb7a7bfeeb438d7dcffcb0451ac19691c9440",
+          "semanticHash": "3d997e803ff7b6eb9a6b256015d13f0400a7980f169b1c1d2fda1125ceafdc69"
+        },
+        {
+          "problemId": "cn_3378e38f803f5b0e1e31",
+          "instanceIndex": 7,
+          "rawHash": "780c0ea1f2a463bf11db11966ddb1188c024fb31f42eb88e3b4aa8df12eba664",
+          "contentHash": "bdce41edf72daa8520ccac785933b94777cb5a8ce261d4a190df39bf5703d23c",
+          "semanticHash": "a19d5ce0ea00f4b7686c95c0b2c5c3d133c325362d85744ed5a096976e1c3676"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-hypergeometric-beta",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Normalize one Pochhammer-to-factorial ratio as a beta integral, use Tonelli and the binomial series, then evaluate a second beta integral. All endpoint parameters are positive.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=0}^\\infty\\frac{(1/2)_k^2}{k!(k+4)!},\\qquad(a)_0=1,\\quad(a)_k=a(a+1)\\cdots(a+k-1)\\quad(k\\ge1).",
+        "choices": [
+          "\\frac{2048}{297675 \\pi}",
+          "- \\frac{1}{24} + \\frac{512}{3675 \\pi}",
+          "\\frac{512}{3675 \\pi}",
+          "\\frac{2048}{3675 \\pi}"
+        ],
+        "derivedAnswer": "\\frac{512}{3675 \\pi}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_be17cefaeb74db84e577",
+          "instanceIndex": 0,
+          "rawHash": "33ea43c8aeafc21fb3eb87499471ba676d63dda1a81905da403959a23d460180",
+          "contentHash": "dc82ed3d199bc005c39f89f08a794e7093e1d3715ed2200d4a878b68293e391a",
+          "semanticHash": "2dd33e033011ea33a266acc9ef4664841a0d244fc496243f4c9177177cb9ee22"
+        },
+        {
+          "problemId": "cn_d060fa54ab6342c4f226",
+          "instanceIndex": 1,
+          "rawHash": "088e7d97dd9641627beb07c6cf194d82aa5801409bcf619ce934ac605ee46bbb",
+          "contentHash": "8a9962a741e12a2ca699d331ebabf073b1e312d69e85b100f6db076b790fe18b",
+          "semanticHash": "57e8e2c7d7b3698678829a61a3d91d8567f4e007788e767eeadfbd1a930309e6"
+        },
+        {
+          "problemId": "cn_74f65b9f92caa3b87c1f",
+          "instanceIndex": 2,
+          "rawHash": "632ffada3d78403fc264d91d716e66aa884a69e6c580085d3551eee9b915a2a8",
+          "contentHash": "d3471ef20d898db60162c9eaf4f80ca5753076d17d537e3bf0afe3a21400ea0d",
+          "semanticHash": "c1d52d18f26b3333a3466f4b3307d1e70add8ae699db27d154598757ae801e94"
+        },
+        {
+          "problemId": "cn_ce46c8b7d4f79f4c20ee",
+          "instanceIndex": 3,
+          "rawHash": "850f0815dc2f55b31d385edcff41649c3f98180b703bcfe08f8a6a6f27ef1ce9",
+          "contentHash": "45e3897ecb17d61e3b8e7428aa1bf3086fe97f6aa19c6e21416112a6a3a03931",
+          "semanticHash": "ff7e787cd38a2d56741b2bbfec15e4f4558f840f8e2c9e5ded36d629bad46469"
+        },
+        {
+          "problemId": "cn_cbeb1a657e5d0d7ed710",
+          "instanceIndex": 4,
+          "rawHash": "b60d67305b5d58b3847797b647b69e5e6c180c21f7f294c0d71aa101d212e909",
+          "contentHash": "7e314ae621838232f3af0e5a4911e60e1f6fb6b93e2a7b21b0dd225778021b57",
+          "semanticHash": "9a8d92bd4074bf48ca88319a59dc20dcc4124ad6d0a34d1397f6156e6e9b049d"
+        },
+        {
+          "problemId": "cn_81b0eee97cd4c6026b3f",
+          "instanceIndex": 5,
+          "rawHash": "e541b699554bf24a82b99974575466656f475516980cca92a41710b038a7810d",
+          "contentHash": "584a2bbb311fd69be630fa880781a79d0d2e9c118848f5f7d07129431b10d165",
+          "semanticHash": "eeed4beda0c439b8bd218d9b169dae4e5907f6985db2478736ff50d3769e853d"
+        },
+        {
+          "problemId": "cn_d107f559604efda14a87",
+          "instanceIndex": 6,
+          "rawHash": "9357842b9e7d3c80fd58b4d59fe396b66758dd5d43fd5b9326b483a9626bb390",
+          "contentHash": "e537f748e29128be1bb0dc7828528273fddaab8a0d4bdbb1c011025b66020dcd",
+          "semanticHash": "d99b12080e965de7be4d43ca831abbfb37a0883a7e9dca0a2d804bc2bce4178a"
+        },
+        {
+          "problemId": "cn_8f5dcedc4257d05b3148",
+          "instanceIndex": 7,
+          "rawHash": "a02fd75bc156fca3501304d420cdbd146a5e80c3cdf40ea4b883a8185f65094b",
+          "contentHash": "d01a2c41a2285c842464effaf57f7cc0c06589036d1589d968fec0f1703f8715",
+          "semanticHash": "9841f866a6658a276ce5b632f9530babb163b476a1351e1758416a6b7d4b924d"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-inverse-binomial-arcsine",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Coefficient ratios yield an inhomogeneous second-order ODE; identify the analytic branch with initial data and check the arcsine argument remains on its principal interval.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{2^{k}}{k^{2} {\\binom{2 k}{k}}}",
+        "choices": [
+          "\\frac{\\pi^{2}}{16}",
+          "\\frac{\\pi^{2}}{4}",
+          "1 + \\frac{\\pi^{2}}{8}",
+          "\\frac{\\pi^{2}}{8}"
+        ],
+        "derivedAnswer": "\\frac{\\pi^{2}}{8}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_fef5022d1d3c4c81a8bb",
+          "instanceIndex": 0,
+          "rawHash": "2cc4fdb305e947b421b4d14d16dd967bc9b07bddddaa2531c452e380a2f136a4",
+          "contentHash": "e98e54044365cb2b936e861b49d22ceafb79cc9b08228d6262467c431dc17921",
+          "semanticHash": "f50e94478183a6ef678240a43e53baa06a480da228fe93baffd1f02514b4c631"
+        },
+        {
+          "problemId": "cn_03777b1043d4bee75c67",
+          "instanceIndex": 1,
+          "rawHash": "51ca79627d2d81ca8f302557279e84b1b6d54e83935ecfe05ef0e37f9e921f9b",
+          "contentHash": "a3751ee74faf4d6ed0a59706309a14091b5c2c025b80e0145f1ac5b2dc93c9f7",
+          "semanticHash": "a67612030e6b109267a754a0fe0a19c7092bca4da7809eca82267d43820b558f"
+        },
+        {
+          "problemId": "cn_67ab2626ae54a8f4c8c8",
+          "instanceIndex": 2,
+          "rawHash": "5533c82c2cf5019119bddf8c86d4386c244a4971f0243381fcc6388c1e135465",
+          "contentHash": "dc6a485e7ba0f5cdb6dc828f1ae09e2e690aba6036af021fe061f677c0addb29",
+          "semanticHash": "cb29764ef32ecfa517963fb797e5c805c65a7b186a29abdf9545bde6f9803f8c"
+        },
+        {
+          "problemId": "cn_34bbe0523d7f66d7d315",
+          "instanceIndex": 3,
+          "rawHash": "1db306dd42927c673d013d9ddecc02bd00ca70100b752a8e94a0d71286a5e08d",
+          "contentHash": "bb4566f26d264c81235d1e297a849508128e6c764814463b97068e73127717de",
+          "semanticHash": "3c9da71597b07e48da293b04c27d45619c03fc4245ec31e3335d08f1f507c7e4"
+        },
+        {
+          "problemId": "cn_60edc1a2e3d3dc8bab97",
+          "instanceIndex": 4,
+          "rawHash": "aa12f722b4ada8f7604a8550dcf699855322d1037fb83ac9bc453e0c1519ae0a",
+          "contentHash": "fb5765a5b6fb6a084d58b4dd6e10f6ab918d9fcab1453b1189a505e5c3091593",
+          "semanticHash": "c17957fafcde2ba67e53b080826091cb9528599a55692eb6665cc3d804a9a204"
+        },
+        {
+          "problemId": "cn_d84e703f459491cad976",
+          "instanceIndex": 5,
+          "rawHash": "8dcf56cc1646fd3f9c4625b46b535505f8c61b60e965006b1ddd68254e58ee60",
+          "contentHash": "0d4969815dd46ded2c3b51524a4c839d1cb6d33ab45e3f785eff3b66b347b67b",
+          "semanticHash": "5c1f08221383d51bf51a3f722b1452074de880c53266b8c451202d4b9862409d"
+        },
+        {
+          "problemId": "cn_4f3b0e209752862e0b8a",
+          "instanceIndex": 6,
+          "rawHash": "3428ac0afe9e1991b860c7981070eb864feca0010335b60b7c937bea8a4ca427",
+          "contentHash": "5caa51df9e5dbeb0ef694443449c05693c7433987e212fd1076fc684672cb387",
+          "semanticHash": "6099d8cc0fb0922026909862dbbcf31b6dd1ea33fe7bfa49ba56dc1f53e1a0c8"
+        },
+        {
+          "problemId": "cn_3ef0b2eea8509b9a23e1",
+          "instanceIndex": 7,
+          "rawHash": "e4368e74dfb6c3ddfa3be5f0ebf96a8a46357c23466ff1721d05dce29dd893a6",
+          "contentHash": "e31825a167f3a8a4b7a426d6ba5dd141be14438d9524de6c205676c2dc5c662a",
+          "semanticHash": "535c11cf22f53beaca261aabaa94dfb07dc23fd9ffd148ae5e56f07014d3be09"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "retainedOlympiadInstanceIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "shortestVisibleRoute": "Recognize the positive-real Gaussian theta duality before differentiating its parameter prefactor and reciprocal argument. Uniform Gaussian decay permits differentiation; positivity permits division.",
+      "independentBlindSample": {
+        "statement": "\\Theta(a)=\\sum_{n\\in\\mathbb Z}e^{-\\pi a n^2},\\quad M(a)=\\sum_{n\\in\\mathbb Z}n^2e^{-\\pi a n^2}\\quad(a>0).\\qquad\\frac{M(4)+\\frac{1}{32}M(\\frac{1}{4})}{\\Theta(4)}=?",
+        "choices": [
+          "\\frac{1}{8 \\pi}",
+          "\\frac{1}{16 \\pi}",
+          "\\frac{1}{4 \\pi}",
+          "\\frac{1}{32 \\pi}"
+        ],
+        "derivedAnswer": "\\frac{1}{8 \\pi}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_89c7def864752edfa372",
+          "instanceIndex": 0,
+          "rawHash": "cac61fbcbab61c92aba4efb176995df3f56fbbd9f60120c6599290edc5653d38",
+          "contentHash": "8b0d2dbc1ba99c5ce7192d3b5c83866eb4211ba4acfb96ac64618d79be9ad2b0",
+          "semanticHash": "3b3c7a04fb28158e166872df7a7f7dcfce75828954ae9c10695fb3c6c780f4af"
+        },
+        {
+          "problemId": "cn_dc5ee53dcfb83f871551",
+          "instanceIndex": 1,
+          "rawHash": "9db3c7e17efe01204525b7bcb2395b345fb9f21607918bf08bcf62ed9e3b0a26",
+          "contentHash": "b343853f56a6f323eb9409aaf50660f537b1b2c8de2e4c1cbd79f86109d79f82",
+          "semanticHash": "dc048a8444ffad03093e944c87d5204e202152fb15fef797d40bcae74708bcf2"
+        },
+        {
+          "problemId": "cn_9f7cee1ee58c42a42f14",
+          "instanceIndex": 2,
+          "rawHash": "c23f37c76da553c90d7724a4ac6ca83088e1420b520d00bb95663dd74a3688d3",
+          "contentHash": "0435ea877849e57abe11420e71b2156438c1fccb0cf259c5412017e81c401b66",
+          "semanticHash": "a92396398ace4c09167e9be97a4d3a25dffc4d3fffd2b8f3aa5f09a7b7b13d67"
+        },
+        {
+          "problemId": "cn_297032565022a61e3071",
+          "instanceIndex": 3,
+          "rawHash": "503e7dfe5e084414a262e8ad29a51befb9ea7cf53caf7059e24e6560d32197c0",
+          "contentHash": "4db3386ea332548c55d42762d4e53524cc373e40644ef240da3967b604d49efc",
+          "semanticHash": "fb272cff055db7348048c7687225a4ed16d6bb920438c417512835c30d188314"
+        },
+        {
+          "problemId": "cn_e7bbb12fed748d934eb6",
+          "instanceIndex": 4,
+          "rawHash": "5363653f117c82d429a08b57ff4cd59b769707d02d35accec5441e670ca3eee1",
+          "contentHash": "9f41488495f9ed0cd9a94d69986193680b0ad2de68d53960425ad4f9a3c02e54",
+          "semanticHash": "271ab5e8acb28e1aec26ac14ccaaddd923110ba2825ff52767921150168f642c"
+        },
+        {
+          "problemId": "cn_7fe732e87e54ad6a4bd1",
+          "instanceIndex": 5,
+          "rawHash": "ee508ec17456e84cb84f9f493ee4b66007da718cb2203c9585a6879ffbae8d34",
+          "contentHash": "32a1e7fa7722efc6635bbb7f701f93496c2b521cb0848b6df8b2190153396d6a",
+          "semanticHash": "1b6729f12d729310077e796cf2fd67cbb18daa75739b808c3befe2aa1e75730c"
+        },
+        {
+          "problemId": "cn_5895dd68aa8998ee472e",
+          "instanceIndex": 6,
+          "rawHash": "6d9448ecf2ba9832083adeddf0f5eb9817977c8f1f05bbf7d5a4ee4b2ffe913a",
+          "contentHash": "7a3cdcf9a91bec809298286a27da38878f8c3ab4487194897fface09b4d2ceb9",
+          "semanticHash": "409fbbf876ec255b7f23df73432e150a5519b36eace9e932156405f3bdee32a7"
+        },
+        {
+          "problemId": "cn_d7dc7c68e7e1cd094a2a",
+          "instanceIndex": 7,
+          "rawHash": "4beed4756a6e39d521356f624935c7586a4fd1797d68f9be24c8b74cee7ee6c3",
+          "contentHash": "ebc62cb6010d23d22229bcd39bd9c876ccedc776ee3b3b8274663bf47a0e5455",
+          "semanticHash": "76db07f002ad7decb7d1f0e8189f1150acfb070e75bbc740831f5443e139c10b"
+        }
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-totient-Lambert",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "retainedOlympiadInstanceIndices": [],
+      "shortestVisibleRoute": "Expand the geometric denominator and apply the standard totient divisor-sum identity. This is a direct Lambert convolution, appropriately Hard under the same standard as the Liouville Euler-product demotion.",
+      "independentBlindSample": {
+        "statement": "\\sum_{k=1}^{\\infty}\\frac{\\varphi(k)}{4^k-1},\\qquad \\textnormal{For each positive integer }k\\textnormal{, }\\varphi(k)\\textnormal{ counts the integers from one through }k\\textnormal{ that are coprime to }k.\\quad\\varphi(1)=1.",
+        "choices": [
+          "\\frac{1}{9}",
+          "\\frac{4}{9}",
+          "\\frac{1}{3}",
+          "\\frac{4}{15}"
+        ],
+        "derivedAnswer": "\\frac{4}{9}",
+        "matchesCorrectChoice": true,
+        "blindBeforeProofRead": true
+      },
+      "mathematicsVerdict": "No wrong final answer or essential domain/convergence gap found in the general proof.",
+      "formatBlocker": null,
+      "coverage": [
+        {
+          "problemId": "cn_824401c78ea1d41daa44",
+          "instanceIndex": 0,
+          "rawHash": "e47d609e94d4afd90bc71dd48650424c75170d60877a3d011bb2028221c584cd",
+          "contentHash": "f8f1d45af5616ac61eec850967a1c88f442db5c9ebc5427c5bfc76c82bae1c0e",
+          "semanticHash": "5d16e0e46b4753434b7bae3d4ccfc5422a38e8d8a65946cf52aabd10b4eb1efb"
+        },
+        {
+          "problemId": "cn_bc08bd221e0fbf3ddf9f",
+          "instanceIndex": 1,
+          "rawHash": "6da74a444e70a7d115f58eb59b447716183f9c1774eb7b6579bd009c8ac3cf02",
+          "contentHash": "528c24df8d69bca611f9f8e33e0e6be596996b74607f147d76f4026b8306fde8",
+          "semanticHash": "f38d4267170ef7a3e1a319241a358e11eeadb1093c261ffae7575e9e3b8a8776"
+        },
+        {
+          "problemId": "cn_bc884196e49190fa99b0",
+          "instanceIndex": 2,
+          "rawHash": "d3c7b9b7a10d39186e9e00582668de632d41302a54bb17045f25169f5d5f8705",
+          "contentHash": "23b44b022cc2a81a860540db9b66580c29c30e9faeab1e71f732286469258c9a",
+          "semanticHash": "57c5f83544212a8042d7041e657f3a6a071ac223d676b821144ee4504f0e89f6"
+        },
+        {
+          "problemId": "cn_1ecbe5258ece7408a150",
+          "instanceIndex": 3,
+          "rawHash": "5461693155ef5c0ea219f2b1b8e23f4267e57faf2ddc3ef89210c0417d099b70",
+          "contentHash": "93be7dae22ae3123a78352eda1df67b757c51ea77a063ae9ee6f98d0e36c7d93",
+          "semanticHash": "d79a5861cdb1eb4135ce4bd6a7114c52a7a2bbe98cb6e056a04d0e22bd5596c2"
+        },
+        {
+          "problemId": "cn_774ce9469c1ae6156870",
+          "instanceIndex": 4,
+          "rawHash": "c89445f1088a01bf64c60111a4d59e7dfe39f01cbfe532cb4a4acfe5af28d163",
+          "contentHash": "200f0da6822e4aa62d1ded88e1743a601a29a66f28d21e628081e6d99dda134a",
+          "semanticHash": "06e3bbf813633e272e3aaac7bffe052a7d4a14a592dc70f7fbaebddbed9d0c74"
+        },
+        {
+          "problemId": "cn_a4313930b523af66abfc",
+          "instanceIndex": 5,
+          "rawHash": "1dbf479c35df5c6219775483b48a27efb35185b482ee61f517762207a81ff857",
+          "contentHash": "caa050ccfd7b04d13d1a8b7c546fdd1936fac2ae34a69d8a206006f9ec3ac519",
+          "semanticHash": "7f1d43a6130dee99bd01e14b66f2d9178a38955f4a63bcf4392267b88a3a005b"
+        },
+        {
+          "problemId": "cn_6883c81c5780d155aad7",
+          "instanceIndex": 6,
+          "rawHash": "93044ac263f9860dd1cc26074d194fea1e764c4c23b41f07aeae5c6f11815cd7",
+          "contentHash": "663438358ac6bb4cb631053d723165ca84da7165e26179248ab77820c626a76a",
+          "semanticHash": "bc062b4c6b8236fdbb3411144e2d9b9fe087f3cf503050a909b922ad3086e51c"
+        },
+        {
+          "problemId": "cn_5354a4a5b5bca052b1ad",
+          "instanceIndex": 7,
+          "rawHash": "e73d40f465049992e661080d9674908ab664cdbba5b0c2ee9ca767075e926062",
+          "contentHash": "765771790e0707917d8fed74eb9078eef46b34ec221e81f2a778b41a82448f22",
+          "semanticHash": "a00d0de90ac63552f3953214ed0e4b65a8f126c52b70ab523d3ef494c6d9daca"
+        }
+      ]
+    }
+  ],
+  "retainedOlympiadGroups": 6,
+  "retainedNominalInstances": 48,
+  "status": "peer-fit-verdict-with-binary-denominator-repair-required",
+  "reviewer": "Independent AI-assisted peer; not human/formal certification"
+}

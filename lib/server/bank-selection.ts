@@ -3,7 +3,7 @@ import type { BankProblem, RoundSnapshot } from '../bank/contracts.ts';
 import type { GameQuestion } from '../game-progress.ts';
 
 export class BankUnavailableError extends Error {
-  constructor() { super('There are not enough approved problems for these filters. Choose another topic or difficulty, or try again after a bank update.'); }
+  constructor(message='There are not enough approved problems for these filters. Choose another topic or difficulty, or try again after a bank update.') { super(message); }
 }
 type Pool = { release_id: string; topic: string; difficulty: string; tag: string; family_id: string; item_count: number };
 export type RecentProblems = import('../bank/exposure.ts').ExposureHistory;

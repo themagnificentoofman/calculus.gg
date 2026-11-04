@@ -1,0 +1,1485 @@
+{
+  "records": 30,
+  "normalizations": [
+    {
+      "problemId": "cn_14548a4bde5e733dd489",
+      "problemRevision": 1,
+      "contentHash": "f9101163e83f85f9f1a53e0a5dfe924c60b41b600c5a6779e6c51ec9158748f8",
+      "before": [
+        {
+          "choiceId": "ch_e0c5d4e82b7ff44d",
+          "math": "\\log{\\left(\\frac{4}{3} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_188db884bcd6f635",
+          "math": "\\log{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_31a99ed5471fd35b",
+          "math": "\\log{\\left(4 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_6c9201d1e9d42367",
+          "math": "\\frac{1}{4} + \\log{\\left(\\frac{4}{3} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_e0c5d4e82b7ff44d",
+          "math": "\\ln{\\left(\\frac{4}{3} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_188db884bcd6f635",
+          "math": "\\ln{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_31a99ed5471fd35b",
+          "math": "\\ln{\\left(4 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_6c9201d1e9d42367",
+          "math": "\\frac{1}{4} + \\ln{\\left(\\frac{4}{3} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_7596580244117f11abc7",
+      "problemRevision": 1,
+      "contentHash": "76596d0317b8769adbd9c62e219116a211d014f01529c0d50dedfe93563b03d4",
+      "before": [
+        {
+          "choiceId": "ch_188db884bcd6f635",
+          "math": "\\log{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_11734feb6dc954e5",
+          "math": "\\frac{\\log{\\left(\\frac{5}{4} \\right)}}{5}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_a0882d7f1b9d842a",
+          "math": "- \\frac{1}{5} + \\log{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_3246791afe8c4361",
+          "math": "\\frac{1}{5} + \\log{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_188db884bcd6f635",
+          "math": "\\ln{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_11734feb6dc954e5",
+          "math": "\\frac{\\ln{\\left(\\frac{5}{4} \\right)}}{5}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_a0882d7f1b9d842a",
+          "math": "- \\frac{1}{5} + \\ln{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_3246791afe8c4361",
+          "math": "\\frac{1}{5} + \\ln{\\left(\\frac{5}{4} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_977d10e2c19ab3c74bef",
+      "problemRevision": 1,
+      "contentHash": "0adf23d4aaa77bb983f49838af827148a16a65c77dd9bdaee510d33ce3bc528f",
+      "before": [
+        {
+          "choiceId": "ch_81eeaa5fed450101",
+          "math": "\\log{\\left(\\frac{6}{5} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_05952a26afebcaa7",
+          "math": "- \\frac{1}{6} + \\log{\\left(\\frac{6}{5} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd88077aa0c05d7c",
+          "math": "\\frac{1}{6}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_130aa502d2d0f667",
+          "math": "\\log{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_81eeaa5fed450101",
+          "math": "\\ln{\\left(\\frac{6}{5} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_05952a26afebcaa7",
+          "math": "- \\frac{1}{6} + \\ln{\\left(\\frac{6}{5} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd88077aa0c05d7c",
+          "math": "\\frac{1}{6}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_130aa502d2d0f667",
+          "math": "\\ln{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_1b45e8e17aff5077ad8e",
+      "problemRevision": 1,
+      "contentHash": "058eb00e8c9c0c9ae54dcd80e0857676139b8321f79af43c6bce7db8ddff0d59",
+      "before": [
+        {
+          "choiceId": "ch_130aa502d2d0f667",
+          "math": "\\log{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_c5e15e1aa55253aa",
+          "math": "\\frac{1}{7} + \\log{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_7d007eb6dd258445",
+          "math": "\\log{\\left(7 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_130aa502d2d0f667",
+          "math": "\\ln{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_c5e15e1aa55253aa",
+          "math": "\\frac{1}{7} + \\ln{\\left(\\frac{7}{6} \\right)}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_7d007eb6dd258445",
+          "math": "\\ln{\\left(7 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_242ebd316c2c6d6f969e",
+      "problemRevision": 1,
+      "contentHash": "5ef685c2b64af3283f98ce0f70251cb2bf666a371024320eda378e428fb314e7",
+      "before": [
+        {
+          "choiceId": "ch_74a6d9a17c08e602",
+          "math": "\\log{\\left(\\frac{8}{7} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_00a44f1567f94667",
+          "math": "\\log{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_6676cff64474c0a9",
+          "math": "\\frac{\\log{\\left(\\frac{8}{7} \\right)}}{8}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_b988747718f58da7",
+          "math": "\\log{\\left(8 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_74a6d9a17c08e602",
+          "math": "\\ln{\\left(\\frac{8}{7} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_00a44f1567f94667",
+          "math": "\\ln{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_6676cff64474c0a9",
+          "math": "\\frac{\\ln{\\left(\\frac{8}{7} \\right)}}{8}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_b988747718f58da7",
+          "math": "\\ln{\\left(8 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_c58734ed9ada500043f0",
+      "problemRevision": 1,
+      "contentHash": "7721b4f189287539cd348abad4bba13784d57b09816fc704fe9d4a227581222a",
+      "before": [
+        {
+          "choiceId": "ch_00a44f1567f94667",
+          "math": "\\log{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_ffdbac22b7d862e6",
+          "math": "\\frac{\\log{\\left(\\frac{9}{8} \\right)}}{9}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_e1470044c9619273",
+          "math": "- \\frac{1}{9} + \\log{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_c85c0234c29fec81",
+          "math": "\\frac{1}{9}",
+          "misconception": "return only the first term"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_00a44f1567f94667",
+          "math": "\\ln{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_ffdbac22b7d862e6",
+          "math": "\\frac{\\ln{\\left(\\frac{9}{8} \\right)}}{9}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_e1470044c9619273",
+          "math": "- \\frac{1}{9} + \\ln{\\left(\\frac{9}{8} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_c85c0234c29fec81",
+          "math": "\\frac{1}{9}",
+          "misconception": "return only the first term"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_67da1efdad82ac04d4b7",
+      "problemRevision": 1,
+      "contentHash": "68611c13172841de74f55337b3ac9beb95b06a59d4f1d2783520da7f85545208",
+      "before": [
+        {
+          "choiceId": "ch_c8fa8e3b36be624d",
+          "math": "\\log{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_25c1b79978233124",
+          "math": "- \\frac{1}{10} + \\log{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_5c1f774b309c54e4",
+          "math": "\\log{\\left(10 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_b66ac9f6c9bfa1fd",
+          "math": "\\frac{1}{10} + \\log{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_c8fa8e3b36be624d",
+          "math": "\\ln{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_25c1b79978233124",
+          "math": "- \\frac{1}{10} + \\ln{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_5c1f774b309c54e4",
+          "math": "\\ln{\\left(10 \\right)}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_b66ac9f6c9bfa1fd",
+          "math": "\\frac{1}{10} + \\ln{\\left(\\frac{10}{9} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_32dc6dbfb4ee4b37233b",
+      "problemRevision": 1,
+      "contentHash": "8be849cc4a911f194c52d2b1359594684b3c1ba0e2e801ee6002ed5f83bf3541",
+      "before": [
+        {
+          "choiceId": "ch_b17b5040ee6f4af2",
+          "math": "\\log{\\left(\\frac{11}{10} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_293f8566dadb0350",
+          "math": "\\log{\\left(\\frac{12}{11} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_d20d5ccd9a4cbf02",
+          "math": "\\frac{1}{11} + \\log{\\left(\\frac{11}{10} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_b17b5040ee6f4af2",
+          "math": "\\ln{\\left(\\frac{11}{10} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_293f8566dadb0350",
+          "math": "\\ln{\\left(\\frac{12}{11} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_d20d5ccd9a4cbf02",
+          "math": "\\frac{1}{11} + \\ln{\\left(\\frac{11}{10} \\right)}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_b992fb77c66228e28f60",
+      "problemRevision": 1,
+      "contentHash": "3e8d6f99f4a600fb012373fcd5b2cac568e47eb7d0466f9e2cfb4ba98bd4820d",
+      "before": [
+        {
+          "choiceId": "ch_a75b72d0980b686a",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{4} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_02e27d620eee14a3",
+          "math": "\\operatorname{atan}{\\left(4 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_c7521283137764a1",
+          "math": "4 \\operatorname{atan}{\\left(\\frac{1}{4} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_dc31acc095805c3c",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{4} \\right)} + \\frac{1}{4}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_a75b72d0980b686a",
+          "math": "\\arctan{\\left(\\frac{1}{4} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_02e27d620eee14a3",
+          "math": "\\arctan{\\left(4 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_c7521283137764a1",
+          "math": "4 \\arctan{\\left(\\frac{1}{4} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_dc31acc095805c3c",
+          "math": "\\arctan{\\left(\\frac{1}{4} \\right)} + \\frac{1}{4}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_be38850581a4c5cab781",
+      "problemRevision": 1,
+      "contentHash": "87a2c6ed96362c062d04ea8db02b3ecd83f888c0610ca2554b9a4d3d6e6368a7",
+      "before": [
+        {
+          "choiceId": "ch_d6e546e3cadb9d3c",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_8bc4876a9e078403",
+          "math": "- \\frac{1}{5} + \\operatorname{atan}{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd20ed98cd75b1c1",
+          "math": "5 \\operatorname{atan}{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_821948fb5c9692e1",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{5} \\right)} + \\frac{1}{5}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_d6e546e3cadb9d3c",
+          "math": "\\arctan{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_8bc4876a9e078403",
+          "math": "- \\frac{1}{5} + \\arctan{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd20ed98cd75b1c1",
+          "math": "5 \\arctan{\\left(\\frac{1}{5} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_821948fb5c9692e1",
+          "math": "\\arctan{\\left(\\frac{1}{5} \\right)} + \\frac{1}{5}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_d44197690f29897abfc6",
+      "problemRevision": 1,
+      "contentHash": "ef25a8a4778d2a82960ef2c87ed6813ec68d1b6d4fc4dccfff6b1a226461ed84",
+      "before": [
+        {
+          "choiceId": "ch_3dd4d9cb0f50b36d",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{6} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_a21acec2fa92ff1f",
+          "math": "\\frac{\\operatorname{atan}{\\left(\\frac{1}{6} \\right)}}{6}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_b3fdaa184ff0be86",
+          "math": "- \\frac{1}{6} + \\operatorname{atan}{\\left(\\frac{1}{6} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_32c0b27decc3aea6",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{6} \\right)} + \\frac{1}{6}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_3dd4d9cb0f50b36d",
+          "math": "\\arctan{\\left(\\frac{1}{6} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_a21acec2fa92ff1f",
+          "math": "\\frac{\\arctan{\\left(\\frac{1}{6} \\right)}}{6}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_b3fdaa184ff0be86",
+          "math": "- \\frac{1}{6} + \\arctan{\\left(\\frac{1}{6} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_32c0b27decc3aea6",
+          "math": "\\arctan{\\left(\\frac{1}{6} \\right)} + \\frac{1}{6}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_747086e0bc8af234d633",
+      "problemRevision": 1,
+      "contentHash": "18f5865ebf979add33d4cb8b099c25fcac858f6219f12bc1e12d6799ac02182a",
+      "before": [
+        {
+          "choiceId": "ch_f1a198ed8b92c01a",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{7} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_79109fc0a5e7a533",
+          "math": "\\operatorname{atan}{\\left(7 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_81332d2534b1d0d7",
+          "math": "7 \\operatorname{atan}{\\left(\\frac{1}{7} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_f1a198ed8b92c01a",
+          "math": "\\arctan{\\left(\\frac{1}{7} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_79109fc0a5e7a533",
+          "math": "\\arctan{\\left(7 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_81332d2534b1d0d7",
+          "math": "7 \\arctan{\\left(\\frac{1}{7} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_e7fd05d6b844c040b51c",
+      "problemRevision": 1,
+      "contentHash": "9605b8a4da27bd51284342466ccabab2482a8161f4eb1fc79d085cc3b6632f2a",
+      "before": [
+        {
+          "choiceId": "ch_99bcc5e45d819db7",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{8} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_1efbbb31db5431df",
+          "math": "\\frac{\\operatorname{atan}{\\left(\\frac{1}{8} \\right)}}{8}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_181531f6fefef722",
+          "math": "\\operatorname{atan}{\\left(8 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_3c44e66245713f42",
+          "math": "8 \\operatorname{atan}{\\left(\\frac{1}{8} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_99bcc5e45d819db7",
+          "math": "\\arctan{\\left(\\frac{1}{8} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_1efbbb31db5431df",
+          "math": "\\frac{\\arctan{\\left(\\frac{1}{8} \\right)}}{8}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_181531f6fefef722",
+          "math": "\\arctan{\\left(8 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_3c44e66245713f42",
+          "math": "8 \\arctan{\\left(\\frac{1}{8} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_e89932ffd8a334e185d4",
+      "problemRevision": 1,
+      "contentHash": "d162f56acccf810446658ad8d156f8c76f5ae736c0ef7f3737d539358022bf8e",
+      "before": [
+        {
+          "choiceId": "ch_0627bcdd4acbd7a7",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_4f6674629b4ed70a",
+          "math": "- \\frac{1}{9} + \\operatorname{atan}{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_028321cd782ad53a",
+          "math": "\\frac{\\operatorname{atan}{\\left(\\frac{1}{9} \\right)}}{9}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_109fa85047e3e11e",
+          "math": "9 \\operatorname{atan}{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_0627bcdd4acbd7a7",
+          "math": "\\arctan{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_4f6674629b4ed70a",
+          "math": "- \\frac{1}{9} + \\arctan{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_028321cd782ad53a",
+          "math": "\\frac{\\arctan{\\left(\\frac{1}{9} \\right)}}{9}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_109fa85047e3e11e",
+          "math": "9 \\arctan{\\left(\\frac{1}{9} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_39720ab235deed1a122e",
+      "problemRevision": 1,
+      "contentHash": "a5b982344e578cc4148a64a56a5bdb022c4d827828e0eb5275c11759f62e34a7",
+      "before": [
+        {
+          "choiceId": "ch_7696d4c5e9588f99",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{10} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_3a5f67963bcfd252",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{10} \\right)} + \\frac{1}{10}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_cb23a9c66f4984ce",
+          "math": "\\frac{1}{10}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_245aa0241b0850de",
+          "math": "\\operatorname{atan}{\\left(10 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_7696d4c5e9588f99",
+          "math": "\\arctan{\\left(\\frac{1}{10} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_3a5f67963bcfd252",
+          "math": "\\arctan{\\left(\\frac{1}{10} \\right)} + \\frac{1}{10}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_cb23a9c66f4984ce",
+          "math": "\\frac{1}{10}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_245aa0241b0850de",
+          "math": "\\arctan{\\left(10 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_256fd855fda3ca1f49ee",
+      "problemRevision": 1,
+      "contentHash": "504d16fe34cb1fcfafbfb2903f4619835c293f55062bdb8143a4ad723b8b443b",
+      "before": [
+        {
+          "choiceId": "ch_7fa27fc860937b85",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{11} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_e0b74145ba4a9f33",
+          "math": "- \\frac{1}{11} + \\operatorname{atan}{\\left(\\frac{1}{11} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_1106c133bf707aed",
+          "math": "\\operatorname{atan}{\\left(11 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_7fa27fc860937b85",
+          "math": "\\arctan{\\left(\\frac{1}{11} \\right)}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_e0b74145ba4a9f33",
+          "math": "- \\frac{1}{11} + \\arctan{\\left(\\frac{1}{11} \\right)}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_1106c133bf707aed",
+          "math": "\\arctan{\\left(11 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_b53afdc1d7839268b6ce",
+      "problemRevision": 1,
+      "contentHash": "bd8ea3363f17714f76ec2973decef6903bb83eaa5ff8559fbb753b8a165a8bbc",
+      "before": [
+        {
+          "choiceId": "ch_7c7d3c6d5700ed81",
+          "math": "- \\frac{4 \\log{\\left(\\frac{3}{4} \\right)}}{3}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_b00dd1ac95ba7f14",
+          "math": "- \\log{\\left(\\frac{3}{4} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_84661f9062f1be50",
+          "math": "- \\frac{16 \\log{\\left(\\frac{3}{4} \\right)}}{9}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_eb6563e91bb5a7e6",
+          "math": "\\frac{1}{4} - \\frac{4 \\log{\\left(\\frac{3}{4} \\right)}}{3}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_7c7d3c6d5700ed81",
+          "math": "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_b00dd1ac95ba7f14",
+          "math": "- \\ln{\\left(\\frac{3}{4} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_84661f9062f1be50",
+          "math": "- \\frac{16 \\ln{\\left(\\frac{3}{4} \\right)}}{9}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_eb6563e91bb5a7e6",
+          "math": "\\frac{1}{4} - \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_0c61f469b0807a4a01b1",
+      "problemRevision": 1,
+      "contentHash": "e73e161a3786b541d68f3fff3ed5e74adc4e351c1f673bcd1e61d130c26ba67a",
+      "before": [
+        {
+          "choiceId": "ch_be1e500259c09021",
+          "math": "- \\frac{5 \\log{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_ba1c9fbee330e112",
+          "math": "\\frac{5 \\log{\\left(\\frac{6}{5} \\right)}}{4}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_e6dbb46bde0b794a",
+          "math": "- \\frac{1}{5} - \\frac{5 \\log{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_3d199495702cc5d1",
+          "math": "\\frac{1}{5} - \\frac{5 \\log{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_be1e500259c09021",
+          "math": "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_ba1c9fbee330e112",
+          "math": "\\frac{5 \\ln{\\left(\\frac{6}{5} \\right)}}{4}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_e6dbb46bde0b794a",
+          "math": "- \\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_3d199495702cc5d1",
+          "math": "\\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_598fca8cb6dc3d26bf7b",
+      "problemRevision": 1,
+      "contentHash": "ec95fd1b3a5b4077b2a21f63c254d1a48154a01261d92a04d71d5eef026de866",
+      "before": [
+        {
+          "choiceId": "ch_a61cab4b842d3eea",
+          "math": "- \\frac{6 \\log{\\left(\\frac{5}{6} \\right)}}{5}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_56196f08fedc19a1",
+          "math": "- \\frac{1}{6} - \\frac{6 \\log{\\left(\\frac{5}{6} \\right)}}{5}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd88077aa0c05d7c",
+          "math": "\\frac{1}{6}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_be664770aeea9c97",
+          "math": "- \\log{\\left(\\frac{5}{6} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_a61cab4b842d3eea",
+          "math": "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_56196f08fedc19a1",
+          "math": "- \\frac{1}{6} - \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_dd88077aa0c05d7c",
+          "math": "\\frac{1}{6}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_be664770aeea9c97",
+          "math": "- \\ln{\\left(\\frac{5}{6} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_b1242ba76b701aa863da",
+      "problemRevision": 1,
+      "contentHash": "4f2005e832a575e8177d32f3e71b586ba1ce47eac78ff6f243404dba1e2e0ab3",
+      "before": [
+        {
+          "choiceId": "ch_4d0958f958c9e87f",
+          "math": "- \\frac{7 \\log{\\left(\\frac{6}{7} \\right)}}{6}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_1d2675a7b09c989c",
+          "math": "\\frac{1}{7} - \\frac{7 \\log{\\left(\\frac{6}{7} \\right)}}{6}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_8484a36fbbea6800",
+          "math": "- \\frac{49 \\log{\\left(\\frac{6}{7} \\right)}}{36}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_4d0958f958c9e87f",
+          "math": "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_87fb39e30d169925",
+          "math": "\\frac{1}{7}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_1d2675a7b09c989c",
+          "math": "\\frac{1}{7} - \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_8484a36fbbea6800",
+          "math": "- \\frac{49 \\ln{\\left(\\frac{6}{7} \\right)}}{36}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_c9bb0915095c96f13d90",
+      "problemRevision": 1,
+      "contentHash": "054b4b7e2787c00957d3c76c54b4a8a233f4b098e0b5c79720ae3e0d35bebba6",
+      "before": [
+        {
+          "choiceId": "ch_a839226ccd19cae4",
+          "math": "- \\frac{8 \\log{\\left(\\frac{7}{8} \\right)}}{7}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_71082056372d6300",
+          "math": "- \\log{\\left(\\frac{7}{8} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_876023340358d9bc",
+          "math": "\\frac{8 \\log{\\left(\\frac{9}{8} \\right)}}{7}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_717d81f348652dd7",
+          "math": "- \\frac{64 \\log{\\left(\\frac{7}{8} \\right)}}{49}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_a839226ccd19cae4",
+          "math": "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_71082056372d6300",
+          "math": "- \\ln{\\left(\\frac{7}{8} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_876023340358d9bc",
+          "math": "\\frac{8 \\ln{\\left(\\frac{9}{8} \\right)}}{7}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_717d81f348652dd7",
+          "math": "- \\frac{64 \\ln{\\left(\\frac{7}{8} \\right)}}{49}",
+          "misconception": "wrong differentiation or integration factor"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_999a30087e6b60e0df64",
+      "problemRevision": 1,
+      "contentHash": "8daf634e09f180ab1d1e8c7389579f0369658a0dd5007df690723be3b666c8f3",
+      "before": [
+        {
+          "choiceId": "ch_7e2d272d740067aa",
+          "math": "- \\frac{9 \\log{\\left(\\frac{8}{9} \\right)}}{8}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_be110643d489c33d",
+          "math": "\\frac{9 \\log{\\left(\\frac{10}{9} \\right)}}{8}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_63b5047efb2f6f56",
+          "math": "- \\frac{1}{9} - \\frac{9 \\log{\\left(\\frac{8}{9} \\right)}}{8}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_c85c0234c29fec81",
+          "math": "\\frac{1}{9}",
+          "misconception": "return only the first term"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_7e2d272d740067aa",
+          "math": "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_be110643d489c33d",
+          "math": "\\frac{9 \\ln{\\left(\\frac{10}{9} \\right)}}{8}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_63b5047efb2f6f56",
+          "math": "- \\frac{1}{9} - \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_c85c0234c29fec81",
+          "math": "\\frac{1}{9}",
+          "misconception": "return only the first term"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_6516e1f4126a9294bcf6",
+      "problemRevision": 1,
+      "contentHash": "e90be6c07e19679a2e3f66dec35d79c61b069cc195bf22b235e2b27cb11c7f74",
+      "before": [
+        {
+          "choiceId": "ch_d51955ed27fdb46d",
+          "math": "- \\frac{10 \\log{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6b2489c631cd1e1a",
+          "math": "- \\frac{1}{10} - \\frac{10 \\log{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_d70abf26b91061ad",
+          "math": "- \\frac{100 \\log{\\left(\\frac{9}{10} \\right)}}{81}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_80b014d610555b3e",
+          "math": "\\frac{1}{10} - \\frac{10 \\log{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_d51955ed27fdb46d",
+          "math": "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6b2489c631cd1e1a",
+          "math": "- \\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_d70abf26b91061ad",
+          "math": "- \\frac{100 \\ln{\\left(\\frac{9}{10} \\right)}}{81}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_80b014d610555b3e",
+          "math": "\\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_280b345c21b43227471d",
+      "problemRevision": 1,
+      "contentHash": "5ebc118063bef47494442da125f35779311a55594bd97e29a6d29f83d243d8b6",
+      "before": [
+        {
+          "choiceId": "ch_a490cc3f7207cae6",
+          "math": "- \\frac{11 \\log{\\left(\\frac{10}{11} \\right)}}{10}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_0a0ecea4cb137db1",
+          "math": "- \\log{\\left(\\frac{10}{11} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_2b4694afc582640f",
+          "math": "\\frac{1}{11} - \\frac{11 \\log{\\left(\\frac{10}{11} \\right)}}{10}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_a490cc3f7207cae6",
+          "math": "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6ce9548ccc860454",
+          "math": "\\frac{1}{11}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_0a0ecea4cb137db1",
+          "math": "- \\ln{\\left(\\frac{10}{11} \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_2b4694afc582640f",
+          "math": "\\frac{1}{11} - \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_2b0707060d86d3b790af",
+      "problemRevision": 1,
+      "contentHash": "65cabf8464f0c6424ebda658c623818cd015ab704c1383e066a4f0ac0e68ab68",
+      "before": [
+        {
+          "choiceId": "ch_55a97a86187f80ce",
+          "math": "- \\operatorname{atan}{\\left(4 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6fc0e89f631db69b",
+          "math": "- \\operatorname{atan}{\\left(5 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_02e27d620eee14a3",
+          "math": "\\operatorname{atan}{\\left(4 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_6ee3fa69e916e7a8",
+          "math": "- \\operatorname{atan}{\\left(4 \\right)} + \\operatorname{atan}{\\left(\\frac{1}{21} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_55a97a86187f80ce",
+          "math": "- \\arctan{\\left(4 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_6fc0e89f631db69b",
+          "math": "- \\arctan{\\left(5 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_02e27d620eee14a3",
+          "math": "\\arctan{\\left(4 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_6ee3fa69e916e7a8",
+          "math": "- \\arctan{\\left(4 \\right)} + \\arctan{\\left(\\frac{1}{21} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_b8ee0316307806248d2b",
+      "problemRevision": 1,
+      "contentHash": "2bfd7044b10d9cc8fbe20636871ad1ee1355cf86ce9fe8eab008d5088d4c1d9f",
+      "before": [
+        {
+          "choiceId": "ch_6fc0e89f631db69b",
+          "math": "- \\operatorname{atan}{\\left(5 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_38de476da156ffe8",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{31} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_a7f370c70f024ec8",
+          "math": "- \\operatorname{atan}{\\left(5 \\right)} - \\operatorname{atan}{\\left(\\frac{1}{31} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_00072c66c0f5b04c",
+          "math": "- \\operatorname{atan}{\\left(5 \\right)} + \\operatorname{atan}{\\left(\\frac{1}{31} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_6fc0e89f631db69b",
+          "math": "- \\arctan{\\left(5 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_38de476da156ffe8",
+          "math": "\\arctan{\\left(\\frac{1}{31} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_a7f370c70f024ec8",
+          "math": "- \\arctan{\\left(5 \\right)} - \\arctan{\\left(\\frac{1}{31} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_00072c66c0f5b04c",
+          "math": "- \\arctan{\\left(5 \\right)} + \\arctan{\\left(\\frac{1}{31} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_8200c295c04ffb32e097",
+      "problemRevision": 1,
+      "contentHash": "8ecd7005ac77460c50e2ae3baa3f359de76a89dd71a4f2c99738142e84912b15",
+      "before": [
+        {
+          "choiceId": "ch_906f3ee2ca7c5e3f",
+          "math": "- \\operatorname{atan}{\\left(7 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_e306749b0d9d5ba2",
+          "math": "- \\operatorname{atan}{\\left(8 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_0e5f942358cfaa21",
+          "math": "- \\operatorname{atan}{\\left(7 \\right)} + \\operatorname{atan}{\\left(\\frac{1}{57} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_79109fc0a5e7a533",
+          "math": "\\operatorname{atan}{\\left(7 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_906f3ee2ca7c5e3f",
+          "math": "- \\arctan{\\left(7 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_e306749b0d9d5ba2",
+          "math": "- \\arctan{\\left(8 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_0e5f942358cfaa21",
+          "math": "- \\arctan{\\left(7 \\right)} + \\arctan{\\left(\\frac{1}{57} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_79109fc0a5e7a533",
+          "math": "\\arctan{\\left(7 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_4e9e20a179c81c837237",
+      "problemRevision": 1,
+      "contentHash": "37e57c6c94c7b3a8c4d645cfb7fadabadd53b0c84c7c972cbd4a0fe9ee9017cc",
+      "before": [
+        {
+          "choiceId": "ch_e306749b0d9d5ba2",
+          "math": "- \\operatorname{atan}{\\left(8 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_8418d5775323b4ea",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{73} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_cad944180c7eea4d",
+          "math": "- \\operatorname{atan}{\\left(8 \\right)} - \\operatorname{atan}{\\left(\\frac{1}{73} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_181531f6fefef722",
+          "math": "\\operatorname{atan}{\\left(8 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_e306749b0d9d5ba2",
+          "math": "- \\arctan{\\left(8 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_8418d5775323b4ea",
+          "math": "\\arctan{\\left(\\frac{1}{73} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_cad944180c7eea4d",
+          "math": "- \\arctan{\\left(8 \\right)} - \\arctan{\\left(\\frac{1}{73} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_181531f6fefef722",
+          "math": "\\arctan{\\left(8 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_1988985083a6e37866fa",
+      "problemRevision": 1,
+      "contentHash": "17f58d652db9c341b6be8ea935962da0131c11285ae4d120cd08db869c1cb694",
+      "before": [
+        {
+          "choiceId": "ch_ecae22961b09193b",
+          "math": "- \\operatorname{atan}{\\left(10 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_774d047e79682a87",
+          "math": "- \\operatorname{atan}{\\left(11 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_245aa0241b0850de",
+          "math": "\\operatorname{atan}{\\left(10 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_18a2eb63135c75de",
+          "math": "- \\operatorname{atan}{\\left(10 \\right)} + \\operatorname{atan}{\\left(\\frac{1}{111} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_ecae22961b09193b",
+          "math": "- \\arctan{\\left(10 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_774d047e79682a87",
+          "math": "- \\arctan{\\left(11 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "wrong differentiation or integration factor"
+        },
+        {
+          "choiceId": "ch_245aa0241b0850de",
+          "math": "\\arctan{\\left(10 \\right)}",
+          "misconception": "wrong starting index or omitted endpoint"
+        },
+        {
+          "choiceId": "ch_18a2eb63135c75de",
+          "math": "- \\arctan{\\left(10 \\right)} + \\arctan{\\left(\\frac{1}{111} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    },
+    {
+      "problemId": "cn_0871f08f95485c1a13c2",
+      "problemRevision": 1,
+      "contentHash": "4b7b1dbeff99e309526c1738ec7a9e48cf60036cfa24def2c3cb1d9f0467a09f",
+      "before": [
+        {
+          "choiceId": "ch_774d047e79682a87",
+          "math": "- \\operatorname{atan}{\\left(11 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_7fe86d00bbdad052",
+          "math": "\\operatorname{atan}{\\left(\\frac{1}{133} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_4e2a4bdded672e3c",
+          "math": "- \\operatorname{atan}{\\left(11 \\right)} - \\operatorname{atan}{\\left(\\frac{1}{133} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_e01fa78377b0207f",
+          "math": "- \\operatorname{atan}{\\left(11 \\right)} + \\operatorname{atan}{\\left(\\frac{1}{133} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ],
+      "after": [
+        {
+          "choiceId": "ch_774d047e79682a87",
+          "math": "- \\arctan{\\left(11 \\right)} + \\frac{\\pi}{2}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_7fe86d00bbdad052",
+          "math": "\\arctan{\\left(\\frac{1}{133} \\right)}",
+          "misconception": "wrong convergence/normalization factor"
+        },
+        {
+          "choiceId": "ch_4e2a4bdded672e3c",
+          "math": "- \\arctan{\\left(11 \\right)} - \\arctan{\\left(\\frac{1}{133} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_e01fa78377b0207f",
+          "math": "- \\arctan{\\left(11 \\right)} + \\arctan{\\left(\\frac{1}{133} \\right)} + \\frac{\\pi}{2}",
+          "misconception": "include the first term twice"
+        }
+      ]
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "lib/server/solution-presentation.mjs",
+      "sha256": "8a1dbac33d47beb914f405e32b55228bea617cf55ae8ff89e3718a04f2301ae8"
+    },
+    {
+      "path": "lib/math-notation.mjs",
+      "sha256": "9f5a1ea3fe2a47c52307e4cf0e50b574cfd9fb6809f87d2e4ee5376cc4e37dca"
+    }
+  ]
+}

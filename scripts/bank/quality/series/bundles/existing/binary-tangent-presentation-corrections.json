@@ -1,0 +1,160 @@
+{
+  "reviewId": "quality-binary-tangent-explicit-multiplication-v2",
+  "change": "Repair all concrete dyadic denominator products; statement and final answer unchanged. Historical stored play snapshots are outside this presentation correction.",
+  "identityCertificate": "For t=tan(u), cot(2u)=(1-t\u00b2)/(2t); t\u22121/t+(1-t\u00b2)/t=0. All actual angles satisfy0<u\u22641/4, so these denominators have no poles. Exact rational cancellation independently executed.",
+  "records": [
+    {
+      "problemId": "cn_fb6efac19477e8bfcbe5",
+      "sourceContentHash": "851b4872e95317cf6a627870e5ab3b8c88d55825126e7bef4df4e5d164726c87",
+      "sourceSemanticHash": "a1097fdd90e33d58c762fd714a5ab64345c99c8f826b05cba2c66b9185f23f60",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 0,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{4\\cdot2^k}=2^{-k}\\cot\\frac1{4\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{4\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{4\\cdot2^k}=2^{-N}\\cot\\frac1{4\\cdot2^N}-\\cot\\frac1{4}",
+        "u_N=\\frac1{4\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=4\\,u_N\\cot u_N\\longrightarrow4",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{4\\cdot2^k}=4-\\cot\\frac1{4}",
+        "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_e0dbcded4236552a",
+      "reviewedRevisionRawHash": "9abfc4c516ef8e5a6679eaeb6e3b608573065e6c98826120aeb71d3534768b0e"
+    },
+    {
+      "problemId": "cn_84a3f0b901bc6d22d72b",
+      "sourceContentHash": "8759c1978a2d19752a4ba402bfaca37e3e9c98b196c54b2b9a2924b27aac953d",
+      "sourceSemanticHash": "b667627597cd2149a5604b38ac960f1d5a67f47200d2966776ae9c15b8589f06",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 1,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{5\\cdot2^k}=2^{-k}\\cot\\frac1{5\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{5\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{5\\cdot2^k}=2^{-N}\\cot\\frac1{5\\cdot2^N}-\\cot\\frac1{5}",
+        "u_N=\\frac1{5\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=5\\,u_N\\cot u_N\\longrightarrow5",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{5\\cdot2^k}=5-\\cot\\frac1{5}",
+        "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_8553b5170521ff53",
+      "reviewedRevisionRawHash": "91b716e96ff768fa726c06faae45c54ae8fa4144f960cee3ba809ced4dfe8ffb"
+    },
+    {
+      "problemId": "cn_f6773739ddb0c4c4283b",
+      "sourceContentHash": "f669d351e230aa15034617be921b92a098779435d2f85f13338e12ff47cf08e7",
+      "sourceSemanticHash": "8da807601c63a0e1fb66f5d73167df84bd0db3402b57efa44d1a7dd7ccf7c8ef",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 2,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{6\\cdot2^k}=2^{-k}\\cot\\frac1{6\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{6\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{6\\cdot2^k}=2^{-N}\\cot\\frac1{6\\cdot2^N}-\\cot\\frac1{6}",
+        "u_N=\\frac1{6\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=6\\,u_N\\cot u_N\\longrightarrow6",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{6\\cdot2^k}=6-\\cot\\frac1{6}",
+        "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_71e98f2a0420fb36",
+      "reviewedRevisionRawHash": "5b856c0c2e8e5ceb81e13ce2606b91cdfeea4ee2de31113c6aff8f7ad3cbcc19"
+    },
+    {
+      "problemId": "cn_bfa2bb14b0f03e050627",
+      "sourceContentHash": "10dff706a96cbc0adf26fbc07686554a6d4bfd6755e61acdfd27c1503a68f4dd",
+      "sourceSemanticHash": "ebc4a48ff7ebfe616855de2b3192df790e0ea3a42fcc2a69c1f4accdfadd3d29",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 3,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{7\\cdot2^k}=2^{-k}\\cot\\frac1{7\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{7\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{7\\cdot2^k}=2^{-N}\\cot\\frac1{7\\cdot2^N}-\\cot\\frac1{7}",
+        "u_N=\\frac1{7\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=7\\,u_N\\cot u_N\\longrightarrow7",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{7\\cdot2^k}=7-\\cot\\frac1{7}",
+        "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_3e0b05d0a85b12e3",
+      "reviewedRevisionRawHash": "1fa12a19cebd5574d4ad379477fb2ce5033383a79fb818c9ffd45f0fff87d359"
+    },
+    {
+      "problemId": "cn_59b96a09cb74e517a91f",
+      "sourceContentHash": "be195844609e54a0e1682176665f45119bde5d429d3563fe18d939e157911c67",
+      "sourceSemanticHash": "b8d6cbeee5d9dfd085396a4689b9d041c3defa5357a9f5b58a62afbc9e96c7a8",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 4,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{8\\cdot2^k}=2^{-k}\\cot\\frac1{8\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{8\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{8\\cdot2^k}=2^{-N}\\cot\\frac1{8\\cdot2^N}-\\cot\\frac1{8}",
+        "u_N=\\frac1{8\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=8\\,u_N\\cot u_N\\longrightarrow8",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{8\\cdot2^k}=8-\\cot\\frac1{8}",
+        "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_0d131ee8345cbdea",
+      "reviewedRevisionRawHash": "68384440fe09019a8169bf20b9f10fbc31906236f9d3ec7f8a9fd4e2cf1e9248"
+    },
+    {
+      "problemId": "cn_3b07434ee15a968ad479",
+      "sourceContentHash": "f60256f85ea48d3f38b40ed20c37b4c9ce07ed7254a298e59b45b63902c9193c",
+      "sourceSemanticHash": "99ccf6adf873ad056bc80edb99f96938def4e9bbf257c64b799166257c0d4002",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 5,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{9\\cdot2^k}=2^{-k}\\cot\\frac1{9\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{9\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{9\\cdot2^k}=2^{-N}\\cot\\frac1{9\\cdot2^N}-\\cot\\frac1{9}",
+        "u_N=\\frac1{9\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=9\\,u_N\\cot u_N\\longrightarrow9",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{9\\cdot2^k}=9-\\cot\\frac1{9}",
+        "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_b4b5bda084fae4d8",
+      "reviewedRevisionRawHash": "fc294aeb795aeabce74d83902ecca4811efe94655ea981279b1658acbcc03b89"
+    },
+    {
+      "problemId": "cn_12f8c08d90251975c780",
+      "sourceContentHash": "c9414bb27df595f0d0127c3853ad3cf774794d4bea2b79abd7eeaff8ee4f9839",
+      "sourceSemanticHash": "7169f4253bffb6fe40238a398a7a12dc89d7248fafe232eb14dab2c2dda279b0",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 6,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{10\\cdot2^k}=2^{-k}\\cot\\frac1{10\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{10\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{10\\cdot2^k}=2^{-N}\\cot\\frac1{10\\cdot2^N}-\\cot\\frac1{10}",
+        "u_N=\\frac1{10\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=10\\,u_N\\cot u_N\\longrightarrow10",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{10\\cdot2^k}=10-\\cot\\frac1{10}",
+        "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_2a6731302eb2b27e",
+      "reviewedRevisionRawHash": "49d9e17e3968e1f06f36b65da89a0385e3f3947615af9191b98bd7ac8c6cad3a"
+    },
+    {
+      "problemId": "cn_2008c16f13329aac12aa",
+      "sourceContentHash": "18ecb3d832c07bc77249464326edcf3a785c645867cd7bb18384c707ef505035",
+      "sourceSemanticHash": "aa9d6cbbd425c77e0d1c878c706624e41f25dcfc96723131341ff8b33ca610ef",
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instanceIndex": 7,
+      "solutionSteps": [
+        "\\tan u=\\cot u-2\\cot(2u)",
+        "2^{-k}\\tan\\frac1{11\\cdot2^k}=2^{-k}\\cot\\frac1{11\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{11\\cdot2^{k-1}}",
+        "\\sum_{k=1}^N2^{-k}\\tan\\frac1{11\\cdot2^k}=2^{-N}\\cot\\frac1{11\\cdot2^N}-\\cot\\frac1{11}",
+        "u_N=\\frac1{11\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=11\\,u_N\\cot u_N\\longrightarrow11",
+        "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+        "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{11\\cdot2^k}=11-\\cot\\frac1{11}",
+        "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}"
+      ],
+      "statementUnchanged": true,
+      "answerChoiceId": "ch_036aaf69f6f368fa",
+      "reviewedRevisionRawHash": "51268461bae4d67817f0efdf902c703b2d08fc1bb00f5ff9f03d3281fce9c2eb"
+    }
+  ],
+  "humanReviewed": false
+}

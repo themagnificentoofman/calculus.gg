@@ -1,0 +1,2544 @@
+{
+  "sourcePath": "work/quality-research/differentiation-limits/lower-v3/candidates.json",
+  "sourceSha256": "1c5d39afd5416fa8b36b831bd8d3ad799ee1902dad4ee959a00c595aa79725e8",
+  "reviewerSha256": "fa91bff7ee79f13d0c45b4a6e17bbabb33abcceb9bc16f41652456b4d38b85ce",
+  "records": [
+    {
+      "familyId": "q2-m3-differentiation-easy-chain-data",
+      "instance": 0,
+      "rawHash": "32eaacbfeca9acd74920e847ded3300fc9bd1720b5f4742c57be747d5007926e",
+      "derivedAnswer": "Integer(156)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Chain rule at the explicitly supplied inner image.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-chain-data",
+      "instance": 1,
+      "rawHash": "a624655b387eb473081a228f3c1e2582bfa824199347b760123f43c94bd845e4",
+      "derivedAnswer": "Integer(182)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Chain rule at the explicitly supplied inner image.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-derivative-definition",
+      "instance": 0,
+      "rawHash": "394be8b987ca8ae8fb2d0cb7b3624fc23a4f747c735cb170682aff518889ea5a",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Recognize the derivative of the integer power at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Derivative from polynomial difference quotient",
+          "left": "Integer(12)",
+          "right": "Integer(12)",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-derivative-definition",
+      "instance": 1,
+      "rawHash": "64fa0141e1adcee56cd86967577b2dae76c6d37c45d77f9225f09b9a19633101",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Recognize the derivative of the integer power at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Derivative from polynomial difference quotient",
+          "left": "Integer(13)",
+          "right": "Integer(13)",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-implicit-circle",
+      "instance": 0,
+      "rawHash": "99447d4524045e401c76985a4a475fbee83dd6da448fda8c6fe16fbf23c03a12",
+      "derivedAnswer": "Rational(-1, 12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Implicit differentiation gives y\u2032=\u2212x/y on the nonzero-height branch.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-implicit-circle",
+      "instance": 1,
+      "rawHash": "a5b5746342e2e9457c6297c0c8c31e853bb055db401ae2a56138bbf91907e968",
+      "derivedAnswer": "Rational(-1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Implicit differentiation gives y\u2032=\u2212x/y on the nonzero-height branch.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-inverse-slope",
+      "instance": 0,
+      "rawHash": "dc0599923e9c139a43e81146aca81dd1a58411697d1bb148ef97fc213ea3019c",
+      "derivedAnswer": "Rational(1, 12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the local inverse identity; the supplied derivative is nonzero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-inverse-slope",
+      "instance": 1,
+      "rawHash": "27d0ace4f87c8ba53d80b6ff1b93fde7770bcdff4f8dd4ca4f77693e55798951",
+      "derivedAnswer": "Rational(1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the local inverse identity; the supplied derivative is nonzero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-linearization",
+      "instance": 0,
+      "rawHash": "48ad0b1b92a95165be17adccbcefb5352032f09b4616c087db7de97c62becdb4",
+      "derivedAnswer": "Rational(289, 24)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the square-root derivative1/(2m) at m\u00b2 and the unit input increment.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-linearization",
+      "instance": 1,
+      "rawHash": "7013e83f6a2dacc3bf063acafac65bcdac76a937540b8e87c7bf580431e0ede6",
+      "derivedAnswer": "Rational(339, 26)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the square-root derivative1/(2m) at m\u00b2 and the unit input increment.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-matching-piecewise-slopes",
+      "instance": 0,
+      "rawHash": "d18eb417aa6a43549ad38cac377f2b8ed4ba940c570beb91806847acf94f91fd",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Continuity already holds at zero; match the two one-sided first derivatives.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-matching-piecewise-slopes",
+      "instance": 1,
+      "rawHash": "ec7a9397bd04e4dc6f0f52676fecf839b2b3029b4f5a334a5c17d5a19aaf585a",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Continuity already holds at zero; match the two one-sided first derivatives.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-minimum-from-sign",
+      "instance": 0,
+      "rawHash": "a3e7a7823c7d949d711eb31839171c3ad9d7410b065dbeafbffd0c8f702f8676",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Track the derivative sign at the two positive simple roots; only the larger root changes from negative to positive.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-minimum-from-sign",
+      "instance": 1,
+      "rawHash": "149a65e95088ffb9f9cc790dafc3ec14012e59540b77c5ae4ad511e82a7d1219",
+      "derivedAnswer": "Integer(1)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Track the derivative sign at the two positive simple roots; only the larger root changes from negative to positive.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-parametric-slope",
+      "instance": 0,
+      "rawHash": "36dd348d14fe1fd187f7067f69a86d91a37cd8e3dcb7db6970a4abedb5610834",
+      "derivedAnswer": "Integer(18)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide dy/dt by the nonzero dx/dt.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Parametric first derivative",
+          "left": "Integer(18)",
+          "right": "Integer(18)",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-parametric-slope",
+      "instance": 1,
+      "rawHash": "5425b4a4217df4783392efaac820dac8f650458f3f7fac9b272a39e5328994af",
+      "derivedAnswer": "Rational(39, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide dy/dt by the nonzero dx/dt.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Parametric first derivative",
+          "left": "Rational(39, 2)",
+          "right": "Rational(39, 2)",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-product-data",
+      "instance": 0,
+      "rawHash": "6819b583de8ef6c726d985640313f4979f9cb7dfa41bf43eeee9c7d0981d5b02",
+      "derivedAnswer": "Integer(62)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use both terms in the product rule with the supplied values.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-product-data",
+      "instance": 1,
+      "rawHash": "07d73ce0022846d4cd8f9731072338885ffde554e34bf8a30285f526ab9e2464",
+      "derivedAnswer": "Integer(67)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use both terms in the product rule with the supplied values.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-related-area-rate",
+      "instance": 0,
+      "rawHash": "6c46729fb01f79837838d3b2c538d81ac8aa8f090a19201da4be2d434668e21a",
+      "derivedAnswer": "Mul(Integer(48), pi)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the area with respect to radius and multiply by the given radial velocity.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-related-area-rate",
+      "instance": 1,
+      "rawHash": "b934be3f9d9583ce40539bae75bc58ad1e6b51c4f8d5c71377bfeb4159b90f2c",
+      "derivedAnswer": "Mul(Integer(52), pi)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the area with respect to radius and multiply by the given radial velocity.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-tangent-intercept",
+      "instance": 0,
+      "rawHash": "4a167fbef7c278b3675705d54f92e317999c99ab87d910893ec0320e35fc6859",
+      "derivedAnswer": "Integer(-11)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The tangent has slope m through(1,1), so its vertical intercept is1\u2212m.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-easy-tangent-intercept",
+      "instance": 1,
+      "rawHash": "0c144386d8d0aeedce272fce6b728089edafc9ad8351cccb7b2145dc84d75992",
+      "derivedAnswer": "Integer(-12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The tangent has slope m through(1,1), so its vertical intercept is1\u2212m.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-complex-exponential-derivative",
+      "instance": 0,
+      "rawHash": "b4fd1449ab211100c2d8ca27208c896af2585cf2a6b881e831eb65a1206c5675",
+      "derivedAnswer": "Integer(-64)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take the real part of(1+i)^m, or use the two-component derivative recurrence.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Separate direct real derivative",
+          "left": "Integer(-64)",
+          "right": "Integer(-64)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-complex-exponential-derivative",
+      "instance": 1,
+      "rawHash": "8c7de5a3c16723faeaccd87fe2ced18bd22b11c682b98d214cc193063f820fd9",
+      "derivedAnswer": "Integer(-64)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take the real part of(1+i)^m, or use the two-component derivative recurrence.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Separate direct real derivative",
+          "left": "Integer(-64)",
+          "right": "Integer(-64)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-curvature-parametric",
+      "instance": 0,
+      "rawHash": "86eaac82553be7c2661a97680cc2a66bc897a9f1e0de532a32304885afbb0a6c",
+      "derivedAnswer": "Mul(Rational(2, 332929), Pow(Integer(577), Rational(1, 2)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Evaluate |x\u2032y\u2033\u2212y\u2032x\u2033|/(x\u2032\u00b2+y\u2032\u00b2)^(3/2) for the regular plane curve.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-curvature-parametric",
+      "instance": 1,
+      "rawHash": "233430586d158b40a22b5445e833d889e98a910c50c5589f3f01f957fdbdc85c",
+      "derivedAnswer": "Mul(Rational(2, 458329), Pow(Integer(677), Rational(1, 2)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Evaluate |x\u2032y\u2033\u2212y\u2032x\u2033|/(x\u2032\u00b2+y\u2032\u00b2)^(3/2) for the regular plane curve.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-high-order-rational",
+      "instance": 0,
+      "rawHash": "a1f7892960dad8e0bdc9245e584ed63828a7feab1df802699435fa86a39f5f61",
+      "derivedAnswer": "Integer(111607372800)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The coefficients of1/(1\u2212x\u2212x\u00b2) satisfy the Fibonacci recurrence; multiply the required coefficient by m!.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Independent series coefficient",
+          "left": "Integer(111607372800)",
+          "right": "Integer(111607372800)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-high-order-rational",
+      "instance": 1,
+      "rawHash": "8b0140cf83e01d2088adc739fc62dff38a67c9cbe90bfba5b4dec0099fa20087",
+      "derivedAnswer": "Integer(2347586841600)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The coefficients of1/(1\u2212x\u2212x\u00b2) satisfy the Fibonacci recurrence; multiply the required coefficient by m!.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Independent series coefficient",
+          "left": "Integer(2347586841600)",
+          "right": "Integer(2347586841600)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-implicit-inverse-exponential",
+      "instance": 0,
+      "rawHash": "81a077393768917532b7b5d5c55ac264d95fe7365c81573d675c459108f16868",
+      "derivedAnswer": "Mul(Integer(-1), Rational(14, 2197), exp(Integer(-24)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Twice differentiate the local inverse of t exp(t), using its nonzero first derivative.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Second derivative of inverse",
+          "left": "Mul(Integer(-1), Rational(14, 2197), exp(Integer(-24)))",
+          "right": "Mul(Integer(-1), Rational(14, 2197), exp(Integer(-24)))",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-implicit-inverse-exponential",
+      "instance": 1,
+      "rawHash": "8c6fa6b83a3679f5ef8d1958a7816d4a2e9627911420690b49779248eb237ccd",
+      "derivedAnswer": "Mul(Integer(-1), Rational(15, 2744), exp(Integer(-26)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Twice differentiate the local inverse of t exp(t), using its nonzero first derivative.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Second derivative of inverse",
+          "left": "Mul(Integer(-1), Rational(15, 2744), exp(Integer(-26)))",
+          "right": "Mul(Integer(-1), Rational(15, 2744), exp(Integer(-26)))",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-implicit-second",
+      "instance": 0,
+      "rawHash": "b5fbd69f145a84fe7157f556a1b71245002d72957767b592897227a0fccb10ed",
+      "derivedAnswer": "Rational(-942, 15625)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the implicit quadratic twice; substitute the first slope before solving for the second derivative.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-implicit-second",
+      "instance": 1,
+      "rawHash": "8166a50aaddc64ec43a979852ec0dba3808facd1602c6ff4100f541827de84bd",
+      "derivedAnswer": "Rational(-122, 2187)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the implicit quadratic twice; substitute the first slope before solving for the second derivative.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-leibniz-high-order",
+      "instance": 0,
+      "rawHash": "8a1731af03676ac5d95dfcab28bf47ea1b42fac02e624bd6a9898cb8d56a9a08",
+      "derivedAnswer": "Integer(132)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Only the term differentiating x\u00b2 twice survives at zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Leibniz coefficient at zero",
+          "left": "Integer(132)",
+          "right": "Integer(132)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-leibniz-high-order",
+      "instance": 1,
+      "rawHash": "2bce5715eff4c982149b7f76fd4961eb4ea0a91adbabe2e5de77b2ef3fcadf74",
+      "derivedAnswer": "Integer(156)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Only the term differentiating x\u00b2 twice survives at zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Leibniz coefficient at zero",
+          "left": "Integer(156)",
+          "right": "Integer(156)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-log-power-second",
+      "instance": 0,
+      "rawHash": "f436b2dca243ba1d39d6ee0dd5c57b636aecb08cae9f5fa8181ac00cef5fe3ba",
+      "derivedAnswer": "Integer(156)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Write the positive-base power as an exponential and differentiate its logarithm twice.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic second derivative",
+          "left": "Integer(156)",
+          "right": "Integer(156)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-log-power-second",
+      "instance": 1,
+      "rawHash": "94968a75714053f196426b47f10fa990304d655505fdb3186c06f50add68bde7",
+      "derivedAnswer": "Integer(182)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Write the positive-base power as an exponential and differentiate its logarithm twice.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic second derivative",
+          "left": "Integer(182)",
+          "right": "Integer(182)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-log-product",
+      "instance": 0,
+      "rawHash": "4e25fc04d82f5acb14b3543496a8233a17c0cc3059897ca80b640a75aa2c68e2",
+      "derivedAnswer": "Rational(1676701, 207900)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Select two distinct linear factors; the ordered reciprocal-pair sum is H_m\u00b2\u2212H_m^(2).",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Finite product coefficient",
+          "left": "Rational(1676701, 207900)",
+          "right": "Rational(1676701, 207900)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-log-product",
+      "instance": 1,
+      "rawHash": "02739a9704cb7be9cd41491b96d8af6eee5faeeb17ea36b63692154799a3bff8",
+      "derivedAnswer": "Rational(63427, 7425)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Select two distinct linear factors; the ordered reciprocal-pair sum is H_m\u00b2\u2212H_m^(2).",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Finite product coefficient",
+          "left": "Rational(63427, 7425)",
+          "right": "Rational(63427, 7425)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-moving-endpoint-parameter-second",
+      "instance": 0,
+      "rawHash": "c2ecdf518e6c3c560b7eba017271152fef38c91e25922183d2840a688455215f",
+      "derivedAnswer": "Mul(Integer(297), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Integrate the defining exponential explicitly for x>0, then differentiate that expression twice at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-moving-endpoint-parameter-second",
+      "instance": 1,
+      "rawHash": "cc5f3b6c75cda808a699a0bd0cc0128ae0ad358d80089d7d91a75b582772d3dc",
+      "derivedAnswer": "Mul(Integer(348), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Integrate the defining exponential explicitly for x>0, then differentiate that expression twice at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-multiplicity-shortcut",
+      "instance": 0,
+      "rawHash": "950ec1a079fd5abefa73e0c20a27f8a695680281582f04363a906b4412a1afff",
+      "derivedAnswer": "Mul(Integer(479001600), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "All Leibniz terms except the one removing the full zero of order m vanish at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Coefficient about the zero of order m",
+          "left": "Mul(Integer(479001600), E)",
+          "right": "Mul(Integer(479001600), E)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-multiplicity-shortcut",
+      "instance": 1,
+      "rawHash": "0157d0170790cd41c0b71b9689714c48b976fa2f1322f16a7e5aa4d5db036c3a",
+      "derivedAnswer": "Mul(Integer(6227020800), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "All Leibniz terms except the one removing the full zero of order m vanish at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Coefficient about the zero of order m",
+          "left": "Mul(Integer(6227020800), E)",
+          "right": "Mul(Integer(6227020800), E)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-nested-power-third",
+      "instance": 0,
+      "rawHash": "0f8d218cef98fc7d53f838808a349e67b728c6c6d6a28ddc8f2feed101abd79f",
+      "derivedAnswer": "Integer(73)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Extract the cubic coefficient from the product exp(x)exp(mx\u00b2).",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Cubic coefficient of the exponential",
+          "left": "Integer(73)",
+          "right": "Integer(73)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-nested-power-third",
+      "instance": 1,
+      "rawHash": "78b4c8700be448314eb1e60cf00c78e107b9477e960ed6eac7120a00e3213945",
+      "derivedAnswer": "Integer(79)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Extract the cubic coefficient from the product exp(x)exp(mx\u00b2).",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Cubic coefficient of the exponential",
+          "left": "Integer(79)",
+          "right": "Integer(79)",
+          "exact": true
+        }
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-trigonometric-power-coefficient",
+      "instance": 0,
+      "rawHash": "a67a0cf7af278555aba0d4cb4c0527289cf29574760d68dbd5c1352394b060ae",
+      "derivedAnswer": "Integer(-174356582400)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "In(sin x)^m=x^m(1\u2212mx\u00b2/6+O(x\u2074)), select the requested coefficient and multiply by its factorial.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-hard-trigonometric-power-coefficient",
+      "instance": 1,
+      "rawHash": "e921f55c0443b2296f1367cfa03fe00e071dc9504fe89bd15e32cba54ca9a2ae",
+      "derivedAnswer": "Integer(-2833294464000)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "In(sin x)^m=x^m(1\u2212mx\u00b2/6+O(x\u2074)), select the requested coefficient and multiply by its factorial.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-implicit-product",
+      "instance": 0,
+      "rawHash": "355d5c6bb76ca63bbbeab85f88a71b3b797cc47c684c62fc42c2fa416c855946",
+      "derivedAnswer": "Rational(-12, 25)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate xy+y\u00b2 with respect to x and isolate the slope.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-implicit-product",
+      "instance": 1,
+      "rawHash": "c452e73050db90ee7550802ccf25520c18ad5867da17469f1162489f3adaf443",
+      "derivedAnswer": "Rational(-13, 27)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate xy+y\u00b2 with respect to x and isolate the slope.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-inverse-second",
+      "instance": 0,
+      "rawHash": "4803bf1988170d16455fba940b5732ca7547c4f2e2e9b66eacf96427168f1ca5",
+      "derivedAnswer": "Rational(-1, 864)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the local inverse identity twice.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-inverse-second",
+      "instance": 1,
+      "rawHash": "5b4df2c48b493c238702fb9c6edb2d93de393122cbb632c3b1f9d5e1ddf1b2ff",
+      "derivedAnswer": "Rational(-2, 2197)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the local inverse identity twice.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-inverse-tangent-composition",
+      "instance": 0,
+      "rawHash": "7f0b3f336f7354a06ae005a9fcbca2c81eeb41a1bf6f4cf813893bc6cabcb354",
+      "derivedAnswer": "Integer(6)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply the chain rule to the arctangent and evaluate at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Arctangent chain derivative",
+          "left": "Integer(6)",
+          "right": "Integer(6)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-inverse-tangent-composition",
+      "instance": 1,
+      "rawHash": "9975c9b827301e6a06745fe7464dbd91593cb756ca841f5201bf26c93194e714",
+      "derivedAnswer": "Rational(13, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply the chain rule to the arctangent and evaluate at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Arctangent chain derivative",
+          "left": "Rational(13, 2)",
+          "right": "Rational(13, 2)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-logarithmic-power",
+      "instance": 0,
+      "rawHash": "cad42fb7111ddf9ce16e77f570d19d443a817e5b753cf188d9cd6a6a33a8a3af",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate x raised to a variable exponent using its logarithm.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic power derivative",
+          "left": "Integer(12)",
+          "right": "Integer(12)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-logarithmic-power",
+      "instance": 1,
+      "rawHash": "a6eec9517091aab9010124da623b56de47aad4e95643ef1671a705cb97e46ea5",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate x raised to a variable exponent using its logarithm.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic power derivative",
+          "left": "Integer(13)",
+          "right": "Integer(13)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-moving-integral-endpoints",
+      "instance": 0,
+      "rawHash": "9c0771d561f86f6d5e8e34dbe26012f53b4f352c1e7e9157f3acf63d70db8b02",
+      "derivedAnswer": "Integer(11)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply the fundamental theorem at both moving endpoints.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Endpoint differentiation",
+          "left": "Integer(11)",
+          "right": "Integer(11)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-moving-integral-endpoints",
+      "instance": 1,
+      "rawHash": "92ff62f9c6ac7f210c4261d798a418d22f82bf3ec71cc19c91af927c2e95b071",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply the fundamental theorem at both moving endpoints.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Endpoint differentiation",
+          "left": "Integer(12)",
+          "right": "Integer(12)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-nested-exponential",
+      "instance": 0,
+      "rawHash": "8b6d7625a9222675142b5dfa1e605f8f537d75745d359d78fca343b4755e4118",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the two chain-rule factors at zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Nested chain derivative",
+          "left": "Integer(12)",
+          "right": "Integer(12)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-nested-exponential",
+      "instance": 1,
+      "rawHash": "3f24218e14dd6f2ef048f4d7c13c59059ff63cc87550493e7a30ce7860015b7c",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the two chain-rule factors at zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Nested chain derivative",
+          "left": "Integer(13)",
+          "right": "Integer(13)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-normal-line",
+      "instance": 0,
+      "rawHash": "d8c8fe3bd1b80fc18cb974fa30c61569c713afbb61c13e49a34456d815a9ebfe",
+      "derivedAnswer": "Rational(-1, 12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Find the nonzero tangent slope, then take its negative reciprocal.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-normal-line",
+      "instance": 1,
+      "rawHash": "e18f580ea329f5ea0b808fdd72df4b4c72a43147906bf3c32990d0f015a65e17",
+      "derivedAnswer": "Rational(-1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Find the nonzero tangent slope, then take its negative reciprocal.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-optimization-product",
+      "instance": 0,
+      "rawHash": "8116e6024513faed7845b08be087746af579aebaba85650650c0f717884f818e",
+      "derivedAnswer": "Integer(4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate, compare the one interior critical point with the zero endpoint values.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Interior critical point",
+          "left": "Integer(0)",
+          "right": "0",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-optimization-product",
+      "instance": 1,
+      "rawHash": "0cd4d09ad7ce0aa4af2ec30e2e2573422758bc1bb697456ae8fe7be16c1586e7",
+      "derivedAnswer": "Rational(13, 3)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate, compare the one interior critical point with the zero endpoint values.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Interior critical point",
+          "left": "Integer(0)",
+          "right": "0",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-parametric-second",
+      "instance": 0,
+      "rawHash": "45dd8b25623f27ff1e21d0cd5755eba7c84e1d3221d4a9ddff5a1a72c7acef6c",
+      "derivedAnswer": "Integer(42)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide by dx/dt after each differentiation, not just the first.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Second parametric derivative",
+          "left": "Integer(42)",
+          "right": "Integer(42)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-parametric-second",
+      "instance": 1,
+      "rawHash": "79169e80e49008205e0f45278dbc24fe099b5cbe4fc3a0ca834be9903ede473c",
+      "derivedAnswer": "Rational(195, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide by dx/dt after each differentiation, not just the first.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Second parametric derivative",
+          "left": "Rational(195, 4)",
+          "right": "Rational(195, 4)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-piecewise-second-match",
+      "instance": 0,
+      "rawHash": "fb8a04ae32e41b76755d7ad317625693476d65d7e0d9db090b17cc6cb9bcc8a6",
+      "derivedAnswer": "Integer(72)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Value and first derivative already match; match the left second derivative m\u00b2 with2a.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-piecewise-second-match",
+      "instance": 1,
+      "rawHash": "c488fa1a3f5e3e06acd4fc6bd7c0c6a04726922f402b29c4ca0d550b71eb04c7",
+      "derivedAnswer": "Rational(169, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Value and first derivative already match; match the left second derivative m\u00b2 with2a.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-product-exp",
+      "instance": 0,
+      "rawHash": "eb6729ba91077901a359d0952bafbf84bd370bc29280f537a381ddd0b8815247",
+      "derivedAnswer": "Mul(Integer(13), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use both product-rule terms at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Product derivative",
+          "left": "Mul(Integer(13), E)",
+          "right": "Mul(Integer(13), E)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-product-exp",
+      "instance": 1,
+      "rawHash": "e7e10847f097039b4439b4d96672eecf276381f799c9eb1b77d08107df9946f7",
+      "derivedAnswer": "Mul(Integer(14), E)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use both product-rule terms at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Product derivative",
+          "left": "Mul(Integer(14), E)",
+          "right": "Mul(Integer(14), E)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-quotient-log",
+      "instance": 0,
+      "rawHash": "23da378f5a86eabc89e13a0d4a3642fb10f1c529579cdf440f529ead3334c750",
+      "derivedAnswer": "Rational(1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the quotient; the undifferentiated logarithm vanishes at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic quotient derivative",
+          "left": "Rational(1, 13)",
+          "right": "Rational(1, 13)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-differentiation-medium-quotient-log",
+      "instance": 1,
+      "rawHash": "e2e8dc8ad8d5fe0b7b21d69fc781fd93ea922030e3b02338a543f177128b3e6f",
+      "derivedAnswer": "Rational(1, 14)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Differentiate the quotient; the undifferentiated logarithm vanishes at1.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "Logarithmic quotient derivative",
+          "left": "Rational(1, 14)",
+          "right": "Rational(1, 14)",
+          "exact": true
+        }
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-exponential-standard",
+      "instance": 0,
+      "rawHash": "e23056d5a5da61cb93b3c027fdfda976ee57091a7b8a981f8799152c4eff6a8f",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-exponential-standard",
+      "instance": 1,
+      "rawHash": "d96c2e857eb26fab9e1fa27e263ca0a35c8a6bb27d04483e389d1110dc3e729b",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-floor-at-infinity",
+      "instance": 0,
+      "rawHash": "0d5a19a930f5d8bae15cb996ebd419576a5b4bf0e977579076b453e6f35101c7",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Squeeze the floor between mx\u22121 and mx, then divide by positive x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-floor-at-infinity",
+      "instance": 1,
+      "rawHash": "584fa846170138ee67b249dc70459a3f0ffbc8f78a99fdea34e45a5d71f5e7f5",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Squeeze the floor between mx\u22121 and mx, then divide by positive x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-geometric-sequence",
+      "instance": 0,
+      "rawHash": "47baddda6f774f3f11ffdabdde7430ba29a9b4b1b7e15eafdad281370138cbd2",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The displayed ratio has magnitude strictly below1, so its integer powers vanish.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-geometric-sequence",
+      "instance": 1,
+      "rawHash": "b66f3051ad48db0d0fcba3dd9eb6258fe1c18f9e664118299951b490d76f62a4",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The displayed ratio has magnitude strictly below1, so its integer powers vanish.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-logarithm-standard",
+      "instance": 0,
+      "rawHash": "3de59e8506998e088eb07289d8f0fe1b8c0e0e2a1a1fbfbf34b3de72ddf1c3b2",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply ln(1+u)/u\u21921 with the displayed linear substitution.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-logarithm-standard",
+      "instance": 1,
+      "rawHash": "86ef1d814b509cebdada587de2a9c116238fbc715f89ffc5eb89cfd8d2c36010",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Apply ln(1+u)/u\u21921 with the displayed linear substitution.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-one-sided-absolute",
+      "instance": 0,
+      "rawHash": "e90929eab71972131236cb89da16ebc2c2a9c792b82b88f071e13ab7d88e7b97",
+      "derivedAnswer": "Integer(-11)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "On the explicitly positive side, |x|=x exactly.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-one-sided-absolute",
+      "instance": 1,
+      "rawHash": "c18fa530f13b196c0b1c270cac263cca75f3d8a050a671db049f43a40715ba08",
+      "derivedAnswer": "Integer(-12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "On the explicitly positive side, |x|=x exactly.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-oscillatory-squeeze",
+      "instance": 0,
+      "rawHash": "89af4320221870ccf2cfc11ef585c47cfce5ce5d4180a77d9287af73e0d1c6dd",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Bound the oscillatory term by its positive vanishing power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-oscillatory-squeeze",
+      "instance": 1,
+      "rawHash": "2ae3391c222898ef5d2b804a63e470b3b489157dbf30496c3c2ca66b219e35ce",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Bound the oscillatory term by its positive vanishing power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-piecewise-continuity",
+      "instance": 0,
+      "rawHash": "d36e63199dda2002ba07ab591e749b4b07529c863014f45a2093480db30cbf52",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Match the left value m+1 to the right value a+1.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-piecewise-continuity",
+      "instance": 1,
+      "rawHash": "f71851ca7819ddc69e87d5cab9ca4e38868279e40cc9322f38fd690d24871181",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Match the left value m+1 to the right value a+1.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-radical-rationalization",
+      "instance": 0,
+      "rawHash": "5c306732a049315786f46bdc887738d702cfcee2353c13f973861081801d1959",
+      "derivedAnswer": "Rational(1, 24)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Multiply by the conjugate and evaluate the resulting positive denominator.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-radical-rationalization",
+      "instance": 1,
+      "rawHash": "4b72681034eac2e6991935ff906da8f18310d0b87c52bbda7c0a25ed98602ccd",
+      "derivedAnswer": "Rational(1, 26)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Multiply by the conjugate and evaluate the resulting positive denominator.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-rational-infinity",
+      "instance": 0,
+      "rawHash": "4c797e517ad3d85560e78628be0c26410a9524d6fca00c65a43aaebb2fe12152",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide by the highest common power of x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-rational-infinity",
+      "instance": 1,
+      "rawHash": "a225a6fd356236a1709a6e20f6e88f4ac1515e610e91a9a11d471fd5625b78be",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide by the highest common power of x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-removable-power",
+      "instance": 0,
+      "rawHash": "e1351ab33d05ea05ab311da4daabd5b7aeed20acfedc8dc36f524c2a159dddf4",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor the power difference into a finite geometric sum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-removable-power",
+      "instance": 1,
+      "rawHash": "7c3c8bf1f4e741384b3296879c07354048f576a7ccc6a19d78edc1a793da687a",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor the power difference into a finite geometric sum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-trigonometric-ratio",
+      "instance": 0,
+      "rawHash": "b601e19d6ee4b8748e40384654842e769c11b4a86023b1bda968c956dfa5f509",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the standard sine ratio at zero twice.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-easy-trigonometric-ratio",
+      "instance": 1,
+      "rawHash": "e1d369450edee37ac60e0fe9959c5011cfc3412912b1b3574551f281c5fcf905",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the standard sine ratio at zero twice.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Gamma-finite-shift-correction",
+      "instance": 0,
+      "rawHash": "12749074f48c6b432a1ef412559ef152b0ca06bf53e595eef3882c06e40cd0ca",
+      "derivedAnswer": "Integer(-66)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide each finite factor by x; the first reciprocal-product coefficient is minus the sum of its shifts.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Gamma-finite-shift-correction",
+      "instance": 1,
+      "rawHash": "4045598a4d1d466fd509043c0e943beb28eb802cbd3fc5e9238df75eeeb8703a",
+      "derivedAnswer": "Integer(-78)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide each finite factor by x; the first reciprocal-product coefficient is minus the sum of its shifts.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Lp-maximum-limit",
+      "instance": 0,
+      "rawHash": "309fcc56ff41cf9d419804506f8aac9150e5d93e2ab834f0c611f10fc048823a",
+      "derivedAnswer": "Rational(10000000000, 285311670611)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The positive continuous function has maximum at m/(m+1); upper and neighborhood lower bounds prove convergence of its Lp norm to that maximum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Lp-maximum-limit",
+      "instance": 1,
+      "rawHash": "d1c6f30070f429bb739f0c7a07dd6984e52b3b9dd688484604acb3889f719354",
+      "derivedAnswer": "Rational(285311670611, 8916100448256)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The positive continuous function has maximum at m/(m+1); upper and neighborhood lower bounds prove convergence of its Lp norm to that maximum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Riemann-sum",
+      "instance": 0,
+      "rawHash": "d04c163a82f5dd28bd57b19920ff4ad6e99f2d1ca37bcf917337062407559a85",
+      "derivedAnswer": "Mul(Rational(1, 12), log(Integer(13)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Recognize a Riemann sum for1/(1+mx) on[0,1].",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Riemann-sum",
+      "instance": 1,
+      "rawHash": "036f163a8b95c0a7dbcf9d73c1075addd36d33a52e47a7cda924d95c4c91ae59",
+      "derivedAnswer": "Mul(Rational(1, 13), log(Integer(14)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Recognize a Riemann sum for1/(1+mx) on[0,1].",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Stolz-power-sum",
+      "instance": 0,
+      "rawHash": "c23841dd8f560c5f80343cd1e7054be5d24307b01595c9703f286ad63b256835",
+      "derivedAnswer": "Rational(1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Normalize as the Riemann sum of x^m, or apply Stolz to successive differences.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-Stolz-power-sum",
+      "instance": 1,
+      "rawHash": "5aa06fdb3ef40fe3588df2e7a75ab2b421cdedf810c9592a187b0ace43120d4a",
+      "derivedAnswer": "Rational(1, 14)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Normalize as the Riemann sum of x^m, or apply Stolz to successive differences.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-boundary-moment",
+      "instance": 0,
+      "rawHash": "bb8184de7c96823e40626ecbbeadd8408d1a64c59566e7b2d07c80af93a99f56",
+      "derivedAnswer": "Integer(4096)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Expand the fixed binomial polynomial; each term n/(n+j+1) tends to1 in this finite sum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-boundary-moment",
+      "instance": 1,
+      "rawHash": "68d4edc33f42b47b89afe71060a720568abbee259a7a7ad8e11bde2d580e2439",
+      "derivedAnswer": "Integer(8192)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Expand the fixed binomial polynomial; each term n/(n+j+1) tends to1 in this finite sum.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-exponential-second-scale",
+      "instance": 0,
+      "rawHash": "df6a3f74922989dd37be4296d9e24495f9ca75d26daf815bdd491caed4659533",
+      "derivedAnswer": "Integer(-72)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Expand the logarithm through the quadratic term, then exponentiate the remaining first-order correction.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-exponential-second-scale",
+      "instance": 1,
+      "rawHash": "378563668f9aab2d73e6da0f151e0c4582fa31067bbd0feee7863bd97232836f",
+      "derivedAnswer": "Rational(-169, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Expand the logarithm through the quadratic term, then exponentiate the remaining first-order correction.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-phase-average-limsup",
+      "instance": 0,
+      "rawHash": "bbc2224ecd7abe7d447eca394d26ce38320f53742b835a0bb5ef82dcc73e5b9b",
+      "derivedAnswer": "Mul(Rational(1, 101), Pow(Integer(101), Rational(1, 2)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Compare the sum with the integral of t^(im), whose normalized leading term is n^(im)/(1+im). The error is O(log n/n), and integer n approach every desired log phase.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-phase-average-limsup",
+      "instance": 1,
+      "rawHash": "82274e157beea7e407b0e965dac0eecc62bfdd9255446cafb3f88f2fc07f3423",
+      "derivedAnswer": "Mul(Rational(1, 122), Pow(Integer(122), Rational(1, 2)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Compare the sum with the integral of t^(im), whose normalized leading term is n^(im)/(1+im). The error is O(log n/n), and integer n approach every desired log phase.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-sum-integral",
+      "instance": 0,
+      "rawHash": "ef93c55b4c94c7df5cc5d59e4922ecf623a4379a76b94017fcc8735e19938c68",
+      "derivedAnswer": "Mul(Integer(13), Pow(Integer(13), Rational(1, 12)), exp(Integer(-1)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms and evaluate the Riemann integral of ln(1+mx), then exponentiate.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-log-sum-integral",
+      "instance": 1,
+      "rawHash": "f3d2467ae094958898c385a27bd12e5d5c4c163380d989fa3b887cb2499304f9",
+      "derivedAnswer": "Mul(Integer(14), Pow(Integer(14), Rational(1, 13)), exp(Integer(-1)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms and evaluate the Riemann integral of ln(1+mx), then exponentiate.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-oscillatory-regularity-threshold",
+      "instance": 0,
+      "rawHash": "06fc346b69dc37491b140dc8edbc3234007bda76ac91df4b6f7f32e37d1624fa",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The differentiated oscillatory term has magnitude x^(alpha\u2212m\u22121); its exponent must be strictly positive, with phase subsequences ruling out equality and smaller exponents.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-oscillatory-regularity-threshold",
+      "instance": 1,
+      "rawHash": "44d52728f56ce4a9803137808fb8f3f2b06823e5e3fd3b751b75a687d9695b47",
+      "derivedAnswer": "Integer(14)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The differentiated oscillatory term has magnitude x^(alpha\u2212m\u22121); its exponent must be strictly positive, with phase subsequences ruling out equality and smaller exponents.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "instance": 0,
+      "rawHash": "61bba94165220d204ea67aa0a519eafedbaf27100ca724544e6c755a84cd6617",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Inductively bound the monotone sequence by the positive fixed point, then pass to its continuous recurrence.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "instance": 1,
+      "rawHash": "9ac5202dda8afa432e35bedb2961fc92d895d18a6b54a2c3ff06b4de27a4c156",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Inductively bound the monotone sequence by the positive fixed point, then pass to its continuous recurrence.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-supremum-pointwise-mismatch",
+      "instance": 0,
+      "rawHash": "10eb6cc31527f043a4cd063fe80e4f3ebdb947dc85f694124ff4233fabdce77a",
+      "derivedAnswer": "Mul(Rational(11, 72), Pow(Integer(30233088), Rational(1, 11)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The substitution y=x^n is onto[0,1] for every n; maximize y\u2212y^m exactly.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-supremum-pointwise-mismatch",
+      "instance": 1,
+      "rawHash": "f8697684ca26bd3b0fa5496ee3556d39b8c012a21058872df0f38b22fa478a5b",
+      "derivedAnswer": "Mul(Rational(12, 169), Pow(Integer(13), Rational(11, 12)))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The substitution y=x^n is onto[0,1] for every n; maximize y\u2212y^m exactly.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-trig-power-limit",
+      "instance": 0,
+      "rawHash": "9b048ed6de999e2616baef16a3fdde54be52029a2d99fdf4d10979a2918ceda3",
+      "derivedAnswer": "exp(Rational(-143, 6))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the cubic sine expansion, then the logarithm of the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-trig-power-limit",
+      "instance": 1,
+      "rawHash": "297a2628862c4c9e4f8f4cca1907e1f315bc0f8802a173f47619341415011cd4",
+      "derivedAnswer": "exp(Integer(-28))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the cubic sine expansion, then the logarithm of the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "hard"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-exponential-cancellation",
+      "instance": 0,
+      "rawHash": "7a0e4e51d526d7e024bbe7df203ae4f3b77ba5cbc628e68d34ea4fc74b777ca6",
+      "derivedAnswer": "Integer(72)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-exponential-cancellation",
+      "instance": 1,
+      "rawHash": "f5799025d2450b21b06b6dc67705a8796a329776bbdf2395e76505f21b6a557c",
+      "derivedAnswer": "Rational(169, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-exponential-variable-power",
+      "instance": 0,
+      "rawHash": "e4f4c0842b86d7080b7364ce5de8610894afe0106ab3e8d3bde05405885c7a3c",
+      "derivedAnswer": "exp(Integer(12))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-exponential-variable-power",
+      "instance": 1,
+      "rawHash": "5935b86655d50d6050919c1d79c3c787fb77d34e0ce293f6697e191a4ae75913",
+      "derivedAnswer": "exp(Integer(13))",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the exponential Taylor expansion, or the logarithm for the variable power.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-floor-integer-approach",
+      "instance": 0,
+      "rawHash": "a3d188f177dff693c927a1965690ce6cb3fd0f834d9feb0ab90bf78a57d1651d",
+      "derivedAnswer": "Integer(9)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use sin(x)<x for positive small x: the displayed quotient approaches the integer from below or above exactly as its numerator and denominator specify.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-floor-integer-approach",
+      "instance": 1,
+      "rawHash": "c17eb9345606859b8a3b6b2a3a72366bbb90668e6311befb8cb51d74470e1f1d",
+      "derivedAnswer": "Integer(11)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use sin(x)<x for positive small x: the displayed quotient approaches the integer from below or above exactly as its numerator and denominator specify.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-implicit-inverse-increment",
+      "instance": 0,
+      "rawHash": "76656ca881a254ab9e9bdca68284a7546bca862a7f33be9c1b3d15180d0992d4",
+      "derivedAnswer": "Rational(1, 13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The real cubic is strictly increasing with nonzero derivative at1; apply the inverse derivative rule.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-implicit-inverse-increment",
+      "instance": 1,
+      "rawHash": "ae3e51868b0284008bb3f3f04d8f41ad3584e59eaa57cfc93a7d3fb12f16e6f7",
+      "derivedAnswer": "Rational(1, 14)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "The real cubic is strictly increasing with nonzero derivative at1; apply the inverse derivative rule.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-infinity-root-difference",
+      "instance": 0,
+      "rawHash": "a93d185c1780de2ef463ff8cf08d80b44e8f50bbee3fa18ced377b7ea39214e3",
+      "derivedAnswer": "Integer(6)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Rationalize and divide the denominator by positive x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-infinity-root-difference",
+      "instance": 1,
+      "rawHash": "f54e91da269edad8b06d7704d2c598f6de4e31b662b3b1d25e2bb22a61adfe6d",
+      "derivedAnswer": "Rational(13, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Rationalize and divide the denominator by positive x.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-log-power-decay",
+      "instance": 0,
+      "rawHash": "9d9ae787c83dbf769456c88fda330c9486105011f1c2fbbdb98c5f4d58af50f6",
+      "derivedAnswer": "Integer(0)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Set t=ln x. Dividing a fixed power by exp(t) gives zero; multiplying by exp(t) gives positive infinity, as displayed.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-log-power-decay",
+      "instance": 1,
+      "rawHash": "ef5aa4b538b3c2e2f8914094d930c22df6136f107541984f3a958ed2bdc573ae",
+      "derivedAnswer": "oo",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Set t=ln x. Dividing a fixed power by exp(t) gives zero; multiplying by exp(t) gives positive infinity, as displayed.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-nested-log-ratio",
+      "instance": 0,
+      "rawHash": "12d4da1e42e5b743f69ecdff8e02798152c3b3191dc3f1a3e659152d6bd74b77",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Multiply the standard log and sine ratios with their exact inner scaling.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-nested-log-ratio",
+      "instance": 1,
+      "rawHash": "a3459a1da54ca112e02e0cb220c63cfffdfb7fa1626cdbc1f9afc1844bb5623c",
+      "derivedAnswer": "Integer(13)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Multiply the standard log and sine ratios with their exact inner scaling.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-second-order-trig",
+      "instance": 0,
+      "rawHash": "fafe1928b3781e6a2bb38251e39403b53d0c7b3cf420b762c1fa2c09017259dc",
+      "derivedAnswer": "Integer(72)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the quadratic cosine expansion, or the half-angle sine identity.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-second-order-trig",
+      "instance": 1,
+      "rawHash": "5394546c7f31021d05e2de181eb4156643ae7a73a829cc288dc82475fb9e6827",
+      "derivedAnswer": "Rational(169, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Use the quadratic cosine expansion, or the half-angle sine identity.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-small-power-log",
+      "instance": 0,
+      "rawHash": "a75e25049141d60e4d322b7f54f119429a5765df1b40cb0ff695c0b50217d3be",
+      "derivedAnswer": "Integer(0)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Set t=\u2212ln x. The displayed product gives\u2212t exp(\u2212t/m)\u21920; the displayed quotient gives\u2212t exp(t/m)\u2192\u2212infinity.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-m3-limits-medium-small-power-log",
+      "instance": 1,
+      "rawHash": "7d67cfc549b991f063e4b37799264b5aab21988ce58a5666cce1fc62daa771b4",
+      "derivedAnswer": "-oo",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Set t=\u2212ln x. The displayed product gives\u2212t exp(\u2212t/m)\u21920; the displayed quotient gives\u2212t exp(t/m)\u2192\u2212infinity.",
+      "conditions": "The limit uses exactly the displayed one-sided or integer-sequence domain. Any logarithm or real power is defined on the stated positive neighborhood.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 0,
+      "rawHash": "9a18c5fbec9cec5c05817731123bcf59400f4891c06184edbbb579bd7152f523",
+      "derivedAnswer": "Integer(12)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(12)",
+          "right": "12",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 1,
+      "rawHash": "6f4fdf37b39a8a4e670dcb0b12e00330a8b87d18b5079b6064bf83cb011529fa",
+      "derivedAnswer": "Integer(20)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(20)",
+          "right": "20",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 2,
+      "rawHash": "9956cc20de24e1f3b36f9f99c0aa5b26812559645865aebd208aa12d46aaeab1",
+      "derivedAnswer": "Integer(36)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(36)",
+          "right": "36",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 3,
+      "rawHash": "6f0585a90dc09e597ee81aa32b1e55dbe415f863db8f2b2f1cc5e5aadc03c6fb",
+      "derivedAnswer": "Integer(24)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(24)",
+          "right": "24",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 4,
+      "rawHash": "ba958b37659be0cf8eaa5f782534fc8aaaebfb203f8c7068ea94235bcb969df3",
+      "derivedAnswer": "Integer(60)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(60)",
+          "right": "60",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 5,
+      "rawHash": "1ed4165462b676a0e7fdb6c17d39fcc5d24526a14cedec61a6c3e98bb4daa3d8",
+      "derivedAnswer": "Integer(168)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(168)",
+          "right": "168",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 6,
+      "rawHash": "d872ddf0ea83c6708e5e46eca99e1eec60f201a39a5ce7d3c5a067f62790d333",
+      "derivedAnswer": "Integer(40)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(40)",
+          "right": "40",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 7,
+      "rawHash": "e69bc260b07adb5c3b04f55150b9550366e848cc9e2dabb2958045a202e797ab",
+      "derivedAnswer": "Integer(136)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(136)",
+          "right": "136",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 8,
+      "rawHash": "f9a576a058a2ade4dfd97d197f36d9e3d1919230d1d7e925d069a59dc44f4365",
+      "derivedAnswer": "Integer(520)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(520)",
+          "right": "520",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-differentiation-easy-accumulation-derivative",
+      "instance": 9,
+      "rawHash": "e6648443f7ffcd975f165b27b2d466771a8542ef734bfd5f6bba54508fb37cf6",
+      "derivedAnswer": "Integer(60)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "FTC plus chain derivative of the moving quadratic endpoint.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [
+        {
+          "description": "FTC derivative at the concrete upper endpoint",
+          "left": "Integer(60)",
+          "right": "60",
+          "exact": true
+        }
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 0,
+      "rawHash": "ecb02e777471e993dbf2b2d078a655175174ac132b7f92c8858d072f5b3b20ac",
+      "derivedAnswer": "Rational(4, 9)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 1,
+      "rawHash": "0598f3f86b21d0d0f2461f7ea1ee7ead89a6f8725a3df3ef60b2fbd706c8d1f0",
+      "derivedAnswer": "Rational(9, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 2,
+      "rawHash": "b03bdfe7f6ad93b563d3e9d656abf82b060978c66e81b6d6c9458f59c973faa4",
+      "derivedAnswer": "Rational(4, 25)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 3,
+      "rawHash": "8c9d7b20d7b809fcdc609e2a706be09712b837b7e36a4ad1c6fd61029163807e",
+      "derivedAnswer": "Rational(25, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 4,
+      "rawHash": "45e19086980ca5114a55f694f7a80a0213872fb651ba205fd05645109097c431",
+      "derivedAnswer": "Rational(27, 64)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 5,
+      "rawHash": "747549f538175fe77eb33991e80ecc8ce8f435fc388eefacc92128cf475e4906",
+      "derivedAnswer": "Rational(64, 27)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 6,
+      "rawHash": "cee3c42c2bf532682898b0c20d4e7171ab88246a0b22333a3c8f3986f1a24e22",
+      "derivedAnswer": "Rational(8, 27)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 7,
+      "rawHash": "4b4458a40f32df500b5f06d8f4ff19a3c5f39b4bec1c1a252dc6688eb9b798c9",
+      "derivedAnswer": "Rational(27, 8)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 8,
+      "rawHash": "b7250b5968e74d2e8a539e67b39163e5d20b6a103b38672635d1a364483eb1bf",
+      "derivedAnswer": "Rational(16, 25)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "instance": 9,
+      "rawHash": "618aad00e455b44dd71cb6d84ead2e687faf735a5d6d385ec99753a375ae0bf5",
+      "derivedAnswer": "Rational(25, 16)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Divide numerator and denominator by n and then use continuity of a fixed integer power.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "easy"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 0,
+      "rawHash": "e616c4debdea6e947e869e3ad7f07057ceb22495a467f5769e9ac17fe740eb6c",
+      "derivedAnswer": "Rational(1, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 1,
+      "rawHash": "2f3a988ee9c7057ebf5868418aababa459d5ba280966841be05db81056535cbe",
+      "derivedAnswer": "Rational(1, 8)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 2,
+      "rawHash": "82f833254d2ea465d148d4edc8f22bb21f6a092dd08933a4cd97aa767a634ead",
+      "derivedAnswer": "Rational(1, 16)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 3,
+      "rawHash": "6dac20594e9a6e22f8fe25acaa39fa5b84017418c7605a0a4c204548f0e12ae9",
+      "derivedAnswer": "Rational(1, 32)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 4,
+      "rawHash": "9352dc393673f8baf86482258bc043cccb4ad802e0a0087e3613921dc2a65f87",
+      "derivedAnswer": "Rational(1, 9)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 5,
+      "rawHash": "1427972be25397905092c2646f78e31e1625344f4b8edfa7b17ffc523954ddfb",
+      "derivedAnswer": "Rational(1, 27)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 6,
+      "rawHash": "2efac6de2f74fed97e2bc896b222c84553d366e484a39b89672730a63a8e04f7",
+      "derivedAnswer": "Rational(1, 81)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 7,
+      "rawHash": "45f9112c5513853010a29f5fbc3ebc957a9f1e7cbdac36f8d97ca5c132851a2e",
+      "derivedAnswer": "Rational(1, 16)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 8,
+      "rawHash": "8fa821dbd0f5a256e7a2914af0949f1fde710e7e02d4905f19e509bfcd8a0dad",
+      "derivedAnswer": "Rational(1, 64)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift",
+      "instance": 9,
+      "rawHash": "e626e444bd267110d9da45a8e33b1f40d794b58497873f6137995d664f0b7d43",
+      "derivedAnswer": "Rational(1, 25)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Cancel the factorials into k factors; divide each factor by cn and take the finite product.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 0,
+      "rawHash": "3990b676281fe47606cfc54a0984d177bcccd10105a261f9759dcf78742c2f49",
+      "derivedAnswer": "Integer(2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 1,
+      "rawHash": "d546e715f4501e6950a6c7c85e44840032fe99ffe741241eecbc8583beead41d",
+      "derivedAnswer": "Integer(3)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 2,
+      "rawHash": "9acf20be3d62351a3d9c80f462e7028ed92699abcafb83335cfe79447cac856c",
+      "derivedAnswer": "Integer(4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 3,
+      "rawHash": "25f1a5ce69ea933669e29dff0547b0e6796403e0737a38130bedde27d22a38b2",
+      "derivedAnswer": "Integer(5)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 4,
+      "rawHash": "ce78f5c26cf9dce54843e85f6918b2ab1940aca3835d026ea6e064468b4b9a44",
+      "derivedAnswer": "Integer(6)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 5,
+      "rawHash": "b89f6cc8b4a722ce0e2fd0731c8ef6b81ccc541a21d32bcdef8cb0f2a9cf41c6",
+      "derivedAnswer": "Integer(7)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 6,
+      "rawHash": "03982c4b62a00b3fb2fb918dda27af05471a350a691f472c5cc69f054636f36f",
+      "derivedAnswer": "Integer(8)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 7,
+      "rawHash": "67cd5695d5f396233101e36eabd02b41bc3ee3efd170aeba06aca261744f86a1",
+      "derivedAnswer": "Integer(9)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 8,
+      "rawHash": "f660703c8cb64196b5402664950efdc19face7d2e25608bee9ded5b4877ab726",
+      "derivedAnswer": "Integer(10)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-root-test-scale",
+      "instance": 9,
+      "rawHash": "ca94ef806c453318090770951f0792a0926303eaa8a7be84439170dbbf37401a",
+      "derivedAnswer": "Integer(11)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Take logarithms; the fixed power contributes p ln(n)/n, which tends to zero.",
+      "conditions": "All differentiations and finite arithmetic take place at the explicitly stated real point; the displayed denominators are nonzero.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 0,
+      "rawHash": "85d4294780ec96d6848f7b80c2ab7bf2e28fa53bd20650e4f5215580906bae61",
+      "derivedAnswer": "Rational(2, 3)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 1,
+      "rawHash": "d5992cf4baa4865ce3fa9236710c433c9d3476d6264d3f8d7f2071b826341029",
+      "derivedAnswer": "Rational(-3, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 2,
+      "rawHash": "dc61f449769cd0c6def9047ee43b0f9c7c8c91ae276f1a09bc56cf8e2740529f",
+      "derivedAnswer": "Rational(-2, 5)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 3,
+      "rawHash": "2785e98176475fe9df588b6a2d1c77eb8bd6b1cd8e9b137917cb07aae3f59eb9",
+      "derivedAnswer": "Rational(5, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 4,
+      "rawHash": "880bcebd34f3cbcdfac8438343a1a73af90f66dd0c664bcaec2a3d1899da462b",
+      "derivedAnswer": "Rational(3, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 5,
+      "rawHash": "6e7f829c7bfa185880a7abd6987fb38fb8a03ffd24f4e1ef262b44ea848c0eb7",
+      "derivedAnswer": "Rational(-4, 3)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 6,
+      "rawHash": "c9a08f665ff4adcbe047460114c2e4a44093d270e9a13ef8553ba16ce6070382",
+      "derivedAnswer": "Rational(-2, 3)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 7,
+      "rawHash": "be6914ec2b8834bf28a027ffe85b7b187ef5bfa6efcb75849bc251d42ba8e909",
+      "derivedAnswer": "Rational(3, 2)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 8,
+      "rawHash": "b9dfd52e79e2bad357fcc0092f31303c8bd18c0af5585d7ef1de46c0d8a853d8",
+      "derivedAnswer": "Rational(-4, 5)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    },
+    {
+      "familyId": "q2-repair-m3-limits-medium-two-sided-square-root",
+      "instance": 9,
+      "rawHash": "20ac8e110362d429650191d9bdcc66c0d677762e58efebc26b46ceeb88ed4218",
+      "derivedAnswer": "Rational(5, 4)",
+      "literalAnswerMatched": true,
+      "allSixLiteralPairsDistinct": true,
+      "route": "Factor x\u00b2 under the square root, retain |x|, and use the stated one-sided sign.",
+      "conditions": "The radicand is nonnegative near zero because both displayed coefficients are positive. The one-sided direction fixes |x|/x.",
+      "independentChecks": [],
+      "difficulty": "medium"
+    }
+  ],
+  "failures": [],
+  "counts": {
+    "attempted": 184,
+    "passed": 184,
+    "failed": 0
+  },
+  "scope": "Separate literal-statement answer routes and all literal choice pairs; no author constructors or answerExpression used. Proposed levels were visible, so this is statement/options-first rather than fully level-blind. Domain/proof arguments are explicit and separate from exact symbolic checks."
+}

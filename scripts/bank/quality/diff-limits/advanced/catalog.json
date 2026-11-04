@@ -1,0 +1,4949 @@
+[
+  {
+    "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "derivative-functional-Hilbert-space-norm",
+    "primaryTechnique": "Riesz-representer-and-Cauchy-Schwarz",
+    "centralDecision": "A sharp derivative bound under an integral-square constraint requires the correct representer in the constrained polynomial space and an equality case.",
+    "nearestNeighborDistinction": "Chebyshev alternation concerns a uniform norm; this is a different inner-product geometry with explicit side constraints.",
+    "finiteDomain": [
+      {
+        "N": 3,
+        "caseId": "degree-3-order-1-point-0-none",
+        "order": 1,
+        "point": "0",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "none"
+      },
+      {
+        "N": 4,
+        "caseId": "degree-4-order-1-point-1/2-none",
+        "order": 1,
+        "point": "1/2",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "none"
+      },
+      {
+        "N": 4,
+        "caseId": "degree-4-order-2-point-0-none",
+        "order": 2,
+        "point": "0",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "none"
+      },
+      {
+        "N": 5,
+        "caseId": "degree-5-order-1-point-1-none",
+        "order": 1,
+        "point": "1",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "none"
+      },
+      {
+        "N": 5,
+        "caseId": "degree-5-order-2-point--1/2-none",
+        "order": 2,
+        "point": "-1/2",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "none"
+      },
+      {
+        "N": 6,
+        "caseId": "degree-6-order-1-point-1/2-zero-mean",
+        "order": 1,
+        "point": "1/2",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "zero-mean"
+      },
+      {
+        "N": 6,
+        "caseId": "degree-6-order-2-point-0-zero-at-zero",
+        "order": 2,
+        "point": "0",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "zero-at-zero"
+      },
+      {
+        "N": 7,
+        "caseId": "degree-7-order-1-point-1/3-zero-at-zero",
+        "order": 1,
+        "point": "1/3",
+        "purpose": "Change derivative order, evaluation location, or the allowed polynomial subspace.",
+        "side": "zero-at-zero"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "polynomial differentiation",
+      "inner products",
+      "Cauchy-Schwarz",
+      "equality conditions"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-eigenvalue-curvature",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "simple-eigenvalue-perturbation",
+    "primaryTechnique": "normalized-eigenvector-differentiation",
+    "centralDecision": "The moving eigenvalue branch requires a normalization of its eigenvector; every off-diagonal coupling contributes with its signed spectral gap.",
+    "nearestNeighborDistinction": "A derivative of the whole determinant does not select or normalize a particular moving eigenvalue.",
+    "finiteDomain": [
+      {
+        "caseId": "matrix-0",
+        "diag": [
+          -3,
+          1,
+          4
+        ],
+        "diagB": [
+          1,
+          0,
+          -1
+        ],
+        "j": 0,
+        "off": [
+          1,
+          2,
+          3
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-1",
+        "diag": [
+          -3,
+          1,
+          4
+        ],
+        "diagB": [
+          0,
+          2,
+          1
+        ],
+        "j": 1,
+        "off": [
+          1,
+          2,
+          3
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-2",
+        "diag": [
+          -4,
+          -1,
+          2
+        ],
+        "diagB": [
+          1,
+          -1,
+          2
+        ],
+        "j": 2,
+        "off": [
+          2,
+          1,
+          3
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-3",
+        "diag": [
+          -2,
+          1,
+          5
+        ],
+        "diagB": [
+          -1,
+          1,
+          0
+        ],
+        "j": 1,
+        "off": [
+          3,
+          -1,
+          2
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-4",
+        "diag": [
+          -5,
+          0,
+          3
+        ],
+        "diagB": [
+          2,
+          1,
+          -1
+        ],
+        "j": 0,
+        "off": [
+          1,
+          -2,
+          1
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-5",
+        "diag": [
+          -4,
+          2,
+          7
+        ],
+        "diagB": [
+          0,
+          -1,
+          1
+        ],
+        "j": 2,
+        "off": [
+          2,
+          3,
+          -1
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-6",
+        "diag": [
+          -3,
+          2,
+          6
+        ],
+        "diagB": [
+          1,
+          2,
+          0
+        ],
+        "j": 1,
+        "off": [
+          3,
+          1,
+          -2
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      },
+      {
+        "caseId": "matrix-7",
+        "diag": [
+          -6,
+          -1,
+          4
+        ],
+        "diagB": [
+          -2,
+          0,
+          1
+        ],
+        "j": 2,
+        "off": [
+          2,
+          -3,
+          1
+        ],
+        "purpose": "Vary the chosen spectral branch, gap signs, and coupling geometry."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "implicit-function theorem",
+      "matrix eigenvalues",
+      "second derivatives"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-implicit-root-trace",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "moving-root-symmetric-trace",
+    "primaryTechnique": "quotient-algebra-trace-and-implicit-differentiation",
+    "centralDecision": "Implicit root derivatives are individually algebraic, but a symmetric sum can be found exactly through a polynomial remainder trace.",
+    "nearestNeighborDistinction": "The Lagrange family follows one analytic root; this construction exploits cancellation across every complex root.",
+    "finiteDomain": [
+      {
+        "N": 5,
+        "caseId": "degree-5-perturbation-0",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 0
+      },
+      {
+        "N": 5,
+        "caseId": "degree-5-perturbation-1",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 1
+      },
+      {
+        "N": 6,
+        "caseId": "degree-6-perturbation-0",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 0
+      },
+      {
+        "N": 6,
+        "caseId": "degree-6-perturbation-1",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 1
+      },
+      {
+        "N": 7,
+        "caseId": "degree-7-perturbation-0",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 0
+      },
+      {
+        "N": 7,
+        "caseId": "degree-7-perturbation-1",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 1
+      },
+      {
+        "N": 8,
+        "caseId": "degree-8-perturbation-0",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 0
+      },
+      {
+        "N": 8,
+        "caseId": "degree-8-perturbation-1",
+        "purpose": "Different polynomial degrees and perturbation directions; no explicit root solving is supplied.",
+        "q": 1
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "simple roots",
+      "implicit differentiation",
+      "polynomial remainders",
+      "Lagrange interpolation"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-log-derivative-root-count",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "real-rooted-logarithmic-derivative-interlacing",
+    "primaryTechnique": "pole-monotonicity-and-inherited-multiplicity",
+    "centralDecision": "Count inherited zeros separately from zeros between poles; the sign of the perturbation determines which exterior interval supplies the final zero.",
+    "nearestNeighborDistinction": "A local product logarithmic derivative gives a value at one point, whereas this uses its global monotonicity and pole behavior.",
+    "finiteDomain": [
+      {
+        "c": 1,
+        "caseId": "multiplicities-0",
+        "mult": [
+          1,
+          2,
+          3
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -2,
+          0,
+          3
+        ]
+      },
+      {
+        "c": -2,
+        "caseId": "multiplicities-1",
+        "mult": [
+          2,
+          1,
+          2
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -3,
+          1,
+          4
+        ]
+      },
+      {
+        "c": 3,
+        "caseId": "multiplicities-2",
+        "mult": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -4,
+          -1,
+          2,
+          5
+        ]
+      },
+      {
+        "c": -1,
+        "caseId": "multiplicities-3",
+        "mult": [
+          3,
+          2,
+          1,
+          1
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -3,
+          0,
+          2,
+          6
+        ]
+      },
+      {
+        "c": 2,
+        "caseId": "multiplicities-4",
+        "mult": [
+          4,
+          3,
+          2
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -5,
+          -2,
+          1
+        ]
+      },
+      {
+        "c": -3,
+        "caseId": "multiplicities-5",
+        "mult": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -4,
+          0,
+          3,
+          7
+        ]
+      },
+      {
+        "c": 1,
+        "caseId": "multiplicities-6",
+        "mult": [
+          1,
+          2,
+          1,
+          3,
+          1
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -2,
+          1,
+          4,
+          8,
+          9
+        ]
+      },
+      {
+        "c": -2,
+        "caseId": "multiplicities-7",
+        "mult": [
+          2,
+          1,
+          3,
+          1,
+          2
+        ],
+        "purpose": "Vary repeated roots and the exterior interval selected by the sign.",
+        "roots": [
+          -7,
+          -3,
+          0,
+          2,
+          5
+        ]
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "polynomial multiplicity",
+      "logarithmic derivative",
+      "intermediate value theorem"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-schwarz-pick-jet",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "disk-map-sharp-second-jet",
+    "primaryTechnique": "two-Schur-normalizations-and-extremal-Blaschke-map",
+    "centralDecision": "A sharp second derivative with a fixed first jet needs two disk normalizations, a shifted derivative disk, and an attaining analytic map.",
+    "nearestNeighborDistinction": "The real polynomial uniform-norm problem uses alternation; this bound comes from complex disk geometry.",
+    "finiteDomain": [
+      {
+        "a": "1/4",
+        "c": "1/3",
+        "caseId": "a-1/4-c-1/3",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "1/3",
+        "c": "1/2",
+        "caseId": "a-1/3-c-1/2",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "1/2",
+        "c": "1/4",
+        "caseId": "a-1/2-c-1/4",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "2/3",
+        "c": "1/3",
+        "caseId": "a-2/3-c-1/3",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "3/4",
+        "c": "1/2",
+        "caseId": "a-3/4-c-1/2",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "1/5",
+        "c": "2/3",
+        "caseId": "a-1/5-c-2/3",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "2/5",
+        "c": "3/4",
+        "caseId": "a-2/5-c-3/4",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      },
+      {
+        "a": "3/5",
+        "c": "2/3",
+        "caseId": "a-3/5-c-2/3",
+        "purpose": "Change both the center value and the fixed first-jet constraint."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "complex analytic disk maps",
+      "Schwarz lemma",
+      "chain rule",
+      "extremal construction"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-exponential-chebyshev-zero-bound",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "real-exponential-polynomial-Chebyshev-system",
+    "primaryTechnique": "weighted-Rolle-induction-and-sharp-interpolation",
+    "centralDecision": "The nonoscillatory exponential space has a sharp global zero bound, which must be proved and attained rather than inferred from a polynomial degree.",
+    "nearestNeighborDistinction": "The Sturm-Hurwitz construction forces a minimum number of periodic zeros by orthogonality; this bounds a maximum on the real line by weighted Rolle arguments.",
+    "finiteDomain": [
+      {
+        "caseId": "degrees-0",
+        "degrees": [
+          1,
+          2
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -1,
+          2
+        ]
+      },
+      {
+        "caseId": "degrees-1",
+        "degrees": [
+          0,
+          1,
+          2
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -2,
+          0,
+          3
+        ]
+      },
+      {
+        "caseId": "degrees-2",
+        "degrees": [
+          2,
+          2
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          1,
+          4
+        ]
+      },
+      {
+        "caseId": "degrees-3",
+        "degrees": [
+          1,
+          1,
+          1
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -3,
+          1,
+          2
+        ]
+      },
+      {
+        "caseId": "degrees-4",
+        "degrees": [
+          0,
+          2,
+          3
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -1,
+          2,
+          5
+        ]
+      },
+      {
+        "caseId": "degrees-5",
+        "degrees": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -4,
+          -1,
+          0,
+          3
+        ]
+      },
+      {
+        "caseId": "degrees-6",
+        "degrees": [
+          3,
+          1,
+          2
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "caseId": "degrees-7",
+        "degrees": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "purpose": "Vary polynomial multiplicities and real exponential modes, including a zero-rate mode.",
+        "rates": [
+          -2,
+          1,
+          3,
+          6
+        ]
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Rolle theorem",
+      "multiplicity",
+      "linear algebra",
+      "exponential functions"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-padic-digit-extrema",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "factorial-valuations-digit-extrema",
+    "primaryTechnique": "Legendre-digit-counting-and-extremal-subsequences",
+    "centralDecision": "A factorial valuation hides a digit sum; bounding digits is insufficient without constructing a subsequence that asymptotically fills every digit.",
+    "nearestNeighborDistinction": "The gcd-density construction averages coprimality. This problem controls extremal base-digit behavior of a single sequence.",
+    "finiteDomain": [
+      {
+        "caseId": "prime-2",
+        "p": 2,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-3",
+        "p": 3,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-5",
+        "p": 5,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-7",
+        "p": 7,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-11",
+        "p": 11,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-13",
+        "p": 13,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-17",
+        "p": 17,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      },
+      {
+        "caseId": "prime-19",
+        "p": 19,
+        "purpose": "A prime radix with a distinct maximum digit and exact valuation law."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "prime valuations",
+      "base expansions",
+      "limsup"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-pell-liminf",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "quadratic-diophantine-best-approximation",
+    "primaryTechnique": "integer-norm-lower-bound-and-Pell-subsequence",
+    "centralDecision": "An integer norm proves a universal asymptotic lower bound, while an infinite Pell orbit supplies the matching exceptional subsequence.",
+    "nearestNeighborDistinction": "Average equidistribution cannot determine the best individual rational approximations.",
+    "finiteDomain": [
+      {
+        "caseId": "radicand-2",
+        "d": 2,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-3",
+        "d": 3,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-5",
+        "d": 5,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-6",
+        "d": 6,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-7",
+        "d": 7,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-10",
+        "d": 10,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-11",
+        "d": 11,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      },
+      {
+        "caseId": "radicand-13",
+        "d": 13,
+        "purpose": "A nonsquare radicand with its own exact Pell orbit."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "nearest integer distance",
+      "liminf",
+      "Pell equation"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-binomial-large-deviation",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "entropy-rate-binomial-tail",
+    "primaryTechnique": "dominant-term-tail-sandwich-and-Stirling",
+    "centralDecision": "The tail is exponentially small, so a central-limit approximation is inappropriate; its largest term and entropy determine the root limit.",
+    "nearestNeighborDistinction": "The Poisson group has bounded mean and the CLT group studies a moving threshold near the mean. Here the threshold remains a fixed fraction away.",
+    "finiteDomain": [
+      {
+        "a": "2/3",
+        "caseId": "p-1/2-a-2/3",
+        "p": "1/2",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "1/2",
+        "caseId": "p-1/3-a-1/2",
+        "p": "1/3",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "1/2",
+        "caseId": "p-1/4-a-1/2",
+        "p": "1/4",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "2/3",
+        "caseId": "p-1/3-a-2/3",
+        "p": "1/3",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "2/5",
+        "caseId": "p-1/5-a-2/5",
+        "p": "1/5",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "3/5",
+        "caseId": "p-2/5-a-3/5",
+        "p": "2/5",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "3/4",
+        "caseId": "p-1/4-a-3/4",
+        "p": "1/4",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      },
+      {
+        "a": "3/4",
+        "caseId": "p-2/3-a-3/4",
+        "p": "2/3",
+        "purpose": "A fixed super-mean threshold with an exact integer subsequence."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "binomial coefficients",
+      "Stirling formula",
+      "exponential asymptotics"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-divisor-hyperbola-constant",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "divisor-summatory-hyperbola",
+    "primaryTechnique": "hyperbola-decomposition-and-harmonic-asymptotic",
+    "centralDecision": "Accumulated floor errors are too large for a naive termwise approximation; an exact hyperbola split reduces the error to a square-root boundary.",
+    "nearestNeighborDistinction": "Single floor bounds and ordinary fixed-interval Riemann sums do not resolve the second-order constant.",
+    "finiteDomain": [
+      {
+        "a": 0,
+        "caseId": "omit-0",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 1,
+        "caseId": "omit-1",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 2,
+        "caseId": "omit-2",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 3,
+        "caseId": "omit-3",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 4,
+        "caseId": "omit-4",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 5,
+        "caseId": "omit-5",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 6,
+        "caseId": "omit-6",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      },
+      {
+        "a": 7,
+        "caseId": "omit-7",
+        "purpose": "Keep track of a different finite omitted block, including the empty block."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "floor function",
+      "harmonic sums",
+      "counting lattice points"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-critical-level-absolute-integral",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "critical-level-sublevel-mass",
+    "primaryTechnique": "local-root-rescaling-and-global-localization",
+    "centralDecision": "An absolute-value integral becomes singular when a level passes a quadratic zero; one must distinguish interior roots from boundary roots and control the remainder away from every root.",
+    "nearestNeighborDistinction": "This is a moving critical level inside a global integral, not a direct Leibniz boundary derivative.",
+    "finiteDomain": [
+      {
+        "bounds": [
+          -1,
+          2
+        ],
+        "caseId": "root-geometry-0",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          0,
+          0,
+          1
+        ],
+        "weight": "1+x**2"
+      },
+      {
+        "bounds": [
+          -2,
+          2
+        ],
+        "caseId": "root-geometry-1",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          -1,
+          1
+        ],
+        "weight": "1+x**2"
+      },
+      {
+        "bounds": [
+          0,
+          3
+        ],
+        "caseId": "root-geometry-2",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          0,
+          2
+        ],
+        "weight": "1+x"
+      },
+      {
+        "bounds": [
+          -1,
+          3
+        ],
+        "caseId": "root-geometry-3",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          -1,
+          0,
+          2
+        ],
+        "weight": "2+x**2"
+      },
+      {
+        "bounds": [
+          0,
+          1
+        ],
+        "caseId": "root-geometry-4",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          0,
+          1
+        ],
+        "weight": "1"
+      },
+      {
+        "bounds": [
+          -2,
+          1
+        ],
+        "caseId": "root-geometry-5",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          -2,
+          1
+        ],
+        "weight": "1+x**2"
+      },
+      {
+        "bounds": [
+          -2,
+          2
+        ],
+        "caseId": "root-geometry-6",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          -1,
+          0,
+          1
+        ],
+        "weight": "1+x**2"
+      },
+      {
+        "bounds": [
+          -3,
+          3
+        ],
+        "caseId": "root-geometry-7",
+        "purpose": "Change the number and location of critical roots, endpoint contributions, and nonconstant weights.",
+        "roots": [
+          -2,
+          0,
+          3
+        ],
+        "weight": "4+x"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "differentiation under an integral",
+      "simple roots",
+      "local inverse functions",
+      "one-sided limits"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-moment-hankel-vandermonde",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "moment-determinant-antisymmetrization",
+    "primaryTechnique": "permutation-expansion-and-Vandermonde-symmetry",
+    "centralDecision": "Derivatives encode moments, but the determinant-to-integral normalization is fixed by antisymmetrizing two permutation sums and counting all variable permutations.",
+    "nearestNeighborDistinction": "This uses an integral moment matrix and an antisymmetric product, not principal-minor deletion in a finite cyclic matrix.",
+    "finiteDomain": [
+      {
+        "a": 1,
+        "b": 2,
+        "caseId": "size-3",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 3
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "caseId": "size-4",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 4
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "caseId": "size-3",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 3
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "caseId": "size-5",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 5
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "caseId": "size-4",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 4
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "caseId": "size-6",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 6
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "caseId": "size-5",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 5
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "caseId": "size-6",
+        "purpose": "Vary matrix size and endpoint weight while keeping the same structural identity.",
+        "r": 6
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "differentiation under an integral",
+      "determinants",
+      "permutations",
+      "Vandermonde determinant"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-tree-resistance-sensitivity",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "weighted-tree-log-derivative-resistance",
+    "primaryTechnique": "matrix-tree-theorem-and-electrical-potential",
+    "centralDecision": "The derivative of a sum over all spanning trees is best found by turning a log determinant into an effective resistance; the selected edge probability and resistance differ by its conductance.",
+    "nearestNeighborDistinction": "The cyclic determinant family differentiates a supplied matrix. Here the matrix must be discovered from a graph and the weighted combinatorial sum.",
+    "finiteDomain": [
+      {
+        "at": 3,
+        "caseId": "network-0",
+        "edges": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            2
+          ],
+          [
+            4,
+            0,
+            3
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 0,
+        "vertices": 5
+      },
+      {
+        "at": 2,
+        "caseId": "network-1",
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            4,
+            2
+          ],
+          [
+            4,
+            1,
+            3
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 5,
+        "vertices": 5
+      },
+      {
+        "at": 3,
+        "caseId": "network-2",
+        "edges": [
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            5,
+            3
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            1,
+            5,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            2,
+            4,
+            2
+          ],
+          [
+            2,
+            5,
+            1
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 4,
+        "vertices": 6
+      },
+      {
+        "at": 4,
+        "caseId": "network-3",
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            2
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            2
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 6,
+        "vertices": 6
+      },
+      {
+        "at": 2,
+        "caseId": "network-4",
+        "edges": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            3,
+            4,
+            2
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 3,
+        "vertices": 5
+      },
+      {
+        "at": 3,
+        "caseId": "network-5",
+        "edges": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            3
+          ],
+          [
+            3,
+            4,
+            2
+          ],
+          [
+            4,
+            5,
+            3
+          ],
+          [
+            5,
+            3,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            1,
+            4,
+            1
+          ],
+          [
+            2,
+            5,
+            3
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 7,
+        "vertices": 6
+      },
+      {
+        "at": 4,
+        "caseId": "network-6",
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            0,
+            5,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            3
+          ],
+          [
+            4,
+            5,
+            1
+          ],
+          [
+            5,
+            1,
+            2
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 1,
+        "vertices": 6
+      },
+      {
+        "at": 2,
+        "caseId": "network-7",
+        "edges": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            4,
+            3
+          ],
+          [
+            4,
+            5,
+            2
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            2,
+            4,
+            1
+          ],
+          [
+            3,
+            5,
+            2
+          ]
+        ],
+        "purpose": "Change graph topology, the varied edge, and competing weighted paths.",
+        "selected": 8,
+        "vertices": 6
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "spanning trees",
+      "weighted Laplacians",
+      "matrix determinant differentiation",
+      "linear systems"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-sharp-landau-bound",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "sharp-global-derivative-interpolation",
+    "primaryTechnique": "two-sided-Taylor-optimization-and-smoothed-perfect-spline",
+    "centralDecision": "A sharp derivative estimate needs a global two-sided comparison and an approximating smooth extremizer; the elementary one-sided estimate has the wrong constant.",
+    "nearestNeighborDistinction": "The Hilbert and uniform polynomial bounds are finite-dimensional; this is a global bound for arbitrary twice continuously differentiable functions.",
+    "finiteDomain": [
+      {
+        "M": 1,
+        "N": 1,
+        "caseId": "bounds-0",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": 1,
+        "N": 3,
+        "caseId": "bounds-1",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": 2,
+        "N": 1,
+        "caseId": "bounds-2",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": 2,
+        "N": 3,
+        "caseId": "bounds-3",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": 3,
+        "N": 2,
+        "caseId": "bounds-4",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": "1/2",
+        "N": 3,
+        "caseId": "bounds-5",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": 3,
+        "N": "1/2",
+        "caseId": "bounds-6",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      },
+      {
+        "M": "2/3",
+        "N": 5,
+        "caseId": "bounds-7",
+        "purpose": "A distinct pair of function and second-derivative budgets; the supremum is not falsely asserted to be attained by a nonsmooth spline."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Taylor theorem with remainder bounds",
+      "optimization",
+      "smooth approximation"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-dyadic-log-product",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "geometrically-spaced-product-critical-scale",
+    "primaryTechnique": "moving-cutoff-and-uniform-log-remainder",
+    "centralDecision": "The nonlinear spacing changes both the moving cutoff scale and the power-sum cancellation. A uniform tail estimate is essential before normalization; choices all retain the same logarithmic factor.",
+    "nearestNeighborDistinction": "Euler finite-product corrections concern smooth fixed-scale factors; here the number of small factors grows logarithmically.",
+    "finiteDomain": [
+      {
+        "caseId": "power-2-base-2",
+        "power": 2,
+        "b": 2,
+        "normalizedTaskKey": "power-spaced-log-product:p2",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-3-base-2",
+        "power": 3,
+        "b": 2,
+        "normalizedTaskKey": "power-spaced-log-product:p3",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-4-base-3",
+        "power": 4,
+        "b": 3,
+        "normalizedTaskKey": "power-spaced-log-product:p4",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-5-base-3",
+        "power": 5,
+        "b": 3,
+        "normalizedTaskKey": "power-spaced-log-product:p5",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-6-base-5",
+        "power": 6,
+        "b": 5,
+        "normalizedTaskKey": "power-spaced-log-product:p6",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-7-base-5",
+        "power": 7,
+        "b": 5,
+        "normalizedTaskKey": "power-spaced-log-product:p7",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-8-base-7",
+        "power": 8,
+        "b": 7,
+        "normalizedTaskKey": "power-spaced-log-product:p8",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      },
+      {
+        "caseId": "power-9-base-7",
+        "power": 9,
+        "b": 7,
+        "normalizedTaskKey": "power-spaced-log-product:p9",
+        "purpose": "Change the dimensionless exponent of the moving cutoff; every retained exponent is distinct; a base-only change receives no additional capacity."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "infinite products",
+      "logarithms",
+      "geometric sums",
+      "asymptotic estimates"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-lipschitz-mass-concentration",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "sharp-mass-slope-concentration",
+    "primaryTechnique": "cone-under-peak-and-attaining-tent",
+    "centralDecision": "A small integral norm does not itself control a peak. The slope constraint forces a minimum cone of mass, and boundary geometry changes its sharp coefficient.",
+    "nearestNeighborDistinction": "A prescribed spike only demonstrates nonuniform convergence; this optimizes over every admissible function and proves a sharp bound.",
+    "finiteDomain": [
+      {
+        "caseId": "power-2-zero-endpoints",
+        "p": 2,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "zero-endpoints"
+      },
+      {
+        "caseId": "power-2-free-endpoints",
+        "p": 2,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "free-endpoints"
+      },
+      {
+        "caseId": "power-3-zero-endpoints",
+        "p": 3,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "zero-endpoints"
+      },
+      {
+        "caseId": "power-3-free-endpoints",
+        "p": 3,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "free-endpoints"
+      },
+      {
+        "caseId": "power-4-zero-endpoints",
+        "p": 4,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "zero-endpoints"
+      },
+      {
+        "caseId": "power-4-free-endpoints",
+        "p": 4,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "free-endpoints"
+      },
+      {
+        "caseId": "power-5-zero-endpoints",
+        "p": 5,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "zero-endpoints"
+      },
+      {
+        "caseId": "power-5-free-endpoints",
+        "p": 5,
+        "purpose": "Change the mass norm and whether one or two sides of a peak are forced.",
+        "side": "free-endpoints"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Lipschitz functions",
+      "integral bounds",
+      "sharp optimization",
+      "boundary conditions"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-discrete-volterra-norm",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Green-operator-spectrum",
+    "primaryTechnique": "inverse-difference-matrix-and-mixed-boundary-spectrum",
+    "centralDecision": "A quadratic optimization over growing dimension is reduced by inversion to a discrete boundary-value problem; the half-grid endpoint determines the sharp spectral constant.",
+    "nearestNeighborDistinction": "This is an operator norm with a growing spectrum, not a fixed matrix power or a scalar recurrence.",
+    "finiteDomain": [
+      {
+        "a": 1,
+        "b": 0,
+        "caseId": "grid-1-0",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "caseId": "grid-1-1",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 2,
+        "b": 0,
+        "caseId": "grid-2-0",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "caseId": "grid-2-1",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 3,
+        "b": 0,
+        "caseId": "grid-3-0",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "caseId": "grid-3-2",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 4,
+        "b": 1,
+        "caseId": "grid-4-1",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      },
+      {
+        "a": 5,
+        "b": 0,
+        "caseId": "grid-5-0",
+        "purpose": "Different growth scales and boundary offsets; offsets test the mixed-endpoint phase without changing the leading scale."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "quadratic forms",
+      "eigenvalues",
+      "difference equations",
+      "trigonometric limits"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-lorentzian-derivative-zero-window",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "complex-phase-derivative-zero-geometry",
+    "primaryTechnique": "partial-fractions-and-phase-lattice",
+    "centralDecision": "A high derivative has many real zeros. Complex poles turn its zero equation into a phase lattice, and strict interval endpoints require counting exactly which lattice points survive.",
+    "nearestNeighborDistinction": "This is a real-zero localization problem, not evaluating one high derivative or applying a root count from parity.",
+    "finiteDomain": [
+      {
+        "a": 1,
+        "b": 2,
+        "caseId": "order-9-window-1-2-7",
+        "order": 9,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 7
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "caseId": "order-10-window-1-3-8",
+        "order": 10,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 8
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "caseId": "order-11-window-2-4-9",
+        "order": 11,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 9
+      },
+      {
+        "a": 1,
+        "b": 2,
+        "caseId": "order-12-window-1-2-5",
+        "order": 12,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 5
+      },
+      {
+        "a": 2,
+        "b": 5,
+        "caseId": "order-13-window-2-5-11",
+        "order": 13,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 11
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "caseId": "order-14-window-1-3-7",
+        "order": 14,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 7
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "caseId": "order-15-window-2-3-8",
+        "order": 15,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 8
+      },
+      {
+        "a": 1,
+        "b": 4,
+        "caseId": "order-16-window-1-4-9",
+        "order": 16,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 9
+      },
+      {
+        "a": 3,
+        "b": 5,
+        "caseId": "order-17-window-3-5-12",
+        "order": 17,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 12
+      },
+      {
+        "a": 2,
+        "b": 5,
+        "caseId": "order-18-window-2-5-13",
+        "order": 18,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 13
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "caseId": "order-19-window-1-3-10",
+        "order": 19,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 10
+      },
+      {
+        "a": 3,
+        "b": 7,
+        "caseId": "order-20-window-3-7-16",
+        "order": 20,
+        "purpose": "The derivative order and angular window change the number of interior phase-lattice points and endpoint exclusions.",
+        "q": 16
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "complex partial fractions",
+      "polar form",
+      "strict integer counting"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-chebyshev-edge-derivative-correction",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "iterated-Chebyshev-boundary-layer",
+    "primaryTechnique": "dynamical-conjugacy-and-two-scale-derivative-expansion",
+    "centralDecision": "A repeated nonlinear composition has exponentially growing derivative. Trigonometric conjugacy reveals its moving endpoint layer, where a second-order angle correction survives after the leading term is removed.",
+    "nearestNeighborDistinction": "The endpoint Markov value alone gives only the derivative at exactly one; this evaluates a moving interior point and a nonzero correction after cancellation.",
+    "finiteDomain": [
+      {
+        "caseId": "phase-0",
+        "phase": "1/3",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-1",
+        "phase": "1/2",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-2",
+        "phase": "2/3",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-3",
+        "phase": "1",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-4",
+        "phase": "4/3",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-5",
+        "phase": "3/2",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-6",
+        "phase": "5/3",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-7",
+        "phase": "2",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-8",
+        "phase": "1/4",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-9",
+        "phase": "3/4",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-10",
+        "phase": "5/4",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      },
+      {
+        "caseId": "phase-11",
+        "phase": "7/4",
+        "purpose": "Distinct dimensionless phase positions include cancellation, opposite signs and nonzero leading terms."
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "composition identities",
+      "Taylor expansions with remainder",
+      "moving-point asymptotics"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-singular-reparametrized-wronskian",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Wronskian-reparametrization-triangularity",
+    "primaryTechnique": "derivative-basis-triangularization-and-vanishing-order",
+    "centralDecision": "A determinant contains many cancelling derivative terms. Reparametrization makes the derivative transformation triangular; its diagonal determines the entire vanishing order at a singular coordinate.",
+    "nearestNeighborDistinction": "This differs from the moment-Hankel identity: the determinant is a Wronskian under a singular change of variable, not an integral Gram determinant.",
+    "finiteDomain": [
+      {
+        "caseId": "dimension-3-contact-2",
+        "h": 2,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 3
+      },
+      {
+        "caseId": "dimension-3-contact-3",
+        "h": 3,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 3
+      },
+      {
+        "caseId": "dimension-3-contact-4",
+        "h": 4,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 3
+      },
+      {
+        "caseId": "dimension-3-contact-5",
+        "h": 5,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 3
+      },
+      {
+        "caseId": "dimension-4-contact-2",
+        "h": 2,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 4
+      },
+      {
+        "caseId": "dimension-4-contact-3",
+        "h": 3,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 4
+      },
+      {
+        "caseId": "dimension-4-contact-4",
+        "h": 4,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 4
+      },
+      {
+        "caseId": "dimension-4-contact-5",
+        "h": 5,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 4
+      },
+      {
+        "caseId": "dimension-5-contact-2",
+        "h": 2,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 5
+      },
+      {
+        "caseId": "dimension-5-contact-3",
+        "h": 3,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 5
+      },
+      {
+        "caseId": "dimension-6-contact-2",
+        "h": 2,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 6
+      },
+      {
+        "caseId": "dimension-6-contact-3",
+        "h": 3,
+        "purpose": "Matrix dimension and contact order both change, beyond amplitude or coordinate rescaling.",
+        "r": 6
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "Wronskians",
+      "higher chain rule",
+      "triangular matrices",
+      "order of a zero"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-hermite-inverse-gap-moment",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "orthogonal-polynomial-root-inverse-gap-identities",
+    "primaryTechnique": "differentiate-ODE-at-roots-and-Newton-moment-trace",
+    "centralDecision": "A symmetric inverse-gap sum is recovered without solving for roots. Local differentiated differential-equation identities supply each gap sum; global polynomial moments then close the calculation.",
+    "nearestNeighborDistinction": "The Hermite discriminant uses resultants and a product of all gaps. This asks weighted inverse-square gap sums and requires a different local root identity; the broader orthogonal-polynomial connection is disclosed.",
+    "finiteDomain": [
+      {
+        "caseId": "degree-6-weight-1",
+        "n": 6,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 1
+      },
+      {
+        "caseId": "degree-7-weight-1",
+        "n": 7,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 1
+      },
+      {
+        "caseId": "degree-8-weight-1",
+        "n": 8,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 1
+      },
+      {
+        "caseId": "degree-9-weight-1",
+        "n": 9,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 1
+      },
+      {
+        "caseId": "degree-6-weight-2",
+        "n": 6,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 2
+      },
+      {
+        "caseId": "degree-7-weight-2",
+        "n": 7,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 2
+      },
+      {
+        "caseId": "degree-8-weight-2",
+        "n": 8,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 2
+      },
+      {
+        "caseId": "degree-9-weight-2",
+        "n": 9,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 2
+      },
+      {
+        "caseId": "degree-8-weight-3",
+        "n": 8,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 3
+      },
+      {
+        "caseId": "degree-9-weight-3",
+        "n": 9,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 3
+      },
+      {
+        "caseId": "degree-10-weight-3",
+        "n": 10,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 3
+      },
+      {
+        "caseId": "degree-11-weight-3",
+        "n": 11,
+        "purpose": "Polynomial degree and weighted root moment vary; no coordinate-scaled copies.",
+        "q": 3
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "polynomial differential equations",
+      "logarithmic derivatives at simple roots",
+      "Newton sums",
+      "complex polynomial roots"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-cosine-equation-regularity",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "functional-equation-regularity-bootstrap",
+    "primaryTechnique": "integrated-functional-equation-and-ODE-classification",
+    "centralDecision": "Continuity alone must be upgraded to differentiability before the equation can be differentiated. A local averaging identity provides the bootstrap and then an ODE determines the derivative.",
+    "nearestNeighborDistinction": "This is a global functional equation with no initial differentiability assumption; it is not substitution into a supplied differential equation.",
+    "finiteDomain": [
+      {
+        "caseId": "normalized-hyperbolic-branch",
+        "purpose": "One normalized functional-equation problem; scalar/time changes are deliberately not counted as extra advanced capacity."
+      }
+    ],
+    "instanceCount": 1,
+    "prerequisites": [
+      "continuous functional equations",
+      "fundamental theorem of calculus",
+      "linear ODE uniqueness"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-commuting-parabolic-jet",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "parabolic-composition-centralizer-jets",
+    "primaryTechnique": "commutation-resonance-and-truncated-composition",
+    "centralDecision": "An analytic function is not given explicitly, only by commuting with a tangent-to-identity map and two derivatives. Resonance cancels the apparent highest unknown; the next coefficient recursively forces the requested jet.",
+    "nearestNeighborDistinction": "Direct inverse-series coefficient matching solves a supplied identity. This is a centralizer condition with a free quadratic coefficient, higher-order resonances and an existence witness.",
+    "finiteDomain": [
+      {
+        "b": 1,
+        "c": 1,
+        "caseId": "jet-0",
+        "order": 4,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 2
+      },
+      {
+        "b": 2,
+        "c": -1,
+        "caseId": "jet-1",
+        "order": 4,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 3
+      },
+      {
+        "b": -1,
+        "c": 2,
+        "caseId": "jet-2",
+        "order": 5,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 2
+      },
+      {
+        "b": 0,
+        "c": 1,
+        "caseId": "jet-3",
+        "order": 5,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 3
+      },
+      {
+        "b": 1,
+        "c": -1,
+        "caseId": "jet-4",
+        "order": 6,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 2
+      },
+      {
+        "b": 2,
+        "c": 1,
+        "caseId": "jet-5",
+        "order": 6,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 3
+      },
+      {
+        "b": -2,
+        "c": 1,
+        "caseId": "jet-6",
+        "order": 7,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 2
+      },
+      {
+        "b": 1,
+        "c": 2,
+        "caseId": "jet-7",
+        "order": 7,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 3
+      },
+      {
+        "b": 3,
+        "c": -1,
+        "caseId": "jet-8",
+        "order": 5,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 4
+      },
+      {
+        "b": -1,
+        "c": 3,
+        "caseId": "jet-9",
+        "order": 6,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 4
+      },
+      {
+        "b": 2,
+        "c": 2,
+        "caseId": "jet-10",
+        "order": 7,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 4
+      },
+      {
+        "b": 0,
+        "c": -1,
+        "caseId": "jet-11",
+        "order": 6,
+        "purpose": "Different nonlinear maps, commuting time and jet order, with explicit analytic iterate witnesses.",
+        "r": 5
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "analytic composition",
+      "Taylor jets",
+      "coefficient resonance",
+      "existence by iteration"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "abel-integral-inversion",
+    "primaryTechnique": "double-Abel-transform-and-Fubini",
+    "centralDecision": "An unknown continuous density must be recovered from a singular integral. Composing the transform reveals a constant Beta kernel; differentiation then identifies the density uniquely.",
+    "nearestNeighborDistinction": "Unlike direct moving-endpoint differentiation, the integrand is unknown and the singular upper endpoint prevents naive Leibniz substitution.",
+    "finiteDomain": [
+      {
+        "at": "1/2",
+        "caseId": "density-0",
+        "coefficients": [
+          1,
+          2,
+          -1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "1/3",
+        "caseId": "density-1",
+        "coefficients": [
+          2,
+          -1,
+          0,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "2/3",
+        "caseId": "density-2",
+        "coefficients": [
+          0,
+          1,
+          2,
+          0,
+          -1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "3/4",
+        "caseId": "density-3",
+        "coefficients": [
+          1,
+          0,
+          -2,
+          3
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "1/4",
+        "caseId": "density-4",
+        "coefficients": [
+          3,
+          -2,
+          0,
+          0,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "2/5",
+        "caseId": "density-5",
+        "coefficients": [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "3/5",
+        "caseId": "density-6",
+        "coefficients": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "4/5",
+        "caseId": "density-7",
+        "coefficients": [
+          2,
+          0,
+          1,
+          -2,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "1/5",
+        "caseId": "density-8",
+        "coefficients": [
+          1,
+          -1,
+          2,
+          0,
+          -2,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "2/7",
+        "caseId": "density-9",
+        "coefficients": [
+          2,
+          1,
+          0,
+          -1,
+          0,
+          2
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "3/7",
+        "caseId": "density-10",
+        "coefficients": [
+          0,
+          1,
+          -2,
+          3,
+          0,
+          -1,
+          1
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      },
+      {
+        "at": "4/7",
+        "caseId": "density-11",
+        "coefficients": [
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          2
+        ],
+        "purpose": "Different density degree, nonzero power pattern and evaluation point; not scalar copies."
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "Fubini theorem",
+      "integrable endpoint singularities",
+      "Beta integral",
+      "fundamental theorem of calculus"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-laplace-moment-sharp-third",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "truncated-moment-positivity-and-atomic-attainment",
+    "primaryTechnique": "nonnegative-polynomial-dual-bound-and-atomic-witness",
+    "centralDecision": "Two derivative constraints fix two moments of an unknown probability measure. The sharp third derivative is a constrained moment problem, requiring a nonnegative polynomial certificate and an attaining measure.",
+    "nearestNeighborDistinction": "The root-moment family uses finitely many equally weighted bounded coordinates. Here weights and support are free, so box-vertex enumeration is unavailable.",
+    "finiteDomain": [
+      {
+        "a": "1/2",
+        "b": "1/3",
+        "caseId": "moments-0",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "2/3",
+        "b": "1/2",
+        "caseId": "moments-1",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "1/3",
+        "b": "1/5",
+        "caseId": "moments-2",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "3/5",
+        "b": "2/5",
+        "caseId": "moments-3",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "2/5",
+        "b": "1/4",
+        "caseId": "moments-4",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "3/4",
+        "b": "5/8",
+        "caseId": "moments-5",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "1/4",
+        "b": "1/8",
+        "caseId": "moments-6",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "4/5",
+        "b": "7/10",
+        "caseId": "moments-7",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "2/7",
+        "b": "1/7",
+        "caseId": "moments-8",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "3/7",
+        "b": "2/7",
+        "caseId": "moments-9",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "4/7",
+        "b": "3/7",
+        "caseId": "moments-10",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      },
+      {
+        "a": "5/7",
+        "b": "4/7",
+        "caseId": "moments-11",
+        "purpose": "Distinct first and second moments change the extremizing support and atom weights."
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "probability measures",
+      "differentiation under an integral",
+      "nonnegative polynomial inequalities",
+      "sharpness"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-periodic-shift-derivative-bound",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "differential-shift-spectral-selection",
+    "primaryTechnique": "Fourier-mode-annihilation-and-sharp-coefficient-norm",
+    "centralDecision": "A differential equation with a half-period shift selects two hidden Fourier frequencies. One must prove that these are the only modes before optimizing the derivative and attaining the bound.",
+    "nearestNeighborDistinction": "This is not a supplied finite polynomial Hilbert space: the admissible unknown functions are all periodic C2 solutions and spectral exclusion is essential.",
+    "finiteDomain": [
+      {
+        "caseId": "frequencies-2-1",
+        "even": 2,
+        "odd": 1,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-2-3",
+        "even": 2,
+        "odd": 3,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-2-5",
+        "even": 2,
+        "odd": 5,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-2-7",
+        "even": 2,
+        "odd": 7,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-4-1",
+        "even": 4,
+        "odd": 1,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-4-3",
+        "even": 4,
+        "odd": 3,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-4-5",
+        "even": 4,
+        "odd": 5,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-4-7",
+        "even": 4,
+        "odd": 7,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-6-1",
+        "even": 6,
+        "odd": 1,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-6-5",
+        "even": 6,
+        "odd": 5,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-6-7",
+        "even": 6,
+        "odd": 7,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      },
+      {
+        "caseId": "frequencies-8-3",
+        "even": 8,
+        "odd": 3,
+        "purpose": "Coprime even/odd frequencies give distinct dimensionless spectral ratios."
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "periodic Fourier coefficients",
+      "integration by parts",
+      "Fourier uniqueness",
+      "Cauchy-Schwarz sharpness"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Peano-kernel-total-variation",
+    "primaryTechnique": "Taylor-integral-remainder-and-sign-changing-kernel",
+    "centralDecision": "A quadrature error bound is the total variation of its Peano kernel, not the integral of that kernel; sharpness needs an approximating second derivative with its changing sign.",
+    "nearestNeighborDistinction": "This bounds a linear error functional on arbitrary smooth functions, not a derivative value on a finite polynomial space.",
+    "finiteDomain": [
+      {
+        "caseId": "kernel-root-1/6",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "1/6"
+      },
+      {
+        "caseId": "kernel-root-1/5",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "1/5"
+      },
+      {
+        "caseId": "kernel-root-1/4",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "1/4"
+      },
+      {
+        "caseId": "kernel-root-1/3",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "1/3"
+      },
+      {
+        "caseId": "kernel-root-2/5",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "2/5"
+      },
+      {
+        "caseId": "kernel-root-2/7",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "2/7"
+      },
+      {
+        "caseId": "kernel-root-3/8",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "3/8"
+      },
+      {
+        "caseId": "kernel-root-3/7",
+        "purpose": "Move the two sign changes of the error kernel, changing cancellation and sharp norm.",
+        "q": "3/7"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "integral Taylor remainder",
+      "signed kernels",
+      "sharp uniform bounds"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-sturm-hurwitz-critical-count",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Fourier-gap-forced-sign-changes",
+    "primaryTechnique": "orthogonality-and-sign-matching-trigonometric-product",
+    "centralDecision": "The lowest nonzero Fourier frequency forces a global number of critical points; the crucial step builds a lower-degree trigonometric polynomial with the same sign changes and contradicts orthogonality.",
+    "nearestNeighborDistinction": "The exponential Chebyshev family is a maximum-zero theorem for nonoscillatory real exponentials. This is a minimum-zero theorem enforced by a spectral gap.",
+    "finiteDomain": [
+      {
+        "N": 5,
+        "caseId": "first-frequency-2",
+        "m": 2,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 6,
+        "caseId": "first-frequency-3",
+        "m": 3,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 7,
+        "caseId": "first-frequency-4",
+        "m": 4,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 8,
+        "caseId": "first-frequency-5",
+        "m": 5,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 9,
+        "caseId": "first-frequency-6",
+        "m": 6,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 10,
+        "caseId": "first-frequency-7",
+        "m": 7,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 11,
+        "caseId": "first-frequency-8",
+        "m": 8,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      },
+      {
+        "N": 12,
+        "caseId": "first-frequency-9",
+        "m": 9,
+        "purpose": "Different Fourier gaps with all higher coefficients unrestricted."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Fourier orthogonality",
+      "critical points",
+      "trigonometric polynomial degree"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-dense-corner-series-derivative",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "summable-dense-corners-and-binary-orbit",
+    "primaryTechnique": "dominated-difference-quotients-and-periodic-binary-residues",
+    "centralDecision": "The summands have dense corners, so termwise differentiation needs a uniform summable Lipschitz majorant; the derivative value then depends on a periodic binary orbit.",
+    "nearestNeighborDistinction": "An oscillatory single-function regularity threshold does not address infinitely many dense singular locations or the weighted orbit sum.",
+    "finiteDomain": [
+      {
+        "a": "1/3",
+        "caseId": "point-1/3-ratio-1/4",
+        "lam": "1/4",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "2/3",
+        "caseId": "point-2/3-ratio-1/5",
+        "lam": "1/5",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "1/5",
+        "caseId": "point-1/5-ratio-1/4",
+        "lam": "1/4",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "2/5",
+        "caseId": "point-2/5-ratio-1/5",
+        "lam": "1/5",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "3/5",
+        "caseId": "point-3/5-ratio-1/6",
+        "lam": "1/6",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "4/5",
+        "caseId": "point-4/5-ratio-1/4",
+        "lam": "1/4",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "2/7",
+        "caseId": "point-2/7-ratio-1/5",
+        "lam": "1/5",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      },
+      {
+        "a": "3/7",
+        "caseId": "point-3/7-ratio-1/6",
+        "lam": "1/6",
+        "purpose": "Different periodic binary orbits, all at nondyadic points, under a summable total slope budget."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "uniform convergence",
+      "difference quotients",
+      "absolute-value derivatives",
+      "periodic residues"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-singular-implicit-branches",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "singular-curve-blowup-jets",
+    "primaryTechnique": "tangent-cone-blowup-and-simple-branch-implicit-theorem",
+    "centralDecision": "Ordinary implicit differentiation fails at the singular origin. Dividing after a tangent blowup separates the branches and reveals which derivative is actually determined.",
+    "nearestNeighborDistinction": "The moving-root trace family starts with simple roots and sums them; this first resolves a singular plane curve with several distinct tangent directions.",
+    "finiteDomain": [
+      {
+        "Q": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "caseId": "tangent-cone-0",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -2,
+          1,
+          3
+        ]
+      },
+      {
+        "Q": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "caseId": "tangent-cone-1",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -3,
+          0,
+          2
+        ]
+      },
+      {
+        "Q": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "caseId": "tangent-cone-2",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -1,
+          2,
+          4
+        ]
+      },
+      {
+        "Q": [
+          3,
+          1,
+          1,
+          0
+        ],
+        "caseId": "tangent-cone-3",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -2,
+          0,
+          3
+        ]
+      },
+      {
+        "Q": [
+          2,
+          2,
+          0,
+          1
+        ],
+        "caseId": "tangent-cone-4",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -3,
+          1,
+          4
+        ]
+      },
+      {
+        "Q": [
+          1,
+          -2,
+          1,
+          1
+        ],
+        "caseId": "tangent-cone-5",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -1,
+          0,
+          2
+        ]
+      },
+      {
+        "Q": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "caseId": "tangent-cone-6",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -4,
+          -1,
+          2
+        ]
+      },
+      {
+        "Q": [
+          2,
+          1,
+          -1,
+          1
+        ],
+        "caseId": "tangent-cone-7",
+        "purpose": "Different tangent configurations and nonlinear perturbation directions.",
+        "roots": [
+          -2,
+          2,
+          5
+        ]
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "analytic implicit functions",
+      "Taylor jets",
+      "singular points",
+      "blowup substitution"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-root-moment-extremum",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "real-root-reciprocal-moment-extremum",
+    "primaryTechnique": "convex-exchange-and-attaining-root-configuration",
+    "centralDecision": "A derivative constraint fixes the first reciprocal-root moment. The second derivative minimum comes from a box-constrained convex moment problem with an unavoidable residual root.",
+    "nearestNeighborDistinction": "Log-derivative interlacing counts zeros globally; this optimizes a derivative over every allowed root configuration and must construct an attaining polynomial.",
+    "finiteDomain": [
+      {
+        "N": 4,
+        "S": "15/2",
+        "caseId": "moment-box-0",
+        "hi": "3",
+        "lo": "1",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 5,
+        "S": "33/4",
+        "caseId": "moment-box-1",
+        "hi": "2",
+        "lo": "1",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 5,
+        "S": "29/4",
+        "caseId": "moment-box-2",
+        "hi": "2",
+        "lo": "1/2",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 6,
+        "S": "23/2",
+        "caseId": "moment-box-3",
+        "hi": "3",
+        "lo": "1",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 6,
+        "S": "25/4",
+        "caseId": "moment-box-4",
+        "hi": "3/2",
+        "lo": "1/2",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 7,
+        "S": "47/4",
+        "caseId": "moment-box-5",
+        "hi": "2",
+        "lo": "1",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 7,
+        "S": "29/4",
+        "caseId": "moment-box-6",
+        "hi": "4/3",
+        "lo": "1/3",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      },
+      {
+        "N": 8,
+        "S": "43/4",
+        "caseId": "moment-box-7",
+        "hi": "2",
+        "lo": "1/2",
+        "purpose": "Different degree and moment positions, including nonintegral endpoint occupancy."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "logarithmic derivative",
+      "polynomial roots",
+      "convexity",
+      "extremal configurations"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-differentiation-olympiad-green-kernel-spectrum",
+    "topic": "differentiation",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Green-operator-spectrum",
+    "primaryTechnique": "differentiate-integral-equation-and-solve-boundary-spectrum",
+    "centralDecision": "An integral eigenfunction equation must be differentiated with its moving split point, and its endpoint conditions recovered before choosing the correct spectral branch.",
+    "nearestNeighborDistinction": "The growing discrete cumulative-sum norm has the analogous boundary geometry, but here differentiation discovers a continuous boundary-value problem.",
+    "finiteDomain": [
+      {
+        "boundary": "mixed",
+        "caseId": "length-1-mixed",
+        "length": "1",
+        "ordinal": 1,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "mixed",
+        "caseId": "length-2-mixed",
+        "length": "2",
+        "ordinal": 2,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "mixed",
+        "caseId": "length-3/2-mixed",
+        "length": "3/2",
+        "ordinal": 3,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "mixed",
+        "caseId": "length-3-mixed",
+        "length": "3",
+        "ordinal": 2,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "dirichlet",
+        "caseId": "length-1-dirichlet",
+        "length": "1",
+        "ordinal": 2,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "dirichlet",
+        "caseId": "length-2-dirichlet",
+        "length": "2",
+        "ordinal": 3,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "dirichlet",
+        "caseId": "length-3/2-dirichlet",
+        "length": "3/2",
+        "ordinal": 1,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      },
+      {
+        "boundary": "dirichlet",
+        "caseId": "length-3-dirichlet",
+        "length": "3",
+        "ordinal": 4,
+        "purpose": "Vary the interval length, Dirichlet versus natural boundary, and requested spectral index."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "differentiation of split integrals",
+      "linear differential equations",
+      "boundary conditions",
+      "eigenvalues"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-quadratic-Weyl-distance-moment",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "polynomial-Weyl-differencing",
+    "primaryTechnique": "van-der-Corput-differencing-and-torus-integration",
+    "centralDecision": "Two deterministic fractional-part coordinates must be shown jointly uniform despite their arithmetic dependence. Differencing quadratic phases reduces every nontrivial Fourier character to a controlled geometric sum.",
+    "nearestNeighborDistinction": "The earlier irrational-rotation family concerns a linear orbit and a fixed phase correlation. Here the second coordinate is quadratic and the essential new step is differencing, not assuming independence.",
+    "finiteDomain": [
+      {
+        "caseId": "distance-moment-1",
+        "p": 1,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-2",
+        "p": 2,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-3",
+        "p": 3,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-4",
+        "p": 4,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-5",
+        "p": 5,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-6",
+        "p": 6,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-7",
+        "p": 7,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-8",
+        "p": 8,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-9",
+        "p": 9,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-10",
+        "p": 10,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-11",
+        "p": 11,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-12",
+        "p": 12,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-13",
+        "p": 13,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-14",
+        "p": 14,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-15",
+        "p": 15,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      },
+      {
+        "caseId": "distance-moment-16",
+        "p": 16,
+        "purpose": "Distinct absolute-distance moments; the irrational orbit itself is fixed to avoid fake parameter novelty."
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "fractional parts",
+      "geometric exponential sums",
+      "van der Corput inequality",
+      "Weyl criterion",
+      "Riemann-integrable torus averages"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-Lambert-product-singularity",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "dense-product-Mellin-singularity",
+    "primaryTechnique": "positive-double-series-and-uniform-scaled-sum-bound",
+    "centralDecision": "The product logarithm has infinitely many scales. Expanding each logarithm gives a positive double series; a uniform bound across the second index is required before interchanging its singular limit.",
+    "nearestNeighborDistinction": "The geometric-cutoff product has only logarithmically many active factors. This arithmetic-lattice product has an order-one-over-t active range and a Gamma-zeta constant.",
+    "finiteDomain": [
+      {
+        "caseId": "weight-exponent-1/2",
+        "p": "1/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-1",
+        "p": "1",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-3/2",
+        "p": "3/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-2",
+        "p": "2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-5/2",
+        "p": "5/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-3",
+        "p": "3",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-7/2",
+        "p": "7/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-4",
+        "p": "4",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-9/2",
+        "p": "9/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-5",
+        "p": "5",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-11/2",
+        "p": "11/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-6",
+        "p": "6",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-13/2",
+        "p": "13/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-7",
+        "p": "7",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-15/2",
+        "p": "15/2",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      },
+      {
+        "caseId": "weight-exponent-8",
+        "p": "8",
+        "purpose": "Different arithmetic-lattice weight exponents change the singular power and Mellin moment; no time-scale copies."
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "infinite products",
+      "Tonelli theorem",
+      "Gamma integral",
+      "Riemann sums with tail bounds",
+      "dominated series"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-maximum-occupancy-threshold",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "occupancy-extreme-logarithmic-threshold",
+    "primaryTechnique": "union-bound-and-conditioned-Poissonization",
+    "centralDecision": "The maximum occupancy is governed by a threshold where a factorial tail balances the number of boxes. The lower bound needs a dependence argument; conditioning independent Poisson counts closes it with a quantified error.",
+    "nearestNeighborDistinction": "The coupon collector asks when every box is nonempty. Here the extreme upper occupancy grows logarithmically, and Poissonization is used to prove a lower bound that a union bound cannot supply.",
+    "finiteDomain": [
+      {
+        "caseId": "normalized-n-balls-n-boxes",
+        "purpose": "One normalized probability model; changing an external count scale is not claimed as a fresh advanced case."
+      }
+    ],
+    "instanceCount": 1,
+    "prerequisites": [
+      "binomial tails",
+      "Poisson conditioning",
+      "Stirling formula",
+      "convergence in probability"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-implicit-exponential-saddle",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "inverse-coefficient-saddle-asymptotic",
+    "primaryTechnique": "Lagrange-inversion-and-global-circle-saddle",
+    "centralDecision": "A nonlinear analytic inverse defines the coefficients indirectly. Lagrange inversion exposes a contour integral, whose unique global saddle and local variance determine the prefactor as well as the growth rate.",
+    "nearestNeighborDistinction": "The algebraic inverse ODE family has a closed binomial coefficient. The quadratic exponential here gives a nonalgebraic inverse and a two-frequency saddle; no scalar change turns it into that polynomial inverse.",
+    "finiteDomain": [
+      {
+        "caseId": "critical-point-1/2",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "1/2"
+      },
+      {
+        "caseId": "critical-point-1/3",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "1/3"
+      },
+      {
+        "caseId": "critical-point-2/3",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "2/3"
+      },
+      {
+        "caseId": "critical-point-1/4",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "1/4"
+      },
+      {
+        "caseId": "critical-point-3/4",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "3/4"
+      },
+      {
+        "caseId": "critical-point-2/5",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "2/5"
+      },
+      {
+        "caseId": "critical-point-3/5",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "3/5"
+      },
+      {
+        "caseId": "critical-point-1/5",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "1/5"
+      },
+      {
+        "caseId": "critical-point-4/5",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "4/5"
+      },
+      {
+        "caseId": "critical-point-2/7",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "2/7"
+      },
+      {
+        "caseId": "critical-point-3/7",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "3/7"
+      },
+      {
+        "caseId": "critical-point-4/7",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "4/7"
+      },
+      {
+        "caseId": "critical-point-5/7",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "5/7"
+      },
+      {
+        "caseId": "critical-point-3/8",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "3/8"
+      },
+      {
+        "caseId": "critical-point-5/8",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "5/8"
+      },
+      {
+        "caseId": "critical-point-7/8",
+        "purpose": "The relative linear and quadratic exponential weights vary dimensionlessly; not a coefficient-only rescaling.",
+        "tau": "7/8"
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "analytic implicit functions",
+      "Lagrange inversion",
+      "contour coefficient formula",
+      "dominated saddle asymptotics"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-permutation-cycle-divisibility",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "restricted-cycle-exponential-formula",
+    "primaryTechnique": "labelled-cycle-decomposition-and-Gamma-ratio",
+    "centralDecision": "A probability over all permutations is converted into an exponential generating function by accounting for cyclic order and indistinguishable cycles. Its fractional singularity then determines the exact power-law constant.",
+    "nearestNeighborDistinction": "The coupon collector counts missing labels; this problem constrains the complete cycle decomposition of a permutation and requires the cycle-index factor.",
+    "finiteDomain": [
+      {
+        "caseId": "cycle-modulus-3",
+        "d": 3,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-4",
+        "d": 4,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-5",
+        "d": 5,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-6",
+        "d": 6,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-7",
+        "d": 7,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-8",
+        "d": 8,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-9",
+        "d": 9,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-10",
+        "d": 10,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-11",
+        "d": 11,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-12",
+        "d": 12,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-13",
+        "d": 13,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-14",
+        "d": 14,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-15",
+        "d": 15,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-16",
+        "d": 16,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-17",
+        "d": 17,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      },
+      {
+        "caseId": "cycle-modulus-18",
+        "d": 18,
+        "purpose": "Different permitted cycle-length lattices; modulus is a structural combinatorial invariant."
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "permutation cycle enumeration",
+      "exponential generating functions",
+      "generalized binomial theorem",
+      "Stirling asymptotics"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-random-walk-last-zero-law",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "last-zero-arcsine-distribution",
+    "primaryTechnique": "last-exit-decomposition-and-singular-Riemann-sum",
+    "centralDecision": "The final zero time has a nonuniform law concentrated near both ends. A last-exit decomposition gives an exact convolution, and its limiting Riemann sum requires explicit control of both singular endpoints.",
+    "nearestNeighborDistinction": "An ordinary central limit tail concerns one observation time. Here the statistic depends on the entire path and a future nonreturn event after the last zero.",
+    "finiteDomain": [
+      {
+        "a": "1/4",
+        "caseId": "observation-fraction-1/4",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "1/9",
+        "caseId": "observation-fraction-1/9",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "4/9",
+        "caseId": "observation-fraction-4/9",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "1/16",
+        "caseId": "observation-fraction-1/16",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "9/16",
+        "caseId": "observation-fraction-9/16",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "1/5",
+        "caseId": "observation-fraction-1/5",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "2/5",
+        "caseId": "observation-fraction-2/5",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "3/5",
+        "caseId": "observation-fraction-3/5",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "4/5",
+        "caseId": "observation-fraction-4/5",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "1/7",
+        "caseId": "observation-fraction-1/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "2/7",
+        "caseId": "observation-fraction-2/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "3/7",
+        "caseId": "observation-fraction-3/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "4/7",
+        "caseId": "observation-fraction-4/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "5/7",
+        "caseId": "observation-fraction-5/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "6/7",
+        "caseId": "observation-fraction-6/7",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      },
+      {
+        "a": "3/4",
+        "caseId": "observation-fraction-3/4",
+        "purpose": "Distinct dimensionless observation fractions, avoiding symmetry-only halves."
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "simple symmetric random walk",
+      "reflection/ballot counting",
+      "central binomial estimates",
+      "integrable endpoint singularities"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-slowly-varying-tridiagonal-determinant",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "locally-Toeplitz-determinant-limit",
+    "primaryTechnique": "block-cutting-and-uniform-spectral-control",
+    "centralDecision": "A determinant grows with its dimension and its coefficients vary across the matrix. Cutting into mesoscopic blocks and controlling the logarithmic determinant error converts a local recurrence root into a Riemann integral.",
+    "nearestNeighborDistinction": "The Hilbert moment determinant uses an exact global product and logarithmic energy. Here no exact global determinant formula is supplied; uniform spectral bounds make a local approximation valid.",
+    "finiteDomain": [
+      {
+        "bernstein": [
+          0,
+          1,
+          2
+        ],
+        "caseId": "profile-0",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          0,
+          2,
+          1
+        ],
+        "caseId": "profile-1",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          1,
+          0,
+          3
+        ],
+        "caseId": "profile-2",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "caseId": "profile-3",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          1,
+          3,
+          0,
+          1
+        ],
+        "caseId": "profile-4",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          0,
+          0,
+          2,
+          3
+        ],
+        "caseId": "profile-5",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "caseId": "profile-6",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          0,
+          1,
+          2,
+          0,
+          3
+        ],
+        "caseId": "profile-7",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          1,
+          0,
+          3,
+          1,
+          2
+        ],
+        "caseId": "profile-8",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          0,
+          3,
+          0,
+          2,
+          1
+        ],
+        "caseId": "profile-9",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          2,
+          1,
+          0,
+          3,
+          4
+        ],
+        "caseId": "profile-10",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      },
+      {
+        "bernstein": [
+          1,
+          2,
+          4,
+          0,
+          3
+        ],
+        "caseId": "profile-11",
+        "purpose": "Different nonconstant positive profiles change interior coefficient geometry; reversal duplicates are excluded."
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "positive definite matrices",
+      "tridiagonal determinant recurrence",
+      "logarithmic determinant perturbation bounds",
+      "Riemann sums"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-rank-one-outlier-edge",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "rank-one-secular-limit-with-edge-threshold",
+    "primaryTechnique": "determinant-lemma-and-monotone-Stieltjes-limit",
+    "centralDecision": "A low-rank perturbation of a growing diagonal matrix has one possible outlier. The secular equation must be identified, its edge threshold checked, and the finite root trapped before passing to a Riemann integral.",
+    "nearestNeighborDistinction": "This is neither a fixed-matrix perturbation derivative nor a trace average: the largest eigenvalue is selected through a nonlinear limiting spectral equation.",
+    "finiteDomain": [
+      {
+        "caseId": "weight-1-root-5/4",
+        "p": 1,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "5/4"
+      },
+      {
+        "caseId": "weight-1-root-3/2",
+        "p": 1,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3/2"
+      },
+      {
+        "caseId": "weight-1-root-2",
+        "p": 1,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "2",
+        "difficulty": "hard",
+        "qualifiedOlympiad": false,
+        "difficultyRationale": "Rayleigh and Weyl bounds isolate the correct visible option on this finite case without the full secular-limit argument; retain as Hard, with zero advanced capacity.",
+        "reviewEvidence": "series-sources/limits-peer/stage07/all-finite-review.json"
+      },
+      {
+        "caseId": "weight-1-root-3",
+        "p": 1,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3",
+        "difficulty": "hard",
+        "qualifiedOlympiad": false,
+        "difficultyRationale": "Rayleigh and Weyl bounds isolate the correct visible option on this finite case without the full secular-limit argument; retain as Hard, with zero advanced capacity.",
+        "reviewEvidence": "series-sources/limits-peer/stage07/all-finite-review.json"
+      },
+      {
+        "caseId": "weight-2-root-5/4",
+        "p": 2,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "5/4"
+      },
+      {
+        "caseId": "weight-2-root-3/2",
+        "p": 2,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3/2"
+      },
+      {
+        "caseId": "weight-2-root-2",
+        "p": 2,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "2"
+      },
+      {
+        "caseId": "weight-2-root-3",
+        "p": 2,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3",
+        "difficulty": "hard",
+        "qualifiedOlympiad": false,
+        "difficultyRationale": "Rayleigh and Weyl bounds isolate the correct visible option on this finite case without the full secular-limit argument; retain as Hard, with zero advanced capacity.",
+        "reviewEvidence": "series-sources/limits-peer/stage07/all-finite-review.json"
+      },
+      {
+        "caseId": "weight-3-root-5/4",
+        "p": 3,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "5/4"
+      },
+      {
+        "caseId": "weight-3-root-3/2",
+        "p": 3,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3/2"
+      },
+      {
+        "caseId": "weight-3-root-2",
+        "p": 3,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "2",
+        "difficulty": "hard",
+        "qualifiedOlympiad": false,
+        "difficultyRationale": "Rayleigh and Weyl bounds isolate the correct visible option on this finite case without the full secular-limit argument; retain as Hard, with zero advanced capacity.",
+        "reviewEvidence": "series-sources/limits-peer/stage07/all-finite-review.json"
+      },
+      {
+        "caseId": "weight-3-root-3",
+        "p": 3,
+        "purpose": "Different vanishing powers of the perturbing vector and dimensionless outlier gaps.",
+        "root": "3",
+        "difficulty": "hard",
+        "qualifiedOlympiad": false,
+        "difficultyRationale": "Rayleigh and Weyl bounds isolate the correct visible option on this finite case without the full secular-limit argument; retain as Hard, with zero advanced capacity.",
+        "reviewEvidence": "series-sources/limits-peer/stage07/all-finite-review.json"
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "rank-one determinant lemma",
+      "symmetric eigenvalues",
+      "monotone Riemann sums",
+      "spectral edge control"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-lacunary-Fourier-moment",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "lacunary-Fourier-zero-frequency-pairings",
+    "primaryTechnique": "base-digit-cancellation-and-leading-pair-partitions",
+    "centralDecision": "An oscillatory high moment is evaluated by identifying which frequency combinations survive integration. The large base rules out carries, and only pair partitions contribute at the highest order in the number of terms.",
+    "nearestNeighborDistinction": "Quadratic Weyl equidistribution controls oscillatory averages by differencing. Here an exact finite zero-frequency combinatorics selects a Gaussian moment without invoking a central limit theorem.",
+    "finiteDomain": [
+      {
+        "base": 5,
+        "caseId": "even-moment-2",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 2
+      },
+      {
+        "base": 7,
+        "caseId": "even-moment-3",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 3
+      },
+      {
+        "base": 9,
+        "caseId": "even-moment-4",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 4
+      },
+      {
+        "base": 11,
+        "caseId": "even-moment-5",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 5
+      },
+      {
+        "base": 13,
+        "caseId": "even-moment-6",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 6
+      },
+      {
+        "base": 15,
+        "caseId": "even-moment-7",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 7
+      },
+      {
+        "base": 17,
+        "caseId": "even-moment-8",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 8
+      },
+      {
+        "base": 19,
+        "caseId": "even-moment-9",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 9
+      },
+      {
+        "base": 21,
+        "caseId": "even-moment-10",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 10
+      },
+      {
+        "base": 23,
+        "caseId": "even-moment-11",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 11
+      },
+      {
+        "base": 25,
+        "caseId": "even-moment-12",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 12
+      },
+      {
+        "base": 27,
+        "caseId": "even-moment-13",
+        "purpose": "Different even moment orders change the pairing geometry and exact limiting moment; the base is fixed minimally for the proof at each order.",
+        "r": 13
+      }
+    ],
+    "instanceCount": 12,
+    "prerequisites": [
+      "Fourier orthogonality",
+      "integer base expansions",
+      "pair partitions",
+      "polynomial leading coefficients"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-stationary-phase-root-geometry",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "oscillatory-stationary-phase-localization",
+    "primaryTechnique": "nonstationary-cancellation-and-local-Fresnel-scaling",
+    "centralDecision": "Only stationary points survive square-root normalization; one must separate nonstationary cancellation, signed Jacobians, and half-contributions at endpoints.",
+    "nearestNeighborDistinction": "The critical-level derivative problem counts positive sublevel mass; this limit relies on conditional oscillatory cancellation and a Fresnel integral.",
+    "finiteDomain": [
+      {
+        "bounds": [
+          -1,
+          2
+        ],
+        "caseId": "stationary-geometry-0",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          0
+        ],
+        "weight": "1+x"
+      },
+      {
+        "bounds": [
+          -2,
+          2
+        ],
+        "caseId": "stationary-geometry-1",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          -1,
+          1
+        ],
+        "weight": "1+x**2"
+      },
+      {
+        "bounds": [
+          0,
+          3
+        ],
+        "caseId": "stationary-geometry-2",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          0,
+          2
+        ],
+        "weight": "2+x"
+      },
+      {
+        "bounds": [
+          -1,
+          3
+        ],
+        "caseId": "stationary-geometry-3",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          -1,
+          0,
+          2
+        ],
+        "weight": "3+x"
+      },
+      {
+        "bounds": [
+          0,
+          1
+        ],
+        "caseId": "stationary-geometry-4",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          0,
+          1
+        ],
+        "weight": "1+x"
+      },
+      {
+        "bounds": [
+          -2,
+          1
+        ],
+        "caseId": "stationary-geometry-5",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          -2,
+          1
+        ],
+        "weight": "3+x**2"
+      },
+      {
+        "bounds": [
+          -2,
+          2
+        ],
+        "caseId": "stationary-geometry-6",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          -1,
+          0,
+          1
+        ],
+        "weight": "2+x**2"
+      },
+      {
+        "bounds": [
+          -3,
+          3
+        ],
+        "caseId": "stationary-geometry-7",
+        "purpose": "Change multiple stationary points, endpoint geometry, and signed amplitude.",
+        "roots": [
+          -2,
+          0,
+          3
+        ],
+        "weight": "4+x"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "integration by parts",
+      "stationary phase",
+      "Fresnel integral",
+      "local inverse functions"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "quadratic-residue-sum-parity-interference",
+    "primaryTechnique": "square-modulus-and-character-orthogonality",
+    "centralDecision": "The linear character creates a gcd divisibility obstruction in addition to even-modulus interference. Squaring and exact character orthogonality are needed in four coupled congruence classes; all alternatives are plain counts from plausible omitted conditions.",
+    "nearestNeighborDistinction": "Continuous stationary phase estimates local oscillations; this finite lattice sum has exact arithmetic interference and parity obstructions.",
+    "finiteDomain": [
+      {
+        "caseId": "quadratic-3-linear-2",
+        "a": 3,
+        "b": 2,
+        "normalizedTaskKey": "four-congruence-Gauss:3:2",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-3-linear-3",
+        "a": 3,
+        "b": 3,
+        "normalizedTaskKey": "four-congruence-Gauss:3:3",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-4-linear-2",
+        "a": 4,
+        "b": 2,
+        "normalizedTaskKey": "four-congruence-Gauss:4:2",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-4-linear-4",
+        "a": 4,
+        "b": 4,
+        "normalizedTaskKey": "four-congruence-Gauss:4:4",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-6-linear-3",
+        "a": 6,
+        "b": 3,
+        "normalizedTaskKey": "four-congruence-Gauss:6:3",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-6-linear-6",
+        "a": 6,
+        "b": 6,
+        "normalizedTaskKey": "four-congruence-Gauss:6:6",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-5-linear-5",
+        "a": 5,
+        "b": 5,
+        "normalizedTaskKey": "four-congruence-Gauss:5:5",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      },
+      {
+        "caseId": "quadratic-5-linear-10",
+        "a": 5,
+        "b": 10,
+        "normalizedTaskKey": "four-congruence-Gauss:5:10",
+        "purpose": "Different gcd divisibility and parity obstructions, with a nonzero linear character."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "complex exponentials",
+      "roots of unity",
+      "finite character sums",
+      "subsequence limits"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-reinforced-urn-distribution",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Polya-exchangeability-beta-limit",
+    "primaryTechnique": "exchangeable-draw-count-and-Riemann-density",
+    "centralDecision": "Reinforcement destroys independent binomial sampling. The ordered-draw weights are exchangeable, producing a beta-binomial count law and a nondegenerate limiting density.",
+    "nearestNeighborDistinction": "The central-limit family concerns independent fluctuations; this process retains a random limiting proportion instead of concentrating at its initial mean.",
+    "finiteDomain": [
+      {
+        "a": 1,
+        "b": 2,
+        "caseId": "urn-1-2-cut-1/2",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "caseId": "urn-2-1-cut-1/3",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/3"
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "caseId": "urn-2-3-cut-1/2",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/2"
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "caseId": "urn-3-2-cut-2/3",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "2/3"
+      },
+      {
+        "a": 3,
+        "b": 4,
+        "caseId": "urn-3-4-cut-1/3",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/3"
+      },
+      {
+        "a": 4,
+        "b": 2,
+        "caseId": "urn-4-2-cut-1/2",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/2"
+      },
+      {
+        "a": 2,
+        "b": 4,
+        "caseId": "urn-2-4-cut-2/3",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "2/3"
+      },
+      {
+        "a": 4,
+        "b": 3,
+        "caseId": "urn-4-3-cut-1/2",
+        "purpose": "Asymmetric initial compositions and distinct thresholds avoid a symmetry-only answer.",
+        "q": "1/2"
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "conditional probability",
+      "exchangeability",
+      "beta integrals",
+      "weak convergence"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-matrix-commutator-limit",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "noncommuting-small-loop-limit",
+    "primaryTechnique": "second-order-commutator-and-accumulated-log-error",
+    "centralDecision": "Four first-order matrix perturbations cancel, leaving a second-order noncommutative drift. Its remainder must stay negligible after taking a growing power.",
+    "nearestNeighborDistinction": "The demoted fixed-Jordan family uses a finite binomial formula; this needs a cancellation scale and control of a product of noncommuting factors.",
+    "finiteDomain": [
+      {
+        "a": "1",
+        "b": "2",
+        "caseId": "shears-1-2",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "2",
+        "b": "3",
+        "caseId": "shears-2-3",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "1/2",
+        "b": "3",
+        "caseId": "shears-1/2-3",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "2/3",
+        "b": "2",
+        "caseId": "shears-2/3-2",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "-1",
+        "b": "2",
+        "caseId": "shears--1-2",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "2",
+        "b": "-3",
+        "caseId": "shears-2--3",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "-1/2",
+        "b": "3",
+        "caseId": "shears--1/2-3",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      },
+      {
+        "a": "3/2",
+        "b": "-1",
+        "caseId": "shears-3/2--1",
+        "purpose": "Different signed shear interactions, including negative commutator drift."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "matrix products",
+      "matrix exponential",
+      "commutators",
+      "uniform remainder estimates"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-hilbert-determinant-rate",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "Cauchy-determinant-logarithmic-energy",
+    "primaryTechnique": "exact-Cauchy-factorization-and-singular-log-Riemann-sums",
+    "centralDecision": "A determinant of growing dimension is too small for entrywise limits. Its exact Cauchy factorization turns the quadratic logarithmic scale into two integrable singular energy sums.",
+    "nearestNeighborDistinction": "The differentiation Hilbert representer solves a fixed finite Gram system; this measures a growing determinant and requires a two-dimensional asymptotic cancellation.",
+    "finiteDomain": [
+      {
+        "alpha": "1",
+        "caseId": "interval-1-exponent-1",
+        "length": "1",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "1",
+        "caseId": "interval-2-exponent-1",
+        "length": "2",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "2",
+        "caseId": "interval-1/2-exponent-2",
+        "length": "1/2",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "1/2",
+        "caseId": "interval-3-exponent-1/2",
+        "length": "3",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "3",
+        "caseId": "interval-3/2-exponent-3",
+        "length": "3/2",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "2",
+        "caseId": "interval-4-exponent-2",
+        "length": "4",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "3/2",
+        "caseId": "interval-2/3-exponent-3/2",
+        "length": "2/3",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      },
+      {
+        "alpha": "4",
+        "caseId": "interval-5-exponent-4",
+        "length": "5",
+        "purpose": "Change the interval scale and endpoint moment weight; the latter must be shown lower-order rather than silently dropped."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Cauchy determinants",
+      "factorials",
+      "Riemann sums",
+      "logarithmic singularities"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-olympiad-restricted-partition-entropy",
+    "topic": "limits",
+    "difficulty": "olympiad",
+    "relatedIdeaGroupId": "partition-generating-function-to-exact-size-entropy",
+    "primaryTechnique": "exponential-tilting-concentration-and-monotone-coefficient-transfer",
+    "centralDecision": "An Euler product asymptotic gives an upper bound but does not alone determine an exact coefficient. Independent geometric multiplicities, a variance bound, and adding ones transfer a high-probability size window to the exact target size.",
+    "nearestNeighborDistinction": "The Lambert product family computes a forward infinite-product limit. This construction requires a converse coefficient lower bound and exact-size combinatorial injection; it shares generating-function background, not the mathematical task.",
+    "finiteDomain": [
+      {
+        "caseId": "exclude-multiples-2",
+        "d": 2,
+        "normalizedTaskKey": "partitions-excluding-multiples:2",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-3",
+        "d": 3,
+        "normalizedTaskKey": "partitions-excluding-multiples:3",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-4",
+        "d": 4,
+        "normalizedTaskKey": "partitions-excluding-multiples:4",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-5",
+        "d": 5,
+        "normalizedTaskKey": "partitions-excluding-multiples:5",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-6",
+        "d": 6,
+        "normalizedTaskKey": "partitions-excluding-multiples:6",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-7",
+        "d": 7,
+        "normalizedTaskKey": "partitions-excluding-multiples:7",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-8",
+        "d": 8,
+        "normalizedTaskKey": "partitions-excluding-multiples:8",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-9",
+        "d": 9,
+        "normalizedTaskKey": "partitions-excluding-multiples:9",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-10",
+        "d": 10,
+        "normalizedTaskKey": "partitions-excluding-multiples:10",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-11",
+        "d": 11,
+        "normalizedTaskKey": "partitions-excluding-multiples:11",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-12",
+        "d": 12,
+        "normalizedTaskKey": "partitions-excluding-multiples:12",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-13",
+        "d": 13,
+        "normalizedTaskKey": "partitions-excluding-multiples:13",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-14",
+        "d": 14,
+        "normalizedTaskKey": "partitions-excluding-multiples:14",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      },
+      {
+        "caseId": "exclude-multiples-15",
+        "d": 15,
+        "normalizedTaskKey": "partitions-excluding-multiples:15",
+        "purpose": "Different dimensionless forbidden-part densities; no external amplitude or index scaling."
+      }
+    ],
+    "instanceCount": 14,
+    "prerequisites": [
+      "integer partitions",
+      "Euler products",
+      "Riemann sums with integrable endpoint singularities",
+      "independent geometric variables",
+      "Chebyshev probability inequality"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q1-limits-hard-poisson-coefficient-limit",
+    "topic": "limits",
+    "difficulty": "hard",
+    "relatedIdeaGroupId": "rare-event-generating-function-limit",
+    "primaryTechnique": "uniform-log-product-and-coefficient-convergence",
+    "centralDecision": "A coefficient of a growing product is controlled by a rare-event generating-function limit; repeated-index terms and the coefficient operation require justification.",
+    "nearestNeighborDistinction": "The central-limit family studies fluctuations at square-root scale, whereas this uses bounded total event intensity.",
+    "finiteDomain": [
+      {
+        "a": 1,
+        "caseId": "power-1-coefficient-1",
+        "j": 1,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 1,
+        "caseId": "power-1-coefficient-3",
+        "j": 3,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 2,
+        "caseId": "power-2-coefficient-2",
+        "j": 2,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 2,
+        "caseId": "power-2-coefficient-4",
+        "j": 4,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 3,
+        "caseId": "power-3-coefficient-1",
+        "j": 1,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 3,
+        "caseId": "power-3-coefficient-3",
+        "j": 3,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 4,
+        "caseId": "power-4-coefficient-2",
+        "j": 2,
+        "purpose": "Change the weight profile and the requested event count."
+      },
+      {
+        "a": 4,
+        "caseId": "power-4-coefficient-4",
+        "j": 4,
+        "purpose": "Change the weight profile and the requested event count."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "power series",
+      "uniform convergence on complex circles",
+      "coefficient extraction"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review",
+    "editorialDisposition": "reclassified-hard-after-options-visible-review",
+    "previousCandidateFamilyId": "q1-limits-olympiad-poisson-coefficient-limit"
+  },
+  {
+    "familyId": "q1-limits-hard-nilpotent-matrix-asymptotics",
+    "topic": "limits",
+    "difficulty": "hard",
+    "relatedIdeaGroupId": "Jordan-chain-polynomial-growth",
+    "primaryTechnique": "nilpotent-binomial-expansion",
+    "centralDecision": "The exponential rate alone is insufficient: the last nonzero nilpotent power determines the polynomial normalization and the selected matrix entry.",
+    "nearestNeighborDistinction": "The Hankel family cancels two scalar modes. This family extracts a Jordan chain of a non-diagonalizable matrix.",
+    "finiteDomain": [
+      {
+        "caseId": "chain-3-shear-1",
+        "h": 1,
+        "lam": 2,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 3
+      },
+      {
+        "caseId": "chain-3-shear-2",
+        "h": 2,
+        "lam": 3,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 3
+      },
+      {
+        "caseId": "chain-3-shear--1",
+        "h": -1,
+        "lam": 2,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 3
+      },
+      {
+        "caseId": "chain-3-shear--2",
+        "h": -2,
+        "lam": 4,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 3
+      },
+      {
+        "caseId": "chain-4-shear-1",
+        "h": 1,
+        "lam": 2,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 4
+      },
+      {
+        "caseId": "chain-4-shear-2",
+        "h": 2,
+        "lam": 3,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 4
+      },
+      {
+        "caseId": "chain-4-shear--1",
+        "h": -1,
+        "lam": 2,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 4
+      },
+      {
+        "caseId": "chain-4-shear--2",
+        "h": -2,
+        "lam": 4,
+        "purpose": "Distinct nilpotent chain lengths and basis shears.",
+        "r": 4
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "matrix multiplication",
+      "binomial theorem",
+      "nilpotent operators"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review",
+    "editorialDisposition": "reclassified-hard-after-independent-review",
+    "previousCandidateFamilyId": "q1-limits-olympiad-nilpotent-matrix-asymptotics"
+  },
+  {
+    "familyId": "q1-limits-hard-singular-riemann-renormalization",
+    "topic": "limits",
+    "difficulty": "hard",
+    "relatedIdeaGroupId": "singular-Riemann-sum-finite-part",
+    "primaryTechnique": "endpoint-subtraction-and-integrable-remainder",
+    "centralDecision": "A divergent endpoint prevents an ordinary Riemann-sum argument; subtracting the singular model exposes both its exact constant and the integrable remainder.",
+    "nearestNeighborDistinction": "The hyperbola family controls integer floor errors by counting. This construction isolates a nonintegrable endpoint and its finite part.",
+    "finiteDomain": [
+      {
+        "caseId": "power-2",
+        "p": 2,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-3",
+        "p": 3,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-4",
+        "p": 4,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-5",
+        "p": 5,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-6",
+        "p": 6,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-7",
+        "p": 7,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-8",
+        "p": 8,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      },
+      {
+        "caseId": "power-9",
+        "p": 9,
+        "purpose": "A different endpoint singularity order with the same finite-part decision."
+      }
+    ],
+    "instanceCount": 8,
+    "prerequisites": [
+      "Riemann sums",
+      "Euler constant",
+      "endpoint asymptotics",
+      "harmonic numbers"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review",
+    "editorialDisposition": "hard-no-advanced-credit",
+    "previousCandidateFamilyId": "q1-limits-olympiad-singular-riemann-renormalization"
+  },
+  {
+    "familyId": "q1-limits-hard-AGM-normalized-gap-prefactor",
+    "topic": "limits",
+    "difficulty": "hard",
+    "relatedIdeaGroupId": "elliptic-agm-invariance",
+    "primaryTechnique": "complementary-Landen-doubling-and-logarithmic-endpoint-asymptotic",
+    "centralDecision": "The ordinary common limit does not determine the doubly exponential gap rate. A complementary integral doubles at each step, while the original integral stays fixed; a controlled logarithmic endpoint singularity then extracts the root-convergence constant.",
+    "nearestNeighborDistinction": "Same global AGM idea as the direct integral invariant, but this is a different mathematical task: the normalized shrinking gap, not the common limit. Failed direct-limit choices remain in the immutable stage07 evidence.",
+    "finiteDomain": [
+      {
+        "caseId": "root-rate-parameter-1/3",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:1/3",
+        "p": "1/3",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-2/5",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:2/5",
+        "p": "2/5",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-3/7",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:3/7",
+        "p": "3/7",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-4/9",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:4/9",
+        "p": "4/9",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-5/11",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:5/11",
+        "p": "5/11",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-1/5",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:1/5",
+        "p": "1/5",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-2/7",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:2/7",
+        "p": "2/7",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-3/8",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:3/8",
+        "p": "3/8",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-5/8",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:5/8",
+        "p": "5/8",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-7/9",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:7/9",
+        "p": "7/9",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-8/11",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:8/11",
+        "p": "8/11",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-9/13",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:9/13",
+        "p": "9/13",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-3/10",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:3/10",
+        "p": "3/10",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-7/10",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:7/10",
+        "p": "7/10",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-4/13",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:4/13",
+        "p": "4/13",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      },
+      {
+        "caseId": "root-rate-parameter-10/13",
+        "normalizedTaskKey": "AGM-normalized-gap-prefactor:10/13",
+        "p": "10/13",
+        "purpose": "Distinct elliptic shape parameters; no external amplitude scaling."
+      }
+    ],
+    "instanceCount": 16,
+    "prerequisites": [
+      "positive improper integrals",
+      "two exact substitutions",
+      "quadratic iteration",
+      "logarithmic endpoint estimates"
+    ],
+    "sourceRecordIds": [],
+    "editorialStatus": "needs-independent-review",
+    "editorialDisposition": "hard-options-visible-recurrence-and-bounds; no advanced credit",
+    "previousCandidateFamilyId": "q1-limits-olympiad-AGM-normalized-gap-prefactor"
+  }
+]

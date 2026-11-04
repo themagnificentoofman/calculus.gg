@@ -1,0 +1,96 @@
+{
+  "policy": "All candidate statements, misconception alternatives and explanations are independently authored. No third-party exercise wording, diagram or solution is adapted. These sources provide mathematical context only; access does not grant redistribution rights.",
+  "references": [
+    {
+      "sourceRecordId": "q4-reference-lebl-sturm-liouville",
+      "title": "Ji\u0159\u00ed Lebl, Notes on Diffy Qs: Sturm\u2013Liouville problems",
+      "url": "https://www.jirka.org/diffyqs/html/slproblems_section.html",
+      "accessed": "2026-11-03",
+      "inspection": "Regular Sturm\u2013Liouville form, separated boundary conditions and positive leading/weight coefficients; inspected the relevant section body.",
+      "licenseStatus": "Reference only; no exercise or source text copied. No license assumption made.",
+      "candidateGroups": [
+        "weighted-string-first-eigenvalue",
+        "spectral-potential-derivative",
+        "Bessel-zero-normalization",
+        "Green-kernel-square-trace",
+        "Robin-Lyapunov-infimum"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-trench-ode",
+      "title": "William F. Trench, Elementary Differential Equations",
+      "url": "https://digitalcommons.trinity.edu/mono/9/",
+      "accessed": "2026-11-03",
+      "inspection": "Official book landing page and publication/license metadata; not claiming inspection of individual book exercises.",
+      "licenseStatus": "CC BY-NC-SA 3.0 on the official landing page. Reference only; not used as a commercial adaptation license.",
+      "candidateGroups": [
+        "rotating-instability",
+        "polynomial-root-moment",
+        "logarithmic-relaxation-constant",
+        "boundary-layer-energy"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-dlmf-bessel-integrals",
+      "title": "NIST DLMF \u00a710.22, Integrals of Bessel functions",
+      "url": "https://dlmf.nist.gov/10.22",
+      "accessed": "2026-11-03",
+      "version": "1.2.8",
+      "inspection": "Product-integral and finite-interval overview; the candidate normalization identity is independently derived from the Bessel differential equation.",
+      "licenseStatus": "Reference only. NIST notices restrict copying and prohibit commercial/bulk reproduction: https://dlmf.nist.gov/about/notices.",
+      "candidateGroups": [
+        "Bessel-zero-normalization"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-boyd-convex",
+      "title": "Stephen Boyd and Lieven Vandenberghe, Convex Optimization \u2014 official book page",
+      "url": "https://web.stanford.edu/~boyd/cvxbook/",
+      "accessed": "2026-11-03",
+      "inspection": "Official book landing page and rights statement; not claiming the book PDF or a specific proof was inspected.",
+      "licenseStatus": "Reference only. Cambridge University Press copyright; permission to display on the official website is not a reuse license.",
+      "candidateGroups": [
+        "oscillator-minimum-control-energy",
+        "minimum-peak-acceleration",
+        "elliptic-torsion-sharp-functional",
+        "harmonic-gradient-extremum",
+        "minimum-enclosing-ellipse",
+        "Gaussian-entropy-variational"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-dlmf-orthogonal-recurrences",
+      "title": "NIST DLMF \u00a718.9, Recurrence Relations and Derivatives",
+      "url": "https://dlmf.nist.gov/18.9",
+      "accessed": "2026-11-03",
+      "inspection": "Inspected the recurrence and derivative framework; the candidate derives its monic lowering and resultant recurrence independently.",
+      "licenseStatus": "Reference only under DLMF notices; no source problem or wording adapted.",
+      "candidateGroups": [
+        "Hermite-ODE-discriminant"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-dlmf-mathieu-floquet",
+      "title": "NIST DLMF \u00a728.2, Mathieu Functions: Definitions and Basic Properties",
+      "url": "https://dlmf.nist.gov/28.2",
+      "accessed": "2026-11-03",
+      "inspection": "Inspected the Mathieu equation and Floquet context; the candidate independently computes the first monodromy perturbation.",
+      "licenseStatus": "Reference only under DLMF notices; no source problem or wording adapted.",
+      "candidateGroups": [
+        "Mathieu-resonant-growth"
+      ]
+    },
+    {
+      "sourceRecordId": "q4-reference-dlmf-lagrange-inversion",
+      "title": "NIST DLMF \u00a71.10(vii), Inverse Functions",
+      "url": "https://dlmf.nist.gov/1.10#vii",
+      "accessed": "2026-11-03",
+      "inspection": "Inspected analytic inverse hypotheses and Lagrange coefficient inversion statement; candidate checks the inverse derivative hypothesis and independently extracts its binomial coefficients.",
+      "licenseStatus": "Reference only under DLMF notices; no source problem or wording adapted.",
+      "candidateGroups": [
+        "inverse-ODE-coefficient-asymptotic"
+      ]
+    }
+  ],
+  "verificationSeparation": "Reference pointers are not verification evidence. Finite symbolic identities, exact geometric algorithms and analytic applicability arguments are recorded independently in each candidate. No formal-proof or human-review claim is made."
+}

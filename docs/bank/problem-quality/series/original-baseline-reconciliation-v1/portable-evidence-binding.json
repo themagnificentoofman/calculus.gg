@@ -1,0 +1,22 @@
+{
+  "status": "portable-source-copy-only",
+  "baseReport": {
+    "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/reconciliation-report.json",
+    "sha256": "41d87396888b09a157c042042e0c0e70f2c6fd8160532b3f2bb95db5fcd0881e"
+  },
+  "copies": [
+    {
+      "originalPath": "../quality-research/series-sources/existing-frozen/revision-candidates.jsonl",
+      "portablePath": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/reviewed-preview-source.jsonl",
+      "sha256": "3a147bdff751bfa8bdae2f7b1d2db6b8bbe0c6b95a03be13e81d8740d0e0a763",
+      "byteIdentical": true
+    }
+  ],
+  "publishedSourceSubset": {
+    "path": "docs/bank/problem-quality/series/original-baseline-reconciliation-v1/published-series.jsonl",
+    "sha256": "baf31ac9cca265334c8a9f4ceec821e6a37042015433e5528fed7a4e7f5dfc7c",
+    "records": 384,
+    "scope": "Exact original source lines. Full release digest remains recorded in the base report."
+  },
+  "scope": "The copy adds portable evidence for the old peer review source. It changes no report, record, qualification, or published source hash."
+}

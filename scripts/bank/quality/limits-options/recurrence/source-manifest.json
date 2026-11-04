@@ -1,0 +1,154 @@
+{
+  "stage": ".bank-data/quality/diff-limits-previews-v3",
+  "sourceArtifacts": {
+    "retained-originals.jsonl": "ef34132835650a1be5e9a3f80be243281d14339c04ea94d2e229a713f927b84e",
+    "canonical-previews.jsonl": "0ab72004a14cfa81ca02e511f4c7a00ace2017c6ec12963af9e0b2b2634a0e97",
+    "admission-previews.json": "d97b12b4ab1e768f1ee65fe0e0ee59421525fca902e150327603e3d6334e501c"
+  },
+  "sourceRecordsSha256": "8a2af00788a0ca8fa35150f2fd24f9d932048f33311763e1ab0dee0643dfe271",
+  "reviewedPresentationsSha256": "5fb1e17b86f13d1020d6238bb88293949bc43e93b4b877a4d86a9f2c7155574c",
+  "reviewedPresentationSource": {
+    "path": "scripts/bank/quality/diff-limits/lower/original-reviewed-presentation.json",
+    "sha256": "b5dc55fe7be1c4b8341a7646b69f1f8bd68c31dcd8fd64d3e829139527177666"
+  },
+  "records": [
+    {
+      "index": 0,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_d9b934f6d9ba1541daff",
+      "canonicalRawSha256": "ec9bc87a2085b8e55c0b14d4f7cd52b45b73a5a6bc53494d92bf71e87c32ef97",
+      "previous": {
+        "problemId": "cn_d9b934f6d9ba1541daff",
+        "revision": 1,
+        "sourceContentHash": "b7b54beba99356311507250e362631b8771d572240d1fb75add3b02e23498beb",
+        "semanticHash": "b7aad1f19084cec70881c276cc368b6e55050f07e1b0d4462aea753a5b42678f",
+        "meaningChanged": false
+      },
+      "originalReviewId": null,
+      "retainedSource": true
+    },
+    {
+      "index": 1,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_71180fe6ce7cdc2512dd",
+      "canonicalRawSha256": "0484e8049f4e5d45a5329cb294d5635e5cf30d71741ee534163e73b80f02fc0d",
+      "previous": {
+        "problemId": "cn_71180fe6ce7cdc2512dd",
+        "revision": 1,
+        "sourceContentHash": "5e76800730b85581049475d824303068472332daf5d9f985d7b8281ddd4953a7",
+        "semanticHash": "295abd70e9ef3522824610d95725cf9ed63efd97823848596cc193837fa6f4c3",
+        "meaningChanged": false
+      },
+      "originalReviewId": "quality-review:diff-limits-original-revisions:m3-limits-hard-recurrence-limit:0",
+      "retainedSource": false
+    },
+    {
+      "index": 2,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_c8e0b9e3e65c0bdee329",
+      "canonicalRawSha256": "97e5a05cd78554a99de0edd345a812370e285a72b6d198c950e11b220b0b4453",
+      "previous": {
+        "problemId": "cn_c8e0b9e3e65c0bdee329",
+        "revision": 1,
+        "sourceContentHash": "fa3d60bfa9cc274550692e71b3a4a1319b3adb96fa6ee7855240b5990818a77c",
+        "semanticHash": "fc4ffe323827561a6772f8236c722238e40e8be1f66697b32e58108d7b875191",
+        "meaningChanged": false
+      },
+      "originalReviewId": "quality-review:diff-limits-original-revisions:m3-limits-hard-recurrence-limit:1",
+      "retainedSource": false
+    },
+    {
+      "index": 3,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_2986820d329ea8850fd6",
+      "canonicalRawSha256": "d8077f6667363f43c1d99dcdaafe2b956f27f0e3e1734a220d72f2a899d1536d",
+      "previous": {
+        "problemId": "cn_2986820d329ea8850fd6",
+        "revision": 1,
+        "sourceContentHash": "67cf17b1cd4c204225016a4ca8a5a001649578eec2e5519ae63b9719eee77732",
+        "semanticHash": "6b24693422dd9907072a9982c6d2f2609c496a90bdfcdb3cf182bb2030bc66f1",
+        "meaningChanged": false
+      },
+      "originalReviewId": "quality-review:diff-limits-original-revisions:m3-limits-hard-recurrence-limit:2",
+      "retainedSource": false
+    },
+    {
+      "index": 4,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_c41e5bce2408ce7e4b65",
+      "canonicalRawSha256": "9a660d6bc4f680613e7f0c57e1d5f6072cca5798778fbfa770584be577ddc2f3",
+      "previous": {
+        "problemId": "cn_c41e5bce2408ce7e4b65",
+        "revision": 1,
+        "sourceContentHash": "d7958a2736f230ed746cd505ded33f742fb294e2d7b4274468dd39ba6e7fda9e",
+        "semanticHash": "9feac70fd8d0e04a162c1f885f4b736696ed1c813dacda5a6d987f75e4e2c3cf",
+        "meaningChanged": false
+      },
+      "originalReviewId": null,
+      "retainedSource": true
+    },
+    {
+      "index": 5,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_1aedbbacf9012a47c873",
+      "canonicalRawSha256": "7479169896255d8aca56483625fc06593e499615034e94b609d4554ac8106392",
+      "previous": {
+        "problemId": "cn_1aedbbacf9012a47c873",
+        "revision": 1,
+        "sourceContentHash": "bd3fc0c5ec9f1724b5c0890b2c9dda1cf95cf3b0b17455b79c425e398e83d96e",
+        "semanticHash": "d2f24914a5c2c072207ac9898aad7194b99f4a854c67e30409ef72684332be8e",
+        "meaningChanged": false
+      },
+      "originalReviewId": "quality-review:diff-limits-original-revisions:m3-limits-hard-recurrence-limit:3",
+      "retainedSource": false
+    },
+    {
+      "index": 6,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_71cb4649f7eeebf35a7c",
+      "canonicalRawSha256": "d26c385ebd79bdd20982bcbfa4289d54385a90a34ece2467ad8315da427ebd25",
+      "previous": {
+        "problemId": "cn_71cb4649f7eeebf35a7c",
+        "revision": 1,
+        "sourceContentHash": "e00a2b0f1b8a0a7d321e96e5c32c9e7e4777606eafd773b6665fd1e5a6db6677",
+        "semanticHash": "cfa5c959b9b5410fba1a3d167c4122d1a75dbf3e0a8f79bee7890bb8edbf7bef",
+        "meaningChanged": false
+      },
+      "originalReviewId": null,
+      "retainedSource": true
+    },
+    {
+      "index": 7,
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "problemId": "cn_bc6b0ae518c579d2c490",
+      "canonicalRawSha256": "9c07abe601acdf41f2240f4e385739cf9c304e822bb3fde4f9f5b64a7e02485e",
+      "previous": {
+        "problemId": "cn_bc6b0ae518c579d2c490",
+        "revision": 1,
+        "sourceContentHash": "69c29daa19784f5e1a8c6a530cfd46f0800f425960b518d67a7f4f465c77d3e6",
+        "semanticHash": "83a0ca77c932ec12a47a3d97ab92c9d245c9a813fa99c35027a9535ac66ce7a7",
+        "meaningChanged": false
+      },
+      "originalReviewId": "quality-review:diff-limits-original-revisions:m3-limits-hard-recurrence-limit:4",
+      "retainedSource": false
+    },
+    {
+      "index": 8,
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "problemId": "cn_748395c6e8a036c527e9",
+      "canonicalRawSha256": "90f58695cf9da3c331068466c0353d9f6132217416a37d946f7fa5a60373d0b1",
+      "previous": null,
+      "originalReviewId": "quality-review:diff-limits-lower-extensions:q2-m3-limits-hard-recurrence-limit:0",
+      "retainedSource": false
+    },
+    {
+      "index": 9,
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "problemId": "cn_6e8c6a828fd9eb823e0d",
+      "canonicalRawSha256": "ea63e7d2ec231cb00c8d21ffcf2f833d46226004d2ab16d85bc6cf330043d714",
+      "previous": null,
+      "originalReviewId": "quality-review:diff-limits-lower-extensions:q2-m3-limits-hard-recurrence-limit:1",
+      "retainedSource": false
+    }
+  ]
+}

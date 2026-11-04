@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import {ExperimentalSettings} from '@/components/ExperimentalSettings';
 import { useAuth } from '@/components/AuthProvider';
 import { motion } from 'motion/react';
 import { Settings, User, Image as ImageIcon, ArrowLeft, Save, Shield, Bell, Volume2 } from 'lucide-react';
@@ -14,6 +15,7 @@ export default function SettingsPage() {
   const [photoURL, setPhotoURL] = useState('');
   const [notifications, setNotifications] = useState(true);
   const [soundEnabled, setSoundEnabled] = useState(true);
+  const [includeLegacyProblems, setIncludeLegacyProblems] = useState(false);
   
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -32,6 +34,7 @@ export default function SettingsPage() {
       setPhotoURL(profile.photoURL || '');
       setNotifications(profile.settings?.notifications ?? true);
       setSoundEnabled(profile.settings?.soundEnabled ?? true);
+      setIncludeLegacyProblems(profile.settings?.includeLegacyProblems === true);
       setHasUnsavedChanges(false);
     }
   }, [user, profile, authLoading, hasUnsavedChanges]);
@@ -85,7 +88,8 @@ export default function SettingsPage() {
         settings: {
           ...profile?.settings,
           notifications,
-          soundEnabled
+          soundEnabled,
+          includeLegacyProblems
         }
       });
       setMessage({ text: 'Profile updated successfully!', type: 'success' });
@@ -242,7 +246,7 @@ export default function SettingsPage() {
                     className="flex items-center gap-2 px-6 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl transition-colors disabled:opacity-50"
                   >
                     <Save className="w-4 h-4" />
-                    Save Profile
+                    Save Changes
                   </button>
                 </div>
               </form>
@@ -339,6 +343,7 @@ export default function SettingsPage() {
                 </label>
               </div>
             </motion.section>
+            <ExperimentalSettings enabled={includeLegacyProblems} onChange={enabled => { setIncludeLegacyProblems(enabled); setHasUnsavedChanges(true); }} onSave={handleSaveProfile} saving={loading} dirty={hasUnsavedChanges} />
           </div>
         </div>
       </div>

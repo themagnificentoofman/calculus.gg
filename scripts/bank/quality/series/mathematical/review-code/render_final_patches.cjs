@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path'),{createRequire}=require('node:module'),crypto=require('node:crypto');
+const repo=process.argv[2];if(!repo)throw Error('Pass the source repository with installed KaTeX as argument');const katex=createRequire(path.resolve(repo,'package.json'))('katex');
+const files=['option-patches.json','bracket-option-patches.json','support-option-patches.json'];let fields=0,errors=[];
+for(const name of files){const rows=JSON.parse(fs.readFileSync(path.join(__dirname,name),'utf8'));for(const r of rows)for(const c of r.choices){fields++;try{katex.renderToString(c.math,{throwOnError:true,strict:'error',trust:false,displayMode:true})}catch(e){errors.push({problemId:r.problemId,choiceId:c.choiceId,error:String(e)})}}}
+const hashes=Object.fromEntries(files.map(n=>[n,crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,n))).digest('hex')]));
+const result={records:162,mathFields:fields,errors,inputSHA256:hashes,scope:'Only changed menus are rendered; original statements and solutions remain untouched.'};fs.writeFileSync(path.join(__dirname,'patch-render-report-final.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));if(errors.length)process.exit(1);

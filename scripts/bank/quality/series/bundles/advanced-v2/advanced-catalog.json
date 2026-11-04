@@ -1,0 +1,643 @@
+[
+  {
+    "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "singular-convolution-Riemann-limit",
+    "primaryTechnique": "truncate-endpoint-singularities",
+    "difficultyRationale": "An ordinary Riemann-sum argument fails at two singular endpoints; endpoint bounds are needed before evaluating the beta integral.",
+    "prerequisites": [
+      "improper integrals",
+      "Riemann sums",
+      "Gamma function"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-uniform-log-sine-threshold",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "uniform-convergence-sine-coefficients",
+    "primaryTechnique": "block-counterexample-and-Dirichlet-tail",
+    "difficultyRationale": "Requires both a necessary uniform Cauchy block bound and a uniform tail estimate with a moving frequency split.",
+    "prerequisites": [
+      "uniform convergence",
+      "summation by parts"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-lacunary-Abel-growth",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "lacunary-Abel-counting",
+    "primaryTechnique": "logarithmic-cutoff-and-uniform-tail",
+    "difficultyRationale": "The dominant term count grows logarithmically, while both errors require bounds uniform in the moving cutoff.",
+    "prerequisites": [
+      "infinite series",
+      "asymptotic estimates"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-quadratic-small-divisor",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "quadratic-irrational-small-divisor",
+    "primaryTechnique": "integer-recurrence-and-conjugate-root",
+    "difficultyRationale": "The small sine is controlled by an exact integer approximation from a recurrence, not by treating its argument as a generic oscillation.",
+    "prerequisites": [
+      "second-order recurrences",
+      "small-angle limit"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-alternating-infinite-product",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "conditional-product-second-order-drift",
+    "primaryTechnique": "logarithmic-expansion-with-summable-remainder",
+    "difficultyRationale": "An alternating first-order logarithmic term converges while the even second-order drift determines whether the product collapses.",
+    "prerequisites": [
+      "alternating series",
+      "infinite products",
+      "Taylor remainder"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Dirichlet-moment-uniqueness",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Dirichlet-series-coefficient-recovery",
+    "primaryTechnique": "smallest-index-dominance",
+    "difficultyRationale": "Decides whether specified exponential moment data can be supported on the reciprocal-integer lattice; no consistent coefficient sequence is supplied in the question.",
+    "prerequisites": [
+      "dominated convergence",
+      "absolutely convergent series"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-least-energy-sequence",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Hilbert-sequence-two-moment-projection",
+    "primaryTechnique": "Gram-projection-and-orthogonal-remainder",
+    "difficultyRationale": "Two infinite linear constraints determine a two-dimensional minimum-energy projection; the residual norm proves a global attainable optimum.",
+    "prerequisites": [
+      "Cauchy-Schwarz",
+      "geometric moments"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-rooted-tree-weighted-series",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "rooted-tree-Lagrange-branch",
+    "primaryTechnique": "Lagrange-inversion-and-branch-continuation",
+    "difficultyRationale": "The implicit generating function has multiple real branches; analytic continuation from zero and a differentiated identity select the correct weighted sum.",
+    "prerequisites": [
+      "Lagrange inversion",
+      "implicit functions",
+      "power-series radius"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "cycle-resolvent-Chebyshev-trace",
+    "primaryTechnique": "roots-logarithmic-derivative",
+    "difficultyRationale": "A trigonometric reciprocal sum is converted to a logarithmic derivative of a polynomial whose zeros have the required multiplicities.",
+    "prerequisites": [
+      "Chebyshev polynomials",
+      "logarithmic differentiation"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Poisson-partition-moment",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Poisson-growing-moment-saddle",
+    "primaryTechnique": "exponential-moment-bound-and-single-term-sharpness",
+    "difficultyRationale": "A moving Poisson mean and growing moment require optimizing an exponential majorant and matching it with a Stirling lower bound; a fixed Bell table cannot answer the limit.",
+    "prerequisites": [
+      "exponential series",
+      "Stirling asymptotics",
+      "optimization"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-factorial-floor-reconstruction",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "factorial-floor-exact-remainder",
+    "primaryTechnique": "integer-truncation-and-generating-function",
+    "difficultyRationale": "A floor containing the transcendental number e is resolved by a strict factorial remainder bound before a justified double-sum transformation.",
+    "prerequisites": [
+      "exponential remainder",
+      "floor function",
+      "nonnegative sums"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Riesz-product-energy",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "dissociated-Fourier-frequencies",
+    "primaryTechnique": "balanced-digit-uniqueness-and-constant-term",
+    "difficultyRationale": "The squared product contains many frequencies, but a largest-frequency argument excludes every nontrivial constant contribution.",
+    "prerequisites": [
+      "trigonometric orthogonality",
+      "finite Fourier series"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Euler-harmonic-weight-three",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0
+    ],
+    "relatedIdeaGroupId": "positive-double-series-two-countings",
+    "primaryTechnique": "two-regroupings-and-diagonal-separation",
+    "difficultyRationale": "A positive double sum admits two different exact reorganizations; equating them determines a harmonic-weighted series without assuming a memorized Euler sum.",
+    "prerequisites": [
+      "Tonelli theorem",
+      "telescoping"
+    ],
+    "sourceRecordIds": [],
+    "capacityReview": "One original Euler-sum instance; seven mere excluded-prefix variants withheld from meaningful capacity."
+  },
+  {
+    "familyId": "quality-series-olympiad-Pade-cancellation-order",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Pade-exponential-integral-error",
+    "primaryTechnique": "exact-beta-remainder-and-Laplace-maximum",
+    "difficultyRationale": "An exponential approximation is evaluated on a moving scale; an exact beta remainder and a global interior maximum determine its exponential growth.",
+    "prerequisites": [
+      "integration by parts",
+      "Laplace maximum principle",
+      "Stirling asymptotics"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-factorial-asymptotic-remainder",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "divergent-series-optimal-scale-remainder",
+    "primaryTechnique": "exact-geometric-remainder-and-Gamma-concentration",
+    "difficultyRationale": "A divergent factorial expansion is truncated at a moving scale; an exact remainder integral and concentration, not a convergent Taylor argument, determine its size.",
+    "prerequisites": [
+      "Stirling asymptotics",
+      "integral moments",
+      "Chebyshev inequality"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Hilbert-kernel-sharp-constant",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "sharp-Hilbert-series-inequality",
+    "primaryTechnique": "asymmetric-Schur-test-and-logarithmic-extremizers",
+    "difficultyRationale": "An asymmetric operator kernel requires matching row and column weights and an extremizing sequence; the parameter changes the operator aspect ratio, not an external scalar.",
+    "prerequisites": [
+      "Cauchy-Schwarz",
+      "integral comparison",
+      "sharp constants"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Carleman-geometric-mean-constant",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "sharp-Carleman-geometric-mean-series",
+    "primaryTechnique": "weighted-AMGM-telescope-and-logarithmic-sharpness",
+    "difficultyRationale": "Different polynomial weights change every weighted geometric mean; a telescoping AM-GM construction and a logarithmic asymptotic prove its optimal constant.",
+    "prerequisites": [
+      "weighted AM-GM",
+      "nonnegative summation",
+      "Riemann sums with integrable logarithmic endpoint"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Dyson-alternating-cube",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Dyson-constant-term-recurrence",
+    "primaryTechnique": "Laurent-constant-term-and-multinomial-asymptotics",
+    "difficultyRationale": "An asymptotic alternating binomial sum cannot be resolved by a small direct sum; constant-term induction and three-factor Stirling normalization are both necessary.",
+    "prerequisites": [
+      "Laurent polynomials",
+      "multinomial recurrence",
+      "Stirling asymptotics"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Abel-logarithmic-sum",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "Abel-Cesaro-logarithmic-regularization",
+    "primaryTechnique": "paired-Gamma-products-and-Cesaro-Abel",
+    "difficultyRationale": "The ordinary series diverges, so finite paired products and a separate Cesaro-to-Abel argument are needed to evaluate the requested radial limit.",
+    "prerequisites": [
+      "Gamma recurrence",
+      "Stirling ratio",
+      "Abel summation"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-maximum-entropy-sequence",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "countable-Gibbs-entropy-extremum",
+    "primaryTechnique": "finite-coarsening-and-relative-entropy",
+    "difficultyRationale": "A countably infinite optimization requires proving entropy is finite under the mean constraint, then identifying and attaining the geometric Gibbs bound.",
+    "prerequisites": [
+      "log-sum inequality",
+      "geometric series"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-restricted-digit-convergence",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "restricted-digit-Dirichlet-dimension",
+    "primaryTechnique": "finite-state-counting-and-geometric-blocks",
+    "difficultyRationale": "The convergence boundary comes from a constrained digit-language growth rate, requiring a recurrence count and sharp block bounds including the boundary.",
+    "prerequisites": [
+      "Fibonacci recurrence",
+      "comparison tests",
+      "base expansions"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-conditional-double-sum-orders",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "conditional-double-series-order",
+    "primaryTechnique": "mixed-discrete-difference-and-rectangular-limits",
+    "difficultyRationale": "A hidden two-variable telescope has distinct iterated and square cutoffs; absolute divergence must be established to explain the order dependence.",
+    "prerequisites": [
+      "double sums",
+      "telescoping",
+      "absolute convergence"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-olympiad-Hardy-mean-sharp-constant",
+    "topic": "series",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "relatedIdeaGroupId": "sharp-discrete-Hardy-power-mean",
+    "primaryTechnique": "weighted-Holder-tail-telescope-and-sharpness",
+    "difficultyRationale": "The power-mean operator norm requires an auxiliary sequence tailored to Holder and a matching finite-support asymptotic; its exponent changes the operator space.",
+    "prerequisites": [
+      "Holder inequality",
+      "Bernoulli inequality",
+      "integral comparison"
+    ],
+    "sourceRecordIds": []
+  },
+  {
+    "familyId": "quality-series-hard-Legendre-recurrence-generating",
+    "topic": "series",
+    "difficulty": "hard",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "three-term-recurrence-generating-ODE",
+    "primaryTechnique": "sum-recurrence-and-initial-value",
+    "difficultyRationale": "A polynomial recurrence must be converted to a differential equation for its generating function, with a branch fixed by the initial coefficient.",
+    "prerequisites": [
+      "power series",
+      "first-order differential equations"
+    ],
+    "sourceRecordIds": [],
+    "difficultyReview": "Independent blind/options-visible review: standard generating-function route is Hard, not Olympiad."
+  },
+  {
+    "familyId": "quality-series-hard-weighted-subset-q-product",
+    "topic": "series",
+    "difficulty": "hard",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "q-binomial-subset-generating",
+    "primaryTechnique": "coefficient-recurrence-and-finite-product",
+    "difficultyRationale": "The weighted subset sum is recognized through a two-way inclusion recurrence, yielding a finite product with a nontrivial normalization.",
+    "prerequisites": [
+      "finite products",
+      "polynomial coefficients"
+    ],
+    "sourceRecordIds": [],
+    "difficultyReview": "Independent blind/options-visible review: standard generating-function route is Hard, not Olympiad."
+  },
+  {
+    "familyId": "quality-series-hard-binomial-convolution-Riccati",
+    "topic": "series",
+    "difficulty": "hard",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "exponential-convolution-generating-Riccati",
+    "primaryTechnique": "EGF-product-and-initial-value-branch",
+    "difficultyRationale": "Binomial convolution becomes a nonlinear differential equation only in the exponential generating function; its analytic solution and first pole establish the valid evaluation.",
+    "prerequisites": [
+      "exponential generating functions",
+      "separable differential equation"
+    ],
+    "sourceRecordIds": [],
+    "difficultyReview": "Independent blind/options-visible review: standard generating-function route is Hard, not Olympiad."
+  },
+  {
+    "familyId": "quality-series-hard-Liouville-Dirichlet-product",
+    "topic": "series",
+    "difficulty": "hard",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "multiplicative-Dirichlet-Euler-product",
+    "primaryTechnique": "prime-factor-parity-and-absolute-Euler-product",
+    "difficultyRationale": "Complete multiplicativity and unique factorization produce an Euler product whose local factors reveal a ratio of zeta values.",
+    "prerequisites": [
+      "unique factorization",
+      "Euler products"
+    ],
+    "sourceRecordIds": [],
+    "difficultyReview": "Independent blind review: a standard Euler-factor ratio is Hard fluency."
+  }
+]

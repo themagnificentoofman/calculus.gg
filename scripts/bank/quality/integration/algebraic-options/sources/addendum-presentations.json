@@ -1,0 +1,50 @@
+{
+  "cn_c01157dcbacd9309fd41": {
+    "sourceContentHash": "c711b448e5e4e8745aa0f7a03c4ea0241066d8f2b6aac2a28f4ea116447b02cc",
+    "revision": 1,
+    "statement": "\\int_{- \\frac{\\pi}{13}}^{\\frac{\\pi}{13}}x^{3} + \\cos{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The cubic term is odd, so its integral over the symmetric interval is zero. The cosine term is even.}",
+      "\\int_{-\\frac{\\pi}{13}}^{\\frac{\\pi}{13}}x^3\\,\\mathrm dx=0,\\qquad \\int_{-\\frac{\\pi}{13}}^{\\frac{\\pi}{13}}\\cos x\\,\\mathrm dx=2\\int_0^{\\frac{\\pi}{13}}\\cos x\\,\\mathrm dx",
+      "2[\\sin x]_0^{\\frac{\\pi}{13}}=2\\sin\\left(\\frac{\\pi}{13}\\right)=2 \\sin{\\left(\\frac{\\pi}{13} \\right)}",
+      "2 \\sin{\\left(\\frac{\\pi}{13} \\right)}"
+    ],
+    "solutionQuality": null
+  },
+  "cn_ce8977ed86d942e8bffc": {
+    "sourceContentHash": "80bfe0f962d419019cc831cf3878331dfe3b3cc1f72e0f4e9ae6d568ab7523ee",
+    "revision": 1,
+    "statement": "\\int_{- \\frac{\\pi}{7}}^{\\frac{\\pi}{7}}x^{3} + \\cos{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The cubic term is odd, so its integral over the symmetric interval is zero. The cosine term is even.}",
+      "\\int_{-\\frac{\\pi}{7}}^{\\frac{\\pi}{7}}x^3\\,\\mathrm dx=0",
+      "\\int_{-\\frac{\\pi}{7}}^{\\frac{\\pi}{7}}\\cos x\\,\\mathrm dx=2\\int_0^{\\frac{\\pi}{7}}\\cos x\\,\\mathrm dx",
+      "2[\\sin x]_0^{\\frac{\\pi}{7}}=2\\sin\\left(\\frac{\\pi}{7}\\right)=2 \\sin{\\left(\\frac{\\pi}{7} \\right)}",
+      "2 \\sin{\\left(\\frac{\\pi}{7} \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "80bfe0f962d419019cc831cf3878331dfe3b3cc1f72e0f4e9ae6d568ab7523ee"
+    }
+  },
+  "cn_df45481843465e29ac24": {
+    "sourceContentHash": "1f2f7c13d34c62756a0a391317c9da4afd695a0f48a86831bb32fa9ae1003d7b",
+    "revision": 1,
+    "statement": "\\int_{- \\frac{\\pi}{9}}^{\\frac{\\pi}{9}}x^{3} + \\cos{\\left(x \\right)}\\,\\mathrm{d}x",
+    "steps": [
+      "\\textnormal{The cubic term is odd, so its integral over the symmetric interval is zero. The cosine term is even.}",
+      "\\int_{-\\frac{\\pi}{9}}^{\\frac{\\pi}{9}}x^3\\,\\mathrm dx=0",
+      "\\int_{-\\frac{\\pi}{9}}^{\\frac{\\pi}{9}}\\cos x\\,\\mathrm dx=2\\int_0^{\\frac{\\pi}{9}}\\cos x\\,\\mathrm dx",
+      "2[\\sin x]_0^{\\frac{\\pi}{9}}=2\\sin\\left(\\frac{\\pi}{9}\\right)=2 \\sin{\\left(\\frac{\\pi}{9} \\right)}",
+      "2 \\sin{\\left(\\frac{\\pi}{9} \\right)}"
+    ],
+    "solutionQuality": {
+      "version": "worked-solutions-v1",
+      "notationVersion": "calculus-ninja-notation-v1",
+      "auditId": "coverage-v1",
+      "sourceContentHash": "1f2f7c13d34c62756a0a391317c9da4afd695a0f48a86831bb32fa9ae1003d7b"
+    }
+  }
+}

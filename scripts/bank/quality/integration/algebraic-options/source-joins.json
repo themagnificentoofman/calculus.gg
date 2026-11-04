@@ -1,0 +1,3370 @@
+[
+  {
+    "route": "main55",
+    "familyId": "io3-bernoulli-product",
+    "index": 0,
+    "rawHash": "880d0de28363d3538c603fb8b61a1d024eec95c468bcf6b298b6735e6ec7cdaf",
+    "contentHash": "045dae73c0600996d4223871f17f66ac89ca6ee8fee837be274bda9a3baacaf7",
+    "sourcePreview": {
+      "canonicalRawHash": "c845383ef5d25e9238a83cba6c9ce4f386fbeb6610d6c224316b3e41571db1ef",
+      "problemId": "cn_d5fa25ab7b9aba34116d",
+      "rawConstructorHash": "0aded5c51b5143c1fb1d321c108d3a175f1c13a46c2d18fb6121d6d003f05010",
+      "revision": 2,
+      "semanticHash": "c17bb55e6de5941e02c3e7342d53ae3b36ef77ed78212e2322ba0dec3d294965",
+      "sourceContentHash": "fec13aeb79256faf2e4a511e3a06f04dcaa9a9f1634d71bda875f6d13c083d69"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_d5fa25ab7b9aba34116d",
+      "revision": 1,
+      "semanticHash": "c17bb55e6de5941e02c3e7342d53ae3b36ef77ed78212e2322ba0dec3d294965",
+      "sourceContentHash": "16eed8623ff21c7eea2f7093f5854f08ab31955c95d86e615f540f86b1a4d86c"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "36606027bb6fd5c6f6d2a4eb1089fd81ba2e5760bf5f70a587ab677950d88296",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Extract the finite Bernoulli polynomials from the given generating series, then integrate their product; an endpoint-jump recurrence gives an alternative.",
+    "analyticConditions": "All integrands are explicitly finite polynomials on[0,1]. The chosen degrees are positive integers. The generating-function convention fixes B1(x)=x\u22121/2.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "2be14d610dd98bd3981bf26c00a12c925a3d9b7f3d640a0f4ba2fdff12e6d55b",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The displayed generating function implies B0=1, Bn\u2032=n B(n\u22121), and zero integral for n\u22651. Reconstruct the finite polynomials recursively with these conditions, then integrate the exact product coefficient by coefficient.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-bernoulli-product",
+    "index": 2,
+    "rawHash": "f5007a8b2b79e4de3a4273901888ea93c8747c18b8956724a1d8d3f719af379c",
+    "contentHash": "57f68cecfceb6eb736f3c9253d2a140585971bc83519e6cfd3297b06041fb8ba",
+    "sourcePreview": {
+      "canonicalRawHash": "fda28c743144207fd897fade1282d15ee4fdbbc19292020a371559a6d54ab300",
+      "problemId": "cn_a045263dfcea892f6a32",
+      "rawConstructorHash": "5722fa5e61e728a19f7857eccbd6949bc08e70ae53fdd5c7528140f3b0bd833f",
+      "revision": 2,
+      "semanticHash": "30672056adfce476134d6ae9c0e0d90a0840dcc326e136f7b5f2183f54a28860",
+      "sourceContentHash": "78b2a5e25c7154878e013fdc6795a43fb110d2114925113162661f91376d2f79"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_a045263dfcea892f6a32",
+      "revision": 1,
+      "semanticHash": "30672056adfce476134d6ae9c0e0d90a0840dcc326e136f7b5f2183f54a28860",
+      "sourceContentHash": "e7a3df9ec4e06b88d087e62216f8aed83b844e65be49870baacbf5bb6edd4c77"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "b1678db97db88f0eccbe808d0e6d2f68870d7514487d72227bd2321d468fa821",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Extract the finite Bernoulli polynomials from the given generating series, then integrate their product; an endpoint-jump recurrence gives an alternative.",
+    "analyticConditions": "All integrands are explicitly finite polynomials on[0,1]. The chosen degrees are positive integers. The generating-function convention fixes B1(x)=x\u22121/2.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "676c35fb30c372fb9b939ec66df7bf5ae9814d776793b0f8b64cdbc28a5e5374",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The displayed generating function implies B0=1, Bn\u2032=n B(n\u22121), and zero integral for n\u22651. Reconstruct the finite polynomials recursively with these conditions, then integrate the exact product coefficient by coefficient.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-bernoulli-product",
+    "index": 4,
+    "rawHash": "970b26dba6011a87a692969b5c1b54017c96a04344bad31d0704e26c3b8cc029",
+    "contentHash": "9b9e23b7ccc365ec59903fa8ffa586511ba82fb0cba81fe5a6302e3f8731064d",
+    "sourcePreview": {
+      "canonicalRawHash": "bcd4f915ff974b1edc2c339fb51b9b739588c61947b47b0bc413c7ba01d3f1b4",
+      "problemId": "cn_a99f29a2297d60e81809",
+      "rawConstructorHash": "5261659ae7ebfcdf9676702052765f4ce72a317ea96e0aa272a31b4fabc5dbf7",
+      "revision": 2,
+      "semanticHash": "72473322fe1d7400aaf79d19596f0b7e9ec8adfee7d7bd307f9f3d09cb43535e",
+      "sourceContentHash": "2537b4794825949545bb9e09b56f1b1eb3773377fdefb4be6b3bdc8e91f41e9d"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_a99f29a2297d60e81809",
+      "revision": 1,
+      "semanticHash": "72473322fe1d7400aaf79d19596f0b7e9ec8adfee7d7bd307f9f3d09cb43535e",
+      "sourceContentHash": "23229d55d8929b809470611d1913cd8832f73c35e22ec847bbe5126a8ece08d4"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "16304d858f026f8e0ae74860089d702c50a0ae91f381063b518d949b71b65ba8",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Extract the finite Bernoulli polynomials from the given generating series, then integrate their product; an endpoint-jump recurrence gives an alternative.",
+    "analyticConditions": "All integrands are explicitly finite polynomials on[0,1]. The chosen degrees are positive integers. The generating-function convention fixes B1(x)=x\u22121/2.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "cb4f00e1eef0bb2f448cfa466275422f68e005fb6b0758fe01bacf9942a46a94",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The displayed generating function implies B0=1, Bn\u2032=n B(n\u22121), and zero integral for n\u22651. Reconstruct the finite polynomials recursively with these conditions, then integrate the exact product coefficient by coefficient.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-bernoulli-product",
+    "index": 5,
+    "rawHash": "e82672b1064158dbeea1a8fd926e5ebbebb6b9a24be4191189f43e95b312f876",
+    "contentHash": "afc5916f356f7197f69b59a16bb2a4ee35adcafa0fdae8d65a008078cf798f2d",
+    "sourcePreview": {
+      "canonicalRawHash": "f0c70df32fd6d5d6107c207db1d08c1588e5a7eb4bf76fcd3afd1d9e8dcb95b3",
+      "problemId": "cn_05bedb9de25511724e32",
+      "rawConstructorHash": "f43b9fff9c27f21701da9bb718e9a1aa48b9d1264fffc76648ec52a1a86463f9",
+      "revision": 2,
+      "semanticHash": "b5528c2d61fe93b121ceed95621acecaaed5acce4dbff8a122bd38362c3d850c",
+      "sourceContentHash": "1cb2482022d4989f2cce9cdd91f7729f2cf594b52fd729f2eed0b1958c2f3e8a"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_05bedb9de25511724e32",
+      "revision": 1,
+      "semanticHash": "b5528c2d61fe93b121ceed95621acecaaed5acce4dbff8a122bd38362c3d850c",
+      "sourceContentHash": "69bdc61ea59e7d71efacd22514a9a956e30e5bca895d15442e743bd9024bb526"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "9bb78fa696cc77ed000b424aa63d67dd73eb440c3c15646433390f2fa289b6a2",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Extract the finite Bernoulli polynomials from the given generating series, then integrate their product; an endpoint-jump recurrence gives an alternative.",
+    "analyticConditions": "All integrands are explicitly finite polynomials on[0,1]. The chosen degrees are positive integers. The generating-function convention fixes B1(x)=x\u22121/2.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "c3dae16877383a6c8df9dd6d42e207f99a20be568ca733b2d6f9ef5fda78746c",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The displayed generating function implies B0=1, Bn\u2032=n B(n\u22121), and zero integral for n\u22651. Reconstruct the finite polynomials recursively with these conditions, then integrate the exact product coefficient by coefficient.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-bernoulli-product",
+    "index": 6,
+    "rawHash": "8e8407aa8e9576bd4f65e7265a737cc18c1454e4f54bc774dc7dc5c264689f31",
+    "contentHash": "dd39c4129600c7effade898dd2e0978ce96dfc3d6733b9452eaf9f3503a325c4",
+    "sourcePreview": {
+      "canonicalRawHash": "09efe313f10d9031db77fc6bc0373f0ba4bea6567d515153d92f6c61b75a2ae6",
+      "problemId": "cn_f4f3cb61d8e0383400c0",
+      "rawConstructorHash": "27f7aff6c00487f42e07931ccd4e2fe683704794ff025910863b55f4d2c0ef5a",
+      "revision": 2,
+      "semanticHash": "f36212ac87ea3a6d1df661832322932b1e2fcf784e3a82e3739bda5da343d21d",
+      "sourceContentHash": "fd2284874d6eb9abb529b347564d5018c30037b5da257aa8dda5ead1e4b0ddba"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_f4f3cb61d8e0383400c0",
+      "revision": 1,
+      "semanticHash": "f36212ac87ea3a6d1df661832322932b1e2fcf784e3a82e3739bda5da343d21d",
+      "sourceContentHash": "8f33869292364f608560c5cce3d87fd6b157030d97e92b3d5a71d06e1eccdb12"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "b31e07115ea1a7314a45ad966bb7186168bb35bba7db3e0b31a65811a9e58b92",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Extract the finite Bernoulli polynomials from the given generating series, then integrate their product; an endpoint-jump recurrence gives an alternative.",
+    "analyticConditions": "All integrands are explicitly finite polynomials on[0,1]. The chosen degrees are positive integers. The generating-function convention fixes B1(x)=x\u22121/2.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "7274201866c70291df7376574d5139675c08f08b96f6f46ad350f3c7a7e35958",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The displayed generating function implies B0=1, Bn\u2032=n B(n\u22121), and zero integral for n\u22651. Reconstruct the finite polynomials recursively with these conditions, then integrate the exact product coefficient by coefficient.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-jensen-radius",
+    "index": 1,
+    "rawHash": "b9c2ecfa4d109ce8aedf2c7d0623b86332ed2f4c2cc3a6e788c450d7bfb648d1",
+    "contentHash": "0f6bda95daa88ed00787a07044d3f0b3ab8f599d71e1759deb1b4c2c04c186bf",
+    "sourcePreview": {
+      "canonicalRawHash": "c5b55cdf5410301235b24503fc77fd5b6617d08b8eb5aa9b051ee4e831e82689",
+      "problemId": "cn_244887f9677d686d35f7",
+      "rawConstructorHash": "f6f7209f5c738d640755ec4638ff9310d240fb96d65e31882918e501ea2b1508",
+      "revision": 2,
+      "semanticHash": "14bed0aeea6212d92a70598280d2d2d66bad743131ab627ff19b43c925a23b13",
+      "sourceContentHash": "cae3a6ca5b5a416831c6581568781960a1e65226e518e58db47b363597b2ea57"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_244887f9677d686d35f7",
+      "revision": 1,
+      "semanticHash": "14bed0aeea6212d92a70598280d2d2d66bad743131ab627ff19b43c925a23b13",
+      "sourceContentHash": "c000cbd0b27fca0e8331c9e68dc837d933538d6cfe2c98d2961343a08d58e4f5"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "49d452842a1934c2f7bab87561ee2f7a4b708325e6994a3d575df8f64c0d7f7c",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Factor the positive trigonometric expression as r\u00b2|1\u2212e^(ix)/r|\u00b2 and integrate the absolutely convergent logarithmic Fourier series.",
+    "analyticConditions": "r>1 makes the logarithmic power series uniformly absolutely convergent on the integration circle; every nonconstant Fourier mode integrates to zero. The real logarithm argument is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "74f99a8f31495014513b5d74223f83eeea4486626b338907a9d907fd7965e597",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Factor the positive logarithm argument as R\u00b2|1\u2212e^(ix)/R|\u00b2. The uniformly convergent real logarithm Fourier series has zero circular mean; the constant term integrates to4\u03c0 ln R.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-jensen-radius",
+    "index": 2,
+    "rawHash": "e619da50bbd8b1adda72d939d0b6537a7cb7bfcec1ecdac74ba60d36e1e34eb4",
+    "contentHash": "b71e5c17e5a67f28b0da0e327e23a814782f2138488b3ae00df4235e0c60eab3",
+    "sourcePreview": {
+      "canonicalRawHash": "42df4b2e6a81820250b5bab12b98c539de776bf5ecc943edd0c8394a8f44defe",
+      "problemId": "cn_81a6b3715f0ca765dae9",
+      "rawConstructorHash": "4dae89863bf357ea96bb85bff0da9b6ad7e7d34416064404362fb3156098726e",
+      "revision": 2,
+      "semanticHash": "6573e8bdadc363e4ff62989b5599c627b9f7471bfa9c4cfb796015408d7bfd71",
+      "sourceContentHash": "749b66572e666117c631a0721329a75bcf4dee08464d8f93e77ae97dfc3ac7bf"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_81a6b3715f0ca765dae9",
+      "revision": 1,
+      "semanticHash": "6573e8bdadc363e4ff62989b5599c627b9f7471bfa9c4cfb796015408d7bfd71",
+      "sourceContentHash": "28fa2e4e501743cc0d3135626d07d50bd2f7bc6321725a03996cdd90e667caa9"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "8c4ffc5147bcefed06aa6b00e5f00cd4fd4219cae3a20bb598db7f54956f4cc4",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Factor the positive trigonometric expression as r\u00b2|1\u2212e^(ix)/r|\u00b2 and integrate the absolutely convergent logarithmic Fourier series.",
+    "analyticConditions": "r>1 makes the logarithmic power series uniformly absolutely convergent on the integration circle; every nonconstant Fourier mode integrates to zero. The real logarithm argument is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "4063a5bc1215b5d31431a6dc549eacb51fdca810e514b977dbdf1761a6d4d202",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Factor the positive logarithm argument as R\u00b2|1\u2212e^(ix)/R|\u00b2. The uniformly convergent real logarithm Fourier series has zero circular mean; the constant term integrates to4\u03c0 ln R.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-jensen-radius",
+    "index": 5,
+    "rawHash": "490c8a5dcab6e0427bcbdd2e1da34af40fb50c1987352a2c35faa5fb6397e244",
+    "contentHash": "f726122f0979869f91da10b96e69430827b0236b725619110b8bd8069c525f5e",
+    "sourcePreview": {
+      "canonicalRawHash": "5e59cfa686fa1aebd10cb9ef33b18f1fb10a8a6e19a611f3c7350fb74766343b",
+      "problemId": "cn_b9e516e5b43b7fd02a43",
+      "rawConstructorHash": "5ae8e4cb8ebcdecde5c91493ba1c3e8f5d9a5adc2eae6853ad62f4b7ac0cdfad",
+      "revision": 2,
+      "semanticHash": "2a7f95d01895b1d09dcca0adf1953982b35aec2339e56556201543148a8e08f9",
+      "sourceContentHash": "08966e1bdce881c6ff27eee26d324e34b8c6cacd2cbc21e8e6819e466f1f36ab"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_b9e516e5b43b7fd02a43",
+      "revision": 1,
+      "semanticHash": "2a7f95d01895b1d09dcca0adf1953982b35aec2339e56556201543148a8e08f9",
+      "sourceContentHash": "a2220e3ab5c93e18700827f994ed749918b969df21aa3ff1b8fefa4973812aab"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "70f9ed4a1804bab9b3e2b5d29c25278df09e60b0bbaf1e94c5ef08e6ebc3948a",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Factor the positive trigonometric expression as r\u00b2|1\u2212e^(ix)/r|\u00b2 and integrate the absolutely convergent logarithmic Fourier series.",
+    "analyticConditions": "r>1 makes the logarithmic power series uniformly absolutely convergent on the integration circle; every nonconstant Fourier mode integrates to zero. The real logarithm argument is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "062f563c15075fa4d7cbfeda6d150ffcbdbe51d110eef801fdb9a0bcccccb596",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Factor the positive logarithm argument as R\u00b2|1\u2212e^(ix)/R|\u00b2. The uniformly convergent real logarithm Fourier series has zero circular mean; the constant term integrates to4\u03c0 ln R.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-jensen-radius",
+    "index": 6,
+    "rawHash": "72b563efab5fbb4730deb8336fd1fcd51e5c6d1863cc304e7a4d3c1b5486957d",
+    "contentHash": "d7e2b4f24b159b5cfd87eb6c88af5e94ebcbcdfa8c7afbd815fc67ee707e899e",
+    "sourcePreview": {
+      "canonicalRawHash": "cd997552fda33499c29ec5a43b26ea09023260e30ac280895b7b015e0b21d48b",
+      "problemId": "cn_2f54e5e0f3b917a4371e",
+      "rawConstructorHash": "def5b98929cbeb736e16a5d68bf9ff6169beb0af8da0292da4bd74c33f7475c2",
+      "revision": 2,
+      "semanticHash": "303f04ed1bd03917b0177e253b9eec059b9d3cda153bf7449f98063909291023",
+      "sourceContentHash": "5d37ca7a6c642dbcc5ecf8fa4e4a02fffdb46c0fcf2f76187b17c0bf71a7ac0e"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_2f54e5e0f3b917a4371e",
+      "revision": 1,
+      "semanticHash": "303f04ed1bd03917b0177e253b9eec059b9d3cda153bf7449f98063909291023",
+      "sourceContentHash": "8c30919dc46a083549d20b15f2b939ff5648cef3b655a2432eacce531ad32201"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "cc55e765f910cf76c8c91fb5f4e3adb3a1c42e1b97c6b8488523979216c19e85",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Factor the positive trigonometric expression as r\u00b2|1\u2212e^(ix)/r|\u00b2 and integrate the absolutely convergent logarithmic Fourier series.",
+    "analyticConditions": "r>1 makes the logarithmic power series uniformly absolutely convergent on the integration circle; every nonconstant Fourier mode integrates to zero. The real logarithm argument is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "25af55caf451ad48a100fd80154485709575f424967ff91efbf5a902838f22e1",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Factor the positive logarithm argument as R\u00b2|1\u2212e^(ix)/R|\u00b2. The uniformly convergent real logarithm Fourier series has zero circular mean; the constant term integrates to4\u03c0 ln R.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "io3-jensen-radius",
+    "index": 7,
+    "rawHash": "0cc3acc2538f2679f58306ea775eaf85ac5e8a2190947df3e226df42c813a7ad",
+    "contentHash": "56e90dfdfd8eb9c19a900eb042d242ae47541aa64163f957ca7b72e4882ca1f8",
+    "sourcePreview": {
+      "canonicalRawHash": "424ed972512a961fa8fed39a93b38363bd2f91e075b728541e920178d9292359",
+      "problemId": "cn_7b20e3a62c4a3c758405",
+      "rawConstructorHash": "d46e1bb589f267ec6ecd383f78fcb57b8fa5bee4051452ef483669a5418d730e",
+      "revision": 2,
+      "semanticHash": "71e9d751bec4a154a70606f458867bdb4f320a838e4ac2525d4fa9d955e89810",
+      "sourceContentHash": "c6a4288b60949ee395044482abe838285b8e20cbd6238958647117c4f10733de"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_7b20e3a62c4a3c758405",
+      "revision": 1,
+      "semanticHash": "71e9d751bec4a154a70606f458867bdb4f320a838e4ac2525d4fa9d955e89810",
+      "sourceContentHash": "b9dff6b0704566646ceace4b5146e7d9387dd71d5752be77916df06bc404615a"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "a34e5716bda2419ce98718a02c0e82e70f842d8641098cc2ca1fcae0f6b1e2b1",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Factor the positive trigonometric expression as r\u00b2|1\u2212e^(ix)/r|\u00b2 and integrate the absolutely convergent logarithmic Fourier series.",
+    "analyticConditions": "r>1 makes the logarithmic power series uniformly absolutely convergent on the integration circle; every nonconstant Fourier mode integrates to zero. The real logarithm argument is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "aca4ee0a486d634513c26574d2b9df191986eabccc0caa6b3a01db595eb33752",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Factor the positive logarithm argument as R\u00b2|1\u2212e^(ix)/R|\u00b2. The uniformly convergent real logarithm Fourier series has zero circular mean; the constant term integrates to4\u03c0 ln R.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-exponential-rate",
+    "index": 2,
+    "rawHash": "ec085611f45314510086a5a915e63c47511c890436076d1066756816f8e04f1f",
+    "contentHash": "b6da756a4d727d2085d2e8c2a2bcfc7d6d15bfe74e978d45a07cc2f41ff3f42d",
+    "sourcePreview": {
+      "canonicalRawHash": "a70c0584f1912ee945f71c02c46f1481e55053338547b603c4fe413c8e976f27",
+      "problemId": "cn_59db9b208ed98e95669e",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "760e894a6eea662189a516cf3e1100e4c95c643d12621996e214a75b8b4fa0c5",
+      "sourceContentHash": "460a18f7d0ce7a5683f5e7d3c4574f44196f388b0a4ec6ff92b58fd272f971ed"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_59db9b208ed98e95669e",
+      "revision": 1,
+      "semanticHash": "760e894a6eea662189a516cf3e1100e4c95c643d12621996e214a75b8b4fa0c5",
+      "sourceContentHash": "460a18f7d0ce7a5683f5e7d3c4574f44196f388b0a4ec6ff92b58fd272f971ed"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "d3a992a7246aebe8ed0cb2cb9f131a6f1559b09756f46a9939d763ae4d224979",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "460a18f7d0ce7a5683f5e7d3c4574f44196f388b0a4ec6ff92b58fd272f971ed",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the exponential primitive at both displayed endpoints.",
+    "analyticConditions": "The integrand is continuous on[0,1] and the rate is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "54c54e1bda95734abf72ca6936b8544b91d683f3dccaf50a82003c11ad4e62c3",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate e^(m x)/m and evaluate both stated endpoints.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-exponential-rate",
+    "index": 3,
+    "rawHash": "68c1f44d54127adb63830da0fadb9ec6d1aca16043ff98ae71919e430efd5460",
+    "contentHash": "a9e5d94ca6196bd2e950c9886a76eb6997c778b2fda51f24ead35bb1bda908cf",
+    "sourcePreview": {
+      "canonicalRawHash": "ededc462b4871882871cce964ad6c3bebb61b3fa8bbe398c91c9c6e524c80c0c",
+      "problemId": "cn_f7ed86627f188ed82c39",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "dfccb4a37d166096e30796ab5f514071e65bd4267ff221d45568f56974ffb9ea",
+      "sourceContentHash": "359c3212d829a6dd22a6a201c0c1b875eb2d0b3e95b048ce43eb3666567a48d2"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_f7ed86627f188ed82c39",
+      "revision": 1,
+      "semanticHash": "dfccb4a37d166096e30796ab5f514071e65bd4267ff221d45568f56974ffb9ea",
+      "sourceContentHash": "359c3212d829a6dd22a6a201c0c1b875eb2d0b3e95b048ce43eb3666567a48d2"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "b1a4c63a14de70d18beda5bf1e28524a4bc99da7a6866821926ff05c70765826",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "359c3212d829a6dd22a6a201c0c1b875eb2d0b3e95b048ce43eb3666567a48d2",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the exponential primitive at both displayed endpoints.",
+    "analyticConditions": "The integrand is continuous on[0,1] and the rate is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "cdbda7598c68da4417048d69467b3d04e078b00cf78a720bf35042b840e347c0",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate e^(m x)/m and evaluate both stated endpoints.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-exponential-rate",
+    "index": 5,
+    "rawHash": "7623752df81fa250cc892ee0dde8ab5d4ae75800d31ea066f291de0718e0d121",
+    "contentHash": "c846e632b2b69ffe037d190f65c31681fa7e009a37b421caa701bbf9ab7ecd0c",
+    "sourcePreview": {
+      "canonicalRawHash": "fbf0838520c4bb0959775d8c9df23ce99626554ab86479dd66f9ca730b983d1b",
+      "problemId": "cn_d4707b959c635dedb4f2",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "707f613c1341364f16c473e713e993c36a759f5ef75cfb35d5de097c9c5065e6",
+      "sourceContentHash": "b63c8a83f823fe8fccb43283da8a6428da1fd7dbb34931cfde0ecfc4d9ce0d60"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_d4707b959c635dedb4f2",
+      "revision": 1,
+      "semanticHash": "707f613c1341364f16c473e713e993c36a759f5ef75cfb35d5de097c9c5065e6",
+      "sourceContentHash": "b63c8a83f823fe8fccb43283da8a6428da1fd7dbb34931cfde0ecfc4d9ce0d60"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "65650a597d7d0d0c9c6f5557f6d4e944116a5ff5083ec9c17cfdf29ed37c3ceb",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "b63c8a83f823fe8fccb43283da8a6428da1fd7dbb34931cfde0ecfc4d9ce0d60",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the exponential primitive at both displayed endpoints.",
+    "analyticConditions": "The integrand is continuous on[0,1] and the rate is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "992bb30482937130752c5642bbf7447264e1b517215d11bc5d4fc779d718530f",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate e^(m x)/m and evaluate both stated endpoints.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-exponential-rate",
+    "index": 7,
+    "rawHash": "bc8abce9f06dcf0d23dcbe29336b0fe31bcb39289f90daa0c34407688638c5b2",
+    "contentHash": "71504e7746088376d6b79896bdc980e8e7820dc3869e78ed0ffe99717ad2887f",
+    "sourcePreview": {
+      "canonicalRawHash": "20fc0d00c353ca8c2350335c699364b71f097622e95739b14765168ccf4a79dc",
+      "problemId": "cn_a595c4caa05ff8057b88",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "de21a895becffb9878f3021a44f85094b31dd713834d8384e34842c3d4832000",
+      "sourceContentHash": "95f9b5edf97cc74bc74c4cc5f447ac51d491ecaa0117b488784339ffba462491"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_a595c4caa05ff8057b88",
+      "revision": 1,
+      "semanticHash": "de21a895becffb9878f3021a44f85094b31dd713834d8384e34842c3d4832000",
+      "sourceContentHash": "95f9b5edf97cc74bc74c4cc5f447ac51d491ecaa0117b488784339ffba462491"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "37ba0ca3f40591ba134d7da7e3135aa5512b388c9b574bf769e1147ed2b5d03c",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "95f9b5edf97cc74bc74c4cc5f447ac51d491ecaa0117b488784339ffba462491",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the exponential primitive at both displayed endpoints.",
+    "analyticConditions": "The integrand is continuous on[0,1] and the rate is positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "86653a8de9fc991fe982b249f1dfe46c5d2633c00f587970fd21ad00bb0183d4",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate e^(m x)/m and evaluate both stated endpoints.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-log-recognition",
+    "index": 2,
+    "rawHash": "4842abcab3359844858c9a4bb37b6bd67953f935f09f6805461ce2feccce6dcd",
+    "contentHash": "492209e3106115c22c80753b5a44fdedcc4a7dcdee943d930ead7d5d670599e5",
+    "sourcePreview": {
+      "canonicalRawHash": "f0638bdb995f49980ebb825a6e703f4960be1c91f7db99b26aa66915402da89c",
+      "problemId": "cn_6f73fb50f4d660d9b804",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "0c5c4b08c88d2bae04c0d815641252277df3b7f6a86ee4bc769e8218e7e61727",
+      "sourceContentHash": "93d7d6f9c68cb5cdf0d13f82c3c4760a5ace0b664638676a89920c2ed43e71cb"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_6f73fb50f4d660d9b804",
+      "revision": 1,
+      "semanticHash": "0c5c4b08c88d2bae04c0d815641252277df3b7f6a86ee4bc769e8218e7e61727",
+      "sourceContentHash": "93d7d6f9c68cb5cdf0d13f82c3c4760a5ace0b664638676a89920c2ed43e71cb"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "761d3bfe780a94f61cab2ee05abef741e9ef0ea6f6bba932772c044956337f56",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "93d7d6f9c68cb5cdf0d13f82c3c4760a5ace0b664638676a89920c2ed43e71cb",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate ln(x+m) at1 and0.",
+    "analyticConditions": "x+m>0 throughout[0,1], so the real logarithm primitive is valid.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "380a9e32388dcc85ace0c815cbaa8be3d2c37a10d24c6acc02bc54f75adec207",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The positive affine denominator has logarithmic primitive; evaluate at0 and1 using the real quotient identity.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-log-recognition",
+    "index": 4,
+    "rawHash": "ac358880bfc84cd87af46a31febc2e9de00f51b1980bb3f09b3fb55428272ec6",
+    "contentHash": "d7eb30ab916778ed0a0a3b3b5e8119b2e024012310532d34e64a6e4e7431945c",
+    "sourcePreview": {
+      "canonicalRawHash": "bfa265da6914fb0785208597fb5bcd472df5807767669e19f9b8f17bac9617b3",
+      "problemId": "cn_4f1f826b9220236d040a",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "b0cda18ae44aa0b729895aee90fd7d5c7b3aa925cf9bb26227a7a549a7847883",
+      "sourceContentHash": "87bae4bedafb9a02527ca924f9d139496e051ada85a5af2185e9329d3f42e32f"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_4f1f826b9220236d040a",
+      "revision": 1,
+      "semanticHash": "b0cda18ae44aa0b729895aee90fd7d5c7b3aa925cf9bb26227a7a549a7847883",
+      "sourceContentHash": "87bae4bedafb9a02527ca924f9d139496e051ada85a5af2185e9329d3f42e32f"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "4f1c9154f13e9042a9bf13cd1f5ba9014b0781966ad51adb6b3031f21754a664",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "87bae4bedafb9a02527ca924f9d139496e051ada85a5af2185e9329d3f42e32f",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate ln(x+m) at1 and0.",
+    "analyticConditions": "x+m>0 throughout[0,1], so the real logarithm primitive is valid.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "ad4f4772823c95179c647a55a77b7c38f2948330040e5a6cb9a3126001de3c96",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The positive affine denominator has logarithmic primitive; evaluate at0 and1 using the real quotient identity.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-log-recognition",
+    "index": 5,
+    "rawHash": "325c87f4cb61bb5c72e8c8c299ac0e297f243f679916c5cc6ed103246cd76946",
+    "contentHash": "58b8109e44fc652b3f1c7f520f2af988b6792b07c4709fc4dd22412daab2ed15",
+    "sourcePreview": {
+      "canonicalRawHash": "90efd0ae6d61f2529feb18a59ac03d4a5829c56847a4cda96907e48fc50bfb0b",
+      "problemId": "cn_4692d1ffb73ea45e750e",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "6e7e91ac4e8b5fdbee2db54988038a105e561facdcfc3620de8b6202587b68f4",
+      "sourceContentHash": "88eeb7cecf7ac4afc3815b4febc502d8cf0632c82d5731953c717b6deec6019a"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_4692d1ffb73ea45e750e",
+      "revision": 1,
+      "semanticHash": "6e7e91ac4e8b5fdbee2db54988038a105e561facdcfc3620de8b6202587b68f4",
+      "sourceContentHash": "88eeb7cecf7ac4afc3815b4febc502d8cf0632c82d5731953c717b6deec6019a"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "95d454a4ef56c03fc1a2ccf040124f344937a184e397f0668bae5f2e70c97686",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "88eeb7cecf7ac4afc3815b4febc502d8cf0632c82d5731953c717b6deec6019a",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate ln(x+m) at1 and0.",
+    "analyticConditions": "x+m>0 throughout[0,1], so the real logarithm primitive is valid.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "e0e92bf942b86c1f716aa3ac3f21d9da7bf3260ea0126baa24276338ce214636",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The positive affine denominator has logarithmic primitive; evaluate at0 and1 using the real quotient identity.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-log-recognition",
+    "index": 8,
+    "rawHash": "943d1d693f59db6f8811941f2b09a8155742eae2442135890e1584c307b7a9d1",
+    "contentHash": "2641c6293a6bddd8fc3a8ec6cce3acd280acb08737561ceea9661d55e2a90863",
+    "sourcePreview": {
+      "canonicalRawHash": "0d221499103fe83125694d523137ca12d6da08cb24c07f8bce07e62136eaa80a",
+      "problemId": "cn_11ffcd0912375b15bbf8",
+      "rawConstructorHash": "f8c756d0f50db0df7bb20f9cfa61ad4925d15c7c0dbd7c82784cced89e2663dc",
+      "revision": 1,
+      "semanticHash": "f6368e37f68da804a4a49ca746d034b2dc9550e03ed5110e9940c04a200c16dd",
+      "sourceContentHash": "609d913fe28fbb83f3edda5620e888492768cac8e4a80675a637bd71ba17e6e5"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_11ffcd0912375b15bbf8",
+    "sourcePresentation": {
+      "entryHash": "368bd8535df22c24ac0c10d711dc4b09dce9a1e768ed5dfbecf6dc4448598d31",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate ln(x+m) at1 and0.",
+    "analyticConditions": "x+m>0 throughout[0,1], so the real logarithm primitive is valid.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "6a46134923a0a664ef448bdd5b95de1e70b47f3817514c4d9b62b1eb174e0180",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The positive affine denominator has logarithmic primitive; evaluate at0 and1 using the real quotient identity.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-odd-even",
+    "index": 4,
+    "rawHash": "951767ef5ea45319a7d3a03b862f3e62d30fd8c8c3aa25602aff937d0e77a786",
+    "contentHash": "4c4b6eac244af9d6ac7732f197b57d2857a2ad91357d314a3d8c7c788c5681e9",
+    "sourcePreview": {
+      "canonicalRawHash": "27f51c11739acc7e2cbf4baa3f65d218ad20285fe38a96e7e47013351846c12d",
+      "problemId": "cn_f111b1a09320852a58a9",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "c7fbca9d6579edb3442ac3c3535f515d4ca3dde085c04db2816b87c13009976a",
+      "sourceContentHash": "fdecabd47bb3dcb128e7517bc19425721627315a6480e4a3879092157d7df5b1"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_f111b1a09320852a58a9",
+      "revision": 1,
+      "semanticHash": "c7fbca9d6579edb3442ac3c3535f515d4ca3dde085c04db2816b87c13009976a",
+      "sourceContentHash": "fdecabd47bb3dcb128e7517bc19425721627315a6480e4a3879092157d7df5b1"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "e781e4ad27d93d86475a71eeeaae755c6ad04c61651a47c9eb3b7c4af6467973",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "fdecabd47bb3dcb128e7517bc19425721627315a6480e4a3879092157d7df5b1",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Cancel the odd cubic and double the cosine integral over the positive half interval.",
+    "analyticConditions": "Both summands are continuous on the symmetric compact interval.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "43dd3514a76002612e8995e26ee5353f8fba344009e2e2bef835057cd051754d",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The cubic integrates to zero by oddness over the symmetric bounds. Cosine is even and has sine primitive, giving2sin(half-width).",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-signed-area",
+    "index": 1,
+    "rawHash": "cf058a34beaa07bc15fb8132743fe46bbad4474af00c81d3068768870fe26b6f",
+    "contentHash": "3a2a75dc685d0f57d85e87ab3ca1852110d7d54dc7ede2a65670d3ecf6c4e6ee",
+    "sourcePreview": {
+      "canonicalRawHash": "e1957390c472529f30172b738a357d45a7c8bcf78830f8e298c9f4ad0455f91b",
+      "problemId": "cn_fc4b09196e358b808750",
+      "rawConstructorHash": "7692960e9bc6ce66a0c2e68f2bc0410aa944a3fb8a74419aaef48e2c2c249fc5",
+      "revision": 2,
+      "semanticHash": "d2f2d44301537914ace101930eb6d93cea1e19c033cf5e5adb36486a0e549770",
+      "sourceContentHash": "b52532bf8339012c24e3eba8231d9629c021ccfd713881544f803fa6c7e421b6"
+    },
+    "previous": {
+      "meaningChanged": true,
+      "problemId": "cn_fc4b09196e358b808750",
+      "revision": 1,
+      "semanticHash": "5f93332d743db1927e874c8a6bb95f63d1ec3f566a15a4d514bd82a846df95bd",
+      "sourceContentHash": "d2a00cb3b1c0092a561d5bfa1c851548d8557d9194e85e09116470a7bc1ec4f3"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "7bc56736b79cf39b94c6f3ea2597142107134f8cc13f5a4143a430e2dd6a9dd9",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": true,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the linear primitive or subtract the two triangular signed areas.",
+    "analyticConditions": "The displayed affine function changes sign once inside the compact interval. The task asks for the oriented integral, not unsigned area.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "d35fff3f308500d8785fe28bd461ad4cc79dcd3dd25e4198a33043ed11015934",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integrate the actual revised affine integrand over its concrete endpoints; retain signed, rather than absolute, area.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-easy-signed-area",
+    "index": 6,
+    "rawHash": "82bf9569230e278e553c232d48d0f1deade9d9928b9124c3151c5e49a2a39b56",
+    "contentHash": "618b39a0d8c6e10a4747a8a84af25355ab8fbbffc70c8185ba928709865e69d7",
+    "sourcePreview": {
+      "canonicalRawHash": "5a672c9afecc637668aa692588b0f8ba2d2fea2c234c9eca069914f2c027daec",
+      "problemId": "cn_ba5ba5fef825d2b909ef",
+      "rawConstructorHash": "fdf7ce959cc0626bb03d5bfc311c66248d67f593706ca1f1b8637cf83770625f",
+      "revision": 2,
+      "semanticHash": "cf37e1e1fe12edd7f4b309ec6b22931f72d7f69c2f16c8b7f52b47a71bd9aa94",
+      "sourceContentHash": "d9b2b075ef67559d1ed9c02f436a282a5a2b154c4b1235d5b980c50ff07378bc"
+    },
+    "previous": {
+      "meaningChanged": true,
+      "problemId": "cn_ba5ba5fef825d2b909ef",
+      "revision": 1,
+      "semanticHash": "83c6f5393a186c83fd558a523146258ae6313fbf26b40af2096da2d6d0f39277",
+      "sourceContentHash": "3f752f7ca7bc808277f1fdf39711eb22ec727eafcd3a4225690c693a33d21a7a"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "a9e7cf33da8998482b259fa11346a0c21b46803bdbb06c104634f2e5222936b5",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": true,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Evaluate the linear primitive or subtract the two triangular signed areas.",
+    "analyticConditions": "The displayed affine function changes sign once inside the compact interval. The task asks for the oriented integral, not unsigned area.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "da33c24bfed73c7afbd28a914246e3a0a4f8584344efcf8a81ab2ef3f25bceec",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integrate the actual revised affine integrand over its concrete endpoints; retain signed, rather than absolute, area.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "index": 1,
+    "rawHash": "fef767912a5c19a082cdc42b4357b236449f3ecf21f50f115c03b19f79b38ec8",
+    "contentHash": "4a4076a402f7cb3c27eff45f7a53cb04b62929bc8fdac894d04cd9860fa6b89d",
+    "sourcePreview": {
+      "canonicalRawHash": "a3b002369416ac2aa4663eab1c306c72d38c9cfcf3b02c993ae4617277940727",
+      "problemId": "cn_dbb37722ef0155e7b66a",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "96250008aa011ed01d480ab4c962de39184a439a3cf0b31a6801b55f732ec5c0",
+      "sourceContentHash": "65f540e0f5cf39129f859e63e27aae04233b5c352166fecda338f32a9d6f47d9"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_dbb37722ef0155e7b66a",
+      "revision": 1,
+      "semanticHash": "96250008aa011ed01d480ab4c962de39184a439a3cf0b31a6801b55f732ec5c0",
+      "sourceContentHash": "65f540e0f5cf39129f859e63e27aae04233b5c352166fecda338f32a9d6f47d9"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "9a3b96a9e25976f3297b66500592ba63a6c5c6241a0597aed5fd7cbc0f695c20",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "65f540e0f5cf39129f859e63e27aae04233b5c352166fecda338f32a9d6f47d9",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Set t=tan(x/2), integrate2/(t\u00b2+2mt+1) from0 to1, and evaluate its real logarithm primitive.",
+    "analyticConditions": "m>1; d=sqrt(m\u00b2\u22121)<m. Both logarithm numerator and denominator are positive for0\u2264t\u22641. The original denominator is positive on[0,pi/2].",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "51d74a626bfb0e51b95a80b5bf83ee76674895cd10f99d3c2af92d6e944884eb",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Set t=tan(x/2), with endpoints0 and1. The positive quadratic factors as(t+m\u2212sqrt(m\u00b2\u22121))(t+m+sqrt(m\u00b2\u22121)); integrate its partial fractions. Every real logarithm argument is positive throughout the interval.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "index": 3,
+    "rawHash": "ffa942d13a0f3c44abf911226bb49897663c709d20532423ea5f926e78ce248f",
+    "contentHash": "36aa903090d4c69d23a95bd1e9e7dd435ebdd28317805f0ef219ca2132669809",
+    "sourcePreview": {
+      "canonicalRawHash": "dd9c6be675c2e78c19c18eb9f76a591cf27d32ab0d6e74749ae6ed8fa89b96d3",
+      "problemId": "cn_c3e8f587d5241dab3421",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "7d55951aef19c9216e580135477790cd523decddcbfd08bdd19030341df451a1",
+      "sourceContentHash": "d306477c25c5a05e8ae4ca0ead7042c9598f9d39463485057b4d865946bcfe59"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_c3e8f587d5241dab3421",
+      "revision": 1,
+      "semanticHash": "7d55951aef19c9216e580135477790cd523decddcbfd08bdd19030341df451a1",
+      "sourceContentHash": "d306477c25c5a05e8ae4ca0ead7042c9598f9d39463485057b4d865946bcfe59"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "80f742d7e4931770ff578b6a2a6f7a730f0aa22d29dda25eb500d0b9c3efc6b6",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "d306477c25c5a05e8ae4ca0ead7042c9598f9d39463485057b4d865946bcfe59",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Set t=tan(x/2), integrate2/(t\u00b2+2mt+1) from0 to1, and evaluate its real logarithm primitive.",
+    "analyticConditions": "m>1; d=sqrt(m\u00b2\u22121)<m. Both logarithm numerator and denominator are positive for0\u2264t\u22641. The original denominator is positive on[0,pi/2].",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "b5ceb05d1fd60840ceadaf6c72f726ee8dfee76e53af5f16356bab721cd34b36",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Set t=tan(x/2), with endpoints0 and1. The positive quadratic factors as(t+m\u2212sqrt(m\u00b2\u22121))(t+m+sqrt(m\u00b2\u22121)); integrate its partial fractions. Every real logarithm argument is positive throughout the interval.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "index": 5,
+    "rawHash": "23cbd4c1070a7d6bc9620d29108cffa8e4ebba72dea07c7853fb91c42c490aac",
+    "contentHash": "05ce00dbb84bff919804372e254743d5ac0b428a6270a2eaf940d4b18627c0db",
+    "sourcePreview": {
+      "canonicalRawHash": "f47fed38b44e527e6ca5165e4ac2cfc524849f0d1685ce920892547d07acca61",
+      "problemId": "cn_d0fdf2a44b875485483e",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "e92255c3fe54796f3edbe972e921afba17fbf687abe7ebbd26b3bd4b22dfc6ee",
+      "sourceContentHash": "1cf586cb4a2cce68399986d8433cfdbce887796f07ccb065dd1747e107e14867"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_d0fdf2a44b875485483e",
+      "revision": 1,
+      "semanticHash": "e92255c3fe54796f3edbe972e921afba17fbf687abe7ebbd26b3bd4b22dfc6ee",
+      "sourceContentHash": "1cf586cb4a2cce68399986d8433cfdbce887796f07ccb065dd1747e107e14867"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "306db6e6a4b2917a002202ce1bc40944cfa072932a244bddf15a957e97eafb25",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "1cf586cb4a2cce68399986d8433cfdbce887796f07ccb065dd1747e107e14867",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Set t=tan(x/2), integrate2/(t\u00b2+2mt+1) from0 to1, and evaluate its real logarithm primitive.",
+    "analyticConditions": "m>1; d=sqrt(m\u00b2\u22121)<m. Both logarithm numerator and denominator are positive for0\u2264t\u22641. The original denominator is positive on[0,pi/2].",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "3cd78a3ab0808ec6df3c03a3e0f95fdf0f604a06f1c33396e08ef894d5975a34",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Set t=tan(x/2), with endpoints0 and1. The positive quadratic factors as(t+m\u2212sqrt(m\u00b2\u22121))(t+m+sqrt(m\u00b2\u22121)); integrate its partial fractions. Every real logarithm argument is positive throughout the interval.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "index": 7,
+    "rawHash": "1a2bb4465268041eee931aa885466850ac6ecd98e02928fca2583fe8bcde9ec2",
+    "contentHash": "0ea04e875c84ea86832aff4d102f84d4a67f054f71c8a38c7aaa86e8ea40ac6e",
+    "sourcePreview": {
+      "canonicalRawHash": "e756f99b6499966474e81aadc97210d0d78d698bb83503533d2870b6a0b9bdd9",
+      "problemId": "cn_1670333ceb56dba84e50",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "20764d343b1007f459421c36d7ae3576e1b8552b48a152e5a9f02335feb39cd5",
+      "sourceContentHash": "009729bacbc2d39d1746e4b554bbbe393f27d3c5620bae0a85633dc22a9144f2"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_1670333ceb56dba84e50",
+      "revision": 1,
+      "semanticHash": "20764d343b1007f459421c36d7ae3576e1b8552b48a152e5a9f02335feb39cd5",
+      "sourceContentHash": "009729bacbc2d39d1746e4b554bbbe393f27d3c5620bae0a85633dc22a9144f2"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "c44678afee14c22d446abbb1f4219df5019f6f0f4183599360c113e919bbd074",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "009729bacbc2d39d1746e4b554bbbe393f27d3c5620bae0a85633dc22a9144f2",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Set t=tan(x/2), integrate2/(t\u00b2+2mt+1) from0 to1, and evaluate its real logarithm primitive.",
+    "analyticConditions": "m>1; d=sqrt(m\u00b2\u22121)<m. Both logarithm numerator and denominator are positive for0\u2264t\u22641. The original denominator is positive on[0,pi/2].",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "4559213f871f710ee65f8038f65254dfe6923a76c57ab85dd01a27fa2fab19a4",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Set t=tan(x/2), with endpoints0 and1. The positive quadratic factors as(t+m\u2212sqrt(m\u00b2\u22121))(t+m+sqrt(m\u00b2\u22121)); integrate its partial fractions. Every real logarithm argument is positive throughout the interval.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "index": 9,
+    "rawHash": "005e6a9d84b4cc16efb0e148d07d04d88a348bd712993c28cd7998686f1b04c7",
+    "contentHash": "22c48ec756f3659b99b4d12dcc9b7f94a0e51d102216ab6c9f2761e005a1d4fd",
+    "sourcePreview": {
+      "canonicalRawHash": "ff3062ddbdce20feaf5304572cdc8f0d35d386c1289f7e98cf348bd90ba2a371",
+      "problemId": "cn_646566ac106b24a8342f",
+      "rawConstructorHash": "fc630a0e8a7bb9fed08e33df5f9ae7ca7d876e29b2e52522a7b13d00319e4545",
+      "revision": 1,
+      "semanticHash": "17ce598ef27c7eea1bfdd77bfadb2fe0ef1822921f8aadf2b01481b1f36395cc",
+      "sourceContentHash": "2c237ba0571028e7aa8300bf11c32296459dbe6e4f941ceed02f6fbd1df9e9ce"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_646566ac106b24a8342f",
+    "sourcePresentation": {
+      "entryHash": "34965c0132026e621477e7961d4d7a3f890a77ac6eabb56b0dc3c483df0936a9",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Set t=tan(x/2), integrate2/(t\u00b2+2mt+1) from0 to1, and evaluate its real logarithm primitive.",
+    "analyticConditions": "m>1; d=sqrt(m\u00b2\u22121)<m. Both logarithm numerator and denominator are positive for0\u2264t\u22641. The original denominator is positive on[0,pi/2].",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "7c22346a1d0931ba55c515cd5528d928bac4978309b8abeb527347937173ba65",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Set t=tan(x/2), with endpoints0 and1. The positive quadratic factors as(t+m\u2212sqrt(m\u00b2\u22121))(t+m+sqrt(m\u00b2\u22121)); integrate its partial fractions. Every real logarithm argument is positive throughout the interval.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 0,
+    "rawHash": "a7c446ea4b5a40b45aa42d362635b5331d044d86d89bb5c671f598b8be9a4fd2",
+    "contentHash": "98f8c395c3b4cda93c613fc719d94549eeb9ee0ac62e2957f50c121b170665f7",
+    "sourcePreview": {
+      "canonicalRawHash": "d465469f81dd3e85c6587219f0ac0929b39133f3cc6c5f2d9fcc60b20976c096",
+      "problemId": "cn_5bc7712b3ba7c3f51696",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "fb8fa112d4bd62500069fe33be39bd49a9cfe93c909fa527c29561189fc9defa",
+      "sourceContentHash": "810f9a2b3fabe0b9ca9476a4f7ec4b3df30a8fac6749c6c57e08595d4754238e"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_5bc7712b3ba7c3f51696",
+      "revision": 1,
+      "semanticHash": "fb8fa112d4bd62500069fe33be39bd49a9cfe93c909fa527c29561189fc9defa",
+      "sourceContentHash": "810f9a2b3fabe0b9ca9476a4f7ec4b3df30a8fac6749c6c57e08595d4754238e"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "d9db9ff762a0c25ff198f95551b75106c2461f2371945dd50170db4510f6a014",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "810f9a2b3fabe0b9ca9476a4f7ec4b3df30a8fac6749c6c57e08595d4754238e",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "0d3c570642f2b8c3abd50a0096452287fc88948990e61997e142a74ecc07e4c8",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 1,
+    "rawHash": "fccb4719016ef1afcfd2f456e4ae539ec47e54dd5aa6e381ba256a5440efb4f2",
+    "contentHash": "574a1e01410a470507abfa0e414919f196d73604f9569ec451b4bc4b18f79a2c",
+    "sourcePreview": {
+      "canonicalRawHash": "aa33a81e8008eebcd5620cb0730752aa542704d7169c3d04f6e0fcd84c04854a",
+      "problemId": "cn_bb0ae9e7ca5014617d73",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "d6ddd37f4d00565223e11afcf842f201fd606cb29a1013a4b84cc8c581d462e4",
+      "sourceContentHash": "7d97fbd3fe2d2b67ba375d6607bf9b7b9da2bf53426b937c00d3cef71e7c16b2"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_bb0ae9e7ca5014617d73",
+      "revision": 1,
+      "semanticHash": "d6ddd37f4d00565223e11afcf842f201fd606cb29a1013a4b84cc8c581d462e4",
+      "sourceContentHash": "7d97fbd3fe2d2b67ba375d6607bf9b7b9da2bf53426b937c00d3cef71e7c16b2"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "3b39902507daebc8c095e2e4467ad4005f995b3fe4d51740f672e209eaceab6e",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "7d97fbd3fe2d2b67ba375d6607bf9b7b9da2bf53426b937c00d3cef71e7c16b2",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "1223da12584a513d88f000a84691a1ecbb6a1c60c0dd86349a8c12687348ed6f",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 2,
+    "rawHash": "8b970f21348b576c265e1dff9ea8eb44c209baad300a295d9931c442709ca6a5",
+    "contentHash": "a1657ae646689dd5a67d1f508a7b711dd4cfe0d6d23fbd705a5ddf8c97279a4d",
+    "sourcePreview": {
+      "canonicalRawHash": "3fe24b7aa8a451ddf740bcba7032a174378950b7d04388dcc2b13f3116d6f71f",
+      "problemId": "cn_0bcccd2683b8e9d4315c",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "048a127e5e4c6517635f873084ba30e93ddd5403e0a3da6e644456f11ff51a07",
+      "sourceContentHash": "568284d166dad54dec192987b5cbb8393a5572ebf72b4c6358848ff9ae2421c9"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_0bcccd2683b8e9d4315c",
+      "revision": 1,
+      "semanticHash": "048a127e5e4c6517635f873084ba30e93ddd5403e0a3da6e644456f11ff51a07",
+      "sourceContentHash": "568284d166dad54dec192987b5cbb8393a5572ebf72b4c6358848ff9ae2421c9"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "d21c02f3d2ef0a76b4d1e851fe8c5f8de014f6429f06057db4aa72895ac8f59c",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "568284d166dad54dec192987b5cbb8393a5572ebf72b4c6358848ff9ae2421c9",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "154083b900e3a99937ab679b65cb3a8ceaec3fc6f3cdd4e5f2c0323b97c920a0",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 3,
+    "rawHash": "ca1aeabd94f5ff6629f93093baf0e39ffd4259fa7c529040685d52721edb0eac",
+    "contentHash": "a6d9fa8aacc40f713f8410deae82ee746b20a3a542794c59cb84d663bcbf4339",
+    "sourcePreview": {
+      "canonicalRawHash": "69af7bed8aee9fda834932d05602e125a9345e996671d9130a5423d1c11aed6d",
+      "problemId": "cn_cb6b31fc6108616e1a09",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "fbd87e44dd61877569cc86f39f4302bf6a0b4a73a67b404ac466576fa2f14d9d",
+      "sourceContentHash": "503862f2b768cf20700c59b78750e9485ff0ee3eca2875523ff859f84c60b96b"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_cb6b31fc6108616e1a09",
+      "revision": 1,
+      "semanticHash": "fbd87e44dd61877569cc86f39f4302bf6a0b4a73a67b404ac466576fa2f14d9d",
+      "sourceContentHash": "503862f2b768cf20700c59b78750e9485ff0ee3eca2875523ff859f84c60b96b"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "98591197a4f4ee79b8563f71f11634fd4ac0ded763c373931b10f94a33597ad7",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "503862f2b768cf20700c59b78750e9485ff0ee3eca2875523ff859f84c60b96b",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "d3f90e9d1535f4000ef2130704667d112e4124569b113b882748e9a2bdab07e3",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 5,
+    "rawHash": "181d6b70f576179fd2e682adbcb1eb890d2b81ca3661a6d5dd95cef323423a80",
+    "contentHash": "8ea55ca796bd58cd01a7a7502350750773487d0473231b5e731839bfb1b40d2c",
+    "sourcePreview": {
+      "canonicalRawHash": "e9bc6e571bca3ceba3aa7975a7e7eec823f791a7f28a9fb972969994ed3d4fb9",
+      "problemId": "cn_566fcf3f129945be7713",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "76084533b7029e66d493639c3b6e53ea7df0ddd4f66ded3a4df82658c6d48ec0",
+      "sourceContentHash": "d3607445cc74bcfd66c43ffd633fb5a5096d1f7cf61463b5206805e6cc4cf802"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_566fcf3f129945be7713",
+      "revision": 1,
+      "semanticHash": "76084533b7029e66d493639c3b6e53ea7df0ddd4f66ded3a4df82658c6d48ec0",
+      "sourceContentHash": "d3607445cc74bcfd66c43ffd633fb5a5096d1f7cf61463b5206805e6cc4cf802"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "d458a38dbd1217dd282768aa265dbf55de67636ec8538b04f76009e45e6a6b4d",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "d3607445cc74bcfd66c43ffd633fb5a5096d1f7cf61463b5206805e6cc4cf802",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "1f9469573b969cc5970ba0b5388198f5b100d3a20c25b9998d212db1a5ef20bf",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 6,
+    "rawHash": "e7ee166781ebded71775e99ae0acdc3a0c35154b1043ef9daeb80a9b89d4103d",
+    "contentHash": "e8a48fea7c3604308ab9db87cb60183d8daaa98188ca94d477c654391e3879e8",
+    "sourcePreview": {
+      "canonicalRawHash": "14c465feee4bf3146ef2ec0057890b649d8f1525844f86e6abe07924643c1432",
+      "problemId": "cn_563f68c5ef2ca83bc704",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "f5644f0a4c1bd713cd92a2c58970bb3adb7287336d0193dff597ff5745778212",
+      "sourceContentHash": "ec5e0e708078b6036fde73b13c280ec599f093f42ff2c3023e15f40bf0a3f842"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_563f68c5ef2ca83bc704",
+      "revision": 1,
+      "semanticHash": "f5644f0a4c1bd713cd92a2c58970bb3adb7287336d0193dff597ff5745778212",
+      "sourceContentHash": "ec5e0e708078b6036fde73b13c280ec599f093f42ff2c3023e15f40bf0a3f842"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "0c7602148dbcdf791a892a6b2c15c751635a9d25788ec8162ae4e9a28d94e0c3",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "ec5e0e708078b6036fde73b13c280ec599f093f42ff2c3023e15f40bf0a3f842",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "43045c3d5954dd4d16fcf2dac4d647589a0ca5c8efbdfc30bd55f68bb3a65cbb",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 7,
+    "rawHash": "0095cf8ae6a9e8391042072c45d4ede721d06b23b5814f473fe53d91d0c293c7",
+    "contentHash": "4baec39b19627e9310c9396e2c565de233114696487513dd4db4febd3a44045f",
+    "sourcePreview": {
+      "canonicalRawHash": "a718e9a9b3386ecae5bc447ce579fe66eec9ca33e2a30daa4dfa867adc4e6e4e",
+      "problemId": "cn_a4d9603697ec07b56c57",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "276a32649dd162e5cc9b1bed189d6933628e04b15286ba02cde77fd8a5076cae",
+      "sourceContentHash": "7c65877d8521b5818e022c77b1ff3588143d3282015b5c15ea1d65b003863b33"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_a4d9603697ec07b56c57",
+      "revision": 1,
+      "semanticHash": "276a32649dd162e5cc9b1bed189d6933628e04b15286ba02cde77fd8a5076cae",
+      "sourceContentHash": "7c65877d8521b5818e022c77b1ff3588143d3282015b5c15ea1d65b003863b33"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "fb86e6af633b68aed176115ed0768ac8df4eaf709faca8bd14fcb0363b5702c9",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "7c65877d8521b5818e022c77b1ff3588143d3282015b5c15ea1d65b003863b33",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "013c0e748aecbaa05bc97a03eb67d5ed49ca58076bd14a0ac5ce0cb7d89fc184",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 8,
+    "rawHash": "f8cfa6ae2b34d638716871fcf7404d67bfb301c0dad21e1e4740e2191b35818e",
+    "contentHash": "c027485975f9d2a8d12a1ad31cb8edd2d516b7bea025e9719984c98d413f72a2",
+    "sourcePreview": {
+      "canonicalRawHash": "5cf492898e48ffe4847018c35a9692f600a0139008b168b210cd1a16fe4be951",
+      "problemId": "cn_81cb788105834bb476f3",
+      "rawConstructorHash": "716e092e3b82654bc9d31792bddf6b49f0c6df9f7930e10a6b2f1dbb5b761428",
+      "revision": 1,
+      "semanticHash": "f5e9a15ef5cbce7eb590e67d2b9842ef0c09d10a3eb667880c90b736aeaa598a",
+      "sourceContentHash": "76570dd853e61f1d0da88bc4fcd4f16dc94a994219f0dfd609b9136f9b7fc408"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_81cb788105834bb476f3",
+    "sourcePresentation": {
+      "entryHash": "8c7d76a709d86e9978bc65c387bcc58d4eeb7b10f3055bb96084ea0ed87396f3",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "235b69da9dcafc2d8e81fc187347de3c4721198568337311523f7a8b7487115d",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "index": 9,
+    "rawHash": "ac02369b5bad0f73fd0f31f7ccb099d479ad70a043c36a8c9bc12269f2588b28",
+    "contentHash": "4c3a09d0870992e28c7eb68edfcbe7f9353411e9791ef27fd197c7dc0f23e2b4",
+    "sourcePreview": {
+      "canonicalRawHash": "f3388a28fa2bc28e6290d4913d9e0f54a1cf46c9594b3c0cfdac1df29b5756d9",
+      "problemId": "cn_26dd497d25b27cc4afe6",
+      "rawConstructorHash": "3ff2254ca6755aab16e6c0f6748453994fc5386743e97b0ee3c0f86089096c49",
+      "revision": 1,
+      "semanticHash": "1e2c506846d877198699defca56f081db6752a4b8c3f58e3a9f0009ef6a914fb",
+      "sourceContentHash": "5d42ad8b1daa207bf070a603a3fdaba1a0a94766744381d449250ddf1633d351"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_26dd497d25b27cc4afe6",
+    "sourcePresentation": {
+      "entryHash": "fce769f1433b214029cbae3f7a8983b931dfbc382a7d87a9d2767ec694b2682f",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Expand\u2212ln(1\u2212x) into its nonnegative series, integrate x^m(\u2212ln x) termwise, and telescope the resulting shifted reciprocal-square sum.",
+    "analyticConditions": "On0<x<1 both negative logarithms are positive, so Tonelli justifies the interchange. The resulting sum converges and equals H_n/n\u00b2\u2212(zeta(2)\u2212H_n^(2))/n, n=m+1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "82c8a8cdc7422fcbbf163e2d08b35e84527967ac7f03c57823777a0a7a8ab280",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Expand\u2212ln(1\u2212x) in its nonnegative power series and use Tonelli with\u2212x^m ln x. Integrating each logarithmic moment gives1/[k(k+m+1)\u00b2]; exact partial fractions leave the two displayed finite harmonic tails.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "index": 1,
+    "rawHash": "a0a5a40a48db2db549ac77850049a4d022edf033ab12de858e9aa51a084490b8",
+    "contentHash": "683c28003593f06dd11b3dff0a5360807918fd24a8f892d9d97e5416ce76c949",
+    "sourcePreview": {
+      "canonicalRawHash": "4a81b364ffd6d2301bce5db1bbdd817d0f44ead4be0b7e2f72c0787c3b993d9f",
+      "problemId": "cn_567b583b15c3f003644d",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "f53fe2b0ab1cf3eac0fe01b54721ce61e6deb001dd0483952b986c1191df379d",
+      "sourceContentHash": "d6edaf13d1e3b07778b4f2e7280eff7e8268bd8697a7fd044664eb158e85548b"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_567b583b15c3f003644d",
+      "revision": 1,
+      "semanticHash": "f53fe2b0ab1cf3eac0fe01b54721ce61e6deb001dd0483952b986c1191df379d",
+      "sourceContentHash": "d6edaf13d1e3b07778b4f2e7280eff7e8268bd8697a7fd044664eb158e85548b"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "646b1489a5838476f9355190302c4c49fdbff61c8c74c554563cff8382e16559",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "d6edaf13d1e3b07778b4f2e7280eff7e8268bd8697a7fd044664eb158e85548b",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Split the two quadratic factors and evaluate each positive half-line arctangent integral.",
+    "analyticConditions": "m>1; the rational integrand is bounded near0 and O(x^-4) at infinity. Both quadratic factors are positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "14251761bb86c944eabfd523f6b5d5f252aef9053f8ee04ee724ba790ca6fee1",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Subtract the two quadratic reciprocal kernels with coefficient1/(m\u00b2\u22121), then use their complete positive-half-line arctangent integrals.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "index": 2,
+    "rawHash": "00b2a24809fbd3670e59e117c3a28d9aeab02e952ea5cebab3fa6f2ee85e27cd",
+    "contentHash": "094fe81c3addb15ee9214f736101b1b4636cd6baff6237f470a3075d98a5b60e",
+    "sourcePreview": {
+      "canonicalRawHash": "7827c34d0bed83b7b948d3438d1e8ba27c9410be94569bad5683480c08801159",
+      "problemId": "cn_8b396b8a3f60e08fcd9a",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "e74ae25fc6b51b2712e68da5a14b88f1366e6715a60de8530a4155fb8aca8238",
+      "sourceContentHash": "eff0b8a7c17acd480b6ea8b30191958a0be11cdf8672c7d89fb8dce9be31e14b"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_8b396b8a3f60e08fcd9a",
+      "revision": 1,
+      "semanticHash": "e74ae25fc6b51b2712e68da5a14b88f1366e6715a60de8530a4155fb8aca8238",
+      "sourceContentHash": "eff0b8a7c17acd480b6ea8b30191958a0be11cdf8672c7d89fb8dce9be31e14b"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "8e120505789aba5f51cdd0bf7148787718ffa216464e8221fab41efa4e4694ab",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "eff0b8a7c17acd480b6ea8b30191958a0be11cdf8672c7d89fb8dce9be31e14b",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Split the two quadratic factors and evaluate each positive half-line arctangent integral.",
+    "analyticConditions": "m>1; the rational integrand is bounded near0 and O(x^-4) at infinity. Both quadratic factors are positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "92517208ebbf1bdcf8ee0b3e732cbfe9e882aa8b2b5d1b600cc23f14fa6a79e7",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Subtract the two quadratic reciprocal kernels with coefficient1/(m\u00b2\u22121), then use their complete positive-half-line arctangent integrals.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "index": 5,
+    "rawHash": "7bb4b41e71adf82aefb231434b29cd9bde76c5379126d04e0b5f62034b3bf418",
+    "contentHash": "30f8fd28308338d0b3bce44b4c614bcde5a549e1599aa5a59695549ece953ec0",
+    "sourcePreview": {
+      "canonicalRawHash": "95f8f1aec853c0c0fee2576a6fa9ac7ad1fbe76e40c95bf755a28b5f21e1f144",
+      "problemId": "cn_161efd61e7f9ae6feaa5",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "d0bb8288af0fa874a09c82addc62f6aba1b2b1599e4ec61862eef27bcad1b54c",
+      "sourceContentHash": "947e99f17af6cd7ef2ca5a5ee9498b2b7ed4ef3987856b11f2cc3c18a0480b79"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_161efd61e7f9ae6feaa5",
+      "revision": 1,
+      "semanticHash": "d0bb8288af0fa874a09c82addc62f6aba1b2b1599e4ec61862eef27bcad1b54c",
+      "sourceContentHash": "947e99f17af6cd7ef2ca5a5ee9498b2b7ed4ef3987856b11f2cc3c18a0480b79"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "3470a123813c3138752507be90aa0fb41c9852ba1128f712988b6ec8addcff90",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "947e99f17af6cd7ef2ca5a5ee9498b2b7ed4ef3987856b11f2cc3c18a0480b79",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Split the two quadratic factors and evaluate each positive half-line arctangent integral.",
+    "analyticConditions": "m>1; the rational integrand is bounded near0 and O(x^-4) at infinity. Both quadratic factors are positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "cc420e869745d3a3f9e3ddfddcf3fd76fba0fe91b5a68bf979c44f9bb8dd1710",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Subtract the two quadratic reciprocal kernels with coefficient1/(m\u00b2\u22121), then use their complete positive-half-line arctangent integrals.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "index": 7,
+    "rawHash": "f1a3a4f5fd3a678d8c062e7d408555bf0cb6d903022eb17a2426c9a9e7042768",
+    "contentHash": "0e6cdf4e7854dba7fb9e7930f528e77adadface1de9ba6efb284792495d93b69",
+    "sourcePreview": {
+      "canonicalRawHash": "c8f76858ad9d665683efba350f795d62c050df1fb1933fe220566927988fa747",
+      "problemId": "cn_f62b3196a81b20dcb8c1",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "b39096123bbd694049939fd7eba5a42c246de8f8fd659f145974f419b25a0337",
+      "sourceContentHash": "fc26a09bfb56c293a7fb1fd0b788d99630119ddb6a228057a40669cb90ab8cbe"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_f62b3196a81b20dcb8c1",
+      "revision": 1,
+      "semanticHash": "b39096123bbd694049939fd7eba5a42c246de8f8fd659f145974f419b25a0337",
+      "sourceContentHash": "fc26a09bfb56c293a7fb1fd0b788d99630119ddb6a228057a40669cb90ab8cbe"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "ad4460b54e221edf95097f04fdfa8af31fe7ce773769a09d286a55a9953e5217",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "fc26a09bfb56c293a7fb1fd0b788d99630119ddb6a228057a40669cb90ab8cbe",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Split the two quadratic factors and evaluate each positive half-line arctangent integral.",
+    "analyticConditions": "m>1; the rational integrand is bounded near0 and O(x^-4) at infinity. Both quadratic factors are positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "3129fd625a4eb15699c04f98f91d4d0db11f060dfc71bc836e417d307b3c788b",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Subtract the two quadratic reciprocal kernels with coefficient1/(m\u00b2\u22121), then use their complete positive-half-line arctangent integrals.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "index": 8,
+    "rawHash": "7152e252187fee7065be1354424a4bbd97467b9996705090e4da4076590ca373",
+    "contentHash": "19dad6d338788485169dd502487bf732461137313e3dfc65a6b69a1e0c8a2705",
+    "sourcePreview": {
+      "canonicalRawHash": "1f40d512edcab8d94c23e32e8d86597cb70b2edc64ee17ce702cda5ee2b82ca0",
+      "problemId": "cn_341f164f3c5586ddc074",
+      "rawConstructorHash": "50d9d10a7c8257b55563a036619103018f839d06a1cd480e01d340211cde78ad",
+      "revision": 1,
+      "semanticHash": "3dc84856d3301780c7725999b2c3b4fb9d3db144efa5ea5e19b96cfc074bd044",
+      "sourceContentHash": "014835de316f52cbfc97430e042908269bc0d8637512999884b2b989487e958d"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_341f164f3c5586ddc074",
+    "sourcePresentation": {
+      "entryHash": "a100a300483d98c4165514e8804f92a61e86123ed65d4004e3bbca46612e561c",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "hard",
+    "easiestOptionsVisibleRoute": "Split the two quadratic factors and evaluate each positive half-line arctangent integral.",
+    "analyticConditions": "m>1; the rational integrand is bounded near0 and O(x^-4) at infinity. Both quadratic factors are positive.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "614750bacc1c94fe8cbb2db7ddd3792787be661467e64532165990b9affb21e3",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Subtract the two quadratic reciprocal kernels with coefficient1/(m\u00b2\u22121), then use their complete positive-half-line arctangent integrals.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "index": 1,
+    "rawHash": "62263e4e846713f94117085d1e44172e8418a51a5ace9d232cd29c3979fb8c7d",
+    "contentHash": "fb97f008a8e3741d483430661714fbc70abb852987b2397aacd471ad0fbcbdaf",
+    "sourcePreview": {
+      "canonicalRawHash": "8e5e6f11b9f9a419e10793749b91a2a799c6ddf5293f0dc3f9a3a7f32c3debae",
+      "problemId": "cn_d087653df2426ab37097",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "b9aea690ec1efcdee085b8a690f02dcbbad4a75cd02920f38f1abb3aba4ffa5f",
+      "sourceContentHash": "5e800d153fcd4c57dcdb7059b0c0d0bfd2b35804f57f792e3504e50133aaf491"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_d087653df2426ab37097",
+      "revision": 1,
+      "semanticHash": "b9aea690ec1efcdee085b8a690f02dcbbad4a75cd02920f38f1abb3aba4ffa5f",
+      "sourceContentHash": "5e800d153fcd4c57dcdb7059b0c0d0bfd2b35804f57f792e3504e50133aaf491"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "05dfa1a904b3e2f6a9e30a841687c4343552f5fd88e361469b39ca25b924209a",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "5e800d153fcd4c57dcdb7059b0c0d0bfd2b35804f57f792e3504e50133aaf491",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Solve the two primitive coefficients for e^x cos(mx), then use the integer-frequency endpoints.",
+    "analyticConditions": "m is an integer, so sine vanishes and cosine equals1 at both endpoints. All functions are continuous.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "d14a4aa5b82841d138ef0868cb9b4c2035a056b4d8c96268e355526bff73e259",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate the independently constructed exponential-trigonometric primitive; evaluate at0 and2\u03c0 using the integer frequency.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "index": 2,
+    "rawHash": "72c25648856fac87ccdcf6625f0cd1e670ed3d8c289dc40f389a5076f0f10ad7",
+    "contentHash": "d6fbcfd60e9401b21ae8f64b3508397c1b09f1319aed8d7b42deee56f7b0162b",
+    "sourcePreview": {
+      "canonicalRawHash": "704b37c37465a42c859bfec8ac49dd79e032dbb1b021a7d53b004104525acc1d",
+      "problemId": "cn_11814ac4759e9aa8c83a",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "7794d1fc1316f39976a22174a9c8b7d3a519440da88e9d7e6cfa0a25fc75a88b",
+      "sourceContentHash": "d1d3ef1b8bd19eae8ca78cb094a9f75898e7e9cc5fe7b7befcc823ac7cd4d3e0"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_11814ac4759e9aa8c83a",
+      "revision": 1,
+      "semanticHash": "7794d1fc1316f39976a22174a9c8b7d3a519440da88e9d7e6cfa0a25fc75a88b",
+      "sourceContentHash": "d1d3ef1b8bd19eae8ca78cb094a9f75898e7e9cc5fe7b7befcc823ac7cd4d3e0"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "3ca8ffcbeb9489d4e6ce79e5c259590684eaea45409e36b1303984f57dc68eea",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "d1d3ef1b8bd19eae8ca78cb094a9f75898e7e9cc5fe7b7befcc823ac7cd4d3e0",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Solve the two primitive coefficients for e^x cos(mx), then use the integer-frequency endpoints.",
+    "analyticConditions": "m is an integer, so sine vanishes and cosine equals1 at both endpoints. All functions are continuous.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "db18a5030b475e0caf71c496838a567369bb79c86ad93eab2b9f169f91dc4910",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate the independently constructed exponential-trigonometric primitive; evaluate at0 and2\u03c0 using the integer frequency.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "index": 5,
+    "rawHash": "af45d0680062b4e70ccfa327bfdc9d376b63a5616b8a833b9b7de3ee766cedab",
+    "contentHash": "10646cec589b980bea72fc620c9382cb2a34c7da78247e7f7f722c5b3668e4b2",
+    "sourcePreview": {
+      "canonicalRawHash": "8b7ccf32f890c086a04ee08265acae888541fe10dae4acd2af469a3283f35831",
+      "problemId": "cn_36d417c89af6232379ba",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "64bb54d5915eeabced46cf9f30093bf3e5d62d91df875b1118aa381f767b4060",
+      "sourceContentHash": "598b9dbd1c23ba5d0978b146246b130e231ceeaf08e5f21885564709eab692bc"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_36d417c89af6232379ba",
+      "revision": 1,
+      "semanticHash": "64bb54d5915eeabced46cf9f30093bf3e5d62d91df875b1118aa381f767b4060",
+      "sourceContentHash": "598b9dbd1c23ba5d0978b146246b130e231ceeaf08e5f21885564709eab692bc"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "2bba984323ae59af237b543030d7ef8ba9829e40adc901877fe8675cb588ae7e",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "598b9dbd1c23ba5d0978b146246b130e231ceeaf08e5f21885564709eab692bc",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Solve the two primitive coefficients for e^x cos(mx), then use the integer-frequency endpoints.",
+    "analyticConditions": "m is an integer, so sine vanishes and cosine equals1 at both endpoints. All functions are continuous.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "fe8de7e068471ef2ac20960b482897a15f3204c10d643d6b2ab320ebddabc86c",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate the independently constructed exponential-trigonometric primitive; evaluate at0 and2\u03c0 using the integer frequency.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "index": 7,
+    "rawHash": "bbaf467845c8a05540166692989a354a450b863dc65fe55b3a20b5dcbc435108",
+    "contentHash": "7f2ec8117c7cd443d085f0a934d3904d4c253730f5a0dbe8805fcecbd5088bbd",
+    "sourcePreview": {
+      "canonicalRawHash": "305afa70a58d2b7c5857978724e4fac73379b9a0910f9c7e53b4f0bae41b5f49",
+      "problemId": "cn_0a7311c341af1490b71f",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "6d966afaa2ea229cb6e17478a2dfad04981f26b143de5ba705df09a99ab575c4",
+      "sourceContentHash": "2846d5039844e26c8f39f1ff185d57b268b7b0cfd43bda6ddb867b98b906ae42"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_0a7311c341af1490b71f",
+      "revision": 1,
+      "semanticHash": "6d966afaa2ea229cb6e17478a2dfad04981f26b143de5ba705df09a99ab575c4",
+      "sourceContentHash": "2846d5039844e26c8f39f1ff185d57b268b7b0cfd43bda6ddb867b98b906ae42"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "413193033bdeb7cba7da5fe9615a767b003c778072332acb12d0e00856f8b236",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "2846d5039844e26c8f39f1ff185d57b268b7b0cfd43bda6ddb867b98b906ae42",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Solve the two primitive coefficients for e^x cos(mx), then use the integer-frequency endpoints.",
+    "analyticConditions": "m is an integer, so sine vanishes and cosine equals1 at both endpoints. All functions are continuous.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "52e23136058b11135583b3ea320a3416ff7a88e06cae14175baf11adc1320977",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate the independently constructed exponential-trigonometric primitive; evaluate at0 and2\u03c0 using the integer frequency.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "index": 8,
+    "rawHash": "8801372a032cbf8acee50da492ab5d33ea7b55d7f2152ef94c640b7297238b40",
+    "contentHash": "08eac44f242e12424418aca0cbaded14a0884c5c30a58ae0e665b5df557f509e",
+    "sourcePreview": {
+      "canonicalRawHash": "c1932c61f7407e03fcb9a9867bf0aabeeeddd40b131ed4de37670f522467b530",
+      "problemId": "cn_50f9a12c8f0192d37486",
+      "rawConstructorHash": "337ddccaacf08aedf5b47a10b84dcf9b3d213b658a862e06066996a2fc8cea5e",
+      "revision": 1,
+      "semanticHash": "fc7b66113e7b6be51331395175a24c228a6c124311ae128e4f46c9e22a78fe14",
+      "sourceContentHash": "c50e05838e57fb90c3119d41cd9257c47355bf4e4c5d2dbac633ffa81d8793c8"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_50f9a12c8f0192d37486",
+    "sourcePresentation": {
+      "entryHash": "b271bf7b486006b075ed6084595e09002a22eee02b1666c9ca957e5978b52a85",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Solve the two primitive coefficients for e^x cos(mx), then use the integer-frequency endpoints.",
+    "analyticConditions": "m is an integer, so sine vanishes and cosine equals1 at both endpoints. All functions are continuous.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "83b223909c8bd9cf6d1defae73afce3dbc081f595e6c2d4db114a78de07d18e8",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Differentiate the independently constructed exponential-trigonometric primitive; evaluate at0 and2\u03c0 using the integer frequency.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "index": 0,
+    "rawHash": "718cc7c12a8429a81640c926c3bb848c2bce50f95e97ec697914c3499f3071c5",
+    "contentHash": "1b7ba0d98fe1ed939358770dcb3247687029cec8e50d7a61d0f27151053dbff3",
+    "sourcePreview": {
+      "canonicalRawHash": "d011ada257122bef6ad09ff6d3d35ae199162c478844fbf82f93f1406b91e2dd",
+      "problemId": "cn_63dfda9541957e471bc8",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "d14ec64d8b8730f80299e70d54d63335096af78f65fa663de59002106f318ce6",
+      "sourceContentHash": "b9cc763299e9479ab0dedbcf751939735e1ebc9222e6df375ebeb50c36d358a3"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_63dfda9541957e471bc8",
+      "revision": 1,
+      "semanticHash": "d14ec64d8b8730f80299e70d54d63335096af78f65fa663de59002106f318ce6",
+      "sourceContentHash": "b9cc763299e9479ab0dedbcf751939735e1ebc9222e6df375ebeb50c36d358a3"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "93fa209aed7266f68ee334c0fcf840a77667a2d0b5b78d5a090be72e4fb1ed27",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "b9cc763299e9479ab0dedbcf751939735e1ebc9222e6df375ebeb50c36d358a3",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Subtract the two linear reciprocal terms, integrate their logarithms, and preserve the endpoint ratio.",
+    "analyticConditions": "Both linear factors are positive on[0,1], and m\u22601.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "18546f86638b1699d8129f80bfd31c3d3bfb944b2a7bbf5140b8d010fa546190",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The kernel is(1/(x+1)\u22121/(x+m))/(m\u22121). Both denominators are positive; their exact logarithmic endpoint difference gives the answer.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "index": 2,
+    "rawHash": "1ead7b541064658d2143788d834424e11e76a7dc763a7eb50e53dcebeed162c5",
+    "contentHash": "720686f90679da74580a51b4f94401e4b70e99044449984fcfda997324e87c7b",
+    "sourcePreview": {
+      "canonicalRawHash": "f56f402474b7747acf210e20a44031ddf910d27076529852e39088d9c2008f20",
+      "problemId": "cn_cebdc12e302ffdc75d85",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "53f497f057c7e6cfea73dedaefaf9c8a89e144d637def322645ccabb7674a79c",
+      "sourceContentHash": "31654f3a8482f133877c623049259b049076dda6ac7befc8933aadc9d6489ad5"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_cebdc12e302ffdc75d85",
+      "revision": 1,
+      "semanticHash": "53f497f057c7e6cfea73dedaefaf9c8a89e144d637def322645ccabb7674a79c",
+      "sourceContentHash": "31654f3a8482f133877c623049259b049076dda6ac7befc8933aadc9d6489ad5"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "bfb2ae7ea6cbfb5d9a071bc75b116b7d31b07a50601202c6aff15bdea23963d4",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "31654f3a8482f133877c623049259b049076dda6ac7befc8933aadc9d6489ad5",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Subtract the two linear reciprocal terms, integrate their logarithms, and preserve the endpoint ratio.",
+    "analyticConditions": "Both linear factors are positive on[0,1], and m\u22601.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "fd2937532803ae5919e07e8a120798f76e8a005cdb586949f61f8a4c1121c69e",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The kernel is(1/(x+1)\u22121/(x+m))/(m\u22121). Both denominators are positive; their exact logarithmic endpoint difference gives the answer.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "index": 4,
+    "rawHash": "6d033e2e9a3444ad593f33190d87d72acedc99071db120b16e87c9fa2956821b",
+    "contentHash": "7e42c251204b8d92c97cb3704cd6fa59e46569ec472d5866167b82b1da931dea",
+    "sourcePreview": {
+      "canonicalRawHash": "957b7794202cced0c813bf24b8529de68a200ae34ea22cc543bdb59742491abf",
+      "problemId": "cn_e7ec0a3a1912746dc8be",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "2f0bb0e1634249fcae8eae3d8b1a670f0a806165ca70cb6cb14cda6b194b2216",
+      "sourceContentHash": "ba6c507c233f121e583bdbe644aafcdaac95ea0a6af1d459d39615faae20e895"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_e7ec0a3a1912746dc8be",
+      "revision": 1,
+      "semanticHash": "2f0bb0e1634249fcae8eae3d8b1a670f0a806165ca70cb6cb14cda6b194b2216",
+      "sourceContentHash": "ba6c507c233f121e583bdbe644aafcdaac95ea0a6af1d459d39615faae20e895"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "32502a91a0dbbc286624490b4bf13e3d5e8edd45ab6d084ce3539469032f5043",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "ba6c507c233f121e583bdbe644aafcdaac95ea0a6af1d459d39615faae20e895",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Subtract the two linear reciprocal terms, integrate their logarithms, and preserve the endpoint ratio.",
+    "analyticConditions": "Both linear factors are positive on[0,1], and m\u22601.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "502134384b2beb0ec3eaac2868995facea9ccb75ba54b97144ac84fe6547e9a1",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The kernel is(1/(x+1)\u22121/(x+m))/(m\u22121). Both denominators are positive; their exact logarithmic endpoint difference gives the answer.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "index": 7,
+    "rawHash": "29d269cd39eddfb76eb5725a16de9fc724bfbfb8539498abc3669c47ce7f12a8",
+    "contentHash": "e8011d39df1f847d530c99af947caa902248d1265a12d4e2d0c328a027572fc1",
+    "sourcePreview": {
+      "canonicalRawHash": "35e74de1bb478ddd4e1841b41a8f4db5aeed464e7fea2df6c2b32bcdc09c94e5",
+      "problemId": "cn_33370c61bb6ddaaf4df1",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "68663ad871172c294dd05052c48d251eca55505d9e76301c6977c5308537ae04",
+      "sourceContentHash": "efce0f887e932181f2209a8f69217b2a23b16ee76c0e7dbf40e0b55858ad1a5a"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_33370c61bb6ddaaf4df1",
+      "revision": 1,
+      "semanticHash": "68663ad871172c294dd05052c48d251eca55505d9e76301c6977c5308537ae04",
+      "sourceContentHash": "efce0f887e932181f2209a8f69217b2a23b16ee76c0e7dbf40e0b55858ad1a5a"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "453af26ac14c690a45deb7c94cd5c70d8d65a87635949120ae9ad812d2c41b2d",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "efce0f887e932181f2209a8f69217b2a23b16ee76c0e7dbf40e0b55858ad1a5a",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Subtract the two linear reciprocal terms, integrate their logarithms, and preserve the endpoint ratio.",
+    "analyticConditions": "Both linear factors are positive on[0,1], and m\u22601.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "318776aa250b23983728f30ac37468ff248ecb22dbfd822f95524f744502556a",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The kernel is(1/(x+1)\u22121/(x+m))/(m\u22121). Both denominators are positive; their exact logarithmic endpoint difference gives the answer.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "index": 8,
+    "rawHash": "e67c673d010684c9449e925f4cfd3c8267d37e4ee22ae053884f658161668830",
+    "contentHash": "9ce722e2c13939d3daad167ebe7c29e719f6bb45d0dda4592c2c975285d71ee7",
+    "sourcePreview": {
+      "canonicalRawHash": "f6ef8a6ae06bc3ae652fbc154f7a9bc79ca6b8ed9de903de7f3026f863a5a3ee",
+      "problemId": "cn_effbfd65bae02015f301",
+      "rawConstructorHash": "a6bfddb1173baabaca6018069f32f413a77138a1c676cc0ea2259d2e7bbde1bc",
+      "revision": 1,
+      "semanticHash": "e557dd70bf74f8cd9546018de5c931c5c85cfd16ee86851c564b45b01fc9ccc2",
+      "sourceContentHash": "3e76c0adec8d5d6b76b04269ce8a5a413cf4cae63d869f32cc8250994d643546"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_effbfd65bae02015f301",
+    "sourcePresentation": {
+      "entryHash": "7198713842a4b102ad4e4304fcc63c4976fcab8705034582d22ea3d4c6e25ddf",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Subtract the two linear reciprocal terms, integrate their logarithms, and preserve the endpoint ratio.",
+    "analyticConditions": "Both linear factors are positive on[0,1], and m\u22601.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "0848088a79ecda5679f6ea2f08cecb2423cfe1472bbf504921cdf92840cd042f",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The kernel is(1/(x+1)\u22121/(x+m))/(m\u22121). Both denominators are positive; their exact logarithmic endpoint difference gives the answer.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-parts-log",
+    "index": 3,
+    "rawHash": "4d8eca941639b0c96dec38aa8196e2f7131b87b8930889e452955cfad55c0c43",
+    "contentHash": "87940a3da64a45dacd4706211f1030989b69243ded38d3320fd9f9d9cc582d98",
+    "sourcePreview": {
+      "canonicalRawHash": "b3a2fe1ef998b7699e4b2c31906fafce4ee932355d150ede100fb022bff0de49",
+      "problemId": "cn_49a5f0cb5e0b1a5af2ea",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "22fed32f65c28c8a7b74f10a01b14664f73e570bd3177c63359a729b36014ca0",
+      "sourceContentHash": "b3067095aaceb535896210aab5048cd6906bab9834da37d3594c425ef50e256d"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_49a5f0cb5e0b1a5af2ea",
+      "revision": 1,
+      "semanticHash": "22fed32f65c28c8a7b74f10a01b14664f73e570bd3177c63359a729b36014ca0",
+      "sourceContentHash": "b3067095aaceb535896210aab5048cd6906bab9834da37d3594c425ef50e256d"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "5d867de7fa82c3a846bb00cc5ac21046048a4d96c43683c1cc5c783b65d32369",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "b3067095aaceb535896210aab5048cd6906bab9834da37d3594c425ef50e256d",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Integrate by parts once and evaluate x ln x\u2212x at the two positive endpoints.",
+    "analyticConditions": "The logarithm is continuously differentiable on[1,m], with m>1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "387eb48440b35fa8175c948de44828ac5a27f30864e085d47ec9a724b1aecfd1",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integration by parts gives x ln x\u2212x; subtract its value\u22121 at the lower endpoint.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-parts-log",
+    "index": 4,
+    "rawHash": "456baf410455ad24206783176d8bf2efa3aeb512f0debc63b5979ae99cb9d130",
+    "contentHash": "5a50867d7f0c63e6d81ec4f4ac9037f7fb7a2f87259d953e3f05d16e1e823e70",
+    "sourcePreview": {
+      "canonicalRawHash": "e65b38f6c386b1feca8c86a23a34aea5413bad1ec068c09fb38205ca19a9392c",
+      "problemId": "cn_94ca2c633b6c39827a61",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "226878b76d36d87368b051bd34f79ab7bfb68ee25fad94e7587d4d6b8c0cb1cd",
+      "sourceContentHash": "ec4c52a86610cdcda8f468e02af60d28d1c9b2550e9ebd31bc9d7ccc77196e11"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_94ca2c633b6c39827a61",
+      "revision": 1,
+      "semanticHash": "226878b76d36d87368b051bd34f79ab7bfb68ee25fad94e7587d4d6b8c0cb1cd",
+      "sourceContentHash": "ec4c52a86610cdcda8f468e02af60d28d1c9b2550e9ebd31bc9d7ccc77196e11"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "f0c059a5a47c3fd492afdf81bd837c8fc0f344c2477b94893f1e8b530b790bc5",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "ec4c52a86610cdcda8f468e02af60d28d1c9b2550e9ebd31bc9d7ccc77196e11",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Integrate by parts once and evaluate x ln x\u2212x at the two positive endpoints.",
+    "analyticConditions": "The logarithm is continuously differentiable on[1,m], with m>1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "e1667f7192a3910b2d076b2ba249aaf5aa16a91d4c579f3f6c9198f55d1ef911",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integration by parts gives x ln x\u2212x; subtract its value\u22121 at the lower endpoint.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-parts-log",
+    "index": 7,
+    "rawHash": "9459828f1ed41229828828bf7d3f1636722cf0f70a8b903dab31a2ff63a48e7f",
+    "contentHash": "89a3cb9e24bcc73092aea25444465c6fc8ce62f1e1a91d43ba8ba054f64c5f45",
+    "sourcePreview": {
+      "canonicalRawHash": "df97c39947fca9f0d2d3253b198280e8480f16fa9bc2ce18de0a67d986c20c5e",
+      "problemId": "cn_1fc24d267ef9a1e1bfdb",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "c52f90a36b6f65708db20e2e7e5c9c9cd69c895d732c2e92f6a3a32185ac73c4",
+      "sourceContentHash": "0cdd3bd857bd58bde16392727f2318ed8c1734e76ba1a7e2c4802fcb242723d2"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_1fc24d267ef9a1e1bfdb",
+      "revision": 1,
+      "semanticHash": "c52f90a36b6f65708db20e2e7e5c9c9cd69c895d732c2e92f6a3a32185ac73c4",
+      "sourceContentHash": "0cdd3bd857bd58bde16392727f2318ed8c1734e76ba1a7e2c4802fcb242723d2"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "3a93ff5741d65428ae35f96766c048153beb986ab6d50fdc0cc2944d86cc0056",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "0cdd3bd857bd58bde16392727f2318ed8c1734e76ba1a7e2c4802fcb242723d2",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Integrate by parts once and evaluate x ln x\u2212x at the two positive endpoints.",
+    "analyticConditions": "The logarithm is continuously differentiable on[1,m], with m>1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "d2c4a58a1c42ccc576ecf043060a0e3a2025d04693188a2ed6a0d3610ac9600d",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integration by parts gives x ln x\u2212x; subtract its value\u22121 at the lower endpoint.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-parts-log",
+    "index": 8,
+    "rawHash": "d935e32f4fca312326d6d13b0bf7119d64d86e4743601592794033e2ba676e50",
+    "contentHash": "05f9a98b9a2dc75ef3154b2753fe4f5e8d6c676dae478ffb154d3dcd482ff97f",
+    "sourcePreview": {
+      "canonicalRawHash": "3f356da84e1d894b608db9ebf4d80ab3c81895119dd7379a3224479fd0d9408f",
+      "problemId": "cn_95f464b288d768febc49",
+      "rawConstructorHash": "a066c31342305d5c170eebe94c0c225053542d8a27f7e35a7046c57d7c6510fc",
+      "revision": 1,
+      "semanticHash": "7672c85307dde5edc0672d046f8c740af72c3637329e76963d18ff28d76b0c8d",
+      "sourceContentHash": "9663a504ecf0241d7e2670b7009ad68bd3d8a921923dcc98890908b6ec8e2cff"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_95f464b288d768febc49",
+    "sourcePresentation": {
+      "entryHash": "9ec973592262cf9f90115722891894c7800ed38a8bfa41c732737cca646ed684",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Integrate by parts once and evaluate x ln x\u2212x at the two positive endpoints.",
+    "analyticConditions": "The logarithm is continuously differentiable on[1,m], with m>1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "e9abfef4064465f2949cea79910d66e2fedbde3e7b0d3855b7e4466e2f3a8cbd",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integration by parts gives x ln x\u2212x; subtract its value\u22121 at the lower endpoint.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "main55",
+    "familyId": "m3-integration-medium-parts-log",
+    "index": 9,
+    "rawHash": "0e59b97a790606c01a240347c1eaefaef566b45aab4b8e34bec24be8f3eee956",
+    "contentHash": "7ae207532683f4e9dd9bf148d95e17792326dbfaaf2b4da8af79ebadf9632c66",
+    "sourcePreview": {
+      "canonicalRawHash": "778f12adf620bfd555cfcdfa99db8d149515027e49864ac5b0d2a817254fb701",
+      "problemId": "cn_edf4347aa95e4f152731",
+      "rawConstructorHash": "458d792a1dcf9d4b1d35ad157bfb682f7436996d102f917a588dcf7618270ccd",
+      "revision": 1,
+      "semanticHash": "fee4756d9ad9e4510abc5336118360ea2e5d1a535ec2081d5afe8e804e3561ec",
+      "sourceContentHash": "d1f8dd16d50687b1b4a888eabe561fb452eb4eb1e12ddcf30e60079f695adf52"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_edf4347aa95e4f152731",
+    "sourcePresentation": {
+      "entryHash": "51e535bac8288a9cb0a2ebe9cc4f245148b6481d6f74371f6b136e76814d7c11",
+      "sha256": "ae5f027643fe2bfe1616e5ee0014d681b30b09124824a4ec160c3d13ea04720e",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "medium",
+    "easiestOptionsVisibleRoute": "Integrate by parts once and evaluate x ln x\u2212x at the two positive endpoints.",
+    "analyticConditions": "The logarithm is continuously differentiable on[1,m], with m>1.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 2,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "20d333bd9356e5d0aa37ffe16b54667c36fcec64baa1039f312a572d6d69b298",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "Integration by parts gives x ln x\u2212x; subtract its value\u22121 at the lower endpoint.",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "odd-even3",
+    "familyId": "m3-integration-easy-odd-even",
+    "index": 9,
+    "rawHash": "fb745f26dce5ae54873fddd9e84679fb944377906515f46cd77c133676aa3eaa",
+    "contentHash": "0d72c25a1b54aa656c7b78c34ddf0fb451d0c3547c2c72c26b08a353c67c2b61",
+    "sourcePreview": {
+      "canonicalRawHash": "de46c6d8adb88c9ba2500263f028b70075b20e901d0e78b105ef57ae0994d9e0",
+      "problemId": "cn_c01157dcbacd9309fd41",
+      "rawConstructorHash": "5f4d56900c0b1c9f71b10dcd9b9b66ff8714d92c261520b26d04fc38bfcf25e9",
+      "revision": 1,
+      "semanticHash": "849c40ce125137e7b6615203a2c1be92b1876a019770bf4896e89233b1e41711",
+      "sourceContentHash": "c711b448e5e4e8745aa0f7a03c4ea0241066d8f2b6aac2a28f4ea116447b02cc"
+    },
+    "previous": null,
+    "replacesPrivateProblemId": "cn_c01157dcbacd9309fd41",
+    "sourcePresentation": {
+      "entryHash": "6353bd53c63e2f6523fb68f6b54ad9ee9ed0d36785cf78aeb59ed487c0f12236",
+      "sha256": "fafe15ac1cdc0242a48b3eef9634ab1f3719b8f665aafd9ff77796f89441678c",
+      "solutionQuality": null
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Cancel the odd cubic, then double the cosine integral over the positive half interval.",
+    "analyticConditions": "For the displayed positive integer m,0<pi/m<pi, so sin(pi/m)>0. Continuous integrands permit the elementary primitive and symmetry identities.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "edbb2714ad29747aaa1f2ce2abecbd85c4177f08ea55de19335a4adc434d0f83",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The cubic integrates to zero by oddness over the symmetric bounds. Cosine is even and has sine primitive, giving2sin(half-width).",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "odd-even3",
+    "familyId": "m3-integration-easy-odd-even",
+    "index": 3,
+    "rawHash": "10e1e9021682f0a44e30b7cb453ecd3638f5f687b116b7166e682fd7d07bef00",
+    "contentHash": "69c47a27d040600fcccf05220397697f294483dee590cb2e52585538841b00e4",
+    "sourcePreview": {
+      "canonicalRawHash": "8bfbac4b6eeb6c25242d1e4a575be77366bc67c6bce163d5c06cdc6be3edb540",
+      "problemId": "cn_ce8977ed86d942e8bffc",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "3a03e54ff311bd4dedc0f078bd98cc8bbdcf210a983685d16a2032520005f561",
+      "sourceContentHash": "80bfe0f962d419019cc831cf3878331dfe3b3cc1f72e0f4e9ae6d568ab7523ee"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_ce8977ed86d942e8bffc",
+      "revision": 1,
+      "semanticHash": "3a03e54ff311bd4dedc0f078bd98cc8bbdcf210a983685d16a2032520005f561",
+      "sourceContentHash": "80bfe0f962d419019cc831cf3878331dfe3b3cc1f72e0f4e9ae6d568ab7523ee"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "308dc417745f836e947d7b3f31779b31df7c3bb25abc6a986a609dd39b1e4020",
+      "sha256": "fafe15ac1cdc0242a48b3eef9634ab1f3719b8f665aafd9ff77796f89441678c",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "80bfe0f962d419019cc831cf3878331dfe3b3cc1f72e0f4e9ae6d568ab7523ee",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Cancel the odd cubic, then double the cosine integral over the positive half interval.",
+    "analyticConditions": "For the displayed positive integer m,0<pi/m<pi, so sin(pi/m)>0. Continuous integrands permit the elementary primitive and symmetry identities.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "dd96d72c1f9888d9a6a0ecebd61ee14e04e58059320ed107d68a7e1ff8d83e12",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The cubic integrates to zero by oddness over the symmetric bounds. Cosine is even and has sine primitive, giving2sin(half-width).",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  },
+  {
+    "route": "odd-even3",
+    "familyId": "m3-integration-easy-odd-even",
+    "index": 5,
+    "rawHash": "43a0ac83189de547689063f67944951c9f1774cc861d81a368edf4ab45bb3d9d",
+    "contentHash": "95b74d6f86bd6f58cec663532df40c6be8a487273c1d7b0ff7a4dc78e3d4aaa2",
+    "sourcePreview": {
+      "canonicalRawHash": "3a3f08ad0d9a744b35eeac1b472a7318ddc23014781c30a242cce4b43b5fed76",
+      "problemId": "cn_df45481843465e29ac24",
+      "rawConstructorHash": null,
+      "revision": 1,
+      "semanticHash": "3ec34a1388e7a21666c0583eb97568ac361b43b439557b68bf75c8e1679eb5a7",
+      "sourceContentHash": "1f2f7c13d34c62756a0a391317c9da4afd695a0f48a86831bb32fa9ae1003d7b"
+    },
+    "previous": {
+      "meaningChanged": false,
+      "problemId": "cn_df45481843465e29ac24",
+      "revision": 1,
+      "semanticHash": "3ec34a1388e7a21666c0583eb97568ac361b43b439557b68bf75c8e1679eb5a7",
+      "sourceContentHash": "1f2f7c13d34c62756a0a391317c9da4afd695a0f48a86831bb32fa9ae1003d7b"
+    },
+    "replacesPrivateProblemId": null,
+    "sourcePresentation": {
+      "entryHash": "19f57941887bb90030a82378163129359757bbe96317b4ac213f8b38eb1b4fe9",
+      "sha256": "fafe15ac1cdc0242a48b3eef9634ab1f3719b8f665aafd9ff77796f89441678c",
+      "solutionQuality": {
+        "auditId": "coverage-v1",
+        "notationVersion": "calculus-ninja-notation-v1",
+        "sourceContentHash": "1f2f7c13d34c62756a0a391317c9da4afd695a0f48a86831bb32fa9ae1003d7b",
+        "version": "worked-solutions-v1"
+      }
+    },
+    "currentTaskMeaningChanged": false,
+    "inheritedUnpublishedSemanticRevision": false,
+    "preservePreviousLineage": true,
+    "newIndependentIdeas": 0,
+    "recommendedDifficulty": "easy",
+    "easiestOptionsVisibleRoute": "Cancel the odd cubic, then double the cosine integral over the positive half interval.",
+    "analyticConditions": "For the displayed positive integer m,0<pi/m<pi, so sin(pi/m)>0. Continuous integrands permit the elementary primitive and symmetry identities.",
+    "twoExactOppositePairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "authorChecks": 3,
+    "independentReview": {
+      "report": "evidence/independent/algebraic-option-peer-v1.json",
+      "reportSha256": "b152e7aaabcceabc50ea694347ace42333dd6e423a3b6659b8f65a037f6c1577",
+      "entryHash": "11b0d2a683b1821349c2309a03cd2188192b9eb698540866b800b0d9cbdb7beb",
+      "literalAnswerPassed": true,
+      "sixLiteralOutwardRationalPairInequalitiesPassed": true,
+      "twoMathematicalOppositePairsPassed": true,
+      "reviewerRoute": "The cubic integrates to zero by oddness over the symmetric bounds. Cosine is even and has sine primitive, giving2sin(half-width).",
+      "scope": "Independent literal integral derivations and six exact outward-rational pair inequalities per finite item. No author constructor or answer-expression oracle. Real logarithm domains and analytic convergence arguments are explicitly identified. Final history/source joins, canonical-ID screen and admission remain separate. Not formal or human certification."
+    }
+  }
+]

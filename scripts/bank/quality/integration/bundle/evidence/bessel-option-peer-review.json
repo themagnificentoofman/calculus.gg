@@ -1,0 +1,727 @@
+{
+  "status": "independently-math-checked-hard-recommended-awaiting-final-id-option-screen",
+  "sourcePath": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/scripts/bank/quality/integration/bessel-option-candidates-v1.jsonl",
+  "sourceSha256": "c642d0e2e03bba1e4ad77d7f872b103815ef52420e590b497d310266d34366c6",
+  "reviewerCodeSha256": "e01dec7604bfb52907b35c9c41dea896ccfd11a21bfc5e97f25f1e78c2269ad5",
+  "records": [
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 0,
+      "rawHash": "a19319ffd3ea903c8bd9c4768646dc54b5069a0c3ebfa901d67b79d30f6fc9c5",
+      "sourceContentHash": "78f2ac447ae45ab9179268ed09b876d6930eb36acc4f784d8520445bbc9a0cb5",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_eef90eac432e19d80385",
+        "revision": 1,
+        "semanticHash": "f0b0cd3a7355d96b79a4d04bce02266418e1fd5176579f6acb6bb0afe6a3aa12",
+        "sourceContentHash": "84da11811cc67ca4e4c10f1c3124bd6af7f15705a20c8551bd723aedac0ba7ec"
+      },
+      "literalParameters": {
+        "a": 2,
+        "b": 1
+      },
+      "answerExpression": "Mul(Rational(1, 5), Pow(Integer(5), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 2,
+        "lower": "7/16",
+        "upper": "1/2",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_1d6ab1b67a993b50",
+            "lowerSquaredResidual": "11/1280",
+            "upperSquaredResidual": "1/20",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_13522ec1637eef38",
+            "lowerSquaredResidual": "-19/768",
+            "upperSquaredResidual": "1/12",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_4dc894fd8e830266",
+            "lowerSquaredResidual": "-17/256",
+            "upperSquaredResidual": "1/8",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_b5a37b2f644c7aae",
+            "lowerSquaredResidual": "-381/3328",
+            "upperSquaredResidual": "9/52",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 4,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 1,
+      "rawHash": "86c6bfacb0f6126d06f09cfb54a677afb074337a30a8a4f2b14c8a851b2781f5",
+      "sourceContentHash": "495a14c1b4c2bece8e6517fa64d9bda2455e89bd0780672375b2c08c0ce7705e",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_5627fb6f77be758e204c",
+        "revision": 1,
+        "semanticHash": "d6c9e5768715aa8af73009eafb91a5577e9d2b0a44e6ca67cda3cbe83febcd82",
+        "sourceContentHash": "09e3b42bb53351b894a38bfbb330809717f8e5b2cb1aa0fbb7cb88ef41e72f4e"
+      },
+      "literalParameters": {
+        "a": 3,
+        "b": 2
+      },
+      "answerExpression": "Mul(Rational(1, 13), Pow(Integer(13), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 3,
+        "lower": "7/27",
+        "upper": "23/81",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_b5a37b2f644c7aae",
+            "lowerSquaredResidual": "92/9477",
+            "upperSquaredResidual": "316/85293",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_1d6ab1b67a993b50",
+            "lowerSquaredResidual": "484/3645",
+            "upperSquaredResidual": "-3916/32805",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_824427b2f82bd03f",
+            "lowerSquaredResidual": "239/7290",
+            "upperSquaredResidual": "-1271/65610",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_00d7914b3950e25d",
+            "lowerSquaredResidual": "190/8019",
+            "upperSquaredResidual": "-742/72171",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 1,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 2,
+      "rawHash": "0b692b7fee029513cb051bb581c2108e876a283e07a3f9cdb9e4e2c3fba087c4",
+      "sourceContentHash": "7a0cf7b09586d37d57fdeb376f17d1923ff621cabc6a6e33398b60552ee1e3b0",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_f9d01f87c06b77239b2a",
+        "revision": 1,
+        "semanticHash": "6d40d9fd21bbf0ae123d8cb1e0ff4fcb77e2e5bcd17289ec25aa26cc16a453a8",
+        "sourceContentHash": "68c9e61454be02c094d3acb8627a67f5f332a8cac2bf92864dc006f8102b5355"
+      },
+      "literalParameters": {
+        "a": 4,
+        "b": 3
+      },
+      "answerExpression": "Rational(1, 5)",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 3,
+        "lower": "23/128",
+        "upper": "1715/8192",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_d607e730a5e54630",
+            "lowerSquaredResidual": "3159/409600",
+            "upperSquaredResidual": "6421761/1677721600",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_11b59901a0cd963e",
+            "lowerSquaredResidual": "12681/114688",
+            "upperSquaredResidual": "-46520289/469762048",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_f5775845f9c12d1e",
+            "lowerSquaredResidual": "26919/1196032",
+            "upperSquaredResidual": "-53726031/4898947072",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_cab8fd94267e2657",
+            "lowerSquaredResidual": "-2781/212992",
+            "upperSquaredResidual": "21458709/872415232",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 2,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 3,
+      "rawHash": "179037e09fad6c3795bdd167c9770144a3769c9f325db2f1dc90f408e9bb17ce",
+      "sourceContentHash": "1c63ba3a2a2202747421d3988c0ac670f9d59eb859247374c6c84530f2c06369",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_7cef2c34fd23d3caefbb",
+        "revision": 1,
+        "semanticHash": "425a20457d6b4b8643d645be2a1be6613a597ff4ef22fcf0adecbd4ca42a7f57",
+        "sourceContentHash": "9de213ee4d1c0f7171a8f8dec4aa348a7018274a659e137dba432a94f4a14eae"
+      },
+      "literalParameters": {
+        "a": 5,
+        "b": 4
+      },
+      "answerExpression": "Mul(Rational(1, 41), Pow(Integer(41), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 3,
+        "lower": "17/125",
+        "upper": "521/3125",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_73754a5a67f4fba7",
+            "lowerSquaredResidual": "3776/640625",
+            "upperSquaredResidual": "1363456/400390625",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_d1d40665d23c1473",
+            "lowerSquaredResidual": "6088/515625",
+            "upperSquaredResidual": "-808072/322265625",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_0b6788291c1711be",
+            "lowerSquaredResidual": "-848/890625",
+            "upperSquaredResidual": "5706512/556640625",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_87a46a861a104f3b",
+            "lowerSquaredResidual": "-10096/1390625",
+            "upperSquaredResidual": "14392624/869140625",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 3,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 4,
+      "rawHash": "2c9151afd3dceb5bf604540ccedf309c85da308489ba93e922c5bf300996571a",
+      "sourceContentHash": "6b3b110fc796f921f061ece047bcab0e4dd9fdcfe00f3ff3e55a51a19683772d",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_96dc7f83baeae13c2e14",
+        "revision": 1,
+        "semanticHash": "5fb948d416fc905c974a43f68f88ee0370461cc2dcb2b13f0ad1b3d8d6883b53",
+        "sourceContentHash": "466622f81c8cd0836a48f20f906ed3d2bef6ce8bbdc472ae40021470e4277a93"
+      },
+      "literalParameters": {
+        "a": 6,
+        "b": 5
+      },
+      "answerExpression": "Mul(Rational(1, 61), Pow(Integer(61), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 2,
+        "lower": "47/432",
+        "upper": "1/6",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_e45e5817e2287c60",
+            "lowerSquaredResidual": "51875/11384064",
+            "upperSquaredResidual": "25/2196",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_b0e7618dd953808c",
+            "lowerSquaredResidual": "-1675/8024832",
+            "upperSquaredResidual": "25/1548",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_454ce5e90f45ea9d",
+            "lowerSquaredResidual": "-14225/3172608",
+            "upperSquaredResidual": "25/1224",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_c3f26a5f5a090c4b",
+            "lowerSquaredResidual": "-43325/5412096",
+            "upperSquaredResidual": "25/1044",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 4,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 5,
+      "rawHash": "1b00992e81b16858836dca911f250e636f96510fd460490f812be6b3cc671860",
+      "sourceContentHash": "b0df4e1cd3606efc5b3112504ac1c861b5ee7d2e1b46e032014ac6349b5f1bde",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_58310cab152c64537963",
+        "revision": 1,
+        "semanticHash": "973c8586d3732910e9dfe8e715957a58ccbc1817b5c8469b4c731287320fcceb",
+        "sourceContentHash": "329b8e4db7e141009948bebaff57473924f675a17590c45b459e899c61acab4b"
+      },
+      "literalParameters": {
+        "a": 7,
+        "b": 6
+      },
+      "answerExpression": "Mul(Rational(1, 85), Pow(Integer(85), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 3,
+        "lower": "31/343",
+        "upper": "2005/16807",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_9d4a8692d9c1d232",
+            "lowerSquaredResidual": "35964/10000165",
+            "upperSquaredResidual": "59226876/24010396165",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_b5a37b2f644c7aae",
+            "lowerSquaredResidual": "105156/1529437",
+            "upperSquaredResidual": "-230214924/3672178237",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_a5a0799aaffdf6eb",
+            "lowerSquaredResidual": "61911/6823642",
+            "upperSquaredResidual": "-49313799/16383564442",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_cc46c9960cfeaec1",
+            "lowerSquaredResidual": "53262/7882483",
+            "upperSquaredResidual": "-13133574/18925841683",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 1,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 6,
+      "rawHash": "7242c862b7628f89da52f3ccd86ad794835a976b581c219aedac94bba71061ed",
+      "sourceContentHash": "fc8d3b1d825b6a3490b2bac58490fe4ccba6426c6a39a7f5ebac91da7ce18740",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_aea6d67e8f11e6b822a9",
+        "revision": 1,
+        "semanticHash": "61503c5b3166b9c9cdeef854fafb87cfa7092efc79ba7c41a36733a030f9b7c9",
+        "sourceContentHash": "508e893b380cf6c0a5cb4a2fb5e66bad14d972ed1d00f2d564bb82e420cc56ec"
+      },
+      "literalParameters": {
+        "a": 8,
+        "b": 7
+      },
+      "answerExpression": "Mul(Rational(1, 113), Pow(Integer(113), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 3,
+        "lower": "79/1024",
+        "upper": "27427/262144",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_1dd2979d720043a8",
+            "lowerSquaredResidual": "343343/118489088",
+            "upperSquaredResidual": "16283680441/7765300871168",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_99f52cfe2cdd6c47",
+            "lowerSquaredResidual": "954961/15728640",
+            "upperSquaredResidual": "-57435871801/1030792151040",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_5ffb53b7d5793cc4",
+            "lowerSquaredResidual": "2290799/319815680",
+            "upperSquaredResidual": "-45444606599/20959440404480",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_3d55cca4d87c620c",
+            "lowerSquaredResidual": "-143521/68157440",
+            "upperSquaredResidual": "31715752201/4466765987840",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 2,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "index": 7,
+      "rawHash": "a092673a9d0152403b53cbf38d6a4cea607a5b0b3803aeeba5e6e5cc1d95572c",
+      "sourceContentHash": "75e6ee438f12d7be2dc8ec8fbbc011b016e1d2f198bdc915c8e4853dc70bb4d7",
+      "previous": {
+        "meaningChanged": false,
+        "problemId": "cn_fc20494f40ce3cb4d73b",
+        "revision": 1,
+        "semanticHash": "0f7eb1d7a9343286ed4e15a69a97813ccd0b747dda42f83a03b76c1be72f69cf",
+        "sourceContentHash": "994aa460e0c9596cc646b39bf5d77ca593168900bc2daf73052d896281ed98b9"
+      },
+      "literalParameters": {
+        "a": 9,
+        "b": 8
+      },
+      "answerExpression": "Mul(Rational(1, 145), Pow(Integer(145), Rational(1, 2)))",
+      "literalCorrectAnswerPassed": true,
+      "sixLiteralChoicePairInequalities": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "alternatingIsolation": {
+        "terms": 4,
+        "lower": "363985/4782969",
+        "upper": "1835/19683",
+        "exactSquaredComparisons": [
+          {
+            "choiceId": "ch_b559891ef89ddac6",
+            "lowerSquaredResidual": "3666455822336/3317134905969345",
+            "upperSquaredResidual": "100827136/56175970905",
+            "inside": true
+          },
+          {
+            "choiceId": "ch_1dd2979d720043a8",
+            "lowerSquaredResidual": "7905978389536/2585077547410593",
+            "upperSquaredResidual": "-6924064/43778515257",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_a8458a2357f7c730",
+            "lowerSquaredResidual": "-4812589312064/4781249623086849",
+            "upperSquaredResidual": "316329536/80970882201",
+            "inside": false
+          },
+          {
+            "choiceId": "ch_b1b4d7b788649dc4",
+            "lowerSquaredResidual": "-21770679580864/7709479057321857",
+            "upperSquaredResidual": "747334336/130560704793",
+            "inside": false
+          }
+        ]
+      },
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Use the supplied Bessel series, integrate each monomial, and sandwich the answer between two consecutive alternating partial sums. Absolute interchange follows from a geometric majorant because the literal decay rate exceeds the frequency. Only two to four terms are required for this finite menu.",
+      "difficultyRationale": "The provided series removes the discovery of the angular representation. The actual choices are isolated by a short, rigorously justified alternating-series computation; the longer correct angular proof is not the easiest visible route.",
+      "nearestNeighbor": "Related to Laplace power-series moments and binomial resummation. Unlike discovering an angular representation from an unspecified special function, this statement supplies every series coefficient.",
+      "correctMagnitudeRank": 3,
+      "analyticCertificateReview": {
+        "seriesDefinition": "Entire series converges uniformly on every bounded angular interval after the cosine expansion; the standard sine-even-power moment proves the angular identity.",
+        "angularFubini": "|cos(b*x*sin(theta))|<=1 and exp(-a*x) is integrable for a>0, so absolute Fubini holds.",
+        "tanSubstitution": "Symmetry reduces [0,pi] to twice [0,pi/2]; positive a and a^2+b^2 give a convergent rational arctangent integral.",
+        "alternativeSeriesInterchange": "Sum of integrals of absolute series terms <= a^-1 sum (b/a)^(2k) < infinity. Term magnitudes have ratio ((2k+1)/(2k+2))*(b/a)^2<1.",
+        "presentation": "No undefined symbols in the current solution: I, a, b are introduced and J0 is defined before answering."
+      }
+    }
+  ],
+  "counts": {
+    "answers": 8,
+    "pairInequalities": 48,
+    "exactOptionBoundComparisons": 32,
+    "hardRecommendations": 8
+  },
+  "scope": "Separate AI-assisted literal statement/choice derivations, all finite cases; no author constructors imported. Exact algebra and analytic arguments are distinguished. Not a formal or human proof review. Full final actual-ID forms/heuristics remain parent-gated."
+}

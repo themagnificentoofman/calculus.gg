@@ -1,0 +1,3631 @@
+{
+  "families": {
+    "m3-differentiation-easy-product-data": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-chain-data": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-inverse-slope": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 8,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_23f21b2c6418624411d3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{4}",
+            "- \\frac{1}{4}",
+            "\\frac{1}{5}",
+            "4"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_9bee53694e8d0d7daaaa",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{5}",
+            "\\frac{1}{6}",
+            "\\frac{1}{25}",
+            "- \\frac{1}{5}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_1583263a7351d69bc6aa",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{6}",
+            "\\frac{1}{36}",
+            "- \\frac{1}{6}",
+            "6"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_41a34fc3a5caecdf383c",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{7}",
+            "- \\frac{1}{7}",
+            "\\frac{1}{8}",
+            "\\frac{1}{49}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_88f4f0b0303daeef24ca",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{9}",
+            "\\frac{1}{81}",
+            "- \\frac{1}{9}",
+            "\\frac{1}{10}"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_520bcfe0fde3e910f141",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{10}",
+            "- \\frac{1}{10}",
+            "\\frac{1}{11}",
+            "10"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_bd68f719bb1c721aaf42",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{11}",
+            "\\frac{1}{12}",
+            "\\frac{1}{121}",
+            "- \\frac{1}{11}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{169}",
+            "- \\frac{1}{13}",
+            "\\frac{1}{13}",
+            "\\frac{1}{14}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.85,
+      "negativeRuleExpectedOverall": 0.05,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-easy-implicit-circle": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 0,
+      "negativeCorrect": 6,
+      "neitherCorrect": 2,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_43de135ed649230a83d7",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{4}",
+            "\\frac{1}{4}",
+            "4",
+            "- \\frac{1}{16}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_260ff97ed31b9cdf73ac",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "- \\frac{1}{5}",
+            "-5",
+            "5",
+            "- \\frac{1}{25}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_4bf05acc111a6b0568dd",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{6}",
+            "- \\frac{1}{36}",
+            "\\frac{1}{6}",
+            "6"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_b215c70a2291524729b9",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{8}",
+            "8",
+            "- \\frac{1}{64}",
+            "\\frac{1}{8}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_a63dd1ec2d12caf5dd14",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{9}",
+            "-9",
+            "- \\frac{1}{81}",
+            "\\frac{1}{9}"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_accd353ff5447480958e",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{10}",
+            "\\frac{1}{10}",
+            "10",
+            "- \\frac{1}{100}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_39fe54e26d4b1d943416",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "- \\frac{1}{11}",
+            "-11",
+            "11",
+            "- \\frac{1}{121}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "\\frac{1}{12}",
+            "12",
+            "- \\frac{1}{144}",
+            "- \\frac{1}{12}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.05,
+      "negativeRuleExpectedOverall": 0.65,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-parametric-slope": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-matching-piecewise-slopes": {
+      "total": 10,
+      "uniquePair": 9,
+      "positiveCorrect": 9,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_ae165d8b7cef665c9780",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "4",
+            "-4",
+            "0",
+            "16"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_42df49a3dd1f051c1fc3",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "0",
+            "\\frac{5}{2}",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_6a48f893c8de1990714f",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "3",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_35d20e148f9d9d3c717b",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "0",
+            "\\frac{7}{2}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_69fe4e1b49bb732e8b45",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "\\frac{9}{2}",
+            "-9",
+            "0"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_6fb8d14e32b9e5d4b485",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "-10",
+            "0",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_33c4b6570f797a14c816",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "0",
+            "\\frac{11}{2}",
+            "-11"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "12",
+            "6",
+            "144",
+            "-12"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{13}{2}",
+            "0",
+            "-13",
+            "13"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.925,
+      "negativeRuleExpectedOverall": 0.025,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-easy-tangent-intercept": {
+      "total": 10,
+      "uniquePair": 9,
+      "positiveCorrect": 0,
+      "negativeCorrect": 8,
+      "neitherCorrect": 1,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_c08fe39a56b01a32692b",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-3",
+            "4",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_03fcdc0db2d866a02b3c",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-4",
+            "-5",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_84cbe62bc8a3ade7692d",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-5",
+            "7",
+            "6",
+            "5"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_6d2a2dcf4b30ecb103c3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-7",
+            "7",
+            "9",
+            "8"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_4bb5b9b76899a2299572",
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "-8",
+            "-9",
+            "10",
+            "9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_2f90d3200b6b32bd5459",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-9",
+            "10",
+            "9",
+            "11"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_f55e5b894df5cebbdd53",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-10",
+            "-11",
+            "10",
+            "12"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-11",
+            "12",
+            "11",
+            "13"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "14",
+            "-13",
+            "-12",
+            "12"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.025,
+      "negativeRuleExpectedOverall": 0.825,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-minimum-from-sign": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-linearization": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-related-area-rate": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-easy-derivative-definition": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-product-exp": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-quotient-log": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 7,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_3f75ac6442a577cf2d63",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{5}",
+            "\\frac{1}{25}",
+            "- \\frac{1}{5}",
+            "\\frac{1}{4}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_c53e58bf1adf429c4c35",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{6}",
+            "- \\frac{1}{6}",
+            "0",
+            "- \\frac{2}{9}"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_630454498a03b2f10ac3",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{8}",
+            "- \\frac{5}{32}",
+            "\\frac{1}{64}",
+            "- \\frac{1}{8}"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_7791980fe5e5b546126b",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{9}",
+            "\\frac{1}{81}",
+            "- \\frac{1}{9}",
+            "\\frac{1}{8}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_b7b0d22c263c5f34f7cc",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{10}",
+            "- \\frac{1}{10}",
+            "0",
+            "- \\frac{3}{25}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_19de4706d362bbe3ed41",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{12}",
+            "- \\frac{7}{72}",
+            "\\frac{1}{144}",
+            "- \\frac{1}{12}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{14}",
+            "0",
+            "- \\frac{1}{14}",
+            "\\frac{1}{196}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.775,
+      "negativeRuleExpectedOverall": 0.075,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-medium-nested-exponential": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-logarithmic-power": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-inverse-tangent-composition": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 7,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_3621f3a734d0a19355bb",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{5}{2}",
+            "\\frac{5}{4}",
+            "\\frac{\\pi}{4}",
+            "- \\frac{5}{2}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_ac41b4f324f961d96189",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "3",
+            "\\frac{\\pi}{4}",
+            "-3",
+            "6"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_733d70627990e02f51fa",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{7}{2}",
+            "- \\frac{7}{2}",
+            "\\frac{1}{14}",
+            "\\frac{7}{4}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_a9a150103ff824ec830a",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{9}{2}",
+            "\\frac{9}{4}",
+            "\\frac{\\pi}{4}",
+            "- \\frac{9}{2}"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_b051f28df8be9eaa8333",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "\\frac{\\pi}{4}",
+            "-5",
+            "10"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_8a83a4fd3f62df088e83",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{11}{2}",
+            "- \\frac{11}{2}",
+            "\\frac{1}{22}",
+            "\\frac{11}{4}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "-6",
+            "12",
+            "\\frac{1}{24}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.775,
+      "negativeRuleExpectedOverall": 0.075,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-medium-implicit-product": {
+      "total": 10,
+      "uniquePair": 6,
+      "positiveCorrect": 0,
+      "negativeCorrect": 6,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_b626ef7c33cc9de5380c",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{4}{9}",
+            "- \\frac{4}{5}",
+            "\\frac{4}{9}",
+            "- \\frac{1}{9}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_d799f03a7c864701eecc",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{6}{13}",
+            "- \\frac{6}{7}",
+            "\\frac{6}{13}",
+            "- \\frac{1}{13}"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_f88d72312e08efa6f7ae",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{8}{17}",
+            "- \\frac{8}{9}",
+            "\\frac{8}{17}",
+            "- \\frac{1}{17}"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_f35d2bf327f8911bf633",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{10}{21}",
+            "- \\frac{10}{11}",
+            "\\frac{10}{21}",
+            "- \\frac{1}{21}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{12}{25}",
+            "-12",
+            "- \\frac{1}{25}",
+            "\\frac{12}{25}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "\\frac{13}{27}",
+            "-13",
+            "- \\frac{13}{27}",
+            "- \\frac{13}{14}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.1,
+      "negativeRuleExpectedOverall": 0.7,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-medium-inverse-second": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-parametric-second": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-moving-integral-endpoints": {
+      "total": 10,
+      "uniquePair": 4,
+      "positiveCorrect": 4,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 2,
+          "problemId": "cn_89fc53f21ea1263ba5ae",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "-5",
+            "0",
+            "35"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_81d9f15449bfb92e84b3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "9",
+            "63"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_b0fbd683b3dd79d4aa4f",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "8",
+            "0",
+            "-8",
+            "80"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "12",
+            "13",
+            "168",
+            "-12"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.55,
+      "negativeRuleExpectedOverall": 0.15,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-medium-optimization-product": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-piecewise-second-match": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-medium-normal-line": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 0,
+      "negativeCorrect": 6,
+      "neitherCorrect": 2,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_6bac6f1d774fe0c22c59",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{4}",
+            "\\frac{1}{4}",
+            "4",
+            "- \\frac{1}{16}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_fd27184bbc65860bf023",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "- \\frac{1}{5}",
+            "-5",
+            "5",
+            "- \\frac{1}{25}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_6db97218ae2a7fddbf4a",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{6}",
+            "- \\frac{1}{36}",
+            "\\frac{1}{6}",
+            "6"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_6a40f3b58494830634b4",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{8}",
+            "8",
+            "- \\frac{1}{64}",
+            "\\frac{1}{8}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_cb5798962c8f9a06217e",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{9}",
+            "-9",
+            "- \\frac{1}{81}",
+            "\\frac{1}{9}"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_968374541cff9e1654e6",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{10}",
+            "\\frac{1}{10}",
+            "10",
+            "- \\frac{1}{100}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_ef9d9027fe5a1b7190ac",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "- \\frac{1}{11}",
+            "-11",
+            "11",
+            "- \\frac{1}{121}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{144}",
+            "12",
+            "- \\frac{1}{12}",
+            "\\frac{1}{12}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.05,
+      "negativeRuleExpectedOverall": 0.65,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-leibniz-high-order": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-log-power-second": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-implicit-second": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-curvature-parametric": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-implicit-inverse-exponential": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-high-order-rational": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-multiplicity-shortcut": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-trigonometric-power-coefficient": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 0,
+      "negativeCorrect": 7,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_1a6473a6f77406505c14",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-480",
+            "480",
+            "-120",
+            "-16"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_2c90d7f762c5240ae21b",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-40320",
+            "-720",
+            "0",
+            "40320"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_bc4f916f5f6a0de8ac92",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-423360",
+            "-2963520",
+            "0",
+            "423360"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_695deb16b52408f33d62",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-4838400",
+            "4838400",
+            "-604800",
+            "-53760"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_10eb41595dc284be5287",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-798336000",
+            "-6048000",
+            "0",
+            "798336000"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_155634c7d5535d50d7f8",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-11416204800",
+            "-125578252800",
+            "0",
+            "11416204800"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "174356582400",
+            "-174356582400",
+            "-958003200",
+            "-14529715200"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.075,
+      "negativeRuleExpectedOverall": 0.775,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-hard-log-product": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-complex-exponential-derivative": {
+      "total": 10,
+      "uniquePair": 3,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 3,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_21e5d5c90538c4b2857c",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "-4",
+            "-32",
+            "32",
+            "243"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_42f4a5ede5ee38f7e203",
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "\\left(1 + i\\right)^{8}",
+            "-527",
+            "-256",
+            "256"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_5ca89995a0b87fc312bf",
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "0",
+            "-237",
+            "-1024",
+            "1024"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.175,
+      "negativeRuleExpectedOverall": 0.175,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-nested-power-third": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-easy-removable-power": {
+      "total": 10,
+      "uniquePair": 5,
+      "positiveCorrect": 5,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_de61424430b2428de80d",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "4",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_9cf0ba26ca5154731b70",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_b46cb4e324f099d8021e",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "\\frac{1}{7}",
+            "1"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_df8725399dce977c9c62",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "0",
+            "-11",
+            "\\frac{1}{11}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "1",
+            "13",
+            "-13",
+            "0"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.625,
+      "negativeRuleExpectedOverall": 0.125,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-radical-rationalization": {
+      "total": 10,
+      "uniquePair": 4,
+      "positiveCorrect": 4,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_1c211ee550998e93c29d",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{10}",
+            "- \\frac{1}{10}",
+            "\\frac{5}{2}",
+            "10"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_cba38bf9c2acd1d6a4f5",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{12}",
+            "0",
+            "- \\frac{1}{12}",
+            "12"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_5bc304f72ac3eaaefe5c",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{18}",
+            "- \\frac{1}{18}",
+            "0",
+            "18"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_0f82bdf107d3a3bf720e",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{22}",
+            "- \\frac{1}{22}",
+            "\\frac{11}{2}",
+            "22"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.55,
+      "negativeRuleExpectedOverall": 0.15,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-one-sided-absolute": {
+      "total": 10,
+      "uniquePair": 6,
+      "positiveCorrect": 0,
+      "negativeCorrect": 6,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_ced0bbb60b737e4c5020",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-3",
+            "5",
+            "3",
+            "0"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_b20b08fcf1a253a9715c",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-4",
+            "-5",
+            "4",
+            "0"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_62197ea00e19fade8a9e",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-7",
+            "9",
+            "7",
+            "0"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_44e374b243997ee04ba9",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-8",
+            "-9",
+            "8",
+            "0"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "0",
+            "13"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-13",
+            "14",
+            "12",
+            "-12"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.1,
+      "negativeRuleExpectedOverall": 0.7,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-rational-infinity": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 8,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_5766ce7d744075e58603",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "1",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_22569c05c4fb7f76fa44",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_20e3ba3d7cf95088d907",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "\\frac{1}{7}",
+            "1"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_87b196973684f895a28f",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "1",
+            "0",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_a165b6ff63f0a709ec75",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "0",
+            "-10",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_3d4d81778abd293bedf5",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "\\frac{1}{11}",
+            "1"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "1",
+            "12",
+            "-12",
+            "144"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "13",
+            "1",
+            "-13",
+            "0"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.85,
+      "negativeRuleExpectedOverall": 0.05,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-oscillatory-squeeze": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-easy-exponential-standard": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 7,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_981cbb00c4a909db171b",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "\\frac{1}{5}",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_445e8de6486135c80c7a",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_188a636f9fda91566521",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "1",
+            "\\frac{1}{7}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_f045ee9c22bac330b309",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "\\frac{1}{9}",
+            "0",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_b82ff14aae3c00ade273",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "0",
+            "-10",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_c2f169a1cd7cf34da6e3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "1",
+            "\\frac{1}{11}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "13",
+            "\\frac{1}{13}",
+            "-13",
+            "1"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.775,
+      "negativeRuleExpectedOverall": 0.075,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-logarithm-standard": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 8,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_eb05ff7b876e7a082b94",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "1",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_41e25a913db0db7c82e8",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_b17476919ad014bc5669",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "\\frac{1}{7}",
+            "1"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_dbf7fb5bc70ef019c885",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "1",
+            "0",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_2e9189d4b7eb3d8ee8e6",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "0",
+            "-10",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_ae9e34170294a03ffcdf",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "\\frac{1}{11}",
+            "1"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "12",
+            "144",
+            "-12",
+            "0"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{13}",
+            "13",
+            "0",
+            "-13"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.85,
+      "negativeRuleExpectedOverall": 0.05,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-trigonometric-ratio": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 8,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_bd0350cf1d30f4e76dfa",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "1",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_926af61f3323286b2ef9",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_c00478c50442db002a58",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "\\frac{1}{7}",
+            "1"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_c3c82ea17a631a31c038",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "1",
+            "0",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_9560105a7b774f816a36",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "0",
+            "-10",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_ca966e543f539bf4700e",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "\\frac{1}{11}",
+            "1"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "-12",
+            "144",
+            "\\frac{1}{12}",
+            "12"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "13",
+            "-13",
+            "1",
+            "0"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.85,
+      "negativeRuleExpectedOverall": 0.05,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-easy-geometric-sequence": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-easy-floor-at-infinity": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-easy-piecewise-continuity": {
+      "total": 10,
+      "uniquePair": 9,
+      "positiveCorrect": 9,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_fb2b667fcbc56c015de8",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "4",
+            "3",
+            "-4",
+            "5"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": "cn_071bed6de719b0de3255",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "-5",
+            "0",
+            "4"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_4a4e9ea5c8e1f89f2537",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "6",
+            "-7",
+            "0"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_3bc93dfc4484a22838dc",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "8",
+            "-8",
+            "0",
+            "9"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_a77acf7d89cb2b9ea707",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "0",
+            "8",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_4dc320c4d6a5ceb90bcd",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "9",
+            "-10",
+            "11"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_587a8a77d90dbddf65b3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "0",
+            "10"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "-12",
+            "13",
+            "0",
+            "12"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "13",
+            "0",
+            "12",
+            "-13"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.925,
+      "negativeRuleExpectedOverall": 0.025,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-medium-exponential-variable-power": {
+      "total": 10,
+      "uniquePair": 3,
+      "positiveCorrect": 3,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 3,
+          "problemId": "cn_066afccf80f816a9f2ce",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "e^{7}",
+            "0",
+            "- e^{7}",
+            "e^{-7}"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_135ec77dafa9b3fba402",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "e^{8}",
+            "- e^{8}",
+            "e^{-8}",
+            "e^{64}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "e^{\\frac{1}{12}}",
+            "- e^{12}",
+            "e^{12}",
+            "e^{144}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.475,
+      "negativeRuleExpectedOverall": 0.175,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-medium-infinity-root-difference": {
+      "total": 10,
+      "uniquePair": 6,
+      "positiveCorrect": 6,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_7a55fa55a06d45333e71",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{5}{2}",
+            "- \\frac{5}{2}",
+            "\\frac{2}{5}",
+            "\\frac{25}{2}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_e0dff6b9060282b379d6",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "3",
+            "\\frac{1}{3}",
+            "0",
+            "-3"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_ead46bbf61ec702209be",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "4",
+            "-4",
+            "\\frac{1}{4}",
+            "8"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_30f9989a0e93a34bc428",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{9}{2}",
+            "\\frac{2}{9}",
+            "0",
+            "- \\frac{9}{2}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_62b55a82b61968112ff2",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{11}{2}",
+            "- \\frac{11}{2}",
+            "\\frac{2}{11}",
+            "\\frac{121}{2}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{169}{2}",
+            "\\frac{2}{13}",
+            "- \\frac{13}{2}",
+            "\\frac{13}{2}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.7,
+      "negativeRuleExpectedOverall": 0.1,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-medium-log-power-decay": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-small-power-log": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-second-order-trig": {
+      "total": 10,
+      "uniquePair": 5,
+      "positiveCorrect": 5,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_ed380ebc61aea06646ca",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{25}{2}",
+            "\\frac{1}{50}",
+            "0",
+            "- \\frac{25}{2}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_daf960283b9cc31c867b",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "18",
+            "0",
+            "-18",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_ce6e66f81d5ba3055717",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{49}{2}",
+            "- \\frac{49}{2}",
+            "\\frac{2}{49}",
+            "\\frac{7}{2}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_9e4a4de4420fca28e106",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{121}{2}",
+            "0",
+            "- \\frac{121}{2}",
+            "\\frac{2}{121}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{1}{72}",
+            "-72",
+            "144",
+            "72"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.625,
+      "negativeRuleExpectedOverall": 0.125,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-medium-exponential-cancellation": {
+      "total": 10,
+      "uniquePair": 6,
+      "positiveCorrect": 6,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_c2fbea82dc4d041bf458",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{25}{2}",
+            "\\frac{25}{6}",
+            "0",
+            "- \\frac{25}{2}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_a7e32f81b651a13ac19f",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "18",
+            "0",
+            "-18",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_dc1c64bad71d21e0822b",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{49}{2}",
+            "- \\frac{49}{2}",
+            "\\frac{2}{49}",
+            "7"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_49df2bd2f4b1e20990ab",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{121}{2}",
+            "0",
+            "- \\frac{121}{2}",
+            "\\frac{2}{121}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "-72",
+            "\\frac{1}{72}",
+            "72",
+            "144"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{169}{14}",
+            "\\frac{169}{2}",
+            "\\frac{2}{169}",
+            "- \\frac{169}{2}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.7,
+      "negativeRuleExpectedOverall": 0.1,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-medium-nested-log-ratio": {
+      "total": 10,
+      "uniquePair": 8,
+      "positiveCorrect": 8,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_08e82d9074e6e31e33d8",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "\\frac{1}{5}",
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_5abb0c1ef4e4f7d5a388",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "6",
+            "0",
+            "-6",
+            "36"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_6361d807554b1840cef2",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "7",
+            "-7",
+            "1",
+            "\\frac{1}{7}"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_e7e2a19bb47452884896",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "9",
+            "\\frac{1}{9}",
+            "0",
+            "-9"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_0812750e1c8e727c85e5",
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "10",
+            "0",
+            "-10",
+            "100"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_ff7c97aa0d22d738808a",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "11",
+            "-11",
+            "1",
+            "\\frac{1}{11}"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "-12",
+            "\\frac{1}{12}",
+            "12",
+            "144"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "13",
+            "-13",
+            "\\frac{1}{13}",
+            "0"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.85,
+      "negativeRuleExpectedOverall": 0.05,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-hard-log-exponential-second-scale": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 0,
+      "negativeCorrect": 7,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_9036a4b4dc5d4ba90fa6",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-8",
+            "8",
+            "-4",
+            "0"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_bbf531cd723e4c3175d3",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-18",
+            "0",
+            "- \\frac{1}{18}",
+            "18"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_3f42b3aa3df698c7b682",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{49}{2}",
+            "- \\frac{343}{3}",
+            "- \\frac{2}{49}",
+            "\\frac{49}{2}"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_ee3c2a9aa888e0ce763e",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-32",
+            "32",
+            "-8",
+            "0"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_703ef5b91ff835e1c764",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-50",
+            "0",
+            "- \\frac{1}{50}",
+            "50"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_cd40e035687ade298713",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{121}{2}",
+            "- \\frac{1331}{3}",
+            "- \\frac{2}{121}",
+            "\\frac{121}{2}"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{2197}{3}",
+            "-13",
+            "- \\frac{169}{2}",
+            "\\frac{169}{2}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.075,
+      "negativeRuleExpectedOverall": 0.775,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-hard-trig-power-limit": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-Riemann-sum": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-Stolz-power-sum": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-recurrence-limit": {
+      "total": 10,
+      "uniquePair": 6,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 6,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_71180fe6ce7cdc2512dd",
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "5",
+            "2 \\sqrt{5}",
+            "-4",
+            "4"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_c8e0b9e3e65c0bdee329",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "6",
+            "-5",
+            "5",
+            "30"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_2986820d329ea8850fd6",
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "7",
+            "6",
+            "\\sqrt{42}",
+            "-6"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_1aedbbacf9012a47c873",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "9",
+            "-8",
+            "8",
+            "6 \\sqrt{2}"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_bc6b0ae518c579d2c490",
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "11",
+            "\\sqrt{110}",
+            "-10",
+            "10"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "neitherCorrect",
+          "choices": [
+            "2 \\sqrt{39}",
+            "13",
+            "12",
+            "-12"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.1,
+      "negativeRuleExpectedOverall": 0.1,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-Gamma-finite-shift-correction": {
+      "total": 10,
+      "uniquePair": 7,
+      "positiveCorrect": 0,
+      "negativeCorrect": 7,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 0,
+          "problemId": "cn_9a79697678269839bd75",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-6",
+            "6",
+            "-4",
+            "0"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": "cn_c0f486d13a3922fbe96d",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-15",
+            "0",
+            "- \\frac{1}{15}",
+            "15"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": "cn_0e268c1a399e896b74c4",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-21",
+            "- \\frac{49}{2}",
+            "- \\frac{1}{21}",
+            "21"
+          ]
+        },
+        {
+          "instance": 4,
+          "problemId": "cn_617c54a0ca32a61462b3",
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-28",
+            "28",
+            "-8",
+            "0"
+          ]
+        },
+        {
+          "instance": 6,
+          "problemId": "cn_16ca1860934563a22c6f",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-45",
+            "0",
+            "- \\frac{1}{45}",
+            "45"
+          ]
+        },
+        {
+          "instance": 7,
+          "problemId": "cn_2e14fd836c8f787d2417",
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "-55",
+            "- \\frac{121}{2}",
+            "- \\frac{1}{55}",
+            "55"
+          ]
+        },
+        {
+          "instance": 0,
+          "problemId": null,
+          "pairIndices": [
+            2,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{1}{66}",
+            "0",
+            "66",
+            "-66"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.075,
+      "negativeRuleExpectedOverall": 0.775,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-limits-hard-boundary-moment": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-log-sum-integral": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-oscillatory-regularity-threshold": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-supremum-pointwise-mismatch": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-floor-integer-approach": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-implicit-inverse-increment": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-Lp-maximum-limit": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-hard-log-phase-average-limsup": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-differentiation-hard-moving-endpoint-parameter-second": {
+      "total": 10,
+      "uniquePair": 3,
+      "positiveCorrect": 3,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": "cn_19c83b4a57ebcee591c6",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "32 e",
+            "- 52 e",
+            "52 e",
+            "48 e"
+          ]
+        },
+        {
+          "instance": 5,
+          "problemId": "cn_707662e2b38c2d27f609",
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "96 e",
+            "- 168 e",
+            "168 e",
+            "160 e"
+          ]
+        },
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "- 348 e",
+            "192 e",
+            "336 e",
+            "348 e"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.475,
+      "negativeRuleExpectedOverall": 0.175,
+      "conditionalPatternNeedsReview": true
+    },
+    "m3-differentiation-easy-accumulation-derivative": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-easy-rational-sequence-shift": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-factorial-ratio-fixed-shift": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-root-test-scale": {
+      "total": 10,
+      "uniquePair": 0,
+      "positiveCorrect": 0,
+      "negativeCorrect": 0,
+      "neitherCorrect": 0,
+      "instances": [],
+      "positiveRuleExpectedOverall": 0.25,
+      "negativeRuleExpectedOverall": 0.25,
+      "conditionalPatternNeedsReview": false
+    },
+    "m3-limits-medium-two-sided-square-root": {
+      "total": 10,
+      "uniquePair": 5,
+      "positiveCorrect": 2,
+      "negativeCorrect": 3,
+      "neitherCorrect": 0,
+      "instances": [
+        {
+          "instance": 1,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            1
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "\\frac{3}{2}",
+            "- \\frac{3}{2}",
+            "- \\frac{2}{3}",
+            "- \\frac{9}{2}"
+          ]
+        },
+        {
+          "instance": 2,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            3
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "- \\frac{2}{5}",
+            "- \\frac{4}{5}",
+            "- \\frac{5}{2}",
+            "\\frac{2}{5}"
+          ]
+        },
+        {
+          "instance": 3,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            2
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "\\frac{25}{2}",
+            "- \\frac{5}{2}",
+            "\\frac{5}{2}",
+            "5"
+          ]
+        },
+        {
+          "instance": 8,
+          "problemId": null,
+          "pairIndices": [
+            0,
+            2
+          ],
+          "result": "negativeCorrect",
+          "choices": [
+            "\\frac{4}{5}",
+            "- \\frac{2}{5}",
+            "- \\frac{4}{5}",
+            "- \\frac{4}{25}"
+          ]
+        },
+        {
+          "instance": 9,
+          "problemId": null,
+          "pairIndices": [
+            1,
+            3
+          ],
+          "result": "positiveCorrect",
+          "choices": [
+            "5",
+            "- \\frac{5}{4}",
+            "\\frac{25}{4}",
+            "\\frac{5}{4}"
+          ]
+        }
+      ],
+      "positiveRuleExpectedOverall": 0.325,
+      "negativeRuleExpectedOverall": 0.425,
+      "conditionalPatternNeedsReview": false
+    }
+  },
+  "rows": 720
+}

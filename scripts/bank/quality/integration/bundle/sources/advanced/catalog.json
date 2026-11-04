@@ -1,0 +1,290 @@
+[
+  {
+    "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "positive-residue-rational-branch-trace",
+    "primaryTechnique": "inverse-branch-trace-and-positive-change-of-variables",
+    "difficultyRationale": "A rational map has several real inverse branches; their positive derivatives must be summed using the root trace before changing variables.",
+    "nearestNeighbor": "AGM Landen substitution: here the unweighted trace of every inverse branch replaces the specific quadratic weighted identity.",
+    "prerequisites": [
+      "monotone change of variables",
+      "Vieta formulas",
+      "improper integrals"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "relatedIdeaGroupId": "monic-polynomial-L1-sign-duality",
+    "primaryTechnique": "sign-orthogonality-and-sharp-L1-duality",
+    "difficultyRationale": "A sign function annihilating all lower-degree polynomials proves the global L1 optimum; equality forces every sign-change root and gives the unique minimizer.",
+    "nearestNeighbor": "The absolute Chebyshev-U integral is a prerequisite; L1 minimization and uniqueness differ from evaluating one fixed polynomial or the Chebyshev-T uniform minimax problem.",
+    "prerequisites": [
+      "polynomial degree",
+      "trigonometric orthogonality",
+      "integral inequalities"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-support-function-perimeter",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "relatedIdeaGroupId": "convex-support-angular-perimeter",
+    "primaryTechnique": "support-switching-and-polygon-boundary",
+    "difficultyRationale": "The maximum over finitely many oscillating linear forms hides the support function of a convex hull; the angular integral telescopes to its perimeter.",
+    "nearestNeighbor": "Ordinary piecewise trigonometric integration is possible, but finding active vertices and their switching normals is the essential geometric decision.",
+    "prerequisites": [
+      "convex hull",
+      "dot products",
+      "piecewise integration"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-competing-laplace-wells",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "relatedIdeaGroupId": "competing-degenerate-Laplace-wells",
+    "primaryTechnique": "multiwell-localization-and-logarithmic-tilt",
+    "difficultyRationale": "Two zeros of different degeneracy contribute on different scales; a logarithmic tilt can select one well or balance both, and the endpoint contributes half-line mass.",
+    "nearestNeighbor": "The retained boundary-layer family has a single endpoint and one direct rescaling; this construction needs competing localization scales and a regime decision.",
+    "prerequisites": [
+      "dominated convergence",
+      "Gamma integral",
+      "asymptotic equivalence"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "bounded-density-two-moment-bathtub",
+    "primaryTechnique": "quadratic-dual-sign-and-free-boundaries",
+    "difficultyRationale": "Two integral constraints determine the active sets of a capped density. Quadratic dual certificates prove both extrema and their attainment.",
+    "nearestNeighbor": "The existing rearrangement construction fixes a value distribution; here mass and first moment are the only constraints and both unknown support boundaries must be solved.",
+    "prerequisites": [
+      "integral inequalities",
+      "polynomial sign",
+      "measurable functions"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "semicircle-finite-Hilbert-transform",
+    "primaryTechnique": "symmetric-cutoff-and-arcsine-pole-cancellation",
+    "difficultyRationale": "A semicircle-weighted singular integral requires preserving the symmetric cutoff through substitution; polynomial division and a logarithmic branch calculation remove the remaining pole.",
+    "nearestNeighbor": "The retained Mellin principal value uses reciprocal tails and reflection; this compact square-root density has a different transformed kernel and cutoff geometry.",
+    "prerequisites": [
+      "Cauchy principal value",
+      "tangent half-angle substitution",
+      "logarithmic primitives"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "peano-kernel-sharp-error",
+    "primaryTechnique": "Peano-kernel-sign-and-continuous-extremizers",
+    "difficultyRationale": "The optimal quadrature error requires the absolute integral of a piecewise kernel, plus a separate decision whether a continuous second derivative can attain its sign pattern.",
+    "nearestNeighbor": "The differentiation construction has two symmetric interior nodes; these three-node rules include endpoints, asymmetric weights and both sign-changing and one-sign kernels.",
+    "prerequisites": [
+      "Taylor integral remainder",
+      "sharp norm inequalities",
+      "continuous approximation"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "coupled-endpoint-Sturm-ground-state",
+    "primaryTechnique": "natural-boundary-condition-and-positive-square-completion",
+    "difficultyRationale": "A coupled endpoint constraint changes the lowest energy mode; the candidate eigenvalue must be derived and then proved globally sharp by a positive ground-state identity.",
+    "nearestNeighbor": "The retained variational-energy problem fixes two endpoint values. This homogeneous quotient has an unknown endpoint amplitude and a coupled natural derivative condition.",
+    "prerequisites": [
+      "integration by parts",
+      "trigonometric identities",
+      "sharp integral inequalities"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "relatedIdeaGroupId": "double-well-convex-envelope-nonattainment",
+    "primaryTechnique": "supporting-line-bound-and-continuous-recovery",
+    "difficultyRationale": "The mean constraint interacts with a nonconvex two-well cost: a supporting envelope gives the infimum, while continuous recovery sequences and incompatible endpoint values decide attainment.",
+    "nearestNeighbor": "The capped-density construction uses indicator extrema which are admissible; here continuity makes mixed phases only limiting objects and the endpoint data prevent attainment.",
+    "prerequisites": [
+      "integral inequalities",
+      "continuous approximation",
+      "convex supporting lines"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  },
+  {
+    "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+    "topic": "integration",
+    "difficulty": "olympiad",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "relatedIdeaGroupId": "Osgood-integral-blowup-threshold",
+    "primaryTechnique": "nonlinear-integral-comparison-and-truncated-extremizers",
+    "difficultyRationale": "A nonlinear integral inequality has a sharp finite-time uniform-boundedness threshold; the critical time itself must be ruled out by finite continuous truncated trajectories.",
+    "nearestNeighbor": "The ODE Osgood family concerns uniqueness of a prescribed differential equation. Here an entire class of continuous subsolutions is uniformly bounded only before the blowup integral, and each counterexample remains finite.",
+    "prerequisites": [
+      "monotone comparison",
+      "inverse integral functions",
+      "improper integrals"
+    ],
+    "sourceRecordIds": [],
+    "constructorVersion": "quality-integration-new-v1"
+  }
+]

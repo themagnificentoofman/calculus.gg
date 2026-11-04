@@ -1,0 +1,2370 @@
+{
+  "reviewer": "independent AI-assisted mathematical/editorial peer; no human/formal certification",
+  "status": "source-bound-peer-review-with-capacity-caveats",
+  "sourceArtifactSha256": "93ac217eef489e4fc06e6cb00d4f095e955ca711e57a60e9ef63b6c957e57006",
+  "sourceFiles": {
+    "option_audit.py": "8f210a0a98b46947f5583473a9542a3716fc4f26c799671451a92b879d0334a2",
+    "advanced.py": "556796f679925310d653476b220a92aabcaa1eebe66fcbe59d99ac8a08dd1901",
+    "generate_advanced.py": "a2757bfd6a4085c897df44bc514eec1ee6c443c3de5868b0a136ad2d501030d2",
+    "advanced_replacements.py": "f72a61e43f25c9a7227502de0db9faa9214b075bab63beb2d0cc552ebab4c2ee",
+    "common.py": "31db8ad7e9aaca03d4950c2e375b7ac92595a0c69ebc0b76c8870312a0029e06",
+    "verify_advanced.py": "239b177211c0ddbe427b4d3d0026831adb849261b8425b2bda2ddaa37c890697"
+  },
+  "records": 217,
+  "groups": [
+    {
+      "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+      "relatedIdeaGroupId": "singular-convolution-Riemann-limit",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Truncate both singular endpoints uniformly, then take the Riemann limit; Gamma/Beta normalization is valid for 0<p<1.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "distinct integrable endpoint exponents",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "a6998732075f3c95209900def67d3dc97d7d3635b9d81c37ee53d8708372b7db",
+        "recordedCorrectOption": "\\frac{\\Gamma^{2}\\left(\\frac{5}{6}\\right)}{\\Gamma\\left(\\frac{5}{3}\\right)}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Pow(gamma(Rational(5, 6)), Integer(2)), Pow(gamma(Rational(5, 3)), Integer(-1)))",
+        "independentTex": "\\frac{\\Gamma^{2}\\left(\\frac{5}{6}\\right)}{\\Gamma\\left(\\frac{5}{3}\\right)}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_70c90e8b664766eb0a9c",
+          "rawHash": "796e0f0bc0a948b51505c64d78a594caef50efc8fb29e3305f94b832cd393f34",
+          "literalSourceLineSha256": "7fa11964c84b24c7566365d2b49349a6447fde64eb484ac0c2a0f2058bf0992b",
+          "contentHash": "4b5815cc1149a0952eee3e87bfba08a2c9a0f761b8c88417f3d85588d4f4a5a6",
+          "semanticHash": "dccd2ccd427a6eaeb22362fb083d33b81c1c93713c08c56a8993e841ee8e0835",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_e3950e1bd86182160c11",
+          "rawHash": "c22988cb8dca10e2d55d0dcd9729a2bd02895fd8b20ede42aded0ac1d9d525bf",
+          "literalSourceLineSha256": "9d86b1f9cbcc0de39ebc1ea0f6e8820878718c2a4395360a83644950d69bece4",
+          "contentHash": "4a6727e7868aadb6ac6f92af134336c8f9e7bf9db7a429235746affb183e9fa3",
+          "semanticHash": "3b614e194c3f00e096f3ff62362ecf70924cc728fcb927c6120df487d1a70caa",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_6b23317b434ac61186c5",
+          "rawHash": "1c9d549d6f434b304610486206db102cd31151adaf1d76832bf791ae9aedca9c",
+          "literalSourceLineSha256": "bf0c0f408d1eae4a3cb0b80eb60b2f5d848ace8f9737fa35d4f25763ba00a4b5",
+          "contentHash": "32342ac04ae41d693df3cdcbfa3de06ca6b062531e4a31cc1f8136e872655a1d",
+          "semanticHash": "a2e1cde2ec22cd103aa5cb340f4f3b85d71b0a9001969cbeed30ccc1b403da59",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_75d220e5bdaf7a9233da",
+          "rawHash": "3cb646b5b21dc22033f47aca80cf9439c81f859095edc846dd25edc7bb561927",
+          "literalSourceLineSha256": "8bb4fa27633b88f1ed4a4293e61051bfad2275ba9d843bb1afbe9ddc33e20ae5",
+          "contentHash": "704b6413bd5219d2b6a46c960de053cd1fb6e406e973ef2d65d066b51d15801a",
+          "semanticHash": "a4ecc6ceac9079a0f8103c90649e470af38a4cc77fc38946baf8bcf23d4931da",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_d26103a898741d051254",
+          "rawHash": "caf851022b5aa90443dbafa7dd599dbe1b16a9bbfb8e3e3813a618e45263ad0f",
+          "literalSourceLineSha256": "0109300ab48af87c6f90245ee4619452f2fae14b402b7a9359f2f42514a3e3ff",
+          "contentHash": "f01ea7bf3c8d0470109b8785fcdc42a5cfd4ce55d613ea770370006b4bcf8d1c",
+          "semanticHash": "ef2c017f94c6ce5e527ebfd9c6e603ee410d18744da6a5320ad9d283724a70d0",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_21f9874d13e14278b087",
+          "rawHash": "b8a3a1b167c9bad654f3c534e416094ff934a602e7acf5eaa65ed9ba72c15eda",
+          "literalSourceLineSha256": "4c72f18b6e5bd5c760289ac40dc7e3944504e263e5a5f039b64b567bb1100bcc",
+          "contentHash": "66d34aabf12873511ce3eb570af6cbfaffcbd0960f55b6bb1d8cc595670a890f",
+          "semanticHash": "d51c7927ff3831378f89d4f396a7baea720f3c3724a327ef81aed2e795a6d828",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_dfbad5c7e1a862088a58",
+          "rawHash": "bdcc11afe074cc682391ee1e2e58a7d5aa8cd6c50926fe118d2ac4c78c416f92",
+          "literalSourceLineSha256": "0ce3e490b9e1707cfd83d0888c9dfffab61108e204a16676b2b64f640e4ef3a1",
+          "contentHash": "acccb53f09570f10981de2f56f3209d2ec5e0d338e8daf90e390de9db0025716",
+          "semanticHash": "c4cc1e4518d20c046eb97ada472863f54831c2f50817ccde85fd56df1e5b358d",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_67642e5f4bdbd01ddd71",
+          "rawHash": "c60a057f114e6c3f21ab99ac27ffc130accea816fa5368c8723b3b18afd77953",
+          "literalSourceLineSha256": "404e14e3b4d151452acb7a035d4cdf38aafd97f78edaf5fb15abc51e44e94517",
+          "contentHash": "d3a3f2b187daf3e7f10981eb75e577a3848a6ed5ed34afe8c5d32bb8d3aa2ffb",
+          "semanticHash": "c4d515c821e29d0c00ee3a9793ed9384be16bd5ff17f0df49ba82b08dffc7f6b",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-uniform-log-sine-threshold",
+      "relatedIdeaGroupId": "uniform-convergence-sine-coefficients",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Necessity uses positive blocks at x=1/N; sufficiency splits at the moving scale 1/x and applies a uniform Dirichlet estimate.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different exponent pairs, modulo pair permutation only",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "249fad66f91bf65cfa26da146ee01dc90682bb20e499bc8830970fd1952fd457",
+        "recordedCorrectOption": "\\left(\\textnormal{not uniform},\\ \\textnormal{not uniform}\\right)",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerivedClassification": [
+          "not uniform",
+          "not uniform"
+        ],
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_cb9363a1865e331e1bb2",
+          "rawHash": "da74d4362ec1e65f00a0c82eaf4a6e73a51cc64137099fc37718fcc02ba2c6e7",
+          "literalSourceLineSha256": "68ea0dfdba2d060c2a985bc95bccfffda86b684cfaab3aa9f1017053e45b6ddb",
+          "contentHash": "214a53aabae6f503b5ffdad5f2704b5d3fe1e0e248e43d8e5b24cda822c481a6",
+          "semanticHash": "5182cadc89064f405e64ac502bdabaa62ed8eeda0d521ac8dd33df8d00d398bb",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_bee2f52ca4d994a81f96",
+          "rawHash": "f789954dbe9f3922ff5eaa069dab92412a5d865b231242dd4b9aa100849559c9",
+          "literalSourceLineSha256": "d5f527d035b4dbc1fe921b95ed0310dba9b2758ec7fbf359d795b40119bc170e",
+          "contentHash": "f1c610b143095ded00495326b3346cd2ffed55f27a2059c7fd91f92e859274af",
+          "semanticHash": "82096ea93903de0d4006e9018ea71b71670e22e2ea6fd319fcb19185ef054c1e",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_d5e774a5fcbc81340937",
+          "rawHash": "7313170d99a7c62042bef7f8f6085e20a1e9eced7f446b8e5f95f5078dbd1a4f",
+          "literalSourceLineSha256": "ec5eebaf0c7a91f32ba05fda4602af390ea209e89ae1e31803ddcafbb82d4589",
+          "contentHash": "e76a24afaee5da80319f2226602df2ed6629aefaa871e8d5af2f6e3f675ff18b",
+          "semanticHash": "a48d32580df720877e28350f2a76bc8fa6c8f328a4bacdef08a8773d70348c10",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_c51d73107a14045609f2",
+          "rawHash": "7eff41b88b5660b27e0e2b514cb31394b87994ff4b7b1f752eba0a8a1fd1c87e",
+          "literalSourceLineSha256": "e2021acb0114892c2ec414a875533a83b311b4bccd4b06423470a868ab783fa2",
+          "contentHash": "852d511de1cc9f282fdfd1b7bf6bec25a25c4efa487a50b5ee7a2e58b46673ff",
+          "semanticHash": "04f5adde58d3dcfd5ab9eed2ef61592880e626c723157ab3570cadd1c164968d",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_d29246d0407024a14444",
+          "rawHash": "1abc296f29249f1e74bcfdd98b68b8ac4fe62498ae3ec40b67f3720e1f2180ec",
+          "literalSourceLineSha256": "4b8d1d8e241f74a00968a3907e1051545591dda1ed5de1fcee00a9c552b6354a",
+          "contentHash": "3061d2e48ea600017f865ef8e5cbb7b72c904bb55c7f4730eb597f35afddcd6a",
+          "semanticHash": "c53c7d541e2b1a09c751e2a3c9f3f8a09eb4c8882631ff1d611f7d854c476eb9",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_6df74c3543be16f3d217",
+          "rawHash": "6aa14c84b3b345575ba1473df628ea58e6d09ee8752ec137e7f1362722df1851",
+          "literalSourceLineSha256": "8eaac89f26b1949f9ce93adb11f6651b98838992a500925f10982fa4ce5a46ea",
+          "contentHash": "4439018a9c3e4bc32cf7c8dfc122efc1ccdbfe62e5ef882510e2c836c7eef89f",
+          "semanticHash": "a8b8d4a5447f8dcadf9d7b53be1eef5a6255cc39d5b13007587c4500c97e0db3",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_942a5de94171753a7543",
+          "rawHash": "94c6fcc3727b6f7a517d84e5dc730b3f03e6bb2d41f8d34a39a5ebd2cfc2f00c",
+          "literalSourceLineSha256": "1d1b7d80bb7f070d0904d06816dd1d8b7e2b3655da30da941d6c02a11299267f",
+          "contentHash": "d78ed0b455d7016b434bb94ee379e166db2c114ea97a00c7d9c9d73ebde3503a",
+          "semanticHash": "587e4741363c324d4ee597702da05e084e63af233a7263034c027cda32c3c43e",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_375fc161922ac3e7a11c",
+          "rawHash": "114196cacaa45f20c309a4686534a956920fe2f81ded7341d46f068cc20a844a",
+          "literalSourceLineSha256": "afc394824c0a1306f8649599f79e21eb0c1b030f212487ecebbdb601ae4041f6",
+          "contentHash": "24ba9c8d9da8d39dff3f2f972a36ac39f49dc79ab7c1dce2afcdc54ede20e343",
+          "semanticHash": "20e2b8ecdb88e52c17347e0f6efe440eb1d6a10c69d1ae9fe9c40eb1c5e9df13",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-lacunary-Abel-growth",
+      "relatedIdeaGroupId": "lacunary-Abel-counting",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Count occupied exponential scales and bound both head deficit and tail independently of the moving cutoff.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different lacunary frequency ratios",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "47b1b8e15bf22a1da51febc912eda3e40d3336b7ae019d82decac9b3f5f13b0e",
+        "recordedCorrectOption": "\\frac{1}{\\ln{\\left(2 \\right)}}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Pow(log(Integer(2)), Integer(-1))",
+        "independentTex": "\\frac{1}{\\ln{\\left(2 \\right)}}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_671bd065fe1a12af58e7",
+          "rawHash": "ab5bfeca22670f73ad6484b282bde461a579f18bc791ebb5a0997fd1d1cafef4",
+          "literalSourceLineSha256": "cfc481b08bc5d40e03323a3f1d3dc96a03c33bc433cde4fc977941523fe9ddcd",
+          "contentHash": "7cedd486ccbddf89d868c39dd6a208ce6b2e50a36da394190ede473d908b6e32",
+          "semanticHash": "830c194ddd9f3655626e226cf8bbb45a31121388173b2273eeb4b7c2157a1cd0",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_bd981ceb0a5d0c4e202f",
+          "rawHash": "de795f71c5c5c2fc34a4f5bedba9c2e12bb5d0ff162d641e255d0c5bd8e2593e",
+          "literalSourceLineSha256": "4655ac61084f83823faff4fee07048cf6bb78b98ec8592a6c41a588d69dabcf9",
+          "contentHash": "51762ceb648770301702ad56ca442b460309cfe016b41875d732d3ad503ddc3a",
+          "semanticHash": "dfcc5dae576a29e475d5a2e0c344f5df1a7fb1bd5d4c4e127815e0508eee356b",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_9842c49b5caada2bb82b",
+          "rawHash": "105733cc5fad7b9933e0240bad48b7da6bd30ff824c32121544aacf1a559fc2a",
+          "literalSourceLineSha256": "d5a7dccbbc8b8fa5cb17c2b9bdbc606a626c9d6649bbbf002126d332f708c1a3",
+          "contentHash": "e8933b1d9da1f0b1eb17196743f88c47631ff74ba56474d4ba9abfcf6a244c50",
+          "semanticHash": "784a9e889b525d5f018bd2ea7cf99dbf8f8ca6e8714f34e059853661ce899b37",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_ef3625fc0a04a0d4d025",
+          "rawHash": "b204f9350871574a0148bb1d51410724ecec44f292082a7a2ff66626a043c4bf",
+          "literalSourceLineSha256": "ea15599ed55b9756216ce07b2309fd557f62fc1b03993ad1c17b402d83831466",
+          "contentHash": "ecafbd2eb9d60478b4ea9a8594c35469f91980ded9d6078b579255e2bb9f3564",
+          "semanticHash": "0db9422c7a975ff4e66f7764eef65e7626d9f9fe79187bc7a658c518ccef2713",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_281d3fe53381ce869a63",
+          "rawHash": "90721351d61102ce934c10d9b5cf58e78e4f6ebebbe4dba4fcc86cfc01ccaccc",
+          "literalSourceLineSha256": "af764c266482030bbfabf02042f4cd178a856783b775f1efe3bcee9c9a970bcb",
+          "contentHash": "66553283d637c3dcdc1a0d297718bb6f34798937841caa7c85d8e2cad7ad64fb",
+          "semanticHash": "4f4adbb87ae311d4037aec6dd2a7905020451ddbfbaef05083cd8b85fe74bd5b",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_9b3e0b28b634ba6bbea6",
+          "rawHash": "f1976ea6a52e2fd2fd2d26fd8de0fe04a6ffe4d73ada966d4a314eff8d28302b",
+          "literalSourceLineSha256": "14519d6be68ce3f6ab83cc140fa4daa3de916dcf01c87e86f5446ab569e82ff5",
+          "contentHash": "a6160ba98e063eadbae43045fc41a85fcae5c0740cbf43ac2413b9a6876bed33",
+          "semanticHash": "1779ccbf52392cb5c2981bc09ed05e8438daa1515f9ebd3d0a19537a5ac1c69a",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_97ec5dbbabdaf56ab708",
+          "rawHash": "28bb74647860a76c7abc00e8bb72baf3ead8869eb815f262ecc174f31e42a319",
+          "literalSourceLineSha256": "a62e7f64fc1a3611718260cd8d8d74a1972b3ae4ebfd85b3dc6bfa7adb218e07",
+          "contentHash": "85759e4035696c95fb8e9ce52478f6e90281fdd047b44274417f83c82b837a6b",
+          "semanticHash": "f78b0e2896c6a7869a79540eaf40171b25b3526e1de7adb65379f93249bae675",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_86cb9d363cf3ad1c9f7f",
+          "rawHash": "6695e467a75f4c77e3227cbd236ef143672de4dfcfd0fa3f9150f34a186d2266",
+          "literalSourceLineSha256": "c0fdaf5554dc83d7766f9c503a7d9b298ffb62f01b9061c47136f8a8c667e08b",
+          "contentHash": "1932fc0684ac44118e736e7782534b374740f8ede5b8be5ecd98a59cecb6a955",
+          "semanticHash": "f77348fe2f724b2df366a7d9becd2299bb32df5b6e9c845944bda8d80d744428",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-quadratic-small-divisor",
+      "relatedIdeaGroupId": "quadratic-irrational-small-divisor",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "The conjugate-root recurrence gives an exact exponentially small distance to an integer; the sine limit uses that identity.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different quadratic irrational fields/recurrence invariants",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "8779a62e63ae68efd7e64a3e292ac90e424b2fefd975aec724e3b5157d489c20",
+        "recordedCorrectOption": "\\frac{\\pi^{2}}{13}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(1, 13), Pow(pi, Integer(2)))",
+        "independentTex": "\\frac{\\pi^{2}}{13}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_16cf400a0e1cd2c514f1",
+          "rawHash": "f17ecc957bbc8dd190e8fc03335270462f60fded7a557cb6d1e9e9060362230a",
+          "literalSourceLineSha256": "cf5a62776be99c6761f435ec6d32512adb9524b9991d68cc3b6b3142ecc85008",
+          "contentHash": "6b9c837bbcbaa7e49368a10a9b4be52723721ce589a94c7c6f3096cfa1d160bb",
+          "semanticHash": "3ac54ff28fa439d597406688c4bb0dda9fd555e2e49d09821646373246f8519e",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_7fdd2e2c24f820f820b2",
+          "rawHash": "c2fbd754ce93f887802b4aea78c2d9ca6554963722ca6025a6d29602cd0af2f2",
+          "literalSourceLineSha256": "c4255cdf36c6e85366d4d3eb2f82d0eaabac0dad1aa39df83ab4d9726bdf9001",
+          "contentHash": "90f5a0bdc0e0975c2fdd643649c1aef09440c26a103d78a36ef39356ecfacb4a",
+          "semanticHash": "10612f17cbadb32c7001ce4567c45e7018e2c639f57b7fe003628195f0142120",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_27cffae0fcd6ec8f5dd0",
+          "rawHash": "f933f9e2272556a88149907f0a178a370e54a77d5ac03812376839eec021e90f",
+          "literalSourceLineSha256": "223fe3e0a1d19a3a58c63d07ae1d22338a66c98b6820ba27f5b995ab9940cf74",
+          "contentHash": "7150d2bad0635d56a857befa51e01c3824b32209ec4ef3631b9a35711defdfc0",
+          "semanticHash": "5a56033978ba313ff414f42241985e48039cd32096e97b42932daebd05b5122e",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_08fc5ccdb713c1d74514",
+          "rawHash": "d77c572f52abef77bb27322590b552ef540ae95a232ec24da9adc5e9d1b60a95",
+          "literalSourceLineSha256": "7d3220c0f81a1be1930a3bb53ade08b241899e417df25f7bb76e2c42d4cceef4",
+          "contentHash": "5121bc734844c086b90864a308bdaf83f801d987406b68a0c09b8ac7ea74e376",
+          "semanticHash": "04333b1304120e61655b1142c916fde782302730abf01592b29d0032fe5edd85",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_5c2e906e58662284842d",
+          "rawHash": "1277850022e1f90688fe372f6bfc628dcd2a8e4c4bf89e24fe505982398b6772",
+          "literalSourceLineSha256": "e124232d66d9f5130843fbcb388312a9bedd02324194061dacf0efd089c8487a",
+          "contentHash": "901a36b6c0d590d0a9ec181a53b5e9948a5e913c32ac3726b348be844804e509",
+          "semanticHash": "5a34496e3cdde1db12ed01ed4697ce7222652ca2dbf85a00c786c14c8ccf2298",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_418b2dc3884524387d9f",
+          "rawHash": "f886fea2987a7b038b042ada06ecf8eaf105dd73fe4cdb1b61ef16b2c53f1abc",
+          "literalSourceLineSha256": "e2e124666636636f71c585900f6d5d7cf215f8d90378399b29b91741be8c969c",
+          "contentHash": "75a6281ee68bf7bd3804416af32f2cb0cbea89addcee3dd104bb51bb3ab07757",
+          "semanticHash": "00b7be5f42eb9a24dd667000c924d7123a6912f4f83b89723857ff7d88fdc6a6",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_bf7d06b08a8d399e8c9e",
+          "rawHash": "f3bc724bc0668c843e5b4d5293f17516022be46b47ca1a29663ae11224f0f0af",
+          "literalSourceLineSha256": "c53c6bed963b4733900716e65d5752b96071d61c74b3939fd5f48fdf95c6f875",
+          "contentHash": "bde3538c3fece78e4435a70b2092926c4fedd013de311c66d4de563a711596ac",
+          "semanticHash": "0ba84ec8f7a69176f0b711ecdbd0e34442867fd9d729331739407885759d6edb",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_494d2f90ef452d681a12",
+          "rawHash": "db5935a7e3011661dd9e7919e2d3c18ad5e9dbc1de2a5d480f412d528b9fc873",
+          "literalSourceLineSha256": "b58d3a998991d22be222c2fdf3f9261a50d0f0ad10ed78b6aae7139d01de563d",
+          "contentHash": "aeba67b05a852a29e76f43a1dcaca67155378a43b8ab588b4bfacb913873a3dd",
+          "semanticHash": "5eba3b8c5511f5ac25e475316f1ee3be0b1b1b2c76d3bffc899380e2fc994ea4",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-alternating-infinite-product",
+      "relatedIdeaGroupId": "conditional-product-second-order-drift",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Pair factors to prove collapse at and below one half; above one half the quadratic logarithm remainder is summable.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different positive exponent pairs, modulo pair permutation only",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "5d4e76d83a4efe4239576be919a218e10314977b2299f604c300c71ce7029c1e",
+        "recordedCorrectOption": "\\left(\\textnormal{zero},\\ \\textnormal{zero}\\right)",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerivedClassification": [
+          "zero",
+          "zero"
+        ],
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_eee71cef6d65ac441837",
+          "rawHash": "66a8a720bfb6be9d940358de8244980bf92b08480b821cced8cebf05857a966b",
+          "literalSourceLineSha256": "f0527617a6aefd74af8665d1ded442c7f1441e45c464d64fb4840c4d81233013",
+          "contentHash": "b8d4e850e61e31d0481deefaecf1e576933c25e45c2a5d2f19d95ddac9c309c2",
+          "semanticHash": "fd87b195ec288d52793f8adbe93bf4c724d967fb53cd370115ad605768cdafe9",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_c5e1650a8f0a07dce00c",
+          "rawHash": "9ba7ac50401b5c53352bed5b7a9c02d87fc7e66643ebf273f143e14fc67766e0",
+          "literalSourceLineSha256": "4ba20571e458ad68595659a1490369796e2949c774f60c2258bbe3e7a0445a30",
+          "contentHash": "5179cbd03bc56a594c77040a9ee3ca577a3e30011c75e3e9df6a24d9e4d88635",
+          "semanticHash": "f98492756b62925a4a4983360582313bd71c3f6f9deda7bec48f14f228e27b13",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_1d23008d3fccf14e7cea",
+          "rawHash": "6aa40ed1a6fb59e6cb898e07e3bebd1bbf5d4e170dd87b28d91a55be41ae8bf1",
+          "literalSourceLineSha256": "8cdad2abc386e9b078decb464d5fef12411754e1cfc426bde0f706b13e97c3c4",
+          "contentHash": "8eafd81c5c0f065e25caf43d33a6c1eb4af116bc01f5bac0e08d134ed3c96252",
+          "semanticHash": "07e39b75caf338bf6396b8b923d9a2396ada354892ff0aaf493fb02df2660300",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_268b332ca3de15ac0f17",
+          "rawHash": "9d03585f70aa496b211f28f680b5b26186f0aba48db7b8457004c07e625c91c2",
+          "literalSourceLineSha256": "d2e7a99dcb98d9dece479baf4dbe5d3f58bd1ea274b5b09ff3b39f6698c43fcf",
+          "contentHash": "5eee5f7691758ecc63ef6894c31c75a94c779c62754fc24764159c34ce306eab",
+          "semanticHash": "4c1847c1dbad4481ec5f69866a33aadd5a6c234937d7424e6541e4cbc678f8e6",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_5bfef29dd8f16f630c37",
+          "rawHash": "8be1e8986109714018f7683bba39b31dd8957ee10feffa6e99391f48ee828465",
+          "literalSourceLineSha256": "80705c61662e082f9ccbef233c7bed4f5856e5b0e4463500107f23dcf722aec5",
+          "contentHash": "1ceddba2d4ce4f6360b496036fdcffe16194727a785ca3bc89b56c1071579527",
+          "semanticHash": "8cbc5b8c4706e1589071057f29f51ebe174e01e6301f529592691237ed458398",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_1c4e5d30cc7710d22130",
+          "rawHash": "dd4d9d334664fce5d6342eb7e7635720c7636ca1487304c8aaa73dc8ffb03901",
+          "literalSourceLineSha256": "ac3bc803e8b472bca531ee9e5a3cb93ac451dea8defedeb7773d501575712e99",
+          "contentHash": "6df84137e9e2ff9050d4075cc54d3a3cfa42bd6fcfa928dbcac07ebd3ce6087a",
+          "semanticHash": "9143d0bfb8b0bf5fe3bfc1f183536baf904563b05924146f53f452ae14c9fc50",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_d15b7f664c7445888cf6",
+          "rawHash": "1a630c7940e6fa9464032afa1ffb6ee3187af956c7a033a7fa1cae997ba92ba4",
+          "literalSourceLineSha256": "4d8f3580e7d1c8781b80af70e753169168c50800f7e903aaeadd16719d67fce1",
+          "contentHash": "b048a07166e560de2ca1f4c6158adcd41d7e3c203d28411a44c0782ec032be7f",
+          "semanticHash": "a184beb1f45fc438e8831e56271a95dc95005d1d82b9876b12b1dd385dd51d46",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_f4e61705677b9a25adbf",
+          "rawHash": "649de04aa80827677c5781c28f63882d642298bfc4139e21d6f6264a9c07299b",
+          "literalSourceLineSha256": "de0ee7fe286d1d204dd7e3a35c864079495db787952eb10476f2f5143bc23bea",
+          "contentHash": "b91c76c2f7f346a85e9fcc9d14b8348d2e10a1adb2dc8fd0458261baa87d919d",
+          "semanticHash": "0cf922f7afaff7f957f8484799b078f95ecde387fd42250604ff1071b3c27692",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Dirichlet-moment-uniqueness",
+      "relatedIdeaGroupId": "Dirichlet-series-coefficient-recovery",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Smallest nonzero index and dominated tail force the requested exponential support rate to lie on the reciprocal-integer lattice. The former coefficient-read-off question was rejected.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "distinct lattice-support existence data",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "22257649650a0ebe0543d111fa1d06c693c82ea252b7124a35768028db40e9df",
+        "recordedCorrectOption": "\\left(\\textnormal{exists},\\ \\textnormal{exists}\\right)",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerivedClassification": [
+          "exists",
+          "exists"
+        ],
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_20972e721137dace5feb",
+          "rawHash": "6e4d5617371c9b1030da58c941d010dfabe530cbff7d2c2edcb833ac20ee2e21",
+          "literalSourceLineSha256": "ffaa17be6f5decab14c461a769641fbb7708a9e915003faf7b299a75ab75c302",
+          "contentHash": "5005f133efba9d09d3bede5c544ad8288648dd84af3410f91aeb8fd41aa638c5",
+          "semanticHash": "b9ec1294bc7ab865a45a1cd03b6b0ed20dd100f1b35aa2fd0fad0b898a2d80a3",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_e1d52eb86bab650bae6e",
+          "rawHash": "7b5a1c0e164f05d7783ceb9ae644a3d13468ea3129419a0772da2765968063e1",
+          "literalSourceLineSha256": "3cdd60b03767b8115f63e75fb64fa63881cb0a0e17afca3ba57c183f0f5000b3",
+          "contentHash": "954a6e8a3aea5e3dbd0276760d0f8eb4b6362ddbec814e8c0b0c9ed72759a8d6",
+          "semanticHash": "8768ac6eca3ffddd125037786bca82b91a48456e166d15287db6e2d19fe5b7cf",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_794d0663a75d4180e649",
+          "rawHash": "a6cb1e55d4431dc90287b97e149f7882cf9639d7e3b63e3f0e6f6c3e521ef1e0",
+          "literalSourceLineSha256": "25f0fa8f5fb84a2b1a00a07d6c31bca8213df287f5dc70c9ca2bdbf371f48ca6",
+          "contentHash": "968a3b28acca7f1fc09843b34e200c0af380867e71dff2c52d1a9ef5ef5eb8c7",
+          "semanticHash": "890e07af70c31fe9f06880e86c62a9dedfacfc85d0ae33b562d58b573fe2ea80",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_587fd5390158a3ff9776",
+          "rawHash": "f12ff709b8f1872068e0f4bac6e23b6242d6d78d68c372531a420c1e478751af",
+          "literalSourceLineSha256": "1e8c1357ec183cb3b0efaf7e486e16ae6eb6d124d9c0ba23a0157203894840cc",
+          "contentHash": "cabb7ac8671894d144262b0f7f38215b924d716b60e46c390ac4dc7848cb1b36",
+          "semanticHash": "4199aa1a299891783fa3782ae8a06b29516932f7ae35f38ddc764303967493f5",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_1d4f6cb84aaa557acdc8",
+          "rawHash": "bffd3ef8dcb4e3cf3959f056965d73670283f897e1f48f47a35df11f33545c3d",
+          "literalSourceLineSha256": "6f85a4fb5885c7b4b93ab03eddae67244f40b8b6c57618209e39e8b12e679ee5",
+          "contentHash": "248060fb0a2b612e7ee5c509870e35d2e246e8ee303e10bbf01c182cd5614dff",
+          "semanticHash": "cd1861d37b08c0915cf2d4bf61ab6206228c4953e6e8b78b13ad58b09e43fd0e",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_b252f168456ce707f8e7",
+          "rawHash": "43d6c133f578cc204f19d1aac2794c060f7245fe24efe4532a291fe1c5f7761a",
+          "literalSourceLineSha256": "636e022bb1c812021676d3723e2e5bde351b686410c749804f57b496c66c235f",
+          "contentHash": "7454bd35bab0b63fca5866726b2af68c5ad46b3c64f60190c082a504a2df79f2",
+          "semanticHash": "ec565d02db5e3ac4e2ea85ebd012c68b5f23930abe6004534647fdd8aeaa75fe",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_869ad411cbb57ee881ef",
+          "rawHash": "e88d896acd9d303f9653aa4abf9db3758a52480b86b551c19da40e26e856910b",
+          "literalSourceLineSha256": "1416368e35ff0a6a41dc9c4563e2306feda57b33e47b246f64672e027f4a6511",
+          "contentHash": "369614f931fbea355aaf93465470621eb1cfe9bb2d1896282881200465b7e265",
+          "semanticHash": "e14e2c1958307eb3777b833fb9787837727b0e0b5749b73903a203942daef2c7",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_a3fedcb515e6570d6fdc",
+          "rawHash": "dc2c4cee82bc9d629fe078c4eb8823e2c22ceb88e37e6e89366753c93fa37885",
+          "literalSourceLineSha256": "346907f824a28e228f7014fedb587db375d8abc9c14b63d68677c8fed00eb7ca",
+          "contentHash": "7b69f827196790ee4df210ba00580ffbf14b2b05f53f26f281f780afd074450f",
+          "semanticHash": "2f929dc9ac7e73bb0fb717de15e2a1b89f5049daec183b614ce24ab4545efc5c",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-least-energy-sequence",
+      "relatedIdeaGroupId": "Hilbert-sequence-two-moment-projection",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Two nonorthogonal moment vectors require a Gram inverse and a Pythagorean global optimality argument.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different geometric-decay and moment invariants; related globally to other Gram-projection constructions",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "03d51203401e37a66d27f444453a811a9d1e79e161568e1a3266202d1e33d9b4",
+        "recordedCorrectOption": "\\frac{87}{4}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Rational(87, 4)",
+        "independentTex": "\\frac{87}{4}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_89c08566a8d11e10573c",
+          "rawHash": "81aad2cbba3c540c8bf13e5a2e3a9076e50cdba98a6be4e0d27c243c9c9a2311",
+          "literalSourceLineSha256": "5e35cfd47e3dd6869f7d01702b2bc89163b751ebd8e3776e9253d62b921f90d7",
+          "contentHash": "601af789c2ff07520b162ff0cbdae436bccd51f9bde26d3bbb2fd53cee157abf",
+          "semanticHash": "8c439c3a8f654f9b9169084f5f03ec4d6be5efd50caede20413e0477015e999e",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_2b35da69d19a010e3382",
+          "rawHash": "cb1d7c2d4e3269ad7f53f6b009b0ff9e482d55281cb7c1bd300838ec09643e7b",
+          "literalSourceLineSha256": "27bac8962d00ef8ac7b318584e202e2d0a93e9a1fa8f3e459952bac53d33cc6f",
+          "contentHash": "7da6a761682b636688602c2aa2161b395d3d744e9568dee3721901e94ba5fcba",
+          "semanticHash": "859ae6fbf343cd639be5bc85f69736b50c4859618685bf06e013c45371b76089",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_a340b39ed7c64ddd8767",
+          "rawHash": "a45b73ac8bd625d00e0e3855841f8feffe0c43e086ca78f94ed9dcf8995de52f",
+          "literalSourceLineSha256": "6f9d8158cc3f80c85c13460dbf4775d559387a8446bfecfc715e5b06edd0fbc0",
+          "contentHash": "24b93ba091d4379ba63b57a59e7ca4c5c51eeb1a5cabc71d9ed350e47f7d2adf",
+          "semanticHash": "92ffc3d185299f8cd40635667d0aa519863752cc80899769d0f023f7afd10837",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_aee8c813618ba6bbd292",
+          "rawHash": "68e8b451e36e58f8c7e4920fcfe6685ba6a14469c4580d54fb9d520500e1cddd",
+          "literalSourceLineSha256": "002debb6a375ef5abd434a52064f2a3309486ca3da18b42b6421fdd526b9c0e3",
+          "contentHash": "53ad6c437e9c4cccb88d766875cca2f94a70e7c1c74aef25c361b37d83c1b525",
+          "semanticHash": "9980ddbdebe9bc2150c0f7c540909798cb7d2bb4b1aed9233447f5f49a822c93",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_05bf1692f0c7ef7be98e",
+          "rawHash": "66b394601afd844d1d92b819be3c3511f1d07f893437cedda9ab9890e433735c",
+          "literalSourceLineSha256": "a42c1c0d88415fe8f4e8e583507c28d394994b17080bb59a20a8dfe264732748",
+          "contentHash": "c525b4d108e9f26e584eaee6ee3497e7d4a8bdac60b1c6e5f2c1af5857636997",
+          "semanticHash": "c5958bb9e23e6c0f50958d78d0326f137e9ca9bde6b53c23307dd26d37e2a39b",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_94354796c0bf942a4e6e",
+          "rawHash": "6a4174df61acb5becbcd91318388875989d745f7a378bff746df83f38001b7de",
+          "literalSourceLineSha256": "78fb006774f77ba2182130e6488dab5348d94809b36b0464ab103f937dcdad0e",
+          "contentHash": "f977021fcfef98f780d18ec1258740b77be89b49ee3c6850576eaa73fbfc9372",
+          "semanticHash": "e37174307fd4330b1f6352312a349f1bc3f0f7ff13e486aa5431ef1cb8ba4d1d",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_b936cba5061d80641a08",
+          "rawHash": "d9831eba1e4a444c2652b9d80b69205bee0fbafb6cb3520fa038f0192b315470",
+          "literalSourceLineSha256": "7f25c023e51d5330621c79008133fd1ecc8e9429004ac0df0faf9e3c1e555c5a",
+          "contentHash": "7c30a943047c7696d93a55df0be8379edd5876d27561f485b862c829a1b8592a",
+          "semanticHash": "3cc1a2eb5fbe568d975a73002ebf1521e6ea25f4c505af7c89cf92f9a23bfeb1",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_80abf755e46fa1102c03",
+          "rawHash": "85b402efe14f3a4d21afab56ecbd2f613e6187f20a17233e7f55472914495dee",
+          "literalSourceLineSha256": "992c9e3e502b9916c874fc6c2ce4b7011198d27a19b9ca9115c93001201a819f",
+          "contentHash": "3abbd39f67208868a9efe791dc8facd4b388e4e1ef5889e7b40c48b42d99ba8f",
+          "semanticHash": "dbf9d03a5436a54e6aa16d9d015a9835f417e17443d8601d9c4f3bee8a8c0481",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-rooted-tree-weighted-series",
+      "relatedIdeaGroupId": "rooted-tree-Lagrange-branch",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Lagrange inversion identifies coefficients; the small real branch is fixed by continuation from zero before Euler differentiation.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different interior branch evaluation points",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "ca8a048ff774b9678732e5e2bf81925437607fbb69825fbb8f68ba72348c53b0",
+        "recordedCorrectOption": "\\frac{9}{8}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Rational(9, 8)",
+        "independentTex": "\\frac{9}{8}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_2c991f6b2a085e94ded9",
+          "rawHash": "aa122cbc38346019578f6235f1fa35fd210b6cb57861607942b1c1396e4e287d",
+          "literalSourceLineSha256": "629b711d3ebffc1224441ff0a23bfbcd74ca168e7af75dcf080e4c3b72fd8e97",
+          "contentHash": "69c422704c7f4ffd8e62c92330c0a6bba655dccecb6e0d625bbc9dc64d2b3197",
+          "semanticHash": "5ac9bcc7b1fd7f96d2253f0249460ce2859024292dd991016b3cb4da56eb818c",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_790d21f9e450448cde79",
+          "rawHash": "878638cf4d7cb0288fcdb9382d96e28f097b152e19b779fd2b5d2288faa3aad1",
+          "literalSourceLineSha256": "97afb8a603c7829d303523eacb8bfd227d2038ddf1821a73eaf0c3e4683b339e",
+          "contentHash": "1c933053478ed9bc9966d7253f09dbc1486c1f9da61207843c80e77f65f0b00f",
+          "semanticHash": "a702b4e095e3b626ed2941a396f7906f0c460207b5b7bb8cdf1a696dd1d7e5f6",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_5c394aab6f43cc415d6a",
+          "rawHash": "07205808a91f3530a0b0ef033600470fd3bb4d73074ff40bf5801eaa571622b4",
+          "literalSourceLineSha256": "ededf35de419c463891aa2b211f53cc137ee8a8c665c868ec63a2db686bd40a1",
+          "contentHash": "e68f377340787cd93b5a961eefd7eef456aec69ca9001017b4903c1341860a9e",
+          "semanticHash": "f6bec8fca30fbc1a4217e1d11aefc7fc25a2e28f112f5637d749f21b656c36f6",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_0b1a51c747207192ba72",
+          "rawHash": "ff02c2d0d4f8678ba9b8ecf13d70ed63ee1ad720ae8e40e32e1dd28340fcebad",
+          "literalSourceLineSha256": "3c384506234bc673532cfae1798db0f1adb46fd03481c975894bdfd93d9152c6",
+          "contentHash": "4a4adc807aabf4a171a00438b1862789eaf781c0f3f74ac1911e05ef068a6b32",
+          "semanticHash": "9f4286d726e1151b0dfd4f9f62bf94daa5cbdd6cdd6135b669f7a67a6278ea0a",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_faf24e7974f3e298bc5e",
+          "rawHash": "5041eb32167cad6379651e48747c95fbc91b8a96f013f3a62198444752dbb2a6",
+          "literalSourceLineSha256": "4b247d36c72e62f5289d4aa5acfc725a0d3828561c89172398c1bb585de2bb22",
+          "contentHash": "00df09fe74cb7fdd2d30d74a2f1e82a8aea0462cb4b7798fb979d5cfa851336c",
+          "semanticHash": "b62e144afa0811f2bb1f647e3d69e5265c9e4d393b0f76b5632aee3e257efcb8",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_1b37116cacd2d77efd47",
+          "rawHash": "15077b9852e2d7cb352240d63b04c156b88bbb34a345545fd42c0289d53d4195",
+          "literalSourceLineSha256": "03e6ce2fb635c517a8e695a975bdcfd7bcf532698926ae0bfc13aec5b0c280a8",
+          "contentHash": "5c33f044d3843d43bf785acbec5829a4b6103f3d456d8988c00f96816b691ff5",
+          "semanticHash": "ad71be85630b3c82f6878ef3a07485fc920bb4fb5f29d972a2a35273d4835afa",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_b2d8a732cc0f9d17c17f",
+          "rawHash": "25203e381769e01dac76e83e5dcf06294faf808e778b7b8e4c45cc6549c57525",
+          "literalSourceLineSha256": "def1c4a335475c931f6c03bb73a79d30c62cc569736ed0fe127a79ca05527db1",
+          "contentHash": "2116045570de1fb67c97eacf379cd07c84fe0b5a2730247d8a0a93d7acaeb4b8",
+          "semanticHash": "0339d537ddf55283c87044e5f7f0a1b4f409677c401d97ac8cc4a591710b1458",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_d2103c0f98a26298fdb0",
+          "rawHash": "3d8a886dca94e72bfba886fb1a368ea81930b0e096eebe75a0e15d0537713d6f",
+          "literalSourceLineSha256": "ad8143b5cc456f82e0a7dcf09d39207d9251996785278ea08fffd5deb248fcae",
+          "contentHash": "5f53304b7ba30a4c4e764da3d115d5f3197aab6e8fda2b39f2ead0df93f8ba75",
+          "semanticHash": "f6baa758ee264ef2d36c78f7ff8f785472c05b1915689c48adf48dcc9b225591",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+      "relatedIdeaGroupId": "cycle-resolvent-Chebyshev-trace",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Prime cycle sizes13\u201341 remove the earlier routine small-angle cases. Multiplicity-aware Chebyshev logarithmic differentiation evaluates the resolvent.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different prime cycle sizes; no amplitude scaling",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "2a99cbfbf65a879a8a8a516837875aa53c453f0b49b5d529f1b06704386fa070",
+        "recordedCorrectOption": "\\frac{6058}{521}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Rational(6058, 521)",
+        "independentTex": "\\frac{6058}{521}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_9fa32c0f9cfce311a255",
+          "rawHash": "ce791b5266fd93cb7d337ea04a6c0eee36b92d91b34587cac53b36a104ee0a72",
+          "literalSourceLineSha256": "7c569e607b26dbfbb95e647f8617521166706869375f0b13094df002db749e14",
+          "contentHash": "7eccf515ece790210af58966b62a22d47366f212074f7ef3fe27e5a8e7081bd0",
+          "semanticHash": "5893ffb27402df0b61c3c7cc1a34e5d88823023dccf4db8e5383e6b491b93fe9",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_bda91b1f7708e81fe7b3",
+          "rawHash": "ab15e1022cde191ee8e60d3b7093ca09afe74d97fb8c0c534b915e384c8bd71c",
+          "literalSourceLineSha256": "4c1e8a0e424d368473cc782323d3f1e0ca1c057b4ba899599a007da181cdceb7",
+          "contentHash": "01cf1cfd4b96f13bf884ef7a38749c64b0a0fa518f465fecb39dc334cd1740dd",
+          "semanticHash": "6a427c4774668222ed7183edd3848a12ecd1ed454bf3f0033fc3c17ecea8cbd9",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_6c18c15e554ce7a0a329",
+          "rawHash": "2b0504e9753f6e5e691974a7d5997415c0f90698a0076f1f88fa31f47dc923c7",
+          "literalSourceLineSha256": "31896bd68293bf4addb973994f02418ae8943e6d202885b3d14f31c9d791954b",
+          "contentHash": "4eed7c303b83d62d165b72b7909535462bf73d74e3f16aa66fe1e39c16fad65d",
+          "semanticHash": "7e9eeaa489bcf2ab27e857681acf1e3fed8acebdd52b78155592a2dfb9fafbc9",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_b1ce75f2fdbe36e6b87b",
+          "rawHash": "3a353925394d83d3b4c7b2c7c8c0121af2a6dc9539bb00cbe3bcd85c1d1d4147",
+          "literalSourceLineSha256": "9ebfb535969da7d6e13114602e292dd2a0aa5129037a09e09cefa32dfc2fc704",
+          "contentHash": "144df9425fe21897c3513fa1e5d273110e766e155bd83f7e7459d24872e85942",
+          "semanticHash": "18a8a6e6f32695f5de16c30401e61137edaf9078eb37d51416ac8777f7ba9a99",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_8dfe67b3475bb596b42c",
+          "rawHash": "72ca78c352212ecd75f2c7f9c972298d6b6db645526e947ee22e9b4eb0728803",
+          "literalSourceLineSha256": "4f47f9c896291c4b37c79e6b28fcdcb45b1ed7b6a3c20dc838e17bdbc0bace62",
+          "contentHash": "f7b897a68e882527e01b3910fe31ebd9697784aa0e8ae71e7d4a460bef951f1a",
+          "semanticHash": "2ecb4b1f2064527c19a561b49c29f5f7584370310c7c98355aac9bfb2d827759",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_d2581243cb251fcc574a",
+          "rawHash": "7a38f8b1d3531de9141f35d2c971ab9de63bf0e2352b7b3ddc8de1341112d67b",
+          "literalSourceLineSha256": "380794741331a67062a04fae564a0884bf8a9b36e4826cae7205d723f434689d",
+          "contentHash": "dc643ec859ea88284dd8a537970e0c4ec56d8e7f6d4398bb1454393ce47683f1",
+          "semanticHash": "8ba427ea3c0e989599b4c075a6a7ee586d61a39a7fc138389c9d1e16abb2cb6d",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_8a00cd8f3bed4e438e65",
+          "rawHash": "3bbcd1da6ff22c2cefd0d098d4d3f50ba68f13d66e140414c037bff61c7641c2",
+          "literalSourceLineSha256": "91f151447c6bbfd803774f6447f476ab68e558457458b3035fd133c7152fc228",
+          "contentHash": "974354310e122a4b55b25565c783fa1c7c84e83fc5a968bde6d97380b8b671ec",
+          "semanticHash": "364b129851322516e2e40df48cf6401aaf993e1a2c8cf5109be8ffa7cbd713e2",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_bcabf59b3a0ff34c51f2",
+          "rawHash": "f416d3ab0849f927140977f8833007764907be5462a9ac48e38d7423c4089d3a",
+          "literalSourceLineSha256": "0ed1e47dd0d8d998d1c48d2d9dfa9ee492c0080bf10a9759c3afdea2c77e1339",
+          "contentHash": "c4fb68c635e3bdc933c62696da57c5ab4d21b1530941f5b3168cb999bd2a48f4",
+          "semanticHash": "197faab4be5f15d977a84804650c197908af63537706b71f4e1daf44e4e8f49a",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Poisson-partition-moment",
+      "relatedIdeaGroupId": "Poisson-growing-moment-saddle",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Optimize an exponential moment majorant and match it with a single Stirling term at the moving dominant index. The fixed Bell-moment draft was rejected.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different moving mean-to-order ratios",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "02036f175470670f584c75783fd07cab7c0140549390a6eefd552994ea2de1be",
+        "recordedCorrectOption": "\\frac{2}{e^{-1 + \\frac{2}{e^{\\frac{1}{2}}}}}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Integer(2), exp(Add(Integer(1), Mul(Integer(-1), Integer(2), exp(Rational(-1, 2))))))",
+        "independentTex": "\\frac{2}{e^{-1 + \\frac{2}{e^{\\frac{1}{2}}}}}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_4e590278bdc22327ff7a",
+          "rawHash": "804ba12ad5df5479fffa92c93b3fd8ec3e477a1b7186cf7fefb737508a37e040",
+          "literalSourceLineSha256": "581a285680535d45e1138ccc006111c322d6fb93d786f6474a25597c0321029c",
+          "contentHash": "ac9adcf4cdee8f54fa6c99f9aac6e83a240584b0b6260b6171cbc4236956417e",
+          "semanticHash": "625cd4ef68da180a3abfb4335e57b8f80209678f75a7243f01423df363a3ebeb",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_8bfb723551c856a722b6",
+          "rawHash": "7b149a38b582066ed1518e7c48ce7d205b947e4cb4c2b99cad595d4bc1dc87af",
+          "literalSourceLineSha256": "5247e6ee28f0fb9c8ae61f4acd2062179c479e9a12beb91d7e8c902d1a8f6cb8",
+          "contentHash": "3434db45a8e28d42b1e76b74644c20d3c0ebae8897370d0b1f8a1de623e69224",
+          "semanticHash": "342c79aa9117e61ea1dc0df757328e192473b88da74b4912b6770e30852b0a1c",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_c58d7df939c451c8e7db",
+          "rawHash": "8a833ae722f07ec00b9f03856b3b4ce7c6f772e7275e53194100743f5c99bb63",
+          "literalSourceLineSha256": "62d5cd90e7b3e552d1c3d333003143d4172f0c90c6b05b6ba22c1cbbadc250d8",
+          "contentHash": "56bc204c2e6ef4bb4434f96bda3cbf27f61ca18a8ca938eb5714350cc0b3dd01",
+          "semanticHash": "38f155809918f5dd7709c353682f73c5dbd3f4ecf762e83564236f9415cd979f",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_4ea621104ef2cbb5f1af",
+          "rawHash": "c1cb399d15b6707a6201753c73ed7f7feb438f28838bfadbe7703ffa0da78377",
+          "literalSourceLineSha256": "77e301d7b12dbe2d9876703eb619cce9e8e5ba29f9957d895f3781cf7d83e255",
+          "contentHash": "651f417149be6434b8e57e0fe3bf0e2b34f91b2602dbc8edf73510ac1e7b4895",
+          "semanticHash": "3c442c85b42801203bd61730499eb91f6f95fe7b5845f16a2e761c562097c98f",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_7feab596639f1ef6d58f",
+          "rawHash": "eb89a7e06e92deef2428a5b35ec7d4154f59d98583d24fd2b071ae1ac8790640",
+          "literalSourceLineSha256": "1d5c79ce84306c6095c75ace1f2019505de1c8553a3c51b57271dee2869e3ae8",
+          "contentHash": "9f118840e12ae149d996b397226d4b3990175299096bc677d5d57ab18f626276",
+          "semanticHash": "bd725bdbb068298ed3c399fde72da2789705f5b183ef6e58ddc8b7371cea33c9",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_c1d7ec36cea4896fd7f4",
+          "rawHash": "060934f64fbfddb5a3099314fce01a125edb6ec8aed06eb82075ed3f58294676",
+          "literalSourceLineSha256": "dc4fc8603e459d43e7de920365e2160832b6d0bd5c9c2fa61c116226181e6cbb",
+          "contentHash": "4b14593a7196d243bac4a6699064692d1a7492ad2069c555a441330bf564a59b",
+          "semanticHash": "1be1d1c47204d5ec5d9cd0a8e05a42f35b58791025444e11f9d0833674aa68f3",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_c73814dd05378fc46ceb",
+          "rawHash": "6126de0f882235055f4bf010916e6ca5d1bab9847c4a1adcf297fe22bb7b7526",
+          "literalSourceLineSha256": "f321e804059e889851e103e2e80f6c8f7b46a090ef85b87d5ed482a8cc8a0d10",
+          "contentHash": "2cb4115a8b39d3911eaf5d90469b7524e75933cd44abe5fa96572c581a8835fd",
+          "semanticHash": "094d8884afa1ec1d0c4e06d0c3be6d3cd6ab6fee280c180434552962b15074f8",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_373a9fb5e29670d016f7",
+          "rawHash": "1c725fcf4942a9b7fa6cd91045e0cd06017bf2cc4c57309b7b81ae3021ac93ea",
+          "literalSourceLineSha256": "ee80e6edac1e8d9b47819e04e160a6ab8612732b22767aee607e9d63a4990bdd",
+          "contentHash": "c835bb78b3b8ff5bde8a434d14fdd75d1a989a907be71c5a6a7942411974219b",
+          "semanticHash": "d32997c59d9c5244e1a1949ea9ce287b6b06a9564fea2919ec55d7926e85ad8e",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-factorial-floor-reconstruction",
+      "relatedIdeaGroupId": "factorial-floor-exact-remainder",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "A strict factorial remainder resolves the floor; a nonnegative double-sum transformation then evaluates the generating series.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different interior generating-function arguments",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "98c63904ca46a20a48ac98188567618f3e70126667a6331f52ce793ade39d4db",
+        "recordedCorrectOption": "-1 + \\frac{3 e^{\\frac{1}{3}}}{2}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Add(Integer(-1), Mul(Rational(3, 2), exp(Rational(1, 3))))",
+        "independentTex": "-1 + \\frac{3 e^{\\frac{1}{3}}}{2}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_ca1eb84db00b228eba3e",
+          "rawHash": "d1123052929651b2ff69ce930d33fdad9806ec8448c84c379d93d410fdadd947",
+          "literalSourceLineSha256": "aa1ba955b2b8604f1ec67b39ca4c61689f0c2327014c8cf5a32e35d4e1ceb431",
+          "contentHash": "abb824ef6a3eaff8f9a5741b706235ba2fbc905f71c6ba237e9877df860e2254",
+          "semanticHash": "dcecd0e8ce78278cf3bff5de95b72633f919c27e8bcfc06138276c791dd246c2",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_0480893155f4cce6f2f4",
+          "rawHash": "a8f70080593729f66f715e91b315aa19b17b7555ad80ee1db6c4875047f5412f",
+          "literalSourceLineSha256": "2ad1477d94fdcc1a5512815a51830cfecbc1aac3e8f7d75f366688b87436cd85",
+          "contentHash": "82eaceab23b6d05fe9c1fd8d3405cd439b90845a1f21f274548f5fef0c29b00c",
+          "semanticHash": "f7e76807fda09ece37dbf149844a604691e977e7ef3c4e06779449b50566c0d8",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_da483f526d59649044e3",
+          "rawHash": "f4ff254df3e8948babb9bc36250d5115391cafd5e13e758a02c235cde6bbd3ba",
+          "literalSourceLineSha256": "23503d2b65b5b0aa6ceca28807095b8eb6c687884b66d87f8722195a232a2a8a",
+          "contentHash": "f429e96844cdf690f2406640206b2e49bf025319ff1e63d8f29aa16f313e2377",
+          "semanticHash": "8ea240a077caa23cfa65626cce625965e3d0fe6cfa50a94213d8937ace0b22a3",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_d300d14ce6f1116995c9",
+          "rawHash": "0ae3a4e202b0ed368b78abc376cbe240b4c23da110ccae4739eef3f68874c0ef",
+          "literalSourceLineSha256": "e2601bc4d541c21442fd55289cc969ac26d3d71bef33ac6eaf40accf30654b20",
+          "contentHash": "3d95b489cd28be34c8a43e1b119d6f7a2038336a225a2840bc922beaab9c2a8f",
+          "semanticHash": "027e3896db11482c2a97f5289c16c9fa2ed9c849c4b2383ef428611d79479796",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_0d2e7b06ebe84438e870",
+          "rawHash": "961a7438a81bfded2ceaff023224910e450806b82a952492b75d4487d1ab7aeb",
+          "literalSourceLineSha256": "b8475a28615fd9a89d513dab2df7214ec3f06c34de2a0e21ef321859ed6c8036",
+          "contentHash": "ced05ab07d05da427247c33d8bc78d882a63588b2d97938756d86670a0eaddbb",
+          "semanticHash": "3ae7fea6050bda14119428fc10063f111570c70b22f29cfc593863b06184aa5e",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_facb1b35f01129a9a9e0",
+          "rawHash": "4a8eff3ad51066508e1225923adb5e65e3b9532cbcd45106906b4ed2b94a78c2",
+          "literalSourceLineSha256": "22d625a3c68ed9ed7509c7cc32f6828d4b12fa712db3941aa74642aaf2f1d0ab",
+          "contentHash": "5bf436d58ff162576a9a15f1c5e50274c31187ef0f8a334ddcc2cb4c49672f6d",
+          "semanticHash": "ec15d94f640d1465ead7138731ada9221bca6d6ea6bb9b5848e5f0e37c00513b",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_e30c5c5af9d70ecd1ff1",
+          "rawHash": "3f682e37aa60dac3b498fb5413a22c52213400eface4ee937344bdbbde95b2cd",
+          "literalSourceLineSha256": "b0d4cf04d27c9b6c2c8f6d3fb7aa097f10414fecded5feea318402a3ce99ee6c",
+          "contentHash": "06cc1814a26adbaf579741f6629dd6a6e2d2fbab0c2ef97b2c550b229a9448ba",
+          "semanticHash": "846a2a53b7ef718ae4384574409122f9fb5f3fcad563e3c527ac81a2e5a6abd8",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_0b5a8a2940a4495b4425",
+          "rawHash": "a5a16f326e9ca7c0f28a64a1589124f4c21426ace06b41ab566015491f64ab9a",
+          "literalSourceLineSha256": "f078e0111af9e259f4b4ce6706f22bcc5bf7bdf3a4fa5a109f8182d222751f37",
+          "contentHash": "c3a3945dfbd9131f3958df75dc2a9a2bd305b0251a421e3bbcc4bfd7757e541f",
+          "semanticHash": "ac07b1e5d6bd0c64f5ff71addda2ce8da6348d02e6d1a0c2e56bf33e5bf5de82",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Riesz-product-energy",
+      "relatedIdeaGroupId": "dissociated-Fourier-frequencies",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Largest-frequency domination excludes every nontrivial zero Fourier combination before multiplying constant terms.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different frequency ratios and amplitude/factor-count data",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "86de7e0337addbf73ceef03cb51b3a2dd71299bd65b37d6e40e56d9d340e174d",
+        "recordedCorrectOption": "\\frac{6561}{4096}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Rational(6561, 4096)",
+        "independentTex": "\\frac{6561}{4096}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_55213a64704e7f6eb92e",
+          "rawHash": "8877e021eba1a4ed0a038d6ae66ca152601ac3bf75bf0ae78f51f04c99c398fc",
+          "literalSourceLineSha256": "16d66d27c692b03368c35a3f02658f278dc4d9ec7d85aeddf3b3b6d664c307b0",
+          "contentHash": "444323c286b80f8b550173bfe11b8ac25efe54e51dc3a1c26eecc720e4b38566",
+          "semanticHash": "7cb7ad60a8df9a42a75b0644e354be94ad56dd2ddbf14f5e75f7e240c4e10e61",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_e3756706241eaedb0630",
+          "rawHash": "8c07f1d6a994aa03fb6f02b082be379b9e7c6d439ac3b375f31bc88e27627016",
+          "literalSourceLineSha256": "56de3435027a1971a69ed022ac4cc6af903ad6bd21f4be6c501f7219ae3b1a8f",
+          "contentHash": "48d91522bd564a47dc42d12602bac199a2e8c1f664e3df3493f733c825013184",
+          "semanticHash": "0bf29d6c259fda39625be7c2ecc7cbe131fc6501c7ea131e5136ae93ff283e9a",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_31a70368b3c07a7064c0",
+          "rawHash": "c1c7c5ffb9cad407ae9c6a347d0bdb1367132f09bde538c18e5c2ff753dfb2a5",
+          "literalSourceLineSha256": "fe832736e1819ca601b805de184db28042bf9af0ecfaa21f92f313bf2123df08",
+          "contentHash": "304b60e17953563dde125adddb3ce92f0ebf2b78a9bab00306a1435c76d64391",
+          "semanticHash": "61907df6466bfb3b33df276a0c446ee6bf09129304a42a12323db94929e42d4f",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_bcda82a78cc6aabeec0e",
+          "rawHash": "1dfd5e4ed9c1028d582e7ac982c5d328e8789c87a31d645e98abbbbd0064c928",
+          "literalSourceLineSha256": "c61181a47f30c58e836dbe4e948c7ba1b25e4180afe74668642db052397af2be",
+          "contentHash": "6b9f25dc2e449fdc63446e928e78527a55e4524cbe22d36a1544697743b55955",
+          "semanticHash": "d77199c0a87a3431e12da252aed9055fc8bc24952c87d2c8ccd905dd36470b51",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_eef4c8401d4f7b8193f4",
+          "rawHash": "f490f9470eb65b0c7bdee55b15ae5218d8deb8a7c9a767f4b26dc2d4a585b724",
+          "literalSourceLineSha256": "889e893e09a368c7370c9de2a0a45fcb0d07fee7512a22b22c221a57c2d77821",
+          "contentHash": "4a2b7e024e12e8dfcf2d5504bc2e78814f3ef43a7bd55030b964b645516b7191",
+          "semanticHash": "e9e4d5381a238a45758da0dbeecf0926d9fd8625b2d94573d3bea7fe3f1a31a5",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_fb46b200ed380573c723",
+          "rawHash": "e3791a977dce149527d020e83ff37a57a8fd9da15040937eeb559c9a798954b0",
+          "literalSourceLineSha256": "09f0184cada15468c79fb3d052d61fd9e400d869a8ec7888af74ababbe2724d5",
+          "contentHash": "1a5a17a3b35b99f34c1847c6e4766e9da8a1aac2b36f320dbb48611e6908c991",
+          "semanticHash": "ca8f2e5ebcc87dce96a926b2a14666ce1ceabc50ffcb74d800cc0d190ed9e024",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_83ab7750a45535e2982b",
+          "rawHash": "ec821166ed9335a5cef999e938409b4392895584a96c9d172e78f942e6d40ed0",
+          "literalSourceLineSha256": "f20b63b353c088bb676a5522e8e96d2a2fce2bc51745be5b24d7a6e3ec714a7d",
+          "contentHash": "9335c1ec3887b79c4e5a09c4a76ee56536e13a4af5228d0588a4664c1ff37d4d",
+          "semanticHash": "2dccf2f1808d031088d459594ce506eda931aaa73ebd58f3d0e56ae291aa509d",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_ca727741f88cff2b06ef",
+          "rawHash": "f41c721293c32f2ee63c5dae801fe6fa035978af4248b619da179d3fa98bf763",
+          "literalSourceLineSha256": "6260330dbc0b067f14a1ab696214b56eb4502e3561eebd401437a402ea943e74",
+          "contentHash": "2e5fbe3a294180f9d626403725ded87d369969f0b3f37c75853bc4d4bc746c23",
+          "semanticHash": "5ea32a57401df9bf41c71d13ab88d66a49446dc112d06c5e0e7f22d617e4e545",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Euler-harmonic-weight-three",
+      "relatedIdeaGroupId": "positive-double-series-two-countings",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Two Tonelli regroupings of the same positive double series give the Euler sum. Finite excluded prefixes do not add advanced normalized capacity.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "one normalized prefix lineage",
+      "conservativeNormalizedInstances": 1,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "83517696c362b9d102ba85a210c392dc52663ddf44985e822ba30fbf5f27b8c1",
+        "recordedCorrectOption": "-1 + 2 \\zeta\\left(3\\right)",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Add(Integer(-1), Mul(Integer(2), zeta(Integer(3))))",
+        "independentTex": "-1 + 2 \\zeta\\left(3\\right)",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_12317f931a1e24b36d10",
+          "rawHash": "fee8b5518934af13ae67c491bb037afe6b83ce820206c61f502f43d86048797e",
+          "literalSourceLineSha256": "0112ac5d931ace143ee511c6693205e578d989981c35765a0abadf2d6b2bb403",
+          "contentHash": "376e77ea55061240804cc26e3152c373cebe4c8e263c74a7465b90acab396226",
+          "semanticHash": "d8617700a8e77c170ebd035ec8993cf35460b93311505efdceb93a08c0fb4b8f",
+          "instanceIndex": 0
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Pade-cancellation-order",
+      "relatedIdeaGroupId": "Pade-exponential-integral-error",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "An exact beta-integral remainder is evaluated at a moving argument. Its exponential rate requires an interior Laplace maximum and Stirling normalization.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different tilt parameters; former fixed Taylor coefficient draft rejected",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "8ddedb3087cd2229c0e6d3d311ae970a798619cab85298357fbb09f8efb6fb1e",
+        "recordedCorrectOption": "\\left(-2 + \\frac{\\sqrt{17}}{2}\\right) e^{\\frac{\\sqrt{17}}{4} + \\frac{5}{4}}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Add(Integer(-2), Mul(Rational(1, 2), Pow(Integer(17), Rational(1, 2)))), exp(Add(Mul(Rational(1, 4), Pow(Integer(17), Rational(1, 2))), Rational(5, 4))))",
+        "independentTex": "\\left(-2 + \\frac{\\sqrt{17}}{2}\\right) e^{\\frac{\\sqrt{17}}{4} + \\frac{5}{4}}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_59b8984ba3a2bfdbaee9",
+          "rawHash": "89058816c23b93c5bbced902a20ab7e67f674179ff016058b829d71aad222bce",
+          "literalSourceLineSha256": "8b5fb91aad1bedf4b56e3c59516aac21b5789bed2a1797a7aebe12a6f1baf6b0",
+          "contentHash": "7abb4733a3d96b917c0fe5208fe43b2f6e764a12ff92c750d730e00a14d08b47",
+          "semanticHash": "045949ba7480a7f96db8375a4bbd8eebbbbc2c1e92747d910b5334dc28c13a49",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_7a9ee5fb2721686bd437",
+          "rawHash": "6f79bf6e1dd790890a2f99efe54e8260888b8dcdc27e76be05b2cb0973146254",
+          "literalSourceLineSha256": "cd1dee5dba58440f45db28a263f34fe2b2088a345277db5021828c76afca67c1",
+          "contentHash": "f0d19a16054df5f2949fa4156e4a0da1a7ae3a74860fa2455d858eae1ca96546",
+          "semanticHash": "3663e4a37eb6b8f475420a6ce54e8f89daf3c478d2683e1652161daeee020b63",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_3b896a99d7bbba99e605",
+          "rawHash": "0c525d15bff5018e76dc1b29c0cebdd32fa8ed17bb0b0d612db1f59d4abc9e73",
+          "literalSourceLineSha256": "662fef2b89a14c117d75a8009919d16210e51cbfde4f90dea21ee691359fbc65",
+          "contentHash": "3908e0e20c8cced29ccd299a7d2d82b4f813cea10376f370554771ae7fe60e61",
+          "semanticHash": "dd5d2f9d029abaa77c757829bb7012a845c60aae08af6ae19950c3a92778106b",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_d36cd6b6200da8c220fd",
+          "rawHash": "63a361e7bf832d3afc9ef20722bb595444385be7bd9d4f1757135ae2727d103a",
+          "literalSourceLineSha256": "815e23184ec05a318ae30ecafa472071591d0cbfa609be438318b6b751b983b1",
+          "contentHash": "9d42d46eba58b87854f03f808db28cd895adbd964cb37178a3021dc0c788ebc8",
+          "semanticHash": "faba899137111c69327f4d198c270bd7f45333bc23106f26a501146d51c24779",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_dd5d2f7ea94bbf2697dd",
+          "rawHash": "2890e1f57575bf58729d18f6ad52fb626c1f24b205ae0c95fda0d6083f9566d8",
+          "literalSourceLineSha256": "a67cc30064ca1fa2951f5bc789946cb6c597ecea830b8f14133ce4acc40e82bd",
+          "contentHash": "4f93b3e9c2d6abe8d1dd6a5fb18cb1444414cedb72fd5e9722666194179b5e2d",
+          "semanticHash": "b91f436950b0f16284258256d924faf22aceef6116f2e0ad599c2d414bf72286",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_19bfeb759054af7202a9",
+          "rawHash": "7693fe601e652b32adadc7d5b72e3195bf7a0427c7d3924d415561c39bd70c4e",
+          "literalSourceLineSha256": "ce769c97be687b64c33a5da3de17c44a26f6530417e421e8dea76283ceae40df",
+          "contentHash": "4b9e851a6aae50f2116f9f366acdca6c37c2898a821d1c09ff0e2551ab267e32",
+          "semanticHash": "d6575eb3ba0bf9bfae37b3c9c8e487a0c96cc0d4c001c0aa500e9fdd3df0a903",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_b4bb8d5a1c95d738af1c",
+          "rawHash": "db304aec5543af770b0d3311eaea93aadec2ae2cb4bca59bbb2f0f7908400c20",
+          "literalSourceLineSha256": "6afe5710e9b9de9f811ac11f9a37a776763eb250b78f16648f913c8e4cd3efab",
+          "contentHash": "9d1cf09d828ee010832fadcffd311b270e84ebc974def55db4ca1a040a10de30",
+          "semanticHash": "22448c942d50720aba376aba7848be888a96cf3058587637017350bdb79bf433",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_6b3b06b4c375970e4090",
+          "rawHash": "3b91bdf1b1b82e2fbaf155e7d3b89f4d7da912122a73f06b715cddb148c1df12",
+          "literalSourceLineSha256": "67cac8dd2f5e87228365891af367da92b45ac46bdd638c0ab40e9600f0ed01db",
+          "contentHash": "d95f6492dbae35d954bdaf15e5551d101131c8b28f3bd88f8ab23a1a8a69e5fe",
+          "semanticHash": "b07a14d54be02e40fc4ee17ddf32277ef90e91965b63355ca61359b4c8a91124",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-factorial-asymptotic-remainder",
+      "relatedIdeaGroupId": "divergent-series-optimal-scale-remainder",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Use a finite geometric remainder, normalize a Gamma density, prove concentration, then apply Stirling. No divergent infinite expansion is used.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different resolvent parameters relative to truncation scale",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "2e3829aab30c2a200201c53b80ffaf39d438188f19c6d3cee588dbdd7dff79a9",
+        "recordedCorrectOption": "\\frac{2 \\sqrt{2} \\sqrt{\\pi}}{3}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(2, 3), Pow(Integer(2), Rational(1, 2)), Pow(pi, Rational(1, 2)))",
+        "independentTex": "\\frac{2 \\sqrt{2} \\sqrt{\\pi}}{3}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_dd9627f4dcee5b557b90",
+          "rawHash": "25d8a770305ded0cd7385ea00f19110bc9eae31a22f819e0c5d25bf00fb01da5",
+          "literalSourceLineSha256": "7e2c77d155731683f3cada49b7541073c33e880e870e98cfc51ee0986de6fa50",
+          "contentHash": "d664b927650cee9065f2ad0cb7fdf6f6c2d1a5efef2dbedf529f4f314efa6ef0",
+          "semanticHash": "1a8b0be980dc11e04b5265fb4e82e18d46e73d56f686137472211a0bbdb18262",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_8ed708efa40c3651f353",
+          "rawHash": "f140452448af4d398b7596457c6f6c6047786149624a4870a4ebf90dc27d8377",
+          "literalSourceLineSha256": "c383da7e85ab0a543595742e0ff9ae9dc2e4218494ff2cc0723296c717941afd",
+          "contentHash": "d039ea4f1371027c7c48bf4bffab510099fe65f5a80e627daeeb24d4f7d945d4",
+          "semanticHash": "01ef29b84e57eecc3ab2af220d76d6c74db8fffdc1b243187af3ff8c479d46e8",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_70ca5d224d4e65a00114",
+          "rawHash": "9a98ffbf7ab69a1fbdc816e2d389ef2c6f2f336ae6ee677e8fdfa2ae6c5d890f",
+          "literalSourceLineSha256": "a842911a2c89906571254c25553e368c44ec3e3ced8291325414394cbbf1279e",
+          "contentHash": "f32b37e4c4e2537acffd88f37ac0e4fbc103fa6756df54ebcb41dcfa65459b7b",
+          "semanticHash": "d59881802ac190bc9f87abe34e739eac2e80fba84a3afff4d761b53225d6b196",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_6857571febda4899c459",
+          "rawHash": "bdadfacf6b7739f524a6b893a1458c8d4ad7cc3c701d34bb7fbd12db9d3f4210",
+          "literalSourceLineSha256": "5af2a2e70749cedccc7da0aef4fb229cee072f327797314b6f85236a954ae4b3",
+          "contentHash": "03ce49458bab31b9d38e290af343df40e9cd53699f68dcc16beb1a765dac14f4",
+          "semanticHash": "0dfae64d27ba8b581534043d8465f2c5e2b9b3ffc4cee58ecf786df346f6a593",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_2ed0e88b2c625ec2b78e",
+          "rawHash": "81a1095b53d23daadecb4a0562a893828f01ffb2a86e870aa5bcfc2fc7e51b99",
+          "literalSourceLineSha256": "7930e53b03f186e762d88f14a1e469bfe41d0b0561408461c9eba6d63d5c1e39",
+          "contentHash": "095345a104bd2fd17cf1a3227df20497f48436f55769720eccc9d567b74af006",
+          "semanticHash": "3de98b5040ecbaa6d0e6c30f45e9d17ebc0f69475ca04ba92c919ab3e7448d34",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_3cfb74d5d68110fb8cd5",
+          "rawHash": "aa25f76fc3601b1759a21b733a7a31d4b5614503b3b17a63cd03f9c3a2670af4",
+          "literalSourceLineSha256": "023d6714172f6b5adfed7a26aba6fd2cb5a068ae918b58109ae14efc3b83a1a4",
+          "contentHash": "5060589929614296a0604b545f22eda78ac02c038f487c89f13afeac4ce3cdc5",
+          "semanticHash": "a3836106fa3cc40ee45b6a09b27c75bbc5dc2e3c6ef3f09e362371501c34bd1f",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_108397ad149ed3256b2a",
+          "rawHash": "5dddefad013862be16a8cad78ca0edc672e1c641c866ced01ac6c2aeff245ab6",
+          "literalSourceLineSha256": "71c8357b3219b53ddb9b6c04ed00789538d049578e3b92e6a88385bb18f9e64d",
+          "contentHash": "c1f8b87c589078132e19b4b1d5c473b44cd37627e0f251df6dc4352983294d7e",
+          "semanticHash": "aa7596a6917674c221189d4696bd7352f432f503bb01e598eb83a919ee40cb00",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_c3af58e4a5da390c0856",
+          "rawHash": "26a8b4d6af60f858705904fe672cb35b5323c0627d2368714b96ada460044153",
+          "literalSourceLineSha256": "56fee92b252efc2120acb189cd7fea7d30d86f82e27e4d34861accae2aba1773",
+          "contentHash": "6043c9f54a362cdb78e07a620d1d83a378c9a93991a3659ae75fb8ca562c24be",
+          "semanticHash": "95ba5c68526337e38b133f77120d74ef816a9d0a9cab915ee4caab4ecbedda86",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Hilbert-kernel-sharp-constant",
+      "relatedIdeaGroupId": "sharp-Hilbert-series-inequality",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Asymmetric row/column Schur weights give an upper bound; a harmonic sequence and middle logarithmic range prove sharpness.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different operator aspect ratios; former external scalar variants rejected",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "97b0c488084f29e61f0e71773d7c9f5bbb95878f1ba4aba636a06c527d0bbee7",
+        "recordedCorrectOption": "\\frac{\\sqrt{2} \\pi}{2}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)), pi)",
+        "independentTex": "\\frac{\\sqrt{2} \\pi}{2}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_1190e6c234bdacc9d37c",
+          "rawHash": "2d6cfc4011d644cd2ed8722588afb68854831cf4f78f8d5ad826f2dd9e95173a",
+          "literalSourceLineSha256": "7eab277243d98a1484dba249db0e3719e2c90df601630123d1213fd1c7af13a3",
+          "contentHash": "ab184db42e58af48bc20dd0fd7f6dceae26b3dc2094330b74ca908729bbddfc2",
+          "semanticHash": "a3ff4db608433f9f08a66a92f06a5e8f76edcd2248a123504d38ce2c4ecc1c23",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_10fa6d53d088f77572f0",
+          "rawHash": "c1ab544c63a0089f63b592d4570e0c82776eece9e7b953f5e3508d1848ad9a81",
+          "literalSourceLineSha256": "a0546f1de3ed6eca160a0517af503a26aa1c56a45539716f37ab1dd84b871631",
+          "contentHash": "607e4f12fcab8b87421c15133211b663b40962dc888c37f8261bccdc6781fd6d",
+          "semanticHash": "f5fffc89f53b39130810e250c0079487f4be6ed31361f0d8759be624a631215b",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_22a900bced15409c37a0",
+          "rawHash": "8899505099a3f794796f3f778b1bc2d77087bfd5c063576bd5606d06632c2042",
+          "literalSourceLineSha256": "55c50a288c13e512e6ad344d2a892feb1da8303b001de36e6ae72151c90cd3c2",
+          "contentHash": "bf63480a91b7f8bfa63883d9e2bd76f368806ea68ed1d7dfc738591e454be02d",
+          "semanticHash": "27aaecbada3214868b0d62c89bbe7159372210b3f59710e5b73d0e6f96f9543b",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_6c44cfe5bf80a7ca24f8",
+          "rawHash": "b86c90578d79698317b8068a8f2dc0f293f47402a7e9805a4558059de5999701",
+          "literalSourceLineSha256": "f258fa6876dfa862310564fc437bdf13cbf1b6d2e93d7af3b3d86b3e3ae6f21a",
+          "contentHash": "201056394eedca996e4efb2d73e061f90d0ddc70b08522b9bd6757f45a05c0d2",
+          "semanticHash": "ebc597fae50ebd0af67a0485f473d00e95a409da529250da4f1649d90e55a194",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_de53640a286a8d516bee",
+          "rawHash": "d593292110a690ce6a63bf85f28f58d7460170bf6e10062177e5a584005476cd",
+          "literalSourceLineSha256": "4a7885ec9f9cba0a15d240cb711b9ad58a037fb48d950913800ed9e5bda01591",
+          "contentHash": "9b8991f75edf10285dd2fdda32ccc70f8586e1900a989edda02e405d9f18e8e2",
+          "semanticHash": "d8664618aea4c01034cae55a26d0c4baaa04b7409956a971595424510bb751f8",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_9df7222c92a376167e99",
+          "rawHash": "4857e00a0516bfeac61aa98e1b3d8b264d88341fdd14be785df9880e6cd9b410",
+          "literalSourceLineSha256": "261de39ad8fdf755e07a9a3c4f1adec559fe6063b13c2e9ddf0ac98486d8a32c",
+          "contentHash": "9f18875f0d0ed44c2521e8bea658bd9b29aae095d6bdebc50376686677a79cf1",
+          "semanticHash": "2dff7aa332641c330c334c785f174e55ca3bb952f51ac3140d85315af20dd75d",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_afd08d03bf94ebb7056c",
+          "rawHash": "3c4e0e3f564aa25f2e3093120300fedf55eedd4727931fba4b7e8011fbfb4d28",
+          "literalSourceLineSha256": "62f7a34904950c998d8fd112fc0ce53c96eb247a5d38fbf28c766e2bc9e3159e",
+          "contentHash": "c0d2a2256efb11ec64902ec54baf2740d08e925566cb86fb2d29b9565aad14d5",
+          "semanticHash": "df7db49983276344186a3f8981abe89367d377fdd3e71e25893e5bf5c13ed7fc",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_b3413e5c1c03afcede2f",
+          "rawHash": "79435cf31dca4a39d315db5778b6eae910d11e8e8ba46ba64cde30d1d1a536f0",
+          "literalSourceLineSha256": "802f069c2e9353c1ee0f552bb8a95ec2f22578b1631d62b628545214048b6c38",
+          "contentHash": "323e0669a418e3da9918650ab1958051c3bce3ec4113cc1e73148d80f18e1239",
+          "semanticHash": "2809411a1298ebd397f57cef2ce75b414ee1b5f7ed24372b7fae3c433331ec4a",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Carleman-geometric-mean-constant",
+      "relatedIdeaGroupId": "sharp-Carleman-geometric-mean-series",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Polynomial weights change every mean. Weighted AM-GM, an exact tail telescope and logarithmic sharpness establish the best constant.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different polynomial weight degrees; former external scalar variants rejected",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "dac9a9b4282f711807654e1d81bb35a08080c359bb8fe5eab310cdaf5612804d",
+        "recordedCorrectOption": "e^{\\frac{1}{2}}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "exp(Rational(1, 2))",
+        "independentTex": "e^{\\frac{1}{2}}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_8b951fffd2c75ed1dd40",
+          "rawHash": "78717fe4c4b8cfed9a0cc1e80abdb61e8931c1ad1e96e846033571e167d48cc5",
+          "literalSourceLineSha256": "47f891587b763be0499ae08cf7ef0b07843a64e454a9a6229afc894de6e682d7",
+          "contentHash": "7dc0aac54b75741ad621a24ecae69411f6250332868fb97f74b238f24de04570",
+          "semanticHash": "542d8ad3340eddd282d42bd497fd5afaf6879daa71fd67f4aeedb18336fbe53b",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_9de600956be20e2bca00",
+          "rawHash": "7b05df6487d091a5b5cac50c83f74ea92b71c12b86c5e2f8bc0aad26b8117fff",
+          "literalSourceLineSha256": "d11372e4328a169b019ff8f572575f1f3d5ebd9df1a71e41166b4f6daa8e0699",
+          "contentHash": "0fbfa77607224f89877b753dc87a2b613643303ea2c4b491c2d2d86dbb8061ae",
+          "semanticHash": "29162f5f397ee7403dd22ac05a60d4f865a3e3d450a0fe8e2318ae4484a1da19",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_2dfe5db4934cd8e483a9",
+          "rawHash": "8cf30aadfa7f981b59e05da80205ec259f4c8d50a5955c94be3d0aeb515c42d0",
+          "literalSourceLineSha256": "4845d04c370f36dfc30d591ad91c10e3d57a4474eadfac06df525dee0a560e90",
+          "contentHash": "51c2fb382efadc751c11e31075629309d5ae314bc42c5c86200f7a6b94a2f7c3",
+          "semanticHash": "55a7884def34930c1e8f61fa790ae8ca5e4426d90d15d2804b6d26f7eef9820b",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_a8e19dc596c7f25690fe",
+          "rawHash": "80fdc0a9c11cbfd01e7939be6df57dba3e8977d9bd5d0407cc86811b2a0ffd11",
+          "literalSourceLineSha256": "23e3a4b9ba7cbe629e650fcec4d6887a5a3b811f32f917b4300e03072b7c0759",
+          "contentHash": "7d871888b6558f354c54de00bcc8cf5711108459cba32e63ba258ff9ac89c39f",
+          "semanticHash": "acdeaf5de24e976e2215b68133de5765b291cd9e5f49a8c6d38fc1bcca45d247",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_1d2fef4ab5ad6d9b9cf6",
+          "rawHash": "b28295d30fac46d95f6f5b039ffa92ca3cbadfd3f1ade81cc7dd4757987bc7ff",
+          "literalSourceLineSha256": "531be70110ce8d86fbfd930ec305a69c00a149d2166d3543c95c173f6a7ec62f",
+          "contentHash": "f8c1394d05499c719895e32a398c51ffeb0d5fb7636addf9fa4c8c352bc6a70e",
+          "semanticHash": "ddaa1db68d036223e516bd2e632a06b12e2c83af0b9b56c609f50d8c7f40533c",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_fda2de0406d2983461d7",
+          "rawHash": "b41847d6ae33e714052e0c5645b7dc781995bd054d944222602198dfe8b670f3",
+          "literalSourceLineSha256": "5d7b8f6ac16260385cbe1e2f23b6a8e0a4efdc445b5b3f7bab27439aa6e7d788",
+          "contentHash": "568890d5642d47a7b9ea607418ca4e987d08e9e68c96449dd6a1155777dd3530",
+          "semanticHash": "072643c1127e3105014432d2d3cb9fb977a5eb96b547f10691798be7d1c0e3f0",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_30a9a9601ba2156f25bf",
+          "rawHash": "f0a14ced3d13e724b5b1145a39fc7c9c62fc5069e788f73f8117b707eead2a76",
+          "literalSourceLineSha256": "93ff9573fe0644e4ebcda8d18206b986d0d3dc7fd4bc1e05a9c230905fc97848",
+          "contentHash": "c9e467ffac6b64980e15ec88a724d320f6ebb1e3b9de4b54551469f80fc5ba4e",
+          "semanticHash": "1a826a6256fc16956132dd35c3663e16b0a9490f45acd50607baf940f50aafe7",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_d780d5a6c4eeb2a9637c",
+          "rawHash": "997d5d0b6c648b5c83b6bf30e5c31626acf97d66c8e49056f4df4bc9581b418d",
+          "literalSourceLineSha256": "59ead6265e92a7f7bdedaa254dbf4df46caf65f8ff9fbbd58dd06fcfd4278ab2",
+          "contentHash": "fd8193e3f27cd35bf9835a33a0fec6ec05ca9cc440ecc00e008429917348014f",
+          "semanticHash": "c6eb4da86ddf74b8bc39dfc036ad681700b66703e799df975a506a11046f77f4",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Dyson-alternating-cube",
+      "relatedIdeaGroupId": "Dyson-constant-term-recurrence",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Good decrement recurrence with zero-exponent boundary values yields the factorial constant term; unequal-block Stirling gives the limit.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different block proportions; former5-term direct sum draft rejected",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "a5879f92466cd55983bfc77647d2469bdd0ec8e8993882042d3dc52c497f626f",
+        "recordedCorrectOption": "\\frac{1}{2 \\pi}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(1, 2), Pow(pi, Integer(-1)))",
+        "independentTex": "\\frac{1}{2 \\pi}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_cf3610d6a79abf796197",
+          "rawHash": "2b0d8cd001376ccd4708516dd775d723326cbfa7e3de37b4b3e893ee75cd50f1",
+          "literalSourceLineSha256": "1a8b71e0a4bf68e8cc14040726271dcc04503ca8b0533532b864d51a748d8693",
+          "contentHash": "845886d3aa9e1066b83435901bdd1a12202a93bfb5a1044d2b42324bbbfdcf8b",
+          "semanticHash": "37403c8b2fe0e7057b14fafe8f7928ea40d1e54776e6027dcea6912f41b12897",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_73c294e89ead85875ef9",
+          "rawHash": "3e64c6668503d041a4cbd935df05684fe5271f0117ead1f691969f8a071dc948",
+          "literalSourceLineSha256": "cdba7dc1f7e5282885e087624590cbb408ac6fc7d72ca652e2fed9466c053970",
+          "contentHash": "d5242638f9a1b13b1f215a63d4f33cf898bf6e0dfc75d1cb62f0e27bc5d5d034",
+          "semanticHash": "75484553251aef8542c5f3e64c865abe82037c24d3240ac33e471184fbad8e8c",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_a7f6b2817777bc318ad7",
+          "rawHash": "f97fcd25e2d6c85cbb2408d1ad41d1b77725cd1829887fd5bfe8801d09b9b374",
+          "literalSourceLineSha256": "e6583492a19af16b45e3825fe183d1d34b7df007b9698246f01fd69aeedd5ea8",
+          "contentHash": "d2e2ba76c2f996cb46b3979741fff001f50352a5587d1c1497111be41be41899",
+          "semanticHash": "cb6be909b4f9922b8ead97dfd3389e9f77fbac02fea27b0142002d007c4c5435",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_6246d68ffa2d87590863",
+          "rawHash": "69059c31db6bf41bdd4d8d6ceffa3fe03814cfdaffceb73789e2271801e5f4b0",
+          "literalSourceLineSha256": "be7dbc7a1d4d25977c1ba1cdbdb9ad36e2cdc8922687c7a040fc029ca149d08a",
+          "contentHash": "628332ec84c7e4f0e66540e98913d4257d3353da591ca21e7b538fcbe0da59f7",
+          "semanticHash": "89a7b923d6f3c2139d49b6d377096db83d34baf21fb3f313953d5354db5d1e53",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_f81af478cb95ec7fa6a6",
+          "rawHash": "31160c1b4e71b9edb037fed58c11f266249e8352813b815ac3d82af3beea3b40",
+          "literalSourceLineSha256": "7781336ef95324bb29caaf412676eb80daa7bee9fb062224e92b750bfb44cace",
+          "contentHash": "ce2a96ec1a11b28b8d4ebefc7c3e8cdaf12aae99dcee66b6e04a0ae876dd0f01",
+          "semanticHash": "9e057710a122be6a3f40128dffda4d8d423d12651ef1e07a289b3728fca8e58b",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_4afaa5897f6a129bce29",
+          "rawHash": "69594cc80d14c802b25690e3bd2063ac914cd0c123cbff6941de3e92dd82b2e5",
+          "literalSourceLineSha256": "83fb906207f473d292baa3d5034fb865526f56183148908cfbc804167ba92c95",
+          "contentHash": "2b45f1b46d3ee65c58540aa8ec12ba0c78c2369625a0eb26518adb949c11a31d",
+          "semanticHash": "c4d0535e50c293f6bae989859d4fefb19ab70e44ca213688eba4c56312ef7d4f",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_98b5966b29f569c75034",
+          "rawHash": "e66a5ca6929b9596c9e3d941823679915b32096d1fe497220157b077b6428a9a",
+          "literalSourceLineSha256": "8d8d9576155cdc766e95c8cae6a9ecc0f852af39f2e3746e0c7b72bf71006105",
+          "contentHash": "8039ee7e227ef73adcc0845fac52abf36b1b8ed03fff025d7af2504776e5e95f",
+          "semanticHash": "5ac68c299c484431e97dcd1e3fbd1db3ebe32d19ba2fb7d289a569069192d807",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_e8d74cf13c12ef471192",
+          "rawHash": "44eb9d261fa46bf21285b6ec79d3c80a3148763f720c4aac34f26b937680db02",
+          "literalSourceLineSha256": "f8727441a873394730be17d4deab0b1d246d772afffa60e1b575e467ea292c3e",
+          "contentHash": "62fe31eaedbf4b0aef69bb2a037b97c0e9a306a07f6b78109e195384950eeeb2",
+          "semanticHash": "ae88f57272b8da0c440ff96dad3c3d9071d777e4a13bf5b62c1b677ea812a2ca",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Abel-logarithmic-sum",
+      "relatedIdeaGroupId": "Abel-Cesaro-logarithmic-regularization",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Finite Gamma products give even/odd partial sums; their Cesaro convergence and a second Abel summation prove the radial limit.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "integer shift differs by finite reindexing, so only two normalized shift classes currently",
+      "conservativeNormalizedInstances": 2,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "739c9af93fa80a9690377e85078173c2f9ea7b068b89700019df1dc75db033f0",
+        "recordedCorrectOption": "\\ln{\\left(\\frac{\\Gamma\\left(\\frac{3}{4}\\right)}{\\Gamma\\left(\\frac{1}{4}\\right)} \\right)} + \\frac{\\ln{\\left(2 \\right)}}{2}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Add(log(Mul(Pow(gamma(Rational(1, 4)), Integer(-1)), gamma(Rational(3, 4)))), Mul(Rational(1, 2), log(Integer(2))))",
+        "independentTex": "\\ln{\\left(\\frac{\\Gamma\\left(\\frac{3}{4}\\right)}{\\Gamma\\left(\\frac{1}{4}\\right)} \\right)} + \\frac{\\ln{\\left(2 \\right)}}{2}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_227199296c76c8dc0f5b",
+          "rawHash": "bae2fc67a9cb8869f8790c90b3d045c6c8ff1ddc29e5c645b0552aac65b30134",
+          "literalSourceLineSha256": "796ef35f51a741db338f51b232cbe9324b2d4d4c94dacec99bb5ba8f061d686d",
+          "contentHash": "48385aa4eca18744419be8c3303c4d467793954ff41c820758d779a6c34ae355",
+          "semanticHash": "f1194717cd57744d61110c7e28137f904ae7c5e03d4ea8d788d3fa727a1818f7",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_0871e0de0ecd1cde81ed",
+          "rawHash": "c839c08f72ebb2d107d356e2ba068d26cb8665542fd74b016578fba4d62351f3",
+          "literalSourceLineSha256": "34905dc16e8c404f44fc0661d77a2732395058b43c9b070dd29fe6334a1e7639",
+          "contentHash": "21c7b40330e1a0dfdc15e1d746d6b607065f2fa8a575d4db7282793fde2ab3cb",
+          "semanticHash": "307d689618b1c6b3a17a6c83eb83da4b1f004fe155814d2d7d4188afd63a93a5",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_641217e286428df5c42a",
+          "rawHash": "0072ffbfadc66c0af302a02184153c57db06c8a86467985a5354bea2cfc6708b",
+          "literalSourceLineSha256": "794406bbcaf92a73ddb9a9efc3e53768fa613def18be6d43f4aac694c24b973d",
+          "contentHash": "24ada3c4cca72dc59070f92895fcc7d6ec5f12e43230f43a395c5b1966a00d75",
+          "semanticHash": "b675053c8d6938f3f2218ba3375f24657d06e357a693f24242bdbb89d6540a85",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_575cd9203606de79a0bf",
+          "rawHash": "0f9da7935da1be4d97b7b501f165b17a37c4e9dadf710ce1c87dbdbc52693526",
+          "literalSourceLineSha256": "00f8d7ba1ea6ff21b6c9e62d4c773b9e84db152d274a6030d1c7c12d610199d3",
+          "contentHash": "05941537f5689d8659adb494d09ab1bd0550c7c57054a295902279b51a67b960",
+          "semanticHash": "850e616fa1917b801c2920e26be2e350f149c514404c5ac3949dc524e2f66873",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_423e0e8766303ad582ef",
+          "rawHash": "a27e82debf41a66825203ebb7899665e3d08f4dcf93baafe7260dd00e28dfc7a",
+          "literalSourceLineSha256": "a391fb81942c97c0ae27869c784cc4ec16ea2d5188a6d9a0644baece90f6b768",
+          "contentHash": "18afea73e81d8537b947907333c6b84078cfbe9e49143a9608b973c104d3d354",
+          "semanticHash": "d924540d1d9ba5a0c1628a61de695669f8aa16eae19d021b916648e1f26e2378",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_9757ab0763e313735304",
+          "rawHash": "ff5fd525f40e97a9f691508b77face02df17064ed958dd8b9d71a549369d17ab",
+          "literalSourceLineSha256": "50ec333e08f308d8d4c3f8a8f5a809a6d3aeaefd8076e0e43a8c59c1a62fee58",
+          "contentHash": "2a9691644f6e76ddede1794e81ea8e6307b06e8483bffa7f8b9fe2d1c0d90e2b",
+          "semanticHash": "9300733c71804c8c4fb19d68d7759b9bf9067a65cdfec95bfd4ea7b99962571a",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_344b89e78646bcf704c1",
+          "rawHash": "75f5d0439af8c09f022e67d0b6a3fb9382a4ece304f4b5021f01689e122388ce",
+          "literalSourceLineSha256": "7f531339a7ffabc52da839eaff704933f88315730b788cc33cc7c78dbed1597a",
+          "contentHash": "5579bfdcf7d5462ba1dff6007cf187fee6b57b5529fe0ef0f84efdcb88e158db",
+          "semanticHash": "fa3e4180deda98c89e2b05fe98303216f7671d63882ea992e3b307894964948c",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_099af490f143dca84919",
+          "rawHash": "733e02656917df91c93ad32ff58bb81a44ed777b18fc4c886dac70ee99301b1d",
+          "literalSourceLineSha256": "51c18564d4e155a6084dbf22462f918eb668f196a41c555d87553130b47d0fbd",
+          "contentHash": "8b99687bd71bbc3f6d9343986a9c128db17bcca67eac5b282989bbc77b1728b9",
+          "semanticHash": "d391b4a3db29dd9c170c9a540a45cacbaae40b2fe154d313413287354298ea02",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-maximum-entropy-sequence",
+      "relatedIdeaGroupId": "countable-Gibbs-entropy-extremum",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Finite tail coarsenings establish entropy finiteness before Gibbs comparison; the geometric distribution attains the bound.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different discrete mean constraints; related globally to Gibbs entropy extremality",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "e61bd0be0fef8c4bf13a2b2dfe05a7e25ab299c078c40c19169283b0e7361bda",
+        "recordedCorrectOption": "2 \\ln{\\left(2 \\right)}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Integer(2), log(Integer(2)))",
+        "independentTex": "2 \\ln{\\left(2 \\right)}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_6517984c9c4e15e67303",
+          "rawHash": "cf63067c67b4e6366918f1377e77d26336611fe0890fcd39f104981f2048fc56",
+          "literalSourceLineSha256": "c86fabb7789b80f4118c212ef26fcfc8fc1663fc4c5515725b9e5c6ab5760436",
+          "contentHash": "fefba793ec97e434f2c5a05bfa721a9fc1267af5d6445576b83e5431403b7408",
+          "semanticHash": "7fdac14d2b512cc709182a99ae09e5ef8cdc7fdd305a8e7843eac03b50947c6b",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_accb086d5407d51117c2",
+          "rawHash": "ec5f579ace3ee5d649a60c3fe2b3c824fae264aa9104fc2a43a953b91900771d",
+          "literalSourceLineSha256": "9d9668b72cab045ab82c3eddd9475701ba9bec083cc512a5c14088270222acd5",
+          "contentHash": "4711d4c970e047f8a80b3044e2659e58f3c4db26ba57b74ff08de0010247b2c2",
+          "semanticHash": "638fd8369794b2a4b071b61bb90854c931528caec8f4f94175508f49b1aafcd1",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_158cbb8ac1246ee3af87",
+          "rawHash": "7fa87d23bc22ae145c97090c36ca0ea9e2f274012bbc44c801ba8467ba4808e8",
+          "literalSourceLineSha256": "728b45432892425e7352683479c78ce29ecf55916b85191c68291fc8da3ce64a",
+          "contentHash": "a065a22cfc44a221a73c49d32a55d5a6f34c748024e24dfcee42491ec39b2ed1",
+          "semanticHash": "4a269f650a99c9cec75dd9bd1b7c8f4c82cda607c3edacb06476cb8a6054be8a",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_957b4a218c07f9ca5f70",
+          "rawHash": "cd08e9c41799d7be68c05ab3a62cdf68697aaf2093c68ec97d6a9068f511d12b",
+          "literalSourceLineSha256": "3004017a11ffaa0b2f424766364aa63ddc7f00a4a85f3d1ff40640d7f94bad9c",
+          "contentHash": "12a96067ae5143bb733d4d778ebd60ced76d9883c5b4d18674198dd0d9b39d4b",
+          "semanticHash": "109d32479eddfe9e44ded5274b8f9218e6ae8315ad1ee6d4e5e8e06901beb61c",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_431c42ef8a1ffe673b1e",
+          "rawHash": "2e85103112835772454842a36cb28b87fd2d61010e120d63c2180a448c9d95a8",
+          "literalSourceLineSha256": "a35ca46ef006bb36ec992a2d9e0a6e328c28176f88ba44acf9d7d0e925454af9",
+          "contentHash": "e879ad92e89b6fd039e282f4de7337d2b129362152806b4d0a401180f3b6d69f",
+          "semanticHash": "9bd66eb5cc70293f4e42d7215ac88ac6a2e3df725deeddb7aef5570280fd874f",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_b16ae768762e133b9a45",
+          "rawHash": "7086981ebc85b6e549ba56e23971ca8dbfccd1855b3ae3f00de5f879a0851bf2",
+          "literalSourceLineSha256": "61e0098cad823cd06f9ac96df4f319790d29e9a6135ea80d222fc78d3c3b78bb",
+          "contentHash": "b19c4e9e01b032c548bca2c3a556fe61db75abe44d6275a83fbd59918082a97e",
+          "semanticHash": "b4c170f5a6dc87eeda5258a74c9f126b0efee220ae17b5388f07613c836612d5",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_0b463b9674f4d1e39bac",
+          "rawHash": "624672f11591618ecb831d5940065ab439e975db980cee4a95baedb48e3fe6e4",
+          "literalSourceLineSha256": "65b9cd6419d2ae1968237acea5f798fa155b42e705077fb2d3ed483db3b124f7",
+          "contentHash": "e4e6e0757ac516dbb5a1103896f057586137c7850d60915440bfca97b2806ba8",
+          "semanticHash": "68d5660d53442ebd5cf9bb50f9f546818679c4b724340a720a463c673d39161a",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_6466e41e66fae7d1ca43",
+          "rawHash": "22ecbc942396f40c04065e1fe0f0b5a8a8e619bfc9de14fde78952ca7c4ffd94",
+          "literalSourceLineSha256": "912845fe887e8d6b5aa8c2dd19661f6dc0ca78fc82000cf7682279a357425fb9",
+          "contentHash": "d1ffd651414fbcad97aa61cae6b53bfd15049d8533298bbf66b249e86c3f6a82",
+          "semanticHash": "4b1b92e732b438957651e53a229f5b543db6a16db32f141b830266740292f52e",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-restricted-digit-convergence",
+      "relatedIdeaGroupId": "restricted-digit-Dirichlet-dimension",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "A finite-state Fibonacci count combined with two-sided digit-block bounds proves the sharp convergence threshold, including divergence at equality.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different integer bases change the language-to-size growth ratio",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "e753bb47c8c970144c3ab8a94ee8b1c8070bcb56189d58b61f6ef573a0ad2abd",
+        "recordedCorrectOption": "\\frac{\\ln{\\left(\\frac{1}{2} + \\frac{\\sqrt{5}}{2} \\right)}}{\\ln{\\left(3 \\right)}}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Pow(log(Integer(3)), Integer(-1)), log(Add(Rational(1, 2), Mul(Rational(1, 2), Pow(Integer(5), Rational(1, 2))))))",
+        "independentTex": "\\frac{\\ln{\\left(\\frac{1}{2} + \\frac{\\sqrt{5}}{2} \\right)}}{\\ln{\\left(3 \\right)}}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_d965d311eedee7a9bcd5",
+          "rawHash": "b3d62e44972d17e5954c9e13cd2306496b587f79e1832fe7e813f58d35341426",
+          "literalSourceLineSha256": "24632f3a2d454515ae48f1f643f991c8afe473a9bf8315f6db849ab4f3f35acf",
+          "contentHash": "122526b33dd05d3102d6fd02231b7dbaf01158bcf22abf52c669ac0998a44838",
+          "semanticHash": "f6a8bce8e0fd524f589ae93a36b2110958123dddf87d9b54974ede6b29f54774",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_af1a66fef2883bcff617",
+          "rawHash": "3b921d8ab05c8e1799afd0297ef7fa9696b002a5630394f513a4a44c80551584",
+          "literalSourceLineSha256": "b72ac8c1d92fe8b55aaaab3665dc715a38f9793f29c1969d011476c079d37cf4",
+          "contentHash": "89701efd14ea8cefa23f50fca7d82b873fefce6b4645c9f19744615971fc2dfc",
+          "semanticHash": "ce2b94a393e6110b80b558553e7521042d90e2a264da19165a8d1fb338291997",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_85a36695267d4fab2b97",
+          "rawHash": "1b8fe922f703199c9606b5616b55ce9466b988f18971c1fe779d7c4c30112e60",
+          "literalSourceLineSha256": "50d08502a83b2b28fd55504cd5c17ab15d63abf560420f9db705128d94fb7f70",
+          "contentHash": "8bf6595e4ce83b271d3a549ac8e55668b72e0bcb92582ba7761fdfc0f1d8f59d",
+          "semanticHash": "bc69e3a63db1a632f4080f83088dce5cc7d9a7cbc95131309cf2fcfb18c9a3af",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_8c0ce270fd136022c8a4",
+          "rawHash": "5b532c7fc31ea29808befb893c1128e184dfe62e9c4dbaca28aa9b64bdd4560a",
+          "literalSourceLineSha256": "d67bee9b696e458a25dce22d11bd531345cb203435bc0df8d2b935563bf3a8bb",
+          "contentHash": "91adead99eb87d91e26eb380362a20188affa961263286c66c0bc12a29565611",
+          "semanticHash": "392b8b646a3a954db69c1748675439c9c3edcc606e76dd6bc9b6082ed98be667",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_2382609b01ab971487b7",
+          "rawHash": "95b6c55e9598a913bf2fb5e9e06c9f78ac98f00d9356bcdeeac4e94ef365af27",
+          "literalSourceLineSha256": "03941c4b623aec1abe939c76599e800ea2519cc711aec205eb2552a1acb4e03f",
+          "contentHash": "51cf8fc13447be7e27468150651770577710f1663db1cc1c49c719d25490b974",
+          "semanticHash": "11f6ce1009699090ed5540189280e52c85f40630c0d747a78b7d63d9e4fbbcb1",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_a2f3ac105b69551da340",
+          "rawHash": "9fad5c80995e149c07ad963d0c9276f4b5ef2b8b080d5a6840d627c724e328ae",
+          "literalSourceLineSha256": "bc4d94d594e33e7d2411672e16688ab0166c5c9ec19ee7c647c4696db365d5b2",
+          "contentHash": "caa0d34ac5b5e19458f7df5e55ecf5c3ba43fc3e2b54c36bd2edf6588a3e6b1b",
+          "semanticHash": "a0f1305d9c20107af9955daac004c6b6271f017ad3f91e32cb1d7fd71b72ade2",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_409c755119888fe11aac",
+          "rawHash": "712f31e1221e89f2d65db2f36a6cbbedc9f583be60dcdeb2135832676781d4b4",
+          "literalSourceLineSha256": "b204d25bb8a5db64ab50bff2989226211eb2815e530a8936662c806c140e16b8",
+          "contentHash": "f4f209d2195d12bd6f087c3c138b25076dc7388939cde526b4d0950acabbdf53",
+          "semanticHash": "b8a00b8915e858a6d7b49c0f096c2f9505444b8a90c56539e4d1d1d0c2e0c887",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_260b968e8064751559d6",
+          "rawHash": "10a829572edfb1818aafa65af7405866910a1574ecbab1e3df5bf4850bc18448",
+          "literalSourceLineSha256": "5f1c0e550b79f3d485d9fe6feffd86cdd0c0487971475337443e2cb37745f218",
+          "contentHash": "42281774c47ee583a9a94b3e1ec4d4d45db9291feec9e6f12b10ba02920f9731",
+          "semanticHash": "a2c45113d0f8cd2a79f84c8f6fe1645367b1de7a944743228e9f03dd7b52c51f",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-conditional-double-sum-orders",
+      "relatedIdeaGroupId": "conditional-double-series-order",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "Identify a mixed discrete derivative; exact rectangular telescoping gives all three limits, while a wedge proves absolute divergence.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "one normalized kernel lineage; changing lower cutoffs contributes only finite rows/columns",
+      "conservativeNormalizedInstances": 1,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "825146addd4756ed290b27cf07cfb2ed95d2aaef819de9dbe1e882c79d5ca795",
+        "recordedCorrectOption": "\\left( - \\frac{5}{7}, \\  \\frac{2}{7}, \\  - \\frac{3}{14}\\right)",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Tuple(Rational(-5, 7), Rational(2, 7), Rational(-3, 14))",
+        "independentTex": "\\left( - \\frac{5}{7}, \\  \\frac{2}{7}, \\  - \\frac{3}{14}\\right)",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_d49bf937b2a97a2cd2b4",
+          "rawHash": "ff6af8eca94b9fb696a17e8b60e931886f6e356e62359bee234c8d07cdbc5782",
+          "literalSourceLineSha256": "950f17045a8482dbe50ff89d2fbd1a236646b9c3c4a1e498dc1377a6bb4e9dfa",
+          "contentHash": "74e5f392060f41eea0ea24ea3acb6de27bc80bb1d2f9fb1384f864fe52a405d5",
+          "semanticHash": "9155f6748e7f30ab4f31093ebb89e619bbf8cec3bb365740d64f5c5ff86115a3",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_0dc470f7c8f3d644ce1d",
+          "rawHash": "e5770d5540771538411192de9f805e66d006f2990f4b656c9d5da7b8563bef5e",
+          "literalSourceLineSha256": "9b6cdf27cd4ebf29f0e14f37f7cfb9cb752527a33ee3d45a1675b569d160b594",
+          "contentHash": "0a3591a4a4bfe2c3b533c1aea7fa9bef7f01c46bae18e385e3de51a6bfabb25c",
+          "semanticHash": "4e61d98093303cd4fdd38a71765f83500dc5312677051561096ec28696fcb91d",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_1b42a9f68b9f5bbe37e1",
+          "rawHash": "12030e92ea6e5222cec528c942aff62e28134aff7ce70dfe3fa7a75939cf5669",
+          "literalSourceLineSha256": "b54fc918fb1669cfab33da02eef3f9c96ea5f0b543d9dda4165c80c2af420728",
+          "contentHash": "4a793156738fbc39235d00f2961caf4a2a50a42f6603d1d467d322917bab4ec6",
+          "semanticHash": "c1030ec2117cb009a948abfbd7453900fa06c09e7c1f95a578ee49c3462bdfd6",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_2b7dc39038d87791f047",
+          "rawHash": "59768502263e8acb6300371fd27179e737aa899491104af7b56f6d466537f9ea",
+          "literalSourceLineSha256": "cbbc07b3554a1bea467baf094784cf83efbee2a5748b93d0d867ee03890f6ee8",
+          "contentHash": "115f5fea4beafd2218719e065e1c870fe8a8eeab1cadb7429bce9914f150ec21",
+          "semanticHash": "52cce5ceb5bbfc7f2c50f4633976762fabafa9e8983cc03d2ab0710b67ed6f7f",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_208affd3bebba22836ea",
+          "rawHash": "f50c2f1b4fb65db0acfd77919952f891ef9dd3bbb7b11c1c54052cdf511d2f95",
+          "literalSourceLineSha256": "d6a33b1b001389ebe7b790fb6c06c38e7b192c516c06702332f9caca4c836e9e",
+          "contentHash": "ab0ffaa512edb120a7cdc06338025c48952690b4276c215afda719d6dc153a9b",
+          "semanticHash": "7569e94c2c2cd1c041d88d8376015245b24d45694e247007972dfa964b72ffb7",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_84f1f6c53e8fedade3d2",
+          "rawHash": "8cd4f80591f965f536d3d09ef163f2fb704f9cea8425c2b0f6922c1f48d0f20d",
+          "literalSourceLineSha256": "1ddb56632a1df7d77dad99e679634213d0cdfd35acb68ab54bdec6aacdddf0fc",
+          "contentHash": "0ab9aa8336eac8e5da28645410afd53e232e41d81796f910da18f83aa2e220e5",
+          "semanticHash": "e1079c7e39dbe277a4c241662001b493c657d1709a98bd10297f77655b6e9a46",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_2ce5a67b971e0405ea51",
+          "rawHash": "eb87d1bc220a6243d2c3f25412835ae3ecbab15287003729d0053f78a3e3bea0",
+          "literalSourceLineSha256": "ec09c0ea1385fd062281a78cc4c577b10fff6df6282cc4b2fdd32ac7229e7f98",
+          "contentHash": "2e448a2a5c3d28de428cde0a366f8c860a41aff393875477e00cd1b82aaa73fa",
+          "semanticHash": "d719b303d67f6e9c0c96ad25be67138012232c4b71d44215881512c0049e9d53",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_61b2c9ea0bc9955482d3",
+          "rawHash": "d5583a07c6e86822c89311e7325d4bc24f0dec02ca50fc527e96fcf6dc8b71d7",
+          "literalSourceLineSha256": "d186cea8d0aed65182a71b3fc8b1655864cf07381a2a3997805794964cf2d093",
+          "contentHash": "7309fcca0a7c01179ed1ccc74a4c9fc04cf53983610180088743db35cd1f38cd",
+          "semanticHash": "a61a5909352d2fc8a4159694be005da52c221ee3b190a16f3564e979c7dd1e63",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Hardy-mean-sharp-constant",
+      "relatedIdeaGroupId": "sharp-discrete-Hardy-power-mean",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "centralDecision": "A tailored Holder weight and Bernoulli tail telescope give the operator bound; a finite power-law sequence proves sharpness.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "different power spaces; distinct from geometric AM-GM Carleman means",
+      "conservativeNormalizedInstances": 8,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "ceea1e35606b3f58ef324fa7cfb84063530338032a55822a5693626bd658674a",
+        "recordedCorrectOption": "3 \\sqrt{3}",
+        "blindFirst": false,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Integer(3), Pow(Integer(3), Rational(1, 2)))",
+        "independentTex": "3 \\sqrt{3}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_9af6bc774a889da27065",
+          "rawHash": "670919a7401df3e4f7e5caf154b73479a7bb4abd67143fdb3149e27c107278f2",
+          "literalSourceLineSha256": "40de8e1a12e9c561debc1a23291782ec607dff6c85a692958f610f21d9fb5fa6",
+          "contentHash": "21dd0248bf57813f1635452cd61b43cd6962f3c8be1e10ee96f4cf439df125b4",
+          "semanticHash": "eb67f9c85daaf74f0174650c344cb682e251571eb30b09773ed93406ea18e479",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_ad79379a1466bbf44465",
+          "rawHash": "7d2cfd3e807a3afad512beffa5b29ad5336372637af891f1647294d7e1963a4b",
+          "literalSourceLineSha256": "a44ce3c8c03d19a171c85655ba55fb6bc4e06d8bec5580817e2dabe1103928b8",
+          "contentHash": "eef13af2515b73b0bc802bc430ebb24e4213ec9554afe2d8071c5dc128445901",
+          "semanticHash": "94cc01515ac80e2410958582f0f8cea5aa31c8c1e968cd7367bd6a2042a53204",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_b862f15ca3584a97ff67",
+          "rawHash": "3a687ce5f39a22a4c8a9d92b3191200a02506514cc47c92e93563d6964c7f9bd",
+          "literalSourceLineSha256": "013f83f4165200fc9a9972a046e7353e8bd98bd08c5e6b85835a9c6d1fc6ff1d",
+          "contentHash": "41997bb066ce51bd51525668e4caafef4d8dd5595b5b487b8b58e08aa0e90fd4",
+          "semanticHash": "fb435940c71ad9672cb3566ff4d34c1f415e75cfa9bc7f85413780ed7a1042b9",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_f7d30d494a69e0703552",
+          "rawHash": "6ac4f2a225cc94886831524ee5a2fadbe09e5391c34ca571c44909ff4ce68452",
+          "literalSourceLineSha256": "9641a3d54780fe8c018e663f74c866bb0fef6ec25886f4b36d4ecdaf0e59e8e4",
+          "contentHash": "dd1514cab42480d8340fbdb6df0c205b987022d7cca6c633f38c43e6c6784254",
+          "semanticHash": "46cfac1e375a22d7a600af7d904a6ca7c072b3a5dd09a20112119534c0735744",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_262a19e835751a12c394",
+          "rawHash": "1d23c677d5be079637d91237b3eca4ac9b296d8c958a34f946b5ab1851c499bb",
+          "literalSourceLineSha256": "40182d03e19160b19617c72543d2cb5af457e1bfa65aed369eeb93567e3e2af8",
+          "contentHash": "480e863e7c8c3c5e304687b81e7528adb38a5f22dfe0fc1b0be73cc42e175678",
+          "semanticHash": "a12e6798748bfd07ac88f0ab4774ec8b31e1a3eba6c229dea8ea5c7b3bab7d4e",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_9abecc6a903d5979834c",
+          "rawHash": "845d32d431c69b8ddfe298fb5e8b05f86a9391562c1b0483056274bfe4e66b2c",
+          "literalSourceLineSha256": "0cc4005e99dfbf33172341a7e019371caa3ed8671b8b7d83076db2a2044da052",
+          "contentHash": "485a976b685f0fedb88d8e5a7788ca587dca57579bb52b969c7dc64283ce1201",
+          "semanticHash": "ca2db6e207c5ac14248e2f18253287ea4b4729996e934e20221f97c39ea5d76c",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_6af408655ab9dcad626b",
+          "rawHash": "12b7e2a3736d5744ca21d9e4bc9d5a2a742b33dd8c05af43a5913dadb446da86",
+          "literalSourceLineSha256": "a927bb0090fdfc1fac54d2490fa91ea43a9c733c6e3a2be08e8f3d9caccf2a6f",
+          "contentHash": "4572e68c084631db8ba7509baf48bd8d8dd4d2620ce271f054498e121178090d",
+          "semanticHash": "fe746a3762d0d4ec6298c5a3e1cf734c889bdc8f294094dc7120dc027b3aa957",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_207e0f86bfb61cfd1a91",
+          "rawHash": "69c4a2b61d8ddbd06bda8cc6de02d895473067880c64ce833a4fb04e7c0a7b1f",
+          "literalSourceLineSha256": "0d08534a9e7e4aeb47e766dd00aac05c909b63e18a4285c968003db725d9b692",
+          "contentHash": "cd3098ca9b85b1dd8a2468ed54ee02ed16bcc111923852ab5259913e13b1b1b0",
+          "semanticHash": "f8270439ff7fe4c48159c125af35675dc4c7a3ad9da48fe43738437354818345",
+          "instanceIndex": 7
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-Legendre-recurrence-generating",
+      "relatedIdeaGroupId": "three-term-recurrence-generating-ODE",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "centralDecision": "A standard ordinary generating-function differential equation fixes the analytic square-root branch. Correct useful content at Hard.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "same family, no Olympiad idea credit",
+      "conservativeNormalizedInstances": 10,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "577b2639fda632c5f3428c09675b0459f964feb70b544a72c2124e02496e0295",
+        "recordedCorrectOption": "\\frac{3 \\sqrt{7}}{7}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(3, 7), Pow(Integer(7), Rational(1, 2)))",
+        "independentTex": "\\frac{3 \\sqrt{7}}{7}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_83f0a5417dd52f380d87",
+          "rawHash": "59b6d5124ca09c4acc954740b21aa93aaa320bb6c7a8c98c3df441e33a3940e4",
+          "literalSourceLineSha256": "c68168e7fd83ce0d3dbbc746a7c68186162ff899a566e3c29af15568ee63f85e",
+          "contentHash": "a59cc1d5aeb2bfa0734151442493360654e998371b8d2bd6009c6cd15ca2faaf",
+          "semanticHash": "725d4580cec41ce37ad4f0a966dca7a7d34d863884a2ee6a1161bfb51c5df7f6",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_d598d8f80109cc3d2545",
+          "rawHash": "e377af3c36f7106a00ffc52e5910e59077b1865f2d945b5dcfa22f4cc75da02f",
+          "literalSourceLineSha256": "cccca09bac69349c141a21ed431d1828a7f97f0ed3996fbbaf111a1014b62308",
+          "contentHash": "71015be7a42ef0bf608786b95efc10991f3ec592f699f8bdaf4f2150ed92d435",
+          "semanticHash": "e3f7c4f7dfb462ce20c90129f7b8d79f9b993ba0b2c38ddf86bb373a3c8f48e9",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_2ac19d97652ba070f9f7",
+          "rawHash": "c22d9666d4cd941abc8527467c5adf0326f2f6b447298e30cdb47d33a01152cd",
+          "literalSourceLineSha256": "6724ed64ec271bb1760d60a7f2d136dab5660dfb5820b43b1cf68cb39cd075fa",
+          "contentHash": "ba2f6ee63299b711c9e988ab6cf590d965e9abc44bc9fa6606c95032fcbd3a93",
+          "semanticHash": "5467147e5387b274e325e2504ef65eac602e14e161398c15fed683e84ccaca48",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_7be798104bde02a76721",
+          "rawHash": "49341dd88bbc406e218a58f46131517554526419e709a4172ba98e3116873a59",
+          "literalSourceLineSha256": "4ddc9270354087b4991e7c50378a14528b2d92414b1adfb41e83dd7f3abcd01f",
+          "contentHash": "0862988591311badeacf02782ca658f48477f92da9a0d42d2324186208ac6235",
+          "semanticHash": "7b8d339d73bde7d737727c8a33da5723209db33951f3e0d0e072cb6507829e36",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_19319bd176519364e81b",
+          "rawHash": "363791a5bea972dae9f870c8c6f4373c0aa594d70b9461e4598e882c6be96444",
+          "literalSourceLineSha256": "aa6b45905742974f9472e9737683c733cf859ffe1bdd8cf286d5c46978fe8c78",
+          "contentHash": "c797482a4a568a4ed49a0df1b6b9674c19372cf0e61b9be81a7ab4d463128bd3",
+          "semanticHash": "1cc710b9bd53d163773d9bcbece9b6877dbb784100ec7ed4ecf1d8b6aa97832c",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_4a084d78531c63c68fda",
+          "rawHash": "490be9035bc56de8d614104d38a7b7365f343fb654102b73956408deedc03b2e",
+          "literalSourceLineSha256": "82059fc72d277240a627b967247314d62f84390980bd164d9db56374087f6ca1",
+          "contentHash": "a442779ea101d1fbde2a31e28b39061d45de4d0af2a5fbb944702e6d3ac51d23",
+          "semanticHash": "b8ae9606fba0e43a47dff8e38b70edfbdb9e36bbe6102a30de0f4837bfa35c76",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_e16d03345218c5765549",
+          "rawHash": "c0532a6d03562460720e41b6ebb0150c477dee3e2fdf084693cae8b8e3a4388f",
+          "literalSourceLineSha256": "43a85cbf86cfddeaa7d635cd49f7405efdc97d0f2c48669e42ab6b97c0ece259",
+          "contentHash": "c61951cd44e3f50743144988ee3361a90be728c99d7774509c27598d1f77389d",
+          "semanticHash": "2eb95863a67473efa387f7e59220bcbd9e270485574abe91633525d8fbd14b64",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_e639d8bfcb0b9bc33f2a",
+          "rawHash": "540206eacdb0e348f86637f02427ccce6aabf793e008c731582fd14ee99eb4cd",
+          "literalSourceLineSha256": "8fca49e33ff477638013946b8e1921579908789346d9dcaaccf6524b3c2adfec",
+          "contentHash": "adc1b6ba9c8293f20ce7f92cf0fce6cb28adfc5cbd5809a3ba911cf4bc8ade93",
+          "semanticHash": "aeb22adf263e027f20484ab4c899490096495f162217e354035882f0a6d5da3c",
+          "instanceIndex": 7
+        },
+        {
+          "problemId": "cn_qs_6c471e7ff6476199bbbc",
+          "rawHash": "cdb5231c7c0473d4619993db17e95dedfcbd47b2c5011f80ea06946078fe71ef",
+          "literalSourceLineSha256": "98b37843a586f355fb063f1c4f4830820e2f455d1a6c108407a06a65fed64c61",
+          "contentHash": "de8edf5bf4a58a78345d7838e55b7cb6c1a2942d3d66b2d12e463abd40b02320",
+          "semanticHash": "61ff146d0ebc93c37a234fc087dcc7529a565509849c05b0c5ba33661d972d25",
+          "instanceIndex": 8
+        },
+        {
+          "problemId": "cn_qs_648272a9b7d3e440bf86",
+          "rawHash": "5b8b1234733613d26b70dbf7ce81c5c8376ec3dab3bcb8eaba0df59dc475465a",
+          "literalSourceLineSha256": "0379b05730a1cb648948c85ef36772addf6e3c07df1cd96e76e1e5c24d2b00e6",
+          "contentHash": "df41ac6469aa67f18172aa983be99a8c66fe000ca32d23c5eb13f0136cb169fc",
+          "semanticHash": "e045ab5d0b43f35621eff6683aca429edc6d7d477cbd14dbb80d50d8c8c657ad",
+          "instanceIndex": 9
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-weighted-subset-q-product",
+      "relatedIdeaGroupId": "q-binomial-subset-generating",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "centralDecision": "The inclusion recurrence yields a finite q-binomial product. Correct useful content at Hard.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "same family, no Olympiad idea credit",
+      "conservativeNormalizedInstances": 10,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "b76752bd504b5fb137810d9b42e696165e6290b02e1acefa5cd99aa099ed3be2",
+        "recordedCorrectOption": "117175326428160",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "117175326428160",
+        "independentTex": "117175326428160",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_a3677b52ecc1b45c52c3",
+          "rawHash": "83b6e84a18b7eb337ae5aec41f7fb3498e05bba7e03f68ce3b01cd795a49ca18",
+          "literalSourceLineSha256": "edd5e095906f72e89bb9596f4a1d2a1cca20b53f615198935c40d0f0361348f1",
+          "contentHash": "bb508b36c077ac6f101be9da7fa36a1d2496d52c5c24c887e052cfd7f65278d2",
+          "semanticHash": "91e58c461b10ba2747629d7fce139ce14d6af28cac1f3ed2cd0223f782805564",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_7c1a304a56570906ced6",
+          "rawHash": "ec7100ae5fd7d4cf24b696156a1e195407627e7d36f24a75f8a143e9c379d82f",
+          "literalSourceLineSha256": "f9bb4c4078f872c4c96f1345cf539b5d340eaa096c8a69a68b644c8bd84bb223",
+          "contentHash": "ca1b872b76cecb8502f2fa68d996f86f4516b161d89b073e3a4b57757089da7c",
+          "semanticHash": "5b9e700d41457d1a0237747f4fa094bfdb3861859032b5360a5b528612b0e0ca",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_1f231112a369e0c1d651",
+          "rawHash": "d56c449a466a10f7a73fb78ab86bef0a2d9bc1f91322252bf8c1b207455d4606",
+          "literalSourceLineSha256": "a9d7c36d97291c6a9638ac5bcbe86c333f0e93ebc3fda11fdf5c634a021636b4",
+          "contentHash": "3d8617bd8396d0bc412e57dacca039f98987e5949dac57277110af85abd3d534",
+          "semanticHash": "5898b23354fc6a030fadb0c950e3154f8b73cea998227d2e6f4a698274af6c5f",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_33a5ba897b0b055fc316",
+          "rawHash": "140cc4088ac6d830f7c9c2703dae1c175b5b112fce0beea10fadf1c1e5e90209",
+          "literalSourceLineSha256": "3ebcd9343204261a994102c8f7c6a0e8f096325165ea7e48188cf265cf0d22a9",
+          "contentHash": "c5b53923dcc2921e81ef375824da64a68daff0bcfce96f3e40161a0d9df327f6",
+          "semanticHash": "15757af76fab78ba70b3a067ad9e69bba79a9bd2e0fde897adf33632896f52a6",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_ca846800eb51c1b5c7c0",
+          "rawHash": "003d80af4c70c3ad6afd759803ad3c8703e1c8bcb880bf6bc6dd6604c150dd42",
+          "literalSourceLineSha256": "c3445c54024231b9e064a91f1e7162855c1c2adda2cdf053cd258ed59a505113",
+          "contentHash": "d44d3800be376e9418a4a413538fdd9c1d179ee457206250654b53dd71036a9c",
+          "semanticHash": "30ec5cc4fda3557804ac2581d5686432bb3e8d7b4dc5d12edbf07df09c3dcb2a",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_aa2dea59912ba5907885",
+          "rawHash": "e1c69b76f0580b956a6b0626946da3363802eb1be752c2853fdb428bc734b8ad",
+          "literalSourceLineSha256": "132bcc1c705818ebf62678a4427cc30d076e34702890626b33bd0fa4a15ed566",
+          "contentHash": "38ad9ca80f1b1700f6b4f8c6b00c8903d09a566cbe247e14b29a08b038e09f25",
+          "semanticHash": "a6fac0b540789c599f20a99ba426bb3026641d48088859ffc18171b4b3d0dca4",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_24cec96047743a425ee4",
+          "rawHash": "e9dc5f2a3404b2f16a93de8438f602967e2b3be4a6798917d8ef580dcefaae25",
+          "literalSourceLineSha256": "b8285ff51af68312e26e54fe4e380a7a4f28fdcc6ec7d1866616b51b9aece1cb",
+          "contentHash": "8156ab400de714a67878cd007842ade2ae89f94308f7c5af5693931d855869b2",
+          "semanticHash": "a4757a4f7ba6824d23f6c399ec1384cdcdfc806267a1a7dfa73edd5ff66fc02a",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_55bc503ba623e1ed86de",
+          "rawHash": "054adcc39ebabc2770e2ead7aabdb17270ad5289a7b22916335f06be725f4c36",
+          "literalSourceLineSha256": "3c165a1aa39f22506fb237519011385aef6fed5265d8eb6479a10fc7284a10e7",
+          "contentHash": "8a0e040399f18fdfbfafd78d0c919a04c6772b973307b9a8b75fd1f79cc8f558",
+          "semanticHash": "e49544b9b9e2f81dacbae4e0836f8efaedecb79bf516f6d7a107dd740c64ef74",
+          "instanceIndex": 7
+        },
+        {
+          "problemId": "cn_qs_91f22545d66a8af18c48",
+          "rawHash": "70372187b9b62bee480e0f73081327aebd342636559fe5dc5bf9d6ee47d84968",
+          "literalSourceLineSha256": "39612997c99bc6bb33b1017186d4f1821dcc91b3f041753209a4793f1a207183",
+          "contentHash": "837041698226653a518a21d9afc0627e752497fba6c96ad62764f53eb451b7c8",
+          "semanticHash": "0641710d078456141bdfa87bd3403f368d45af5c6512b15d80ee5bcdecf72657",
+          "instanceIndex": 8
+        },
+        {
+          "problemId": "cn_qs_3c715fb3191941f45931",
+          "rawHash": "4de36763256c1bc177a862b124b871134ff57dcb7e84e3cd59f5faa55f19cb5d",
+          "literalSourceLineSha256": "1835b6190b70c24cdf62124d98e2221382e12910aee4d8a6489e1093f5e840a4",
+          "contentHash": "40608d4e4a05a84bc7f03e9051e7cac7dc90e56868282a7c2c2c3d5e13fdc384",
+          "semanticHash": "84ccfe70b9457c228fa926a0b3c342c62ea3d6c827763b597b7c49dd55847094",
+          "instanceIndex": 9
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-binomial-convolution-Riccati",
+      "relatedIdeaGroupId": "exponential-convolution-generating-Riccati",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "centralDecision": "A standard exponential generating-function product gives a separable Riccati equation and an interior evaluation before its first pole.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "same family, no Olympiad idea credit",
+      "conservativeNormalizedInstances": 10,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "44bf3b6e5d78f6d2f024467e4393bc2ed9bcfdaed00b94eb8f2628d0b5d2a5e6",
+        "recordedCorrectOption": "1 + \\sqrt{2}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Add(Integer(1), Pow(Integer(2), Rational(1, 2)))",
+        "independentTex": "1 + \\sqrt{2}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_e5ab36b2d019233be1a1",
+          "rawHash": "9e0b2d84fe825ed31cf30f95856278afe4cd30040de1800681f4673cbf3e5f23",
+          "literalSourceLineSha256": "4e9933202daf73132615ae8dcd848f0584a03975d48cce8f98705d8982f84d87",
+          "contentHash": "67a9d963b6ac78e7d02966847873f180e2ae119049d8e4ab6a9a0ca060b75dca",
+          "semanticHash": "3a2b3635393cf25e9749c76cb6eaad5202fd128fb2340bafe75432298f7ea8e6",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_484bdad949d82facc63f",
+          "rawHash": "a61083877c641e73629f79b741d9194517207600d389fefe867af74aad42b7a3",
+          "literalSourceLineSha256": "ade2ebb3c74585d751eb207ffb22ac7a34f15dff8a0f445835e9a929a6876f20",
+          "contentHash": "5f97b26be5c81e7db7ad7647246ca7fc9105874adf89487ac2a0f5f458dae077",
+          "semanticHash": "5ec21929fc267ec953926362bb3532df5a4d748fa9fbdb556943e5a0c27b41af",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_1b4967b2c3e0a5dc32e6",
+          "rawHash": "676e6f6e363970256e0dada692e0765d543a37d4c27e4cff961f540bc0035eb9",
+          "literalSourceLineSha256": "2f4f8dc124972a46ef0f81d79d60af5e7571e392f4a241070737c33b3a504048",
+          "contentHash": "2905561c15fd5e691bc597febdfa9b75178e2381a0cbf7e7452383e94df93e62",
+          "semanticHash": "2c2dd877b314a7d5e35c0bf4618d4fc83c3bda4d1b1309069ee8e20810b59879",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_aee23358216fa238b4fb",
+          "rawHash": "a980065f5f314d2b113cc1d520e8f38afab8405f8df6e5f240564d00c3bae05e",
+          "literalSourceLineSha256": "ad149c4b2a1f422ee3a76bf15f4a81c3a171c6e20d77eacf579e810cf9650481",
+          "contentHash": "3591627689a8ab629c9d3fb437393418ee30e769566839988098596d296eb9f8",
+          "semanticHash": "9dbf29ff1f6c9abc82c369183de408598c5a796db68ee7b4e366e9a5b234d67f",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_aac7c7ddab55dca398aa",
+          "rawHash": "08814b764babc9a9a8d73baf17a2bfa3a29a03726eea50e9499f9551b2730d93",
+          "literalSourceLineSha256": "3c475319bd108ffef3775106838e1d86444a2527f1649fe3650e427210f5b892",
+          "contentHash": "4f3d74d52845f6bd54b9534bda3ae26122020fbf1441423d3f7bf3e5234bef0f",
+          "semanticHash": "be2d9cd645afab743975e3b3017a3ddea0b6113c7cb99c8ac50e2891a8f657b7",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_30b269f0c401500426f1",
+          "rawHash": "ccc5d8cee5a460a37e3501036a6788bf6ce57ab3129e6dbb03b56e55aa2d9c8b",
+          "literalSourceLineSha256": "597da265668815769308f639fd888b46b9933bfea53dd9d1b6982287553a7908",
+          "contentHash": "57afa418ab1b6d1736dc01cd1a369bacac32e44bc5b4f68fd58e8281a8881ba6",
+          "semanticHash": "d21d325214157f2e78b0ca552935d78ba89b0749b2c9d1ea4c7178bc6b15d13b",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_acb12299312e5090235f",
+          "rawHash": "f84644234958ec6ade4350a64510d26e1c4e130a34c9034670624f3e4b871a80",
+          "literalSourceLineSha256": "543125f3b3b6b0e03b47a8c4f8e33c171c16a9320f8f45c8bc9fd209568c401c",
+          "contentHash": "8b930b2e865446eca20c26e246ce265fd1cfcde19436ea00f35b0da16eaebffc",
+          "semanticHash": "4a6d1fa5c89a885c444ea64189bb37c908fb806ffd9486aef148d0a47664c998",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_3605554a5469be80bffd",
+          "rawHash": "c31d4d2ba27fc4044fae4089b779189afe015f06afd70bf4a72ea75d43af8e04",
+          "literalSourceLineSha256": "fb178150fd68fc6a1bcb6814fdbca0375b79d41c97da2daed11f91101d037626",
+          "contentHash": "5a221be6286784b1c6fc3fba8877a647dfb11aea6fc35ed34395cca18d0d6979",
+          "semanticHash": "e9799d772bd9ed81cbe8ba7f0b4cb5739fc4c458954f0ad868cb0e80c58cae7c",
+          "instanceIndex": 7
+        },
+        {
+          "problemId": "cn_qs_c4edcac18579c4fb73a6",
+          "rawHash": "d3202a39ce28286665d9850e37c68f72985e4a8f13e8266e5329fd392358292b",
+          "literalSourceLineSha256": "eaf4943801ea99e07de02700d5d90d4bc0d1ee04ae5ac8e0d89ce5054f67215b",
+          "contentHash": "e5187cb99f0fc726ab08131850c729561ed33bbb5cafb6d35645ec82dcf9b177",
+          "semanticHash": "f74a6fd56f9c273d950af29f6e9c345bcd0d9d388114a06d636cd52d276010d1",
+          "instanceIndex": 8
+        },
+        {
+          "problemId": "cn_qs_162f9c1f94390893875c",
+          "rawHash": "85957cf2f969b48e672afed3ca93ddc7cbbfbbf1f6728e394e3d06173c5b4278",
+          "literalSourceLineSha256": "f3cb3644fb724b5db3d8804b5d6e220bad876d8fd46abb4816d4649bc18f3e29",
+          "contentHash": "8ff450534c2a7e071df8fda56a49f0a90326628df130604244e37df5c82edbfa",
+          "semanticHash": "07cf4f2d161ac38c88008bff94a0c90a899bd7c105a28b3789273068873fd610",
+          "instanceIndex": 9
+        }
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-Liouville-Dirichlet-product",
+      "relatedIdeaGroupId": "multiplicative-Dirichlet-Euler-product",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "centralDecision": "Absolute convergence and unique factorization give a local Euler-factor ratio. Correct useful content at Hard.",
+      "proofReview": "No incorrect final formula or unresolved essential convergence/domain/branch step found in this bounded independent peer pass. General analytic arguments were read, not machine-formally proved.",
+      "capacityReason": "same family, no Olympiad idea credit",
+      "conservativeNormalizedInstances": 10,
+      "sample": {
+        "instanceIndex": 0,
+        "statementSha256": "c10b431c95652b33b97f100c59c44fa3aca9d4f1b69e1c2fa992ea3c3fbe433b",
+        "recordedCorrectOption": "\\frac{\\pi^{2}}{15}",
+        "blindFirst": true,
+        "timing": "Original25 group first statements/options were read before author proofs. Revised/new groups were independently derived during source review; this is not claimed as a separate isolated blind pass on their final wording.",
+        "independentlyDerived": "Mul(Rational(1, 15), Pow(pi, Integer(2)))",
+        "independentTex": "\\frac{\\pi^{2}}{15}",
+        "exactExpressionMatches": true
+      },
+      "coverage": [
+        {
+          "problemId": "cn_qs_1853409b9fe58cb88485",
+          "rawHash": "ef25ef52d81dbb862a2663dc4aa5a4e1b344f8081264b82de6e9aa3f83bec266",
+          "literalSourceLineSha256": "b67480fa5667a7a1fb44d9cba65a86356c2c5911d9beccae51786e1321f2880d",
+          "contentHash": "a5c0fefb230e0ae9268fc4a5606f9c9d107b6a68fe75d0380cd165bff1bbec4f",
+          "semanticHash": "e5338643459946b281aee55053548cc5da91470b2fb5e5baa31e678b5a5c05c4",
+          "instanceIndex": 0
+        },
+        {
+          "problemId": "cn_qs_a462a73b710c2c966803",
+          "rawHash": "c26905d49ed6a4285fdcaae70a46920a195d9311da44047faae24309fb4f5981",
+          "literalSourceLineSha256": "1c4d253e3b3df33f3013167dbba88bfedc1df850f478075f9f7d3d50e0794119",
+          "contentHash": "05f92daa132d9688461977d0fd9238e01a7963f3951505225dc6931ac86c5aff",
+          "semanticHash": "63824024761da084a068d95c61bb9b6e52c3a3e4abf53aff84cd56ae072d8189",
+          "instanceIndex": 1
+        },
+        {
+          "problemId": "cn_qs_5293daefc868609b6f1c",
+          "rawHash": "c9286ac0eb43e5b2fba8cb48fa07118e9898bcddaa1680a8fe26bcc88a58f475",
+          "literalSourceLineSha256": "9600ef73c2bb85b6df4a7d95b15bfc6f63023b9857fcecb264b96b36c227af97",
+          "contentHash": "22929b3fbc2e519f7d08039d3e0fd48e729430f37fc5cd82732851f047fdc819",
+          "semanticHash": "5cdb7106ae774e87f0a161fec26a47b5ad67e8e15b6a4d8426b337461a47086f",
+          "instanceIndex": 2
+        },
+        {
+          "problemId": "cn_qs_fc3a4b60eb14702e1793",
+          "rawHash": "2fabc17c090586fd6056586403257841ac62e5a4eee96dc080eeadfbf226e266",
+          "literalSourceLineSha256": "92b9eb4a7a017e141f7146cd9b2ef289f33151f0fd1d82b5b79a25d9c4281e77",
+          "contentHash": "09bb48914d83a0ded17c73b5f9523f90c47a509be9a909d862525a0d5e3e9e87",
+          "semanticHash": "0e65f624e57cac247193374fb3221effb12fc00d99c6353f7ca245061a1f33a7",
+          "instanceIndex": 3
+        },
+        {
+          "problemId": "cn_qs_b8bffc8523fb1fe68810",
+          "rawHash": "5b6e9f53125db41f684169a2a8570c1ce67f1f416aeb84d7f11a1d715d574379",
+          "literalSourceLineSha256": "10701189604129f0354b4d4123f6b7822d5e5eac69221723eeb60f203fd95ce5",
+          "contentHash": "b48d4c496545020fa38f07aebd0b148c9985a26d7c093363030db295999a58aa",
+          "semanticHash": "3d2047b0f8b8288c44fcdfecf96a00ea21b8eeb7ed41021adbb8157b3927f28c",
+          "instanceIndex": 4
+        },
+        {
+          "problemId": "cn_qs_f3ec9139a808df629109",
+          "rawHash": "8d8ceb5a150b26bf9e3ce9428998f05e0633a615271c513b171b14b79bc123b4",
+          "literalSourceLineSha256": "3f861cd369789c001669b5daf2d36133a569fcb9c046994ff76da177e4458ac2",
+          "contentHash": "a168b942d76c0051d5e60002785a8ffe71ebabf52f0528d13e6757d96271f066",
+          "semanticHash": "60fd533faba0d20a7b787f5f28bcee01420f6bff41a8cf24fe4ec1eb34af773d",
+          "instanceIndex": 5
+        },
+        {
+          "problemId": "cn_qs_f995d777ed508af696cc",
+          "rawHash": "31d23f3e91a9b8f28e269516176330b82533c08255f9036d878e53ca4a57d32e",
+          "literalSourceLineSha256": "66e69976df9e3748edae642e66227e036216f3ca5916e933ee4268f0ca4a65c3",
+          "contentHash": "22add787bbb60b086365aadc1f4d9e8f0853e03f773adc9d351c52d07700ecf2",
+          "semanticHash": "a2a3d16a3db012cc821cf5ee39d3b566b3236e4eee02623eb69606ab77582300",
+          "instanceIndex": 6
+        },
+        {
+          "problemId": "cn_qs_d68d475036b06adfb86d",
+          "rawHash": "45f4b983ca7ba153f9bdb5d767f8463e71bd016a550bfcff39fe928b968910e1",
+          "literalSourceLineSha256": "e1623124e17dc8e9c8df27c94f1e8d33a1b480f21ef6832df91dba940dbd4cfa",
+          "contentHash": "95dd40903c4c0409816dd62223fa231420d9706c390b11035153bd1b968f4648",
+          "semanticHash": "ed981b550118e2aa86463af07be4497c7ce7b6012a0633abd62e6591ccdb201b",
+          "instanceIndex": 7
+        },
+        {
+          "problemId": "cn_qs_f895f6fce177e95722af",
+          "rawHash": "175547dfb11ca990b079681b5882f355519867b987e9eeba8a411001c8da5d2c",
+          "literalSourceLineSha256": "cd589ce2afff373ef18b000a026aa03c63634877f280477f739fc9956dc1c351",
+          "contentHash": "ddb4e321a0e0459fd46e6777603ae8418af7f213fa18726cd23295309c842b8c",
+          "semanticHash": "d859450c38e23456a5dd6f2faf865b576643a1e274eb293c604e02082775e8b4",
+          "instanceIndex": 8
+        },
+        {
+          "problemId": "cn_qs_0e79ee5a4dde1ac26fc5",
+          "rawHash": "efd325f6a46104571911331a45d77247f411707831d3d5dacc493448d60e5633",
+          "literalSourceLineSha256": "e6705e75c994892c96a9929d61d063a11a582059a61eb32bf5a928f6d1cacb07",
+          "contentHash": "ec236cab6f840b6b40f490c0651b104683f56f94fd80c8de8a9c177fdf30586a",
+          "semanticHash": "d217261b72289fca87403fcc658bb48f53468701dcaca7660b27f9d17e8e2368",
+          "instanceIndex": 9
+        }
+      ]
+    }
+  ],
+  "initialBlindArtifactSha256": "42beecc92bc71d52e721ae83d3ef042f99316197783bd9ee6540a2c45327c180",
+  "initialRejectedDecisions": [
+    "Small Dyson sum was directly five terms.",
+    "Fixed Pade coefficient was routine Taylor work.",
+    "Fixed Poisson moment was a Bell-number computation.",
+    "Supplied Dirichlet coefficient sequence permitted direct read-off.",
+    "Four generating/Euler-product families were Hard.",
+    "External Carleman/Hilbert scalar changes did not create useful normalized capacity."
+  ],
+  "comparisonDifferences": [],
+  "scope": "All27 final family derivations and domains read; one independently derived sample per family. Every finite source row is bound to the reviewed general proof and declared finite domain. The authors separate1947 checks are supporting evidence, not relabeled as peer-executed checks.",
+  "crossTopicRelatedIdeas": [
+    "Least-energy-sequence shares the global Gram-moment-projection decision with integration/ODE moment-minimum constructions.",
+    "Maximum entropy shares Gibbs-relative-entropy extremality with multivariable Gaussian entropy."
+  ],
+  "rawItems": 217,
+  "qualifiedNewOlympiadGroups": 23,
+  "conservativeNewOlympiadNormalizedItems": 164
+}

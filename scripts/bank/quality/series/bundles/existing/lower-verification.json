@@ -1,0 +1,1975 @@
+{
+  "families": 36,
+  "instances": 72,
+  "newIdeas": 0,
+  "items": [
+    {
+      "familyId": "m3-series-easy-geometric-tail",
+      "instanceIndex": 8,
+      "sourceContentHash": "cd00de67fc73314ba01c18e4c6b1752e7151c7df57a12806a638db1d68bb071b",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "cd00de67fc73314ba01c18e4c6b1752e7151c7df57a12806a638db1d68bb071b",
+        "checks": [
+          {
+            "description": "The first term and common ratio give the concrete tail",
+            "left": "\\frac{1}{8173092077568}",
+            "right": "\\frac{1}{8173092077568}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Geometric series limit: The positive ratio is strictly below one; the first exponent is the actual starting index.",
+          "The absolute ratio 1/m is less than one."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-geometric-tail",
+      "instanceIndex": 9,
+      "sourceContentHash": "35e2cf79cef64a3ae4d5190012531bbdf7136d417ca7346395bbac78e80b94fa",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "35e2cf79cef64a3ae4d5190012531bbdf7136d417ca7346395bbac78e80b94fa",
+        "checks": [
+          {
+            "description": "The first term and common ratio give the concrete tail",
+            "left": "\\frac{1}{279577021469772}",
+            "right": "\\frac{1}{279577021469772}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Geometric series limit: The positive ratio is strictly below one; the first exponent is the actual starting index.",
+          "The absolute ratio 1/m is less than one."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-rational-telescope",
+      "instanceIndex": 8,
+      "sourceContentHash": "e2f73eae6999f7aa17c6209a5e9e1fdb4fa23cb139946c0469353515988dea83",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "e2f73eae6999f7aa17c6209a5e9e1fdb4fa23cb139946c0469353515988dea83",
+        "checks": [
+          {
+            "description": "The displayed adjacent-term decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 12\\right) \\left(k + 13\\right)}",
+            "right": "- \\frac{1}{k + 13} + \\frac{1}{k + 12}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The remaining endpoint vanishes",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "The partial-sum remainder is 1/(N+m+1), tending to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-rational-telescope",
+      "instanceIndex": 9,
+      "sourceContentHash": "117556e70ec96a86c155e52ebd20f5bd0e8ad35bcfd4f438db271ce9cde47a2a",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "117556e70ec96a86c155e52ebd20f5bd0e8ad35bcfd4f438db271ce9cde47a2a",
+        "checks": [
+          {
+            "description": "The displayed adjacent-term decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 13\\right) \\left(k + 14\\right)}",
+            "right": "- \\frac{1}{k + 14} + \\frac{1}{k + 13}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The remaining endpoint vanishes",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "The partial-sum remainder is 1/(N+m+1), tending to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-binomial-total",
+      "instanceIndex": 8,
+      "sourceContentHash": "e3d25f5b85930095644c6c43c13c0d9b84e4976a92edbd3e24607327229cd78e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "e3d25f5b85930095644c6c43c13c0d9b84e4976a92edbd3e24607327229cd78e",
+        "checks": [
+          {
+            "description": "The complete finite binomial polynomial equals the displayed power",
+            "left": "x^{12} + 12 x^{11} + 66 x^{10} + 220 x^{9} + 495 x^{8} + 792 x^{7} + 924 x^{6} + 792 x^{5} + 495 x^{4} + 220 x^{3} + 66 x^{2} + 12 x + 1",
+            "right": "\\left(x + 1\\right)^{12}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-binomial-total",
+      "instanceIndex": 9,
+      "sourceContentHash": "21bcdf8a842c41ffa4bc7739a6ad0ab3b0d715f788ef85e3be2f3b3b37ca076e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "21bcdf8a842c41ffa4bc7739a6ad0ab3b0d715f788ef85e3be2f3b3b37ca076e",
+        "checks": [
+          {
+            "description": "The complete finite binomial polynomial equals the displayed power",
+            "left": "x^{13} + 13 x^{12} + 78 x^{11} + 286 x^{10} + 715 x^{9} + 1287 x^{8} + 1716 x^{7} + 1716 x^{6} + 1287 x^{5} + 715 x^{4} + 286 x^{3} + 78 x^{2} + 13 x + 1",
+            "right": "\\left(x + 1\\right)^{13}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-arithmetic-triangle",
+      "instanceIndex": 8,
+      "sourceContentHash": "ba27fe3c968f27995469afb6103ce82361af630457320e54005385a19b73a969",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "ba27fe3c968f27995469afb6103ce82361af630457320e54005385a19b73a969",
+        "checks": [
+          {
+            "description": "The paired finite sum has the displayed number of equal terms",
+            "left": "78",
+            "right": "78",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-arithmetic-triangle",
+      "instanceIndex": 9,
+      "sourceContentHash": "943a2bb44236c052b632c62bd2527c216d496bf36d227d87bcd7465d3aec4451",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "943a2bb44236c052b632c62bd2527c216d496bf36d227d87bcd7465d3aec4451",
+        "checks": [
+          {
+            "description": "The paired finite sum has the displayed number of equal terms",
+            "left": "91",
+            "right": "91",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-ratio-test-data",
+      "instanceIndex": 8,
+      "sourceContentHash": "346c9ae525fcf420726530c51589e2f897bf91e52fb9fc84a945841ca975f4df",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "346c9ae525fcf420726530c51589e2f897bf91e52fb9fc84a945841ca975f4df",
+        "checks": [
+          {
+            "description": "The actual factorial placement determines the ratio limit",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-ratio-test-data",
+      "instanceIndex": 9,
+      "sourceContentHash": "6ab2aaf410bd4dfd2412ca82cbb5d727609b856fa63bfe98717a7e843f25564d",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "6ab2aaf410bd4dfd2412ca82cbb5d727609b856fa63bfe98717a7e843f25564d",
+        "checks": [
+          {
+            "description": "The actual factorial placement determines the ratio limit",
+            "left": "\\infty",
+            "right": "\\infty",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-power-series-radius",
+      "instanceIndex": 8,
+      "sourceContentHash": "1110b1c076711c12bcd0c7405581eeae724eda9cec24c8ee5702c0dfb04379a8",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "1110b1c076711c12bcd0c7405581eeae724eda9cec24c8ee5702c0dfb04379a8",
+        "checks": [
+          {
+            "description": "The unit-ratio boundary is the stated positive radius",
+            "left": "12",
+            "right": "12",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Geometric convergence and term test: The actual common ratio is the variable divided by the displayed positive scale."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-power-series-radius",
+      "instanceIndex": 9,
+      "sourceContentHash": "453fa6f9fb2dd7528981da99e75260860c454c3154880ce3ec740252d70c9b0b",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "453fa6f9fb2dd7528981da99e75260860c454c3154880ce3ec740252d70c9b0b",
+        "checks": [
+          {
+            "description": "The unit-ratio boundary is the stated positive radius",
+            "left": "13",
+            "right": "13",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Geometric convergence and term test: The actual common ratio is the variable divided by the displayed positive scale."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-nth-term-test",
+      "instanceIndex": 8,
+      "sourceContentHash": "3f61db739300de31cee701f5183afaf207e287a129ce42570b0bfb1499887ced",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "3f61db739300de31cee701f5183afaf207e287a129ce42570b0bfb1499887ced",
+        "checks": [
+          {
+            "description": "Division by the index preserves the sequence",
+            "left": "\\frac{12 k + 1}{k + 2}",
+            "right": "\\frac{12 + \\frac{1}{k}}{1 + \\frac{2}{k}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The actual term limit is nonzero",
+            "left": "12",
+            "right": "12",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-nth-term-test",
+      "instanceIndex": 9,
+      "sourceContentHash": "d53e6f83a42a9c4ee48dad357c7514ca0f32c8087a587a20ecbf0022caea6a33",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "d53e6f83a42a9c4ee48dad357c7514ca0f32c8087a587a20ecbf0022caea6a33",
+        "checks": [
+          {
+            "description": "Division by the index preserves the sequence",
+            "left": "\\frac{13 k + 1}{k + 2}",
+            "right": "\\frac{13 + \\frac{1}{k}}{1 + \\frac{2}{k}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The actual term limit is nonzero",
+            "left": "13",
+            "right": "13",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-weighted-geometric",
+      "instanceIndex": 8,
+      "sourceContentHash": "aa5eacc12954ad9ec57ca9dd14a3d482ba9f551734964fe7d6af87a857faac0c",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "aa5eacc12954ad9ec57ca9dd14a3d482ba9f551734964fe7d6af87a857faac0c",
+        "checks": [
+          {
+            "description": "Differentiation produces exactly the linear index weight",
+            "left": "\\frac{x}{\\left(1 - x\\right)^{2}}",
+            "right": "\\frac{x}{\\left(1 - x\\right)^{2}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The actual interior argument is substituted",
+            "left": "\\frac{12}{121}",
+            "right": "\\frac{12}{121}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Termwise differentiation of a power series: The argument has absolute value strictly below one.",
+          "Termwise differentiation is justified inside |r|<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-weighted-geometric",
+      "instanceIndex": 9,
+      "sourceContentHash": "b852e81328c5e4b292943d7afff39ec5d2c92c523bb5d23332328ffe2ad59940",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "b852e81328c5e4b292943d7afff39ec5d2c92c523bb5d23332328ffe2ad59940",
+        "checks": [
+          {
+            "description": "Differentiation produces exactly the linear index weight",
+            "left": "\\frac{x}{\\left(1 - x\\right)^{2}}",
+            "right": "\\frac{x}{\\left(1 - x\\right)^{2}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The actual interior argument is substituted",
+            "left": "\\frac{13}{144}",
+            "right": "\\frac{13}{144}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Termwise differentiation of a power series: The argument has absolute value strictly below one.",
+          "Termwise differentiation is justified inside |r|<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-exponential-Taylor",
+      "instanceIndex": 8,
+      "sourceContentHash": "2ce8a22bdebbff38eb4bdd68ecfe7a7ce2bb3500888c8b9ab58b08285dccfa0d",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "2ce8a22bdebbff38eb4bdd68ecfe7a7ce2bb3500888c8b9ab58b08285dccfa0d",
+        "checks": [
+          {
+            "description": "The concrete series is absolutely convergent by its ratio",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          },
+          {
+            "description": "The Taylor function at the actual argument is unchanged",
+            "left": "e^{12}",
+            "right": "e^{12}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Exponential Taylor expansion: The exponential Taylor series converges for every finite real argument; the initial term is included.",
+          "The ratio tends to zero for fixed m."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-exponential-Taylor",
+      "instanceIndex": 9,
+      "sourceContentHash": "0070da5b43056af5bd3c38032cdaec29e24a9102e9a9e9047cf09cf44e0b977c",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "0070da5b43056af5bd3c38032cdaec29e24a9102e9a9e9047cf09cf44e0b977c",
+        "checks": [
+          {
+            "description": "The concrete series is absolutely convergent by its ratio",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          },
+          {
+            "description": "The Taylor function at the actual argument is unchanged",
+            "left": "e^{13}",
+            "right": "e^{13}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Exponential Taylor expansion: The exponential Taylor series converges for every finite real argument; the initial term is included.",
+          "The ratio tends to zero for fixed m."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-logarithmic-series",
+      "instanceIndex": 8,
+      "sourceContentHash": "1b50e47c9a8ebbdd5027dcea6737205917f3743dfb3044ae4c6b59f4176a378e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "1b50e47c9a8ebbdd5027dcea6737205917f3743dfb3044ae4c6b59f4176a378e",
+        "checks": [
+          {
+            "description": "The logarithm is the primitive of the geometric kernel",
+            "left": "\\frac{1}{1 - x}",
+            "right": "\\frac{1}{1 - x}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Concrete logarithmic value agrees exactly",
+            "left": "- \\ln{\\left(11 \\right)} + \\ln{\\left(12 \\right)}",
+            "right": "- \\ln{\\left(11 \\right)} + \\ln{\\left(12 \\right)}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Uniform termwise integration: The closed integration interval lies strictly inside the unit radius.",
+          "Absolute convergence holds because 1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-logarithmic-series",
+      "instanceIndex": 9,
+      "sourceContentHash": "8c55d29cca2abf8771a3449aa91dd02d94cf60b610d12048b2d8130621f1beef",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "8c55d29cca2abf8771a3449aa91dd02d94cf60b610d12048b2d8130621f1beef",
+        "checks": [
+          {
+            "description": "The logarithm is the primitive of the geometric kernel",
+            "left": "\\frac{1}{1 - x}",
+            "right": "\\frac{1}{1 - x}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Concrete logarithmic value agrees exactly",
+            "left": "- \\ln{\\left(12 \\right)} + \\ln{\\left(13 \\right)}",
+            "right": "- \\ln{\\left(12 \\right)} + \\ln{\\left(13 \\right)}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Uniform termwise integration: The closed integration interval lies strictly inside the unit radius.",
+          "Absolute convergence holds because 1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-arctangent-series",
+      "instanceIndex": 8,
+      "sourceContentHash": "161ccdb62dfe6d659c1ffbc832e8c11a71699d98f5b121622527db7c06295b4b",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "161ccdb62dfe6d659c1ffbc832e8c11a71699d98f5b121622527db7c06295b4b",
+        "checks": [
+          {
+            "description": "Arctangent differentiates to the required geometric kernel",
+            "left": "\\frac{1}{x^{2} + 1}",
+            "right": "\\frac{1}{x^{2} + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The displayed endpoints give the original answer",
+            "left": "\\arctan{\\left(\\frac{1}{12} \\right)}",
+            "right": "\\arctan{\\left(\\frac{1}{12} \\right)}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Uniform convergence holds on [0,1/m]."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-arctangent-series",
+      "instanceIndex": 9,
+      "sourceContentHash": "ffb5b1ead4791fbaebac7841cb143f548266484bab562988bfff840a36fca6a2",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "ffb5b1ead4791fbaebac7841cb143f548266484bab562988bfff840a36fca6a2",
+        "checks": [
+          {
+            "description": "Arctangent differentiates to the required geometric kernel",
+            "left": "\\frac{1}{x^{2} + 1}",
+            "right": "\\frac{1}{x^{2} + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The displayed endpoints give the original answer",
+            "left": "\\arctan{\\left(\\frac{1}{13} \\right)}",
+            "right": "\\arctan{\\left(\\frac{1}{13} \\right)}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Uniform convergence holds on [0,1/m]."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-cosine-series",
+      "instanceIndex": 8,
+      "sourceContentHash": "3a1a9c92f6b6ea3ea3c2e9f2c82c1d7c4deb411e4a4f844b2b3d102a5159e7eb",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "3a1a9c92f6b6ea3ea3c2e9f2c82c1d7c4deb411e4a4f844b2b3d102a5159e7eb",
+        "checks": [
+          {
+            "description": "The even Taylor coefficients have the actual alternating signs",
+            "left": "\\frac{x^{8}}{40320} - \\frac{x^{6}}{720} + \\frac{x^{4}}{24} - \\frac{x^{2}}{2} + 1",
+            "right": "\\frac{x^{8}}{40320} - \\frac{x^{6}}{720} + \\frac{x^{4}}{24} - \\frac{x^{2}}{2} + 1",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Cosine Taylor series: The entire Taylor series is absolutely convergent at the finite real argument.",
+          "The Taylor series is absolutely convergent for every finite argument."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-cosine-series",
+      "instanceIndex": 9,
+      "sourceContentHash": "5054c2cf77613f3dec0d795b2cc4389903592c196da939955913bd3989d81fbe",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "5054c2cf77613f3dec0d795b2cc4389903592c196da939955913bd3989d81fbe",
+        "checks": [
+          {
+            "description": "The even Taylor coefficients have the actual alternating signs",
+            "left": "\\frac{x^{8}}{40320} - \\frac{x^{6}}{720} + \\frac{x^{4}}{24} - \\frac{x^{2}}{2} + 1",
+            "right": "\\frac{x^{8}}{40320} - \\frac{x^{6}}{720} + \\frac{x^{4}}{24} - \\frac{x^{2}}{2} + 1",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Cosine Taylor series: The entire Taylor series is absolutely convergent at the finite real argument.",
+          "The Taylor series is absolutely convergent for every finite argument."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-negative-binomial",
+      "instanceIndex": 8,
+      "sourceContentHash": "ccf5eb40074926baf626e6f32c10e6a16e31480ba2ad7461022afcc20d053f54",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "ccf5eb40074926baf626e6f32c10e6a16e31480ba2ad7461022afcc20d053f54",
+        "checks": [
+          {
+            "description": "The shifted geometric derivative supplies the binomial coefficient",
+            "left": "\\frac{- \\frac{x^{2}}{\\left(x - 1\\right)^{2}} + \\frac{2 x}{x - 1} - 1}{x - 1}",
+            "right": "\\frac{1}{\\left(1 - x\\right)^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Substitution gives the concrete sum",
+            "left": "\\frac{1728}{1331}",
+            "right": "\\frac{1728}{1331}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "|r|=1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-negative-binomial",
+      "instanceIndex": 9,
+      "sourceContentHash": "813fba8da438484c95a5761cb8c1827edf82f1c7581aa43668e12fb4826eda97",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "813fba8da438484c95a5761cb8c1827edf82f1c7581aa43668e12fb4826eda97",
+        "checks": [
+          {
+            "description": "The shifted geometric derivative supplies the binomial coefficient",
+            "left": "\\frac{- \\frac{x^{2}}{\\left(x - 1\\right)^{2}} + \\frac{2 x}{x - 1} - 1}{x - 1}",
+            "right": "\\frac{1}{\\left(1 - x\\right)^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Substitution gives the concrete sum",
+            "left": "\\frac{2197}{1728}",
+            "right": "\\frac{2197}{1728}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "|r|=1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-cubic-telescope",
+      "instanceIndex": 8,
+      "sourceContentHash": "addeda51a9002c6a43208a9272bba3102aa10958119ac9fce72d691ec4f429c9",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "addeda51a9002c6a43208a9272bba3102aa10958119ac9fce72d691ec4f429c9",
+        "checks": [
+          {
+            "description": "The three-factor decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 12\\right) \\left(k + 13\\right) \\left(k + 14\\right)}",
+            "right": "- \\frac{1}{2 \\left(k + 13\\right) \\left(k + 14\\right)} + \\frac{1}{2 \\left(k + 12\\right) \\left(k + 13\\right)}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The surviving endpoint is the original answer",
+            "left": "\\frac{1}{312}",
+            "right": "\\frac{1}{312}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Positive partial sums telescope and their last endpoint tends to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-cubic-telescope",
+      "instanceIndex": 9,
+      "sourceContentHash": "ed0df3409a903eb4a7857220dba0d0916b1b412a806763e3e4addc219f471aec",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "ed0df3409a903eb4a7857220dba0d0916b1b412a806763e3e4addc219f471aec",
+        "checks": [
+          {
+            "description": "The three-factor decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 13\\right) \\left(k + 14\\right) \\left(k + 15\\right)}",
+            "right": "- \\frac{1}{2 \\left(k + 14\\right) \\left(k + 15\\right)} + \\frac{1}{2 \\left(k + 13\\right) \\left(k + 14\\right)}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The surviving endpoint is the original answer",
+            "left": "\\frac{1}{364}",
+            "right": "\\frac{1}{364}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Positive partial sums telescope and their last endpoint tends to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-quadratic-weight",
+      "instanceIndex": 8,
+      "sourceContentHash": "387544fbf6b21c8c48ddf079004b6231437764233a76acd173d7b75dab8a9dc6",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "387544fbf6b21c8c48ddf079004b6231437764233a76acd173d7b75dab8a9dc6",
+        "checks": [
+          {
+            "description": "The weighted derivative produces an ordinary square, not a falling factorial",
+            "left": "x \\left(\\frac{2 x}{\\left(1 - x\\right)^{3}} + \\frac{1}{\\left(1 - x\\right)^{2}}\\right)",
+            "right": "\\frac{x \\left(x + 1\\right)}{\\left(1 - x\\right)^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Concrete substitution",
+            "left": "\\frac{156}{1331}",
+            "right": "\\frac{156}{1331}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Twice-differentiated power series is valid inside |r|<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-quadratic-weight",
+      "instanceIndex": 9,
+      "sourceContentHash": "97880e2feff58f78553172aa7eaefb642f775d5b4c55da4603d09ed2f6ab5d43",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "97880e2feff58f78553172aa7eaefb642f775d5b4c55da4603d09ed2f6ab5d43",
+        "checks": [
+          {
+            "description": "The weighted derivative produces an ordinary square, not a falling factorial",
+            "left": "x \\left(\\frac{2 x}{\\left(1 - x\\right)^{3}} + \\frac{1}{\\left(1 - x\\right)^{2}}\\right)",
+            "right": "\\frac{x \\left(x + 1\\right)}{\\left(1 - x\\right)^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Concrete substitution",
+            "left": "\\frac{91}{864}",
+            "right": "\\frac{91}{864}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Twice-differentiated power series is valid inside |r|<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-weighted-binomial-total",
+      "instanceIndex": 8,
+      "sourceContentHash": "8ca04114a3715258ee31a4fedeacce3847267ab03eb46560db4b004d79c16652",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "8ca04114a3715258ee31a4fedeacce3847267ab03eb46560db4b004d79c16652",
+        "checks": [
+          {
+            "description": "Differentiated finite polynomial matches every weighted coefficient",
+            "left": "12 x \\left(x + 1\\right)^{11}",
+            "right": "12 x^{12} + 132 x^{11} + 660 x^{10} + 1980 x^{9} + 3960 x^{8} + 5544 x^{7} + 5544 x^{6} + 3960 x^{5} + 1980 x^{4} + 660 x^{3} + 132 x^{2} + 12 x",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-weighted-binomial-total",
+      "instanceIndex": 9,
+      "sourceContentHash": "58494688e7e1488387383a56533ab57bbd275ace03462aea4b0e0c8c35a5fb27",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "58494688e7e1488387383a56533ab57bbd275ace03462aea4b0e0c8c35a5fb27",
+        "checks": [
+          {
+            "description": "Differentiated finite polynomial matches every weighted coefficient",
+            "left": "13 x \\left(x + 1\\right)^{12}",
+            "right": "13 x^{13} + 156 x^{12} + 858 x^{11} + 2860 x^{10} + 6435 x^{9} + 10296 x^{8} + 12012 x^{7} + 10296 x^{6} + 6435 x^{5} + 2860 x^{4} + 858 x^{3} + 156 x^{2} + 13 x",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-power-series-ratio-radius",
+      "instanceIndex": 8,
+      "sourceContentHash": "4666c976c40603775a43e5b87f08cf43bea6d9475e054db761c116f1adb4b008",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "4666c976c40603775a43e5b87f08cf43bea6d9475e054db761c116f1adb4b008",
+        "checks": [
+          {
+            "description": "The factorial coefficient ratio has the displayed limit",
+            "left": "\\frac{1}{4}",
+            "right": "\\frac{1}{4}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Solving the unit-ratio threshold yields the radius",
+            "left": "\\frac{1}{3}",
+            "right": "\\frac{1}{3}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-power-series-ratio-radius",
+      "instanceIndex": 9,
+      "sourceContentHash": "f1acefb8003c48c663e61d810b43159c9bce4746b52ab800eaef08246a68f51f",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "f1acefb8003c48c663e61d810b43159c9bce4746b52ab800eaef08246a68f51f",
+        "checks": [
+          {
+            "description": "The factorial coefficient ratio has the displayed limit",
+            "left": "\\frac{1}{4}",
+            "right": "\\frac{1}{4}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Solving the unit-ratio threshold yields the radius",
+            "left": "\\frac{4}{13}",
+            "right": "\\frac{4}{13}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "instanceIndex": 8,
+      "sourceContentHash": "a79220f3f178e308037c48d6858e3f8240852ed5bded13d02ce80c1d949db5ee",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "a79220f3f178e308037c48d6858e3f8240852ed5bded13d02ce80c1d949db5ee",
+        "checks": [
+          {
+            "description": "The displayed primitive differentiates correctly",
+            "left": "\\frac{1}{x^{3}}",
+            "right": "\\frac{1}{x^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The upper comparison integral has the actual lower endpoint",
+            "left": "\\frac{1}{288}",
+            "right": "\\frac{1}{288}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "instanceIndex": 9,
+      "sourceContentHash": "02ec54bcbe87fd3d5b1d5b4276805ebdef51fed82073418153a296181bc1940a",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "02ec54bcbe87fd3d5b1d5b4276805ebdef51fed82073418153a296181bc1940a",
+        "checks": [
+          {
+            "description": "The displayed primitive differentiates correctly",
+            "left": "\\frac{1}{x^{3}}",
+            "right": "\\frac{1}{x^{3}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The upper comparison integral has the actual lower endpoint",
+            "left": "\\frac{1}{338}",
+            "right": "\\frac{1}{338}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-alternating-error",
+      "instanceIndex": 8,
+      "sourceContentHash": "62611219c39d9b699e95da2c85aa55d10dd587c3ffb153c3b95df3a3bffde1c1",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "62611219c39d9b699e95da2c85aa55d10dd587c3ffb153c3b95df3a3bffde1c1",
+        "checks": [
+          {
+            "description": "The first omitted index is one after the final included term",
+            "left": "\\frac{1}{13}",
+            "right": "\\frac{1}{13}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The decreasing magnitudes tend to zero",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Alternating-series remainder bound: Positive magnitudes decrease to zero; terms one through the displayed integer are included."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-medium-alternating-error",
+      "instanceIndex": 9,
+      "sourceContentHash": "2947f6bccebaf1c19047cea30019fb3eca0a542f7b5ea6dcadb9ecbf7f5e3ba7",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "2947f6bccebaf1c19047cea30019fb3eca0a542f7b5ea6dcadb9ecbf7f5e3ba7",
+        "checks": [
+          {
+            "description": "The first omitted index is one after the final included term",
+            "left": "\\frac{1}{14}",
+            "right": "\\frac{1}{14}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The decreasing magnitudes tend to zero",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Alternating-series remainder bound: Positive magnitudes decrease to zero; terms one through the displayed integer are included."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-harmonic-generating",
+      "instanceIndex": 8,
+      "sourceContentHash": "6269cf352fe759ff28c056a7927262264ba1b63a1ada9f07aac18d91d261c000",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "6269cf352fe759ff28c056a7927262264ba1b63a1ada9f07aac18d91d261c000",
+        "checks": [
+          {
+            "description": "The logarithmic primitive is correct",
+            "left": "\\frac{1}{1 - x}",
+            "right": "\\frac{1}{1 - x}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The concrete generating value agrees",
+            "left": "- \\frac{12 \\ln{\\left(11 \\right)}}{11} + \\frac{12 \\ln{\\left(12 \\right)}}{11}",
+            "right": "- \\frac{12 \\ln{\\left(11 \\right)}}{11} + \\frac{12 \\ln{\\left(12 \\right)}}{11}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Tonelli and interior geometric integration: The ratio is positive and below one. The final finite logarithmic expression establishes convergence.",
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-harmonic-generating",
+      "instanceIndex": 9,
+      "sourceContentHash": "b2c8e8b45e5716011b4af068f046be11bc309aab927c0318e70de46fca027af5",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "b2c8e8b45e5716011b4af068f046be11bc309aab927c0318e70de46fca027af5",
+        "checks": [
+          {
+            "description": "The logarithmic primitive is correct",
+            "left": "\\frac{1}{1 - x}",
+            "right": "\\frac{1}{1 - x}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The concrete generating value agrees",
+            "left": "- \\frac{13 \\ln{\\left(12 \\right)}}{12} + \\frac{13 \\ln{\\left(13 \\right)}}{12}",
+            "right": "- \\frac{13 \\ln{\\left(12 \\right)}}{12} + \\frac{13 \\ln{\\left(13 \\right)}}{12}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Tonelli and interior geometric integration: The ratio is positive and below one. The final finite logarithmic expression establishes convergence.",
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-Catalan-generating",
+      "instanceIndex": 8,
+      "sourceContentHash": "aea3fa43ef194ab4fe82e3b00815812c01e327c89f90fc72e45728ed2996b903",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "aea3fa43ef194ab4fe82e3b00815812c01e327c89f90fc72e45728ed2996b903",
+        "checks": [
+          {
+            "description": "The half-power primitive is exact",
+            "left": "\\frac{1}{\\sqrt{1 - x}}",
+            "right": "\\frac{1}{\\sqrt{1 - x}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The integrated coefficient includes the required index factor",
+            "left": "\\frac{12 \\cdot 12^{- k - 1}}{k + 1}",
+            "right": "\\frac{12^{- k}}{k + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Actual branch and argument",
+            "left": "24 - 4 \\sqrt{33}",
+            "right": "24 - 4 \\sqrt{33}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "The chosen argument is strictly inside radius 1/4."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-Catalan-generating",
+      "instanceIndex": 9,
+      "sourceContentHash": "c3483013e061cb5f4c0fb7bfb967cdda527a7ba49ad3afde6862d02c30b4cb4a",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "c3483013e061cb5f4c0fb7bfb967cdda527a7ba49ad3afde6862d02c30b4cb4a",
+        "checks": [
+          {
+            "description": "The half-power primitive is exact",
+            "left": "\\frac{1}{\\sqrt{1 - x}}",
+            "right": "\\frac{1}{\\sqrt{1 - x}}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The integrated coefficient includes the required index factor",
+            "left": "\\frac{13 \\cdot 13^{- k - 1}}{k + 1}",
+            "right": "\\frac{13^{- k}}{k + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Actual branch and argument",
+            "left": "26 - 4 \\sqrt{39}",
+            "right": "26 - 4 \\sqrt{39}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "The chosen argument is strictly inside radius 1/4."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-log-integrated-geometric",
+      "instanceIndex": 8,
+      "sourceContentHash": "323f18ceb88fa78f0e217ccad0380a9bc1927b9b0cc67aee66d82faae4e7c127",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "323f18ceb88fa78f0e217ccad0380a9bc1927b9b0cc67aee66d82faae4e7c127",
+        "checks": [
+          {
+            "description": "The denominator splits into consecutive reciprocal factors",
+            "left": "\\frac{1}{k \\left(k + 1\\right)}",
+            "right": "- \\frac{1}{k + 1} + \\frac{1}{k}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The index-shift subtraction reduces to the displayed expression",
+            "left": "- \\ln{\\left(1 - x \\right)} - \\frac{- x - \\ln{\\left(1 - x \\right)}}{x}",
+            "right": "\\left(-1 + \\frac{1}{x}\\right) \\ln{\\left(1 - x \\right)} + 1",
+            "result": "exact equality"
+          },
+          {
+            "description": "Actual interior argument",
+            "left": "11 \\ln{\\left(\\frac{11}{12} \\right)} + 1",
+            "right": "11 \\ln{\\left(\\frac{11}{12} \\right)} + 1",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Absolute convergence follows from the geometric factor."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-log-integrated-geometric",
+      "instanceIndex": 9,
+      "sourceContentHash": "77ab109b79c9359d07f487878f7014c17a853c99d23e2b2087838d519ef5a50f",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "77ab109b79c9359d07f487878f7014c17a853c99d23e2b2087838d519ef5a50f",
+        "checks": [
+          {
+            "description": "The denominator splits into consecutive reciprocal factors",
+            "left": "\\frac{1}{k \\left(k + 1\\right)}",
+            "right": "- \\frac{1}{k + 1} + \\frac{1}{k}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The index-shift subtraction reduces to the displayed expression",
+            "left": "- \\ln{\\left(1 - x \\right)} - \\frac{- x - \\ln{\\left(1 - x \\right)}}{x}",
+            "right": "\\left(-1 + \\frac{1}{x}\\right) \\ln{\\left(1 - x \\right)} + 1",
+            "result": "exact equality"
+          },
+          {
+            "description": "Actual interior argument",
+            "left": "12 \\ln{\\left(\\frac{12}{13} \\right)} + 1",
+            "right": "12 \\ln{\\left(\\frac{12}{13} \\right)} + 1",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Absolute convergence follows from the geometric factor."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-series-beta-integral",
+      "instanceIndex": 8,
+      "sourceContentHash": "929edc2c6bea68f5e081165f6705cf8f918d5d71fa3966ce17ac9f80f9dbe74e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "929edc2c6bea68f5e081165f6705cf8f918d5d71fa3966ce17ac9f80f9dbe74e",
+        "checks": [
+          {
+            "description": "The shifted reciprocal decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 1\\right) \\left(k + 13\\right)}",
+            "right": "- \\frac{1}{12 \\left(k + 13\\right)} + \\frac{1}{12 \\left(k + 1\\right)}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The surviving entire harmonic block gives the answer",
+            "left": "\\frac{86021}{332640}",
+            "right": "\\frac{86021}{332640}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Positive terms are O(k^-2), and the last m terms vanish."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-series-beta-integral",
+      "instanceIndex": 9,
+      "sourceContentHash": "23dc08c727a543085496cb27043c6aefc804ae44d73a388b2615c3d1a73b4c9b",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "23dc08c727a543085496cb27043c6aefc804ae44d73a388b2615c3d1a73b4c9b",
+        "checks": [
+          {
+            "description": "The shifted reciprocal decomposition is exact",
+            "left": "\\frac{1}{\\left(k + 1\\right) \\left(k + 14\\right)}",
+            "right": "- \\frac{1}{13 \\left(k + 14\\right)} + \\frac{1}{13 \\left(k + 1\\right)}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The surviving entire harmonic block gives the answer",
+            "left": "\\frac{1145993}{4684680}",
+            "right": "\\frac{1145993}{4684680}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Positive terms are O(k^-2), and the last m terms vanish."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-trig-geometric",
+      "instanceIndex": 8,
+      "sourceContentHash": "83f9b6e212cd871929047d54284ddb416471138fd2ee00f7a7c4567eb86140f0",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "83f9b6e212cd871929047d54284ddb416471138fd2ee00f7a7c4567eb86140f0",
+        "checks": [
+          {
+            "description": "Rationalizing the actual complex ratio gives the real sum",
+            "left": "\\frac{138}{133}",
+            "right": "\\frac{138}{133}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Absolute convergence holds since the cosine is bounded and 1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-trig-geometric",
+      "instanceIndex": 9,
+      "sourceContentHash": "03a10cb3fc19eda75022bfebef3485e0189189b484eb5ddf4889f3c371c86eed",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "03a10cb3fc19eda75022bfebef3485e0189189b484eb5ddf4889f3c371c86eed",
+        "checks": [
+          {
+            "description": "Rationalizing the actual complex ratio gives the real sum",
+            "left": "\\frac{325}{314}",
+            "right": "\\frac{325}{314}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Absolute convergence holds since the cosine is bounded and 1/m<1."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-binomial-alternating-difference",
+      "instanceIndex": 8,
+      "sourceContentHash": "ec7d09543f0e09a5c2d4e72a66f8de3162f2c7f1171e0a89a021cb76a7729181",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "ec7d09543f0e09a5c2d4e72a66f8de3162f2c7f1171e0a89a021cb76a7729181",
+        "checks": [
+          {
+            "description": "Explicitly iterated polynomial differences give the claimed constant",
+            "left": "479001600",
+            "right": "479001600",
+            "result": "exact equality"
+          },
+          {
+            "description": "The exact finite alternating sum agrees independently",
+            "left": "479001600",
+            "right": "479001600",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-binomial-alternating-difference",
+      "instanceIndex": 9,
+      "sourceContentHash": "8666e96468c431204847e01fbb0e4fc79d9f1d25f47c28e3c48f97eed581a395",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "8666e96468c431204847e01fbb0e4fc79d9f1d25f47c28e3c48f97eed581a395",
+        "checks": [
+          {
+            "description": "Explicitly iterated polynomial differences give the claimed constant",
+            "left": "6227020800",
+            "right": "6227020800",
+            "result": "exact equality"
+          },
+          {
+            "description": "The exact finite alternating sum agrees independently",
+            "left": "6227020800",
+            "right": "6227020800",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Finite sum with integer endpoints."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-telescoping-arctan",
+      "instanceIndex": 8,
+      "sourceContentHash": "3e53763aee8adf0cb7e8fbc818817ce814616a78776ae600428b92845bf6bce6",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "3e53763aee8adf0cb7e8fbc818817ce814616a78776ae600428b92845bf6bce6",
+        "checks": [
+          {
+            "description": "The tangent difference is exactly the original positive argument",
+            "left": "\\frac{1}{k \\left(k + 1\\right) + 1}",
+            "right": "\\frac{1}{k^{2} + k + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The upper arctangent endpoint has the stated limit",
+            "left": "\\frac{\\pi}{2}",
+            "right": "\\frac{\\pi}{2}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The remaining lower endpoint gives the original answer",
+            "left": "- \\arctan{\\left(12 \\right)} + \\frac{\\pi}{2}",
+            "right": "- \\arctan{\\left(12 \\right)} + \\frac{\\pi}{2}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Partial sums telescope to atan(N+1)-atan(m)."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-telescoping-arctan",
+      "instanceIndex": 9,
+      "sourceContentHash": "c6c1eb1cd9a81a500f56cbabfb8e0f5b2434675783d5bf736f9ee34537dd2c41",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "c6c1eb1cd9a81a500f56cbabfb8e0f5b2434675783d5bf736f9ee34537dd2c41",
+        "checks": [
+          {
+            "description": "The tangent difference is exactly the original positive argument",
+            "left": "\\frac{1}{k \\left(k + 1\\right) + 1}",
+            "right": "\\frac{1}{k^{2} + k + 1}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The upper arctangent endpoint has the stated limit",
+            "left": "\\frac{\\pi}{2}",
+            "right": "\\frac{\\pi}{2}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The remaining lower endpoint gives the original answer",
+            "left": "- \\arctan{\\left(13 \\right)} + \\frac{\\pi}{2}",
+            "right": "- \\arctan{\\left(13 \\right)} + \\frac{\\pi}{2}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Partial sums telescope to atan(N+1)-atan(m)."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "instanceIndex": 8,
+      "sourceContentHash": "786eb43e6b22659b57d597465ad29664f09a141b952a695b13d36885b6ae217e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "786eb43e6b22659b57d597465ad29664f09a141b952a695b13d36885b6ae217e",
+        "checks": [
+          {
+            "description": "The successive geometric tails give the original closed form",
+            "left": "\\frac{2}{4095}",
+            "right": "\\frac{2}{4095}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Integer counting identity and Tonelli: The indicator counts exactly the positive multiples at most the index; all double-sum terms are nonnegative.",
+          "All terms are nonnegative; the closed form is finite, establishing convergence."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "instanceIndex": 9,
+      "sourceContentHash": "2f6b3a70bd08f3aeb926eb4fea8b71b14ee33aef60dd19f536d900ac302c5490",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "2f6b3a70bd08f3aeb926eb4fea8b71b14ee33aef60dd19f536d900ac302c5490",
+        "checks": [
+          {
+            "description": "The successive geometric tails give the original closed form",
+            "left": "\\frac{2}{8191}",
+            "right": "\\frac{2}{8191}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Integer counting identity and Tonelli: The indicator counts exactly the positive multiples at most the index; all double-sum terms are nonnegative.",
+          "All terms are nonnegative; the closed form is finite, establishing convergence."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-binomial-beta-cancellation",
+      "instanceIndex": 8,
+      "sourceContentHash": "4d15d49912651eda7efd1bd6096abf6c70dc329cbce14250837826e6c05b9c8f",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "4d15d49912651eda7efd1bd6096abf6c70dc329cbce14250837826e6c05b9c8f",
+        "checks": [
+          {
+            "description": "The finite binomial polynomial collapses exactly",
+            "left": "x^{12} - 12 x^{11} + 66 x^{10} - 220 x^{9} + 495 x^{8} - 792 x^{7} + 924 x^{6} - 792 x^{5} + 495 x^{4} - 220 x^{3} + 66 x^{2} - 12 x + 1",
+            "right": "\\left(1 - x\\right)^{12}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Independent exact polynomial integration checks the beta specialization",
+            "left": "\\frac{1}{32449872}",
+            "right": "\\frac{1}{32449872}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "This is a finite sum; both beta exponents are positive."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-binomial-beta-cancellation",
+      "instanceIndex": 9,
+      "sourceContentHash": "e6cf5300f67316a7501983e5c433f062b0630c3c6b653aa071a77c7b66697488",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "e6cf5300f67316a7501983e5c433f062b0630c3c6b653aa071a77c7b66697488",
+        "checks": [
+          {
+            "description": "The finite binomial polynomial collapses exactly",
+            "left": "- x^{13} + 13 x^{12} - 78 x^{11} + 286 x^{10} - 715 x^{9} + 1287 x^{8} - 1716 x^{7} + 1716 x^{6} - 1287 x^{5} + 715 x^{4} - 286 x^{3} + 78 x^{2} - 13 x + 1",
+            "right": "\\left(1 - x\\right)^{13}",
+            "result": "exact equality"
+          },
+          {
+            "description": "Independent exact polynomial integration checks the beta specialization",
+            "left": "\\frac{1}{135207800}",
+            "right": "\\frac{1}{135207800}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "This is a finite sum; both beta exponents are positive."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "instanceIndex": 8,
+      "sourceContentHash": "81ce9954a7dda91b1073f1f665cf3dd056620368196ae14397e8b6a9380574ab",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "81ce9954a7dda91b1073f1f665cf3dd056620368196ae14397e8b6a9380574ab",
+        "checks": [
+          {
+            "description": "The induction step is a difference of squares",
+            "left": "\\left(1 - x\\right) \\left(x + 1\\right)",
+            "right": "1 - x^{2}",
+            "result": "exact equality"
+          },
+          {
+            "description": "A nonzero ratio below one has vanishing arbitrarily large powers",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          },
+          {
+            "description": "The limiting reciprocal is the original answer",
+            "left": "\\frac{12}{11}",
+            "right": "\\frac{12}{11}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "0<r<1; each finite factor is positive."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "instanceIndex": 9,
+      "sourceContentHash": "0779ca4b5bc8a5eb813c7ce3e11a760baef8c9c76fc6ce4156ce6b1a1c648d80",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "0779ca4b5bc8a5eb813c7ce3e11a760baef8c9c76fc6ce4156ce6b1a1c648d80",
+        "checks": [
+          {
+            "description": "The induction step is a difference of squares",
+            "left": "\\left(1 - x\\right) \\left(x + 1\\right)",
+            "right": "1 - x^{2}",
+            "result": "exact equality"
+          },
+          {
+            "description": "A nonzero ratio below one has vanishing arbitrarily large powers",
+            "left": "0",
+            "right": "0",
+            "result": "exact equality"
+          },
+          {
+            "description": "The limiting reciprocal is the original answer",
+            "left": "\\frac{13}{12}",
+            "right": "\\frac{13}{12}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "0<r<1; each finite factor is positive."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-conditional-block-rearrangement",
+      "instanceIndex": 8,
+      "sourceContentHash": "999bff099b7e206b965c272955a0f0102d46f5b6fde43ebe7e57d1134ea52fa5",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "999bff099b7e206b965c272955a0f0102d46f5b6fde43ebe7e57d1134ea52fa5",
+        "checks": [
+          {
+            "description": "The exact odd-minus-even block identity holds at two complete blocks",
+            "left": "\\frac{100764219343404796801}{55340080432964226900}",
+            "right": "\\frac{100764219343404796801}{55340080432964226900}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The logarithms and the common asymptotic constant cancel",
+            "left": "- \\frac{\\ln{\\left(12 \\right)}}{2} + \\ln{\\left(24 \\right)}",
+            "right": "\\ln{\\left(2 \\right)} + \\frac{\\ln{\\left(12 \\right)}}{2}",
+            "result": "exact equality"
+          },
+          {
+            "name": "uniform-format choice preserves the verified logarithmic value",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "Harmonic-log asymptotic: Its constant is defined by the convergent difference; all three indices tend to infinity and the block size is fixed.",
+          "Each signed subsequence is kept in its original order.",
+          "The harmonic-log asymptotic follows from convergence of H_n-log n by the integral comparison test."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-conditional-block-rearrangement",
+      "instanceIndex": 9,
+      "sourceContentHash": "04fd3babcd471bdc5010d29848747d3fb3dcac671c09eb369c39bcd4a591925e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "04fd3babcd471bdc5010d29848747d3fb3dcac671c09eb369c39bcd4a591925e",
+        "checks": [
+          {
+            "description": "The exact odd-minus-even block identity holds at two complete blocks",
+            "left": "\\frac{720850958494299747607}{387380563030749588300}",
+            "right": "\\frac{720850958494299747607}{387380563030749588300}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The logarithms and the common asymptotic constant cancel",
+            "left": "- \\frac{\\ln{\\left(13 \\right)}}{2} + \\ln{\\left(26 \\right)}",
+            "right": "\\ln{\\left(2 \\right)} + \\frac{\\ln{\\left(13 \\right)}}{2}",
+            "result": "exact equality"
+          },
+          {
+            "name": "uniform-format choice preserves the verified logarithmic value",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "Harmonic-log asymptotic: Its constant is defined by the convergent difference; all three indices tend to infinity and the block size is fixed.",
+          "Each signed subsequence is kept in its original order.",
+          "The harmonic-log asymptotic follows from convergence of H_n-log n by the integral comparison test."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "instanceIndex": 8,
+      "sourceContentHash": "92c9ec1d0276fb420f4d4de3f78593acd2f7b2a92db3b7b5909a23740b2ed60e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "92c9ec1d0276fb420f4d4de3f78593acd2f7b2a92db3b7b5909a23740b2ed60e",
+        "checks": [
+          {
+            "description": "The logarithmic numerator has the displayed finite limit",
+            "left": "-72",
+            "right": "-72",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Taylor remainder and limit comparison: For all sufficiently large indices the Taylor argument is at most one half, giving a uniformly bounded third derivative and a scaled remainder tending to zero. The limiting comparison constant is positive and finite.",
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "instanceIndex": 9,
+      "sourceContentHash": "dd594b111c399a805ae9aeb7defe155fdd3570b65c6919c16165ae85a3a2317d",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "dd594b111c399a805ae9aeb7defe155fdd3570b65c6919c16165ae85a3a2317d",
+        "checks": [
+          {
+            "description": "The logarithmic numerator has the displayed finite limit",
+            "left": "- \\frac{169}{2}",
+            "right": "- \\frac{169}{2}",
+            "result": "exact equality"
+          }
+        ],
+        "analyticCertificate": [
+          "Taylor remainder and limit comparison: For all sufficiently large indices the Taylor argument is at most one half, giving a uniformly bounded third derivative and a scaled remainder tending to zero. The limiting comparison constant is positive and finite.",
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-p-series-pair",
+      "instanceIndex": 8,
+      "sourceContentHash": "418e0a018cbb15912b1493909959f6f9b6783db429e4c5cc07d25c27caa76ef8",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "418e0a018cbb15912b1493909959f6f9b6783db429e4c5cc07d25c27caa76ef8",
+        "checks": [
+          {
+            "name": "new paired exponents straddle one",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "The comparison functions are positive and decreasing for the displayed positive exponents. The integral comparison establishes the positive-series threshold; for the alternating case the magnitudes also tend to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-p-series-pair",
+      "instanceIndex": 9,
+      "sourceContentHash": "caa365478405ad4dffccf67b70a6755af819350930769d37da9509f10f819bc3",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "caa365478405ad4dffccf67b70a6755af819350930769d37da9509f10f819bc3",
+        "checks": [
+          {
+            "name": "new paired exponents straddle one",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "The comparison functions are positive and decreasing for the displayed positive exponents. The integral comparison establishes the positive-series threshold; for the alternating case the magnitudes also tend to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-alternating-absolute-conditional",
+      "instanceIndex": 8,
+      "sourceContentHash": "28fbcc4f66d225f1599ecb132dc4617da4a53f302288d00b69950b3b7f4d4a35",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "28fbcc4f66d225f1599ecb132dc4617da4a53f302288d00b69950b3b7f4d4a35",
+        "checks": [
+          {
+            "name": "new paired exponents straddle one",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "The comparison functions are positive and decreasing for the displayed positive exponents. The integral comparison establishes the positive-series threshold; for the alternating case the magnitudes also tend to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-alternating-absolute-conditional",
+      "instanceIndex": 9,
+      "sourceContentHash": "4efe3a477773a0797bb23768ade9a42b352b9439f7975b19cc48c18754dd82eb",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "4efe3a477773a0797bb23768ade9a42b352b9439f7975b19cc48c18754dd82eb",
+        "checks": [
+          {
+            "name": "new paired exponents straddle one",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "The comparison functions are positive and decreasing for the displayed positive exponents. The integral comparison establishes the positive-series threshold; for the alternating case the magnitudes also tend to zero."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-direct-comparison-information",
+      "instanceIndex": 8,
+      "sourceContentHash": "aacebd1bfcdd768845a3b789a5e1565efe779c47fe67d772f704804129d9ec92",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "aacebd1bfcdd768845a3b789a5e1565efe779c47fe67d772f704804129d9ec92",
+        "checks": [
+          {
+            "name": "new bounds force the reported class",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "For nonnegative series, bounded increasing partial sums imply convergence. An upper bound by a convergent benchmark bounds every partial sum; a lower bound by a divergent benchmark forces unbounded partial sums. For an upper bound with p<=1, zero and the benchmark give opposite behaviors. For a lower bound with p>1, the benchmark and the constant sequence one give opposite behaviors; n^-p<=1 for every n>=1. These witnesses establish insufficiency, not merely failure of one proof method."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-direct-comparison-information",
+      "instanceIndex": 9,
+      "sourceContentHash": "afab9f4a869379f2314ced28649e6693434ca7f7eab246660e279d128764e59e",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "afab9f4a869379f2314ced28649e6693434ca7f7eab246660e279d128764e59e",
+        "checks": [
+          {
+            "name": "new bounds force the reported class",
+            "kind": "exact-inequality-or-finite-identity",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "For nonnegative series, bounded increasing partial sums imply convergence. An upper bound by a convergent benchmark bounds every partial sum; a lower bound by a divergent benchmark forces unbounded partial sums. For an upper bound with p<=1, zero and the benchmark give opposite behaviors. For a lower bound with p>1, the benchmark and the constant sequence one give opposite behaviors; n^-p<=1 for every n>=1. These witnesses establish insufficiency, not merely failure of one proof method."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "instanceIndex": 8,
+      "sourceContentHash": "f4736a62be28c4c856bd3d215bb1eea81abd211d7eec266072535012e17d11cb",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "f4736a62be28c4c856bd3d215bb1eea81abd211d7eec266072535012e17d11cb",
+        "checks": [
+          {
+            "name": "independent polynomial derivative at center",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "Inside its interval of convergence a power series can be differentiated any finite number of times term by term. At the center, terms below order n have vanished by differentiation, terms above order n retain a positive power of x-2, and the order-n term contributes n factorial times its coefficient. The monomial checks verify this conversion without assuming values of unspecified coefficients."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "instanceIndex": 9,
+      "sourceContentHash": "a9074d8e9809c96e9146fa7beb0ea5dbd704060002bacf493db261dbb49f87f5",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "a9074d8e9809c96e9146fa7beb0ea5dbd704060002bacf493db261dbb49f87f5",
+        "checks": [
+          {
+            "name": "independent polynomial derivative at center",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "Inside its interval of convergence a power series can be differentiated any finite number of times term by term. At the center, terms below order n have vanished by differentiation, terms above order n retain a positive power of x-2, and the order-n term contributes n factorial times its coefficient. The monomial checks verify this conversion without assuming values of unspecified coefficients."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-linearity-given-convergent-sums",
+      "instanceIndex": 8,
+      "sourceContentHash": "3e457b9e93b199f1762845d4cba8e0a56f43fbdbdae930f8e32ab0541a028eed",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "3e457b9e93b199f1762845d4cba8e0a56f43fbdbdae930f8e32ab0541a028eed",
+        "checks": [
+          {
+            "name": "independent supplied linear combination",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "For every finite N the linear-combination partial sum equals two times the first partial sum minus m times the second. Taking the limit preserves a finite linear combination because both component limits exist. This does not rearrange either series or multiply infinite series."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    },
+    {
+      "familyId": "m3-series-easy-linearity-given-convergent-sums",
+      "instanceIndex": 9,
+      "sourceContentHash": "aa2e583647974f2389ab6001b959a7392ca58510e11b90f19f131e2aa90966df",
+      "verification": {
+        "status": "passed",
+        "sourceContentHash": "aa2e583647974f2389ab6001b959a7392ca58510e11b90f19f131e2aa90966df",
+        "checks": [
+          {
+            "name": "independent supplied linear combination",
+            "kind": "exact-algebra",
+            "passed": true
+          }
+        ],
+        "analyticCertificate": [
+          "For every finite N the linear-combination partial sum equals two times the first partial sum minus m times the second. Taking the limit preserves a finite linear combination because both component limits exist. This does not rearrange either series or multiply infinite series."
+        ],
+        "humanReviewed": false,
+        "formalProof": false,
+        "scope": "New finite-domain exact derivations plus displayed analytic hypotheses; frozen eight-instance review is not treated as extending admission."
+      }
+    }
+  ],
+  "sourceFiles": {
+    "lower_extensions.py": "7c2b06f5da9686527c14ea80043cb0baea1257472e7d7d8b439a78b80dc6501a",
+    "lower_common.py": "f97cc23476839d8fd917d403e0bbd041d63fa68fdf1bf27e9aebed848ce56b56",
+    "lower_solution_recipes.py": "08282ffa101f94f3c6332bee683afe7190b5cf581a073cb6b781e280044f6804",
+    "common.py": "31db8ad7e9aaca03d4950c2e375b7ac92595a0c69ebc0b76c8870312a0029e06"
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "sourceArtifact": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/integration-new/frozen-v2/candidates.jsonl",
+  "sourceArtifactSHA256": "3d5fc04112b449d729a85594e68db4a2b2283d8657bd624510c7258b44856e9c",
+  "reviewerCodeSHA256": "f2d2ce32fa71c45f6aae56daa219527730161df2da389789ba035e3273dabfa2",
+  "counts": {
+    "actualCases": 10,
+    "oneChoiceSurvives": 10,
+    "hardRecommendations": 10,
+    "advancedGroupsFromTheseActualOptions": 0,
+    "advancedCapacityFromTheseActualOptions": 0
+  },
+  "independentDerivation": [
+    "For an admissible C1 function, the endpoint relation gives f(0)=integral(fprime)/(k\u22121). Hence f(x)=integral[1/(k\u22121)+indicator(t\u2264x)]fprime(t)dt.",
+    "Pointwise Cauchy-Schwarz followed by integration in x bounds integral f\u00b2 by [(k\u00b2+1)/(2(k\u22121)\u00b2)] integral fprime\u00b2. Therefore the best constant is at least2(k\u22121)\u00b2/(k\u00b2+1).",
+    "The admissible affine trial f(x)=1+(k\u22121)x has derivative energy(k\u22121)\u00b2 and squared norm(k\u00b2+k+1)/3. Therefore the best constant is at most3(k\u22121)\u00b2/(k\u00b2+k+1).",
+    "The two polynomial integrals are independently checked symbolically. Every literal displayed choice is decoded from explicit expression templates and enclosed using alternating arctangent series with rational remainder, plus a Machin pi enclosure. No float decides exclusion."
+  ],
+  "records": [
+    {
+      "problemId": "cn_qs_e8d92dc681029658795f",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 0,
+      "endpointRatio": "2",
+      "sourceContentHash": "cbab0b632556b390eb47006d963c3b4450df7a393aeaa01f080a7ae210d1355b",
+      "sourceSemanticHash": "ce87a0972dbfd31c8c5d7f21664130bb1cff435dc9c27d3d969db3614ae2771e",
+      "sourceRawSHA256": "8f8a50804a05f8b9cf0448e977f3230bc6d9c29a5adad8c0cc9a4c51cc0ba7ae",
+      "lowerBound": "2/5",
+      "upperBound": "3/7",
+      "choices": [
+        {
+          "choiceId": "ch_ab5ee9e79423a08a",
+          "literalMath": "\\frac{\\pi^{2}}{4}",
+          "independentlyDecodedExpression": "Mul(Rational(1, 4), Pow(pi, Integer(2)))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/20000000000000000000000000000000000",
+            "246740110027233965470862274996903797/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_5aa2bd3c3e2ff6f0",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{3} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 3)), Integer(2)))",
+          "certifiedEnclosure": [
+            "2588085481363665177266979692059713/6250000000000000000000000000000000",
+            "5176170962727330354533959384119427/12500000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_39d96cfa27e520fe",
+          "literalMath": "\\arctan^{2}{\\left(2 \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Integer(2)), Integer(2))",
+          "certifiedEnclosure": [
+            "7661114270706866580156481460407873/6250000000000000000000000000000000",
+            "61288914165654932641251851683262997/50000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_b37a61fbfb32241a",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{2} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 2)), Integer(2)))",
+          "certifiedEnclosure": [
+            "4299382106643287774212654333680723/5000000000000000000000000000000000",
+            "21496910533216438871063271668403617/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_5aa2bd3c3e2ff6f0",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_af05c26e9eee008f77df",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 1,
+      "endpointRatio": "3",
+      "sourceContentHash": "8ca5db3fd8ed3e3ea353d0c1ef594de72b72471a0e1be138fa94909c209a3e7b",
+      "sourceSemanticHash": "5fb96a1f8674b2f4a1335b94ecdb6a1c3d27e4c1934cb9cddc5e8fa234fb3348",
+      "sourceRawSHA256": "8c1cf2e5801cae8b242e292c2338290ded9726189500c2bc322383ffd933080c",
+      "lowerBound": "4/5",
+      "upperBound": "12/13",
+      "choices": [
+        {
+          "choiceId": "ch_4f2a5405b4586057",
+          "literalMath": "\\arctan^{2}{\\left(3 \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Integer(3)), Integer(2))",
+          "certifiedEnclosure": [
+            "4875360442331099992765305064594383/3125000000000000000000000000000000",
+            "39002883538648799942122440516755071/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_b37a61fbfb32241a",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{2} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 2)), Integer(2)))",
+          "certifiedEnclosure": [
+            "4299382106643287774212654333680723/5000000000000000000000000000000000",
+            "21496910533216438871063271668403617/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_40de53e6dc104bba",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{1}{2} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(1, 2)), Integer(2))",
+          "certifiedEnclosure": [
+            "4299382106643287774212654333680723/20000000000000000000000000000000000",
+            "21496910533216438871063271668403617/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_b37a61fbfb32241a",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_02890b2bd31faafe387d",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 2,
+      "endpointRatio": "4",
+      "sourceContentHash": "6330488fcf6b93783cd3ba89878dd8b7d63ece8f3cdba2883f845c400c76c613",
+      "sourceSemanticHash": "33d647e6a94075d9dcc0b30d44c1e71f11516b29285a711024cfffd9f1668e42",
+      "sourceRawSHA256": "48413d5bd94f75a3faf51636c164622cfef475db2035413c05a2c85b37e3b98f",
+      "lowerBound": "18/17",
+      "upperBound": "9/7",
+      "choices": [
+        {
+          "choiceId": "ch_b684726453e4fdc7",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{3}{5} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(3, 5)), Integer(2))",
+          "certifiedEnclosure": [
+            "29205323627270790805869758120230909/100000000000000000000000000000000000",
+            "29205323627270790805869758120230911/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_06b36b5aee7b23f3",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{4} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 4)), Integer(2)))",
+          "certifiedEnclosure": [
+            "375090908671409942246873687246999/1562500000000000000000000000000000",
+            "3000727269371279537974989497975993/12500000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_2dd568ce5d0797e4",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{3}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(3, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "29205323627270790805869758120230909/25000000000000000000000000000000000",
+            "29205323627270790805869758120230911/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        }
+      ],
+      "onlySurvivingChoice": "ch_2dd568ce5d0797e4",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_4c24d6d517535f219773",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 3,
+      "endpointRatio": "5",
+      "sourceContentHash": "ac8dc9deefb94095721db0c0b642ad0aebec631404594f06b29798755e706caf",
+      "sourceSemanticHash": "1964a4cec12b5062436546a2d0dfd362723dc0d1c6e09dbb9d09e91c641f7727",
+      "sourceRawSHA256": "842236c9ae3097dfa7a77fd53c485b5ee68c4eedbf210321ef66e9fa0378ce8b",
+      "lowerBound": "16/13",
+      "upperBound": "48/31",
+      "choices": [
+        {
+          "choiceId": "ch_4411294e4f40cbaf",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{2}{3} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(2, 3)), Integer(2)))",
+          "certifiedEnclosure": [
+            "3457470617787179002013406386435011/2500000000000000000000000000000000",
+            "1080459568058493438129189495760941/781250000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_5d114c87b3cc1419",
+          "literalMath": "\\arctan^{2}{\\left(5 \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Integer(5)), Integer(2))",
+          "certifiedEnclosure": [
+            "47155741666128944281777388607674533/25000000000000000000000000000000000",
+            "188622966664515777127109554430698163/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_ab5ee9e79423a08a",
+          "literalMath": "\\frac{\\pi^{2}}{4}",
+          "independentlyDecodedExpression": "Mul(Rational(1, 4), Pow(pi, Integer(2)))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/20000000000000000000000000000000000",
+            "246740110027233965470862274996903797/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_4411294e4f40cbaf",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_4417f9687ed3d5abe2da",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 4,
+      "endpointRatio": "3/2",
+      "sourceContentHash": "210b6525f70f22693aeaad05c07a446b2213151c2103685beb89816b5004c1af",
+      "sourceSemanticHash": "8102b670ac180b02451c07ab3fcb58ccabc79e4b41c3917431710d9efb8f9496",
+      "sourceRawSHA256": "4ec8e1714e839277ce553a6bb77e7ca3b72543d86d3046266ef79408d933c509",
+      "lowerBound": "2/13",
+      "upperBound": "3/19",
+      "choices": [
+        {
+          "choiceId": "ch_21176fa30816f49a",
+          "literalMath": "16 \\arctan^{2}{\\left(\\frac{1}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(16), Pow(atan(Rational(1, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "1948250352422392824294855398226983/3125000000000000000000000000000000",
+            "3896500704844785648589710796453967/6250000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_5b54db2eff6df05e",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{3}{2} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(3, 2)), Integer(2))",
+          "certifiedEnclosure": [
+            "96588350245434764012476495227009701/100000000000000000000000000000000000",
+            "24147087561358691003119123806752431/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_4411294e4f40cbaf",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{2}{3} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(2, 3)), Integer(2)))",
+          "certifiedEnclosure": [
+            "3457470617787179002013406386435011/2500000000000000000000000000000000",
+            "1080459568058493438129189495760941/781250000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_d22ed1979a080e3a",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "1948250352422392824294855398226983/12500000000000000000000000000000000",
+            "3896500704844785648589710796453967/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        }
+      ],
+      "onlySurvivingChoice": "ch_d22ed1979a080e3a",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_f4b498f88c66969f3af9",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 5,
+      "endpointRatio": "5/2",
+      "sourceContentHash": "04daf8f0a0dcf5bde2bb5aca097596a664a8de7967e8daab78cfdb5d90cc163d",
+      "sourceSemanticHash": "8cf3b90ce9cc950a039ee148ca9fa9ed8ef351a6048655db6a7a6bdf5b0d299c",
+      "sourceRawSHA256": "b966a7a2ebe6d36ae78dcc993c610ca44076a712ee0e584a1eae90d1a1fd9137",
+      "lowerBound": "18/29",
+      "upperBound": "9/13",
+      "choices": [
+        {
+          "choiceId": "ch_27a6ff265a696122",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{3}{7} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(3, 7)), Integer(2)))",
+          "certifiedEnclosure": [
+            "8196867930056283446445552271254971/12500000000000000000000000000000000",
+            "2049216982514070861611388067813743/3125000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_ee344e8d3ec2d37e",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{3}{7} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(3, 7)), Integer(2))",
+          "certifiedEnclosure": [
+            "8196867930056283446445552271254971/50000000000000000000000000000000000",
+            "2049216982514070861611388067813743/12500000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_888d4756fbc069af",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{2}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(2, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "7239255151158862029570809416352441/12500000000000000000000000000000000",
+            "3619627575579431014785404708176221/6250000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_ab5ee9e79423a08a",
+          "literalMath": "\\frac{\\pi^{2}}{4}",
+          "independentlyDecodedExpression": "Mul(Rational(1, 4), Pow(pi, Integer(2)))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/20000000000000000000000000000000000",
+            "246740110027233965470862274996903797/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_27a6ff265a696122",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_06f81f88e44ff6f7630a",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 6,
+      "endpointRatio": "7/2",
+      "sourceContentHash": "6494012bbd20e2cbd1078b1f53e58430876f080e68b1fe28f490b3d59d0c901c",
+      "sourceSemanticHash": "96592bd2288c1211637f8726def1c3d8e47916a35e5c859cf5fcd8e9737ee974",
+      "sourceRawSHA256": "1dc7e36471607bca70ea7d25e586e7cfe4f9e1059ad5697d6cb9ae23a2b28edf",
+      "lowerBound": "50/53",
+      "upperBound": "75/67",
+      "choices": [
+        {
+          "choiceId": "ch_06a686cf101dfe1f",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{5}{9} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(5, 9)), Integer(2)))",
+          "certifiedEnclosure": [
+            "6428722328923624634421529565162379/6250000000000000000000000000000000",
+            "12857444657847249268843059130324759/12500000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_990bbfc925992210",
+          "literalMath": "16 \\arctan^{2}{\\left(\\frac{5}{9} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(16), Pow(atan(Rational(5, 9)), Integer(2)))",
+          "certifiedEnclosure": [
+            "6428722328923624634421529565162379/1562500000000000000000000000000000",
+            "12857444657847249268843059130324759/3125000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_ab5ee9e79423a08a",
+          "literalMath": "\\frac{\\pi^{2}}{4}",
+          "independentlyDecodedExpression": "Mul(Rational(1, 4), Pow(pi, Integer(2)))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/20000000000000000000000000000000000",
+            "246740110027233965470862274996903797/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_06a686cf101dfe1f",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_783ff92a743ad0ccf6c0",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 7,
+      "endpointRatio": "4/3",
+      "sourceContentHash": "b214f61ef8e640151da7bed1494fc9e538d00ce8c29627fa52b5529ba9f642ac",
+      "sourceSemanticHash": "9dec4ee76b0a9969d9f3b2c93abb8930c55e3c39021c397a5c04f29adca9f8dc",
+      "sourceRawSHA256": "560181d8bdc8a11d344a817a5260f87c184a22602c7f5b5838cb86ad177a16ba",
+      "lowerBound": "2/25",
+      "upperBound": "3/37",
+      "choices": [
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_69aaf45358effb15",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{7} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 7)), Integer(2)))",
+          "certifiedEnclosure": [
+            "125842338158356737034175757753687/1562500000000000000000000000000000",
+            "2013477410533707792546812124058993/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_904b2739e151e15d",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{1}{7} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(1, 7)), Integer(2))",
+          "certifiedEnclosure": [
+            "125842338158356737034175757753687/6250000000000000000000000000000000",
+            "2013477410533707792546812124058993/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_301b3b2e5f2c1c46",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{3}{4} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(3, 4)), Integer(2)))",
+          "certifiedEnclosure": [
+            "41409367701818642836271675072955411/25000000000000000000000000000000000",
+            "41409367701818642836271675072955413/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_69aaf45358effb15",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_c77d8e8f56515a916d63",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 8,
+      "endpointRatio": "5/3",
+      "sourceContentHash": "7f6aaee971120d425e4299aee1fe24b037afa47ea45b100e5da52a1b0ecf542d",
+      "sourceSemanticHash": "12c9585ea4ac64936dc9f3cabe6ef2161fe6345ca3ac22dd82306bf38b2930a9",
+      "sourceRawSHA256": "0045e6dfb801a48e1693025e34a37e16775a98ba2622ce89a1ba044963b2cab9",
+      "lowerBound": "4/17",
+      "upperBound": "12/49",
+      "choices": [
+        {
+          "choiceId": "ch_2dd568ce5d0797e4",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{3}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(3, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "29205323627270790805869758120230909/25000000000000000000000000000000000",
+            "29205323627270790805869758120230911/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_8d8f5362e0f0f140",
+          "literalMath": "\\pi^{2}",
+          "independentlyDecodedExpression": "Pow(pi, Integer(2))",
+          "certifiedEnclosure": [
+            "49348022005446793094172454999380753/5000000000000000000000000000000000",
+            "986960440108935861883449099987615187/100000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_06b36b5aee7b23f3",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{1}{4} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(1, 4)), Integer(2)))",
+          "certifiedEnclosure": [
+            "375090908671409942246873687246999/1562500000000000000000000000000000",
+            "3000727269371279537974989497975993/12500000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_e1f5604791728d1d",
+          "literalMath": "16 \\arctan^{2}{\\left(\\frac{1}{4} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(16), Pow(atan(Rational(1, 4)), Integer(2)))",
+          "certifiedEnclosure": [
+            "375090908671409942246873687246999/390625000000000000000000000000000",
+            "3000727269371279537974989497975993/3125000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_06b36b5aee7b23f3",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    },
+    {
+      "problemId": "cn_qs_e79a323b85bc9338e889",
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "instanceIndex": 9,
+      "endpointRatio": "7/3",
+      "sourceContentHash": "74febf71b245015a7a6fdf2d0cad632115bfbbdbac9dcbfc21f224b6cfba3831",
+      "sourceSemanticHash": "08612d716e1b75e099d58bd3118fa60d9bb11673800a51ae1e0a4062bbc51858",
+      "sourceRawSHA256": "2f2fd119c90978ad1ac4d1390e7730f1864b345bb8e80b3a855a3b1502e071d2",
+      "lowerBound": "16/29",
+      "upperBound": "48/79",
+      "choices": [
+        {
+          "choiceId": "ch_888d4756fbc069af",
+          "literalMath": "4 \\arctan^{2}{\\left(\\frac{2}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(4), Pow(atan(Rational(2, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "7239255151158862029570809416352441/12500000000000000000000000000000000",
+            "3619627575579431014785404708176221/6250000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": true
+        },
+        {
+          "choiceId": "ch_b797e20f1ce271e8",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{2}{5} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(2, 5)), Integer(2))",
+          "certifiedEnclosure": [
+            "7239255151158862029570809416352441/50000000000000000000000000000000000",
+            "3619627575579431014785404708176221/25000000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_eb7fac55ab95008f",
+          "literalMath": "16 \\arctan^{2}{\\left(\\frac{2}{5} \\right)}",
+          "independentlyDecodedExpression": "Mul(Integer(16), Pow(atan(Rational(2, 5)), Integer(2)))",
+          "certifiedEnclosure": [
+            "7239255151158862029570809416352441/3125000000000000000000000000000000",
+            "3619627575579431014785404708176221/1562500000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        },
+        {
+          "choiceId": "ch_b2d77ae061027d36",
+          "literalMath": "\\arctan^{2}{\\left(\\frac{7}{3} \\right)}",
+          "independentlyDecodedExpression": "Pow(atan(Rational(7, 3)), Integer(2))",
+          "certifiedEnclosure": [
+            "135933339758139863960823270621351701/100000000000000000000000000000000000",
+            "8495833734883741497551454413834483/6250000000000000000000000000000000"
+          ],
+          "survivesNecessaryInterval": false
+        }
+      ],
+      "onlySurvivingChoice": "ch_888d4756fbc069af",
+      "actualOptionsDifficulty": "hard",
+      "advancedCapacityCredit": 0,
+      "formulaCorrectness": "Unchanged sharp constant agrees with the prior exact ground-state proof; this review concerns an easier actual-option route."
+    }
+  ],
+  "disposition": "All ten current finite option sets are answered by the necessary Cauchy-Schwarz/trial interval. Recommend Hard for every index, preserve the correct long proof and original frozen artifact, and assign no Olympiad group/capacity credit to these actual questions. This finding is not a mathematical error in the sharp constant.",
+  "humanReviewed": false,
+  "formalProof": false,
+  "authorConstructorImported": false,
+  "productionMutation": false
+}

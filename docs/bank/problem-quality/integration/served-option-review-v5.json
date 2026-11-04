@@ -1,0 +1,860 @@
+{
+  "status": "source-bound-served-option-screen-reconciled",
+  "reviewer": "root",
+  "records": 766,
+  "notationChangedMenus": 50,
+  "familyComparisons": 82,
+  "formComparisons": 4,
+  "changedFlagSets": 0,
+  "sourceArtifacts": {
+    ".bank-data/quality/integration-previews-v5/canonical-previews.jsonl": "4a7f5b405e5708673694022769c1e05ec01ef39ffbe1b1f2edb93b5dae2cdc31",
+    ".bank-data/quality/integration-previews-v5/retained-originals.jsonl": "8a17e13f1a7a615464ee7fbd14b7b42bbe034b36d07bb6cae69ae38624c43f0a",
+    ".bank-data/quality/integration-previews-v5/option-audit.json": "d338fe174911050820bf6185321cb5e8ab6b2004c159d5c05f73b14a3aeca085",
+    ".bank-data/quality/integration-previews-v5/served-option-input.jsonl": "885d7661814ef90c1835a9c1cc25946d9e1166a71db514be28a872ecb77a1148",
+    ".bank-data/quality/integration-previews-v5/served-option-audit.json": "023312978e828886adb92066b04754756e53d7901a24cfc282490709c2ed4234",
+    ".bank-data/quality/integration-previews-v5/served-option-binding.json": "f5f2b7c18f3c33a1dfd3fe7bfefcad2b71c84576603d69a153023876a77e711b",
+    "docs/bank/problem-quality/integration/final-option-review-v5.json": "304cc78733c1b4fb389095d7b6df182b03ae26a54155344768f6d21d77ecc6de",
+    "lib/server/solution-presentation.mjs": "8a1dbac33d47beb914f405e32b55228bea617cf55ae8ff89e3718a04f2301ae8",
+    "lib/math-notation.mjs": "9f5a1ea3fe2a47c52307e4cf0e50b574cfd9fb6809f87d2e4ee5376cc4e37dca",
+    "scripts/bank/quality/integration_served_binding.py": "1dc646afedb7e0c3861bd8b75abc3f84e0c220fa34638b42038f3fb909e6d43d"
+  },
+  "comparisons": [
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-absolute-area",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-average-value",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-exponential-rate",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-log-recognition",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-odd-even",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "length-min",
+          "accuracy": 0.7,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-piecewise-accumulation",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-quarter-disk",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-washer-volume",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-arc-length-perfect-square",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-beta-polynomial",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-half-angle-quadratic",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-reciprocal-quartic",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-exponential-trig",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-partial-fractions",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-piecewise-absolute-root",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-shell-volume",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-signed-area",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-4",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-substitution-affine",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-trig-log",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-root-quadratic",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-gamma-unit-average",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-1",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-principal-value",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-bernoulli-product",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-binary-product",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-boundary-asymptotic",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-cauchy-convolution",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-concentration",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-convolution-laplace",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-fejer-fourth",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-jensen-radius",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-mellin-cyclotomic",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-oscillatory-regularization",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-thermal-derivative",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-variational-energy",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "items": 12,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-support-function-perimeter",
+      "items": 12,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-competing-laplace-wells",
+      "items": 12,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-capped-two-moment-extrema",
+      "items": 18,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-semicircle-interior-pole",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "items": 12,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-4",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-fresnel",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-reciprocal-quartic",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "length-min",
+          "accuracy": 0.625,
+          "unique": 3,
+          "uniqueCorrect": 2
+        },
+        {
+          "rule": "shuffled-position-1",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-rodrigues-moment",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-scaled-frullani",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-accumulation-from-derivative",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-easy-area-between-curves",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-Frullani-rectangle",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-improper-rational-beta",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-logarithmic-moment",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-improper-exponential",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-inverse-tangent",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-moving-boundary-area",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-nested-log",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-rational-power-substitution",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-secant-square-substitution",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "numeric-max",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        },
+        {
+          "rule": "numeric-rank-4",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-trig-odd-power",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "numeric-max",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        },
+        {
+          "rule": "numeric-rank-4",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-bessel-laplace",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+      "items": 14,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "length-min",
+          "accuracy": 0.7857142857142857,
+          "unique": 4,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-hard-mixed-log-endpoints",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "m3-integration-medium-parts-log",
+      "items": 10,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-weighted-complement",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-inverse-moment",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-floor-laplace",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-log-fourier-coefficient",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-arctan-parameter",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-gaussian-fourier",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-4",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-reciprocal-gaussian",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-sinc-overlap",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "fraction-min",
+          "accuracy": 0.625,
+          "unique": 3,
+          "uniqueCorrect": 2
+        },
+        {
+          "rule": "shuffled-position-1",
+          "accuracy": 1,
+          "unique": 4,
+          "uniqueCorrect": 4
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-mixed-beta-log",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-binomial-exponential",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "numeric-rank-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-agm-parameter",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-abel-recovery",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-integral-equation",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-poisson-log-potential",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-sech-fourier",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-moment-projection",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "families",
+      "key": "io3-quadrature-defect",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": [
+        {
+          "rule": "shuffled-position-4",
+          "accuracy": 0.75,
+          "unique": 4,
+          "uniqueCorrect": 3
+        }
+      ]
+    },
+    {
+      "scope": "families",
+      "key": "io3-rearrangement",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "answerForms",
+      "key": "exact-expression",
+      "items": 470,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "answerForms",
+      "key": "exact-real",
+      "items": 272,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "answerForms",
+      "key": "convergence-and-value",
+      "items": 16,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    },
+    {
+      "scope": "answerForms",
+      "key": "ordered-real-pair",
+      "items": 8,
+      "sameHeldoutSplit": true,
+      "sameFlags": true,
+      "flags": []
+    }
+  ],
+  "disposition": "All actual served flag sets and deterministic training/held-out memberships equal the reviewed raw screen. Preserve the exact family/form dispositions in final-option-review-v5.json. Fifty notation-only menu changes introduce no additional configured flag.",
+  "limitations": [
+    "This comparison does not independently re-prove algebraic choice inequivalence; the separately bound complete mathematical peer evidence remains required.",
+    "Configured screens and small finite samples do not establish absence of every possible clue.",
+    "No session-horizon or production approval."
+  ]
+}

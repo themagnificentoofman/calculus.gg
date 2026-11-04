@@ -1,0 +1,303 @@
+{
+  "inputSha256": "9fbebe6ddee887809ccbe693c37351fab72b418bf778af515da24885b7302d97",
+  "originalsSha256": "2251683f1535f8e230d85119de23973823866d3d6cc811becef162c72d035179",
+  "servedSha256": "f763266f49d3fad2466a421cb635c7c1c9af6cabadee92030c5ba879ab2f9d15",
+  "reviewerCodeSha256": "2423b9acec4cdf96d93e33d4181eefb5a24abb125a38c722e232b0b7ff5ec5fc",
+  "author": "ode_final_review",
+  "reviewer": "root",
+  "records": [
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 0,
+      "rawSha256": "e72364c84dbdfe1f1139d9ed69d02d761f92923a85a55316eacd952ce884f01b",
+      "sourcePreview": {
+        "canonicalRawHash": "e43ac250b8acf945ab8b7c8052e8cdb2556d63f55caafb2aac536928b295dc5d",
+        "problemId": "cn_31537d29d580d03172eb",
+        "revision": 1,
+        "semanticHash": "2c9b0eadcce81484c3127f9891f4d79eae94e0823618b3207808dbfb543b381f",
+        "servedRawHash": "e43ac250b8acf945ab8b7c8052e8cdb2556d63f55caafb2aac536928b295dc5d",
+        "sourceContentHash": "100bd2711e969e9d679c8c4721a47e96b75805f668f9fe62730dcb236aad0869"
+      },
+      "independentAnswer": "13/14",
+      "mass": "1/13",
+      "firstMoment": "1/14",
+      "literalPairDifferences": [
+        "-183/182",
+        "-13/14",
+        "-6/7",
+        "1/13",
+        "27/182",
+        "1/14"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 1,
+      "rawSha256": "6f94a7538dbdbaaba1cd65673171e37a29eff5fd24a8f8bbe6196a51845fb906",
+      "sourcePreview": {
+        "canonicalRawHash": "1fe20aa3c0d8e2259934ca4d0fd4c10c7516a90baf8815073fc945f90e3eaae6",
+        "problemId": "cn_ceb6294864ddd3521a38",
+        "revision": 1,
+        "semanticHash": "c78bf0229c1782ae204fc5e8c699762ef30a0ec3ea2335a1d51003b345dbadc9",
+        "servedRawHash": "1fe20aa3c0d8e2259934ca4d0fd4c10c7516a90baf8815073fc945f90e3eaae6",
+        "sourceContentHash": "9a2f3183276a9e8456dd45db4cad2dd0417ad46b1dac7408e79b4a970c644b4f"
+      },
+      "independentAnswer": "14/15",
+      "mass": "1/14",
+      "firstMoment": "1/15",
+      "literalPairDifferences": [
+        "-13/30",
+        "13/30",
+        "-4/7",
+        "13/15",
+        "-29/210",
+        "-211/210"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 2,
+      "rawSha256": "564dc692cf32d5bdfa31f7d65ff92f57ac0296d4dbb81eaac14642f7073bbe6d",
+      "sourcePreview": {
+        "canonicalRawHash": "ab1401fb0ad9e307be467286a2ee852fb8283b4c386e32a359e7149822fc7d4d",
+        "problemId": "cn_e4e58a811b467fdd0122",
+        "revision": 1,
+        "semanticHash": "17ef9bbdb2aa629998427536e52513ec951e522e63245031b74cdd4d7f62ffb3",
+        "servedRawHash": "95e91912247f0beadeae8df39646e5b1d548fca759431bd837a74b1fb21f9456",
+        "sourceContentHash": "ee657e254d29b563451baa7ea495627952d58602b3faac4e4da370ce0c70e5e1"
+      },
+      "independentAnswer": "5/6",
+      "mass": "1/5",
+      "firstMoment": "1/6",
+      "literalPairDifferences": [
+        "2/3",
+        "-11/30",
+        "-1/6",
+        "-31/30",
+        "-5/6",
+        "1/5"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 3,
+      "rawSha256": "e8d8965c9a3c8e76e78d0e617bf785abd926113f5babe38328de8f91d3685181",
+      "sourcePreview": {
+        "canonicalRawHash": "0f52facf0d7e0b1105967fa19171053fac872fac23209c397987534590e85bea",
+        "problemId": "cn_83b031cb60d1ac5369e1",
+        "revision": 1,
+        "semanticHash": "ead4fb4c24ecfc9996d2b84635b9207fb44c26709c7aaca20a32934013099bd2",
+        "servedRawHash": "9da6c0464b505ea46af5cf54111a9fa484da910f31f98ff5578e471ed9aa9426",
+        "sourceContentHash": "396b33b030ab8801e8bed514cffe111ebbf5637e57da1de686f59e4f00147db1"
+      },
+      "independentAnswer": "6/7",
+      "mass": "1/6",
+      "firstMoment": "1/7",
+      "literalPairDifferences": [
+        "5/14",
+        "5/7",
+        "-1/7",
+        "5/14",
+        "-1/2",
+        "-6/7"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 4,
+      "rawSha256": "7276480d1680da741fdb050e94e7725c239557591970ef3ee81ae3533eae9d48",
+      "sourcePreview": {
+        "canonicalRawHash": "9c72e25662ec7f95c3666c75004285fc521ad87dd0f19040b510aa345c89f151",
+        "problemId": "cn_a6678ed31e561207d897",
+        "revision": 1,
+        "semanticHash": "b4423569ae40548de994f9611db9c4b888d6826945b75b4cab811d9d04942b23",
+        "servedRawHash": "436c2b0a834d40e076d1bfb91c051d8ca43c2146e886a930884b94d782717491",
+        "sourceContentHash": "c7c572d9491b9685499fba8a4529fd291df1ed8a937a9a386590c27c7a8c295c"
+      },
+      "independentAnswer": "7/8",
+      "mass": "1/7",
+      "firstMoment": "1/8",
+      "literalPairDifferences": [
+        "3/4",
+        "-15/56",
+        "-1/8",
+        "-57/56",
+        "-7/8",
+        "1/7"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 5,
+      "rawSha256": "915024ab553e87a02abd5ed200d2f25d33c2a1587005d567ad0adf5b1d8d85da",
+      "sourcePreview": {
+        "canonicalRawHash": "654a917ca2b64561d8931f0dd9501e3336e23079edadc8e79edd95419b17e1b7",
+        "problemId": "cn_ff21ed22a4baa8f1359d",
+        "revision": 1,
+        "semanticHash": "83cd6f4972c5db0ac556df18b116860e894042e37b4d6b99f0551fdd5b7ad9fa",
+        "servedRawHash": "36bd2fddef451b5a9026a0db1e48fcfb0484b7a7e8b27a1c411ed93ee3c97fad",
+        "sourceContentHash": "ecd15fd69de1ce888e6a0f5cc60cfb0cb9cfc9d594313cba7f755d6afb3ffbd9"
+      },
+      "independentAnswer": "8/9",
+      "mass": "1/8",
+      "firstMoment": "1/9",
+      "literalPairDifferences": [
+        "7/18",
+        "7/9",
+        "-1/9",
+        "7/18",
+        "-1/2",
+        "-8/9"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 6,
+      "rawSha256": "10d577ae89c73d72aa556930a6ffbf022a4202d424186957f52a106e7f981659",
+      "sourcePreview": {
+        "canonicalRawHash": "81358d1aae30b892637c067cd604b44878e7da7b055b30ade207e537e49fadbb",
+        "problemId": "cn_06fb93f6b876fa90e744",
+        "revision": 1,
+        "semanticHash": "aeb64aaadaa36a968937161f4ec1ba462b220a6a21bd5da37f9d3f7b723a0810",
+        "servedRawHash": "e79a28f299b9f4a1e3842bb32d5afb2cdec7e68acf95d83f91825e3941109b71",
+        "sourceContentHash": "6e8ac5c64de0a2867992d22e8ea80b9a6c26e8fc01c3a4301bd6e5663421bc17"
+      },
+      "independentAnswer": "9/10",
+      "mass": "1/9",
+      "firstMoment": "1/10",
+      "literalPairDifferences": [
+        "4/5",
+        "-19/90",
+        "-1/10",
+        "-91/90",
+        "-9/10",
+        "1/9"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 7,
+      "rawSha256": "ae2a5494ca1b58def4717cd591796140eac6b73526fa40bad97f50d4b1c21ddd",
+      "sourcePreview": {
+        "canonicalRawHash": "9d97514d2b93dbba006159b471950579772a6467cd0f8440e6b84e4796de5e3d",
+        "problemId": "cn_70ff6f2fffec3caee9b8",
+        "revision": 1,
+        "semanticHash": "05dccbd187963d7ffce75cfa8995e7c03d56118ef0b8c3dff0c27c3e5480cfcf",
+        "servedRawHash": "5bd6c5a81b8c1abaf8af0eeb8076dffd865c7e7967c33f352d94d8a5c5992c9f",
+        "sourceContentHash": "07c767702c38f2ab2a04e7fca9aabf6a8fb805b8fbe16d9b5122b3c875ebb210"
+      },
+      "independentAnswer": "10/11",
+      "mass": "1/10",
+      "firstMoment": "1/11",
+      "literalPairDifferences": [
+        "9/22",
+        "9/11",
+        "-1/11",
+        "9/22",
+        "-1/2",
+        "-10/11"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 8,
+      "rawSha256": "01dcc8458893a04dc736a61ae0181b5a17c38875eb9e934aaf208d9fce6a5079",
+      "sourcePreview": {
+        "canonicalRawHash": "b90fd3412e76afc31813f48ec36825d84604cfbc1eb415418b1e95732f5353bd",
+        "problemId": "cn_1f7d107b4817cd884b7d",
+        "revision": 1,
+        "semanticHash": "f344dfc2c025bb19c97806cb54ae8da23fb4c830d64f3042be9d00de6dd71b18",
+        "servedRawHash": "e88c6d2e1bbc18bd7e02d2193b7cf33ed05e0d51c7351cb782db3ef8716d9401",
+        "sourceContentHash": "c469ce8a1751c94adbf752bf52265c5b2ede44366f7a37f6df2f38d07c874b9a"
+      },
+      "independentAnswer": "11/12",
+      "mass": "1/11",
+      "firstMoment": "1/12",
+      "literalPairDifferences": [
+        "5/6",
+        "-23/132",
+        "-1/12",
+        "-133/132",
+        "-11/12",
+        "1/11"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-density-centroid",
+      "index": 9,
+      "rawSha256": "9e157545c366765803bdcc9f489c8c3b7ee6d0e6214a359e930f8fc5461fef59",
+      "sourcePreview": {
+        "canonicalRawHash": "33e8ede64b10778df2eeea48dbc9d16cafaa3bd7cc25ecc147c45d37e00ca00b",
+        "problemId": "cn_99047134c1e6b4b2ebe9",
+        "revision": 1,
+        "semanticHash": "111365636f4c9ba43d569b519d147377946c40773cbe450eb4c4f847cd9704bf",
+        "servedRawHash": "e7cd124ae8e2dd5c35b041aa54c69fe9ffb7f0a055a1dfb27a8eeb906bcfb4c0",
+        "sourceContentHash": "d247da606bacd7d09bd47aba2b9ba5b40ea59e1b9c8f85905d0d7f706ab547e3"
+      },
+      "independentAnswer": "12/13",
+      "mass": "1/12",
+      "firstMoment": "1/13",
+      "literalPairDifferences": [
+        "11/26",
+        "11/13",
+        "-1/13",
+        "11/26",
+        "-1/2",
+        "-12/13"
+      ],
+      "completeTaskReviewed": true,
+      "qualitativeProof": "Pair x with1-x in the centered first moment: integral from1/2to1 of(x-1/2)(x^n-(1-x)^n)dx is strictly positive for n>0. Positive mass strictly inside(0,1) gives mean<1. These inequalities uniquely select the literal option; independent monomial integrals give the same value.",
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    }
+  ],
+  "instances": 10,
+  "literalPairs": 60,
+  "scope": "Complete exact elementary centroid and qualitative elimination review; source-bound Easy classification, no new ideas or player calibration."
+}

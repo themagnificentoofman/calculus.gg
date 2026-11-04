@@ -1,0 +1,842 @@
+{
+  "records": [
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 0,
+      "rawHash": "ccab7887272ce43631bd9647f5b1317147ad35763ea10ca6e83940ce82c4a770",
+      "previousRawHash": "feca40f0ccf853abf7ed420eb4240aef1fbc9991b92dda4d770c8ad0bfde038c",
+      "problemId": "cn_c36134d7bb661fac154d",
+      "sourceContentHash": "3897808393519cc9433afea05b44e86ff6bfbde0ea8749a4599437961395b925",
+      "sourceSemanticHash": "eee0c3df0d265c3e3d1ac1cf1894a764a7fd26830245fd0279004dc13d55eb52",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(5), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(5), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(2, 5), Symbol('t', positive=True)), Rational(2, 25)), exp(Mul(Integer(-1), Integer(5), Symbol('t', positive=True)))), Mul(Integer(5), Add(Mul(Rational(1, 5), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(2, 25), Symbol('t', positive=True)), Rational(2, 125)), exp(Mul(Integer(-1), Integer(5), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(5), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-2, 125)",
+          "right": "Rational(-2, 125)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(2, 125)",
+          "right": "Rational(2, 125)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 1,
+      "rawHash": "89c9e9dca6725f6cf6761bdd49943e6d8c940d2110807e0e980eb5479d5aadf7",
+      "previousRawHash": "e39f43f639a8f0df242229a388535834fad4361d080522d3ea66607a28e4716b",
+      "problemId": "cn_363ce5f20e489aa08ea1",
+      "sourceContentHash": "60e0e5fdcf2f9d2b720f9be22f3848cf988ab31ce1d9b495a4a8b9f25148783a",
+      "sourceSemanticHash": "1d69f54224512feec2e7f30698bbd9c41a5e9e823a59f32397b2fb517bc2e4ac",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(6), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(6), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(1, 3), Symbol('t', positive=True)), Rational(1, 18)), exp(Mul(Integer(-1), Integer(6), Symbol('t', positive=True)))), Mul(Integer(6), Add(Mul(Rational(1, 6), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(1, 18), Symbol('t', positive=True)), Rational(1, 108)), exp(Mul(Integer(-1), Integer(6), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(6), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-1, 108)",
+          "right": "Rational(-1, 108)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 108)",
+          "right": "Rational(1, 108)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 2,
+      "rawHash": "95a1d605114028af07aa6be9b8247e9b2ca3ae6a8a81638db9849ce558c22c3f",
+      "previousRawHash": "d24760147d50aebf654be4aca27857ce9d64aa72f3e67c4405769b2803092ff0",
+      "problemId": "cn_dd535b64a8b87c03278b",
+      "sourceContentHash": "f02d9933c38fe9f02e29e34f0b3fcd31850350a394332d7b9ae1fe109d392bc9",
+      "sourceSemanticHash": "cfce4bebdd693e0685aae29eae500c48979a9ecbf99c276549bd19f57d3ea37d",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(7), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(7), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(2, 7), Symbol('t', positive=True)), Rational(2, 49)), exp(Mul(Integer(-1), Integer(7), Symbol('t', positive=True)))), Mul(Integer(7), Add(Mul(Rational(1, 7), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(2, 49), Symbol('t', positive=True)), Rational(2, 343)), exp(Mul(Integer(-1), Integer(7), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(7), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-2, 343)",
+          "right": "Rational(-2, 343)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(2, 343)",
+          "right": "Rational(2, 343)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 3,
+      "rawHash": "5afc925b82536821c11c59fef6594d27b6fca45b45a9a8f766243a5f3ec73aec",
+      "previousRawHash": "b106e6976a00bdae53d393c0094505f8db134601f88018ab0aca3242661886e1",
+      "problemId": "cn_1f95b7bbf0046e4b97ba",
+      "sourceContentHash": "df0e1eb0b48310b76f361a2656bfa6bd3718e46c09c6d738b20ee03448687efa",
+      "sourceSemanticHash": "7e23f27a3a2b13d88c087878dee2ff8633e04538a3f71a31039ffd070f0b4be8",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(8), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(8), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(1, 4), Symbol('t', positive=True)), Rational(1, 32)), exp(Mul(Integer(-1), Integer(8), Symbol('t', positive=True)))), Mul(Integer(8), Add(Mul(Rational(1, 8), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(1, 32), Symbol('t', positive=True)), Rational(1, 256)), exp(Mul(Integer(-1), Integer(8), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(8), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-1, 256)",
+          "right": "Rational(-1, 256)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 256)",
+          "right": "Rational(1, 256)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 4,
+      "rawHash": "88e941ba6a9a19901fb810453fa217c21a1a71e4de825872d0473057aeb11161",
+      "previousRawHash": "3c2074ace317d3d0ef1f8f6b9423c3eb15a6b3a12858987f915a850967b1fc18",
+      "problemId": "cn_77c5ec37a2ae2e1d949b",
+      "sourceContentHash": "2944651ad606f50658e3f5b965edd35b95a2aea80d6c7622eefefc31d33698f8",
+      "sourceSemanticHash": "4ead8c91635a575be9749f7c426925283cd1f7ea0b91ff961ffb7fd4970a109c",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(9), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(9), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(2, 9), Symbol('t', positive=True)), Rational(2, 81)), exp(Mul(Integer(-1), Integer(9), Symbol('t', positive=True)))), Mul(Integer(9), Add(Mul(Rational(1, 9), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(2, 81), Symbol('t', positive=True)), Rational(2, 729)), exp(Mul(Integer(-1), Integer(9), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(9), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-2, 729)",
+          "right": "Rational(-2, 729)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(2, 729)",
+          "right": "Rational(2, 729)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 5,
+      "rawHash": "b749a10c0272042e2bba61668b625a905ed03f6ff874d15c88e7fd026d415d4c",
+      "previousRawHash": "5a4edd467cc519cf52a50ec1923c05819cd7ef5fd89e79df1252fdc68ce08f3d",
+      "problemId": "cn_bae53f1ff4bb14ebdb96",
+      "sourceContentHash": "5e98c9a0bfb4c3e8f2e03037b3f2f53486f2b24f33e472d99c378a22cca82ee4",
+      "sourceSemanticHash": "f28d00583de7ce8ed0c7272e1e8e5a12dc67edbd0c5208c57d81ace846a44985",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(10), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(10), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(1, 5), Symbol('t', positive=True)), Rational(1, 50)), exp(Mul(Integer(-1), Integer(10), Symbol('t', positive=True)))), Mul(Integer(10), Add(Mul(Rational(1, 10), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(1, 50), Symbol('t', positive=True)), Rational(1, 500)), exp(Mul(Integer(-1), Integer(10), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(10), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-1, 500)",
+          "right": "Rational(-1, 500)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 500)",
+          "right": "Rational(1, 500)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 6,
+      "rawHash": "5e3bd5fbcb6818383ae5cdebbc2a545aed3368d707f61c5feee5bfd3c4e7c816",
+      "previousRawHash": "8810f6ceec77b9ebf6dacd037ecfe9255e5a74b26e441edbaf55bfed43fdcabc",
+      "problemId": "cn_e22376e2420905956515",
+      "sourceContentHash": "3d99a1c2889fb80fad3683c02aea3c146d7b696c6d7ae5eb31f2ac5982b9a289",
+      "sourceSemanticHash": "e5be7f20e347bdda5cdbed34c696a7eeb176030df668e726efa354d4b6d0460c",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(11), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(11), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(2, 11), Symbol('t', positive=True)), Rational(2, 121)), exp(Mul(Integer(-1), Integer(11), Symbol('t', positive=True)))), Mul(Integer(11), Add(Mul(Rational(1, 11), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(2, 121), Symbol('t', positive=True)), Rational(2, 1331)), exp(Mul(Integer(-1), Integer(11), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(11), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-2, 1331)",
+          "right": "Rational(-2, 1331)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(2, 1331)",
+          "right": "Rational(2, 1331)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-logarithmic-moment",
+      "index": 7,
+      "rawHash": "7643506710b61d7f5411acf12ceae1e18539e0cbc539b1d771fa9d8f60aa5b7e",
+      "previousRawHash": "b91d26613e3824f6ea8afb93b2d03b5d7b205693d4a1f1970c737f64cffe0112",
+      "problemId": "cn_be3b18019f407d10d42a",
+      "sourceContentHash": "48e162dce0240f27e626dd17069ecac4fa4f738cfa3ef4af87318af08226e28a",
+      "sourceSemanticHash": "20fc43ce66bb2e2152cf97e93e9cbb99b75d720dd48581f8fd72d752568ddae1",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Log substitution with oriented bounds",
+          "left": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(12), Symbol('t', positive=True))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(12), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differentiate exponential-moment primitive",
+          "left": "Add(Mul(Integer(-1), Add(Mul(Rational(1, 6), Symbol('t', positive=True)), Rational(1, 72)), exp(Mul(Integer(-1), Integer(12), Symbol('t', positive=True)))), Mul(Integer(12), Add(Mul(Rational(1, 12), Pow(Symbol('t', positive=True), Integer(2))), Mul(Rational(1, 72), Symbol('t', positive=True)), Rational(1, 864)), exp(Mul(Integer(-1), Integer(12), Symbol('t', positive=True)))))",
+          "right": "Mul(Pow(Symbol('t', positive=True), Integer(2)), exp(Mul(Integer(-1), Integer(12), Symbol('t', positive=True))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Upper moment endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower moment endpoint",
+          "left": "Rational(-1, 864)",
+          "right": "Rational(-1, 864)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 864)",
+          "right": "Rational(1, 864)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At the lower logarithmic endpoint, t=-ln(x) transforms the integral into a quadratic polynomial times an exponential with strictly positive decay rate. The first two integration-by-parts boundary terms vanish at zero and infinity, proving convergence as well as the displayed recurrence.",
+      "easiestOptionsVisibleRoute": "Use t=-ln(x), then integrate the quadratic exponential moment by parts twice. The visible polynomial degree is two for every finite case; exponent size changes arithmetic, not the method.",
+      "nearestNeighbor": "The mixed logarithmic-endpoint family needs a nontrivial series decomposition; this single-endpoint squared logarithm requires only a fixed two-step integration-by-parts chain."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 0,
+      "rawHash": "b35a1343e1595ed3b5346d6e11c41651389919be051e2f0f5030bee04e0be032",
+      "previousRawHash": "9676211b5f1efd9faaed22f2ac908dda828ea5722005f3b93deef0b29fc188a3",
+      "problemId": "cn_95c6535692023e06b394",
+      "sourceContentHash": "7b1bbe89ccc9ae7a576940ba029dc76c8992d0af7ca72f6a1ff4cee781b2d8a0",
+      "sourceSemanticHash": "ae29ce62f07cc821bc469d6a2a9ac12680156fd89cbb73fbaaf648fdad3e3005",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(5)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-6))), Mul(Pow(Symbol('x', positive=True), Integer(4)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-5))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(4)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-6)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(4)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-6)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-6)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(4))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 5)",
+          "right": "Rational(1, 5)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 5)",
+          "right": "Rational(1, 5)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 1,
+      "rawHash": "f84df3ec0b989f5d24afa6d67202973af22448b8ef8d1e6a1ac408409dfd14cd",
+      "previousRawHash": "60ed066b356b8225886b64bf2e2934d7c896e9cc499dc3c06008bf7c2f83b278",
+      "problemId": "cn_47c248a7733019505473",
+      "sourceContentHash": "531a3e3a6d8ca83232db3e0d7fc45e2769418526bc0e8e1d0bda282ae816f3c1",
+      "sourceSemanticHash": "ee91410a6392fd1b8c01900bf19edc4b396fdf4abeed28e3ffcc5ca2e0463a8d",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(6)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-7))), Mul(Pow(Symbol('x', positive=True), Integer(5)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-6))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(5)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-7)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(5)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-7)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-7)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(5))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 6)",
+          "right": "Rational(1, 6)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 6)",
+          "right": "Rational(1, 6)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 2,
+      "rawHash": "a165e401897d670a0f14adcddf251e975b72a2cc1a6fe786fc4f66d1b7c8c586",
+      "previousRawHash": "983c306909c5ab0e4b7bea1038426a0a55896ffb0d313b8e430d1e65c80a8736",
+      "problemId": "cn_ef82149df7140202ce9c",
+      "sourceContentHash": "a64556d2311caaf7984e54bdefa5923635c00d41566c8b22214ecf1cfec9a34a",
+      "sourceSemanticHash": "a1009d9a15f6ba7e13deee22c57bacf95f2ba9aaa091375212c06be5a06c3222",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(7)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-8))), Mul(Pow(Symbol('x', positive=True), Integer(6)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-7))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(6)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-8)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(6)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-8)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-8)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(6))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 7)",
+          "right": "Rational(1, 7)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 7)",
+          "right": "Rational(1, 7)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 3,
+      "rawHash": "3d67a70f85939e8adff1a615ecede240711a857e0dff577e6a9f28cc822b8576",
+      "previousRawHash": "89a2dc62a5f52f71d198f4cdb212ff6487b4fc0e61c8ae84fdbcfe02ca2b40d4",
+      "problemId": "cn_155ad8869f77d7e3e525",
+      "sourceContentHash": "f1aafc25928f78a9117e623bd212f763358cc4290d6f23f71a5ac131bbacc840",
+      "sourceSemanticHash": "a45d87f43f59bd64433f04fd6ee5a021dfa038f44ea39f92f229fc5e1fb756aa",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(8)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-9))), Mul(Pow(Symbol('x', positive=True), Integer(7)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-8))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(7)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-9)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(7)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-9)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-9)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(7))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 8)",
+          "right": "Rational(1, 8)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 8)",
+          "right": "Rational(1, 8)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 4,
+      "rawHash": "71f1693090477b587617c1e9e596ac30fef484dbc51af9e2b450e743fed2c6cc",
+      "previousRawHash": "7e231e5aba71bb44213c9e0a661f18fc17f42e5b421731c0fc4065adb875e1d0",
+      "problemId": "cn_8d37be78763a5e11e3b2",
+      "sourceContentHash": "fdf750cf8c01b80e47ce6b40e1065e4dd7f0d702496b6bcb80ee3fdec3c6c117",
+      "sourceSemanticHash": "2e2f1bae46be649d84ee1cfa470432c737962e28c937d836375c806e3b98f2e5",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(9)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-10))), Mul(Pow(Symbol('x', positive=True), Integer(8)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-9))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(8)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-10)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(8)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-10)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-10)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(8))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 9)",
+          "right": "Rational(1, 9)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 9)",
+          "right": "Rational(1, 9)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 5,
+      "rawHash": "d18ad9c89661f97869b4f907f8bdf67a81fbc2f1b368304e8285c4d85044988d",
+      "previousRawHash": "bf7d847bf301a40c34bf6b7576df5acf073bfa5a443086afd94c2b521da28c06",
+      "problemId": "cn_a640d6943950b48989da",
+      "sourceContentHash": "c112952d38e21f3d8853646f6d65da2c3916bc54007f798564b1a3b03fc773ce",
+      "sourceSemanticHash": "240ae06a90f988651916e1643bc1b4587dd700c90a01b164141a4776775c7ef8",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(10)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-11))), Mul(Pow(Symbol('x', positive=True), Integer(9)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-10))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(9)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-11)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(9)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-11)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-11)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(9))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 10)",
+          "right": "Rational(1, 10)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 10)",
+          "right": "Rational(1, 10)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 6,
+      "rawHash": "3c4f9dba3cc666d43d765aa70c658e5ae46d5ebdb6a806f4d697ddf795592532",
+      "previousRawHash": "d8ca4edde89a95a7647572d8c614052d33796d71e4c4d793b1802eb1a8213749",
+      "problemId": "cn_dcf7123abdfd9e47afe2",
+      "sourceContentHash": "ee69dd24b48c421f4df1d84fda6e0bd29567a55a4e3a46f2f73ca9b58d964c67",
+      "sourceSemanticHash": "43c4d2c72c0732f79a68f17e48581a3fb7402e6f2f30b95126bde511eefbbae9",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(11)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-12))), Mul(Pow(Symbol('x', positive=True), Integer(10)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-11))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(10)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-12)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(10)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-12)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-12)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(10))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 11)",
+          "right": "Rational(1, 11)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 11)",
+          "right": "Rational(1, 11)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-hard-improper-rational-beta",
+      "index": 7,
+      "rawHash": "26e482348c75191ad31822e886a6a4dda14f17fe420a86f55896ed7b711fb687",
+      "previousRawHash": "3e50bb762d97bf253f48ddc2d20b10c9ed754403a5d0abe698474059398c0a49",
+      "problemId": "cn_1f5e32c4a8cbbf95d1a3",
+      "sourceContentHash": "dde434329d43b0ede8a353b263359028e2473e26a55ae7f0e1fb507d3464c487",
+      "sourceSemanticHash": "dc30bce398df3c9a2c34d4e0735c77e416ac59d6d0246c35124f3d3c7709c40f",
+      "recommendedDifficulty": "medium",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "Derivative of chosen primitive",
+          "left": "Add(Mul(Integer(-1), Pow(Symbol('x', positive=True), Integer(12)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-13))), Mul(Pow(Symbol('x', positive=True), Integer(11)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-12))))",
+          "right": "Mul(Pow(Symbol('x', positive=True), Integer(11)), Pow(Add(Symbol('x', positive=True), Integer(1)), Integer(-13)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Exact substitution including Jacobian",
+          "left": "Mul(Pow(Symbol('u', positive=True), Integer(11)), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-13)), Pow(Add(Mul(Symbol('u', positive=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('u', positive=True))), Integer(-1))), Integer(1)), Integer(-13)))",
+          "right": "Pow(Symbol('u', positive=True), Integer(11))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Improper upper limit",
+          "left": "Rational(1, 12)",
+          "right": "Rational(1, 12)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Lower endpoint",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Literal correct option equals independent result",
+          "left": "Rational(1, 12)",
+          "right": "Rational(1, 12)",
+          "result": "exact equality"
+        }
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "analyticConditions": "At zero the original integrand is bounded by a constant times x^m; at infinity it is bounded by x^-2. Here m is the concrete positive integer exponent parsed from the statement, so both endpoints converge. The increasing substitution maps the improper interval to (0,1).",
+      "easiestOptionsVisibleRoute": "Set u=x/(1+x), carry the Jacobian, and evaluate a single monomial on [0,1]. The positive endpoint limits are routine; no beta-function theorem is needed.",
+      "nearestNeighbor": "Unlike mixed-log endpoint moments, this rational task becomes one monomial after a single familiar fractional substitution; the Beta label does not add a decision."
+    },
+    {
+      "familyId": "m3-integration-easy-accumulation-from-derivative",
+      "index": 0,
+      "rawHash": "4ac622d81497b8ef34facd74d144f0008bd220f37c1b0061bce6f5ef787ace6b",
+      "previousRawHash": "5b6f6bc1da1e77ce6e070516fcfc945f18cd3e9b3f03b8cdaba8d8e9a28547c8",
+      "problemId": null,
+      "sourceContentHash": null,
+      "sourceSemanticHash": null,
+      "recommendedDifficulty": "easy",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "The FTC endpoint difference equals the unchanged literal correct choice",
+          "passed": true
+        }
+      ],
+      "allSolutionStepsUnchanged": true
+    },
+    {
+      "familyId": "m3-integration-easy-accumulation-from-derivative",
+      "index": 1,
+      "rawHash": "fc239196238deda354cb35627fc3151e294931ddd29b3069db1c863e324ea786",
+      "previousRawHash": "4f6b5ff97496dfb3d1fe6d885358d76cd23f7c9e9b8837c1ad1333ddd6c058c3",
+      "problemId": null,
+      "sourceContentHash": null,
+      "sourceSemanticHash": null,
+      "recommendedDifficulty": "easy",
+      "questionMeaningUnchanged": true,
+      "choicesAnswerAndParametersUnchanged": true,
+      "newIndependentIdeas": 0,
+      "exactChecks": [
+        {
+          "description": "The FTC endpoint difference equals the unchanged literal correct choice",
+          "passed": true
+        }
+      ],
+      "allSolutionStepsUnchanged": true
+    }
+  ],
+  "scope": "Independent literal derivations for all16 original beta/log-moment tasks, plus exact unchanged-math rebind of two presentation-only extension overlays. No frozen app/source file modified.",
+  "counts": {
+    "unchangedTaskMediumRevisions": 16,
+    "presentationOnlyExtensionOverlays": 2,
+    "independentExactChecks": 82,
+    "literalChoiceInequalities": 96
+  },
+  "sourceSha256": {
+    "integration_lower_revisions.py": "4e321a2593b4549c447a0959c46585308be7ccf66b0e3a3d2f443fac3d57fc6e",
+    "integration-lower-originals.jsonl": "a5c6c123ba8c34636f3e88f3174b46ef5c90123d592c3753a4eef6d28f819ab0",
+    "literal_numeric.py": "8584df70f8bb01412bc23ddc5b9429acc7ce3794080dad1b811d931e14ad5eb1",
+    "integration-lower-revisions.jsonl": "a856c4f42ab411c5fbbb556932ada4ada578de006916f06a36753e883fc18982"
+  },
+  "APIs": "catalog/build/all_candidates/verify(record)->bool; supports(original)/build_revision(original)/verify_revision(candidate,original)->bool. Preserve prior IDs, semanticHashes, and canonical exposure aliases."
+}

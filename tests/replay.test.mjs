@@ -128,3 +128,35 @@ test('source-bound clarifications are separate from immutable replay content and
  assert.equal(result.solutionReviews[0].clarified,true);assert.equal(result.solutionReviews[0].sourceContentHash,p.contentHash);assert.equal(result.solutionReviews[0].steps.at(-1),'1');assert.ok(!result.solutionReviews[0].steps.some(s=>s.includes('Here ')));
  const loaded=await loadReplay(id,b=>s.call('alice',b));assert.deepEqual(loaded.content,before);assert.deepEqual(loaded.solutionReviews,result.solutionReviews);
 });
+
+test('unfinished Test round delayed displays use clock evidence, never receipt time',async()=>{
+ const s=await setup(),id=await s.create('test'),created=s.time();
+ await s.call('alice',{op:'open',roundId:id,segmentId:'delayed_clock'});
+ s.advance(2*86400_000);
+ const before=await s.store.get(`gameSecrets/${id}`),profile=await s.store.get('users/alice');
+ const payload={op:'upload',roundId:id,segmentId:'delayed_clock',chunkIndex:0,anchorMs:0,uncertaintyMs:5,closed:false,
+  events:[event(1,'question_displayed',{questionIndex:0,monotonicMs:5000})]};
+ await s.call('alice',payload);
+ assert.deepEqual((await s.store.get('bankRecent/alice')).exposures,[],'two-day-old display must already be expired');
+ assert.deepEqual(await s.store.get(`gameSecrets/${id}`),before);assert.deepEqual(await s.store.get('users/alice'),profile);
+ const writes=s.store.writes;await s.call('alice',payload);assert.equal(s.store.writes,writes,'duplicate acknowledgement cannot refresh exposure');
+ const recent={...payload,chunkIndex:1,events:[event(2,'question_displayed',{questionIndex:1,monotonicMs:s.time()-created-1000})]};
+ await s.call('alice',recent);
+ const entries=(await s.store.get('bankRecent/alice')).exposures;assert.equal(entries.length,1);assert.equal(entries[0].at,s.time()-1005);
+ assert.equal(entries[0].stage,'displayed');
+ await s.call('alice',{...recent,chunkIndex:3},409);
+ await s.call('alice',{...recent,chunkIndex:2,events:[event(3,'question_displayed',{questionIndex:2,monotonicMs:20})]},409);
+ assert.deepEqual((await s.store.get('bankRecent/alice')).exposures,entries);
+});
+
+test('unaligned, implausible and late-opened display segments cannot renew stale exposure',async()=>{
+ for(const kind of ['unaligned','future','uncertain']){
+  const s=await setup(),id=await s.create('test');s.advance(2*86400_000);
+  const segmentId='late_'+kind;
+  await s.call('alice',{op:'open',roundId:id,segmentId,clockUncertain:kind==='unaligned'});
+  await s.call('alice',{op:'upload',roundId:id,segmentId,chunkIndex:0,anchorMs:0,uncertaintyMs:kind==='uncertain'?2*86400_000:0,closed:false,
+   events:[event(1,'question_displayed',{questionIndex:0,monotonicMs:5000})]});
+  assert.deepEqual((await s.store.get('bankRecent/alice')).exposures,[],kind);
+  assert.equal(Object.keys((await s.store.get(`gameSecrets/${id}`)).answers).length,0);
+ }
+});

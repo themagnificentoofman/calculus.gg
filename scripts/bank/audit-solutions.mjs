@@ -8,7 +8,7 @@ import { canonical,reconstruct } from '../../lib/bank/compact-codec.mjs';
 import { renderMath } from '../../lib/render-math.mjs';
 import { normalizeNotation } from '../../lib/math-notation.mjs';
 import { assertSolutionQuality } from '../../lib/bank/solution-quality.mjs';
-import { formatSolutionStep } from '../../lib/solution-format.mjs';
+import { formatSolutionStep,formatProblemStatement } from '../../lib/solution-format.mjs';
 
 const [database,output,mode='current']=process.argv.slice(2);
 if(!database||!output)throw Error('Usage: audit-solutions.mjs IMMUTABLE_DATABASE.sqlite REPORT.json [baseline]');
@@ -37,7 +37,7 @@ for(const row of rows.iterate()){
  patterns.nonstandardNaturalLog+=/\\log(?![A-Za-z_])/.test(text)?1:0;
  patterns.asciiPowersInProse+=p.solutionSteps.some(s=>/\\textnormal\{[^{}]*(?:[A-Za-z]\^|textasciicircum)/.test(s))?1:0;
  for(const [index,s] of [p.statement,...p.choices.map(c=>c.math),...p.solutionSteps].entries())check(s,p,index);
- for(const step of p.solutionSteps)for(const block of formatSolutionStep(step)) {
+ for(const block of [...formatProblemStatement(p.statement),...p.solutionSteps.flatMap(formatSolutionStep)]) {
   if(block.kind==='math')check(block.value,p,'formatted-math');
   else for(const part of block.parts)if(part.kind==='math')check(part.value,p,'inline-math');
  }

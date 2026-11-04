@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "calculus-ninja-adapted-content-v1",
+  "status": "authored-and-independently-verified; ready for parent source-bound admission",
+  "provenanceKind": "adapted",
+  "independentOriginal": false,
+  "sourceTextReused": true,
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "licenseScope": "The specifically identified adapted mathematical question content, choices, worked explanation, and content attribution. The same content license applies wherever that expressive content is stored or exported. No change is proposed to unrelated application code, original questions, trademarks, or third-party materials.",
+  "notices": {
+    "upstreamCopyright": "\u00a92012\u20132025 Matthew Boelkins",
+    "sourceTitle": "Active Calculus (Single Variable), Second Edition",
+    "author": "Matthew Boelkins",
+    "contributors": [
+      "David Austin",
+      "Christina Safranski",
+      "Steven Schlicker"
+    ],
+    "productionEditor": "Mitchel T. Keller",
+    "editionDateObserved": "2026-08-13",
+    "noEndorsement": "This adaptation is not endorsed by the original authors or their institutions.",
+    "warrantyNotice": "The upstream CC BY-SA 4.0 disclaimer of warranties and limitation of liability is retained by linking the full license. Content is provided as-is under that license.",
+    "adapterCredit": "Calculus Ninja; AI-assisted adaptation and independent mathematical/editorial review, not human certification."
+  },
+  "permissionEvidence": [
+    {
+      "url": "https://activecalculus.org/single2e/frontmatter-3.html",
+      "locator": "Colophon, second edition, copyright and permission paragraph",
+      "reviewedAt": "2026-11-03",
+      "finding": "The publisher permits copying, redistribution and adaptation, including commercial use, under CC BY-SA 4.0."
+    },
+    {
+      "url": "https://activecalculus.org/single2e/frontmatter.html",
+      "locator": "Title/credit page",
+      "reviewedAt": "2026-11-03",
+      "finding": "Names Matthew Boelkins, the contributing authors, production editor and August 13, 2026 web-edition date."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+      "locator": "Sections 2(a), 3(a), 3(b), 5",
+      "reviewedAt": "2026-11-03",
+      "finding": "Retain supplied credit/copyright/license/disclaimer, link the source, identify modifications, apply the compatible share-alike content license, avoid downstream restrictions and implied endorsement."
+    }
+  ],
+  "itemExceptionsReview": "Both selected items are native textbook activities, with no separate author/license credit observed in the inspected activity blocks. No embedded WeBWorK/Doenet exercise, video, image, logo or trademark is included. Do not infer permission for other embedded assets from this result.",
+  "requiredImportFields": [
+    "kind=adapted",
+    "independentOriginal=false",
+    "sourceRecordId",
+    "sourceItemLocator",
+    "sourceUrl",
+    "upstreamCreators",
+    "upstreamCopyright",
+    "sourceLicense",
+    "adapterLicense",
+    "modificationNotice",
+    "sourceInspectionEvidenceId",
+    "permissionEvidenceId",
+    "destinationProblemId",
+    "destinationContentHash",
+    "independentVerificationEvidenceId",
+    "reviewVersion"
+  ],
+  "failClosedChecks": [
+    "exact reviewed source item must exist in the source register",
+    "source and adapter license must equal CC-BY-SA-4.0 for this pilot",
+    "a source URL alone is insufficient",
+    "no original-only assertion may remain",
+    "destination statement/choices/solution must have finite source-bound mathematical and rendering coverage",
+    "attribution and license must be accessible in the served item review and content export",
+    "no unrelated application license change is authorized by this contract",
+    "imported/active counts remain zero until parent workflow actually verifies import and activation"
+  ],
+  "plannedPilot": [
+    {
+      "sourceRecordId": "ac2e-activity-8.6.2b",
+      "sourceUrl": "https://activecalculus.org/single2e/sec-8-6-accuracy-of-approx.html",
+      "sourceItemLocator": "Section 8.6, native Activity 8.6.2(b)",
+      "solutionUrl": "https://activecalculus.org/single2e/activities-answers.html",
+      "solutionLocator": "Activity 8.6.2(b)",
+      "solutionAvailability": "Answer with finite partial sum and remainder calculation; not a separate full proof of the alternating-series theorem.",
+      "destinationFamilyId": "quality-series-medium-ac-gaussian-truncation",
+      "proposedDestinationKey": "ac2e-8.6.2b-minimal-guaranteed-truncation-v1",
+      "centralDecision": "Convert a strict error tolerance into the least number of terms certified by the alternating remainder, with correct zero-based indexing.",
+      "modifications": [
+        "Convert the open estimation activity into a minimum-certified-term-count multiple-choice question",
+        "Retain the original Gaussian integral and 10^-4 tolerance",
+        "Author four same-form integer choices and a fresh worked explanation",
+        "Independently correct the answer-key arithmetic: 1/(7! times 15) equals 1/75600; the displayed source denominator 756600 conflicts with its own factorization and decimal"
+      ],
+      "prerequisites": [
+        "integrating a uniformly convergent power series",
+        "alternating-series remainder"
+      ],
+      "proposedDifficulty": "medium",
+      "countAsNewOlympiadIdea": false
+    },
+    {
+      "sourceRecordId": "ac2e-activity-8.5.4",
+      "sourceUrl": "https://activecalculus.org/single2e/sec-8-5-finding-using-taylor-series.html",
+      "sourceItemLocator": "Section 8.5, native Activity 8.5.4(a)\u2013(d)",
+      "solutionUrl": "https://activecalculus.org/single2e/activities-answers.html",
+      "solutionLocator": "Activity 8.5.4(a)\u2013(d)",
+      "solutionAvailability": "Answer series and interval; concise explanatory activity rather than independent proof certification.",
+      "destinationFamilyId": "quality-series-medium-ac-erf-coefficient-radius",
+      "proposedDestinationKey": "ac2e-8.5.4-coefficient7-radius-v1",
+      "centralDecision": "Integrate an exponential Taylor series, preserve the odd power and factorial indexing, and distinguish the coefficient from the radius of convergence.",
+      "modifications": [
+        "Retain the explicit error-function definition",
+        "Ask for the x^7 coefficient and radius as a single multiple-choice pair",
+        "Author competing factorial/sign/radius errors and a fresh worked solution",
+        "Use upright differentials and the product notation standards"
+      ],
+      "prerequisites": [
+        "exponential Taylor series",
+        "termwise integration",
+        "ratio test"
+      ],
+      "proposedDifficulty": "medium",
+      "countAsNewOlympiadIdea": false
+    }
+  ],
+  "countsAtThisCheckpoint": {
+    "selectedSourceWorks": 1,
+    "inspectedCandidateItems": 2,
+    "permissionReviewedItems": 2,
+    "authoredAdaptedItems": 2,
+    "verifiedAdaptedItems": 2,
+    "importedAdaptedItems": 0,
+    "activeAdaptedItems": 0
+  },
+  "review": {
+    "type": "AI source-rights and mathematical editorial research",
+    "humanReviewed": false,
+    "legalOpinion": false
+  }
+}

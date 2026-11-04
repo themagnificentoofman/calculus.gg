@@ -1,4 +1,4 @@
-import { sqliteTable, text, integer, real, primaryKey } from 'drizzle-orm/sqlite-core';
+import { sqliteTable, text, integer, real, primaryKey, index } from 'drizzle-orm/sqlite-core';
 
 export const aiQuota = sqliteTable('ai_quota', {
   key: text('key').primaryKey(),
@@ -66,4 +66,30 @@ export const bankDeltaLedger = sqliteTable('cbank_delta_ledger', {
   pendingHash: text('pending_hash'),
   halted: text('halted'),
   updatedAt: text('updated_at').notNull(),
+});
+
+// Withdrawal becomes effective only when its introducing release publishes,
+// then survives pointer rollback. Canonical data and old round snapshots stay.
+export const bankWithdrawnFamilies = sqliteTable('cbank_withdrawn_families', {
+  sourceReleaseId: text('source_release_id').notNull(),
+  familyId: text('family_id').notNull(),
+  introducedBy: text('introduced_by').notNull(),
+  reason: text('reason').notNull(),
+}, t => [primaryKey({columns:[t.sourceReleaseId,t.familyId,t.introducedBy]})]);
+
+export const bankReleaseExclusions = sqliteTable('cbank_release_exclusions', {
+  releaseId: text('release_id').notNull(),
+  problemRef: integer('problem_ref').notNull(),
+  scope: text('scope').notNull(),
+  reason: text('reason').notNull(),
+}, t => [primaryKey({columns:[t.releaseId,t.problemRef]}), index('cbank_exclusion_lookup').on(t.problemRef,t.releaseId)]);
+
+// Only explicit reviewed equivalence mappings; default identity is problem_id.
+export const bankProblemLineage = sqliteTable('cbank_problem_lineage', {
+  problemId: text('problem_id').primaryKey(),
+  lineageId: text('lineage_id').notNull(),
+});
+export const bankFamilyLineage = sqliteTable('cbank_family_lineage', {
+  familyId: text('family_id').primaryKey(),
+  constructionId: text('construction_id').notNull(),
 });

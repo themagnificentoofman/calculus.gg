@@ -1,0 +1,1742 @@
+{
+  "cn_38d8d58c0c74776fefe9": {
+    "answerChoiceId": "ch_2f5c025848149a30",
+    "assumptions": [
+      "Real variables on the explicitly stated domain; all restrictions in the statement apply."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_8823f16755a6598c",
+        "math": "\\frac{12}{11}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_86e293ae186fe6f6",
+        "math": "\\frac{144}{1331}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_c25bef9bb6df8fb2",
+        "math": "\\frac{397}{1331}",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_2f5c025848149a30",
+        "math": "\\frac{1728}{1331}",
+        "misconception": "correct"
+      }
+    ],
+    "contentHash": "44a74e9346147f56c551a23cbb5c4139eb8c4a44509d762dbb8f022c99b17e3f",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Medium binomial generating-function recognition. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 360
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 8
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Medium binomial generating-function recognition.",
+      "prerequisites": [],
+      "primaryTechnique": "binomial-series",
+      "reasoningDemand": [
+        "method-selection",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "m3-series-medium-negative-binomial"
+    },
+    "problemId": "cn_38d8d58c0c74776fefe9",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content; AI-assisted mathematical and editorial review.",
+      "authoring": {
+        "independentOriginal": true,
+        "rawSha256": "f514f120d5dc5411e223730d71a99a7bd0f091125ea14d8d332bd84762748fac",
+        "referencePurpose": "Mathematical references only; no third-party problem adaptation.",
+        "reviewId": "quality-review:series-lower:m3-series-medium-negative-binomial:8",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "reviewed-quality-constructions-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "94e53cbe948a615f10c3f1cd51105e65022cd121fb8a3a737cd6846712eb68e1",
+    "solutionSteps": [
+      "\\sum_{k=0}^\\infty r^{k+2}=\\frac{r^2}{1-r}\\qquad(|r|<1)",
+      "\\frac12\\frac{\\mathrm d^2}{\\mathrm dr^2}\\frac{r^2}{1-r}=\\sum_{k=0}^\\infty\\frac{(k+2)(k+1)}2r^k=\\sum_{k=0}^\\infty\\binom{k+2}{2}r^k=\\frac1{(1-r)^3}",
+      "r=\\frac{1}{12}\\quad\\Longrightarrow\\quad\\frac1{(1-r)^3}=\\frac{1728}{1331}",
+      "\\frac{1728}{1331}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 12^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "binomial-series"
+    ],
+    "templateVersion": "reviewed-quality-constructions-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "|r|=1/m<1."
+        ],
+        "assumptionsChecked": true,
+        "editorialReview": "AI-assisted independent review; not human certification or player calibration.",
+        "executedChecks": [
+          {
+            "kind": "exact-algebra",
+            "left": "\\frac{- \\frac{x^{2}}{\\left(x - 1\\right)^{2}} + \\frac{2 x}{x - 1} - 1}{x - 1}",
+            "name": "The shifted geometric derivative supplies the binomial coefficient",
+            "passed": true,
+            "right": "\\frac{1}{\\left(1 - x\\right)^{3}}"
+          },
+          {
+            "kind": "exact-algebra",
+            "left": "\\frac{1728}{1331}",
+            "name": "Substitution gives the concrete sum",
+            "passed": true,
+            "right": "\\frac{1728}{1331}"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "independentReviewReport": "docs/bank/problem-quality/series/series-lower-peer-final.json",
+        "independentReviewReportSha256": "4da9cff82bfbf0f839796589e7fefc6d8287158cfb3ff0d32f9c43c3602fbd52",
+        "numericalAgreementUsedAsProof": false,
+        "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+        "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "parameterDomain": {
+          "indices": [
+            8,
+            9
+          ]
+        },
+        "rawSha256": "f514f120d5dc5411e223730d71a99a7bd0f091125ea14d8d332bd84762748fac",
+        "reviewId": "quality-review:series-lower:m3-series-medium-negative-binomial:8",
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "reviewed-quality-constructions-v1"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "registered-finite-source-reconstruction",
+        "isolated-finite-reconstruction-and-independent-peer-v1",
+        "exact-choice-inequivalence",
+        "independent-options-visible-editorial-review"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_3ef4073ce1aa906f2ad6": {
+    "answerChoiceId": "ch_db409c5e5a12bf2d",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_db409c5e5a12bf2d",
+        "math": "\\frac{1331}{1000}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_923e76ea2d10b910",
+        "math": "\\frac{121}{1000}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_5d9153a1568cde70",
+        "math": "\\frac{331}{1000}",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_3f02791adb171778",
+        "math": "1",
+        "misconception": "return only the first term"
+      }
+    ],
+    "contentHash": "5e344898bbb45a564d45f9ec0e6bf42021a8092a9ed3c4e491086d3e9411e243",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 7
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_3ef4073ce1aa906f2ad6",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 11
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "e1ee883799d55da5e80a69ef960e1f496a72e95bedb144d61d3afcaa936631d5",
+    "solutionSteps": [
+      "\\textnormal{Here }m=11.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{1331}{1000}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 11^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_4b254fe8cb8c4eada756": {
+    "answerChoiceId": "ch_804478e4bf6c4590",
+    "assumptions": [
+      "Real variables on the explicitly stated domain; all restrictions in the statement apply."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_04d15192e879b665",
+        "math": "\\frac{169}{1728}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_8d660699e5bed426",
+        "math": "\\frac{3925}{1728}",
+        "misconception": "include the first term twice"
+      },
+      {
+        "choiceId": "ch_804478e4bf6c4590",
+        "math": "\\frac{2197}{1728}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_3f52f06e1a369a28",
+        "math": "\\frac{13}{12}",
+        "misconception": "wrong differentiation or integration factor"
+      }
+    ],
+    "contentHash": "f89e4605c8208bf89a1e10e2d3bcbfd4f34b0bdfbd131ae79148371f0e23b7fe",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Medium binomial generating-function recognition. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 360
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 9
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Medium binomial generating-function recognition.",
+      "prerequisites": [],
+      "primaryTechnique": "binomial-series",
+      "reasoningDemand": [
+        "method-selection",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "m3-series-medium-negative-binomial"
+    },
+    "problemId": "cn_4b254fe8cb8c4eada756",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content; AI-assisted mathematical and editorial review.",
+      "authoring": {
+        "independentOriginal": true,
+        "rawSha256": "241a3bfc0046311415fd8e92a3217628d5b1772b7555befbed6b3a14d8156217",
+        "referencePurpose": "Mathematical references only; no third-party problem adaptation.",
+        "reviewId": "quality-review:series-lower:m3-series-medium-negative-binomial:9",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "reviewed-quality-constructions-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "2573228d2cb89f475e53d6519340077214f8ea21f21d1059d1cfc8ecbe011881",
+    "solutionSteps": [
+      "\\sum_{k=0}^\\infty r^{k+2}=\\frac{r^2}{1-r}\\qquad(|r|<1)",
+      "\\frac12\\frac{\\mathrm d^2}{\\mathrm dr^2}\\frac{r^2}{1-r}=\\sum_{k=0}^\\infty\\frac{(k+2)(k+1)}2r^k=\\sum_{k=0}^\\infty\\binom{k+2}{2}r^k=\\frac1{(1-r)^3}",
+      "r=\\frac{1}{13}\\quad\\Longrightarrow\\quad\\frac1{(1-r)^3}=\\frac{2197}{1728}",
+      "\\frac{2197}{1728}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 13^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "binomial-series"
+    ],
+    "templateVersion": "reviewed-quality-constructions-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "|r|=1/m<1."
+        ],
+        "assumptionsChecked": true,
+        "editorialReview": "AI-assisted independent review; not human certification or player calibration.",
+        "executedChecks": [
+          {
+            "kind": "exact-algebra",
+            "left": "\\frac{- \\frac{x^{2}}{\\left(x - 1\\right)^{2}} + \\frac{2 x}{x - 1} - 1}{x - 1}",
+            "name": "The shifted geometric derivative supplies the binomial coefficient",
+            "passed": true,
+            "right": "\\frac{1}{\\left(1 - x\\right)^{3}}"
+          },
+          {
+            "kind": "exact-algebra",
+            "left": "\\frac{2197}{1728}",
+            "name": "Substitution gives the concrete sum",
+            "passed": true,
+            "right": "\\frac{2197}{1728}"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "independentReviewReport": "docs/bank/problem-quality/series/series-lower-peer-final.json",
+        "independentReviewReportSha256": "4da9cff82bfbf0f839796589e7fefc6d8287158cfb3ff0d32f9c43c3602fbd52",
+        "numericalAgreementUsedAsProof": false,
+        "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+        "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "parameterDomain": {
+          "indices": [
+            8,
+            9
+          ]
+        },
+        "rawSha256": "241a3bfc0046311415fd8e92a3217628d5b1772b7555befbed6b3a14d8156217",
+        "reviewId": "quality-review:series-lower:m3-series-medium-negative-binomial:9",
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "reviewed-quality-constructions-v1"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "registered-finite-source-reconstruction",
+        "isolated-finite-reconstruction-and-independent-peer-v1",
+        "exact-choice-inequivalence",
+        "independent-options-visible-editorial-review"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_4bcb964085aca94cba10": {
+    "answerChoiceId": "ch_8f546c1bbf500309",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_8f546c1bbf500309",
+        "math": "\\frac{125}{64}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_db6721cdbcd16d2c",
+        "math": "\\frac{5}{4}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_1fe94f86aea9322c",
+        "math": "\\frac{25}{64}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_92bdea3a974da702",
+        "math": "\\frac{61}{64}",
+        "misconception": "omit the first included term"
+      }
+    ],
+    "contentHash": "af6b2f36712f7abf69dc4f9a72f446413bbe16db0db7a9bb19933b74a7093a3b",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_4bcb964085aca94cba10",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 5
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "116056b52b76d72c2599be5a41350f9c26fb87603b18e44ca810f6eac2513183",
+    "solutionSteps": [
+      "\\textnormal{Here }m=5.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{125}{64}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 5^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_59666ba2b17991b33386": {
+    "answerChoiceId": "ch_c97a5d4ef68321ec",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_c97a5d4ef68321ec",
+        "math": "\\frac{1000}{729}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_fb639b0fa0f0c308",
+        "math": "\\frac{10}{9}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_60ec6359e5d78803",
+        "math": "\\frac{100}{729}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_264fc32a1e321fbf",
+        "math": "\\frac{1729}{729}",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "111c9d01e75fd4f2190a2bb3dfb54c1208cff9f3c3d5e01f9c3c730503d6e135",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 6
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_59666ba2b17991b33386",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 10
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "ab93a7e9667f3e6f874184a77d332c0b0b175c11ba2a26405317524ec6a5cab5",
+    "solutionSteps": [
+      "\\textnormal{Here }m=10.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{1000}{729}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 10^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_7d20010c9ff6ae5efa94": {
+    "answerChoiceId": "ch_96dbe4decab0dae7",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_96dbe4decab0dae7",
+        "math": "\\frac{343}{216}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_03537a3438b65ef7",
+        "math": "\\frac{127}{216}",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_3f02791adb171778",
+        "math": "1",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_9d65676bff331749",
+        "math": "\\frac{49}{36}",
+        "misconception": "wrong starting index or omitted endpoint"
+      }
+    ],
+    "contentHash": "ee71544110db065c692087d42f3bb410984d40835b3962367a080f4788d57b6f",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 3
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_7d20010c9ff6ae5efa94",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 7
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "b3637c4befd796a644858b17cc6000a688c866cbab4d381b55efcc125b73a61e",
+    "solutionSteps": [
+      "\\textnormal{Here }m=7.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{343}{216}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 7^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_83461fb4c7a38e9e3983": {
+    "answerChoiceId": "ch_8ba9ec64c94124df",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_8ba9ec64c94124df",
+        "math": "\\frac{729}{512}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_30901d23c9b23dfc",
+        "math": "\\frac{81}{64}",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_383ae029b7ef7660",
+        "math": "\\frac{9}{8}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_02bf1fe3af6d6188",
+        "math": "\\frac{81}{512}",
+        "misconception": "wrong convergence/normalization factor"
+      }
+    ],
+    "contentHash": "9be1375bf136557c9a2bef0b8b07be042cfcd08f3581cda121432ad1c0dead99",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 5
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_83461fb4c7a38e9e3983",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 9
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "1d8af664bc39354481b7a4906e1e3b09d4ff3ad0e419c1ba5cf8658252103034",
+    "solutionSteps": [
+      "\\textnormal{Here }m=9.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{729}{512}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 9^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 4,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 4,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_a9dcbae1b36e41795fa6": {
+    "answerChoiceId": "ch_34d6caf805d2b355",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_34d6caf805d2b355",
+        "math": "\\frac{216}{125}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_e1c6161263d092da",
+        "math": "\\frac{36}{125}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_b767ce88428b540d",
+        "math": "\\frac{91}{125}",
+        "misconception": "omit the first included term"
+      },
+      {
+        "choiceId": "ch_a0359f7df9d6adbc",
+        "math": "\\frac{341}{125}",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "f90cc55a7fc07d4e651551ab71b29fecea2557c8cfc5145dbe330e6ef586d8d6",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_a9dcbae1b36e41795fa6",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 6
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "af8e21cc84728fdfb4dc551c1f814ae86286c713f23a3cee592b18e92406c6bf",
+    "solutionSteps": [
+      "\\textnormal{Here }m=6.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{216}{125}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 6^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_d3a4b62d7ff6dc9b4f1a": {
+    "answerChoiceId": "ch_522f93c6ac321c24",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_522f93c6ac321c24",
+        "math": "\\frac{64}{27}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_f501c1f46feb7f87",
+        "math": "\\frac{16}{9}",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_2d5b65e363b028dd",
+        "math": "\\frac{4}{3}",
+        "misconception": "wrong differentiation or integration factor"
+      },
+      {
+        "choiceId": "ch_1f0f1f394e019ab9",
+        "math": "\\frac{91}{27}",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "c8001f4e789aa566253c7c7122c2f3245a8a11948f7f6ac3829104ae88294a6e",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_d3a4b62d7ff6dc9b4f1a",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 4
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "84d02add1c8830b6271084f6df758a206a5302a81dfc60399e1083572e316c1c",
+    "solutionSteps": [
+      "\\textnormal{Here }m=4.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{64}{27}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 4^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  "cn_fbad89b2e76f465fc755": {
+    "answerChoiceId": "ch_a004f7285b232442",
+    "assumptions": [
+      "|r|=1/m<1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_a004f7285b232442",
+        "math": "\\frac{512}{343}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_3f02791adb171778",
+        "math": "1",
+        "misconception": "return only the first term"
+      },
+      {
+        "choiceId": "ch_fa3dca03b65a1957",
+        "math": "\\frac{64}{49}",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_f120b47323bfae21",
+        "math": "\\frac{855}{343}",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "12c82b6e001eafaef8a94bb2f1d425123d4c00a958a9047d702a2e36e9d4f153",
+    "difficulty": "medium",
+    "estimates": {
+      "basis": "Matches a polynomial coefficient pattern to a binomial generating function. Editorial estimate; player calibration pending.",
+      "difficulty": "medium",
+      "solveSeconds": 110
+    },
+    "familyId": "m3-series-medium-negative-binomial",
+    "parameters": {
+      "instance": 4
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-medium-negative-binomial",
+      "difficultyRationale": "Matches a polynomial coefficient pattern to a binomial generating function.",
+      "prerequisites": [],
+      "primaryTechnique": "power-series",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "negative-binomial-series",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "negative-binomial-order-three"
+    },
+    "problemId": "cn_fbad89b2e76f465fc755",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "medium",
+        "builderParameters": {
+          "m": 8
+        },
+        "detailedTechnique": "binomial-series",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "medium",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "d3c617a4018580a46e0cc7cc9855154d3d521567b7ccf157e1ff35e7309891fe",
+    "solutionSteps": [
+      "\\textnormal{Here }m=8.",
+      "\\textnormal{The coefficients are those of (1-r)\\textasciicircum{}-3.}",
+      "\\textnormal{|r|=1/m<1.}",
+      "\\frac{512}{343}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty 8^{- k} {\\binom{k + 2}{2}}",
+    "subtopic": "negative-binomial-series",
+    "techniqueTags": [
+      "power-series",
+      "binomial-series"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "exact-symbolic-summation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "exact-symbolic-summation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "exact-symbolic-summation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  }
+}

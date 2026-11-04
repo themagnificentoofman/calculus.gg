@@ -1,0 +1,218 @@
+{
+  "cn_3748db87b6533248b86e": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "5a965aca5b09584f161fbf13fa11adc8c1aa27afbd282c7e5ce157184731d605",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{4}f(0)=\\sum_{k=0}^{4}(-1)^{4-k}\\binom{4}k f(k)",
+      "f(x)=x^{4},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{4}x^{4}=4!=24",
+      "24"
+    ]
+  },
+  "cn_279ae41f24a671b3986f": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "538e05414e9b621de8aa971278799955fda0fbf3d6c13a7ee82cebe185885988",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{5}f(0)=\\sum_{k=0}^{5}(-1)^{5-k}\\binom{5}k f(k)",
+      "f(x)=x^{5},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{5}x^{5}=5!=120",
+      "120"
+    ]
+  },
+  "cn_79486e543d8edbf1306f": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "3de5cee8948484bb28fdbacfe5b8a601febf0cf9bfb376a15338ab926f9ab71e",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{6}f(0)=\\sum_{k=0}^{6}(-1)^{6-k}\\binom{6}k f(k)",
+      "f(x)=x^{6},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{6}x^{6}=6!=720",
+      "720"
+    ]
+  },
+  "cn_20858dda649684e78adf": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "867f1ea39303c3c915e42680b32887e0f37fce25f1aefcd39df76c9073722e38",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{7}f(0)=\\sum_{k=0}^{7}(-1)^{7-k}\\binom{7}k f(k)",
+      "f(x)=x^{7},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{7}x^{7}=7!=5040",
+      "5040"
+    ]
+  },
+  "cn_88812b8f1586ec2e8b47": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "8a63dff1a58376b431881060f500af5f540961628f7fd641211cdc995f51fa40",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{8}f(0)=\\sum_{k=0}^{8}(-1)^{8-k}\\binom{8}k f(k)",
+      "f(x)=x^{8},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{8}x^{8}=8!=40320",
+      "40320"
+    ]
+  },
+  "cn_9a916d2fecb7d4d7f4dd": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "c45a0540d1059c37b82614ed609fbd5835f266d59613ccf16cf30e595e3a7286",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{9}f(0)=\\sum_{k=0}^{9}(-1)^{9-k}\\binom{9}k f(k)",
+      "f(x)=x^{9},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{9}x^{9}=9!=362880",
+      "362880"
+    ]
+  },
+  "cn_fb009b19e83cfba407e9": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "f57938f56e7909ecece6c35100b1e01496c88e270cb440f27482a1f6ad321faf",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{10}f(0)=\\sum_{k=0}^{10}(-1)^{10-k}\\binom{10}k f(k)",
+      "f(x)=x^{10},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{10}x^{10}=10!=3628800",
+      "3628800"
+    ]
+  },
+  "cn_275cc10065061d6130fe": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-alternating-difference",
+    "revision": 1,
+    "sourceContentHash": "c275e510f669c2f04b78cddc7c9410585d4f7cb93bcc234f9e6379372f174c48",
+    "steps": [
+      "\\Delta f(x)=f(x+1)-f(x),\\qquad \\Delta^{11}f(0)=\\sum_{k=0}^{11}(-1)^{11-k}\\binom{11}k f(k)",
+      "f(x)=x^{11},\\qquad\\Delta(x^d)=d x^{d-1}+\\textnormal{terms of lower degree}",
+      "\\textnormal{Each difference lowers the degree by one and multiplies the leading coefficient by the old degree. After the required number of differences only a constant remains.}",
+      "\\Delta^{11}x^{11}=11!=39916800",
+      "39916800"
+    ]
+  },
+  "cn_debf0be4ef875931edc4": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "50cae312f1d88e4a02d58010d76953703b6180fcdc42ae0ee102afccdd924b0d",
+    "steps": [
+      "\\frac1{k+4}=\\int_0^1t^{k+3}\\,\\mathrm dt",
+      "\\sum_{k=0}^{4}\\frac{(-1)^k\\binom{4}k}{k+4}=\\int_0^1t^{3}\\sum_{k=0}^{4}\\binom{4}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{3}(1-t)^{4}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=4,\\quad b=5\\quad\\Longrightarrow\\quad\\frac{3!\\,4!}{8!}=\\frac{1}{280}",
+      "\\frac{1}{280}"
+    ]
+  },
+  "cn_ea06ef2a971719c59e00": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "5bb7d872a44389fbca3fa002b3f5623d14eb4fbe4eccca4ddf881ed3d87c417a",
+    "steps": [
+      "\\frac1{k+5}=\\int_0^1t^{k+4}\\,\\mathrm dt",
+      "\\sum_{k=0}^{5}\\frac{(-1)^k\\binom{5}k}{k+5}=\\int_0^1t^{4}\\sum_{k=0}^{5}\\binom{5}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{4}(1-t)^{5}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=5,\\quad b=6\\quad\\Longrightarrow\\quad\\frac{4!\\,5!}{10!}=\\frac{1}{1260}",
+      "\\frac{1}{1260}"
+    ]
+  },
+  "cn_32010853c52af8ef2644": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "ecfcc333a274870a38293bbb01831f492391223a81c8a3832f08a2bb0aafcb8c",
+    "steps": [
+      "\\frac1{k+6}=\\int_0^1t^{k+5}\\,\\mathrm dt",
+      "\\sum_{k=0}^{6}\\frac{(-1)^k\\binom{6}k}{k+6}=\\int_0^1t^{5}\\sum_{k=0}^{6}\\binom{6}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{5}(1-t)^{6}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=6,\\quad b=7\\quad\\Longrightarrow\\quad\\frac{5!\\,6!}{12!}=\\frac{1}{5544}",
+      "\\frac{1}{5544}"
+    ]
+  },
+  "cn_4a2894a3f00b5eb06e39": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "1b809d5e564e3fc184d880e4cf4507aea2a4390d7d660b1cdd7bb32dab04e8b4",
+    "steps": [
+      "\\frac1{k+7}=\\int_0^1t^{k+6}\\,\\mathrm dt",
+      "\\sum_{k=0}^{7}\\frac{(-1)^k\\binom{7}k}{k+7}=\\int_0^1t^{6}\\sum_{k=0}^{7}\\binom{7}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{6}(1-t)^{7}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=7,\\quad b=8\\quad\\Longrightarrow\\quad\\frac{6!\\,7!}{14!}=\\frac{1}{24024}",
+      "\\frac{1}{24024}"
+    ]
+  },
+  "cn_3cc044f01c8701f8884d": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "ad7a3896ded140167cafce539ae1f5cde4307e0892e50c822d4bd97362053578",
+    "steps": [
+      "\\frac1{k+8}=\\int_0^1t^{k+7}\\,\\mathrm dt",
+      "\\sum_{k=0}^{8}\\frac{(-1)^k\\binom{8}k}{k+8}=\\int_0^1t^{7}\\sum_{k=0}^{8}\\binom{8}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{7}(1-t)^{8}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=8,\\quad b=9\\quad\\Longrightarrow\\quad\\frac{7!\\,8!}{16!}=\\frac{1}{102960}",
+      "\\frac{1}{102960}"
+    ]
+  },
+  "cn_8808556d8a5dfc5997f8": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "2a47645e866bb3a5e896210e18b5a5e941a5060d76f5bb6a1ae280c87aeb98fa",
+    "steps": [
+      "\\frac1{k+9}=\\int_0^1t^{k+8}\\,\\mathrm dt",
+      "\\sum_{k=0}^{9}\\frac{(-1)^k\\binom{9}k}{k+9}=\\int_0^1t^{8}\\sum_{k=0}^{9}\\binom{9}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{8}(1-t)^{9}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=9,\\quad b=10\\quad\\Longrightarrow\\quad\\frac{8!\\,9!}{18!}=\\frac{1}{437580}",
+      "\\frac{1}{437580}"
+    ]
+  },
+  "cn_f78d5a04289793d168fb": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "39c2fa8ca2d53db7bc3c49b7949409ec43d180fd29a115998a5d4f6b06392cc3",
+    "steps": [
+      "\\frac1{k+10}=\\int_0^1t^{k+9}\\,\\mathrm dt",
+      "\\sum_{k=0}^{10}\\frac{(-1)^k\\binom{10}k}{k+10}=\\int_0^1t^{9}\\sum_{k=0}^{10}\\binom{10}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{9}(1-t)^{10}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=10,\\quad b=11\\quad\\Longrightarrow\\quad\\frac{9!\\,10!}{20!}=\\frac{1}{1847560}",
+      "\\frac{1}{1847560}"
+    ]
+  },
+  "cn_fe9a2d06e45cbe21713e": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-series-hard-binomial-beta-cancellation",
+    "revision": 1,
+    "sourceContentHash": "1389400a3e5997fb63945ffafe3d7f940c1665cfef1595716ec8c466646bf334",
+    "steps": [
+      "\\frac1{k+11}=\\int_0^1t^{k+10}\\,\\mathrm dt",
+      "\\sum_{k=0}^{11}\\frac{(-1)^k\\binom{11}k}{k+11}=\\int_0^1t^{10}\\sum_{k=0}^{11}\\binom{11}k(-t)^k\\,\\mathrm dt=\\int_0^1t^{10}(1-t)^{11}\\,\\mathrm dt",
+      "\\textnormal{The sum is finite, so the interchange needs no convergence theorem. The beta integral for positive integer exponents evaluates the last polynomial integral.}",
+      "\\int_0^1t^{a-1}(1-t)^{b-1}\\,\\mathrm dt=\\frac{(a-1)!(b-1)!}{(a+b-1)!}\\quad(a,b\\in\\mathbb Z_{>0})",
+      "a=11,\\quad b=12\\quad\\Longrightarrow\\quad\\frac{10!\\,11!}{22!}=\\frac{1}{7759752}",
+      "\\frac{1}{7759752}"
+    ]
+  }
+}

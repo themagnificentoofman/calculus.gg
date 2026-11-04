@@ -1,0 +1,520 @@
+{
+  "developmentItems": 6,
+  "heldOutItems": 4,
+  "split": "indices 0..3 development, 4..7 held out, applied before testing; new 8/9 extension is development only and separately labeled",
+  "ruleSelection": "rank fixed question-blind rules by development success; evaluate same rule on held-out items without retuning",
+  "bestDevelopmentRule": {
+    "feature": "texLength",
+    "mode": "min",
+    "development": {
+      "items": 6,
+      "decided": 0,
+      "correct": 0,
+      "accuracyWhenDecided": null,
+      "chanceFilledExpectedAccuracy": 0.25
+    },
+    "heldOut": {
+      "items": 4,
+      "decided": 2,
+      "correct": 1,
+      "accuracyWhenDecided": 0.5,
+      "chanceFilledExpectedAccuracy": 0.375
+    }
+  },
+  "allRules": [
+    {
+      "feature": "texLength",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 2,
+        "correct": 1,
+        "accuracyWhenDecided": 0.5,
+        "chanceFilledExpectedAccuracy": 0.375
+      }
+    },
+    {
+      "feature": "texLength",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "fractionCount",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "fractionCount",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "radicalCount",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "radicalCount",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "operatorCount",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "operatorCount",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "integerTokenCount",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "integerTokenCount",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "largestIntegerToken",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 6,
+        "correct": 1,
+        "accuracyWhenDecided": 0.16666666666666666,
+        "chanceFilledExpectedAccuracy": 0.16666666666666666
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 4,
+        "correct": 1,
+        "accuracyWhenDecided": 0.25,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "largestIntegerToken",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 6,
+        "correct": 1,
+        "accuracyWhenDecided": 0.16666666666666666,
+        "chanceFilledExpectedAccuracy": 0.16666666666666666
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 4,
+        "correct": 1,
+        "accuracyWhenDecided": 0.25,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasPi",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasPi",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasLn",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasLn",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasGamma",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasGamma",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "isPlainInteger",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "isPlainInteger",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "numericRank",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 6,
+        "correct": 1,
+        "accuracyWhenDecided": 0.16666666666666666,
+        "chanceFilledExpectedAccuracy": 0.16666666666666666
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 4,
+        "correct": 1,
+        "accuracyWhenDecided": 0.25,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "numericRank",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 6,
+        "correct": 1,
+        "accuracyWhenDecided": 0.16666666666666666,
+        "chanceFilledExpectedAccuracy": 0.16666666666666666
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 4,
+        "correct": 1,
+        "accuracyWhenDecided": 0.25,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "numericSign",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "numericSign",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "nearInteger",
+      "mode": "min",
+      "development": {
+        "items": 6,
+        "decided": 3,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.125
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.125
+      }
+    },
+    {
+      "feature": "nearInteger",
+      "mode": "max",
+      "development": {
+        "items": 6,
+        "decided": 1,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.20833333333333334
+      },
+      "heldOut": {
+        "items": 4,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    }
+  ],
+  "families": [
+    {
+      "familyId": "quality-series-olympiad-geometric-moment-determinant",
+      "instances": 10,
+      "correctNumericRanks": [
+        1,
+        2,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    }
+  ],
+  "limitations": [
+    "This is a bounded heuristic screen, not proof that no cue exists.",
+    "Unresolved numeric data are excluded from numeric rules; numerical values are presentation diagnostics only.",
+    "No statement or solution text is used by any heuristic.",
+    "A flagged family must receive authored option repair or be withheld; passing this screen does not establish Olympiad fit."
+  ]
+}

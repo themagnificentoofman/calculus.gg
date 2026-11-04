@@ -1,0 +1,1098 @@
+{
+  "status": "source-bound-shared-primary-method-recommendations-not-applied",
+  "sourceArtifacts": {
+    "integration": {
+      "path": "docs/bank/problem-quality/integration/final-group-map-v5.json",
+      "sha256": "569842b7c78fb9ec42c174527d77fa7fe4aef0648715e43031e105d52e7973b7"
+    },
+    "diff-limits": {
+      "path": "docs/bank/problem-quality/diff-limits/final-v4/normalized-record-map.jsonl",
+      "sha256": "9bee654fd7a69101aa06032d03fc6db2439a2d87c6ae31fce474f967c4696690"
+    },
+    "series": {
+      "path": "docs/bank/problem-quality/series/final-v7/item-group-map.json",
+      "sha256": "db300da7e85ae116c448087a2a340e0852fdbd248d99903ffeb604ef01adfd33"
+    },
+    "ode-mv": {
+      "path": "docs/bank/problem-quality/ode-mv/final-v7/group-map.json",
+      "sha256": "dacb61586b958ea6cc2530da7a503869c877ba64b1284cdc6a73527a58b49913"
+    }
+  },
+  "aliases": [
+    {
+      "canonicalPrimaryTechnique": "double-Abel-transform-and-Fubini",
+      "scopeFamilies": [
+        "io3-abel-recovery",
+        "q1-differentiation-olympiad-abel-density-recovery",
+        "q4-differential-equations-inverse-period-potential"
+      ],
+      "sourceAliases": [
+        "changing-order-of-integration",
+        "double-Abel-transform-and-Fubini",
+        "period-energy-Abel-inversion"
+      ],
+      "reason": "The decisive inverse step is the same composed square-root kernel and Fubini/Beta identity. Preserve the ODE energy reduction and evenness as additional structural/proof obligations.",
+      "sourceRecords": [
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_90bc732aa2a7ae509293",
+          "contentHash": "94727ed9571145e0f202a2d911fbfbbc03bf1c147d7bfc45f2ac6ad8d5c75729",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_5288e957a8cdbd6938b7",
+          "contentHash": "df403449733d1c944822c980c4caed1dffa00cfb3d4f334979b71dcdbfb2f443",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_ae7a02d7c319fb3da98f",
+          "contentHash": "8e8788a30d51bd1a1d430120e9d35c97a04d978dfde921b88d944bdec2fd53b8",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_d2f692776d1f74820792",
+          "contentHash": "dcda58272a743ccfe1cc9caf5137d976ec570ce34fc12399e19a5b63e22a93bd",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_e0279f0bc9e04c4854f1",
+          "contentHash": "61360e519e1db080d92bcd01c1b0baed61bf9b3cfba3d2174f84efae561576f1",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_020bacec1bb5c229f3bc",
+          "contentHash": "7acb7109d227887d293ef1a53f8a6cfd43a188176da8c197687892e4dedb7523",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_6d5889a6aaaa6be5408f",
+          "contentHash": "f5a861d86d1ddee3a5a4041a4c2987156938900397b2fd70791fccebab003bb1",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_d316b260691632a91ddb",
+          "contentHash": "517f57ce255dd5d0c921f8dc8a085d19ff66d9d8679a428ee03390099597c465",
+          "familyId": "io3-abel-recovery",
+          "before": "changing-order-of-integration",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_645355c46b7da8c2db1c",
+          "contentHash": "917ae680e793f666c7370a6ed9a86f3df9b3de50aa2ebe6b0fdccf6a93bd9835",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_5b6037ea83c03386d504",
+          "contentHash": "dbeeadffccf9efc072c2e2a51e959bf3d491fbf6df62634bb8fc95c723a090fc",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_7711fec377d960a6289c",
+          "contentHash": "19ab2d7e0d03e64424bf8c687a83050c52a2a9744ce8f345f6e0e3e5a9df8ce5",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_10653c0a6ccb60e40c51",
+          "contentHash": "13ba037de873d6b38dd66898f72628c4534d7f593b70300a36c437cf07785c27",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_dedfdf62fc06d183ffeb",
+          "contentHash": "040c7cb9bdc4a97ac8e4ba7b15c2412077ee0f483fad4385a1f916fba0bd5b0e",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_8519039858260a9335f7",
+          "contentHash": "ff1a7f9a2069688aae2806b69c0d9d4c70e4b43a8a13cfe49c1342307d856494",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_523333ac7e27e2bea243",
+          "contentHash": "200972f9bfed5fde8eabf858d84d6ac2b9401b9d2610ac7c87b238c3bcd391d0",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_cb5bcdc055633e4c886c",
+          "contentHash": "e8f183c03ab137cf31500a7c3cc03ac92cb878a86d8b02f66cabba11cc554f96",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_5d761309b3bf49e9cfee",
+          "contentHash": "da280a2562ef7eab5a541ec0dda072f9de8071fb64cd39d9c8e0c721bdeb1016",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_be8ab9fcd054cfb5950f",
+          "contentHash": "4fcf87861152c4db4d9aec94bb6065314643283828b0a6878196af402e0858d3",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_59d7d41a6cdd5682482e",
+          "contentHash": "876fb9e25bebe526dcb641876484d908c699142b7dbf0e3d432e00b6e2ef9b1f",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_2f17076461e708a63b93",
+          "contentHash": "8801ad719a27b85a875a98d2a25880f61d90a3a3ef77322132f9ed4a3cfb50e6",
+          "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+          "before": "double-Abel-transform-and-Fubini",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_fd0c8c42d8fd0de05474",
+          "contentHash": "0d2126aa3201d23f4a9b7f0404c8962f271c27dd4fb676e0077d1e4cc8c1d614",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f926414beb30de6d2115",
+          "contentHash": "04cdf1076b9494b3177bcf563ff45dee379d884874fcd7238e6e8766a744fef2",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_7ed91aa530460b333b81",
+          "contentHash": "b985f33e97fedc4cac4c4730ef60aca6a5660539995f6237344424c2f195d078",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_200507e76ab78fd93236",
+          "contentHash": "9051898fec7adeb552830ec78e192dbf3949879354140273bb4ef7eb0fb7acc1",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_69cef2ebc1fc94dba455",
+          "contentHash": "0802261cf202401f342b12a107ad671e4cbf77bf983ed72badf979630bbf25dc",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_a3b8655a58a2379e3c6f",
+          "contentHash": "0e458ca58716c4eaf3bb93d3ad93b128c0c0568e924af02cf5de3021d30dfc84",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_2ace5089b2c51b2bbcc7",
+          "contentHash": "d38aa8b72765a317fb32f6272f9d77700386fcd8e3ef132f27ece23e48a69074",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_883a85275a012feedca4",
+          "contentHash": "b7cbe539fff5db66f3ac9c1b01912fc701181287ec7192a316fe2e02118c640a",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_e88a2cc17b777ae14cb3",
+          "contentHash": "116d7c16586a07af2a5b23fdf5ccdfcb1791ac2a436c47a51a944f1afd70960f",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_49cdd4fa08482f11fced",
+          "contentHash": "7c87f400378f40bb4411036d3013347f07523c3d96d9af3555800b4e84edbee8",
+          "familyId": "q4-differential-equations-inverse-period-potential",
+          "before": "period-energy-Abel-inversion",
+          "after": "double-Abel-transform-and-Fubini"
+        }
+      ],
+      "preserveDetailedRouteAndStructuralSignature": true,
+      "newMethodIdeaOrTaskCredit": 0
+    },
+    {
+      "canonicalPrimaryTechnique": "Peano-kernel-sign-and-continuous-extremizers",
+      "scopeFamilies": [
+        "quality-integration-olympiad-three-node-Peano-sharpness",
+        "q1-differentiation-olympiad-peano-kernel-sharp-error"
+      ],
+      "sourceAliases": [
+        "Peano-kernel-sign-and-continuous-extremizers",
+        "Taylor-integral-remainder-and-sign-changing-kernel"
+      ],
+      "reason": "Both construct the f-second-derivative error kernel, integrate its absolute value and use a continuous approximation to its sign. Node configurations and the explicit attainment question remain distinct.",
+      "sourceRecords": [
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_3eb1b75937ee0f937b51",
+          "contentHash": "3e92c7b6ee28650dda1f1e6c2afc76a6646e3da8ca79c4a30f2b69c20a5e524f",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_18fbee73ed2ce5a74279",
+          "contentHash": "736b1ab8e9f5e578709289efa0e1826268bb59afb41676324ac0c055bf42b42f",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_2f82f07c8a2dc395d267",
+          "contentHash": "d8f66655dd6a836800e4c26d2bc5c447e0fe3753da23ba65e5ed4589e56cb3af",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_f0f0518ba0431b01ca43",
+          "contentHash": "33ed8258aeb533e881c245867cec98d62123010508b24b12dd1428b9a14788d0",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_812e23a74f7e47fe0213",
+          "contentHash": "30db56ab0edf77b3b1107407ec7d82f56f8d99f69279d4dbb2b691e3fa6875ce",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_07f12a19601f3f102c2c",
+          "contentHash": "7663ee8e7888351a6287ae0a42cf6f2c0b074f0f081729ac8f62b822aa5d3b2b",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_3986df4dec44a0d80988",
+          "contentHash": "d5ba441b922afd46b2692473ac5a707ffd9f2a6c4de02b553661d1f6dc944505",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_483301cbdc0f007a1246",
+          "contentHash": "f88e595a3b8e99bf78b2a1df7d9022416325e69fd3361260db819a46fd43607d",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_9d6fda05596eea7e7f34",
+          "contentHash": "ab12d7411aae9bb77924aec3857b6cd1bfd4238dcd96e010d6912d1e7a974c40",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_ae709cf97b88d913ca7e",
+          "contentHash": "95a8f2a237ee412acba07eeccb81da817b17bd365e9cd28292c2b3ac0a356826",
+          "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+          "before": "Peano-kernel-sign-and-continuous-extremizers",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_4115f7c71953ca586cdb",
+          "contentHash": "3d89f3635369179e3105bfbb783dc440b6ffb96b39f0c1a1db259165b34ae7b7",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_9cbb7d82ccf618e20ead",
+          "contentHash": "ed71c772bad52c952feb8e885e962084915df19f9784ec783c7d65b2fab81304",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_114187de2ca14e80b750",
+          "contentHash": "b6ee62d7d3b77da10aaac74aced81e3bee443ae765ddd093fd0983f3bbf1b208",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_a2fc5fb011ca9de3a5d9",
+          "contentHash": "9e165612359e68266ae612139efc9c3c92dc069690850e2ad775edac1b653bd2",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_8fc35408e74fccbd4789",
+          "contentHash": "ccb1c220c498fecd8afcc148a8e44796de5a9961f0e04906c8128826db7761ad",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_0d7094f3f72ed3f8ccdb",
+          "contentHash": "4a874d955418cb0d2222194f832238a28eb3d8c3cf4275a89af39fbd5bfe2a60",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_0e696b6929a3d9592a9c",
+          "contentHash": "7b77b5d7d909862b8afa02813d13565e38ca37124f239dc159a23b60709a9849",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_7ed5407d59c15f637f99",
+          "contentHash": "3ab509bcbc19cde54119b894171551227948f36574b658b389b1b00011f45475",
+          "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+          "before": "Taylor-integral-remainder-and-sign-changing-kernel",
+          "after": "Peano-kernel-sign-and-continuous-extremizers"
+        }
+      ],
+      "preserveDetailedRouteAndStructuralSignature": true,
+      "newMethodIdeaOrTaskCredit": 0
+    },
+    {
+      "canonicalPrimaryTechnique": "Gram-projection-and-orthogonal-remainder",
+      "scopeFamilies": [
+        "io3-moment-projection",
+        "quality-series-olympiad-least-energy-sequence",
+        "q4-differential-equations-oscillator-minimum-control-energy"
+      ],
+      "sourceAliases": [
+        "Duhamel-moments-and-Gramian-projection",
+        "Gram-projection-and-orthogonal-remainder",
+        "orthogonal-projection"
+      ],
+      "reason": "The actual optimization step is the two-vector Gram projection with an orthogonal-remainder proof in each function/sequence/control space. Keep the separate moment-kernel derivations.",
+      "sourceRecords": [
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_2586549456d6ec1b5a96",
+          "contentHash": "25973f9a6c4a7fa3bda9c866d51c843e16af1529b522a4618648e1547393ec2d",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_25dd253c93b2c60f2b58",
+          "contentHash": "bf88db0b3e89253da84e2f91a03d806edab827e1324928374db2e34b8eae7038",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_99e0ec2e544db6282778",
+          "contentHash": "f893aa1b8920f20a24882995ee1edc6098e1bd3c10dd4f386df914c9b4614603",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_2c759d7859c078f618dc",
+          "contentHash": "6ccf86f83e61008d6c3600b64d612b636188ec6cd05bd5d294cf31845461e4dd",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_c82a016facc189fd398f",
+          "contentHash": "c63e6706e26ff118f55fb904980dedaaea880dd3e167db81fa5b37d04e70a5f4",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_4300bd2b5f3a76a17604",
+          "contentHash": "76eec5125758c4c5bb05ff5acb5be677da6aaf4c53fd7da8aa996965e0b39192",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_68b905896082bdfbed8a",
+          "contentHash": "4ade2a57518f3944a96f0e859a8ff9045682c0351fbb5cdcaf5ee36f17192194",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "integration",
+          "problemId": "cn_b56ffc25280b0e30d3e0",
+          "contentHash": "667c16b658de0a0107be37969bc0411cbe588997ef7a0cb626ddb72357c4883e",
+          "familyId": "io3-moment-projection",
+          "before": "orthogonal-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_eb5b032c8a13c269a72c",
+          "contentHash": "71c35f893f9e43315413ad8d26b2a41521a16c9265fadfc2ac859bb19ec8fafd",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_7e61b9206c361d2c3e82",
+          "contentHash": "46808945bd85bcb38e8f8c1a276caf564c78ee9cb50837f5f2e8665fac98ee0c",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_e311892bba0dbda88c91",
+          "contentHash": "da6c155d086f00ee26859df42f39d0b3817a86d8b5d8a16a2f678c8bf50a4da8",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_a7253b96b1bfc884735c",
+          "contentHash": "efd0e604e686295e56377afdca2d2eea920c7319e2e1330e1f73edd87ff53649",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_0a13dfe4e9821a7465c7",
+          "contentHash": "64ef1e045c0bd0a97ed441d83a742a68f9e6d5d1407717e66f176ddbb3831be6",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_f90b41f3ebb64d7bf313",
+          "contentHash": "8d9207afa4de457813fe0ecd6ff38772ad0778064fea47fc93a6e4ef53d8e339",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_16ea571e253f00ca1e3f",
+          "contentHash": "8c82209ea9373a22375e75ae7f1de59a8935f534fabe6c48d0ae7c21adb07303",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_64d78cbbbb3cf5f3a25e",
+          "contentHash": "a8c6dbb76e89921749df730dcab52119ac16ce359c65b30abb16a85e0dedc164",
+          "familyId": "quality-series-olympiad-least-energy-sequence",
+          "before": "Gram-projection-and-orthogonal-remainder",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_0619641d1b776515e6ef",
+          "contentHash": "bee6a593b4c486dbd41a655931ebae8da957aff0183544b4aa6a7e61e05581db",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f3e0d10dfc485a3a119e",
+          "contentHash": "adbfef287acc45da9da192f1e65437fddcf467dae0c02d0a7e9af88b9a6dadde",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_e04a7faf0218aed800ed",
+          "contentHash": "8db5a95d1205f630d658dc2b5534caaa89e1b2968476d3956a88b3e43b42a028",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_338dcfa2dd64f8f493dd",
+          "contentHash": "84d61f7facce68cfe0417ff9242480daf9fa161667f8c67c6f898f80015cb600",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_52054c320b3984f9d69d",
+          "contentHash": "1eeb025b967da51c99b61bafd46c9c55124ffe7494882f498e54951cfa270e49",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f22db7bb03ca501d6db8",
+          "contentHash": "5da3fb1fb4fa82ef8a16241ca6d17e978b24875fb1cbe732e20cc5bf3ea725fa",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_6722118fee5b1f7347b5",
+          "contentHash": "dd1e994a0d55b80078922e556170e2469ea1ddc9d2491149b3dcd3711caebed8",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        }
+      ],
+      "preserveDetailedRouteAndStructuralSignature": true,
+      "newMethodIdeaOrTaskCredit": 0,
+      "protectedEasierRouteRecords": [
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f7457a250f75ff724582",
+          "contentHash": "ba1a79351f8cee33495d0d66d073db266897e918f9565aac32c6907aff493ad1",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f3292042e450f865b321",
+          "contentHash": "69a6e50262636b6324146442eb72446cdb9c2f1261a7ee3d34f496cbc2be990c",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_ebfb658c9bfee557af17",
+          "contentHash": "97a7ef6bac2835b05e6b4c5be46d3ead3e731bf3a9b8443fd19c63b6f2d2316f",
+          "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+          "before": "Duhamel-moments-and-Gramian-projection",
+          "after": "Gram-projection-and-orthogonal-remainder"
+        }
+      ],
+      "scopeException": "The three independently demoted Hard control-energy instances are excluded from this shared-method alias. Their actual choices are isolated by Cauchy-Schwarz lower bounds and a feasible cubic forcing upper bound; do not overwrite that easiest route with intended Gram inversion."
+    },
+    {
+      "canonicalPrimaryTechnique": "Riesz-representer-and-Cauchy-Schwarz",
+      "scopeFamilies": [
+        "q1-differentiation-olympiad-hilbert-representer-bound",
+        "q4-multivariable-elliptic-torsion-sharp-functional",
+        "q4-multivariable-harmonic-gradient-extremum"
+      ],
+      "sourceAliases": [
+        "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+        "Poisson-witness-and-energy-Cauchy-Schwarz",
+        "Riesz-representer-and-Cauchy-Schwarz"
+      ],
+      "reason": "All identify the representer of a linear functional and its sharp Hilbert norm. Polynomial, Fourier and Poisson representer constructions remain different structural tasks; original detailed-route labels remain provenance.",
+      "sourceRecords": [
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_116897926795ac14374f",
+          "contentHash": "33b30a8012c4fc5655ff9a68d9d3cd6cbc5525df012ab052ec3b769d81bc82a0",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_a08af2f53611d7735242",
+          "contentHash": "b61384b297d9adc8de7e9655198b974c54c04b1d3f383c2b8c6c10b2bba442b5",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_17c5926f8f56bc91faea",
+          "contentHash": "1c548ac362a736288d0316eddcf72ca7a437add19faa91b596d45a8aa7882d9f",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_2289a5bed6469318e919",
+          "contentHash": "e7ce3b6590a49392ecd84e5bd7d325ef596b880f0a35082ed787d7cf54012cec",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_bcdde89c4ba6785786f4",
+          "contentHash": "5e8ff40a8401155449044a0689cebd5ee99a88186da34310d7106a29a64ec8e2",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_3240b7f85f296b524bfb",
+          "contentHash": "767e650495dd0391d57d71a5e00888d779c0e60218ec055d86946319c3da9806",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_63c38a03d4a77939692c",
+          "contentHash": "6935e0542a932d621af3639b292877d7f8dcee2da05d99f07d927771ec667bbf",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_e4ec8daff9ec2b301d48",
+          "contentHash": "8c3c3b490a6de5e082e4c314c5f94c4eb9b0c9bba4ddae428f569644dbddf412",
+          "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+          "before": "Riesz-representer-and-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_87267e9e24dfed1c4032",
+          "contentHash": "d79c71c266bc11d04cf77c99a35c23df67e90d7c93e0109e5935806c05abbe61",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_03a50781894cd36a1147",
+          "contentHash": "ad36844c20fddb9aee8e37cdfd16e37b4c2fa7f7fdf6953aba54602a16453354",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_c3c8d5e1e839502c6b38",
+          "contentHash": "04476be610622c367b64ff015b8e190c8635694c14719c8419a93b1ed722de06",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_44f71b316091579d4a7f",
+          "contentHash": "19e42ba9b4fe0e07f44a243f1ff8945b3c4f607370dcec530bcafa7308f30766",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_623df93f991effeaac88",
+          "contentHash": "d5119d5903d4c15e4f866355332847b642fdaf1184d84df4df02fbe70e3d4364",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_b22335582633bb8fad02",
+          "contentHash": "91cb28b22a54f9bc2461d47ea00fe5147f4a12f3ae1bab054be5e734f549cb3e",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_48801b9dcfae3fd185b0",
+          "contentHash": "c13e81d8d3221cdf6f945d08a5e4dbc67394bb768be496af751964c61cfecfc6",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_902e9ece2b062c5d9bf7",
+          "contentHash": "dfc70e5e1e8f57aa82773eb01cbdd3f7e221c6e87971f2d9c47e562184edb572",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_efa8a40e785f3200b10e",
+          "contentHash": "aba946e15874caf77cde8f0b126058fc5a45719e9e3d62d1ee47fe236914ee27",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_18769607496db1c1436d",
+          "contentHash": "bc6c931a9e69e5e97e61fe98a95fc391faa7672cd17f46d1e2dfc3026fc955ea",
+          "familyId": "q4-multivariable-elliptic-torsion-sharp-functional",
+          "before": "Poisson-witness-and-energy-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_a56a14a8ef0ad64d9d58",
+          "contentHash": "cbe6fe34f5a82b2815fe9e6cb575d9112991bd9b88831a15deebce1a9981d3e8",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_4cff28e703934fb2bed2",
+          "contentHash": "496bd274a5e61b545cbd169365e8b32fe635e39319add278ab57fc686580afd0",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_6b5b179b0f34b50e633f",
+          "contentHash": "1e3bd9c45cceb04e69fcdf5b5285c3e12bfa1d467b7fe530945505596a49b945",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f483b9308bd5dfce110e",
+          "contentHash": "5a25f5835b150ae5713be9896bdf0dbee13bb85a75f1f26f77f39728107dabab",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_51e83190ccc0fd647259",
+          "contentHash": "09dc2ba12eb302b11debefe6eaf57b3445dbf1c2a9fafe5c59aac979b116a0b4",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_4b177a6d4f706df5003b",
+          "contentHash": "3f9b448bec28c9c759df5ca4ae7671f9289fa4edaff5901318383ed31830f78b",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_d4835063f6d24de3265e",
+          "contentHash": "753cdcbe257f19348a7be41b2ac3f96ccad47df5cf6380bfa405b36e206cf4da",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_e9961c5dc0ccef5f41e2",
+          "contentHash": "ffa7fb837720a36a26146710649796a0c6f9358e1333e98ceca3b5716e72a07e",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_f5a62e370f307e027759",
+          "contentHash": "40d91ef337d5c2d7a348955c8712bfde100304b1b28117ffcf11c95a3f08552b",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        },
+        {
+          "sourceMap": "ode-mv",
+          "problemId": "cn_a11d69a81b14543e007d",
+          "contentHash": "b11addba0e18316e9792c90637e2a44aa1535482219a6ac5847d6bdb4e50ae8d",
+          "familyId": "q4-multivariable-harmonic-gradient-extremum",
+          "before": "Fourier-reproducing-kernel-and-sharp-Cauchy-Schwarz",
+          "after": "Riesz-representer-and-Cauchy-Schwarz"
+        }
+      ],
+      "preserveDetailedRouteAndStructuralSignature": true,
+      "newMethodIdeaOrTaskCredit": 0
+    },
+    {
+      "canonicalPrimaryTechnique": "roots-of-unity-filter",
+      "scopeFamilies": [
+        "m3-differentiation-olympiad-root-of-unity-filter",
+        "m3-series-olympiad-cubic-root-exponential-filter"
+      ],
+      "sourceAliases": [
+        "coefficient-extraction",
+        "roots-of-unity-filter"
+      ],
+      "reason": "The differentiation source describes a cyclic complex filter explicitly; coefficient-extraction is its generic method label. Use the same filter method label as the series construction without merging their tasks.",
+      "sourceRecords": [
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_019efc5e00cb2f6e0c0a",
+          "contentHash": "48affa189c521aa55bc9568f2a72273bd4b069ae0e3460eb00ba9a71765513ff",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_09a7d470a72c9874c810",
+          "contentHash": "e37271bb2dd6a82528d9a2c3f59dde7827b78234221bb7bfbdd2c26002e3403a",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_87143c059c0164e8f5ae",
+          "contentHash": "23fc2af211df671b57db9980c2054f5a1c7db443e60495fa52ceb163001acccb",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_a9f6b51e32a26ac94215",
+          "contentHash": "c276e3128115f69652c5429c06dab1a9aeb2e376a59d9f41b131061257c320ec",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_7ad272fc460953feecff",
+          "contentHash": "15966667da3b1b11234821350b5f3403a4d891eb042d5bdc91f4db617d41c4d3",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_d064be9096675ef4f7f4",
+          "contentHash": "29b50c8ddeaf16d0c48a8021ead1a30e741dd55fd71e4e6d2c348847424d7a28",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_b47e85986b3efe6c1d23",
+          "contentHash": "28e66060800e8a7421603fd1c5eb35769f0a6a3d327b08d4f38e7f0257ad158d",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "diff-limits",
+          "problemId": "cn_309ac2b8b0c84ead7b9d",
+          "contentHash": "d9480b558e100386cf1403d2925ae119da8979917dabf9bac4e0f03ddb629de5",
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "before": "coefficient-extraction",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_517d3898b558d522c245",
+          "contentHash": "fd51669d146227158d03a297e60f37655a86759e218c88b452499de336bb3939",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_5be3250db7c7c54d5579",
+          "contentHash": "af1eb20577482175d31bafb03761aa428af8e70cefa99537c6321322b5f2c924",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_9af48b172b84ce7d06fc",
+          "contentHash": "ebf99dd4eff10d0690da7af133e44a75857012e113cb5a578e430b67e91a21b1",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_411d00c9e8cbfd505316",
+          "contentHash": "fce0212b2a07419b9480f9ebf0fb70f55f2b7f0c30c00ceba5ef462438e390e0",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_83309d6f83df33ab1d91",
+          "contentHash": "4d4bfba1fc6e548dd5bf7792d9c34703b72386dac881c9b742140d1bbca283d5",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_d0704f381e206e7adb09",
+          "contentHash": "4e60cb823eadeb435900f8efd3883bf0d1a024d534f86e337b87980651922626",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_5d44aa7d99a1eec3b247",
+          "contentHash": "5360adf43e465513f1de698317d830ad03a4838856b8482e922b547165cfd8e5",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        },
+        {
+          "sourceMap": "series",
+          "problemId": "cn_37a1f5ab96009a79c7ee",
+          "contentHash": "7cd1a396946e1d3f472f190d4d213bbc888b3a1f839ff583fc0d4bb5b5b8a088",
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "before": "roots-of-unity-filter",
+          "after": "roots-of-unity-filter"
+        }
+      ],
+      "preserveDetailedRouteAndStructuralSignature": true,
+      "newMethodIdeaOrTaskCredit": 0
+    }
+  ],
+  "scope": "These five narrow shared-method aliases operate only on listed exact source rows. They do not imply task equivalence, and do not flatten all Hilbert, beta, inverse, spectral or asymptotic methods.",
+  "additionalEvidence": {
+    "path": "docs/bank/problem-quality/control-energy-peer.json",
+    "sha256": "748b54d508b7c6c73fdeae994483a803f257ff68b11980a7429dd1e9e3458e90"
+  },
+  "preservedOwnerMethodCorrection": {
+    "exactSourceRecords": [
+      {
+        "sourceMap": "ode-mv",
+        "problemId": "cn_f7457a250f75ff724582",
+        "contentHash": "ba1a79351f8cee33495d0d66d073db266897e918f9565aac32c6907aff493ad1",
+        "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+        "before": "Duhamel-moments-and-Gramian-projection",
+        "after": "Gram-projection-and-orthogonal-remainder"
+      },
+      {
+        "sourceMap": "ode-mv",
+        "problemId": "cn_f3292042e450f865b321",
+        "contentHash": "69a6e50262636b6324146442eb72446cdb9c2f1261a7ee3d34f496cbc2be990c",
+        "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+        "before": "Duhamel-moments-and-Gramian-projection",
+        "after": "Gram-projection-and-orthogonal-remainder"
+      },
+      {
+        "sourceMap": "ode-mv",
+        "problemId": "cn_ebfb658c9bfee557af17",
+        "contentHash": "97a7ef6bac2835b05e6b4c5be46d3ead3e731bf3a9b8443fd19c63b6f2d2316f",
+        "familyId": "q4-differential-equations-oscillator-minimum-control-energy",
+        "before": "Duhamel-moments-and-Gramian-projection",
+        "after": "Gram-projection-and-orthogonal-remainder"
+      }
+    ],
+    "sourceMapStillCarries": "Duhamel-moments-and-Gramian-projection",
+    "requiredDisposition": "Retain Hard and record the independently proved options-visible bound route in global primary-method accounting. This is a source-map metadata correction, not a new construction/idea.",
+    "evidenceIndices": [
+      4,
+      6,
+      9
+    ],
+    "easiestRoute": "Cauchy-Schwarz single-constraint lower bound and cubic-trial upper bound",
+    "originalBroadAliasDraftPreserved": "preserved-drafts/cross-topic-method-aliases-before-control-exclusion.json"
+  }
+}

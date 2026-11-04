@@ -1,2107 +1,2921 @@
 {
-  "format": "content-delta-v1",
+  "format": "content-delta-v2",
   "projectId": "appgprj_6ad91db3d4788191b3e73074e27447f5",
   "priorBundleId": "ed08a3de9381d715d50f5a122a3eb23034d2b92dff2192be4aac198272e56f32",
-  "release": "cn-2026-11-03-ideas-v3",
-  "parentRelease": "cn-2026-11-02-full-v2",
-  "newCount": 2504,
+  "priorOperation": {
+    "kind": "delta",
+    "bundleId": "9b174c91c42b61dac5addcedb8224048ea004d2143c74f154d10e415763fb345"
+  },
+  "operationAllowance": {
+    "reads": 581714,
+    "writes": 189197,
+    "bytes": 150000000
+  },
+  "release": "cn-2026-11-04-quality-v4",
+  "parentRelease": "cn-2026-11-03-ideas-v3",
+  "parentSources": [
+    "cn-2026-11-02-full-v2",
+    "cn-2026-11-03-ideas-v3"
+  ],
+  "policy": {
+    "sources": [
+      "cn-2026-11-02-full-v2",
+      "cn-2026-11-03-ideas-v3"
+    ],
+    "exclusions": 1389,
+    "withdrawals": 72
+  },
+  "newCount": 3292,
   "before": {
-    "problemRef": 100800,
-    "sharedId": 72,
-    "poolId": 186,
-    "parentManifestSha256": "0a536db02aea24622a59a83d6425e037433e475d0f379e1a057a9e0efb42f694",
-    "parentCount": 100800
+    "problemRef": 103304,
+    "sharedId": 385,
+    "poolId": 1045,
+    "parentManifestSha256": "94cae984db306ef2aeebf14570f0eb39dc2cd3482626ad27dfba74b9d88eab4c",
+    "parentCount": 2504
   },
   "batches": [
     {
       "file": "batch-00000.json",
-      "sha256": "5988da38e80b820480d4d59e9d39c357bf6b778d9e5d4049ec524fb276bdff41",
-      "bytes": 210877,
-      "statements": 46,
-      "rows": 46,
-      "estimatedWrites": 102,
-      "estimatedReads": 652
+      "sha256": "a3642d16a58d2a1012364713cce046aa4ed106333b88df7932e75017aaf8eadf",
+      "bytes": 101711,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00001.json",
-      "sha256": "729db43b311543a2c38483321c2ec748a72cf534a39ca9c88c04f500051f01b2",
-      "bytes": 211648,
-      "statements": 66,
-      "rows": 66,
-      "estimatedWrites": 142,
-      "estimatedReads": 892
+      "sha256": "f25465843f678dac09769b7c5fe501b812162136d11de97e165f47b14fc0ac90",
+      "bytes": 88428,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00002.json",
-      "sha256": "2c95bdee13e80d4ec118c35be07a8c537427a3c50355906549a1d877a3283946",
-      "bytes": 211360,
-      "statements": 65,
-      "rows": 65,
-      "estimatedWrites": 140,
-      "estimatedReads": 880
+      "sha256": "ec53c54cd8a4999d6cf03c621a29c8d6884f2b994e013acc789585ea94925782",
+      "bytes": 206566,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00003.json",
-      "sha256": "4de207d1c45f5b143d917d8c5aabbaaee36543d1bfafd815827a9b2f036ec3a2",
-      "bytes": 211989,
-      "statements": 62,
-      "rows": 62,
-      "estimatedWrites": 134,
-      "estimatedReads": 844
+      "sha256": "519cc470e4eeff03f97c04b0e3026929d823c5a8f274a63148e64c0798339a1a",
+      "bytes": 207696,
+      "statements": 46,
+      "rows": 46,
+      "estimatedWrites": 102,
+      "estimatedReads": 560
     },
     {
       "file": "batch-00004.json",
-      "sha256": "fa9ae06c83105c9a5be2d57c1e3190b8ffe60b0aef001af353e932f272c376a5",
-      "bytes": 211562,
-      "statements": 64,
-      "rows": 64,
-      "estimatedWrites": 138,
-      "estimatedReads": 868
+      "sha256": "9c76a34a4c8af25ce14c9ad765e3742bd046f31a7721a33959f5f6b39112e949",
+      "bytes": 209098,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 108,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00005.json",
-      "sha256": "569fe6c065c277317a931ff9245db9986bbed92ef2b25e7e49f2eb18d93faaf0",
-      "bytes": 199940,
-      "statements": 73,
-      "rows": 73,
-      "estimatedWrites": 282,
-      "estimatedReads": 976
+      "sha256": "2ae096446bf5733eab8c5f60a44f413e9126d1a58d275482ef3e5af685fee4e5",
+      "bytes": 209887,
+      "statements": 71,
+      "rows": 71,
+      "estimatedWrites": 152,
+      "estimatedReads": 810
     },
     {
       "file": "batch-00006.json",
-      "sha256": "15f85fb218594b4ef9cbf6776bd2fe3ddc4a062ac0c727a52d26e95686233271",
-      "bytes": 199951,
-      "statements": 76,
-      "rows": 76,
-      "estimatedWrites": 314,
-      "estimatedReads": 1012
+      "sha256": "2326aa286e66cf693820fd36e9a68cf0aac90e711698c20fe651ba1ce959bdae",
+      "bytes": 206152,
+      "statements": 71,
+      "rows": 71,
+      "estimatedWrites": 184,
+      "estimatedReads": 810
     },
     {
       "file": "batch-00007.json",
-      "sha256": "8b3ff6505ab6257ee81587e43b2e9bf8b80ddf7b7d84fc6219affd1d84ce5f2d",
-      "bytes": 200041,
-      "statements": 74,
-      "rows": 74,
-      "estimatedWrites": 306,
-      "estimatedReads": 988
+      "sha256": "f25147e66a9a2132d7e8ef70f094bb27f376a1d13ebca5c4a670b43c1f4dabd2",
+      "bytes": 197383,
+      "statements": 51,
+      "rows": 51,
+      "estimatedWrites": 214,
+      "estimatedReads": 610
     },
     {
       "file": "batch-00008.json",
-      "sha256": "a3c3a1d5a7b567232d91a5b8cc738cd79999fb6ec30712d6a57a9a5d20842528",
-      "bytes": 198938,
-      "statements": 75,
-      "rows": 75,
-      "estimatedWrites": 310,
-      "estimatedReads": 1000
+      "sha256": "c0a8507423912e9c179d48cad578795b9d670438aeec04bc1386ea21608ef840",
+      "bytes": 197333,
+      "statements": 47,
+      "rows": 47,
+      "estimatedWrites": 198,
+      "estimatedReads": 570
     },
     {
       "file": "batch-00009.json",
-      "sha256": "fef58f24d7f2e4d82ebc439bd12f153b271d150c2e3e200a924dba4637644166",
-      "bytes": 179597,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "10c83c47d5226dde334ac917bf210c56908de6186645c13fdd7c357e0a954dbf",
+      "bytes": 198311,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00010.json",
-      "sha256": "ae9cf8275446584034abaf1055769c26972bca7865b26231641e075fc09e9c53",
-      "bytes": 170777,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "31cc514d55d6f02484c66d158df0635addfd4eff04bb640f42a118f88b7fa881",
+      "bytes": 199513,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00011.json",
-      "sha256": "cb77f959f84a333528417a931818c7858e449b6c60b53ac691818d3c486409a4",
-      "bytes": 170587,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "5126accb00e15c169e369628d9c7fd215e77e1b9815dd11e6716eb1189d00a38",
+      "bytes": 196111,
+      "statements": 48,
+      "rows": 48,
+      "estimatedWrites": 202,
+      "estimatedReads": 580
     },
     {
       "file": "batch-00012.json",
-      "sha256": "c8d8d25b028faee6e994110fc91ea1f2396272adb4dbdd51bd306cc31bad3bf6",
-      "bytes": 170959,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "8d4c9eac8bb4dbbfdf676ec6e023d75565f53e652bebd59ea5831334f7eb55d4",
+      "bytes": 199265,
+      "statements": 50,
+      "rows": 50,
+      "estimatedWrites": 210,
+      "estimatedReads": 600
     },
     {
       "file": "batch-00013.json",
-      "sha256": "465fc097cbc271d841c27e542c9e1d0fd0dc332de9ed20a8c62d2b63e152dd3d",
-      "bytes": 171279,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "5affccb9587c050e4c993ba369034f3d4ee6f398a512ee7459c3b474d799e6d6",
+      "bytes": 200083,
+      "statements": 50,
+      "rows": 50,
+      "estimatedWrites": 210,
+      "estimatedReads": 600
     },
     {
       "file": "batch-00014.json",
-      "sha256": "897eadc8707e5587613eeb0f2f992e75e7946ceb9e31a026eaa08a352e636744",
-      "bytes": 171443,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "894cf230a2ac0a3134b9fc299d17f24242cb101d96d867c5cfa032e66e063b8c",
+      "bytes": 198983,
+      "statements": 54,
+      "rows": 54,
+      "estimatedWrites": 226,
+      "estimatedReads": 640
     },
     {
       "file": "batch-00015.json",
-      "sha256": "071d4c82a8bade9038070405382df969a76119ba55a848c97d59c13d59e3b7a6",
-      "bytes": 182277,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "c79e089f5a1dc8470f78cc32318bf0bcf76b42ae7b2f833e01b1f5001bd751fe",
+      "bytes": 196825,
+      "statements": 45,
+      "rows": 45,
+      "estimatedWrites": 190,
+      "estimatedReads": 550
     },
     {
       "file": "batch-00016.json",
-      "sha256": "070c67b614820205c533c359db781c74b9992b719cfe78504d98cf6e984c969a",
-      "bytes": 178769,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "570af765f2d391272403f7142cc2b15080454eb5053dd39513470cdbf12f8472",
+      "bytes": 198299,
+      "statements": 48,
+      "rows": 48,
+      "estimatedWrites": 202,
+      "estimatedReads": 580
     },
     {
       "file": "batch-00017.json",
-      "sha256": "46b7c37d4f1534e1449e724881bf1a5eb7243adbb9ae6299ccfe5bce7c04d269",
-      "bytes": 169075,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "9c3160f70af02399aa1d4ff0a98f51327f1da323b199a5511c07810db27b7123",
+      "bytes": 197805,
+      "statements": 46,
+      "rows": 46,
+      "estimatedWrites": 194,
+      "estimatedReads": 560
     },
     {
       "file": "batch-00018.json",
-      "sha256": "2e7f4a9cd1dd3fff55b9aa40ce4f21f2d9032b312083ece88aa552dda24ddeab",
-      "bytes": 171561,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "c49b19bdddb3057ab3109ae7c0c32252ab8e8c625cac540bd001e2471ca7fd15",
+      "bytes": 198495,
+      "statements": 50,
+      "rows": 50,
+      "estimatedWrites": 210,
+      "estimatedReads": 600
     },
     {
       "file": "batch-00019.json",
-      "sha256": "e41cfda751d482f7f397a86e0fa868794716fe4a7e8b0885d66aa88a057d2a23",
-      "bytes": 179691,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "143c8380fdd08b75ad7af1ce526907bdc17ae63d134f07206a2b584d1a2733fa",
+      "bytes": 198637,
+      "statements": 47,
+      "rows": 47,
+      "estimatedWrites": 198,
+      "estimatedReads": 570
     },
     {
       "file": "batch-00020.json",
-      "sha256": "1632f2c3efbdf57d80cbe52a27ec0f0a703dfe694d4d4f805efa74447094d976",
-      "bytes": 168127,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "d9de449bccb2e7f4eea45687342c5c6d9cad6f751b199b79214226c7aaaf1331",
+      "bytes": 198699,
+      "statements": 43,
+      "rows": 43,
+      "estimatedWrites": 182,
+      "estimatedReads": 530
     },
     {
       "file": "batch-00021.json",
-      "sha256": "45a9cd6386bcdacf34298c95fbf63ba7bd58a6909c7127aa6eddea4f2161d330",
-      "bytes": 177195,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "69136de475ab1e4c4e52ad9c6937282211a03cbf044f1ac81cb2fd4b72a264eb",
+      "bytes": 196963,
+      "statements": 42,
+      "rows": 42,
+      "estimatedWrites": 178,
+      "estimatedReads": 520
     },
     {
       "file": "batch-00022.json",
-      "sha256": "35f04993478e1abf6dad402b8ba520b8822d59bcceec2227f522074b4c71bd0c",
-      "bytes": 199919,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "c9bacd33e397779cd20d4355b575550ed7c3a374a8ee60b9e457a583d430c0e4",
+      "bytes": 199619,
+      "statements": 44,
+      "rows": 44,
+      "estimatedWrites": 186,
+      "estimatedReads": 540
     },
     {
       "file": "batch-00023.json",
-      "sha256": "5b4d167106b89918933370687ea02576d330ceb02227b661135b06dc5f3b410d",
-      "bytes": 194595,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "aa3ad41f07c6fd9f7e21cd6e9eccf624c47b1e3a0ea305dce8b45680ca6ba56f",
+      "bytes": 196413,
+      "statements": 41,
+      "rows": 41,
+      "estimatedWrites": 174,
+      "estimatedReads": 510
     },
     {
       "file": "batch-00024.json",
-      "sha256": "b174c93b8151043255c2e2c682616d727df74349a290ead6b61113f0bad9adba",
-      "bytes": 170803,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "5fbaf8c16d9244be0419ed35029849b0293df7ddbed3490dcd5306c9c295bbaa",
+      "bytes": 198063,
+      "statements": 43,
+      "rows": 43,
+      "estimatedWrites": 182,
+      "estimatedReads": 530
     },
     {
       "file": "batch-00025.json",
-      "sha256": "5ff57281e68fdb163a688ff6a17dd3323b3ef003eec27eff54606563be4c8875",
-      "bytes": 170087,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "55b3c6f6f09cfe3311ba00e3a2341d6fed1623d583c3e49d32bab712d7c58aeb",
+      "bytes": 198955,
+      "statements": 39,
+      "rows": 39,
+      "estimatedWrites": 166,
+      "estimatedReads": 490
     },
     {
       "file": "batch-00026.json",
-      "sha256": "a039b5c50c086e0ab30886e72fb0bab8c392d82737738fd569e30ff407f1d92a",
-      "bytes": 180253,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "fb049dbe29ddc94124712b289a393f8733f395d228a4ef1c2095ff6edfdf48d8",
+      "bytes": 194897,
+      "statements": 41,
+      "rows": 41,
+      "estimatedWrites": 174,
+      "estimatedReads": 510
     },
     {
       "file": "batch-00027.json",
-      "sha256": "a9ec4cd4b05cdbb6b358d4794016a25346cf1cb9b9cb2d4bea4d3e51afac32b4",
-      "bytes": 198819,
-      "statements": 79,
-      "rows": 79,
-      "estimatedWrites": 326,
-      "estimatedReads": 1048
+      "sha256": "da8c4938dc3a178df2ba4258be4c876a474083b82c24927fee7dc93af00742b6",
+      "bytes": 196159,
+      "statements": 38,
+      "rows": 38,
+      "estimatedWrites": 162,
+      "estimatedReads": 480
     },
     {
       "file": "batch-00028.json",
-      "sha256": "f7c846c463304ddcbaa454f06e1a058462f9d45bcb97aa926eb997875cc2b33c",
-      "bytes": 199611,
-      "statements": 79,
-      "rows": 79,
-      "estimatedWrites": 326,
-      "estimatedReads": 1048
+      "sha256": "7d72817834815acef34286e4636724058e18730d99aa099bbf9a1edebb4c3fd0",
+      "bytes": 198377,
+      "statements": 55,
+      "rows": 55,
+      "estimatedWrites": 230,
+      "estimatedReads": 650
     },
     {
       "file": "batch-00029.json",
-      "sha256": "8dc812d4556e5a90806f9136e760b21b7a16611c5e96d643f13a3de64bf7e506",
-      "bytes": 199767,
-      "statements": 79,
-      "rows": 79,
-      "estimatedWrites": 326,
-      "estimatedReads": 1048
+      "sha256": "9885a9744e52bdc6da6012d9a0217462cd2a38cf4788acacdfe81b67d4bf3010",
+      "bytes": 198747,
+      "statements": 65,
+      "rows": 65,
+      "estimatedWrites": 270,
+      "estimatedReads": 750
     },
     {
       "file": "batch-00030.json",
-      "sha256": "b9e6ec9a0b70afc126d6de7a06e4540312ce8fa233c1aef6936d0269f70a66cf",
-      "bytes": 161587,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "9c9e107e91f07177eb73ee495182863b5ca22ae98ce17c15da0ad13f783e8183",
+      "bytes": 197261,
+      "statements": 63,
+      "rows": 63,
+      "estimatedWrites": 262,
+      "estimatedReads": 730
     },
     {
       "file": "batch-00031.json",
-      "sha256": "75912776a6ca71dbd2e07a088a7ada00acb4b7a39468b1e51a3bb6489203080f",
-      "bytes": 162947,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "192981b317386d30b9a160c83124a0323adf8d6d1a18fdc41d04f29a549a0043",
+      "bytes": 199661,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00032.json",
-      "sha256": "e19deeb5df88f95d28b818ad9807b867bd115e549705fb84ff9be2772b8eef04",
-      "bytes": 169109,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "11ea0b1bdbe0138b84ec7a7dd228736d400302b4e1cb233511d5105d61a53395",
+      "bytes": 199151,
+      "statements": 47,
+      "rows": 47,
+      "estimatedWrites": 198,
+      "estimatedReads": 570
     },
     {
       "file": "batch-00033.json",
-      "sha256": "64a231543de64651527e57c9a9b0e7f97c759aca9202d89dca3a426e00ce2471",
-      "bytes": 187737,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 330,
-      "estimatedReads": 1060
+      "sha256": "56dc7a7623140f759e10bc68ed2c95b72f16df4fb623eadfd9d0f01eb1f8b238",
+      "bytes": 199123,
+      "statements": 46,
+      "rows": 46,
+      "estimatedWrites": 194,
+      "estimatedReads": 560
     },
     {
       "file": "batch-00034.json",
-      "sha256": "9b7b49d4adae1a44ae78a5b194892ee55c334c9468f51ba2eba62ae38c1bbb1f",
-      "bytes": 199841,
-      "statements": 79,
-      "rows": 79,
-      "estimatedWrites": 326,
-      "estimatedReads": 1048
+      "sha256": "dc81502ccb5eef2bb967529dd2f84c97123bcbafecd89079e06885afc60d3d45",
+      "bytes": 195903,
+      "statements": 40,
+      "rows": 40,
+      "estimatedWrites": 170,
+      "estimatedReads": 500
     },
     {
       "file": "batch-00035.json",
-      "sha256": "67cfacb804ead56d37696752dbb3176c8c5f6c49193cfbad452d5cf7a1444e9b",
-      "bytes": 199335,
-      "statements": 74,
-      "rows": 74,
-      "estimatedWrites": 306,
-      "estimatedReads": 988
+      "sha256": "5824dad83abfa5bfdba7f162ace32426f9852b88ec5b3f42755e00e822ea7788",
+      "bytes": 198495,
+      "statements": 41,
+      "rows": 41,
+      "estimatedWrites": 174,
+      "estimatedReads": 510
     },
     {
       "file": "batch-00036.json",
-      "sha256": "c12de7a117b7537f50cd1c2eb094476585415c0f0b22eac9aa45f1e9230efc1c",
-      "bytes": 174681,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 288,
-      "estimatedReads": 1060
+      "sha256": "fe156ed4d82a28716748b02c2f697e9a9c71e57bb53b767b1d213a6db7f7605c",
+      "bytes": 199177,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00037.json",
-      "sha256": "604122010fcf1e54859f58925177d38de8911fd57296fef8dadd6bed86c50fd6",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "b57970a5e148b885984f7b64f43beba21a3c0420ff5072cf6033129bfa70fb22",
+      "bytes": 196289,
+      "statements": 43,
+      "rows": 43,
+      "estimatedWrites": 182,
+      "estimatedReads": 530
     },
     {
       "file": "batch-00038.json",
-      "sha256": "02e65755d303b7a96ce2056d2533492ad50b75a8518ddc47045f20508af3849c",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "ffe46213e4147e154fee8e448409eba708ebe872f80abf0447dfc239321970d8",
+      "bytes": 197491,
+      "statements": 44,
+      "rows": 44,
+      "estimatedWrites": 186,
+      "estimatedReads": 540
     },
     {
       "file": "batch-00039.json",
-      "sha256": "c4e600248519a593be4c5e89f13f1ea1b2320b59fddaf4d888f6b5553ca6b79c",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "ffd5b705e333e877d5b5c39132a1db103cf6c51602318ffc9edee54363fc30c3",
+      "bytes": 199079,
+      "statements": 45,
+      "rows": 45,
+      "estimatedWrites": 190,
+      "estimatedReads": 550
     },
     {
       "file": "batch-00040.json",
-      "sha256": "de0f63c7e95b18f651d9dc7374562bd4b7afd9f48d9627329050be35281152ee",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "e4b397ce147c2875895b5108ec746eaec98a237e9d91045cde9aed078104805b",
+      "bytes": 199871,
+      "statements": 61,
+      "rows": 61,
+      "estimatedWrites": 254,
+      "estimatedReads": 710
     },
     {
       "file": "batch-00041.json",
-      "sha256": "a223b4969f9efebaf883425c51fc4363dec359dd19badbcfcc091c9e7f6eaf26",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "4580071b39b5851920ff52deebe1041aaf99803a11f16bf02337cb06e2eb9a12",
+      "bytes": 199719,
+      "statements": 60,
+      "rows": 60,
+      "estimatedWrites": 250,
+      "estimatedReads": 700
     },
     {
       "file": "batch-00042.json",
-      "sha256": "3a627b91beca6a2cf8997068e482685bef8c6ece9e809b0c9c3f4e863063bf28",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "d76d1a03d3df6a861acd415e69362e87b8fe77eb8b5d854bde2d9387a3fa2d0b",
+      "bytes": 199133,
+      "statements": 61,
+      "rows": 61,
+      "estimatedWrites": 254,
+      "estimatedReads": 710
     },
     {
       "file": "batch-00043.json",
-      "sha256": "35ac0398c4c00290cd0d6eb205b4ad030bf1951b44b3a8cd255f1e065f758921",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "88164958be1d3d1d334b323367086bb84893863642b667fb284b8d4fb1906cbf",
+      "bytes": 196303,
+      "statements": 52,
+      "rows": 52,
+      "estimatedWrites": 218,
+      "estimatedReads": 620
     },
     {
       "file": "batch-00044.json",
-      "sha256": "e21843026a14135658c867678a454b50ee8adb5d734c29831e5bc302e5405853",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "1ecbca0e1572b64019a12c0247d069f8b6c21f828f3d63d2cf00e82f9412630f",
+      "bytes": 200031,
+      "statements": 47,
+      "rows": 47,
+      "estimatedWrites": 198,
+      "estimatedReads": 570
     },
     {
       "file": "batch-00045.json",
-      "sha256": "f7ad4a8b1a8d88abaf880ff9e2b3bfa105ff04bdf9342c21e5845e597af9f91b",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "84243025f1dfe5be9abe2279bad6b4264f32a1f43d55dea2a12e80a284476efb",
+      "bytes": 197161,
+      "statements": 54,
+      "rows": 54,
+      "estimatedWrites": 226,
+      "estimatedReads": 640
     },
     {
       "file": "batch-00046.json",
-      "sha256": "a42636be91ccceb03625f835b2f87573d801c8de71ebd1a491404672033688a4",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "1fa27c088fa405bc52bff51e2f8739fdfc17230bb8cf264726be400f79de4f85",
+      "bytes": 198609,
+      "statements": 52,
+      "rows": 52,
+      "estimatedWrites": 218,
+      "estimatedReads": 620
     },
     {
       "file": "batch-00047.json",
-      "sha256": "f3a1ff623e49a81e9923b2946912f09e72ca6a0141562771120c9bb95a2ca984",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "dea7e255e5c40ffcce992e710cf4a4c74d2c51d71750c1713ac121bebe7e67a2",
+      "bytes": 197209,
+      "statements": 48,
+      "rows": 48,
+      "estimatedWrites": 202,
+      "estimatedReads": 580
     },
     {
       "file": "batch-00048.json",
-      "sha256": "93e61d20c827d5695aa5bc050ce42d86ce3d57c7ae86b668042fc55cf9f30fd2",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "75e04e8e6cab23f38ffc9f7bf03b5b1a699657a5dc313b7135e1a6758a2d8871",
+      "bytes": 196787,
+      "statements": 48,
+      "rows": 48,
+      "estimatedWrites": 202,
+      "estimatedReads": 580
     },
     {
       "file": "batch-00049.json",
-      "sha256": "bf09366256b400e6908dcbc08ff6514bc1187c447acb766c6a2c1440d7871404",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "1c74a9a4336637b0112010715c0f62ff59608b6aa6f934c34969417d493670d2",
+      "bytes": 197861,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00050.json",
-      "sha256": "9a6832c63abc86ff2f79313dfc4dc940f73821288f84a2fec9fde3a9ccaeda18",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "c34a1f09411b4641bd19dd5334eca6c41619d506cb688c4caf60096b1a34935c",
+      "bytes": 199081,
+      "statements": 52,
+      "rows": 52,
+      "estimatedWrites": 218,
+      "estimatedReads": 620
     },
     {
       "file": "batch-00051.json",
-      "sha256": "d87fcf947b58bf8328c5654b96a7842602c849c5f66bac0a49e60f59def1de40",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "ccaaf29a27956e50e4ffe799b542f3af898a47a9ee0eaee45deef8dc0bff6eba",
+      "bytes": 197483,
+      "statements": 60,
+      "rows": 60,
+      "estimatedWrites": 250,
+      "estimatedReads": 700
     },
     {
       "file": "batch-00052.json",
-      "sha256": "079a0aebac5384df7f0187880b34efee0a1e1f7c68d9630b06ccf9ff8cfc5833",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "3e81d151b98d4ad1688de13ca06b92f4e947d4d94a1dfdc304c51cdad5a6f7ce",
+      "bytes": 196917,
+      "statements": 57,
+      "rows": 57,
+      "estimatedWrites": 238,
+      "estimatedReads": 670
     },
     {
       "file": "batch-00053.json",
-      "sha256": "2604541e6b15a1a5e351aa5c1b4f71a4174111273c7d67bd61d3777c9873a572",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "5527788382e94366cc7ca447e195e1254267c9129947b4e79547ff63c6a19728",
+      "bytes": 197851,
+      "statements": 57,
+      "rows": 57,
+      "estimatedWrites": 238,
+      "estimatedReads": 670
     },
     {
       "file": "batch-00054.json",
-      "sha256": "0311f54623b6e512ac054e0b5c9032c8c79858b1b89cda8d176a8d16273b7637",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "d4381fa8385118b818ca044e38147064c3a711980dde9ecc919e6419f0ce3081",
+      "bytes": 195993,
+      "statements": 55,
+      "rows": 55,
+      "estimatedWrites": 230,
+      "estimatedReads": 650
     },
     {
       "file": "batch-00055.json",
-      "sha256": "6c0d0e0128a7bba99cd8eee38b5eeaef4fea5708ba5a78db1696bf45d4e2710d",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "e1d7a86d29a1776f629e8a36305c5c66f1706dc28d2d02cea69f1b261a988c5a",
+      "bytes": 199911,
+      "statements": 58,
+      "rows": 58,
+      "estimatedWrites": 242,
+      "estimatedReads": 680
     },
     {
       "file": "batch-00056.json",
-      "sha256": "75cdd41c34a5c514c84368f942e946ebb70b3a5da8864f07ed6b7b7f4369b868",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "b530f23dc4d840ab659132428741118a06a0613450f0c24826eda05814108185",
+      "bytes": 197809,
+      "statements": 58,
+      "rows": 58,
+      "estimatedWrites": 242,
+      "estimatedReads": 680
     },
     {
       "file": "batch-00057.json",
-      "sha256": "a29c536c23ff4d0e695dc453632ea0ad5ea24bbfa24fff6ce4ce0c8a497f8808",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "16b0bc9e0e08c57a5fe5d11d5f4f943b53d02ea42f808e22cf41e3fd23b0113e",
+      "bytes": 199409,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00058.json",
-      "sha256": "266adbcc5aee4b64eb42f92c4629ec20d4eb7d0092e171b4dc6144a3da88ed68",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "9c2835c459bc667d13c9d8c16b9ce3912eb34c2af3cc210be763a65366a96f15",
+      "bytes": 199273,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00059.json",
-      "sha256": "4b977959ee33b1b8e85c10662c7051067544c1594306dbc061577668ce36240f",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "46709609fa5804dcc05caddc96af66e848630bd41c38c0215539acf057717e69",
+      "bytes": 198283,
+      "statements": 61,
+      "rows": 61,
+      "estimatedWrites": 254,
+      "estimatedReads": 710
     },
     {
       "file": "batch-00060.json",
-      "sha256": "17e6dc504c48650a121a43c4f7e6a98eb6ce9e6174fbcc52c62420ad8c177d85",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "a108cae5c1af039e35b84c3193a43e65ca73975af01842c77e88cf94ee8c69f5",
+      "bytes": 198525,
+      "statements": 64,
+      "rows": 64,
+      "estimatedWrites": 266,
+      "estimatedReads": 740
     },
     {
       "file": "batch-00061.json",
-      "sha256": "8458db025d7990e692163d6bd30bd2a0894222cbab581074f6335985e5f72f2f",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "ce9e35d92b027c6e834a2180340f855f07dadb374198a9b46651ac78e4fedf21",
+      "bytes": 200087,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00062.json",
-      "sha256": "edd10364f4cba8dcd77c93febad5f86e4e3fb286191eab9ca2ec792f6d7f58e4",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "791d27173a82caf65891be86b5a3bab417fb331276ba61c3690a9073b6f71e98",
+      "bytes": 196055,
+      "statements": 45,
+      "rows": 45,
+      "estimatedWrites": 190,
+      "estimatedReads": 550
     },
     {
       "file": "batch-00063.json",
-      "sha256": "5ae4692e0ea49ab523af4865e0c222f10d322304260df7e61bc98102e822c954",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "cad64f056875d7cadc5a4f8f144b89442007a81019b5fb509f222c7dc927926c",
+      "bytes": 198041,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00064.json",
-      "sha256": "aa012d1b17f5d1925553bb025e596c9ef971c9010656fb84cf2e257ab38e46b3",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "7e3d01d08a08ba8c279b68d1a38f180291710bff1d1e712ff46f9c325d91fd60",
+      "bytes": 196197,
+      "statements": 53,
+      "rows": 53,
+      "estimatedWrites": 222,
+      "estimatedReads": 630
     },
     {
       "file": "batch-00065.json",
-      "sha256": "fc4b3512654d84bc1467d291805a722f5cbd0bd40ac14dcf707d133cf5f4e99e",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "7c1f3f4a4938bbf9b5449161d3a93cad1221c9e4d5f2a4e4d04718f6b2297ae6",
+      "bytes": 197769,
+      "statements": 47,
+      "rows": 47,
+      "estimatedWrites": 198,
+      "estimatedReads": 570
     },
     {
       "file": "batch-00066.json",
-      "sha256": "0460a50e86d2a4d4796ee7324ad2386084269a7b28082d31488d0a5406789bd1",
-      "bytes": 20881,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "sha256": "96985cdea9db34449bd5d76065535ebc4778b1c621e043f7a55c473072390de3",
+      "bytes": 199737,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
     },
     {
       "file": "batch-00067.json",
-      "sha256": "61c82ae63571a9358e498605c04d79c03c575936532e69e6e1f24632c39c5dd8",
+      "sha256": "8ec23fddc346bc3625605657b609c016067294cbfd11c839531c07df326dcd9a",
+      "bytes": 199565,
+      "statements": 50,
+      "rows": 50,
+      "estimatedWrites": 210,
+      "estimatedReads": 600
+    },
+    {
+      "file": "batch-00068.json",
+      "sha256": "8e1d45c6c4fd77d1a6a92f72b4994ca08a426f5204d1bb4369b8d304b1f95e89",
+      "bytes": 200067,
+      "statements": 51,
+      "rows": 51,
+      "estimatedWrites": 214,
+      "estimatedReads": 610
+    },
+    {
+      "file": "batch-00069.json",
+      "sha256": "a2545d11d132921e592679a7be6015156856365cbcc8d1131b4c4c3602bf3bc4",
+      "bytes": 197205,
+      "statements": 55,
+      "rows": 55,
+      "estimatedWrites": 230,
+      "estimatedReads": 650
+    },
+    {
+      "file": "batch-00070.json",
+      "sha256": "a541a0c2bda78c0c42aaa4804d3b52589085ab0dfa336fd16c660de2d6abe805",
+      "bytes": 198633,
+      "statements": 46,
+      "rows": 46,
+      "estimatedWrites": 194,
+      "estimatedReads": 560
+    },
+    {
+      "file": "batch-00071.json",
+      "sha256": "f9ada59a970a9f0b10f08f386eeaa2a3dd0b72b244a33c8e1051d53992dbeb69",
+      "bytes": 199483,
+      "statements": 49,
+      "rows": 49,
+      "estimatedWrites": 206,
+      "estimatedReads": 590
+    },
+    {
+      "file": "batch-00072.json",
+      "sha256": "0371636e39bab46742beb7096140e82e6b002b435561e83b943b516e5087f7ea",
+      "bytes": 123888,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 177,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00073.json",
+      "sha256": "5fba37486afffd48eb1da632303e8c24eb8e719fa8b77694dcba267b7d4dcebc",
       "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00068.json",
-      "sha256": "80c8250d225cc255e5464c8d08b6e488a5e949197628318f01aa873e3c63bd39",
-      "bytes": 37905,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00069.json",
-      "sha256": "e9a742c2d40ce81cb2cb78b19916d79dc48ab0940f7e30c53b7f5bd4e20c13a2",
-      "bytes": 41131,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00070.json",
-      "sha256": "8fda67e5c5a6d29a35257cd5505195015e3260bd87125c5533e9a118302fffdf",
-      "bytes": 40887,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00071.json",
-      "sha256": "8c8488eac308073f29bfa2f8b317ba5078d3f327477aeefb24972c10d18fa976",
-      "bytes": 40907,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00072.json",
-      "sha256": "294f43f9ce22daead8c89865e54df7442ccb3fb1ebf6e56af739d9fc76571c95",
-      "bytes": 37485,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
-    },
-    {
-      "file": "batch-00073.json",
-      "sha256": "b61452473c4d311c49d503cb4c9e616435a98cf950cccbb84c4dd31bc17a2f31",
-      "bytes": 38305,
-      "statements": 80,
-      "rows": 80,
-      "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00074.json",
-      "sha256": "6e628ddaa39d85016e068249c30982591085ef0d0892d5fca4c947a831999df4",
-      "bytes": 38759,
+      "sha256": "844772eb833f00d00def0daf6c117e254ba3391fc9b438fd7dd5442c56f12e95",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00075.json",
-      "sha256": "441018b48a51f5d668519375d048d404628b9b1b9b79c419a102f5d4c567b1b7",
-      "bytes": 38085,
+      "sha256": "b6dd512ad55d1199f5a4a0918e7bc885799d7773ed4f2ed29eeae78a203403b8",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00076.json",
-      "sha256": "8d832a6587baf139aa8f732f848df0fab58174333022e571b3bf97861efee3f6",
-      "bytes": 37753,
+      "sha256": "cf6e39594382745c8ad3d38eb0041aac46d060951021c523745f624e08fa859b",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00077.json",
-      "sha256": "0f3bbafdf74838322b7496eaa7e40d520bbee98322dc180b40f5c794f93f921c",
-      "bytes": 39341,
+      "sha256": "81fded53e4c65c431bb7a7858e526c6aa86c499c1d892f5c2ba770eb903be5d0",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00078.json",
-      "sha256": "ee896787e1eb403ca9c07beb7f764f3ccc3b017307f23d5aa9901ff072d46f8b",
-      "bytes": 38689,
+      "sha256": "21e44e27f8aa1c2aadebe3f2669a348d30c18d5f90bebbb041863b08bf024532",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00079.json",
-      "sha256": "88cb3bcbc357a170138c3a54aa25ea2542c471ed2c55ae53c75b1ef575eae133",
-      "bytes": 38639,
+      "sha256": "4b8fb0e75a68286c00f9d8bb67050cb52130308266349fb903273151ad61308b",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00080.json",
-      "sha256": "f212027b9ca76eb0f0e4a9d14c85614a5fa91a4d863794bb0401f31b7709e60f",
-      "bytes": 37697,
+      "sha256": "d60dd7520f63137d516a15c1bfdc2ee3cdee0f8095e039c17f141bb76ae874f5",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00081.json",
-      "sha256": "79ff3ed883b48959718d192cbf15ecc45931ae278139e365552c600971f2316e",
-      "bytes": 37843,
+      "sha256": "9295a2cd419dbe17a53d27381a14ad01a5009f2dc19cf8c936e09dabfa1cde89",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00082.json",
-      "sha256": "015df79e2d0fa9b7a7c1dbab8f7b6c724a8df57bbc355a6ae8daafaba366d820",
-      "bytes": 38383,
+      "sha256": "b489a77c1ce5d5b909f5c950a12b22e672b70bed769dea6a42b66d0f4ce4c79a",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00083.json",
-      "sha256": "c3408b7d7d6b497ad43036236b257899d46aa96fe28bce41185bb92f1eafec69",
-      "bytes": 38447,
+      "sha256": "42a91b900d6f840058022d0d2208bae0d12b2360cf4a351b88f3892182d59148",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00084.json",
-      "sha256": "e3b0c1c579109b45d19fbdde6c2ebd4bf1675e038c85c68903c15cbeeef466d3",
-      "bytes": 39257,
+      "sha256": "435339f846643e3269cffe4ad3d36bb6db8a105577fcb0a83fe9215942d2e25f",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00085.json",
-      "sha256": "b67c0eeeca682168c822ac6ba338e9399d81bf3c934bf6ba79d05665c6bb1d2f",
-      "bytes": 39193,
+      "sha256": "883a3ccc5a9e55d795d0cffd2438772cc79de7ae82de92e001deecb1df240cb7",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00086.json",
-      "sha256": "e62caaf87e1a3355d3778924b679bc28664bdcdf78b8ecfdd13f92e8757f0486",
-      "bytes": 39047,
+      "sha256": "b6c9e5bd8ee25da6a932164059b6712e13d8c95866185398a2f29b85679d623f",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00087.json",
-      "sha256": "8640c9eea3710d31c78b37053eec81ce515111f5c78fff66bb49fa2f8d8bf708",
-      "bytes": 39037,
+      "sha256": "1f2ed0c52573e2bbe4655ea94c1ae2b397ba46767f04f77c8520f0d15dbe7875",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00088.json",
-      "sha256": "5abeb97fdb857713e42e297f9ed88d8c08d81d06c3e3cae81e382e287941a2f8",
-      "bytes": 38701,
+      "sha256": "f96d7f7c627c6996d31590690f374a4b055dab8519792775c2f20f8f8bb3e0f5",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00089.json",
-      "sha256": "06083c0a89955e3829d5fa59769e4324d58d4f27c58307d3345e30147ee79132",
-      "bytes": 39177,
+      "sha256": "810351831d1f860fa0c0768376fa103d6b6e4c6872128beae41c153bb91f6223",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00090.json",
-      "sha256": "9002b1680a0c0123ef01644ab1e53a1fb85e98d92047a64b1c0567092611d488",
-      "bytes": 40477,
+      "sha256": "5f7f47df54ebe573c0b3121b14dfaf739fd13bd0d87d5b9a8d26138b02c56992",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00091.json",
-      "sha256": "f512c33ecafc55e7937e0414134bc8328ebaa6f0ed3f93b18f5cd2743b835fc4",
-      "bytes": 41323,
+      "sha256": "31baffc2b4b5d5226f8b39ab046879cf201a35609e5bb1172e7a1c85ac0881c2",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00092.json",
-      "sha256": "621e2d4e292755d29591db6e6bb82f75586256fa925b1ba0c62e838c02300eea",
-      "bytes": 39789,
+      "sha256": "9b24c51086ed462522a97ee771d0bf1979fbf7a2dee62038f27f24f921ca35d7",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00093.json",
-      "sha256": "7ead3bb34ffe91acce3dbc51f30237ee87b405c7a3e667413709d4c6527a5a7c",
-      "bytes": 39517,
+      "sha256": "bd9e27cbdffe460f2ada8c93676f5d1e3ddc94e4df9c283f6e8719e8dfa1e9ca",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00094.json",
-      "sha256": "f79cb8121808c793a8ca62a7e2726bddfebccf2bc194fe0a9c8fa1d756138492",
-      "bytes": 41069,
+      "sha256": "3a202ab3347bce7c69a4c2e5830b6c6fb4247a587a977fe9a8b526bd5b5bfcb9",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00095.json",
-      "sha256": "b9760677c0302a584f5388752b059b2f4953885caff42e63f113c7b967d2b024",
-      "bytes": 40033,
+      "sha256": "817254659891df2c5ef4e7c1969ea895b5016ca1acea40070937f747035e8ecc",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00096.json",
-      "sha256": "eba061e8d69ca374aa3fdc9a6c3c1f55be186bea2c8c7f27dcd099b2cce3f505",
-      "bytes": 41355,
+      "sha256": "e4edbd028fa8e3cc6bac4b5697bdf5008713b01366e61805a8b8cbdeefb6977d",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00097.json",
-      "sha256": "05e158401fec7bbf229b2cf6136dcf4b8a0a0ccd3be1dfa7b7c57d7e638efe75",
-      "bytes": 42025,
+      "sha256": "1bc1dc1fe9df8bf3857fe1792c23f80f664aefecb30008df1cbe1a50db812d37",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00098.json",
-      "sha256": "52fa99fd33c287c0767a79881d46d4d579268cdae411c1c1dbc0faa45da250cd",
-      "bytes": 42069,
+      "sha256": "5079a70642a9244218dfd89f91ae5e9e6158c35ef0787f273e0d542b5f2149a6",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 90,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00099.json",
-      "sha256": "dcc7682276811181fcfd7c0646fb25c58c271fa8658949b2eb02ede255d784c9",
-      "bytes": 61707,
+      "sha256": "2c87aec293b6ae799af11a43ba6292dcc8c148302186019e96f2307ecd6f9073",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 136,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00100.json",
-      "sha256": "5c36aa784d1f4a9c812ec43cb4bd1d8e8fa30ef8936f3caf8e5e486ca5178208",
-      "bytes": 41547,
+      "sha256": "498ccc5aa39723398a87f47a2d4281e885c6f233437c358790d315751f916ca9",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00101.json",
-      "sha256": "3d0e31869d9a50dda2d66e8c3a8db62c57eb2c74e147e8f8c0fce30ea6eadf2e",
-      "bytes": 39770,
+      "sha256": "7a75deefbfaa7684bd96d3ec862f0b62a0193427c0b4b21b93cd8ce97b971c72",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00102.json",
-      "sha256": "166d007c1b86050aef23e3eeabf7591a49f0920d20ce6c217fc11bc1283d2b43",
-      "bytes": 39751,
+      "sha256": "6c8dc6515843ed2c89c0a7facd1e2da1dce175c9370a0ea1d73d1d7112c1899b",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00103.json",
-      "sha256": "1afc25ebf2c30cd4132c07ea6088f6a8ac931ad2f54310dc9e3e1b602fe28339",
-      "bytes": 38375,
+      "sha256": "2f46c6a8539ff45e97c1873d9c6e21a5b4bd09614fe0d39e9c805dc9689c622e",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00104.json",
-      "sha256": "1b34c0069a573461d00503e672d2793a980409b7b4c5e20e5130fd034a51ad6c",
-      "bytes": 38320,
+      "sha256": "bdc81583bf4cc7d1714e94fc1bf94e9bf5475ed04e45cc70ba0b2e61e9380698",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00105.json",
-      "sha256": "5daba48a8909032872463078616d6d41dbb7ef1992b82436398435f006bccb26",
-      "bytes": 38297,
+      "sha256": "c599628278a22e24f8bda1d3bf7ed86c4df6a46a42d4ca04024feaf9c46e7c70",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00106.json",
-      "sha256": "f80aa479cec8c25e90f875456ea44e9719889a7c37812ca95716d10c4e2a24b4",
-      "bytes": 39112,
+      "sha256": "163f99350769cf69f9bde9e3dfe563a6de703fddf5f63143c33c4b526f6b9911",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00107.json",
-      "sha256": "27c6f8f27b083ce5c185069d15fb62d99c617104016abf2ea63e8f0e77a7262a",
-      "bytes": 39340,
+      "sha256": "892ade687b83b656e5bbdbefffd0481e35dc4cd91c87771b0ef20d5ea66295f2",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00108.json",
-      "sha256": "2e7d7995c629ecbf100a357591d7372794ba0199f08482a76bc60843d8872a8c",
-      "bytes": 39659,
+      "sha256": "75a38fe574bedaa0489933a7ebef436e926fa3666466bd003a0a8213d1aeba5d",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00109.json",
-      "sha256": "f9d8f8c92f14b4e7e3f12803fdacaacd8fbc1097b0182a869316d6464a87d3b2",
-      "bytes": 38650,
+      "sha256": "b1df7674977a3e293c9a98d5cee0e61a19cd3f8cba6ad3b4cb8eace4646089b2",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 170,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00110.json",
-      "sha256": "8ff31cd2b0f7428a82b00bd6ac6d92c3579808721e276a4909bc0c63f75a6286",
-      "bytes": 19127,
+      "sha256": "2c529334b7e32ca59e906a4efe921054a15a1afbb97fce6065a2b79187b3fcc1",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 236,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00111.json",
-      "sha256": "3039f03df2b3aa952f7e3da0a67cf0f5712592dc32822168882c6b35214c2f5b",
-      "bytes": 14721,
+      "sha256": "a77597939f809015fb794512321365e274827b21adc04ad9152e8393d93b9353",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00112.json",
-      "sha256": "b70a754202a6d3b2142950ba84e656063d179113f0fcaa573e7567d5d55cc2aa",
-      "bytes": 14721,
+      "sha256": "c55cf9f82e18dc5151e92add949927467b48de6b52093f4bdb4b1274768d8ee4",
+      "bytes": 20881,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00113.json",
-      "sha256": "8ac5cc879e3a39452796472c4b50dd0ab4e41a6b4fb1cbfab188be9d097e6eec",
-      "bytes": 14721,
+      "sha256": "8411a6b68e2113522b97d9cc81b9334e842218c928765b8609cd5caf3fb975d6",
+      "bytes": 29144,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00114.json",
-      "sha256": "074e6558a32c2bcf55ef6e3b2566034a1876c0b4dc89ef601492774482c93eaf",
-      "bytes": 14721,
+      "sha256": "9729ee86743e6e836b3dbdcc00d75fe090f2b9bcdf59e26d61117735e06ca3d8",
+      "bytes": 39935,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00115.json",
-      "sha256": "f6f75ff1bd0beacabf0390dbc3a2da5b764136c47c65d9e7f70ce08d93c8c529",
-      "bytes": 14721,
+      "sha256": "2477aa4d6ac0cbb776ec8a0015a822f3e72cedad4f6484d59cd775a767901582",
+      "bytes": 44333,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00116.json",
-      "sha256": "fcc7e55a4810674b98e6f9e2c23f4b8befb3eef492eb16ccf1aa86f0d2eaa7ea",
-      "bytes": 14721,
+      "sha256": "de56db83b6ee9eb76b5d36af30735ec3adac412a4f34d018ad7250ed1643ce63",
+      "bytes": 46077,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00117.json",
-      "sha256": "73e51e2c59667dc0d7c66b6764099b3d8d5d92dab7d3528d93b82b4fb634e088",
-      "bytes": 14721,
+      "sha256": "552bc0786500585c1fbec3639123fc6f51c0755696883987331a053f4315880b",
+      "bytes": 39624,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00118.json",
-      "sha256": "fce114d394352057a01bf298c7b56124dbcf2f2e47c20af87141b1c16ce97881",
-      "bytes": 14721,
+      "sha256": "317d019dd4be397046e19f431861046a5c241bff1578aaf0cc7650a6c860f716",
+      "bytes": 40207,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00119.json",
-      "sha256": "a81b9c3b4e34e184c518ec2bb6318f9f06b5e4248f5dd0c135352af46bc6ad07",
-      "bytes": 14721,
+      "sha256": "c427a7d5a0d3c021eeae7098c24798b7f788ea4637262318bffe434761efe7bb",
+      "bytes": 41166,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00120.json",
-      "sha256": "8c3af4e94a05e31bada26a26d4b0c231517b05b787439d4e1e8aa7e71ea2b11a",
-      "bytes": 14721,
+      "sha256": "2ba6dcd4a82835569996faeabb6cf9c01af84f6d6b9b31cae884fc3124217de3",
+      "bytes": 47066,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00121.json",
-      "sha256": "c8775de3a90c4618cf78f10669b47577545440a878eaf9933427f8bfd3dac6fd",
-      "bytes": 14721,
+      "sha256": "bf2292eb87a1f50db906224a42627d07cf1515a7db038dbae12195e85ae2edf2",
+      "bytes": 48136,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00122.json",
-      "sha256": "de4486ca65b1ca79f664230cc1b33248450039265588aebba2a0d414352dcd77",
-      "bytes": 14721,
+      "sha256": "314582f7a8110e67972b7c26f6c6f476531e918628cc48c23497f6351e685d2b",
+      "bytes": 48709,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00123.json",
-      "sha256": "f945b81b0c9cf3389c0bee4f87bc34fa07a8864b6ed1ace71df85b40a0bb586a",
-      "bytes": 14721,
+      "sha256": "18b558c931c52ba01f05d4f47873713c34b80196e8f85df469a0621ce407fc5e",
+      "bytes": 48427,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00124.json",
-      "sha256": "06b7197c89eeb94196d189857042d9cde91b4347f1d36f2c7dfde1d9aa9a6934",
-      "bytes": 14721,
+      "sha256": "c57e450d02a058a5096d594bec7d05d424f192fbd1124b0e889b0242c93699c7",
+      "bytes": 48080,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00125.json",
-      "sha256": "058af3279b5ee4e2ca0b326e1591b1cce39b7b6fa68ffc95b387e3d6559e30eb",
-      "bytes": 14721,
+      "sha256": "afc4f115a7fb4f57f12bdb64495d03a92c3a4e02228cbc7df67b740c40828728",
+      "bytes": 47810,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00126.json",
-      "sha256": "d0a9de56b8d94faf51d1483930a562d09085777a17b6051d996acff60a0146c8",
-      "bytes": 14721,
+      "sha256": "a3968045a2f8515eeb2121cbb2a8ad6143d4489e45b02965d86cdbb5bc6753a8",
+      "bytes": 38502,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00127.json",
-      "sha256": "c229c20dcfed5525db409b400af50cfb3cc599a10ee933b033458f8cb949a9a9",
-      "bytes": 14721,
+      "sha256": "95fd0011a94e95e64a2fb8e60fe3947ead8194f964d999038321f5b1144aaaf1",
+      "bytes": 39105,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00128.json",
-      "sha256": "cbbcd8f9cb0578fcaab8ff457b4377a88508a45b232198455c2fdc538ee81b00",
-      "bytes": 14721,
+      "sha256": "b1cde93c94a02aa69004b695d0aaefbee718369e9a143c029e22b165eb44d3cf",
+      "bytes": 39119,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00129.json",
-      "sha256": "087d13df339a169a213445186a65c83b29e4156102b7b7d2ccc9d7d73234959a",
-      "bytes": 14721,
+      "sha256": "83f9427d6fd27c0abb8033149c1e7e11b908e7c07a931df6ac4db9e3d57ada9e",
+      "bytes": 39044,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00130.json",
-      "sha256": "be86cdbecafee741df3cfdf5b8e94d69d98be1a6c4e0b3cc158f49ac19f479fb",
-      "bytes": 14721,
+      "sha256": "e392f469ee0d4193697d1a75abfb64ee1807239a6a06215f801c61ab467ea278",
+      "bytes": 39431,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00131.json",
-      "sha256": "31a9c1479901499655fce6b22635b0afaa883df6c51896e2b9bb72724aa9ab21",
-      "bytes": 14721,
+      "sha256": "308bfd32b29e031f6fcccde2d47f7adf64faf3802d763e039bb35096231319a6",
+      "bytes": 38369,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00132.json",
-      "sha256": "5a8d7c6728182a581e1dad65048cbfd14b901afaac7d5a61a2ed01a1914a5410",
-      "bytes": 14721,
+      "sha256": "f4753512929659b99cd7dce94eb07b5fde7ef4cd139662abfecdbfb5f4205cd2",
+      "bytes": 38821,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00133.json",
-      "sha256": "35eef5997e73a9f492a7127c3c8f45b1043fffcd55be6bb6efcabe316941d78a",
-      "bytes": 14721,
+      "sha256": "990048f57917eea49b13d4c41a12310914e6b310e64b25c789cb78b3d228edf2",
+      "bytes": 44787,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00134.json",
-      "sha256": "0b51858108596945b48d3fd72a87aac793f246451aca0c1dff9aeaf33585f837",
-      "bytes": 14721,
+      "sha256": "e7f579637680c97df4a0883142d5081f527f140000eca5a11764a5870cce6f50",
+      "bytes": 46669,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00135.json",
-      "sha256": "cdc9d1525e8222bad7f37ba55b69d9fc4ed99a620c204f226a57b92420d92815",
-      "bytes": 14721,
+      "sha256": "1c66716404864327d3aee122b300f474cd1917e3bbecc7201b59145c4fd8e7d0",
+      "bytes": 45521,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00136.json",
-      "sha256": "0f54613ae49494e7f4e7bbbc93df575f5c9552edefe325669102fc51e9be0ee4",
-      "bytes": 14721,
+      "sha256": "192fd869a984e47500da2beaa194bb7b819023a4943cf7170d065734a3dd7e59",
+      "bytes": 40833,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00137.json",
-      "sha256": "43d7fa7d71ba4a451427d7433b92f92b140f20c28020f4ff6bec4628a1f08f9a",
-      "bytes": 14721,
+      "sha256": "65e65d1d78e032d92052da28dc18aa359668e68f08bf26a5fec2f7c2a2c6fea2",
+      "bytes": 40852,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00138.json",
-      "sha256": "b33f5c35f11dbd5e0b45f70793e72f1bacfada08d0eba1f08bd7107c1c328335",
-      "bytes": 14721,
+      "sha256": "8a6a514fff446aef7e3922aea4a14a0bab64e214ee9649cad019b8e6b48572b0",
+      "bytes": 40716,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00139.json",
-      "sha256": "593efe1f4310403fb87ef88c2139cf5c1f3463ba12b1f3ad015f94056d6a9396",
-      "bytes": 14721,
+      "sha256": "3304e7bc76357036232c6ee4ca764fc2ac8625d815ca84a9c762fe90af5ae247",
+      "bytes": 41042,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00140.json",
-      "sha256": "473ad1d993944478a8c04e5cc0e89863762f80c7702c0903c4d77e74a7f51b7e",
-      "bytes": 14721,
+      "sha256": "d6e6754ba443bc3a53fa1345a3798036078d1ca0e2a05619f76211e2edc90f57",
+      "bytes": 42842,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00141.json",
-      "sha256": "d7af4e262f0dfd212591b18ef280e33b2f2ac264b8ce3180115071c24740c85b",
-      "bytes": 14721,
+      "sha256": "bb16db851090f98aef64bdd4cfbd284ef2cefc5f5693248f3bcd9a035973106d",
+      "bytes": 44372,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00142.json",
-      "sha256": "cae131741effd263f2e9488f25b078e1d4a1da9fd2abf8539852373247f2fec0",
-      "bytes": 14721,
+      "sha256": "82e4cd5bad65f44fc076407018cb0ab23782cd3b4a88f5a465db243690a35e2f",
+      "bytes": 43976,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00143.json",
-      "sha256": "9b37884a104ae8e5c70df3e993189b27cd78be584d4c6c489270be112a343f1f",
-      "bytes": 14721,
+      "sha256": "239fa0f1dfcc4865b3c9b78637bc6e728a77eff0f86b1afefa0f6f3f33c77b18",
+      "bytes": 45905,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00144.json",
-      "sha256": "12c12b531744a609dffcec301d792ebc3c0dcb9cde5f7ef6e17eba0a7ac9ba33",
-      "bytes": 14721,
+      "sha256": "e8fc999a4a17e63ff2ed65308affd87802a0a37ce6dd7a1e43e602b9b564b652",
+      "bytes": 45060,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00145.json",
-      "sha256": "fb27e45391d19ee5fee513f1f7b5cc60fe47cc8b96f1b6cb3d3a3fda02456220",
-      "bytes": 14721,
+      "sha256": "aad7026df023bfcc5777ea8411675e98f7fac54134a66c8681cd878894a014f5",
+      "bytes": 45399,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00146.json",
-      "sha256": "989f714cf3e041db2327a5ea90555b809305919e85251b17231b99f8f0c93fa8",
-      "bytes": 14721,
+      "sha256": "fe76066ea20cba861ee5c0f959e2c599315ca2ac6d9f166e72133b0742ec6609",
+      "bytes": 40924,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00147.json",
-      "sha256": "ea88d1bbdda1a7036c6cf91d5c5e68ea9107beafd07fe9824204f82a27f83e12",
-      "bytes": 14721,
+      "sha256": "d92aed196b48aaae4c8213790297f8c1a7c297d3870067f2746eb043fede3cf1",
+      "bytes": 40225,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00148.json",
-      "sha256": "5ab8c9e40433147cd47da7935ec6ca77f4e6afd98b728544dea80289334432ef",
-      "bytes": 14721,
+      "sha256": "dda2d6c7750c250e2d81a94a02a60ae965ebabe3f1eb197648282a216fe4550c",
+      "bytes": 40917,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00149.json",
-      "sha256": "dafa7d166de47e9ab9e52b65f4f2a499dd0eb329b44983ea03f00ceeb0002280",
-      "bytes": 14721,
+      "sha256": "2ebdf73b13dc38dfb2159082b023715f7dbfbf73bc2f04d28799c2c6d6187da0",
+      "bytes": 39915,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00150.json",
-      "sha256": "5b5253b8f2d93f3f514f467f85f082d6a7d8ffe64f9dc3abf55e1fa14831356c",
-      "bytes": 14721,
+      "sha256": "aae5648a448bb203cb85feca10779b2fb9be59615c6f9130b96e47e75b38141a",
+      "bytes": 40675,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00151.json",
-      "sha256": "d3b922a5de492c63c9a6977c4dc201504911abea13cd34f366316666613f0d57",
-      "bytes": 14721,
+      "sha256": "0f2252adcf021eb07f7160c3f780192f8bb69614c027629564f69bcba36e56a0",
+      "bytes": 39594,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00152.json",
-      "sha256": "e58ff7823a6bd55cac997910f9493a9e39a51d0d0afaa6d139f675b06c9853d1",
-      "bytes": 14721,
+      "sha256": "9b368b4c33895ab55fb3359c41adafce4deba682d4c4598137c0df4fc0c4b906",
+      "bytes": 44961,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00153.json",
-      "sha256": "79330e2815a6642e99064537a8ae8569eaa690ad8eb53e3b80eb63e0f96dd8d2",
-      "bytes": 14721,
+      "sha256": "fe86f63077be2ce1b4a2eb0583128c46c134eb21a132f59a7cb942ff4f88bedc",
+      "bytes": 42572,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 90,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00154.json",
-      "sha256": "442b2ee408e42e2e9ee8e70f10f6e6aaa1a30b3a0d3ca3cfdccbb9a5f8e5c6e5",
-      "bytes": 14721,
+      "sha256": "bb58c895d4898c01b0311e8a88019d4f8386ae72f94b0b9039992dd02b49500c",
+      "bytes": 43774,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 117,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00155.json",
-      "sha256": "1817a9a9bc84125fff77a041401da4f5bbaf6771a71ba1a7d7618d54e9c34f76",
-      "bytes": 14721,
+      "sha256": "44b7bb568dfcb19bb6612975617cbc39b4aa50e51cb325254d30bbe002dda3b1",
+      "bytes": 41492,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00156.json",
-      "sha256": "ffe1095e70764df4c96c546ae5538f6508d0526895b0f146dd8a8cd55345a411",
-      "bytes": 14721,
+      "sha256": "01a4226a15e0ef49de34d8602501de861ff4a531be78878bb2fbd410ec592c45",
+      "bytes": 41489,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00157.json",
-      "sha256": "245e5ff7bb34bb43e8191a888c0c290c8541d9f116eef3ea408b7559d88df94d",
-      "bytes": 14721,
+      "sha256": "a972b7bcc37e6ba95344ec81ea1332211af026bc9d87bac97a472c45cecda841",
+      "bytes": 40316,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00158.json",
-      "sha256": "3473ecf0d5f0a28b3d8af8f44b97dbc3e3c0c260bbf6bb5afdbac73bcf2f0d49",
-      "bytes": 14721,
+      "sha256": "5055dbd4d0a935703fe9cb878b67e67d3af3067ac1724ce06b9ba52ae9553bb3",
+      "bytes": 41569,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00159.json",
-      "sha256": "c898eeafff69dd5172ffd643facb078caba2a5144fa1dcb7031ef667bbbd651f",
-      "bytes": 14721,
+      "sha256": "ac228e418978afc543b60641263d6b02985de78e570517e2b1b1b71ddb9f04fe",
+      "bytes": 38428,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00160.json",
-      "sha256": "7c9502d33048a0c5739a2ce3c40cb10901a5b8a7c704b9ee680c01faf6757737",
-      "bytes": 14721,
+      "sha256": "825e1f70b2b8cad303bf67ceb32063c656a16c20979086fce0f4fb34040e87f8",
+      "bytes": 39457,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00161.json",
-      "sha256": "580bcffc8d39184a150e739e3323834d5ff1d716df5d9d40063ab53245a51299",
-      "bytes": 14721,
+      "sha256": "9368d3eb5436042cc93b6f0dd250d890499960013880f22dfcfd67f8cf9f097d",
+      "bytes": 38889,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00162.json",
-      "sha256": "f32e17af11026b3ac5d0e15098538645d5bd948727cabfa708ae4cf3551f4e7d",
-      "bytes": 14721,
+      "sha256": "63e27e2a1a1a29a8a40710c67092613fd361a5ed821ff5db4edc904f0db7a7ce",
+      "bytes": 39035,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00163.json",
-      "sha256": "b34da2176d467186e84730fb32878f2cc50d832775ec76195c1db239d76a80c0",
-      "bytes": 14721,
+      "sha256": "6175b5af47e4f7e2a517c3066aa912fe85992249bcf2288983200d4cf659e384",
+      "bytes": 40335,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00164.json",
-      "sha256": "d22c6b5024d1450067023601ab3908f7ac76203ae435e00b9153881666579411",
-      "bytes": 14721,
+      "sha256": "69e16dbe76ebe320e3603d974e0d9b75c7588c366df74e28fc81f2bfab59f302",
+      "bytes": 40369,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00165.json",
-      "sha256": "9c37217449e6d3a196b28ff13916d0357cdfca80de62e441466def60355debe8",
-      "bytes": 14721,
+      "sha256": "d7dc808ee928c37e614d3f76196ca057e0f7f5c8e1d906d263188d1763a65e2e",
+      "bytes": 39087,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00166.json",
-      "sha256": "e724f8df12403f1fbd86320baf6e79ade69ce64887741c34ce532ad1d07d486a",
-      "bytes": 14721,
+      "sha256": "84b2730d05aaa1c0c6b50dccd9e6a43fc883e5a0d818cd6f99ffd5c80a6f7c60",
+      "bytes": 39516,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 170,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00167.json",
-      "sha256": "0eff3f79ebd0038de5a6634cfdb06f459cfb1340ca1689175131975446511939",
-      "bytes": 14721,
+      "sha256": "537b660761cdf361d0f29c10ab6bad99d60936d48aa2488b70749650aba70d43",
+      "bytes": 20569,
       "statements": 80,
       "rows": 80,
-      "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedWrites": 233,
+      "estimatedReads": 900
     },
     {
       "file": "batch-00168.json",
-      "sha256": "9ea17ddf9fbad919cec654a8529321d72fc5ae3e63944e5b64a6a0e208802ac8",
-      "bytes": 14721,
+      "sha256": "9c08430e7ab8b7b6446966ed7f582f0f40c79aeea4239b0a7f09996fcc0b3fea",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00169.json",
-      "sha256": "497eeb5a416ffe7ade5d9807d1e7b206ce95e63d8be6c96e6420a61ec366707f",
-      "bytes": 14721,
+      "sha256": "127259afdb4dbac3098d30a7ece9f075dba628d0dbc10f013dff0aef298eabe4",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00170.json",
-      "sha256": "8c637bda6a92aaefa6c45aeb47190be4e312c6e1d5d3ea93d55de92a81eb4f18",
-      "bytes": 14721,
+      "sha256": "0a407a062db072ceb05902d6340bbdae5f58d6fa02afc878d505763665329e0d",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00171.json",
-      "sha256": "a4248e032c0cc51d0cb4a2b73febd5434ae7fc0cf828cf7e1896158f5bf4373e",
-      "bytes": 14721,
+      "sha256": "5298144cc4a578a556b12b197c6bd750ecbde392e133abfa49888a6a12fd680e",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00172.json",
-      "sha256": "56a7ae287de7a6467586d1dd86a3bf902a9403c30f13512e3229f79defa16459",
-      "bytes": 14721,
+      "sha256": "38b542afae62b7f358554f8879586425f8f4c528f4ac22d93ea38590fb914bff",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00173.json",
-      "sha256": "cd9480dea3af8a50d85438fc35f679f2078b2f45b2715c898c6a64c30849fb28",
-      "bytes": 14721,
+      "sha256": "e364a8e51178756d0e0136b5c2f7b4a60179c24a5b1bc3f32ac43567df0bd7a7",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00174.json",
-      "sha256": "86039c5abe45731c0f432a7315db6b3db5348d8142530d38ae7216453abdc201",
-      "bytes": 14721,
+      "sha256": "2dba27a71445e09a76edea0284b702d75bf45ecc80355c0be5889159815a35c0",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00175.json",
-      "sha256": "4cfaae51f6b074a384e6047019aba523ffac474e96b20a1e54d5235b5b327384",
-      "bytes": 14721,
+      "sha256": "a8c915f022f370514a726ff1c1bb487d7c863d5b81a7427f82868768e2657732",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00176.json",
-      "sha256": "8ff77ff39d564e4c5c66921a8b191bd0e26a4ab602a65dfe0d6a003592d8a232",
-      "bytes": 14721,
+      "sha256": "aed70349dbcc0c3bcb974701f51520e982077eee3ea0b09d83c4cc993e89ce8a",
+      "bytes": 14821,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00177.json",
-      "sha256": "d47391f3e1183dfa4aa9ca3d1e81427b7d5494275013434e6092a5e5192b8ce8",
-      "bytes": 14721,
+      "sha256": "a510e819a280703c022a9bc87add3d94837890b8e97e5ed02515c68d59297879",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00178.json",
-      "sha256": "01f8db922c568e7717e94508467489ffd732698bfb2d4ff9627ba8c7cff5725d",
-      "bytes": 14721,
+      "sha256": "6e20a4fd0572e5b76e83ae6dd02fabb8270d9795748a6bd428dd3d73318923f6",
+      "bytes": 14812,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00179.json",
-      "sha256": "3e520ea1f2de10ea05692d4a42a35b3dcdeb0760be373ea0ac8b98612c2384e4",
-      "bytes": 14721,
+      "sha256": "585906ebf531044c13076e81f7055a027e50f51a2d4c215705254c0f39a62b32",
+      "bytes": 14815,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00180.json",
-      "sha256": "253c656fca27f617122de11995efb523e4318ab10caf163922d686a277d629a2",
-      "bytes": 14721,
+      "sha256": "8fe1d4b6c0b85c2b77187d62ade60c07b4feb13eb66347e0dc7e41636631c4fc",
+      "bytes": 14806,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00181.json",
-      "sha256": "92c0c9229241a6409573424f8a47bd4218a9d80acf21457d221daf494d93608d",
-      "bytes": 14721,
+      "sha256": "ea775090c3714bb619716931f228d56bf6ba311154ec2a89644886690ea7b092",
+      "bytes": 14811,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00182.json",
-      "sha256": "1e8d2ca600cca11f3b2c90435eb371304a005705074e9c215ce8c483e20bc45b",
-      "bytes": 14721,
+      "sha256": "9afaf80a21c6177f5eeb1f55096ebde425e877e3f25889e63282ed7a40f3090e",
+      "bytes": 14811,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00183.json",
-      "sha256": "192c732593b5ffac5cfd4ae26d13e4134df16c3deaeaf9803e324f9e966c4f6e",
-      "bytes": 14721,
+      "sha256": "324c05709e5b7c9587851f1b94a7dcb04d69cfeb0a2fcfd2176a825ca068d495",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00184.json",
-      "sha256": "5f15576a08dd46cf127d9f7411c8a97219b9ea4eca2238cd62454e2862ec87df",
-      "bytes": 14721,
+      "sha256": "2a9192f4e5f7c2dc7a290fe4f90d75159957a2954631a0d6e37d383dc8ae85d4",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00185.json",
-      "sha256": "436882ceac4a4c7d4c96984b80222ecddbdb4ea05d83c5796dfa49bca43d953f",
-      "bytes": 14721,
+      "sha256": "6651532efc3226f91699d7d14ac217540bb62e75ddeb7919e2393e8e56227960",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00186.json",
-      "sha256": "47ee07c33b4ac7e3bf19b3ddeb645f4364fc28db775ef213b77068407128c41d",
-      "bytes": 14721,
+      "sha256": "db62a1daed9d8b11dcef15fdbd74fb54ee3cc0a185d99dcc9e126e642126af8c",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00187.json",
-      "sha256": "4334dc87c08bb812cde896a8a6ee9468d54b0ee80dd6ff1beed12eac60fff26b",
-      "bytes": 14721,
+      "sha256": "70043d05010e26722dc7f4f4edfb225bd9fb7b7e920579c80ed6b23a42a7e06d",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00188.json",
-      "sha256": "25126cfca44c27d8bfe355018aa4ade92e6fb1ee198651aa239c8854666f76f0",
-      "bytes": 14721,
+      "sha256": "95e26d05b233c6a6265368414a454baaf13f75c33d7b775c55b1db7f4c2af3b3",
+      "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00189.json",
-      "sha256": "c0e2fd887f77a5f3c7abc042a058f333dfc03ac818109e249341946fe9b29050",
-      "bytes": 14721,
+      "sha256": "110d815e138340b6fb844a0f02ef807d8c68d3dd94bb0d818794a8fad0c1205b",
+      "bytes": 14805,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00190.json",
-      "sha256": "e467a9e2d8ed96c88d38d9986f2bd09cdd4af09834d7c31693c8b606501919b7",
-      "bytes": 14721,
+      "sha256": "372a079e6f2af31b593cd8b824aaab8a796bf3d21863f5ea171126c00f9d832d",
+      "bytes": 14805,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00191.json",
-      "sha256": "c0d9109fddfc5f6aeb88cc6eaf4554e5c5a80bb8688f30485741cf13bfc8c696",
-      "bytes": 14763,
+      "sha256": "67d55a695fbfa42ee58dbb282d36869b9e3aaac5925d9f36de309efadac0c407",
+      "bytes": 14807,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00192.json",
-      "sha256": "d7b5efebb67a521ae1943e185f2c7c5d99d98e3414a626980f3b97aeb558e818",
-      "bytes": 14801,
+      "sha256": "7e349892543171b726acc11a7e86d43f4458b18061b835d29a3ce19c3f2db26f",
+      "bytes": 14807,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00193.json",
-      "sha256": "43871979799ec6cd72af2dcf650f03e1c9fc236262af39c9733ff06494ae1cd2",
-      "bytes": 14801,
+      "sha256": "e9c141ba3a46474d4b80a12f2212de726f37ea3e35c4fb5a24ca638c8cfdad38",
+      "bytes": 14809,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00194.json",
-      "sha256": "0fcec2ceb6c1bc80ce61730f103df85f8990a3ac11645a378a75b723cc0df3dc",
-      "bytes": 14801,
+      "sha256": "ab72856b75165e3d235be33f9ccd6c6d889dc7e8e4713165d2e758be9b6c7e91",
+      "bytes": 14805,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00195.json",
-      "sha256": "56513c9c0f660d2a92bc12d9a683f7f9e4d258776bad185e8151a3f4efd0ce62",
+      "sha256": "86be032dbb65b012d9b4bf75e36565c030facfeec9d9090b91f7e4f384ba600a",
       "bytes": 14801,
       "statements": 80,
       "rows": 80,
       "estimatedWrites": 250,
-      "estimatedReads": 1060
+      "estimatedReads": 900
     },
     {
       "file": "batch-00196.json",
-      "sha256": "4a29b71804dba986f1dffcb8178f97b5f8d83339863fdc7c46f893956a40aebf",
-      "bytes": 1287,
-      "statements": 7,
-      "rows": 7,
-      "estimatedWrites": 30,
-      "estimatedReads": 184
+      "sha256": "903f0212fc5f67d81a6bc6bdeae7614da3c03bae6ad3c449bea8c3c5e3b3cf0f",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00197.json",
+      "sha256": "13591f0e301c73879bcc15b64b92fca6c25c1543879bfbc7b2ad2eb05a71a6d7",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00198.json",
+      "sha256": "0e43cea23e8b490dae313b3d90e3e30277183beb42a42ab9472adf850cae18e4",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00199.json",
+      "sha256": "bd4e2ba290da464c9ab691548baeaef35e539300da51399b31a1aac59d601ff6",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00200.json",
+      "sha256": "9c6cec8559b6c55b911344e15a2834445c61e42b0661fbc7f649da317b4208e9",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00201.json",
+      "sha256": "30bd9ef83e469ef4c5fe62777ca2ae1dc3bad48eb359333d215090cd81df3928",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00202.json",
+      "sha256": "2be7b39a28b76578b2ec86378ad7f0b2ef81287a9bb546f5889a7124dc43765b",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00203.json",
+      "sha256": "45503fabe30d6a9a39a0f588fd6629d9ca349de36ac263793dd3699626beb235",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00204.json",
+      "sha256": "5c1f9c173bacf15ec674c0d12a808487b63e674ff7e2d2a808f6af26f6954f4d",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00205.json",
+      "sha256": "837c9d9614170516331c82a9cb0164ee97adf838c74b13f196e6a982c0e67982",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00206.json",
+      "sha256": "4fa6aa6779f305f2f0cccee303dcb73ffacfd6ce318ca6a8a6f5ef7c78d8e46e",
+      "bytes": 14808,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00207.json",
+      "sha256": "d32af3b66da8ede00049326dc19793faa50be2bcc6ee37abe3e3108794cae12b",
+      "bytes": 14810,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00208.json",
+      "sha256": "ba20ddfb4e13d0a4310efceb40996ef1eda2286af70c9eeef38268cd394e2cb9",
+      "bytes": 14807,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00209.json",
+      "sha256": "a6eb2cb8454295e3280e6ea4526655a71b68d2a1d7010f20d98eaab5af156cad",
+      "bytes": 14815,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00210.json",
+      "sha256": "fdd6bab814a10984607fd056765e7138d65393a1090a8f83a51a182f880287c3",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00211.json",
+      "sha256": "460f9d3c3327e0d91de26db5c1c602719c902ec75b97d5f01ce20a26c0c809aa",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00212.json",
+      "sha256": "8b7d6c70fa87da509402f5540708e3a2b728a9ee7d23f630f35b63608f8cf27e",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00213.json",
+      "sha256": "615d4431978f622c4bbfb331b2c83e27f23bcb723e8527cd3e5caf8a6927d8a0",
+      "bytes": 14807,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00214.json",
+      "sha256": "2eafca2ef48b5f7d0196380450b444971e00d1e23b7413fc07032224072da868",
+      "bytes": 14807,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00215.json",
+      "sha256": "b193d6697a9f6e433d701599db67e3bae2f93cf796f67260558aab7a8cc72e38",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00216.json",
+      "sha256": "15bb20ca07dbfec045e5d17df17b6926f932997dd0345a79c38331f5bad560e6",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00217.json",
+      "sha256": "c10c1a6a200142840ac0e1958c52d9a58ad0f4ee8e4bf7b96d0db9510aa758a3",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00218.json",
+      "sha256": "874abb2e5b44877524c3c1376775276959578595a72acce12524940b048cf723",
+      "bytes": 14807,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00219.json",
+      "sha256": "016870a6c1ca4153be3480b23c233cdc9e2accf4fd9b5c16ed5b37ac71c3777e",
+      "bytes": 14809,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00220.json",
+      "sha256": "09d6e13fb816946ebf5028c3bfa4a3d40fc5894cf6cffdc3f9319995096b96e4",
+      "bytes": 14823,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00221.json",
+      "sha256": "ccf1aca59c8ffaa374a528a77487627067cc07a17b8faa23e265ae0e89c9d414",
+      "bytes": 14807,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00222.json",
+      "sha256": "3483a727418ba993689383e61d4991ae9e492f44db8c6353faaa86bd0e1e6bdb",
+      "bytes": 14819,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00223.json",
+      "sha256": "1d59ca9689d237487d2ad165202a8a059420be48cd8de6a77923dae6578dd4e9",
+      "bytes": 14812,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00224.json",
+      "sha256": "d0accc74ec94d2e462a06783fa1570d225ba733cc91ee233210286863f790c53",
+      "bytes": 14806,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00225.json",
+      "sha256": "0f88174d3c8566d2fb2bed44e0eb360a0b8a4a813302ae6d193f1ea5e62e045d",
+      "bytes": 14805,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00226.json",
+      "sha256": "bb364457448b1ac879d61db5330c40855499b76a0ba7821e2083ba831ac1c364",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00227.json",
+      "sha256": "83eab18a29e8c7f01055c3300747e7b43f6db5a116fc76d55334305ba37b2b49",
+      "bytes": 14803,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00228.json",
+      "sha256": "ab3cd6b0a2852c6264955e20e445353eb8976ffe9c053e92d3e3c003e0d8cd99",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00229.json",
+      "sha256": "c749df23a0afca89cc80ba4cbb8f174be5fac2064846450c26f7809fb1788fcc",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00230.json",
+      "sha256": "d2bc483a5880e986617bea5643027e0ddaa524e01ec7a89977df14ff770e3f1b",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00231.json",
+      "sha256": "82463ae4b748c75a94659ac93fd86a80efea77032c9b64219384a7f5696f9823",
+      "bytes": 14806,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00232.json",
+      "sha256": "cc322c4883001819cac43af2975516dc2ae04c2ebd04b1427c3b1e04e6bd63b9",
+      "bytes": 14806,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00233.json",
+      "sha256": "6c277a52bb80809a98ce570c8b53e95e2c1c0215e98e735b618e6d9af5d4be41",
+      "bytes": 14813,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00234.json",
+      "sha256": "3b1dd4e24cef1bca69041d02d23276a35890b453124cf95cf31fbe685e645f25",
+      "bytes": 14806,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00235.json",
+      "sha256": "2af89add98a5f5443560ce06d84aacfa139cddb6f41bc1bbcd29e2955bd1bd70",
+      "bytes": 14803,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00236.json",
+      "sha256": "0c2c19c202f79439297075bbc90b7ef4ad12ae7d4ff8a986105cc25a68e8c0c6",
+      "bytes": 14816,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00237.json",
+      "sha256": "3fefc94eff25071baef25a791207396cf5729b37156b8050da688203ccd08229",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00238.json",
+      "sha256": "dd5ea95b5012fb55f476bafd350f56c56490154cce132ccb6264dc249d2a2567",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00239.json",
+      "sha256": "8dea729eb87572becbd72d9e5d501630acf23569c68048d978b1fe50b1f4c845",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00240.json",
+      "sha256": "8526c81919cc8d82d328297319e267f95b5ab73b092ba31045c86e7d5a5db0ea",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00241.json",
+      "sha256": "4c894fbe6cc466076efe730d677442a63688486333a216dbe77e95fae157a0bb",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00242.json",
+      "sha256": "d06201356349f4d65a11208d0aa2a0853e3ec386edcce6a0fb8f8afd0c397883",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00243.json",
+      "sha256": "05dfd8029185b1e11bd5b1b978763f1ae852b2f41a3d176211b495f171876229",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00244.json",
+      "sha256": "8695edff1d4071ae8368c97844eb3f1ba60f1fccd4ee513a9f7c1d15e1097441",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00245.json",
+      "sha256": "bf40603bb6ff687ef2196bb49b8545d78f98f368c3f5a16a1ed216bbbab6d669",
+      "bytes": 14802,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00246.json",
+      "sha256": "6bc0088dd2addbb04f3b8a1d6310936d7a413a3d6d5451a4266bf8eed3118a9d",
+      "bytes": 14816,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00247.json",
+      "sha256": "f6312b3c44e9d797af64b7a54affc0c661a7a5f6a2ed424bb5e97599e66ccc0e",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00248.json",
+      "sha256": "d3c7ff983f9c230f06d74e97c23c1b7b66df495abb74d80395e0c7c3b198a8c4",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00249.json",
+      "sha256": "15676e7dc5dbdcb81dcbf871e75116e048b5ea6169fa3733ea6820e309646151",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00250.json",
+      "sha256": "d1fc98afe20032c4e60e974e2a5338434f404df9b747b2b801f85921ee738bdb",
+      "bytes": 14801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00251.json",
+      "sha256": "f874a07e5b297b65acde52c8104d4419c7c3c63a6614947d595bf1d1d1d25bd8",
+      "bytes": 24128,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 248,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00252.json",
+      "sha256": "6d9d893dacfeafb8a30984b8cb47dcd64886790dce0895028d84cc99ee2b130b",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00253.json",
+      "sha256": "f6e7be221bdbc1072ef6a0f1e4012e989409b54154cf1a7dd2813b021baf1580",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00254.json",
+      "sha256": "332972086191601930fb9fec21e2139752e88e32309c2045ebba92830eab4123",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00255.json",
+      "sha256": "4cb31c89ce9e6988ca0ab2bc8bf68a54ee103abae0f7d7ae5930a11c9f1c05fc",
+      "bytes": 33801,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00256.json",
+      "sha256": "626d26963fb90272cafdc656105d39edd44d4ddea9a6bcb367a93a40af6f8422",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00257.json",
+      "sha256": "4189da108092c53b9df816ac3465150d959fd31615a49eef11ab8b30a9b7dad2",
+      "bytes": 33786,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00258.json",
+      "sha256": "35291101c65c4d458d55ca3b9a9f6abf65fe60bcc1fb3629e6c541ac785b929b",
+      "bytes": 33846,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00259.json",
+      "sha256": "e6756a15ba69bee9dca25e13bb94b388e0f27e1234b10df43ed33f2328634f16",
+      "bytes": 33996,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00260.json",
+      "sha256": "49d875537679875956b3416f763fb3d3515ad56eaaa51f7842b9a04194fcb040",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00261.json",
+      "sha256": "fc97ab8affe38cc9d12bc92a9cb0a6e8d4335335090136401d97700a91421fc4",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00262.json",
+      "sha256": "6923452f4502a6fff62aca804aae77cf87de8f9548785ebb312c3263b0e649ef",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00263.json",
+      "sha256": "efbdd707ab833216fab3056451cc3a2e8bbe2710608e17cabb5b8aeebaacd4e8",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00264.json",
+      "sha256": "dc70c78e288acefa88008f8efd6769adfa980d53f1c15fba7b62a799ec5e7d0f",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00265.json",
+      "sha256": "8c98a99570985b5911ed66d94bfc7151da54dcf7c742b2afc388f4e0d313d963",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00266.json",
+      "sha256": "439d6b4949fb9ee3ad3cf79e686d2542c8781f3dc9555aeddb3f28c91176be63",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00267.json",
+      "sha256": "32cc1c0926f0d6d83f414c206ac2f369b34084e8428c8e81e0f3f375ab58682e",
+      "bytes": 33681,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 250,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00268.json",
+      "sha256": "91e16e2e8e2130075a11ee3a14833c0f3426d94311d57a41c050ad40ca55f157",
+      "bytes": 38613,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 240,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00269.json",
+      "sha256": "c03586eeab7ab7015dc1f9575977b51541d52ef2eefcbbe95f9a97c63c5bada0",
+      "bytes": 59237,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00270.json",
+      "sha256": "35e93271bdfc4c0bd43d0e0761858f534c95c1891a140338edaa3f6ba6b48077",
+      "bytes": 18561,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00271.json",
+      "sha256": "65eafc2b1a19a582e058c519267a018bf8d7ce398dd42b5e4bc9f15380b226ed",
+      "bytes": 18561,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00272.json",
+      "sha256": "bd4dc61948a1cba1539d852ecde552138de01ee3a6a9c743c6ece182a9699369",
+      "bytes": 19827,
+      "statements": 80,
+      "rows": 80,
+      "estimatedWrites": 170,
+      "estimatedReads": 900
+    },
+    {
+      "file": "batch-00273.json",
+      "sha256": "28e8f97495b82d5cbbb425e85a28bcdc43c3ef9bb19fbd2111ab466400a6292b",
+      "bytes": 13210,
+      "statements": 48,
+      "rows": 48,
+      "estimatedWrites": 106,
+      "estimatedReads": 580
     }
   ],
   "pages": [
     {
-      "cursor": 100800,
+      "cursor": 103304,
       "count": 40,
-      "sha256": "1449310c9423fc2eec163628ea3ee378e6e018a74dccb3cde74c2b70ae45a706"
+      "sha256": "3d19b221a37f5f60a7422ea31789192c18799abcc7e1c1c63c95dd3349be543f"
     },
     {
-      "cursor": 100840,
+      "cursor": 103344,
       "count": 40,
-      "sha256": "c7399ce62dc1d7ba4a24c7b04462cc9b6188782bee8f3bf96af8bdbde7eee129"
+      "sha256": "bfc077b5456d45049d01c44fcf6e09d59fc0872d71a70aabbee109c5d5d45f42"
     },
     {
-      "cursor": 100880,
+      "cursor": 103384,
       "count": 40,
-      "sha256": "8f1408a5017383308d7b809e89c5af7e4eee765dc7ae3df729e66095d3a06415"
+      "sha256": "625e65626934ec750e7b8bf2999039ea86c9b8e3159e054e9bfbcfaefb13ac13"
     },
     {
-      "cursor": 100920,
+      "cursor": 103424,
       "count": 40,
-      "sha256": "3beb994f817e855bd42c4bde2dfb6facc2c70dd1d0c760cf42a64429cae8449a"
+      "sha256": "4e73f17249770ea0529fa516bd0d35d357517e4c91402978ed979ebc4b689027"
     },
     {
-      "cursor": 100960,
+      "cursor": 103464,
       "count": 40,
-      "sha256": "6573b7c7275f6b92440fd9c060365284c46a3061e3f77ab9ff249c36e42860b5"
+      "sha256": "90a9eec55d0ade04717faad8b52cb30eec4c02d40781a43e94f9494ffee8b1a7"
     },
     {
-      "cursor": 101000,
+      "cursor": 103504,
       "count": 40,
-      "sha256": "8867c0d77f28ab3de3f8527f7df7e8e77bd311d7614eb9e9e74785faaefb87d6"
+      "sha256": "bf852aa1b4926c7f23d859c10faec82ad3bd6b1f64454be7acfb0f972c652eb9"
     },
     {
-      "cursor": 101040,
+      "cursor": 103544,
       "count": 40,
-      "sha256": "b46936737311aa63d71de526dfb459ad211f1eb34d5e823acc92a6336076e9cd"
+      "sha256": "a316905e7cae0850426031509a5d690e1fc8a7fe6bf71c16ba0df875cd83a856"
     },
     {
-      "cursor": 101080,
+      "cursor": 103584,
       "count": 40,
-      "sha256": "62725afec00eeda3e70f0735969337933327bf3c417fbbf19aa70d9f0cabe291"
+      "sha256": "b7b4cd32c30ccaa33e9e85b1b2c9c532b12b5ce4b40ae32b8521d917c7c84b03"
     },
     {
-      "cursor": 101120,
+      "cursor": 103624,
       "count": 40,
-      "sha256": "7e8d88edbc0e4884b3a1e0801c8deab00afbf31835bf846381462ed513eee9f9"
+      "sha256": "dd78264c4f40d2d79f42a3128a2bb1c9842d39e1ca136d9d4d435ae30a0b5f74"
     },
     {
-      "cursor": 101160,
+      "cursor": 103664,
       "count": 40,
-      "sha256": "934bffe0827126f0e3cbb1fb6ac0d2abb547e76d853980b0cc82e9a04bc93772"
+      "sha256": "7da7a9bfe09c65d2a8459a79f33995ae34c2aae5715dfd541faac6d51fb661ad"
     },
     {
-      "cursor": 101200,
+      "cursor": 103704,
       "count": 40,
-      "sha256": "939c4775ccc98b4a3ac766a656c1660e7b9188d4bb5dc0f4567d606b1644d330"
+      "sha256": "592b9e15dca267e0abf4f9d12b323fa5fd6f430d0e32862c7e95a0acdbff41bc"
     },
     {
-      "cursor": 101240,
+      "cursor": 103744,
       "count": 40,
-      "sha256": "3058be85668ee4e93dc68cdc6550f890a84279528e7a4490053f8e6ed9872fb5"
+      "sha256": "30e66ce7d104cdab9ae0503237f43d88f8a32800db85cfd4dfca59a21ec2b1f9"
     },
     {
-      "cursor": 101280,
+      "cursor": 103784,
       "count": 40,
-      "sha256": "e0438cc00084083128f507ddc3dde70b54aeb086e031a8d45d1abf9f1b2fcad9"
+      "sha256": "9a9cbfc06cdc3b71bdaa2a6e4dfb86da4a51d1473e6d74c5ae8a2ca08c397864"
     },
     {
-      "cursor": 101320,
+      "cursor": 103824,
       "count": 40,
-      "sha256": "bffddc5bc02fe0c3da6078b237fb1b6bb83d11cf2ad73b077ec1e38f3dacdc38"
+      "sha256": "97f8b83798e087a74f1f0d96f3ae84bbccadfac68c799604c7958aab4f0fec9e"
     },
     {
-      "cursor": 101360,
+      "cursor": 103864,
       "count": 40,
-      "sha256": "3e34dd31ad4a8803fadf0a759d198cee5a3b9cd655dcd43836ee1d873c934d3c"
+      "sha256": "8950f6f4ba511d8df098c02d2e853b7d9c9bbf6d3313324bdfe62a5b0542b631"
     },
     {
-      "cursor": 101400,
+      "cursor": 103904,
       "count": 40,
-      "sha256": "fc180a04f2990b39e115a6858ec37631b05036a818c1ada59fd38ebbf5a31658"
+      "sha256": "dc138648e0f050daf100bce0d1d2c3055b7f8e85f79ab9bc5810e2c04f4ac359"
     },
     {
-      "cursor": 101440,
+      "cursor": 103944,
       "count": 40,
-      "sha256": "c9669d197d4d75c250bab82516d4829eb20a2807e372bc71d65231fe6115cad3"
+      "sha256": "cd71856e35ce93c996aa4c41d9cdbd1ebfa1d5d359de4b8fab404e23c616fcc1"
     },
     {
-      "cursor": 101480,
+      "cursor": 103984,
       "count": 40,
-      "sha256": "84845d00a9281a2cc2d7bf10b97fb16ee1f25d01423aad1b51d5646683ba3b25"
+      "sha256": "eac8b597a9a0939e29df73c48627685d5af2fe6b6298e1e1bb89b272445ebfca"
     },
     {
-      "cursor": 101520,
+      "cursor": 104024,
       "count": 40,
-      "sha256": "0b6d4ecf9e859a08118765b768b5293826a9cd0bdb3e89c5639c40a1caeb4612"
+      "sha256": "82a644a83666b29398a1932b4f17ef27253ba3e48d9ec4ff733efdd6c90e3bfd"
     },
     {
-      "cursor": 101560,
+      "cursor": 104064,
       "count": 40,
-      "sha256": "aa0e49ff18872bd5c798dbc55444b44363088291babc7a03f2df76c2e66aebad"
+      "sha256": "674880dd5f3745ec72227d67c9e7d6c04a2c21137d69312df66402d167c071d5"
     },
     {
-      "cursor": 101600,
+      "cursor": 104104,
       "count": 40,
-      "sha256": "a172ad210b48dc1c0a2e9180d377f46f53787aaf752740184c54723a62f54cc6"
+      "sha256": "868d8e6b54a33685e9957bda3c7335dcc6e2d640ac65eea1684ec63bb121c069"
     },
     {
-      "cursor": 101640,
+      "cursor": 104144,
       "count": 40,
-      "sha256": "384a533268c85ca8ecc2e60254e226b8bb22708165e60ab12a82d1476a2a7528"
+      "sha256": "35969eabec05584d306f1e30eed838e9af5878244c2922f9a5eea59762344f63"
     },
     {
-      "cursor": 101680,
+      "cursor": 104184,
       "count": 40,
-      "sha256": "d4b77ab85f6f8a2f905b1aee064b12b82adc0f194a61d39a8b3e8a2b36d56d5a"
+      "sha256": "687759b941723deda09eeee16979351963ce35df8816b96ce3b360a9ad5b8452"
     },
     {
-      "cursor": 101720,
+      "cursor": 104224,
       "count": 40,
-      "sha256": "be03eb8e1a8546756f46cc1459b5a92ea961aedd7fb0f7803a9fef10ac45c762"
+      "sha256": "47f33a0330146ce0b1c05dbce211c5ad84141dfbc33db207545cd9ffde8c20c2"
     },
     {
-      "cursor": 101760,
+      "cursor": 104264,
       "count": 40,
-      "sha256": "edb0b0722d8ac96c07658002cd5e0528d3d93b5abea09c99754c6f08a5262b3e"
+      "sha256": "fb94495e49c1319fbc423fbf4b216be32999edb31ec1f484c4366cfbf8457da1"
     },
     {
-      "cursor": 101800,
+      "cursor": 104304,
       "count": 40,
-      "sha256": "3d9bd9ed00c1a425de81e0d6e33b17f67696708eb155d24cfd0e84d0619a5be1"
+      "sha256": "8b16af3276f90e541f980e2fae85a612c97d788f13e73ea93b6d029619b94f2e"
     },
     {
-      "cursor": 101840,
+      "cursor": 104344,
       "count": 40,
-      "sha256": "9dcf1869ad1ea3ece768c89393eeff17908a1173df11c01b6de1160bb960c094"
+      "sha256": "96f9335d09d0c8c4f7e25727d9c1a2166c45f416de0f4e132227713bccfac28f"
     },
     {
-      "cursor": 101880,
+      "cursor": 104384,
       "count": 40,
-      "sha256": "2cb137a704da4e3bd912f00a7eb2167658fdcf5c2422501b11b085b80f209f13"
+      "sha256": "ea9a676b3c7a4f4ffa6bc995a6a78149dba83b432c5123bca1ca298e947a9205"
     },
     {
-      "cursor": 101920,
+      "cursor": 104424,
       "count": 40,
-      "sha256": "f1c4389666fe4180b12b1af229e8a6e4050dd301d8dea5dfcdceb603187fdf46"
+      "sha256": "0397864b8b0fe4736aec52303588d18ff877e2249a92987f27c87bd7f5bd5d0a"
     },
     {
-      "cursor": 101960,
+      "cursor": 104464,
       "count": 40,
-      "sha256": "3d8d2d5715a4ff4fca0dfb44eb77d2c0b06b5eed0f4f4efe59107738aedf3f1b"
+      "sha256": "a46e81add0779644a15dc55045b9037a7c53814913644012444545b048d3380a"
     },
     {
-      "cursor": 102000,
+      "cursor": 104504,
       "count": 40,
-      "sha256": "5aec5ef0a0eb727f8adb1c0c8564fb65e7831e5b2a9551c9f1442ac4ad2b0817"
+      "sha256": "350207f73e210981518a6bb731152c4e77841c991970750b19362ebe5fff384d"
     },
     {
-      "cursor": 102040,
+      "cursor": 104544,
       "count": 40,
-      "sha256": "a6f1034d8108e6d95abba0506197fd356f37806468e6d26ce2b5cbd1fcf88adf"
+      "sha256": "fe570b1ac7caa7e96da613a558d8ed112b59912eed0a178a2dbb516d944eef87"
     },
     {
-      "cursor": 102080,
+      "cursor": 104584,
       "count": 40,
-      "sha256": "5ef2250048bc4cf7c4f285de4143fe8686a7746e43b301f5b2f94811536ca22f"
+      "sha256": "6b5109eff6e8382138f5012e5722f6ae6de53e977fc134180627b8798ff37974"
     },
     {
-      "cursor": 102120,
+      "cursor": 104624,
       "count": 40,
-      "sha256": "8fa9df8c95f36f71aae62257e56b9bc70d652eba8b2747414a5efffbdcf3788d"
+      "sha256": "9ffcfe2416e4913d0b61734a50b9c62e0ee47da45a53d1ea98113e5c9c09f427"
     },
     {
-      "cursor": 102160,
+      "cursor": 104664,
       "count": 40,
-      "sha256": "fc2e9799a95e3c5e2bbb6c896eff39d295cb202956ab388c4224b7d3f2725cc1"
+      "sha256": "26f7d7a9a566f3c38ef7dc1f829deb39bf95911d6f2dade9b0f87d30a0061803"
     },
     {
-      "cursor": 102200,
+      "cursor": 104704,
       "count": 40,
-      "sha256": "3a23b1625882a1b963a037cd42866bf4bf6713f2acbea564e8a63d9e6d6bf8f5"
+      "sha256": "9d6100a268dc9476cd767aef7102141a63efe9795c2b285bcf9b0b48217bc4c9"
     },
     {
-      "cursor": 102240,
+      "cursor": 104744,
       "count": 40,
-      "sha256": "6a5e5f9146cefb730924d735e332871626fcd4a7bb6525b13aea0ac216eddfab"
+      "sha256": "2e3802ee4a8110b5277a6400cc86a720e92712c0eb50e9b35d7dd4ca0390c453"
     },
     {
-      "cursor": 102280,
+      "cursor": 104784,
       "count": 40,
-      "sha256": "0932ed8684c26c41dd6d75a8d0e6213145804a81e43626444281db35cedadc1a"
+      "sha256": "0c32dc94524257e9d7e7593d6c3f1de59a2e844eb0ab5d84d94e77b3df17a4a5"
     },
     {
-      "cursor": 102320,
+      "cursor": 104824,
       "count": 40,
-      "sha256": "f8b97bc4cbd327402232350318471bc53aba284292e0e862c2994b7b51a90f36"
+      "sha256": "3bdb41720eedd4397567f014c6152bdf4e4316fc47b29e43b80881457682d4e3"
     },
     {
-      "cursor": 102360,
+      "cursor": 104864,
       "count": 40,
-      "sha256": "bf1c3850bf4525cb3d3d31a63527ad18557c98889c9af8013670a39e14572b75"
+      "sha256": "21db1e597cfb3fdc05155206013e83868672d2b98ee4aad380e27275cb3802b5"
     },
     {
-      "cursor": 102400,
+      "cursor": 104904,
       "count": 40,
-      "sha256": "2853609d97390c886352eae50d86ecbda1e52eb847281729373452ea518fe46e"
+      "sha256": "61cb947d085bd8ef093c784f767cc1b3e65bd583a70e8ee904749547742b1838"
     },
     {
-      "cursor": 102440,
+      "cursor": 104944,
       "count": 40,
-      "sha256": "524284f01b05b10ad9088fd2264f52a4b0507739616276a4955bad8ea63fc400"
+      "sha256": "1b999e43706c5d3187bde8b80573d387e98d3309c9dcb65cfe026845a0392000"
     },
     {
-      "cursor": 102480,
+      "cursor": 104984,
       "count": 40,
-      "sha256": "73f74bab72ec67823b8be801eaa32376ebb10be349fc1acf1d546dc27a5f906f"
+      "sha256": "1ced94b0e4e19920544c7a9855c8f3eac52a25ce355ea9eb6c67dba206f5250d"
     },
     {
-      "cursor": 102520,
+      "cursor": 105024,
       "count": 40,
-      "sha256": "7e3381c683d69593429ebfa9f5a096c9f350a98947e2afc6dd5d9401fdc21ce9"
+      "sha256": "10909e1014ed716e1982e275f5e42d242f470a442eff41208f62d002ee19b3c5"
     },
     {
-      "cursor": 102560,
+      "cursor": 105064,
       "count": 40,
-      "sha256": "4a40084b7c5e1bc4d1321137ce5fe6010235e9b8a1caf6bf7ad530007b57ae42"
+      "sha256": "a2352c8c5fd9a62a75f95bbb1b1ef135b9b3f903a3513c13626aaa778cff95bb"
     },
     {
-      "cursor": 102600,
+      "cursor": 105104,
       "count": 40,
-      "sha256": "87827abb2a89f294592d81b2710b999a4a37ecc37e0a323d63324107e5af6165"
+      "sha256": "48d4309212ec84bc1b0d6fc62dca96556dc8ec349e082c29899366d78402d1e5"
     },
     {
-      "cursor": 102640,
+      "cursor": 105144,
       "count": 40,
-      "sha256": "c5bff015ea0298fedd73caa4cbfad157d7a54646667a007705671c2677e4b22f"
+      "sha256": "5ff5966ed4e4ceece6ed85e798c4c83882124d6be88d5205028765cbbffc371e"
     },
     {
-      "cursor": 102680,
+      "cursor": 105184,
       "count": 40,
-      "sha256": "cae5bcc16e1da69b8f87a608ea8f2c91ee12dc9ee58fe62f47c1f329b4f20d0b"
+      "sha256": "65b960cf6807db025e816f11a212f272126d20d29b6b9bd55bd9b151148cfcf1"
     },
     {
-      "cursor": 102720,
+      "cursor": 105224,
       "count": 40,
-      "sha256": "cf740a4e33e05b0e26629d396e7e9864af0356536f876885366c778d0809af7e"
+      "sha256": "119ab1a82618d2b04f064559826cea0747b511c84bc1e5713632698dad607206"
     },
     {
-      "cursor": 102760,
+      "cursor": 105264,
       "count": 40,
-      "sha256": "1971dcb44b400f4f4ae29483e7f144b435c159f8124f108dab1e82dc7be0cadc"
+      "sha256": "c2b3f265b9e2519614536608725219af0c9be9792f27717f81f3b990b724c2ce"
     },
     {
-      "cursor": 102800,
+      "cursor": 105304,
       "count": 40,
-      "sha256": "7e0a0b4d534418fd10f7ea3af2d614e5e2a04d6fb7b60d60d30590b61d23f388"
+      "sha256": "08c0d7fe352ba990357fc06b43a3a4506d9629ea8bc7af7870b1b607e73cb326"
     },
     {
-      "cursor": 102840,
+      "cursor": 105344,
       "count": 40,
-      "sha256": "a8929e6570f3ea88bdfb265bd3dd6a747b9c0872dda377ac49bf3fd11412a869"
+      "sha256": "d091efa99f30e349ea5df9567618fe994efae2d3034f4341c048244f68f0a485"
     },
     {
-      "cursor": 102880,
+      "cursor": 105384,
       "count": 40,
-      "sha256": "7ed4003ffb649f5ced1f772d09667c0fa3df2f3965238c849912597d2a64bbf0"
+      "sha256": "fdc1b2b4c4dd2c20d3de37f478bbf934a51dc2e9ec28c0ba7842f61136a036ff"
     },
     {
-      "cursor": 102920,
+      "cursor": 105424,
       "count": 40,
-      "sha256": "58e8636820abcd6dec955d5d060d7aee4c3393663ed9d5e52f7979b583e7ba63"
+      "sha256": "d1d993006d54b0b80a307a9cfad9bd10f6f870c6f360742418c3a74165a5335f"
     },
     {
-      "cursor": 102960,
+      "cursor": 105464,
       "count": 40,
-      "sha256": "a603571d18d66e62073b4a748370b9840b28e4eddb632b075a233e91c9893f75"
+      "sha256": "cc691a07dfedcb0c6a95c8f6772c50a9e52ed6354e978ef691a15196b8f190b1"
     },
     {
-      "cursor": 103000,
+      "cursor": 105504,
       "count": 40,
-      "sha256": "f7083be7b05fea155d27571ba29b3ab881437e7b9cdd52a13634826f9add5d36"
+      "sha256": "b95aba66f549513d5945af7846f7444e0836f22de088ff22f7abf18d955255dd"
     },
     {
-      "cursor": 103040,
+      "cursor": 105544,
       "count": 40,
-      "sha256": "f11fa3f7368bb60ebfd0f7091cc1e5a512808eee695eb6acd1c53537336ab537"
+      "sha256": "60543e3c02ed34dfcc8cb506c882960fe798987fb2dc17e3a8848121628231df"
     },
     {
-      "cursor": 103080,
+      "cursor": 105584,
       "count": 40,
-      "sha256": "feaa7742517799bc491eab663dda1adce3e2d958bbef289ac8ecd812a90f3658"
+      "sha256": "c7b9fb5d3f1e6999fd3593b2697f3890a45ebf30dd110399498e59a6b7094c6f"
     },
     {
-      "cursor": 103120,
+      "cursor": 105624,
       "count": 40,
-      "sha256": "915ffb9bca9d3ccdae39a01d0bb849af74026c9716534d735483f8140b5dbb66"
+      "sha256": "f18af97387bdf043039e49b5dce50559940cc4d67c99ead0727bf01b2a06b612"
     },
     {
-      "cursor": 103160,
+      "cursor": 105664,
       "count": 40,
-      "sha256": "01d33a176587ef7f2525b9f3e327e380b75bc6a3421cebff9eb1fe7868e9df7c"
+      "sha256": "a3351a2ddc2b6f8fc42f49bcc03631dd8370d44931a6cb074f54e3b547db1f88"
     },
     {
-      "cursor": 103200,
+      "cursor": 105704,
       "count": 40,
-      "sha256": "37b6ffdaae8424b30d54c2b8e82f54c473396f791c150f12622989ff34b3fb8d"
+      "sha256": "9aaade070d287d25ed377547fa5d6f8899ba1239882e0c30035e59120f1170d4"
     },
     {
-      "cursor": 103240,
+      "cursor": 105744,
       "count": 40,
-      "sha256": "a74e3f13f21c30968788a638a1fc7a551a1ec1f6d176f5589382a3f36e97c715"
+      "sha256": "9600ce45e66890713ee301aa67d740d1a21a462601b0a1886c369c828912ba64"
     },
     {
-      "cursor": 103280,
-      "count": 24,
-      "sha256": "441f504368a28e36565e110bccdb57598717513a6cf01e7db338443c29014ab7"
+      "cursor": 105784,
+      "count": 40,
+      "sha256": "b75d4e67a0b2ca572dd87ac5c34cddcea6cfe37c01c90076899a18b4b5ceadc7"
+    },
+    {
+      "cursor": 105824,
+      "count": 40,
+      "sha256": "01fda35d2140060593c35274d4987db50c7f48389ce4438f11a6c3745175c205"
+    },
+    {
+      "cursor": 105864,
+      "count": 40,
+      "sha256": "821e7dffb751d13fc2d5d3839edaaa0a018054f935c57aee1ba4b4395582c67a"
+    },
+    {
+      "cursor": 105904,
+      "count": 40,
+      "sha256": "adf9140a001e49d61bb88ca5a6092169112002936908d09b1a080256c3b47809"
+    },
+    {
+      "cursor": 105944,
+      "count": 40,
+      "sha256": "e6fc6c6292df5975dc3fcbb998688dda2c8b678f63d859ba3bf39340fce8b8c1"
+    },
+    {
+      "cursor": 105984,
+      "count": 40,
+      "sha256": "42404d6c173f1e6befb6b64a46d7e322109bafa89cf58e9809461e8ed142c952"
+    },
+    {
+      "cursor": 106024,
+      "count": 40,
+      "sha256": "8210089418a77647c2418a386f0ec1e378e677343b28a2390c30ee548158eeda"
+    },
+    {
+      "cursor": 106064,
+      "count": 40,
+      "sha256": "e13f77ef0ebfcebbccca26d6f5dc1f0994a3e9d4340937e2a94efcb391755824"
+    },
+    {
+      "cursor": 106104,
+      "count": 40,
+      "sha256": "88f392e51229a645dd26941a456b4d36962032d5985cc40aa2fef5e81cbf5459"
+    },
+    {
+      "cursor": 106144,
+      "count": 40,
+      "sha256": "5e4b27b8ee8134c951f3723e219f76aff8436a75bebcaf1dae9e6b783ab6acfc"
+    },
+    {
+      "cursor": 106184,
+      "count": 40,
+      "sha256": "8bb889e14933bcc6b9ac64e21b56c8a56aa4857ecb6e53083fb0b8f271ae5e0e"
+    },
+    {
+      "cursor": 106224,
+      "count": 40,
+      "sha256": "48eb60da7be33d7897a801bf78b968c322fb2e94988e14611ca3a40f62f632f4"
+    },
+    {
+      "cursor": 106264,
+      "count": 40,
+      "sha256": "1ce9a0aeba4d0eeb885f20bc935e5cb576d0b24e959334cb6e2be2fc7cca9fb9"
+    },
+    {
+      "cursor": 106304,
+      "count": 40,
+      "sha256": "44ce21c1590e5a004f6fee92a68418bf08cf647451943fb469e15db965a6c0bf"
+    },
+    {
+      "cursor": 106344,
+      "count": 40,
+      "sha256": "d6c643db6e83dd82eb4909ba7ddc3b93d9c09b1fb43c0b026209c88fb8f736c4"
+    },
+    {
+      "cursor": 106384,
+      "count": 40,
+      "sha256": "8a6375cd9375696df956704105bb3ba90509b6373a094a722d48ff0401f420fb"
+    },
+    {
+      "cursor": 106424,
+      "count": 40,
+      "sha256": "bae573c13da411eb75ffe5a996d0dade5e4220b41d9b50d3f124c4254178a9f2"
+    },
+    {
+      "cursor": 106464,
+      "count": 40,
+      "sha256": "a7dc9b1f4716145e7afee12c1d88794219437e9efea947099f4cb29e304a077f"
+    },
+    {
+      "cursor": 106504,
+      "count": 40,
+      "sha256": "59d266b41547e13d753223547083997328ef44860e5bd86c9b0420e59474525b"
+    },
+    {
+      "cursor": 106544,
+      "count": 40,
+      "sha256": "7db984635a10524d299c9364853a440053cac49cbf8963d62fc3f223bb3f3b80"
+    },
+    {
+      "cursor": 106584,
+      "count": 12,
+      "sha256": "edf38f9bce22811136635b6b099ad41df24dcf948020017dc0925d86d112fab3"
     }
   ],
   "tableHashes": [
@@ -2109,148 +2923,124 @@
       "table": "cbank_shared",
       "where": "shared_id>?",
       "args": [
-        72
+        385
       ],
       "order": "shared_id",
-      "count": 313,
-      "sha256": "7e2cb7181382f73c4e319cb2aad6fbc7d75c8b9828d77d2839537b3719739340"
+      "count": 461,
+      "sha256": "b6fea85100a1bc319b1eccdb21da999105dd02be2071d349d18fac8414f52855"
     },
     {
       "table": "cbank_problems",
       "where": "problem_ref>?",
       "args": [
-        100800
+        103304
       ],
       "order": "problem_ref",
-      "count": 2504,
-      "sha256": "bc52cbbf0dfb4cad8209e0c121d5467cca657686ac6b08d4cbe9dadbd6fc8ad5"
+      "count": 3292,
+      "sha256": "0a31e857e001af4fd16a61c8b202446bbb9b1dc07ce52a85baf0d85f58ad8297"
     },
     {
       "table": "cbank_publication",
       "where": "problem_ref>?",
       "args": [
-        100800
+        103304
       ],
       "order": "problem_ref",
-      "count": 2504,
-      "sha256": "fb53c47919dab063bda57603c78afc0e57266338f8933d3fbb8c633c14e46cdc"
+      "count": 3292,
+      "sha256": "e346122ad657dc0af8b10777f95b6bd9c0d9a834c3dcd26d9f4474a6e36b0b02"
     },
     {
       "table": "cbank_selection_features",
       "where": "problem_ref>?",
       "args": [
-        100800
+        103304
       ],
       "order": "problem_ref",
-      "count": 2504,
-      "sha256": "a6f73614a65b4221c7cd149250bf9c56cce0207447d5a864e40dae52ca41146d"
+      "count": 3292,
+      "sha256": "36b0a8369f32a01df4c38cdc305eddd9a322a77212aa12749dd93e90ce3f5b49"
     },
     {
       "table": "cbank_releases",
       "where": "release_id=?",
       "args": [
-        "cn-2026-11-03-ideas-v3"
+        "cn-2026-11-04-quality-v4"
       ],
       "order": "release_id",
       "count": 1,
-      "sha256": "3b6ad39264338345458d5260600b63728036c241294fa50e7fe89dc1ac14067b"
+      "sha256": "02761d232ece72241b32c5d858be38c1440e47646f205ae00ae9d3d305303eb8"
     },
     {
       "table": "cbank_pools",
       "where": "release_id=?",
       "args": [
-        "cn-2026-11-03-ideas-v3"
+        "cn-2026-11-04-quality-v4"
       ],
       "order": "pool_id",
-      "count": 859,
-      "sha256": "5e20d752edda6a8cf4dbe2465b98077e028e6dcd15d4563826f82dc44528b41f"
+      "count": 1003,
+      "sha256": "bc29f4b5342310db6c2e0c6125ef47a6eb07808bdd216195129c1344fedbb23f"
     },
     {
       "table": "cbank_slots",
       "where": "pool_id>?",
       "args": [
-        186
+        1045
       ],
       "order": "pool_id,slot",
-      "count": 6872,
-      "sha256": "5df1cbc6c1916f63cb96ffaaa836b36bde9ddcc3e73d477f2c776ebce9fea40b"
+      "count": 6742,
+      "sha256": "5509c9bc09af373cc8e3fed46e4dfc46dc537173e7f805c6aee1cfee86332789"
     },
     {
       "table": "cbank_release_sources",
       "where": "release_id=?",
       "args": [
-        "cn-2026-11-03-ideas-v3"
+        "cn-2026-11-04-quality-v4"
       ],
       "order": "release_id,source_release_id",
-      "count": 1,
-      "sha256": "43cc03fa188b8488b1a21cd4f55d69de7018be7a692f2eee9631ee0d04373891"
+      "count": 2,
+      "sha256": "2699d479901df62d40882495d9ada335e4697c8dda767e40926e02f9b5ce28e8"
+    },
+    {
+      "table": "cbank_release_exclusions",
+      "where": "release_id=?",
+      "args": [
+        "cn-2026-11-04-quality-v4"
+      ],
+      "order": "release_id,problem_ref",
+      "count": 1389,
+      "sha256": "60e47ad12140ea4b432f1329379bb1e3d3016863b4220763c3d464d5ba7a5e1a"
+    },
+    {
+      "table": "cbank_withdrawn_families",
+      "where": "introduced_by=?",
+      "args": [
+        "cn-2026-11-04-quality-v4"
+      ],
+      "order": "source_release_id,family_id,introduced_by",
+      "count": 72,
+      "sha256": "3489411b0172ff50472c80af85db90d348684f26dc61e3fcf627bf0f68791061"
+    },
+    {
+      "table": "cbank_problem_lineage",
+      "where": "problem_id IN (SELECT value FROM json_each(?))",
+      "args": [
+        "[\"cn_09f5db967a73dbf1f7f4\",\"cn_0b99b44c7ebb00f69c21\",\"cn_0eb6aa6451a9fd376afd\",\"cn_1051c9a3c69c12bc2100\",\"cn_138953af31f68235ad54\",\"cn_138d58b71952852fea8d\",\"cn_149e3094eb1abd0deb15\",\"cn_16a61f7ecd94a331f056\",\"cn_18032e078beb46402486\",\"cn_19c2c3e41c22130120af\",\"cn_1a3aefd1c08fff504515\",\"cn_1f4035215a8a3cdf7395\",\"cn_1fbcb6c6750f7af094c1\",\"cn_20a40b4aa93c7fc38cd2\",\"cn_20de745fe85d7344dca2\",\"cn_217cee28a42c60aedcca\",\"cn_2280da4435c0a59d4f11\",\"cn_23135991d2d0878c500b\",\"cn_2610ade59bcb40cab1b4\",\"cn_282ebc46229890025701\",\"cn_29990a2e55d60d4e15d1\",\"cn_29b96b0bf06daf563ba9\",\"cn_2c976b0b1d5f1cc567c1\",\"cn_2f2ef5aa7d449cb1347c\",\"cn_2fcfcb80550c237213cf\",\"cn_319135844a5f36f17f44\",\"cn_31f6374c2f081b422fa3\",\"cn_33668eacb67699f0b64d\",\"cn_33e53b7fb7faf362c39e\",\"cn_36e7f92e97c6b4225eea\",\"cn_37fa977b09550f4afdc7\",\"cn_39417defefc9c38ba831\",\"cn_3c06d4b6fb185caa8bac\",\"cn_3e5f89964706f8a7c2b6\",\"cn_3f28a60fdf5e8b9863d9\",\"cn_40b55fae2b10b4e3fc18\",\"cn_41c30941bff99c8cf36a\",\"cn_441bfb4e0673f8493cde\",\"cn_451aa1569b66ecdc5073\",\"cn_45c55ac51e1da164a8aa\",\"cn_46771ebfcbe60f7cca84\",\"cn_4a7fa51cb97bd4ee9c23\",\"cn_4c0ca95da45b7e17d4f3\",\"cn_4cc32bcfc735998dce1d\",\"cn_506a51909cea4e66b665\",\"cn_55519cba7ddab4336e82\",\"cn_55f9c7935bba897113f2\",\"cn_578fc67e9f7645b079de\",\"cn_59baaac3fbf731e3d646\",\"cn_5a642d4bdf1b5942f76c\",\"cn_5a8a78e3d86133d3aff4\",\"cn_5baae462b75d3c4f1bdb\",\"cn_5bcc62af4e633ee8c9af\",\"cn_5cd3c4e61106cf4e343a\",\"cn_5cf0a503dfbc6ce5ddbc\",\"cn_60d48186d2e38a2b3867\",\"cn_62a8c8cc4087f74b5c33\",\"cn_62dc5511b8c328ef8fbc\",\"cn_63708a69f7df0ee45d23\",\"cn_665d65fdd255f436917a\",\"cn_67f7039bdebeeb8a5ab0\",\"cn_6943c60835067ea08250\",\"cn_696eaa459b2fde23d790\",\"cn_69bf05466279ebbf9014\",\"cn_6a1346164e80bc8bf80e\",\"cn_6ab78f85d5ad34904b1b\",\"cn_6d9c41c02aa1c9ba79dd\",\"cn_6e2f792cf2fb4ec572a0\",\"cn_6e6f4bd6c3f831d0acbc\",\"cn_6fbc09c516753dc49d0a\",\"cn_7032ed333e7a6568744a\",\"cn_7107f5dc14b5abbb1ba2\",\"cn_71a0d103e1ca146192c8\",\"cn_72948432052d35ea4e79\",\"cn_7543260ede482e0feeb7\",\"cn_79323d3a4f6d5b9ff60e\",\"cn_79ce2460503e88d1d102\",\"cn_79d4e10f4254b333a491\",\"cn_7a17d902cf4a43fbc5f7\",\"cn_7c987bd01e0d1291b686\",\"cn_7cb0681749e129ac335f\",\"cn_7e12b3523fafb9d60013\",\"cn_7ec24937717b1ac7d881\",\"cn_7ed91aa530460b333b81\",\"cn_7ef0bf72ac81725dbe2f\",\"cn_7f1661e761fe959eb8bc\",\"cn_819e7704655dcc012552\",\"cn_822a03a85fdefe96356b\",\"cn_857773ad4151b93219e9\",\"cn_87267e9e24dfed1c4032\",\"cn_87fa7414b85a093cd42d\",\"cn_88e96b2c3287d2bee430\",\"cn_8af9901fc98830f61750\",\"cn_8b7cceb364c8a1bce097\",\"cn_8b96b301bb93484b9c7b\",\"cn_8c840e8541303b98983e\",\"cn_8d0e2949fd635b81c96b\",\"cn_8d95517163ea106fc850\",\"cn_8e4a68b4656549ec2c19\",\"cn_8e507839507bb40c8e4a\",\"cn_902e9ece2b062c5d9bf7\",\"cn_90b99866ebb04986f150\",\"cn_917f349ae2efc45a8e73\",\"cn_936e6f644182325d3b03\",\"cn_96b46aea76b89c7ea170\",\"cn_9abc5ded1f3c1fd5efe5\",\"cn_9c40ef08ab91655d4006\",\"cn_9f0b599893c762c2129e\",\"cn_a0a1a18856cbce27f96a\",\"cn_a178ec50fcdc41731647\",\"cn_a22de8bf7ee50d93a65b\",\"cn_a37b504daa502a87c9fc\",\"cn_a3b8655a58a2379e3c6f\",\"cn_a47e23ac6bb7058b4403\",\"cn_a67e97e327fad11b0f9c\",\"cn_a688794c86b2fe1da22b\",\"cn_a75add1877e5cffa0760\",\"cn_a8476664eacbba743a77\",\"cn_a9af9823bab9a99be5bb\",\"cn_aca24ccb738ac54c1fc3\",\"cn_accd1f662f531e3a685c\",\"cn_acde9607be0441fd2dc8\",\"cn_ad1be890f32395139d5d\",\"cn_ade3ca2ed01c195ca600\",\"cn_af51450b5ace86a3de2d\",\"cn_b054a217810dc8c8f990\",\"cn_b151fc7e5fcaea803ec9\",\"cn_b15af6c3a2cf26c45827\",\"cn_b1ca2dd1c2b88f690c04\",\"cn_b48cdf18cf402d763c1c\",\"cn_b4a6f0443a98130317ee\",\"cn_b4d416fe2f892c75c5d3\",\"cn_b64728af17255579e655\",\"cn_b724004e796a7523b302\",\"cn_b76d4d70309ec152342c\",\"cn_b7af7fdb5934385878d6\",\"cn_b8080f135042eb458b03\",\"cn_b8af993d95e48e1b4a57\",\"cn_b8b35aece85132823e92\",\"cn_b91a048330cb4e49d6b1\",\"cn_b995734aeea3d2844010\",\"cn_b9fb590b72ba63e32c94\",\"cn_ba04ad62137162881e70\",\"cn_bb02caf5098bf2c443f7\",\"cn_bb8f362efa4dc54311ff\",\"cn_bdcbe8c087066aecf298\",\"cn_bdd667e4310076b57714\",\"cn_be71ba6b39c9013fb92d\",\"cn_bfe69db35811c9af1129\",\"cn_c08e486209bf4907e70a\",\"cn_c0e47b57066fd35dafcd\",\"cn_c1489b5b11de022d21f1\",\"cn_c1b6981a30c8c0e9385d\",\"cn_c235386420fcf092d11e\",\"cn_c30752d71fef3ab58d3d\",\"cn_c3c8d5e1e839502c6b38\",\"cn_c3fd36680c4617e30a1e\",\"cn_c5052defc60fd462acc5\",\"cn_c72afa67e034431df849\",\"cn_c74a20ed75ebccfad58e\",\"cn_c74c1f989ba971997159\",\"cn_c7a4efacf3c7cad1eeea\",\"cn_c806abe9bf6e1a24ce25\",\"cn_c8a2c466e2e5115ab522\",\"cn_c962c05bee79d4af87d8\",\"cn_cc3ecc03afc4427e410e\",\"cn_cc5d75cf53bf088f438d\",\"cn_cc691d993fd0f53e9e4b\",\"cn_cedfbc61a6e98783aedf\",\"cn_cfbdd425faa4b4939b23\",\"cn_cfee51dda2ee6ddf1666\",\"cn_d00469eb6cb635396527\",\"cn_d03842cf3fee9982b9d3\",\"cn_d081e9323df5bd6cf1b1\",\"cn_d08e92c4eda0ccb206f0\",\"cn_d159f1764c5bf7a75ba7\",\"cn_d187646038f7ad939983\",\"cn_d1c3079a5eede731e6ce\",\"cn_d1fde80b47e019b57a1e\",\"cn_d252d923d8c2069073ea\",\"cn_d25b253e83e1e3d051d5\",\"cn_d38976e891dbe63b4297\",\"cn_d3f21f3cfd20a9a4299b\",\"cn_d5267cc2a78ddfa1bfbd\",\"cn_d54ce7c90516beee2dcb\",\"cn_d5c530bf000ee0d6ce93\",\"cn_d625aa3c1aedd5e8aa05\",\"cn_d758a61113f31d1453f0\",\"cn_d76575ea7da5a5d48e3c\",\"cn_db970aabd869c3e0f4cf\",\"cn_def720abff17202c047e\",\"cn_df89f26849d1be39687d\",\"cn_e2d275c76749fe36e466\",\"cn_e301c85f9564af794c3d\",\"cn_e3fa7f4751b52f55d27a\",\"cn_e4cff16c4b87a1e5d065\",\"cn_e4d08944f55eeaf46bd0\",\"cn_e502c5f5aa97731d2410\",\"cn_e6f1329589abb636fb3e\",\"cn_e88a2cc17b777ae14cb3\",\"cn_eb653c5a1d66fcc3ce6c\",\"cn_ec9f6724a334b7e0a3d6\",\"cn_ef07887e4af4408f137c\",\"cn_efbe34dd12f9f375fc28\",\"cn_f00bbc0220dfbd7429f3\",\"cn_f06007cdd2d6da9ff5a7\",\"cn_f10022000b560843580e\",\"cn_f112b061c316cce319f7\",\"cn_f1c35495ff7e54b97f00\",\"cn_f249f7f4b2d46825a76e\",\"cn_f28fb4e4a204245f2f90\",\"cn_f2be1f5947aacf8861d5\",\"cn_f38121a102d357fa61ec\",\"cn_f4199ffe13916cac1add\",\"cn_f4569ee1fc32301b3111\",\"cn_f4d5f373dfcfb20e19d5\",\"cn_f5cdcc29d6c7731bd45a\",\"cn_f5f99287f6b613372d60\",\"cn_f68fd6304a6d710576f6\",\"cn_f7576b9c7e89fac7dc8f\",\"cn_f7ad6e832205f3f30fff\",\"cn_f8976815db459c145858\",\"cn_f8bc26b81b0ba305414f\",\"cn_f926414beb30de6d2115\",\"cn_f996be3a93d7694d2511\",\"cn_fd30dfe7df0e7722609f\",\"cn_fd6509c5e4e5cac5295b\",\"cn_fdbe85d26f02e86ac0a7\",\"cn_fddda73eecdb97e2566e\",\"cn_fdecbf8596d524ed7a89\",\"cn_fe87c923313b67b396b3\",\"cn_fed6afae1f8da3947b0d\",\"cn_ff9eae22709bc9a7bd9a\",\"cn_ffc9f8efe77ee5dcb85b\"]"
+      ],
+      "order": "problem_id",
+      "count": 234,
+      "sha256": "0305558b343a906a208a5a409c75bb5d3ec5d6ffb559ba0cbd37779048c36248"
+    },
+    {
+      "table": "cbank_family_lineage",
+      "where": "family_id IN (SELECT value FROM json_each(?))",
+      "args": [
+        "[\"q2-m3-differentiation-easy-chain-data\",\"q2-m3-differentiation-easy-derivative-definition\",\"q2-m3-differentiation-easy-implicit-circle\",\"q2-m3-differentiation-easy-inverse-slope\",\"q2-m3-differentiation-easy-linearization\",\"q2-m3-differentiation-easy-matching-piecewise-slopes\",\"q2-m3-differentiation-easy-minimum-from-sign\",\"q2-m3-differentiation-easy-parametric-slope\",\"q2-m3-differentiation-easy-product-data\",\"q2-m3-differentiation-easy-related-area-rate\",\"q2-m3-differentiation-easy-tangent-intercept\",\"q2-m3-differentiation-hard-complex-exponential-derivative\",\"q2-m3-differentiation-hard-curvature-parametric\",\"q2-m3-differentiation-hard-high-order-rational\",\"q2-m3-differentiation-hard-implicit-inverse-exponential\",\"q2-m3-differentiation-hard-implicit-second\",\"q2-m3-differentiation-hard-leibniz-high-order\",\"q2-m3-differentiation-hard-log-power-second\",\"q2-m3-differentiation-hard-log-product\",\"q2-m3-differentiation-hard-moving-endpoint-parameter-second\",\"q2-m3-differentiation-hard-multiplicity-shortcut\",\"q2-m3-differentiation-hard-nested-power-third\",\"q2-m3-differentiation-hard-trigonometric-power-coefficient\",\"q2-m3-differentiation-medium-implicit-product\",\"q2-m3-differentiation-medium-inverse-second\",\"q2-m3-differentiation-medium-inverse-tangent-composition\",\"q2-m3-differentiation-medium-logarithmic-power\",\"q2-m3-differentiation-medium-moving-integral-endpoints\",\"q2-m3-differentiation-medium-nested-exponential\",\"q2-m3-differentiation-medium-normal-line\",\"q2-m3-differentiation-medium-optimization-product\",\"q2-m3-differentiation-medium-parametric-second\",\"q2-m3-differentiation-medium-piecewise-second-match\",\"q2-m3-differentiation-medium-product-exp\",\"q2-m3-differentiation-medium-quotient-log\",\"q2-m3-limits-easy-exponential-standard\",\"q2-m3-limits-easy-floor-at-infinity\",\"q2-m3-limits-easy-geometric-sequence\",\"q2-m3-limits-easy-logarithm-standard\",\"q2-m3-limits-easy-one-sided-absolute\",\"q2-m3-limits-easy-oscillatory-squeeze\",\"q2-m3-limits-easy-piecewise-continuity\",\"q2-m3-limits-easy-radical-rationalization\",\"q2-m3-limits-easy-rational-infinity\",\"q2-m3-limits-easy-removable-power\",\"q2-m3-limits-easy-trigonometric-ratio\",\"q2-m3-limits-hard-Gamma-finite-shift-correction\",\"q2-m3-limits-hard-Lp-maximum-limit\",\"q2-m3-limits-hard-Riemann-sum\",\"q2-m3-limits-hard-Stolz-power-sum\",\"q2-m3-limits-hard-boundary-moment\",\"q2-m3-limits-hard-log-exponential-second-scale\",\"q2-m3-limits-hard-log-phase-average-limsup\",\"q2-m3-limits-hard-log-sum-integral\",\"q2-m3-limits-hard-oscillatory-regularity-threshold\",\"q2-m3-limits-hard-recurrence-limit\",\"q2-m3-limits-hard-supremum-pointwise-mismatch\",\"q2-m3-limits-hard-trig-power-limit\",\"q2-m3-limits-medium-exponential-cancellation\",\"q2-m3-limits-medium-exponential-variable-power\",\"q2-m3-limits-medium-floor-integer-approach\",\"q2-m3-limits-medium-implicit-inverse-increment\",\"q2-m3-limits-medium-infinity-root-difference\",\"q2-m3-limits-medium-log-power-decay\",\"q2-m3-limits-medium-nested-log-ratio\",\"q2-m3-limits-medium-second-order-trig\",\"q2-m3-limits-medium-small-power-log\",\"q2-repair-m3-differentiation-easy-accumulation-derivative\",\"q2-repair-m3-limits-easy-rational-sequence-shift\",\"q2-repair-m3-limits-medium-factorial-ratio-fixed-shift\",\"q2-repair-m3-limits-medium-root-test-scale\",\"q2-repair-m3-limits-medium-two-sided-square-root\"]"
+      ],
+      "order": "family_id",
+      "count": 72,
+      "sha256": "7d027664c2170c330e36b353e6265371c433f3dab2003fd205f6c68f18d0f744"
     }
   ],
   "cells": [
-    {
-      "input": {
-        "category": "differential equations",
-        "difficulty": "easy",
-        "count": 20
-      },
-      "sha256": "557c7b3ee4169e265f21753a668ab543b19cde4b80705d77aac476b95921f6cb"
-    },
-    {
-      "input": {
-        "category": "differential equations",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "93281ad3c0a090dbc12feb4ff5b23cf506f4cf761f40b84d03cf03deac260195"
-    },
-    {
-      "input": {
-        "category": "differential equations",
-        "difficulty": "medium",
-        "count": 20
-      },
-      "sha256": "7d3d72fe6cc70d20d4df977f48040af3299670986e488716e31f5237b7a09f2d"
-    },
-    {
-      "input": {
-        "category": "differential equations",
-        "difficulty": "olympiad",
-        "count": 20
-      },
-      "sha256": "70226e01ed8871d829e73deb31239f27f58317717889c18a9869edca95998316"
-    },
-    {
-      "input": {
-        "category": "differentiation",
-        "difficulty": "easy",
-        "count": 20
-      },
-      "sha256": "fead20e6bc574b034c389cf2e180e675db8da27e42ce0d8027e8f03e0fe7b72d"
-    },
-    {
-      "input": {
-        "category": "differentiation",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "aad34849b02a93a5afdcfad80249faced8da325284098f03d7ee228cdbe65b75"
-    },
-    {
-      "input": {
-        "category": "differentiation",
-        "difficulty": "medium",
-        "count": 20
-      },
-      "sha256": "3189845297b68c7dab1a2a0275747a8c616748f78012a0021e2dc958e2c32497"
-    },
-    {
-      "input": {
-        "category": "differentiation",
-        "difficulty": "olympiad",
-        "count": 20
-      },
-      "sha256": "f635333be132ebbd68a447712085dfaad73638ac7c31a08a93747f073dad1c68"
-    },
     {
       "input": {
         "category": "integration",
@@ -2258,14 +3048,6 @@
         "count": 20
       },
       "sha256": "a69b5421830f2da94002df45407427fcd6832e3f32b2ba217f0e663007e2292e"
-    },
-    {
-      "input": {
-        "category": "integration",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "f52fa4c9769cd20918d28e5501e70e85efff1e09efae18a75f464a18030dcacc"
     },
     {
       "input": {
@@ -2278,10 +3060,50 @@
     {
       "input": {
         "category": "integration",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "f52fa4c9769cd20918d28e5501e70e85efff1e09efae18a75f464a18030dcacc"
+    },
+    {
+      "input": {
+        "category": "integration",
         "difficulty": "olympiad",
         "count": 20
       },
       "sha256": "2984dc9350b11fa4984995470905711cb87461983dc6c0ea375cd7e84fc5c4eb"
+    },
+    {
+      "input": {
+        "category": "differentiation",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "sha256": "fead20e6bc574b034c389cf2e180e675db8da27e42ce0d8027e8f03e0fe7b72d"
+    },
+    {
+      "input": {
+        "category": "differentiation",
+        "difficulty": "medium",
+        "count": 20
+      },
+      "sha256": "3189845297b68c7dab1a2a0275747a8c616748f78012a0021e2dc958e2c32497"
+    },
+    {
+      "input": {
+        "category": "differentiation",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "aad34849b02a93a5afdcfad80249faced8da325284098f03d7ee228cdbe65b75"
+    },
+    {
+      "input": {
+        "category": "differentiation",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "sha256": "f635333be132ebbd68a447712085dfaad73638ac7c31a08a93747f073dad1c68"
     },
     {
       "input": {
@@ -2294,14 +3116,6 @@
     {
       "input": {
         "category": "limits",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "04a300514fd3285b57495fe0ba9510740d8f6b58b7a33f4c41cc4d73e55007eb"
-    },
-    {
-      "input": {
-        "category": "limits",
         "difficulty": "medium",
         "count": 20
       },
@@ -2310,42 +3124,18 @@
     {
       "input": {
         "category": "limits",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "04a300514fd3285b57495fe0ba9510740d8f6b58b7a33f4c41cc4d73e55007eb"
+    },
+    {
+      "input": {
+        "category": "limits",
         "difficulty": "olympiad",
         "count": 20
       },
       "sha256": "b1625b4a02b276713d90c126fe344c7dd43212ce36502ba50b704cdcecb2d840"
-    },
-    {
-      "input": {
-        "category": "multivariable",
-        "difficulty": "easy",
-        "count": 20
-      },
-      "sha256": "3ab51719ddd3ce93ff8a72c1c2063999e554176c1589f70df0120c26024baa81"
-    },
-    {
-      "input": {
-        "category": "multivariable",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "185b29f5ec1e7f81fbd39f0b35a20f1e703002a5ecd003bc3510f70322621463"
-    },
-    {
-      "input": {
-        "category": "multivariable",
-        "difficulty": "medium",
-        "count": 20
-      },
-      "sha256": "85572c687dff1c7b3064a9c4f2d9471719dc126a9797163e797b159486dcbe12"
-    },
-    {
-      "input": {
-        "category": "multivariable",
-        "difficulty": "olympiad",
-        "count": 20
-      },
-      "sha256": "0a9e37b9b03234528fb3941245fa39b707f7c9080ca710ca4985256e7b96896e"
     },
     {
       "input": {
@@ -2358,14 +3148,6 @@
     {
       "input": {
         "category": "series",
-        "difficulty": "hard",
-        "count": 20
-      },
-      "sha256": "2c9ac3db119aa4ca9de398d3ddaead3b2861322a2f1e1b8f03f7d4cb029a3235"
-    },
-    {
-      "input": {
-        "category": "series",
         "difficulty": "medium",
         "count": 20
       },
@@ -2374,366 +3156,624 @@
     {
       "input": {
         "category": "series",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "2c9ac3db119aa4ca9de398d3ddaead3b2861322a2f1e1b8f03f7d4cb029a3235"
+    },
+    {
+      "input": {
+        "category": "series",
         "difficulty": "olympiad",
         "count": 20
       },
       "sha256": "23f51608a6eec38a36ae011bd1702a49fdbad1280fe2bfaf629a539b1e9c8fa2"
+    },
+    {
+      "input": {
+        "category": "differential equations",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "sha256": "557c7b3ee4169e265f21753a668ab543b19cde4b80705d77aac476b95921f6cb"
+    },
+    {
+      "input": {
+        "category": "differential equations",
+        "difficulty": "medium",
+        "count": 20
+      },
+      "sha256": "7d3d72fe6cc70d20d4df977f48040af3299670986e488716e31f5237b7a09f2d"
+    },
+    {
+      "input": {
+        "category": "differential equations",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "93281ad3c0a090dbc12feb4ff5b23cf506f4cf761f40b84d03cf03deac260195"
+    },
+    {
+      "input": {
+        "category": "differential equations",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "sha256": "70226e01ed8871d829e73deb31239f27f58317717889c18a9869edca95998316"
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "sha256": "3ab51719ddd3ce93ff8a72c1c2063999e554176c1589f70df0120c26024baa81"
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "medium",
+        "count": 20
+      },
+      "sha256": "85572c687dff1c7b3064a9c4f2d9471719dc126a9797163e797b159486dcbe12"
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "185b29f5ec1e7f81fbd39f0b35a20f1e703002a5ecd003bc3510f70322621463"
+    },
+    {
+      "input": {
+        "category": "multivariable",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "sha256": "0a9e37b9b03234528fb3941245fa39b707f7c9080ca710ca4985256e7b96896e"
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "easy",
+        "count": 20
+      },
+      "sha256": "468dbaf785823867c99a00bf349db837774a1d3eadb1424577b92ee3b9608e15"
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "medium",
+        "count": 20
+      },
+      "sha256": "ab4ddfd19f28f02001ba86647292b3a003f5ef21abbf2f3ab8c05a3e02d24cf1"
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "hard",
+        "count": 20
+      },
+      "sha256": "1f848b22acf6c740e8975d1c29bb43296436d10d5736de6f69cf963c05672a81"
+    },
+    {
+      "input": {
+        "category": "all",
+        "difficulty": "olympiad",
+        "count": 20
+      },
+      "sha256": "34ec9f4c5204b888d19643ce965b808f9f9dd4f194c0e8ebd81c4407e900e696"
     }
   ],
   "coverage": {
-    "integration/olympiad": 280,
-    "integration/hard": 104,
-    "integration/easy": 96,
-    "integration/medium": 96,
-    "differentiation/easy": 96,
-    "differentiation/medium": 96,
-    "differentiation/hard": 96,
-    "differentiation/olympiad": 104,
+    "integration/easy": 66,
+    "integration/hard": 165,
+    "integration/medium": 139,
+    "integration/olympiad": 134,
+    "differentiation/olympiad": 245,
+    "limits/olympiad": 230,
+    "limits/hard": 139,
+    "differentiation/easy": 72,
+    "differentiation/hard": 123,
+    "differentiation/medium": 68,
     "limits/easy": 96,
-    "limits/medium": 96,
-    "limits/hard": 96,
-    "limits/olympiad": 96,
-    "series/easy": 96,
-    "series/medium": 96,
-    "series/hard": 96,
-    "series/olympiad": 96,
-    "multivariable/easy": 96,
-    "multivariable/medium": 96,
-    "multivariable/hard": 96,
-    "multivariable/olympiad": 96,
-    "differential equations/easy": 96,
-    "differential equations/medium": 96,
-    "differential equations/hard": 96,
-    "differential equations/olympiad": 96
+    "limits/medium": 92,
+    "series/olympiad": 253,
+    "series/hard": 147,
+    "series/medium": 115,
+    "series/easy": 58,
+    "differential equations/olympiad": 305,
+    "differential equations/hard": 175,
+    "multivariable/olympiad": 262,
+    "multivariable/hard": 98,
+    "multivariable/easy": 44,
+    "multivariable/medium": 120,
+    "differential equations/easy": 48,
+    "differential equations/medium": 98
   },
   "families": {
-    "io3-weighted-complement": 8,
-    "io3-reciprocal-quartic": 8,
-    "io3-inverse-moment": 8,
-    "io3-chebyshev-absolute": 8,
-    "io3-floor-laplace": 8,
+    "m3-integration-easy-absolute-area": 2,
+    "m3-integration-easy-average-value": 2,
+    "m3-integration-easy-exponential-rate": 6,
+    "m3-integration-easy-log-recognition": 5,
+    "m3-integration-easy-odd-even": 5,
+    "m3-integration-easy-piecewise-accumulation": 2,
+    "m3-integration-easy-quarter-disk": 2,
+    "m3-integration-easy-washer-volume": 2,
+    "m3-integration-hard-arc-length-perfect-square": 2,
+    "m3-integration-hard-beta-polynomial": 2,
+    "m3-integration-hard-half-angle-quadratic": 6,
+    "m3-integration-hard-reciprocal-quartic": 6,
+    "m3-integration-medium-exponential-trig": 6,
+    "m3-integration-medium-partial-fractions": 6,
+    "m3-integration-medium-piecewise-absolute-root": 2,
+    "m3-integration-medium-shell-volume": 2,
+    "m3-integration-easy-signed-area": 10,
+    "m3-integration-easy-substitution-affine": 10,
+    "m3-integration-hard-trig-log": 10,
+    "m3-integration-hard-root-quadratic": 10,
     "io3-gamma-unit-average": 8,
-    "io3-log-fourier-coefficient": 8,
-    "io3-arctan-parameter": 8,
-    "io3-gaussian-fourier": 8,
-    "io3-reciprocal-gaussian": 8,
-    "io3-sinc-overlap": 8,
-    "io3-mixed-beta-log": 8,
-    "io3-thermal-derivative": 8,
-    "io3-mellin-cyclotomic": 8,
-    "io3-cauchy-convolution": 8,
-    "io3-binomial-exponential": 8,
-    "io3-agm-parameter": 8,
-    "io3-abel-recovery": 8,
-    "io3-boundary-asymptotic": 8,
-    "io3-integral-equation": 8,
-    "io3-convolution-laplace": 8,
-    "io3-poisson-log-potential": 8,
-    "io3-jensen-radius": 8,
-    "io3-fresnel": 8,
-    "io3-bessel-laplace": 8,
-    "io3-rodrigues-moment": 8,
-    "io3-bernoulli-product": 8,
     "io3-principal-value": 8,
-    "io3-oscillatory-regularization": 8,
-    "io3-concentration": 8,
+    "io3-bernoulli-product": 8,
     "io3-binary-product": 8,
-    "io3-fejer-fourth": 8,
+    "io3-boundary-asymptotic": 8,
+    "io3-cauchy-convolution": 8,
+    "io3-concentration": 8,
+    "io3-convolution-laplace": 8,
+    "io3-fejer-fourth": 3,
+    "io3-jensen-radius": 8,
+    "io3-mellin-cyclotomic": 8,
+    "io3-oscillatory-regularization": 8,
+    "io3-thermal-derivative": 8,
+    "io3-variational-energy": 3,
+    "quality-integration-olympiad-rational-inverse-branch-trace": 10,
+    "quality-integration-olympiad-monic-L1-polynomial-extremum": 12,
+    "quality-integration-olympiad-support-function-perimeter": 12,
+    "quality-integration-olympiad-competing-laplace-wells": 12,
+    "quality-integration-olympiad-capped-two-moment-extrema": 18,
+    "quality-integration-olympiad-semicircle-interior-pole": 10,
+    "quality-integration-olympiad-three-node-Peano-sharpness": 10,
+    "quality-integration-olympiad-coupled-endpoint-sharp-energy": 10,
+    "quality-integration-olympiad-nonconvex-mean-relaxation": 12,
+    "quality-integration-olympiad-nonlinear-uniform-bound-threshold": 10,
+    "io3-fresnel": 8,
+    "io3-reciprocal-quartic": 8,
+    "io3-rodrigues-moment": 8,
     "io3-scaled-frullani": 8,
-    "io3-sech-fourier": 8,
-    "io3-variational-energy": 8,
-    "io3-moment-projection": 8,
-    "io3-quadrature-defect": 8,
-    "io3-rearrangement": 8,
-    "m3-integration-easy-signed-area": 8,
-    "m3-integration-easy-absolute-area": 8,
-    "m3-integration-easy-substitution-affine": 8,
-    "m3-integration-easy-log-recognition": 8,
-    "m3-integration-easy-exponential-rate": 8,
-    "m3-integration-easy-quarter-disk": 8,
-    "m3-integration-easy-average-value": 8,
-    "m3-integration-easy-odd-even": 8,
-    "m3-integration-easy-accumulation-from-derivative": 8,
-    "m3-integration-easy-piecewise-accumulation": 8,
-    "m3-integration-easy-area-between-curves": 8,
-    "m3-integration-easy-washer-volume": 8,
-    "m3-integration-medium-parts-log": 8,
-    "m3-integration-medium-partial-fractions": 8,
-    "m3-integration-medium-rational-power-substitution": 8,
-    "m3-integration-medium-trig-odd-power": 8,
-    "m3-integration-medium-secant-square-substitution": 8,
-    "m3-integration-medium-inverse-tangent": 8,
-    "m3-integration-medium-nested-log": 8,
-    "m3-integration-medium-improper-exponential": 8,
-    "m3-integration-medium-moving-boundary-area": 8,
-    "m3-integration-medium-shell-volume": 8,
-    "m3-integration-medium-exponential-trig": 8,
-    "m3-integration-medium-piecewise-absolute-root": 8,
-    "m3-integration-hard-logarithmic-moment": 8,
-    "m3-integration-hard-beta-polynomial": 8,
-    "m3-integration-hard-improper-rational-beta": 8,
-    "m3-integration-hard-trig-log": 8,
-    "m3-integration-hard-root-quadratic": 8,
-    "m3-integration-hard-reciprocal-quartic": 8,
-    "m3-integration-hard-arc-length-perfect-square": 8,
-    "m3-differentiation-easy-product-data": 8,
-    "m3-differentiation-easy-chain-data": 8,
-    "m3-differentiation-easy-inverse-slope": 8,
+    "m3-integration-easy-accumulation-from-derivative": 10,
+    "m3-integration-easy-area-between-curves": 10,
+    "m3-integration-hard-Frullani-rectangle": 10,
+    "m3-integration-hard-improper-rational-beta": 10,
+    "m3-integration-hard-logarithmic-moment": 10,
+    "m3-integration-medium-improper-exponential": 10,
+    "m3-integration-medium-inverse-tangent": 10,
+    "m3-integration-medium-moving-boundary-area": 10,
+    "m3-integration-medium-nested-log": 10,
+    "m3-integration-medium-rational-power-substitution": 10,
+    "m3-integration-medium-secant-square-substitution": 10,
+    "m3-integration-medium-trig-odd-power": 10,
+    "io3-bessel-laplace": 8,
+    "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm": 14,
+    "m3-integration-hard-mixed-log-endpoints": 9,
+    "m3-integration-medium-parts-log": 5,
+    "q1-differentiation-olympiad-hilbert-representer-bound": 8,
+    "q1-differentiation-olympiad-eigenvalue-curvature": 8,
+    "q1-differentiation-olympiad-implicit-root-trace": 8,
+    "q1-differentiation-olympiad-log-derivative-root-count": 8,
+    "q1-differentiation-olympiad-schwarz-pick-jet": 8,
+    "q1-differentiation-olympiad-exponential-chebyshev-zero-bound": 8,
+    "q1-limits-olympiad-padic-digit-extrema": 8,
+    "q1-limits-olympiad-pell-liminf": 8,
+    "q1-limits-olympiad-binomial-large-deviation": 8,
+    "q1-limits-olympiad-divisor-hyperbola-constant": 8,
+    "q1-differentiation-olympiad-critical-level-absolute-integral": 8,
+    "q1-differentiation-olympiad-moment-hankel-vandermonde": 8,
+    "q1-differentiation-olympiad-tree-resistance-sensitivity": 8,
+    "q1-differentiation-olympiad-sharp-landau-bound": 8,
+    "q1-limits-olympiad-dyadic-log-product": 8,
+    "q1-limits-olympiad-lipschitz-mass-concentration": 8,
+    "q1-limits-olympiad-discrete-volterra-norm": 8,
+    "q1-differentiation-olympiad-lorentzian-derivative-zero-window": 12,
+    "q1-differentiation-olympiad-chebyshev-edge-derivative-correction": 12,
+    "q1-differentiation-olympiad-singular-reparametrized-wronskian": 12,
+    "q1-differentiation-olympiad-hermite-inverse-gap-moment": 12,
+    "q1-differentiation-olympiad-cosine-equation-regularity": 1,
+    "q1-differentiation-olympiad-commuting-parabolic-jet": 12,
+    "q1-differentiation-olympiad-abel-density-recovery": 12,
+    "q1-differentiation-olympiad-laplace-moment-sharp-third": 12,
+    "q1-differentiation-olympiad-periodic-shift-derivative-bound": 12,
+    "q1-differentiation-olympiad-peano-kernel-sharp-error": 8,
+    "q1-differentiation-olympiad-sturm-hurwitz-critical-count": 8,
+    "q1-differentiation-olympiad-dense-corner-series-derivative": 8,
+    "q1-differentiation-olympiad-singular-implicit-branches": 8,
+    "q1-differentiation-olympiad-root-moment-extremum": 8,
+    "q1-differentiation-olympiad-green-kernel-spectrum": 8,
+    "q1-limits-olympiad-quadratic-Weyl-distance-moment": 16,
+    "q1-limits-olympiad-Lambert-product-singularity": 16,
+    "q1-limits-olympiad-maximum-occupancy-threshold": 1,
+    "q1-limits-olympiad-implicit-exponential-saddle": 16,
+    "q1-limits-olympiad-permutation-cycle-divisibility": 16,
+    "q1-limits-olympiad-random-walk-last-zero-law": 16,
+    "q1-limits-olympiad-slowly-varying-tridiagonal-determinant": 12,
+    "q1-limits-olympiad-rank-one-outlier-edge": 12,
+    "q1-limits-olympiad-lacunary-Fourier-moment": 12,
+    "q1-limits-olympiad-stationary-phase-root-geometry": 8,
+    "q1-limits-olympiad-quadratic-gauss-magnitude": 8,
+    "q1-limits-olympiad-reinforced-urn-distribution": 8,
+    "q1-limits-olympiad-matrix-commutator-limit": 8,
+    "q1-limits-olympiad-hilbert-determinant-rate": 8,
+    "q1-limits-olympiad-restricted-partition-entropy": 14,
+    "q1-limits-hard-poisson-coefficient-limit": 8,
+    "q1-limits-hard-nilpotent-matrix-asymptotics": 8,
+    "q1-limits-hard-singular-riemann-renormalization": 8,
+    "q1-limits-hard-AGM-normalized-gap-prefactor": 16,
+    "q2-m3-differentiation-easy-chain-data": 2,
+    "q2-m3-differentiation-easy-derivative-definition": 2,
+    "q2-m3-differentiation-easy-implicit-circle": 2,
+    "q2-m3-differentiation-easy-inverse-slope": 2,
+    "q2-m3-differentiation-easy-linearization": 2,
+    "q2-m3-differentiation-easy-matching-piecewise-slopes": 2,
+    "q2-m3-differentiation-easy-minimum-from-sign": 2,
+    "q2-m3-differentiation-easy-parametric-slope": 2,
+    "q2-m3-differentiation-easy-product-data": 2,
+    "q2-m3-differentiation-easy-related-area-rate": 2,
+    "q2-m3-differentiation-easy-tangent-intercept": 2,
+    "q2-m3-differentiation-hard-complex-exponential-derivative": 2,
+    "q2-m3-differentiation-hard-curvature-parametric": 2,
+    "q2-m3-differentiation-hard-high-order-rational": 2,
+    "q2-m3-differentiation-hard-implicit-inverse-exponential": 2,
+    "q2-m3-differentiation-hard-implicit-second": 2,
+    "q2-m3-differentiation-hard-leibniz-high-order": 2,
+    "q2-m3-differentiation-hard-log-power-second": 2,
+    "q2-m3-differentiation-hard-log-product": 2,
+    "q2-m3-differentiation-hard-moving-endpoint-parameter-second": 2,
+    "q2-m3-differentiation-hard-multiplicity-shortcut": 2,
+    "q2-m3-differentiation-hard-nested-power-third": 2,
+    "q2-m3-differentiation-hard-trigonometric-power-coefficient": 2,
+    "q2-m3-differentiation-medium-implicit-product": 2,
+    "q2-m3-differentiation-medium-inverse-second": 2,
+    "q2-m3-differentiation-medium-inverse-tangent-composition": 2,
+    "q2-m3-differentiation-medium-logarithmic-power": 2,
+    "q2-m3-differentiation-medium-moving-integral-endpoints": 2,
+    "q2-m3-differentiation-medium-nested-exponential": 2,
+    "q2-m3-differentiation-medium-normal-line": 2,
+    "q2-m3-differentiation-medium-optimization-product": 2,
+    "q2-m3-differentiation-medium-parametric-second": 2,
+    "q2-m3-differentiation-medium-piecewise-second-match": 2,
+    "q2-m3-differentiation-medium-product-exp": 2,
+    "q2-m3-differentiation-medium-quotient-log": 2,
+    "q2-m3-limits-easy-exponential-standard": 2,
+    "q2-m3-limits-easy-floor-at-infinity": 2,
+    "q2-m3-limits-easy-geometric-sequence": 2,
+    "q2-m3-limits-easy-logarithm-standard": 2,
+    "q2-m3-limits-easy-one-sided-absolute": 2,
+    "q2-m3-limits-easy-oscillatory-squeeze": 2,
+    "q2-m3-limits-easy-piecewise-continuity": 2,
+    "q2-m3-limits-easy-radical-rationalization": 2,
+    "q2-m3-limits-easy-rational-infinity": 2,
+    "q2-m3-limits-easy-removable-power": 2,
+    "q2-m3-limits-easy-trigonometric-ratio": 2,
+    "q2-m3-limits-hard-Gamma-finite-shift-correction": 2,
+    "q2-m3-limits-hard-Lp-maximum-limit": 2,
+    "q2-m3-limits-hard-Riemann-sum": 2,
+    "q2-m3-limits-hard-Stolz-power-sum": 2,
+    "q2-m3-limits-hard-boundary-moment": 2,
+    "q2-m3-limits-hard-log-exponential-second-scale": 2,
+    "q2-m3-limits-hard-log-phase-average-limsup": 2,
+    "q2-m3-limits-hard-log-sum-integral": 2,
+    "q2-m3-limits-hard-oscillatory-regularity-threshold": 2,
+    "q2-m3-limits-hard-supremum-pointwise-mismatch": 2,
+    "q2-m3-limits-hard-trig-power-limit": 2,
+    "q2-m3-limits-medium-exponential-cancellation": 2,
+    "q2-m3-limits-medium-exponential-variable-power": 2,
+    "q2-m3-limits-medium-floor-integer-approach": 2,
+    "q2-m3-limits-medium-implicit-inverse-increment": 2,
+    "q2-m3-limits-medium-infinity-root-difference": 2,
+    "q2-m3-limits-medium-log-power-decay": 2,
+    "q2-m3-limits-medium-nested-log-ratio": 2,
+    "q2-m3-limits-medium-second-order-trig": 2,
+    "q2-m3-limits-medium-small-power-log": 2,
+    "q2-repair-m3-differentiation-easy-accumulation-derivative": 10,
+    "q2-repair-m3-limits-medium-factorial-ratio-fixed-shift": 10,
+    "q2-repair-m3-limits-medium-root-test-scale": 10,
+    "q2-repair-m3-limits-medium-two-sided-square-root": 10,
     "m3-differentiation-easy-implicit-circle": 8,
-    "m3-differentiation-easy-parametric-slope": 8,
+    "m3-differentiation-easy-inverse-slope": 8,
+    "m3-differentiation-easy-linearization": 8,
     "m3-differentiation-easy-matching-piecewise-slopes": 8,
     "m3-differentiation-easy-tangent-intercept": 8,
-    "m3-differentiation-easy-minimum-from-sign": 8,
-    "m3-differentiation-easy-linearization": 8,
-    "m3-differentiation-easy-related-area-rate": 8,
-    "m3-differentiation-easy-derivative-definition": 8,
-    "m3-differentiation-easy-accumulation-derivative": 8,
-    "m3-differentiation-medium-product-exp": 8,
-    "m3-differentiation-medium-quotient-log": 8,
-    "m3-differentiation-medium-nested-exponential": 8,
-    "m3-differentiation-medium-logarithmic-power": 8,
-    "m3-differentiation-medium-inverse-tangent-composition": 8,
-    "m3-differentiation-medium-implicit-product": 8,
-    "m3-differentiation-medium-inverse-second": 8,
-    "m3-differentiation-medium-parametric-second": 8,
-    "m3-differentiation-medium-moving-integral-endpoints": 8,
-    "m3-differentiation-medium-optimization-product": 8,
-    "m3-differentiation-medium-piecewise-second-match": 8,
-    "m3-differentiation-medium-normal-line": 8,
-    "m3-differentiation-hard-leibniz-high-order": 8,
-    "m3-differentiation-hard-log-power-second": 8,
-    "m3-differentiation-hard-implicit-second": 8,
+    "m3-differentiation-hard-complex-exponential-derivative": 8,
     "m3-differentiation-hard-curvature-parametric": 8,
     "m3-differentiation-hard-implicit-inverse-exponential": 8,
-    "m3-differentiation-hard-high-order-rational": 8,
-    "m3-differentiation-hard-multiplicity-shortcut": 8,
+    "m3-differentiation-hard-implicit-second": 8,
+    "m3-differentiation-hard-moving-endpoint-parameter-second": 2,
     "m3-differentiation-hard-trigonometric-power-coefficient": 8,
-    "m3-differentiation-hard-log-product": 8,
-    "m3-differentiation-hard-complex-exponential-derivative": 8,
-    "m3-differentiation-hard-nested-power-third": 8,
-    "m3-differentiation-olympiad-implicit-series-inversion": 8,
-    "m3-differentiation-olympiad-iterated-Mobius": 8,
-    "m3-differentiation-olympiad-exponential-partition-coefficient": 8,
-    "m3-differentiation-olympiad-envelope-derivative": 8,
+    "m3-differentiation-medium-implicit-product": 8,
+    "m3-differentiation-medium-inverse-second": 8,
+    "m3-differentiation-medium-inverse-tangent-composition": 8,
+    "m3-differentiation-medium-moving-integral-endpoints": 3,
+    "m3-differentiation-medium-normal-line": 8,
+    "m3-differentiation-medium-quotient-log": 8,
     "m3-differentiation-olympiad-Gaussian-moment-derivative": 8,
-    "m3-differentiation-olympiad-noncommuting-operator": 8,
-    "m3-differentiation-olympiad-root-of-unity-filter": 8,
+    "m3-differentiation-olympiad-cyclic-determinant-second-derivative": 1,
+    "m3-differentiation-olympiad-envelope-derivative": 8,
+    "m3-differentiation-olympiad-exponential-partition-coefficient": 8,
+    "m3-differentiation-olympiad-global-inverse-curvature": 8,
+    "m3-differentiation-olympiad-implicit-series-inversion": 8,
     "m3-differentiation-olympiad-interpolation-derivative": 8,
-    "m3-limits-easy-removable-power": 8,
-    "m3-limits-easy-radical-rationalization": 8,
-    "m3-limits-easy-one-sided-absolute": 8,
-    "m3-limits-easy-rational-infinity": 8,
-    "m3-limits-easy-oscillatory-squeeze": 8,
+    "m3-differentiation-olympiad-iterated-Mobius": 8,
+    "m3-differentiation-olympiad-newton-iteration-jet": 4,
+    "m3-differentiation-olympiad-noncommuting-operator": 1,
+    "m3-differentiation-olympiad-root-of-unity-filter": 8,
+    "m3-differentiation-olympiad-sharp-endpoint-derivative": 8,
     "m3-limits-easy-exponential-standard": 8,
     "m3-limits-easy-logarithm-standard": 8,
-    "m3-limits-easy-trigonometric-ratio": 8,
-    "m3-limits-easy-geometric-sequence": 8,
-    "m3-limits-easy-floor-at-infinity": 8,
+    "m3-limits-easy-one-sided-absolute": 8,
     "m3-limits-easy-piecewise-continuity": 8,
-    "m3-limits-easy-rational-sequence-shift": 8,
-    "m3-limits-medium-exponential-variable-power": 8,
-    "m3-limits-medium-infinity-root-difference": 8,
-    "m3-limits-medium-log-power-decay": 8,
-    "m3-limits-medium-small-power-log": 8,
-    "m3-limits-medium-second-order-trig": 8,
-    "m3-limits-medium-exponential-cancellation": 8,
-    "m3-limits-medium-nested-log-ratio": 8,
-    "m3-limits-medium-factorial-ratio-fixed-shift": 8,
-    "m3-limits-medium-root-test-scale": 8,
-    "m3-limits-medium-two-sided-square-root": 8,
-    "m3-limits-hard-log-exponential-second-scale": 8,
-    "m3-limits-hard-trig-power-limit": 8,
-    "m3-limits-hard-Riemann-sum": 8,
-    "m3-limits-hard-Stolz-power-sum": 8,
-    "m3-limits-hard-recurrence-limit": 8,
+    "m3-limits-easy-radical-rationalization": 8,
+    "m3-limits-easy-rational-infinity": 8,
+    "m3-limits-easy-removable-power": 8,
+    "m3-limits-easy-trigonometric-ratio": 8,
     "m3-limits-hard-Gamma-finite-shift-correction": 8,
-    "m3-limits-hard-boundary-moment": 8,
-    "m3-limits-hard-log-sum-integral": 8,
-    "m3-limits-olympiad-product-Euler-correction": 8,
+    "m3-limits-hard-Lp-maximum-limit": 8,
+    "m3-limits-hard-Riemann-sum": 8,
+    "m3-limits-hard-log-exponential-second-scale": 8,
+    "m3-limits-hard-supremum-pointwise-mismatch": 8,
+    "m3-limits-medium-exponential-cancellation": 8,
+    "m3-limits-medium-exponential-variable-power": 2,
+    "m3-limits-medium-infinity-root-difference": 8,
+    "m3-limits-medium-nested-log-ratio": 8,
+    "m3-limits-medium-second-order-trig": 8,
+    "m3-limits-olympiad-Laplace-degenerate-endpoint": 8,
+    "m3-limits-olympiad-binomial-moving-threshold": 8,
     "m3-limits-olympiad-central-binomial-shift": 8,
     "m3-limits-olympiad-nonlinear-recursion-rate": 8,
-    "m3-limits-olympiad-Laplace-degenerate-endpoint": 8,
-    "m3-series-easy-geometric-tail": 8,
-    "m3-series-easy-rational-telescope": 8,
-    "m3-series-easy-binomial-total": 8,
-    "m3-series-easy-arithmetic-triangle": 8,
-    "m3-series-easy-ratio-test-data": 8,
-    "m3-series-easy-power-series-radius": 8,
-    "m3-series-easy-nth-term-test": 8,
-    "m3-series-medium-weighted-geometric": 8,
-    "m3-series-medium-exponential-Taylor": 8,
-    "m3-series-medium-logarithmic-series": 8,
-    "m3-series-medium-arctangent-series": 8,
-    "m3-series-medium-cosine-series": 8,
-    "m3-series-medium-negative-binomial": 8,
-    "m3-series-medium-cubic-telescope": 8,
-    "m3-series-medium-quadratic-weight": 8,
-    "m3-series-medium-weighted-binomial-total": 8,
-    "m3-series-medium-power-series-ratio-radius": 8,
-    "m3-series-medium-integral-tail-bound": 8,
-    "m3-series-medium-alternating-error": 8,
-    "m3-series-hard-harmonic-generating": 8,
-    "m3-series-hard-Catalan-generating": 8,
-    "m3-series-hard-log-integrated-geometric": 8,
-    "m3-series-hard-series-beta-integral": 8,
-    "m3-series-hard-trig-geometric": 8,
-    "m3-series-hard-binomial-alternating-difference": 8,
-    "m3-series-hard-telescoping-arctan": 8,
-    "m3-series-olympiad-harmonic-over-shift": 8,
-    "m3-series-olympiad-cubic-root-exponential-filter": 8,
-    "m3-series-olympiad-binary-tangent-telescope": 8,
-    "m3-series-olympiad-inverse-binomial-arcsine": 8,
-    "m3-series-olympiad-hypergeometric-beta": 8,
-    "m3-series-olympiad-log-sine-product": 8,
-    "m3-series-olympiad-lattice-resolvent": 8,
+    "m3-limits-olympiad-product-Euler-correction": 8,
+    "q2-repair-m3-limits-easy-rational-sequence-shift": 10,
+    "m3-limits-hard-recurrence-limit": 8,
+    "q2-m3-limits-hard-recurrence-limit": 2,
+    "quality-series-olympiad-singular-cauchy-coefficient": 8,
+    "quality-series-olympiad-uniform-log-sine-threshold": 8,
+    "quality-series-olympiad-lacunary-Abel-growth": 8,
+    "quality-series-olympiad-quadratic-small-divisor": 8,
+    "quality-series-olympiad-alternating-infinite-product": 8,
+    "quality-series-olympiad-Dirichlet-moment-uniqueness": 8,
+    "quality-series-olympiad-least-energy-sequence": 8,
+    "quality-series-olympiad-rooted-tree-weighted-series": 8,
+    "quality-series-olympiad-Poisson-partition-moment": 8,
+    "quality-series-olympiad-factorial-floor-reconstruction": 8,
+    "quality-series-olympiad-Riesz-product-energy": 8,
+    "quality-series-olympiad-Euler-harmonic-weight-three": 1,
+    "quality-series-olympiad-Pade-cancellation-order": 8,
+    "quality-series-olympiad-factorial-asymptotic-remainder": 8,
+    "quality-series-olympiad-Hilbert-kernel-sharp-constant": 8,
+    "quality-series-olympiad-Carleman-geometric-mean-constant": 18,
+    "quality-series-olympiad-Dyson-alternating-cube": 8,
+    "quality-series-olympiad-maximum-entropy-sequence": 8,
+    "quality-series-olympiad-restricted-digit-convergence": 8,
+    "quality-series-olympiad-conditional-double-sum-orders": 8,
+    "quality-series-olympiad-Hardy-mean-sharp-constant": 18,
+    "quality-series-hard-Legendre-recurrence-generating": 10,
+    "quality-series-hard-weighted-subset-q-product": 10,
+    "quality-series-hard-binomial-convolution-Riccati": 10,
+    "quality-series-olympiad-geometric-moment-determinant": 10,
+    "m3-series-hard-conditional-block-rearrangement": 10,
+    "m3-series-hard-log-integrated-geometric": 10,
+    "m3-series-hard-series-beta-integral": 10,
+    "m3-series-hard-trig-geometric": 10,
     "m3-series-olympiad-Fourier-fourth-sine": 8,
+    "m3-series-olympiad-binary-tangent-telescope": 8,
     "m3-series-olympiad-elliptic-central-binomial-square": 8,
+    "m3-series-olympiad-harmonic-over-shift": 8,
+    "m3-series-olympiad-hypergeometric-beta": 8,
+    "m3-series-olympiad-inverse-binomial-arcsine": 8,
+    "m3-series-olympiad-log-sine-product": 8,
+    "m3-series-easy-binomial-total": 2,
+    "m3-series-easy-arithmetic-triangle": 2,
+    "m3-series-easy-ratio-test-data": 2,
+    "m3-series-medium-weighted-geometric": 2,
+    "m3-series-medium-exponential-Taylor": 2,
+    "m3-series-medium-logarithmic-series": 2,
+    "m3-series-medium-arctangent-series": 2,
+    "m3-series-medium-cosine-series": 2,
+    "m3-series-medium-weighted-binomial-total": 2,
+    "m3-series-hard-harmonic-generating": 2,
+    "m3-series-hard-Catalan-generating": 2,
+    "m3-series-hard-telescoping-arctan": 4,
+    "m3-series-easy-p-series-pair": 2,
+    "m3-series-easy-alternating-absolute-conditional": 2,
+    "m3-series-easy-direct-comparison-information": 2,
+    "m3-series-easy-taylor-coefficient-derivative": 4,
+    "m3-series-easy-linearity-given-convergent-sums": 2,
+    "m3-series-medium-negative-binomial": 10,
+    "m3-series-hard-binomial-alternating-difference": 10,
+    "m3-series-hard-binomial-beta-cancellation": 10,
+    "m3-series-olympiad-cubic-root-exponential-filter": 8,
     "m3-series-olympiad-harmonic-square-generating": 8,
-    "m3-multivariable-easy-partial-hold-fixed": 8,
-    "m3-multivariable-easy-mixed-partial": 8,
-    "m3-multivariable-easy-directional-unit": 8,
-    "m3-multivariable-easy-tangent-plane": 8,
-    "m3-multivariable-easy-linearization-two-inputs": 8,
-    "m3-multivariable-easy-rectangle-integral": 8,
-    "m3-multivariable-easy-triangular-region": 8,
-    "m3-multivariable-easy-polar-area": 8,
-    "m3-multivariable-easy-chain-curve": 8,
-    "m3-multivariable-easy-divergence": 8,
-    "m3-multivariable-easy-potential-endpoints": 8,
-    "m3-multivariable-easy-box-average": 8,
-    "m3-multivariable-medium-gradient-max-direction": 8,
-    "m3-multivariable-medium-quadratic-critical-value": 8,
-    "m3-multivariable-medium-Lagrange-circle-linear": 8,
-    "m3-multivariable-medium-change-order": 8,
-    "m3-multivariable-medium-ellipse-transform": 8,
-    "m3-multivariable-medium-polar-moment": 8,
-    "m3-multivariable-medium-Green-circulation": 8,
-    "m3-multivariable-medium-divergence-flux": 8,
-    "m3-multivariable-medium-surface-graph-area": 8,
-    "m3-multivariable-medium-implicit-surface-partial": 8,
-    "m3-multivariable-medium-density-centroid": 8,
-    "m3-multivariable-medium-spherical-moment": 8,
-    "m3-multivariable-hard-quadratic-eigenconstraint": 8,
-    "m3-multivariable-hard-moving-domain-derivative": 8,
-    "m3-multivariable-hard-ellipsoid-inertia": 8,
-    "m3-multivariable-hard-nonlinear-Jacobian": 8,
-    "m3-multivariable-hard-simplex-beta": 8,
-    "m3-multivariable-hard-nonconservative-hole": 8,
-    "m3-multivariable-hard-Stokes-tilted-surface": 8,
-    "m3-multivariable-hard-boundary-versus-interior": 8,
-    "m3-multivariable-hard-surface-flux-graph": 8,
-    "m3-multivariable-hard-mixed-Hessian-coordinate": 8,
-    "m3-multivariable-hard-path-dependent-directional": 8,
-    "m3-multivariable-hard-Gaussian-precision": 8,
-    "m3-multivariable-olympiad-Vandermonde-extremum": 8,
-    "m3-multivariable-olympiad-anisotropic-integrability": 8,
-    "m3-multivariable-olympiad-Gaussian-wedge": 8,
-    "m3-multivariable-olympiad-planar-log-potential": 8,
-    "m3-multivariable-olympiad-two-centre-resolvent": 8,
-    "m3-multivariable-olympiad-simplex-log-partition": 8,
-    "m3-multivariable-olympiad-high-dimensional-lp-ball": 8,
-    "m3-multivariable-olympiad-log-simplex-moment": 8,
-    "m3-multivariable-olympiad-lemniscate-petal-area": 8,
-    "m3-multivariable-olympiad-squared-log-disk": 8,
-    "m3-integration-hard-Frullani-rectangle": 8,
-    "m3-integration-hard-mixed-log-endpoints": 8,
-    "m3-integration-hard-half-angle-quadratic": 8,
-    "m3-differentiation-olympiad-global-inverse-curvature": 8,
-    "m3-series-hard-floor-geometric-count": 8,
-    "m3-series-hard-binomial-beta-cancellation": 8,
-    "m3-series-hard-dyadic-infinite-product": 8,
-    "m3-limits-hard-oscillatory-regularity-threshold": 8,
-    "m3-limits-hard-supremum-pointwise-mismatch": 8,
-    "m3-series-hard-conditional-block-rearrangement": 8,
-    "m3-series-hard-borderline-exponential-comparison": 8,
-    "m3-multivariable-olympiad-cube-simplex-cap": 8,
-    "m3-multivariable-olympiad-polynomial-image-winding": 8,
-    "m3-series-olympiad-totient-Lambert": 8,
+    "quality-series-olympiad-Abel-logarithmic-sum": 8,
+    "m3-series-medium-cubic-telescope": 10,
+    "m3-series-hard-borderline-exponential-comparison": 10,
+    "m3-series-easy-geometric-tail": 10,
+    "m3-series-medium-integral-tail-bound": 10,
+    "m3-series-easy-rational-telescope": 10,
+    "m3-series-medium-alternating-error": 10,
     "m3-series-olympiad-theta-dual-moment": 8,
-    "m3-differential-equations-easy-field-slope": 8,
-    "m3-differential-equations-easy-rate-identification": 8,
-    "m3-differential-equations-easy-phase-line-stability": 8,
-    "m3-differential-equations-easy-euler-step": 8,
-    "m3-differential-equations-easy-primitive-initial-value": 8,
-    "m3-differential-equations-easy-doubling-data": 8,
-    "m3-differential-equations-easy-cooling-limit": 8,
-    "m3-differential-equations-easy-mixing-inflow": 8,
-    "m3-differential-equations-easy-constant-acceleration": 8,
-    "m3-differential-equations-easy-equation-order": 8,
-    "m3-differential-equations-easy-oscillator-initial-data": 8,
-    "m3-differential-equations-easy-transfer-conservation": 8,
-    "m3-differential-equations-medium-logistic-hitting": 8,
-    "m3-differential-equations-medium-finite-blowup": 8,
-    "m3-differential-equations-medium-variable-integrating-factor": 8,
-    "m3-differential-equations-medium-exact-curve": 8,
-    "m3-differential-equations-medium-bernoulli-reciprocal": 8,
-    "m3-differential-equations-medium-homogeneous-ratio": 8,
-    "m3-differential-equations-medium-harvest-bifurcation": 8,
-    "m3-differential-equations-medium-distinct-characteristic-roots": 8,
+    "m3-series-hard-floor-geometric-count": 10,
+    "quality-series-hard-Liouville-Dirichlet-product": 10,
+    "m3-series-hard-dyadic-infinite-product": 10,
+    "m3-series-medium-quadratic-weight": 10,
+    "m3-series-easy-power-series-radius": 10,
+    "m3-series-medium-power-series-ratio-radius": 10,
+    "m3-series-easy-nth-term-test": 10,
+    "m3-series-olympiad-totient-Lambert": 8,
+    "quality-series-olympiad-finite-cycle-resolvent": 8,
+    "m3-series-olympiad-lattice-resolvent": 8,
+    "q4-differential-equations-rotating-instability": 10,
+    "q4-differential-equations-weighted-string-first-eigenvalue": 20,
+    "q4-differential-equations-homoclinic-mass": 10,
+    "q4-differential-equations-critical-radial-bubble": 20,
+    "q4-differential-equations-isochronous-shear": 10,
+    "q4-differential-equations-polynomial-root-moment": 10,
+    "q4-differential-equations-spectral-potential-derivative": 15,
+    "q4-differential-equations-logarithmic-uniqueness-borderline": 10,
+    "q4-differential-equations-oscillator-minimum-control-energy": 10,
+    "q4-differential-equations-small-loop-geometric-phase": 10,
+    "q4-differential-equations-boundary-layer-energy": 10,
+    "q4-differential-equations-logarithmic-relaxation-constant": 10,
+    "q4-differential-equations-Green-kernel-square-trace": 10,
+    "q4-differential-equations-inverse-period-potential": 10,
+    "q4-differential-equations-bistable-front-speed": 10,
+    "q4-differential-equations-Robin-Lyapunov-infimum": 10,
+    "q4-multivariable-competing-parabolic-ridges": 10,
+    "q4-multivariable-positive-matrix-cone-integral": 10,
+    "q4-multivariable-elliptic-torsion-sharp-functional": 10,
+    "q4-multivariable-support-function-area": 20,
+    "q4-multivariable-spherical-triangle-vector-area": 10,
+    "q4-multivariable-saddle-level-band": 10,
+    "q4-multivariable-cubic-coefficient-body": 15,
+    "q4-multivariable-Hessian-boundary-determinant": 10,
+    "q4-multivariable-sphere-quadratic-homogeneity": 10,
+    "q4-multivariable-projective-disk-integral": 10,
+    "q4-multivariable-three-cylinder-moments": 12,
+    "q4-multivariable-confocal-distance-integral": 10,
+    "q4-multivariable-harmonic-gradient-extremum": 10,
+    "q4-multivariable-minimum-enclosing-ellipse": 10,
+    "q4-multivariable-optimal-hyperbolic-domain": 10,
+    "q4-multivariable-optimizer-fourth-envelope-derivative": 10,
+    "q4-multivariable-folded-map-counted-area": 15,
+    "q4-multivariable-Gaussian-entropy-variational": 10,
+    "q4-multivariable-Vandermonde-Gram-integral": 10,
+    "q4-multivariable-zonotope-volume": 10,
+    "q4-differential-equations-Hermite-ODE-discriminant": 10,
+    "q4-differential-equations-Mathieu-resonant-growth": 10,
+    "q4-differential-equations-inverse-ODE-coefficient-asymptotic": 10,
+    "q4-multivariable-Hessian-from-boundary-data": 10,
+    "q4-multivariable-disk-Fekete-maximum": 10,
+    "q4-multivariable-disk-to-annulus-optimal-transport": 10,
+    "q4-differential-equations-nonlinear-fast-nullcline-decay": 10,
+    "q4-differential-equations-nonlinear-damping-Melnikov-bound": 10,
+    "q4-differential-equations-formal-Laurent-resonance-obstruction": 10,
+    "q4-differential-equations-long-time-nonlinear-damping-average": 10,
+    "q4-multivariable-Gaussian-trigonometric-nodal-length": 10,
+    "m3-multivariable-easy-partial-hold-fixed": 2,
+    "m3-multivariable-easy-mixed-partial": 2,
+    "m3-multivariable-easy-directional-unit": 2,
+    "m3-multivariable-easy-tangent-plane": 2,
+    "m3-multivariable-easy-linearization-two-inputs": 2,
+    "m3-multivariable-easy-rectangle-integral": 2,
+    "m3-multivariable-easy-triangular-region": 2,
+    "m3-multivariable-easy-polar-area": 2,
+    "m3-multivariable-easy-chain-curve": 2,
+    "m3-multivariable-easy-divergence": 2,
+    "m3-multivariable-easy-potential-endpoints": 2,
+    "m3-multivariable-easy-box-average": 2,
+    "m3-multivariable-medium-gradient-max-direction": 10,
+    "m3-multivariable-medium-quadratic-critical-value": 10,
+    "m3-multivariable-medium-Lagrange-circle-linear": 10,
+    "m3-multivariable-medium-change-order": 2,
+    "m3-multivariable-medium-ellipse-transform": 2,
+    "m3-multivariable-medium-polar-moment": 2,
+    "m3-multivariable-medium-surface-graph-area": 2,
+    "m3-multivariable-medium-spherical-moment": 2,
+    "m3-multivariable-hard-quadratic-eigenconstraint": 4,
+    "m3-multivariable-hard-moving-domain-derivative": 10,
+    "m3-multivariable-hard-ellipsoid-inertia": 4,
+    "m3-multivariable-hard-nonlinear-Jacobian": 12,
+    "m3-multivariable-hard-simplex-beta": 4,
+    "m3-multivariable-hard-Stokes-tilted-surface": 10,
+    "m3-multivariable-hard-boundary-versus-interior": 10,
+    "m3-multivariable-hard-mixed-Hessian-coordinate": 10,
+    "m3-multivariable-hard-Gaussian-precision": 4,
+    "m3-differential-equations-easy-field-slope": 2,
+    "m3-differential-equations-easy-euler-step": 2,
+    "m3-differential-equations-easy-primitive-initial-value": 2,
+    "m3-differential-equations-easy-doubling-data": 2,
+    "m3-differential-equations-easy-cooling-limit": 2,
+    "m3-differential-equations-easy-mixing-inflow": 2,
+    "m3-differential-equations-easy-constant-acceleration": 2,
+    "m3-differential-equations-easy-equation-order": 2,
+    "m3-differential-equations-easy-transfer-conservation": 2,
+    "m3-differential-equations-medium-logistic-hitting": 2,
+    "m3-differential-equations-medium-finite-blowup": 10,
+    "m3-differential-equations-medium-variable-integrating-factor": 10,
+    "m3-differential-equations-medium-bernoulli-reciprocal": 6,
+    "m3-differential-equations-medium-homogeneous-ratio": 6,
+    "m3-differential-equations-medium-harvest-bifurcation": 2,
     "m3-differential-equations-medium-resonant-forcing": 8,
-    "m3-differential-equations-medium-critical-damping": 8,
-    "m3-differential-equations-medium-repeated-root": 8,
-    "m3-differential-equations-medium-periodic-amplitude": 8,
-    "m3-differential-equations-hard-riccati-particular": 8,
-    "m3-differential-equations-hard-nonlinear-energy-speed": 8,
-    "m3-differential-equations-hard-euler-cauchy-resonance": 8,
-    "m3-differential-equations-hard-variable-second-order-basis": 8,
-    "m3-differential-equations-hard-remove-first-derivative": 8,
-    "m3-differential-equations-hard-step-forcing": 8,
-    "m3-differential-equations-hard-impulse-jump": 8,
-    "m3-differential-equations-hard-rotating-linear-system": 8,
-    "m3-differential-equations-hard-jordan-system": 8,
-    "m3-differential-equations-hard-linear-stability-bound": 8,
-    "m3-differential-equations-hard-mixed-boundary-spectrum": 8,
-    "m3-differential-equations-hard-wronskian-transport": 8,
+    "m3-differential-equations-medium-critical-damping": 2,
+    "m3-differential-equations-medium-repeated-root": 10,
+    "m3-differential-equations-medium-periodic-amplitude": 2,
+    "m3-differential-equations-hard-riccati-particular": 2,
+    "m3-differential-equations-hard-remove-first-derivative": 6,
+    "m3-differential-equations-hard-impulse-jump": 2,
+    "m3-differential-equations-hard-rotating-linear-system": 9,
+    "m3-differential-equations-hard-jordan-system": 2,
+    "m3-differential-equations-hard-linear-stability-bound": 6,
+    "m3-multivariable-olympiad-high-dimensional-lp-ball": 8,
     "m3-differential-equations-olympiad-quartic-period": 8,
+    "m3-differential-equations-olympiad-sharp-lifetime-comparison": 8,
+    "m3-multivariable-olympiad-lemniscate-petal-area": 8,
     "m3-differential-equations-olympiad-power-coordinate-lifetime": 8,
     "m3-differential-equations-olympiad-pinney-energy": 8,
     "m3-differential-equations-olympiad-switched-riccati": 8,
     "m3-differential-equations-olympiad-periodic-product-average": 8,
     "m3-differential-equations-olympiad-periodic-floquet-multiplier": 8,
-    "m3-differential-equations-olympiad-resonant-boundary-compatibility": 8,
-    "m3-differential-equations-olympiad-sharp-lifetime-comparison": 8,
+    "m3-differential-equations-easy-oscillator-initial-data": 10,
+    "m3-differential-equations-easy-phase-line-stability": 10,
+    "m3-differential-equations-easy-rate-identification": 10,
+    "m3-differential-equations-hard-euler-cauchy-resonance": 10,
+    "m3-differential-equations-hard-mixed-boundary-spectrum": 10,
+    "m3-differential-equations-hard-nonlinear-energy-speed": 10,
+    "m3-differential-equations-hard-step-forcing": 10,
+    "m3-differential-equations-hard-wronskian-transport": 10,
+    "m3-differential-equations-medium-distinct-characteristic-roots": 10,
+    "m3-differential-equations-medium-exact-curve": 10,
     "m3-differential-equations-olympiad-nonlinear-radial-asymptotic": 8,
-    "m3-differential-equations-olympiad-ground-state-variance": 8,
-    "m3-differential-equations-olympiad-schwarzian-ivp": 8,
-    "m3-differential-equations-olympiad-darboux-oscillator": 8,
-    "m3-limits-olympiad-irrational-rotation-correlation": 8,
-    "m3-limits-olympiad-Newton-double-exponential-rate": 8,
-    "m3-limits-olympiad-recurrence-Hankel-growth": 8,
-    "m3-limits-olympiad-Dirichlet-endpoint-trace": 8,
-    "m3-limits-olympiad-monic-minimax-rate": 8,
-    "m3-limits-olympiad-binomial-moving-threshold": 8,
-    "m3-limits-olympiad-coupon-coverage-window": 8,
-    "m3-limits-olympiad-gcd-pair-density": 8,
-    "m3-limits-medium-floor-integer-approach": 8,
-    "m3-limits-medium-implicit-inverse-increment": 8,
-    "m3-limits-hard-Lp-maximum-limit": 8,
-    "m3-limits-hard-log-phase-average-limsup": 8,
-    "m3-differentiation-olympiad-sharp-endpoint-derivative": 8,
-    "m3-differentiation-olympiad-cyclic-determinant-second-derivative": 8,
-    "m3-differentiation-olympiad-oscillatory-regularity-pair": 8,
-    "m3-differentiation-olympiad-newton-iteration-jet": 8,
-    "m3-differentiation-hard-moving-endpoint-parameter-second": 8,
-    "m3-series-easy-p-series-pair": 8,
-    "m3-series-easy-alternating-absolute-conditional": 8,
-    "m3-series-easy-direct-comparison-information": 8,
-    "m3-series-easy-taylor-coefficient-derivative": 8,
-    "m3-series-easy-linearity-given-convergent-sums": 8
+    "m3-differential-equations-olympiad-resonant-boundary-compatibility": 8,
+    "m3-multivariable-hard-nonconservative-hole": 10,
+    "m3-multivariable-hard-path-dependent-directional": 10,
+    "m3-multivariable-hard-surface-flux-graph": 12,
+    "m3-multivariable-medium-Green-circulation": 10,
+    "m3-multivariable-medium-divergence-flux": 10,
+    "m3-multivariable-medium-implicit-surface-partial": 10,
+    "m3-multivariable-olympiad-log-simplex-moment": 8,
+    "m3-multivariable-olympiad-polynomial-image-winding": 8,
+    "m3-multivariable-olympiad-two-centre-resolvent": 8,
+    "q4-differential-equations-Laguerre-zero-resolvent-limit": 10,
+    "q4-differential-equations-Riccati-turning-point-connection": 10,
+    "q4-differential-equations-global-Riccati-threshold": 20,
+    "q4-differential-equations-minimum-peak-acceleration": 10,
+    "q4-differential-equations-pantograph-entire-growth": 10,
+    "q4-multivariable-eccentric-annulus-capacity": 10,
+    "m3-differential-equations-hard-variable-second-order-basis": 10,
+    "m3-multivariable-olympiad-simplex-log-partition": 8,
+    "q4-differential-equations-Bessel-zero-normalization": 10,
+    "q4-differential-equations-nonnormal-transient-maximum": 10,
+    "m3-multivariable-medium-density-centroid": 10,
+    "m3-differential-equations-olympiad-ground-state-variance": 6,
+    "quality-series-medium-ac-gaussian-truncation": 1,
+    "quality-series-medium-ac-erf-coefficient-radius": 1
   },
-  "bundleId": "9b174c91c42b61dac5addcedb8224048ea004d2143c74f154d10e415763fb345",
+  "reservationEvidence": {
+    "priorPreparedBundleId": "b17933ed1bb332ffa548a15c146832f389d753024938743e17e9191923256301",
+    "completeLocalImportReportSha256": "47665ae50c07c2bb05e879d488ada5190d25c63085705a7f1f6a9687f0e3283d",
+    "importReadReservation": "10 per compiled row plus100 batch allowance; additional operator accounting remains unchanged",
+    "cumulativeCeilingsUnchanged": true
+  },
+  "bundleId": "a2e35e6b320cc7754a4a8e74f590e38189eb12965d7198c4436b9d043e436d15",
   "status": "prepared, not imported or activated",
-  "localDatabaseBytes": 95297536,
+  "localDatabaseBytes": 106274816,
   "compression": {
-    "canonicalPayloadBytes": 12075278,
+    "canonicalPayloadBytes": 27034355,
     "wholeRecordGzipBytes": 0,
-    "residualJsonBytes": 4355966,
-    "residualGzipBytes": 2109163,
-    "sharedJsonBytes": 926203,
-    "repeatedSharedJsonBytes": 7409624,
-    "provenanceJsonBytes": 1772470,
-    "validationJsonBytes": 4512623,
-    "maxCanonicalBytes": 8847,
-    "maxResidualBytes": 4835
+    "residualJsonBytes": 13904464,
+    "residualGzipBytes": 5484598,
+    "sharedJsonBytes": 982550,
+    "repeatedSharedJsonBytes": 7223393,
+    "provenanceJsonBytes": 3125499,
+    "validationJsonBytes": 10778661,
+    "maxCanonicalBytes": 21943,
+    "maxResidualBytes": 19420
   }
 }

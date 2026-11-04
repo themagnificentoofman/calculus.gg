@@ -1,0 +1,990 @@
+[
+  {
+    "route": "integration-bessel",
+    "familyId": "io3-bessel-laplace",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.bessel_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-absolute-area",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-average-value",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-exponential-rate",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-log-recognition",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-odd-even",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-piecewise-accumulation",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-quarter-disk",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-easy-washer-volume",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-hard-arc-length-perfect-square",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-hard-beta-polynomial",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-hard-half-angle-quadratic",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-hard-mixed-log-endpoints",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-hard-reciprocal-quartic",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-medium-exponential-trig",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-medium-partial-fractions",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-medium-parts-log",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-medium-piecewise-absolute-root",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-extensions",
+    "familyId": "m3-integration-medium-shell-volume",
+    "indices": [
+      0,
+      1
+    ],
+    "builderModule": "quality.integration.extensions",
+    "admitted": false
+  },
+  {
+    "route": "integration-hilbert",
+    "familyId": "quality-integration-olympiad-homogeneous-Hilbert-kernel-norm",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "builderModule": "hilbert",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-bernoulli-product",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-binary-product",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-boundary-asymptotic",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-cauchy-convolution",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-concentration",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-convolution-laplace",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-fejer-fourth",
+    "indices": [
+      0,
+      1,
+      2
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-jensen-radius",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-mellin-cyclotomic",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-oscillatory-regularization",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-thermal-derivative",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-historical",
+    "familyId": "io3-variational-energy",
+    "indices": [
+      0,
+      1,
+      4
+    ],
+    "builderModule": "quality.integration.historical",
+    "admitted": false
+  },
+  {
+    "route": "integration-moments",
+    "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+    "indices": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "builderModule": "moments",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-competing-laplace-wells",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-support-function-perimeter",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-new",
+    "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integrals",
+    "admitted": false
+  },
+  {
+    "route": "integration-options",
+    "familyId": "io3-gamma-unit-average",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.option_repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-options",
+    "familyId": "io3-principal-value",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "quality.integration.option_repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-repairs",
+    "familyId": "m3-integration-easy-signed-area",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "quality.integration.repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-repairs",
+    "familyId": "m3-integration-easy-substitution-affine",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "quality.integration.repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-repairs",
+    "familyId": "m3-integration-hard-root-quadratic",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "quality.integration.repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-repairs",
+    "familyId": "m3-integration-hard-trig-log",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "quality.integration.repairs",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "io3-fresnel",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "io3-reciprocal-quartic",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "io3-rodrigues-moment",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "io3-scaled-frullani",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-easy-accumulation-from-derivative",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-easy-area-between-curves",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-hard-Frullani-rectangle",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-hard-improper-rational-beta",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-hard-logarithmic-moment",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-improper-exponential",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-inverse-tangent",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-moving-boundary-area",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-nested-log",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-rational-power-substitution",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-secant-square-substitution",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  },
+  {
+    "route": "integration-sign",
+    "familyId": "m3-integration-medium-trig-odd-power",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "builderModule": "integration_sign_options",
+    "admitted": false
+  }
+]

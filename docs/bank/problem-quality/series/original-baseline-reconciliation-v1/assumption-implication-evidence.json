@@ -1,0 +1,36 @@
+{
+  "gaussian-domain-implication": {
+    "appliesTo": [
+      "cn_297032565022a61e3071",
+      "cn_5895dd68aa8998ee472e"
+    ],
+    "originalAssumptions": [
+      "All series and their parameter derivatives converge uniformly on every compact interval inside a>0.",
+      "Theta(a)>=1, so the displayed denominator is nonzero."
+    ],
+    "finalAssumptions": [
+      "Real variables on the explicitly stated domain; all restrictions in the statement apply."
+    ],
+    "proof": [
+      "The identical displayed definitions have real a>0 and sums over every integer n. For any compact interval [epsilon,R] with epsilon>0, an r-th parameter derivative of exp(-pi*a*n^2) has absolute value at most pi^r*|n|^(2r)*exp(-pi*epsilon*n^2). The analogous bound for M has the additional polynomial factor n^2.",
+      "For fixed r, these majorants are summable: a fixed polynomial is bounded by a constant times exp(pi*epsilon*n^2/2), leaving a convergent Gaussian tail. The Weierstrass M-test proves the stated local uniform convergence and the derivative interchange already used in the identical worked solution.",
+      "Every theta summand is nonnegative and the n=0 summand equals 1, hence Theta(a)>=1. These assumptions add no restriction beyond the same displayed positive-real domain and do not supply the Poisson duality identity."
+    ],
+    "effect": "Task/domain/solution meaning preserved. This does not transfer the repaired family menu distribution."
+  },
+  "fourier-envelope-implication": {
+    "appliesTo": [
+      "cn_e4b050067795dade3e09"
+    ],
+    "originalAssumptions": [
+      "Absolute convergence follows from the k^-2 envelope."
+    ],
+    "finalAssumptions": [
+      "Real variables on the explicitly stated domain; all restrictions in the statement apply."
+    ],
+    "proof": [
+      "For every positive integer k, 0<=sin(pi*k/6)^4/k^2<=1/k^2. The convergent reciprocal-square series proves the original assumption directly from the unchanged statement."
+    ],
+    "effect": "Task/domain/solution meaning preserved; the exact finite task can use the later Hard-level reference."
+  }
+}

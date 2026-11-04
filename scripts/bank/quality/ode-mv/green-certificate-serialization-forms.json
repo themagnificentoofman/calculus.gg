@@ -1,0 +1,71 @@
+{
+  "familyId": "q4-differential-equations-Green-kernel-square-trace",
+  "slot": 2,
+  "checkName": "diagonal trace integral",
+  "allowedForms": [
+    "Add(Mul(Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), Pow(sinh(Symbol('a', positive=True)), Integer(-1)), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-2))))",
+    "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+  ],
+  "records": [
+    {
+      "instanceIndex": 0,
+      "problemId": "cn_q4_83061a1c082136362be8",
+      "sourceContentHash": "ecee400ec4b7ed135450ddbff27571884b6306ea37af93593e92660212bcb4ad",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 1,
+      "problemId": "cn_q4_aa5d9fbfd9cf961b9f11",
+      "sourceContentHash": "a93865caf1ba9a757c2b42a023a38902f60d2a3ef366ac556b151efb909f88da",
+      "expectedForm": "Add(Mul(Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), Pow(sinh(Symbol('a', positive=True)), Integer(-1)), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-2))))"
+    },
+    {
+      "instanceIndex": 2,
+      "problemId": "cn_q4_ab8eb5565b3458f9e057",
+      "sourceContentHash": "dc114c1d911ece0af7aaf99974e10a4e9d6ae94fa8db2ebf3bea690f883ff883",
+      "expectedForm": "Add(Mul(Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), Pow(sinh(Symbol('a', positive=True)), Integer(-1)), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-2))))"
+    },
+    {
+      "instanceIndex": 3,
+      "problemId": "cn_q4_e370f110b39fb1a1cbb9",
+      "sourceContentHash": "ffeb88363891f0980c9c33ea34abcfd3e6cbf898c03e9125d4f3ae4f066b5845",
+      "expectedForm": "Add(Mul(Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), Pow(sinh(Symbol('a', positive=True)), Integer(-1)), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-2))))"
+    },
+    {
+      "instanceIndex": 4,
+      "problemId": "cn_q4_1b8cfaa4e23cd9d4bd56",
+      "sourceContentHash": "1887437b73e77899f1d06a518b7928e712819033872f8cf336a70a3aa11bd07d",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 5,
+      "problemId": "cn_q4_159d1b0f1a4b7c6490dd",
+      "sourceContentHash": "3f8e512138a9eb38eeed4f9618e465664c3fa5ca7a74bec0c28eb28b5dcdd60e",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 6,
+      "problemId": "cn_q4_b3b4d22cbcfef09a302b",
+      "sourceContentHash": "f223036ad79216be92af71480e27e0ea9936330fc99d1fd38b3fcd9bb2cbb2cf",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 7,
+      "problemId": "cn_q4_7575dbfd8f9ddabe1b4a",
+      "sourceContentHash": "2efd619baa1c1576120e883a13e5b1dd2216e3039a57e67306adc2739dda90be",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 8,
+      "problemId": "cn_q4_c3f69b5199123f4fc2fb",
+      "sourceContentHash": "213b141d2bdbc77e1d118898626d28810564eda96fedc2ef495d0f3dbcb12a0d",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    },
+    {
+      "instanceIndex": 9,
+      "problemId": "cn_q4_89ff38064680f9c168e4",
+      "sourceContentHash": "c697f0065100a38fbff6323625fd092f35a06e98baee1ae218a94361761a57e0",
+      "expectedForm": "Mul(Pow(Symbol('a', positive=True), Integer(-1)), Add(Mul(Rational(1, 2), cosh(Symbol('a', positive=True))), Mul(Integer(-1), Rational(1, 2), Pow(Symbol('a', positive=True), Integer(-1)), sinh(Symbol('a', positive=True)))), Pow(sinh(Symbol('a', positive=True)), Integer(-1)))"
+    }
+  ]
+}
