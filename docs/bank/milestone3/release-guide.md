@@ -26,7 +26,7 @@ node --experimental-strip-types scripts/bank/content-release-client.mjs activate
 
 Inspect each tranche's receipt, counters and health result before continuing. Repeat `continue` only while checkpoints remain. The client saves exact pending inputs and event receipts atomically, refuses concurrent local clients, and does not blindly retry network failures. A lost response is resumed from the same signed operation; the server's deterministic receipt prevents duplicate corpus writes. A stale server lease lasts two minutes; do not remove or bypass it. A halted ledger needs investigation, not manual reset.
 
-After activation, verify the active pointer, new membership and all-cell selection evidence. Remove all three temporary environment keys and deploy the same saved version again. Both the old `/api/bank-import` and disabled `/api/content-release` must return 404. Normal selection and grading make zero model calls.
+After activation, verify the active pointer, new membership and all-cell selection evidence. Revoke the temporary credential by setting the public key to `disabled`, expiry to `0` and allowance to `null`, then deploy the same saved version again. In this release, removing the keys and redeploying reported success but left runtime signature validation active; explicit disabled values were deployed and verified instead. Both the old `/api/bank-import` and disabled `/api/content-release` must return 404 for POST (unsupported GET returns 405). Normal selection and grading make zero model calls.
 
 ## Rollback
 
@@ -37,3 +37,5 @@ node --experimental-strip-types scripts/bank/content-release-client.mjs rollback
 ```
 
 Rollback is permitted only if the current active pointer is this exact new release, so it cannot overwrite a newer release. It restores the parent pointer and retains all new problem revisions, published release data and historical snapshots. It never deletes accounts, ratings, games or replay data. Once the operator is disabled, re-enable a new short-lived public key for this same compiled plan through the established authorized Sites workflow and deploy before executing rollback; never expose the private key. The original source version 35 remains available if application code also needs reverting. Do not remove additive schema or content tables.
+
+The tracked `release-manifest.json` and `delta-plan.json` preserve the exact preparation descriptor and hashes. Their preparation counters/status are immutable provenance; current imported and active counts are in `coverage.json` and the production receipt.

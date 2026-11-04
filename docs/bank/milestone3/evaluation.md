@@ -51,3 +51,7 @@ Narrow substitution and parameter-differentiation drills respect their tags. Sub
 Offline candidate p95 latency across broad cells is at most 2.79 ms on this machine. Repeated studies use at most 10 SQL statements and 356 returned rows per selection. These are local timings and returned rows, not billed rows, network latency, cold starts or Firebase costs. [rehearsal.json](rehearsal.json) contains separate local workerd/D1 engine measurements; production receipts must supply hosted measurements.
 
 The full [evaluation.json](evaluation.json) includes concentration, adjacency, near-clone windows, exact-repeat rates, family return intervals, reasoning demand, strategy combinations, alternative tags, exposure-history bytes, query bounds and two complete playable sequences per repeated cell.
+
+## Hosted release verification
+
+All 24 staged production-selector checks passed before activation. They used four sampler SQL statements each; observed whole-operation reads, including operator bookkeeping, ranged from 604 to 651. Signed verification server time averaged 362.7 ms (p95 553 ms), including multiple remote D1 accounting operations. This is not ordinary gameplay latency. The full release observed 80,895 rows read and 32,605 rows written in returned provider measurements; conservative reservation charges were 563,084/51,276, including unmetered preflight coverage. See [production-verification.json](production-verification.json).
