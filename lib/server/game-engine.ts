@@ -1,3 +1,4 @@
+import {reviewSavedQuestion} from './solution-presentation.mjs';
 import { calculateProblemXp, calculateRatings, finite, TOPICS, type GameMode } from '../progression.ts';
 import { gamePlayers, nextUnanswered, type GameQuestion, type GameSession, type MatchSettings } from '../game-progress.ts';
 import { recordTransition } from './replay-recording.ts';
@@ -25,7 +26,7 @@ export function publicGame(game: GameSession) {
 function ownProgress(game: GameSession, uid: string) {
   const answers = game.answers?.[uid] || {};
   return { answers, reviews: Object.fromEntries(Object.keys(answers).map(index => {
-    const q = game.questions![Number(index)]; return [index, { correctIndex: q.correctIndex, explanation: q.explanation }];
+    const q = game.questions![Number(index)]; const review=reviewSavedQuestion(q); return [index, { correctIndex: q.correctIndex, explanation: review?.steps||q.explanation, ...(review?{solutionReviewVersion:review.version,explanationClarified:review.clarified}:{}) }];
   })) };
 }
 export const playerView = (game: GameSession, uid: string) => ({ game: publicGame(game), progress: ownProgress(game, uid) });

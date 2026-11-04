@@ -1,0 +1,930 @@
+{
+  "legacyEdgeRecordsChecked": 288,
+  "legacyFamiliesChecked": 72,
+  "io3FiniteInstancesChecked": 304,
+  "io3FamilyChecks": {
+    "io3-weighted-complement": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-reciprocal-quartic": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-inverse-moment": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-chebyshev-absolute": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-floor-laplace": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-gamma-unit-average": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-log-fourier-coefficient": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-arctan-parameter": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-gaussian-fourier": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-reciprocal-gaussian": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-sinc-overlap": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-mixed-beta-log": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-thermal-derivative": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-mellin-cyclotomic": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-cauchy-convolution": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-binomial-exponential": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-agm-parameter": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-abel-recovery": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-boundary-asymptotic": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-integral-equation": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 32
+    },
+    "io3-convolution-laplace": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-poisson-log-potential": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-jensen-radius": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-fresnel": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-bessel-laplace": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-rodrigues-moment": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-bernoulli-product": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-principal-value": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-oscillatory-regularization": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-concentration": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    },
+    "io3-binary-product": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-fejer-fourth": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-scaled-frullani": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-sech-fourier": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 8
+    },
+    "io3-variational-energy": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 32
+    },
+    "io3-moment-projection": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 24
+    },
+    "io3-quadrature-defect": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 40
+    },
+    "io3-rearrangement": {
+      "instances": 8,
+      "executedSourceIdentityChecks": 16
+    }
+  },
+  "newBridgeCheckCount": 191,
+  "checks": [
+    {
+      "check": "polynomial-area four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "exponential-area four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "trig-area four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "polynomial-exponential four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "quadratic-substitution four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "rational-decomposition four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "log-moments four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "trig-products four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "improper-rational four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "polynomial-slope four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "trig-slope four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "exp-log-slope four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "product-rule four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "quotient-rule four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "nested-chain four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "fourth-derivative four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "log-differentiation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "parametric-curvature four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "polynomial-continuity four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "removable-factor four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "standard-trig-limits four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "exponential-cancellation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "rational-at-infinity four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "logarithmic-cancellation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "third-order-exponential four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "trig-cancellation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "radical-cancellation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "geometric-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "telescoping-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "even-geometric-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "weighted-geometric four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "exponential-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "alternating-log-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "quadratic-geometric four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "cubic-telescoping four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "zeta-even four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "polynomial-initial-value four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "exponential-initial-value four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "trig-initial-value four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "linear-integrating-factor four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "variable-integrating-factor four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "linear-trig-forcing four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "resonant-second-order four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "oscillator-resonance four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "euler-cauchy four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "partial-x four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "partial-y four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "rectangle-area four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "mixed-partials four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "triangle-integral four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "laplacian four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "high-mixed-partials four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "curved-domain-integral four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "laplacian-products four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "transformed-beta-log four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "concealed-reflection four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "frullani-cancellation four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "removable-exponential-derivative four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "implicit-inverse-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "roots-of-unity-product four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "finite-difference-log-limit four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "riemann-product-limit four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "second-order-riemann-limit four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "stirling-beta-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "binomial-beta-series four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "fourier-cosine-square four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "hidden-riccati four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "clairaut-envelope four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "euler-double-resonance four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "unbounded-dirichlet-integral four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "rotated-disk-moment four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "radial-log-mixed-derivative four immutable edge answers",
+      "passed": true
+    },
+    {
+      "check": "Cauchy first explicit residue",
+      "passed": true
+    },
+    {
+      "check": "Cauchy second explicit residue",
+      "passed": true
+    },
+    {
+      "check": "Cauchy residue sum gives integral",
+      "passed": true
+    },
+    {
+      "check": "quadrature node polynomial",
+      "passed": true
+    },
+    {
+      "check": "quadrature defect integral",
+      "passed": true
+    },
+    {
+      "check": "quadrature degree 0",
+      "passed": true
+    },
+    {
+      "check": "quadrature degree 1",
+      "passed": true
+    },
+    {
+      "check": "quadrature degree 2",
+      "passed": true
+    },
+    {
+      "check": "quadrature degree 3",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 2",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 3",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 4",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 5",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 6",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 7",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 8",
+      "passed": true
+    },
+    {
+      "check": "Abel finite polynomial reduction 9",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (2, 2)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (2, 2)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (2, 4)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (2, 4)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (3, 3)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (3, 3)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (2, 6)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (2, 6)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (3, 5)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (3, 5)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (4, 4)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (4, 4)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (2, 8)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (2, 8)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli recurrence (4, 6)",
+      "passed": true
+    },
+    {
+      "check": "Bernoulli final endpoint (4, 6)",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 3",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 5",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 7",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 7",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 8",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 9",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 11",
+      "passed": true
+    },
+    {
+      "check": "PV transformed cutoff ratio 10",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 1",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 1",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 1",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 1",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 3/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 3/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 3/2",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 3/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 2",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 5/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 5/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 5/2",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 5/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 3",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 3",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 3",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 3",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 7/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 7/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 7/2",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 7/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 4",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 4",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 4",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 4",
+      "passed": true
+    },
+    {
+      "check": "energy candidate differential equation 9/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate left endpoint 9/2",
+      "passed": true
+    },
+    {
+      "check": "energy candidate right endpoint 9/2",
+      "passed": true
+    },
+    {
+      "check": "energy boundary value 9/2",
+      "passed": true
+    },
+    {
+      "check": "projection mean 2",
+      "passed": true
+    },
+    {
+      "check": "projection moment 2",
+      "passed": true
+    },
+    {
+      "check": "projection norm 2",
+      "passed": true
+    },
+    {
+      "check": "projection mean 3",
+      "passed": true
+    },
+    {
+      "check": "projection moment 3",
+      "passed": true
+    },
+    {
+      "check": "projection norm 3",
+      "passed": true
+    },
+    {
+      "check": "projection mean 4",
+      "passed": true
+    },
+    {
+      "check": "projection moment 4",
+      "passed": true
+    },
+    {
+      "check": "projection norm 4",
+      "passed": true
+    },
+    {
+      "check": "projection mean 5",
+      "passed": true
+    },
+    {
+      "check": "projection moment 5",
+      "passed": true
+    },
+    {
+      "check": "projection norm 5",
+      "passed": true
+    },
+    {
+      "check": "projection mean 6",
+      "passed": true
+    },
+    {
+      "check": "projection moment 6",
+      "passed": true
+    },
+    {
+      "check": "projection norm 6",
+      "passed": true
+    },
+    {
+      "check": "projection mean 7",
+      "passed": true
+    },
+    {
+      "check": "projection moment 7",
+      "passed": true
+    },
+    {
+      "check": "projection norm 7",
+      "passed": true
+    },
+    {
+      "check": "projection mean 8",
+      "passed": true
+    },
+    {
+      "check": "projection moment 8",
+      "passed": true
+    },
+    {
+      "check": "projection norm 8",
+      "passed": true
+    },
+    {
+      "check": "projection mean 9",
+      "passed": true
+    },
+    {
+      "check": "projection moment 9",
+      "passed": true
+    },
+    {
+      "check": "projection norm 9",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 0",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 1",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 2",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 3",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 4",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 5",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 6",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 7",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 8",
+      "passed": true
+    },
+    {
+      "check": "Bessel angular sine moment 9",
+      "passed": true
+    },
+    {
+      "check": "trig primitive sine",
+      "passed": true
+    },
+    {
+      "check": "trig primitive cosine",
+      "passed": true
+    },
+    {
+      "check": "trig primitive double frequency",
+      "passed": true
+    },
+    {
+      "check": "chosen exponential primitive 1",
+      "passed": true
+    },
+    {
+      "check": "chosen exponential primitive 2",
+      "passed": true
+    },
+    {
+      "check": "chosen exponential primitive 3",
+      "passed": true
+    },
+    {
+      "check": "second Riemann explicit endpoint",
+      "passed": true
+    },
+    {
+      "check": "second Riemann explicit endpoint",
+      "passed": true
+    },
+    {
+      "check": "second Riemann explicit endpoint",
+      "passed": true
+    },
+    {
+      "check": "radial logarithm coefficient 2",
+      "passed": true
+    },
+    {
+      "check": "radial logarithm coefficient 3",
+      "passed": true
+    },
+    {
+      "check": "radial logarithm coefficient 4",
+      "passed": true
+    }
+  ],
+  "elapsedSeconds": 3.197,
+  "analyticTheorems": "Fubini/Tonelli, dominated convergence, Gaussian/beta reflection, Fourier identities, ODE uniqueness and asymptotic remainder bounds retain explicitly stated hypotheses and mathematical proof obligations; not claimed to be machine-proved measure theory.",
+  "humanReviewed": false,
+  "rootSourceEdited": false
+}

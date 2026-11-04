@@ -1,4 +1,5 @@
 import { MathDisplay } from './MathDisplay';
+import { SolutionSteps } from './SolutionSteps';
 import { ProblemReference } from './ProblemReference';
 
 export interface AnsweredQuestion {
@@ -18,7 +19,6 @@ export function LastAnswerReview({ answer }: { answer: AnsweredQuestion | null }
 
   const { question, selectedOption } = answer;
   const correct = selectedOption === question.correctIndex;
-  const steps = Array.isArray(question.explanation) ? question.explanation : [question.explanation];
 
   return (
     <details className="min-w-0 mb-8 rounded-xl border border-zinc-800 bg-zinc-950 p-4 text-left">
@@ -43,7 +43,7 @@ export function LastAnswerReview({ answer }: { answer: AnsweredQuestion | null }
         )}
         <div className="min-w-0 space-y-4 text-zinc-400">
           <h3 className="text-sm font-semibold">Explanation</h3>
-          {steps.map((step, index) => <MathDisplay key={index} math={step} block />)}
+          <SolutionSteps steps={question.explanation} />
         </div>
       </div>
     </details>

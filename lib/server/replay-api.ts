@@ -1,3 +1,4 @@
+import {savedSolutionReviews} from './solution-presentation.mjs';
 import type {Store,Data} from './firestore-admin.ts';
 import {REPLAY_LIMITS,replayStatus,legacyMessage,type ClientEvent,type ReplayEvent} from '../replay/contracts.ts';
 import {serverChunkPath} from './replay-recording.ts';
@@ -95,7 +96,7 @@ export function createReplayApi(deps:{store:Store;verify:(token:string)=>Promise
     if(capture?.segments?.some((s:Data)=>!s.closed))gaps.push('One or more page sessions have no durable closing event.');
     if(status==='Partial'&&!gaps.length)gaps.push('Some accepted answers are missing captured exposure, submission, response, or feedback events.');
     if(content.contextMissing)gaps.push('Some problem context was absent from the captured snapshot.');
-    return reply({replayStatus:content.contextMissing?'Partial':status,manifest,content,playerId:uid,segments:capture?.segments||[],gaps});
+    return reply({replayStatus:content.contextMissing?'Partial':status,manifest,content,solutionReviews:savedSolutionReviews(content.questions),playerId:uid,segments:capture?.segments||[],gaps});
    }
    if(input.op==='server'){
     const start=input.start;if(!Number.isInteger(start)||start<0||start>manifest.chunkCount)throw new ReplayError('Invalid replay cursor.');

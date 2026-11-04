@@ -6,6 +6,7 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { ProblemReference } from '@/components/ProblemReference';
 import { MathDisplay } from '@/components/MathDisplay';
+import { SolutionSteps } from '@/components/SolutionSteps';
 import { ArrowRight, CheckCircle2, XCircle, RefreshCw, Home, Play, Calculator, Info } from 'lucide-react';
 import { selectQuestions } from '@/lib/questions';
 import { playSound } from '@/lib/sounds';
@@ -310,15 +311,7 @@ export default function TestMode() {
               <ProblemReference problemId={q.problemId} problemRevision={q.problemRevision} />
               <h4 className="text-zinc-300 font-medium mb-2">Explanation:</h4>
               <div className="text-zinc-400 leading-relaxed w-full flex flex-col gap-4">
-                {Array.isArray(q.explanation) ? (
-                  q.explanation.map((step: string, idx: number) => (
-                    <div key={idx} className="w-full">
-                      <MathDisplay math={step} block />
-                    </div>
-                  ))
-                ) : (
-                  <MathDisplay math={q.explanation} block />
-                )}
+                <SolutionSteps steps={q.explanation} />
               </div>
             </div>
 

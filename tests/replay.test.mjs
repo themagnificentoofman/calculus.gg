@@ -118,3 +118,13 @@ test('exposure stages use immutable snapshots; display reports cannot become att
  s.advance(1000);await s.call('alice',{...envelope,chunkIndex:1,events:[event(2,'question_displayed',{questionIndex:0})]});assert.deepEqual((await s.store.get('bankRecent/alice')).exposures.find(e=>e.problemId===fixture()[0].problemId),attempted);
  const before=clone([...s.store.docs]);await s.call('alice',{...envelope,chunkIndex:2,events:[event(3,'question_displayed',{questionIndex:19})]},400);assert.deepEqual([...s.store.docs],before);
 });
+test('source-bound clarifications are separate from immutable replay content and never regrade a recorded answer',async()=>{
+ const {readFileSync}=await import('node:fs'),p=JSON.parse(readFileSync(new URL('./fixtures/bank/solution-review-examples.json',import.meta.url)))[0];
+ const s=await setup(),q={problemId:p.problemId,problemRevision:p.problemRevision,contentHash:p.contentHash,familyId:p.familyId,bankRelease:'cn-2026-11-03-ideas-v3',latexProblem:p.statement,options:p.choices.map(c=>c.math),correctIndex:p.choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty};
+ const set=await s.games.storeQuestions('alice','test',q.topic,q.difficulty,[q]),id=set.questionSetId;await s.games.createGame('alice',id,'test',{});
+ const before=await s.store.get(`replayContent/${id}`);await s.call('alice',{op:'read',roundId:id},409);
+ const answer=await s.games.act('alice',id,'answer',{index:0,selectedOption:q.correctIndex});assert.equal(answer.answer.correct,true);
+ const allBefore=clone([...s.store.docs]),result=await s.call('alice',{op:'read',roundId:id});assert.deepEqual(result.content,before);assert.deepEqual([...s.store.docs],allBefore);
+ assert.equal(result.solutionReviews[0].clarified,true);assert.equal(result.solutionReviews[0].sourceContentHash,p.contentHash);assert.equal(result.solutionReviews[0].steps.at(-1),'1');assert.ok(!result.solutionReviews[0].steps.some(s=>s.includes('Here ')));
+ const loaded=await loadReplay(id,b=>s.call('alice',b));assert.deepEqual(loaded.content,before);assert.deepEqual(loaded.solutionReviews,result.solutionReviews);
+});

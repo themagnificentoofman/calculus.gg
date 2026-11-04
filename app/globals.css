@@ -112,3 +112,14 @@ button:disabled {
 .math-display .katex-display > .katex > .katex-html {
   white-space: normal;
 }
+
+/* Prose wraps normally. Keep each solution equation intact and scrollable;
+   max-content prevents a centered long equation from clipping its left edge. */
+.solution-steps .katex-display > .katex {
+  width: max-content;
+  min-width: 100%;
+  white-space: nowrap;
+}
+.solution-steps .katex-display > .katex > .katex-html {
+  white-space: nowrap;
+}

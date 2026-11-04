@@ -1,0 +1,802 @@
+[
+  {
+    "answerChoiceId": "ch_3f02791adb171778",
+    "assumptions": [
+      "The displayed antiderivative is differentiable throughout the interval interior; finite one-sided limits are used at improper endpoints."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_3f02791adb171778",
+        "math": "1",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_d11d940c5a2e9a6f",
+        "math": "\\frac{\\pi^{4}}{5184} + \\frac{1}{2}",
+        "misconception": "omit the lower endpoint contribution"
+      },
+      {
+        "choiceId": "ch_c93ac3c14fecbfbc",
+        "math": "\\frac{1}{2} - \\frac{\\pi^{4}}{5184}",
+        "misconception": "omit the upper endpoint contribution"
+      },
+      {
+        "choiceId": "ch_f04f275a58180231",
+        "math": "\\frac{\\pi^{4}}{2592} + 1",
+        "misconception": "treat odd term as positive"
+      }
+    ],
+    "contentHash": "2ffa234a4f9498e0c30bf0e9007a29979e02700a1953d4ef32a00e101f259ca0",
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "Uses parity before computation. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 50
+    },
+    "familyId": "m3-integration-easy-odd-even",
+    "parameters": {
+      "instance": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-integration-easy-odd-even",
+      "difficultyRationale": "Uses parity before computation.",
+      "prerequisites": [],
+      "primaryTechnique": "symmetry",
+      "reasoningDemand": [
+        "execution"
+      ],
+      "relatedIdeaGroupId": "parity-on-symmetric-domain",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "mixed-parity-symmetric-bounds"
+    },
+    "problemId": "cn_c05d5e5ff7186cb58716",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 6
+        },
+        "detailedTechnique": "symmetry",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "1eb675ffd5f873e5e2bdfdd15a6d73e02c283029f142c5467f0c065cf0ed4bc5",
+    "solutionSteps": [
+      "\\textnormal{Here }m=6.",
+      "\\begin{gathered}\\textnormal{The cubic integrates to zero}\\\\\\textnormal{on symmetric bounds; cosine is}\\\\\\textnormal{even.}\\end{gathered}",
+      "F(x)=\\frac{x^{4}}{4} + \\sin{\\left(x \\right)}",
+      "F(b)-F(a)=\\frac{\\pi^{4}}{5184} + \\frac{1}{2}-(- \\frac{1}{2} + \\frac{\\pi^{4}}{5184})",
+      "1"
+    ],
+    "statement": "\\int_{- \\frac{\\pi}{6}}^{\\frac{\\pi}{6}}x^{3} + \\cos{\\left(x \\right)}\\,dx",
+    "subtopic": "parity-on-symmetric-domain",
+    "techniqueTags": [
+      "symmetry"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "integration",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            },
+            {
+              "checkIndex": 1,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 7,
+            "correctNumericRank": 3,
+            "feasibleCorrectNumericRanks": [
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "antiderivative-and-endpoint-certificate",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "authoredWrongOptionCount": 7,
+          "correctNumericRank": 3,
+          "feasibleCorrectNumericRanks": [
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          },
+          {
+            "checkIndex": 1,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "antiderivative-and-endpoint-certificate"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "antiderivative-and-endpoint-certificate",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_fba41e961ef7b59f",
+    "assumptions": [
+      "0<p<q; p/q!=1/2 in this asset; PV uses symmetric x cutoffs at the sole pole x=1."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_fba41e961ef7b59f",
+        "math": "\\left(\\textnormal{divergent},\\ \\frac{\\sqrt{3} \\pi}{9}\\right)",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_d7b6016b95366ec1",
+        "math": "\\left(\\textnormal{convergent},\\ \\frac{\\sqrt{3} \\pi}{9}\\right)",
+        "misconception": "Reporting principal value as an ordinary convergent integral"
+      },
+      {
+        "choiceId": "ch_d8d6fb65d6986c10",
+        "math": "\\left(\\textnormal{divergent},\\ - \\frac{\\sqrt{3} \\pi}{9}\\right)",
+        "misconception": "Reversing the reflection sign"
+      },
+      {
+        "choiceId": "ch_be443f431f92237d",
+        "math": "\\left(\\textnormal{divergent},\\ \\frac{2 \\sqrt{3} \\pi}{9}\\right)",
+        "misconception": "Using the no-pole csc identity"
+      }
+    ],
+    "contentHash": "eeec41f862397f5981b707d8eeca5591b4a35404d03e28d8eeb910a6af8ce512",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "The ordinary integral and symmetric principal value have different existence conclusions; a transformed cutoff correction must be controlled. Solve-time and difficulty estimates are editorial, not measured player calibration. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 540
+    },
+    "familyId": "io3-principal-value",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [
+        "digamma-reflection"
+      ],
+      "answerForm": "convergence-and-value",
+      "constructionId": "io3-principal-value",
+      "difficultyRationale": "The ordinary integral and symmetric principal value have different existence conclusions; a transformed cutoff correction must be controlled. Solve-time and difficulty estimates are editorial, not measured player calibration.",
+      "prerequisites": [
+        "improper-integrals",
+        "cauchy-principal-value"
+      ],
+      "primaryTechnique": "singular-integral-analysis",
+      "reasoningDemand": [
+        "convergence",
+        "reframing"
+      ],
+      "relatedIdeaGroupId": "interior-pole-convergence",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [
+        "nist-dlmf"
+      ],
+      "structuralSignature": "simple-real-pole:mellin-weight"
+    },
+    "problemId": "cn_4ea24c995b4e3c9042bd",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "p": 1,
+          "q": 3,
+          "seed": 0
+        },
+        "detailedTechnique": "principal-value-splitting",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": true,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [
+          "https://dlmf.nist.gov/5.5.E4"
+        ],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "945e294422e2042d39e0009b04a62529cd28a9b1cd7350e71a478bd5af682380",
+    "solutionSteps": [
+      "\\lim_{x\\to1}(x-1)\\frac{x^{0}}{1-x^{3}}=-\\frac1{3}\\ne0",
+      "\\begin{gathered}\\textnormal{Thus the ordinary one-sided}\\\\\\textnormal{definition diverges.}\\end{gathered}",
+      "\\operatorname{PV}I=\\frac1{3}\\int_0^1\\frac{u^{- \\frac{2}{3}}-u^{- \\frac{1}{3}}}{1-u}\\,du",
+      "\\operatorname{PV}I=\\frac{\\sqrt{3} \\pi}{9}"
+    ],
+    "statement": "\\begin{gathered}\\textnormal{For}\\\\I=\\int_0^\\infty\\frac{x^{0}}{1-x^{3}}\\,dx\\\\\\textnormal{, choose (ordinary integral,}\\\\\\textnormal{Cauchy principal value at}\\\\\\textnormal{x=1).}\\end{gathered}",
+    "subtopic": "interior-pole-convergence",
+    "techniqueTags": [
+      "singular-integral-analysis",
+      "principal-value-splitting",
+      "digamma-reflection"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "integration",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "Near x=1 the integrand has a nonzero simple-pole residue, so the two one-sided improper integrals diverge.",
+          "For the principal value put t=x^q, then split at one and substitute t=1/u on the upper piece.",
+          "The combined integrable expression is q^-1 integral_0^1 (u^(p/q-1)-u^(-p/q))/(1-u) du.",
+          "The digamma reflection identity gives pi cot(pi p/q)/q. Under symmetric x cutoffs 1 plus/minus delta, the transformed cutoff ratio ((1+delta)^q-1)/(1-(1-delta)^q) tends to one; the possible logarithmic correction therefore vanishes."
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": null,
+        "certificate": {
+          "analyticCertificateObligations": [
+            "exact nonzero pole residue",
+            "digamma-reflection parameter domain",
+            "PV cutoff equivalence"
+          ],
+          "answerExpression": "Tuple(Symbol('divergent'), Mul(Rational(1, 9), Pow(Integer(3), Rational(1, 2)), pi))",
+          "automatedChecks": [
+            "executed 2 exact symbolic identity checks",
+            "exact pairwise choice non-equivalence",
+            "deterministic canonical reconstruction"
+          ],
+          "certificateId": "cert-principal-value-v1",
+          "choiceExpressions": [
+            "Tuple(Symbol('divergent'), Mul(Rational(1, 9), Pow(Integer(3), Rational(1, 2)), pi))",
+            "Tuple(Symbol('convergent'), Mul(Rational(1, 9), Pow(Integer(3), Rational(1, 2)), pi))",
+            "Tuple(Symbol('divergent'), Mul(Integer(-1), Rational(1, 9), Pow(Integer(3), Rational(1, 2)), pi))",
+            "Tuple(Symbol('divergent'), Mul(Rational(2, 9), Pow(Integer(3), Rational(1, 2)), pi))"
+          ],
+          "exactChecks": [
+            {
+              "builder": "principal_value",
+              "kind": "exact-symbolic-identity",
+              "passed": true,
+              "residual": "Integer(0)",
+              "source": "eq(s.limit((x-1)*x**(p-1)/(1-x**q),x,1),-R(1,q))"
+            },
+            {
+              "builder": "principal_value",
+              "kind": "exact-symbolic-identity",
+              "passed": true,
+              "residual": "Integer(0)",
+              "source": "delta=s.symbols('delta',positive=True);eq(s.limit(((1+delta)**q-1)/(1-(1-delta)**q),delta,0),1)"
+            }
+          ],
+          "formalProofAssistantChecked": false,
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "proofSteps": [
+            "Near x=1 the integrand has a nonzero simple-pole residue, so the two one-sided improper integrals diverge.",
+            "For the principal value put t=x^q, then split at one and substitute t=1/u on the upper piece.",
+            "The combined integrable expression is q^-1 integral_0^1 (u^(p/q-1)-u^(-p/q))/(1-u) du.",
+            "The digamma reflection identity gives pi cot(pi p/q)/q. Under symmetric x cutoffs 1 plus/minus delta, the transformed cutoff ratio ((1+delta)^q-1)/(1-(1-delta)^q) tends to one; the possible logarithmic correction therefore vanishes."
+          ],
+          "route": "parameter-family-analytic-certificate",
+          "status": "certificate-checked",
+          "symbolicEngine": "SymPy 1.14.0",
+          "verificationSeparation": "Exact checks record only executed symbolic identities. Proof steps and analytic obligations require the stated classical theorems and hypotheses; they are explicit mathematical certificates, not automated proofs of measure theory or complex analysis."
+        },
+        "derivationCertificate": {},
+        "distractorAudit": {
+          "rankingApplicable": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "builder": "principal_value",
+            "kind": "exact-symbolic-identity",
+            "passed": true,
+            "residual": "Integer(0)",
+            "source": "eq(s.limit((x-1)*x**(p-1)/(1-x**q),x,1),-R(1,q))"
+          },
+          {
+            "builder": "principal_value",
+            "kind": "exact-symbolic-identity",
+            "passed": true,
+            "residual": "Integer(0)",
+            "source": "delta=s.symbols('delta',positive=True);eq(s.limit(((1+delta)**q-1)/(1-(1-delta)**q),delta,0),1)"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "parameter-family-analytic-certificate"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "parameter-family-analytic-certificate",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_095b2b81800eb333",
+    "assumptions": [
+      "m>=4 makes the endpoint exponent m-1 positive, so Tonelli and the beta integral apply."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_095b2b81800eb333",
+        "math": "\\frac{512}{3675 \\pi}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_37d8728b53f99552",
+        "math": "\\frac{2048}{3675 \\pi}",
+        "misconception": "wrong starting index or omitted endpoint"
+      },
+      {
+        "choiceId": "ch_fb835dd253498faa",
+        "math": "\\frac{32}{35 \\sqrt{\\pi}}",
+        "misconception": "wrong convergence/normalization factor"
+      },
+      {
+        "choiceId": "ch_5eb22387a0d3cd0e",
+        "math": "\\frac{1}{24} + \\frac{512}{3675 \\pi}",
+        "misconception": "include the first term twice"
+      }
+    ],
+    "contentHash": "38c5d0fbf966110d1aa84f894288241bf5baea3a5166009496c68aae7c48f3fa",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "Needs a summation-to-integral conversion and explicit convergence at a singular endpoint. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 420
+    },
+    "familyId": "m3-series-olympiad-hypergeometric-beta",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-series-olympiad-hypergeometric-beta",
+      "difficultyRationale": "Needs a summation-to-integral conversion and explicit convergence at a singular endpoint.",
+      "prerequisites": [],
+      "primaryTechnique": "beta-integral",
+      "reasoningDemand": [
+        "method-selection"
+      ],
+      "relatedIdeaGroupId": "Gauss-hypergeometric-beta",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [
+        "nist-dlmf"
+      ],
+      "structuralSignature": "Gauss-half-parameter-hypergeometric"
+    },
+    "problemId": "cn_be17cefaeb74db84e577",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 4
+        },
+        "detailedTechnique": "beta-integral",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [
+          "https://dlmf.nist.gov/15.4.E20"
+        ],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "2dd33e033011ea33a266acc9ef4664841a0d244fc496243f4c9177177cb9ee22",
+    "solutionSteps": [
+      "\\textnormal{Here }m=4.",
+      "\\textnormal{Represent one rising-factorial ratio by a beta integral and sum (1-t)\\textasciicircum{}-1/2 inside. The remaining beta integral gives the Gamma quotient.}",
+      "\\begin{gathered}\\textnormal{m>=4 makes the endpoint}\\\\\\textnormal{exponent m-1 positive, so}\\\\\\textnormal{Tonelli and the beta integral}\\\\\\textnormal{apply.}\\end{gathered}",
+      "\\frac{512}{3675 \\pi}"
+    ],
+    "statement": "\\sum_{k=0}^\\infty \\frac{\\left({\\left(\\frac{1}{2}\\right)}^{\\left(k\\right)}\\right)^{2}}{k! \\left(k + 4\\right)!}\\quad (a)^{\\overline{k}}=a(a+1)\\cdots(a+k-1),\\ (a)^{\\overline0}=1.",
+    "subtopic": "Gauss-hypergeometric-beta",
+    "techniqueTags": [
+      "beta-integral"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "series",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "Gauss condition Re(c-a-b)=m>0 and c=m+1 is not a nonpositive integer.",
+          "NIST DLMF 15.4.20 Gauss summation"
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "automatedChecks": [
+            {
+              "checkIndex": 0,
+              "passed": true,
+              "scope": "exact constructor assertion; see trusted build source"
+            }
+          ],
+          "distractorAudit": {
+            "authoredWrongOptionCount": 6,
+            "correctNumericRank": 1,
+            "feasibleCorrectNumericRanks": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "fixedNumericRankRisk": false,
+            "numericalOrderingUsedAsProof": false
+          },
+          "editorialReview": "AI-assisted; not human review",
+          "editorialStatus": "admitted",
+          "engine": "SymPy 1.14.0",
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "analytic-certificate-plus-exact-symbolic-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {
+          "exactChecks": [
+            {
+              "left": "\\frac{512}{3675 \\pi}",
+              "reason": "Independent Gauss hypergeometric evaluation",
+              "result": "exact-equality",
+              "right": "\\frac{512}{3675 \\pi}"
+            },
+            {
+              "left": "\\left(n + 4\\right)!",
+              "reason": "Convert shifted factorial to the hypergeometric coefficient",
+              "result": "exact-equality",
+              "right": "24 {5}^{\\left(n\\right)}"
+            }
+          ],
+          "hypotheses": [
+            "Gauss condition Re(c-a-b)=m>0 and c=m+1 is not a nonpositive integer."
+          ],
+          "kind": "analytic-theorem-with-exact-symbolic-steps",
+          "review": "AI-assisted mathematical review; no human review claimed",
+          "scope": "Symbolic checks verify the encoded derivation steps. Referenced analytic theorems are applied with the stated hypotheses, not independently proved by CAS.",
+          "theorems": [
+            "NIST DLMF 15.4.20 Gauss summation"
+          ]
+        },
+        "distractorAudit": {
+          "authoredWrongOptionCount": 6,
+          "correctNumericRank": 1,
+          "feasibleCorrectNumericRanks": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "fixedNumericRankRisk": false,
+          "numericalOrderingUsedAsProof": false
+        },
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "checkIndex": 0,
+            "passed": true,
+            "scope": "exact constructor assertion; see trusted build source"
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "analytic-certificate-plus-exact-symbolic-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "analytic-certificate-plus-exact-symbolic-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  },
+  {
+    "answerChoiceId": "ch_178fabeef178774b",
+    "assumptions": [
+      "D denotes differentiation in t; sech t=1/cosh t. All coefficients are smooth for real t."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_cde1dcf623fa2ec5",
+        "math": "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)",
+        "misconception": "omit the sine and cosine value factor"
+      },
+      {
+        "choiceId": "ch_178fabeef178774b",
+        "math": "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_58dde34e126fc39a",
+        "math": "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 8\\right)}{2}",
+        "misconception": "double only the oscillator derivative"
+      },
+      {
+        "choiceId": "ch_b1c99989bf98e904",
+        "math": "\\frac{\\sqrt{2} \\left(2 \\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)}{2}",
+        "misconception": "double only the potential term"
+      }
+    ],
+    "contentHash": "07265e614a579cd36c1f45f13cedecb3f346e3cd349d1381ee86a983d35c8397",
+    "difficulty": "olympiad",
+    "estimates": {
+      "basis": "Recognizes a variable-coefficient potential as an operator transform of a free oscillator and normalizes the resulting IVP. Editorial estimate; player calibration pending.",
+      "difficulty": "olympiad",
+      "solveSeconds": 480
+    },
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "m3-differential-equations-olympiad-darboux-oscillator",
+      "difficultyRationale": "Recognizes a variable-coefficient potential as an operator transform of a free oscillator and normalizes the resulting IVP.",
+      "prerequisites": [
+        "operator composition",
+        "hyperbolic derivative identities"
+      ],
+      "primaryTechnique": "intertwining-operator",
+      "reasoningDemand": [
+        "reframing"
+      ],
+      "relatedIdeaGroupId": "ode-Darboux-intertwining-potential",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Darboux-one-soliton-oscillator-intertwining"
+    },
+    "problemId": "cn_7eba366f84aed2c76b44",
+    "problemRevision": 1,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "olympiad",
+        "builderParameters": {
+          "m": 4
+        },
+        "detailedTechnique": "intertwining-operator",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "olympiad",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null
+    },
+    "schemaVersion": 2,
+    "semanticHash": "e7b71b5a9b16294b16ec7c2aee5860e5b2f0fd79de67c9afe32ce9f947ef94d0",
+    "solutionSteps": [
+      "(D^2+16+2\\operatorname{sech}^2t)(D-\\tanh t)=(D-\\tanh t)(D^2+16)",
+      "y=-(D-\\tanh t)\\cos(4t)=4 \\sin{\\left(4 t \\right)} + \\cos{\\left(4 t \\right)} \\tanh{\\left(t \\right)}",
+      "\\begin{gathered}\\begin{gathered}\\textnormal{This function has the stated}\\\\\\textnormal{two initial}\\end{gathered}\\\\\\begin{gathered}\\textnormal{data; evaluate at the given}\\\\\\textnormal{point.}\\end{gathered}\\end{gathered}",
+      "\\boxed{\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)}{2}}"
+    ],
+    "statement": "\\begin{gathered}y\\prime\\prime+(16+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=17.\\\\y(\\frac{\\pi}{16})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "subtopic": "ode-Darboux-intertwining-potential",
+    "techniqueTags": [
+      "intertwining-operator"
+    ],
+    "templateVersion": "original-constructions-m3-v1",
+    "topic": "differential equations",
+    "validation": {
+      "evidence": {
+        "analyticCertificate": [
+          "The displayed operator identity follows by the product rule and (tanh t) prime=sech squared t. Applying it to a free oscillator produces a solution of the variable-potential equation. The checked initial data and uniqueness of the smooth linear IVP identify it on all real t."
+        ],
+        "assumptionsChecked": true,
+        "builderParameterDomain": {
+          "m": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "certificate": {
+          "analyticCertificateMachineProved": false,
+          "editorialReview": "AI-assisted; not human review",
+          "engine": "SymPy 1.14.0",
+          "formalProof": false,
+          "humanReviewed": false,
+          "numericalAgreementUsedAsProof": false,
+          "parameterCheck": true,
+          "route": "derivation-specific-residual-invariant-or-exact-finite-derivation",
+          "status": "verified",
+          "uniqueCorrectOption": true
+        },
+        "derivationCertificate": {},
+        "distractorAudit": null,
+        "editorialReview": "AI-assisted; not human review",
+        "executedChecks": [
+          {
+            "name": "operator intertwining identity",
+            "passed": true
+          },
+          {
+            "name": "variable-potential residual",
+            "passed": true
+          },
+          {
+            "name": "initial state",
+            "passed": true
+          },
+          {
+            "name": "initial derivative",
+            "passed": true
+          },
+          {
+            "name": "evaluation",
+            "passed": true
+          }
+        ],
+        "formalProofAssistantChecked": false,
+        "numericalAgreementUsedAsProof": false,
+        "parameterDomain": {
+          "instance": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "solutionDerivationChecked": true,
+        "uniqueCorrectOption": true,
+        "verificationRoute": "derivation-specific-residual-invariant-or-exact-finite-derivation"
+      },
+      "humanReviewed": false,
+      "methods": [
+        "derivation-specific-residual-invariant-or-exact-finite-derivation",
+        "exact-choice-non-equivalence",
+        "trusted-source-reconstruction"
+      ],
+      "status": "passed"
+    }
+  }
+]

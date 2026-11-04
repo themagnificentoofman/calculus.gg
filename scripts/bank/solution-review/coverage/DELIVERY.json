@@ -1,0 +1,95 @@
+{
+  "status": "frozen-and-verified",
+  "correctionVersion": "coverage-solutions-2026-11-03-v1",
+  "scope": {
+    "families": 157,
+    "instances": 1256,
+    "topics": {
+      "integration": 272,
+      "differentiation": 352,
+      "limits": 288,
+      "series": 344
+    }
+  },
+  "runtimeFiles": [
+    "solutions.py",
+    "correction-data.json"
+  ],
+  "files": {
+    "solutions.py": {
+      "sha256": "8fafd03cd8c81168a1f560b00881e44da2a907f167686529ff5bdb0a109ee1ab",
+      "bytes": 1810
+    },
+    "correction-data.json": {
+      "sha256": "bc40a7df791b66478b9eb7eee68156cf6f8a6476d709864c605b19c345c7b362",
+      "bytes": 2208045
+    },
+    "common.py": {
+      "sha256": "f5dc2decd9462b67349cf364a333b80ef527f631dc01fdb93de6927f4b429eec",
+      "bytes": 5113
+    },
+    "integration_solutions.py": {
+      "sha256": "f5d802e5e3687f40273f2cc18600e2d1b3668373abd822994ed96460065eff17",
+      "bytes": 16371
+    },
+    "differentiation_solutions.py": {
+      "sha256": "ccff98bd3002a2d1c5d333db3a883926f1a0f77033acd5aee50ef0b5e0de9b98",
+      "bytes": 23261
+    },
+    "limits_solutions.py": {
+      "sha256": "3c8f1c2eb27502b358b53ee5a583c45a8876d0d309a1cfeb8ea988b094f0a93a",
+      "bytes": 23929
+    },
+    "series_solutions.py": {
+      "sha256": "b6afa251f166133909487a65e63519468b8759b6d08243446fe83096ba910699",
+      "bytes": 37223
+    },
+    "generate.py": {
+      "sha256": "7da07d0cb0859f5382524b92885bea8640d6320d9552b9f5a137759afa9cbb40",
+      "bytes": 6023
+    },
+    "verify_api.py": {
+      "sha256": "aafda72c2ee68d117a080bf682c3a701fefbc822cc1fcb3a24ad93c8f273ec03",
+      "bytes": 2547
+    },
+    "render-check.cjs": {
+      "sha256": "eddc139c80a7cf1a874efabca66df9c19e54aaa4e1aa62274f30ed028ca26eff",
+      "bytes": 2745
+    },
+    "README.md": {
+      "sha256": "e8d2f98486bac330fc0c26c751ca65818eb573b0df173b59828bec03f20b1c68",
+      "bytes": 3121
+    },
+    "family-audit.json": {
+      "sha256": "ac824a9dee0ed48c77892033303de86486c41e7b70fd4e684826af75bd44b1c3",
+      "bytes": 267664
+    },
+    "source-digest-manifest.json": {
+      "sha256": "7fa85056cdd9a77f5198f52580bd7539adb32591bd659b3e6ad4ab50ea6c2e00",
+      "bytes": 3376
+    },
+    "render-report.json": {
+      "sha256": "efc6636340b8b224d1d62648039a2d3dd644683d95c829daaf795df5d6651444",
+      "bytes": 482
+    },
+    "api-verification-report.json": {
+      "sha256": "743a5f25a7577bbf52eafbeddea55fd8022670ebc3b6638fb4b2bc9e844bb016",
+      "bytes": 311
+    },
+    "advanced-series-peer-audit.json": {
+      "sha256": "c51f856cd547f7dcb02b923a50560d67b5d7bd882622c6df14382b2b9f7fab2c",
+      "bytes": 5715
+    },
+    "generation-errors.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    }
+  },
+  "checks": {
+    "newMathematicalEvidenceRecords": 2768,
+    "strictKaTeXExpressions": 11220,
+    "unchangedCorrectAnswerChecks": 1256,
+    "negativeSourceGuards": 3768
+  },
+  "reviewScope": "AI-assisted editorial plus symbolic/analytic checks; peer review of all 12 advanced series families; no human/formal-proof claim"
+}

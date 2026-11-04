@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {corrected_solution,supports,familyIds} from './legacy-solutions.mjs';
+const base=path.dirname(new URL(import.meta.url).pathname);const edge=JSON.parse(fs.readFileSync(path.join(base,'legacy-edge-records.json'),'utf8'));let count=0;
+function assert(ok,msg){if(!ok)throw new Error(msg);count++}
+function freeze(o){if(o&&typeof o==='object'){Object.freeze(o);for(const v of Object.values(o))freeze(v)}return o}
+for(const [f,records] of Object.entries(edge)){for(const rec of records){const before=JSON.stringify(rec);freeze(rec);const steps=corrected_solution(rec);assert(JSON.stringify(rec)===before,'mutated '+f);assert(steps.length>=3,'insufficient steps '+f);assert(steps.every(x=>typeof x==='string'&&x.length>0),'invalid steps '+f);const a=rec.choices.find(x=>x.choiceId===rec.answerChoiceId).math.replaceAll('\\log','\\ln').replaceAll('\\operatorname{atan}','\\arctan');assert(steps.at(-1).endsWith('='+a),'final result mismatch '+f)}}
+const r=Object.values(edge)[0][0];assert(!supports({...r,templateVersion:'unknown'}),'version guard');assert(!supports({...r,familyId:'unknown'}),'family guard');for(const params of [{a:0,b:1,c:1},{a:1,b:17,c:1},{a:1,b:1,c:1.5},{a:1,b:1},{a:1,b:1,c:1,d:1}]){let failed=false;try{corrected_solution({...r,parameters:params})}catch{failed=true}assert(failed,'parameter guard')}
+assert(familyIds.length===72,'family coverage');const out={checks:count,legacyFamilies:familyIds.length,legacyEdgeRecords:Object.values(edge).flat().length,mutationDetected:false,versionFamilyDomainGuards:true,allLastResultsMatch:true,requiredOuterGuard:'Use original content-hash allowlist before calling; supports identifies recipe coverage, not source-record authenticity.'};fs.writeFileSync(path.join(base,'contract-audit.json'),JSON.stringify(out,null,2)+'\n');console.log(out);

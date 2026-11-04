@@ -1,0 +1,87 @@
+{
+  "version": "integration-legacy-solution-audit-v1",
+  "status": "ready-for-owner-integration",
+  "apis": {
+    "io3": {
+      "path": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-research/integration-legacy/io3_solutions.py",
+      "supports": "supports(record)",
+      "render": "corrected_solution(record)",
+      "runtimeExport": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-research/integration-legacy/io3-solutions.json"
+    },
+    "legacy": {
+      "path": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-research/integration-legacy/legacy-solutions.mjs",
+      "supports": "supports(record)",
+      "render": "correctedLegacySolution(record)",
+      "alias": "corrected_solution(record)",
+      "runtimeDependencies": []
+    }
+  },
+  "coverage": {
+    "legacyFamilies": 72,
+    "legacyInstancesByFiniteCertificates": 100800,
+    "legacyIndependentBasisOperations": 207,
+    "legacyNonlinearOrParameterODECertificates": 3,
+    "legacyEdgeInstances": 288,
+    "io3Families": 38,
+    "io3Instances": 304,
+    "io3ExecutedSourceIdentityChecks": 472,
+    "extraBridgeAndEdgeChecks": 191,
+    "strictKatexExpressions": 5260,
+    "contractChecks": 1160
+  },
+  "immutability": {
+    "statementsChanged": false,
+    "choicesChanged": false,
+    "identitiesChanged": false,
+    "originalRecordsChanged": false,
+    "sourceRepositoryEdited": false,
+    "productionWrites": false
+  },
+  "requiredIntegrationGuard": "Legacy supports identifies recipe coverage only. The owner must allowlist original content hashes and versions before rendering current corrected explanations. io3 JSON includes the exact original sourceContentHash. Preserve immutable stored originals and replay snapshots.",
+  "durableRules": [
+    "Introduce each auxiliary function, operator and nonstandard symbol before using it.",
+    "Map only mathematical parameters that actually occur in the instance and derivation; never dump builder parameters.",
+    "Show the decisive transformation and actual endpoints or evaluation point before the final value.",
+    "State convergence, interchange, branch and uniqueness conditions where they support a step.",
+    "Use natural-log and named inverse-trigonometric notation; keep formulas out of prose strings.",
+    "Use derivative identities for chosen primitives or include arbitrary constants in indefinite-integral equalities; retain logarithmic absolute values whenever the domain requires them.",
+    "Do not label formula reconstruction as a proof of analytic theorems; separate executed identities from explicit theorem obligations.",
+    "Render every finite new instance and every legacy template plus bounded parameter edges; guard source hashes so unrelated records cannot acquire the recipe."
+  ],
+  "verificationLimits": [
+    "AI-assisted mathematical/editorial review; no human or formal-proof-assistant certification.",
+    "Strict KaTeX syntax checked; browser geometry remains the owner\u2019s final review.",
+    "Classical analytic theorem applications retain explicit mathematical hypotheses; no claim that a CAS proved measure theory or complex analysis."
+  ],
+  "sourceFiles": {
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/pipeline.py": "d0284c2499c6c2a70f36e90714a8b0b5b2fa548f9791680cf460439d4932c08a",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/families.py": "410580b2c0e89cd6ee651556cf3e19165cffca7fff506e387b0b9b2bd0c8772d",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/derivations.py": "d0e6181c7d9d15c57df72bd8daf4f11d165ed12bd0553ed0add329897d40e11b",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/special_ode.py": "d3c4f4487f1c5d4fd393e918be5f133fd0f6d1f16bda741e38633779cf924336",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/olympiad.py": "2583fccc1938403af42396ec1516628cea438e07289098cc9c3961ad1322577d",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-audit/scripts/bank/content/integration.py": "f52ea96e6b10cb51aed8cdae1b5d1a05658cfcc6dacc32789ca02bfed75b34ff"
+  },
+  "legacyImmutableDatabase": {
+    "path": "/Users/zhenxg/Documents/Codex/2026-11-02/files-pasted-by-the-user-implement/work/calculus.ninja/.bank-data/compact/serving.sqlite",
+    "sha256": "0931194f4ca8a9e9ff354fbfed4552786f3146dea4ddc83437e5d1eafb172a26"
+  },
+  "activeArtifact": {
+    "path": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/milestone3/.bank-data/milestone3/release-v3/cn-2026-11-03-ideas-v3.jsonl",
+    "sha256": "1ede867c4db4d21a5e147824604ac9dd63241d3031371c465125975ab2d99677"
+  },
+  "assets": {
+    "io3_solutions.py": "78809e724099127c387e56104db2b11742758ff5d6cf7d17e15aadffaead3a35",
+    "io3-solutions.json": "9c60366c76c3d2e97f31ae6221591bb83529a974c8e41c6c397fea2bfc8f2889",
+    "legacy-solutions.mjs": "0efb0411fe080d3a60c45f8883069d256c24cc7d22b6ce0bfee3724bb5339375",
+    "legacy-recipes.json": "d0291d61bcf2d95b05875c154e8d77057787ab537f6a40eace6291fb28b78196",
+    "complete-family-audit.json": "ae8499348966eef4f49ef9566e0d6089d025071d1d80263750a6524b52dca7e8",
+    "legacy-certificates.json": "769f0173f792b0cdb7336ce2c76aa455920c349ca2f8a61e0f323dd1aa13df98",
+    "legacy-definitions.json": "730b602ff48d0950eae64cab3d294090f81282ce45eaf60a54d10628eef0a559",
+    "legacy-source-fingerprints.json": "da0a66e046b8f57683ae0a8b91226d93a9aefd5fb33d9fdcdb57b5ae24954c80",
+    "io3-audit.json": "37476678520ae8d54c7108782d2296ceb72e7aee853088b47bacfdf65f09975b",
+    "intermediate-checks.json": "7c3c6984a7a437a949b8b6bceec16a80beff34514704807f730fc93cb8065b16",
+    "render-audit.json": "a9c2c94f6212f190400dbda60ee8efca572f1da29cb4d5acc5119a57744b8655",
+    "contract-audit.json": "27ce53a7ba77535a52cd6789250a686c8f759dc97fee0f14698fe9cd5ba92ad0",
+    "io3-independent-peer.json": "268634c962e4d4939518d646af3aa52e8b97e1b844fa67bd56df05a44093be43"
+  }
+}

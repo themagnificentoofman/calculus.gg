@@ -1,3 +1,4 @@
+import {presentBankProblem} from './solution-presentation.mjs';
 import type { BankProblem, RoundSnapshot } from '../bank/contracts.ts';
 import type { GameQuestion } from '../game-progress.ts';
 
@@ -64,10 +65,11 @@ export async function selectBankQuestions(db: D1Database, input: { category: str
     }
   }
   if (selected.length !== input.count) throw new BankUnavailableError();
-  const questions: GameQuestion[] = shuffled(selected, rng).map(p => {
+  const questions: GameQuestion[] = shuffled(selected, rng).map(original => {
+    const p=presentBankProblem(original) as BankProblem & {solutionQuality?:{version:string}};
     const choices = shuffled(p.choices, rng);
     return { problemId: p.problemId, problemRevision: p.problemRevision, contentHash: p.contentHash, bankRelease: pools[0].release_id,
-      familyId: p.familyId, choiceOrder: choices.map(c => c.choiceId), latexProblem: p.statement,
+      familyId: p.familyId, templateVersion:p.templateVersion, ...(p.solutionQuality?{solutionReviewVersion:p.solutionQuality.version}:{}), choiceOrder: choices.map(c => c.choiceId), latexProblem: p.statement,
       options: choices.map(c => c.math), correctIndex: choices.findIndex(c => c.choiceId === p.answerChoiceId),
       explanation: p.solutionSteps, topic: p.topic, difficulty: p.difficulty };
   });

@@ -102,8 +102,17 @@ test('post-match review preserves the submitted answer and renders legacy and st
       assert.ok(html.includes('Review last answer'));
       assert.ok(html.includes(selectedOption === 0 ? 'Your answer · Correct' : 'Your answer · Incorrect'));
       assert.equal(html.includes('Correct answer'), selectedOption === 1);
-      for (const math of [question.latexProblem, question.options[selectedOption], ...(Array.isArray(explanation) ? explanation : [explanation])]) {
+      for (const math of [question.latexProblem, question.options[selectedOption]]) {
         assert.ok(html.includes(renderMath(normalizeMath(math), true)));
+      }
+      // Prose flows as a paragraph; complete equations retain their TeX groups.
+      assert.ok(html.includes('solution-steps'));
+      if(typeof explanation==='string') {
+        assert.ok(html.includes('Use '));
+        assert.ok(html.includes(renderMath(String.raw`\frac{x^3}{3}+C`,false)));
+      } else {
+        assert.ok(html.includes('Power rule: '));
+        assert.ok(html.includes(renderMath(explanation[1],true)));
       }
       assert.ok(!html.includes('math-source'));
     }

@@ -37,3 +37,5 @@ The authenticated `/api/contact` endpoint verifies Firebase tokens and takes the
 Local tests use an in-memory SQLite database and fake email delivery; they do not send email. Live delivery requires the two production environment settings above.
 
 Primary domain: https://calculus.ninja
+
+Problem authors must follow the [notation and worked-solution standards](docs/bank/NOTATION-AND-SOLUTIONS.md). The publication path rejects unreviewed solutions; [Help → Mathematical notation](https://calculus.ninja/help#notation) documents the player-facing conventions.

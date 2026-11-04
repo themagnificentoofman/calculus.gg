@@ -1,0 +1,998 @@
+[
+  {
+    "familyId": "polynomial-area",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.005
+  },
+  {
+    "familyId": "exponential-area",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "-1 + e",
+      "- \\frac{1}{2} + \\frac{e^{2}}{2}",
+      "- \\frac{1}{3} + \\frac{e^{3}}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.057
+  },
+  {
+    "familyId": "trig-area",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "1",
+      "1"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.009
+  },
+  {
+    "familyId": "polynomial-exponential",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "-2 + e",
+      "6 - 2 e"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.027
+  },
+  {
+    "familyId": "quadratic-substitution",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\log{\\left(2 \\right)}",
+      "1",
+      "\\frac{9}{8}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.039
+  },
+  {
+    "familyId": "rational-decomposition",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\log{\\left(\\frac{4}{3} \\right)}",
+      "- \\frac{\\log{\\left(2 \\right)}}{2} + \\frac{\\log{\\left(3 \\right)}}{2}",
+      "\\log{\\left(\\frac{\\sqrt{30}}{5} \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.066
+  },
+  {
+    "familyId": "log-moments",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "-1",
+      "- \\frac{1}{4}",
+      "- \\frac{1}{9}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.06
+  },
+  {
+    "familyId": "trig-products",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\pi}{16}",
+      "\\frac{\\pi}{32}",
+      "\\frac{5 \\pi}{256}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.023
+  },
+  {
+    "familyId": "improper-rational",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.037
+  },
+  {
+    "familyId": "polynomial-slope",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "3",
+      "4"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.002
+  },
+  {
+    "familyId": "trig-slope",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "0",
+      "2"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.001
+  },
+  {
+    "familyId": "exp-log-slope",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "e",
+      "1",
+      "\\frac{1}{2}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.001
+  },
+  {
+    "familyId": "product-rule",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "2 e",
+      "1",
+      "\\cos{\\left(1 \\right)} + \\sin{\\left(1 \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.012
+  },
+  {
+    "familyId": "quotient-rule",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "0",
+      "\\frac{e}{4}",
+      "\\frac{1}{2}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.006
+  },
+  {
+    "familyId": "nested-chain",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "2 e",
+      "1",
+      "2 \\cos{\\left(1 \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.005
+  },
+  {
+    "familyId": "fourth-derivative",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "24",
+      "-12",
+      "-6"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.007
+  },
+  {
+    "familyId": "log-differentiation",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "1",
+      "1 + \\log{\\left(4 \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.005
+  },
+  {
+    "familyId": "parametric-curvature",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "- \\frac{15 \\sqrt{2}}{4}",
+      "\\frac{15 \\sqrt{2}}{4}",
+      "- 2 \\sqrt{2} e^{\\frac{\\pi}{4}}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.017
+  },
+  {
+    "familyId": "polynomial-continuity",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "1",
+      "1"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.002
+  },
+  {
+    "familyId": "removable-factor",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "3",
+      "4"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.012
+  },
+  {
+    "familyId": "standard-trig-limits",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "2",
+      "3"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.001
+  },
+  {
+    "familyId": "exponential-cancellation",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "2",
+      "3"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.021
+  },
+  {
+    "familyId": "rational-at-infinity",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.015
+  },
+  {
+    "familyId": "logarithmic-cancellation",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "2",
+      "3"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.003
+  },
+  {
+    "familyId": "third-order-exponential",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{6}",
+      "\\frac{4}{3}",
+      "\\frac{9}{2}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.048
+  },
+  {
+    "familyId": "trig-cancellation",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{6}",
+      "\\frac{1}{3}",
+      "\\frac{1}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.014
+  },
+  {
+    "familyId": "radical-cancellation",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "- \\frac{1}{8}",
+      "- \\frac{1}{9}",
+      "- \\frac{3}{32}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.019
+  },
+  {
+    "familyId": "geometric-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "\\frac{3}{2}",
+      "\\frac{4}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.096
+  },
+  {
+    "familyId": "telescoping-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.035
+  },
+  {
+    "familyId": "even-geometric-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{4}{3}",
+      "\\frac{9}{8}",
+      "\\frac{16}{15}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.067
+  },
+  {
+    "familyId": "weighted-geometric",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "\\frac{3}{4}",
+      "\\frac{4}{9}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.14
+  },
+  {
+    "familyId": "exponential-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "e",
+      "e^{2}",
+      "e^{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 1.147
+  },
+  {
+    "familyId": "alternating-log-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\log{\\left(2 \\right)}",
+      "\\log{\\left(\\frac{3}{2} \\right)}",
+      "\\log{\\left(\\frac{4}{3} \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.201
+  },
+  {
+    "familyId": "quadratic-geometric",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "6",
+      "\\frac{3}{2}",
+      "\\frac{20}{27}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.172
+  },
+  {
+    "familyId": "cubic-telescoping",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{4}",
+      "\\frac{1}{12}",
+      "\\frac{1}{24}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.417
+  },
+  {
+    "familyId": "zeta-even",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\pi^{2}}{6}",
+      "\\frac{\\pi^{4}}{90}",
+      "\\frac{\\pi^{6}}{945}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.025
+  },
+  {
+    "familyId": "polynomial-initial-value",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "1",
+      "1"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.003
+  },
+  {
+    "familyId": "exponential-initial-value",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "e",
+      "e^{2}",
+      "e^{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.004
+  },
+  {
+    "familyId": "trig-initial-value",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "0",
+      "0"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.003
+  },
+  {
+    "familyId": "linear-integrating-factor",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "e",
+      "e",
+      "e"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.002
+  },
+  {
+    "familyId": "variable-integrating-factor",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "e^{-1}",
+      "e^{-1}",
+      "e^{-1}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.004
+  },
+  {
+    "familyId": "linear-trig-forcing",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\sqrt{2}}{2}",
+      "0",
+      "\\frac{\\sqrt{2}}{2}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.007
+  },
+  {
+    "familyId": "resonant-second-order",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "e",
+      "e",
+      "e"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.002
+  },
+  {
+    "familyId": "oscillator-resonance",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\pi}{2}",
+      "0",
+      "\\frac{\\pi^{2}}{4}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.005
+  },
+  {
+    "familyId": "euler-cauchy",
+    "kind": "ode",
+    "instances": 1400,
+    "basisValues": [
+      "4",
+      "\\log{\\left(16 \\right)}",
+      "4 \\log{\\left(2 \\right)}^{2}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.015
+  },
+  {
+    "familyId": "partial-x",
+    "kind": "partial",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "1",
+      "3"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.003
+  },
+  {
+    "familyId": "partial-y",
+    "kind": "partial",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "3",
+      "4"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.003
+  },
+  {
+    "familyId": "rectangle-area",
+    "kind": "double",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{2}",
+      "\\frac{1}{2}",
+      "\\frac{1}{4}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.01
+  },
+  {
+    "familyId": "mixed-partials",
+    "kind": "partial",
+    "instances": 1400,
+    "basisValues": [
+      "6",
+      "2 e",
+      "\\frac{1}{4}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.007
+  },
+  {
+    "familyId": "triangle-integral",
+    "kind": "double",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{8}",
+      "\\frac{1}{10}",
+      "\\frac{1}{15}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.01
+  },
+  {
+    "familyId": "laplacian",
+    "kind": "laplacian",
+    "instances": 1400,
+    "basisValues": [
+      "4",
+      "0",
+      "24"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.004
+  },
+  {
+    "familyId": "high-mixed-partials",
+    "kind": "partial",
+    "instances": 1400,
+    "basisValues": [
+      "2",
+      "-6",
+      "0"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.007
+  },
+  {
+    "familyId": "curved-domain-integral",
+    "kind": "double",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{12}",
+      "\\frac{1}{27}",
+      "\\frac{1}{16}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.009
+  },
+  {
+    "familyId": "laplacian-products",
+    "kind": "laplacian",
+    "instances": 1400,
+    "basisValues": [
+      "2 e",
+      "\\frac{4}{9}",
+      "12"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.007
+  },
+  {
+    "familyId": "transformed-beta-log",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{115}{864}",
+      "\\frac{20111}{720000}",
+      "\\frac{361711}{32400000}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.368
+  },
+  {
+    "familyId": "concealed-reflection",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{12}",
+      "\\frac{1}{60}",
+      "\\frac{1}{280}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.056
+  },
+  {
+    "familyId": "frullani-cancellation",
+    "kind": "integral",
+    "instances": 1400,
+    "basisValues": [
+      "\\log{\\left(\\frac{9}{5} \\right)}",
+      "\\log{\\left(\\frac{1375}{1024} \\right)}",
+      "\\log{\\left(\\frac{40516875}{33659659} \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.027
+  },
+  {
+    "familyId": "removable-exponential-derivative",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{24673}{21}",
+      "\\frac{228833}{42}",
+      "\\frac{396121}{21}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.311
+  },
+  {
+    "familyId": "implicit-inverse-series",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "8239680",
+      "23227920",
+      "26485920"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 1.206
+  },
+  {
+    "familyId": "roots-of-unity-product",
+    "kind": "derivative",
+    "instances": 1400,
+    "basisValues": [
+      "3823",
+      "20848",
+      "56655"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.188
+  },
+  {
+    "familyId": "finite-difference-log-limit",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1160",
+      "1470",
+      "720"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.358
+  },
+  {
+    "familyId": "riemann-product-limit",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "- \\frac{11}{4} + \\log{\\left(16 \\right)}",
+      "\\log{\\left(\\frac{4722366482869645213696}{22528399544939174411840147874772641} \\right)} + \\frac{146}{5}",
+      "- \\frac{1657}{10} + \\log{\\left(\\frac{61172327492847069472032393719205726809135813743440799050195397570919697796091958321786863938157971792315844506873509046544459008355036150650333616890210625686064472971480622053109783197015954399612052812141827922088117778074833698589048132156300022844899841969874763871624802603515651998113045708569927237462546233168834543264678118409417047146496}{66350273672982482434306891576157631672689672925812719816425261384529414930593927318955908046569318750032887032063251514730545423930897589175580509482961477591637132783061926910520117393240456588418004008136860862595161557813923710281149781340349753455564872656712827265393921} \\right)}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.051
+  },
+  {
+    "familyId": "second-order-riemann-limit",
+    "kind": "limit",
+    "instances": 1400,
+    "basisValues": [
+      "1",
+      "\\frac{11}{4}",
+      "\\frac{44}{3}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.075
+  },
+  {
+    "familyId": "stirling-beta-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{7}{7200}",
+      "\\frac{23}{151200}",
+      "\\frac{481}{12700800}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.193
+  },
+  {
+    "familyId": "binomial-beta-series",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\log{\\left(\\frac{64}{729} \\right)} + 3",
+      "- \\frac{45 \\log{\\left(3 \\right)}}{8} - \\frac{5}{2} + \\frac{45 \\log{\\left(5 \\right)}}{8}",
+      "- \\frac{448 \\log{\\left(7 \\right)}}{81} + \\frac{91}{27} + \\frac{896 \\log{\\left(2 \\right)}}{81}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.055
+  },
+  {
+    "familyId": "fourier-cosine-square",
+    "kind": "series",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\pi^{2}}{6}",
+      "\\frac{\\pi^{2}}{4}",
+      "\\frac{\\pi^{2}}{10}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.027
+  },
+  {
+    "familyId": "hidden-riccati",
+    "kind": "special-ode",
+    "instances": 1400,
+    "basisValues": [],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+    "elapsedSeconds": 0.024
+  },
+  {
+    "familyId": "clairaut-envelope",
+    "kind": "special-ode",
+    "instances": 1400,
+    "basisValues": [],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+    "elapsedSeconds": 0.013
+  },
+  {
+    "familyId": "euler-double-resonance",
+    "kind": "special-ode",
+    "instances": 1400,
+    "basisValues": [],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+    "elapsedSeconds": 0.047
+  },
+  {
+    "familyId": "unbounded-dirichlet-integral",
+    "kind": "double",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{1}{360}",
+      "\\frac{1}{3360}",
+      "\\frac{1}{3360}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.203
+  },
+  {
+    "familyId": "rotated-disk-moment",
+    "kind": "disk",
+    "instances": 1400,
+    "basisValues": [
+      "\\frac{\\pi}{10}",
+      "\\frac{5 \\pi}{56}",
+      "\\frac{3 \\pi}{56}"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.025
+  },
+  {
+    "familyId": "radial-log-mixed-derivative",
+    "kind": "partial",
+    "instances": 1400,
+    "basisValues": [
+      "-144000",
+      "302400",
+      "-345600"
+    ],
+    "exactBasisRecalculated": true,
+    "immutableBasisResultsAgree": true,
+    "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+    "elapsedSeconds": 0.009
+  }
+]
