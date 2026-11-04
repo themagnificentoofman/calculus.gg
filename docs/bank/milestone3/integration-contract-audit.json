@@ -1,0 +1,23 @@
+{
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    "canonical valid record reconstructs exactly",
+    "rejected wrong answer pointer",
+    "rejected wrong choice expression",
+    "rejected untrusted passed flag",
+    "rejected altered analytic certificate",
+    "rejected altered parameters",
+    "rejected altered difficulty rationale",
+    "rejected invalid seed -1",
+    "rejected invalid seed 8",
+    "rejected invalid seed True",
+    "rejected invalid seed '0'",
+    "rejected invalid seed None",
+    "rejected unregistered family",
+    "all304 problem IDs and semantic hashes unique",
+    "30 conservative families map to30 distinct related-idea groups",
+    "every candidate records at least one actually executed exact identity"
+  ],
+  "scope": "Canonical admission checks supplement per-family mathematical identities and analytic certificates."
+}

@@ -1,6 +1,6 @@
 import { createServerGames, GameError, identifier } from './game-engine.ts';
 import { BankUnavailableError, type RecentProblems } from './bank-selection.ts';
-import type { RoundSnapshot } from '../bank/contracts.ts';
+import type { RoundSnapshot, SelectionDiagnostics } from '../bank/contracts.ts';
 import { socialAction } from './social.ts';
 import { readBoundedJson, validateQuestionRequest, validQuestionResponse } from './questions-policy.mjs';
 import type { Store, Data } from './firestore-admin.ts';
@@ -9,7 +9,7 @@ import type { GameMode } from '../progression.ts';
 const response = (body: unknown, status = 200) => Response.json(body, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } });
 const only = (body: Data, keys: string[]) => { if (!body || typeof body !== 'object' || Array.isArray(body) || Object.keys(body).some(k => !keys.includes(k))) throw new GameError('Unexpected request fields.'); };
 const modes = ['test', 'rapid', 'pvp', 'multiplayer'];
-export function createGameApi(deps: { store: Store; verify: (token: string) => Promise<Data>; select: (input: { category: string; difficulty: string; count: number; tag?: string }, recent: RecentProblems) => Promise<{ questions: GameQuestion[]; relaxation: RoundSnapshot['relaxation'] }>; checkPlayable?: (questions: GameQuestion[]) => Promise<void>; quota: (uid: string) => Promise<boolean>; mutationQuota?: (uid: string) => Promise<boolean>; now?: () => number }) {
+export function createGameApi(deps: { store: Store; verify: (token: string) => Promise<Data>; select: (input: { category: string; difficulty: string; count: number; tag?: string }, recent: RecentProblems) => Promise<{ questions: GameQuestion[]; relaxation: RoundSnapshot['relaxation']; diagnostics?: SelectionDiagnostics }>; checkPlayable?: (questions: GameQuestion[]) => Promise<void>; quota: (uid: string) => Promise<boolean>; mutationQuota?: (uid: string) => Promise<boolean>; now?: () => number }) {
   const games = createServerGames(deps.store, deps.now);
   return async (resource: 'games' | 'profile' | 'questions' | 'social', request: Request) => {
     if (request.method !== 'POST') return response({ error: 'Use POST.' }, 405);
@@ -29,12 +29,14 @@ export function createGameApi(deps: { store: Store; verify: (token: string) => P
       if (resource === 'questions') {
         only(body, ['mode', 'category', 'difficulty', 'count', 'tag']);
         const input = validateQuestionRequest(body);
-        if (!input || !modes.includes(body.mode) || (body.tag !== undefined && (typeof body.tag !== 'string' || !/^[a-z][a-z-]{1,63}$/.test(body.tag)))) throw new GameError('Choose a supported mode, category, difficulty and question count.');
+        if (!input || !modes.includes(body.mode) || (body.tag !== undefined && (typeof body.tag !== 'string' || !/^[a-z][a-z0-9-]{1,63}$/.test(body.tag)))) throw new GameError('Choose a supported mode, category, difficulty and question count.');
         if (!await deps.quota(uid)) throw new GameError('Question selection limit reached. Please try again later.', 429);
-        const recent = await deps.store.get(`bankRecent/${uid}`) || {};
-        const { questions, relaxation } = await deps.select({ ...input, ...(body.tag ? { tag: body.tag } : {}) }, recent);
+        // Competitive sets use the common bank policy without adapting to the
+        // host's personal practice history. The immutable order is shared.
+        const recent = ['test','rapid'].includes(body.mode) ? await deps.store.get(`bankRecent/${uid}`) || {} : {};
+        const { questions, relaxation, diagnostics } = await deps.select({ ...input, ...(body.tag ? { tag: body.tag } : {}) }, recent);
         if (!validQuestionResponse(questions, input)) throw new GameError('The problem bank returned an invalid set. Please retry.', 502);
-        return response(await games.storeQuestions(uid, body.mode, input.category, input.difficulty, questions, relaxation));
+        return response(await games.storeQuestions(uid, body.mode, input.category, input.difficulty, questions, relaxation, diagnostics));
       }
       if (resource === 'social') {
         const fields: Record<string, string[]> = { request: ['to'], remove: ['friendId'], invite: ['to', 'gameId'], accept: ['id'], reject: ['id'], cancel: ['id'], invite_accept: ['id'], invite_reject: ['id'] };

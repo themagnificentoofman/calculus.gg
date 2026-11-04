@@ -1,0 +1,85 @@
+{
+  "siteVersion": 36,
+  "savedVersion": "appgprj_6ad91db3d4788191b3e73074e27447f5~appgver_4587ad9bc5d88191953a4805ee6bbb65",
+  "sourceCommit": "1927c4acc87ccd61e923514f73c3cf5f3afaf5aa",
+  "initialDeployment": {
+    "id": "appgdep_6aea833b27d481918cb47721fca7ee65",
+    "project_id": "appgprj_6ad91db3d4788191b3e73074e27447f5",
+    "title": "Calculus Ninja",
+    "version_id": "appgprj_6ad91db3d4788191b3e73074e27447f5~appgver_4587ad9bc5d88191953a4805ee6bbb65",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://calculus-ninja.honeybox19.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad91db3d4788191b3e73074e27447f5",
+    "failure_message": null,
+    "env_set_revision": 10,
+    "updated_at": "2026-11-04T00:58:45.669268+00:00"
+  },
+  "finalDeployment": {
+    "id": "appgdep_6aea84b0b7a88191a1819fbaed1c6af0",
+    "project_id": "appgprj_6ad91db3d4788191b3e73074e27447f5",
+    "title": "Calculus Ninja",
+    "version_id": "appgprj_6ad91db3d4788191b3e73074e27447f5~appgver_4587ad9bc5d88191953a4805ee6bbb65",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://calculus-ninja.honeybox19.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": "sediment://file_00000000832081f8a3d9e2fedc4a3862",
+    "provider_deployment_id": "site---6ad91db3d4788191b3e73074e27447f5",
+    "failure_message": null,
+    "env_set_revision": 12,
+    "updated_at": "2026-11-04T01:04:55.668417+00:00"
+  },
+  "operatorRevocation": {
+    "environmentRevision": 12,
+    "method": "public key replaced with disabled, expiry set to 0, allowance set to null; verified POST returns 404",
+    "reason": "Native removal and redeploy reported success but both origins still entered signature validation, so explicit disabled values were deployed and verified."
+  },
+  "liveState": {
+    "cbank_config": [
+      {
+        "key": "active_release",
+        "value": "cn-2026-11-03-ideas-v3"
+      }
+    ],
+    "cbank_delta_ledger": [
+      {
+        "bundle_id": "9b174c91c42b61dac5addcedb8224048ea004d2143c74f154d10e415763fb345",
+        "measured_reads": 80257,
+        "measured_writes": 32298,
+        "database_bytes": 96092160,
+        "next_sequence": 292,
+        "verified": 1,
+        "activated": 1,
+        "pending_id": null,
+        "pending_hash": null,
+        "halted": null,
+        "updated_at": "2026-11-04T01:02:41.605Z",
+        "charged_reads": 563084,
+        "charged_writes": 51276,
+        "prior_reads": 3855202,
+        "prior_writes": 1059527
+      }
+    ],
+    "cbank_release_sources": [
+      {
+        "release_id": "cn-2026-11-03-ideas-v3",
+        "source_release_id": "cn-2026-11-02-full-v2"
+      }
+    ],
+    "cbank_releases": [
+      {
+        "release_id": "cn-2026-11-02-full-v2",
+        "expected_count": 100800,
+        "state": "published"
+      },
+      {
+        "release_id": "cn-2026-11-03-ideas-v3",
+        "expected_count": 2504,
+        "state": "published"
+      }
+    ]
+  }
+}

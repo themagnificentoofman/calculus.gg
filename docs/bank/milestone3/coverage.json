@@ -1,0 +1,5355 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "cn-2026-11-03-ideas-v3",
+  "stage": "imported, verified, published and active in production",
+  "baseline": {
+    "release": "cn-2026-11-02-full-v2",
+    "items": 100800,
+    "familiesPerCell": 3,
+    "totalFamilies": 72
+  },
+  "discovered": {
+    "sourceCollections": 18,
+    "inspectedSourceItemRecords": 35,
+    "authoredCandidateFamilies": 354,
+    "note": "Source discoveries are research leads, not playable constructions. One source may address multiple cells."
+  },
+  "authoredFamilies": 354,
+  "mathematicallyCheckedCandidateItems": 2832,
+  "admittedVerifiedFamilies": 313,
+  "admittedVerifiedItems": 2504,
+  "quarantinedFamilies": 41,
+  "quarantinedItems": 328,
+  "globalDistinctRelatedIdeaGroups": 304,
+  "strictIntegrationOlympiadIndependentFamilies": 30,
+  "importedNewItems": 2504,
+  "activeNewItems": 2504,
+  "humanReviewedItems": 0,
+  "cells": {
+    "differential equations/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 9,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "execution",
+        "recognition",
+        "reframing"
+      ],
+      "answerForms": [
+        "exact-real"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-differential-equations-easy-field-slope",
+          "relatedIdeaGroupId": "ode-field-local-data",
+          "structuralSignature": "nonautonomous-field-at-given-state",
+          "primaryTechnique": "evaluate-vector-field",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-rate-identification",
+          "relatedIdeaGroupId": "ode-exponential-parameter",
+          "structuralSignature": "unknown-rate-from-nonvanishing-solution",
+          "primaryTechnique": "solution-substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-phase-line-stability",
+          "relatedIdeaGroupId": "ode-equilibrium-phase-line",
+          "structuralSignature": "two-simple-equilibria-phase-arrows",
+          "primaryTechnique": "sign-chart",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-euler-step",
+          "relatedIdeaGroupId": "ode-numerical-local-step",
+          "structuralSignature": "one-step-numerical-slope-update",
+          "primaryTechnique": "forward-Euler",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-primitive-initial-value",
+          "relatedIdeaGroupId": "ode-direct-accumulation",
+          "structuralSignature": "single-integration-with-initial-offset",
+          "primaryTechnique": "ODE-integration",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-doubling-data",
+          "relatedIdeaGroupId": "ode-exponential-observation",
+          "structuralSignature": "constant-growth-rate-inferred-from-data",
+          "primaryTechnique": "ODE-separation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-cooling-limit",
+          "relatedIdeaGroupId": "ode-affine-attractor",
+          "structuralSignature": "affine-relaxation-long-time-state",
+          "primaryTechnique": "ODE-separation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-mixing-inflow",
+          "relatedIdeaGroupId": "ode-physical-balance",
+          "structuralSignature": "tank-mass-balance-with-units",
+          "primaryTechnique": "conservation-laws",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-constant-acceleration",
+          "relatedIdeaGroupId": "ode-position-second-order",
+          "structuralSignature": "constant-second-derivative-position-and-velocity",
+          "primaryTechnique": "ODE-integration",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-equation-order",
+          "relatedIdeaGroupId": "ode-order-versus-degree",
+          "structuralSignature": "highest-derivative-versus-algebraic-power",
+          "primaryTechnique": "highest-derivative-order",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-oscillator-initial-data",
+          "relatedIdeaGroupId": "ode-fundamental-basis-data",
+          "structuralSignature": "two-coefficients-from-oscillator-initial-data",
+          "primaryTechnique": "ODE-characteristic-equation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-easy-transfer-conservation",
+          "relatedIdeaGroupId": "ode-conserved-total",
+          "structuralSignature": "coupled-transfer-conserved-sum",
+          "primaryTechnique": "conservation-laws",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differential equations/hard": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 8,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection",
+        "recognition",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-real"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-differential-equations-hard-riccati-particular",
+          "relatedIdeaGroupId": "ode-Riccati-known-branch",
+          "structuralSignature": "nonautonomous-Riccati-particular-subtraction",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-nonlinear-energy-speed",
+          "relatedIdeaGroupId": "ode-conservative-quartic-energy",
+          "structuralSignature": "quartic-restoring-force-energy-extremum",
+          "primaryTechnique": "ODE-energy-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-euler-cauchy-resonance",
+          "relatedIdeaGroupId": "ode-Euler-Cauchy-log-resonance",
+          "structuralSignature": "Euler-Cauchy-repeated-root-resonance",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+          "relatedIdeaGroupId": "ode-reduction-order-known-mode",
+          "structuralSignature": "variable-leading-coefficient-two-mode-basis",
+          "primaryTechnique": "second-solution-recognition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-remove-first-derivative",
+          "relatedIdeaGroupId": "ode-normal-form-conjugation",
+          "structuralSignature": "Gaussian-conjugated-variable-coefficient-oscillator",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-step-forcing",
+          "relatedIdeaGroupId": "ode-piecewise-input-response",
+          "structuralSignature": "finite-step-forcing-matched-initial-data",
+          "primaryTechnique": "match-at-input-switch",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-impulse-jump",
+          "relatedIdeaGroupId": "ode-distributional-impulse",
+          "structuralSignature": "Dirac-input-derivative-jump-and-decay",
+          "primaryTechnique": "jump-condition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-rotating-linear-system",
+          "relatedIdeaGroupId": "ode-complex-system-mode",
+          "structuralSignature": "planar-rotation-decay-complex-mode",
+          "primaryTechnique": "linear-systems",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-jordan-system",
+          "relatedIdeaGroupId": "ode-defective-system-mode",
+          "structuralSignature": "three-stage-Jordan-chain",
+          "primaryTechnique": "linear-systems",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-linear-stability-bound",
+          "relatedIdeaGroupId": "ode-planar-stability-region",
+          "structuralSignature": "trace-and-determinant-parameter-intersection",
+          "primaryTechnique": "linear-systems",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-mixed-boundary-spectrum",
+          "relatedIdeaGroupId": "ode-Sturm-Liouville-spectrum",
+          "structuralSignature": "mixed-Dirichlet-Neumann-first-eigenvalue",
+          "primaryTechnique": "boundary-eigenvalue-condition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-hard-wronskian-transport",
+          "relatedIdeaGroupId": "ode-Abel-Wronskian",
+          "structuralSignature": "Wronskian-transport-with-unknown-q",
+          "primaryTechnique": "determinant-identities",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differential equations/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 8,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "execution",
+        "method-selection",
+        "recognition",
+        "reframing"
+      ],
+      "answerForms": [
+        "exact-real"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-differential-equations-medium-logistic-hitting",
+          "relatedIdeaGroupId": "ode-logistic-threshold-time",
+          "structuralSignature": "logistic-log-odds-hitting-time",
+          "primaryTechnique": "ODE-separation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-finite-blowup",
+          "relatedIdeaGroupId": "ode-separable-lifespan",
+          "structuralSignature": "nonlinear-solution-pole-maximal-interval",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-variable-integrating-factor",
+          "relatedIdeaGroupId": "ode-nonconstant-linear-factor",
+          "structuralSignature": "variable-factor-power-forcing-positive-domain",
+          "primaryTechnique": "integrating-factor",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-exact-curve",
+          "relatedIdeaGroupId": "ode-exact-potential",
+          "structuralSignature": "exact-differential-potential-and-branch",
+          "primaryTechnique": "potential-function",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+          "relatedIdeaGroupId": "ode-Bernoulli-substitution",
+          "structuralSignature": "quadratic-nonlinearity-reciprocal-linearization",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+          "relatedIdeaGroupId": "ode-homogeneous-ratio",
+          "structuralSignature": "homogeneous-y-over-t-logarithmic-reduction",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-harvest-bifurcation",
+          "relatedIdeaGroupId": "ode-parameter-equilibrium-collision",
+          "structuralSignature": "parameter-threshold-equilibrium-collision",
+          "primaryTechnique": "completing-the-square",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-distinct-characteristic-roots",
+          "relatedIdeaGroupId": "ode-linear-distinct-roots",
+          "structuralSignature": "two-independent-characteristic-modes",
+          "primaryTechnique": "ODE-characteristic-equation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-resonant-forcing",
+          "relatedIdeaGroupId": "ode-resonance-linear-growth",
+          "structuralSignature": "resonant-secular-term-with-initial-correction",
+          "primaryTechnique": "resonant-particular-solution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-critical-damping",
+          "relatedIdeaGroupId": "ode-damping-regime",
+          "structuralSignature": "critical-damping-characteristic-discriminant",
+          "primaryTechnique": "ODE-characteristic-equation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-repeated-root",
+          "relatedIdeaGroupId": "ode-linear-repeated-root",
+          "structuralSignature": "repeated-characteristic-root-polynomial-prefactor",
+          "primaryTechnique": "ODE-characteristic-equation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-medium-periodic-amplitude",
+          "relatedIdeaGroupId": "ode-forced-steady-response",
+          "structuralSignature": "steady-response-phase-amplitude",
+          "primaryTechnique": "sin-cos-coefficient-system",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differential equations/olympiad": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-real"
+      ],
+      "prerequisites": [
+        "Fibonacci recurrence",
+        "Gaussian integrals",
+        "Lyapunov function",
+        "Poincare map",
+        "Riccati equation",
+        "beta integral",
+        "boundary value problems",
+        "chain rule",
+        "differential inequalities",
+        "energy integral",
+        "energy integrals",
+        "hyperbolic derivative identities",
+        "integration by parts",
+        "logarithmic derivative",
+        "logarithmic derivatives",
+        "matrix powers",
+        "maximal intervals",
+        "maximal solution intervals",
+        "operator composition",
+        "periodic integration",
+        "resonance",
+        "scalar separable equations",
+        "second-order linear equation",
+        "separable flows",
+        "spectral lower bounds",
+        "variational equation"
+      ],
+      "families": [
+        {
+          "familyId": "m3-differential-equations-olympiad-quartic-period",
+          "relatedIdeaGroupId": "ode-nonlinear-period-energy-beta",
+          "structuralSignature": "quartic-energy-period-beta-endpoint",
+          "primaryTechnique": "ODE-energy-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "energy integrals",
+            "beta integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-power-coordinate-lifetime",
+          "relatedIdeaGroupId": "ode-power-linearization-singular-boundary",
+          "structuralSignature": "power-three-halves-linearization-singular-lifetime",
+          "primaryTechnique": "nonlinear-conjugacy",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "chain rule",
+            "maximal solution intervals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-pinney-energy",
+          "relatedIdeaGroupId": "ode-inverse-cube-isotonic-invariant",
+          "structuralSignature": "inverse-cube-force-square-coordinate",
+          "primaryTechnique": "ODE-energy-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "energy integral",
+            "second-order linear equation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-switched-riccati",
+          "relatedIdeaGroupId": "fractional-linear-iteration",
+          "structuralSignature": "piecewise-affine-and-Riccati-flow-Mobius-power",
+          "primaryTechnique": "linear-systems",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "separable flows",
+            "matrix powers",
+            "Fibonacci recurrence"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-periodic-product-average",
+          "relatedIdeaGroupId": "ode-periodic-logarithmic-conservation",
+          "structuralSignature": "periodic-predator-prey-mixed-product-average",
+          "primaryTechnique": "periodic-total-derivatives",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "periodic integration",
+            "logarithmic derivative"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-periodic-floquet-multiplier",
+          "relatedIdeaGroupId": "ode-nonlinear-Poincare-linearization",
+          "structuralSignature": "positive-periodic-logistic-return-map-multiplier",
+          "primaryTechnique": "log-average-and-variational-flow",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "variational equation",
+            "Poincare map"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-resonant-boundary-compatibility",
+          "relatedIdeaGroupId": "ode-Fredholm-boundary-compatibility",
+          "structuralSignature": "resonant-Dirichlet-forcing-orthogonality",
+          "primaryTechnique": "orthogonality-and-particular-witness",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration by parts",
+            "resonance",
+            "boundary value problems"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-sharp-lifetime-comparison",
+          "relatedIdeaGroupId": "ode-Riccati-comparison-sharp-bound",
+          "structuralSignature": "Riccati-inequality-angle-lifetime-sharpness",
+          "primaryTechnique": "bounded-angle-comparison",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "differential inequalities",
+            "maximal intervals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-nonlinear-radial-asymptotic",
+          "relatedIdeaGroupId": "ode-nonlinear-radial-decay-invariant",
+          "structuralSignature": "nonlinear-planar-radius-decay-renormalization",
+          "primaryTechnique": "radius-squared-reduction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Lyapunov function",
+            "scalar separable equations"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+          "relatedIdeaGroupId": "ode-factorization-ground-state",
+          "structuralSignature": "whole-line-oscillator-factorization-equality-moment",
+          "primaryTechnique": "variational-methods",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration by parts",
+            "Gaussian integrals",
+            "spectral lower bounds"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+          "relatedIdeaGroupId": "ode-Schwarzian-log-derivative-chain",
+          "structuralSignature": "third-order-Schwarzian-to-Riccati-log-derivative",
+          "primaryTechnique": "linear-ODE-transformation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "logarithmic derivatives",
+            "Riccati equation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+          "relatedIdeaGroupId": "ode-Darboux-intertwining-potential",
+          "structuralSignature": "Darboux-one-soliton-oscillator-intertwining",
+          "primaryTechnique": "intertwining-operator",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "operator composition",
+            "hyperbolic derivative identities"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differentiation/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "recognition"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-differentiation-easy-product-data",
+          "relatedIdeaGroupId": "product-rule-from-data",
+          "structuralSignature": "tabulated-product-rule",
+          "primaryTechnique": "product-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-chain-data",
+          "relatedIdeaGroupId": "chain-rule-from-data",
+          "structuralSignature": "tabulated-composition",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-inverse-slope",
+          "relatedIdeaGroupId": "inverse-derivative",
+          "structuralSignature": "inverse-slope-data",
+          "primaryTechnique": "inverse-function-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-implicit-circle",
+          "relatedIdeaGroupId": "implicit-relation",
+          "structuralSignature": "circle-implicit-first-derivative",
+          "primaryTechnique": "implicit-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-parametric-slope",
+          "relatedIdeaGroupId": "parametric-derivative",
+          "structuralSignature": "parametric-slope",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-matching-piecewise-slopes",
+          "relatedIdeaGroupId": "piecewise-differentiability",
+          "structuralSignature": "piecewise-slope-matching",
+          "primaryTechnique": "one-sided-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-tangent-intercept",
+          "relatedIdeaGroupId": "tangent-line-geometry",
+          "structuralSignature": "tangent-intercept",
+          "primaryTechnique": "point-slope-line",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-minimum-from-sign",
+          "relatedIdeaGroupId": "critical-point-sign",
+          "structuralSignature": "cubic-derivative-sign-chart",
+          "primaryTechnique": "first-derivative-test",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-linearization",
+          "relatedIdeaGroupId": "linear-approximation",
+          "structuralSignature": "root-linearization",
+          "primaryTechnique": "local-linear-approximation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-related-area-rate",
+          "relatedIdeaGroupId": "related-rates-geometry",
+          "structuralSignature": "area-radius-related-rate",
+          "primaryTechnique": "implicit-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-derivative-definition",
+          "relatedIdeaGroupId": "difference-quotient",
+          "structuralSignature": "difference-quotient-binomial",
+          "primaryTechnique": "definition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-easy-accumulation-derivative",
+          "relatedIdeaGroupId": "FTC-derivative",
+          "structuralSignature": "variable-upper-bound-FTC",
+          "primaryTechnique": "fundamental-theorem-of-calculus",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differentiation/hard": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 13,
+      "quarantinedFamilies": 1,
+      "quarantinedItems": 8,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real"
+      ],
+      "prerequisites": [
+        "Leibniz differentiation rule",
+        "chain rule",
+        "fundamental theorem"
+      ],
+      "families": [
+        {
+          "familyId": "m3-differentiation-hard-leibniz-high-order",
+          "relatedIdeaGroupId": "Leibniz-rule",
+          "structuralSignature": "polynomial-times-exp-high-derivative",
+          "primaryTechnique": "coefficient-extraction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-log-power-second",
+          "relatedIdeaGroupId": "logarithmic-second-derivative",
+          "structuralSignature": "variable-power-second-derivative",
+          "primaryTechnique": "logarithmic-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-implicit-second",
+          "relatedIdeaGroupId": "implicit-second-derivative",
+          "structuralSignature": "implicit-conic-second-derivative",
+          "primaryTechnique": "implicit-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-curvature-parametric",
+          "relatedIdeaGroupId": "parametric-curvature",
+          "structuralSignature": "parametric-curvature",
+          "primaryTechnique": "curvature-formula",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-implicit-inverse-exponential",
+          "relatedIdeaGroupId": "inverse-implicit-exponential",
+          "structuralSignature": "Lambert-implicit-second-derivative",
+          "primaryTechnique": "inverse-function-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-high-order-rational",
+          "relatedIdeaGroupId": "rational-recurrence",
+          "structuralSignature": "rational-generating-function-derivative",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-multiplicity-shortcut",
+          "relatedIdeaGroupId": "zero-multiplicity",
+          "structuralSignature": "high-multiplicity-product",
+          "primaryTechnique": "product-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-trigonometric-power-coefficient",
+          "relatedIdeaGroupId": "power-series-composition",
+          "structuralSignature": "sin-power-next-nonzero-derivative",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-log-product",
+          "relatedIdeaGroupId": "logarithmic-product-derivatives",
+          "structuralSignature": "finite-product-second-log-derivative",
+          "primaryTechnique": "harmonic-sums",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-complex-exponential-derivative",
+          "relatedIdeaGroupId": "complex-method-for-real-derivatives",
+          "structuralSignature": "real-part-complex-exponential",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-nested-power-third",
+          "relatedIdeaGroupId": "composite-third-derivative",
+          "structuralSignature": "exp-quadratic-third-derivative",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-hard-moving-endpoint-parameter-second",
+          "relatedIdeaGroupId": "Leibniz-moving-endpoints-parameter",
+          "structuralSignature": "second-Leibniz-derivative-collapsing-moving-interval",
+          "primaryTechnique": "fundamental-theorem-of-calculus",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Leibniz differentiation rule",
+            "chain rule",
+            "fundamental theorem"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differentiation/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-differentiation-medium-product-exp",
+          "relatedIdeaGroupId": "product-exponential",
+          "structuralSignature": "power-times-exponential",
+          "primaryTechnique": "product-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-quotient-log",
+          "relatedIdeaGroupId": "quotient-logarithm",
+          "structuralSignature": "logarithm-over-affine",
+          "primaryTechnique": "quotient-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-nested-exponential",
+          "relatedIdeaGroupId": "nested-chain",
+          "structuralSignature": "exp-of-trig",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-logarithmic-power",
+          "relatedIdeaGroupId": "variable-power",
+          "structuralSignature": "x-to-linear-x",
+          "primaryTechnique": "logarithmic-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-inverse-tangent-composition",
+          "relatedIdeaGroupId": "inverse-trig-chain",
+          "structuralSignature": "arctan-power-composition",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-implicit-product",
+          "relatedIdeaGroupId": "implicit-product-relation",
+          "structuralSignature": "implicit-product-plus-square",
+          "primaryTechnique": "implicit-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-inverse-second",
+          "relatedIdeaGroupId": "inverse-second-derivative",
+          "structuralSignature": "inverse-second-derivative-data",
+          "primaryTechnique": "inverse-function-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-parametric-second",
+          "relatedIdeaGroupId": "parametric-second-derivative",
+          "structuralSignature": "parametric-second-derivative",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-moving-integral-endpoints",
+          "relatedIdeaGroupId": "Leibniz-boundaries",
+          "structuralSignature": "two-moving-integral-endpoints",
+          "primaryTechnique": "fundamental-theorem-of-calculus",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-optimization-product",
+          "relatedIdeaGroupId": "constrained-one-variable-optimization",
+          "structuralSignature": "cubic-product-constrained-maximum",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-piecewise-second-match",
+          "relatedIdeaGroupId": "smooth-pasting",
+          "structuralSignature": "piecewise-second-order-pasting",
+          "primaryTechnique": "one-sided-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-medium-normal-line",
+          "relatedIdeaGroupId": "normal-tangent-geometry",
+          "structuralSignature": "normal-slope",
+          "primaryTechnique": "perpendicular-slopes",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "differentiation/olympiad": {
+      "verifiedFamilies": 13,
+      "verifiedItems": 104,
+      "relatedIdeaGroups": 13,
+      "structures": 13,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 104,
+      "activeItems": 104,
+      "authoredCandidateFamilies": 17,
+      "quarantinedFamilies": 4,
+      "quarantinedItems": 32,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real",
+        "ordered-integer-pair"
+      ],
+      "prerequisites": [
+        "Chebyshev recurrence",
+        "Lagrange interpolation",
+        "Newton iteration",
+        "Taylor coefficients",
+        "asymptotic bounds",
+        "composition order",
+        "determinant multilinearity",
+        "finite sums",
+        "higher derivatives at a point",
+        "oscillatory sequences",
+        "tridiagonal determinant recurrence"
+      ],
+      "families": [
+        {
+          "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+          "relatedIdeaGroupId": "Lagrange-inversion",
+          "structuralSignature": "implicit-quadratic-series-inversion",
+          "primaryTechnique": "power-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+          "relatedIdeaGroupId": "fractional-linear-iteration",
+          "structuralSignature": "Mobius-iterate-derivative",
+          "primaryTechnique": "matrix-composition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+          "relatedIdeaGroupId": "Bell-coefficient-combinatorics",
+          "structuralSignature": "exp-of-geometric-generating-function",
+          "primaryTechnique": "coefficient-extraction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-envelope-derivative",
+          "relatedIdeaGroupId": "envelope-theorem",
+          "structuralSignature": "implicit-minimum-envelope",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-Gaussian-moment-derivative",
+          "relatedIdeaGroupId": "differentiate-under-integral",
+          "structuralSignature": "log-Laplace-integral-high-derivative",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+          "relatedIdeaGroupId": "differential-operator-conjugation",
+          "structuralSignature": "conjugated-differential-operator",
+          "primaryTechnique": "operator-conjugation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-root-of-unity-filter",
+          "relatedIdeaGroupId": "root-of-unity-filter-derivatives",
+          "structuralSignature": "third-root-of-unity-filter",
+          "primaryTechnique": "coefficient-extraction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+          "relatedIdeaGroupId": "interpolation-rational-remainder",
+          "structuralSignature": "rational-samples-polynomial-interpolant",
+          "primaryTechnique": "polynomial-interpolation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-global-inverse-curvature",
+          "relatedIdeaGroupId": "global-implicit-derivative-optimization",
+          "structuralSignature": "global-maximum-implicit-inverse-curvature",
+          "primaryTechnique": "inverse-derivative-flow",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+          "relatedIdeaGroupId": "chebyshev-extremality",
+          "structuralSignature": "sharp-uniform-polynomial-endpoint-derivative",
+          "primaryTechnique": "polynomial-interpolation",
+          "alternativeTechniques": [
+            "endpoint Markov inequality with proof"
+          ],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Lagrange interpolation",
+            "Chebyshev recurrence"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+          "relatedIdeaGroupId": "determinant-principal-minor-combinatorics",
+          "structuralSignature": "cycle-Laplacian-second-diagonal-determinant-derivative",
+          "primaryTechnique": "determinant-identities",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "determinant multilinearity",
+            "tridiagonal determinant recurrence",
+            "finite sums"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+          "relatedIdeaGroupId": "oscillatory-regularity-threshold",
+          "structuralSignature": "oscillatory-higher-derivative-existence-versus-continuity",
+          "primaryTechnique": "leading-oscillatory-derivative-induction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "ordered-integer-pair",
+          "prerequisites": [
+            "higher derivatives at a point",
+            "asymptotic bounds",
+            "oscillatory sequences"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+          "relatedIdeaGroupId": "Newton-error-valuation-composition",
+          "structuralSignature": "Newton-three-compositions-first-surviving-eighth-derivative",
+          "primaryTechnique": "nonlinear-conjugacy",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Newton iteration",
+            "Taylor coefficients",
+            "composition order"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4304,
+      "activeSelectableFamilies": 16
+    },
+    "integration/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 8,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "execution"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-integration-easy-signed-area",
+          "relatedIdeaGroupId": "signed-versus-geometric-area",
+          "structuralSignature": "affine-sign-change-symmetric-bounds",
+          "primaryTechnique": "interval-decomposition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-absolute-area",
+          "relatedIdeaGroupId": "absolute-value-integration",
+          "structuralSignature": "absolute-linear-integrand",
+          "primaryTechnique": "interval-decomposition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-substitution-affine",
+          "relatedIdeaGroupId": "substitution-jacobian",
+          "structuralSignature": "affine-composition-power",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-log-recognition",
+          "relatedIdeaGroupId": "logarithmic-antiderivative",
+          "structuralSignature": "reciprocal-affine",
+          "primaryTechnique": "recognition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-exponential-rate",
+          "relatedIdeaGroupId": "exponential-substitution",
+          "structuralSignature": "exponential-linear-inner",
+          "primaryTechnique": "recognition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-quarter-disk",
+          "relatedIdeaGroupId": "geometric-integral",
+          "structuralSignature": "quarter-circle-area",
+          "primaryTechnique": "geometry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-average-value",
+          "relatedIdeaGroupId": "integral-average",
+          "structuralSignature": "mean-value-normalized-integral",
+          "primaryTechnique": "normalization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-odd-even",
+          "relatedIdeaGroupId": "parity-on-symmetric-domain",
+          "structuralSignature": "mixed-parity-symmetric-bounds",
+          "primaryTechnique": "symmetry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-accumulation-from-derivative",
+          "relatedIdeaGroupId": "fundamental-theorem",
+          "structuralSignature": "endpoint-data-FTC",
+          "primaryTechnique": "fundamental-theorem-of-calculus",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-piecewise-accumulation",
+          "relatedIdeaGroupId": "piecewise-integration",
+          "structuralSignature": "piecewise-affine-constant",
+          "primaryTechnique": "interval-decomposition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-area-between-curves",
+          "relatedIdeaGroupId": "area-as-difference",
+          "structuralSignature": "parabola-line-enclosed-area",
+          "primaryTechnique": "geometry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-easy-washer-volume",
+          "relatedIdeaGroupId": "solid-of-revolution",
+          "structuralSignature": "disk-volume-linear-radius",
+          "primaryTechnique": "washers",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "integration/hard": {
+      "verifiedFamilies": 13,
+      "verifiedItems": 104,
+      "relatedIdeaGroups": 13,
+      "structures": 13,
+      "primaryTechniques": 7,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 104,
+      "activeItems": 104,
+      "authoredCandidateFamilies": 18,
+      "quarantinedFamilies": 5,
+      "quarantinedItems": 40,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection",
+        "recognition",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real"
+      ],
+      "prerequisites": [
+        "beta-integral",
+        "geometric-series",
+        "inverse-functions",
+        "substitution",
+        "tonelli"
+      ],
+      "families": [
+        {
+          "familyId": "io3-inverse-moment",
+          "relatedIdeaGroupId": "inverse-function-change-of-variables",
+          "structuralSignature": "implicit-monotone-polynomial:inverse-moment",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [
+            "integration-by-parts"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "inverse-functions",
+            "substitution"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-floor-laplace",
+          "relatedIdeaGroupId": "layer-cake-staircase",
+          "structuralSignature": "floor-function:positive-laplace-weight",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [
+            "geometric-series"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "tonelli",
+            "geometric-series"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-binomial-exponential",
+          "relatedIdeaGroupId": "exponential-beta-transform",
+          "structuralSignature": "positive-integer-power:exponential-saturation",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [
+            "binomial-expansion"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "substitution",
+            "beta-integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-logarithmic-moment",
+          "relatedIdeaGroupId": "endpoint-log-moment",
+          "structuralSignature": "log-squared-endpoint-moment",
+          "primaryTechnique": "integration-by-parts",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-beta-polynomial",
+          "relatedIdeaGroupId": "beta-integral",
+          "structuralSignature": "beta-polynomial-two-endpoints",
+          "primaryTechnique": "beta-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-improper-rational-beta",
+          "relatedIdeaGroupId": "rational-compactification",
+          "structuralSignature": "rational-improper-compactification",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-trig-log",
+          "relatedIdeaGroupId": "trig-log-substitution",
+          "structuralSignature": "trigonometric-log-improper-moment",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-root-quadratic",
+          "relatedIdeaGroupId": "hyperbolic-substitution",
+          "structuralSignature": "quadratic-root-ratio",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-reciprocal-quartic",
+          "relatedIdeaGroupId": "rational-even-quartic",
+          "structuralSignature": "two-positive-quadratic-factors-improper",
+          "primaryTechnique": "partial-fractions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-arc-length-perfect-square",
+          "relatedIdeaGroupId": "arc-length-structure",
+          "structuralSignature": "arc-length-perfect-square",
+          "primaryTechnique": "algebraic-reframing",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-Frullani-rectangle",
+          "relatedIdeaGroupId": "frullani-scaling-cancellation",
+          "structuralSignature": "Frullani-positive-parameter-rectangle",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-mixed-log-endpoints",
+          "relatedIdeaGroupId": "beta-parameter-moments",
+          "structuralSignature": "mixed-beta-logarithmic-endpoints",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-hard-half-angle-quadratic",
+          "relatedIdeaGroupId": "tangent-half-angle-rationalization",
+          "structuralSignature": "half-angle-rational-quadratic",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4304,
+      "activeSelectableFamilies": 16
+    },
+    "integration/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 8,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-integration-medium-parts-log",
+          "relatedIdeaGroupId": "logarithm-integration-by-parts",
+          "structuralSignature": "logarithm-parts",
+          "primaryTechnique": "integration-by-parts",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-partial-fractions",
+          "relatedIdeaGroupId": "rational-decomposition",
+          "structuralSignature": "two-distinct-linear-factors",
+          "primaryTechnique": "partial-fractions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-rational-power-substitution",
+          "relatedIdeaGroupId": "derivative-over-denominator",
+          "structuralSignature": "quadratic-denominator-derivative-match",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-trig-odd-power",
+          "relatedIdeaGroupId": "trigonometric-power-substitution",
+          "structuralSignature": "odd-sine-even-or-odd-cosine-power",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-secant-square-substitution",
+          "relatedIdeaGroupId": "trigonometric-composition",
+          "structuralSignature": "tan-power-with-sec-squared",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-inverse-tangent",
+          "relatedIdeaGroupId": "quadratic-completion",
+          "structuralSignature": "positive-quadratic-reciprocal",
+          "primaryTechnique": "completing-the-square",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-nested-log",
+          "relatedIdeaGroupId": "iterated-log-substitution",
+          "structuralSignature": "iterated-log-reciprocal",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-improper-exponential",
+          "relatedIdeaGroupId": "infinite-endpoint",
+          "structuralSignature": "decaying-exponential-infinite-domain",
+          "primaryTechnique": "improper-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-moving-boundary-area",
+          "relatedIdeaGroupId": "intersection-before-integration",
+          "structuralSignature": "root-line-enclosed-area",
+          "primaryTechnique": "geometry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-shell-volume",
+          "relatedIdeaGroupId": "solid-of-revolution-shells",
+          "structuralSignature": "shells-triangular-region",
+          "primaryTechnique": "cylindrical-shells",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-exponential-trig",
+          "relatedIdeaGroupId": "cyclic-integration-by-parts",
+          "structuralSignature": "exponential-times-periodic-trig",
+          "primaryTechnique": "integration-by-parts",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-integration-medium-piecewise-absolute-root",
+          "relatedIdeaGroupId": "absolute-value-root-split",
+          "structuralSignature": "absolute-square-root-interior-switch",
+          "primaryTechnique": "interval-decomposition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "integration/olympiad": {
+      "verifiedFamilies": 35,
+      "verifiedItems": 280,
+      "relatedIdeaGroups": 33,
+      "structures": 35,
+      "primaryTechniques": 22,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 280,
+      "activeItems": 280,
+      "authoredCandidateFamilies": 35,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "method-selection",
+        "recognition",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "convergence-and-value",
+        "exact-real",
+        "ordered-real-pair"
+      ],
+      "prerequisites": [
+        "absolute-value",
+        "bessel-functions",
+        "beta-function",
+        "beta-integral",
+        "binary-representation",
+        "boundary-values",
+        "cauchy-principal-value",
+        "complex-beta-integral",
+        "complex-geometric-series",
+        "complex-logarithm",
+        "complex-square-root",
+        "dirichlet-integral",
+        "dominated-convergence",
+        "dominated-differentiation",
+        "fourier-orthogonality",
+        "fourier-series",
+        "fubini",
+        "gamma-function",
+        "gamma-integral",
+        "gamma-reflection",
+        "generating-functions",
+        "geometric-series",
+        "harmonic-functions",
+        "hyperbolic-functions",
+        "improper-integrals",
+        "integral-inequalities",
+        "integral-inner-product",
+        "integration-by-parts",
+        "laplace-transform",
+        "layer-cake",
+        "leibniz-rule",
+        "linear-ode",
+        "measurable-sets",
+        "monotone-substitution",
+        "orthogonality",
+        "parameter-differentiation",
+        "partial-fractions",
+        "pointwise-convergence",
+        "polynomial-division",
+        "power-series",
+        "quadratic-forms",
+        "rational-substitution",
+        "residues",
+        "substitution",
+        "tonelli",
+        "trigonometric-substitution",
+        "zeta-function"
+      ],
+      "families": [
+        {
+          "familyId": "io3-weighted-complement",
+          "relatedIdeaGroupId": "reflection-invariant-measure",
+          "structuralSignature": "beta-half-weight:complementary-power-ratio",
+          "primaryTechnique": "symmetry",
+          "alternativeTechniques": [
+            "trigonometric-substitution"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "substitution",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-reciprocal-quartic",
+          "relatedIdeaGroupId": "reciprocal-rational-fold",
+          "structuralSignature": "positive-palindromic-quartic",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [
+            "residues"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "improper-integrals",
+            "rational-substitution"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-chebyshev-absolute",
+          "relatedIdeaGroupId": "orthogonal-polynomial-folding",
+          "structuralSignature": "absolute-chebyshev-second-kind",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [
+            "piecewise-integration"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "trigonometric-substitution",
+            "absolute-value"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-gamma-unit-average",
+          "relatedIdeaGroupId": "gamma-functional-average",
+          "structuralSignature": "log-gamma:unit-interval-average",
+          "primaryTechnique": "functional-equations",
+          "alternativeTechniques": [
+            "gamma-reflection"
+          ],
+          "reasoningDemand": [
+            "synthesis",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "gamma-function",
+            "parameter-differentiation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-log-fourier-coefficient",
+          "relatedIdeaGroupId": "analytic-log-circle",
+          "structuralSignature": "log-quadratic-on-circle:nonzero-fourier-mode",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [
+            "complex-power-series"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "power-series",
+            "fourier-orthogonality"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-arctan-parameter",
+          "relatedIdeaGroupId": "arctan-log-transform",
+          "structuralSignature": "arctan-product:reciprocal-cauchy-weight",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [
+            "fubini"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "dominated-differentiation",
+            "partial-fractions"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-gaussian-fourier",
+          "relatedIdeaGroupId": "gaussian-fourier-transform",
+          "structuralSignature": "gaussian-times-cosine",
+          "primaryTechnique": "differential-equation-method",
+          "alternativeTechniques": [
+            "complex-completion-of-square"
+          ],
+          "reasoningDemand": [
+            "synthesis",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration-by-parts",
+            "dominated-differentiation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-reciprocal-gaussian",
+          "relatedIdeaGroupId": "reciprocal-gaussian-transform",
+          "structuralSignature": "exponential:quadratic-plus-inverse-quadratic",
+          "primaryTechnique": "differential-equation-method",
+          "alternativeTechniques": [
+            "gaussian-substitution"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "improper-integrals",
+            "dominated-differentiation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-sinc-overlap",
+          "relatedIdeaGroupId": "fourier-interval-overlap",
+          "structuralSignature": "product-sines:inverse-square-weight",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [
+            "parseval"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration-by-parts",
+            "dirichlet-integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-mixed-beta-log",
+          "relatedIdeaGroupId": "beta-parameter-moments",
+          "structuralSignature": "beta-polynomial:two-endpoint-logarithms",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [
+            "finite-polynomial-expansion"
+          ],
+          "reasoningDemand": [
+            "synthesis",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "beta-function",
+            "parameter-differentiation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-thermal-derivative",
+          "relatedIdeaGroupId": "thermal-geometric-derivative",
+          "structuralSignature": "exponential-geometric-derivative:polynomial-moment",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [
+            "integration-by-parts"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "tonelli",
+            "gamma-integral",
+            "zeta-function"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-mellin-cyclotomic",
+          "relatedIdeaGroupId": "mellin-cyclotomic-integral",
+          "structuralSignature": "rational-power:one-plus-monomial",
+          "primaryTechnique": "Mellin-transform",
+          "alternativeTechniques": [
+            "keyhole-contour"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "convergence"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "beta-function",
+            "gamma-reflection",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-cauchy-convolution",
+          "relatedIdeaGroupId": "cauchy-convolution",
+          "structuralSignature": "product-of-shifted-cauchy-kernels",
+          "primaryTechnique": "contour-integration",
+          "alternativeTechniques": [
+            "partial-fractions",
+            "fourier-transform"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "partial-fractions",
+            "residues"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-agm-parameter",
+          "relatedIdeaGroupId": "elliptic-agm-invariance",
+          "structuralSignature": "elliptic-product-root:parameter-identification",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [
+            "arithmetic-geometric-mean"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "monotone-substitution",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-abel-recovery",
+          "relatedIdeaGroupId": "abel-integral-inversion",
+          "structuralSignature": "unknown-function:abel-half-integral",
+          "primaryTechnique": "changing-order-of-integration",
+          "alternativeTechniques": [
+            "fractional-calculus"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "fubini",
+            "beta-integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-boundary-asymptotic",
+          "relatedIdeaGroupId": "integral-boundary-layer",
+          "structuralSignature": "large-power:degenerate-endpoint-maximum",
+          "primaryTechnique": "asymptotic-rescaling",
+          "alternativeTechniques": [
+            "beta-asymptotics"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "dominated-convergence",
+            "gamma-integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-integral-equation",
+          "relatedIdeaGroupId": "green-kernel-integral-equation",
+          "structuralSignature": "min-kernel:fredholm-equation",
+          "primaryTechnique": "differential-equation-method",
+          "alternativeTechniques": [
+            "green-function"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "leibniz-rule",
+            "linear-ode",
+            "boundary-values"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-convolution-laplace",
+          "relatedIdeaGroupId": "compact-convolution-transform",
+          "structuralSignature": "recursive-unit-box-convolution",
+          "primaryTechnique": "Laplace-transform",
+          "alternativeTechniques": [
+            "probability-independence"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "fubini",
+            "laplace-transform"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-poisson-log-potential",
+          "relatedIdeaGroupId": "harmonic-poisson-extension",
+          "structuralSignature": "shifted-quadratic-log:cauchy-weight",
+          "primaryTechnique": "harmonic-analysis",
+          "alternativeTechniques": [
+            "parameter-differentiation",
+            "residue-convolution"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "harmonic-functions",
+            "residues"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-jensen-radius",
+          "relatedIdeaGroupId": "analytic-log-circle",
+          "structuralSignature": "circle-logarithm:zero-crosses-unit-boundary",
+          "primaryTechnique": "complex-analysis",
+          "alternativeTechniques": [
+            "fourier-series"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "convergence",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "complex-logarithm",
+            "fourier-series"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-fresnel",
+          "relatedIdeaGroupId": "fresnel-analytic-continuation",
+          "structuralSignature": "conditionally-convergent:quadratic-phase",
+          "primaryTechnique": "complex-analysis",
+          "alternativeTechniques": [
+            "contour-rotation"
+          ],
+          "reasoningDemand": [
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "complex-square-root",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-bessel-laplace",
+          "relatedIdeaGroupId": "bessel-angular-transform",
+          "structuralSignature": "bessel-J0:exponential-weight",
+          "primaryTechnique": "changing-order-of-integration",
+          "alternativeTechniques": [
+            "laplace-transform-ode"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "bessel-functions",
+            "fubini",
+            "trigonometric-substitution"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-rodrigues-moment",
+          "relatedIdeaGroupId": "rodrigues-orthogonal-moment",
+          "structuralSignature": "rodrigues-polynomial:off-diagonal-moment",
+          "primaryTechnique": "integration-by-parts",
+          "alternativeTechniques": [
+            "polynomial-expansion"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration-by-parts",
+            "beta-integral"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-bernoulli-product",
+          "relatedIdeaGroupId": "bernoulli-endpoint-recurrence",
+          "structuralSignature": "bernoulli-polynomial-product",
+          "primaryTechnique": "integration-by-parts",
+          "alternativeTechniques": [
+            "exact-polynomial-integration"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "generating-functions",
+            "integration-by-parts"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-principal-value",
+          "relatedIdeaGroupId": "interior-pole-convergence",
+          "structuralSignature": "simple-real-pole:mellin-weight",
+          "primaryTechnique": "singular-integral-analysis",
+          "alternativeTechniques": [
+            "digamma-reflection"
+          ],
+          "reasoningDemand": [
+            "convergence",
+            "reframing"
+          ],
+          "answerForm": "convergence-and-value",
+          "prerequisites": [
+            "improper-integrals",
+            "cauchy-principal-value"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-oscillatory-regularization",
+          "relatedIdeaGroupId": "oscillatory-tail-convergence",
+          "structuralSignature": "nonconvergent-phase:abel-damped-pair",
+          "primaryTechnique": "regularization-and-convergence",
+          "alternativeTechniques": [
+            "laplace-transform"
+          ],
+          "reasoningDemand": [
+            "convergence",
+            "reframing"
+          ],
+          "answerForm": "convergence-and-value",
+          "prerequisites": [
+            "improper-integrals",
+            "substitution",
+            "laplace-transform"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-concentration",
+          "relatedIdeaGroupId": "integral-boundary-layer",
+          "structuralSignature": "shrinking-boundary-spike:fixed-total-mass",
+          "primaryTechnique": "asymptotic-rescaling",
+          "alternativeTechniques": [
+            "dominated-convergence-counterexample"
+          ],
+          "reasoningDemand": [
+            "convergence",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "pointwise-convergence",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-binary-product",
+          "relatedIdeaGroupId": "binary-product-combinatorics",
+          "structuralSignature": "dyadic-exponent-product",
+          "primaryTechnique": "telescoping",
+          "alternativeTechniques": [
+            "binary-expansion"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "geometric-series",
+            "binary-representation"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-fejer-fourth",
+          "relatedIdeaGroupId": "fourier-autocorrelation-count",
+          "structuralSignature": "dirichlet-geometric-kernel:fourth-power",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [
+            "laurent-constant-term"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "complex-geometric-series",
+            "fourier-orthogonality"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-scaled-frullani",
+          "relatedIdeaGroupId": "frullani-scaling-cancellation",
+          "structuralSignature": "difference-of-stretched-exponentials:log-measure",
+          "primaryTechnique": "changing-order-of-integration",
+          "alternativeTechniques": [
+            "parameter-differentiation"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "convergence"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "fubini",
+            "improper-integrals"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-sech-fourier",
+          "relatedIdeaGroupId": "hyperbolic-fourier-beta",
+          "structuralSignature": "hyperbolic-secant:cosine-transform",
+          "primaryTechnique": "Mellin-transform",
+          "alternativeTechniques": [
+            "rectangular-residue-contour"
+          ],
+          "reasoningDemand": [
+            "synthesis",
+            "method-selection"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "complex-beta-integral",
+            "gamma-reflection"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-variational-energy",
+          "relatedIdeaGroupId": "variational-dirichlet-energy",
+          "structuralSignature": "derivative-energy:fixed-endpoint-minimum",
+          "primaryTechnique": "variational-methods",
+          "alternativeTechniques": [
+            "euler-lagrange-equation"
+          ],
+          "reasoningDemand": [
+            "method-selection",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "integration-by-parts",
+            "hyperbolic-functions",
+            "quadratic-forms"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-moment-projection",
+          "relatedIdeaGroupId": "hilbert-moment-projection",
+          "structuralSignature": "two-moment-constraints:L2-minimum",
+          "primaryTechnique": "orthogonal-projection",
+          "alternativeTechniques": [
+            "gram-matrix",
+            "cauchy-schwarz"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "quadratic-forms",
+            "integral-inner-product"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-quadrature-defect",
+          "relatedIdeaGroupId": "gaussian-quadrature-defect",
+          "structuralSignature": "quartic:two-gaussian-nodes-and-leading-coefficient",
+          "primaryTechnique": "orthogonal-polynomials",
+          "alternativeTechniques": [
+            "gauss-legendre-quadrature"
+          ],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "polynomial-division",
+            "orthogonality"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "io3-rearrangement",
+          "relatedIdeaGroupId": "rearrangement-extremal-integral",
+          "structuralSignature": "equimeasurable-function:first-moment-extrema",
+          "primaryTechnique": "rearrangement-inequality",
+          "alternativeTechniques": [
+            "hardy-littlewood-inequality"
+          ],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "ordered-real-pair",
+          "prerequisites": [
+            "layer-cake",
+            "measurable-sets",
+            "integral-inequalities"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4480,
+      "activeSelectableFamilies": 38
+    },
+    "limits/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-limits-easy-removable-power",
+          "relatedIdeaGroupId": "removable-factor",
+          "structuralSignature": "removable-power-factor",
+          "primaryTechnique": "factorization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-radical-rationalization",
+          "relatedIdeaGroupId": "radical-conjugate",
+          "structuralSignature": "radical-difference-over-increment",
+          "primaryTechnique": "rationalization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-one-sided-absolute",
+          "relatedIdeaGroupId": "one-sided-branch",
+          "structuralSignature": "one-sided-absolute-ratio",
+          "primaryTechnique": "branch-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-rational-infinity",
+          "relatedIdeaGroupId": "dominant-degree",
+          "structuralSignature": "equal-degree-rational-infinity",
+          "primaryTechnique": "dominant-balance",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-oscillatory-squeeze",
+          "relatedIdeaGroupId": "vanishing-envelope",
+          "structuralSignature": "oscillation-with-vanishing-envelope",
+          "primaryTechnique": "squeeze-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-exponential-standard",
+          "relatedIdeaGroupId": "derivative-standard-limit",
+          "structuralSignature": "exponential-difference-quotient",
+          "primaryTechnique": "derivative-recognition",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-logarithm-standard",
+          "relatedIdeaGroupId": "logarithmic-standard-limit",
+          "structuralSignature": "logarithmic-small-increment",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-trigonometric-ratio",
+          "relatedIdeaGroupId": "trigonometric-standard-limit",
+          "structuralSignature": "ratio-of-small-sines",
+          "primaryTechnique": "standard-trig-limits",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-geometric-sequence",
+          "relatedIdeaGroupId": "geometric-decay",
+          "structuralSignature": "alternating-geometric-sequence",
+          "primaryTechnique": "absolute-value-bound",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-floor-at-infinity",
+          "relatedIdeaGroupId": "bounded-rounding-error",
+          "structuralSignature": "floor-linear-growth",
+          "primaryTechnique": "squeeze-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-piecewise-continuity",
+          "relatedIdeaGroupId": "piecewise-matching",
+          "structuralSignature": "piecewise-continuity-parameter",
+          "primaryTechnique": "one-sided-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-easy-rational-sequence-shift",
+          "relatedIdeaGroupId": "ratio-of-consecutive-values",
+          "structuralSignature": "fixed-power-ratio-at-infinity",
+          "primaryTechnique": "dominant-balance",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "limits/hard": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 9,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 16,
+      "quarantinedFamilies": 4,
+      "quarantinedItems": 32,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "method-selection",
+        "reframing"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real"
+      ],
+      "prerequisites": [
+        "complex or trigonometric antiderivatives",
+        "continuous maxima",
+        "derivatives",
+        "integral inequalities",
+        "limsup",
+        "root limits",
+        "subsequences",
+        "sum-integral comparisons"
+      ],
+      "families": [
+        {
+          "familyId": "m3-limits-hard-log-exponential-second-scale",
+          "relatedIdeaGroupId": "second-asymptotic-scale",
+          "structuralSignature": "normalized-power-first-correction",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-trig-power-limit",
+          "relatedIdeaGroupId": "power-with-cancelled-trig-ratio",
+          "structuralSignature": "trig-ratio-one-to-infinity",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-Riemann-sum",
+          "relatedIdeaGroupId": "sum-to-integral",
+          "structuralSignature": "rational-Riemann-sum",
+          "primaryTechnique": "Riemann-sums",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-Stolz-power-sum",
+          "relatedIdeaGroupId": "Cesaro-Stolz",
+          "structuralSignature": "power-sum-Stolz",
+          "primaryTechnique": "Stolz-Cesaro",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-recurrence-limit",
+          "relatedIdeaGroupId": "monotone-recurrence",
+          "structuralSignature": "monotone-square-root-recurrence",
+          "primaryTechnique": "fixed-point-and-bounds",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-Gamma-finite-shift-correction",
+          "relatedIdeaGroupId": "finite-product-second-order",
+          "structuralSignature": "reciprocal-factorial-first-correction",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-boundary-moment",
+          "relatedIdeaGroupId": "endpoint-concentration",
+          "structuralSignature": "endpoint-concentrating-integral",
+          "primaryTechnique": "beta-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-log-sum-integral",
+          "relatedIdeaGroupId": "logarithmic-product-limit",
+          "structuralSignature": "product-as-log-Riemann-sum",
+          "primaryTechnique": "Riemann-sums",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-oscillatory-regularity-threshold",
+          "relatedIdeaGroupId": "oscillatory-regularity-threshold",
+          "structuralSignature": "oscillatory-first-derivative-continuity-threshold",
+          "primaryTechnique": "subsequence-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-supremum-pointwise-mismatch",
+          "relatedIdeaGroupId": "nonuniform-convergence-extremum",
+          "structuralSignature": "nonuniform-limit-global-maximum",
+          "primaryTechnique": "moving-maximizer",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-Lp-maximum-limit",
+          "relatedIdeaGroupId": "limits-Lp-uniform-norm",
+          "structuralSignature": "large-integral-power-to-continuous-maximum",
+          "primaryTechnique": "squeeze-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "convergence"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "continuous maxima",
+            "derivatives",
+            "integral inequalities",
+            "root limits"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-hard-log-phase-average-limsup",
+          "relatedIdeaGroupId": "limits-log-phase-sum-integral",
+          "structuralSignature": "logarithmic-phase-arithmetic-average-limsup",
+          "primaryTechnique": "oscillatory-convergence",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection",
+            "convergence"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "sum-integral comparisons",
+            "complex or trigonometric antiderivatives",
+            "limsup",
+            "subsequences"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "limits/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 14,
+      "quarantinedFamilies": 2,
+      "quarantinedItems": 16,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "recognition",
+        "reframing"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real",
+        "extended-real"
+      ],
+      "prerequisites": [
+        "difference quotients",
+        "floor function",
+        "inverse derivative theorem",
+        "inverse functions",
+        "sine standard limit",
+        "strict local inequalities"
+      ],
+      "families": [
+        {
+          "familyId": "m3-limits-medium-exponential-variable-power",
+          "relatedIdeaGroupId": "indeterminate-power",
+          "structuralSignature": "one-to-infinity-power",
+          "primaryTechnique": "logarithms",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-infinity-root-difference",
+          "relatedIdeaGroupId": "radical-at-infinity",
+          "structuralSignature": "radical-leading-term-cancellation",
+          "primaryTechnique": "rationalization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-log-power-decay",
+          "relatedIdeaGroupId": "log-versus-power",
+          "structuralSignature": "logarithmic-power-over-linear",
+          "primaryTechnique": "growth-hierarchy",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "extended-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-small-power-log",
+          "relatedIdeaGroupId": "zero-times-log",
+          "structuralSignature": "fractional-power-times-log",
+          "primaryTechnique": "substitution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "extended-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-second-order-trig",
+          "relatedIdeaGroupId": "trig-second-order-cancellation",
+          "structuralSignature": "cosine-defect-over-square",
+          "primaryTechnique": "identity",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-exponential-cancellation",
+          "relatedIdeaGroupId": "exponential-second-remainder",
+          "structuralSignature": "exponential-second-remainder",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-nested-log-ratio",
+          "relatedIdeaGroupId": "composition-limits",
+          "structuralSignature": "log-of-small-sine",
+          "primaryTechnique": "composition-and-domain",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-factorial-ratio-fixed-shift",
+          "relatedIdeaGroupId": "finite-product-asymptotics",
+          "structuralSignature": "fixed-factorial-shift",
+          "primaryTechnique": "finite-product-identities",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-root-test-scale",
+          "relatedIdeaGroupId": "nth-root-growth",
+          "structuralSignature": "polynomial-nth-root",
+          "primaryTechnique": "logarithmic-asymptotics",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-two-sided-square-root",
+          "relatedIdeaGroupId": "absolute-value-branch",
+          "structuralSignature": "principal-root-one-sided",
+          "primaryTechnique": "one-sided-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-floor-integer-approach",
+          "relatedIdeaGroupId": "limits-discontinuous-floor-approach",
+          "structuralSignature": "floor-of-removable-ratio-at-integer",
+          "primaryTechnique": "one-sided-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "sine standard limit",
+            "floor function",
+            "strict local inequalities"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-medium-implicit-inverse-increment",
+          "relatedIdeaGroupId": "inverse-function-change-of-variables",
+          "structuralSignature": "inverse-function-local-increment-limit",
+          "primaryTechnique": "inverse-function-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition",
+            "reframing"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "inverse functions",
+            "difference quotients",
+            "inverse derivative theorem"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "limits/olympiad": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 12,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 20,
+      "quarantinedFamilies": 8,
+      "quarantinedItems": 64,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression",
+        "exact-real"
+      ],
+      "prerequisites": [
+        "Bonferroni inequalities",
+        "Chebyshev recurrence",
+        "Euler product for zeta",
+        "Levy continuity theorem",
+        "Mobius divisor identity",
+        "Newton iteration",
+        "Riemann integrability",
+        "Weyl criterion",
+        "algebraic conjugacy",
+        "binomial distribution",
+        "characteristic functions",
+        "determinants",
+        "dominated series",
+        "exponential series",
+        "finite geometric sums",
+        "finite trigonometric sums",
+        "fractional parts",
+        "gcd",
+        "inclusion-exclusion",
+        "integration by parts",
+        "intermediate value theorem",
+        "linear recurrences",
+        "logarithmic asymptotics",
+        "normal CDF",
+        "polynomial degree",
+        "removable endpoint singularities",
+        "root asymptotics",
+        "root limits",
+        "uniform norm"
+      ],
+      "families": [
+        {
+          "familyId": "m3-limits-olympiad-product-Euler-correction",
+          "relatedIdeaGroupId": "triangular-product-asymptotics",
+          "structuralSignature": "triangular-product-first-correction",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-central-binomial-shift",
+          "relatedIdeaGroupId": "central-binomial-asymptotics",
+          "structuralSignature": "shifted-central-binomial-defect",
+          "primaryTechnique": "Stirling-asymptotics",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+          "relatedIdeaGroupId": "neutral-fixed-point-rate",
+          "structuralSignature": "neutral-recursion-decay-rate",
+          "primaryTechnique": "Stolz-Cesaro",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+          "relatedIdeaGroupId": "integral-boundary-layer",
+          "structuralSignature": "degenerate-endpoint-Laplace-rescaling",
+          "primaryTechnique": "asymptotic-rescaling",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+          "relatedIdeaGroupId": "limits-irrational-rotation-correlation",
+          "structuralSignature": "correlated-fractional-parts-irrational-rotation",
+          "primaryTechnique": "equidistribution",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "fractional parts",
+            "finite geometric sums",
+            "Weyl criterion",
+            "Riemann integrability"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+          "relatedIdeaGroupId": "limits-Newton-cross-ratio-squaring",
+          "structuralSignature": "Newton-error-doubly-exponential-root",
+          "primaryTechnique": "nonlinear-conjugacy",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Newton iteration",
+            "algebraic conjugacy",
+            "root limits"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+          "relatedIdeaGroupId": "limits-Cassini-determinant-growth",
+          "structuralSignature": "linear-recurrence-Hankel-determinant-asymptotics",
+          "primaryTechnique": "determinant-identities",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "linear recurrences",
+            "determinants",
+            "root asymptotics"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+          "relatedIdeaGroupId": "limits-oscillatory-endpoint-trace",
+          "structuralSignature": "odd-Dirichlet-kernel-endpoint-trace",
+          "primaryTechnique": "oscillatory-convergence",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "finite trigonometric sums",
+            "integration by parts",
+            "removable endpoint singularities"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-monic-minimax-rate",
+          "relatedIdeaGroupId": "chebyshev-extremality",
+          "structuralSignature": "monic-polynomial-minimax-exponential-rate",
+          "primaryTechnique": "polynomial-extremality",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "polynomial degree",
+            "Chebyshev recurrence",
+            "intermediate value theorem",
+            "uniform norm"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+          "relatedIdeaGroupId": "limits-binomial-central-limit-threshold",
+          "structuralSignature": "central-binomial-cumulative-moving-threshold",
+          "primaryTechnique": "weak-convergence",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "binomial distribution",
+            "characteristic functions",
+            "Levy continuity theorem",
+            "normal CDF"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-coupon-coverage-window",
+          "relatedIdeaGroupId": "limits-coupon-Gumbel-Bonferroni",
+          "structuralSignature": "coupon-collector-logarithmic-window-probability",
+          "primaryTechnique": "inclusion-exclusion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "inclusion-exclusion",
+            "Bonferroni inequalities",
+            "logarithmic asymptotics",
+            "exponential series"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-limits-olympiad-gcd-pair-density",
+          "relatedIdeaGroupId": "limits-Mobius-lattice-density",
+          "structuralSignature": "ordered-lattice-pair-gcd-density",
+          "primaryTechnique": "Mobius-inversion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence",
+            "synthesis"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "gcd",
+            "Mobius divisor identity",
+            "dominated series",
+            "Euler product for zeta"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "multivariable/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "execution"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-multivariable-easy-partial-hold-fixed",
+          "relatedIdeaGroupId": "partial-derivative",
+          "structuralSignature": "single-partial-polynomial",
+          "primaryTechnique": "partial-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-mixed-partial",
+          "relatedIdeaGroupId": "mixed-second-partial",
+          "structuralSignature": "mixed-partial-monomial",
+          "primaryTechnique": "partial-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-directional-unit",
+          "relatedIdeaGroupId": "normalized-direction",
+          "structuralSignature": "directional-unit-vector",
+          "primaryTechnique": "directional-derivative",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-tangent-plane",
+          "relatedIdeaGroupId": "tangent-plane",
+          "structuralSignature": "sphere-tangent-plane-offset",
+          "primaryTechnique": "gradient-normal",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-linearization-two-inputs",
+          "relatedIdeaGroupId": "total-differential",
+          "structuralSignature": "two-variable-linear-approximation",
+          "primaryTechnique": "local-linear-approximation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-rectangle-integral",
+          "relatedIdeaGroupId": "double-integral-separable",
+          "structuralSignature": "rectangular-double-integral",
+          "primaryTechnique": "iterated-integration",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-triangular-region",
+          "relatedIdeaGroupId": "triangle-iterated-area",
+          "structuralSignature": "triangle-area-double-integral",
+          "primaryTechnique": "fundamental-theorem-of-calculus",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-polar-area",
+          "relatedIdeaGroupId": "polar-Jacobian",
+          "structuralSignature": "disk-area-polar",
+          "primaryTechnique": "polar-coordinates",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-chain-curve",
+          "relatedIdeaGroupId": "multivariable-chain-rule",
+          "structuralSignature": "curve-composition-total-derivative",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-divergence",
+          "relatedIdeaGroupId": "divergence-trace",
+          "structuralSignature": "divergence-polynomial-field",
+          "primaryTechnique": "partial-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-potential-endpoints",
+          "relatedIdeaGroupId": "gradient-line-integral",
+          "structuralSignature": "conservative-field-endpoint-data",
+          "primaryTechnique": "fundamental-theorem-line-integrals",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-easy-box-average",
+          "relatedIdeaGroupId": "multivariate-average",
+          "structuralSignature": "box-average-value",
+          "primaryTechnique": "volume-normalization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "execution"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "multivariable/hard": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+          "relatedIdeaGroupId": "Rayleigh-quotient",
+          "structuralSignature": "symmetric-quadratic-on-circle",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-moving-domain-derivative",
+          "relatedIdeaGroupId": "Reynolds-transport",
+          "structuralSignature": "moving-disk-boundary-integral",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+          "relatedIdeaGroupId": "ellipsoid-second-moment",
+          "structuralSignature": "ellipsoid-axis-second-moment",
+          "primaryTechnique": "symmetry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+          "relatedIdeaGroupId": "hyperbolic-coordinate-change",
+          "structuralSignature": "product-ratio-positive-quadrant",
+          "primaryTechnique": "change-of-variables",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-simplex-beta",
+          "relatedIdeaGroupId": "Dirichlet-simplex-moment",
+          "structuralSignature": "polynomial-simplex-beta",
+          "primaryTechnique": "beta-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-nonconservative-hole",
+          "relatedIdeaGroupId": "closed-nonexact-field",
+          "structuralSignature": "closed-field-nonsimply-connected-domain",
+          "primaryTechnique": "argument-principle",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-Stokes-tilted-surface",
+          "relatedIdeaGroupId": "Stokes-theorem",
+          "structuralSignature": "Stokes-tilted-graph-curl-flux",
+          "primaryTechnique": "Stokes-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-boundary-versus-interior",
+          "relatedIdeaGroupId": "constrained-boundary-extrema",
+          "structuralSignature": "square-domain-coupled-quadratic",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-surface-flux-graph",
+          "relatedIdeaGroupId": "oriented-graph-flux",
+          "structuralSignature": "paraboloid-oriented-flux",
+          "primaryTechnique": "Jacobian-and-area",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-mixed-Hessian-coordinate",
+          "relatedIdeaGroupId": "Hessian-under-rotation",
+          "structuralSignature": "Hessian-coordinate-congruence",
+          "primaryTechnique": "chain-rule",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-path-dependent-directional",
+          "relatedIdeaGroupId": "multivariable-limit-paths",
+          "structuralSignature": "anisotropic-path-limit",
+          "primaryTechnique": "curved-path-test",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-hard-Gaussian-precision",
+          "relatedIdeaGroupId": "Gaussian-positive-form",
+          "structuralSignature": "coupled-two-dimensional-Gaussian",
+          "primaryTechnique": "completing-the-square",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "multivariable/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-multivariable-medium-gradient-max-direction",
+          "relatedIdeaGroupId": "steepest-ascent",
+          "structuralSignature": "maximum-directional-derivative",
+          "primaryTechnique": "Cauchy-Schwarz",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-quadratic-critical-value",
+          "relatedIdeaGroupId": "positive-definite-quadratic",
+          "structuralSignature": "two-square-global-minimum",
+          "primaryTechnique": "completing-the-square",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-Lagrange-circle-linear",
+          "relatedIdeaGroupId": "linear-circle-extremum",
+          "structuralSignature": "linear-form-circle-constraint",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-change-order",
+          "relatedIdeaGroupId": "reversed-integral-region",
+          "structuralSignature": "reverse-triangular-integration-order",
+          "primaryTechnique": "changing-order-of-integration",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-ellipse-transform",
+          "relatedIdeaGroupId": "affine-Jacobian",
+          "structuralSignature": "ellipse-area-linear-Jacobian",
+          "primaryTechnique": "change-of-variables",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-polar-moment",
+          "relatedIdeaGroupId": "polar-moment",
+          "structuralSignature": "radial-disk-moment",
+          "primaryTechnique": "polar-coordinates",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-Green-circulation",
+          "relatedIdeaGroupId": "Green-theorem",
+          "structuralSignature": "circulation-Green-disk",
+          "primaryTechnique": "Green-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-divergence-flux",
+          "relatedIdeaGroupId": "divergence-theorem",
+          "structuralSignature": "radial-field-sphere-flux",
+          "primaryTechnique": "divergence-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-surface-graph-area",
+          "relatedIdeaGroupId": "graph-surface-area",
+          "structuralSignature": "planar-graph-surface-area",
+          "primaryTechnique": "Jacobian-and-area",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-implicit-surface-partial",
+          "relatedIdeaGroupId": "implicit-surface-differentiation",
+          "structuralSignature": "implicit-sphere-partial",
+          "primaryTechnique": "implicit-function-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-density-centroid",
+          "relatedIdeaGroupId": "weighted-centroid",
+          "structuralSignature": "density-weighted-centroid",
+          "primaryTechnique": "moment-normalization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-medium-spherical-moment",
+          "relatedIdeaGroupId": "spherical-coordinates",
+          "structuralSignature": "ball-radial-power-moment",
+          "primaryTechnique": "Jacobian-and-area",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "multivariable/olympiad": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 17,
+      "quarantinedFamilies": 5,
+      "quarantinedItems": 40,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-multivariable-olympiad-Vandermonde-extremum",
+          "relatedIdeaGroupId": "discriminant-constraint",
+          "structuralSignature": "Vandermonde-discriminant-sphere-extremum",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-anisotropic-integrability",
+          "relatedIdeaGroupId": "anisotropic-singularity",
+          "structuralSignature": "anisotropic-integrability-threshold",
+          "primaryTechnique": "asymptotic-rescaling",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+          "relatedIdeaGroupId": "correlated-Gaussian-orthant",
+          "structuralSignature": "correlated-Gaussian-positive-quadrant",
+          "primaryTechnique": "change-of-variables",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-planar-log-potential",
+          "relatedIdeaGroupId": "logarithmic-potential",
+          "structuralSignature": "disk-logarithmic-potential-interior-source",
+          "primaryTechnique": "harmonic-circle-mean",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+          "relatedIdeaGroupId": "Feynman-parameter-integral",
+          "structuralSignature": "two-translated-resolvent-plane-integral",
+          "primaryTechnique": "parameterization-and-translation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+          "relatedIdeaGroupId": "entropy-Legendre-duality",
+          "structuralSignature": "log-sum-exp-Legendre-minimum",
+          "primaryTechnique": "constrained-optimization",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+          "relatedIdeaGroupId": "Dirichlet-volume",
+          "structuralSignature": "dimension-equals-power-lp-ball",
+          "primaryTechnique": "change-of-variables",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+          "relatedIdeaGroupId": "parameterized-Dirichlet-moment",
+          "structuralSignature": "mixed-logarithmic-simplex-moment",
+          "primaryTechnique": "parameter-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+          "relatedIdeaGroupId": "complex-lemniscate-geometry",
+          "structuralSignature": "complex-polynomial-lemniscate-area",
+          "primaryTechnique": "polar-coordinates",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-squared-log-disk",
+          "relatedIdeaGroupId": "harmonic-Parseval-disk",
+          "structuralSignature": "disk-squared-log-harmonic-Parseval",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-cube-simplex-cap",
+          "relatedIdeaGroupId": "cube-simplex-inclusion-exclusion",
+          "structuralSignature": "high-dimensional-cube-simplex-cap",
+          "primaryTechnique": "inclusion-exclusion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+          "relatedIdeaGroupId": "polynomial-image-winding-number",
+          "structuralSignature": "polynomial-image-winding-via-coefficient-root-bound",
+          "primaryTechnique": "argument-principle",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "series/easy": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 17,
+      "quarantinedFamilies": 5,
+      "quarantinedItems": 40,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection",
+        "recognition"
+      ],
+      "answerForms": [
+        "categorical-classification",
+        "exact-expression",
+        "exact-real",
+        "extended-real"
+      ],
+      "prerequisites": [
+        "Taylor coefficients",
+        "absolute convergence",
+        "alternating series test",
+        "comparison test",
+        "limits of finite linear combinations",
+        "p-series test"
+      ],
+      "families": [
+        {
+          "familyId": "m3-series-easy-geometric-tail",
+          "relatedIdeaGroupId": "geometric-series-tail",
+          "structuralSignature": "shifted-geometric-tail",
+          "primaryTechnique": "geometric-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-rational-telescope",
+          "relatedIdeaGroupId": "first-difference-telescoping",
+          "structuralSignature": "reciprocal-adjacent-difference",
+          "primaryTechnique": "telescoping",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-binomial-total",
+          "relatedIdeaGroupId": "binomial-theorem",
+          "structuralSignature": "binomial-row-sum",
+          "primaryTechnique": "binomial-theorem",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-arithmetic-triangle",
+          "relatedIdeaGroupId": "finite-arithmetic-sum",
+          "structuralSignature": "finite-arithmetic-pairing",
+          "primaryTechnique": "symmetry",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-ratio-test-data",
+          "relatedIdeaGroupId": "ratio-test-factorial",
+          "structuralSignature": "factorial-ratio-test",
+          "primaryTechnique": "convergence-tests",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "extended-real",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-power-series-radius",
+          "relatedIdeaGroupId": "geometric-power-series-radius",
+          "structuralSignature": "geometric-radius",
+          "primaryTechnique": "convergence-tests",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-nth-term-test",
+          "relatedIdeaGroupId": "nonzero-term-limit",
+          "structuralSignature": "nonzero-term-limit-divergence",
+          "primaryTechnique": "convergence-tests",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-p-series-pair",
+          "relatedIdeaGroupId": "positive-p-series-threshold",
+          "structuralSignature": "paired-positive-p-series-threshold",
+          "primaryTechnique": "p-series-classification",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "categorical-classification",
+          "prerequisites": [
+            "p-series test"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-alternating-absolute-conditional",
+          "relatedIdeaGroupId": "alternating-versus-absolute-convergence",
+          "structuralSignature": "alternating-powers-absolute-versus-conditional",
+          "primaryTechnique": "alternating-test-and-absolute-values",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "categorical-classification",
+          "prerequisites": [
+            "alternating series test",
+            "absolute convergence"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-direct-comparison-information",
+          "relatedIdeaGroupId": "direct-series-comparison-logical-strength",
+          "structuralSignature": "comparison-direction-versus-insufficient-information",
+          "primaryTechnique": "direct-comparison",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "categorical-classification",
+          "prerequisites": [
+            "comparison test"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-taylor-coefficient-derivative",
+          "relatedIdeaGroupId": "power-series-coefficient-derivative",
+          "structuralSignature": "convergent-power-series-specified-coefficient-derivative",
+          "primaryTechnique": "coefficient-to-derivative",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "Taylor coefficients"
+          ],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-easy-linearity-given-convergent-sums",
+          "relatedIdeaGroupId": "linearity-of-convergent-series",
+          "structuralSignature": "linear-combination-of-two-given-convergent-series",
+          "primaryTechnique": "partial-sum-linearity",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "recognition"
+          ],
+          "answerForm": "exact-real",
+          "prerequisites": [
+            "limits of finite linear combinations"
+          ],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "series/hard": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 10,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 17,
+      "quarantinedFamilies": 5,
+      "quarantinedItems": 40,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "method-selection",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-series-hard-harmonic-generating",
+          "relatedIdeaGroupId": "harmonic-generating-function",
+          "structuralSignature": "harmonic-weight-geometric",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-Catalan-generating",
+          "relatedIdeaGroupId": "Catalan-generating-function",
+          "structuralSignature": "Catalan-series",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-log-integrated-geometric",
+          "relatedIdeaGroupId": "double-denominator-generating",
+          "structuralSignature": "adjacent-index-logarithm-series",
+          "primaryTechnique": "integrate-power-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-series-beta-integral",
+          "relatedIdeaGroupId": "series-integral-beta",
+          "structuralSignature": "nonadjacent-telescoping-shift",
+          "primaryTechnique": "termwise-integration",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-trig-geometric",
+          "relatedIdeaGroupId": "trigonometric-generating",
+          "structuralSignature": "trigonometric-geometric-weight",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-binomial-alternating-difference",
+          "relatedIdeaGroupId": "finite-difference-annihilation",
+          "structuralSignature": "alternating-binomial-power-sum",
+          "primaryTechnique": "finite-differences",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-telescoping-arctan",
+          "relatedIdeaGroupId": "arctangent-addition-telescope",
+          "structuralSignature": "arctangent-difference-series",
+          "primaryTechnique": "addition-formula",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-floor-geometric-count",
+          "relatedIdeaGroupId": "floor-count-generating-function",
+          "structuralSignature": "floor-weight-geometric-series",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-binomial-beta-cancellation",
+          "relatedIdeaGroupId": "finite-binomial-beta-transform",
+          "structuralSignature": "finite-alternating-binomial-reciprocal",
+          "primaryTechnique": "integral-representation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-dyadic-infinite-product",
+          "relatedIdeaGroupId": "dyadic-product-telescoping",
+          "structuralSignature": "dyadic-factor-infinite-product",
+          "primaryTechnique": "finite-product-identities",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-conditional-block-rearrangement",
+          "relatedIdeaGroupId": "conditionally-convergent-rearrangement",
+          "structuralSignature": "alternating-harmonic-fixed-block-rearrangement",
+          "primaryTechnique": "harmonic-block-asymptotics",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-hard-borderline-exponential-comparison",
+          "relatedIdeaGroupId": "asymptotic-p-series-threshold",
+          "structuralSignature": "exponential-cancellation-p-series-threshold",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "series/medium": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 8,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 12,
+      "quarantinedFamilies": 0,
+      "quarantinedItems": 0,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "method-selection"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-series-medium-weighted-geometric",
+          "relatedIdeaGroupId": "weighted-geometric",
+          "structuralSignature": "linear-weight-geometric",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-exponential-Taylor",
+          "relatedIdeaGroupId": "exponential-Taylor",
+          "structuralSignature": "factorial-exponential-series",
+          "primaryTechnique": "Taylor-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-logarithmic-series",
+          "relatedIdeaGroupId": "logarithm-Taylor",
+          "structuralSignature": "logarithm-series",
+          "primaryTechnique": "integrate-geometric-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-arctangent-series",
+          "relatedIdeaGroupId": "arctangent-Taylor",
+          "structuralSignature": "odd-denominator-alternating-series",
+          "primaryTechnique": "integrate-geometric-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-cosine-series",
+          "relatedIdeaGroupId": "cosine-Taylor",
+          "structuralSignature": "even-factorial-alternating-series",
+          "primaryTechnique": "coefficient-extraction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-negative-binomial",
+          "relatedIdeaGroupId": "negative-binomial-series",
+          "structuralSignature": "negative-binomial-order-three",
+          "primaryTechnique": "power-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-cubic-telescope",
+          "relatedIdeaGroupId": "higher-order-telescoping",
+          "structuralSignature": "three-adjacent-factors",
+          "primaryTechnique": "partial-fractions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-quadratic-weight",
+          "relatedIdeaGroupId": "quadratic-geometric-moment",
+          "structuralSignature": "quadratic-weight-geometric",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-weighted-binomial-total",
+          "relatedIdeaGroupId": "binomial-first-moment",
+          "structuralSignature": "finite-binomial-weighted-sum",
+          "primaryTechnique": "generating-functions",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-power-series-ratio-radius",
+          "relatedIdeaGroupId": "factorial-quotient-radius",
+          "structuralSignature": "central-factorial-ratio-radius",
+          "primaryTechnique": "convergence-tests",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-integral-tail-bound",
+          "relatedIdeaGroupId": "integral-test-remainder",
+          "structuralSignature": "integral-test-tail-upper-bound",
+          "primaryTechnique": "convergence-tests",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-medium-alternating-error",
+          "relatedIdeaGroupId": "alternating-series-error",
+          "structuralSignature": "alternating-first-omitted-term-bound",
+          "primaryTechnique": "remainder-estimates",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    },
+    "series/olympiad": {
+      "verifiedFamilies": 12,
+      "verifiedItems": 96,
+      "relatedIdeaGroups": 12,
+      "structures": 12,
+      "primaryTechniques": 11,
+      "minimumItemsPerFamily": 8,
+      "importedItems": 96,
+      "activeItems": 96,
+      "authoredCandidateFamilies": 14,
+      "quarantinedFamilies": 2,
+      "quarantinedItems": 16,
+      "retainedLegacyFamilies": 3,
+      "retainedLegacyItems": 4200,
+      "reasoningDemands": [
+        "convergence",
+        "method-selection",
+        "reframing",
+        "synthesis"
+      ],
+      "answerForms": [
+        "exact-expression"
+      ],
+      "prerequisites": [],
+      "families": [
+        {
+          "familyId": "m3-series-olympiad-harmonic-over-shift",
+          "relatedIdeaGroupId": "Euler-harmonic-sum",
+          "structuralSignature": "Euler-sum-shifted-denominator",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+          "relatedIdeaGroupId": "roots-of-unity-series",
+          "structuralSignature": "cube-root-exponential-filter",
+          "primaryTechnique": "coefficient-extraction",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-binary-tangent-telescope",
+          "relatedIdeaGroupId": "scale-telescoping-trig",
+          "structuralSignature": "dyadic-trigonometric-telescope",
+          "primaryTechnique": "cotangent-doubling",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-inverse-binomial-arcsine",
+          "relatedIdeaGroupId": "inverse-central-binomial",
+          "structuralSignature": "inverse-binomial-arcsine-square",
+          "primaryTechnique": "power-series",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-hypergeometric-beta",
+          "relatedIdeaGroupId": "Gauss-hypergeometric-beta",
+          "structuralSignature": "Gauss-half-parameter-hypergeometric",
+          "primaryTechnique": "beta-integral",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-log-sine-product",
+          "relatedIdeaGroupId": "Euler-product-log",
+          "structuralSignature": "logarithm-of-Euler-product",
+          "primaryTechnique": "infinite-product",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-lattice-resolvent",
+          "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+          "structuralSignature": "positive-lattice-resolvent",
+          "primaryTechnique": "Mittag-Leffler-expansion",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-Fourier-fourth-sine",
+          "relatedIdeaGroupId": "Fourier-piecewise-sum",
+          "structuralSignature": "Fourier-sine-fourth-moment",
+          "primaryTechnique": "Fourier-analysis",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-elliptic-central-binomial-square",
+          "relatedIdeaGroupId": "elliptic-integral-series",
+          "structuralSignature": "complete-elliptic-integral-series",
+          "primaryTechnique": "sum-integral-interchange",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-harmonic-square-generating",
+          "relatedIdeaGroupId": "harmonic-square-generating",
+          "structuralSignature": "harmonic-square-dilogarithm",
+          "primaryTechnique": "double-sum-diagonal-split",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "method-selection"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-totient-Lambert",
+          "relatedIdeaGroupId": "Lambert-divisor-convolution",
+          "structuralSignature": "totient-Lambert-divisor-convolution",
+          "primaryTechnique": "divisor-regrouping",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "reframing",
+            "convergence"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        },
+        {
+          "familyId": "m3-series-olympiad-theta-dual-moment",
+          "relatedIdeaGroupId": "Poisson-theta-duality",
+          "structuralSignature": "theta-duality-weighted-Gaussian-lattice",
+          "primaryTechnique": "Poisson-summation-and-differentiation",
+          "alternativeTechniques": [],
+          "reasoningDemand": [
+            "synthesis"
+          ],
+          "answerForm": "exact-expression",
+          "prerequisites": [],
+          "verifiedItems": 8
+        }
+      ],
+      "activeTotalItems": 4296,
+      "activeSelectableFamilies": 15
+    }
+  },
+  "activeSelectableTotalItems": 103304
+}

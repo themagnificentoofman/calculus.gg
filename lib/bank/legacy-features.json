@@ -1,0 +1,506 @@
+{
+  "polynomial-area": {
+    "idea": "polynomial-area",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "power-rule",
+    "combination": "power-rule",
+    "weight": 0.15
+  },
+  "exponential-area": {
+    "idea": "exponential-area",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "exponentials",
+    "combination": "exponentials",
+    "weight": 0.15
+  },
+  "trig-area": {
+    "idea": "trig-area",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "trigonometric-identities",
+    "combination": "trigonometric-identities",
+    "weight": 0.15
+  },
+  "polynomial-exponential": {
+    "idea": "polynomial-exponential",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "integration-by-parts",
+    "combination": "integration-by-parts",
+    "weight": 0.15
+  },
+  "quadratic-substitution": {
+    "idea": "quadratic-substitution",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "substitution",
+    "combination": "substitution",
+    "weight": 0.15
+  },
+  "rational-decomposition": {
+    "idea": "rational-decomposition",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "partial-fractions",
+    "combination": "partial-fractions",
+    "weight": 0.15
+  },
+  "log-moments": {
+    "idea": "log-moments",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "improper-integral",
+    "combination": "improper-integral+integration-by-parts",
+    "weight": 0.15
+  },
+  "trig-products": {
+    "idea": "trig-products",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "trigonometric-identities",
+    "combination": "symmetry+trigonometric-identities",
+    "weight": 0.15
+  },
+  "improper-rational": {
+    "idea": "improper-rational",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "improper-integral",
+    "combination": "improper-integral+substitution",
+    "weight": 0.15
+  },
+  "polynomial-slope": {
+    "idea": "polynomial-slope",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "power-rule",
+    "combination": "power-rule",
+    "weight": 0.15
+  },
+  "trig-slope": {
+    "idea": "trig-slope",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "trigonometric-derivatives",
+    "combination": "trigonometric-derivatives",
+    "weight": 0.15
+  },
+  "exp-log-slope": {
+    "idea": "exp-log-slope",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "chain-rule",
+    "combination": "chain-rule",
+    "weight": 0.15
+  },
+  "product-rule": {
+    "idea": "product-rule",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "product-rule",
+    "combination": "product-rule",
+    "weight": 0.15
+  },
+  "quotient-rule": {
+    "idea": "quotient-rule",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "quotient-rule",
+    "combination": "quotient-rule",
+    "weight": 0.15
+  },
+  "nested-chain": {
+    "idea": "nested-chain",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "chain-rule",
+    "combination": "chain-rule",
+    "weight": 0.15
+  },
+  "fourth-derivative": {
+    "idea": "fourth-derivative",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "leibniz-rule",
+    "combination": "leibniz-rule",
+    "weight": 0.15
+  },
+  "log-differentiation": {
+    "idea": "log-differentiation",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "logarithmic-differentiation",
+    "combination": "logarithmic-differentiation",
+    "weight": 0.15
+  },
+  "parametric-curvature": {
+    "idea": "parametric-curvature",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "higher-derivatives",
+    "combination": "higher-derivatives+product-rule",
+    "weight": 0.15
+  },
+  "polynomial-continuity": {
+    "idea": "polynomial-continuity",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "continuity",
+    "combination": "continuity",
+    "weight": 0.15
+  },
+  "removable-factor": {
+    "idea": "removable-factor",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "factorization",
+    "combination": "factorization",
+    "weight": 0.15
+  },
+  "standard-trig-limits": {
+    "idea": "standard-trig-limits",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "standard-limits",
+    "combination": "standard-limits",
+    "weight": 0.15
+  },
+  "exponential-cancellation": {
+    "idea": "exponential-cancellation",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "lhopital",
+    "combination": "lhopital",
+    "weight": 0.15
+  },
+  "rational-at-infinity": {
+    "idea": "rational-at-infinity",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "dominant-balance",
+    "combination": "dominant-balance",
+    "weight": 0.15
+  },
+  "logarithmic-cancellation": {
+    "idea": "exponential-cancellation",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "lhopital",
+    "combination": "lhopital",
+    "weight": 0.15
+  },
+  "third-order-exponential": {
+    "idea": "third-order-exponential",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "taylor-remainder",
+    "combination": "taylor-remainder",
+    "weight": 0.15
+  },
+  "trig-cancellation": {
+    "idea": "trig-cancellation",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "taylor-remainder",
+    "combination": "taylor-remainder",
+    "weight": 0.15
+  },
+  "radical-cancellation": {
+    "idea": "radical-cancellation",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "binomial-series",
+    "combination": "binomial-series",
+    "weight": 0.15
+  },
+  "geometric-series": {
+    "idea": "geometric-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "geometric-series",
+    "combination": "geometric-series",
+    "weight": 0.15
+  },
+  "telescoping-series": {
+    "idea": "telescoping-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "telescoping",
+    "combination": "telescoping",
+    "weight": 0.15
+  },
+  "even-geometric-series": {
+    "idea": "geometric-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "geometric-series",
+    "combination": "geometric-series",
+    "weight": 0.15
+  },
+  "weighted-geometric": {
+    "idea": "weighted-geometric",
+    "structure": "series-fixed-linear-basis",
+    "technique": "termwise-differentiation",
+    "combination": "termwise-differentiation",
+    "weight": 0.15
+  },
+  "exponential-series": {
+    "idea": "exponential-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "taylor-series",
+    "combination": "taylor-series",
+    "weight": 0.15
+  },
+  "alternating-log-series": {
+    "idea": "alternating-log-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "alternating-series",
+    "combination": "alternating-series+endpoint-convergence",
+    "weight": 0.15
+  },
+  "quadratic-geometric": {
+    "idea": "weighted-geometric",
+    "structure": "series-fixed-linear-basis",
+    "technique": "termwise-differentiation",
+    "combination": "termwise-differentiation",
+    "weight": 0.15
+  },
+  "cubic-telescoping": {
+    "idea": "cubic-telescoping",
+    "structure": "series-fixed-linear-basis",
+    "technique": "partial-fractions",
+    "combination": "partial-fractions+telescoping",
+    "weight": 0.15
+  },
+  "zeta-even": {
+    "idea": "zeta-even",
+    "structure": "series-fixed-linear-basis",
+    "technique": "fourier-series",
+    "combination": "absolute-convergence+fourier-series",
+    "weight": 0.15
+  },
+  "polynomial-initial-value": {
+    "idea": "polynomial-initial-value",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "initial-value",
+    "combination": "initial-value+power-rule",
+    "weight": 0.15
+  },
+  "exponential-initial-value": {
+    "idea": "exponential-initial-value",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "initial-value",
+    "combination": "exponentials+initial-value",
+    "weight": 0.15
+  },
+  "trig-initial-value": {
+    "idea": "trig-initial-value",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "initial-value",
+    "combination": "initial-value+trigonometric-identities",
+    "weight": 0.15
+  },
+  "linear-integrating-factor": {
+    "idea": "linear-integrating-factor",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "integrating-factor",
+    "combination": "integrating-factor",
+    "weight": 0.15
+  },
+  "variable-integrating-factor": {
+    "idea": "linear-integrating-factor",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "integrating-factor",
+    "combination": "integrating-factor+substitution",
+    "weight": 0.15
+  },
+  "linear-trig-forcing": {
+    "idea": "linear-integrating-factor",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "integrating-factor",
+    "combination": "integrating-factor+integration-by-parts",
+    "weight": 0.15
+  },
+  "resonant-second-order": {
+    "idea": "resonant-second-order",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "resonance",
+    "combination": "linear-ode+resonance",
+    "weight": 0.15
+  },
+  "oscillator-resonance": {
+    "idea": "oscillator-resonance",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "resonance",
+    "combination": "linear-ode+resonance",
+    "weight": 0.15
+  },
+  "euler-cauchy": {
+    "idea": "euler-cauchy",
+    "structure": "ode-fixed-linear-basis",
+    "technique": "euler-cauchy",
+    "combination": "euler-cauchy+substitution",
+    "weight": 0.15
+  },
+  "partial-x": {
+    "idea": "partial-x",
+    "structure": "partial-fixed-linear-basis",
+    "technique": "partial-derivatives",
+    "combination": "partial-derivatives",
+    "weight": 0.15
+  },
+  "partial-y": {
+    "idea": "partial-x",
+    "structure": "partial-fixed-linear-basis",
+    "technique": "partial-derivatives",
+    "combination": "partial-derivatives",
+    "weight": 0.15
+  },
+  "rectangle-area": {
+    "idea": "rectangle-area",
+    "structure": "double-fixed-linear-basis",
+    "technique": "iterated-integrals",
+    "combination": "iterated-integrals",
+    "weight": 0.15
+  },
+  "mixed-partials": {
+    "idea": "mixed-partials",
+    "structure": "partial-fixed-linear-basis",
+    "technique": "mixed-partials",
+    "combination": "mixed-partials",
+    "weight": 0.15
+  },
+  "triangle-integral": {
+    "idea": "triangle-integral",
+    "structure": "double-fixed-linear-basis",
+    "technique": "iterated-integrals",
+    "combination": "iterated-integrals+nonrectangular-domain",
+    "weight": 0.15
+  },
+  "laplacian": {
+    "idea": "laplacian",
+    "structure": "laplacian-fixed-linear-basis",
+    "technique": "laplacian",
+    "combination": "laplacian",
+    "weight": 0.15
+  },
+  "high-mixed-partials": {
+    "idea": "high-mixed-partials",
+    "structure": "partial-fixed-linear-basis",
+    "technique": "higher-partials",
+    "combination": "higher-partials",
+    "weight": 0.15
+  },
+  "curved-domain-integral": {
+    "idea": "curved-domain-integral",
+    "structure": "double-fixed-linear-basis",
+    "technique": "iterated-integrals",
+    "combination": "iterated-integrals+nonrectangular-domain",
+    "weight": 0.15
+  },
+  "laplacian-products": {
+    "idea": "laplacian-products",
+    "structure": "laplacian-fixed-linear-basis",
+    "technique": "laplacian",
+    "combination": "chain-rule+laplacian",
+    "weight": 0.15
+  },
+  "transformed-beta-log": {
+    "idea": "beta-parameter-moments",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "parameter-differentiation",
+    "combination": "improper-integral+parameter-differentiation+substitution",
+    "weight": 0.15
+  },
+  "concealed-reflection": {
+    "idea": "reflection-invariant-measure",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "symmetry",
+    "combination": "beta-integral+symmetry",
+    "weight": 0.15
+  },
+  "frullani-cancellation": {
+    "idea": "frullani-scaling-cancellation",
+    "structure": "integral-fixed-linear-basis",
+    "technique": "frullani",
+    "combination": "cancellation+frullani+improper-integral",
+    "weight": 0.15
+  },
+  "removable-exponential-derivative": {
+    "idea": "removable-exponential-derivative",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "finite-differences",
+    "combination": "analytic-extension+finite-differences",
+    "weight": 0.15
+  },
+  "implicit-inverse-series": {
+    "idea": "implicit-inverse-series",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "lagrange-inversion",
+    "combination": "implicit-differentiation+lagrange-inversion",
+    "weight": 0.15
+  },
+  "roots-of-unity-product": {
+    "idea": "roots-of-unity-product",
+    "structure": "derivative-fixed-linear-basis",
+    "technique": "roots-of-unity",
+    "combination": "coefficient-extraction+roots-of-unity",
+    "weight": 0.15
+  },
+  "finite-difference-log-limit": {
+    "idea": "finite-difference-log-limit",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "finite-differences",
+    "combination": "finite-differences+parameter-differentiation",
+    "weight": 0.15
+  },
+  "riemann-product-limit": {
+    "idea": "riemann-product-limit",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "uniform-asymptotics",
+    "combination": "partial-fractions+riemann-sums+uniform-asymptotics",
+    "weight": 0.15
+  },
+  "second-order-riemann-limit": {
+    "idea": "second-order-riemann-limit",
+    "structure": "limit-fixed-linear-basis",
+    "technique": "euler-maclaurin",
+    "combination": "euler-maclaurin+faulhaber",
+    "weight": 0.15
+  },
+  "stirling-beta-series": {
+    "idea": "stirling-beta-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "generating-functions",
+    "combination": "beta-integral+generating-functions",
+    "weight": 0.15
+  },
+  "binomial-beta-series": {
+    "idea": "binomial-beta-series",
+    "structure": "series-fixed-linear-basis",
+    "technique": "binomial-transform",
+    "combination": "binomial-transform+geometric-series+tonelli",
+    "weight": 0.15
+  },
+  "fourier-cosine-square": {
+    "idea": "fourier-cosine-square",
+    "structure": "series-fixed-linear-basis",
+    "technique": "fourier-series",
+    "combination": "fourier-series+trigonometric-identities",
+    "weight": 0.15
+  },
+  "hidden-riccati": {
+    "idea": "hidden-riccati",
+    "structure": "special-ode-fixed-linear-basis",
+    "technique": "riccati",
+    "combination": "nonlinear-substitution+riccati",
+    "weight": 0.15
+  },
+  "clairaut-envelope": {
+    "idea": "clairaut-envelope",
+    "structure": "special-ode-fixed-linear-basis",
+    "technique": "singular-solutions",
+    "combination": "envelopes+singular-solutions",
+    "weight": 0.15
+  },
+  "euler-double-resonance": {
+    "idea": "euler-double-resonance",
+    "structure": "special-ode-fixed-linear-basis",
+    "technique": "euler-cauchy",
+    "combination": "euler-cauchy+resonance",
+    "weight": 0.15
+  },
+  "unbounded-dirichlet-integral": {
+    "idea": "unbounded-dirichlet-integral",
+    "structure": "double-fixed-linear-basis",
+    "technique": "jacobian",
+    "combination": "dirichlet-integral+improper-integral+jacobian",
+    "weight": 0.15
+  },
+  "rotated-disk-moment": {
+    "idea": "rotated-disk-moment",
+    "structure": "disk-fixed-linear-basis",
+    "technique": "rotation",
+    "combination": "polar-coordinates+rotation+symmetry",
+    "weight": 0.15
+  },
+  "radial-log-mixed-derivative": {
+    "idea": "radial-log-mixed-derivative",
+    "structure": "partial-fixed-linear-basis",
+    "technique": "coefficient-extraction",
+    "combination": "coefficient-extraction+stirling-numbers",
+    "weight": 0.15
+  }
+}

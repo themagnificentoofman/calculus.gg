@@ -1,0 +1,112 @@
+{
+  "sourceSha256": "8120a40129e0230805c41eeddbe153e7a8e4e777f164795f90be6d9247d8a98e",
+  "tests": [
+    {
+      "test": "easy trusted reconstruction",
+      "passed": true
+    },
+    {
+      "test": "easy rejects answerChoiceId mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "easy rejects statement mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "easy rejects parameters mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "easy rejects analyticCertificate mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "medium trusted reconstruction",
+      "passed": true
+    },
+    {
+      "test": "medium rejects answerChoiceId mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "medium rejects statement mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "medium rejects parameters mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "medium rejects analyticCertificate mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "hard trusted reconstruction",
+      "passed": true
+    },
+    {
+      "test": "hard rejects answerChoiceId mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "hard rejects statement mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "hard rejects parameters mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "hard rejects analyticCertificate mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "olympiad trusted reconstruction",
+      "passed": true
+    },
+    {
+      "test": "olympiad rejects answerChoiceId mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "olympiad rejects statement mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "olympiad rejects parameters mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "olympiad rejects analyticCertificate mutation even with recomputed hash",
+      "passed": true
+    },
+    {
+      "test": "reject index -1",
+      "passed": true
+    },
+    {
+      "test": "reject index 8",
+      "passed": true
+    },
+    {
+      "test": "reject index True",
+      "passed": true
+    },
+    {
+      "test": "reject index 0.5",
+      "passed": true
+    },
+    {
+      "test": "reject index '0'",
+      "passed": true
+    },
+    {
+      "test": "reject unknown family",
+      "passed": true
+    }
+  ],
+  "passed": 26,
+  "failed": 0,
+  "scope": "Bounded trusted reconstruction and rejection tests; not an independent numerical or formal proof of all mathematics."
+}

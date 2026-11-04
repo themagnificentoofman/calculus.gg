@@ -3,10 +3,11 @@
 import {usePathname} from 'next/navigation';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { auth, db } from '@/firebase';
-import { onAuthStateChanged, User, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, linkWithPopup, updateProfile as updateAuthProfile } from 'firebase/auth';
+import { onAuthStateChanged, User, type UserInfo, signInWithPopup, GoogleAuthProvider, signOut, signInWithEmailAndPassword, updateProfile as updateAuthProfile } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { apiRequest, gameProgress } from '@/lib/game-session';
 import { OperationType, handleFirestoreError } from '@/lib/firestore-errors';
+import { authErrorMessage, createEmailAccount, connectGoogleAccount } from '@/lib/account-auth';
 
 interface UserProfile {
   uid: string;
@@ -40,6 +41,7 @@ interface UserProfile {
 
 interface AuthContextType {
   user: User | null;
+  linkedProviders: UserInfo[];
   profile: UserProfile | null;
   loading: boolean;
   login: () => Promise<void>;
@@ -52,6 +54,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType>({
   user: null,
+  linkedProviders: [],
   profile: null,
   loading: true,
   login: async () => {},
@@ -67,6 +70,7 @@ export const useAuth = () => useContext(AuthContext);
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const readOnlyReplay=usePathname().startsWith('/replay/');
   const [user, setUser] = useState<User | null>(null);
+  const [linkedProviders, setLinkedProviders] = useState<UserInfo[]>([]);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [profileError, setProfileError] = useState('');
@@ -80,6 +84,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const current = ++revision;
       stopProfile(); stopResults();
       setUser(firebaseUser); setProfile(null); setLoading(true); setProfileError('');
+      setLinkedProviders([...(firebaseUser?.providerData || [])]);
       if (!firebaseUser) { setLoading(false); return; }
       const userRef = doc(db, 'users', firebaseUser.uid);
       try {
@@ -131,7 +136,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       await signInWithPopup(auth, provider);
     } catch (error) {
       console.error('Login failed', error);
-      throw new Error('Google sign-in failed. Please try again or use email sign-in.');
+      throw new Error(authErrorMessage(error, 'google-login'));
     }
   };
 
@@ -144,53 +149,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signupWithEmail = async (email: string, pass: string, name: string) => {
-    try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
-      await updateAuthProfile(userCredential.user, { displayName: name });
-      
-      await apiRequest('profile', { patch: { displayName: name } });
-    } catch (error: any) {
-      console.error('Signup failed', error);
-      let errorMessage = 'An error occurred during signup.';
-      if (error.code === 'auth/email-already-in-use') {
-        errorMessage = 'This email is already in use.';
-      } else if (error.code === 'auth/invalid-email') {
-        errorMessage = 'Invalid email address.';
-      } else if (error.code === 'auth/weak-password') {
-        errorMessage = 'Password is too weak. It must be at least 6 characters.';
-      }
-      throw new Error(errorMessage);
-    }
+    await createEmailAccount(auth, email, pass, name, displayName => apiRequest('profile', { patch: { displayName } }));
   };
 
   const loginWithEmail = async (email: string, pass: string) => {
     try {
-      await signInWithEmailAndPassword(auth, email, pass);
-    } catch (error: any) {
+      await signInWithEmailAndPassword(auth, email.trim(), pass);
+    } catch (error) {
       console.error('Login failed', error);
-      let errorMessage = 'An error occurred during login.';
-      if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential') {
-        errorMessage = 'Invalid email or password.';
-      } else if (error.code === 'auth/wrong-password') {
-        errorMessage = 'Invalid email or password.';
-      } else if (error.code === 'auth/invalid-email') {
-        errorMessage = 'Invalid email address.';
-      } else if (error.code === 'auth/user-disabled') {
-        errorMessage = 'This account has been disabled.';
-      }
-      throw new Error(errorMessage);
+      throw new Error(authErrorMessage(error, 'email-login'));
     }
   };
 
   const linkGoogleAccount = async () => {
-    if (!user) return;
-    const provider = new GoogleAuthProvider();
-    try {
-      await linkWithPopup(user, provider);
-    } catch (error) {
-      console.error('Link Google failed', error);
-      throw error;
-    }
+    const linkedUser = await connectGoogleAccount(auth);
+    // Firebase mutates the User instance in place; publish a new provider list
+    // so Settings updates immediately without requiring a page reload.
+    setLinkedProviders([...linkedUser.providerData]);
   };
 
   const updateUserProfile = async (data: Partial<UserProfile>) => {
@@ -220,7 +195,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, profile, loading, login, logout, updateUserProfile, signupWithEmail, loginWithEmail, linkGoogleAccount }}>
+    <AuthContext.Provider value={{ user, linkedProviders, profile, loading, login, logout, updateUserProfile, signupWithEmail, loginWithEmail, linkGoogleAccount }}>
       {profileError && <div role="alert" className="border-b border-red-500/30 bg-red-950 px-4 py-3 text-center text-sm text-red-100">{profileError} <button onClick={() => setRetry(value => value + 1)} className="ml-3 min-h-11 rounded-lg px-3 font-bold underline">Retry</button></div>}
       {children}
     </AuthContext.Provider>

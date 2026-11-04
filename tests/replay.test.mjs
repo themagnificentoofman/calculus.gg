@@ -106,3 +106,15 @@ test('Analysis uses recorded verdicts and excludes unanswered questions and miss
  const analysis=roundAnalysis(data);assert.equal(analysis.overall.attempted,2);assert.equal(analysis.overall.accuracy,50);assert.equal(analysis.overall.recordedXp,10);assert.equal(analysis.overall.timed,1);assert.equal(analysis.overall.meanExposureToSubmitMs,1000);
  assert.equal(analysis.topics.find(t=>t.topic==='series').accuracy,null);assert.equal(analysis.topics.find(t=>t.topic==='limits').meanExposureToSubmitMs,null);assert.equal(analysis.problems[1].scoreAfter,1);assert.equal(analysis.problems[1].progressAfter,2);
 });
+
+test('exposure stages use immutable snapshots; display reports cannot become attempts or renew them',async()=>{
+ const s=await setup(),id=await s.create('test');let recent=await s.store.get('bankRecent/alice');assert.ok(recent.exposures.every(e=>e.stage==='issued'));
+ await s.call('alice',{op:'open',roundId:id,segmentId:'exposure1'});
+ const envelope={op:'upload',roundId:id,segmentId:'exposure1',chunkIndex:0,anchorMs:0,uncertaintyMs:0,closed:false};
+ const profileBefore=await s.store.get('users/alice');
+ await s.call('alice',{...envelope,events:[event(1,'question_displayed',{questionIndex:2})]});
+ recent=await s.store.get('bankRecent/alice');assert.equal(recent.exposures.find(e=>e.problemId===fixture()[2].problemId).stage,'displayed');assert.deepEqual(await s.store.get('users/alice'),profileBefore);
+ await s.games.act('alice',id,'answer',{index:0,selectedOption:0});const attempted=(await s.store.get('bankRecent/alice')).exposures.find(e=>e.problemId===fixture()[0].problemId);assert.equal(attempted.stage,'attempted');
+ s.advance(1000);await s.call('alice',{...envelope,chunkIndex:1,events:[event(2,'question_displayed',{questionIndex:0})]});assert.deepEqual((await s.store.get('bankRecent/alice')).exposures.find(e=>e.problemId===fixture()[0].problemId),attempted);
+ const before=clone([...s.store.docs]);await s.call('alice',{...envelope,chunkIndex:2,events:[event(3,'question_displayed',{questionIndex:19})]},400);assert.deepEqual([...s.store.docs],before);
+});

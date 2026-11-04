@@ -21,6 +21,7 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r scripts/bank/requirements.txt
       - run: python scripts/bank/test_math.py
+      - run: python scripts/bank/test_content_contract.py
       - run: npm test
       - run: node scripts/bank/worker-smoke.mjs
       - uses: actions/setup-java@v4

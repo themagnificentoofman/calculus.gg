@@ -1,0 +1,97 @@
+{
+  "families": 5,
+  "instances": 40,
+  "counts": {
+    "series/easy": {
+      "families": 5,
+      "instances": 40
+    }
+  },
+  "quarantine": [],
+  "executedCheckCount": 240,
+  "activeImportedCount": 0,
+  "humanReviewed": false,
+  "sourceSha256": "0b6c4e63b670dc4eaae89050c19e2c6faab897672b27818647896540ed78d791",
+  "optionAudit": [
+    {
+      "familyId": "m3-series-easy-p-series-pair",
+      "correctNumericRanks": "N/A-categorical",
+      "classificationOutcomes": [
+        "diverges|diverges",
+        "diverges|converges",
+        "converges|diverges",
+        "converges|converges",
+        "diverges|diverges",
+        "converges|diverges",
+        "diverges|converges",
+        "converges|converges"
+      ],
+      "alwaysSoleLongestTex": false,
+      "alwaysSoleShortestTex": false
+    },
+    {
+      "familyId": "m3-series-easy-alternating-absolute-conditional",
+      "correctNumericRanks": "N/A-categorical",
+      "classificationOutcomes": [
+        "conditional|conditional",
+        "conditional|absolute",
+        "absolute|conditional",
+        "absolute|absolute",
+        "conditional|conditional",
+        "conditional|absolute",
+        "absolute|conditional",
+        "absolute|absolute"
+      ],
+      "alwaysSoleLongestTex": false,
+      "alwaysSoleShortestTex": false
+    },
+    {
+      "familyId": "m3-series-easy-direct-comparison-information",
+      "correctNumericRanks": "N/A-categorical",
+      "classificationOutcomes": [
+        "both-possible",
+        "forced-divergence",
+        "forced-convergence",
+        "both-possible",
+        "both-possible",
+        "forced-divergence",
+        "forced-convergence",
+        "both-possible"
+      ],
+      "alwaysSoleLongestTex": false,
+      "alwaysSoleShortestTex": false
+    },
+    {
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "correctNumericRanks": [
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "classificationOutcomes": "numeric",
+      "alwaysSoleLongestTex": false,
+      "alwaysSoleShortestTex": false
+    },
+    {
+      "familyId": "m3-series-easy-linearity-given-convergent-sums",
+      "correctNumericRanks": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "classificationOutcomes": "numeric",
+      "alwaysSoleLongestTex": false,
+      "alwaysSoleShortestTex": false
+    }
+  ]
+}

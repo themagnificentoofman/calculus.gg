@@ -1,0 +1,2274 @@
+{
+  "schemaVersion": 1,
+  "title": "Calculus Ninja Milestone3 source research register",
+  "accessDate": "2026-11-03",
+  "researchScope": "Bounded official-source research; no imported problem wording, solutions, images or executable source.",
+  "policy": {
+    "defaultIntendedUse": "reference_only",
+    "ncOrUnclearExcludedFromImportQueue": true,
+    "projectDistributionCompatibility": "Not established by this research task. Public availability, free access, or repository hosting is insufficient.",
+    "compatibleAdaptationRule": "Even BY-SA sources remain reference-only until exact item/asset rights, source notices, changes, destination IDs and a compatible content distribution path are recorded. Do not relicense unrelated application code.",
+    "originalAuthorshipRule": "Original items must be independently conceived and derived. Rewording, changing constants, translating, or adding choices does not create independent authorship.",
+    "noAuthorContact": true,
+    "noBulkCollectionDownloads": true,
+    "noUnreviewedScriptExecution": true
+  },
+  "sources": [
+    {
+      "id": "active-calculus-single-2e",
+      "title": "Active Calculus, Single Variable, Second Edition",
+      "canonicalUrl": "https://activecalculus.org/single2e/",
+      "authorsOrOrganizers": [
+        "Matthew Boelkins",
+        "David Austin (contributor)",
+        "Christina Safranski (contributor)",
+        "Steven Schlicker (contributor)",
+        "Mitchel T. Keller (production editor)"
+      ],
+      "edition": {
+        "name": "Second edition",
+        "webBuildDate": "2026-08-13",
+        "copyright": "2012\u20132025 Matthew Boelkins",
+        "repository": "https://github.com/active-calculus/active-calculus-single-mbx",
+        "observedRepositoryCommit": "b5105a29572d6185822846f54a610f9500d0976c",
+        "repositoryCommitDate": "2026-11-02T23:01:06Z",
+        "webBuildEqualsRepositoryCommit": false
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "evidenceUrls": [
+          "https://activecalculus.org/single2e/frontmatter.html",
+          "https://activecalculus.org/single2e/frontmatter-3.html",
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "scope": "Textbook material covered by its colophon; commercial adaptation is permitted under its terms.",
+        "itemAndAssetExceptions": [
+          "Do not apply textbook terms automatically to embedded WeBWorK, Doenet, video, externally credited assets or trademarks.",
+          "Latest repository commit is separately observed; not asserted to be the deployed web build."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "differentiation: secant/tangent/units and interpretation",
+        "limits: two-sided approach and graphical inference"
+      ],
+      "reviewedItems": [
+        {
+          "id": "ac-single-1.1-activities",
+          "url": "https://activecalculus.org/single2e/sec-1-1-vel.html",
+          "year": 2026,
+          "round": null,
+          "section": "1.1",
+          "pages": null,
+          "problemIdentifiers": [
+            "Preview Activity 1.1.1",
+            "Activity 1.1.2",
+            "Activity 1.1.3"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "activity_answers_with_some_reasoning",
+          "solutionUrl": "https://activecalculus.org/single2e/activities-answers.html",
+          "coverageIdeas": [
+            "Average versus instantaneous rate",
+            "Graphical secant-to-tangent limit",
+            "Sign of velocity versus position trend"
+          ],
+          "notes": [
+            "Appendix B supplies activity answers; it explicitly excludes preview-activity answers. Do not label every answer a full worked solution."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "potentialUseUnderVerifiedLicense": "permitted_adaptation_if_item_rights_and_BY_SA_distribution_are_satisfied"
+    },
+    {
+      "id": "active-calculus-multi-2e",
+      "title": "Active Calculus \u2013 Multivariable, Second Edition",
+      "canonicalUrl": "https://activecalculus.org/multi2e/",
+      "authorsOrOrganizers": [
+        "Nicholas Long",
+        "Mitchel T. Keller",
+        "Steve Schlicker (contributor)",
+        "David Austin (contributor)",
+        "Matt Boelkins (contributor)"
+      ],
+      "edition": {
+        "name": "2nd Edition",
+        "webBuildDate": "2026-10-22",
+        "copyright": "2013\u20132026 Nicholas Long, Mitchel T. Keller, and Steven Schlicker",
+        "repository": "https://github.com/active-calculus/active-calculus-vector",
+        "observedRepositoryCommit": "0efdd44923780a95ae294f6cb315d6e688029367",
+        "repositoryCommitDate": "2026-10-22T18:24:48Z",
+        "webBuildEqualsRepositoryCommit": "not_proven"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "evidenceUrls": [
+          "https://activecalculus.org/multi2e/frontmatter.html",
+          "https://activecalculus.org/multi2e/frontmatter-3.html",
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "scope": "Textbook material covered by colophon; commercial adaptation allowed subject to conditions.",
+        "itemAndAssetExceptions": [
+          "Review separately credited embedded problems/media and trademarks individually."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "multivariable: interpreting mixed derivatives and curvature",
+        "multivariable: chain rule along paths and physical units"
+      ],
+      "reviewedItems": [
+        {
+          "id": "ac-multi-11.5",
+          "url": "https://activecalculus.org/multi2e/S-mv_deriv-second_order.html",
+          "year": 2026,
+          "round": null,
+          "section": "11.5.2 and section exercises",
+          "pages": null,
+          "problemIdentifiers": [
+            "Activity 11.5.2",
+            "Exercise 14",
+            "Exercise 15"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "exposition_and_examples; exercise_solution_not_individually_confirmed",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Holding one variable fixed",
+            "Mixed-derivative role in comparing surfaces",
+            "Units of second partial derivatives"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "ac-multi-chain",
+          "url": "https://activecalculus.org/multi2e/S_mv_deriv-chain_rule.html",
+          "year": 2026,
+          "round": null,
+          "section": "Multivariable chain rule",
+          "pages": null,
+          "problemIdentifiers": [],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_exposition",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Rate along a parametrized path",
+            "Units and dependence diagram"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "potentialUseUnderVerifiedLicense": "permitted_adaptation_if_item_rights_and_BY_SA_distribution_are_satisfied"
+    },
+    {
+      "id": "ubc-clp",
+      "title": "CLP Calculus textbooks and problem books",
+      "canonicalUrl": "https://personal.math.ubc.ca/~CLP/",
+      "authorsOrOrganizers": [
+        "Joel Feldman",
+        "Andrew Rechnitzer",
+        "Elyse Yeager"
+      ],
+      "edition": {
+        "name": "Current hosted CLP web editions; individual repository revisions recorded separately",
+        "repositories": [
+          {
+            "volume": "CLP-1 Differential Calculus",
+            "url": "https://github.com/arechnitzer/CLP1",
+            "commit": "9f0295936d395bec68dab7915057135a2c7f0414",
+            "commitDate": "2024-08-15T20:46:24Z"
+          },
+          {
+            "volume": "CLP-2 Integral Calculus",
+            "url": "https://github.com/arechnitzer/CLP2",
+            "commit": "d84ac1a86f71a7cac4946c53df9ed19e32a8c28e",
+            "commitDate": "2024-08-15T18:31:55Z"
+          },
+          {
+            "volume": "CLP-3 Multivariable Calculus",
+            "url": "https://github.com/arechnitzer/CLP3",
+            "commit": "f42be00f849d119406c07134ae86cc18af7f7eb7",
+            "commitDate": "2024-08-15T20:49:15Z"
+          }
+        ],
+        "webBuildEqualsRepositoryCommit": "not_proven"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0",
+        "evidenceUrls": [
+          "https://personal.math.ubc.ca/~CLP/about/",
+          "https://personal.math.ubc.ca/~CLP/CLP1/",
+          "https://github.com/arechnitzer/CLP1/blob/9f0295936d395bec68dab7915057135a2c7f0414/LICENSE-CC-by-nc-sa.md"
+        ],
+        "scope": "All four textbook sources state BY-NC-SA4.0.",
+        "itemAndAssetExceptions": [
+          "Many exercises originated in UBC exams; retain per-item credits.",
+          "Textbook, problem book, slide decks and linked resources must not be presumed identical in rights."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "differentiation: implicit curves, branch choice, vertical tangents",
+        "limits: theorem hypotheses and continuity",
+        "multivariable and series follow-up discovery"
+      ],
+      "reviewedItems": [
+        {
+          "id": "clp1-implicit-examples",
+          "url": "https://personal.math.ubc.ca/~CLP/CLP1/clp_1_dc/sec_2_11.html",
+          "year": null,
+          "round": null,
+          "section": "2.11 Implicit Differentiation",
+          "pages": null,
+          "problemIdentifiers": [
+            "Example 2.11.1",
+            "Example 2.11.2",
+            "Example 2.11.3"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_examples",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Implicit relation without explicit inversion",
+            "Vertical tangent exception",
+            "Parallel tangent comparison"
+          ],
+          "notes": [
+            "Official HTML read directly after web extraction timeout. Separate hints, answers and solutions appendices exist; their presence does not imply every exercise is worked."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "clp1-solution-appendix",
+          "url": "https://personal.math.ubc.ca/~CLP/CLP1/clp_1_dc/app_soln.html",
+          "year": null,
+          "round": null,
+          "section": "Appendix F, solutions for section2.11.2",
+          "pages": null,
+          "problemIdentifiers": [
+            "2.11.2.1",
+            "2.11.2.2",
+            "2.11.2.3",
+            "2.11.2.11",
+            "2.11.2.12"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions_appendix",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Independent comparison only; validate any chosen exercise afresh"
+          ],
+          "notes": [
+            "Hints appendix: app_hint.html; short answers appendix: app_answ.html."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "collectionOnlyInspections": [
+        {
+          "url": "https://personal.math.ubc.ca/~CLP/CLP2/",
+          "status": "collection_license_and_repository_metadata_reviewed; individual_items_not_admitted"
+        },
+        {
+          "url": "https://personal.math.ubc.ca/~CLP/CLP3/",
+          "status": "collection_license_and_repository_metadata_reviewed; individual_items_not_admitted"
+        }
+      ],
+      "restrictionReason": "Noncommercial distribution compatibility is not established; exclude from import queue."
+    },
+    {
+      "id": "webwork-opl",
+      "title": "WeBWorK Open Problem Library",
+      "canonicalUrl": "https://github.com/openwebwork/webwork-open-problem-library",
+      "authorsOrOrganizers": [
+        "OpenWeBWorK contributors; individual authors retain copyright"
+      ],
+      "edition": {
+        "repositoryCommit": "e632b510afd1983e70b0d5bbeb5631dbdcb95823",
+        "commitDate": "2026-10-29T11:48:58Z"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-SA-3.0 (default; item/directory overrides possible)",
+        "evidenceUrls": [
+          "https://github.com/openwebwork/webwork-open-problem-library/blob/e632b510afd1983e70b0d5bbeb5631dbdcb95823/OPL_LICENSE"
+        ],
+        "scope": "Default covers contributed PG problems, images and macros; alternate license may be declared in contribution directory or individual file.",
+        "itemAndAssetExceptions": [
+          "Inspect every ancestor directory and item trailer for overrides.",
+          "Sample IVT file cites Stewart, Calculus: Early Transcendentals, sixth edition, section2.5 problem45; textbook citation is not a separate grant of rights.",
+          "Source-level answer logic is not proof of mathematical correctness; no PG/macros executed."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "limits: what IVT does and does not guarantee",
+        "ODE: graph-to-phase-line equilibrium stability"
+      ],
+      "reviewedItems": [
+        {
+          "id": "opl-ivt",
+          "url": "https://github.com/openwebwork/webwork-open-problem-library/blob/e632b510afd1983e70b0d5bbeb5631dbdcb95823/OpenProblemLibrary/Rochester/setLimitsRates5Continuity/S02.05.IntermediateValueThm.PTP02.pg",
+          "year": null,
+          "round": null,
+          "section": "Rochester / setLimitsRates5Continuity",
+          "pages": null,
+          "problemIdentifiers": [
+            "S02.05.IntermediateValueThm.PTP02.pg"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solution_in_source",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Recognize theorem hypotheses and infer existence without solving"
+          ],
+          "notes": [
+            "Read source including ENDDOCUMENT trailer. No explicit per-file override observed. Third-party textbook metadata requires separate review."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "opl-stability",
+          "url": "https://github.com/openwebwork/webwork-open-problem-library/blob/e632b510afd1983e70b0d5bbeb5631dbdcb95823/OpenProblemLibrary/Rochester/setDiffEQ6AutonomousStability/ur_de_6_1.pg",
+          "year": null,
+          "round": null,
+          "section": "Rochester / setDiffEQ6AutonomousStability",
+          "pages": null,
+          "problemIdentifiers": [
+            "ur_de_6_1.pg"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "answer_logic_only",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Read equilibria and stability from graph sign changes"
+          ],
+          "notes": [
+            "Read source; no worked derivation block. Legacy XML trailer has inconsistent mixing-problem path; use current repository path, not stale trailer."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "NC default and unresolved item lineage; neither sampled file is admitted."
+    },
+    {
+      "id": "openstax-calculus",
+      "title": "OpenStax Calculus Volumes 1\u20133",
+      "canonicalUrl": "https://github.com/openstax/osbooks-calculus-bundle",
+      "authorsOrOrganizers": [
+        "OpenStax, Rice University",
+        "Gilbert Strang and Edwin Jed Herman (senior contributing authors)"
+      ],
+      "edition": {
+        "repositoryCommit": "018da4da252bb9c56759e34396efea91852bcf5a",
+        "commitDate": "2026-10-20T16:06:26Z",
+        "webEdition": "Calculus Volume2, current hosted section; website-to-repository build equivalence not established",
+        "originalPublicationDate": "2016-03-30",
+        "webCopyrightNoticeDate": "2026-07-15"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0",
+        "evidenceUrls": [
+          "https://github.com/openstax/osbooks-calculus-bundle/blob/018da4da252bb9c56759e34396efea91852bcf5a/LICENSE",
+          "https://github.com/openstax/osbooks-calculus-bundle/blob/018da4da252bb9c56759e34396efea91852bcf5a/README.md",
+          "https://openstax.org/books/calculus-volume-2/pages/preface"
+        ],
+        "scope": "Current repository content license, not an assumption from historical OpenStax editions.",
+        "itemAndAssetExceptions": [
+          "Image credits, third-party excerpts and separately licensed assets require item review.",
+          "The current web preface also asserts prior-permission requirements for LLM/AI inclusion and commercial printing; no such reuse is proposed or authorized by this register.",
+          "OpenStax/Rice names, logos, wordmarks and covers are expressly excluded from the content license."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "For any future noncommercial reuse, publisher page asks for an Access for free at source link on every physical page or digital page view containing its content, plus contributor credit and the same license. Current research distributes no source expression.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "series: hypotheses, error bounds, absolute versus conditional convergence"
+      ],
+      "reviewedItems": [
+        {
+          "id": "openstax-v2-5.5",
+          "url": "https://openstax.org/books/calculus-volume-2/pages/5-5-alternating-series",
+          "year": null,
+          "round": null,
+          "section": "5.5 Alternating Series",
+          "pages": null,
+          "problemIdentifiers": [
+            "Example 5.19",
+            "Example 5.20",
+            "Example 5.22",
+            "Exercises 294\u2013301"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_examples; separate_short_answer_key",
+          "solutionUrl": "https://openstax.org/books/calculus-volume-2/pages/chapter-5",
+          "coverageIdeas": [
+            "Divergence test before alternating-series test",
+            "Next-term error bound",
+            "Rearrangement and conditional convergence"
+          ],
+          "notes": [
+            "Worked examples and chapter answer key are distinct resources."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "Current noncommercial condition is not cleared for project distribution."
+    },
+    {
+      "id": "apex-calculus-v4",
+      "title": "APEX Calculus, Version 4.0",
+      "canonicalUrl": "https://www.apexcalculus.com/downloads",
+      "authorsOrOrganizers": [
+        "APEX Calculus project",
+        "Gregory Hartman"
+      ],
+      "edition": {
+        "name": "Version4.0",
+        "repository": "https://github.com/APEXCalculus/APEXCalculusV4",
+        "repositoryCommit": "6120781e01260093d56e6e3a9b8fd92ad2f4520d",
+        "commitDate": "2018-08-19T20:50:21Z",
+        "separateMaintainedV5": {
+          "repository": "https://github.com/APEXCalculus/APEXCalculusV5",
+          "observedCommit": "ef1af9cead027b50b84c1319e2644769bf867faa",
+          "commitDate": "2024-04-22T12:30:25Z",
+          "itemsInspected": false
+        }
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-4.0",
+        "evidenceUrls": [
+          "https://github.com/APEXCalculus/APEXCalculusV4/blob/6120781e01260093d56e6e3a9b8fd92ad2f4520d/README.md",
+          "https://www.apexcalculus.com/downloads"
+        ],
+        "scope": "Version4 repository README states Creative Commons4.0 BY-NC.",
+        "itemAndAssetExceptions": [
+          "Do not replace BY-NC with BY-NC-SA.",
+          "Version5 and contributed assets need their own exact rights review before adaptation."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "differentiation: Newton iteration as tangent construction",
+        "limits: convergence failure and dependence on initial guess"
+      ],
+      "reviewedItems": [
+        {
+          "id": "apex-newton",
+          "url": "https://github.com/APEXCalculus/APEXCalculusV4/blob/6120781e01260093d56e6e3a9b8fd92ad2f4520d/text/04_NewtonsMethod.tex",
+          "year": null,
+          "round": null,
+          "section": "Newton's Method",
+          "pages": null,
+          "problemIdentifiers": [
+            "ex_newt2",
+            "ex_newt3",
+            "Convergence of Newton\u2019s Method discussion"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_examples",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Reframe equation as a root problem",
+            "Horizontal tangent causes undefined update",
+            "Defined iterates can still diverge"
+          ],
+          "notes": [
+            "LaTeX source inspected as text only; no compilation or scripts run."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "NC condition unresolved; use for conceptual research only."
+    },
+    {
+      "id": "mit-ocw-1803-s2010",
+      "title": "MIT OCW 18.03 Differential Equations, Spring 2010",
+      "canonicalUrl": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/",
+      "authorsOrOrganizers": [
+        "Haynes Miller",
+        "Arthur Mattuck",
+        "MIT OpenCourseWare"
+      ],
+      "edition": {
+        "course": "18.03",
+        "term": "Spring2010",
+        "year": 2010,
+        "termsPageUpdated": "2026-08-11"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0",
+        "evidenceUrls": [
+          "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+          "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/assignments/"
+        ],
+        "scope": "OCW original course materials except expressly excluded/third-party content.",
+        "itemAndAssetExceptions": [
+          "PartI assignments refer to Edwards/Penney textbook; those references do not grant textbook reuse.",
+          "MIT trademarks and externally linked content are excluded from blanket course licensing.",
+          "This license does not cover MIT Integration Bee."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "ODE: units, lost equilibrium solutions, separatrices",
+        "ODE: harvesting bifurcation, stability, linearization and damping"
+      ],
+      "reviewedItems": [
+        {
+          "id": "ocw-ps1",
+          "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/ca6cfb455bee70fba44d246c0ee22936_MIT18_03S10_ps1.pdf",
+          "year": 2010,
+          "round": null,
+          "section": "Problem Set1 PartII",
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "0(a)\u2013(d)",
+            "1"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions",
+          "solutionUrl": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/ae29d457a4b5ac5bb350dd3a9925243d_MIT18_03S10_ps1s.pdf",
+          "coverageIdeas": [
+            "Model units and dimensional consistency",
+            "Restore equilibrium lost during separation",
+            "Read qualitative solution lifespan"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "ocw-ps3",
+          "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/c90f9302014d8285df35efecb9884b4f_MIT18_03S10_ps3s.pdf",
+          "year": 2010,
+          "round": null,
+          "section": "Problem Set3 PartII solutions",
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "8",
+            "9",
+            "11"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Parameter-dependent number and stability of equilibria",
+            "Linearization near equilibrium",
+            "Initial conditions controlling zero crossing"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "NC distribution compatibility not established."
+    },
+    {
+      "id": "mit-integration-bee",
+      "title": "MIT Integration Bee",
+      "canonicalUrl": "https://math.mit.edu/~yyao1/integrationbee.html",
+      "authorsOrOrganizers": [
+        "MIT mathematics graduate student organizers"
+      ],
+      "edition": {
+        "year": 2026,
+        "event": "45th MIT Integration Bee",
+        "qualifyingDate": "2026-01-20",
+        "finalPdf": "2026_finals.pdf"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_PERMISSION_FOUND",
+        "evidenceUrls": [
+          "https://math.mit.edu/~yyao1/integrationbee.html",
+          "https://math.mit.edu/~yyao1/pdf/qualifying_round_2026_test.pdf",
+          "https://math.mit.edu/~yyao1/pdf/qualifying_round_2026_answers.pdf"
+        ],
+        "scope": "Public access to contest documents; no reuse grant found in inspected page/documents.",
+        "itemAndAssetExceptions": [
+          "Do not apply MIT OCW terms.",
+          "Answer keys are not independent derivations or verification certificates."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "integration: symmetry, involutions, nested structures, floor partitions and geometry"
+      ],
+      "reviewedItems": [
+        {
+          "id": "mit-bee-2026-qualifier",
+          "url": "https://math.mit.edu/~yyao1/pdf/qualifying_round_2026_test.pdf",
+          "year": 2026,
+          "round": "qualifying",
+          "section": null,
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "1",
+            "3",
+            "4",
+            "8",
+            "11",
+            "12",
+            "17",
+            "20"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "answer_key_only",
+          "solutionUrl": "https://math.mit.edu/~yyao1/pdf/qualifying_round_2026_answers.pdf",
+          "coverageIdeas": [
+            "Symmetry before integration",
+            "Partitioned/floor expressions",
+            "Geometric area",
+            "Nested-expression reframing"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "mit-bee-2026-finals",
+          "url": "https://math.mit.edu/~yyao1/pdf/2026_finals.pdf",
+          "year": 2026,
+          "round": "finals",
+          "section": null,
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "problemIdentifiers": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "integration_research",
+          "solutionType": "answer_key_only",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Integral/Riemann-sum limit",
+            "Floor expression",
+            "Rational composition"
+          ],
+          "notes": [
+            "Supplemental review by integration_research agent; alternating problem/answer pages, no worked derivations. No item adaptation intended."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "No republication permission established; keep source expression out of bank."
+    },
+    {
+      "id": "uk-university-integration-bee",
+      "title": "UK University Integration Bee resources",
+      "canonicalUrl": "https://integration.soc.srcf.net/",
+      "authorsOrOrganizers": [
+        "UK University Integration Bee organizers",
+        "Vishal Gupta (sample solutions author)"
+      ],
+      "edition": {
+        "sampleSetYear": 2020,
+        "solutionRevision": "undated revised sample solutions; current linked file accessed2026-11-03",
+        "siteSeason": "2026/2027"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_PERMISSION_FOUND",
+        "evidenceUrls": [
+          "https://integration.soc.srcf.net/",
+          "https://integration.soc.srcf.net/UK%20University%20integration%20bee%20sample%20problems%20solutions.pdf"
+        ],
+        "scope": "Public sample set and solution documents; no reuse permission found in inspected files/page.",
+        "itemAndAssetExceptions": [
+          "The sample solutions title retains Cambridge Integral Bee wording; this is not a separate independent source family.",
+          "Separate problems, hints, answers and solutions links are not interchangeable."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "integration: parameter differentiation and alternative methods",
+        "integration: combining substitutions, recurrence and symmetry"
+      ],
+      "reviewedItems": [
+        {
+          "id": "uk-bee-sample-solutions",
+          "url": "https://integration.soc.srcf.net/UK%20University%20integration%20bee%20sample%20problems%20solutions.pdf",
+          "year": 2020,
+          "round": "sample pack",
+          "section": null,
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "Question1"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions_with_alternatives",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Differentiate an integral with respect to a parameter",
+            "Alternative double-integral route"
+          ],
+          "notes": [
+            "21-page document. Introduction identifies the same sample set as2020 with revised comments/alternatives. No copying or adaptation queued."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "No republication grant found."
+    },
+    {
+      "id": "maa-putnam",
+      "title": "MAA William Lowell Putnam Mathematical Competition archive",
+      "canonicalUrl": "https://maa.org/maa-putnam-archive/",
+      "authorsOrOrganizers": [
+        "Mathematical Association of America"
+      ],
+      "edition": {
+        "competitionYear": 2024,
+        "document": "2024 Putnam Problems and Solutions",
+        "hostUploadPath": "2026/02",
+        "pages": 26
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_PERMISSION_FOUND",
+        "evidenceUrls": [
+          "https://maa.org/maa-putnam-archive/",
+          "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Solutions.pdf"
+        ],
+        "scope": "Archive and official solution PDF available publicly; no open-republication terms found.",
+        "itemAndAssetExceptions": [
+          "Some solutions credit external research; maintain that lineage if permission is ever obtained.",
+          "A prestigious contest label does not determine app difficulty."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "series and limits: asymptotic comparison of sums",
+        "integration: inequalities and geometric reframing"
+      ],
+      "reviewedItems": [
+        {
+          "id": "putnam-2024-b6",
+          "url": "https://maa.org/wp-content/uploads/2026/02/2024-Putnam-Solutions.pdf",
+          "year": 2024,
+          "round": "B",
+          "section": null,
+          "pages": [
+            25,
+            26
+          ],
+          "problemIdentifiers": [
+            "B6"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions_with_alternative_outline",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Complete-square asymptotic scaling",
+            "Split sum into central and tail regimes",
+            "Riemann-sum interpretation with justification"
+          ],
+          "notes": [
+            "Pages are one-based PDF pages; printed solution page labels differ. No equation/wording adapted."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "No reuse grant found; reference-only."
+    },
+    {
+      "id": "kent-state-integration-bee",
+      "title": "Kent State Integration Bee practice problems and solutions",
+      "canonicalUrl": "https://www.kent.edu/math/integration-bee-practice-problems-and-solutions",
+      "authorsOrOrganizers": [
+        "Kent State University Department of Mathematical Sciences"
+      ],
+      "edition": {
+        "year": 2025,
+        "document": "Int-Bee-Solutions-2025_0.pdf",
+        "objectVersion": "B2N6URn4TnDM0bC7BparkPJnoVCrCr_u",
+        "pages": 4
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_PERMISSION_FOUND",
+        "evidenceUrls": [
+          "https://www.kent.edu/math/integration-bee-practice-problems-and-solutions",
+          "https://www-s3-live.kent.edu/s3fs-root/s3fs-public/file/Int-Bee-Solutions-2025_0.pdf?VersionId=B2N6URn4TnDM0bC7BparkPJnoVCrCr_u"
+        ],
+        "scope": "Public practice solutions; no reuse grant found in inspected page/PDF.",
+        "itemAndAssetExceptions": [
+          "University hosting alone does not grant republication."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "integration: absolute-value geometry, cancellation, symmetry"
+      ],
+      "reviewedItems": [
+        {
+          "id": "kent-2025-round1",
+          "url": "https://www-s3-live.kent.edu/s3fs-root/s3fs-public/file/Int-Bee-Solutions-2025_0.pdf?VersionId=B2N6URn4TnDM0bC7BparkPJnoVCrCr_u",
+          "year": 2025,
+          "round": "1",
+          "section": null,
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.7"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Piecewise split versus geometric area",
+            "Complete square",
+            "Cancel structure before choosing integration method"
+          ],
+          "notes": [
+            "Opening-round routines are not automatically Olympiad difficulty."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "No reuse grant found."
+    },
+    {
+      "id": "uf-integration-bee",
+      "title": "University of Florida Integration Bee",
+      "canonicalUrl": "https://ums.math.ufl.edu/integrationbee/",
+      "authorsOrOrganizers": [
+        "University of Florida Undergraduate Mathematics Society",
+        "Connor Gordon (separate integration handout)"
+      ],
+      "edition": {
+        "competitionYear": 2024,
+        "qualifier": "2024-Qualifying-Exam-1.pdf",
+        "answerDocument": "2024-Qualifying-Exam-Solutions.pdf",
+        "hostUploadPath": "2025/03"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_PERMISSION_FOUND",
+        "evidenceUrls": [
+          "https://ums.math.ufl.edu/integrationbee/",
+          "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/2024-Qualifying-Exam-1.pdf",
+          "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/2024-Qualifying-Exam-Solutions.pdf",
+          "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/Integration_Handout.pdf"
+        ],
+        "scope": "Official hosted exam/answer key/handout; no reuse grant found.",
+        "itemAndAssetExceptions": [
+          "Integration handout separately credits HMMT, Stanford, States and MIT items; UF cannot be presumed to license those.",
+          "Relaxed contest answer/domain conventions are unsuitable as app correctness policy."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "integration: nested radical, limiting integral, symmetry and special functions"
+      ],
+      "reviewedItems": [
+        {
+          "id": "uf-2024-qualifier",
+          "url": "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/2024-Qualifying-Exam-1.pdf",
+          "year": 2024,
+          "round": "qualifying",
+          "section": null,
+          "pages": [
+            1,
+            2
+          ],
+          "problemIdentifiers": [
+            "8",
+            "11",
+            "13",
+            "16",
+            "18",
+            "24"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "answer_key_only_despite_solution_manual_title",
+          "solutionUrl": "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/2024-Qualifying-Exam-Solutions.pdf",
+          "coverageIdeas": [
+            "Nested expression simplification",
+            "Finite geometric quotient",
+            "Reflection",
+            "Fresnel-type integral"
+          ],
+          "notes": [
+            "The inspected solution manual lists final formulas, not worked derivations. All keys require independent checking."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "uf-techniques-handout",
+          "url": "https://ums.math.ufl.edu/wp-content/uploads/sites/135/2025/03/Integration_Handout.pdf",
+          "year": null,
+          "round": null,
+          "section": "Unit3 and credited problem examples",
+          "pages": [
+            17
+          ],
+          "problemIdentifiers": [],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_technique_exposition",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Technique vocabulary and source leads"
+          ],
+          "notes": [
+            "Only specific relevant section inspected; embedded contest items are separately attributed."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "No reuse grant and multiple third-party item sources."
+    },
+    {
+      "id": "ibl-differential-equations",
+      "title": "Differential Equations IBL Workbook",
+      "canonicalUrl": "https://siefkenj.github.io/IBLODEs/index.html",
+      "authorsOrOrganizers": [
+        "Jason Siefken",
+        "Bernardo Galv\u00e3o-Sousa"
+      ],
+      "edition": {
+        "repository": "https://github.com/siefkenj/IBLODEs",
+        "repositoryCommit": "8ce0bc450f1c443f9818ad696c5f54ec6b21bfcc",
+        "commitDate": "2026-08-21T15:51:45Z",
+        "siteCopyright": 2024
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "evidenceUrls": [
+          "https://siefkenj.github.io/IBLODEs/index.html",
+          "https://creativecommons.org/licenses/by-sa/4.0/"
+        ],
+        "scope": "Workbook license explicitly permits modification and commercial use under BY-SA4.0.",
+        "itemAndAssetExceptions": [
+          "Module12 credits adaptation from Ji\u0159\u00ed Lebl; retain that upstream attribution.",
+          "Dependencies, fonts, external images and code libraries have separate rights; no code executed or repackaged.",
+          "Instructor-request resources were not requested or accessed. Public source solution blocks only."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "ODE: modeling decisions, Euler-step error, phase portraits, nonlinear systems"
+      ],
+      "reviewedItems": [
+        {
+          "id": "ibl-module3",
+          "url": "https://github.com/siefkenj/IBLODEs/blob/8ce0bc450f1c443f9818ad696c5f54ec6b21bfcc/book/modules/module-03-exercises.typ",
+          "year": null,
+          "round": null,
+          "section": "Module3 Systems of ODEs",
+          "pages": null,
+          "problemIdentifiers": [
+            "ex:LV_model",
+            "ex:lv_simulation"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_solutions_and_teaching_notes_in_public_source",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Translate assumptions into rates",
+            "Interpret coupling in two-state models",
+            "Step-size instability versus actual dynamics"
+          ],
+          "notes": [
+            "Read Typst source as data; did not compile or run dependencies."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "ibl-module3-practice",
+          "url": "https://github.com/siefkenj/IBLODEs/blob/8ce0bc450f1c443f9818ad696c5f54ec6b21bfcc/book/modules/module-03-practice-problems.typ",
+          "year": null,
+          "round": null,
+          "section": "Module3 practice",
+          "pages": null,
+          "problemIdentifiers": [
+            "first three question records"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "statements_only_in_inspected_portion",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Check candidate solutions",
+            "Compare numerical simulation with equilibrium"
+          ],
+          "notes": [
+            "Working source contains unfinished phrasing/variable inconsistencies; candidates need editorial and mathematical review."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "ibl-module12-lineage",
+          "url": "https://github.com/siefkenj/IBLODEs/blob/8ce0bc450f1c443f9818ad696c5f54ec6b21bfcc/book/modules/module-12-body.typ",
+          "year": null,
+          "round": null,
+          "section": "Module12 existence and uniqueness",
+          "pages": null,
+          "problemIdentifiers": [],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_examples",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Existence versus uniqueness",
+            "Local versus global solution"
+          ],
+          "notes": [
+            "Upstream attribution to Notes on Diffy Qs explicitly present; inspect that original license as well."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "potentialUseUnderVerifiedLicense": "permitted_adaptation_if_item_rights_and_BY_SA_distribution_are_satisfied"
+    },
+    {
+      "id": "lebl-diffyqs",
+      "title": "Notes on Diffy Qs: Differential Equations for Engineers",
+      "canonicalUrl": "https://www.jirka.org/diffyqs/",
+      "authorsOrOrganizers": [
+        "Ji\u0159\u00ed Lebl"
+      ],
+      "edition": {
+        "version": "6.11",
+        "releaseDate": "2026-05-18",
+        "releaseUrl": "https://github.com/jirilebl/diffyqs/releases/tag/v6.11",
+        "repository": "https://github.com/jirilebl/diffyqs",
+        "separatelyObservedWorkingCommit": "e7c718c343a340c4bdbbbed83a14d4ed147000f8",
+        "workingCommitDate": "2026-11-02T23:13:13Z",
+        "workingCommitEqualsRelease": false
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+        "evidenceUrls": [
+          "https://www.jirka.org/diffyqs/",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        ],
+        "scope": "Author explicitly offers either license for book and same-licensed slides. Select BY-SA4.0 if future commercial-compatible adaptation is wanted.",
+        "itemAndAssetExceptions": [
+          "Separate WeBWorK bundle contains many OPL-derived problems with potentially different rights.",
+          "Linked videos/software/third-party books are not automatically included.",
+          "Release and working branch differ; pin chosen edition for any adaptation."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [],
+      "destinationFamilyIds": [],
+      "destinationMappingStatus": "No source-derived item admitted; authoring team must add explicit mappings if that changes.",
+      "coverageGapsAddressed": [
+        "ODE: existence/uniqueness/blowup and invariant solutions",
+        "ODE: substitution/Bernoulli and branch restrictions",
+        "series/ODE cross-topic follow-up"
+      ],
+      "reviewedItems": [
+        {
+          "id": "diffyqs-1.2",
+          "url": "https://www.jirka.org/diffyqs/html/slopefields_section.html",
+          "year": 2026,
+          "round": null,
+          "section": "1.2 Slope fields",
+          "pages": null,
+          "problemIdentifiers": [
+            "Examples1.2.1\u20131.2.3",
+            "Exercises1.2.8",
+            "1.2.10",
+            "1.2.12",
+            "1.2.101\u20131.2.104"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "worked_examples; selected_exercises_have_answers_or_short_reasoning",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "A theorem failing to apply is not proof of nonuniqueness",
+            "Finite-time blowup despite smooth RHS",
+            "Equilibrium and non-crossing"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "diffyqs-1.5",
+          "url": "https://www.jirka.org/diffyqs/html/substitution_section.html",
+          "year": 2026,
+          "round": null,
+          "section": "1.5 Substitution",
+          "pages": null,
+          "problemIdentifiers": [
+            "1.5.101\u20131.5.104"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "answer_key_only_for_sampled_exercises",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Recognize nonlinear substitution",
+            "Branch and interval restrictions"
+          ],
+          "notes": [],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "potentialUseUnderVerifiedLicense": "permitted_adaptation_using_BY_SA_option_if_item_rights_and_distribution_are_satisfied"
+    },
+    {
+      "id": "nist-dlmf",
+      "title": "NIST Digital Library of Mathematical Functions",
+      "canonicalUrl": "https://dlmf.nist.gov/",
+      "authorsOrOrganizers": [
+        "National Institute of Standards and Technology; individual chapter authors"
+      ],
+      "edition": {
+        "version": "1.2.8",
+        "releaseDate": "2026-09-15"
+      },
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CUSTOM_RESTRICTIVE_NOT_PUBLIC_DOMAIN",
+        "evidenceUrls": [
+          "https://dlmf.nist.gov/about/notices"
+        ],
+        "scope": "Notice permits limited copying/internal distribution for research and teaching; forbids commercial copying and bulk redistribution.",
+        "itemAndAssetExceptions": [
+          "Do not assume U.S. government hosting makes assigned-copyright contributions public domain.",
+          "Use independently derived mathematical facts; do not copy DLMF prose, figures, encodings or collection."
+        ]
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "not_established_for_any_import",
+      "requiredAttribution": "No source expression is being distributed. Before any permitted reuse: retain creator/copyright/license/disclaimer notices, link exact source and license, identify changes and previous modifications, and do not imply endorsement.",
+      "requiredModificationNotice": "Required for any future adaptation; none made in this research register.",
+      "destinationProblemIds": [
+        "cn_00f212ae481d7e68804c",
+        "cn_020bacec1bb5c229f3bc",
+        "cn_021e4a9a6081202b1990",
+        "cn_03f70d0839d0632c711a",
+        "cn_087d67422d2cc3abe776",
+        "cn_0a551ec2c038637d0521",
+        "cn_12b6cd94ef0fb48fd304",
+        "cn_19c51cadce432b1803de",
+        "cn_1a7725c8a48902a39cd0",
+        "cn_1fe5be9e852d80fa62ac",
+        "cn_218664fe8f2e2cc042fe",
+        "cn_252cf3be6903e567ad55",
+        "cn_25616e03bafcbd4fcead",
+        "cn_2ca6c18b79eba9b0fcae",
+        "cn_31f8a5bdf4169e07a3bc",
+        "cn_33fce2474f4c38bb0015",
+        "cn_356889a722991c9b547b",
+        "cn_35836b700c93fd9f9bbb",
+        "cn_3ba26f192bd989ffc5a7",
+        "cn_3ec647982c816f39414e",
+        "cn_4270a2995a4aa6599e42",
+        "cn_4567149f6b1b0e7f5558",
+        "cn_45ba1432f6ec235f1bc3",
+        "cn_48870f7fb012db3868e7",
+        "cn_48ae77b2880c62a5a097",
+        "cn_4cc32bcfc735998dce1d",
+        "cn_4d5ca93e4ca7b12f28a4",
+        "cn_4ea24c995b4e3c9042bd",
+        "cn_4fe80937a07d23f522ea",
+        "cn_5053a6fe74616d7747b1",
+        "cn_512ded35025e4010cc38",
+        "cn_5219b55849f0615d5768",
+        "cn_5288e957a8cdbd6938b7",
+        "cn_539984f19c83ba12793e",
+        "cn_5627fb6f77be758e204c",
+        "cn_58310cab152c64537963",
+        "cn_583f120e6ffe12e9aee1",
+        "cn_59d719154b3b0dd9b880",
+        "cn_5baae462b75d3c4f1bdb",
+        "cn_5f1fa18d6804741586ce",
+        "cn_6232c4a17210a161150f",
+        "cn_62ed8039c5ca14e69cb9",
+        "cn_6a76b80e438f24676386",
+        "cn_6d5889a6aaaa6be5408f",
+        "cn_73a13e941be83ac47621",
+        "cn_74f65b9f92caa3b87c1f",
+        "cn_77c9929ba64bb53138f3",
+        "cn_7a719146b65ad8db497d",
+        "cn_7aedf5f0abf5fe75389c",
+        "cn_7cef2c34fd23d3caefbb",
+        "cn_7eeeb8001aa15ac12180",
+        "cn_7fd9f0b59f44a1952ded",
+        "cn_81b0eee97cd4c6026b3f",
+        "cn_894375b99069651fbbd9",
+        "cn_895ab50c4a2ce804c71f",
+        "cn_8a81637f39611672b47e",
+        "cn_8b74f4fa035114858dfd",
+        "cn_8c872d5dd0ec141288d2",
+        "cn_8e4a68b4656549ec2c19",
+        "cn_8f5dcedc4257d05b3148",
+        "cn_90bc732aa2a7ae509293",
+        "cn_92906b52b5b86c8ab58c",
+        "cn_950d1aa9e1cf4295e9b7",
+        "cn_96c5ec04e30a44d69591",
+        "cn_96dc7f83baeae13c2e14",
+        "cn_a04efa5bbed0a21e05d7",
+        "cn_a20ff7ed848eda870163",
+        "cn_ab535d2b9c4a94d6aba2",
+        "cn_ab86b79c19a84e6859fa",
+        "cn_ac0bfa09d543ec3aeac3",
+        "cn_accd1f662f531e3a685c",
+        "cn_acde9607be0441fd2dc8",
+        "cn_ade3ca2ed01c195ca600",
+        "cn_ae5d1fc575144c09e035",
+        "cn_ae7a02d7c319fb3da98f",
+        "cn_aea6d67e8f11e6b822a9",
+        "cn_af321ac47673c41b7d49",
+        "cn_b1048677a6d7230a8feb",
+        "cn_b26275affa5038481689",
+        "cn_b47485e984d3ec8c0edd",
+        "cn_b4dbd62271e273690bd6",
+        "cn_b724004e796a7523b302",
+        "cn_b9fb590b72ba63e32c94",
+        "cn_be17cefaeb74db84e577",
+        "cn_be7c46f7936f53dd9e68",
+        "cn_bed41f7f792609ecd294",
+        "cn_c66a5e4e8bf02b82c249",
+        "cn_c8177040777011ff22a7",
+        "cn_c8a2c466e2e5115ab522",
+        "cn_cbeb1a657e5d0d7ed710",
+        "cn_cc5d75cf53bf088f438d",
+        "cn_ce46c8b7d4f79f4c20ee",
+        "cn_d060fa54ab6342c4f226",
+        "cn_d107f559604efda14a87",
+        "cn_d26566909f453686499b",
+        "cn_d2f692776d1f74820792",
+        "cn_d316b260691632a91ddb",
+        "cn_d6c9d9abed0e1160353b",
+        "cn_d901065f35676fbe5267",
+        "cn_df49e8657ca5e8d8b597",
+        "cn_e0279f0bc9e04c4854f1",
+        "cn_e16e71b419ee4495f629",
+        "cn_e2d275c76749fe36e466",
+        "cn_e311d3bf029c501b66ec",
+        "cn_e460a20b291d430213db",
+        "cn_e4dde9e372c32b8e6408",
+        "cn_e6da9c8aca24f35fd699",
+        "cn_e7aca141c2c3a1b290c1",
+        "cn_eab4a07e4e58aa31d11f",
+        "cn_eef90eac432e19d80385",
+        "cn_efde452c7eb4bc57853c",
+        "cn_f68fd6304a6d710576f6",
+        "cn_f7576b9c7e89fac7dc8f",
+        "cn_f84c09b2b421b1de21f3",
+        "cn_f956bec055b644853663",
+        "cn_f9d01f87c06b77239b2a",
+        "cn_fc20494f40ce3cb4d73b",
+        "cn_fcc961ad9dc269c9abee",
+        "cn_fed6afae1f8da3947b0d",
+        "cn_ff7b967aa7e99cf452e4"
+      ],
+      "destinationFamilyIds": [
+        "io3-abel-recovery",
+        "io3-agm-parameter",
+        "io3-bessel-laplace",
+        "io3-binomial-exponential",
+        "io3-gamma-unit-average",
+        "io3-mellin-cyclotomic",
+        "io3-mixed-beta-log",
+        "io3-principal-value",
+        "io3-sech-fourier",
+        "m3-limits-olympiad-central-binomial-shift",
+        "m3-limits-olympiad-monic-minimax-rate",
+        "m3-series-olympiad-elliptic-central-binomial-square",
+        "m3-series-olympiad-hypergeometric-beta",
+        "m3-series-olympiad-lattice-resolvent",
+        "m3-series-olympiad-log-sine-product"
+      ],
+      "destinationMappingStatus": "Theorem-reference linkage only; independent original expression, not adaptation lineage",
+      "coverageGapsAddressed": [
+        "integration: domain-checked special-function identities",
+        "series/limits: asymptotic and recurrence reference checks"
+      ],
+      "reviewedItems": [
+        {
+          "id": "dlmf-beta",
+          "url": "https://dlmf.nist.gov/5.12",
+          "year": 2026,
+          "round": null,
+          "section": "5.12",
+          "pages": null,
+          "problemIdentifiers": [
+            "5.12.1",
+            "5.12.2",
+            "5.12.3",
+            "5.12.4"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "identity_reference_with_conditions_and_bibliography",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Beta-integral correspondence",
+            "Convergence and principal-branch conditions"
+          ],
+          "notes": [],
+          "destinationProblemIds": [
+            "cn_020bacec1bb5c229f3bc",
+            "cn_31f8a5bdf4169e07a3bc",
+            "cn_33fce2474f4c38bb0015",
+            "cn_356889a722991c9b547b",
+            "cn_35836b700c93fd9f9bbb",
+            "cn_3ba26f192bd989ffc5a7",
+            "cn_3ec647982c816f39414e",
+            "cn_4567149f6b1b0e7f5558",
+            "cn_45ba1432f6ec235f1bc3",
+            "cn_5053a6fe74616d7747b1",
+            "cn_5288e957a8cdbd6938b7",
+            "cn_6232c4a17210a161150f",
+            "cn_6d5889a6aaaa6be5408f",
+            "cn_77c9929ba64bb53138f3",
+            "cn_7eeeb8001aa15ac12180",
+            "cn_7fd9f0b59f44a1952ded",
+            "cn_894375b99069651fbbd9",
+            "cn_895ab50c4a2ce804c71f",
+            "cn_8a81637f39611672b47e",
+            "cn_8c872d5dd0ec141288d2",
+            "cn_90bc732aa2a7ae509293",
+            "cn_ab86b79c19a84e6859fa",
+            "cn_ac0bfa09d543ec3aeac3",
+            "cn_ae5d1fc575144c09e035",
+            "cn_ae7a02d7c319fb3da98f",
+            "cn_b1048677a6d7230a8feb",
+            "cn_b47485e984d3ec8c0edd",
+            "cn_b4dbd62271e273690bd6",
+            "cn_c8177040777011ff22a7",
+            "cn_cc5d75cf53bf088f438d",
+            "cn_d2f692776d1f74820792",
+            "cn_d316b260691632a91ddb",
+            "cn_df49e8657ca5e8d8b597",
+            "cn_e0279f0bc9e04c4854f1",
+            "cn_e16e71b419ee4495f629",
+            "cn_e460a20b291d430213db",
+            "cn_eab4a07e4e58aa31d11f",
+            "cn_f84c09b2b421b1de21f3",
+            "cn_f956bec055b644853663",
+            "cn_fcc961ad9dc269c9abee"
+          ],
+          "destinationFamilyIds": [
+            "io3-abel-recovery",
+            "io3-binomial-exponential",
+            "io3-mellin-cyclotomic",
+            "io3-mixed-beta-log",
+            "io3-sech-fourier"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-agm",
+          "url": "https://dlmf.nist.gov/19.8",
+          "year": 2026,
+          "round": null,
+          "section": "19.8(i)",
+          "pages": null,
+          "problemIdentifiers": [
+            "19.8.1",
+            "19.8.4",
+            "19.8.5"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "source_research",
+          "solutionType": "identity_reference_with_conditions_and_bibliography",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "AGM invariant integral and convergence"
+          ],
+          "notes": [],
+          "destinationProblemIds": [
+            "cn_12b6cd94ef0fb48fd304",
+            "cn_19c51cadce432b1803de",
+            "cn_218664fe8f2e2cc042fe",
+            "cn_7aedf5f0abf5fe75389c",
+            "cn_8b74f4fa035114858dfd",
+            "cn_a04efa5bbed0a21e05d7",
+            "cn_bed41f7f792609ecd294",
+            "cn_d6c9d9abed0e1160353b"
+          ],
+          "destinationFamilyIds": [
+            "io3-agm-parameter"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-gamma",
+          "url": "https://dlmf.nist.gov/5.5",
+          "year": 2026,
+          "round": null,
+          "section": "5.5",
+          "pages": null,
+          "problemIdentifiers": [
+            "5.5.1",
+            "5.5.3",
+            "5.5.4"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "integration_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Gamma recurrence/reflection as independently proved certificates"
+          ],
+          "notes": [],
+          "destinationProblemIds": [
+            "cn_021e4a9a6081202b1990",
+            "cn_087d67422d2cc3abe776",
+            "cn_0a551ec2c038637d0521",
+            "cn_33fce2474f4c38bb0015",
+            "cn_35836b700c93fd9f9bbb",
+            "cn_3ec647982c816f39414e",
+            "cn_4567149f6b1b0e7f5558",
+            "cn_45ba1432f6ec235f1bc3",
+            "cn_4ea24c995b4e3c9042bd",
+            "cn_5053a6fe74616d7747b1",
+            "cn_6232c4a17210a161150f",
+            "cn_62ed8039c5ca14e69cb9",
+            "cn_6a76b80e438f24676386",
+            "cn_7eeeb8001aa15ac12180",
+            "cn_7fd9f0b59f44a1952ded",
+            "cn_894375b99069651fbbd9",
+            "cn_895ab50c4a2ce804c71f",
+            "cn_8a81637f39611672b47e",
+            "cn_96c5ec04e30a44d69591",
+            "cn_ab86b79c19a84e6859fa",
+            "cn_ac0bfa09d543ec3aeac3",
+            "cn_accd1f662f531e3a685c",
+            "cn_acde9607be0441fd2dc8",
+            "cn_ade3ca2ed01c195ca600",
+            "cn_ae5d1fc575144c09e035",
+            "cn_b1048677a6d7230a8feb",
+            "cn_b47485e984d3ec8c0edd",
+            "cn_b4dbd62271e273690bd6",
+            "cn_c8177040777011ff22a7",
+            "cn_cc5d75cf53bf088f438d",
+            "cn_d26566909f453686499b",
+            "cn_d901065f35676fbe5267",
+            "cn_df49e8657ca5e8d8b597",
+            "cn_e2d275c76749fe36e466",
+            "cn_e311d3bf029c501b66ec",
+            "cn_eab4a07e4e58aa31d11f",
+            "cn_f68fd6304a6d710576f6",
+            "cn_f956bec055b644853663",
+            "cn_fcc961ad9dc269c9abee",
+            "cn_fed6afae1f8da3947b0d"
+          ],
+          "destinationFamilyIds": [
+            "io3-gamma-unit-average",
+            "io3-mellin-cyclotomic",
+            "io3-mixed-beta-log",
+            "io3-principal-value",
+            "io3-sech-fourier"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-hyperbolic-fractions",
+          "url": "https://dlmf.nist.gov/4.36",
+          "year": 2026,
+          "round": null,
+          "section": "4.36",
+          "pages": null,
+          "problemIdentifiers": [
+            "4.36.E1",
+            "4.36.E3",
+            "4.36.E5"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "coverage_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Sinh product and coth/csch partial fractions"
+          ],
+          "notes": [
+            "Inspection reported directly by coverage_research; mathematical background only, no source wording or code imported."
+          ],
+          "destinationProblemIds": [
+            "cn_00f212ae481d7e68804c",
+            "cn_1a7725c8a48902a39cd0",
+            "cn_252cf3be6903e567ad55",
+            "cn_4d5ca93e4ca7b12f28a4",
+            "cn_5219b55849f0615d5768",
+            "cn_539984f19c83ba12793e",
+            "cn_583f120e6ffe12e9aee1",
+            "cn_7a719146b65ad8db497d",
+            "cn_92906b52b5b86c8ab58c",
+            "cn_950d1aa9e1cf4295e9b7",
+            "cn_a20ff7ed848eda870163",
+            "cn_ab535d2b9c4a94d6aba2",
+            "cn_af321ac47673c41b7d49",
+            "cn_c66a5e4e8bf02b82c249",
+            "cn_e4dde9e372c32b8e6408",
+            "cn_efde452c7eb4bc57853c"
+          ],
+          "destinationFamilyIds": [
+            "m3-series-olympiad-lattice-resolvent",
+            "m3-series-olympiad-log-sine-product"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-gauss-summation",
+          "url": "https://dlmf.nist.gov/15.4",
+          "year": 2026,
+          "round": null,
+          "section": "15.4",
+          "pages": null,
+          "problemIdentifiers": [
+            "15.4.E20"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "coverage_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Hypergeometric summation with parameter-domain conditions"
+          ],
+          "notes": [
+            "Inspection reported directly by coverage_research; mathematical background only, no source wording or code imported."
+          ],
+          "destinationProblemIds": [
+            "cn_74f65b9f92caa3b87c1f",
+            "cn_81b0eee97cd4c6026b3f",
+            "cn_8f5dcedc4257d05b3148",
+            "cn_be17cefaeb74db84e577",
+            "cn_cbeb1a657e5d0d7ed710",
+            "cn_ce46c8b7d4f79f4c20ee",
+            "cn_d060fa54ab6342c4f226",
+            "cn_d107f559604efda14a87"
+          ],
+          "destinationFamilyIds": [
+            "m3-series-olympiad-hypergeometric-beta"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-elliptic-series",
+          "url": "https://dlmf.nist.gov/19.5",
+          "year": 2026,
+          "round": null,
+          "section": "19.5",
+          "pages": null,
+          "problemIdentifiers": [
+            "19.5.E1"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "coverage_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Complete elliptic-integral series; DLMF modulus k versus independently authored parameter p=k squared"
+          ],
+          "notes": [
+            "Inspection reported directly by coverage_research; mathematical background only, no source wording or code imported."
+          ],
+          "destinationProblemIds": [
+            "cn_1fe5be9e852d80fa62ac",
+            "cn_2ca6c18b79eba9b0fcae",
+            "cn_512ded35025e4010cc38",
+            "cn_5f1fa18d6804741586ce",
+            "cn_73a13e941be83ac47621",
+            "cn_b26275affa5038481689",
+            "cn_e6da9c8aca24f35fd699",
+            "cn_e7aca141c2c3a1b290c1"
+          ],
+          "destinationFamilyIds": [
+            "m3-series-olympiad-elliptic-central-binomial-square"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-even-zeta",
+          "url": "https://dlmf.nist.gov/25.6",
+          "year": 2026,
+          "round": null,
+          "section": "25.6",
+          "pages": null,
+          "problemIdentifiers": [
+            "25.6.E2"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "coverage_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Even positive zeta values"
+          ],
+          "notes": [
+            "Inspection reported directly by coverage_research; mathematical background only, no source wording or code imported."
+          ],
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "admissionStatus": "reference_only_not_imported"
+        },
+        {
+          "id": "dlmf-gamma-stirling",
+          "url": "https://dlmf.nist.gov/5.11",
+          "year": 2026,
+          "round": null,
+          "section": "5.11",
+          "pages": null,
+          "problemIdentifiers": [
+            "5.11.E1"
+          ],
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_item_inspected",
+          "reviewedBy": "coverage_research",
+          "solutionType": "identity_reference_with_conditions",
+          "solutionUrl": null,
+          "coverageIdeas": [
+            "Log-gamma Stirling asymptotic with remainder/domain constraints"
+          ],
+          "notes": [
+            "Inspection reported directly by coverage_research; mathematical background only, no source wording or code imported."
+          ],
+          "destinationProblemIds": [
+            "cn_25616e03bafcbd4fcead",
+            "cn_4270a2995a4aa6599e42",
+            "cn_48870f7fb012db3868e7",
+            "cn_48ae77b2880c62a5a097",
+            "cn_4fe80937a07d23f522ea",
+            "cn_59d719154b3b0dd9b880",
+            "cn_be7c46f7936f53dd9e68",
+            "cn_ff7b967aa7e99cf452e4"
+          ],
+          "destinationFamilyIds": [
+            "m3-limits-olympiad-central-binomial-shift"
+          ],
+          "admissionStatus": "reference_only_not_imported"
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false,
+        "mathematicalVerification": "not_admitted; independent verification still required",
+        "accessMethod": "official web pages, PDFs or read-only source text; no source scripts executed"
+      },
+      "restrictionReason": "Source expression remains reference-only; classical mathematical facts may be independently derived.",
+      "verifiedTheoremLocators": [
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/19.8.E1",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-agm-parameter"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/19.8.E4",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-agm-parameter"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/3.5.E40",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-bessel-laplace"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/5.12.E1",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-mixed-beta-log",
+            "io3-binomial-exponential",
+            "io3-abel-recovery"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/5.12.E3",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-mellin-cyclotomic",
+            "io3-sech-fourier"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/5.5.E1",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-gamma-unit-average"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/5.5.E3",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-gamma-unit-average",
+            "io3-mellin-cyclotomic",
+            "io3-sech-fourier"
+          ]
+        },
+        {
+          "canonicalUrl": "https://dlmf.nist.gov/5.5.E4",
+          "accessDate": "2026-11-03",
+          "solutionType": "mathematical-identity-reference",
+          "destinationFamilyIds": [
+            "io3-mixed-beta-log",
+            "io3-principal-value"
+          ]
+        }
+      ],
+      "additionalTheoremReferenceInspections": [
+        {
+          "sourceRecordId": "nist-dlmf",
+          "urls": [
+            "https://dlmf.nist.gov/18.38",
+            "https://dlmf.nist.gov/3.11"
+          ],
+          "locators": [
+            "18.38(i)",
+            "3.11 approximation/minimax background"
+          ],
+          "licenseEvidence": "Existing NIST DLMF custom restrictive notice; no copied source expression.",
+          "coverage": "Chebyshev minimax and approximation theorem background",
+          "accessDate": "2026-11-03",
+          "inspectionStatus": "actual_reference_inspected_by_delegated_agent",
+          "reviewedBy": "integration_research",
+          "intendedUse": "reference_only",
+          "importQueueEligible": false,
+          "destinationProblemIds": [],
+          "destinationFamilyIds": [],
+          "sourceExpressionReused": false
+        }
+      ]
+    },
+    {
+      "id": "cmu-gautam-mgf-2026",
+      "title": "Characteristic functions and normal weak limits",
+      "canonicalUrl": "https://www.math.cmu.edu/~gautam/c/2026-425/notes/mgf.html",
+      "authorsOrOrganizers": [],
+      "edition": "Dated course web notes, accessed 2026-11-03; no immutable commit verified",
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "NO_REUSE_GRANT_VERIFIED",
+        "evidence": "No reuse grant verified or relied upon.",
+        "scope": "Referenced notes only; not a permission claim for embedded assets."
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "No source expression reused",
+      "requiredAttribution": "No source expression distributed; theorem background references retained.",
+      "requiredModificationNotice": "No adaptation made",
+      "destinationFamilyIds": [
+        "m3-limits-olympiad-binomial-moving-threshold"
+      ],
+      "destinationProblemIds": [
+        "cn_1f30524e0d1243089588",
+        "cn_3649ed8c26ca1ffb439b",
+        "cn_594bbafa400160a7536e",
+        "cn_77293be1db81d00125ba",
+        "cn_b9930b59b6ca6af121e7",
+        "cn_c63023d156494ef9bba8",
+        "cn_d88dcf3197a373582a08",
+        "cn_dd634f39ccff1d3b87ac"
+      ],
+      "destinationMappingStatus": "Theorem-reference linkage only; independent original expression, not adaptation lineage",
+      "coverageGapsAddressed": [
+        "Characteristic functions and normal weak limits"
+      ],
+      "reviewedItems": [
+        {
+          "id": "cmu-gautam-mgf-2026-theorems",
+          "url": "https://www.math.cmu.edu/~gautam/c/2026-425/notes/mgf.html",
+          "locators": [
+            "Proposition 19",
+            "Theorem 25 and central-limit proof sketch"
+          ],
+          "solutionType": "theorem_statement_and_analytic_argument",
+          "inspectionStatus": "actual_reference_inspected_by_delegated_agent",
+          "reviewedBy": "integration_research",
+          "admissionStatus": "reference_only_not_imported",
+          "destinationFamilyIds": [
+            "m3-limits-olympiad-binomial-moving-threshold"
+          ],
+          "destinationProblemIds": [
+            "cn_1f30524e0d1243089588",
+            "cn_3649ed8c26ca1ffb439b",
+            "cn_594bbafa400160a7536e",
+            "cn_77293be1db81d00125ba",
+            "cn_b9930b59b6ca6af121e7",
+            "cn_c63023d156494ef9bba8",
+            "cn_d88dcf3197a373582a08",
+            "cn_dd634f39ccff1d3b87ac"
+          ]
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false
+      }
+    },
+    {
+      "id": "illinois-occupancy-2022",
+      "title": "Occupancy and coupon-coverage asymptotics",
+      "canonicalUrl": "https://courses.grainger.illinois.edu/cs574/sp2022/lec/notes/09_occupancy_II.pdf",
+      "authorsOrOrganizers": [
+        "Sariel Har-Peled"
+      ],
+      "edition": "Chapter 9, April 26, 2022",
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-3.0",
+        "evidence": "Inspecting agent reported explicit CC BY-NC 3.0 footer in this PDF; reference-only, no compatibility claim for importing its expression.",
+        "scope": "Referenced notes only; not a permission claim for embedded assets."
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "No source expression reused",
+      "requiredAttribution": "No source expression distributed; theorem background references retained.",
+      "requiredModificationNotice": "No adaptation made",
+      "destinationFamilyIds": [
+        "m3-limits-olympiad-coupon-coverage-window"
+      ],
+      "destinationProblemIds": [
+        "cn_0e22a9afed7401751639",
+        "cn_15919a3c2603471b7f82",
+        "cn_33292739f843829d3fa1",
+        "cn_3fe228aadeb75f5c1748",
+        "cn_50bdc35302a73e80d1cd",
+        "cn_51ce925546a29449d446",
+        "cn_7197ff63d1140ce22bae",
+        "cn_efe106f0ce06eef03546"
+      ],
+      "destinationMappingStatus": "Theorem-reference linkage only; independent original expression, not adaptation lineage",
+      "coverageGapsAddressed": [
+        "Occupancy and coupon-coverage asymptotics"
+      ],
+      "reviewedItems": [
+        {
+          "id": "illinois-occupancy-2022-theorems",
+          "url": "https://courses.grainger.illinois.edu/cs574/sp2022/lec/notes/09_occupancy_II.pdf",
+          "locators": [
+            "Lemma 9.1.5, PDF page 2",
+            "Theorem 9.1.6, PDF page 3"
+          ],
+          "solutionType": "theorem_statement_and_analytic_argument",
+          "inspectionStatus": "actual_reference_inspected_by_delegated_agent",
+          "reviewedBy": "integration_research",
+          "admissionStatus": "reference_only_not_imported",
+          "destinationFamilyIds": [
+            "m3-limits-olympiad-coupon-coverage-window"
+          ],
+          "destinationProblemIds": [
+            "cn_0e22a9afed7401751639",
+            "cn_15919a3c2603471b7f82",
+            "cn_33292739f843829d3fa1",
+            "cn_3fe228aadeb75f5c1748",
+            "cn_50bdc35302a73e80d1cd",
+            "cn_51ce925546a29449d446",
+            "cn_7197ff63d1140ce22bae",
+            "cn_efe106f0ce06eef03546"
+          ]
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false
+      }
+    },
+    {
+      "id": "mit-ocw-number-theory-2012-lecture14",
+      "title": "Mobius divisor identity, Euler product and coprime density",
+      "canonicalUrl": "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/a97051320da973caebacda06c3a74eac_MIT18_781S12_lec14.pdf",
+      "authorsOrOrganizers": [],
+      "edition": "MIT OCW 18.781, Spring 2012, Lecture 14",
+      "accessDate": "2026-11-03",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0",
+        "evidence": "MIT OCW noncommercial share-alike scope already documented in the main source register; item remains reference-only.",
+        "scope": "Referenced notes only; not a permission claim for embedded assets."
+      },
+      "intendedUse": "reference_only",
+      "importQueueEligible": false,
+      "distributionCompatibility": "No source expression reused",
+      "requiredAttribution": "No source expression distributed; theorem background references retained.",
+      "requiredModificationNotice": "No adaptation made",
+      "destinationFamilyIds": [
+        "m3-limits-olympiad-gcd-pair-density"
+      ],
+      "destinationProblemIds": [
+        "cn_162614cd460b7f831a3d",
+        "cn_18032e078beb46402486",
+        "cn_1f4035215a8a3cdf7395",
+        "cn_441bfb4e0673f8493cde",
+        "cn_506a51909cea4e66b665",
+        "cn_b8080f135042eb458b03",
+        "cn_ba04ad62137162881e70",
+        "cn_d252d923d8c2069073ea"
+      ],
+      "destinationMappingStatus": "Theorem-reference linkage only; independent original expression, not adaptation lineage",
+      "coverageGapsAddressed": [
+        "Mobius divisor identity, Euler product and coprime density"
+      ],
+      "reviewedItems": [
+        {
+          "id": "mit-ocw-number-theory-2012-lecture14-theorems",
+          "url": "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/a97051320da973caebacda06c3a74eac_MIT18_781S12_lec14.pdf",
+          "locators": [
+            "Theorem 54, PDF page 1",
+            "Mobius-zeta and coprime applications, PDF page 7"
+          ],
+          "solutionType": "theorem_statement_and_analytic_argument",
+          "inspectionStatus": "actual_reference_inspected_by_delegated_agent",
+          "reviewedBy": "integration_research",
+          "admissionStatus": "reference_only_not_imported",
+          "destinationFamilyIds": [
+            "m3-limits-olympiad-gcd-pair-density"
+          ],
+          "destinationProblemIds": [
+            "cn_162614cd460b7f831a3d",
+            "cn_18032e078beb46402486",
+            "cn_1f4035215a8a3cdf7395",
+            "cn_441bfb4e0673f8493cde",
+            "cn_506a51909cea4e66b665",
+            "cn_b8080f135042eb458b03",
+            "cn_ba04ad62137162881e70",
+            "cn_d252d923d8c2069073ea"
+          ]
+        }
+      ],
+      "review": {
+        "type": "ai_research",
+        "humanReview": false
+      }
+    }
+  ],
+  "statistics": {
+    "sourceCollections": 18,
+    "namedStartingCollectionsCovered": 11,
+    "sourceRecordsIncludingSeparateActiveEditions": 12,
+    "additionalCollections": 6,
+    "importedSourceItems": 0,
+    "activeSourceItems": 0,
+    "destinationMappings": 144,
+    "reviewedItemRecords": 35,
+    "destinationMappingMeaning": "Theorem-reference links, not adapted/copied source problems"
+  },
+  "coverageNotesFile": "rights-and-coverage.md"
+}

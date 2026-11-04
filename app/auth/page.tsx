@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useAuth } from '@/components/AuthProvider';
+import { AccountCreatedError } from '@/lib/account-auth';
 import { motion } from 'motion/react';
 import { Calculator, ArrowRight, Mail, Lock, User, Github } from 'lucide-react';
 
@@ -18,6 +19,7 @@ export default function AuthPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading) return;
     setError('');
     
     if (password.length < 6) {
@@ -35,6 +37,7 @@ export default function AuthPage() {
       }
       finishSignIn();
     } catch (err: any) {
+      if (err instanceof AccountCreatedError) setIsLogin(true);
       setError(err.message || 'Authentication failed');
     } finally {
       setLoading(false);
@@ -42,11 +45,16 @@ export default function AuthPage() {
   };
 
   const handleGoogleLogin = async () => {
+    if (loading) return;
+    setLoading(true);
+    setError('');
     try {
       await login();
       finishSignIn();
     } catch (err: any) {
       setError(err.message || 'Google login failed');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -81,6 +89,8 @@ export default function AuthPage() {
                   id="name" value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
+                  maxLength={99}
+                  autoComplete="nickname"
                   className="w-full dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-xl py-3 pl-10 pr-4 dark:text-white text-zinc-900 dark:placeholder-zinc-600 placeholder-zinc-400 focus:outline-none focus:border-emerald-500 transition-colors"
                   placeholder="Calculus Master"
                 />
@@ -95,6 +105,7 @@ export default function AuthPage() {
               <input
                 type="email"
                 id="email" value={email}
+                autoComplete="email"
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="w-full dark:bg-zinc-950 bg-zinc-50 border dark:border-zinc-800 border-zinc-200 rounded-xl py-3 pl-10 pr-4 dark:text-white text-zinc-900 dark:placeholder-zinc-600 placeholder-zinc-400 focus:outline-none focus:border-emerald-500 transition-colors"
@@ -110,6 +121,7 @@ export default function AuthPage() {
               <input
                 type="password"
                 id="password" value={password}
+                autoComplete={isLogin ? 'current-password' : 'new-password'}
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={6}
@@ -141,7 +153,8 @@ export default function AuthPage() {
         <button
           onClick={handleGoogleLogin}
           type="button"
-          className="w-full py-3 dark:bg-zinc-800 bg-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700 dark:text-white text-zinc-900 font-bold rounded-xl transition-colors flex items-center justify-center gap-2"
+          disabled={loading}
+          className="w-full py-3 dark:bg-zinc-800 bg-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-700 dark:text-white text-zinc-900 font-bold rounded-xl transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -155,7 +168,8 @@ export default function AuthPage() {
         <p className="mt-8 text-center text-sm dark:text-zinc-400 text-zinc-500">
           {isLogin ? "Don't have an account? " : "Already have an account? "}
           <button
-            onClick={() => setIsLogin(!isLogin)}
+            disabled={loading}
+            onClick={() => { setIsLogin(!isLogin); setError(''); }}
             className="text-emerald-500 hover:text-emerald-400 font-bold transition-colors"
           >
             {isLogin ? 'Sign up' : 'Sign in'}

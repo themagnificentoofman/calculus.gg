@@ -15,9 +15,14 @@ export const hash=value=>createHash('sha256').update(canonical(value)).digest('h
 export const releaseContract=manifest=>Object.fromEntries(Object.entries(manifest).filter(([key])=>!['elapsedSeconds','generatedThisRun','rejectedThisRun','duplicatesThisRun'].includes(key)));
 export function validateRecord(p) {
   const {contentHash,...body}=p;
-  if (p.schemaVersion!==1 || !/^cn_[a-f0-9]{20}$/.test(p.problemId) || !Number.isInteger(p.problemRevision)||p.problemRevision<1 || hash(body)!==contentHash) throw Error('Invalid immutable identity/hash');
+  if (![1,2].includes(p.schemaVersion) || !/^cn_[a-f0-9]{20}$/.test(p.problemId) || !Number.isInteger(p.problemRevision)||p.problemRevision<1 || hash(body)!==contentHash) throw Error('Invalid immutable identity/hash');
   if (!topics.includes(p.topic)||!difficulties.includes(p.difficulty)||!Array.isArray(p.choices)||p.choices.length!==4||new Set(p.choices.map(c=>c.choiceId)).size!==4||p.choices.filter(c=>c.choiceId===p.answerChoiceId).length!==1) throw Error('Invalid classification/choices');
   if (!p.familyId || !p.templateVersion || !p.provenance?.license || !p.provenance?.attribution || !p.assumptions?.length || !p.techniqueTags?.length || !p.estimates?.basis || p.validation?.status!=='passed' || !p.validation.evidence?.solutionDerivationChecked || !p.validation.evidence?.assumptionsChecked) throw Error('Missing approval evidence');
+  if(p.schemaVersion===2){
+    const m=p.pedagogy, list=v=>Array.isArray(v)&&v.every(s=>typeof s==='string'&&s.length>0&&s.length<1000);
+    if(!m||['constructionId','relatedIdeaGroupId','structuralSignature','primaryTechnique','answerForm','difficultyRationale'].some(k=>typeof m[k]!=='string'||!m[k].trim())||m.constructionId!==p.familyId||m.responseFormat!=='multiple-choice'||!list(m.alternativeTechniques)||!list(m.prerequisites)||!list(m.sourceRecordIds)||!list(m.reasoningDemand)||!m.reasoningDemand.length||m.reasoningDemand.some(v=>!['execution','recognition','method-selection','reframing','convergence','synthesis'].includes(v)))throw Error('Missing v2 pedagogy contract');
+    if(!p.validation.methods?.length||p.validation.humanReviewed!==false||!p.validation.evidence.uniqueCorrectOption||!p.validation.evidence.verificationRoute||!p.validation.evidence.parameterDomain||p.choices.some(c=>typeof c.misconception!=='string'))throw Error('Missing v2 reproducible verification or distractor rationale');
+  }
   if (!validQuestionResponse([{latexProblem:p.statement,options:p.choices.map(c=>c.math),correctIndex:p.choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty}],{category:p.topic,difficulty:p.difficulty,count:1}))throw Error('Gameplay payload bounds rejected');
   if (!questionMathIsRenderable({latexProblem:p.statement,options:p.choices.map(c=>c.math),explanation:p.solutionSteps})) throw Error('KaTeX rejected mathematical content');
   return p;

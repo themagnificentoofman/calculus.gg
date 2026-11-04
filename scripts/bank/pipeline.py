@@ -198,6 +198,12 @@ def verify_artifact(path):
     families={f['id']:f for f in FAMILIES};proofs={};seen=set();count=0
     for line in path.open():
         p=json.loads(line);family=p.get('familyId')
+        if p.get('schemaVersion')==2:
+            from content_pipeline import verify
+            verify(p)
+            if p['semanticHash'] in seen:raise ValueError('Duplicate normalized content')
+            seen.add(p['semanticHash']);count+=1
+            continue
         if family not in families or p.get('templateVersion')!=VERSION: raise ValueError('Unsupported family/version: quarantine for independent validation')
         params=p.get('parameters',{})
         if set(params)!=set(['a','b','c']) or any(type(v) is not int or not 1<=v<=16 for v in params.values()): raise ValueError('Parameters outside proof domain')

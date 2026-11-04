@@ -11,5 +11,8 @@ declare namespace Cloudflare {
     BANK_PILOT_EXPIRES_AT?: string;
     BANK_OPERATOR_PUBLIC_KEY?: string;
     BANK_OPERATOR_EXPIRES_AT?: string;
+    CONTENT_RELEASE_PUBLIC_KEY?: string;
+    CONTENT_RELEASE_EXPIRES_AT?: string;
+    CONTENT_RELEASE_ALLOWANCE?: string;
   }
 }

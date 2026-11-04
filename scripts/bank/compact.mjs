@@ -35,6 +35,8 @@ export function openCompact(path) {
   const db = new DatabaseSync(path); db.exec('PRAGMA foreign_keys=ON;');
   if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='bank_reports'").get()) db.exec(readFileSync(resolve(root,'drizzle/0001_problem_bank.sql'),'utf8'));
   if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_problems'").get()) db.exec(readFileSync(resolve(root,'drizzle/0002_compact_bank.sql'),'utf8'));
+  if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_selection_features'").get()) db.exec(readFileSync(resolve(root,'drizzle/0004_flimsy_carlie_cooper.sql'),'utf8'));
+  if (!db.prepare('PRAGMA table_info(cbank_delta_ledger)').all().some(c=>c.name==='charged_reads')) db.exec(readFileSync(resolve(root,'drizzle/0005_brief_skaar.sql'),'utf8'));
   return db;
 }
 export function verifyCompact(db,source) {
@@ -109,6 +111,12 @@ export function syncCompact(source,target,release,{measureCompression=false}={})
         measures.maxResidualBytes = Math.max(measures.maxResidualBytes,Buffer.byteLength(residual));
       }
       target.prepare('INSERT INTO cbank_publication VALUES (?,?,?) ON CONFLICT DO NOTHING').run(ref,row.state,row.retirement_reason);
+      if(p.schemaVersion===2){
+        const m=p.pedagogy,values=[ref,m.relatedIdeaGroupId,m.structuralSignature,m.primaryTechnique,[...m.reasoningDemand].sort().join('+')+':'+m.primaryTechnique,1];
+        const old=target.prepare('SELECT * FROM cbank_selection_features WHERE problem_ref=?').get(ref);
+        if(old&&canonical(Object.values(old))!==canonical(values))throw Error('Immutable selection feature conflict');
+        if(!old)target.prepare('INSERT INTO cbank_selection_features VALUES (?,?,?,?,?,?)').run(...values);
+      }
       if (row.state==='retired') target.prepare("UPDATE cbank_publication SET state='retired',retirement_reason=? WHERE problem_ref=? AND (state!='retired' OR retirement_reason IS NOT ?)").run(row.retirement_reason,ref,row.retirement_reason);
       measures.canonicalPayloadBytes += Buffer.byteLength(row.payload_json);
       measures.provenanceJsonBytes += Buffer.byteLength(canonical(p.provenance)); measures.validationJsonBytes += Buffer.byteLength(canonical(p.validation));

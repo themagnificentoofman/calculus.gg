@@ -1,0 +1,18 @@
+# Supplemental differentiation audit — 2026-11-03
+
+This standalone original-content asset provides four Olympiad families and one hard family, each with eight distinct exact instances (m=4,...,11). No frozen ODE file was changed. The module depends only on Python's standard library and SymPy and exposes catalog(), build(family_id, index), verify(record), and a generation CLI.
+
+The four Olympiad constructions require different decisions:
+
+- **Sharp endpoint derivative:** signed Lagrange cardinal derivatives reduce a uniform polynomial bound to a sharp Chebyshev extremizer. This proves optimality, rather than simply applying a differentiation formula. It shares the global `chebyshev-extremality` group with the limits minimax construction; the local reasoning differs (interpolation weights versus alternating-root contradiction).
+- **Cyclic determinant second derivative:** determinant multilinearity selects every two-vertex principal minor. Removing two cycle vertices creates path blocks whose determinants follow a recurrence. Correct cyclic counting and the coefficient-to-derivative factor are essential. Matrix entries are defined compactly rather than rendering an eleven-column matrix on a phone.
+- **Oscillatory regularity:** an induction on the leading oscillatory term distinguishes existence of derivatives at zero from continuity in a neighborhood. Explicit reciprocal-phase sequences establish both failures. The global `oscillatory-regularity-threshold` group is shared with the easier first-derivative limits threshold; it is not claimed as globally unrelated.
+- **Newton error jet:** quadratic error valuation doubles the vanishing order under composition, producing a first surviving eighth derivative. Independent finite jet composition checks the coefficient. This is related to Newton convergence in the limits collection, but does not reuse that family's exact cross-ratio conjugacy.
+
+The hard construction differentiates an integral with two moving endpoints and explicit parameter dependence twice. Its interval collapses at the evaluation point, but the derivative of the remaining integral has a nonzero boundary contribution. A closed primitive independently checks the full result.
+
+The author reviewed all derivations, domains, branch/regularity assumptions and misconception pools. A second AI agent, integration_research, independently read all five and found no wrong formula, essential proof gap or difficulty-fit blocker. No human review or formal proof certification is claimed. Executed residual/recurrence/minor/jet checks are recorded separately from the analytic certificates. The proof arguments explain interpolation sharpness, cycle counting, regularity failure, analytic composition and Leibniz-rule hypotheses; none is inferred solely from finite numerical agreement.
+
+The final build contains forty instances and 304 named mathematical checks, with no quarantines. Every choice receives symbolic pairwise inequivalence checks. The option screen found no fixed correct numeric rank or always uniquely shortest/longest TeX answer (ordered pairs use lexicographic rank only as an editorial signal). All 432 statements, choice expressions and solution steps parse under strict KaTeX. Sixteen bounded reconstruction and mutation tests pass, including forged content with a recomputed hash. See the JSON reports for the source digest and exact results. Prose is wrapped at thirty characters for narrower displays; an application-level visual review remains the parent's responsibility.
+
+All formulas and wording are independently authored. No third-party source item is imported or adapted, and this subtask made no repository changes or deployment.

@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 import { Settings, User, Image as ImageIcon, ArrowLeft, Save, Shield, Bell, Volume2 } from 'lucide-react';
 
 export default function SettingsPage() {
-  const { user, profile, loading: authLoading, updateUserProfile, linkGoogleAccount } = useAuth();
+  const { user, linkedProviders, profile, loading: authLoading, updateUserProfile, linkGoogleAccount } = useAuth();
   
   const hydratedUser = useRef<string | null>(null);
   const [displayName, setDisplayName] = useState('');
@@ -17,6 +17,8 @@ export default function SettingsPage() {
   
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [linkingGoogle, setLinkingGoogle] = useState(false);
+  const [googleMessage, setGoogleMessage] = useState({ text: '', type: '' });
   const [message, setMessage] = useState({ text: '', type: '' });
 
   useEffect(() => {
@@ -96,17 +98,22 @@ export default function SettingsPage() {
   };
 
   const handleLinkGoogle = async () => {
+    if (linkingGoogle) return;
+    setLinkingGoogle(true);
+    setGoogleMessage({ text: '', type: '' });
     try {
       await linkGoogleAccount();
-      setMessage({ text: 'Google account linked successfully!', type: 'success' });
+      setGoogleMessage({ text: 'Google linked. You can now sign in with Google or your email and password. Your progress stays with this account.', type: 'success' });
     } catch (error: any) {
-      setMessage({ text: error.message || 'Failed to link Google account', type: 'error' });
+      setGoogleMessage({ text: error.message || 'Failed to link Google account', type: 'error' });
+    } finally {
+      setLinkingGoogle(false);
     }
   };
 
   if (!profile) return <main className="p-8 text-center text-zinc-400"><p role="status">{authLoading ? 'Loading your account…' : 'Your profile could not be loaded.'}</p>{!authLoading && <button className="mt-4 min-h-11 rounded-xl bg-zinc-800 px-4 text-white" onClick={() => window.location.reload()}>Retry</button>}</main>;
 
-  const isGoogleLinked = user?.providerData.some(p => p.providerId === 'google.com');
+  const googleAccount = linkedProviders.find(p => p.providerId === 'google.com');
 
   return (
     <main className="min-h-screen dark:text-white text-zinc-900 p-4 sm:p-8">
@@ -263,20 +270,21 @@ export default function SettingsPage() {
                   </div>
                 </div>
 
-                {!isGoogleLinked && (
                   <div className="flex flex-wrap items-center justify-between gap-3 p-4 dark:bg-zinc-950 bg-zinc-50 rounded-xl border dark:border-zinc-800 border-zinc-200">
                     <div>
                       <div className="font-bold">Google Account</div>
-                      <div className="text-sm dark:text-zinc-400 text-zinc-500">Link your Google account for easier login</div>
+                      <div className="break-words text-sm dark:text-zinc-400 text-zinc-500">{googleAccount ? googleAccount.email || 'Google sign-in is connected' : 'Sign in with Google as well as your email and password. Keep the same account and progress.'}</div>
                     </div>
-                    <button
+                    {googleAccount ? <span className="px-3 py-1 bg-emerald-500/10 text-emerald-500 text-xs font-bold rounded-md">Connected</span> : <button
                       onClick={handleLinkGoogle}
-                      className="px-4 py-2 dark:bg-white bg-zinc-900 dark:hover:bg-zinc-200 hover:bg-zinc-800 dark:text-black text-white text-sm font-bold rounded-xl transition-colors"
+                      type="button"
+                      disabled={linkingGoogle}
+                      className="min-h-11 px-4 py-2 dark:bg-white bg-zinc-900 dark:hover:bg-zinc-200 hover:bg-zinc-800 dark:text-black text-white text-sm font-bold rounded-xl transition-colors disabled:opacity-50"
                     >
-                      Link Google
-                    </button>
+                      {linkingGoogle ? 'Linking Google…' : 'Link Google'}
+                    </button>}
                   </div>
-                )}
+                {googleMessage.text && <p role={googleMessage.type === 'error' ? 'alert' : 'status'} className={`text-sm ${googleMessage.type === 'error' ? 'text-red-500 dark:text-red-400' : 'text-emerald-600 dark:text-emerald-400'}`}>{googleMessage.text}</p>}
               </div>
             </motion.section>
           </div>

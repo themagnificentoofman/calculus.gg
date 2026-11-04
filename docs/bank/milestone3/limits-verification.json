@@ -1,0 +1,41 @@
+{
+  "asset": "limits.py",
+  "sourceSha256": "c4620207b2bd0eada64940454c12a002f0a6ebc3102eb1c3c9e1da5cee85f039",
+  "counts": {
+    "olympiadFamilies": 8,
+    "mediumFamilies": 2,
+    "hardFamilies": 2,
+    "instancesPerFamily": 8,
+    "candidates": 96,
+    "quarantined": 0,
+    "imported": 0,
+    "active": 0
+  },
+  "audits": {
+    "finiteNumericalDiagnosticsPassed": 24,
+    "finiteNumericalDiagnosticsFailed": 0,
+    "strictKaTeXExpressionsPassed": 840,
+    "strictKaTeXFailures": 0,
+    "contractChecksPassed": 13,
+    "fixedRankFamilies": [],
+    "alwaysSoleLongestTeX": [],
+    "alwaysSoleShortestTeX": []
+  },
+  "editorialReview": "AI-assisted bounded peer review of8Olympiad found no wrong final formula or essential proof/domain gap; all statements and options independently authored. Not human or formal proof review.",
+  "reproduction": {
+    "python": "/Users/zhenxg/Documents/Codex/2026-11-02/files-pasted-by-the-user-implement/work/calculus.ninja/.bank-venv/bin/python",
+    "commands": [
+      "limits.py",
+      "numerical_audit.py",
+      "check_contract.py",
+      "node render_audit.cjs"
+    ]
+  },
+  "interface": [
+    "catalog()",
+    "build(family_id,instance_index0..7)",
+    "all_candidates()",
+    "verify(record)"
+  ],
+  "relatedGroups": "chebyshev-extremality is deliberately shared with supplemental differentiation sharp-endpoint construction; inverse-function-change-of-variables is shared with inverse-integration method. Newton conjugacy is related to finite Newton jets but uses a different essential invariant."
+}

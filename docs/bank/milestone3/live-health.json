@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-04T01:05:09.681Z",
+  "results": [
+    {
+      "path": "/api/health",
+      "method": "GET",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "questionSource": "bank",
+        "bankConfigured": true,
+        "secureGameplayConfigured": true
+      }
+    },
+    {
+      "path": "/api/content-release",
+      "method": "POST",
+      "status": 404,
+      "body": {
+        "error": "Unavailable"
+      }
+    },
+    {
+      "path": "/api/bank-import",
+      "method": "POST",
+      "status": 404,
+      "body": {
+        "error": "Unavailable"
+      }
+    }
+  ]
+}
