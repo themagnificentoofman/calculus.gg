@@ -1,0 +1,444 @@
+{
+  "sourceDiagnosticSHA256": "9e7039c1bbf7f57df339273ab2dfd5a8dc6a0689319edbd187f1a4e42c7b4736",
+  "sourceFiles": {
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/ode-mv-previews-v2/canonical-previews.jsonl": "456b670e36ccff6abfca419a28fbc1c463f42c76ea3a346a02b8d0925f3d9724",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/ode-mv-previews-v2/retained-originals.jsonl": "f0411aa26cb5c30c3b37cc1e1f3564ae369fd683214a28c0d29687d99c373efe"
+  },
+  "counts": {
+    "total": 1531,
+    "parsed": 1434,
+    "uniqueOppositePairIncludesCorrect": 96,
+    "unsupported": 97
+  },
+  "affectedByFamily": {
+    "q4-differential-equations-spectral-potential-derivative": 12,
+    "q4-differential-equations-logarithmic-relaxation-constant": 6,
+    "q4-differential-equations-bistable-front-speed": 7,
+    "q4-multivariable-optimizer-fourth-envelope-derivative": 4,
+    "q4-multivariable-Gaussian-entropy-variational": 6,
+    "m3-multivariable-hard-Stokes-tilted-surface": 5,
+    "m3-differential-equations-medium-bernoulli-reciprocal": 5,
+    "m3-differential-equations-medium-homogeneous-ratio": 5,
+    "m3-differential-equations-medium-resonant-forcing": 7,
+    "m3-differential-equations-hard-variable-second-order-basis": 10,
+    "m3-differential-equations-hard-remove-first-derivative": 5,
+    "m3-differential-equations-hard-rotating-linear-system": 8,
+    "m3-differential-equations-hard-linear-stability-bound": 5,
+    "m3-differential-equations-medium-finite-blowup": 2,
+    "m3-differential-equations-medium-variable-integrating-factor": 2,
+    "m3-multivariable-olympiad-simplex-log-partition": 7
+  },
+  "unsupportedByFamily": {
+    "q4-differential-equations-Bessel-zero-normalization": 10,
+    "q4-differential-equations-Green-kernel-square-trace": 10,
+    "q4-multivariable-spherical-triangle-vector-area": 10,
+    "q4-multivariable-confocal-distance-integral": 10,
+    "q4-multivariable-disk-to-annulus-optimal-transport": 10,
+    "q4-differential-equations-nonlinear-damping-Melnikov-bound": 10,
+    "q4-multivariable-Gaussian-trigonometric-nodal-length": 10,
+    "m3-multivariable-olympiad-Gaussian-wedge": 3,
+    "m3-multivariable-olympiad-squared-log-disk": 8,
+    "m3-differential-equations-olympiad-schwarzian-ivp": 8,
+    "m3-differential-equations-olympiad-darboux-oscillator": 8
+  },
+  "unsupportedRecords": [
+    {
+      "problemId": "cn_0504b12ebbd7c90da6ae",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_403fbfc5539f503074e1",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_0f506ef25ccd0f64e434",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_c0d0c6d0e28341c9bc21",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_1095d73dae86afba8d1e",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_438bfb54720583e0c5e7",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_24dbf4c85e28cde28f30",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_f98141950e3b866a25a8",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_1b9244149572d1bda851",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_d2a652c58ab0f30e16aa",
+      "familyId": "q4-differential-equations-Bessel-zero-normalization"
+    },
+    {
+      "problemId": "cn_1bdf68c05a6ac3f4c744",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_92a90a79e4b818cb1919",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_adf14183cc34463f7727",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_e514277a055ec4c93553",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_39aa3fca5e3ef53a6660",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_ab89434ad5781317a285",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_bd65033a6e24f11092df",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_c65eca9408f27642cd13",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_acd332167cfd28b17e60",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_fe97e44f8d9dc5fab0a3",
+      "familyId": "q4-differential-equations-Green-kernel-square-trace"
+    },
+    {
+      "problemId": "cn_b6fe57b54ad1a94cf57f",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_f156bbd41e70a2d5ebd6",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_9a2a831997d185f27d4e",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_ff97147e8b3583c22961",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_c1d23060ae511c43390d",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_fb4ae576ca2f2450372c",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_ce79137c19dc5316ef2b",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_a6ca17ac579ce795ae7a",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_2ab53bb7cc302bdc4152",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_750aa519f6ad6c94733c",
+      "familyId": "q4-multivariable-spherical-triangle-vector-area"
+    },
+    {
+      "problemId": "cn_d459cf5427c25d4f6e74",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_68e714e07e7900c0664e",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_d6e7c7d8ee91d6a11bac",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_5d63a1b57452665b8551",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_799f178320b87fb31aa9",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_8202df6c8237940798b8",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_80b2039aea9c7816d6af",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_b7dff99d886350ece9c5",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_1d7baf513459d85135f9",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_1599da0daab315719f5f",
+      "familyId": "q4-multivariable-confocal-distance-integral"
+    },
+    {
+      "problemId": "cn_67a9cc93a0335394868c",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_f787b74eb1922924a993",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_b335ebb59f9ff46c49df",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_3e50ac2af8593717517e",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_b53d64517cad434f24ba",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_fb54d478f8124fc1f489",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_d80005baa8317ca604c8",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_8eaa2c9c70477a8bfe20",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_305058fcd831279d2f93",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_62339e6aa5659bd1c3ef",
+      "familyId": "q4-multivariable-disk-to-annulus-optimal-transport"
+    },
+    {
+      "problemId": "cn_4bb519a5da10317a30f2",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_632dad5c039c63b6865a",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_5663b3750169611d524e",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_fd315e4ac5aaf282a956",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_8469bc6aff9b7e127a09",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_6b259a5d12f0295bf845",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_6b3c02e22109ff72fd62",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_86909355149d47a57a9d",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_9b8267974b695af75f83",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_d0f3132e809e70890fe3",
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound"
+    },
+    {
+      "problemId": "cn_80434c77a86bbce6ff3d",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_c5d6e84b17a3af8ec1b9",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_de0d36f1c6255b1f5da2",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_e587a369fb8125e7395f",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_28bbf15e942a407a6e68",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_8d0a420fc08da0053d1d",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_7d7934f4235db05e474a",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_04267066b06a8e487e17",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_13b354d226d6cb221ee9",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_6485770ef80ef3d542e8",
+      "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length"
+    },
+    {
+      "problemId": "cn_c94f4561391dac1b264c",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge"
+    },
+    {
+      "problemId": "cn_d69412da35b18854eddb",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge"
+    },
+    {
+      "problemId": "cn_f930d14ed19db5555c3c",
+      "familyId": "m3-multivariable-olympiad-Gaussian-wedge"
+    },
+    {
+      "problemId": "cn_381d401cb0edb5e2140f",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_7a761d515f6945c8a55b",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_bdc85c0589bf92ccf580",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_c7b376781824df58306e",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_0d2d8d85e9d5a8c62004",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_7954c47b718d0830f996",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_4d239cb364f286068941",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_ecba4f3741dcbce286ea",
+      "familyId": "m3-multivariable-olympiad-squared-log-disk"
+    },
+    {
+      "problemId": "cn_59149487a051afd9f83c",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_dc917114afd341eaf1e8",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_0457365b5bd58cf359cb",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_152e4d861a6a3be4cca3",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_04a71e215111695c872c",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_33d43be16b313548afe4",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_ffea6cc82f6bfd748900",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_911489e299970ea91f76",
+      "familyId": "m3-differential-equations-olympiad-schwarzian-ivp"
+    },
+    {
+      "problemId": "cn_7eba366f84aed2c76b44",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_c5fc14b0e2e3b127bf5b",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_5cd26fc18a0d90833ce7",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_501d352db65ded206940",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_33aa6acfe25c89de2a4e",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_fc65b448dc320d3af124",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_06cbbe31ff4c21620c80",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    },
+    {
+      "problemId": "cn_b8c6bc699fc512dc802b",
+      "familyId": "m3-differential-equations-olympiad-darboux-oscillator"
+    }
+  ],
+  "limitations": [
+    "The input diagnostic identifies exactly expanded scalar opposite pairs, not complete symbolic equivalence.",
+    "Tuple-valued choices are skipped by the original diagnostic and require separate vector/component review.",
+    "Unsupported expressions include named special functions, vectors and symbolic variable-dependent solutions. They are not silently approved by this scalar repair layer.",
+    "Every new correction is bound to original canonical contentHash plus full-record hash; no frozen constructor or earlier repair layer is mutated."
+  ],
+  "presentationSources": {
+    "guarded-canonical-preview": 59,
+    "guarded-current-finite-review": 37
+  }
+}

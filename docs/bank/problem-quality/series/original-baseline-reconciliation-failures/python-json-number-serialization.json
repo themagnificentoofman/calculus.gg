@@ -1,0 +1,8 @@
+{
+  "status": "preserved-failed-assertion",
+  "command": "node scripts/bank/quality/peer/series_baseline_rebind.mjs",
+  "assertion": "Peer preview join failed cn_517d3898b558d522c245",
+  "cause": "The original peer rawHash uses Python sorted compact JSON. Its numeric diagnostic includes 1.0, which JavaScript JSON.stringify reserializes as 1. The contentHash, semanticHash and full artifact hash still match; the attempted JavaScript raw-hash reconstruction used a different serialization.",
+  "resolution": "Recompute original published and preview record hashes with the original Python json.dumps(sort_keys=True, separators=(',', ':'), ensure_ascii=False) serialization. Preserve all original hashes and preview bytes.",
+  "scope": "Serialization correction only. No mathematical value, record, prior review, or qualification criterion changes."
+}

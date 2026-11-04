@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { normalizeNotation } from '../lib/math-notation.mjs';
-import { formatSolutionStep } from '../lib/solution-format.mjs';
+import { formatSolutionStep,formatProblemStatement } from '../lib/solution-format.mjs';
 import { renderMath } from '../lib/render-math.mjs';
 
 test('natural logarithms and inverse functions use consistent notation without changing bases',()=>{
@@ -38,4 +38,16 @@ test('prose boundaries preserve TeX spaces and adjacent gathered environments re
   if(block.kind==='math')assert.doesNotThrow(()=>renderMath(block.value,true));else for(const part of block.parts)if(part.kind==='math')assert.doesNotThrow(()=>renderMath(part.value,false));
  }
  assert.equal(normalizeNotation(String.raw`\frac{d}{dx}\,dx+dt`,{differentialVariables:['x','t']}),String.raw`\frac{\mathrm{d}}{\mathrm{d}x}\,\mathrm{d}x+\mathrm{d}t`);
+});
+test('statements unwrap nested prose while preserving complete mathematical environments',()=>{
+ const source=String.raw`\begin{gathered}\textnormal{Find the tangent}\end{gathered}y=x^2\textnormal{ at }x=1.`;
+ const result=formatProblemStatement(source);assert.equal(result.length,1);assert.equal(result[0].kind,'paragraph');
+ assert.equal(result[0].parts[0].value,'Find the tangent');assert.equal(result[0].parts[1].value,'y=x^2');
+ const nested=formatProblemStatement(String.raw`\begin{gathered}\begin{gathered}\textnormal{First part}\end{gathered}\\\textnormal{second part.}\\f(x)=\begin{cases}0,&x<0,\\x,&x\ge0.\end{cases}\end{gathered}`);
+ assert.equal(nested.length,2);assert.equal(nested[0].kind,'paragraph');assert.equal(nested[0].parts.map(p=>p.value).join(''),'First part second part.');
+ assert.equal(nested[1].kind,'math');assert.match(nested[1].value,/begin\{cases\}/);assert.doesNotThrow(()=>renderMath(nested[1].value,true));
+ const fraction=String.raw`\frac{\textnormal{distance}}{\textnormal{time}}`;
+ assert.deepEqual(formatProblemStatement(fraction),[{kind:'math',value:fraction}]);
+ const defining=String.raw`\operatorname{erf}(x)=\frac2{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm{d}t=\sum_{k=0}^{\infty}a_kx^k.\textnormal{Find the coefficient.}`;
+ assert.equal(formatProblemStatement(defining)[0].kind,'math');
 });

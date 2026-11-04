@@ -1,0 +1,34 @@
+{
+  "scope": "Parent independent statement-and-choice-only first solve, prior to intended proof inspection",
+  "inputSHA256": "6538ddd8cd259fd6ab0c4a923a17bf413885ed5206bda30a53dc381abe1cd277",
+  "reviewer": "/root",
+  "humanReviewed": false,
+  "samples": [
+    {
+      "sampleKey": "sample-3",
+      "answer": "2 sqrt(2)+sqrt(10)+4 sqrt(5)",
+      "route": "Convex hull support integral equals perimeter; interior point irrelevant."
+    },
+    {
+      "sampleKey": "sample-4",
+      "answer": "Gamma(1/4)/(Gamma(1/4)+4 sqrt(pi))",
+      "route": "Interior Gaussian mass and half-line quartic endpoint mass balance after the tilt.",
+      "optionFinding": "Sole nontrivial expression is a possible clue; final pool now has two comparable Gamma ratios."
+    },
+    {
+      "sampleKey": "sample-5",
+      "answer": "(31/384,49/384)",
+      "route": "Middle interval[1/8,5/8] minimizes;[0,3/8] union[7/8,1] maximizes; quadratic sign certificates."
+    },
+    {
+      "sampleKey": "sample-6",
+      "answer": "-pi/3",
+      "route": "Cosine substitution, polynomial division and zero arcsine principal value."
+    },
+    {
+      "sampleKey": "sample-7",
+      "answer": "(23/1152,not attained)",
+      "route": "Piecewise Peano kernel changes sign, preventing continuous saturation; approximating its sign proves supremum."
+    }
+  ]
+}

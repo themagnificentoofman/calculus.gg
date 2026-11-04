@@ -1,0 +1,2351 @@
+{
+  "reviewId": "quality-integration-normalized-capacity-v1",
+  "inputReviewSHA256": "2db2ff5eb8713daf73e3a8df7a45aa11d8151f90fde91b9e9591daac9441101b",
+  "qualifiedRawItems": 160,
+  "qualifiedGroups": 21,
+  "effectiveMeaningfulItems": 139,
+  "alreadyEligibleBeforeOptionRepair": 130,
+  "normalizationPolicy": "Exact elementary transformations of the unsolved task count as aliases. General theorem evaluation after solving is not itself an alias test. This is a conservative finite review, not a complete theorem proving system.",
+  "families": [
+    {
+      "familyId": "io3-abel-recovery",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-agm-parameter",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-arctan-parameter",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-fejer-fourth",
+      "qualifiedRawIndices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 5,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-fresnel",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0
+      ],
+      "meaningfulCount": 1,
+      "aliases": [
+        {
+          "instanceIndex": 1,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 2,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 3,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 4,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 5,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 6,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        },
+        {
+          "instanceIndex": 7,
+          "representativeProblemId": "cn_8af9901fc98830f61750"
+        }
+      ]
+    },
+    {
+      "familyId": "io3-gamma-unit-average",
+      "qualifiedRawIndices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        1,
+        2
+      ],
+      "meaningfulCount": 2,
+      "aliases": [
+        {
+          "instanceIndex": 3,
+          "representativeProblemId": "cn_6a76b80e438f24676386"
+        },
+        {
+          "instanceIndex": 4,
+          "representativeProblemId": "cn_accd1f662f531e3a685c"
+        },
+        {
+          "instanceIndex": 5,
+          "representativeProblemId": "cn_6a76b80e438f24676386"
+        },
+        {
+          "instanceIndex": 6,
+          "representativeProblemId": "cn_accd1f662f531e3a685c"
+        },
+        {
+          "instanceIndex": 7,
+          "representativeProblemId": "cn_6a76b80e438f24676386"
+        }
+      ]
+    },
+    {
+      "familyId": "io3-gaussian-fourier",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-integral-equation",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-log-fourier-coefficient",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-mixed-beta-log",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "meaningfulCount": 7,
+      "aliases": [
+        {
+          "instanceIndex": 5,
+          "representativeProblemId": "cn_b1048677a6d7230a8feb"
+        }
+      ]
+    },
+    {
+      "familyId": "io3-moment-projection",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-poisson-log-potential",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-principal-value",
+      "qualifiedRawIndices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 7,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-quadrature-defect",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0
+      ],
+      "meaningfulCount": 1,
+      "aliases": [
+        {
+          "instanceIndex": 1,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 2,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 3,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 4,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 5,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 6,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        },
+        {
+          "instanceIndex": 7,
+          "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+        }
+      ]
+    },
+    {
+      "familyId": "io3-rearrangement",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-reciprocal-gaussian",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 7,
+      "aliases": [
+        {
+          "instanceIndex": 3,
+          "representativeProblemId": "cn_1c4eb602bda801b6c16d"
+        }
+      ]
+    },
+    {
+      "familyId": "io3-sech-fourier",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-sinc-overlap",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-variational-energy",
+      "qualifiedRawIndices": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 5,
+      "aliases": []
+    },
+    {
+      "familyId": "io3-weighted-complement",
+      "qualifiedRawIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "meaningfulCount": 8,
+      "aliases": []
+    }
+  ],
+  "records": [
+    {
+      "problemId": "cn_46f5c2780d8da83fc6ef",
+      "sourceContentHash": "6512b6a54219c61e50a3d7c039464cb9d4c67a2d406b813614dfda3c431f8325",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_46f5c2780d8da83fc6ef"
+    },
+    {
+      "problemId": "cn_6f52ab0d2cc8a0032b6d",
+      "sourceContentHash": "3b78b0148305c3d82bfa8e4874c190e83a6f3653c3f67252cab89064c1adffae",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6f52ab0d2cc8a0032b6d"
+    },
+    {
+      "problemId": "cn_3e048c3fe0fc9aa9f1bd",
+      "sourceContentHash": "c721f0b0fe4931d198808672721d32c3ccd381884b45734cdf9e7c5f1a209898",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_3e048c3fe0fc9aa9f1bd"
+    },
+    {
+      "problemId": "cn_10cd2c98c8d5d186d546",
+      "sourceContentHash": "a761b7d001b9fd25081b8c43158bb31739d4bf99c1851a7e7df5d269e2bd29be",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_10cd2c98c8d5d186d546"
+    },
+    {
+      "problemId": "cn_9f95d795a5c24fc9bd62",
+      "sourceContentHash": "a8ee2af3b1d7fe71cc32a23535967034dd728b94c2975f6312d7405169ef8559",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_9f95d795a5c24fc9bd62"
+    },
+    {
+      "problemId": "cn_27f5caf9db5050cf03ca",
+      "sourceContentHash": "09a94092351f6801b61c59b812ae08f10d2b9f65150afe12899c6370a8efa595",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_27f5caf9db5050cf03ca"
+    },
+    {
+      "problemId": "cn_7081a015db1fdefc7d00",
+      "sourceContentHash": "370d673e8c7fc725a70f7662525d612bcd0a913608763e5b56ced2922b791cd8",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7081a015db1fdefc7d00"
+    },
+    {
+      "problemId": "cn_cf78845dd4b9ec5744a7",
+      "sourceContentHash": "9af47911ff7b7cebceda6119bffe5d16f3c78c7402fa474367bb09a21730e45b",
+      "familyId": "io3-weighted-complement",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-weighted-complement::{\"n\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_cf78845dd4b9ec5744a7"
+    },
+    {
+      "problemId": "cn_6a76b80e438f24676386",
+      "sourceContentHash": "f20b525244060ca7d87bf5058ae2895b14a09ca450e30a5f6145bad0bb5f251b",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-gamma-unit-average::1/2",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6a76b80e438f24676386"
+    },
+    {
+      "problemId": "cn_accd1f662f531e3a685c",
+      "sourceContentHash": "ade180fe059e543d8065858706d13b8f3803ed0365bc78d64323c1ee0b0d0510",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-gamma-unit-average::0",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_accd1f662f531e3a685c"
+    },
+    {
+      "problemId": "cn_fed6afae1f8da3947b0d",
+      "sourceContentHash": "6b8552e8b6eb828ca6460b54879ba3d35a86371be1db1dddeb5d8a58642dc4b3",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-gamma-unit-average::1/2",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_6a76b80e438f24676386"
+    },
+    {
+      "problemId": "cn_62ed8039c5ca14e69cb9",
+      "sourceContentHash": "5c59b5bddaa55dd1122b042310df93a71d2836078f3dd1c8a5812999b3b9e3ef",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-gamma-unit-average::0",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_accd1f662f531e3a685c"
+    },
+    {
+      "problemId": "cn_e2d275c76749fe36e466",
+      "sourceContentHash": "6a5518b14add2e8468b950ac2669b3e7cbd6116ed6e4db03f48ee2c83ad0cd55",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-gamma-unit-average::1/2",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_6a76b80e438f24676386"
+    },
+    {
+      "problemId": "cn_acde9607be0441fd2dc8",
+      "sourceContentHash": "755aed16726ab9aabef0e5083adce3880863b9135504b06e9d4fc3b6fe3ef51e",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-gamma-unit-average::0",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_accd1f662f531e3a685c"
+    },
+    {
+      "problemId": "cn_f68fd6304a6d710576f6",
+      "sourceContentHash": "c0156e745165e2c6376c85a4375bf6a4dd8d0811963d130587cc1e46fb92624b",
+      "familyId": "io3-gamma-unit-average",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-gamma-unit-average::1/2",
+      "reason": "Gamma recurrence makes every integer shift a known elementary integral plus the same base unit-interval average; integer and half-integer starts are two lineages.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_6a76b80e438f24676386"
+    },
+    {
+      "problemId": "cn_730aa1e4cf24b660656d",
+      "sourceContentHash": "c880337cb8495c49b99a33d94f1a2694923d6fd75d3ad82c2ff7b832d05ea092",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 2, \"r\": [2, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_730aa1e4cf24b660656d"
+    },
+    {
+      "problemId": "cn_5228eb25f81950e79fa7",
+      "sourceContentHash": "38b18f02fb30f162724896b00448c93090355b9ac89412811f515b1a36755258",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 3, \"r\": [3, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5228eb25f81950e79fa7"
+    },
+    {
+      "problemId": "cn_d89516c666c5d231c5ea",
+      "sourceContentHash": "e7c4b809b5ce3c2a4bc75e1af9890323ca37facc50b63829e5929f9548460df1",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 4, \"r\": [2, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d89516c666c5d231c5ea"
+    },
+    {
+      "problemId": "cn_e30c0ea8fd26c37219ae",
+      "sourceContentHash": "9599bca5fdfab4571b13f1bc0a74e8f66d306dcbebad97907d8d98e44ba7ea00",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 5, \"r\": [3, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_e30c0ea8fd26c37219ae"
+    },
+    {
+      "problemId": "cn_e828e0e232b3778974c4",
+      "sourceContentHash": "d8bde06f333a69617711fc67e407d2ed63e5578300202ca30e0ee41d8154d184",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 6, \"r\": [2, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_e828e0e232b3778974c4"
+    },
+    {
+      "problemId": "cn_9de299a58119c2d8ed6b",
+      "sourceContentHash": "6090b7eb2d034b2a4d494945ca509649dc0bb7715d25440c2d9fd1557f39ebb3",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 7, \"r\": [3, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_9de299a58119c2d8ed6b"
+    },
+    {
+      "problemId": "cn_7279a62a09533041787c",
+      "sourceContentHash": "d78545bd196b8760c9b6af1ee2131226a5b9007327271a82f3915173f3389aea",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 8, \"r\": [2, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7279a62a09533041787c"
+    },
+    {
+      "problemId": "cn_f9e3937b459be2417792",
+      "sourceContentHash": "03c833bd40cef89a6d774bd2f48794c0e882d4fea256c7225bd9ba6f41a651fe",
+      "familyId": "io3-log-fourier-coefficient",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-log-fourier-coefficient::{\"n\": 9, \"r\": [3, 5]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f9e3937b459be2417792"
+    },
+    {
+      "problemId": "cn_a89b2a1c5bb93d11b00c",
+      "sourceContentHash": "90b4e21a8570a27308bb6210411a47cc4490a3e35a079680130dfac7b9386c3d",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [3, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a89b2a1c5bb93d11b00c"
+    },
+    {
+      "problemId": "cn_668a14c3be176d7fd164",
+      "sourceContentHash": "3440e3971857128d33cc01277c69d3919395e7274935f667f9b2acf860c00a71",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [2, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_668a14c3be176d7fd164"
+    },
+    {
+      "problemId": "cn_40185cae29ff28e0fd90",
+      "sourceContentHash": "84072021ad9a2d9e69c0a11b17865fd86d9de37311e40791296edd3601f5d726",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [5, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_40185cae29ff28e0fd90"
+    },
+    {
+      "problemId": "cn_67293a6278adbddc45d4",
+      "sourceContentHash": "b90c20f81c16aee25775791356749d0acb326adf6157b256989c6f0c46ec0290",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [3, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_67293a6278adbddc45d4"
+    },
+    {
+      "problemId": "cn_23170d1a9e5d16698ab3",
+      "sourceContentHash": "b433ee66d80374a2ef96a102675819d23be50b0f672b125bd3ac338118e84769",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [7, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_23170d1a9e5d16698ab3"
+    },
+    {
+      "problemId": "cn_9dc5a9136847d23c947d",
+      "sourceContentHash": "47d270970787dec7436ba991accf17409e2b31a8c8580cb09f11e3a2d6a72772",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [4, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_9dc5a9136847d23c947d"
+    },
+    {
+      "problemId": "cn_90e9f3033c76e902b760",
+      "sourceContentHash": "3240ffaad71d27f8c8644fc09510ce1a5fddef816d7dfe509808a2876ab58762",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [9, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_90e9f3033c76e902b760"
+    },
+    {
+      "problemId": "cn_ff9d9b3c3da2c97bc4c7",
+      "sourceContentHash": "e14fdfa22d7a2b9b37f4c423824db7cc7af53da8e3f210bfe7b23de4afee2f55",
+      "familyId": "io3-arctan-parameter",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-arctan-parameter::{\"a\": [5, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ff9d9b3c3da2c97bc4c7"
+    },
+    {
+      "problemId": "cn_fffa0f2e2d6453c36d9d",
+      "sourceContentHash": "5f965169335aac506f62296595fb8db4a2aa951558ce6a3856bbd93d9d6b2a93",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-gaussian-fourier::1",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fffa0f2e2d6453c36d9d"
+    },
+    {
+      "problemId": "cn_fbf3d51a23acc7da2d72",
+      "sourceContentHash": "ad53e30f1274220610ee89aa61a1fef19c37a7e07a593c5347bca094321ab718",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-gaussian-fourier::2",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fbf3d51a23acc7da2d72"
+    },
+    {
+      "problemId": "cn_9fcdf1b51b3ab76f46df",
+      "sourceContentHash": "4698d6e6e8e8b09dd9339cf56f3bd92607cff0fa83306dfc6788e1e5c0544527",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-gaussian-fourier::3",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_9fcdf1b51b3ab76f46df"
+    },
+    {
+      "problemId": "cn_da1aa3610c37343f5b9c",
+      "sourceContentHash": "d9ef335eca2d43ea03d1f3512acab5af623891c1fd70657ea0a6823a37939785",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-gaussian-fourier::16",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_da1aa3610c37343f5b9c"
+    },
+    {
+      "problemId": "cn_eb069a5576a3a35de567",
+      "sourceContentHash": "0069c5837f69abf63d9d3365d91d678ddba68ae1ea686e93505493a7b8d442dd",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-gaussian-fourier::25/2",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_eb069a5576a3a35de567"
+    },
+    {
+      "problemId": "cn_f784699544f486f2dee9",
+      "sourceContentHash": "ee7b9af0bc0798717097deef5965f9bfb563634d3d0572abc8cb0e011de5b880",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-gaussian-fourier::12",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f784699544f486f2dee9"
+    },
+    {
+      "problemId": "cn_5e1428919956be90f0c9",
+      "sourceContentHash": "51f287bf850b5c5761a9657946bce2e7b83590c1e8ee5999c18acd3f5135e179",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-gaussian-fourier::49",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5e1428919956be90f0c9"
+    },
+    {
+      "problemId": "cn_65d729fe1ef32fad8135",
+      "sourceContentHash": "de2a5b237667c00fd9040120e2e746d759cd2d874f9a263cf1b9ed54da60db46",
+      "familyId": "io3-gaussian-fourier",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-gaussian-fourier::32",
+      "reason": "u=sqrt(a)x leaves dimensionless frequency b/sqrt(a); cosine sign symmetry is already quotiented.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_65d729fe1ef32fad8135"
+    },
+    {
+      "problemId": "cn_f69994afc09602c37e4d",
+      "sourceContentHash": "a1d63735c14624a2a953570996a403c58cc9883dbe7b995fa810f07277fad9f9",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-reciprocal-gaussian::1/6",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f69994afc09602c37e4d"
+    },
+    {
+      "problemId": "cn_1c4eb602bda801b6c16d",
+      "sourceContentHash": "eb8540b623b3d5f4d5c4c817f98fb88b5638a2b9e5b29ffae57736dc5fb9aacf",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-reciprocal-gaussian::2/3",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_1c4eb602bda801b6c16d"
+    },
+    {
+      "problemId": "cn_a26fee2c67ba53e2dc09",
+      "sourceContentHash": "1203a2d4008b1d1039ea1b7bbec186e77dd661311f6650a6b0c59b677aa92ca4",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-reciprocal-gaussian::3/2",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a26fee2c67ba53e2dc09"
+    },
+    {
+      "problemId": "cn_33668eacb67699f0b64d",
+      "sourceContentHash": "f3598f98fc8b7791be2fc061282116ad187628cd2575169146f8bc7cd6b0163b",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-reciprocal-gaussian::2/3",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1c4eb602bda801b6c16d"
+    },
+    {
+      "problemId": "cn_7b67dc6af78b5bfec9e5",
+      "sourceContentHash": "fd5010440b61b0c0f7413aece9a5c1f9d82121806dacc7fc2aa8062eaa7f2cf6",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-reciprocal-gaussian::5/3",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7b67dc6af78b5bfec9e5"
+    },
+    {
+      "problemId": "cn_95356dc53cb7ee67910f",
+      "sourceContentHash": "21a078afa1f712418fecca11d04a7ab175e89856d8e56abb5bf6e54f54c4cbf8",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-reciprocal-gaussian::3",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_95356dc53cb7ee67910f"
+    },
+    {
+      "problemId": "cn_f86cebfd543643b2150e",
+      "sourceContentHash": "f0c31fbbbac1eb44742a3c09adaa0eb70590d516892981e63f4a5e8c74c07685",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-reciprocal-gaussian::7/6",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f86cebfd543643b2150e"
+    },
+    {
+      "problemId": "cn_0c782e10ee7fe626e0b4",
+      "sourceContentHash": "9f54a022de7eba3842614ea4d2c84b4c89449799efc03303d28931b5ec8b4e85",
+      "familyId": "io3-reciprocal-gaussian",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-reciprocal-gaussian::8/3",
+      "reason": "u=a*x leaves only the dimensionless product a*b in the reciprocal Gaussian exponent, with external factor1/a.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_0c782e10ee7fe626e0b4"
+    },
+    {
+      "problemId": "cn_6832a5e57aac87d78341",
+      "sourceContentHash": "899a594bbc79d3092a8c3a5d18dfe6dece01ee2b45d0535bc869f8f7587adcf0",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-sinc-overlap::2/3",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6832a5e57aac87d78341"
+    },
+    {
+      "problemId": "cn_694ea459b9f740f01775",
+      "sourceContentHash": "b3c257e682f9d976365d58f2b496096007637c668dd72eb6bec65ac6f3dea7d2",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-sinc-overlap::3/5",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_694ea459b9f740f01775"
+    },
+    {
+      "problemId": "cn_321482c78e26e4062e1a",
+      "sourceContentHash": "c86f81721722e0437bedc86970c5b171c0e5010388789c819939e6ad8f0cd313",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-sinc-overlap::1/2",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_321482c78e26e4062e1a"
+    },
+    {
+      "problemId": "cn_fd74e215c1ba56aac731",
+      "sourceContentHash": "fe2aaf9ad65bcd5c284e5cb0901bd652c62fc9d76c5c718525e656d8802705cd",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-sinc-overlap::4/5",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fd74e215c1ba56aac731"
+    },
+    {
+      "problemId": "cn_5f671e946eccfa128c79",
+      "sourceContentHash": "2d295b125537c41d20f2d96b8aae75e0a6eba085889b0ec07ab11745373f59d3",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-sinc-overlap::6/7",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5f671e946eccfa128c79"
+    },
+    {
+      "problemId": "cn_ea39637e893a704edb18",
+      "sourceContentHash": "d2d417fc65a1eb49b7b53f5f0820a2aca98062530ac7cd4310add7ee7ba13b18",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-sinc-overlap::3/7",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ea39637e893a704edb18"
+    },
+    {
+      "problemId": "cn_d82c161fba0201496101",
+      "sourceContentHash": "c7a7742e68283a90df544ff3a0b97530bdf5ba0c3f1a5755ca76293c1321220d",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-sinc-overlap::3/4",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d82c161fba0201496101"
+    },
+    {
+      "problemId": "cn_221670ac1a5e763d65d3",
+      "sourceContentHash": "17a102faa15cfea1663a51204c803800c0c0c0611abdf6e156198f652be4ab6c",
+      "familyId": "io3-sinc-overlap",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-sinc-overlap::2/9",
+      "reason": "Positive scaling and exchanging the two sine factors leave the unordered frequency ratio.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_221670ac1a5e763d65d3"
+    },
+    {
+      "problemId": "cn_ab86b79c19a84e6859fa",
+      "sourceContentHash": "166b0177560997a86a6d3aa2e7871172dce24d61b5cf9d107ef639c93fff87cd",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-mixed-beta-log::(1, 2)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ab86b79c19a84e6859fa"
+    },
+    {
+      "problemId": "cn_ac0bfa09d543ec3aeac3",
+      "sourceContentHash": "64e1abd0d194a34465a61f97ff13ba60ace64f38e63004fab204c694cc6ae59b",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-mixed-beta-log::(2, 2)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ac0bfa09d543ec3aeac3"
+    },
+    {
+      "problemId": "cn_b1048677a6d7230a8feb",
+      "sourceContentHash": "e3195cf6d5a26c0f2670965de81225f86d64244ade55a1274fd17ca6c2f59472",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-mixed-beta-log::(2, 3)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_b1048677a6d7230a8feb"
+    },
+    {
+      "problemId": "cn_45ba1432f6ec235f1bc3",
+      "sourceContentHash": "8b6200d28b7d857a57cd0f3a01e895d6a2e087e5f82fd18754a5e0450c0a9cf3",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-mixed-beta-log::(2, 4)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_45ba1432f6ec235f1bc3"
+    },
+    {
+      "problemId": "cn_ae5d1fc575144c09e035",
+      "sourceContentHash": "e829ec09d2952cdcaa242bd873d8037f9b235afa56023950f0a29e42638b3bd8",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-mixed-beta-log::(1, 3)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ae5d1fc575144c09e035"
+    },
+    {
+      "problemId": "cn_cc5d75cf53bf088f438d",
+      "sourceContentHash": "49491acf5bc744c5d80d5abaf5e81aaa0eb788e300b9576bf020a94bdff2bb18",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-mixed-beta-log::(2, 3)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_b1048677a6d7230a8feb"
+    },
+    {
+      "problemId": "cn_7fd9f0b59f44a1952ded",
+      "sourceContentHash": "09774714ce2e4cbda44f3cdbfb207f92327dbacf92f9c731ed8645e3cc708078",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-mixed-beta-log::(3, 3)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7fd9f0b59f44a1952ded"
+    },
+    {
+      "problemId": "cn_6232c4a17210a161150f",
+      "sourceContentHash": "11d82444b3d209cf9a76b23f6cb183fa427d701b979a62948b84e07ac0468b51",
+      "familyId": "io3-mixed-beta-log",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-mixed-beta-log::(3, 4)",
+      "reason": "Reflection x->1-x swaps the endpoint powers and the two logarithms exactly.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6232c4a17210a161150f"
+    },
+    {
+      "problemId": "cn_bed41f7f792609ecd294",
+      "sourceContentHash": "4f7a2130d6bb677cceacc1453acb97b7440ac9e402e8962e99e2144d7f65bd57",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-agm-parameter::3",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_bed41f7f792609ecd294"
+    },
+    {
+      "problemId": "cn_8b74f4fa035114858dfd",
+      "sourceContentHash": "3d60ad3c161c046a48b8bf216e83e7bcecdd8ac7e6900687d7a414f1e4c83f91",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-agm-parameter::2",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_8b74f4fa035114858dfd"
+    },
+    {
+      "problemId": "cn_12b6cd94ef0fb48fd304",
+      "sourceContentHash": "7dd3109a0e214fbadbcd23d939515610b7993d16f020892505951cf34ddfb5f1",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-agm-parameter::5/3",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_12b6cd94ef0fb48fd304"
+    },
+    {
+      "problemId": "cn_d6c9d9abed0e1160353b",
+      "sourceContentHash": "47c3332624f9e09bf56fffedb8475511bcd8ca1aa2f067e9c0c7bf78e3785f69",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-agm-parameter::3/2",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d6c9d9abed0e1160353b"
+    },
+    {
+      "problemId": "cn_a04efa5bbed0a21e05d7",
+      "sourceContentHash": "0535695c07e63a4426599b6ef9dd54bee4d910960bc5c6bc23858700baa9db1d",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-agm-parameter::7/5",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a04efa5bbed0a21e05d7"
+    },
+    {
+      "problemId": "cn_19c51cadce432b1803de",
+      "sourceContentHash": "6a3ef33ed7b5d2bc9f42e6bbba6df58f0cc0a27aee5683782c5590739aad3a07",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-agm-parameter::4/3",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_19c51cadce432b1803de"
+    },
+    {
+      "problemId": "cn_218664fe8f2e2cc042fe",
+      "sourceContentHash": "7d615ea8b9b1bb2c2fabc112add2fda2903c619040927cf7ae00b6d28d2ead5c",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-agm-parameter::9/7",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_218664fe8f2e2cc042fe"
+    },
+    {
+      "problemId": "cn_7aedf5f0abf5fe75389c",
+      "sourceContentHash": "61b18241474de424bc21322081a255ac2afbe6a2e0613c3ef98a14f5c9d46b02",
+      "familyId": "io3-agm-parameter",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-agm-parameter::5/4",
+      "reason": "Common positive scaling of both parameters is external; the unordered input ratio remains.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7aedf5f0abf5fe75389c"
+    },
+    {
+      "problemId": "cn_90bc732aa2a7ae509293",
+      "sourceContentHash": "94727ed9571145e0f202a2d911fbfbbc03bf1c147d7bfc45f2ac6ad8d5c75729",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_90bc732aa2a7ae509293"
+    },
+    {
+      "problemId": "cn_5288e957a8cdbd6938b7",
+      "sourceContentHash": "df403449733d1c944822c980c4caed1dffa00cfb3d4f334979b71dcdbfb2f443",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5288e957a8cdbd6938b7"
+    },
+    {
+      "problemId": "cn_ae7a02d7c319fb3da98f",
+      "sourceContentHash": "8e8788a30d51bd1a1d430120e9d35c97a04d978dfde921b88d944bdec2fd53b8",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ae7a02d7c319fb3da98f"
+    },
+    {
+      "problemId": "cn_d2f692776d1f74820792",
+      "sourceContentHash": "dcda58272a743ccfe1cc9caf5137d976ec570ce34fc12399e19a5b63e22a93bd",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d2f692776d1f74820792"
+    },
+    {
+      "problemId": "cn_e0279f0bc9e04c4854f1",
+      "sourceContentHash": "61360e519e1db080d92bcd01c1b0baed61bf9b3cfba3d2174f84efae561576f1",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_e0279f0bc9e04c4854f1"
+    },
+    {
+      "problemId": "cn_020bacec1bb5c229f3bc",
+      "sourceContentHash": "7acb7109d227887d293ef1a53f8a6cfd43a188176da8c197687892e4dedb7523",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_020bacec1bb5c229f3bc"
+    },
+    {
+      "problemId": "cn_6d5889a6aaaa6be5408f",
+      "sourceContentHash": "f5a861d86d1ddee3a5a4041a4c2987156938900397b2fd70791fccebab003bb1",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6d5889a6aaaa6be5408f"
+    },
+    {
+      "problemId": "cn_d316b260691632a91ddb",
+      "sourceContentHash": "517f57ce255dd5d0c921f8dc8a085d19ff66d9d8679a428ee03390099597c465",
+      "familyId": "io3-abel-recovery",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-abel-recovery::{\"n\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d316b260691632a91ddb"
+    },
+    {
+      "problemId": "cn_42a4029709d8c9e726c9",
+      "sourceContentHash": "343842d16d14979791d8d701592052d2b9d5b2cf6929fe679b2fba37d509e517",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [1, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_42a4029709d8c9e726c9"
+    },
+    {
+      "problemId": "cn_fe951bbe736ebcff9471",
+      "sourceContentHash": "d6495b2d82fd40338e6e258e08fdacc46132a6ad83c502cca4725850304ae175",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [1, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fe951bbe736ebcff9471"
+    },
+    {
+      "problemId": "cn_97f921b1707b5b2fde03",
+      "sourceContentHash": "6e8a7de059697869ae5d9894c19efd7ee19c5bad86f08260b2dce14626978a6e",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [3, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_97f921b1707b5b2fde03"
+    },
+    {
+      "problemId": "cn_a20f6b5f7774eaea9abb",
+      "sourceContentHash": "b5a7d6c42c55cb604f148a8dc7c76f6d399b01a09da7ede44a629074ca57f8c0",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [2, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a20f6b5f7774eaea9abb"
+    },
+    {
+      "problemId": "cn_80d59c2d173877647d41",
+      "sourceContentHash": "42fe9773da5e7030ee004c53e869b4af08d7c94d0625d3591c613315e0c4a3c3",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [5, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_80d59c2d173877647d41"
+    },
+    {
+      "problemId": "cn_c8b93352d4b444e5fdfa",
+      "sourceContentHash": "35d17b8ebaa1fb21a3fa8c4e5aad8964733216c51b001ef7501c71e6bec6c637",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [3, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_c8b93352d4b444e5fdfa"
+    },
+    {
+      "problemId": "cn_a8f1f83f715dee764c08",
+      "sourceContentHash": "5901ea8929ca2481955aa0852729e4303b1b8421139c1cfc03d3d9571aee048d",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [7, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a8f1f83f715dee764c08"
+    },
+    {
+      "problemId": "cn_99931df7b12a9434db5a",
+      "sourceContentHash": "9eb578c977c9164bf4d6680afc6394583f375c5f1f990b74eba3b0617324aade",
+      "familyId": "io3-integral-equation",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-integral-equation::{\"k\": [4, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_99931df7b12a9434db5a"
+    },
+    {
+      "problemId": "cn_73ae6efdeee256767a68",
+      "sourceContentHash": "3d6cc1061d3d2ae836d936e8d4b3781ea30f5e699175a1ec5932982263aad6f5",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(1, 1), Fraction(2, 1))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_73ae6efdeee256767a68"
+    },
+    {
+      "problemId": "cn_0e759862c2f98427fffd",
+      "sourceContentHash": "0b23dd275167acb175c0b15f6742cff455904958230fb4812c1b3c79970a56dc",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(1, 1), Fraction(3, 2))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_0e759862c2f98427fffd"
+    },
+    {
+      "problemId": "cn_406bec7bfa0bd72eaeaa",
+      "sourceContentHash": "418ba735c531b98fb98aa40a4e2168bbf92eaa8e89a2e874251e1cdd2f3b26ea",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(1, 1), Fraction(2, 3))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_406bec7bfa0bd72eaeaa"
+    },
+    {
+      "problemId": "cn_97012741df7252e47a79",
+      "sourceContentHash": "305581b1fbbb0c9c1149298421e3ce6d076c86c164a106ddc79802192caa68bc",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(4, 1), Fraction(3, 1))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_97012741df7252e47a79"
+    },
+    {
+      "problemId": "cn_5cda21feb4dd592785f0",
+      "sourceContentHash": "c093e0ecccee97815f9018b9b6122b331dd3bfab71f2a0f3605068d66c0799d8",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(5, 2), Fraction(1, 1))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5cda21feb4dd592785f0"
+    },
+    {
+      "problemId": "cn_8b0b866430a0f518f4a4",
+      "sourceContentHash": "369aae069aac67d81bc81ed37a66e9af0863ee9da823eb8da3225a1062e887b8",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(2, 1), Fraction(1, 1))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_8b0b866430a0f518f4a4"
+    },
+    {
+      "problemId": "cn_ee17f19d2d276985590c",
+      "sourceContentHash": "3893d731dfeba1e6b66a9cee949c56dac299dabe8e91874a455f63baf4f69bb7",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(7, 1), Fraction(2, 1))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ee17f19d2d276985590c"
+    },
+    {
+      "problemId": "cn_6aa30fe677c871b9b55d",
+      "sourceContentHash": "9db91b3265019de9306d374a5be03f7ea71418495ea337e6864d95a88f84f0af",
+      "familyId": "io3-poisson-log-potential",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-poisson-log-potential::(Fraction(4, 1), Fraction(3, 2))",
+      "reason": "Scaling x by the Cauchy width leaves center/width and logarithmic-width/width; the added log scale is an elementary known constant.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_6aa30fe677c871b9b55d"
+    },
+    {
+      "problemId": "cn_8af9901fc98830f61750",
+      "sourceContentHash": "13be840ad1908b3edbca12a267871aebc849ed7bbc47ca5857e6bbeada14bc03",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_0eb6aa6451a9fd376afd",
+      "sourceContentHash": "052ddc206d2fa7ecff7eb0c879a344ba217dc33a3f577352cc99d1ebedb23a86",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_5a8a78e3d86133d3aff4",
+      "sourceContentHash": "95db17454a52a8f5091badf7bbd8997d300061a0efa680d351bad87ed5e6a19d",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_5cd3c4e61106cf4e343a",
+      "sourceContentHash": "86ae343824ed51df50c904e39a43e5cb0f17787dab874f5bc065f6115a6f6f33",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_d3f21f3cfd20a9a4299b",
+      "sourceContentHash": "2d6bc2507ee2e566631becba2a91224764453099c7582eb3407161f39ebd1f55",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_0a5bc154f3b3e814a5cd",
+      "sourceContentHash": "ea9c0769e1ad0ff542f75dbfa5fdf21d9e9c98a76e274bf3bf1516fb7dd56030",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_d081e9323df5bd6cf1b1",
+      "sourceContentHash": "6fe87bcd5345692cb148b94c191ad54710efe02017dbb6908aa130a5d2454528",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_d1c3079a5eede731e6ce",
+      "sourceContentHash": "608704b3d966c9424f043717d842f5623e2e126b635172e18ad8685cbb35d6d6",
+      "familyId": "io3-fresnel",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-fresnel::positive-quadratic-phase",
+      "reason": "u=sqrt(a)x reduces every positive phase coefficient to the identical Fresnel integral with an external factor.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_8af9901fc98830f61750"
+    },
+    {
+      "problemId": "cn_eef90eac432e19d80385",
+      "sourceContentHash": "84da11811cc67ca4e4c10f1c3124bd6af7f15705a20c8551bd723aedac0ba7ec",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 2, \"b\": 1}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_eef90eac432e19d80385"
+    },
+    {
+      "problemId": "cn_5627fb6f77be758e204c",
+      "sourceContentHash": "09e3b42bb53351b894a38bfbb330809717f8e5b2cb1aa0fbb7cb88ef41e72f4e",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 3, \"b\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_5627fb6f77be758e204c"
+    },
+    {
+      "problemId": "cn_f9d01f87c06b77239b2a",
+      "sourceContentHash": "68c9e61454be02c094d3acb8627a67f5f332a8cac2bf92864dc006f8102b5355",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 4, \"b\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f9d01f87c06b77239b2a"
+    },
+    {
+      "problemId": "cn_7cef2c34fd23d3caefbb",
+      "sourceContentHash": "9de213ee4d1c0f7171a8f8dec4aa348a7018274a659e137dba432a94f4a14eae",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 5, \"b\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7cef2c34fd23d3caefbb"
+    },
+    {
+      "problemId": "cn_96dc7f83baeae13c2e14",
+      "sourceContentHash": "466622f81c8cd0836a48f20f906ed3d2bef6ce8bbdc472ae40021470e4277a93",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 6, \"b\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_96dc7f83baeae13c2e14"
+    },
+    {
+      "problemId": "cn_58310cab152c64537963",
+      "sourceContentHash": "329b8e4db7e141009948bebaff57473924f675a17590c45b459e899c61acab4b",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 7, \"b\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_58310cab152c64537963"
+    },
+    {
+      "problemId": "cn_aea6d67e8f11e6b822a9",
+      "sourceContentHash": "508e893b380cf6c0a5cb4a2fb5e66bad14d972ed1d00f2d564bb82e420cc56ec",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 8, \"b\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_aea6d67e8f11e6b822a9"
+    },
+    {
+      "problemId": "cn_fc20494f40ce3cb4d73b",
+      "sourceContentHash": "994aa460e0c9596cc646b39bf5d77ca593168900bc2daf73052d896281ed98b9",
+      "familyId": "io3-bessel-laplace",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-bessel-laplace::{\"a\": 9, \"b\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fc20494f40ce3cb4d73b"
+    },
+    {
+      "problemId": "cn_d901065f35676fbe5267",
+      "sourceContentHash": "f67518e9c8dc368b2ed91895c1932e0aa138872dbbb67959bd9ce2d4b3bd8fcb",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-principal-value::2/5",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d901065f35676fbe5267"
+    },
+    {
+      "problemId": "cn_087d67422d2cc3abe776",
+      "sourceContentHash": "a1a5d86a78ea2e2ee9db0bd1bcb1745764dcba3b3e10275dd87d1733c76b0c11",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-principal-value::3/7",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_087d67422d2cc3abe776"
+    },
+    {
+      "problemId": "cn_0a551ec2c038637d0521",
+      "sourceContentHash": "c262a825d8d0ab50180814a7ab623b122209284fd76f7947dac8ba62625d4911",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-principal-value::2/7",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_0a551ec2c038637d0521"
+    },
+    {
+      "problemId": "cn_96c5ec04e30a44d69591",
+      "sourceContentHash": "17301f22012c1e35adc76dab2414ac96d7aee40c8660ccca1bf5ae00e711cdc8",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-principal-value::3/8",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_96c5ec04e30a44d69591"
+    },
+    {
+      "problemId": "cn_d26566909f453686499b",
+      "sourceContentHash": "52514b95bc1ae2b10f7ce798884f17cedb0ef9ee7e73cf39657290ea64c2a0be",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-principal-value::4/9",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_d26566909f453686499b"
+    },
+    {
+      "problemId": "cn_021e4a9a6081202b1990",
+      "sourceContentHash": "f2f33b7feec56893f3591687ba0b0067ac87f658203b93b867f7c7baf6198115",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-principal-value::5/11",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_021e4a9a6081202b1990"
+    },
+    {
+      "problemId": "cn_e311d3bf029c501b66ec",
+      "sourceContentHash": "9036b9a8634da61e2227f9f90f69f3a9baca6040d7e868f013e03f660f783865",
+      "familyId": "io3-principal-value",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-principal-value::3/10",
+      "reason": "Power substitution leaves p/q, and reciprocal reflection pairs p/q with1-p/q up to sign. The original symmetric-cutoff certificate is still required.",
+      "optionsRepairRequired": true,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_e311d3bf029c501b66ec"
+    },
+    {
+      "problemId": "cn_48f507a6379d4347ec6a",
+      "sourceContentHash": "e2d4a10f6d580b3b9c8b5d6fdeb24339637d9f6721d95267349ea934f49d373c",
+      "familyId": "io3-fejer-fourth",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-fejer-fourth::{\"n\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_48f507a6379d4347ec6a"
+    },
+    {
+      "problemId": "cn_e36a50c890c940933398",
+      "sourceContentHash": "0a7d1a1c23c11e56d2e17fde15343b72f01c74c1b999b36ef8dd7217972c5265",
+      "familyId": "io3-fejer-fourth",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-fejer-fourth::{\"n\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_e36a50c890c940933398"
+    },
+    {
+      "problemId": "cn_803ebed69b14a26e9e62",
+      "sourceContentHash": "094fefbe1d2057bedb7c138b57c045e11280d3c36223db4ebf6232185d772035",
+      "familyId": "io3-fejer-fourth",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-fejer-fourth::{\"n\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_803ebed69b14a26e9e62"
+    },
+    {
+      "problemId": "cn_1c49ebe21c808650fca1",
+      "sourceContentHash": "a75ed823ba4a52503592919c20572f6d107e8c702b892b23a213de2257e8ef1a",
+      "familyId": "io3-fejer-fourth",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-fejer-fourth::{\"n\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_1c49ebe21c808650fca1"
+    },
+    {
+      "problemId": "cn_b7157e445e85d4a8dede",
+      "sourceContentHash": "2e67a28ea7386a49ae9b3550a5cf1e30f7aaa74307d87b4fd100f5c7dfde09e4",
+      "familyId": "io3-fejer-fourth",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-fejer-fourth::{\"n\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_b7157e445e85d4a8dede"
+    },
+    {
+      "problemId": "cn_33fce2474f4c38bb0015",
+      "sourceContentHash": "ce91618c53f295fbedc214e2a4a8e332c42fb82dfaf4f372d0fc1630d5e8d1b4",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_33fce2474f4c38bb0015"
+    },
+    {
+      "problemId": "cn_c8177040777011ff22a7",
+      "sourceContentHash": "40e1ccbfe37829179874e4c29786b17ed2ffa370a0c5c6b8fed39631e0107930",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_c8177040777011ff22a7"
+    },
+    {
+      "problemId": "cn_fcc961ad9dc269c9abee",
+      "sourceContentHash": "60e2c158c70904cdf3981240b22601d7b350ec8116beae4439472015614fd639",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fcc961ad9dc269c9abee"
+    },
+    {
+      "problemId": "cn_894375b99069651fbbd9",
+      "sourceContentHash": "4b35f16d25d1792059ed37df37659dfdee4173811177c6a6bba0ed99dd8372bb",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_894375b99069651fbbd9"
+    },
+    {
+      "problemId": "cn_3ec647982c816f39414e",
+      "sourceContentHash": "3e34658fc108381397c907ddea9d541969b49a8b2f9327b6b8eb39baf38699f8",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_3ec647982c816f39414e"
+    },
+    {
+      "problemId": "cn_7eeeb8001aa15ac12180",
+      "sourceContentHash": "1d2cf86db8f443237ec4eeccd2a6c1e9a40e3380b8c7b4bd62dca5013e4025c2",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7eeeb8001aa15ac12180"
+    },
+    {
+      "problemId": "cn_f956bec055b644853663",
+      "sourceContentHash": "1a08d7425d950fbc2503bafa83ed3850306e05593cccd6281c9010a09dba5475",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_f956bec055b644853663"
+    },
+    {
+      "problemId": "cn_8a81637f39611672b47e",
+      "sourceContentHash": "76338c234f134154c0952ee5acb1847b91be394919f30932d8711dad057bd519",
+      "familyId": "io3-sech-fourier",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-sech-fourier::{\"q\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_8a81637f39611672b47e"
+    },
+    {
+      "problemId": "cn_a3518581c9853866d073",
+      "sourceContentHash": "0a14db51c90ad26803530f53564b5b37edab6f37f423740ac224de0f4c7f8a17",
+      "familyId": "io3-variational-energy",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-variational-energy::{\"k\": [2, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_a3518581c9853866d073"
+    },
+    {
+      "problemId": "cn_884ab0764c38113cd0f1",
+      "sourceContentHash": "49312782c732c2622c5983168cdf362bc8d4b5093095d0d0a371e196768ef923",
+      "familyId": "io3-variational-energy",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-variational-energy::{\"k\": [5, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_884ab0764c38113cd0f1"
+    },
+    {
+      "problemId": "cn_67f9c807db88fd706b8d",
+      "sourceContentHash": "40c621ef7d50d56abb86e1e77842621e3478de95223ab86dcfc7bd9dbc0c8223",
+      "familyId": "io3-variational-energy",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-variational-energy::{\"k\": [7, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_67f9c807db88fd706b8d"
+    },
+    {
+      "problemId": "cn_fdcc9ea36725b8383e99",
+      "sourceContentHash": "d42963ddcf7989d95b6119cd6cec7ddfcfe750d0683a4a57f277ad5732c8f3ad",
+      "familyId": "io3-variational-energy",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-variational-energy::{\"k\": [4, 1]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_fdcc9ea36725b8383e99"
+    },
+    {
+      "problemId": "cn_8f9fc8343c48b77faffd",
+      "sourceContentHash": "90171d0fbfb67870dc48bf1dcd8a26840c75758314a62795799661ee574eaaa1",
+      "familyId": "io3-variational-energy",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-variational-energy::{\"k\": [9, 2]}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_8f9fc8343c48b77faffd"
+    },
+    {
+      "problemId": "cn_2586549456d6ec1b5a96",
+      "sourceContentHash": "25973f9a6c4a7fa3bda9c866d51c843e16af1529b522a4618648e1547393ec2d",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 4], \"m\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_2586549456d6ec1b5a96"
+    },
+    {
+      "problemId": "cn_25dd253c93b2c60f2b58",
+      "sourceContentHash": "bf88db0b3e89253da84e2f91a03d806edab827e1324928374db2e34b8eae7038",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 2], \"m\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_25dd253c93b2c60f2b58"
+    },
+    {
+      "problemId": "cn_99e0ec2e544db6282778",
+      "sourceContentHash": "f893aa1b8920f20a24882995ee1edc6098e1bd3c10dd4f386df914c9b4614603",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [3, 4], \"m\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_99e0ec2e544db6282778"
+    },
+    {
+      "problemId": "cn_2c759d7859c078f618dc",
+      "sourceContentHash": "6ccf86f83e61008d6c3600b64d612b636188ec6cd05bd5d294cf31845461e4dd",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 4], \"m\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_2c759d7859c078f618dc"
+    },
+    {
+      "problemId": "cn_c82a016facc189fd398f",
+      "sourceContentHash": "c63e6706e26ff118f55fb904980dedaaea880dd3e167db81fa5b37d04e70a5f4",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 2], \"m\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_c82a016facc189fd398f"
+    },
+    {
+      "problemId": "cn_4300bd2b5f3a76a17604",
+      "sourceContentHash": "76eec5125758c4c5bb05ff5acb5be677da6aaf4c53fd7da8aa996965e0b39192",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [3, 4], \"m\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_4300bd2b5f3a76a17604"
+    },
+    {
+      "problemId": "cn_68b905896082bdfbed8a",
+      "sourceContentHash": "4ade2a57518f3944a96f0e859a8ff9045682c0351fbb5cdcaf5ee36f17192194",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 4], \"m\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_68b905896082bdfbed8a"
+    },
+    {
+      "problemId": "cn_b56ffc25280b0e30d3e0",
+      "sourceContentHash": "667c16b658de0a0107be37969bc0411cbe588997ef7a0cb626ddb72357c4883e",
+      "familyId": "io3-moment-projection",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-moment-projection::{\"c\": [1, 2], \"m\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_b56ffc25280b0e30d3e0"
+    },
+    {
+      "problemId": "cn_1051c9a3c69c12bc2100",
+      "sourceContentHash": "c217c614bd0c84a7ae372b71790728903e45a0b409a041d5c6d190400965f613",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_0e0fc36fd3613b9ca792",
+      "sourceContentHash": "8f252fbf7145090fb5aae3d22fc926de403b692e48eb91d9f7c5974ea6051a83",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_319135844a5f36f17f44",
+      "sourceContentHash": "9da46848ea0e33a6e64482e844e617403ea2d7d6ad6c6324191398cffeac0261",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_4a7fa51cb97bd4ee9c23",
+      "sourceContentHash": "e7a9c6855e79d0948d0afef6a2424c7e72c967e73671ca0823b88f3461ea7c47",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_7c987bd01e0d1291b686",
+      "sourceContentHash": "e60e261fad51b4ff5e495e1e261e0d7bdaa2489b4fa1560ce836c3a9bbaacbfa",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_6943c60835067ea08250",
+      "sourceContentHash": "c30c47228c5cf15994bd2ee544416f58d16ce55026b675eb41d0ffc5c1eb26dd",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_e6f1329589abb636fb3e",
+      "sourceContentHash": "b785a5ff1f2d9c886b2c4760b81ea63415fb24ca0b2c35603e01386ca8e78d1e",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_d5267cc2a78ddfa1bfbd",
+      "sourceContentHash": "831983cd59a5c0a387962f5be66cab9effdbbfbfe95c3c25316c5e6bababfa3d",
+      "familyId": "io3-quadrature-defect",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-quadrature-defect::fixed-two-gauss-nodes-unit-leading-zero-values",
+      "reason": "Subtract the linear interpolant through the fixed two node values, then divide by the nonzero leading coefficient. Every displayed quartic has the same remaining normalized problem.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": false,
+      "representativeProblemId": "cn_1051c9a3c69c12bc2100"
+    },
+    {
+      "problemId": "cn_ea0454091d2d8106ac92",
+      "sourceContentHash": "56545ed070aa2ec2c773e24502c6e6876ff7c385b4bfcf3bb990deb36f47cc85",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 0,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 2}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ea0454091d2d8106ac92"
+    },
+    {
+      "problemId": "cn_4f22ddefa690e455eb96",
+      "sourceContentHash": "8589ec05535facd0f5b137dccd5f80fb754e9a022504426a439720ddd799f225",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 1,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 3}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_4f22ddefa690e455eb96"
+    },
+    {
+      "problemId": "cn_93c4404d2e8eae4d0c9d",
+      "sourceContentHash": "a7b71b04356cf69ed991178db50cebb1fb25877e395d202dd5a5c38ac87a8dbd",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 2,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 4}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_93c4404d2e8eae4d0c9d"
+    },
+    {
+      "problemId": "cn_4c3d5c3b1e1f6a51309a",
+      "sourceContentHash": "5fab8fddd6426013f5d13e11a7e0ddf7b3e10b29d04a8826080eeeacfb51a00c",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 3,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 5}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_4c3d5c3b1e1f6a51309a"
+    },
+    {
+      "problemId": "cn_95d8bfd740ebf1632335",
+      "sourceContentHash": "ff1700ab74cad4534e3053386eddba3bd9afe9019c0091c4f39ac36299846a4d",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 4,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 6}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_95d8bfd740ebf1632335"
+    },
+    {
+      "problemId": "cn_7dd7c7694057eb4e0ff9",
+      "sourceContentHash": "70ac53a97b1b805da6485f0185fdc1fe4857095b69a126ebfd27b05b20e8b27f",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 5,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 7}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_7dd7c7694057eb4e0ff9"
+    },
+    {
+      "problemId": "cn_3c1217e674e9662f7721",
+      "sourceContentHash": "706a24110038541a9b9350112ad9aa8fc1d7cd6b17ac5b706715b67891c83b6a",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 6,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 8}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_3c1217e674e9662f7721"
+    },
+    {
+      "problemId": "cn_ca311d9ae60fb5178938",
+      "sourceContentHash": "17992bf902da96b5f8e94cfc6d81768ff75b7fede7d98b44005ccfd5eafe291d",
+      "familyId": "io3-rearrangement",
+      "instanceIndex": 7,
+      "equivalenceKey": "io3-rearrangement::{\"n\": 9}",
+      "reason": "Retain the displayed dimensionless structural parameter(s); no exact scalar, finite-prefix, reflection or simple variable-change equivalence was found. Equality obtainable only after solving the family is not used as a blanket equivalence rule.",
+      "optionsRepairRequired": false,
+      "capacityRepresentative": true,
+      "representativeProblemId": "cn_ca311d9ae60fb5178938"
+    }
+  ],
+  "humanReviewed": false
+}

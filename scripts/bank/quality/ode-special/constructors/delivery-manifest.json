@@ -1,0 +1,49 @@
+{
+  "status": "frozen-author-verified-pending-independent-root-review",
+  "scope": "17 original mathematical tasks; option-only source-bound layer",
+  "candidateFile": "candidates.jsonl",
+  "candidateSha256": "cca9b50fc64db0b2ae6aa9fe20e7edb47dd8e965f83eb887272c673fa0174e21",
+  "counts": {
+    "records": 17,
+    "sourceTaskAndAnswerJoins": 17,
+    "pairDistinctions": 102,
+    "oppositeSumChecks": 102
+  },
+  "rankDistributions": {
+    "q4-differential-equations-Bessel-zero-normalization": {
+      "0": 3,
+      "1": 3,
+      "2": 2,
+      "3": 2
+    },
+    "q4-differential-equations-Green-kernel-square-trace": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 1
+    }
+  },
+  "sourcePreview": "ode-mv-previews-v3",
+  "sourceJoins": "current-preview-joins.json",
+  "sourceIndependentReview": "../unsupported-peer/delivery-manifest.json",
+  "reviewLimitations": "AI mathematical/editorial audit and executed finite certificates; not human review or formal proof. Root independently reviews final literal menus before admission.",
+  "files": {
+    "README.md": "d317589833dbfbec3362f889d1a5a0512236a191a07a8bbe9bf61ed5c9c5ecb9",
+    "audit_overlay.py": "4100d62862f293bd8b81c0215768e0cce044820026cc36984f1b2fccfaee6b27",
+    "candidates.json": "dd387a7976477d0cb780335afdaef2709acdd0ac616016ce90879084711e9f7d",
+    "candidates.jsonl": "cca9b50fc64db0b2ae6aa9fe20e7edb47dd8e965f83eb887272c673fa0174e21",
+    "catalog.json": "7255ed4b1546560c21b9e90a5bb70c113307dad2972f42c73700efa1022f94a5",
+    "current-preview-joins.json": "73767e33e11c62c868d9e79a2e82bc8b69035bba91d1cf43e225ce3e9dac93a1",
+    "finite-audit.json": "10dbdd75a88ac870c030d608aaba6fc1acc006b78dd7ec7e5e6bf873feb33ddd",
+    "input-manifest.json": "f4cb974421e8399e6aa38b22fae5e941ff2fec8e162669291c4c6421357f791d",
+    "inputs.json": "83f74b5041112d023b78161dd7af634b81f90c9a8241fa91052213eccda99312",
+    "literal_special.py": "e1797823890154edce406405709bb6da09cded10092e5de58438cfabe4ddd077",
+    "menu_core.py": "51fcf2d24c78d6762668d8cc5ae57e0d7a80b9ec16bf8549e2feb712caf2c40c",
+    "prior-review.json": "61402a2f7106cd154dada9b8086ac21bf6158c77286f91417a8b9e0f5098a5a3",
+    "rational_intervals.py": "8dc0cbe9cd0886f1c91f948165a6ed6a85305ecd93b326891ff1a65bb1de2076",
+    "render.json": "9d8608b78c5f8b4f47f570c61d27a3161f96e96155ee7f084c7427ffc6958892",
+    "repairs.py": "fca0d2718182daa5a63739940cce20bc59d4107da63c7a9b2924937ee195ba9b",
+    "series_intervals.py": "bb71f706ad7c41e3040a5043889d81e73e199a34792ceef7f5a430772eaedf52",
+    "special_intervals.py": "067e31b3dababafec7fe830c3eb1a4ccf61d5b7365f6d0f26d59357d198bc24a"
+  }
+}

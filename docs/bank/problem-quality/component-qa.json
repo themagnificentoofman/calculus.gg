@@ -1,0 +1,44 @@
+{
+  "status": "passed-for-inspected-components",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "pageWidth": 1272,
+      "overflowingCards": 0,
+      "formulaFallbacks": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "pageWidth": 382,
+      "overflowingCards": 0,
+      "formulaFallbacks": 0,
+      "wideEquations": "Horizontally scroll within card; left edge remains accessible."
+    }
+  ],
+  "components": [
+    "ProblemStatement",
+    "SolutionSteps",
+    "MathDisplay",
+    "ContentAttribution"
+  ],
+  "samples": 8,
+  "cases": [
+    "Reported odd/even integral",
+    "Piecewise switched forcing",
+    "Long switched Riccati statement",
+    "Mixing application prose and units",
+    "Licensed Gaussian remainder pilot",
+    "Defined error function pilot",
+    "Long Peano piecewise kernel",
+    "Dense-corner series"
+  ],
+  "scope": "Actual app components in a temporary local QA route with the retained navigation, theme and styles. This is component/layout QA, not a production import or live gameplay acceptance test. Temporary route removed after inspection.",
+  "evidence": [
+    ".bank-data/quality/mobile-special-function-fonts.png",
+    ".bank-data/quality/desktop-piecewise-fonts.png",
+    ".bank-data/quality/mobile-attribution.png"
+  ],
+  "observedLimitation": "Initial dependency-font serving error was repaired for the local retest with an allowlist restricted to the actual KaTeX font directory. Retest showed corrected font rendering, no browser warnings/errors, no formula fallbacks, and no card/page overflow. The preview-only override was removed afterward."
+}

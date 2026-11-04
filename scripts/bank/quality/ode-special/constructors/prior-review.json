@@ -1,0 +1,2431 @@
+[
+  {
+    "problemId": "cn_0504b12ebbd7c90da6ae",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 0,
+    "sourceCanonicalContentHash": "87a7c146b652e34404b949be1ed0b6a40019adb81c356f1d8f6296e4e3e5a40b",
+    "sourceCanonicalRawHash": "98a86005c6ae618d2fa21128e78c688cbeeb541568389da5922b979f12fb2eb7",
+    "activePresentationRawHash": "98a86005c6ae618d2fa21128e78c688cbeeb541568389da5922b979f12fb2eb7",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_e47ca041694e1814"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_4da20b3d829f607b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e47ca041694e1814",
+          "ch_4da20b3d829f607b"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e47ca041694e1814",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Pow(Symbol('t', real=True), Integer(2)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "e4310ae7719c621c3c44b41e3e31fe55dd21baae761cf9a750fef79991c0b752",
+      "authorRawHash": "3a8e9c15b56c891793cf6919067ef0572605d10a3252bc8dc6b54d810e82aba2",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_0f506ef25ccd0f64e434",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 2,
+    "sourceCanonicalContentHash": "b95370d41957fee3351f3188e481e3e8bbeb6c300ce2fd34dac88da7903e4d1d",
+    "sourceCanonicalRawHash": "fab4bedb104b13367694adcba7d67298fb36f9fb0ebc9ee6a28cedc9f54ffb65",
+    "activePresentationRawHash": "fab4bedb104b13367694adcba7d67298fb36f9fb0ebc9ee6a28cedc9f54ffb65",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_8c918ac8ad0153f3",
+          "ch_2d53af0c8a7495be"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8c918ac8ad0153f3",
+          "ch_ec9f184f8694691b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8c918ac8ad0153f3",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d53af0c8a7495be",
+          "ch_ec9f184f8694691b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d53af0c8a7495be",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ec9f184f8694691b",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-1)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "b29ddcddf058df6eeeecd9344340951132937427b4d041c6fa725153b61192e1",
+      "authorRawHash": "c6cc19bd86fe75c6da8ec8ac8852f6fbf72ba24641f06fe3f1780283b82274e8",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_1095d73dae86afba8d1e",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 4,
+    "sourceCanonicalContentHash": "a683826a6c1dff733c1b5df10311d8ce6051c169354560426ccc4db206d86222",
+    "sourceCanonicalRawHash": "c0eeb10a715d607b1db0dda7732a338ca9b4e296589a1a7e8bb77f367bdb9a21",
+    "activePresentationRawHash": "c0eeb10a715d607b1db0dda7732a338ca9b4e296589a1a7e8bb77f367bdb9a21",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_a50bc65a8274a32f",
+          "ch_07567778341fd937"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a50bc65a8274a32f",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a50bc65a8274a32f",
+          "ch_018a135fbf455b98"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_07567778341fd937",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_07567778341fd937",
+          "ch_018a135fbf455b98"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_3a495b3d305aae70",
+          "ch_018a135fbf455b98"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(4), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-4)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "cf2f35dae7b7517d5848fbd6fbe92d370d962c2c8eda44d8f6a43ac83e60f0e5",
+      "authorRawHash": "c8d6990a4b79b22d4baedbe964984af3b230c14216e0d0168fbc90d912d372cd",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_1b9244149572d1bda851",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 8,
+    "sourceCanonicalContentHash": "72f6dcd3e6c35e8fae2ca1b9e5bdd3b7ebc3c17e1f63bee7f8260680955559e8",
+    "sourceCanonicalRawHash": "2fcb3e4f5fd9c6127687ea55f20549a1f7dbfdadd73ec0636d68eaf1ef927498",
+    "activePresentationRawHash": "2fcb3e4f5fd9c6127687ea55f20549a1f7dbfdadd73ec0636d68eaf1ef927498",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_36abe1e55b4f42a1"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_e94122b6d22d4956"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_5671b86c758b3de8"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_36abe1e55b4f42a1",
+          "ch_e94122b6d22d4956"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_36abe1e55b4f42a1",
+          "ch_5671b86c758b3de8"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e94122b6d22d4956",
+          "ch_5671b86c758b3de8"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(16), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-16)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "0844dadcba33ef54305a4fd8ab5949efa62c796f93e1364f6834c91c08f6b46a",
+      "authorRawHash": "54e7eb5edaeed191974f7691539c5284702213baeabcda252d01061bca3108f2",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_1bdf68c05a6ac3f4c744",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 0,
+    "sourceCanonicalContentHash": "2e446257e0380d3f1c26ed62dcb94e378cc0c3d9ee74fbb08964d79c3842f05b",
+    "sourceCanonicalRawHash": "c3f6cd4b71011103888627848ca2f5576360b8400b54260448416512d4561128",
+    "activePresentationRawHash": "c3f6cd4b71011103888627848ca2f5576360b8400b54260448416512d4561128",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 2), Mul(Rational(1, 4), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 4), coth(Integer(1))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_81bc3d3c5f3e921b",
+          "ch_33886642d132b0b2"
+        ],
+        "difference": {
+          "lower": "1/2",
+          "upper": "1/2",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "518548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000",
+          "upper": "64818559154102610627759377253839900635712643/125000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_81bc3d3c5f3e921b",
+          "ch_6d3df84603bbe05b"
+        ],
+        "difference": {
+          "lower": "122681440845897389372240622746160099364287357/250000000000000000000000000000000000000000000",
+          "upper": "490725763383589557488962490984640397457149431/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "527822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000",
+          "upper": "131955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_81bc3d3c5f3e921b",
+          "ch_daa3c72b932b02c7"
+        ],
+        "difference": {
+          "lower": "518548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000",
+          "upper": "64818559154102610627759377253839900635712643/125000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "1/2",
+          "upper": "1/2",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_33886642d132b0b2",
+          "ch_6d3df84603bbe05b"
+        ],
+        "difference": {
+          "lower": "-2318559154102610627759377253839900635712643/250000000000000000000000000000000000000000000",
+          "upper": "-9274236616410442511037509015359602542850569/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "27822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000",
+          "upper": "6955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_33886642d132b0b2",
+          "ch_daa3c72b932b02c7"
+        ],
+        "difference": {
+          "lower": "18548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000",
+          "upper": "2318559154102610627759377253839900635712643/125000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6d3df84603bbe05b",
+          "ch_daa3c72b932b02c7"
+        ],
+        "difference": {
+          "lower": "27822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000",
+          "upper": "6955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "9274236616410442511037509015359602542850569/1000000000000000000000000000000000000000000000",
+          "upper": "2318559154102610627759377253839900635712643/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_33886642d132b0b2",
+        "ch_daa3c72b932b02c7"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 2), Mul(Rational(1, 4), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 4), coth(Integer(1))))",
+        "right": "Add(Rational(-1, 2), Mul(Rational(1, 4), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 4), coth(Integer(1))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "68bc38ad98dd335ebc33903c832a44f91c84600514442c0fb720b433a6310186",
+      "authorRawHash": "03fb54c5631c16bc2fbd06326b757c60fee6ec99bacf2730d9cc8ddd9d81dd2f",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_24dbf4c85e28cde28f30",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 6,
+    "sourceCanonicalContentHash": "35f77f1bc2cf004d30095bd285e5896487e7980d4e6c60345be05fb9c5ba5c6c",
+    "sourceCanonicalRawHash": "19689660b7974e34a6a8e3a5d055f1c27bd033f0b97bb30ceb7deb5e874dad44",
+    "activePresentationRawHash": "19689660b7974e34a6a8e3a5d055f1c27bd033f0b97bb30ceb7deb5e874dad44",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_6e441652bac9d8c6",
+          "ch_8873c11242d64d05"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6e441652bac9d8c6",
+          "ch_0a1fc5baf93cbd45"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6e441652bac9d8c6",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8873c11242d64d05",
+          "ch_0a1fc5baf93cbd45"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8873c11242d64d05",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_0a1fc5baf93cbd45",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(9), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-9)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "ce4d3366deeb188f5d948aa8bbefa8e9bce7ef28defe31a713c71eacde0976ba",
+      "authorRawHash": "94ec2377e8519d12e65793af6f5a44344410fa069a09b81c6a7d185f457ed435",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_39aa3fca5e3ef53a6660",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 4,
+    "sourceCanonicalContentHash": "332cd2f04ca2ac189604b53c911b8655e3388c8717667d81f546558c40fe8f69",
+    "sourceCanonicalRawHash": "728eaa4e8237ee1e433b1d135c12fe662c6205cd504aa25e6affffcbd824f470",
+    "activePresentationRawHash": "728eaa4e8237ee1e433b1d135c12fe662c6205cd504aa25e6affffcbd824f470",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 1250), Mul(Rational(1, 100), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 500), coth(Integer(5))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_bb85d079baf51305",
+          "ch_458930cd41d9ec4e"
+        ],
+        "difference": {
+          "lower": "3605993310174173302671695681263037001396059/1000000000000000000000000000000000000000000000",
+          "upper": "3605993310174173302671695681263037001396061/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "1201997770058057767557231893754345667132019/1000000000000000000000000000000000000000000000",
+          "upper": "1201997770058057767557231893754345667132021/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bb85d079baf51305",
+          "ch_1b22d48525b7f9ce"
+        ],
+        "difference": {
+          "lower": "1205630094246095800525063999176286586073869/1000000000000000000000000000000000000000000000",
+          "upper": "1205630094246095800525063999176286586073871/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "3602360985986135269703863575841096082454209/1000000000000000000000000000000000000000000000",
+          "upper": "3602360985986135269703863575841096082454211/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bb85d079baf51305",
+          "ch_c6863b4711521f6e"
+        ],
+        "difference": {
+          "lower": "1201997770058057767557231893754345667132019/1000000000000000000000000000000000000000000000",
+          "upper": "1201997770058057767557231893754345667132021/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "3605993310174173302671695681263037001396059/1000000000000000000000000000000000000000000000",
+          "upper": "3605993310174173302671695681263037001396061/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_458930cd41d9ec4e",
+          "ch_1b22d48525b7f9ce"
+        ],
+        "difference": {
+          "lower": "-240036321592807750214663168208675041532219/100000000000000000000000000000000000000000000",
+          "upper": "-2400363215928077502146631682086750415322189/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "-3632324188038032967832105421940918941851/1000000000000000000000000000000000000000000000",
+          "upper": "-72646483760760659356642108438818378837/20000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_458930cd41d9ec4e",
+          "ch_c6863b4711521f6e"
+        ],
+        "difference": {
+          "lower": "-2403995540116115535114463787508691334264041/1000000000000000000000000000000000000000000000",
+          "upper": "-2403995540116115535114463787508691334264039/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_1b22d48525b7f9ce",
+          "ch_c6863b4711521f6e"
+        ],
+        "difference": {
+          "lower": "-3632324188038032967832105421940918941851/1000000000000000000000000000000000000000000000",
+          "upper": "-72646483760760659356642108438818378837/20000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "2400363215928077502146631682086750415322189/1000000000000000000000000000000000000000000000",
+          "upper": "240036321592807750214663168208675041532219/100000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_458930cd41d9ec4e",
+        "ch_c6863b4711521f6e"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 1250), Mul(Rational(1, 100), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 500), coth(Integer(5))))",
+        "right": "Add(Rational(-1, 1250), Mul(Rational(1, 100), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 500), coth(Integer(5))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "f2f6ad44abe0c9ace25ccab5b832622f3721a866cf5be9dacc037d68407b5309",
+      "authorRawHash": "8cce86562cb08602f4b530f7eb2f534cbab1d6bcaf46a84bab5385ef0d6bb3b0",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_403fbfc5539f503074e1",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 1,
+    "sourceCanonicalContentHash": "69b42415fdce222e70f0eb2dad5f39c6e85c33586bcc5dcb9836315dbd37d460",
+    "sourceCanonicalRawHash": "ee3201dcb635f39962bf7db7a9e44709e79f873945dc42e4b72e4f7e659d0519",
+    "activePresentationRawHash": "ee3201dcb635f39962bf7db7a9e44709e79f873945dc42e4b72e4f7e659d0519",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_e47ca041694e1814"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_4da20b3d829f607b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ddc36d21f0cb2443",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e47ca041694e1814",
+          "ch_4da20b3d829f607b"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e47ca041694e1814",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_0dbdb021b7b7b0f5"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Pow(Symbol('t', real=True), Integer(2)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "b70a7c6c3073105018379f77fabeb552e2755ee7fe77e48c6463e48ee09581f4",
+      "authorRawHash": "63419c14c6a2e50c74c24134f4325556cce68f50216dc1428dcee650fedd3938",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_438bfb54720583e0c5e7",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 5,
+    "sourceCanonicalContentHash": "60f24289a04c4dd658a0b74cd673a4d8b3e7979f8ee9657a59a793818b4d8bba",
+    "sourceCanonicalRawHash": "dd2a8b47afdb48f00e95d6e63056c07221ccefc7e5315d0b1bd11f99ae053537",
+    "activePresentationRawHash": "dd2a8b47afdb48f00e95d6e63056c07221ccefc7e5315d0b1bd11f99ae053537",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_018a135fbf455b98",
+          "ch_a50bc65a8274a32f"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_018a135fbf455b98",
+          "ch_07567778341fd937"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_018a135fbf455b98",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a50bc65a8274a32f",
+          "ch_07567778341fd937"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a50bc65a8274a32f",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_07567778341fd937",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(4), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-4)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "c500ba1e1221ded50f69216577bd3dea1f60547d28d70af023e3a7079d7f8100",
+      "authorRawHash": "b97d4faccd7913a909ca83754c4d0e82f9d22a0c6abe3926aa60581c3cd18b2e",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_92a90a79e4b818cb1919",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 1,
+    "sourceCanonicalContentHash": "21ecb84cdc846250b8284fa48ccd4eadd64f36af699432cec5201af7f793f529",
+    "sourceCanonicalRawHash": "632d99b896cb4a1f8c128356749db73ef898c09560514fca201acda30cabca79",
+    "activePresentationRawHash": "632d99b896cb4a1f8c128356749db73ef898c09560514fca201acda30cabca79",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 32), Mul(Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_ebd1482622af8d7f",
+          "ch_1ee4ebf124da4b69"
+        ],
+        "difference": {
+          "lower": "-1770883602587799923924730895156921792936589/250000000000000000000000000000000000000000000",
+          "upper": "-7083534410351199695698923580627687171746353/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "-4751364364879443703335813282638892692846901/1000000000000000000000000000000000000000000000",
+          "upper": "-47513643648794437033358132826388926928469/10000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ebd1482622af8d7f",
+          "ch_729918fa7456467f"
+        ],
+        "difference": {
+          "lower": "-1479362346903830424879342107908322483074157/125000000000000000000000000000000000000000000",
+          "upper": "-11834898775230643399034736863266579864593253/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_ebd1482622af8d7f",
+          "ch_75133ca669966be2"
+        ],
+        "difference": {
+          "lower": "-4438087040711491274638026323724967449222471/250000000000000000000000000000000000000000000",
+          "upper": "-443808704071149127463802632372496744922247/25000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "2958724693807660849758684215816644966148313/500000000000000000000000000000000000000000000",
+          "upper": "5917449387615321699517368431633289932296629/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_1ee4ebf124da4b69",
+          "ch_729918fa7456467f"
+        ],
+        "difference": {
+          "lower": "-4751364364879443703335813282638892692846901/1000000000000000000000000000000000000000000000",
+          "upper": "-47513643648794437033358132826388926928469/10000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "7083534410351199695698923580627687171746353/1000000000000000000000000000000000000000000000",
+          "upper": "1770883602587799923924730895156921792936589/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_1ee4ebf124da4b69",
+          "ch_75133ca669966be2"
+        ],
+        "difference": {
+          "lower": "-10668813752494765402853181714272182625143529/1000000000000000000000000000000000000000000000",
+          "upper": "-5334406876247382701426590857136091312571763/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "650049189898326069760814600613048855202149/50000000000000000000000000000000000000000000",
+          "upper": "1625122974745815174402036501532622138005373/125000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_729918fa7456467f",
+          "ch_75133ca669966be2"
+        ],
+        "difference": {
+          "lower": "-5917449387615321699517368431633289932296629/1000000000000000000000000000000000000000000000",
+          "upper": "-2958724693807660849758684215816644966148313/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "443808704071149127463802632372496744922247/25000000000000000000000000000000000000000000",
+          "upper": "4438087040711491274638026323724967449222471/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_ebd1482622af8d7f",
+        "ch_729918fa7456467f"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 32), Mul(Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+        "right": "Add(Rational(-1, 32), Mul(Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "83c4cba0aa621670a837100fd6fc2e291855faf5868a073cdfe6ca35d8b6c91f",
+      "authorRawHash": "5a181b57b4638c66a9a656e7e3dd5fdc777a5cd879a70ea1a5765b0580b3cb2d",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_ab89434ad5781317a285",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 5,
+    "sourceCanonicalContentHash": "ea81be066522afddc279b81833430ade2d45845ab4883eb9b4901c92b550acc6",
+    "sourceCanonicalRawHash": "c2cf49fc8773da09cb3d9a256db0138a2237f57972f9ba8b0570e41c16aa73e3",
+    "activePresentationRawHash": "c2cf49fc8773da09cb3d9a256db0138a2237f57972f9ba8b0570e41c16aa73e3",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 2592), Mul(Rational(1, 144), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 864), coth(Integer(6))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_d208da436b86c454",
+          "ch_1eb938f33f328990"
+        ],
+        "difference": {
+          "lower": "170674662686526608066959048196043144811/1000000000000000000000000000000000000000000000",
+          "upper": "42668665671631652016739762049010786203/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "1543067647482860875890040403702758427050637/1000000000000000000000000000000000000000000000",
+          "upper": "771533823741430437945020201851379213525321/500000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d208da436b86c454",
+          "ch_65a5b45eef584a28"
+        ],
+        "difference": {
+          "lower": "-42668665671631652016739762049010786203/250000000000000000000000000000000000000000000",
+          "upper": "-170674662686526608066959048196043144811/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "77170449840411696455308716089957525667013/50000000000000000000000000000000000000000000",
+          "upper": "308681799361646785821234864359830102668053/200000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d208da436b86c454",
+          "ch_8decfd9ed894af01"
+        ],
+        "difference": {
+          "lower": "77170449840411696455308716089957525667013/50000000000000000000000000000000000000000000",
+          "upper": "308681799361646785821234864359830102668053/200000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "-42668665671631652016739762049010786203/250000000000000000000000000000000000000000000",
+          "upper": "-170674662686526608066959048196043144811/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_1eb938f33f328990",
+          "ch_65a5b45eef584a28"
+        ],
+        "difference": {
+          "lower": "-341349325373053216133918096392086289623/1000000000000000000000000000000000000000000000",
+          "upper": "-170674662686526608066959048196043144811/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "1543238322145547402498107362750954470195449/1000000000000000000000000000000000000000000000",
+          "upper": "1543238322145547402498107362750954470195453/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_1eb938f33f328990",
+          "ch_8decfd9ed894af01"
+        ],
+        "difference": {
+          "lower": "1543238322145547402498107362750954470195449/1000000000000000000000000000000000000000000000",
+          "upper": "1543238322145547402498107362750954470195453/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "-341349325373053216133918096392086289623/1000000000000000000000000000000000000000000000",
+          "upper": "-170674662686526608066959048196043144811/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_65a5b45eef584a28",
+          "ch_8decfd9ed894af01"
+        ],
+        "difference": {
+          "lower": "1543579671470920455714241280847346556485071/1000000000000000000000000000000000000000000000",
+          "upper": "385894917867730113928560320211836639121269/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_65a5b45eef584a28",
+        "ch_8decfd9ed894af01"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 2592), Mul(Rational(1, 144), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 864), coth(Integer(6))))",
+        "right": "Add(Rational(-1, 2592), Mul(Rational(1, 144), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 864), coth(Integer(6))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "45866a7e4311d6ad8122364e128126fe69eb4593ae722e1744e856c2d756d1ac",
+      "authorRawHash": "8ed1e53254eabc18afff7362ab508e8d8e70741be89a490cf75c172042137a66",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_acd332167cfd28b17e60",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 8,
+    "sourceCanonicalContentHash": "1ea1b29215c024e3b6a2b3121c4e32c634b8f7bb0341d469520dcf15f83a9159",
+    "sourceCanonicalRawHash": "db53a03c1e0d142155e753f000102b34be841c11642c8fbd1b3def4dbbf5bb7f",
+    "activePresentationRawHash": "db53a03c1e0d142155e753f000102b34be841c11642c8fbd1b3def4dbbf5bb7f",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 13122), Mul(Rational(1, 324), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 2916), coth(Integer(9))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_2643c39d5928fe1f",
+          "ch_41da6071ffee7307"
+        ],
+        "difference": {
+          "lower": "94012223509982747424299004357047783/500000000000000000000000000000000000000000000",
+          "upper": "188024447019965494848598008714095567/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "26672754941635595884702204210091536606753/50000000000000000000000000000000000000000000",
+          "upper": "53345509883271191769404408420183073213507/100000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2643c39d5928fe1f",
+          "ch_00b937ce95abf617"
+        ],
+        "difference": {
+          "lower": "-188024447019965494848598008714095567/1000000000000000000000000000000000000000000000",
+          "upper": "-94012223509982747424299004357047783/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "533455474881605957625033781397848160326193/1000000000000000000000000000000000000000000000",
+          "upper": "533455474881605957625033781397848160326203/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2643c39d5928fe1f",
+          "ch_2d8a6ac2017dbae9"
+        ],
+        "difference": {
+          "lower": "533455474881605957625033781397848160326193/1000000000000000000000000000000000000000000000",
+          "upper": "533455474881605957625033781397848160326203/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "-188024447019965494848598008714095567/1000000000000000000000000000000000000000000000",
+          "upper": "-94012223509982747424299004357047783/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_41da6071ffee7307",
+          "ch_00b937ce95abf617"
+        ],
+        "difference": {
+          "lower": "-376048894039930989697196017428191133/1000000000000000000000000000000000000000000000",
+          "upper": "-94012223509982747424299004357047783/250000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "533455286857158937659538932799839446230627/1000000000000000000000000000000000000000000000",
+          "upper": "133363821714289734414884733199959861557659/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_41da6071ffee7307",
+          "ch_2d8a6ac2017dbae9"
+        ],
+        "difference": {
+          "lower": "533455286857158937659538932799839446230627/1000000000000000000000000000000000000000000000",
+          "upper": "133363821714289734414884733199959861557659/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "-376048894039930989697196017428191133/1000000000000000000000000000000000000000000000",
+          "upper": "-94012223509982747424299004357047783/250000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_00b937ce95abf617",
+          "ch_2d8a6ac2017dbae9"
+        ],
+        "difference": {
+          "lower": "533455662906052977590528629995856874421759/1000000000000000000000000000000000000000000000",
+          "upper": "533455662906052977590528629995856874421769/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_00b937ce95abf617",
+        "ch_2d8a6ac2017dbae9"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 13122), Mul(Rational(1, 324), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 2916), coth(Integer(9))))",
+        "right": "Add(Rational(-1, 13122), Mul(Rational(1, 324), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 2916), coth(Integer(9))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "8782a1af592a8a8149f9876b0908ad91c63ac170374908070354981ad446b572",
+      "authorRawHash": "f65a99451d7c71035ccadbd9324b7d927dffb4a40a281aac0adfc552638d1e84",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_adf14183cc34463f7727",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 2,
+    "sourceCanonicalContentHash": "9c6288391a0e3dc833603f61c215f0b12396a11a2536781350dd8aabc9b9e5e0",
+    "sourceCanonicalRawHash": "13e696c4b04df21fab140ee139604d247a16ebfe7b32cbc2c33f59e9faa7178a",
+    "activePresentationRawHash": "13e696c4b04df21fab140ee139604d247a16ebfe7b32cbc2c33f59e9faa7178a",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 162), Mul(Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_aa21d9bde1fb7f6e",
+          "ch_9ab1f197cdcac4b0"
+        ],
+        "difference": {
+          "lower": "1704612009076228686225429585403654683737293/250000000000000000000000000000000000000000000",
+          "upper": "3409224018152457372450859170807309367474589/500000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_aa21d9bde1fb7f6e",
+          "ch_440fa8e710011ce0"
+        ],
+        "difference": {
+          "lower": "276787382531878627761187169313455782742583/1000000000000000000000000000000000000000000000",
+          "upper": "55357476506375725552237433862691156548517/200000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "1635415163443259029285132793075290738051647/250000000000000000000000000000000000000000000",
+          "upper": "3270830326886518058570265586150581476103297/500000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_aa21d9bde1fb7f6e",
+          "ch_fc4e417f99087774"
+        ],
+        "difference": {
+          "lower": "553574765063757255522374338626911565485167/1000000000000000000000000000000000000000000000",
+          "upper": "553574765063757255522374338626911565485169/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "1252974654248231497875868800597541433892801/200000000000000000000000000000000000000000000",
+          "upper": "6264873271241157489379344002987707169464009/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9ab1f197cdcac4b0",
+          "ch_440fa8e710011ce0"
+        ],
+        "difference": {
+          "lower": "-3270830326886518058570265586150581476103297/500000000000000000000000000000000000000000000",
+          "upper": "-1635415163443259029285132793075290738051647/250000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "-55357476506375725552237433862691156548517/200000000000000000000000000000000000000000000",
+          "upper": "-276787382531878627761187169313455782742583/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9ab1f197cdcac4b0",
+          "ch_fc4e417f99087774"
+        ],
+        "difference": {
+          "lower": "-6264873271241157489379344002987707169464009/1000000000000000000000000000000000000000000000",
+          "upper": "-1252974654248231497875868800597541433892801/200000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "-553574765063757255522374338626911565485169/1000000000000000000000000000000000000000000000",
+          "upper": "-553574765063757255522374338626911565485167/1000000000000000000000000000000000000000000000",
+          "sign": "negative"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_440fa8e710011ce0",
+          "ch_fc4e417f99087774"
+        ],
+        "difference": {
+          "lower": "276787382531878627761187169313455782742583/1000000000000000000000000000000000000000000000",
+          "upper": "55357476506375725552237433862691156548517/200000000000000000000000000000000000000000000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "299404294435463943080907841683712569336071/50000000000000000000000000000000000000000000",
+          "upper": "2994042944354639430809078416837125693360713/500000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_aa21d9bde1fb7f6e",
+        "ch_9ab1f197cdcac4b0"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 162), Mul(Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+        "right": "Add(Rational(-1, 162), Mul(Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "1365c4fb68d5cdea6c2f35b7b4d4a52758a7dffc009a26c3e72fb8a66d6171ce",
+      "authorRawHash": "5a924b1fa54c5d53a191cfadac59cb46bf1954dab0684f78690a4d214496f966",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  },
+  {
+    "problemId": "cn_c0d0c6d0e28341c9bc21",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 3,
+    "sourceCanonicalContentHash": "3555f68c69eda6b9aa459029d3f7638806582e35b776889f8c9b20dc37536ebe",
+    "sourceCanonicalRawHash": "c4fdc210d6d1abab80e3186590d64eccd5aadc007b9ee535f456f92dc396e8ee",
+    "activePresentationRawHash": "c4fdc210d6d1abab80e3186590d64eccd5aadc007b9ee535f456f92dc396e8ee",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_4b55ce43a33c73d3",
+          "ch_8c918ac8ad0153f3"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4b55ce43a33c73d3",
+          "ch_2d53af0c8a7495be"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4b55ce43a33c73d3",
+          "ch_ec9f184f8694691b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8c918ac8ad0153f3",
+          "ch_2d53af0c8a7495be"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8c918ac8ad0153f3",
+          "ch_ec9f184f8694691b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d53af0c8a7495be",
+          "ch_ec9f184f8694691b"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-1)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "77b929690893cce8b8ae5a1d7b529f092d75d345b40a94c686af03f2f3702fc0",
+      "authorRawHash": "c21923fee249e264e04ed7af24b3bc55e9af369b8a873777bb02f45bdc501556",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_d2a652c58ab0f30e16aa",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 9,
+    "sourceCanonicalContentHash": "3a8afdf2d050bea51f13d566bf5ba9792f3230ed0cb13aa052e1917c760f2616",
+    "sourceCanonicalRawHash": "ef734257885b9cb893bba54e6a415d08949fd5b861416cef03e7ef5b955fd694",
+    "activePresentationRawHash": "ef734257885b9cb893bba54e6a415d08949fd5b861416cef03e7ef5b955fd694",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_e94122b6d22d4956",
+          "ch_5671b86c758b3de8"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e94122b6d22d4956",
+          "ch_2d146fa1d1b32201"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e94122b6d22d4956",
+          "ch_36abe1e55b4f42a1"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5671b86c758b3de8",
+          "ch_2d146fa1d1b32201"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5671b86c758b3de8",
+          "ch_36abe1e55b4f42a1"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_36abe1e55b4f42a1"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(16), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-16)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "660a9870bf71763e9be3f48aea414058c1605de545ccbfcccf3298f5b1ed07f2",
+      "authorRawHash": "1c8527e51be5926f5e026cb35e405dc84cd20df84877d2932471521a2c28c74a",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_f98141950e3b866a25a8",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "instance": 7,
+    "sourceCanonicalContentHash": "27dbba5d12681362647216708907e86d0c41e9d08fb39d61821408a0effef366",
+    "sourceCanonicalRawHash": "37cf8019f5c48470581ac8985852e3978c6c73cbc57aeb0c027188732c798717",
+    "activePresentationRawHash": "37cf8019f5c48470581ac8985852e3978c6c73cbc57aeb0c027188732c798717",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_d2d0bcb686acfdde",
+          "ch_6e441652bac9d8c6"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(-1)",
+          "denominator": "Integer(2)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(2)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d2d0bcb686acfdde",
+          "ch_8873c11242d64d05"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(1)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d2d0bcb686acfdde",
+          "ch_0a1fc5baf93cbd45"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6e441652bac9d8c6",
+          "ch_8873c11242d64d05"
+        ],
+        "difference": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(3)",
+          "denominator": "Integer(4)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Integer(5)",
+          "denominator": "Integer(4)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6e441652bac9d8c6",
+          "ch_0a1fc5baf93cbd45"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "denominator": "Integer(1)"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_8873c11242d64d05",
+          "ch_0a1fc5baf93cbd45"
+        ],
+        "difference": {
+          "sign": "negative",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "denominator": "Integer(1)"
+        },
+        "sum": {
+          "sign": "positive",
+          "route": "Divide by positive J_(nu+1)(alpha)^2; put u=alpha^2-4>0; exact polynomial coefficients have one strict sign.",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "denominator": "Integer(1)"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [],
+    "oppositePairContainsCorrect": false,
+    "publicFunctionDomains": [
+      "nu is a nonnegative integer; root ordinal is1 or2.",
+      "All J orders occurring in choices are nu+1 and covered by the displayed series.",
+      "For0<z<=2, after factoring the leading positive monomial, the alternating series is positive: for nu>=1 the first pair is positive; for nu=0 at z2 the next pair1/4\u22121/36 is strictly positive. Thus every positive root alpha>2.",
+      "If J_nu(alpha)=J_(nu+1)(alpha)=0, the derivative recurrence gives J_nu prime(alpha)=0; regular ODE uniqueness contradicts the nonzero defining series. Hence B>0."
+    ],
+    "correctTaskRoute": "Bessel ODE boundary identity and derivative recurrence give J_(nu+1)(alpha)^2/2. Positive zeros exceed2 by the alternating defining series; the adjacent-order value is nonzero by ODE uniqueness.",
+    "independentChecks": [
+      {
+        "description": "ODE normalization derivative",
+        "left": "Add(Mul(Pow(Symbol('t', real=True), Integer(2)), Add(Mul(Integer(-1), Add(Integer(1), Mul(Integer(-1), Integer(9), Pow(Symbol('t', real=True), Integer(-2)))), Function('y')(Symbol('t', real=True))), Mul(Integer(-1), Pow(Symbol('t', real=True), Integer(-1)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))))), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))), Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2))), Mul(Symbol('t', real=True), Pow(Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1))), Integer(2))), Mul(Add(Pow(Symbol('t', real=True), Integer(2)), Integer(-9)), Function('y')(Symbol('t', real=True)), Derivative(Function('y')(Symbol('t', real=True)), Tuple(Symbol('t', real=True), Integer(1)))))",
+        "right": "Mul(Symbol('t', real=True), Pow(Function('y')(Symbol('t', real=True)), Integer(2)))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "abb470e44d1775cb07d550bfa7c15518b5ddc523615b022b594cfdcf72562d15",
+      "authorRawHash": "85c837f71c247739a538118cadd350b36b232b9b0f53e455b7f7f98f62c18380",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "literal-mathematics-and-domains-passed"
+  },
+  {
+    "problemId": "cn_fe97e44f8d9dc5fab0a3",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "instance": 9,
+    "sourceCanonicalContentHash": "14cc916355af1b51aa3d6bd5ec2a508442da39653c1de40de54e31d54fb0dc95",
+    "sourceCanonicalRawHash": "2a2d93b4c9215e89fbfa4c9af13ded2a19302a3602d55289caa7330dfaee787c",
+    "activePresentationRawHash": "2a2d93b4c9215e89fbfa4c9af13ded2a19302a3602d55289caa7330dfaee787c",
+    "presentationBinding": {
+      "source": "source-bound canonical preview"
+    },
+    "scalarDisposition": "scalar; family-specific literal verification performed",
+    "independentAnswer": "Add(Rational(-1, 20000), Mul(Rational(1, 400), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 4000), coth(Integer(10))))",
+    "answerMatches": true,
+    "pairCertificates": [
+      {
+        "choiceIds": [
+          "ch_7d5e31a7f4956d76",
+          "ch_f19451bc00107483"
+        ],
+        "difference": {
+          "lower": "-450000043284226245392239388387054778188243/1000000000000000000000000000000000000000000000",
+          "upper": "-45000004328422624539223938838705477818823/100000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "1/20000",
+          "upper": "1/20000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_7d5e31a7f4956d76",
+          "ch_41fe0855fe08f01e"
+        ],
+        "difference": {
+          "lower": "-400000043284226245392239388387054778188243/1000000000000000000000000000000000000000000000",
+          "upper": "-40000004328422624539223938838705477818823/100000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "sign": "zero",
+          "route": "exact symbolic identity"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_7d5e31a7f4956d76",
+          "ch_d1808e0ff76c2073"
+        ],
+        "difference": {
+          "lower": "-150000016231584842022089770645145541820591/250000000000000000000000000000000000000000000",
+          "upper": "-120000012985267873617671816516116433456469/200000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "100000010821056561348059847096763694547057/500000000000000000000000000000000000000000000",
+          "upper": "100000010821056561348059847096763694547061/500000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_f19451bc00107483",
+          "ch_41fe0855fe08f01e"
+        ],
+        "difference": {
+          "lower": "1/20000",
+          "upper": "1/20000",
+          "sign": "positive"
+        },
+        "sum": {
+          "lower": "45000004328422624539223938838705477818823/100000000000000000000000000000000000000000000",
+          "upper": "450000043284226245392239388387054778188243/1000000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_f19451bc00107483",
+          "ch_d1808e0ff76c2073"
+        ],
+        "difference": {
+          "lower": "-75000010821056561348059847096763694547061/500000000000000000000000000000000000000000000",
+          "upper": "-75000010821056561348059847096763694547057/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "130000012985267873617671816516116433456469/200000000000000000000000000000000000000000000",
+          "upper": "162500016231584842022089770645145541820591/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_41fe0855fe08f01e",
+          "ch_d1808e0ff76c2073"
+        ],
+        "difference": {
+          "lower": "-100000010821056561348059847096763694547061/500000000000000000000000000000000000000000000",
+          "upper": "-100000010821056561348059847096763694547057/500000000000000000000000000000000000000000000",
+          "sign": "negative"
+        },
+        "sum": {
+          "lower": "120000012985267873617671816516116433456469/200000000000000000000000000000000000000000000",
+          "upper": "150000016231584842022089770645145541820591/250000000000000000000000000000000000000000000",
+          "sign": "positive"
+        }
+      }
+    ],
+    "mathematicalOppositePairs": [
+      [
+        "ch_7d5e31a7f4956d76",
+        "ch_41fe0855fe08f01e"
+      ]
+    ],
+    "oppositePairContainsCorrect": true,
+    "publicFunctionDomains": [
+      "a is a positive integer1..10; sinh(a)>0.",
+      "All scalar menu functions are finite real. The true integral is strictly positive because its nonzero real kernel is squared."
+    ],
+    "correctTaskRoute": "The explicit positive Dirichlet Green kernel has resolvent trace(a*coth(a)\u22121)/(2a\u00b2); differentiating the resolvent parameter gives its square trace.",
+    "independentChecks": [
+      {
+        "description": "Derivative of resolvent trace",
+        "left": "Add(Rational(-1, 20000), Mul(Rational(1, 400), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 4000), coth(Integer(10))))",
+        "right": "Add(Rational(-1, 20000), Mul(Rational(1, 400), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 4000), coth(Integer(10))))",
+        "passed": true
+      }
+    ],
+    "priorProofBinding": {
+      "validationHash": "443e6b18f7210983353872ea750e304fd426f8d63199355e2b7c84b735dcfb80",
+      "authorRawHash": "612fcc2ef15e526bddeecceddd95f0de93df41556e72421e3d3e616596a62298",
+      "scope": "Earlier full task proofs retained; this review independently derives the selected scalar answer and all literal distinctions."
+    },
+    "status": "confirmed-singleton-opposite-pair-blocker"
+  }
+]

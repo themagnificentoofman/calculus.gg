@@ -1,4 +1,6 @@
 'use client';
+import { ContentAttribution } from '@/components/ContentAttribution';
+import { ProblemStatement } from '@/components/ProblemStatement';
 
 import {useReplayCapture,ReplayCaptureStatus,observeReplay,useRoundUrl,capturedView} from '@/components/ReplayCapture';
 import { useState, useEffect, useRef, useCallback } from 'react';
@@ -18,8 +20,10 @@ import { db } from '@/firebase';
 import { doc, onSnapshot } from 'firebase/firestore';
 
 interface Question {
+  contentNotice?: import('@/lib/bank/contracts').ContentNotice;
   problemId?: string;
   problemRevision?: number;
+  legacy?: boolean;
   latexProblem: string;
   options: string[];
   correctIndex: number;
@@ -184,7 +188,7 @@ export default function RapidMode() {
           
           <ReplayCaptureStatus status={captureStatus} /><GameResultStatus gameId={gameId} />
           {reviewedProblems.length > 0 && <details className="my-4 text-left"><summary className="min-h-11 cursor-pointer text-sm text-zinc-400">Report an answered problem</summary>
-            {reviewedProblems.map((question, index) => <div key={question.problemId || index} className="my-3 rounded-xl border border-zinc-800 p-3"><MathDisplay math={question.latexProblem} block /><ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} /></div>)}
+            {reviewedProblems.map((question, index) => <div key={question.problemId || index} className="my-3 rounded-xl border border-zinc-800 p-3"><ProblemStatement math={question.latexProblem} legacy={question.legacy} /><ContentAttribution credit={question.contentNotice} /><ProblemReference problemId={question.problemId} problemRevision={question.problemRevision} /></div>)}
           </details>}
           <div className="flex flex-col gap-4">
             <button 
@@ -283,7 +287,7 @@ export default function RapidMode() {
             className="bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8 mb-8"
           >
             <div className="text-xl sm:text-2xl mb-6 sm:mb-12 w-full overflow-x-auto py-4">
-              <MathDisplay math={q.latexProblem} block />
+              <ProblemStatement math={q.latexProblem} legacy={q.legacy} /><ContentAttribution credit={q.contentNotice} />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

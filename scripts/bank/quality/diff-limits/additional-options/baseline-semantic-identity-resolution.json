@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "sourceProblemId": "cn_67df743a60c7b64f1258",
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "sourcePreview": {
+        "canonicalRawHash": "b3ec2ed15e8cf7c85f0b29324cd9d88a3813229a92bdbbf5ff2aab3bdc582828",
+        "problemId": "cn_67df743a60c7b64f1258",
+        "rawConstructorHash": "ce6ff80dfefd7da417f1eacf987b5f1c10a3d193ee7fa68148b91fe2f0cc45fa",
+        "revision": 2,
+        "semanticHash": "266fca0050c2a7406933c60de43421b8c6e6589135a211db4fa01d7144aa04da",
+        "sourceContentHash": "fdf3099b46a6523d68cde5d0dcbb0d12af8d3dcb2de78f28be45aa2d5ba930ee"
+      },
+      "baseline": {
+        "meaningChanged": false,
+        "problemId": "cn_67df743a60c7b64f1258",
+        "revision": 1,
+        "semanticHash": "41b48be79ac61d8e8e5abb9b013a5ef697f5851786e908c2b2b0ccff20546af6",
+        "sourceContentHash": "423f6be5d309619451909e186e4db34941c195e937c7b6a5cc4cd71bfb2c794e"
+      },
+      "sourceCandidateHash": "72327960e60817d4e791a5c3d2c1ac5c2033023c939999aa73f934bd12986c1c",
+      "finding": "Baseline and preview semantic hashes differ; underlying equation and answer changed before this menu overlay. Same-ID unchanged-meaning revision is not permitted by this layer.",
+      "disposition": "pending parent source-identity repair; do not admit these two ties as unchanged tasks"
+    },
+    {
+      "sourceProblemId": "cn_16c6a186af2b9d6122c1",
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "sourcePreview": {
+        "canonicalRawHash": "44a561a27d9858879c7d3ca9b7749ba0c3ee2322f1987f4de177d5590f31ca58",
+        "problemId": "cn_16c6a186af2b9d6122c1",
+        "rawConstructorHash": "af330f4eaebf329172503e29a6545fa57e4e1c2a0f509e75fa609bb581d9d83b",
+        "revision": 2,
+        "semanticHash": "a5a152fd3b6505cd47a840f3cba11df8792f102f5256520c2cd1deda48de89f8",
+        "sourceContentHash": "421c46fb5cce5f0f2b5f506b83688270ccbf37187265128cf008c2552cea1b50"
+      },
+      "baseline": {
+        "meaningChanged": false,
+        "problemId": "cn_16c6a186af2b9d6122c1",
+        "revision": 1,
+        "semanticHash": "04b9e46409c8fbb0f10f13ec0fc3c51b53ea2e2b1e5c82e57883814be424aeb6",
+        "sourceContentHash": "e9ab5781e531b478b8bb0aa8c24701632f6fc343f88865246a858dde142b30fe"
+      },
+      "sourceCandidateHash": "a34fdcf58a192dbbd0767a251a605b3c26cad7c3a31d1095450d7961874390e6",
+      "finding": "Baseline and preview semantic hashes differ; underlying equation and answer changed before this menu overlay. Same-ID unchanged-meaning revision is not permitted by this layer.",
+      "disposition": "pending parent source-identity repair; do not admit these two ties as unchanged tasks"
+    }
+  ],
+  "allOtherSourceTiesUnchanged": 95,
+  "resolution": "Exact admission-previews previous flags and semanticChangeReason now preserved. Two meaningChanged:true revisions were intentional parent-reviewed task changes; this menu overlay preserves their current question and old exposure identity.",
+  "resolved": true
+}

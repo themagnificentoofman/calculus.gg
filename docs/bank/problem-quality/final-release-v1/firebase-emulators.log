@@ -1,0 +1,83 @@
+i  emulators: Starting emulators: auth, firestore
+i  emulators: Detected demo project ID "demo-calculus-rendering", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+i  firestore: Firestore Emulator logging to firestore-debug.log
+✔  firestore: Firestore Emulator was started in enterprise edition.
+✔  firestore: Firestore Emulator UI websocket is running on 9150.
+i  Running script: npm run test:integration
+
+> calculus-ninja@0.1.0 test:integration
+> node --experimental-strip-types --test tests/game-progress.test.mjs tests/history.test.mjs tests/account-auth.test.mjs
+
+✔ disabled email provider and popup errors have actionable messages without SDK details (0.346042ms)
+✔ invalid display names fail before an account can be created (0.193208ms)
+✔ Google linking requires sign-in and never substitutes another account on a conflict (0.1215ms)
+▶ email signup, profile recovery, and Google linking retain the same account
+  ✔ signup saves the name; either linked provider signs in to the original UID (46.239834ms)
+  ✔ a profile outage reports account creation and the password still works (4.831375ms)
+✔ email signup, profile recovery, and Google linking retain the same account (51.562666ms)
+▶ Server-authoritative games and Firestore attack tests
+  ✔ Test: private generation, server grading, concurrent replay and exactly-once rewards (2721.902417ms)
+  ✔ Private replay endpoints enforce the whole-match gate and persist real Firestore chunks (191.79875ms)
+[2026-11-04T15:36:36.058Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790707 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.061Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790708 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.065Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790709 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.068Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.071Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.075Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070c error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L20, false for 'create' @ L36, false for 'update' @ L20, false for 'update' @ L36
+[2026-11-04T15:36:36.078Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070d error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'delete' @ L20, false for 'delete' @ L36
+[2026-11-04T15:36:36.081Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070e error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.084Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079070f error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.087Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790710 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.090Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790711 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.093Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790712 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.096Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790713 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L25, false for 'update' @ L36
+[2026-11-04T15:36:36.126Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790716 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L21, false for 'create' @ L36, false for 'update' @ L21, false for 'update' @ L36
+[2026-11-04T15:36:36.130Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x30790717 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L26, false for 'create' @ L36, false for 'update' @ L26, false for 'update' @ L36
+  ✔ All score, key, receipt, UID and private-profile tampering paths are denied (141.8755ms)
+  ✔ Question sets are bound to owner and mode, expire, and cannot be replayed as new games (2184.672042ms)
+  ✔ Rapid uses server time, rejects early/late answers, and applies the time penalty (83.415042ms)
+  ✔ PvP hides waiting questions, isolates reviews, waits for both and credits both atomically (131.42ms)
+  ✔ Concurrent PvP joins respect capacity and outsider/early starts fail (2183.367166ms)
+  ✔ Multiplayer ties, target completion and offline player results remain consistent (165.50475ms)
+  ✔ Multiplayer accepts both UI target limits and rejects forged settings (71.384334ms)
+  ✔ Server reconciliation closes expired matches and cannot re-award historical games (70.634375ms)
+[2026-11-04T15:36:41.140Z]  @firebase/firestore: Firestore (12.19.0): GrpcConnection RPC 'Write' stream 0x3079072a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L30, false for 'create' @ L36, false for 'update' @ L30, false for 'update' @ L36
+  ✔ Profile preferences, private friendships, invitations and chat still work under locked rules (120.831708ms)
+  ✔ Friend request send, duplicate, reciprocal, cancel, decline, accept and removal preserve consent (83.246292ms)
+  ✔ Invitations join atomically, reject full/expired/nonfriend rooms and cannot be replayed (85.924875ms)
+  ✔ Leaving and cancelling lobbies changes server membership; abandoned lobbies expire (104.09375ms)
+  ✔ Mutation throttling rejects before any profile or game database work (16.037875ms)
+  ✔ Missing/forged authentication, cross-site requests and unbounded bodies fail closed (14.284375ms)
+✔ Server-authoritative games and Firestore attack tests (8373.582875ms)
+✔ Historical date compatibility preserves unknowns (0.268417ms)
+✔ Full history filters precede pagination; all encodings, >50 records, stable ties and ranges (615.826667ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8543.202416
+✔  Script exited successfully (code 0)
+i  emulators: Shutting down emulators.
+i  firestore: Stopping Firestore Emulator
+i  auth: Stopping Authentication Emulator
+i  hub: Stopping emulator hub
+i  logging: Stopping Logging Emulator

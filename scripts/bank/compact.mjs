@@ -37,6 +37,8 @@ export function openCompact(path) {
   if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_problems'").get()) db.exec(readFileSync(resolve(root,'drizzle/0002_compact_bank.sql'),'utf8'));
   if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_selection_features'").get()) db.exec(readFileSync(resolve(root,'drizzle/0004_flimsy_carlie_cooper.sql'),'utf8'));
   if (!db.prepare('PRAGMA table_info(cbank_delta_ledger)').all().some(c=>c.name==='charged_reads')) db.exec(readFileSync(resolve(root,'drizzle/0005_brief_skaar.sql'),'utf8'));
+  if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_release_exclusions'").get()) db.exec(readFileSync(resolve(root,'drizzle/0006_quality_membership.sql'),'utf8'));
+  if (!db.prepare("SELECT name FROM sqlite_schema WHERE name='cbank_exclusion_lookup'").get()) db.exec(readFileSync(resolve(root,'drizzle/0007_quality_lookup.sql'),'utf8'));
   return db;
 }
 export function verifyCompact(db,source) {

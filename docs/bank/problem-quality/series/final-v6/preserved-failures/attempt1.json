@@ -1,0 +1,25 @@
+{
+  "status": "failed-reviewer-zero-signal-assumption",
+  "error": "AssertionError: 1 !== 0 at series_final_v6.mjs:168",
+  "sourceSha256": "d28e59c8bb10a38e7341dcd3ea35f1ba4404f0e6035c465a04a5e7e382a0ba76",
+  "unchangedAuditSha256": "cd046251d14b401117f5a0c6e2dfa79f0a64c08311fcc13eef14eb3247ac74f3",
+  "finding": {
+    "rule": "opposite-pair-negative",
+    "learnedOnlyFromTraining": false,
+    "training": {
+      "items": 4,
+      "applicable": 2,
+      "expectedTieBrokenAccuracy": 0.625,
+      "uniquePredictions": 2,
+      "uniqueCorrect": 2
+    },
+    "heldout": {
+      "items": 4,
+      "applicable": 2,
+      "expectedTieBrokenAccuracy": 0.625,
+      "uniquePredictions": 2,
+      "uniqueCorrect": 2
+    }
+  },
+  "disposition": "Preserve and inspect. Text matches opposite leading corrections, not opposite whole mathematical values. No threshold relaxed; no content changed."
+}

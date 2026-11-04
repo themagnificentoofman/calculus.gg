@@ -1,0 +1,733 @@
+{
+  "reviewer": "Independent AI-assisted mathematical/editorial review; not human or formal certification",
+  "basis": "These routes record the easiest defensible statement-and-options path, including explicit demotions and normalized-capacity caveats. They are independently authored, not copied author difficulty estimates.",
+  "families": [
+    {
+      "familyId": "m3-series-olympiad-Fourier-fourth-sine",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "Fourier-piecewise-sum",
+      "easiestOptionsVisibleRoute": "At the first case use periodic residue weights directly; generally reduce the fourth sine power to two known cosine Fourier sums.",
+      "nearestNeighbor": "Uniform-log-sine studies a singular uniform tail; this is an absolutely convergent named Fourier substitution.",
+      "difficultyRationale": "Hard: the periodic first case and general finite-angle formula offer a routine shortest route.",
+      "coveredRawHashes": [
+        "914f114d2251a38d91f4200c97770df9bdbbaef7001d029a3494b59dc968756c",
+        "9e5d479eedc3c71a4a6eb93f8cba08c46c7c500305f068764a9dab4d7db0ec10",
+        "97213530479923d01d757a5878ba68c2b7bfc8a081a6271491b0da63979c59d0",
+        "25c63dcc1296ad17a7aee8ad34d365ae1dca33c1d641458b8d5ce6c352141262",
+        "ef24219e381bacd29f504fd4266af62ecc95f889ec5c4fa1279ece4535451ff8",
+        "c89c4b62df81a4af0077ab5773802ec991c5eb7a8f706fd05cff1501c638f8a6",
+        "68677f03bee94488104b05aee02e8cf6921735abbd19b976595539c6a92a5f63",
+        "f4386b17c5bf9e57530523a094f88a843e1ce69a0a5c2668166a215b11bfbb3c"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "scale-telescoping-trig",
+      "easiestOptionsVisibleRoute": "Discover the cotangent doubling difference, telescope the weighted terms, and evaluate the nonzero scaled small-angle endpoint.",
+      "nearestNeighbor": "Dyadic infinite products share doubling but use an algebraic difference of squares; the trigonometric endpoint scale is the decisive extra issue.",
+      "difficultyRationale": "Olympiad hidden scale telescope; explicit multiplication repairs prevent the old denominator ambiguity.",
+      "coveredRawHashes": [
+        "6dcd6185fc11dab2a48428055d1893bbd3733d735dba918c89629d270976c0f9",
+        "7fde5f1227b426c4f2849457bce6a6c7fe96c3c11482934b3e1073df4c8d887c",
+        "f937391c47d03acfac1ee0b90234e890ea6df9475ee94862ef9703b0f3fdfe46",
+        "0760ca387bc0a46e9f83ead9e8e8c0aa8ae4f5223ee3908eee4e3724eda9d7bc",
+        "695d5d086238f6e514c1c24f292731024745380eeb79fbdcb0a76bd3337c775d",
+        "8bc695f7a8622fac71afb46c7f0286c885303a81ce7c816c3679d46e651e7ebc",
+        "061d65ce80727ca290d5459e966b10216150a3ce79b893790548e64b1c9a561c",
+        "a45f8b3ba38ab7026b0aa6c03aecdaed485ffee2696a06dc64943120bc073a60"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "roots-of-unity-series",
+      "easiestOptionsVisibleRoute": "Average three exponential evaluations at cubic roots of unity and combine the conjugate pair.",
+      "nearestNeighbor": "Finite-cycle resolvent has a boundary-value inverse; here the standard three-root filter directly gives the value.",
+      "difficultyRationale": "Hard: ordinary roots-of-unity filtering is sufficient, with no additional advanced decision.",
+      "coveredRawHashes": [
+        "1311530bece6ab1a3faccfd4ca7bb71628680a2e83a8676e253ebfdf4d26c49e",
+        "e15764e0ff81ccad76f6746da38769cd3a69e16678c84cdf6073e6f6dcd928f6",
+        "c91a6ee152a4b2525f6a8c42adb9c30dbeb087b5b775858cbeea574b1bdd82eb",
+        "4c2ed303c954128e7ac133256a80c73e1258b28928f38389b560adc390877429",
+        "92f2d0c2305c85433f9fc18f102393d69ecaebc404c225c37b1b424f0915a893",
+        "645bb8a1b05e1e56fe91ed6d0ca2290d9a1fd4d30f11b6d5ddac5648dfc64833",
+        "483462daa291a814e894eb8ded4b5bd24e0aaa5c81c924dfd29021bfc61d1fd1",
+        "ccaa21d5adbabf1e2bb41c817860cc6d9eeb7f1914804ecbaf0bb6306f14849c"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-over-shift",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Euler-harmonic-sum",
+      "easiestOptionsVisibleRoute": "Reverse the positive harmonic triangle, telescope finite shifts, and count the remaining off-diagonal reciprocal pairs.",
+      "nearestNeighbor": "Harmonic-square generating uses a discrete squared increment and an integral; this is a finite triangular endpoint correction.",
+      "difficultyRationale": "Olympiad because the shifted denominator and triangle must be reorganized together; termwise partial fractions alone do not finish it.",
+      "coveredRawHashes": [
+        "36e8b68249fd1a8353e151a8ec9f1c7b67fbbb946e4d677454eec626ec6cc0a1",
+        "1e29e99836755f462b8bea9b147a20f7f36526c328953f67f1da76cf89b4203e",
+        "27fbd157ab89b471785b5d8b2b3ff15900140c53690a6b98a3da688a82733da6",
+        "d65be8d02978b079a60e04d3ae3256fb81af7803fbd5f4bfec63f98dd0e15c98",
+        "069c12ba2119298a0bfab8fe7762b169bf5de10cb0279ee781e848380a8ce746",
+        "7e388fe746d80445e5a77fc3bb6071639be1f0c7e84503d4142ae559827d71dd",
+        "5882f12714228b8d1a8e30881eb0ac36282009ee5148b9d518f63a73297de6aa",
+        "2950303a8823c082e146f40425e04c6d4e6c7371a3ab2c5f6d8d1c75112c69d6"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-square-generating",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "harmonic-square-generating",
+      "easiestOptionsVisibleRoute": "Take the discrete difference of harmonic squares, form the generating function, and integrate the lower-order harmonic function.",
+      "nearestNeighbor": "Harmonic-generating alone only reverses a single positive triangle and is Hard.",
+      "difficultyRationale": "Olympiad composite discrete-difference and generating-integral decision, including the dilogarithm diagonal.",
+      "coveredRawHashes": [
+        "e1b93e41ed76fc902a211dfa50003d1f387df4dc3693593a31c35f02d63c754e",
+        "40f3c1dcc7b5af5da44bef9b7f0a9e90c7202ed7bdb82244c9035acb112c3a2f",
+        "5fbe753a56ad96890a9b0267f8aff0f3da69c86e33265cd4901744d96f5f83ca",
+        "913504235e9b65cbccb9bcfa8ce04bff2ca95bc8aad1e3d5a5ca3df1b8147ff9",
+        "17767c5cf8e2d31475cbd95ec0b24ff6e7a76b584d5272f12f6aa02e124a188a",
+        "2d356f4c3c24ddb964d944de2a8f806816ba87a4c5c7d920678e6782d96ef382",
+        "6e878fad5449d99f146919fc1653c5a000ffd810a74d6ddce93d793939562fc8",
+        "780c0ea1f2a463bf11db11966ddb1188c024fb31f42eb88e3b4aa8df12eba664"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-hypergeometric-beta",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Gauss-hypergeometric-beta",
+      "easiestOptionsVisibleRoute": "Construct the correctly normalized beta representation of one coefficient, interchange nonnegative terms, and sum the remaining binomial kernel.",
+      "nearestNeighbor": "Elliptic squared-binomial recognition has its integral supplied; this needs choosing the beta representation and endpoint exponents.",
+      "difficultyRationale": "Olympiad coefficient-to-integral design with convergence and normalization, not an unsupported named sum.",
+      "coveredRawHashes": [
+        "33ea43c8aeafc21fb3eb87499471ba676d63dda1a81905da403959a23d460180",
+        "088e7d97dd9641627beb07c6cf194d82aa5801409bcf619ce934ac605ee46bbb",
+        "632ffada3d78403fc264d91d716e66aa884a69e6c580085d3551eee9b915a2a8",
+        "850f0815dc2f55b31d385edcff41649c3f98180b703bcfe08f8a6a6f27ef1ce9",
+        "b60d67305b5d58b3847797b647b69e5e6c180c21f7f294c0d71aa101d212e909",
+        "e541b699554bf24a82b99974575466656f475516980cca92a41710b038a7810d",
+        "9357842b9e7d3c80fd58b4d59fe396b66758dd5d43fd5b9326b483a9626bb390",
+        "a02fd75bc156fca3501304d420cdbd146a5e80c3cdf40ea4b883a8185f65094b"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-inverse-binomial-arcsine",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "inverse-central-binomial",
+      "easiestOptionsVisibleRoute": "Derive the generating-function differential equation from the coefficient ratio, solve it with zero initial data, and check the principal arcsine branch.",
+      "nearestNeighbor": "The inverse-ODE asymptotic family uses Lagrange inversion; this is an analytic generating ODE with a branch-sensitive evaluation.",
+      "difficultyRationale": "Olympiad equation reconstruction and branch control; the displayed choices do not identify the correct normalization alone.",
+      "coveredRawHashes": [
+        "2cc4fdb305e947b421b4d14d16dd967bc9b07bddddaa2531c452e380a2f136a4",
+        "51ca79627d2d81ca8f302557279e84b1b6d54e83935ecfe05ef0e37f9e921f9b",
+        "5533c82c2cf5019119bddf8c86d4386c244a4971f0243381fcc6388c1e135465",
+        "1db306dd42927c673d013d9ddecc02bd00ca70100b752a8e94a0d71286a5e08d",
+        "aa12f722b4ada8f7604a8550dcf699855322d1037fb83ac9bc453e0c1519ae0a",
+        "8dcf56cc1646fd3f9c4625b46b535505f8c61b60e965006b1ddd68254e58ee60",
+        "3428ac0afe9e1991b860c7981070eb864feca0010335b60b7c937bea8a4ca427",
+        "e4368e74dfb6c3ddfa3be5f0ebf96a8a46357c23466ff1721d05dce29dd893a6"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Poisson-theta-duality",
+      "easiestOptionsVisibleRoute": "Differentiate the Gaussian theta transformation, track both the prefactor and inverse-argument derivative, then eliminate the dual theta value.",
+      "nearestNeighbor": "Lattice-resolvent only specializes one partial-fraction identity; this requires a dual-parameter derivative relation.",
+      "difficultyRationale": "Olympiad duality plus moment extraction, with locally uniform Gaussian differentiation and a positive denominator.",
+      "coveredRawHashes": [
+        "cac61fbcbab61c92aba4efb176995df3f56fbbd9f60120c6599290edc5653d38",
+        "9db3c7e17efe01204525b7bcb2395b345fb9f21607918bf08bcf62ed9e3b0a26",
+        "c23f37c76da553c90d7724a4ac6ca83088e1420b520d00bb95663dd74a3688d3",
+        "503e7dfe5e084414a262e8ad29a51befb9ea7cf53caf7059e24e6560d32197c0",
+        "5363653f117c82d429a08b57ff4cd59b769707d02d35accec5441e670ca3eee1",
+        "ee508ec17456e84cb84f9f493ee4b66007da718cb2203c9585a6879ffbae8d34",
+        "6d9448ecf2ba9832083adeddf0f5eb9817977c8f1f05bbf7d5a4ee4b2ffe913a",
+        "4beed4756a6e39d521356f624935c7586a4fd1797d68f9be24c8b74cee7ee6c3"
+      ]
+    },
+    {
+      "familyId": "m3-series-olympiad-totient-Lambert",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "Lambert-divisor-convolution",
+      "easiestOptionsVisibleRoute": "Expand the denominator geometrically, regroup by the product index, and use the elementary gcd partition of the divisor sum.",
+      "nearestNeighbor": "Restricted-digit convergence uses nontrivial word-growth asymptotics; this divisor identity immediately reduces to a weighted geometric sum.",
+      "difficultyRationale": "Hard: one standard arithmetic regrouping is sufficient, so the former Olympiad label was removed.",
+      "coveredRawHashes": [
+        "1eb22ba9784f9750f1cd2f4d134c2ced50939acd5fc7efe9776668a74a49dfcb",
+        "2db071585d879d3b61c90bbcfb931d1139da32fcc8bbdf587f583e9c332548d1",
+        "c161b06b78e4c48db06452b5ef6875775601a3b391334ceaba9ee9a72dd2453c",
+        "17a5bee7c94c722df9f1b96704345700aaddeb91fb79d0f0f02b9a5910653d19",
+        "f5a5d815be45821843d8f9ce78db558c89672c205a7cb4bc37e3648957361a30",
+        "369792adfe99196f241dbfd87356fa8d2c5198f9a584d7af4fcfb1bc07e53020",
+        "ce6d027f6fd3a63a2c0654477e4e9d8d415db94fae713b428d1dd85da4fc7d53",
+        "b81bab8f1c2cb69cf840dcfc862da449d7d0fe666688902b8396e6f7eb36fbf7"
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-Legendre-recurrence-generating",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "three-term-recurrence-generating-ODE",
+      "easiestOptionsVisibleRoute": "Multiply the recurrence by powers, sum, and solve the resulting first-order generating-function equation with its initial value.",
+      "nearestNeighbor": "Rooted-tree inversion requires selecting an implicit nonlinear branch; this recurrence yields a routine linear equation.",
+      "difficultyRationale": "Hard after independent review: ordinary recurrence-to-generating-function calculus is enough.",
+      "coveredRawHashes": [
+        "59b6d5124ca09c4acc954740b21aa93aaa320bb6c7a8c98c3df441e33a3940e4",
+        "e377af3c36f7106a00ffc52e5910e59077b1865f2d945b5dcfa22f4cc75da02f",
+        "c22d9666d4cd941abc8527467c5adf0326f2f6b447298e30cdb47d33a01152cd",
+        "49341dd88bbc406e218a58f46131517554526419e709a4172ba98e3116873a59",
+        "363791a5bea972dae9f870c8c6f4373c0aa594d70b9461e4598e882c6be96444",
+        "490be9035bc56de8d614104d38a7b7365f343fb654102b73956408deedc03b2e",
+        "c0532a6d03562460720e41b6ebb0150c477dee3e2fdf084693cae8b8e3a4388f",
+        "540206eacdb0e348f86637f02427ccce6aabf793e008c731582fd14ee99eb4cd",
+        "cdb5231c7c0473d4619993db17e95dedfcbd47b2c5011f80ea06946078fe71ef",
+        "5b8b1234733613d26b70dbf7ce81c5c8376ec3dab3bcb8eaba0df59dc475465a"
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-Liouville-Dirichlet-product",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "multiplicative-Dirichlet-Euler-product",
+      "easiestOptionsVisibleRoute": "Factor the absolutely convergent Dirichlet series into local geometric Euler factors and simplify the zeta ratio.",
+      "nearestNeighbor": "Dirichlet moment existence uses uniqueness and support, not ordinary multiplicative factorization.",
+      "difficultyRationale": "Hard after independent review: standard Euler-product fluency, with convergence hypotheses made explicit.",
+      "coveredRawHashes": [
+        "ef25ef52d81dbb862a2663dc4aa5a4e1b344f8081264b82de6e9aa3f83bec266",
+        "c26905d49ed6a4285fdcaae70a46920a195d9311da44047faae24309fb4f5981",
+        "c9286ac0eb43e5b2fba8cb48fa07118e9898bcddaa1680a8fe26bcc88a58f475",
+        "2fabc17c090586fd6056586403257841ac62e5a4eee96dc080eeadfbf226e266",
+        "5b6e9f53125db41f684169a2a8570c1ce67f1f416aeb84d7f11a1d715d574379",
+        "8d8ceb5a150b26bf9e3ce9428998f05e0633a615271c513b171b14b79bc123b4",
+        "31d23f3e91a9b8f28e269516176330b82533c08255f9036d878e53ca4a57d32e",
+        "45f4b983ca7ba153f9bdb5d767f8463e71bd016a550bfcff39fe928b968910e1",
+        "175547dfb11ca990b079681b5882f355519867b987e9eeba8a411001c8da5d2c",
+        "efd325f6a46104571911331a45d77247f411707831d3d5dacc493448d60e5633"
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-binomial-convolution-Riccati",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "exponential-convolution-generating-Riccati",
+      "easiestOptionsVisibleRoute": "Use an exponential generating function so the binomial convolution becomes a square, then solve the scalar Riccati equation.",
+      "nearestNeighbor": "Poisson growing-moment asymptotics needs a moving optimizer; this fixed generating equation is separable.",
+      "difficultyRationale": "Hard after independent review: the transform is useful but does not justify an Olympiad label.",
+      "coveredRawHashes": [
+        "9e0b2d84fe825ed31cf30f95856278afe4cd30040de1800681f4673cbf3e5f23",
+        "a61083877c641e73629f79b741d9194517207600d389fefe867af74aad42b7a3",
+        "676e6f6e363970256e0dada692e0765d543a37d4c27e4cff961f540bc0035eb9",
+        "a980065f5f314d2b113cc1d520e8f38afab8405f8df6e5f240564d00c3bae05e",
+        "08814b764babc9a9a8d73baf17a2bfa3a29a03726eea50e9499f9551b2730d93",
+        "ccc5d8cee5a460a37e3501036a6788bf6ce57ab3129e6dbb03b56e55aa2d9c8b",
+        "f84644234958ec6ade4350a64510d26e1c4e130a34c9034670624f3e4b871a80",
+        "c31d4d2ba27fc4044fae4089b779189afe015f06afd70bf4a72ea75d43af8e04",
+        "d3202a39ce28286665d9850e37c68f72985e4a8f13e8266e5329fd392358292b",
+        "85957cf2f969b48e672afed3ca93ddc7cbbfbbf1f6728e394e3d06173c5b4278"
+      ]
+    },
+    {
+      "familyId": "quality-series-hard-weighted-subset-q-product",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "relatedIdeaGroupId": "q-binomial-subset-generating",
+      "easiestOptionsVisibleRoute": "Expand the finite product by whether the last element is chosen, matching the elementary q-binomial recurrence.",
+      "nearestNeighbor": "Restricted-digit growth needs a state-dependent asymptotic count rather than a direct finite product identity.",
+      "difficultyRationale": "Hard after independent review: one product/recurrence recognition resolves the options.",
+      "coveredRawHashes": [
+        "83b6e84a18b7eb337ae5aec41f7fb3498e05bba7e03f68ce3b01cd795a49ca18",
+        "ec7100ae5fd7d4cf24b696156a1e195407627e7d36f24a75f8a143e9c379d82f",
+        "d56c449a466a10f7a73fb78ab86bef0a2d9bc1f91322252bf8c1b207455d4606",
+        "140cc4088ac6d830f7c9c2703dae1c175b5b112fce0beea10fadf1c1e5e90209",
+        "003d80af4c70c3ad6afd759803ad3c8703e1c8bcb880bf6bc6dd6604c150dd42",
+        "e1c69b76f0580b956a6b0626946da3363802eb1be752c2853fdb428bc734b8ad",
+        "e9dc5f2a3404b2f16a93de8438f602967e2b3be4a6798917d8ef580dcefaae25",
+        "054adcc39ebabc2770e2ead7aabdb17270ad5289a7b22916335f06be725f4c36",
+        "70372187b9b62bee480e0f73081327aebd342636559fe5dc5bf9d6ee47d84968",
+        "4de36763256c1bc177a862b124b871134ff57dcb7e84e3cd59f5faa55f19cb5d"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Abel-logarithmic-sum",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Abel-Cesaro-logarithmic-regularization",
+      "easiestOptionsVisibleRoute": "Renormalize the logarithmic sequence by its divergent asymptotic part, use Abel/Cesaro transfer, and evaluate the residual gamma constant.",
+      "nearestNeighbor": "A geometric logarithm Taylor series is direct Medium fluency; the residual here needs regularization.",
+      "difficultyRationale": "Olympiad regularized endpoint limit; integer shifts and half-integer shifts contribute only two effective lineages.",
+      "coveredRawHashes": [
+        "bae2fc67a9cb8869f8790c90b3d045c6c8ff1ddc29e5c645b0552aac65b30134",
+        "c839c08f72ebb2d107d356e2ba068d26cb8665542fd74b016578fba4d62351f3",
+        "0072ffbfadc66c0af302a02184153c57db06c8a86467985a5354bea2cfc6708b",
+        "0f9da7935da1be4d97b7b501f165b17a37c4e9dadf710ce1c87dbdbc52693526",
+        "a27e82debf41a66825203ebb7899665e3d08f4dcf93baafe7260dd00e28dfc7a",
+        "ff5fd525f40e97a9f691508b77face02df17064ed958dd8b9d71a549369d17ab",
+        "75f5d0439af8c09f022e67d0b6a3fb9382a4ece304f4b5021f01689e122388ce",
+        "733e02656917df91c93ad32ff58bb81a44ed777b18fc4c886dac70ee99301b1d"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Carleman-geometric-mean-constant",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "sharp-Carleman-geometric-mean-series",
+      "easiestOptionsVisibleRoute": "Choose the auxiliary weights making the weighted AM-GM sum telescope; prove sharpness with truncated reciprocal sequences.",
+      "nearestNeighbor": "Hardy is a power-mean norm inequality; polynomial weighted geometric means require a different auxiliary product.",
+      "difficultyRationale": "Olympiad simultaneous weight design and nonattained sharpness; added weight degrees change the averaging operator.",
+      "coveredRawHashes": [
+        "78717fe4c4b8cfed9a0cc1e80abdb61e8931c1ad1e96e846033571e167d48cc5",
+        "7b05df6487d091a5b5cac50c83f74ea92b71c12b86c5e2f8bc0aad26b8117fff",
+        "8cf30aadfa7f981b59e05da80205ec259f4c8d50a5955c94be3d0aeb515c42d0",
+        "80fdc0a9c11cbfd01e7939be6df57dba3e8977d9bd5d0407cc86811b2a0ffd11",
+        "b28295d30fac46d95f6f5b039ffa92ca3cbadfd3f1ade81cc7dd4757987bc7ff",
+        "b41847d6ae33e714052e0c5645b7dc781995bd054d944222602198dfe8b670f3",
+        "f0a14ced3d13e724b5b1145a39fc7c9c62fc5069e788f73f8117b707eead2a76",
+        "997d5d0b6c648b5c83b6bf30e5c31626acf97d66c8e49056f4df4bc9581b418d",
+        "77d50cc4a95ec2c86d9d9012d0b3cc74005ac3a80460785ce5cf4797b32df69b",
+        "07ca6691145d41f18b1f4692a26a6d44d7caa56e9387debc5999cd831e7a3383",
+        "9bd0d90c84c4b1b5fae78b30c6489c9b6a34320dc4a1d6a8451e100bbaedaea2",
+        "ecae3337f17768288f8a697ea522ed4389427a46cbc9e098efe3d26d20e8853b",
+        "8692af1552af6cf64751f1184373294ff532fc59646942dc5724c42ca926e655",
+        "ac69153abbc6c784b223b8cced9e0ad93b289f34e417432b71760eda27cb8158",
+        "4f83d73d661432dc8935a70b4a891d5cb82f8c52a3c009faa404113ce997cdb8",
+        "e6bc05c5aacd5f5e5b3adf9d74a265335c4dba7dc8d1780ae385a449c2b54e82",
+        "e33a9e12b26f0f7467303e09324a498ed8a8d0e34a863a0b7a3c6782e1cb2d02",
+        "f19b1b86ca46694cfd8b7f4fe1aa013ab17bc5c50bc89fc055c2d759e04d4d41"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Dirichlet-moment-uniqueness",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Dirichlet-series-coefficient-recovery",
+      "easiestOptionsVisibleRoute": "Turn the data into probability moments, obtain a forced point mass, and check whether its support lies on the required integer lattice.",
+      "nearestNeighbor": "Maximum entropy optimizes a distribution; this problem asks whether any distribution with the full moment data can exist.",
+      "difficultyRationale": "Olympiad only for final pairs requiring the noninteger support impossibility; earlier two-integer pairs were explicitly rejected.",
+      "coveredRawHashes": [
+        "b9c2a6af10ebec961673946a95b8960fe32f1f0cd78887480971f37545b99f0c",
+        "7b5a1c0e164f05d7783ceb9ae644a3d13468ea3129419a0772da2765968063e1",
+        "a6cb1e55d4431dc90287b97e149f7882cf9639d7e3b63e3f0e6f6c3e521ef1e0",
+        "f12ff709b8f1872068e0f4bac6e23b6242d6d78d68c372531a420c1e478751af",
+        "0aef6a0bc48ec8df04ffd6e372582d38702965a124e0eb0f1985e9ca3ad6776b",
+        "43d6c133f578cc204f19d1aac2794c060f7245fe24efe4532a291fe1c5f7761a",
+        "e88d896acd9d303f9653aa4abf9db3758a52480b86b551c19da40e26e856910b",
+        "dc2c4cee82bc9d629fe078c4eb8823e2c22ceb88e37e6e89366753c93fa37885"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Dyson-alternating-cube",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Dyson-constant-term-recurrence",
+      "easiestOptionsVisibleRoute": "Recast the unequal-block alternating coefficient as a constant term, apply the factorial identity, then retain the exact asymptotic scale.",
+      "nearestNeighbor": "A small fixed three-binomial sum is direct algebra and was replaced; unequal growing blocks force the constant-term and asymptotic decisions.",
+      "difficultyRationale": "Olympiad coefficient geometry plus asymptotic cancellation; not merely a renamed binomial identity.",
+      "coveredRawHashes": [
+        "2b0d8cd001376ccd4708516dd775d723326cbfa7e3de37b4b3e893ee75cd50f1",
+        "3e64c6668503d041a4cbd935df05684fe5271f0117ead1f691969f8a071dc948",
+        "f97fcd25e2d6c85cbb2408d1ad41d1b77725cd1829887fd5bfe8801d09b9b374",
+        "69059c31db6bf41bdd4d8d6ceffa3fe03814cfdaffceb73789e2271801e5f4b0",
+        "31160c1b4e71b9edb037fed58c11f266249e8352813b815ac3d82af3beea3b40",
+        "69594cc80d14c802b25690e3bd2063ac914cd0c123cbff6941de3e92dd82b2e5",
+        "e66a5ca6929b9596c9e3d941823679915b32096d1fe497220157b077b6428a9a",
+        "44eb9d261fa46bf21285b6ec79d3c80a3148763f720c4aac34f26b937680db02"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Euler-harmonic-weight-three",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "positive-double-series-two-countings",
+      "easiestOptionsVisibleRoute": "Use an integral or double-sum rearrangement to evaluate the single Euler sum, then remove the finite displayed prefix.",
+      "nearestNeighbor": "Harmonic-over-shift is a separate shifted denominator triangle, but all Euler finite-prefix variants here are one exposure lineage.",
+      "difficultyRationale": "Olympiad for the underlying Euler sum; exactly one effective item is counted, not every cutoff.",
+      "coveredRawHashes": [
+        "fee8b5518934af13ae67c491bb037afe6b83ce820206c61f502f43d86048797e"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Hardy-mean-sharp-constant",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "sharp-discrete-Hardy-power-mean",
+      "easiestOptionsVisibleRoute": "Build the auxiliary weighted-sum identity, apply the convex power inequality, and approach the bound with borderline power sequences.",
+      "nearestNeighbor": "Carleman uses geometric means; here the exponent changes the sequence-space norm and its sharp constant.",
+      "difficultyRationale": "Olympiad sharp norm proof and extremizing limit, not substitution into an asserted inequality.",
+      "coveredRawHashes": [
+        "670919a7401df3e4f7e5caf154b73479a7bb4abd67143fdb3149e27c107278f2",
+        "7d2cfd3e807a3afad512beffa5b29ad5336372637af891f1647294d7e1963a4b",
+        "3a687ce5f39a22a4c8a9d92b3191200a02506514cc47c92e93563d6964c7f9bd",
+        "6ac4f2a225cc94886831524ee5a2fadbe09e5391c34ca571c44909ff4ce68452",
+        "1d23c677d5be079637d91237b3eca4ac9b296d8c958a34f946b5ab1851c499bb",
+        "845d32d431c69b8ddfe298fb5e8b05f86a9391562c1b0483056274bfe4e66b2c",
+        "12b7e2a3736d5744ca21d9e4bc9d5a2a742b33dd8c05af43a5913dadb446da86",
+        "69c4a2b61d8ddbd06bda8cc6de02d895473067880c64ce833a4fb04e7c0a7b1f",
+        "785e324a83e2ec72b126f9dc56b3e45a1e3f475980ebeb805ddbbd9d22a70a5d",
+        "21ed120711a425414a73b308c4591ce608cc91743e6e713d73f813de0ef0ca04",
+        "b8d487555ab1c9acb9f3779721fb74cf05471d37e43de049d9774cb26b017d76",
+        "0ea0920762c77936dc4695566ad63d18690a2d1977774418cb70f4719b6e56e6",
+        "f4c3901dab358bab223c1e71710891dd21849b095fc5946b7b4ec4a9a21c78a4",
+        "108ded27d162c017da2f5f5b5a11edb90cafc92e58dec23cbec0740f6590fbf7",
+        "c8934e739b30982645859386998fba6bfa28ecfd813313f760f525aad47e5800",
+        "f32aa77b867b604ff079a34bb5d126c103391b6b6972ce067eb27567c7f934b4",
+        "98f4e7d32ddee22444274a695e1203130c26153f3989a83cf7ed5c3d4c37544c",
+        "2a9328071599d8af0497f75703e0c8f1c7af5565a6014bcdb27d502976136c61"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Hilbert-kernel-sharp-constant",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "sharp-Hilbert-series-inequality",
+      "easiestOptionsVisibleRoute": "Construct a Schur weight for the asymmetric bilinear kernel and match the bound using long truncated near-extremizers.",
+      "nearestNeighbor": "Least-energy projection has a finite Gram inverse and attained minimizer; this has an infinite sharp norm with limiting extremizers.",
+      "difficultyRationale": "Olympiad sharp upper bound and sharpness; the parameter changes kernel aspect ratio, not just an outside multiplier.",
+      "coveredRawHashes": [
+        "2d6cfc4011d644cd2ed8722588afb68854831cf4f78f8d5ad826f2dd9e95173a",
+        "c1ab544c63a0089f63b592d4570e0c82776eece9e7b953f5e3508d1848ad9a81",
+        "8899505099a3f794796f3f778b1bc2d77087bfd5c063576bd5606d06632c2042",
+        "b86c90578d79698317b8068a8f2dc0f293f47402a7e9805a4558059de5999701",
+        "d593292110a690ce6a63bf85f28f58d7460170bf6e10062177e5a584005476cd",
+        "4857e00a0516bfeac61aa98e1b3d8b264d88341fdd14be785df9880e6cd9b410",
+        "3c4e0e3f564aa25f2e3093120300fedf55eedd4727931fba4b7e8011fbfb4d28",
+        "79435cf31dca4a39d315db5778b6eae910d11e8e8ba46ba64cde30d1d1a536f0"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Pade-cancellation-order",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Pade-exponential-integral-error",
+      "easiestOptionsVisibleRoute": "Represent the actual high-order remainder as an integral with a moving scale and apply a sharp interior Laplace argument.",
+      "nearestNeighbor": "A fixed Pad\u00e9 contact order follows coefficient matching and was rejected as insufficiently advanced.",
+      "difficultyRationale": "Olympiad cancellation plus moving-parameter saddle analysis; identifying the approximant alone gives no limiting constant.",
+      "coveredRawHashes": [
+        "89058816c23b93c5bbced902a20ab7e67f674179ff016058b829d71aad222bce",
+        "6f79bf6e1dd790890a2f99efe54e8260888b8dcdc27e76be05b2cb0973146254",
+        "0c525d15bff5018e76dc1b29c0cebdd32fa8ed17bb0b0d612db1f59d4abc9e73",
+        "63a361e7bf832d3afc9ef20722bb595444385be7bd9d4f1757135ae2727d103a",
+        "2890e1f57575bf58729d18f6ad52fb626c1f24b205ae0c95fda0d6083f9566d8",
+        "7693fe601e652b32adadc7d5b72e3195bf7a0427c7d3924d415561c39bd70c4e",
+        "db304aec5543af770b0d3311eaea93aadec2ae2cb4bca59bbb2f0f7908400c20",
+        "3b91bdf1b1b82e2fbaf155e7d3b89f4d7da912122a73f06b715cddb148c1df12"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Poisson-partition-moment",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Poisson-growing-moment-saddle",
+      "easiestOptionsVisibleRoute": "Optimize an exponential-moment upper bound and match it with a single mass term at the optimizing scale.",
+      "nearestNeighbor": "A fixed-order Poisson moment is a polynomial/partition exercise; both the mean and moment order grow here.",
+      "difficultyRationale": "Olympiad matching variational upper and lower asymptotics; a fixed-moment identity cannot settle it.",
+      "coveredRawHashes": [
+        "804ba12ad5df5479fffa92c93b3fd8ec3e477a1b7186cf7fefb737508a37e040",
+        "7b149a38b582066ed1518e7c48ce7d205b947e4cb4c2b99cad595d4bc1dc87af",
+        "8a833ae722f07ec00b9f03856b3b4ce7c6f772e7275e53194100743f5c99bb63",
+        "c1cb399d15b6707a6201753c73ed7f7feb438f28838bfadbe7703ffa0da78377",
+        "eb89a7e06e92deef2428a5b35ec7d4154f59d98583d24fd2b071ae1ac8790640",
+        "060934f64fbfddb5a3099314fce01a125edb6ec8aed06eb82075ed3f58294676",
+        "6126de0f882235055f4bf010916e6ca5d1bab9847c4a1adcf297fe22bb7b7526",
+        "1c725fcf4942a9b7fa6cd91045e0cd06017bf2cc4c57309b7b81ae3021ac93ea"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-Riesz-product-energy",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "dissociated-Fourier-frequencies",
+      "easiestOptionsVisibleRoute": "Use dissociation to prove unique frequency representations, then use orthogonality to extract the exact energy product.",
+      "nearestNeighbor": "Binary tangent telescoping uses a pointwise doubling identity; this uses uniqueness of signed Fourier frequencies.",
+      "difficultyRationale": "Olympiad frequency-collision exclusion is essential before coefficient multiplication.",
+      "coveredRawHashes": [
+        "8877e021eba1a4ed0a038d6ae66ca152601ac3bf75bf0ae78f51f04c99c398fc",
+        "8c07f1d6a994aa03fb6f02b082be379b9e7c6d439ac3b375f31bc88e27627016",
+        "c1c7c5ffb9cad407ae9c6a347d0bdb1367132f09bde538c18e5c2ff753dfb2a5",
+        "1dfd5e4ed9c1028d582e7ac982c5d328e8789c87a31d645e98abbbbd0064c928",
+        "f490f9470eb65b0c7bdee55b15ae5218d8deb8a7c9a767f4b26dc2d4a585b724",
+        "e3791a977dce149527d020e83ff37a57a8fd9da15040937eeb559c9a798954b0",
+        "ec821166ed9335a5cef999e938409b4392895584a96c9d172e78f942e6d40ed0",
+        "f41c721293c32f2ee63c5dae801fe6fa035978af4248b619da179d3fa98bf763"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-alternating-infinite-product",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "conditional-product-second-order-drift",
+      "easiestOptionsVisibleRoute": "Expand the logarithm to second order; separate the alternating linear contribution from the nonalternating quadratic divergence or convergence.",
+      "nearestNeighbor": "The dyadic product collapses through an exact finite identity and is Hard.",
+      "difficultyRationale": "Olympiad interaction of conditional cancellation and a positive defect term; simple factor convergence is insufficient.",
+      "coveredRawHashes": [
+        "66a8a720bfb6be9d940358de8244980bf92b08480b821cced8cebf05857a966b",
+        "9ba7ac50401b5c53352bed5b7a9c02d87fc7e66643ebf273f143e14fc67766e0",
+        "6aa40ed1a6fb59e6cb898e07e3bebd1bbf5d4e170dd87b28d91a55be41ae8bf1",
+        "9d03585f70aa496b211f28f680b5b26186f0aba48db7b8457004c07e625c91c2",
+        "8be1e8986109714018f7683bba39b31dd8957ee10feffa6e99391f48ee828465",
+        "dd4d9d334664fce5d6342eb7e7635720c7636ca1487304c8aaa73dc8ffb03901",
+        "1a630c7940e6fa9464032afa1ffb6ee3187af956c7a033a7fa1cae997ba92ba4",
+        "649de04aa80827677c5781c28f63882d642298bfc4139e21d6f6264a9c07299b"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-conditional-double-sum-orders",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "conditional-double-series-order",
+      "easiestOptionsVisibleRoute": "Evaluate each iterated order with its own finite boundaries and exhibit the surviving boundary contribution.",
+      "nearestNeighbor": "The block-rearranged harmonic series remains one ordered sequence; this exposes failure of two-dimensional interchange.",
+      "difficultyRationale": "Olympiad nonabsolute summation and boundary bookkeeping; all fixed finite cutoff changes share one normalized lineage.",
+      "coveredRawHashes": [
+        "ff6af8eca94b9fb696a17e8b60e931886f6e356e62359bee234c8d07cdbc5782",
+        "e5770d5540771538411192de9f805e66d006f2990f4b656c9d5da7b8563bef5e",
+        "12030e92ea6e5222cec528c942aff62e28134aff7ce70dfe3fa7a75939cf5669",
+        "59768502263e8acb6300371fd27179e737aa899491104af7b56f6d466537f9ea",
+        "f50c2f1b4fb65db0acfd77919952f891ef9dd3bbb7b11c1c54052cdf511d2f95",
+        "8cd4f80591f965f536d3d09ef163f2fb704f9cea8425c2b0f6922c1f48d0f20d",
+        "eb87d1bc220a6243d2c3f25412835ae3ecbab15287003729d0053f78a3e3bea0",
+        "d5583a07c6e86822c89311e7325d4bc24f0dec02ca50fc527e96fcf6dc8b71d7"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-factorial-asymptotic-remainder",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "divergent-series-optimal-scale-remainder",
+      "easiestOptionsVisibleRoute": "Express the remainder as a gamma-type expectation, prove concentration near its moving mean, and keep the first surviving scaled correction.",
+      "nearestNeighbor": "Factorial-floor reconstruction needs a strict elementary tail trap; this needs concentration and a local expansion.",
+      "difficultyRationale": "Olympiad probabilistic/integral reinterpretation with a justified scaled remainder.",
+      "coveredRawHashes": [
+        "25d8a770305ded0cd7385ea00f19110bc9eae31a22f819e0c5d25bf00fb01da5",
+        "f140452448af4d398b7596457c6f6c6047786149624a4870a4ebf90dc27d8377",
+        "9a98ffbf7ab69a1fbdc816e2d389ef2c6f2f336ae6ee677e8fdfa2ae6c5d890f",
+        "bdadfacf6b7739f524a6b893a1458c8d4ad7cc3c701d34bb7fbd12db9d3f4210",
+        "81a1095b53d23daadecb4a0562a893828f01ffb2a86e870aa5bcfc2fc7e51b99",
+        "aa25f76fc3601b1759a21b733a7a31d4b5614503b3b17a63cd03f9c3a2670af4",
+        "5dddefad013862be16a8cad78ca0edc672e1c641c866ced01ac6c2aeff245ab6",
+        "26a8b4d6af60f858705904fe672cb35b5323c0627d2368714b96ada460044153"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-factorial-floor-reconstruction",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "factorial-floor-exact-remainder",
+      "easiestOptionsVisibleRoute": "Multiply the defining series by a factorial, separate its integer prefix, and trap the remaining positive tail strictly between zero and one.",
+      "nearestNeighbor": "Factorial asymptotic remainder studies a scaled tail limit rather than an exact floor.",
+      "difficultyRationale": "Olympiad integer reconstruction with a strict bound; a numerical approximation cannot justify the floor.",
+      "coveredRawHashes": [
+        "d1123052929651b2ff69ce930d33fdad9806ec8448c84c379d93d410fdadd947",
+        "a8f70080593729f66f715e91b315aa19b17b7555ad80ee1db6c4875047f5412f",
+        "f4ff254df3e8948babb9bc36250d5115391cafd5e13e758a02c235cde6bbd3ba",
+        "0ae3a4e202b0ed368b78abc376cbe240b4c23da110ccae4739eef3f68874c0ef",
+        "961a7438a81bfded2ceaff023224910e450806b82a952492b75d4487d1ab7aeb",
+        "4a8eff3ad51066508e1225923adb5e65e3b9532cbcd45106906b4ed2b94a78c2",
+        "3f682e37aa60dac3b498fb5413a22c52213400eface4ee937344bdbbde95b2cd",
+        "a5a16f326e9ca7c0f28a64a1589124f4c21426ace06b41ab566015491f64ab9a"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "cycle-resolvent-Chebyshev-trace",
+      "easiestOptionsVisibleRoute": "Diagonalize or derive the cyclic Green kernel, sum the geometric images, and enforce the wraparound relation.",
+      "nearestNeighbor": "The lattice-resolvent is a named infinite partial-fraction specialization; the finite cycle has a genuine periodic boundary condition.",
+      "difficultyRationale": "Olympiad finite periodic resolvent on prime cycle sizes; small hand-computable drafts were replaced.",
+      "coveredRawHashes": [
+        "5f491df79ad6fcb01544ba85d273f494a65237d6a0f6009a908713ebff308b1e",
+        "933790e7290d56991a4dcf042ef2b2285f6f6d561a7aae9cf59897075432702d",
+        "5c8a968d8a6c7c34506457e38e395c5dba29381fd0dc4bf45c3aabdf8d92f0cc",
+        "d721762d1df92ad0bd3cabab495d9c4b89f3e5d3afbc39fd6161e665b17c9479",
+        "31c2b993eaa93f57b14174934f570396fce18cee8b7f030c8ef4160afe1e78db",
+        "a97582af939c8832670a1ca09d2986a8a979391791e8d13c635eaa1dd3219104",
+        "0ee5c378c2be7faa9b7dfde807c14256e5dc110cc36bddc11fcaa9745097fd8d",
+        "1d0eb0058b7a49222eab5949b25a38a91110ecc2e8bdf3e3556e285bbdf9c34e"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-geometric-moment-determinant",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Cauchy-geometric-moment-determinant",
+      "easiestOptionsVisibleRoute": "Sum the entries geometrically, factor the Cauchy alternant by its zero sets and degree, then count the surviving geometric exponents.",
+      "nearestNeighbor": "The Gram/Hankel integral family uses moment antisymmetrization; this finite geometric Cauchy matrix needs a distinct rational alternant factorization, though the broad determinant lineage is shared.",
+      "difficultyRationale": "Olympiad determinant structure and normalization; entrywise geometric summation alone does not determine the answer.",
+      "coveredRawHashes": [
+        "5caf69f9f60216acc5235292db1aeeca661eaf7fdfa17490a1a47151c0e3d5f7",
+        "139a1df370299fd3388b63a24bc496ab2fc0a9150da8e14e8b84b8a921b86641",
+        "6b9ce8d61528952c80b25a192da317676b7c366b7ae74790ec3663929231e51c",
+        "219f4d614fabe3d8f5971f8d270fa7184864524dbd2f581ea1a61a24a9c0d85b",
+        "d9b7bd0968e55be9daa46470a0dd5ef729d59b4cbafe1b1c624106e6d75d3472",
+        "3c20b1b25fdb676068c272b1552efa26b3f71d8509905a98a3acec5daf4238da",
+        "422dcf9310e5a214ad2565a624247efc1ba2ab8f68d6614026ca34bdee788bee",
+        "de0413bef9192bca3f7f8d950521d5433aa5ffe0a87abbc4e77df9bac91e6c4a",
+        "b19d15234b9383b80ad4301c33d1e7f9da8c99d986f152421ec1eb2c67ce5e02",
+        "ee0638910e17d82cb8b5df33f5169b2ebbc9501260a297f828e467c8acb1deb3"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-lacunary-Abel-growth",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "lacunary-Abel-counting",
+      "easiestOptionsVisibleRoute": "Locate the index where the doubly growing exponent crosses the reciprocal boundary distance, then uniformly bound both tails.",
+      "nearestNeighbor": "Restricted-digit convergence counts words by length; here the critical scale is set by lacunary exponent growth.",
+      "difficultyRationale": "Olympiad moving cutoff with two unequal tails, not a root-test recognition task.",
+      "coveredRawHashes": [
+        "ab5bfeca22670f73ad6484b282bde461a579f18bc791ebb5a0997fd1d1cafef4",
+        "de795f71c5c5c2fc34a4f5bedba9c2e12bb5d0ff162d641e255d0c5bd8e2593e",
+        "105733cc5fad7b9933e0240bad48b7da6bd30ff824c32121544aacf1a559fc2a",
+        "b204f9350871574a0148bb1d51410724ecec44f292082a7a2ff66626a043c4bf",
+        "90721351d61102ce934c10d9b5cf58e78e4f6ebebbe4dba4fcc86cfc01ccaccc",
+        "f1976ea6a52e2fd2fd2d26fd8de0fe04a6ffe4d73ada966d4a314eff8d28302b",
+        "28bb74647860a76c7abc00e8bb72baf3ead8869eb815f262ecc174f31e42a319",
+        "6695e467a75f4c77e3227cbd236ef143672de4dfcfd0fa3f9150f34a186d2266"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-least-energy-sequence",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "Hilbert-sequence-two-moment-projection",
+      "easiestOptionsVisibleRoute": "Identify the constraint representers, compute their Gram matrix, and project; verify the residual is orthogonal to the feasible directions.",
+      "nearestNeighbor": "Related to the integration moment-projection and ODE minimum-control groups globally; the discrete infinite sequence and constraints differ.",
+      "difficultyRationale": "Olympiad constrained Hilbert projection with attainment; a guessed small-support sequence is not enough.",
+      "coveredRawHashes": [
+        "81aad2cbba3c540c8bf13e5a2e3a9076e50cdba98a6be4e0d27c243c9c9a2311",
+        "cb1d7c2d4e3269ad7f53f6b009b0ff9e482d55281cb7c1bd300838ec09643e7b",
+        "a45b73ac8bd625d00e0e3855841f8feffe0c43e086ca78f94ed9dcf8995de52f",
+        "68e8b451e36e58f8c7e4920fcfe6685ba6a14469c4580d54fb9d520500e1cddd",
+        "66b394601afd844d1d92b819be3c3511f1d07f893437cedda9ab9890e433735c",
+        "6a4174df61acb5becbcd91318388875989d745f7a378bff746df83f38001b7de",
+        "d9831eba1e4a444c2652b9d80b69205bee0fbafb6cb3520fa038f0192b315470",
+        "85b402efe14f3a4d21afab56ecbd2f613e6187f20a17233e7f55472914495dee"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-maximum-entropy-sequence",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "countable-Gibbs-entropy-extremum",
+      "easiestOptionsVisibleRoute": "Identify the exponential-family candidate from the moments and prove global maximality by relative entropy, including the infinite tail.",
+      "nearestNeighbor": "Dirichlet moment existence forces support; this optimization permits many feasible distributions and needs a global inequality.",
+      "difficultyRationale": "Olympiad infinite-dimensional extremality and equality conditions; solving multiplier equations alone is not a proof.",
+      "coveredRawHashes": [
+        "cf63067c67b4e6366918f1377e77d26336611fe0890fcd39f104981f2048fc56",
+        "ec5f579ace3ee5d649a60c3fe2b3c824fae264aa9104fc2a43a953b91900771d",
+        "7fa87d23bc22ae145c97090c36ca0ea9e2f274012bbc44c801ba8467ba4808e8",
+        "cd08e9c41799d7be68c05ab3a62cdf68697aaf2093c68ec97d6a9068f511d12b",
+        "2e85103112835772454842a36cb28b87fd2d61010e120d63c2180a448c9d95a8",
+        "7086981ebc85b6e549ba56e23971ca8dbfccd1855b3ae3f00de5f879a0851bf2",
+        "624672f11591618ecb831d5940065ab439e975db980cee4a95baedb48e3fe6e4",
+        "22ecbc942396f40c04065e1fe0f0b5a8a8e619bfc9de14fde78952ca7c4ffd94"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-quadratic-small-divisor",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "quadratic-irrational-small-divisor",
+      "easiestOptionsVisibleRoute": "Use the algebraic conjugate to establish a lower bound for every denominator and a matching Pell subsequence before applying the root criterion.",
+      "nearestNeighbor": "A generic coefficient radius uses one limit; this needs a Diophantine extremal subsequence.",
+      "difficultyRationale": "Olympiad because average or typical denominator sizes do not control the required limsup.",
+      "coveredRawHashes": [
+        "f17ecc957bbc8dd190e8fc03335270462f60fded7a557cb6d1e9e9060362230a",
+        "c2fbd754ce93f887802b4aea78c2d9ca6554963722ca6025a6d29602cd0af2f2",
+        "f933f9e2272556a88149907f0a178a370e54a77d5ac03812376839eec021e90f",
+        "d77c572f52abef77bb27322590b552ef540ae95a232ec24da9adc5e9d1b60a95",
+        "1277850022e1f90688fe372f6bfc628dcd2a8e4c4bf89e24fe505982398b6772",
+        "f886fea2987a7b038b042ada06ecf8eaf105dd73fe4cdb1b61ef16b2c53f1abc",
+        "f3bc724bc0668c843e5b4d5293f17516022be46b47ca1a29663ae11224f0f0af",
+        "db5935a7e3011661dd9e7919e2d3c18ad5e9dbc1de2a5d480f412d528b9fc873"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-restricted-digit-convergence",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "restricted-digit-Dirichlet-dimension",
+      "easiestOptionsVisibleRoute": "Build the finite-state word-count recurrence and compare the resulting growth rate with the denominator scaling.",
+      "nearestNeighbor": "Lacunary Abel growth uses sparse exponents with a moving cutoff, not automaton-counted allowed digits.",
+      "difficultyRationale": "Olympiad combinatorial growth and convergence threshold; the number of allowed symbols alone gives the wrong rate.",
+      "coveredRawHashes": [
+        "b3d62e44972d17e5954c9e13cd2306496b587f79e1832fe7e813f58d35341426",
+        "3b921d8ab05c8e1799afd0297ef7fa9696b002a5630394f513a4a44c80551584",
+        "1b8fe922f703199c9606b5616b55ce9466b988f18971c1fe779d7c4c30112e60",
+        "5b532c7fc31ea29808befb893c1128e184dfe62e9c4dbaca28aa9b64bdd4560a",
+        "95b6c55e9598a913bf2fb5e9e06c9f78ac98f00d9356bcdeeac4e94ef365af27",
+        "9fad5c80995e149c07ad963d0c9276f4b5ef2b8b080d5a6840d627c724e328ae",
+        "712f31e1221e89f2d65db2f36a6cbbedc9f583be60dcdeb2135832676781d4b4",
+        "10a829572edfb1818aafa65af7405866910a1574ecbab1e3df5bf4850bc18448"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-rooted-tree-weighted-series",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "rooted-tree-Lagrange-branch",
+      "easiestOptionsVisibleRoute": "Introduce the implicit generating function, use Lagrange inversion for the weighted coefficients, then select the analytic branch reached from zero.",
+      "nearestNeighbor": "Inverse-ODE coefficient asymptotics shares Lagrange inversion globally but asks a singular coefficient limit instead of this weighted sum.",
+      "difficultyRationale": "Olympiad branch selection and inversion; substituting a visible algebraic root without matching the origin branch is invalid.",
+      "coveredRawHashes": [
+        "aa122cbc38346019578f6235f1fa35fd210b6cb57861607942b1c1396e4e287d",
+        "878638cf4d7cb0288fcdb9382d96e28f097b152e19b779fd2b5d2288faa3aad1",
+        "07205808a91f3530a0b0ef033600470fd3bb4d73074ff40bf5801eaa571622b4",
+        "ff02c2d0d4f8678ba9b8ecf13d70ed63ee1ad720ae8e40e32e1dd28340fcebad",
+        "5041eb32167cad6379651e48747c95fbc91b8a96f013f3a62198444752dbb2a6",
+        "15077b9852e2d7cb352240d63b04c156b88bbb34a345545fd42c0289d53d4195",
+        "25203e381769e01dac76e83e5dcf06294faf808e778b7b8e4c45cc6549c57525",
+        "3d8a886dca94e72bfba886fb1a368ea81930b0e096eebe75a0e15d0537713d6f"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "singular-convolution-Riemann-limit",
+      "easiestOptionsVisibleRoute": "Normalize the coefficient convolution; truncate both endpoint ranges, estimate them uniformly, and evaluate the remaining beta integral.",
+      "nearestNeighbor": "Unlike a regular Riemann sum, both endpoint singularities need separate uniform control.",
+      "difficultyRationale": "Olympiad because identifying the integral is insufficient without the endpoint argument; choices do not remove it.",
+      "coveredRawHashes": [
+        "796e0f0bc0a948b51505c64d78a594caef50efc8fb29e3305f94b832cd393f34",
+        "c22988cb8dca10e2d55d0dcd9729a2bd02895fd8b20ede42aded0ac1d9d525bf",
+        "1c9d549d6f434b304610486206db102cd31151adaf1d76832bf791ae9aedca9c",
+        "3cb646b5b21dc22033f47aca80cf9439c81f859095edc846dd25edc7bb561927",
+        "caf851022b5aa90443dbafa7dd599dbe1b16a9bbfb8e3e3813a618e45263ad0f",
+        "b8a3a1b167c9bad654f3c534e416094ff934a602e7acf5eaa65ed9ba72c15eda",
+        "bdcc11afe074cc682391ee1e2e58a7d5aa8cd6c50926fe118d2ac4c78c416f92",
+        "c60a057f114e6c3f21ab99ac27ffc130accea816fa5368c8723b3b18afd77953"
+      ]
+    },
+    {
+      "familyId": "quality-series-olympiad-uniform-log-sine-threshold",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "uniform-convergence-sine-coefficients",
+      "easiestOptionsVisibleRoute": "Near a sine peak use the logarithmic singularity to disprove uniform convergence at the threshold; above it control the entire tail uniformly.",
+      "nearestNeighbor": "The lacunary Abel family concerns radial growth, not uniformity in an angular variable.",
+      "difficultyRationale": "Olympiad endpoint and uniform-versus-pointwise decision; the sign of one coefficient does not settle the options.",
+      "coveredRawHashes": [
+        "da74d4362ec1e65f00a0c82eaf4a6e73a51cc64137099fc37718fcc02ba2c6e7",
+        "f789954dbe9f3922ff5eaa069dab92412a5d865b231242dd4b9aa100849559c9",
+        "7313170d99a7c62042bef7f8f6085e20a1e9eced7f446b8e5f95f5078dbd1a4f",
+        "7eff41b88b5660b27e0e2b514cb31394b87994ff4b7b1f752eba0a8a1fd1c87e",
+        "1abc296f29249f1e74bcfdd98b68b8ac4fe62498ae3ec40b67f3720e1f2180ec",
+        "6aa14c84b3b345575ba1473df628ea58e6d09ee8752ec137e7f1362722df1851",
+        "94c6fcc3727b6f7a517d84e5dc730b3f03e6bb2d41f8d34a39a5ebd2cfc2f00c",
+        "114196cacaa45f20c309a4686534a956920fe2f81ded7341d46f068cc20a844a"
+      ]
+    }
+  ],
+  "boundPeerReportSha256": "628efd0d3ee4fa876451e83a664c3a610432b7829aa721f513ff68e223634ee4"
+}

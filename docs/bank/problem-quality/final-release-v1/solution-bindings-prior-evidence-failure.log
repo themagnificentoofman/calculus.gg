@@ -1,0 +1,27 @@
+
+> calculus-ninja@0.1.0 bank:solutions
+> node scripts/bank/verify-solution-review.mjs
+
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Presentation review evidence changed: components/ProblemStatement.tsx
++ actual - expected
+
++ '23592324a2ab3647e51db646e8a41d7046d0b9df56279ebbfcaa89f3da7ac29a'
+- '87849be15f782672d51c70a69257bfd3551cd5df6aa8a97e87d1cc323f392fc4'
+
+    at file:///Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/scripts/bank/verify-solution-review.mjs:18:76
+    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+    at async node:internal/modules/esm/loader:650:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:105:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '23592324a2ab3647e51db646e8a41d7046d0b9df56279ebbfcaa89f3da7ac29a',
+  expected: '87849be15f782672d51c70a69257bfd3551cd5df6aa8a97e87d1cc323f392fc4',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.0

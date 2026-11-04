@@ -4,6 +4,9 @@ export interface ProblemReference {
   contentHash: string;
   bankRelease: string;
   familyId: string;
+  /** Private, reviewed mathematical identity across revisions/renamed copies. */
+  lineageId?: string;
+  constructionFamilyId?: string;
   /** Stable IDs in the actual displayed order; never identifies the answer. */
   choiceOrder: string[];
 }
@@ -59,6 +62,12 @@ export interface SelectionDiagnostics {
   probes: number;
   statements: number;
   catalogFamilies: number;
+  catalogPools?: number;
+  fallbackRows?: number;
   exhaustedInventory: boolean;
-  reasons: ('family-cap-impossible' | 'recent-items-exhausted' | 'candidate-sampling-limit' | 'adjacency-unavoidable')[];
+  reasons: ('family-cap-impossible' | 'recent-items-exhausted' | 'unseen-family-capacity-exhausted' | 'candidate-sampling-limit' | 'adjacency-unavoidable')[];
 }
+
+/** Credit and license are public; detailed modifications can mention a solution. */
+export type ContentNotice = Omit<ContentCredit,'modifications'>;
+export interface ContentCredit { credit:string; sourceUrl:string; sourceItem:string; license:string; licenseUrl:string; modifications:string }

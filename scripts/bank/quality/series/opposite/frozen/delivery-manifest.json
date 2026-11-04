@@ -1,0 +1,37 @@
+{
+  "status": "frozen-author-verified-awaiting-independent-peer-review",
+  "counts": {
+    "patches": 44,
+    "families": 5,
+    "pairwiseChoiceCertificates": 264,
+    "strictRenderedFields": 490
+  },
+  "unchangedSourceFiles": {
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/milestone3/.bank-data/milestone3/release-v3/cn-2026-11-03-ideas-v3.jsonl": true,
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/series-admitted.jsonl": true,
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/series-previews-v4/effective-option-input.jsonl": true
+  },
+  "sourceAuditorSHA256": "b24aad24c0078a7ef12c68610b60009088e712a639c522032944a1f1346af6ef",
+  "recipeAPI": "supports(original); build_patch(original); verify_patch(patch,original)->bool. Exact raw, content and semantic hash guards. Correct choice and every question/solution stay unchanged; parent supplies canonical new revision hashes.",
+  "reproduce": "Python with SymPy: repairs.py then check_and_report.py. Node: render-check.cjs <repo> review-option-input-v1.jsonl. Root option-audit.mjs <input-jsonl> <new-output-path> reproduces the literal screen. All paths are local/CLI supplied; no durable runtime absolute path dependency.",
+  "files": {
+    "check_and_report.py": "e55fab1b0a3dba292c12e42d31d9ddfa4407ab0b45b9c331bb101a3ebe865033",
+    "source-manifest.json": "94af82b63dc9a2c6aa3cb2b94060a9729d1bf2e20d6fa6e43b2236f454289d08",
+    "source-records.jsonl": "6af81a6881c359a7cf66b573ff693c8c2f33ebf5cf2175228f890a4bb2abc01d",
+    "option-patches.json": "e43fc92b1f84fd6c5e56c070fe33552a994b6eca0a27c2b750684aa68f027cf5",
+    "effective705-review-v1.jsonl": "54c51aa5e03534636226b83a73ad34e7d3cb69409cd683ce4d4e0b3e09162335",
+    "review-option-input-v1.jsonl": "ec2187f99eec455a06f35496f6512e3a4c8c83bc8f5551d9cef88ba5b5cebad2",
+    "effective705-screen-v1.json": "cbc2bae2992f1106e9fe6d8f4ade4de5a02e3c3b001c8dc97172ac31bcc590cf",
+    "intervals.py": "d09fe51182402b0b446165a176affe00d1b71b19180d65018814249ad22a7328",
+    "author-verification.json": "6ecb37579b94bb3b3dca906d8cac1692652b977a7073063c08f61587ae593bf3",
+    "render-report.json": "cff660a3bcf60ea83858a5a9f355597071a84a7494d02554a66a478e2daf2745",
+    "render-check.cjs": "55059b6c7c0b89a3f0bcacc6ccdbb7844d5eaf1185a0acf53ccd4421d8954acb",
+    "root-option-screen-v1.json": "83d84e08e92c339ad41c8d1cd4e70214bde0fc5bacab9c72079fdba16f22be80",
+    "repairs.py": "d3f474ade427c78b2534af806423b314bc16d5625e714c73d4959f78f6e1151a",
+    "intervals_base.py": "d371ab9f435947919f521e0d631769ca659ace593ea2e9e77903ae2eb0c2b2d1"
+  },
+  "humanReviewed": false,
+  "independentPeerReviewed": false,
+  "formalProof": false,
+  "productionImported": 0
+}

@@ -1,0 +1,69 @@
+{
+  "sourceSha256": "93ac217eef489e4fc06e6cb00d4f095e955ca711e57a60e9ef63b6c957e57006",
+  "method": "Recorded from statement and choices before opening author proof or answer key; AI editorial review, not human certification.",
+  "samples": [
+    {
+      "familyId": "quality-series-olympiad-Dirichlet-moment-uniqueness",
+      "instanceIndex": 0,
+      "sourceContentHash": "5005f133efba9d09d3bede5c544ad8288648dd84af3410f91aeb8fd41aa638c5",
+      "independentAnswerExpression": "Tuple(Symbol(\"exists\"),Symbol(\"exists\"))",
+      "blindSolveReason": "For either displayed positive integer b, put a_b=1 and every other coefficient zero. This is elementary existence, so sample0 is below the requested advanced level."
+    },
+    {
+      "familyId": "quality-series-olympiad-Poisson-partition-moment",
+      "instanceIndex": 0,
+      "sourceContentHash": "ac9adcf4cdee8f54fa6c99f9aac6e83a240584b0b6260b6171cbc4236956417e",
+      "independentAnswerExpression": "2*exp(1-2*exp(-Rational(1,2)))",
+      "blindSolveReason": "Use k=sN and Stirling in the positive Poisson moment sum. Maximize log(s)+s log(lambda/s)+s-lambda; its stationary equation is s log(s/lambda)=1, solved by s=2. Tail domination completes the Laplace principle."
+    },
+    {
+      "familyId": "quality-series-olympiad-Pade-cancellation-order",
+      "instanceIndex": 0,
+      "sourceContentHash": "7abb4733a3d96b917c0fe5208fe43b2f6e764a12ff92c750d730e00a14d08b47",
+      "independentAnswerExpression": "(sqrt(17)/2-2)*exp((sqrt(17)+5)/4)",
+      "blindSolveReason": "The exact Pade remainder is (-1)^N z^(2N+1)/(N!)^2 times integral exp(zt)t^N(1-t)^N. At z=N/2, Stirling supplies e squared/4 and the integral root is its positive maximum at t=(sqrt17-3)/2."
+    },
+    {
+      "familyId": "quality-series-olympiad-Hilbert-kernel-sharp-constant",
+      "instanceIndex": 0,
+      "sourceContentHash": "ab184db42e58af48bc20dd0fd7f6dceae26b3dc2094330b74ca908729bbddfc2",
+      "independentAnswerExpression": "pi/sqrt(2)",
+      "blindSolveReason": "Schur weights j^(-1/2),k^(-1/2) reduce both row and column sums to the integral pi/sqrt2. Truncated reciprocal-square-root sequences on a long logarithmic range approach that constant."
+    },
+    {
+      "familyId": "quality-series-olympiad-Carleman-geometric-mean-constant",
+      "instanceIndex": 0,
+      "sourceContentHash": "7dc0aac54b75741ad621a24ecae69411f6250332868fb97f74b238f24de04570",
+      "independentAnswerExpression": "exp(Rational(1,2))",
+      "blindSolveReason": "For weights k choose c_k=((k+1)/2)*((k+2)/(k+1))^((k+1)/2). Weighted AM-GM telescopes the product and the sum of4/[n(n+1)(n+2)], leaving c_k/((k+1)/2)<sqrt(e). Truncated a_k=1/k makes the quotient tend to sqrt(e)."
+    },
+    {
+      "familyId": "quality-series-olympiad-Dyson-alternating-cube",
+      "instanceIndex": 0,
+      "sourceContentHash": "845886d3aa9e1066b83435901bdd1a12202a93bfb5a1044d2b42324bbbfdcf8b",
+      "independentAnswerExpression": "1/(2*pi)",
+      "blindSolveReason": "The unequal Dixon constant-term identity gives(6N)!/[N!(2N)!(3N)!]. Stirling cancels the exponential432^N and leaves1/(2pi N)."
+    },
+    {
+      "familyId": "quality-series-olympiad-conditional-double-sum-orders",
+      "instanceIndex": 0,
+      "sourceContentHash": "74e5f392060f41eea0ea24ea3acb6de27bc80bb1d2f9fb1384f864fe52a405d5",
+      "independentAnswerExpression": "Tuple(-Rational(5,7),Rational(2,7),-Rational(3,14))",
+      "blindSolveReason": "Fixed-row telescoping gives-b/((m+b)(m+b+1)); fixed-column telescoping gives a/((n+a)(n+a+1)). The square sum is the antisymmetric equal-start square minus a finite strip, yielding(a-b)/(2(a+b))."
+    },
+    {
+      "familyId": "quality-series-olympiad-Hardy-mean-sharp-constant",
+      "instanceIndex": 0,
+      "sourceContentHash": "21dd0248bf57813f1635452cd61b43cd6962f3c8be1e10ee96f4cf439df125b4",
+      "independentAnswerExpression": "3*sqrt(3)",
+      "blindSolveReason": "Discrete Hardy has sharp constant(p/(p-1))^p. Its standard summation-by-parts/H\u00f6lder upper bound and truncated critical power a_n=n^(-1/p) give the same constant at p=3/2."
+    },
+    {
+      "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+      "instanceIndex": 0,
+      "sourceContentHash": "7eccf515ece790210af58966b62a22d47366f212074f7ef3fe27e5a8e7081bd0",
+      "independentAnswerExpression": "Rational(6058,521)",
+      "blindSolveReason": "Differentiate the product with roots cos(2pi k/13): the sum is T_13 prime(3/2)/(T_13(3/2)-1). Chebyshev recurrence gives the exact rational value."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "80-proposed-option-revisions-awaiting-independent-review",
+  "records": 80,
+  "bracketPoolRepairs": 78,
+  "duplicateArctangentMenuRepairs": 2,
+  "files": {
+    "bracket_patches.py": "b725d4c0b1b886675747faf585639d0ec483b2489d156e8c4ca7003e45c371c2",
+    "literal_math.py": "a38589054a0a73aba53ebaeaab2f6263b471c15dc93fa9732e1aa22380d8ac25",
+    "enclosures.py": "7bd88cff491cb437a4b698eb238dd8cfeb120b0045e32bf4cc607f00877168a6",
+    "intervals.py": "d09fe51182402b0b446165a176affe00d1b71b19180d65018814249ad22a7328",
+    "intervals_base.py": "d371ab9f435947919f521e0d631769ca659ace593ea2e9e77903ae2eb0c2b2d1",
+    "atan_certificate.py": "f959139c7fe48906f052beadde6531b405a57dc75f583381d72cdcf75521b746",
+    "full-source-records.jsonl": "848bde2bf06ca7198af3537f122be452ed66cc1e4617dd494bcbb33f2a9c7d10",
+    "bracket-option-patches.json": "b13fbe4383a234345c55f22bf93e268c55e8fb91c47a2ecccff1cde8e966d9a0"
+  },
+  "API": "bracket_patches.supports(original), build_patch(original), verify_patch(patch,original)",
+  "preserved": "Original source bytes, statements, answers, solutions and lineages unchanged. Separate from the root-reviewed six-row patch.",
+  "scope": "Every amended menu has six exact inequality certificates. Arctangent certificates use exact rational tangents plus an explicit principal-branch interval, not CAS non-equality guesses. All eight repaired pools cover four finite numeric ranks. This is proposed content, not admission."
+}

@@ -1,0 +1,799 @@
+{
+  "sourceSHA256": "296235acced50a128479245926ac67e0861eae82590e6230ead5c48579de4009",
+  "records": [
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 0,
+      "rawSHA256": "3a06ce27d0abab038af6eea37d40fe4d93132d58cea07e2dcc47115331182c6f",
+      "independentAnswer": "1",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:3:2",
+      "correctChoiceId": "ch_3f02791adb171778",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "20",
+          "right": "64",
+          "difference": "-44",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "20",
+          "right": "10",
+          "difference": "10",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "20",
+          "right": "1",
+          "difference": "19",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "64",
+          "right": "10",
+          "difference": "54",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "64",
+          "right": "1",
+          "difference": "63",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "10",
+          "right": "1",
+          "difference": "9",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_e17eeefedaa51ba5",
+          "literalInteger": "20",
+          "authoredError": "Square the period count without dividing by the original modulus",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_9155a9451e8585a8",
+          "literalInteger": "64",
+          "authoredError": "Square the total period count after summing congruence classes instead of summing their normalized squares",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_b4b1cbacb27113e8",
+          "literalInteger": "10",
+          "authoredError": "Ignore the divisibility obstruction of the linear coefficient",
+          "independentlyRecomputed": true,
+          "qualification": "When divisibility is ignored, the erroneous model also truncates the reduced noninteger linear coefficient; the correct proof performs division only after checking divisibility."
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "literalInteger": "1",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          12
+        ],
+        "survivingChoiceIds": [
+          "ch_b4b1cbacb27113e8",
+          "ch_3f02791adb171778"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_9155a9451e8585a8",
+        "ch_3f02791adb171778"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 1,
+      "rawSHA256": "2428a1a732b44e48a1f7f346bda5aa74e8515d16f837bbb08e26b5d411b0d122",
+      "independentAnswer": "6",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:3:3",
+      "correctChoiceId": "ch_3c5d54e64809efc5",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "3",
+          "right": "12",
+          "difference": "-9",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "3",
+          "right": "6",
+          "difference": "-3",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "3",
+          "right": "64",
+          "difference": "-61",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "6",
+          "difference": "6",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "64",
+          "difference": "-52",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "64",
+          "difference": "-58",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_9c887409d6ef11be",
+          "literalInteger": "3",
+          "authoredError": "Halve the squared-modulus normalization",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3e61404c9675a02b",
+          "literalInteger": "12",
+          "authoredError": "Reinforce every surviving even-modulus character",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3c5d54e64809efc5",
+          "literalInteger": "6",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_9155a9451e8585a8",
+          "literalInteger": "64",
+          "authoredError": "Square the total period count after summing congruence classes instead of summing their normalized squares",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          12
+        ],
+        "survivingChoiceIds": [
+          "ch_9c887409d6ef11be",
+          "ch_3e61404c9675a02b",
+          "ch_3c5d54e64809efc5"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_9155a9451e8585a8"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 2,
+      "rawSHA256": "2830d9ff2fe84b85b66c4aea165f082f84ebdbf4468a24c8431f6f34ce1d4539",
+      "independentAnswer": "4",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:4:2",
+      "correctChoiceId": "ch_177e7c5adea9785f",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "3",
+          "difference": "1",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "2",
+          "difference": "2",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "1",
+          "difference": "3",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "3",
+          "right": "2",
+          "difference": "1",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "3",
+          "right": "1",
+          "difference": "2",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "2",
+          "right": "1",
+          "difference": "1",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_177e7c5adea9785f",
+          "literalInteger": "4",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_9c887409d6ef11be",
+          "literalInteger": "3",
+          "authoredError": "Forget the gcd multiplicity after reducing the period",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_213066d977a04814",
+          "literalInteger": "2",
+          "authoredError": "Halve the squared-modulus normalization",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "literalInteger": "1",
+          "authoredError": "Retain only the primitive odd congruence class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          12
+        ],
+        "survivingChoiceIds": [
+          "ch_177e7c5adea9785f",
+          "ch_9c887409d6ef11be",
+          "ch_213066d977a04814",
+          "ch_3f02791adb171778"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_177e7c5adea9785f",
+        "ch_3f02791adb171778"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 3,
+      "rawSHA256": "e223b1d1e4322fa29013c8af868369ad4726a43f109d33c668ad27a179f65969",
+      "independentAnswer": "4",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:4:4",
+      "correctChoiceId": "ch_177e7c5adea9785f",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "8",
+          "right": "1",
+          "difference": "7",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "8",
+          "right": "4",
+          "difference": "4",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "8",
+          "right": "12",
+          "difference": "-4",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "1",
+          "right": "4",
+          "difference": "-3",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "1",
+          "right": "12",
+          "difference": "-11",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "12",
+          "difference": "-8",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_8f1d0ade8e7c8b6d",
+          "literalInteger": "8",
+          "authoredError": "Use the odd-modulus value in every class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "literalInteger": "1",
+          "authoredError": "Retain only the primitive odd congruence class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_177e7c5adea9785f",
+          "literalInteger": "4",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3e61404c9675a02b",
+          "literalInteger": "12",
+          "authoredError": "Reinforce every surviving even-modulus character",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          12
+        ],
+        "survivingChoiceIds": [
+          "ch_8f1d0ade8e7c8b6d",
+          "ch_3f02791adb171778",
+          "ch_177e7c5adea9785f",
+          "ch_3e61404c9675a02b"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_3f02791adb171778",
+        "ch_177e7c5adea9785f"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 4,
+      "rawSHA256": "99589ad97d20011e7f2fd92e3c2fa896e1927572cd4b747247dae49bd397c504",
+      "independentAnswer": "4",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:6:3",
+      "correctChoiceId": "ch_177e7c5adea9785f",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "12",
+          "difference": "-8",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "144",
+          "difference": "-140",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "50",
+          "difference": "-46",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "144",
+          "difference": "-132",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "50",
+          "difference": "-38",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "144",
+          "right": "50",
+          "difference": "94",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_177e7c5adea9785f",
+          "literalInteger": "4",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3e61404c9675a02b",
+          "literalInteger": "12",
+          "authoredError": "Use the odd-modulus value in every class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_122492ea6f5a7276",
+          "literalInteger": "144",
+          "authoredError": "Square the total period count after summing congruence classes instead of summing their normalized squares",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_c54a9fdacb146d64",
+          "literalInteger": "50",
+          "authoredError": "Square the period count without dividing by the original modulus",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          18
+        ],
+        "survivingChoiceIds": [
+          "ch_177e7c5adea9785f",
+          "ch_3e61404c9675a02b"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_177e7c5adea9785f",
+        "ch_122492ea6f5a7276"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 5,
+      "rawSHA256": "d9aba5a745461742b4ed5da0a298883089346011abd4f984b00397510a1d0dfb",
+      "independentAnswer": "6",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:6:6",
+      "correctChoiceId": "ch_3c5d54e64809efc5",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "18",
+          "right": "6",
+          "difference": "12",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "18",
+          "right": "144",
+          "difference": "-126",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "18",
+          "right": "0",
+          "difference": "18",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "144",
+          "difference": "-138",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "0",
+          "difference": "6",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "144",
+          "right": "0",
+          "difference": "144",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_e7807ecd23fd917c",
+          "literalInteger": "18",
+          "authoredError": "Reinforce every surviving even-modulus character",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3c5d54e64809efc5",
+          "literalInteger": "6",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_122492ea6f5a7276",
+          "literalInteger": "144",
+          "authoredError": "Square the total period count after summing congruence classes instead of summing their normalized squares",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_e1b1db02fca799bd",
+          "literalInteger": "0",
+          "authoredError": "Retain only the congruence class divisible by the full fourfold leading coefficient",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          18
+        ],
+        "survivingChoiceIds": [
+          "ch_e7807ecd23fd917c",
+          "ch_3c5d54e64809efc5",
+          "ch_e1b1db02fca799bd"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_122492ea6f5a7276",
+        "ch_e1b1db02fca799bd"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 6,
+      "rawSHA256": "506fdf9bfad90841cc1bea73096a08aa27280edd89bf018954e576023ed657ba",
+      "independentAnswer": "4",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:5:5",
+      "correctChoiceId": "ch_177e7c5adea9785f",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "14",
+          "right": "1",
+          "difference": "13",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "14",
+          "right": "4",
+          "difference": "10",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "14",
+          "right": "8",
+          "difference": "6",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "1",
+          "right": "4",
+          "difference": "-3",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "1",
+          "right": "8",
+          "difference": "-7",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "8",
+          "difference": "-4",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_f20bcd68f8da1473",
+          "literalInteger": "14",
+          "authoredError": "Reinforce every surviving even-modulus character",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "literalInteger": "1",
+          "authoredError": "Retain only the primitive odd congruence class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_177e7c5adea9785f",
+          "literalInteger": "4",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_8f1d0ade8e7c8b6d",
+          "literalInteger": "8",
+          "authoredError": "Use the odd-modulus value in every class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          14
+        ],
+        "survivingChoiceIds": [
+          "ch_f20bcd68f8da1473",
+          "ch_3f02791adb171778",
+          "ch_177e7c5adea9785f",
+          "ch_8f1d0ade8e7c8b6d"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_3f02791adb171778",
+        "ch_177e7c5adea9785f"
+      ],
+      "passed": true
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "instanceIndex": 7,
+      "rawSHA256": "300270a291f7f81e16e6c4c390c35369f93b9384c9c5606b30effe86abf14227",
+      "independentAnswer": "12",
+      "normalizedTaskKey": "quadratic-linear-four-congruence-pattern:5:0",
+      "correctChoiceId": "ch_3e61404c9675a02b",
+      "pairwiseChoiceCertificates": [
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "12",
+          "difference": "-6",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "4",
+          "difference": "2",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "6",
+          "right": "1",
+          "difference": "5",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "4",
+          "difference": "8",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "12",
+          "right": "1",
+          "difference": "11",
+          "passed": true
+        },
+        {
+          "method": "exact nonzero integer difference",
+          "left": "4",
+          "right": "1",
+          "difference": "3",
+          "passed": true
+        }
+      ],
+      "misconceptionRoutes": [
+        {
+          "choiceId": "ch_3c5d54e64809efc5",
+          "literalInteger": "6",
+          "authoredError": "Halve the squared-modulus normalization",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3e61404c9675a02b",
+          "literalInteger": "12",
+          "authoredError": "correct",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_177e7c5adea9785f",
+          "literalInteger": "4",
+          "authoredError": "Forget the gcd multiplicity after reducing the period",
+          "independentlyRecomputed": true,
+          "qualification": null
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "literalInteger": "1",
+          "authoredError": "Retain only the primitive odd congruence class",
+          "independentlyRecomputed": true,
+          "qualification": null
+        }
+      ],
+      "coarseBound": {
+        "method": "Character orthogonality leaves at most gcd(2a,m) unit phases per normalized squared magnitude; sum the four gcd bounds.",
+        "necessaryInterval": [
+          0,
+          14
+        ],
+        "survivingChoiceIds": [
+          "ch_3c5d54e64809efc5",
+          "ch_3e61404c9675a02b",
+          "ch_177e7c5adea9785f",
+          "ch_3f02791adb171778"
+        ]
+      },
+      "squareChoiceIds": [
+        "ch_177e7c5adea9785f",
+        "ch_3f02791adb171778"
+      ],
+      "passed": true
+    }
+  ],
+  "scope": "No author constructors or answer functions imported. Prior independent character-orthogonality checker executed again on all8, plus literal integer options and mistake routes. Analytic all-n hypotheses remain the unchanged prior review."
+}

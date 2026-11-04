@@ -1,0 +1,241 @@
+{
+  "inputSha256": "80faac0a0b6b21eb8eff1d668843b59098d8409d4d0ae2e371abb1e8d6427073",
+  "originalsSha256": "3779d6d0168fa4c7a952fb38ac49bbcf1fc3d69e7890b546ab4e5e442a49a96f",
+  "servedSha256": "8e3ca7a4db05da3298426acfd416d9a4df620d63035f60857cabfb8585999aa7",
+  "reviewerCodeSha256": "7b43e27f1800c76f93da899690a9135e15583560eb3564e9bbd650812396c35f",
+  "author": "ode_final_review",
+  "reviewer": "root",
+  "records": [
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 1,
+      "rawSha256": "a02a3d99d8370201416638bf7593967cfcbb08e3c15fe0237cc2c7f39b9e75de",
+      "sourcePreview": {
+        "canonicalRawHash": "37ed097837ea869b7ace0bf88233964992197c0368ad99274c920c44c6520255",
+        "problemId": "cn_a67e97e327fad11b0f9c",
+        "revision": 1,
+        "semanticHash": "156e367d5737738730d0bb76a79fe0567c291545901f47226cdeb4b5cb2426ef",
+        "servedRawHash": "1a22e7b7b4c34d3e0e4f211ba68b788025f26f917042da424798d1b72c3fa378",
+        "sourceContentHash": "d40daed5c00565b5537c2e31bf20f6665a524eab01530d671eafeac4ce664090"
+      },
+      "frequency": 5,
+      "independentAnswer": "1/10",
+      "literalPairDifferences": [
+        "121/10",
+        "62/5",
+        "10",
+        "3/10",
+        "-21/10",
+        "-12/5"
+      ],
+      "literalPairSums": [
+        "129/10",
+        "63/5",
+        "15",
+        "1/2",
+        "29/10",
+        "13/5"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 2,
+      "rawSha256": "7adb964360c08a003872164dff0447c5f91abe5f114315b69910ebce5d119123",
+      "sourcePreview": {
+        "canonicalRawHash": "add24570ebf6e17a18141a77cee963a9a41b4355eb7b6a7fdc4aae6ac1027420",
+        "problemId": "cn_073507c287be51239b64",
+        "revision": 1,
+        "semanticHash": "c64d0f2de356df7f12327059e8cd640b103238a329e9c41d7e119df6baf19c73",
+        "servedRawHash": "a7df6be261c24649b8d1ba66e38971fa7526ccea7101a7c5290719bcd869308c",
+        "sourceContentHash": "98bab96c2e862d1375f99c409d79b9a4ab38907784b4724908b309373ea4c9f3"
+      },
+      "frequency": 6,
+      "independentAnswer": "1/12",
+      "literalPairDifferences": [
+        "1/4",
+        "1/6",
+        "7/24",
+        "-1/12",
+        "1/24",
+        "1/8"
+      ],
+      "literalPairSums": [
+        "5/12",
+        "1/2",
+        "3/8",
+        "1/4",
+        "1/8",
+        "5/24"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 3,
+      "rawSha256": "ec1fe240103e48a3e92dfd9be38a2cd4456910ec610b86eeeb63394c7824a625",
+      "sourcePreview": {
+        "canonicalRawHash": "23a6e5c86d2b61dee4d8f5af3ad9f54333e9548262a79e0b845c3850e2ed49ac",
+        "problemId": "cn_857773ad4151b93219e9",
+        "revision": 1,
+        "semanticHash": "bb41efe6b8a31b9c877dd29359d89839cae0b785000f8b9f47960a1437c23c56",
+        "servedRawHash": "20a87895aad77b50a3cfe891c1297f3f89a93d7807c50cf5b0c40098ee4f206e",
+        "sourceContentHash": "96e282d86d5c4b1f4263b05600c0676fbf5abce3fd96d54771a8563c68762e6c"
+      },
+      "frequency": 7,
+      "independentAnswer": "1/14",
+      "literalPairDifferences": [
+        "21",
+        "339/14",
+        "171/7",
+        "45/14",
+        "24/7",
+        "3/14"
+      ],
+      "literalPairSums": [
+        "28",
+        "347/14",
+        "172/7",
+        "53/14",
+        "25/7",
+        "5/14"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 4,
+      "rawSha256": "df7d4894d10d8e531ea2f1a521f102d9fb99850ef6b6f971bedef1729630afd9",
+      "sourcePreview": {
+        "canonicalRawHash": "058ee056cd1d8c9e389ac18062554da26094ead786acd6aebbe69e3adf186753",
+        "problemId": "cn_8e507839507bb40c8e4a",
+        "revision": 1,
+        "semanticHash": "a8e97a7b0f64335c3b770f787bd750aecd4362f8c1c6a48f5429b5ddc9fd0504",
+        "servedRawHash": "b2fd4c39b52bdd9c6891ddf931d5336ab8d85eb46d4f334f30b1e98d5f590053",
+        "sourceContentHash": "ff848af18e1392f405499ddbff0cbde490522c014169afa17bdb1bd7a109f3b2"
+      },
+      "frequency": 8,
+      "independentAnswer": "1/16",
+      "literalPairDifferences": [
+        "15/4",
+        "63/16",
+        "127/32",
+        "3/16",
+        "7/32",
+        "1/32"
+      ],
+      "literalPairSums": [
+        "17/4",
+        "65/16",
+        "129/32",
+        "5/16",
+        "9/32",
+        "3/32"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 5,
+      "rawSha256": "97cb3b64d6ccc36e1ce8babca10ae6c67be5dfc4cc94fd6f56b4e6e99191682f",
+      "sourcePreview": {
+        "canonicalRawHash": "95bcb4cf6a8db462c14425cf51b85f6d49757ba157f9c696e8a9dce340f03fd4",
+        "problemId": "cn_aca24ccb738ac54c1fc3",
+        "revision": 1,
+        "semanticHash": "7cf0e1c06cc8ec6312cbd1d287355fa24974db6b7a2544b9168ed960274ecf45",
+        "servedRawHash": "f02421a76b0c09c760f5b94d524bff4d3a7c759622b2e69282c7620c0cf4152c",
+        "sourceContentHash": "b9d4bf8d93e7427faefab40c35095e18411865a9820b3fe77b7f15af7d907e10"
+      },
+      "frequency": 9,
+      "independentAnswer": "1/18",
+      "literalPairDifferences": [
+        "725/18",
+        "364/9",
+        "36",
+        "1/6",
+        "-77/18",
+        "-40/9"
+      ],
+      "literalPairSums": [
+        "733/18",
+        "365/9",
+        "45",
+        "5/18",
+        "85/18",
+        "41/9"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-ground-state-variance",
+      "index": 7,
+      "rawSha256": "9c1bd55d2394939026aa8c6466431beb32b6ae5ce4908275d2d515d067807b9c",
+      "sourcePreview": {
+        "canonicalRawHash": "098e44350236ee3cf1a23c4095c2317c3ed169d8d3c70a5fe23d37db13901b03",
+        "problemId": "cn_62a8c8cc4087f74b5c33",
+        "revision": 1,
+        "semanticHash": "2fcd089b798628d09ed9e14371c39357c50bf056451d0ce9a0f401458be5994a",
+        "servedRawHash": "20ba093e796153c57aebfc6879caa15502b23d8afe5b049806357e51e6c8b76f",
+        "sourceContentHash": "846289c7995b91c8eef25515b63e696cb0f2dd85d7a0405cc9549578020f1089"
+      },
+      "frequency": 11,
+      "independentAnswer": "1/22",
+      "literalPairDifferences": [
+        "3/22",
+        "1/11",
+        "-117/22",
+        "-1/22",
+        "-60/11",
+        "-119/22"
+      ],
+      "literalPairSums": [
+        "5/22",
+        "3/11",
+        "125/22",
+        "3/22",
+        "61/11",
+        "123/22"
+      ],
+      "completeTaskReviewed": true,
+      "proof": "Rapid decay makes all boundary terms vanish. The eigen-equation gives integral(yprime\u00b2+a\u00b2t\u00b2y\u00b2)=lambda*integral(y\u00b2). Expanding integral(yprime+a*t*y)\u00b2 and integrating2a*t*y*yprime yields(lambda-a)*integral(y\u00b2)>=0. Gaussian exp(-a*t\u00b2/2) attains equality and solves the equation, so the minimum is a. The integral of(t*exp(-a*t\u00b2))prime is0, giving normalized moment1/(2a).",
+      "optionsVisibleAssessment": "All choices positive. Scaling leaves both1/(2a) and2/a; it does not decide the factor. Recognizing the energy factorization and its equality case, or an equally valid spectral argument, is substantive. Retain the existing Olympiad editorial assessment; no extra independent-idea credit.",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "namedRoutesChecked": 4,
+      "passed": true
+    }
+  ],
+  "instances": 6,
+  "literalPairs": 36,
+  "scope": "Independent complete variational derivation, exact Gaussian substitution and all finite literal alternatives, including corrected authoring error descriptions. Editorial classification is not player calibration."
+}

@@ -1,0 +1,839 @@
+{
+  "schemaVersion": 1,
+  "status": "frozen-source-bound-classification-amendment-awaiting-independent-owner-review",
+  "sourceCandidatesSha256": "767a3f618d9a1b1742ef09a8ed4fe1c9b8b463d2ed290e9b883f5fa2feac7a59",
+  "sourceManifestSha256": "1088258584f131942492c63f2e6721ee0dfd6086fc1d19cd9bc79bec3e761dbd",
+  "counts": {
+    "records": 10,
+    "HardToMedium": 10,
+    "exactChoiceBoundComparisons": 40,
+    "lowerBoundAloneEliminatesMenus": 3,
+    "upperBoundAloneEliminatesMenus": 2,
+    "bothBoundsNeededMenus": 5
+  },
+  "proof": [
+    "Let C=m(m-1), with the literal m in {4,...,13}, and B=sqrt(C)+1. Then g(u)=sqrt(C+u) is increasing and nonnegative on [0,B].",
+    "B^2-(C+B)=sqrt(C)>0, so g maps [0,B] strictly below B. Starting at a_0=0, monotonicity of g proves a_(n+1)>=a_n by induction, while interval invariance proves boundedness.",
+    "The sequence therefore converges to L. Since a_2>sqrt(C), its limit exceeds sqrt(C). Every later iterate is at most g(B)<B, so L<B.",
+    "The inequalities (m-1)^2<C<m^2 imply sqrt(C)<m<sqrt(C)+1. This open interval has length one and contains precisely one integer, m. Every displayed alternative is an integer, so the answer follows without solving the quadratic.",
+    "For each nonnegative integer option v, v^2<=C certifies it fails the lower bound; (v-1)^2>=C with v>=1 certifies it fails the upper bound. Exact integer comparisons below resolve all forty literal choices."
+  ],
+  "capacityEffect": {
+    "differentiationUnchanged": true,
+    "limitsLevelsBefore": {
+      "easy": 120,
+      "medium": 120,
+      "hard": 197,
+      "olympiad": 286
+    },
+    "limitsLevelsAfter": {
+      "easy": 120,
+      "medium": 130,
+      "hard": 187,
+      "olympiad": 286
+    },
+    "qualifiedIdeas": {
+      "differentiation": 30,
+      "limits": 30
+    },
+    "qualifiedNormalizedTasks": {
+      "differentiation": 244,
+      "limits": 241
+    },
+    "qualifiedCapacityUnchanged": true,
+    "retirementsUnchanged": 47
+  },
+  "entries": [
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 0,
+      "rawSha256": "c0348833cb77347db4acaf8b5c22e4c5bb0320477db9ad7b9694cc825d1a916e",
+      "sourcePreview": {
+        "canonicalRawHash": "ec9bc87a2085b8e55c0b14d4f7cd52b45b73a5a6bc53494d92bf71e87c32ef97",
+        "problemId": "cn_d9b934f6d9ba1541daff",
+        "revision": 1,
+        "semanticHash": "b7aad1f19084cec70881c276cc368b6e55050f07e1b0d4462aea753a5b42678f",
+        "sourceContentHash": "b7b54beba99356311507250e362631b8771d572240d1fb75add3b02e23498beb"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_4b227777d4dd1fc6",
+          "literal": "4",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 16,
+            "constant": 12,
+            "valueMinusOneSquared": 9
+          }
+        },
+        {
+          "choiceId": "ch_4e07408562bedb8b",
+          "literal": "3",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 9,
+            "constant": 12,
+            "valueMinusOneSquared": 4
+          }
+        },
+        {
+          "choiceId": "ch_d4735e3a265e16ee",
+          "literal": "2",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 4,
+            "constant": 12,
+            "valueMinusOneSquared": 1
+          }
+        },
+        {
+          "choiceId": "ch_5feceb66ffc86f38",
+          "literal": "0",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 0,
+            "constant": 12,
+            "valueMinusOneSquared": 1
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": true,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 1,
+      "rawSha256": "9e0e881ddd31f673318c5879c812a03406d39e1bf20af1d8c13f4cc635a998a4",
+      "sourcePreview": {
+        "canonicalRawHash": "0484e8049f4e5d45a5329cb294d5635e5cf30d71741ee534163e73b80f02fc0d",
+        "problemId": "cn_71180fe6ce7cdc2512dd",
+        "revision": 2,
+        "semanticHash": "295abd70e9ef3522824610d95725cf9ed63efd97823848596cc193837fa6f4c3",
+        "sourceContentHash": "8007b72c2e09ecd6ecc7df026bf55d30571dcca4dbcb7266c693bf6942d62b1c"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_ef2d127de37b942b",
+          "literal": "5",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 25,
+            "constant": 20,
+            "valueMinusOneSquared": 16
+          }
+        },
+        {
+          "choiceId": "ch_4b227777d4dd1fc6",
+          "literal": "4",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 16,
+            "constant": 20,
+            "valueMinusOneSquared": 9
+          }
+        },
+        {
+          "choiceId": "ch_d4735e3a265e16ee",
+          "literal": "2",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 4,
+            "constant": 20,
+            "valueMinusOneSquared": 1
+          }
+        },
+        {
+          "choiceId": "ch_19581e27de7ced00",
+          "literal": "9",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 81,
+            "constant": 20,
+            "valueMinusOneSquared": 64
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 2,
+      "rawSha256": "c4b750ef6abaae1be33eda97fc0347d757852b1317ec4ef4e021698d0af4c2e7",
+      "sourcePreview": {
+        "canonicalRawHash": "97e5a05cd78554a99de0edd345a812370e285a72b6d198c950e11b220b0b4453",
+        "problemId": "cn_c8e0b9e3e65c0bdee329",
+        "revision": 2,
+        "semanticHash": "fc4ffe323827561a6772f8236c722238e40e8be1f66697b32e58108d7b875191",
+        "sourceContentHash": "74c0d15dcda639a3ab49fd0c670264802fdcbb42bb20e2e01030f18286b1c578"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_e7f6c011776e8db7",
+          "literal": "6",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 36,
+            "constant": 30,
+            "valueMinusOneSquared": 25
+          }
+        },
+        {
+          "choiceId": "ch_ef2d127de37b942b",
+          "literal": "5",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 25,
+            "constant": 30,
+            "valueMinusOneSquared": 16
+          }
+        },
+        {
+          "choiceId": "ch_4e07408562bedb8b",
+          "literal": "3",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 9,
+            "constant": 30,
+            "valueMinusOneSquared": 4
+          }
+        },
+        {
+          "choiceId": "ch_5feceb66ffc86f38",
+          "literal": "0",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 0,
+            "constant": 30,
+            "valueMinusOneSquared": 1
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": true,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 3,
+      "rawSha256": "75f6c9f60562245fb7a9e6cdff94b1a4a4ebc5285e30ab0ee954eba3ff035f84",
+      "sourcePreview": {
+        "canonicalRawHash": "d8077f6667363f43c1d99dcdaafe2b956f27f0e3e1734a220d72f2a899d1536d",
+        "problemId": "cn_2986820d329ea8850fd6",
+        "revision": 2,
+        "semanticHash": "6b24693422dd9907072a9982c6d2f2609c496a90bdfcdb3cf182bb2030bc66f1",
+        "sourceContentHash": "9f82d5e3a044f6ef16682896fb71c05aa06458d480a7dedfc4f184e12ee2855f"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_7902699be42c8a8e",
+          "literal": "7",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 49,
+            "constant": 42,
+            "valueMinusOneSquared": 36
+          }
+        },
+        {
+          "choiceId": "ch_e7f6c011776e8db7",
+          "literal": "6",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 36,
+            "constant": 42,
+            "valueMinusOneSquared": 25
+          }
+        },
+        {
+          "choiceId": "ch_4e07408562bedb8b",
+          "literal": "3",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 9,
+            "constant": 42,
+            "valueMinusOneSquared": 4
+          }
+        },
+        {
+          "choiceId": "ch_3fdba35f04dc8c46",
+          "literal": "13",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 169,
+            "constant": 42,
+            "valueMinusOneSquared": 144
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 4,
+      "rawSha256": "7391b86c28f648f02adf83fab433aba577e0b61539fe53805157de7d81b9eb66",
+      "sourcePreview": {
+        "canonicalRawHash": "9a660d6bc4f680613e7f0c57e1d5f6072cca5798778fbfa770584be577ddc2f3",
+        "problemId": "cn_c41e5bce2408ce7e4b65",
+        "revision": 1,
+        "semanticHash": "9feac70fd8d0e04a162c1f885f4b736696ed1c813dacda5a6d987f75e4e2c3cf",
+        "sourceContentHash": "d7958a2736f230ed746cd505ded33f742fb294e2d7b4274468dd39ba6e7fda9e"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_2c624232cdd22177",
+          "literal": "8",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 64,
+            "constant": 56,
+            "valueMinusOneSquared": 49
+          }
+        },
+        {
+          "choiceId": "ch_7902699be42c8a8e",
+          "literal": "7",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 49,
+            "constant": 56,
+            "valueMinusOneSquared": 36
+          }
+        },
+        {
+          "choiceId": "ch_4b227777d4dd1fc6",
+          "literal": "4",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 16,
+            "constant": 56,
+            "valueMinusOneSquared": 9
+          }
+        },
+        {
+          "choiceId": "ch_5feceb66ffc86f38",
+          "literal": "0",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 0,
+            "constant": 56,
+            "valueMinusOneSquared": 1
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": true,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 5,
+      "rawSha256": "1c51955d2f52c0dab236d077a678649096b78ed6ecd01c84b2af2eb737d86eb0",
+      "sourcePreview": {
+        "canonicalRawHash": "7479169896255d8aca56483625fc06593e499615034e94b609d4554ac8106392",
+        "problemId": "cn_1aedbbacf9012a47c873",
+        "revision": 2,
+        "semanticHash": "d2f24914a5c2c072207ac9898aad7194b99f4a854c67e30409ef72684332be8e",
+        "sourceContentHash": "9ee9427f63d4926647ba6bc8daf304fe8e596cf006c747e087f1095b321c7d88"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_19581e27de7ced00",
+          "literal": "9",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 81,
+            "constant": 72,
+            "valueMinusOneSquared": 64
+          }
+        },
+        {
+          "choiceId": "ch_2c624232cdd22177",
+          "literal": "8",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 64,
+            "constant": 72,
+            "valueMinusOneSquared": 49
+          }
+        },
+        {
+          "choiceId": "ch_4b227777d4dd1fc6",
+          "literal": "4",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 16,
+            "constant": 72,
+            "valueMinusOneSquared": 9
+          }
+        },
+        {
+          "choiceId": "ch_4523540f1504cd17",
+          "literal": "17",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 289,
+            "constant": 72,
+            "valueMinusOneSquared": 256
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 6,
+      "rawSha256": "1a4b103f4062a6537891a9f5a9c6f1a9ac083b806145c0d1908b14c959810e69",
+      "sourcePreview": {
+        "canonicalRawHash": "d26c385ebd79bdd20982bcbfa4289d54385a90a34ece2467ad8315da427ebd25",
+        "problemId": "cn_71cb4649f7eeebf35a7c",
+        "revision": 1,
+        "semanticHash": "cfa5c959b9b5410fba1a3d167c4122d1a75dbf3e0a8f79bee7890bb8edbf7bef",
+        "sourceContentHash": "e00a2b0f1b8a0a7d321e96e5c32c9e7e4777606eafd773b6665fd1e5a6db6677"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_4a44dc15364204a8",
+          "literal": "10",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 100,
+            "constant": 90,
+            "valueMinusOneSquared": 81
+          }
+        },
+        {
+          "choiceId": "ch_ef2d127de37b942b",
+          "literal": "5",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 25,
+            "constant": 90,
+            "valueMinusOneSquared": 16
+          }
+        },
+        {
+          "choiceId": "ch_f5ca38f748a1d6ea",
+          "literal": "20",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 400,
+            "constant": 90,
+            "valueMinusOneSquared": 361
+          }
+        },
+        {
+          "choiceId": "ch_69f59c273b6e669a",
+          "literal": "90",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 8100,
+            "constant": 90,
+            "valueMinusOneSquared": 7921
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "m3-limits-hard-recurrence-limit",
+      "index": 7,
+      "rawSha256": "8a30eb4737b90cabc07902e5bcb266ed3bfa3203038633bfa778169e930411b0",
+      "sourcePreview": {
+        "canonicalRawHash": "9c07abe601acdf41f2240f4e385739cf9c304e822bb3fde4f9f5b64a7e02485e",
+        "problemId": "cn_bc6b0ae518c579d2c490",
+        "revision": 2,
+        "semanticHash": "83a0ca77c932ec12a47a3d97ab92c9d245c9a813fa99c35027a9535ac66ce7a7",
+        "sourceContentHash": "1c5f86cbee2b55b29d2e9149a3ada01891bb208f8ca923c4ce90dd4c15c44169"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_4fc82b26aecb47d2",
+          "literal": "11",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 121,
+            "constant": 110,
+            "valueMinusOneSquared": 100
+          }
+        },
+        {
+          "choiceId": "ch_6f4b6612125fb3a0",
+          "literal": "21",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 441,
+            "constant": 110,
+            "valueMinusOneSquared": 400
+          }
+        },
+        {
+          "choiceId": "ch_785f3ec7eb32f30b",
+          "literal": "22",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 484,
+            "constant": 110,
+            "valueMinusOneSquared": 441
+          }
+        },
+        {
+          "choiceId": "ch_9bdb2af6799204a2",
+          "literal": "110",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 12100,
+            "constant": 110,
+            "valueMinusOneSquared": 11881
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": true,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "index": 8,
+      "rawSha256": "3d443b167121e34cdafe6e123e4969646cc15617f6f38d5f8d5cb722ff3ec4e2",
+      "sourcePreview": {
+        "canonicalRawHash": "90f58695cf9da3c331068466c0353d9f6132217416a37d946f7fa5a60373d0b1",
+        "problemId": "cn_748395c6e8a036c527e9",
+        "revision": 1,
+        "semanticHash": "a1071e3f6c50cc7b8249dbeedb1a9ebbd99b440e47f6a771f7bc4292c0676bd4",
+        "sourceContentHash": "86f40ba10bf0612a1d14e69e221a57c0c8b1315afe0568850ebe991bf783f80f"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_6b51d431df5d7f14",
+          "literal": "12",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 144,
+            "constant": 132,
+            "valueMinusOneSquared": 121
+          }
+        },
+        {
+          "choiceId": "ch_e7f6c011776e8db7",
+          "literal": "6",
+          "isCorrect": false,
+          "lowerBoundEliminates": true,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 36,
+            "constant": 132,
+            "valueMinusOneSquared": 25
+          }
+        },
+        {
+          "choiceId": "ch_c2356069e9d1e79c",
+          "literal": "24",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 576,
+            "constant": 132,
+            "valueMinusOneSquared": 529
+          }
+        },
+        {
+          "choiceId": "ch_dbb1ded63bc70732",
+          "literal": "132",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 17424,
+            "constant": 132,
+            "valueMinusOneSquared": 17161
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": false,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    },
+    {
+      "familyId": "q2-m3-limits-hard-recurrence-limit",
+      "index": 9,
+      "rawSha256": "45858a6fe35321520c716acd4454aa8c20934928ba477a22e7e8526d8459cb63",
+      "sourcePreview": {
+        "canonicalRawHash": "ea63e7d2ec231cb00c8d21ffcf2f833d46226004d2ab16d85bc6cf330043d714",
+        "problemId": "cn_6e8c6a828fd9eb823e0d",
+        "revision": 1,
+        "semanticHash": "7ef63b67b90a27ec8e0a4ca125ed8c6d5fec2f7dc42df0274b98d53042c96982",
+        "sourceContentHash": "6c74a22b3b7669e541354afc2f508ffe40ce46f427d7a8f9056f2a26e86a07b0"
+      },
+      "previousDifficulty": "hard",
+      "recommendedDifficulty": "medium",
+      "qualifiedOlympiad": false,
+      "canonicalConstruction": "m3-limits-hard-recurrence-limit",
+      "relatedIdeaGroupId": "monotone-recurrence",
+      "structuralSignature": "monotone-square-root-recurrence",
+      "sourcePrimaryTechnique": "fixed-point-and-bounds",
+      "primaryTechnique": "monotone-iteration-and-unit-interval-bound",
+      "centralDecision": "Justify bounded monotone convergence and use a unit-width interval to identify its unique integer choice.",
+      "easiestOptionsVisibleRoute": "Prove the square-root iterates are increasing and bounded, then use sqrt(C)<L<sqrt(C)+1. With C=m(m-1), m is the only integer in that interval, and all four displayed choices are integers. This isolates the answer without solving the fixed-point quadratic.",
+      "difficultyRationale": "Medium: bounded monotone convergence plus a one-unit bound isolates the unique integer choice. The options remove the need to solve the fixed-point equation. Three menus are even eliminated by the first-iterate lower bound once convergence is justified; no Hard or Olympiad credit is claimed.",
+      "choiceBoundChecks": [
+        {
+          "choiceId": "ch_3fdba35f04dc8c46",
+          "literal": "13",
+          "isCorrect": true,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": false,
+          "exactIntegerComparisons": {
+            "valueSquared": 169,
+            "constant": 156,
+            "valueMinusOneSquared": 144
+          }
+        },
+        {
+          "choiceId": "ch_b7a56873cd771f2c",
+          "literal": "25",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 625,
+            "constant": 156,
+            "valueMinusOneSquared": 576
+          }
+        },
+        {
+          "choiceId": "ch_5f9c4ab08cac7457",
+          "literal": "26",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 676,
+            "constant": 156,
+            "valueMinusOneSquared": 625
+          }
+        },
+        {
+          "choiceId": "ch_0fecf9247f3ddc84",
+          "literal": "156",
+          "isCorrect": false,
+          "lowerBoundEliminates": false,
+          "upperBoundEliminates": true,
+          "exactIntegerComparisons": {
+            "valueSquared": 24336,
+            "constant": 156,
+            "valueMinusOneSquared": 24025
+          }
+        }
+      ],
+      "onlyLowerBoundRequiredToEliminate": false,
+      "onlyUpperBoundRequiredToEliminate": true,
+      "answerAndStatementUnchanged": true,
+      "newIndependentIdeas": 0,
+      "normalizedTaskKeyPolicy": "Inherit the exact old source-bound normalized task key; demotion does not reset exposure or create new capacity.",
+      "reviewStatus": "author-separate-shortcut-route-verified; independent-owner-review-pending"
+    }
+  ],
+  "limitations": "This is a separate analytic route and exact finite classification audit by the menu author, not an independent reviewer or player calibration. Root owns independent assessment, immutable adapter amendments, final canonical IDs, and release evaluation. The original option snapshot remains frozen; its old Hard rationale is superseded only when this exact-hash amendment is approved."
+}

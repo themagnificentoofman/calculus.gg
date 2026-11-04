@@ -46,7 +46,7 @@ export default function HelpPage() {
           </section>
 
           {/* Problem Sources */}
-          <section className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
+          <section id="sources" className="bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 shrink-0 rounded-xl bg-emerald-500/10 flex items-center justify-center">
                 <BookOpen className="w-5 h-5 text-emerald-500" />
@@ -54,7 +54,7 @@ export default function HelpPage() {
               <h2 className="text-xl sm:text-2xl font-bold">Problem Sources</h2>
             </div>
             <p className="text-zinc-300 leading-relaxed mb-4">
-              Calculus Ninja selects reusable problems from a versioned bank. Original templates are checked with exact mathematical methods and rendering tests before publication. Automatic validation does not mean every problem has been reviewed by a person. AI can assist offline authoring; gameplay selection and grading do not call OpenAI. The problems cover a wide range of topics including:
+              Calculus Ninja selects reusable problems from a versioned bank. Original templates are checked with exact mathematical methods and rendering tests before publication. Automatic validation does not mean every problem has been reviewed by a person. AI can assist offline authoring; gameplay selection and grading do not call OpenAI. Adapted problems retain their source credits, modification notices, and content license in the answer review and saved replay. These content licenses apply to the identified adaptations. The problems cover a wide range of topics including:
             </p>
             <ul className="space-y-2 text-zinc-300 list-disc list-inside">
               <li>Integration</li>
@@ -152,6 +152,12 @@ export default function HelpPage() {
               <p>Keep this device’s site data until synchronization finishes. Events are saved incrementally on this device and retried after reconnecting. Closing the browser, clearing site data, denied storage, or a crash can leave a partial replay. Unknown timings are shown as unknown. Reloads use separate clock segments; an unaligned segment is not given an invented time.</p>
               <p>History and synchronized replays are not automatically deleted. To bound recording cost, capture allows up to 4,096 client events per player per round, 32 page sessions, and 128 chunks per session, with at most 32 events and 24 KB per chunk. Reaching a recording limit marks the replay partial and does not change gameplay or remove the round from history. Chat and account credentials are not recorded in replay events.</p>
             </div>
+          </section>
+
+          <section id="legacy" className="scroll-mt-24 bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4">Legacy problems</h2>
+            <p className="text-zinc-400 leading-relaxed">Legacy identifies a problem from an original bank construction. In <a href="/settings" className="text-emerald-400 underline">Settings → Experimental</a>, you can include reviewed legacy problems in new Test and Rapid rounds, when available. This is off by default. Every eligible revision must pass the same mathematical, explanation and choice-quality review as other problems.</p>
+            <p className="mt-3 text-zinc-400 leading-relaxed">PvP and Multiplayer use a shared pool without legacy problems. Changing the preference keeps current rounds, saved results and replays intact. It cannot bring back withdrawn or unreviewed questions.</p>
           </section>
 
           <section id="notation" className="scroll-mt-24 bg-zinc-900/40 border border-zinc-800/50 rounded-3xl p-5 sm:p-8">

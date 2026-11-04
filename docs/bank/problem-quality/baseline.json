@@ -1,0 +1,49 @@
+{
+  "verifiedAtClientDate": "2026-11-03",
+  "timezone": "America/Chicago",
+  "sitesVersion": 37,
+  "deployedSource": "23825701acf97fdc0be425f350d0dc7030f3eb0b",
+  "githubMain": "3ccf7f237918e567cdec11075ed8194f6988af98",
+  "activeRelease": [
+    {
+      "key": "active_release",
+      "value": "cn-2026-11-03-ideas-v3"
+    }
+  ],
+  "releaseSources": [
+    {
+      "release_id": "cn-2026-11-03-ideas-v3",
+      "source_release_id": "cn-2026-11-02-full-v2"
+    }
+  ],
+  "ledger": [
+    {
+      "bundle_id": "9b174c91c42b61dac5addcedb8224048ea004d2143c74f154d10e415763fb345",
+      "measured_reads": 80257,
+      "measured_writes": 32298,
+      "database_bytes": 96092160,
+      "next_sequence": 292,
+      "verified": 1,
+      "activated": 1,
+      "pending_id": null,
+      "pending_hash": null,
+      "halted": null,
+      "updated_at": "2026-11-04T01:02:41.605Z",
+      "charged_reads": 563084,
+      "charged_writes": 51276,
+      "prior_reads": 3855202,
+      "prior_writes": 1059527
+    }
+  ],
+  "remainingAuthorized": {
+    "reads": 581714,
+    "writes": 189197,
+    "bytesCeiling": 150000000,
+    "priorDatabaseBytes": 96092160
+  },
+  "measurementLimits": [
+    "Sites bounded viewer omits/truncates release manifests. Exact parent hash and maximum IDs will be rechecked by the signed operator before any import.",
+    "Native viewer read counts are not exposed; cover under the next bounded preflight reserve.",
+    "No provider quota or reset time inferred."
+  ]
+}

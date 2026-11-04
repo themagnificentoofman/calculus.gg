@@ -1,0 +1,186 @@
+{
+  "sourceSha256": "d85e647f2de6c1c9ae25184d3516bea3c2e87cb038c5c7436993f83ebeadfe55",
+  "scope": "Statement and four choices only, prior to author source/proof read. Separate AI reviewer, not human certification.",
+  "samples": [
+    {
+      "familyId": "q4-differential-equations-nonlinear-fast-nullcline-decay",
+      "instanceIndex": 0,
+      "statement": "\\textnormal{Let the real solution have the displayed initial data. Find the limit.}\\quad x\\prime=x^3-xy,\\quad y\\prime=-y+x^2+x^{4},\\quad x(0)=\\frac14,\\quad y(0)=\\frac1{16},\\qquad\\lim_{t\\to\\infty}t^{\\frac{1}{4}}x(t)=?",
+      "choices": [
+        {
+          "choiceId": "ch_aae10abfe85b3e16",
+          "math": "\\frac{\\sqrt{2}}{2}"
+        },
+        {
+          "choiceId": "ch_b1c1b62af01cd72e",
+          "math": "\\frac{2^{\\frac{3}{4}}}{2}"
+        },
+        {
+          "choiceId": "ch_36338085fd63eb49",
+          "math": "\\frac{2^{\\frac{2}{3}}}{2}"
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "math": "1"
+        }
+      ],
+      "parameters": {
+        "m": 2
+      },
+      "independentAnswer": "1/sqrt(2)",
+      "independentlySelectedChoiceId": "ch_aae10abfe85b3e16",
+      "shortestRoute": "Set z=y-x squared, so x prime=-xz and z prime=(-1+2x squared)z+x fourth. The ratio w=z/x fourth remains in[0,2] from the stated initial data and tends to1. Hence(x inverse fourth) prime tends to4. Global trapping and ratio convergence are essential.",
+      "provisionalDifficulty": "olympiad"
+    },
+    {
+      "familyId": "q4-differential-equations-Laguerre-zero-resolvent-limit",
+      "instanceIndex": 0,
+      "statement": "\\textnormal{For every positive integer }n,\\textnormal{ let }P_n\\textnormal{ be the monic polynomial of degree }n\\textnormal{ satisfying the displayed equation. Its roots are listed with multiplicity. Find the limit.}\\quad tP_n\\prime\\prime+(\\frac{1}{2}n+1-t)P_n\\prime+nP_n=0,\\quad r_{n,1},\\ldots,r_{n,n},\\qquad\\lim_{n\\to\\infty}\\sum_{j=1}^{n}\\frac1{n+r_{n,j}}=?",
+      "choices": [
+        {
+          "choiceId": "ch_9926bb840102a64d",
+          "math": "\\frac{1}{4} + \\frac{\\sqrt{17}}{4}"
+        },
+        {
+          "choiceId": "ch_9310e72c079d2a3b",
+          "math": "- \\frac{3}{4} + \\frac{\\sqrt{41}}{4}"
+        },
+        {
+          "choiceId": "ch_a97d973330d36673",
+          "math": "\\frac{1}{2}"
+        },
+        {
+          "choiceId": "ch_213066d977a04814",
+          "math": "2"
+        }
+      ],
+      "parameters": {
+        "c": "1/2"
+      },
+      "independentAnswer": "1/2",
+      "independentlySelectedChoiceId": "ch_a97d973330d36673",
+      "shortestRoute": "At t=-n, the logarithmic derivative L=P prime/P is minus the resolvent. Positive roots bound its derivative by1/n, allowing the scaled polynomial ODE to give m squared+(3/2)m-1=0. Positivity selects m=1/2. Positive-root justification and uniform derivative control are essential.",
+      "provisionalDifficulty": "olympiad"
+    },
+    {
+      "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+      "instanceIndex": 0,
+      "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{2})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{2})v_h(t)+A\\cos(t+\\phi)\\right],\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+      "choices": [
+        {
+          "choiceId": "ch_5ba51aa349176f21",
+          "math": "\\frac{12 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}"
+        },
+        {
+          "choiceId": "ch_02c1658766c43bc9",
+          "math": "\\frac{6 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}"
+        },
+        {
+          "choiceId": "ch_f141eef3d68bca05",
+          "math": "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}"
+        },
+        {
+          "choiceId": "ch_40148fa3da5096d0",
+          "math": "\\frac{12 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}"
+        }
+      ],
+      "parameters": {
+        "m": 1
+      },
+      "independentAnswer": "6*sqrt(2)*cosh(pi/2)/(5*pi)",
+      "independentlySelectedChoiceId": "ch_02c1658766c43bc9",
+      "shortestRoute": "The homoclinic orbit is sqrt2 sech t. Damping integral is4/3+16/15=12/5. Integrating the forcing term by parts gives sinusoidal amplitude sqrt2*pi/cosh(pi/2). A simple zero exists exactly above their ratio; at equality it is tangent.",
+      "provisionalDifficulty": "olympiad"
+    },
+    {
+      "familyId": "q4-differential-equations-formal-Laurent-resonance-obstruction",
+      "instanceIndex": 0,
+      "statement": "y\\prime\\prime=6y^2+x^{3}-x^2.\\textnormal{For which positive real number }a\\textnormal{ does this equation admit a formal Laurent series of the displayed form, with no logarithmic terms? No convergence of the formal series is required.}\\quad y(x)=(x-a)^{-2}+\\sum_{j=-1}^{\\infty}c_j(x-a)^j.",
+      "choices": [
+        {
+          "choiceId": "ch_f67fcd19dceb7142",
+          "math": "\\frac{1}{3}"
+        },
+        {
+          "choiceId": "ch_3f02791adb171778",
+          "math": "1"
+        },
+        {
+          "choiceId": "ch_f0b9dbec545d2db2",
+          "math": "\\frac{2}{3}"
+        },
+        {
+          "choiceId": "ch_1d74ef1007e33199",
+          "math": "\\frac{\\sqrt{3}}{3}"
+        }
+      ],
+      "parameters": {
+        "m": 3
+      },
+      "independentAnswer": "1/3",
+      "independentlySelectedChoiceId": "ch_f67fcd19dceb7142",
+      "shortestRoute": "The first coefficients c minus1,c0,c1 vanish. The j4 resonance has zero multiplier j(j-1)-12 and forces f second(a)=0; for f=x cubed-x squared this gives a=1/3. All j at least5 have nonzero multipliers, proving formal extension after the free resonant coefficient.",
+      "provisionalDifficulty": "olympiad"
+    },
+    {
+      "familyId": "q4-differential-equations-long-time-nonlinear-damping-average",
+      "instanceIndex": 0,
+      "statement": "x_\\varepsilon\\prime\\prime+x_\\varepsilon+\\varepsilon x_\\varepsilon^{2}x_\\varepsilon\\prime=0,\\quad x_\\varepsilon(0)=1,\\quad x_\\varepsilon\\prime(0)=0,\\quad\\varepsilon>0.\\textnormal{Find the slow-time amplitude limit }\\lim_{\\varepsilon\\downarrow0}\\sqrt{x_\\varepsilon(1/\\varepsilon)^2+x_\\varepsilon\\prime(1/\\varepsilon)^2}.",
+      "choices": [
+        {
+          "choiceId": "ch_0c26d02fd9e2bac5",
+          "math": "\\frac{2 \\sqrt{2}}{3}"
+        },
+        {
+          "choiceId": "ch_3d4552291d1b22ea",
+          "math": "\\frac{\\sqrt{2} \\cdot 5^{\\frac{3}{4}}}{5}"
+        },
+        {
+          "choiceId": "ch_8a3be231432856bd",
+          "math": "\\frac{2 \\sqrt{5}}{5}"
+        },
+        {
+          "choiceId": "ch_b63441cd6c34b065",
+          "math": "\\frac{\\sqrt{6}}{3}"
+        }
+      ],
+      "parameters": {
+        "m": 1
+      },
+      "independentAnswer": "2/sqrt(5)",
+      "independentlySelectedChoiceId": "ch_8a3be231432856bd",
+      "shortestRoute": "Energy radius r satisfies r prime=-epsilon r cubed cos squared theta sin squared theta. Its averaged slow-time equation is dr/dtau=-r cubed/8, whence r1=2/sqrt5. A bounded primitive for the oscillatory zero-mean part plus Gronwall is required over times1/epsilon.",
+      "provisionalDifficulty": "olympiad"
+    },
+    {
+      "familyId": "q4-differential-equations-Riccati-turning-point-connection",
+      "instanceIndex": 0,
+      "statement": "\\textnormal{For each positive }\\varepsilon,\\textnormal{ let }y_\\varepsilon\\textnormal{ be the real solution on the negative half-line selected by the displayed asymptotic condition, continued to zero. Find the limit. The Gamma function is defined by the displayed integral.}\\quad\\varepsilon y_\\varepsilon\\prime=t^{1}+y_\\varepsilon^2,\\qquad \\frac{y_\\varepsilon(t)}{-(-t)^{\\frac{1}{2}}}\\longrightarrow1\\quad(t\\to-\\infty),\\qquad\\lim_{\\varepsilon\\downarrow0}\\varepsilon^{-\\frac{1}{3}}y_\\varepsilon(0)=?,\\quad\\Gamma(a)=\\int_0^\\infty u^{a-1}e^{-u},\\mathrm du\\ (a>0).",
+      "choices": [
+        {
+          "choiceId": "ch_c64d4622a2a46ce6",
+          "math": "- \\frac{\\Gamma\\left(\\frac{2}{3}\\right)}{\\Gamma\\left(\\frac{1}{3}\\right)}"
+        },
+        {
+          "choiceId": "ch_0f41641310d16c91",
+          "math": "- \\frac{\\sqrt[3]{3} \\Gamma\\left(\\frac{2}{3}\\right)}{\\Gamma\\left(\\frac{1}{3}\\right)}"
+        },
+        {
+          "choiceId": "ch_49cc761773366e69",
+          "math": "\\frac{\\sqrt[3]{3} \\Gamma\\left(\\frac{2}{3}\\right)}{\\Gamma\\left(\\frac{1}{3}\\right)}"
+        },
+        {
+          "choiceId": "ch_f8b3cd549ec1de71",
+          "math": "- \\frac{\\sqrt[3]{3} \\Gamma\\left(\\frac{2}{3}\\right)}{2 \\Gamma\\left(\\frac{1}{3}\\right)}"
+        }
+      ],
+      "parameters": {
+        "n": 1
+      },
+      "independentAnswer": "-3**(1/3)*gamma(2/3)/gamma(1/3)",
+      "independentlySelectedChoiceId": "ch_0f41641310d16c91",
+      "shortestRoute": "Scale t=epsilon^(2/3)s, y=epsilon^(1/3)Y. The Riccati substitution Y=-u prime/u gives u second=-s u. The negative-root asymptotic selects u=Ai(-s), because the Bi branch gives the opposite sign. Thus Y0=Ai prime0/Ai0=-cube-root3 Gamma2/3/Gamma1/3. Ai is positive on nonnegative arguments, so continuation to0 is valid.",
+      "provisionalDifficulty": "olympiad"
+    }
+  ]
+}

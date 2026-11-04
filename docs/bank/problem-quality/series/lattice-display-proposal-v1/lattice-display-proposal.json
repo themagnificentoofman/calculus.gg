@@ -1,0 +1,894 @@
+{
+  "status": "proposed-consistent-lattice-display-normalization-awaiting-independent-owner-peer",
+  "scope": "Eight complete served menus; exact equality checked for all 32 choices. Complete statements, worked solutions, correct choice IDs, difficulty and semantic lineage are inherited unchanged. This is a display proposal, not eight new mathematical derivations or admission.",
+  "rule": "In every additive lattice choice, write the complete hyperbolic term first and the rational zero-mode/endpoint correction second. Apply equally to correct and wrong choices; leave standalone terms as-is.",
+  "motivation": "A literal leading-sign predictor selected the correct correction in four finite cases, although the paired positive sums were not mathematical opposites. Standard mathematical term order removes that textual leading-sign relation without padding or changing values.",
+  "sourceArtifacts": [
+    {
+      "path": ".bank-data/quality/series-previews-v6/canonical-previews.jsonl",
+      "sha256": "685d69fce53694345171b927019492698c81498ff0e9a5c0b890954104ecd071"
+    },
+    {
+      "path": ".bank-data/quality/series-previews-v6/retained-originals.jsonl",
+      "sha256": "2f60384e2d888c78afffa56e2c025635cebdf89105873c053a5f95ba22beada4"
+    },
+    {
+      "path": ".bank-data/quality/series-final-review-v6/served-records.jsonl",
+      "sha256": "2ae26e9576dec2807bc440bd5fdfe84d3149b302ac64744e308bad8de0ffaa88"
+    },
+    {
+      "path": "scripts/bank/quality/series/mathematical/review-code/literal_math.py",
+      "sha256": "a38589054a0a73aba53ebaeaab2f6263b471c15dc93fa9732e1aa22380d8ac25"
+    },
+    {
+      "path": "scripts/bank/quality/peer/series_lattice_display.py",
+      "sha256": "70e213f12d09401c0dcf8af34d0a94d0ea5fd721a0aca36a5969892323bc5e36"
+    }
+  ],
+  "counts": {
+    "records": 8,
+    "literalChoiceEqualities": 32,
+    "changedChoiceExpressions": 24
+  },
+  "records": [
+    {
+      "sourcePreview": {
+        "problemId": "cn_539984f19c83ba12793e",
+        "problemRevision": 2,
+        "contentHash": "bfd555c1f1d75326063592fe8be3a09f909fc31c23d86ef3656534b00cb32750",
+        "semanticHash": "d583ebda23a76c382636266386e4ca9f1cf742679a3abfbe1f481ae60bf09308"
+      },
+      "sourceCanonicalSHA256": "b006f035aff57ebe9d80fed26253189fb371960ed06cafe7c681731948627694",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 0,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 16}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=4\\pi\\quad\\Longrightarrow\\quad\\coth(4\\pi)=\\frac1{4\\pi}+\\frac{8}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+16}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+16}=\\frac\\pi{8}\\left(\\coth(4\\pi)-\\frac1{4\\pi}\\right)=- \\frac{1}{32} + \\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8}",
+        "- \\frac{1}{32} + \\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_2914c5aa44785613",
+          "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{4}",
+          "misconception": "Return the full lattice expression without removing its zero mode or halving"
+        },
+        {
+          "choiceId": "ch_556dc40ff19270d3",
+          "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} + \\frac{15}{544}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_00a794a2e762dc5e",
+          "math": "\\frac{1}{17}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_f0344da1a38f514e",
+          "math": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} - \\frac{1}{32}",
+          "misconception": "correct"
+        }
+      ],
+      "answerChoiceId": "ch_f0344da1a38f514e",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_2914c5aa44785613",
+          "before": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{4}",
+          "after": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{4}",
+          "changed": false,
+          "beforeDecoded": "Mul(Rational(1, 4), pi, coth(Mul(Integer(4), pi)))",
+          "afterDecoded": "Mul(Rational(1, 4), pi, coth(Mul(Integer(4), pi)))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_556dc40ff19270d3",
+          "before": "\\frac{15}{544} + \\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8}",
+          "after": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} + \\frac{15}{544}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(15, 544), Mul(Rational(1, 8), pi, coth(Mul(Integer(4), pi))))",
+          "afterDecoded": "Add(Rational(15, 544), Mul(Rational(1, 8), pi, coth(Mul(Integer(4), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_00a794a2e762dc5e",
+          "before": "\\frac{1}{17}",
+          "after": "\\frac{1}{17}",
+          "changed": false,
+          "beforeDecoded": "Rational(1, 17)",
+          "afterDecoded": "Rational(1, 17)",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_f0344da1a38f514e",
+          "before": "- \\frac{1}{32} + \\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8}",
+          "after": "\\frac{\\pi \\coth{\\left(4 \\pi \\right)}}{8} - \\frac{1}{32}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 32), Mul(Rational(1, 8), pi, coth(Mul(Integer(4), pi))))",
+          "afterDecoded": "Add(Rational(-1, 32), Mul(Rational(1, 8), pi, coth(Mul(Integer(4), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_92906b52b5b86c8ab58c",
+        "problemRevision": 2,
+        "contentHash": "90e01bedf8c4ba7f2f3ef079710d81b9d74704a7b506de2bc58244b8a24c2ec4",
+        "semanticHash": "695ecd7769ec252993a926d5d58d759f4f5af23217f3a6bd09ddff405b962619"
+      },
+      "sourceCanonicalSHA256": "6a089b4832af059331ef2a12a1a4cc9aaa447838b56fdc293cf7c726b9540593",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 1,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 25}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=5\\pi\\quad\\Longrightarrow\\quad\\coth(5\\pi)=\\frac1{5\\pi}+\\frac{10}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+25}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+25}=\\frac\\pi{10}\\left(\\coth(5\\pi)-\\frac1{5\\pi}\\right)=- \\frac{1}{50} + \\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10}",
+        "- \\frac{1}{50} + \\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_db3904ee786a1be5",
+          "math": "\\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10} + \\frac{6}{325}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_ce583615b7d8a8df",
+          "math": "\\frac{1}{26}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_09a892007cf8dcda",
+          "math": "\\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10} - \\frac{1}{50}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_f87ed58b523607e6",
+          "math": "\\frac{\\pi \\tanh{\\left(5 \\pi \\right)}}{10} - \\frac{1}{50}",
+          "misconception": "Use the half-integer lattice hyperbolic tangent in place of the integer lattice cotangent"
+        }
+      ],
+      "answerChoiceId": "ch_09a892007cf8dcda",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_db3904ee786a1be5",
+          "before": "\\frac{6}{325} + \\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10}",
+          "after": "\\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10} + \\frac{6}{325}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(6, 325), Mul(Rational(1, 10), pi, coth(Mul(Integer(5), pi))))",
+          "afterDecoded": "Add(Rational(6, 325), Mul(Rational(1, 10), pi, coth(Mul(Integer(5), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_ce583615b7d8a8df",
+          "before": "\\frac{1}{26}",
+          "after": "\\frac{1}{26}",
+          "changed": false,
+          "beforeDecoded": "Rational(1, 26)",
+          "afterDecoded": "Rational(1, 26)",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_09a892007cf8dcda",
+          "before": "- \\frac{1}{50} + \\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10}",
+          "after": "\\frac{\\pi \\coth{\\left(5 \\pi \\right)}}{10} - \\frac{1}{50}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 50), Mul(Rational(1, 10), pi, coth(Mul(Integer(5), pi))))",
+          "afterDecoded": "Add(Rational(-1, 50), Mul(Rational(1, 10), pi, coth(Mul(Integer(5), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_f87ed58b523607e6",
+          "before": "- \\frac{1}{50} + \\frac{\\pi \\tanh{\\left(5 \\pi \\right)}}{10}",
+          "after": "\\frac{\\pi \\tanh{\\left(5 \\pi \\right)}}{10} - \\frac{1}{50}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 50), Mul(Rational(1, 10), pi, tanh(Mul(Integer(5), pi))))",
+          "afterDecoded": "Add(Rational(-1, 50), Mul(Rational(1, 10), pi, tanh(Mul(Integer(5), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_efde452c7eb4bc57853c",
+        "problemRevision": 2,
+        "contentHash": "a00e2d5993e2a70b78747ae10468f1b913339aaefe904c9da14eedf539371289",
+        "semanticHash": "841a1ca1dc9490a6a628b8f0e2c0f3a4f8603efdfe7a9e8b6b0c6be435643f9c"
+      },
+      "sourceCanonicalSHA256": "8cb69a91acab16831ab86f131823a99f6bb0c20ff1b9e3922216ffcd8af1e446",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 2,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 36}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=6\\pi\\quad\\Longrightarrow\\quad\\coth(6\\pi)=\\frac1{6\\pi}+\\frac{12}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+36}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+36}=\\frac\\pi{12}\\left(\\coth(6\\pi)-\\frac1{6\\pi}\\right)=- \\frac{1}{72} + \\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12}",
+        "- \\frac{1}{72} + \\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_a66b41d959607910",
+          "math": "\\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12} - \\frac{1}{72}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_dc8675cf5c4f5c32",
+          "math": "\\frac{\\pi \\tanh{\\left(6 \\pi \\right)}}{12} - \\frac{1}{72}",
+          "misconception": "Use the half-integer lattice hyperbolic tangent in place of the integer lattice cotangent"
+        },
+        {
+          "choiceId": "ch_b55953febbf656be",
+          "math": "\\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12} - \\frac{109}{2664}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_06077fc75c1f6c68",
+          "math": "\\frac{1}{37}",
+          "misconception": "return only the first term"
+        }
+      ],
+      "answerChoiceId": "ch_a66b41d959607910",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_a66b41d959607910",
+          "before": "- \\frac{1}{72} + \\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12}",
+          "after": "\\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12} - \\frac{1}{72}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 72), Mul(Rational(1, 12), pi, coth(Mul(Integer(6), pi))))",
+          "afterDecoded": "Add(Rational(-1, 72), Mul(Rational(1, 12), pi, coth(Mul(Integer(6), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_dc8675cf5c4f5c32",
+          "before": "- \\frac{1}{72} + \\frac{\\pi \\tanh{\\left(6 \\pi \\right)}}{12}",
+          "after": "\\frac{\\pi \\tanh{\\left(6 \\pi \\right)}}{12} - \\frac{1}{72}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 72), Mul(Rational(1, 12), pi, tanh(Mul(Integer(6), pi))))",
+          "afterDecoded": "Add(Rational(-1, 72), Mul(Rational(1, 12), pi, tanh(Mul(Integer(6), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_b55953febbf656be",
+          "before": "- \\frac{109}{2664} + \\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12}",
+          "after": "\\frac{\\pi \\coth{\\left(6 \\pi \\right)}}{12} - \\frac{109}{2664}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-109, 2664), Mul(Rational(1, 12), pi, coth(Mul(Integer(6), pi))))",
+          "afterDecoded": "Add(Rational(-109, 2664), Mul(Rational(1, 12), pi, coth(Mul(Integer(6), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_06077fc75c1f6c68",
+          "before": "\\frac{1}{37}",
+          "after": "\\frac{1}{37}",
+          "changed": false,
+          "beforeDecoded": "Rational(1, 37)",
+          "afterDecoded": "Rational(1, 37)",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_00f212ae481d7e68804c",
+        "problemRevision": 2,
+        "contentHash": "c7904a2bbf68a99b96fb1eddd95331aead7076719c12abbb62d5252369fd3361",
+        "semanticHash": "b48660343dc52e0ff960c7364a17c3c078cf11f71b6c03e4079f639a749e11b6"
+      },
+      "sourceCanonicalSHA256": "1c21a1d473d57f4ddbc713d64c0bdc12fe18e4076870d745f9d537152fd09edc",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 3,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 49}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=7\\pi\\quad\\Longrightarrow\\quad\\coth(7\\pi)=\\frac1{7\\pi}+\\frac{14}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+49}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+49}=\\frac\\pi{14}\\left(\\coth(7\\pi)-\\frac1{7\\pi}\\right)=- \\frac{1}{98} + \\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14}",
+        "- \\frac{1}{98} + \\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_56c2a922800296f2",
+          "math": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{7}",
+          "misconception": "Return the full lattice expression without removing its zero mode or halving"
+        },
+        {
+          "choiceId": "ch_ecb32cecb61f971b",
+          "math": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} + \\frac{12}{1225}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_c8873215884eea25",
+          "math": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} - \\frac{1}{98}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_b7272b7b7e42557b",
+          "math": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} + \\frac{1}{98}",
+          "misconception": "Add the zero lattice mode instead of subtracting it"
+        }
+      ],
+      "answerChoiceId": "ch_c8873215884eea25",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_56c2a922800296f2",
+          "before": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{7}",
+          "after": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{7}",
+          "changed": false,
+          "beforeDecoded": "Mul(Rational(1, 7), pi, coth(Mul(Integer(7), pi)))",
+          "afterDecoded": "Mul(Rational(1, 7), pi, coth(Mul(Integer(7), pi)))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_ecb32cecb61f971b",
+          "before": "\\frac{12}{1225} + \\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14}",
+          "after": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} + \\frac{12}{1225}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(12, 1225), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "afterDecoded": "Add(Rational(12, 1225), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_c8873215884eea25",
+          "before": "- \\frac{1}{98} + \\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14}",
+          "after": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} - \\frac{1}{98}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 98), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "afterDecoded": "Add(Rational(-1, 98), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_b7272b7b7e42557b",
+          "before": "\\frac{1}{98} + \\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14}",
+          "after": "\\frac{\\pi \\coth{\\left(7 \\pi \\right)}}{14} + \\frac{1}{98}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(1, 98), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "afterDecoded": "Add(Rational(1, 98), Mul(Rational(1, 14), pi, coth(Mul(Integer(7), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_583f120e6ffe12e9aee1",
+        "problemRevision": 2,
+        "contentHash": "abb44cdd90b61e928d6515050883cff1bc873b3fb968bd703e1a984934b5f767",
+        "semanticHash": "7bf0b11f2600313715dd6caafca7d37805eb5a088d6500f85226f5f13f76d20a"
+      },
+      "sourceCanonicalSHA256": "105bedcdcba77769714ecb79d37783254af1a5736469bfa70c50853069e3e67d",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 4,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 64}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=8\\pi\\quad\\Longrightarrow\\quad\\coth(8\\pi)=\\frac1{8\\pi}+\\frac{16}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+64}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+64}=\\frac\\pi{16}\\left(\\coth(8\\pi)-\\frac1{8\\pi}\\right)=- \\frac{1}{128} + \\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16}",
+        "- \\frac{1}{128} + \\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_15b1564493dd9384",
+          "math": "\\frac{\\pi \\tanh{\\left(8 \\pi \\right)}}{16} - \\frac{1}{128}",
+          "misconception": "Use the half-integer lattice hyperbolic tangent in place of the integer lattice cotangent"
+        },
+        {
+          "choiceId": "ch_ab989d6f5aa33341",
+          "math": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} + \\frac{63}{8320}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_9fbd01480483dc0b",
+          "math": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} - \\frac{1}{128}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_f59e9458f44c6424",
+          "math": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} + \\frac{1}{128}",
+          "misconception": "Add the zero lattice mode instead of subtracting it"
+        }
+      ],
+      "answerChoiceId": "ch_9fbd01480483dc0b",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_15b1564493dd9384",
+          "before": "- \\frac{1}{128} + \\frac{\\pi \\tanh{\\left(8 \\pi \\right)}}{16}",
+          "after": "\\frac{\\pi \\tanh{\\left(8 \\pi \\right)}}{16} - \\frac{1}{128}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 128), Mul(Rational(1, 16), pi, tanh(Mul(Integer(8), pi))))",
+          "afterDecoded": "Add(Rational(-1, 128), Mul(Rational(1, 16), pi, tanh(Mul(Integer(8), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_ab989d6f5aa33341",
+          "before": "\\frac{63}{8320} + \\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16}",
+          "after": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} + \\frac{63}{8320}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(63, 8320), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "afterDecoded": "Add(Rational(63, 8320), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_9fbd01480483dc0b",
+          "before": "- \\frac{1}{128} + \\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16}",
+          "after": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} - \\frac{1}{128}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 128), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "afterDecoded": "Add(Rational(-1, 128), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_f59e9458f44c6424",
+          "before": "\\frac{1}{128} + \\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16}",
+          "after": "\\frac{\\pi \\coth{\\left(8 \\pi \\right)}}{16} + \\frac{1}{128}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(1, 128), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "afterDecoded": "Add(Rational(1, 128), Mul(Rational(1, 16), pi, coth(Mul(Integer(8), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_252cf3be6903e567ad55",
+        "problemRevision": 2,
+        "contentHash": "661851c5fd3ceff216bb8f83083e92a275f9f6c7de7a197b14e74726b146680e",
+        "semanticHash": "61f89844ec293b3c23e3aed0d8d5627b7a257e1c2c2a15bc7d2354cdf07a6099"
+      },
+      "sourceCanonicalSHA256": "5caa0f22ac6c533d2e7994d7e57e460c2a75e708170307ed093cb55cf4aaf7d6",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 5,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 81}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=9\\pi\\quad\\Longrightarrow\\quad\\coth(9\\pi)=\\frac1{9\\pi}+\\frac{18}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+81}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+81}=\\frac\\pi{18}\\left(\\coth(9\\pi)-\\frac1{9\\pi}\\right)=- \\frac{1}{162} + \\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18}",
+        "- \\frac{1}{162} + \\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_a523f276d949b1cd",
+          "math": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} - \\frac{61}{3321}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_9cca0d2c2442a81e",
+          "math": "\\frac{1}{82}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_2613f6490b4045fe",
+          "math": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} - \\frac{1}{162}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_22e2f7cfdeb0d8e5",
+          "math": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} + \\frac{1}{162}",
+          "misconception": "Add the zero lattice mode instead of subtracting it"
+        }
+      ],
+      "answerChoiceId": "ch_2613f6490b4045fe",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_a523f276d949b1cd",
+          "before": "- \\frac{61}{3321} + \\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18}",
+          "after": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} - \\frac{61}{3321}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-61, 3321), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "afterDecoded": "Add(Rational(-61, 3321), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_9cca0d2c2442a81e",
+          "before": "\\frac{1}{82}",
+          "after": "\\frac{1}{82}",
+          "changed": false,
+          "beforeDecoded": "Rational(1, 82)",
+          "afterDecoded": "Rational(1, 82)",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_2613f6490b4045fe",
+          "before": "- \\frac{1}{162} + \\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18}",
+          "after": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} - \\frac{1}{162}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 162), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "afterDecoded": "Add(Rational(-1, 162), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_22e2f7cfdeb0d8e5",
+          "before": "\\frac{1}{162} + \\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18}",
+          "after": "\\frac{\\pi \\coth{\\left(9 \\pi \\right)}}{18} + \\frac{1}{162}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(1, 162), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "afterDecoded": "Add(Rational(1, 162), Mul(Rational(1, 18), pi, coth(Mul(Integer(9), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_950d1aa9e1cf4295e9b7",
+        "problemRevision": 2,
+        "contentHash": "8b00888811b2cd8761c5914e2c38373266a952971978150add81b751d782dc96",
+        "semanticHash": "f47e981d8ca9ecd68579fb7a8d42fe06042d439c0792c8f8224dca3d49e5e030"
+      },
+      "sourceCanonicalSHA256": "0e7d38f50c5d8b0d782cc1e6a68bfcaec070d9fbe3818f225febc411dd65297f",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 6,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 100}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=10\\pi\\quad\\Longrightarrow\\quad\\coth(10\\pi)=\\frac1{10\\pi}+\\frac{20}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+100}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+100}=\\frac\\pi{20}\\left(\\coth(10\\pi)-\\frac1{10\\pi}\\right)=- \\frac{1}{200} + \\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20}",
+        "- \\frac{1}{200} + \\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_63116eb3881078fe",
+          "math": "\\frac{\\pi \\tanh{\\left(10 \\pi \\right)}}{20} - \\frac{1}{200}",
+          "misconception": "Use the half-integer lattice hyperbolic tangent in place of the integer lattice cotangent"
+        },
+        {
+          "choiceId": "ch_a77d54fd9766bd66",
+          "math": "\\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20} - \\frac{301}{20200}",
+          "misconception": "omit the first included term"
+        },
+        {
+          "choiceId": "ch_d60d6a253c276c66",
+          "math": "\\frac{1}{101}",
+          "misconception": "return only the first term"
+        },
+        {
+          "choiceId": "ch_1756f25ea1e15493",
+          "math": "\\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20} - \\frac{1}{200}",
+          "misconception": "correct"
+        }
+      ],
+      "answerChoiceId": "ch_1756f25ea1e15493",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_63116eb3881078fe",
+          "before": "- \\frac{1}{200} + \\frac{\\pi \\tanh{\\left(10 \\pi \\right)}}{20}",
+          "after": "\\frac{\\pi \\tanh{\\left(10 \\pi \\right)}}{20} - \\frac{1}{200}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 200), Mul(Rational(1, 20), pi, tanh(Mul(Integer(10), pi))))",
+          "afterDecoded": "Add(Rational(-1, 200), Mul(Rational(1, 20), pi, tanh(Mul(Integer(10), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_a77d54fd9766bd66",
+          "before": "- \\frac{301}{20200} + \\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20}",
+          "after": "\\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20} - \\frac{301}{20200}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-301, 20200), Mul(Rational(1, 20), pi, coth(Mul(Integer(10), pi))))",
+          "afterDecoded": "Add(Rational(-301, 20200), Mul(Rational(1, 20), pi, coth(Mul(Integer(10), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_d60d6a253c276c66",
+          "before": "\\frac{1}{101}",
+          "after": "\\frac{1}{101}",
+          "changed": false,
+          "beforeDecoded": "Rational(1, 101)",
+          "afterDecoded": "Rational(1, 101)",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_1756f25ea1e15493",
+          "before": "- \\frac{1}{200} + \\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20}",
+          "after": "\\frac{\\pi \\coth{\\left(10 \\pi \\right)}}{20} - \\frac{1}{200}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 200), Mul(Rational(1, 20), pi, coth(Mul(Integer(10), pi))))",
+          "afterDecoded": "Add(Rational(-1, 200), Mul(Rational(1, 20), pi, coth(Mul(Integer(10), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    },
+    {
+      "sourcePreview": {
+        "problemId": "cn_4d5ca93e4ca7b12f28a4",
+        "problemRevision": 2,
+        "contentHash": "fd5b178a47077969271185089aa2e95674e9421f045e5e59e92a3db4d29a1e02",
+        "semanticHash": "452bdcabd8d92dea92c8720b901f86b2c63754309884dcdec48f8fb6e3239f5e"
+      },
+      "sourceCanonicalSHA256": "244790339d8850c6627b459ea8947a98a7b700a3c27cb5f5032e320969489622",
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "sourceInstanceIndex": 7,
+      "statement": "\\sum_{k=1}^\\infty \\frac{1}{k^{2} + 121}",
+      "solutionSteps": [
+        "\\coth z=\\frac1z+2z\\sum_{k=1}^\\infty\\frac1{z^2+\\pi^2k^2}\\qquad(z>0)",
+        "\\textnormal{Use the partial-fraction expansion of the hyperbolic cotangent and substitute the positive scaled argument.}",
+        "z=11\\pi\\quad\\Longrightarrow\\quad\\coth(11\\pi)=\\frac1{11\\pi}+\\frac{22}\\pi\\sum_{k=1}^\\infty\\frac1{k^2+121}",
+        "\\sum_{k=1}^\\infty\\frac1{k^2+121}=\\frac\\pi{22}\\left(\\coth(11\\pi)-\\frac1{11\\pi}\\right)=- \\frac{1}{242} + \\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22}",
+        "- \\frac{1}{242} + \\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22}"
+      ],
+      "choices": [
+        {
+          "choiceId": "ch_a08c7075e02fe93d",
+          "math": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{11}",
+          "misconception": "Return the full lattice expression without removing its zero mode or halving"
+        },
+        {
+          "choiceId": "ch_55aaff8ee32133f4",
+          "math": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} + \\frac{30}{7381}",
+          "misconception": "include the first term twice"
+        },
+        {
+          "choiceId": "ch_ebea47fba7b93556",
+          "math": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} - \\frac{1}{242}",
+          "misconception": "correct"
+        },
+        {
+          "choiceId": "ch_da802c37b3c0f925",
+          "math": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} + \\frac{1}{242}",
+          "misconception": "Add the zero lattice mode instead of subtracting it"
+        }
+      ],
+      "answerChoiceId": "ch_ebea47fba7b93556",
+      "difficulty": "hard",
+      "pedagogy": {
+        "alternativeTechniques": [],
+        "answerForm": "exact-expression",
+        "constructionId": "m3-series-olympiad-lattice-resolvent",
+        "difficultyRationale": "Hard named-transform fluency; no additional advanced decision.",
+        "prerequisites": [],
+        "primaryTechnique": "Mittag-Leffler-expansion",
+        "reasoningDemand": [
+          "method-selection",
+          "synthesis"
+        ],
+        "relatedIdeaGroupId": "lattice-resolvent-partial-fractions",
+        "responseFormat": "multiple-choice",
+        "sourceRecordIds": [],
+        "structuralSignature": "m3-series-olympiad-lattice-resolvent"
+      },
+      "statementMeaningChanged": false,
+      "answerChanged": false,
+      "difficultyChanged": false,
+      "preserveSemanticLineage": true,
+      "equivalences": [
+        {
+          "choiceId": "ch_a08c7075e02fe93d",
+          "before": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{11}",
+          "after": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{11}",
+          "changed": false,
+          "beforeDecoded": "Mul(Rational(1, 11), pi, coth(Mul(Integer(11), pi)))",
+          "afterDecoded": "Mul(Rational(1, 11), pi, coth(Mul(Integer(11), pi)))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_55aaff8ee32133f4",
+          "before": "\\frac{30}{7381} + \\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22}",
+          "after": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} + \\frac{30}{7381}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(30, 7381), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "afterDecoded": "Add(Rational(30, 7381), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_ebea47fba7b93556",
+          "before": "- \\frac{1}{242} + \\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22}",
+          "after": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} - \\frac{1}{242}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(-1, 242), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "afterDecoded": "Add(Rational(-1, 242), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        },
+        {
+          "choiceId": "ch_da802c37b3c0f925",
+          "before": "\\frac{1}{242} + \\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22}",
+          "after": "\\frac{\\pi \\coth{\\left(11 \\pi \\right)}}{22} + \\frac{1}{242}",
+          "changed": true,
+          "beforeDecoded": "Add(Rational(1, 242), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "afterDecoded": "Add(Rational(1, 242), Mul(Rational(1, 22), pi, coth(Mul(Integer(11), pi))))",
+          "difference": "0",
+          "proof": "Commutativity of addition; full literal expressions parse to the same exact symbolic value."
+        }
+      ],
+      "newIndependentIdeaCredit": 0,
+      "requiresNewImmutableRevision": true
+    }
+  ],
+  "admitted": false,
+  "imported": 0,
+  "active": 0
+}

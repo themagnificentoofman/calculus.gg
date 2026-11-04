@@ -1,0 +1,631 @@
+{
+  "records": 272,
+  "families": [
+    {
+      "familyId": "m3-differential-equations-easy-oscillator-initial-data",
+      "records": 10,
+      "rawHashes": [
+        "dfedeeb7446809b784ccf7bf2d048b4af8be4c5111638c66c9255401ca6a5f30",
+        "e047cc648630b61cb23130ba6bdbf9b116b2e0e1c8c7b2db27149975536de150",
+        "b017ba4813e9a1bd4846cb3ea97b0e72d614dd9fb1e80925d2046459b7201583",
+        "8f9932e0603bfb778122d0c31f4303078a1cf5f629822642dc6630336eeb2fe5",
+        "fe039ed04359786e48083ab791cc999dfe652aa3c7b33eeac5f6686d7926b388",
+        "cc7fcb7a158c44b317b51506c51d19bc8f13f8bf64f5b1983b46ae306851c91a",
+        "8fa1865b6c8ed88a017cb3b362467405661b89869c8880570d84d8b7de43984d",
+        "3487c6fb1dadbfc84500f11eb7e8f14566127a46d9521c1ebe99792e0d8a5b67",
+        "0d2341153aa8669da4264d78b2560e75f4457220ba76ca12d567f0dcf38c1e6c",
+        "c9d634938d8dc91d6aef24d0e59b7873927d7faad613e7257219b125774d78c0"
+      ],
+      "easiestOptionsVisibleRoute": "Identify the cosine and sine coefficients from the initial data and evaluate at a quarter period.",
+      "difficultyUnchanged": "easy",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-easy-phase-line-stability",
+      "records": 10,
+      "rawHashes": [
+        "3c8553244c20e5bae93d06bccb763b70452940209d799052110e386ee05d51d5",
+        "0ee70c461b837624268406a8af433d1ee877144ff7e87a353491fa2d69768148",
+        "c9146ae9849946299e0543c153ae4816d574b596423a6d03aa0d9d1c977013a8",
+        "4e87fbc97171e5e42395941be1900e9310191de7d49acff48094ad71a4476fea",
+        "2c456ad72d914fd9fab126d0a2f909c63cdb820fcc344508596c4fe94a16a60d",
+        "826ed90b33bcb3481e438c356ca090bc659f3e453f45b416b2b69430ec2f006f",
+        "47915d7119c88aa7028b64d22da4b6a767a995491a78f3e753bdacd954b4a0e6",
+        "ac5f931e74ed3f825065efafb1064329c69090a6f6577f4a6105c5c8a9936eb4",
+        "d528adeda78d8db799c98dbc156d6f3c07e3e28bffcf317b33ccdee1b5818080",
+        "d23e1ddf29a62f01d02ca74aaa9df5fa1387f399614f045912b5ba3bcae3ce0e"
+      ],
+      "easiestOptionsVisibleRoute": "Solve the quadratic equilibrium equation and use the derivative sign to choose the attracting root.",
+      "difficultyUnchanged": "easy",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-easy-rate-identification",
+      "records": 10,
+      "rawHashes": [
+        "a68e42a80df5995df8aa21a4b73a31deaa4c474121eeb9d3c759607bff221726",
+        "f8e7ecf866fe0b24b2bdc67eb513940d83d83ba16f83399c47f04e12fa7cb0d4",
+        "664766ac75a0e57430f298dbaf9424296b89a6db1f48c39f99563edd5a00df54",
+        "fd9263794b7b77e07f0bc25dc0c07f52d42477d66581d5dfc7e88067be8c65e0",
+        "e8a0d39f74816997e271908134a6c32c367fd6ee79a9d77ddb3e81cfeacbfe02",
+        "458fa46797e166234e29954f44422ef9a03eb1690398c62f124896e8a4399078",
+        "419ead1fffb6d0326b19493bc72863a73d7dc689657f9d8a8e2d7ff90eb1f495",
+        "7af17d7cd61c966efe9b9bca4f7c329c6ca0a23b4f6eb124e01edb94377c6782",
+        "2f48f6807af027993cf91ae7fd706a2d1d1742925761b00e31813524d9bf791e",
+        "146fdfcc71061fdd312176a47a83edfad71c6a7cacd4b588daaeed6baed83c01"
+      ],
+      "easiestOptionsVisibleRoute": "Differentiate the supplied exponential and divide by the nonzero function.",
+      "difficultyUnchanged": "easy",
+      "flags": [
+        {
+          "rule": "length-min",
+          "training": 0.4,
+          "heldout": 0.7,
+          "trainingUniqueCorrect": 1,
+          "heldoutUniqueCorrect": 2,
+          "disposition": "Both positive options are integer chain-rule coefficients. Doubling an odd coefficient can add a decimal digit while halving an even one can remove it. This does not identify the correct coefficient consistently: training length-min40%, held70%, and only three of ten are unique shortest correct values. Negative partners do not reduce the two positive choices to one."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-hard-euler-cauchy-resonance",
+      "records": 10,
+      "rawHashes": [
+        "4724cc6f1a8f5766e32cc4d75173e933ab4309f24a509a2b5d412467146ee823",
+        "63fbe05d4dffd258696f30f21057bc91816791d6530782ce823b09487953f52c",
+        "caaf45c30350565862a6df4984c638ce99db844340709bc6f1010c6b77bca6e2",
+        "088ec98b278ccde18f2a2c3914ef68b0bad6bb48d45a4dc38b29f621a874a151",
+        "92e170df39532b653932f74fd411268fff1118ab6c4bac883c50be9fe098c187",
+        "2ab4387f628daac0437c424953e4e75389ee39b5403692bfd5b09bc348dd524f",
+        "1b7eec5f4cf59189c68a7187ed4d6cef946327d14241456f23c5662f96ee86d7",
+        "4d55ef1adc30304aa462746d89cc2f296123afcb7a8573a0f7a71bac1b91d207",
+        "af58f58e311d30edf80ebdb1f737533055135a019e46c8073a805ae1300da30c",
+        "ee67eaaad21c4d69c0ec5e9951fb63118bb012bb3bef477932c03a14264feb44"
+      ],
+      "easiestOptionsVisibleRoute": "Set s=ln t and factor out t\u00b2; the remaining equation is w\u2033=1 with two zero initial data.",
+      "difficultyUnchanged": "hard",
+      "flags": [
+        {
+          "rule": "length-min",
+          "training": 0.4,
+          "heldout": 0.7,
+          "trainingUniqueCorrect": 0,
+          "heldoutUniqueCorrect": 2,
+          "disposition": "The displayed factor-of-two or boundary-normalization alternatives have nearby integer denominators or coefficients. Crossings of decimal digit lengths create a small held-out length tendency, while training length-min is only30\u201340%. Both magnitude orders occur and each value has an opposite partner; the whole finite pool has no unique sign-pair or fixed shortest-correct invariant. This is bounded diagnostic disposition, not a claim that every possible cue is absent."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-hard-mixed-boundary-spectrum",
+      "records": 10,
+      "rawHashes": [
+        "854089b6ca4c2aeb1764669786a2f9ea8d83d6a409a67bd043796de54e65f11e",
+        "06bd08000167ff2c58d639944bb97815c469c8569004f06b6c6abdb779675e58",
+        "d2392b3ab80f2d379fc208718458d943f7a7d43ec2d8c8a05abd123916b6eb88",
+        "b6970f7b7836c8189f1a32c85fe7c2c741453e736a45be8f43a890247a42a9af",
+        "2fb8c4f8b13f1eb5eee912db143d9b9d6727e49d21fc53b03e6afbfae9b44081",
+        "f4191a220abb6f802f8d60df9ac504fabafde3709a8216333b3571e8ea3575ba",
+        "61b00f6e1482bbb9436a6b642208ea60447df01d1f074a33417e85a4ff147e61",
+        "619f38c9651fde364ffd604b66e4566494b83fc362454a6fae09a0343519cd07",
+        "e817e725c3a037519a4418c20d71e86c9186befcfa4df51263534d30c7e910e5",
+        "cc7dd5c4969ab729be8a880ed7ee2d7fdbb4917a3aa0f4996eb860257da79587"
+      ],
+      "easiestOptionsVisibleRoute": "Exclude nonpositive spectral parameters and choose the first zero of the cosine derivative boundary factor.",
+      "difficultyUnchanged": "hard",
+      "flags": [
+        {
+          "rule": "length-min",
+          "training": 0.3,
+          "heldout": 0.8,
+          "trainingUniqueCorrect": 0,
+          "heldoutUniqueCorrect": 3,
+          "disposition": "The displayed factor-of-two or boundary-normalization alternatives have nearby integer denominators or coefficients. Crossings of decimal digit lengths create a small held-out length tendency, while training length-min is only30\u201340%. Both magnitude orders occur and each value has an opposite partner; the whole finite pool has no unique sign-pair or fixed shortest-correct invariant. This is bounded diagnostic disposition, not a claim that every possible cue is absent."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-hard-nonlinear-energy-speed",
+      "records": 10,
+      "rawHashes": [
+        "e51bb017de47fa17d03c541b4e5cda07dccf95251b538006c2bb37bc7996ace0",
+        "364250e512ff027bdec2c9754bff183d267ad6a86f142264cbbdcdb1e29ab4db",
+        "60d01f3701c367a75298ba06ef90590f523cdf3deb71a3e2af9346d13c33d70b",
+        "cefc264e3e7046dad732faf5c0344a37a52f8ca3f1d9c2c97e743617a4ee7c1f",
+        "ba7f5cb9817b0b2d78a335b0b97ab96c2ca6a254a4916adfb4500598335db328",
+        "e8bbf3ad38a190065a35ad5e1ba85c12332a3a101d759b66352b2cf415ea794f",
+        "d9451666c93dd83f2bccedaa6ae6113d1bc2d0acf58758e7434ba72355f5ce0e",
+        "360b9cd1c561c46b27160453880c2d2336e1dc822be7c4c551019db645938f91",
+        "bf821ca6aed2c2c50bc7e53aa266bbc4815d510d16d4d7e1584064eddffb3886",
+        "770c68a7392989e2a8d5e5d43752acdbea4534454e4536f88426363e70628767"
+      ],
+      "easiestOptionsVisibleRoute": "Multiply the equation by the velocity to conserve kinetic plus quartic potential energy, then maximize speed at zero displacement.",
+      "difficultyUnchanged": "hard",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-hard-step-forcing",
+      "records": 10,
+      "rawHashes": [
+        "f9ee33bbcb86c9b1a72d21ee781a173e5dbae2c69fd95226e92a7427b5754e5c",
+        "2e272c101df643d59b91f4dcf1d44943ee0eb719570bc6fd649705d5a5ff5735",
+        "c5340589a2aaf84be2f58a1e452d95fc50f8606c226688c9c9726172b119e13b",
+        "716d8a64d05b8305e374bf5b4a06ef87f292f4e92a4305e05dc8e45caa351361",
+        "cd4725792a238e73fb14985b78d788d6210669e90a9ae60bb3dc3339c19c8048",
+        "38b9040b8ea5771f7d54a6548b2fb1f9a50b1a7b81c19db580adbc0e73f56560",
+        "33698875c6f4fa3b371a6c150ae8ca20377570c90c18202adf767b201b9d9b01",
+        "253e41361aed74142a2cc48aa8266ded9dae64c260c6d9297461b2ffab0da4ef",
+        "4a9d0d6acac02ab140adc66a6582afb0f2e2b59ae0774809850dbc299e76279b",
+        "41b390629f47f1aec3f07ddd03ad272f605d3d1ce8abd6e0872d3a47b4f52c91"
+      ],
+      "easiestOptionsVisibleRoute": "Solve the familiar forced oscillator after the switch using the two zero matching data.",
+      "difficultyUnchanged": "medium",
+      "flags": [
+        {
+          "rule": "numeric-rank-3",
+          "training": 0.2,
+          "heldout": 0.8,
+          "trainingUniqueCorrect": 1,
+          "heldoutUniqueCorrect": 4,
+          "disposition": "The two positive misconception magnitudes trade order over the complete finite family; positive answer rank3 versus4 each occurs five times. Training rank3=20% but held80% reflects this small fixed ID split, not a whole-family invariant. Sign-compatible options remain two."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-hard-wronskian-transport",
+      "records": 10,
+      "rawHashes": [
+        "c0dfff4c8bbefc65bd89e126d1b6d8c99b771bd14276793292d84ef830b2dfb1",
+        "c6aa2c318c343fddcda64263e0fa6a3eeb69eebdc985b66008b55a3e911025fe",
+        "630877a02c636b21fde6cf8782ff0c5797c9990885deebe7506d938fc4608d71",
+        "1dfe6a5c2c57b2afc95757d68f8b97ba2e8328b135784fe5ce6e5bb5809441c0",
+        "20e1698772f0a94de0c58e6087b725eba3c53854aeb44595786dee3def178863",
+        "4a15c6c96fe2fa9fbc1e064097983aef65172ea86277c1b9ba3567cdb58d66bd",
+        "6fb31008a2bf035daefd49e2e6edcfcc5f68bea0504a6a08fcab71186f19c6f1",
+        "17a8d4f1a7ec3ef4299ef9359ce4ab642416f5391eeb3aed08c710de0698ee55",
+        "c08cbfec1eeec8a1923d3e44ec45066c1eade684dc4e26af53f65f84296df5c3",
+        "36d77a47301739eeb36e0ecb5788a1acee5c7846a739e50e1dc0fdba1247f668"
+      ],
+      "easiestOptionsVisibleRoute": "Differentiate the Wronskian; cancellation gives W\u2032=\u2212mW/t, then impose the normalization.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-medium-distinct-characteristic-roots",
+      "records": 10,
+      "rawHashes": [
+        "519f19ccec5e601fe738c801db6ba1da707fe86c295589dff3807a0e9b42b9db",
+        "6274ea8e954124bb4ae5c9310dc654368a5a063ddedd1dc91e07a191af3f5776",
+        "9525f69666be247a280e6c1c7154c9600af37dd08be470c675ba7b9fe34f6be6",
+        "0b9bf2141aeba5c6c653438a787330d4a0835e7cc32acabf9b695bea80c54431",
+        "049cc9770fe12ed4c1f32596369b78a40249d9a13923b09bb13fce133afd6204",
+        "ac661eabb1a521acb97895cc93e0504bf3c671ae8e3217f1b73c7b5f3a1bca56",
+        "dab4f7118f6a2b63ddcceb2c4c7a06a85d9b69f03b1e8738501c969747cfb3f3",
+        "2e1f82841cef3e8b7f717f52b38b109afc1d036b6c228468ae6870bf9d599bd9",
+        "d51e3b397c4ada2ccc703f8d38f516e34bb340b9405a0dea7c60e6af716be951",
+        "79bdfe09859fc0384247291cc424cd1ee8a8510924779988a14fb26a288d2c8c"
+      ],
+      "easiestOptionsVisibleRoute": "Factor the two characteristic roots and impose the initial cancellation and derivative data.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-medium-exact-curve",
+      "records": 10,
+      "rawHashes": [
+        "1a4d71fa0922849e27b260aab7b03a11ee10b4a57d371f211782a7409affca69",
+        "319c12962f9bf5df9b82e5a519a5e5ed08fd04351bf1e787b73427c3dd466584",
+        "464f1dad682d8b8ca208c19e834271f7256c2105b0c53c732a8eed74aa2d8029",
+        "7a4f5f5737ff14eb8d1e3c9372417d82ffb416980d5cf2667cd5a1b0f60bdd7a",
+        "142e059d5e07d6804c9f3f9ca273307f6dd2376810e310afbfcc09eb517dbf21",
+        "055f479ebbb87d35b20b8d4530ed185c1e80a0d9c0396f62ecd59ede036a91f6",
+        "f958e9cca5c38a8c0bbb3895e76d0d4df4e7af5ae48c0f9cc397baebeb7bb4cd",
+        "4fe8295e82cdef71990b66aef0a43a9bf885723ee70e2571d0191a5c2535c3c3",
+        "ca8b208b882a4438db2ff1d4eae6f31da4733e7111cc437ccb10b828728feacf",
+        "9f08c87663ae613668da155372f0d855b3208b05356744c9fad79dcb560ed084"
+      ],
+      "easiestOptionsVisibleRoute": "Recognize the total derivative of t\u00b2+ty+y\u00b2, preserve its initial value, then select the required positive intercept.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-nonlinear-radial-asymptotic",
+      "records": 8,
+      "rawHashes": [
+        "3c883e061c6c7eac4caa83d6ce8eea8d39ed642bf53b1257130446785df6dc7e",
+        "e4dda9007cca50987fbac3024372641b2d955c8c90aabab207ef67af2fa766a1",
+        "50a9b5e5a6a875318d51d656acce856e41d9c0cfc3a5f3e3fb737c33de6084f4",
+        "5495cf05bbc77997babe480f407fb4fe2f66f138a7aaa5382ccc763c2a355902",
+        "e2a20002331f148f40c2f323d9775127c6e2e15a10ddb4367e8d497944a01617",
+        "d2c113c1a36472333c151487fe7a6be0c27de5d81cd556e5bee45e53ba9fd230",
+        "c3bba85368dbe43fb9a0fbdb5d2d8f110d79dc2745b976e6158ad57ddfaf5819",
+        "93c8bbfe26186a58ae6e9f51687c7d65b4bb99fd7965eb58c7c97e3de79b4f25"
+      ],
+      "easiestOptionsVisibleRoute": "Differentiate the squared radius so the rotation cancels, solve its separable scalar equation, and extract the exponential coefficient.",
+      "difficultyUnchanged": "hard",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-differential-equations-olympiad-resonant-boundary-compatibility",
+      "records": 8,
+      "rawHashes": [
+        "9ece4a7a264e9ac6d549bf41f38eea2658080acbb7b1d155337fe66fbc8893fa",
+        "ca06fb97db9509e8b27992298005f68905ad83f87c6fdc8ac2e4e38901b0aa1a",
+        "5f01c9fdc88c79def3617dcc56b197f7ecad7324e4e75033fba0266b0451abb5",
+        "6ff710701eed64a54bd0b9490af93383303889e9de53f62e576aab269779c322",
+        "07c3cf14b80c3b43c2aab6cf90e804f78c3ecdabf0fb5ff9702e9587def373c7",
+        "eb51570ab0b10662359d22e08ff4c3c6a4baed840912ceb8e61f7f80f69d1040",
+        "8a6dde0cdc12ffee4286246560d62e9fc1ac22764b2925345f3c23f0d3db2e25",
+        "09dda8ce741ede33a91ccf2ed24b2974253431d8a07b3bd02c9b33e9f82c4914"
+      ],
+      "easiestOptionsVisibleRoute": "Integrate against the resonant sine mode or substitute a direct particular solution; use the endpoint condition to determine the forcing coefficient.",
+      "difficultyUnchanged": "hard",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonconservative-hole",
+      "records": 10,
+      "rawHashes": [
+        "38b9e20306ca0c8c2b138029768c70e5e0e744c71fc4896e25a31f48ce245822",
+        "90309c4d7e98ee86986a4a978c254c032d2be905943d28aff345812e8fbf34a9",
+        "9d67068b9216ac0bfb444083a3bafc486db2e6c2f105fe8e4ebf7a8f921c68cf",
+        "7d92578c999d3315379b57b47cd97bddd5837e21fae6d0147bd640c5ec5a3db4",
+        "d60084e176f9de98c068dc60e82773c0bc3aac3b96e389127b618c9a56cce6f3",
+        "b3fcf67d7d09dca5033f18303082ca778c947a917be9f08372b9b8da577ec4ee",
+        "82ced309d458022a6c88375343f71b0387e05b16d1c198e049e6e15623e15f31",
+        "ddafdbfcd60974f4416e0930b85709eb9a0ffaf366b4f147c2ad5bf3823b981d",
+        "b50dbf15adf2ecbab0e7c2d3987a7b8d56f83467875e686e62f1b5138891237c",
+        "a6fecd12d2e75bac7439d5adf70e84c0c5582cf2479e8f750b3052055cb9b342"
+      ],
+      "easiestOptionsVisibleRoute": "Parametrize the supplied circle: radius factors cancel and the angular integrand is one.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-hard-path-dependent-directional",
+      "records": 10,
+      "rawHashes": [
+        "09127dd2c302cd603772344c13ad53b02af2291023c985c1ddff3cca6551a7be",
+        "8bcfe5fd62180db7e2ef23cabcd16b97ce63ca9b89591fdb0b15fd1445820a8e",
+        "bbfba7e3e9209d2cd52fccd2f2474df011b20d2c6d53739653e08afaf88a27b4",
+        "f547a8e26805e98919b1377fa37f931175a684d36ac63d5dc6461fda252cd2d1",
+        "53e3f6b73b48f54444e4efe81ca0133c470ffc6226c13ae1c48b015bc72e65ca",
+        "0533007f621a8c833a19f35fd6712d69d3413566ced913371325665ba3876ab2",
+        "4b397ebe7166c898af408c9e7e9b2799250b5cb3e9356f0ea4864af3433ede7e",
+        "71bb1a3feaaccb8f9a3ac727e7148d9ad5dd2199f9631c7ab5cdb4a4450f06e1",
+        "084e663ac924c4f80adb6abc17e4256dc60126fd6463953ebe9f7a883accc6a1",
+        "cc104bafc4860dd013cde5834ac8abda14bd39d237934e692aca8b2f3613720b"
+      ],
+      "easiestOptionsVisibleRoute": "Insert the explicitly given curve; the expression is the constant one half along it.",
+      "difficultyUnchanged": "easy",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-hard-surface-flux-graph",
+      "records": 12,
+      "rawHashes": [
+        "157b2b78e6059032e56a04f35441e295c22258d6e7cbe7b44759c5ea0b00db56",
+        "fab05f6bf251727d3c1d32b80253f58b6f89073216c359470ffbc8fdd80c61f1",
+        "d7dac24daef0c1b4969e27fe6444d923706afeff7ab01325d0bb745bb5012c10",
+        "be07924de38c1824730caf1285ed2fdd06c34248375e6ec93db67ee31753312a",
+        "305fb5aaaa969cb468cf8cc8d0870158c6e3648874b38732d24d0b736a951c0a",
+        "0741e2afa95ecc42cdf40b9b389444a3ae764f8f8a0a51c5030da7647154ffb3",
+        "f4535f74b538f49035b08b4497f104748e4e352097eb75d23c20f14f3d349d30",
+        "6309ff61e6aac24eea232f9ae737a7e515d72ea150acf8fcac3da9b02887b6db",
+        "6c7ed6d66b06a07997e9d68e5bcc7f36683216817839918b272ad7ed01dffe42",
+        "b60b989791a8085dc0ecded2c662e55968c9e2960b2218ff2bc14cb8167dda6a",
+        "9f03267e400473249fc2842c8693b2d41b9e536ebe52b864a57f9a99cf4fb156",
+        "c29c59efa21717d30184365e52fc5363f6143f5075887343bd00e4228818151f"
+      ],
+      "easiestOptionsVisibleRoute": "Form the upward graph area vector; its dot product with the field is1+r\u00b2, then integrate over the disk.",
+      "difficultyUnchanged": "hard",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-medium-Green-circulation",
+      "records": 10,
+      "rawHashes": [
+        "a4fe02ba2bfc4df5edb2415d6287dc4cf6f7cc591965dad1b8461bb3225f8a0d",
+        "2a817d09f79076d4def2ac6f7f2a1a1ae842f60d4d4bb6d77170cf165acadc72",
+        "c4dd9261b9f5b06aa74df8e22489aad88448c4db3c9274bcbda106081df1b5df",
+        "786cbdb9220ce6225d89e24303762b8132f9e4a165841dcc0370f5167189d20c",
+        "bea5798b9a48cae378a2d383fa3a1793fb5c2270c165561ff9db3adfd4f19d56",
+        "37bf047d4d5a262cd8dd68d6ab0d217c0a45ebc7f7cfad826696cd3fcd4678ac",
+        "97812d137f2f5a7a60d0b7d4ad1b231a1717df8fd75bc715e16228f0c712a336",
+        "7bdf18b45566ab73fa6f713cf1094f7dc3425846d415253963941cb11215d83b",
+        "75650e51ea67f1e640fc646693f09dd03849cb4dc71d61f100c28fc9f9d2a309",
+        "696bda34b6128bc5cf738c69763baeb6e63195a5d15b6d0893b68e444121b38f"
+      ],
+      "easiestOptionsVisibleRoute": "The circle and counterclockwise orientation give curl2 times disk area.",
+      "difficultyUnchanged": "medium",
+      "flags": [
+        {
+          "rule": "length-min",
+          "training": 0.4,
+          "heldout": 0.7,
+          "trainingUniqueCorrect": 0,
+          "heldoutUniqueCorrect": 2,
+          "disposition": "The displayed factor-of-two or boundary-normalization alternatives have nearby integer denominators or coefficients. Crossings of decimal digit lengths create a small held-out length tendency, while training length-min is only30\u201340%. Both magnitude orders occur and each value has an opposite partner; the whole finite pool has no unique sign-pair or fixed shortest-correct invariant. This is bounded diagnostic disposition, not a claim that every possible cue is absent."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-medium-divergence-flux",
+      "records": 10,
+      "rawHashes": [
+        "fad83efa85c4442a1d08403aed6c376900b8a49d1d9c5ab97f8fba9deaf3925d",
+        "c68691bffa367e05154072c37570bf9b668d41f18b8f4d87151b01fd5a6496be",
+        "1369e7111386529720334427b2ab6a1140efde92fb3c449ba1bc3052acdb8e87",
+        "4640d91c36688ff3f2da559f655f719ee7f6944d563f40a55d4bc54ca10903cc",
+        "0b1121a925396b2eecbcf49a126576b8d5c5788ac1f926965698754a27250af6",
+        "a1d595e8818b8b3445302d9bdc8fea0ded049d39c28d09f59e6e6ca6fb04a481",
+        "7a5fc8ee332fce9f13838a1794e1a97b73448e74595213c6e8cb59fcaa0dc817",
+        "1532057ae200a5236ef5a0e6df63a442bdf6dffbffd0f7ff7313daf6d49d9200",
+        "ebc267342cd34102aa3d18cce40fabe6e44db23f8e6bcf34bdae312710d2f962",
+        "eb66116d8eb00f7483504977666f42da31d91b0dbb968fb96ce58f1b0b0e659a"
+      ],
+      "easiestOptionsVisibleRoute": "Use divergence3 and the stated ball volume.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-medium-implicit-surface-partial",
+      "records": 10,
+      "rawHashes": [
+        "2cd5213ad6e8c4a13e028ffa06b62b4c337e36048c279cdc548d1d221a983183",
+        "61795df9155fed51e9d776f0b7eae66f73a3087682accede490ee949fa284e82",
+        "85384975c1d5ef414e011c529f7a89ac23de6f4659d39639a14b4fa2e841fe98",
+        "44d0d58bb8bbd39b31181422abfc0d5e003f85bca89c7807cdd3c2cab646060e",
+        "6df4863b9369757c0f12c771f23cca06ddfdcd4de706a0e66ea93cd30b2353c0",
+        "4e2dad5a78f66bbc6f55f7da9e699b80733adf5aa792838d8c0563425a4da0f6",
+        "b4e3c53c7da1e2fcb98c82e39ccbca0fe702d2a74d0e91201243cd72f7304991",
+        "17b11a9e077e27b0fdd55767f0efe800dd48c4bf5dba58b6fcaab8e91b5e8af2",
+        "c7ceefc373a1f3f5e46221cb6a4dc1e62c9f228ac673f147afbbc252d4473b7d",
+        "dcf7b2bde9ab29f6ea48ab6ea4516ea7588a8d4977bcf6382f4c73c8781b43fc"
+      ],
+      "easiestOptionsVisibleRoute": "Differentiate the constraint with y fixed: z_x=\u2212x/z, then substitute the specified branch value.",
+      "difficultyUnchanged": "medium",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+      "records": 8,
+      "rawHashes": [
+        "f0932f0766c1a37797c58fe6f0e570785497e61dadbd5582e9f229c589c06d80",
+        "5506e0b96bb01bf3a64c205f49aa8f5857915dcc215ef1d4696b477839761dd5",
+        "d4a9bbfb447ab61d664dab8109b540bc8339f7930018cc4b7c2ddd514dff0d2d",
+        "af9e7479a4806d60e8069f4671b68820f8aa2869de74806bca6a5bea3ce6512d",
+        "e748731062aa8a375bc1d71c248994b820e6b01ae328f6ce0ea7540d6a8232a6",
+        "47837a453d5f32f33e9ddf24a7cd0ce9c91348ff4dca1e3c2a4785581897f39e",
+        "9263383398a38c4fbb6ab5d6cf24516266537f6b20b2ca8aaf5b702a70ba23e4",
+        "56cc13b65a5d66dbde75591d41e93d58f3f41799c10b26cfe1942a70bb6cea0f"
+      ],
+      "easiestOptionsVisibleRoute": "Differentiate the two-parameter simplex moment once in each exponent and evaluate the resulting digamma and trigamma differences.",
+      "difficultyUnchanged": "hard",
+      "flags": [
+        {
+          "rule": "shuffled-position-3",
+          "training": 0.25,
+          "heldout": 0.75,
+          "trainingUniqueCorrect": 1,
+          "heldoutUniqueCorrect": 3,
+          "disposition": "Deterministic diagnostic permutation only; the position advantage does not replicate from training and production uses fresh shared shuffles. No source option-value adjustment is justified by this flag."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-olympiad-polynomial-image-winding",
+      "records": 8,
+      "rawHashes": [
+        "c2e5f0d3066c7343d1acc7aad03e4d5893e264e6e43b38416505f8ff289b7f00",
+        "11ad52c14a79fc06f26b8f35994f5ef007907a7f6ef0d4307b891db54125b575",
+        "0383b6511cdd9e67826c56f30352a5c93306b862d7d92fae283ee37ef527458a",
+        "b3d496ba52d0198a8b5ddd4f4ba1cc53718a076be49a35cc32cd0db45af1f62f",
+        "1ee18f01094177cc2289133bd677bdd4accf4175de50221807c8479f494555be",
+        "6c1da2da481e04ebbc58b6a127e62e9de4cef729a4c013842efc2f5befaf10a2",
+        "c236eadb9a4de3bfe9e2a59203951ef4f8859d430312505e634ae332170f4359",
+        "edf15d34f9112847658746c9b2e514fc936166fa75e909bc5dded003aa097d06"
+      ],
+      "easiestOptionsVisibleRoute": "Factor the polynomial into a double root and a positive decreasing-coefficient factor, exclude the latter zeros from the input circle, then apply the argument principle.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "m3-multivariable-olympiad-two-centre-resolvent",
+      "records": 8,
+      "rawHashes": [
+        "c2a8dfe4532adba50c95e5943263f6baf32fea27abca210836f19692ec1ca8bb",
+        "a4d6f87eaf9e3bafea2a9cbf518e89cc914e006e35f7eac47f115a5ac4b801af",
+        "f7abdae4d83c1faf5ab23ab87018cbaa850b0717bd877a9f5b9f54f98818fa55",
+        "4c087ac769ece90944f056db348e62c2135fc68aadbd8aa9f01149eb1f9fa726",
+        "a827dbe265188163b7bb2d02aff7a7c2a359dc6e0ab595f72c3742d4eaae62bd",
+        "0bf04e7583e386dd9b3fddec4e7b66378b91706a1ba5cc57ca6d123d096a7e54",
+        "42e08a7a1053aa26187c2c9f719bcc7ebca3480e5940e4e4f900b87fd02dea00",
+        "69199b793441fa624637b545edc51f3819088b15c9e3b0e94f032fc47070ea96"
+      ],
+      "easiestOptionsVisibleRoute": "Use the positive Feynman parameter identity, complete the translated square, and evaluate the radial integral followed by its inverse-hyperbolic parameter integral.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-differential-equations-Laguerre-zero-resolvent-limit",
+      "records": 10,
+      "rawHashes": [
+        "6ba611463d99fff25106117a66aaf46d1278b12ea8fe700fb7d2cd5f892779b4",
+        "e0a6cad177b58d5544d719f451007e0856aeedeede584f2f0f305094717590eb",
+        "76ed8a65473bfaf29afcc30c6774cc5c69efd47967a36165ad7a72dc471f8cf4",
+        "422442d1e54395a34937c4ac47e2777b0331c881cb9c1b09f15637f65b2c4d91",
+        "246ac7af9e0f507b3a45d212bb339d2728cf39ae9abbea1250c0d6f741c9401b",
+        "14912c5a4a7ddbd75ccde84d42b3e2276c50b5ea92029aca042f5b13b88a26fa",
+        "9d534e56b94b7e773c7ba8b46d69bf188ea45b84c57ca129aa4fab0ba232dc38",
+        "9aaf2d446a5015048562489ca25f8f058b7d1849f5d69cb74bb0ad8fd61b92d5",
+        "509c9ee8df190728bc0fd376a1df453426165bf195cf467803c56fbe937224c4",
+        "a9b36c184c3d4112df4e8c60b48b2064299b44db8bb668006811b1f96eb0895f"
+      ],
+      "easiestOptionsVisibleRoute": "Prove positivity of the polynomial roots, control the differentiated resolvent error at a negative argument, and select the positive algebraic limit branch.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-differential-equations-Riccati-turning-point-connection",
+      "records": 10,
+      "rawHashes": [
+        "735c7b584a1d10dc5770c6be8dd7c969c38d122dfee7dc1377576d9a2ab34699",
+        "cf3e9a87c3f3d76c1da3e97a355db727ca0161d73b20918dfcacc5df31e5ead1",
+        "b2aafa6301924d774fa50b23838bef0442a7399ce786fc749c1827cf251fb84a",
+        "b4d5348a4926e48da1b9ce747e04fdaec0a59ee4b782027461da427b25e7c250",
+        "af0b151ef8416b16a41f0fa20487c936b483bb2be30594ad020df73bad9af591",
+        "fc31c9f9e6793bb9c115170a32e25685280f8853e9eeba799b5e822ff712cc07",
+        "67de49f0991bebdbc0420f20b7d00354328fb8a1276487d303267afe77dba03e",
+        "cd73e5cf73165c50f37468fc013d6d5244ba9d846e4b94aa414a1a8a275e5330",
+        "1350dfa734043e77ec6068bcb9b71370a985d241113ab3d8ee9dd68a78366392",
+        "4e241f4642cadd13e2471b1b158b9eb38e8bd9f87ac92e54aa881d22d63bc677"
+      ],
+      "easiestOptionsVisibleRoute": "Scale the turning point, linearize Riccati, select the recessive modified-Bessel branch, and match its two leading powers.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-differential-equations-global-Riccati-threshold",
+      "records": 20,
+      "rawHashes": [
+        "c37e31ad91af2cdbb6d06418d9ec901ae11ccc1d1d75f1ca78b38c48c753641b",
+        "bb4d862a9084a0e8f1d2d34c87ce9c9cf2dd39f9b838394737d88f6da414aa0b",
+        "d476d52a25215bb7bed6f00d94935b9d0d518fa395a68059c41f0a6e363ac70d",
+        "bdd5fa237db37af432b20b0198216221b72ef95a979981ad4e99576a546af0ec",
+        "4981ccfa0fa121e007b660d2b9d938ad7d5c079a6fbec49858e7efce45a383a5",
+        "92726ad2d443da8918eeb382d0caa74d251a75645712853eaf50a2655371591b",
+        "ee391d6633d1f8f2dd31537112a9565e45a9ae73a69037854c5b780989f0b8b6",
+        "8b0a09adf2eb6a9d46b27cdc754b211bf5f935cd3bc725fb67a7041618721c63",
+        "15cdfc2ef58d290097bda7ba19fceb39c721f6c087952ca3d9c95c7269de75cc",
+        "34765302b92411a9fac6d0ba5487619064fcc86ee6ba1fda51449d9ebacc6613",
+        "27b42a5583df371733564bc39dbf36e3a6f207e2dade55da361896904b7b6054",
+        "b3cb71830bb1cd447f3353bb2fbb52493b7e6f253f432fa96cb426df2d69dda4",
+        "f7b82d16e231fc35e745dd4fbabb0b7ffead82a21f75f540488fe7e460229c87",
+        "da169559eec69d0b95ab3985b41021fdd3daea1d99659e028fefb1ac45064643",
+        "358eb339ad7dc3509bbf9d31ea38f8bedf3df8d1fd7ee424bc674cbc5ab5aa9a",
+        "1fac610a6dd74d930e5d7df540ef906bf1ba9a833156a544f5f0617e61a30d2d",
+        "8d186c2fc122280264fc618093fd8cc0f5ab10cf75e0135724c9026ca1c9d152",
+        "6b04def9885e822e8dc806fc80356b40f82079aa32aec36d7506ca33ba4207b0",
+        "7e136a239ede68846d35aea29bcb3503b2f0fd6de2c5958aa51b22b4101abf36",
+        "fd06688b9cb7e9183119b4ff3bd3cf69081df9f7a7bcb47c27d0e247058d755a"
+      ],
+      "easiestOptionsVisibleRoute": "Find the comparison polynomial and prove both the global lower/upper barriers and the superquadratic escape above its threshold.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-differential-equations-minimum-peak-acceleration",
+      "records": 10,
+      "rawHashes": [
+        "6bde0b3564543b9963f1375c29b328c321c70315115b2c01b27fd7a2b87997f7",
+        "22763ec14afbcaadea59cd60be19ed7e460df3a528d905e0418443990e8828ba",
+        "49683dce1798ac454ccc34ff0e36c74816425054636d9cb6377493099937fc17",
+        "363a256cf6833ec5d9c7b840da25e5ec3366848053c53603aee0c137e7791b43",
+        "f6db982494ab573268fe76882040b606770694bbe22f09baf7ffaff825bc7ec6",
+        "e85a9667ff774df2e715b57b132a43553a0ec0edd63501cb46e90558ff1bc5c2",
+        "6b37f2231edff737eb74ce27ab04fcf8a272ab36bfffcee446e0f0031a7e94b4",
+        "abfb67986bd3e93774d746f9cdcad9f93a8bec4426cd71e5cdba655545b64101",
+        "f502f3ee573a4a92c7c4e922901a15f393feb22fb291f4f6c540c52dadffb801",
+        "ca1de682b460660634296c592301d84c9ad4928772794a99b1236bcf682c6aa3"
+      ],
+      "easiestOptionsVisibleRoute": "Maximize displacement under the fixed velocity integral with a saturated two-level acceleration, then solve its sharp feasibility quadratic.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-differential-equations-pantograph-entire-growth",
+      "records": 10,
+      "rawHashes": [
+        "cb3490c690c656bd3b79d23cdcb1dd445ed351e273bbf8835df002718e5429af",
+        "bacead0e3735b4818d81459e039b7c0a977a494578ab2f3240bdf321787c46e2",
+        "b1f13a979fcc9ba86074d474f7f32858d111337bb660725186360e8e3e3b338c",
+        "02930c9a27b378f05bf2d72d060b76da1a43e88848349ff2a274b0ffb6a1466d",
+        "a674d7ac3179e7577ef0e31d35f053dba441fffb5333dd19f1b7b1e8d63bd80f",
+        "1b65a6eb5b7e7a4c49dcdae28104aeddc0eac7d80024157d6b96cc818c0588bf",
+        "c00dc6750e37ce33e809b472b899e84bc2e4b9138a55b542f3570ccc57e0b911",
+        "158e29cfbb060e0611fe2f9029b69ee302e081ae4a4e1bf84d6e0fb2f43657be",
+        "d52f1a48e0b8163d91af025cfbce9e009a18914d654a4190b0bfd2a228c13587",
+        "92b720125c9da40d08e1be1e0d98170325b7d172a30f3180173ae87fddd26376"
+      ],
+      "easiestOptionsVisibleRoute": "Obtain the entire positive-coefficient series recursively and use its largest-term quadratic exponent with matching upper and lower growth bounds.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    },
+    {
+      "familyId": "q4-multivariable-eccentric-annulus-capacity",
+      "records": 10,
+      "rawHashes": [
+        "3bdb089e9631b9b29f7a2f1e9c7dede2dbc9328ccadf883efc7825b526274928",
+        "16df95a0124e5f32df4c14069e7246cf0a4fd348457e3d350cbf68def372837f",
+        "150333cc60c42132b43a6a4ba4139b88b12c3bbc38585155bf4f0b6f09422eff",
+        "3fb524aeef0a0753aad37b6f9d2fada0a25b58d1a951d416bd8f56c77dbb8535",
+        "83e61c5af022ecabb4c1e085db14224fb425b58ebc6724f41961308250dd707d",
+        "c969f0a1fc4dc94601a01277c83d5137fa6560dfa06f77bd960b33bfeeafebba",
+        "dd2fc150e0a03ede26473435e70a31b023db22ec1f6f014785b9e03c381e08c3",
+        "afef166fd8772f25f652707ca072311c2c6aea94b83907d5a9a96038c6e6e47b",
+        "1491998c7bd34c8af15f07dbb0da3fc043331641f79bfc38933db41625f74a6f",
+        "f9a24508dc2880785fece091542cb62cb1198d7d4938b748235dffba83a07456"
+      ],
+      "easiestOptionsVisibleRoute": "Use conformal invariance of Dirichlet energy, prove the sharp radial Cauchy\u2013Schwarz bound, and construct its attaining logarithmic potential.",
+      "difficultyUnchanged": "olympiad",
+      "flags": [
+        {
+          "rule": "shuffled-position-2",
+          "training": 0.2,
+          "heldout": 0.8,
+          "trainingUniqueCorrect": 1,
+          "heldoutUniqueCorrect": 4,
+          "disposition": "Deterministic diagnostic permutation only; the position advantage does not replicate from training and production uses fresh shared shuffles. No source option-value adjustment is justified by this flag."
+        }
+      ],
+      "status": "author-screen-complete-independent-peer-and-actual-final-id-gate-pending"
+    }
+  ],
+  "answerForms": {
+    "exact-real": {
+      "records": 200,
+      "flags": [],
+      "scope": "All272 provisional sourcePreview IDs; generic numeric screens cover only supported literal numeric forms."
+    },
+    "exact-expression": {
+      "records": 72,
+      "flags": [],
+      "scope": "All272 provisional sourcePreview IDs; generic numeric screens cover only supported literal numeric forms."
+    }
+  },
+  "rawSha256": "99675cdbfeb92d54315382f630f2b84856b139a0945828c6f0bc962041c0ee30",
+  "screenSha256": "7476d6b9c562ef2e008a58b33294f1af798618c751ab7d8fe8721f6226c0ad71",
+  "separateDemotions": "nonnormal-options-visible-demotions.json recommends indices2/5/8 Hard using exact elementary bounds; it is not an option repair or a new group.",
+  "limitations": [
+    "Separate author finite assertions are not independent peer evidence.",
+    "These are the27 repaired families, not clearance of the entire1531-item effective pool.",
+    "Private replacement IDs can change the deterministic diagnostic split; final actual-ID audit is required.",
+    "Literal negation rules miss distributed algebraic negation. Exact symbolic pair checks motivated the additional log-simplex repair."
+  ]
+}

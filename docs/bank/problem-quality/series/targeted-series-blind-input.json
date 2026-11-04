@@ -1,0 +1,260 @@
+{
+  "sourceSha256": "93ac217eef489e4fc06e6cb00d4f095e955ca711e57a60e9ef63b6c957e57006",
+  "samples": [
+    {
+      "familyId": "quality-series-olympiad-Dirichlet-moment-uniqueness",
+      "instanceIndex": 0,
+      "parameters": {
+        "bases": [
+          "3",
+          "4"
+        ],
+        "qualityRoute": "support-existence-v2"
+      },
+      "statement": "\\textnormal{For each displayed b separately, decide whether there exists an absolutely summable real sequence satisfying every displayed moment identity. Choose the ordered pair of existence conclusions.}\\quad\\sum_{n=1}^{\\infty}|a_n|<\\infty,\\qquad\\sum_{n=1}^{\\infty}\\frac{a_n}{n^k}=b^{-k}\\quad(k=1,2,\\ldots),\\qquad b=3,\\quad b=4.",
+      "choices": [
+        {
+          "choiceId": "ch_e3fc505cd8f78327",
+          "math": "\\left(\\textnormal{exists},\\ \\textnormal{does not exist}\\right)"
+        },
+        {
+          "choiceId": "ch_fe636b968823dd32",
+          "math": "\\left(\\textnormal{does not exist},\\ \\textnormal{exists}\\right)"
+        },
+        {
+          "choiceId": "ch_cd6140bc89ecd700",
+          "math": "\\left(\\textnormal{does not exist},\\ \\textnormal{does not exist}\\right)"
+        },
+        {
+          "choiceId": "ch_9487f786367df3ee",
+          "math": "\\left(\\textnormal{exists},\\ \\textnormal{exists}\\right)"
+        }
+      ],
+      "contentHash": "5005f133efba9d09d3bede5c544ad8288648dd84af3410f91aeb8fd41aa638c5"
+    },
+    {
+      "familyId": "quality-series-olympiad-Poisson-partition-moment",
+      "instanceIndex": 0,
+      "parameters": {
+        "qualityRoute": "growing-Poisson-moment-v2",
+        "saddleParameter": "1/2"
+      },
+      "statement": "\\lambda=\\frac{2}{e^{\\frac{1}{2}}},\\qquad S_N=e^{-\\lambda N}\\sum_{k=0}^{\\infty}\\frac{k^N(\\lambda N)^k}{k!}\\quad(N=1,2,\\ldots).\\quad\\lim_{N\\to\\infty}\\frac{S_N^{1/N}}{N}=?",
+      "choices": [
+        {
+          "choiceId": "ch_bc52c8c6a24ab7ca",
+          "math": "2 e"
+        },
+        {
+          "choiceId": "ch_c9bae0379d91f8c8",
+          "math": "\\frac{4}{e^{-1 + \\frac{2}{e^{\\frac{1}{2}}}}}"
+        },
+        {
+          "choiceId": "ch_f34c2e527790ab42",
+          "math": "\\frac{2}{e^{\\frac{2}{e^{\\frac{1}{2}}}}}"
+        },
+        {
+          "choiceId": "ch_2a86d40f4ba7419a",
+          "math": "\\frac{2}{e^{-1 + \\frac{2}{e^{\\frac{1}{2}}}}}"
+        }
+      ],
+      "contentHash": "ac9adcf4cdee8f54fa6c99f9aac6e83a240584b0b6260b6171cbc4236956417e"
+    },
+    {
+      "familyId": "quality-series-olympiad-Pade-cancellation-order",
+      "instanceIndex": 0,
+      "parameters": {
+        "movingScale": "1/2",
+        "qualityRoute": "moving-scale-Laplace-v2"
+      },
+      "statement": "Q_N(z)=\\sum_{k=0}^{N}\\frac{(-1)^k}{k!}\\binom{2N-k}{N}z^k.\\quad\\lim_{N\\to\\infty}\\left|Q_N\\left(\\frac{1}{2}N\\right)e^{\\frac{1}{2}N}-Q_N\\left(-\\frac{1}{2}N\\right)\\right|^{1/N}=?",
+      "choices": [
+        {
+          "choiceId": "ch_2974028afdda2921",
+          "math": "\\left(-2 + \\frac{\\sqrt{17}}{2}\\right) e^{\\frac{\\sqrt{17}}{4} + \\frac{5}{4}}"
+        },
+        {
+          "choiceId": "ch_aaeafd015f26cea5",
+          "math": "\\frac{e^{\\frac{9}{4}}}{16}"
+        },
+        {
+          "choiceId": "ch_f697d09671d56eef",
+          "math": "\\left(-2 + \\frac{\\sqrt{17}}{2}\\right) e^{\\frac{3}{4} + \\frac{\\sqrt{17}}{4}}"
+        },
+        {
+          "choiceId": "ch_fdd2a07182765073",
+          "math": "\\frac{\\left(-2 + \\frac{\\sqrt{17}}{2}\\right) e^{\\frac{\\sqrt{17}}{4} + \\frac{5}{4}}}{4}"
+        }
+      ],
+      "contentHash": "7abb4733a3d96b917c0fe5208fe43b2f6e764a12ff92c750d730e00a14d08b47"
+    },
+    {
+      "familyId": "quality-series-olympiad-Hilbert-kernel-sharp-constant",
+      "instanceIndex": 0,
+      "parameters": {
+        "columnScale": 2,
+        "qualityRoute": "asymmetric-Hilbert-v2"
+      },
+      "statement": "\\textnormal{Find the least constant C for which the inequality holds for all positive integers N and all real sequences of the indicated finite length.}\\quad\\left|\\sum_{j,k=1}^{N}\\frac{a_jb_k}{j+2k}\\right|\\le C\\left(\\sum_{j=1}^{N}a_j^2\\right)^{1/2}\\left(\\sum_{k=1}^{N}b_k^2\\right)^{1/2}.",
+      "choices": [
+        {
+          "choiceId": "ch_ecf453044a191081",
+          "math": "\\frac{\\pi}{2}"
+        },
+        {
+          "choiceId": "ch_e62d170bd773c65f",
+          "math": "\\sqrt{2} \\pi"
+        },
+        {
+          "choiceId": "ch_83013f374014f563",
+          "math": "\\frac{\\sqrt{2} \\pi}{4}"
+        },
+        {
+          "choiceId": "ch_b143908c0c4f3344",
+          "math": "\\frac{\\sqrt{2} \\pi}{2}"
+        }
+      ],
+      "contentHash": "ab184db42e58af48bc20dd0fd7f6dceae26b3dc2094330b74ca908729bbddfc2"
+    },
+    {
+      "familyId": "quality-series-olympiad-Carleman-geometric-mean-constant",
+      "instanceIndex": 0,
+      "parameters": {
+        "qualityRoute": "polynomial-weight-v2",
+        "weightDegreePlusOne": 2
+      },
+      "statement": "\\textnormal{Find the least constant C for which this inequality holds for every nonnegative real sequence with finite sum. The weights and their partial sums are defined below.}\\quad\\lambda_k=\\binom{k+0}{1},\\quad\\Lambda_n=\\sum_{k=1}^{n}\\lambda_k=\\binom{n+1}{2},\\quad\\sum_{n=1}^{\\infty}\\prod_{k=1}^{n}a_k^{\\lambda_k/\\Lambda_n}\\le C\\sum_{k=1}^{\\infty}a_k.",
+      "choices": [
+        {
+          "choiceId": "ch_7b5333a143b5bf39",
+          "math": "e^{\\frac{1}{3}}"
+        },
+        {
+          "choiceId": "ch_6699dd45618e5271",
+          "math": "e^{\\frac{1}{4}}"
+        },
+        {
+          "choiceId": "ch_91706518506309c7",
+          "math": "e^{2}"
+        },
+        {
+          "choiceId": "ch_22104fe62ef7b7bc",
+          "math": "e^{\\frac{1}{2}}"
+        }
+      ],
+      "contentHash": "7dc0aac54b75741ad621a24ecae69411f6250332868fb97f74b238f24de04570"
+    },
+    {
+      "familyId": "quality-series-olympiad-Dyson-alternating-cube",
+      "instanceIndex": 0,
+      "parameters": {
+        "qualityRoute": "unequal-block-asymptotic-v2",
+        "thirdBlockRatio": 3
+      },
+      "statement": "S_N=\\sum_{k=-N}^{N}(-1)^k\\binom{3N}{2N+k}\\binom{5N}{3N+k}\\binom{4N}{N+k}.\\quad\\lim_{N\\to\\infty}N\\left(\\frac{1}{432}\\right)^NS_N=?",
+      "choices": [
+        {
+          "choiceId": "ch_4c7030b4450a5537",
+          "math": "\\frac{\\sqrt{30}}{12 \\pi}"
+        },
+        {
+          "choiceId": "ch_cccbb49188b7aaab",
+          "math": "\\frac{1}{2 \\pi}"
+        },
+        {
+          "choiceId": "ch_a83b718daaaf3255",
+          "math": "\\frac{1}{\\pi}"
+        },
+        {
+          "choiceId": "ch_77d35d041026a051",
+          "math": "\\frac{1}{4 \\pi}"
+        }
+      ],
+      "contentHash": "845886d3aa9e1066b83435901bdd1a12202a93bfb5a1044d2b42324bbbfdcf8b"
+    },
+    {
+      "familyId": "quality-series-olympiad-conditional-double-sum-orders",
+      "instanceIndex": 0,
+      "parameters": {
+        "lowerM": 2,
+        "lowerN": 5,
+        "qualityRoute": "double-order-v1"
+      },
+      "statement": "c_{mn}=\\frac{m-n}{(m+n)(m+n+1)(m+n+2)}.\\quad A=\\sum_{m=2}^{\\infty}\\left(\\sum_{n=5}^{\\infty}c_{mn}\\right),\\quad B=\\sum_{n=5}^{\\infty}\\left(\\sum_{m=2}^{\\infty}c_{mn}\\right),\\quad D=\\lim_{N\\to\\infty}\\sum_{m=2}^{N}\\sum_{n=5}^{N}c_{mn}.\\quad(A,B,D)=?",
+      "choices": [
+        {
+          "choiceId": "ch_3a81f66a6e8c4728",
+          "math": "\\left( - \\frac{3}{14}, \\  - \\frac{3}{14}, \\  - \\frac{3}{14}\\right)"
+        },
+        {
+          "choiceId": "ch_f1b09187fc0dee79",
+          "math": "\\left( - \\frac{5}{7}, \\  \\frac{2}{7}, \\  0\\right)"
+        },
+        {
+          "choiceId": "ch_5bbfabd7b28e1047",
+          "math": "\\left( - \\frac{5}{7}, \\  \\frac{2}{7}, \\  - \\frac{3}{14}\\right)"
+        },
+        {
+          "choiceId": "ch_e4af272d705af0af",
+          "math": "\\left( \\frac{2}{7}, \\  - \\frac{5}{7}, \\  - \\frac{3}{14}\\right)"
+        }
+      ],
+      "contentHash": "74e5f392060f41eea0ea24ea3acb6de27bc80bb1d2f9fb1384f864fe52a405d5"
+    },
+    {
+      "familyId": "quality-series-olympiad-Hardy-mean-sharp-constant",
+      "instanceIndex": 0,
+      "parameters": {
+        "exponent": "3/2",
+        "qualityRoute": "Hardy-power-v1"
+      },
+      "statement": "\\textnormal{Find the least real C for which the inequality holds for every nonnegative sequence whose displayed power sum is finite.}\\quad p=\\frac{3}{2},\\qquad\\sum_{n=1}^{\\infty}\\left(\\frac{a_1+\\cdots+a_n}{n}\\right)^p\\le C\\sum_{n=1}^{\\infty}a_n^p.",
+      "choices": [
+        {
+          "choiceId": "ch_8ee342fcee242519",
+          "math": "\\frac{3 \\sqrt{6}}{4}"
+        },
+        {
+          "choiceId": "ch_e16a8c2b04507b15",
+          "math": "\\frac{3 \\sqrt{15}}{25}"
+        },
+        {
+          "choiceId": "ch_dfb5d836beb3f377",
+          "math": "3 \\sqrt{3}"
+        },
+        {
+          "choiceId": "ch_9c887409d6ef11be",
+          "math": "3"
+        }
+      ],
+      "contentHash": "21dd0248bf57813f1635452cd61b43cd6962f3c8be1e10ee96f4cf439df125b4"
+    },
+    {
+      "familyId": "quality-series-olympiad-finite-cycle-resolvent",
+      "instanceIndex": 0,
+      "parameters": {
+        "cycleSize": 13
+      },
+      "statement": "\\sum_{k=0}^{12}\\frac1{\\frac32-\\cos(2\\pi k/13)}=?",
+      "choices": [
+        {
+          "choiceId": "ch_0592670204c1116c",
+          "math": "\\frac{13546}{1165}"
+        },
+        {
+          "choiceId": "ch_9663eda9f999c487",
+          "math": "\\frac{1265832}{121393}"
+        },
+        {
+          "choiceId": "ch_7cf57cfe4ccf8c43",
+          "math": "\\frac{6058}{521}"
+        },
+        {
+          "choiceId": "ch_88f780431d1c0fb6",
+          "math": "\\frac{466}{521}"
+        }
+      ],
+      "contentHash": "7eccf515ece790210af58966b62a22d47366f212074f7ef3fe27e5a8e7081bd0"
+    }
+  ]
+}

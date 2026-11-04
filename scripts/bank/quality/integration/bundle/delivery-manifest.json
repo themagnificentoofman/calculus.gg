@@ -1,0 +1,77 @@
+{
+  "status": "frozen-portable-review-bundle-ready-for-parent-final-screen-not-admitted",
+  "records": 468,
+  "sourceCopies": 97,
+  "routeCounts": {
+    "integration-extensions": 36,
+    "integration-repairs": 40,
+    "integration-options": 16,
+    "integration-historical": 86,
+    "integration-new": 108,
+    "integration-sign": 152,
+    "integration-bessel": 8,
+    "integration-moments": 8,
+    "integration-hilbert": 14
+  },
+  "reviewedDifficultyCounts": {
+    "easy": 56,
+    "hard": 150,
+    "medium": 128,
+    "olympiad": 134
+  },
+  "batchOnlyQualifiedOlympiadRaw": 134,
+  "batchOnlyQualifiedOlympiadNormalized": 123,
+  "baselinePreviousLinks": 270,
+  "unpublishedReplacementLinks": 24,
+  "independentReviewEvidenceBound": true,
+  "constructorSourceCopiesUnchanged": true,
+  "fullReconstruction": {
+    "passed": 468,
+    "failed": 0,
+    "canonicalByteParity": true,
+    "sourceLineParity": true,
+    "serializationNormalizations": 0,
+    "mutatedStatementRejected": 468,
+    "mutatedChoiceRejected": 468,
+    "outOfDomainGuards": 5
+  },
+  "relocatedCopyReconstruction": {
+    "passed": 468,
+    "failed": 0,
+    "inheritedInvalidLegacyPathsOverridden": true
+  },
+  "preservedFailure": "Initial negative test attempted to replace the first option by 0, but three source options already were 0. The initial failure report is retained. The test now appends a false equation so every attempted mutation changes bytes; no candidate content was changed.",
+  "files": {
+    "copy-manifest.json": "7e66efbcc652b16760721ea37160d94ee0c4cc1d5c793e41f3b042885cc73497",
+    "source-joins.json": "f4b57dcbb296ceb5c80e23b40364bcf54041de64bbea16fd5a5ab314bd09fd92",
+    "catalog.json": "a3896f0d658852c00cb14a2c33a8d543e56e604d343c2adeb121498363050b25",
+    "admission-plan.json": "eae478aaee2b785b2376d165f250daea0c3af1747a8d4ded637ccf1c2393f5ee",
+    "supersession-ledger.json": "8c4dbca0c54bc1a6f16b99d6b2588854689fc0231250a27922f7dd7bc32b765f",
+    "final-candidates.jsonl": "27c59ae85674c0851fcd9b63d4b61bf39400bbd5776d7efda251c01451a8570a",
+    "reconstruction-report.json": "4d6d31bc87748d5aab0972769fe4a79c5722700e49fa60a5ffc2ba3ae16a68b3",
+    "relocation-reconstruction-report.json": "5647488f0d9b4db9996b9868148a4d562dd7c636115bbf7a63a9dc2d8dfb3ecd",
+    "reconstruction-report-initial-guard-failure.json": "3c21b0eaaf63ad0c2fa4f95e8f5aac23e5d944d548183e80f79d256b25e71ce7",
+    "runtime.py": "5d69951f1d137588c869004f8026c39b0ae6baa4b7508a5c978a9ec015271d3a",
+    "worker.py": "186eb08dc5853825914feb4d58b2a749170ebf9774929ec77627f11bbcf40796",
+    "verify_bundle.py": "0ad546947b4eafdf23722a2e18ff255b3035829ecb59c719f61789257c235261",
+    "assemble_bundle.py": "bf4e4225d8cf8fc3143b60552e7fac1214e231d4f85f4f2e3997da7facf49ab0",
+    "README.md": "2b3feeb8d00670fe2af096e40439b044a7c640978fcc9f8fdb6f772f9924ec33"
+  },
+  "reproduce": "python -B verify_bundle.py --workers 3",
+  "runtimeAPI": [
+    "catalog()",
+    "build(route, family, index)",
+    "verify(route, record, index) -> bool",
+    "reconstruction_evidence(route, family, index)",
+    "close()"
+  ],
+  "pending": [
+    "Final actual canonical-ID option screen",
+    "Parent source-bound registry/admission and final capacity composition",
+    "Production import/publish if authorized by user"
+  ],
+  "humanReviewed": false,
+  "formalProof": false,
+  "admitted": false,
+  "productionWrites": 0
+}

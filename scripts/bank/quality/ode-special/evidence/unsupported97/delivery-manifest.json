@@ -1,0 +1,46 @@
+{
+  "status": "complete-all97-with-confirmed-menu-findings",
+  "scope": "All97 previously parser-unsupported records are scalar; none skipped as tuple/category.",
+  "counts": {
+    "requested": 97,
+    "completed": 97,
+    "pairDistinctions": 582,
+    "oppositeSumChecks": 582,
+    "blockers": 7,
+    "errors": 0
+  },
+  "additionalFinding": {
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "finding": "Every menu normalizes to B/4,B/2,B,alpha\u00b2B/2. Under the proved alpha>2 and B>0, the correctB/2 is always second-smallest; all10 require menu repair.",
+    "disposition": "Separate authored finite overlay authorized; no level preserved solely for coverage counts."
+  },
+  "gammaChoices": 0,
+  "ellipticConvention": "All E arguments are p or p\u00b2 with0<p\u00b2<p<1; parameter convention explicit in the statement.",
+  "unresolvedLiteralMath": [],
+  "functionDomainIssues": [],
+  "humanReviewed": false,
+  "formalProof": false,
+  "files": {
+    "series_intervals.py": "bb71f706ad7c41e3040a5043889d81e73e199a34792ceef7f5a430772eaedf52",
+    "rational_intervals.py": "8dc0cbe9cd0886f1c91f948165a6ed6a85305ecd93b326891ff1a65bb1de2076",
+    "review.py": "68846886a964fe9b406c3c671ea8bf949f22c760075ad7bfd440bd67e34a1ac3",
+    "literal_special.py": "e1797823890154edce406405709bb6da09cded10092e5de58438cfabe4ddd077",
+    "literal-samples.json": "ff66d5ee02e10847d909bc803bfe3f49c1b2229ef93915417874a192d799dfdd",
+    "inputs.json": "aba0ce80ff0f434b1adce5b6a4ac5c0d93a199b4ab68c8b32413bbc4564a025b",
+    "special_intervals.py": "067e31b3dababafec7fe830c3eb1a4ccf61d5b7365f6d0f26d59357d198bc24a",
+    "reviewer-failures.json": "d68e2a4a50937c712d3011e8f21cebbd67ea23bbf107a8025b2205c8da1f1bb5",
+    "review-results.json": "29d9c8e9753deb64f6e268f7b7e095b40a14a1f7792d91c64a181544a5917f7b"
+  }
+}

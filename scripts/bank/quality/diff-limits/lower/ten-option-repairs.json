@@ -1,0 +1,1606 @@
+[
+  {
+    "familyId": "q2-m3-limits-easy-radical-rationalization",
+    "topic": "limits",
+    "difficulty": "easy",
+    "parameters": {
+      "instance": 0,
+      "case": {
+        "m": 12,
+        "caseId": "extension-m-12",
+        "purpose": "A checked additional finite fluency case of the same construction."
+      }
+    },
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 144} - 12}{x}",
+    "choices": [
+      {
+        "choiceId": "ch_ee0cb4496fff4d88",
+        "math": "\\frac{1}{24}",
+        "misconception": "correct",
+        "expression": "Rational(1, 24)"
+      },
+      {
+        "choiceId": "ch_af7e9ec0ea5cbebc",
+        "math": "\\frac{1}{288}",
+        "misconception": "Use the radicand base instead of its square root",
+        "expression": "Rational(1, 288)"
+      },
+      {
+        "choiceId": "ch_b10b8d7603d1bb49",
+        "math": "\\frac{1}{12}",
+        "misconception": "Omit one of the two equal conjugate endpoint terms",
+        "expression": "Rational(1, 12)"
+      },
+      {
+        "choiceId": "ch_dd88077aa0c05d7c",
+        "math": "\\frac{1}{6}",
+        "misconception": "Count the rationalized numerator twice while omitting one conjugate term",
+        "expression": "Rational(1, 6)"
+      }
+    ],
+    "answerChoiceId": "ch_ee0cb4496fff4d88",
+    "answerExpression": "Rational(1, 24)",
+    "answerMath": "\\frac{1}{24}",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+144}-12}x=\\frac1{\\sqrt{x+144}+12}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+144}+12}=\\frac1{24}=\\frac{1}{24}",
+      "\\frac{1}{24}"
+    ],
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "A conjugate removes the apparent zero over zero. This version adds only two explicitly checked finite parameters; it adds no new mathematical idea.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "provenance": {
+      "kind": "original-constructor-extension",
+      "lineage": {
+        "construction": "m3-limits-easy-radical-rationalization",
+        "originalFamilyId": "m3-limits-easy-radical-rationalization",
+        "sameRelatedIdea": true,
+        "newIdeaCredit": 0
+      },
+      "sourceContentHash": "8a9801949b91dfd5f4877722e7bd296b73d35f8ff19ee21459c02f1a60ce5661"
+    },
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 144} - 12}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 144} + 12}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{24}",
+            "right": "\\frac{1}{24}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{24}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{11}{288}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{8}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{23}{288}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{12}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{47}{288}",
+            "passed": true
+          }
+        ],
+        "sourceFiles": {
+          "frozen_content/admission.json": "2e17f9d109df998176c4b5ef079d5ef6a3a1dea8c0e16b7fc5774106e5b858c6",
+          "frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2",
+          "frozen_content/certificates.py": "4d594af5717cc0b1e0cd95669df1142c7488264eba1d6744ec3afdc9de28b88f",
+          "frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+          "frozen_content/differentiation_additions.py": "f3efc069b67fa003ee064e95cc4f22fb6e357b9db71866311856111ddda9fb26",
+          "frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+          "frozen_content/editorial.py": "be10e6c6be7ca728e33b6f98635854041509a658638efee2497c9b61ce8be4a4",
+          "frozen_content/extra.py": "c68018e94e873af1ddd3046c83d1738c3b40728e946a364105f445830a09b0f9",
+          "frozen_content/integration.py": "f52ea96e6b10cb51aed8cdae1b5d1a05658cfcc6dacc32789ca02bfed75b34ff",
+          "frozen_content/limits_additions.py": "c4620207b2bd0eada64940454c12a002f0a6ebc3102eb1c3c9e1da5cee85f039",
+          "frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+          "frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+          "frozen_content/series_easy.py": "0b6c4e63b670dc4eaae89050c19e2c6faab897672b27818647896540ed78d791",
+          "frozen_content/standalone.py": "d46736547d602738a8cd72151ff3756ea879f689f6096686006c8b2de81eb065",
+          "frozen_review/common.py": "f5dc2decd9462b67349cf364a333b80ef527f631dc01fdb93de6927f4b429eec",
+          "frozen_review/differentiation_solutions.py": "ccff98bd3002a2d1c5d333db3a883926f1a0f77033acd5aee50ef0b5e0de9b98",
+          "frozen_review/limits_solutions.py": "3c8f1c2eb27502b358b53ee5a583c45a8876d0d309a1cfeb8ea988b094f0a93a",
+          "frozen_review/parent_existing_oracle.py": "d3a3ee48b5f4f08ec8cee319b069d9d426ffaf70166cea5fe3947fd7a32cec04",
+          "frozen_supplemental/reproduction_paths.py": "632adb44f1364f7778f14be97359107eab2ebab9c561db6af9d8cc14528c3b4c",
+          "frozen_supplemental/solutions.py": "618757ccb4f7ef8bc716216d6ef574e6e263b46efad4d32cdafb5f53a64962f4",
+          "frozen_supplemental/substantive_checks.py": "ac8a280c95a998f3ac1055f7ff6fbc53c903f1f7aaf7c2ac8d57d584973e4d6f"
+        }
+      }
+    },
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "familyId": "q2-m3-limits-easy-radical-rationalization",
+    "topic": "limits",
+    "difficulty": "easy",
+    "parameters": {
+      "instance": 1,
+      "case": {
+        "m": 13,
+        "caseId": "extension-m-13",
+        "purpose": "A checked additional finite fluency case of the same construction."
+      }
+    },
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 169} - 13}{x}",
+    "choices": [
+      {
+        "choiceId": "ch_3f8a62c84d7361f9",
+        "math": "\\frac{1}{338}",
+        "misconception": "Use the radicand base instead of its square root",
+        "expression": "Rational(1, 338)"
+      },
+      {
+        "choiceId": "ch_ce583615b7d8a8df",
+        "math": "\\frac{1}{26}",
+        "misconception": "correct",
+        "expression": "Rational(1, 26)"
+      },
+      {
+        "choiceId": "ch_5ce12c3da5a8b931",
+        "math": "\\frac{1}{28}",
+        "misconception": "Evaluate the conjugate root at the next integer instead of the displayed root",
+        "expression": "Rational(1, 28)"
+      },
+      {
+        "choiceId": "ch_e070da67d6f723f6",
+        "math": "\\frac{1}{13}",
+        "misconception": "Omit one of the two equal conjugate endpoint terms",
+        "expression": "Rational(1, 13)"
+      }
+    ],
+    "answerChoiceId": "ch_ce583615b7d8a8df",
+    "answerExpression": "Rational(1, 26)",
+    "answerMath": "\\frac{1}{26}",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+169}-13}x=\\frac1{\\sqrt{x+169}+13}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+169}+13}=\\frac1{26}=\\frac{1}{26}",
+      "\\frac{1}{26}"
+    ],
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "A conjugate removes the apparent zero over zero. This version adds only two explicitly checked finite parameters; it adds no new mathematical idea.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "provenance": {
+      "kind": "original-constructor-extension",
+      "lineage": {
+        "construction": "m3-limits-easy-radical-rationalization",
+        "originalFamilyId": "m3-limits-easy-radical-rationalization",
+        "sameRelatedIdea": true,
+        "newIdeaCredit": 0
+      },
+      "sourceContentHash": "8a9801949b91dfd5f4877722e7bd296b73d35f8ff19ee21459c02f1a60ce5661"
+    },
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 169} - 13}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 169} + 13}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{26}",
+            "right": "\\frac{1}{26}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{26}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{6}{169}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{364}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{25}{338}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{15}{364}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{155}{4732}",
+            "passed": true
+          }
+        ],
+        "sourceFiles": {
+          "frozen_content/admission.json": "2e17f9d109df998176c4b5ef079d5ef6a3a1dea8c0e16b7fc5774106e5b858c6",
+          "frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2",
+          "frozen_content/certificates.py": "4d594af5717cc0b1e0cd95669df1142c7488264eba1d6744ec3afdc9de28b88f",
+          "frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+          "frozen_content/differentiation_additions.py": "f3efc069b67fa003ee064e95cc4f22fb6e357b9db71866311856111ddda9fb26",
+          "frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+          "frozen_content/editorial.py": "be10e6c6be7ca728e33b6f98635854041509a658638efee2497c9b61ce8be4a4",
+          "frozen_content/extra.py": "c68018e94e873af1ddd3046c83d1738c3b40728e946a364105f445830a09b0f9",
+          "frozen_content/integration.py": "f52ea96e6b10cb51aed8cdae1b5d1a05658cfcc6dacc32789ca02bfed75b34ff",
+          "frozen_content/limits_additions.py": "c4620207b2bd0eada64940454c12a002f0a6ebc3102eb1c3c9e1da5cee85f039",
+          "frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+          "frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+          "frozen_content/series_easy.py": "0b6c4e63b670dc4eaae89050c19e2c6faab897672b27818647896540ed78d791",
+          "frozen_content/standalone.py": "d46736547d602738a8cd72151ff3756ea879f689f6096686006c8b2de81eb065",
+          "frozen_review/common.py": "f5dc2decd9462b67349cf364a333b80ef527f631dc01fdb93de6927f4b429eec",
+          "frozen_review/differentiation_solutions.py": "ccff98bd3002a2d1c5d333db3a883926f1a0f77033acd5aee50ef0b5e0de9b98",
+          "frozen_review/limits_solutions.py": "3c8f1c2eb27502b358b53ee5a583c45a8876d0d309a1cfeb8ea988b094f0a93a",
+          "frozen_review/parent_existing_oracle.py": "d3a3ee48b5f4f08ec8cee319b069d9d426ffaf70166cea5fe3947fd7a32cec04",
+          "frozen_supplemental/reproduction_paths.py": "632adb44f1364f7778f14be97359107eab2ebab9c561db6af9d8cc14528c3b4c",
+          "frozen_supplemental/solutions.py": "618757ccb4f7ef8bc716216d6ef574e6e263b46efad4d32cdafb5f53a64962f4",
+          "frozen_supplemental/substantive_checks.py": "ac8a280c95a998f3ac1055f7ff6fbc53c903f1f7aaf7c2ac8d57d584973e4d6f"
+        }
+      }
+    },
+    "editorialStatus": "needs-independent-review"
+  },
+  {
+    "answerChoiceId": "ch_8f624d39e8401f84",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_d1d33b4d450d2ebe",
+        "math": "\\frac{1}{32}"
+      },
+      {
+        "choiceId": "ch_8f624d39e8401f84",
+        "math": "\\frac{1}{8}"
+      },
+      {
+        "choiceId": "ch_9af801d618a4e37b",
+        "math": "\\frac{1}{4}"
+      },
+      {
+        "choiceId": "ch_a97d973330d36673",
+        "math": "\\frac{1}{2}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 0
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_f4969e38a30c1eb993d0",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 4
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_f4969e38a30c1eb993d0",
+        "sourceRevision": 1,
+        "sourceContentHash": "8a9801949b91dfd5f4877722e7bd296b73d35f8ff19ee21459c02f1a60ce5661",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "7196049ef4da081abf67287e50696e30eb266a16b66e510fe74a7ce100a528be",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+16}-4}x=\\frac1{\\sqrt{x+16}+4}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+16}+4}=\\frac1{8}=\\frac{1}{8}",
+      "\\frac{1}{8}",
+      "\\frac{1}{8}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 16} - 4}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 16} - 4}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 16} + 4}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{8}",
+            "right": "\\frac{1}{8}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{8}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{3}{32}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{3}{8}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{7}{32}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{4}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{15}{32}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{32}": "Use the radicand base instead of its square root",
+          "\\frac{1}{8}": "correct",
+          "\\frac{1}{4}": "Omit one of the two equal conjugate endpoint terms",
+          "\\frac{1}{2}": "Count the rationalized numerator twice while omitting one conjugate term"
+        },
+        "sourceContentHash": "8a9801949b91dfd5f4877722e7bd296b73d35f8ff19ee21459c02f1a60ce5661",
+        "peerReview": null
+      }
+    },
+    "contentHash": "c4253789a73145c03060168a4e663e528103a0ddacd09283720708e1712b7a34"
+  },
+  {
+    "answerChoiceId": "ch_cb23a9c66f4984ce",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_cb23a9c66f4984ce",
+        "math": "\\frac{1}{10}"
+      },
+      {
+        "choiceId": "ch_00f4c1bb2a427097",
+        "math": "\\frac{1}{20}"
+      },
+      {
+        "choiceId": "ch_f09bd56aa4816512",
+        "math": "\\frac{1}{25}"
+      },
+      {
+        "choiceId": "ch_d607e730a5e54630",
+        "math": "\\frac{1}{5}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_1c211ee550998e93c29d",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 5
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_1c211ee550998e93c29d",
+        "sourceRevision": 1,
+        "sourceContentHash": "3d70ce0cdb56e6dda11cb1e962a8ca8494179631b2db311d7b993df021de6d2f",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "0827698ae48489a722087eae2adaf5c3116e53586073be6b226b0d6a4fdbf34f",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+25}-5}x=\\frac1{\\sqrt{x+25}+5}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+25}+5}=\\frac1{10}=\\frac{1}{10}",
+      "\\frac{1}{10}",
+      "\\frac{1}{10}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 25} - 5}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 25} - 5}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 25} + 5}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{10}",
+            "right": "\\frac{1}{10}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{10}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{20}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{3}{50}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{3}{20}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{4}{25}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{100}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{10}": "correct",
+          "\\frac{1}{20}": "Apply the conjugate factor two twice",
+          "\\frac{1}{25}": "Omit one conjugate term and use the radicand base",
+          "\\frac{1}{5}": "Omit one of the two equal conjugate endpoint terms"
+        },
+        "sourceContentHash": "3d70ce0cdb56e6dda11cb1e962a8ca8494179631b2db311d7b993df021de6d2f",
+        "peerReview": null
+      }
+    },
+    "contentHash": "16ba6117f8c48f308f2a8a4f9925ff9ce3e7359f38f6042ad68f733c9ec9838b"
+  },
+  {
+    "answerChoiceId": "ch_b10b8d7603d1bb49",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_bf7675175ba34d4a",
+        "math": "\\frac{1}{72}"
+      },
+      {
+        "choiceId": "ch_ee0cb4496fff4d88",
+        "math": "\\frac{1}{24}"
+      },
+      {
+        "choiceId": "ch_b10b8d7603d1bb49",
+        "math": "\\frac{1}{12}"
+      },
+      {
+        "choiceId": "ch_617d04471441c12d",
+        "math": "\\frac{1}{14}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_cba38bf9c2acd1d6a4f5",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 6
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_cba38bf9c2acd1d6a4f5",
+        "sourceRevision": 1,
+        "sourceContentHash": "984bd2b0678f05386213ff7794bb7c6df6fceb299dc0b235db80ccbb32caa42a",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "8173a8e708e77ee9eb5c0769ea9ae14d362294cdc3c0a792991a3faf08b6f331",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+36}-6}x=\\frac1{\\sqrt{x+36}+6}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+36}+6}=\\frac1{12}=\\frac{1}{12}",
+      "\\frac{1}{12}",
+      "\\frac{1}{12}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 36} - 6}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 36} - 6}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 36} + 6}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{12}",
+            "right": "\\frac{1}{12}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{24}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{5}{72}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{84}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{36}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{5}{168}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{29}{504}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{72}": "Use the radicand base instead of its square root",
+          "\\frac{1}{24}": "Apply the conjugate factor two twice",
+          "\\frac{1}{12}": "correct",
+          "\\frac{1}{14}": "Evaluate the conjugate root at the next integer instead of the displayed root"
+        },
+        "sourceContentHash": "984bd2b0678f05386213ff7794bb7c6df6fceb299dc0b235db80ccbb32caa42a",
+        "peerReview": null
+      }
+    },
+    "contentHash": "8abe937ea729c13579f032208c2fc5e54df66f36c70430c7061a0326cc07a7eb"
+  },
+  {
+    "answerChoiceId": "ch_617d04471441c12d",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_d66fed62761af60a",
+        "math": "\\frac{2}{7}"
+      },
+      {
+        "choiceId": "ch_617d04471441c12d",
+        "math": "\\frac{1}{14}"
+      },
+      {
+        "choiceId": "ch_be5c14b1e1e2e645",
+        "math": "\\frac{1}{16}"
+      },
+      {
+        "choiceId": "ch_87fb39e30d169925",
+        "math": "\\frac{1}{7}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 3
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_1254bc3cc0831a3995a4",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 7
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_1254bc3cc0831a3995a4",
+        "sourceRevision": 1,
+        "sourceContentHash": "16545a5f400f1ced39e75ce68aa97ae2f7402b6877ea8007654f365edbc92b2e",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "2d0b20760b714c1211c445c9bc0417e7cf00444c6352702f31eea7da4b4f336e",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+49}-7}x=\\frac1{\\sqrt{x+49}+7}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+49}+7}=\\frac1{14}=\\frac{1}{14}",
+      "\\frac{1}{14}",
+      "\\frac{1}{14}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 49} - 7}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 49} - 7}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 49} + 7}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{14}",
+            "right": "\\frac{1}{14}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{14}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{3}{14}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{112}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{7}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{9}{112}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{25}{112}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{2}{7}": "Count the rationalized numerator twice while omitting one conjugate term",
+          "\\frac{1}{14}": "correct",
+          "\\frac{1}{16}": "Evaluate the conjugate root at the next integer instead of the displayed root",
+          "\\frac{1}{7}": "Omit one of the two equal conjugate endpoint terms"
+        },
+        "sourceContentHash": "16545a5f400f1ced39e75ce68aa97ae2f7402b6877ea8007654f365edbc92b2e",
+        "peerReview": null
+      }
+    },
+    "contentHash": "0a45f548fa877a93aa871004a1de53b411fb11bfc8b7471f06d2e73b13a63fa1"
+  },
+  {
+    "answerChoiceId": "ch_be5c14b1e1e2e645",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_9af801d618a4e37b",
+        "math": "\\frac{1}{4}"
+      },
+      {
+        "choiceId": "ch_8b172c89e463a1e9",
+        "math": "\\frac{1}{64}"
+      },
+      {
+        "choiceId": "ch_d1d33b4d450d2ebe",
+        "math": "\\frac{1}{32}"
+      },
+      {
+        "choiceId": "ch_be5c14b1e1e2e645",
+        "math": "\\frac{1}{16}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 4
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_f4dfc47942b29d340514",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 8
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_f4dfc47942b29d340514",
+        "sourceRevision": 1,
+        "sourceContentHash": "14a47bc2074225e478db961f682da01a224f380c237db54d2d5f8fdc2b28e144",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "8bff070c8dda083bf9d0026574646ff0aa15580e9b7f701b8fe5f602b37c6262",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+64}-8}x=\\frac1{\\sqrt{x+64}+8}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+64}+8}=\\frac1{16}=\\frac{1}{16}",
+      "\\frac{1}{16}",
+      "\\frac{1}{16}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 64} - 8}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 64} - 8}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 64} + 8}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{16}",
+            "right": "\\frac{1}{16}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{32}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{3}{64}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{3}{16}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{64}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{7}{32}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{15}{64}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{4}": "Count the rationalized numerator twice while omitting one conjugate term",
+          "\\frac{1}{64}": "Omit one conjugate term and use the radicand base",
+          "\\frac{1}{32}": "Apply the conjugate factor two twice",
+          "\\frac{1}{16}": "correct"
+        },
+        "sourceContentHash": "14a47bc2074225e478db961f682da01a224f380c237db54d2d5f8fdc2b28e144",
+        "peerReview": null
+      }
+    },
+    "contentHash": "c822692a2815ca165cde7b464b41f1b87b708740367961da8c60074dabad3e46"
+  },
+  {
+    "answerChoiceId": "ch_777d212e39967c59",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_777d212e39967c59",
+        "math": "\\frac{1}{18}"
+      },
+      {
+        "choiceId": "ch_42741c9e78b91851",
+        "math": "\\frac{1}{162}"
+      },
+      {
+        "choiceId": "ch_1d24e499d12951db",
+        "math": "\\frac{1}{81}"
+      },
+      {
+        "choiceId": "ch_840c6d995b56e060",
+        "math": "\\frac{1}{36}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 5
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_5bc304f72ac3eaaefe5c",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 9
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_5bc304f72ac3eaaefe5c",
+        "sourceRevision": 1,
+        "sourceContentHash": "444d7be3fcc9023c3befb6c7a2a2d10f8c196d3d9340bb014bcace5edfac33de",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "eef7ca8625891c472554bb54eb41b3b9f33e6173f408b3cfae832cd2209d7d2b",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+81}-9}x=\\frac1{\\sqrt{x+81}+9}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+81}+9}=\\frac1{18}=\\frac{1}{18}",
+      "\\frac{1}{18}",
+      "\\frac{1}{18}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 81} - 9}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 81} - 9}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 81} + 9}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{18}",
+            "right": "\\frac{1}{18}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{36}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{4}{81}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{7}{162}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{7}{324}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{5}{324}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{162}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{18}": "correct",
+          "\\frac{1}{162}": "Use the radicand base instead of its square root",
+          "\\frac{1}{81}": "Omit one conjugate term and use the radicand base",
+          "\\frac{1}{36}": "Apply the conjugate factor two twice"
+        },
+        "sourceContentHash": "444d7be3fcc9023c3befb6c7a2a2d10f8c196d3d9340bb014bcace5edfac33de",
+        "peerReview": null
+      }
+    },
+    "contentHash": "81802d05fca2824430a24c894412610cc9519be519d3bfc6ad0a63232927fcea"
+  },
+  {
+    "answerChoiceId": "ch_00f4c1bb2a427097",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_cb23a9c66f4984ce",
+        "math": "\\frac{1}{10}"
+      },
+      {
+        "choiceId": "ch_d607e730a5e54630",
+        "math": "\\frac{1}{5}"
+      },
+      {
+        "choiceId": "ch_abbf14dea307a4d6",
+        "math": "\\frac{1}{100}"
+      },
+      {
+        "choiceId": "ch_00f4c1bb2a427097",
+        "math": "\\frac{1}{20}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 6
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_2493c91c815317b11154",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 10
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_2493c91c815317b11154",
+        "sourceRevision": 1,
+        "sourceContentHash": "feabedba80ff0b5dbc38348d28fc4493921b472e7dcd8c0da77cb3249942074e",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "14d938d2c70a5906bd27901e6e8b08ade75364ff9eceaef1b7b73830b8b75914",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+100}-10}x=\\frac1{\\sqrt{x+100}+10}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+100}+10}=\\frac1{20}=\\frac{1}{20}",
+      "\\frac{1}{20}",
+      "\\frac{1}{20}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 100} - 10}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 100} - 10}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 100} + 10}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{20}",
+            "right": "\\frac{1}{20}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{20}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{25}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{3}{20}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{9}{100}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{1}{10}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{19}{100}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{10}": "Omit one of the two equal conjugate endpoint terms",
+          "\\frac{1}{5}": "Count the rationalized numerator twice while omitting one conjugate term",
+          "\\frac{1}{100}": "Omit one conjugate term and use the radicand base",
+          "\\frac{1}{20}": "correct"
+        },
+        "sourceContentHash": "feabedba80ff0b5dbc38348d28fc4493921b472e7dcd8c0da77cb3249942074e",
+        "peerReview": null
+      }
+    },
+    "contentHash": "107c99e8f5a1e2400151a500662de12444c47c4ccd4d4fb933fe23cebb1902f0"
+  },
+  {
+    "answerChoiceId": "ch_71c46e5fff44427a",
+    "assumptions": [
+      "Approach through the real domain; the indicated one-sided limit is used."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_71c46e5fff44427a",
+        "math": "\\frac{1}{22}"
+      },
+      {
+        "choiceId": "ch_6320d7afb5e5a145",
+        "math": "\\frac{2}{11}"
+      },
+      {
+        "choiceId": "ch_9c4c357c965e24a8",
+        "math": "\\frac{1}{44}"
+      },
+      {
+        "choiceId": "ch_fd9237d256d3cd70",
+        "math": "\\frac{1}{242}"
+      }
+    ],
+    "difficulty": "easy",
+    "estimates": {
+      "basis": "A conjugate removes the apparent zero over zero. Editorial estimate; player calibration pending.",
+      "difficulty": "easy",
+      "solveSeconds": 90
+    },
+    "familyId": "m3-limits-easy-radical-rationalization",
+    "parameters": {
+      "instance": 7
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-expression",
+      "constructionId": "m3-limits-easy-radical-rationalization",
+      "difficultyRationale": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+      "prerequisites": [],
+      "primaryTechnique": "rationalization",
+      "reasoningDemand": [
+        "convergence"
+      ],
+      "relatedIdeaGroupId": "radical-conjugate",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "radical-difference-over-increment"
+    },
+    "problemId": "cn_0f82bdf107d3a3bf720e",
+    "problemRevision": 2,
+    "provenance": {
+      "attribution": "Original Calculus Ninja content. AI-assisted authoring and editorial review; reproducible mathematical checks. No third-party problem wording or solution copied.",
+      "authoring": {
+        "admittedDifficulty": "easy",
+        "builderParameters": {
+          "m": 11
+        },
+        "detailedTechnique": "rationalization",
+        "independentOriginal": true,
+        "priorityExclusionReason": null,
+        "priorityMinimumEligible": null,
+        "proposedDifficulty": "easy",
+        "referencePurpose": "Mathematical theorem reference only; no source expression or asset copied.",
+        "sourceTextReused": false,
+        "theoremReferenceURLs": [],
+        "version": "original-constructions-m3-v1"
+      },
+      "kind": "original",
+      "license": "LicenseRef-CalculusNinja-Original",
+      "sourceItem": null,
+      "sourceUrl": null,
+      "qualityRevision": {
+        "sourceProblemId": "cn_0f82bdf107d3a3bf720e",
+        "sourceRevision": 1,
+        "sourceContentHash": "e86a663c9843ec8019913cb4a67a77275ac797c3d1470993322f2befa734e6bb",
+        "semanticHashPreserved": true,
+        "reason": "Repair a validated visible-option form cue; preserve the mathematical task and difficulty.",
+        "newIdeaCredit": 0
+      }
+    },
+    "schemaVersion": 2,
+    "semanticHash": "a6b752a01ac3fe0a4f6915fdecbe908226a694b233e1889c3199e5a2e364a31b",
+    "solutionSteps": [
+      "\\frac{\\sqrt{x+121}-11}x=\\frac1{\\sqrt{x+121}+11}\\quad(x\\ne0)",
+      "\\lim_{x\\to0^+}\\frac1{\\sqrt{x+121}+11}=\\frac1{22}=\\frac{1}{22}",
+      "\\frac{1}{22}",
+      "\\frac{1}{22}"
+    ],
+    "statement": "\\lim_{x\\to 0^+}\\frac{\\sqrt{x + 121} - 11}{x}",
+    "subtopic": "radical-conjugate",
+    "techniqueTags": [
+      "rationalization"
+    ],
+    "templateVersion": "quality-reviewed-revision-v2",
+    "topic": "limits",
+    "validation": {
+      "status": "mathematically-checked-pending-independent-review",
+      "evidence": {
+        "independentIntermediateChecks": [
+          {
+            "description": "Rationalization preserves the expression on its punctured domain",
+            "left": "\\frac{\\sqrt{X + 121} - 11}{X}",
+            "right": "\\frac{1}{\\sqrt{X + 121} + 11}",
+            "result": "exact equality"
+          },
+          {
+            "description": "The continuous rationalized expression is evaluated at zero",
+            "left": "\\frac{1}{22}",
+            "right": "\\frac{1}{22}",
+            "result": "exact equality"
+          }
+        ],
+        "pairwiseOptionChecks": [
+          {
+            "kind": "executed-cross-option-coupling-check",
+            "oppositePairs": 0,
+            "rule": "No unique opposite-sign pair identifies an answer candidate; only existing authored misconception triples are selected.",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{1}{44}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{5}{121}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{3}{22}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "\\frac{9}{484}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{7}{44}",
+            "passed": true
+          },
+          {
+            "kind": "executed-SymPy-nonzero-difference",
+            "difference": "- \\frac{43}{242}",
+            "passed": true
+          }
+        ],
+        "choiceMisconceptions": {
+          "\\frac{1}{22}": "correct",
+          "\\frac{2}{11}": "Count the rationalized numerator twice while omitting one conjugate term",
+          "\\frac{1}{44}": "Apply the conjugate factor two twice",
+          "\\frac{1}{242}": "Use the radicand base instead of its square root"
+        },
+        "sourceContentHash": "e86a663c9843ec8019913cb4a67a77275ac797c3d1470993322f2befa734e6bb",
+        "peerReview": null
+      }
+    },
+    "contentHash": "e5d1d92c53cacdf46f49a21991d07c5095e989adcf04fe31ec6ed3f82023e74f"
+  }
+]

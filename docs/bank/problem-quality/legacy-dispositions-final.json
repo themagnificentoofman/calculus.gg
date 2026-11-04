@@ -1,0 +1,3251 @@
+{
+  "status": "source-bound-final-disposition-for-proposed-release; not imported",
+  "supersedes": "legacy-dispositions.json (preserved earlier draft)",
+  "policy": "Historical integrity is mandatory. New selection is optional, default-off and exact-revision reviewed. Age or large counts do not confer eligibility; lack of a measured flag is not clearance.",
+  "experimentalEligibleOriginals": 0,
+  "evidence": {
+    "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+    "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9"
+  },
+  "families": [
+    {
+      "familyId": "clairaut-envelope",
+      "topic": "differential equations",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "Dedicated nonlinear singular-branch constructor, selecting the non-affine positive-derivative envelope of a Clairaut equation. Its parameters change the envelope and evaluation point; the proof is a symbolic branch/residual check, not linear superposition.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Differentiate the Clairaut equation and distinguish straight lines from its envelope; important singular branch, but standard.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "clairaut-envelope"
+      }
+    },
+    {
+      "familyId": "euler-cauchy",
+      "topic": "differential equations",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.795,
+            "unique": 631,
+            "uniqueCorrect": 524,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7928571428571428,
+              "uniquePredictions": 625,
+              "uniqueCorrect": 519
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.795,
+              "uniquePredictions": 631,
+              "uniqueCorrect": 524
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Logarithmic independent variable and a repeated characteristic root.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "euler-cauchy"
+      }
+    },
+    {
+      "familyId": "euler-double-resonance",
+      "topic": "differential equations",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "Dedicated parameter-dependent Euler equation. The parameter a changes the characteristic root and b changes the logarithmic forcing power; t=ln x and u=x^a v(t) reduce it to v\u2033=t^b. This is not three fixed linear kernels.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "A logarithmic coordinate reduces a repeated-root Euler equation; related to euler-cauchy, not a new Olympiad idea.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "euler-double-resonance"
+      }
+    },
+    {
+      "familyId": "exponential-initial-value",
+      "topic": "differential equations",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7845238095238095,
+            "unique": 623,
+            "uniqueCorrect": 513,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.771904761904762,
+              "uniquePredictions": 615,
+              "uniqueCorrect": 500
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7845238095238095,
+              "uniquePredictions": 623,
+              "uniqueCorrect": 513
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Integrate exponential forcing with one initial condition.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "exponential-initial-value"
+      }
+    },
+    {
+      "familyId": "hidden-riccati",
+      "topic": "differential equations",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "Dedicated parameter-dependent nonlinear Riccati constructor. Subtract p(x)=a x+b/x to obtain z\u2032=z\u00b2, with a parameter-dependent evaluation point inside the stated pole-free interval. This is not a linear combination of three fixed kernels.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Subtract a supplied or visible particular solution, then solve a Bernoulli equation; one standard method.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "hidden-riccati"
+      }
+    },
+    {
+      "familyId": "linear-integrating-factor",
+      "topic": "differential equations",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7835714285714286,
+            "unique": 598,
+            "uniqueCorrect": 498,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7926190476190477,
+              "uniquePredictions": 616,
+              "uniqueCorrect": 514
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7835714285714286,
+              "uniquePredictions": 598,
+              "uniqueCorrect": 498
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Constant integrating factor and polynomial forcing.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "linear-integrating-factor"
+      }
+    },
+    {
+      "familyId": "linear-trig-forcing",
+      "topic": "differential equations",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Integrating factor or undetermined coefficients and a single initial condition.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "linear-trig-forcing"
+      }
+    },
+    {
+      "familyId": "oscillator-resonance",
+      "topic": "differential equations",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Trigonometric resonance and two initial conditions.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "oscillator-resonance"
+      }
+    },
+    {
+      "familyId": "polynomial-initial-value",
+      "topic": "differential equations",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Integrate the forcing and apply the initial value.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "polynomial-initial-value"
+      }
+    },
+    {
+      "familyId": "resonant-second-order",
+      "topic": "differential equations",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7733333333333332,
+            "unique": 604,
+            "uniqueCorrect": 494,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7752380952380952,
+              "uniquePredictions": 619,
+              "uniqueCorrect": 503
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7733333333333332,
+              "uniquePredictions": 604,
+              "uniqueCorrect": 494
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Repeated characteristic root requires polynomial resonance correction.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "resonant-second-order"
+      }
+    },
+    {
+      "familyId": "trig-initial-value",
+      "topic": "differential equations",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Integrate trigonometric forcing with one initial condition.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "trig-initial-value"
+      }
+    },
+    {
+      "familyId": "variable-integrating-factor",
+      "topic": "differential equations",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.759047619047619,
+            "unique": 592,
+            "uniqueCorrect": 478,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7771428571428571,
+              "uniquePredictions": 600,
+              "uniqueCorrect": 495
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.759047619047619,
+              "uniquePredictions": 592,
+              "uniqueCorrect": 478
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Recognize an exponential integrating factor; forcing was constructed from the same fixed solution basis.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "variable-integrating-factor"
+      }
+    },
+    {
+      "familyId": "exp-log-slope",
+      "topic": "differentiation",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "Three elementary derivatives, all at one. Shared transcendental parts of options can remove work.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "exp-log-slope"
+      }
+    },
+    {
+      "familyId": "fourth-derivative",
+      "topic": "differentiation",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "integer-divisible-6",
+            "accuracy": 0.8257142857142855,
+            "unique": 466,
+            "uniqueCorrect": 466,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8178571428571425,
+              "uniquePredictions": 456,
+              "uniqueCorrect": 456
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8257142857142855,
+              "uniquePredictions": 466,
+              "uniqueCorrect": 466
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-medium-or-hard-fluency",
+        "reason": "A fixed fourth-order Taylor coefficient calculation; integer contributions lie on a multiple-of-six lattice.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "fourth-derivative"
+      }
+    },
+    {
+      "familyId": "implicit-inverse-series",
+      "topic": "differentiation",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "trailingZeros-max",
+            "accuracy": 0.9092857142857143,
+            "unique": 573,
+            "uniqueCorrect": 573,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9121428571428571,
+              "uniquePredictions": 577,
+              "uniqueCorrect": 577
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9092857142857143,
+              "uniquePredictions": 573,
+              "uniqueCorrect": 573
+            }
+          },
+          {
+            "rule": "trailingZeros-minority",
+            "accuracy": 0.8425,
+            "unique": 543,
+            "uniqueCorrect": 543,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8489285714285715,
+              "uniquePredictions": 550,
+              "uniqueCorrect": 550
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8425,
+              "uniquePredictions": 543,
+              "uniqueCorrect": 543
+            }
+          },
+          {
+            "rule": "integer-divisible-4",
+            "accuracy": 0.7529761904761897,
+            "unique": 375,
+            "uniqueCorrect": 375,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7413095238095233,
+              "uniquePredictions": 365,
+              "uniqueCorrect": 365
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7529761904761897,
+              "uniquePredictions": 375,
+              "uniqueCorrect": 375
+            }
+          },
+          {
+            "rule": "integer-divisible-5",
+            "accuracy": 0.7163095238095234,
+            "unique": 328,
+            "uniqueCorrect": 328,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7436904761904751,
+              "uniquePredictions": 367,
+              "uniqueCorrect": 367
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7163095238095234,
+              "uniquePredictions": 328,
+              "uniqueCorrect": 328
+            }
+          },
+          {
+            "rule": "integer-divisible-6",
+            "accuracy": 0.8211904761904761,
+            "unique": 461,
+            "uniqueCorrect": 461,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8352380952380953,
+              "uniquePredictions": 478,
+              "uniqueCorrect": 478
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8211904761904761,
+              "uniquePredictions": 461,
+              "uniqueCorrect": 461
+            }
+          },
+          {
+            "rule": "integer-divisible-8",
+            "accuracy": 0.9071428571428571,
+            "unique": 570,
+            "uniqueCorrect": 570,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8935714285714286,
+              "uniquePredictions": 551,
+              "uniqueCorrect": 551
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9071428571428571,
+              "uniquePredictions": 570,
+              "uniqueCorrect": 570
+            }
+          },
+          {
+            "rule": "integer-divisible-9",
+            "accuracy": 0.9114285714285715,
+            "unique": 576,
+            "uniqueCorrect": 576,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8992857142857142,
+              "uniquePredictions": 559,
+              "uniqueCorrect": 559
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9114285714285715,
+              "uniquePredictions": 576,
+              "uniqueCorrect": 576
+            }
+          },
+          {
+            "rule": "integer-divisible-10",
+            "accuracy": 0.8878571428571429,
+            "unique": 543,
+            "uniqueCorrect": 543,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8928571428571429,
+              "uniquePredictions": 550,
+              "uniqueCorrect": 550
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8878571428571429,
+              "uniquePredictions": 543,
+              "uniqueCorrect": 543
+            }
+          },
+          {
+            "rule": "integer-divisible-12",
+            "accuracy": 0.9035714285714286,
+            "unique": 565,
+            "uniqueCorrect": 565,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9078571428571428,
+              "uniquePredictions": 571,
+              "uniqueCorrect": 571
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9035714285714286,
+              "uniquePredictions": 565,
+              "uniqueCorrect": 565
+            }
+          },
+          {
+            "rule": "integer-divisible-16",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-24",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-60",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-144",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-360",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-720",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retire-superseded-olympiad-lineage",
+        "reason": "Genuine inverse-series idea already represented by a reviewed M3 group; three fixed inverse branches and1400 coefficient mixtures inflate exposure depth, and integer-lattice distractors are exploitable.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "implicit-inverse-series"
+      }
+    },
+    {
+      "familyId": "log-differentiation",
+      "topic": "differentiation",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-medium",
+        "reason": "Only first derivatives at one; logarithmic differentiation is a standard technique here, and two contributions both equal one.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "log-differentiation"
+      }
+    },
+    {
+      "familyId": "nested-chain",
+      "topic": "differentiation",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7359523809523806,
+            "unique": 568,
+            "uniqueCorrect": 453,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7697619047619043,
+              "uniquePredictions": 587,
+              "uniqueCorrect": 487
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7359523809523806,
+              "uniquePredictions": 568,
+              "uniqueCorrect": 453
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-medium-practice",
+        "reason": "Three fixed two-layer chain rules; useful fluency, not broad construction variety.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "nested-chain"
+      }
+    },
+    {
+      "familyId": "parametric-curvature",
+      "topic": "differentiation",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "revise-name-and-retain-hard-fluency",
+        "reason": "Despite its identifier, the public task is an ordinary third derivative, with no parametric curve or curvature question.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "parametric-curvature"
+      }
+    },
+    {
+      "familyId": "polynomial-slope",
+      "topic": "differentiation",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "Three power-rule contributions at one; coefficient substitutions are one idea.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "polynomial-slope"
+      }
+    },
+    {
+      "familyId": "product-rule",
+      "topic": "differentiation",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7604761904761904,
+            "unique": 571,
+            "uniqueCorrect": 470,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7716666666666663,
+              "uniquePredictions": 583,
+              "uniqueCorrect": 487
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7604761904761904,
+              "uniquePredictions": 571,
+              "uniqueCorrect": 470
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-medium-practice",
+        "reason": "Three fixed product-rule kernels; no new product structure appears across coefficients.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "product-rule"
+      }
+    },
+    {
+      "familyId": "quotient-rule",
+      "topic": "differentiation",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-medium-practice",
+        "reason": "One fixed quotient derivative vanishes. Count zero-contribution coefficient variants conservatively.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "quotient-rule"
+      }
+    },
+    {
+      "familyId": "removable-exponential-derivative",
+      "topic": "differentiation",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-general-screen-flag-but-existing-specialized-rational-lattice-signal",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retire-from-olympiad-or-revise-as-hard",
+        "reason": "Analytic extension and one fixed order-six coefficient extraction; the three exponential shifts are coefficient variants. The public expression is heavy but its decision is unchanged.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. The separate rational-lattice audit supplies an actual measured clue even though the general screen does not flag this family.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "removable-exponential-derivative"
+      }
+    },
+    {
+      "familyId": "roots-of-unity-product",
+      "topic": "differentiation",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retire-original-option-revision-candidate",
+        "reason": "Cyclotomic factorization is a worthwhile advanced decision, but the retained construction mixes three fixed examples and uses generic offsets. A purposeful standalone revision may be separately reviewed; no current breadth credit.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "roots-of-unity-product"
+      }
+    },
+    {
+      "familyId": "trig-slope",
+      "topic": "differentiation",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "One fixed cosine contribution always differentiates to zero at the point; varying its coefficient contributes no new decision.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "trig-slope"
+      }
+    },
+    {
+      "familyId": "concealed-reflection",
+      "topic": "integration",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "olympiad",
+        "reason": "Discover reflection symmetry before evaluating a beta moment; related to io3-weighted-complement, so only one idea group.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "concealed-reflection"
+      }
+    },
+    {
+      "familyId": "exponential-area",
+      "topic": "integration",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Exponential primitives and endpoint substitution.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "exponential-area"
+      }
+    },
+    {
+      "familyId": "frullani-cancellation",
+      "topic": "integration",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "olympiad",
+        "reason": "Preserve grouped cancellation before integrating a parameter identity; related to io3-scaled-frullani, so only one idea group.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "frullani-cancellation"
+      }
+    },
+    {
+      "familyId": "improper-rational",
+      "topic": "integration",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "One compactifying substitution gives three polynomial moments.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "improper-rational"
+      }
+    },
+    {
+      "familyId": "log-moments",
+      "topic": "integration",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "One integration by parts plus an elementary endpoint limit; Hard label is inflated.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "log-moments"
+      }
+    },
+    {
+      "familyId": "polynomial-area",
+      "topic": "integration",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Power rule and linearity; useful fluency, not separate ideas for each coefficient triple.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "polynomial-area"
+      }
+    },
+    {
+      "familyId": "polynomial-exponential",
+      "topic": "integration",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7321428571428569,
+            "unique": 595,
+            "uniqueCorrect": 469,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7424999999999997,
+              "uniquePredictions": 599,
+              "uniqueCorrect": 481
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7321428571428569,
+              "uniquePredictions": 595,
+              "uniqueCorrect": 469
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Repeated integration by parts; degree changes already fixed into three kernels.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "polynomial-exponential"
+      }
+    },
+    {
+      "familyId": "quadratic-substitution",
+      "topic": "integration",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "One substitution exposes powers of one positive denominator.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "quadratic-substitution"
+      }
+    },
+    {
+      "familyId": "rational-decomposition",
+      "topic": "integration",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Partial fractions followed by positive-ratio logarithms.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "rational-decomposition"
+      }
+    },
+    {
+      "familyId": "transformed-beta-log",
+      "topic": "integration",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Compactify, expand a fixed polynomial, and integrate logarithmic moments; revision may remain advanced practice, not counted as new Olympiad group.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "transformed-beta-log"
+      }
+    },
+    {
+      "familyId": "trig-area",
+      "topic": "integration",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Three elementary definite integrals; all basis answers equal one.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "trig-area"
+      }
+    },
+    {
+      "familyId": "trig-products",
+      "topic": "integration",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Reduction or beta identity; fixed exponents do not create new decisions.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "trig-products"
+      }
+    },
+    {
+      "familyId": "exponential-cancellation",
+      "topic": "limits",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-easy",
+        "reason": "Only first-order exponential difference quotients; no higher cancellation appears.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "exponential-cancellation"
+      }
+    },
+    {
+      "familyId": "finite-difference-log-limit",
+      "topic": "limits",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "trailingZeros-max",
+            "accuracy": 0.9042857142857142,
+            "unique": 590,
+            "uniqueCorrect": 578,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9135714285714286,
+              "uniquePredictions": 609,
+              "uniqueCorrect": 594
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9042857142857142,
+              "uniquePredictions": 590,
+              "uniqueCorrect": 578
+            }
+          },
+          {
+            "rule": "trailingZeros-minority",
+            "accuracy": 0.8621428571428571,
+            "unique": 562,
+            "uniqueCorrect": 562,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8789285714285714,
+              "uniquePredictions": 576,
+              "uniqueCorrect": 576
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8621428571428571,
+              "uniquePredictions": 562,
+              "uniqueCorrect": 562
+            }
+          },
+          {
+            "rule": "integer-divisible-5",
+            "accuracy": 0.7384523809523804,
+            "unique": 361,
+            "uniqueCorrect": 361,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7379761904761899,
+              "uniquePredictions": 359,
+              "uniqueCorrect": 359
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7384523809523804,
+              "uniquePredictions": 361,
+              "uniqueCorrect": 361
+            }
+          },
+          {
+            "rule": "integer-divisible-10",
+            "accuracy": 0.9014285714285715,
+            "unique": 562,
+            "uniqueCorrect": 562,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9114285714285715,
+              "uniquePredictions": 576,
+              "uniqueCorrect": 576
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9014285714285715,
+              "uniquePredictions": 562,
+              "uniqueCorrect": 562
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retire-original-option-revision-candidate",
+        "reason": "Finite differences plus parameter derivatives is a useful advanced connection, but the three fixed limits have common factor10 while distractors are small integer offsets.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "finite-difference-log-limit"
+      }
+    },
+    {
+      "familyId": "logarithmic-cancellation",
+      "topic": "limits",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-easy",
+        "reason": "Three rescalings of the same logarithmic standard limit.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "logarithmic-cancellation"
+      }
+    },
+    {
+      "familyId": "polynomial-continuity",
+      "topic": "limits",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "All three kernels have value one at the limit point; the task is a sum of coefficients.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "polynomial-continuity"
+      }
+    },
+    {
+      "familyId": "radical-cancellation",
+      "topic": "limits",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-hard-fluency",
+        "reason": "Three fixed quadratic generalized-binomial coefficients; exponent substitutions stay one idea.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "radical-cancellation"
+      }
+    },
+    {
+      "familyId": "rational-at-infinity",
+      "topic": "limits",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-easy",
+        "reason": "All three numerator and denominator degrees match; each limit is its leading coefficient ratio.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "rational-at-infinity"
+      }
+    },
+    {
+      "familyId": "removable-factor",
+      "topic": "limits",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "Three fixed adjacent polynomial factorizations.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "removable-factor"
+      }
+    },
+    {
+      "familyId": "riemann-product-limit",
+      "topic": "limits",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7865476190476189,
+            "unique": 516,
+            "uniqueCorrect": 467,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.786547619047619,
+              "uniquePredictions": 519,
+              "uniqueCorrect": 467
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7865476190476189,
+              "uniquePredictions": 516,
+              "uniqueCorrect": 467
+            }
+          },
+          {
+            "rule": "length-minority",
+            "accuracy": 0.6539285714285714,
+            "unique": 388,
+            "uniqueCorrect": 344,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.6510714285714285,
+              "uniquePredictions": 381,
+              "uniqueCorrect": 338
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.6539285714285714,
+              "uniquePredictions": 388,
+              "uniqueCorrect": 344
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retire-original-option-revision-candidate",
+        "reason": "Uniform log-product remainder and a Riemann sum form a real advanced decision, but the fixed three-kernel mixtures and option shifts do not create1400 advanced constructions.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "riemann-product-limit"
+      }
+    },
+    {
+      "familyId": "second-order-riemann-limit",
+      "topic": "limits",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "reclassify-hard",
+        "reason": "Fixed polynomial Euler-Maclaurin correction; higher-order bookkeeping alone does not establish Olympiad insight.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "second-order-riemann-limit"
+      }
+    },
+    {
+      "familyId": "standard-trig-limits",
+      "topic": "limits",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-useful-easy-practice",
+        "reason": "Three rescalings of the same sine standard limit, not three ideas.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "standard-trig-limits"
+      }
+    },
+    {
+      "familyId": "third-order-exponential",
+      "topic": "limits",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-hard-fluency",
+        "reason": "The fixed cubic Taylor remainder is appropriate deliberate practice, not an advanced idea count.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "third-order-exponential"
+      }
+    },
+    {
+      "familyId": "trig-cancellation",
+      "topic": "limits",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-disposition-at-concept-level",
+        "priorDisposition": "retain-as-hard-fluency",
+        "reason": "Three fixed cubic trigonometric coefficients; two component limits coincide.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "trig-cancellation"
+      }
+    },
+    {
+      "familyId": "curved-domain-integral",
+      "topic": "multivariable",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "The curved boundary only changes a power in a direct iterated integral.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "curved-domain-integral"
+      }
+    },
+    {
+      "familyId": "high-mixed-partials",
+      "topic": "multivariable",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Coefficient extraction can replace repeated differentiation; numerical size does not set difficulty.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "high-mixed-partials"
+      }
+    },
+    {
+      "familyId": "laplacian",
+      "topic": "multivariable",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "integer-divisible-4",
+            "accuracy": 0.7539285714285711,
+            "unique": 375,
+            "uniqueCorrect": 375,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7504761904761897,
+              "uniquePredictions": 373,
+              "uniqueCorrect": 373
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7539285714285711,
+              "uniquePredictions": 375,
+              "uniqueCorrect": 375
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Sum two second partial derivatives; one harmonic term cancels.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "laplacian"
+      }
+    },
+    {
+      "familyId": "laplacian-products",
+      "topic": "multivariable",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Product and chain rules for a second-order operator.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "laplacian-products"
+      }
+    },
+    {
+      "familyId": "mixed-partials",
+      "topic": "multivariable",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Two partial derivatives with product and chain rules.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "mixed-partials"
+      }
+    },
+    {
+      "familyId": "partial-x",
+      "topic": "multivariable",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Hold the other coordinate fixed and apply the power rule.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "partial-x"
+      }
+    },
+    {
+      "familyId": "partial-y",
+      "topic": "multivariable",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Same local partial-derivative decision as partial-x; one broad idea group.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "partial-y"
+      }
+    },
+    {
+      "familyId": "radial-log-mixed-derivative",
+      "topic": "multivariable",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "trailingZeros-max",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "trailingZeros-minority",
+            "accuracy": 0.8928571428571429,
+            "unique": 550,
+            "uniqueCorrect": 550,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8985714285714286,
+              "uniquePredictions": 558,
+              "uniqueCorrect": 558
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8928571428571429,
+              "uniquePredictions": 550,
+              "uniqueCorrect": 550
+            }
+          },
+          {
+            "rule": "integer-divisible-4",
+            "accuracy": 0.7404761904761901,
+            "unique": 358,
+            "uniqueCorrect": 358,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7392857142857134,
+              "uniquePredictions": 360,
+              "uniqueCorrect": 360
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7404761904761901,
+              "uniquePredictions": 358,
+              "uniqueCorrect": 358
+            }
+          },
+          {
+            "rule": "integer-divisible-5",
+            "accuracy": 0.729404761904761,
+            "unique": 347,
+            "uniqueCorrect": 347,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7401190476190467,
+              "uniquePredictions": 361,
+              "uniqueCorrect": 361
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.729404761904761,
+              "uniquePredictions": 347,
+              "uniqueCorrect": 347
+            }
+          },
+          {
+            "rule": "integer-divisible-6",
+            "accuracy": 0.8292857142857143,
+            "unique": 470,
+            "uniqueCorrect": 470,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8185714285714287,
+              "uniquePredictions": 453,
+              "uniqueCorrect": 453
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8292857142857143,
+              "uniquePredictions": 470,
+              "uniqueCorrect": 470
+            }
+          },
+          {
+            "rule": "integer-divisible-8",
+            "accuracy": 0.9021428571428571,
+            "unique": 563,
+            "uniqueCorrect": 563,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8985714285714286,
+              "uniquePredictions": 558,
+              "uniqueCorrect": 558
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9021428571428571,
+              "uniquePredictions": 563,
+              "uniqueCorrect": 563
+            }
+          },
+          {
+            "rule": "integer-divisible-9",
+            "accuracy": 0.9071428571428571,
+            "unique": 570,
+            "uniqueCorrect": 570,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8921428571428571,
+              "uniquePredictions": 549,
+              "uniqueCorrect": 549
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9071428571428571,
+              "uniquePredictions": 570,
+              "uniqueCorrect": 570
+            }
+          },
+          {
+            "rule": "integer-divisible-10",
+            "accuracy": 0.8928571428571429,
+            "unique": 550,
+            "uniqueCorrect": 550,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8985714285714286,
+              "uniquePredictions": 558,
+              "uniqueCorrect": 558
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.8928571428571429,
+              "uniquePredictions": 550,
+              "uniqueCorrect": 550
+            }
+          },
+          {
+            "rule": "integer-divisible-12",
+            "accuracy": 0.9107142857142857,
+            "unique": 575,
+            "uniqueCorrect": 575,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9064285714285715,
+              "uniquePredictions": 569,
+              "uniqueCorrect": 569
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.9107142857142857,
+              "uniquePredictions": 575,
+              "uniqueCorrect": 575
+            }
+          },
+          {
+            "rule": "integer-divisible-16",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-24",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-25",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-60",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-100",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-144",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-360",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          },
+          {
+            "rule": "integer-divisible-14400",
+            "accuracy": 1,
+            "unique": 700,
+            "uniqueCorrect": 700,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 1,
+              "uniquePredictions": 700,
+              "uniqueCorrect": 700
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Radial coefficient selection and a finite logarithm expansion; current choices reveal the correct answer by divisibility before either operation.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "radial-log-mixed-derivative"
+      }
+    },
+    {
+      "familyId": "rectangle-area",
+      "topic": "multivariable",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "reason": "Fubini on a product rectangle and monomial separation.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "rectangle-area"
+      }
+    },
+    {
+      "familyId": "rotated-disk-moment",
+      "topic": "multivariable",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "Orthogonal-coordinate rotation plus a radial moment; useful synthesis, but fixed homogeneous kernels.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "rotated-disk-moment"
+      }
+    },
+    {
+      "familyId": "triangle-integral",
+      "topic": "multivariable",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "reason": "Choose dependent bounds and perform an iterated monomial integral.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "triangle-integral"
+      }
+    },
+    {
+      "familyId": "unbounded-dirichlet-integral",
+      "topic": "multivariable",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "reason": "A simplex/ray substitution produces a standard Dirichlet moment; advanced notation alone does not require Olympiad reasoning.",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "unbounded-dirichlet-integral"
+      }
+    },
+    {
+      "familyId": "alternating-log-series",
+      "topic": "series",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "centralDecision": "Recognize logarithmic Taylor series including one boundary value",
+        "priorDisposition": "retain useful idea through M3 logarithmic-series with explicit endpoint checks",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "alternating-log-series"
+      }
+    },
+    {
+      "familyId": "binomial-beta-series",
+      "topic": "series",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "centralDecision": "Represent each fixed alternating binomial inner sum as a positive beta integral",
+        "priorDisposition": "retire bulk construction; preserve the integral-representation idea in purposeful single constructions",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "binomial-beta-series"
+      }
+    },
+    {
+      "familyId": "cubic-telescoping",
+      "topic": "series",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "centralDecision": "Partial fractions reduce cubic denominator to adjacent telescopes",
+        "priorDisposition": "reclassify concept to medium and retain via cubic-telescope",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "cubic-telescoping"
+      }
+    },
+    {
+      "familyId": "even-geometric-series",
+      "topic": "series",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "centralDecision": "Geometric summation after squaring the fixed ratio",
+        "priorDisposition": "merge with geometric-series; not a distinct idea",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "even-geometric-series"
+      }
+    },
+    {
+      "familyId": "exponential-series",
+      "topic": "series",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "existing-general-screen-measured-nonposition-signal",
+        "source": "baselineScreen",
+        "flags": [
+          {
+            "rule": "length-min",
+            "accuracy": 0.7733333333333332,
+            "unique": 616,
+            "uniqueCorrect": 502,
+            "training": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7816666666666666,
+              "uniquePredictions": 619,
+              "uniqueCorrect": 509
+            },
+            "heldout": {
+              "items": 700,
+              "applicable": 700,
+              "expectedTieBrokenAccuracy": 0.7733333333333332,
+              "uniquePredictions": 616,
+              "uniqueCorrect": 502
+            }
+          }
+        ]
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "centralDecision": "Recognize three fixed exponential Taylor values",
+        "priorDisposition": "retain useful fluency through M3 exponential-Taylor",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not allow these original menus in Experimental yet. Resolve the measured choice clue for exact proposed revisions, with independent mathematical and options-visible review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "exponential-series"
+      }
+    },
+    {
+      "familyId": "fourier-cosine-square",
+      "topic": "series",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "centralDecision": "Expand three fixed trigonometric-square kernels and use one quadratic Fourier identity",
+        "priorDisposition": "retire bulk construction; merge lineage with Fourier-fourth-sine and review the latter with options visible",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "fourier-cosine-square"
+      }
+    },
+    {
+      "familyId": "geometric-series",
+      "topic": "series",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "centralDecision": "Geometric summation",
+        "priorDisposition": "retain useful idea through existing geometric-tail construction",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "geometric-series"
+      }
+    },
+    {
+      "familyId": "quadratic-geometric",
+      "topic": "series",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "centralDecision": "Apply the Euler differential operator twice to a geometric series",
+        "priorDisposition": "reclassify concept to medium and retain via quadratic-weight; coefficient bulk is not hard depth",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "quadratic-geometric"
+      }
+    },
+    {
+      "familyId": "stirling-beta-series",
+      "topic": "series",
+      "baselineDifficulty": "olympiad",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "centralDecision": "Sum three fixed rational kernels by partial fractions or a beta representation",
+        "priorDisposition": "retire this bulk construction; any new advanced descendant must require a fresh structural decision",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "stirling-beta-series"
+      }
+    },
+    {
+      "familyId": "telescoping-series",
+      "topic": "series",
+      "baselineDifficulty": "easy",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "easy",
+        "centralDecision": "Adjacent rational telescope",
+        "priorDisposition": "retain useful idea through rational-telescope construction",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "telescoping-series"
+      }
+    },
+    {
+      "familyId": "weighted-geometric",
+      "topic": "series",
+      "baselineDifficulty": "medium",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "medium",
+        "centralDecision": "Differentiate a geometric series once",
+        "priorDisposition": "retain useful idea through M3 weighted-geometric",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "weighted-geometric"
+      }
+    },
+    {
+      "familyId": "zeta-even",
+      "topic": "series",
+      "baselineDifficulty": "hard",
+      "baselineItems": 1400,
+      "constructor": "One fixed calculus operation applied to a linear combination a\u00b7K\u2081+b\u00b7K\u2082+c\u00b7K\u2083 of three fixed kernels; bounded integer coefficient triples create the 1,400 records.",
+      "demonstratedReviewGap": "Every menu uses answer plus three nonzero hash-selected multiples of one positive answer-derived unit. The source does not author each wrong choice by recomputing a mathematical misconception. This is a demonstrated construction/review gap, not proof of an exploitable clue for every family or every item.",
+      "measuredHeuristics": {
+        "status": "no-threshold-flag-in-existing-screens-not-cleared",
+        "source": "baselineScreen",
+        "flags": []
+      },
+      "practiceUsefulness": {
+        "status": "prior-editorial-practice-usefulness-at-concept-level",
+        "recommendedConceptDifficulty": "hard",
+        "centralDecision": "Substitute three known even-zeta values and combine",
+        "priorDisposition": "retain as optional formula fluency only after real distractor revision; not advanced novelty",
+        "establishesCurrentMenuEligibility": false,
+        "measuredPlayerUsefulness": false,
+        "coefficientVariantsAreNotNewIdeas": true
+      },
+      "action": "Exclude these unrevised originals from new selection; consider bounded immutable revisions for opt-in practice only after complete evidence.",
+      "reason": "Do not claim a measured exploitable signal from the reviewed screens. Keep exact originals outside the Experimental allowlist until current finite content, misconception-option and easiest-route standards are demonstrated. Underlying practice value can justify future bounded review.",
+      "historicalTreatment": "Keep canonical hashes, recorded choices, grades, saved playbacks and exposure lineage immutable. A future eligibility disposition does not rewrite history.",
+      "eligibleExactOriginalRevisions": 0,
+      "advancedIdeaCredit": 0,
+      "evidence": {
+        "path": "docs/bank/problem-quality/legacy-evidence-audit-v1/legacy-evidence-audit.json",
+        "sha256": "49a001607e2b56cbd813b5cd4cfaed1ef5326293c022aa7fe370f50d43b8ebc9",
+        "familyId": "zeta-even"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1559 @@
+{
+  "status": "bounded-mathematical-capacity-review-complete",
+  "reviewer": "ode_final_review",
+  "scope": "Read-only review of omitted eligible content, the failed finite allocations, and the root implemented small-catalog reservation. This file is the only new repository artifact from this subtask; no constructor, registry, classification, normalized lineage or published content is changed.",
+  "recommendation": "Keep the bounded capacity-reservation fix. There are no omitted reviewed Hard cases to recover, and no new content is needed to address the demonstrated selection depletion. Preserve the honest 13% effective headroom and the finite horizon limits.",
+  "sourceBindings": {
+    ".bank-data/quality/final-candidates-v1/candidate-development-v1.json": "e08870c0705be5412cf4f23b3b398a4c6d3bde61f29e528c514dd6792c353934",
+    ".bank-data/quality/final-candidates-v1/candidate-development-v2.json": "24894c5f2b30d4f9ab3d90f7610ebe2d9d98fd0577e7e6e4aa6e3c516a076be9",
+    ".bank-data/quality/final-candidates-v1/candidate-heldout-v1.json": "3d9c9e4b1c8a2710059f59fe49762d743ad2ced5991d2d7816ff64922d9fcf11",
+    "scripts/bank/quality/ode-mv/admission-plan.json": "778bfc6c603c50e45974cbd3e60d526ccc09fc603eaaf5a9199d1c706c04798c",
+    "docs/bank/problem-quality/ode-mv/final-v7/group-map.json": "dacb61586b958ea6cc2530da7a503869c877ba64b1284cdc6a73527a58b49913",
+    "lib/server/compact-bank-selection.ts": "900c6208b80b95a7467ad1301a2be118d0fe999f745e5b8fa5da20a0907ecf2a",
+    "tests/selection-quality.test.mjs": "915df5588be7dd0f748d9492b65e202676c5142825d060ff3ec35fb5fa1e483c",
+    "docs/bank/problem-quality/ode-mv/final-v7/artifact-manifest.json": "1ff83488ea8824bacf3714999949ed66b4ca3bf0ae1c223362a03daaa8cacb01"
+  },
+  "comparisonBindingsUnchanged": {
+    "databaseSha256": "28804a2568a71a79c0722121cbe8e629491df299aad3d745a8eacd2afd6c6765",
+    "groupDefinitionsSha256": "95ea9cb3fff15e05ad5422ec2ee77f2a4cce25f07babc3fd1ff1068a25223288",
+    "contractSha256": "da46d365f7c2cada3382358089e6c5b3b8204dab1f02cb7515f16a2b0fddfe17",
+    "allThreeReportsSameInputBindings": true
+  },
+  "inventory": {
+    "rawRecords": 130,
+    "normalizedItems": 125,
+    "constructions": 13,
+    "perRoundFamilyCap": 2,
+    "roundSize": 20,
+    "targetRounds": 5,
+    "requiredFreshItems": 100,
+    "capEffective": 113,
+    "effectiveHeadroomRatio": 1.13,
+    "effectiveHeadroomPercent": 13,
+    "planningTargetApproximatePercent": 20,
+    "belowApproximatePlanningTarget": true,
+    "eligibleUnseenByFamily": {
+      "m3-multivariable-hard-Gaussian-precision": 12,
+      "m3-multivariable-hard-ellipsoid-inertia": 12,
+      "m3-multivariable-hard-nonlinear-Jacobian": 12,
+      "m3-multivariable-hard-quadratic-eigenconstraint": 12,
+      "m3-multivariable-hard-simplex-beta": 12,
+      "m3-multivariable-hard-surface-flux-graph": 12,
+      "m3-multivariable-olympiad-high-dimensional-lp-ball": 8,
+      "m3-multivariable-olympiad-lemniscate-petal-area": 8,
+      "m3-multivariable-olympiad-log-simplex-moment": 8,
+      "m3-multivariable-olympiad-simplex-log-partition": 8,
+      "q4-multivariable-Hessian-boundary-determinant": 10,
+      "q4-multivariable-minimum-enclosing-ellipse": 1,
+      "q4-multivariable-optimizer-fourth-envelope-derivative": 10
+    },
+    "sourceReviewedHardCandidates": 90,
+    "retainedOriginalHardRecords": 40,
+    "omittedEligibleReviewedHardRecords": 0,
+    "existingHeadroomCandidatesPresent": 12,
+    "additionalCasesInSix12ItemFamiliesOrEither10ItemFamilyAddFiveRoundCapCapacity": 0,
+    "minimumEllipseHardRawRecords": 6,
+    "minimumEllipseHardNormalizedItems": 1,
+    "minimumEllipseQualificationAndNormalizationNotRelaxed": true,
+    "selectionInput": {
+      "category": "multivariable",
+      "difficulty": "hard",
+      "count": 20,
+      "includeLegacy": false
+    }
+  },
+  "omissionAudit": {
+    "all90PlanToFinalJoins": [
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 0,
+        "sourceRawSha256": "7833ca13fe1d8456ce074643abded77c14a6e8db28963bd4dcfcf4e7fde206df",
+        "finalProblemId": "cn_bb84ac9625627a95b8bf",
+        "finalContentHash": "ae2e4f0f742ef961b785596e38aba64ca49b5d01f9140ec016ea790e6a58a667",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:bf93f5e1ea6040a1857e9600",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 1,
+        "sourceRawSha256": "55f12a82892491c46930065f7a197759519ac4713ed8485c958f4d348cd023d0",
+        "finalProblemId": "cn_0616658923cc61686b2d",
+        "finalContentHash": "d7b9ce26cdc2875442e8d519b7838ab150a9d99a104b344754c910a691af44a8",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:a198e206dcb320ba37c9ce21",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 2,
+        "sourceRawSha256": "7c9cca9160a97a835fc5b8555827c901d5eb1346058645d7418068369549ce70",
+        "finalProblemId": "cn_581a4d48db1ff7db36fd",
+        "finalContentHash": "e615ff2179bd34176134b325ecd9ea55e561637579d038d41e236e280b66f66c",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:239be172e60351624458a41b",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 3,
+        "sourceRawSha256": "de745051aa3018dc635c04e788e30182cecc8001c87e2d43d8d5a3c12fd987be",
+        "finalProblemId": "cn_626238d53a24e63f1a21",
+        "finalContentHash": "3627105a1c875ab8ad27fad6ea49fe4a629679eda9f2f2388959614eede93b55",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:27a706f0185937052a7cd938",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 4,
+        "sourceRawSha256": "e340621b7ba742d0bb7cd65c0ab04577d854d2c0d3e98e4cb0d1b2ee89e6b4ad",
+        "finalProblemId": "cn_54dfe3682177542e503a",
+        "finalContentHash": "0eb23a5dcb66498d109c0e7550c0b68e1a6a6f3b0ffc8ea34a1ffd0e31d1f5de",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:6b5b442e05e48f471f4898da",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 5,
+        "sourceRawSha256": "206deac0c2e51375f9306f79cd29420830ba52d0ecc00b58dbddab68c46f7e26",
+        "finalProblemId": "cn_36eaf33b236ba0a8bd1b",
+        "finalContentHash": "8f490664f06b0960d556b30c7db6355a2f0029634af7d9e0c59acf3d0e80ab9b",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:8720ef7ad412bbcd924f797b",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 6,
+        "sourceRawSha256": "ffefe05c65d0247d9972f3cb0f069a408665cb1f71b345537ddd4d2d58684478",
+        "finalProblemId": "cn_f7f4d216573a9372f5f0",
+        "finalContentHash": "74e37d3fca18e81ca87884a5132b7106223f234c2d44790b8343c75ec625929e",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:42dd416f0e31da6b97cbcaf7",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 7,
+        "sourceRawSha256": "09e5d08fccbef90892291dfca2bf64ae1146ced536bd3c92ecf289ccf8efdde6",
+        "finalProblemId": "cn_c0146c8e0a3492c7344b",
+        "finalContentHash": "53f316fc44e9bcbed216a55e52c54d3c1d4b968743e6f3b20fd834fc60b67fb5",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:18347a1b21d1f9c8cc477ecf",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 8,
+        "sourceRawSha256": "3a885253e428b805c2da8b933e56359698a84940d3f5a133b9b03d1bc8a49de2",
+        "finalProblemId": "cn_a2a900e4f4a88d307812",
+        "finalContentHash": "c9a37bd8fddba2ca7cc49bd138a86eac248585b50c2fd00d808abe4ad246f944",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:7580c6e44e0f68c3c038555e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-Hessian-boundary-determinant",
+        "index": 9,
+        "sourceRawSha256": "be702b64b6c032dc6245dfa599c693ff92219b45e1a50f6cda4ba31a5d00f4c2",
+        "finalProblemId": "cn_182663a597b63a28eaef",
+        "finalContentHash": "e2057d680f3536abd9cc26d5c6c2fe18fc16ab20a95f954e6ff6acd25ab23ccc",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-Hessian-boundary-determinant:d7a9fe0503319e1a379d48c4",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 0,
+        "sourceRawSha256": "73ff50b6dccd624f80854f20754997c39ff5b6b8ab918d11829d789adb01c4a0",
+        "finalProblemId": "cn_2f2ef5aa7d449cb1347c",
+        "finalContentHash": "381c61c39efa69915d71b81e415831f3aa47002b4fe73581a1d4084c4c96e5f8",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 1,
+        "sourceRawSha256": "f9b9d3fb28b1a5e9ff8c29f210849398cccfb11f3ea292923db2cf4bc7eda030",
+        "finalProblemId": "cn_c1489b5b11de022d21f1",
+        "finalContentHash": "52849f86bd5c8b6aa7e458bd7d6c7db8fdcc1c1e587568e2a29bd1a1ed5df1ea",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 2,
+        "sourceRawSha256": "d6a82f06139789ca3487d738ab11fca721713922e3a6858abd2e35d8a983592b",
+        "finalProblemId": "cn_578fc67e9f7645b079de",
+        "finalContentHash": "81dfc918ad04e7ecf34101c33e850acb54f11c14b0742b34b27ccd7cb9532b28",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 3,
+        "sourceRawSha256": "85754b21244c4c81c2fb33f854ba29a5986ab60f8897248ff89ccc53f13c6685",
+        "finalProblemId": "cn_23298aaf0b8045f11c22",
+        "finalContentHash": "eb321f781c4d563dd535e8147d9dd68829118ee95dd01bad8998cd91a6eeb1f6",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 8,
+        "sourceRawSha256": "b23ebc5e0ac4e56dd5ca0313ebde89ac36e4713bdb061450a5303d91dd3f889d",
+        "finalProblemId": "cn_bb02caf5098bf2c443f7",
+        "finalContentHash": "7eb4fb604b95db556c4d0a14a69aef9082cca54c081e0520d33545f803ba4444",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-minimum-enclosing-ellipse",
+        "index": 9,
+        "sourceRawSha256": "0b2157c09977878f82fa020d4c7f700846c38c473615926c734388f4b103592d",
+        "finalProblemId": "cn_282ebc46229890025701",
+        "finalContentHash": "5e3f89303ed441b342ac7aa80e7c09c6604a384e3a0cb225f65b06027d3b9de2",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-minimum-enclosing-ellipse:ff977b347f84de874793938e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 0,
+        "sourceRawSha256": "f5d383dd658be5a08a5c3687bad3eb8a47222e26db6bdba904bad81e5c92afed",
+        "finalProblemId": "cn_b766a3f852d98f73ace6",
+        "finalContentHash": "02547c8b5bd2e0bb7e13c8ff78a4312b11951d35290514c3f304161b639990b1",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:a1c7c42c82777cbaf3bb6ef6",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 1,
+        "sourceRawSha256": "70f173f6b554e1a860ce46582d0692d19db7a40ecef19398348741afa4c83872",
+        "finalProblemId": "cn_26780151aee210bfb76b",
+        "finalContentHash": "32cf521c973e3f680c6ab57e19941c1a1c1210f69d529180cf8b3a84ed09b4be",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:8d657951c3819f78cabad514",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 2,
+        "sourceRawSha256": "1f7f76a02bd3b9f64a2cd9dbbbc7ece1082ff07c402b00a312121a7b433f2902",
+        "finalProblemId": "cn_377e16480eccd67ad173",
+        "finalContentHash": "56b7500d263d033e813ec5f5c755ad2f925a3b53fdfb8f180dd644dc95efd7eb",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:271b3ba0716e1821cffd1a50",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 3,
+        "sourceRawSha256": "1ad569bdd3d7af9b3f9e89b18bd0571f944c8a909aa61028a6e7b884166141a5",
+        "finalProblemId": "cn_1f7662b6a3877f79fa9c",
+        "finalContentHash": "c9ad31909aff211f8093cf4a68a85ffc683a301d775bd5b5545a230fb6b145f5",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:ed38b9ddc1ae28420d2498c2",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 4,
+        "sourceRawSha256": "df064aed887c9e77088ad7ccd9b1dd3be111d4804d4569aa4826346df30fd78f",
+        "finalProblemId": "cn_186a961fc1e82bb304e2",
+        "finalContentHash": "538f69f7c13e2b180848c3e9e67c9afc2e1e3c379eb0676f9374311af136446f",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:84fe025c13a9175f7fe3e83b",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 5,
+        "sourceRawSha256": "ba2d0ab282321e245aabb6c23b627b1f3639b58ab3b44068efae2049cc2d7dac",
+        "finalProblemId": "cn_87eb74e141f959f405ab",
+        "finalContentHash": "7f180893df9085a2764f0364bb7db4bd18996ef162e8ba8aa96063885d059c4f",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:5043ffcba5591a3971b8a253",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 6,
+        "sourceRawSha256": "07618547da482ba013e3890d41ab86c217835f1586134540a0accea7f51ccc3a",
+        "finalProblemId": "cn_123e886388e2152d8ac1",
+        "finalContentHash": "9ad82f70d28102087a44e39eb52e14aa455baf92436b942b15d702b1dc9619e2",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:4d8d644b4bc6c607fd0df6b2",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 7,
+        "sourceRawSha256": "f609fd043c2d37e0cac9eda075287ef4796166476af76d83cd6f3d8015c2e758",
+        "finalProblemId": "cn_54228daea8328b6f5c1b",
+        "finalContentHash": "dbce84c5b299d3e40d49e4100f30262ce359494d6939e2d8eabd6bcfd2c0aac9",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:e625297403eb3d1c53185511",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 8,
+        "sourceRawSha256": "27fbd63f8a6b40edf4bfd9fc676bb51fe624f69d6d64a552026c155463623835",
+        "finalProblemId": "cn_1a5187adea9df5ef490a",
+        "finalContentHash": "a7de23c93d30f66f4df1fdbfd6543d2723b985690ae0615e4d3d87bc6adbe027",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:c5b1f26aecf383cd1af07e9e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-advanced",
+        "familyId": "q4-multivariable-optimizer-fourth-envelope-derivative",
+        "index": 9,
+        "sourceRawSha256": "48d6702c55217c65771ffc72ec732944bd78f56feafccd3f82c978588ff039be",
+        "finalProblemId": "cn_f0e0ea92153512ea856b",
+        "finalContentHash": "9a1dd08b315fd402e4ead733f95d9f655801be8f1b037beabb8541e60d06b53d",
+        "normalizedTaskKey": "q4-normalized:q4-multivariable-optimizer-fourth-envelope-derivative:d512aa944f003b2326861634",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "index": 0,
+        "sourceRawSha256": "043dc7685e0164d3f7955d1179840ccdca675b1612de7d4c02849f6a7ca44a04",
+        "finalProblemId": "cn_8a732fea2f895eb826e9",
+        "finalContentHash": "951c9f82454767783064081f8030a24c080abac1024e47049cf7db0389a8d2d8",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_0d0c3b1967aacfdc88c7",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "index": 1,
+        "sourceRawSha256": "7bdb094b51c992c40cf41b1f111679d2a43ad84b7ad3ecf893735599ec857993",
+        "finalProblemId": "cn_d9cb22ace91dab466f95",
+        "finalContentHash": "369ce7bfb1c454392efa27e00d67710ac873d615ba12891ea9c84dea502d3129",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_7cbb0f7abbeed3c69662",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "index": 0,
+        "sourceRawSha256": "d0c906046ed50129fb7d609ef56ed0e48b12a77095e6bcc7c841f6b8be96ebb7",
+        "finalProblemId": "cn_e34c833b7b57cac8ee1b",
+        "finalContentHash": "19d492129f0a257497b64da2930f3f88727bab89fb412cb09e151166f397d7bb",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_031e63832e896b19d863",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "index": 1,
+        "sourceRawSha256": "014e7785afe82b08492eb0c680233fab62e7b0f918ecd08b6cc76dfa468771e6",
+        "finalProblemId": "cn_26e42bd242a54e69bfc1",
+        "finalContentHash": "55651733b64569bb2ed022bb8a1e8e09704373c8b2e629f082be949419926619",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_e0b5c7d149833b9a5563",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 0,
+        "sourceRawSha256": "676fb6a5f558f5bd37a1754c85882e63e6582634aedb164d79cabbcf6bea948a",
+        "finalProblemId": "cn_01cbd646856c292e227b",
+        "finalContentHash": "1274d7d45ae392ccdd3ad4491adc4556a4615c2dca69e3f4525c2dc220c98f55",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_3cdde92f5c48c2f31839",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 1,
+        "sourceRawSha256": "921c9b796638300945a93c863f589ba5ef2c91ec143bbecb01c531482f1db8a7",
+        "finalProblemId": "cn_5a90a0912db0ab24b72c",
+        "finalContentHash": "137c772e768977d776327d384ab4fdfcbe9dfa2930f737766273b0d53ab5c5bc",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_e883fa094045e3e5c2d5",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "index": 0,
+        "sourceRawSha256": "7156095a8fd50a5530684f1e67357ea4075ead0257a244f9b88a788e153a82a1",
+        "finalProblemId": "cn_48e91a89b81feeb8c6b2",
+        "finalContentHash": "31c3ed06262d2e717323248c4c8b051505e3a77d4d61ea230693c33b1a3fe6d0",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_d6cefcd7d9a73685cd31",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "index": 1,
+        "sourceRawSha256": "9ebebede4c31a63b23c6df5b9d47cecacbfb97bf3c2398f028607c69504c3830",
+        "finalProblemId": "cn_b0cbe0991299a97a5f72",
+        "finalContentHash": "d70ed87aad62c5582b7ce19fe5a1b167293221820435694b7230a8bf53bddaa9",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_c52ceefe81bf8f9680e0",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "index": 0,
+        "sourceRawSha256": "5916ce298b92f6d297498e3170a556e406c598b22c6b61b95fe677cebce4b810",
+        "finalProblemId": "cn_7c5650f4320f81a00805",
+        "finalContentHash": "e68411daf59137aa787e86e89cdea8193ff1ecba1949149ea7816efc06630503",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_24352cfbea75cfef6578",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "index": 1,
+        "sourceRawSha256": "c5e87902f99c0cb2068f469020aaa7cd93d146c5e263bd68c8e8e1b909a00efe",
+        "finalProblemId": "cn_fc8253137fac46d9f817",
+        "finalContentHash": "c767ad20de3bd09e938c5f8dc04821f67179789c20061efb44c128e2e23bdef7",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_1e6af02d0b6932cd81d3",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "index": 0,
+        "sourceRawSha256": "b5df629ba86fbaf92d9055c64f1d08515d9fb4182f25a800a23aa5043cf77c07",
+        "finalProblemId": "cn_6f8b8f22bfb9673fdd28",
+        "finalContentHash": "4b9abf5492f18836d317884f9763443c1ae50163551b135d949f3ceedbb52089",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_39fb68a8af4fe40613c9",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-lower",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "index": 1,
+        "sourceRawSha256": "82f38d572cde8a22243cf5ac2fdf9fe618fd8fc1690ec753ce7a03f2fe388400",
+        "finalProblemId": "cn_8ad33c2667069881a84d",
+        "finalContentHash": "1357499a5a4888b0d71e954d5ecfcbdf55ac51b9e03e415240909a2a9b9f1fcd",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_q4_15e623694e6931c10882",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 0,
+        "sourceRawSha256": "d05d84057684d69b113736f0c31556f3d94138f2f4e9720dd70690e6535f5dd3",
+        "finalProblemId": "cn_27f8617d7af320fb234a",
+        "finalContentHash": "91c047c06d0ffdcffa9d99f5a8743769defe99e79f3a604772dd66895a79b0b8",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_27f8617d7af320fb234a",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 1,
+        "sourceRawSha256": "95a313c82c9544b6bb87b045fbc32055e3a50fd8f81d9f6d282d66071a0b1423",
+        "finalProblemId": "cn_42e6c07dc4128bfc120a",
+        "finalContentHash": "54027c442f36cfa377e3a1963626b0ca1664df0da101587a6e6a6e213d49673b",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_42e6c07dc4128bfc120a",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 2,
+        "sourceRawSha256": "ceff2228bf0383ff18d0f9c7ce6ddb9e8d1728204423716bbc05ade5760ea6f0",
+        "finalProblemId": "cn_2535f3d1f7d80928d97f",
+        "finalContentHash": "9032a90bc0780ac1ef6af17507467d94c59ba89ddc9c5226578ef2df9de63567",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_2535f3d1f7d80928d97f",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 3,
+        "sourceRawSha256": "7719a77d894b7cd7f205f8090f40628c0c2bc9d63c7d3d17a95c9c18118944b7",
+        "finalProblemId": "cn_2013cdd6925e830c54a1",
+        "finalContentHash": "45dd7ec59fe1e98a91b20114b90189f61b4114478c0a098c164498d84b3246c3",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_2013cdd6925e830c54a1",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 4,
+        "sourceRawSha256": "98357e5f988778ed865176739e1a7b43a39059ac4c634b883fe97ad875184aeb",
+        "finalProblemId": "cn_b66862af2e9a44347a08",
+        "finalContentHash": "4d971b7009e86c9f54d99ff63cb80575c9494a0590aed9816fd0efbde7822471",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_b66862af2e9a44347a08",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 5,
+        "sourceRawSha256": "aae6c76571c9d2ddb3ea43477d53cbd105d26749e9a7dd27b1ba982cc2755568",
+        "finalProblemId": "cn_531df583481307a3c34b",
+        "finalContentHash": "92ed7902abb136ea20f8ad0c0319190c751d9e6c772c200a171d773b8ebb64c7",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_531df583481307a3c34b",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 6,
+        "sourceRawSha256": "6f1479245795a0a96d785dc005eb4455b665a8a9e60c8481c01235029f1736ce",
+        "finalProblemId": "cn_b6857d32bc91872370b4",
+        "finalContentHash": "49eea7741d8872f1446c156ccb972e8a0e7ba68ac8f956e8d28036052fe2a03d",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_b6857d32bc91872370b4",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-revisions",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 7,
+        "sourceRawSha256": "d4890a40d7f72edfb84d102c92cf6889bb742eca40344dae32ecc95e0896f1f2",
+        "finalProblemId": "cn_9f54e59882ebd43451a6",
+        "finalContentHash": "0b6f06eb491c9c23fe6a55e8d81f516e1bde013b6fe942497530e3dc04ae4eb4",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_9f54e59882ebd43451a6",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 0,
+        "sourceRawSha256": "7308ba42c3101331f8128202be02ec185f400153c7e5a01841b888c7d0755323",
+        "finalProblemId": "cn_4cf57d70d9d18d32b965",
+        "finalContentHash": "5ce03c7f792cb58e10764094c58bc54dff3309793bb1dabf37d33e400171ba47",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_4cf57d70d9d18d32b965",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 1,
+        "sourceRawSha256": "63d578ea46c38c0f97efcd36d942cb6ea8674c6f41fbfec5cfc451d9cf90697f",
+        "finalProblemId": "cn_dcee350e2c76681fa504",
+        "finalContentHash": "d90f84fd28aed8403dcac86b57b8225ff25c8bfc10fe0a6b0d7257fb1d0cf30a",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_dcee350e2c76681fa504",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 2,
+        "sourceRawSha256": "6efa38cab1735680f03b4d5bb0d51a4a6696b546f32436b880f9b47fad4ff6b6",
+        "finalProblemId": "cn_225a523cb329f2dbdd81",
+        "finalContentHash": "0ce565e7814e639b89cce5fe4ef88bc28f2ecefdecde4405e9949e07f7303c24",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_225a523cb329f2dbdd81",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 3,
+        "sourceRawSha256": "58a997c1d3e97bde64d152fc968be061cc5ef1befbd5dcd4c54a233bc7136547",
+        "finalProblemId": "cn_f222ffac5647a14954e8",
+        "finalContentHash": "7edeffae6288d6aaf1ea3b51c6e4e71cc04338bd428a5706005b0ca824cc9a02",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_f222ffac5647a14954e8",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 4,
+        "sourceRawSha256": "599127902a81a9f02283b17032f8581c45d35c576f85e5aac4db3d9840ca35dd",
+        "finalProblemId": "cn_ef0f06fc42ad46703e8f",
+        "finalContentHash": "bb8d1e40d285da3b11eaf083c4d7a36addf69939199f728e5e63e25b56abf1c0",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_ef0f06fc42ad46703e8f",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 5,
+        "sourceRawSha256": "04098d7584d09cfd6958e37259701f123b392a7be241a47320773aa703093043",
+        "finalProblemId": "cn_54715096fe81d0586881",
+        "finalContentHash": "eda2daad5436b01711df5f0fa50e194562e354b07e5e02f0099e83753733033f",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_54715096fe81d0586881",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 6,
+        "sourceRawSha256": "b316ad9d6fc8898d6a749f5b58674a805d943e7f85f0a79d9f4f011fdcecf2c4",
+        "finalProblemId": "cn_7bca75c8830a1128c6f7",
+        "finalContentHash": "6a57a9bdedab0d6f8339bc4bad16ebde6f3aa8676c38781fa25f9ea7d2c42ba3",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_7bca75c8830a1128c6f7",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-simplex-log-partition",
+        "index": 7,
+        "sourceRawSha256": "843e035253a6bd31026f2de75654df0060cdbbf23c086980e73fdb16efa3c99c",
+        "finalProblemId": "cn_dc6bff959e970376d5f3",
+        "finalContentHash": "d8f8086d7751afab18e346f55ba913a2a347a12018c3f09006c7605e03fdf459",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_dc6bff959e970376d5f3",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 0,
+        "sourceRawSha256": "9b19c9583e47f0b09f39cc1ad3f6a99eb69cc8107bf943daac85c3a6bbfd3311",
+        "finalProblemId": "cn_76ce165ec9f3d1862392",
+        "finalContentHash": "ad32b29c5e88f8b8e0590623dd427a3d684f0605b4a76611f141aeda1638987a",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_76ce165ec9f3d1862392",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 1,
+        "sourceRawSha256": "0abd89d30dc7f8de1f197f5c6b4c689df9725ca0c557f58201dd6b16641787d3",
+        "finalProblemId": "cn_2eead018bf4b58eed654",
+        "finalContentHash": "883076d37b61cc8c250ec8e0781cf64ad92ae270dff9f7d0153697b7d0256d09",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_2eead018bf4b58eed654",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 2,
+        "sourceRawSha256": "be773017b7c64c566acfc593de92beda9426e2ccfc41392e9446c5445973cd6b",
+        "finalProblemId": "cn_67477717a7e514c0abbb",
+        "finalContentHash": "2065ae9562035c822d0332bfc8255fe485fcd6b801c0787ed43ed2cca20b4e56",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_67477717a7e514c0abbb",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 3,
+        "sourceRawSha256": "587755c9f4d81c1d64132b34ca4d791d8abdf66d84c97f8df9f5819ac000807c",
+        "finalProblemId": "cn_0a8f5d9ade409413efe5",
+        "finalContentHash": "3059f29a80a02155d4fb4377113eadee23b3a47e96d35bf987530984f0e1cf3e",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_0a8f5d9ade409413efe5",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 4,
+        "sourceRawSha256": "9da390e4f4762d0cef6192bfe3dbbc27ea5d8cb2fad2232334fb9503139e24b0",
+        "finalProblemId": "cn_60f3d622e0d048b5c8cf",
+        "finalContentHash": "1b2257e30174aace8aecd7338896b5df6c1abda962f14e5cf08ac58312aa85c8",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_60f3d622e0d048b5c8cf",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 5,
+        "sourceRawSha256": "565e8420fd7ae5f94f1645ebf17c1cd1480d37712c8c64abb582a1a954327730",
+        "finalProblemId": "cn_6db631675f740d013d6b",
+        "finalContentHash": "9b73260fbd9f243ca2183b7a191b0315e4739d1759bdbe6a874293e5a5f2f1bf",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_6db631675f740d013d6b",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 6,
+        "sourceRawSha256": "b77876f1a7ce864235593aadb2d57095f04a46a75b5e41ecd5c13afed47465f0",
+        "finalProblemId": "cn_896a538f7dca94be5a23",
+        "finalContentHash": "eec0557889dcdb1ee6bcf49ac71d7707b3bad9e29f67cb79f6afdf103561d8cf",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_896a538f7dca94be5a23",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-high-dimensional-lp-ball",
+        "index": 7,
+        "sourceRawSha256": "66f05c5a0f02bd6bdb48f90d90f9beb21598aa90da16a2b781a4a15379dc0e8c",
+        "finalProblemId": "cn_ed1fa3d06bc5361a4532",
+        "finalContentHash": "e9fb76db714725db4088eab3264e269ac7d3d9de036e309647a341ec175cd7e3",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_ed1fa3d06bc5361a4532",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 0,
+        "sourceRawSha256": "634ebde40993812411de2726f5ecab34bf04e285de157fe0ba7ebd776bf0dd6b",
+        "finalProblemId": "cn_d8a76f38add0f260caaf",
+        "finalContentHash": "3270a9c1c97d6be1537ab3644fde29c2d9c56d0f3fc7205597bf41adef40fcab",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_d8a76f38add0f260caaf",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 1,
+        "sourceRawSha256": "2b1eccc19e5b6453b86b5a5ea4c2b73e43ef04630b18a52a32ccfbe448cb95ff",
+        "finalProblemId": "cn_d83801c5e9af6d4d15d5",
+        "finalContentHash": "234bf4f9936d2cb68d9c366441da8676b7489d4e24f8aaba5475014361190fe4",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_d83801c5e9af6d4d15d5",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 2,
+        "sourceRawSha256": "fcd4b81b8602b998cc7396caaee5c2cd35559a872f24980145fdf01f8a144916",
+        "finalProblemId": "cn_ccaa87539dc90a786c13",
+        "finalContentHash": "b003fd1093adb842d733dc931d8222105fea911226713b56f2c655f3c7023d7d",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_ccaa87539dc90a786c13",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 3,
+        "sourceRawSha256": "b4c8f978e9e577a688de9a2f3845ca464c7559354ac3fb547aa27888ba423c01",
+        "finalProblemId": "cn_2d77cc3bb4e7fdc2fd72",
+        "finalContentHash": "05f14a1cf58db4ece10d13c285a8e9218529a5cb828269f68ebd86f7ef1fc512",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_2d77cc3bb4e7fdc2fd72",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 4,
+        "sourceRawSha256": "a52918dc89ac95939ce29c0287b9e8bd94036125f29ccb5b00cd9971075a1c6c",
+        "finalProblemId": "cn_98abe56da38c2fc90786",
+        "finalContentHash": "17acf4e972b8d76a54c55bcac4c6ffae6b8680e8e92f5e696ed4cb74b5236a79",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_98abe56da38c2fc90786",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 5,
+        "sourceRawSha256": "af333114f0b0c4dba74d47db8464f3e5ce099eb4b6afa3b041902d4e1ff749fd",
+        "finalProblemId": "cn_3000dfbf505a59c99547",
+        "finalContentHash": "e02770ff192aff6af2b384d64885311aeef9d73dfd15b99dfffeb71b2708ccf6",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_3000dfbf505a59c99547",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 6,
+        "sourceRawSha256": "653563d046223d43ab4f8bc4ec9628fbe1f4d470a5235c490ec4a8cf26cc4525",
+        "finalProblemId": "cn_4ef2c0c84878d05d106d",
+        "finalContentHash": "49d2560e969283609bed48e56bbd825f5444ea5fa4e05ce63d96e6f271a63650",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_4ef2c0c84878d05d106d",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-difficulty",
+        "familyId": "m3-multivariable-olympiad-log-simplex-moment",
+        "index": 7,
+        "sourceRawSha256": "84b727b4e270fe6aa668853812ccc6197b77d8da47bccaaac2aa49606ae6482f",
+        "finalProblemId": "cn_679bb8ac2d68899db3f5",
+        "finalContentHash": "072ed77baebf6a7d8f3d0d3cb2acd3607813c7ee19ddf272410d6efdac8a081b",
+        "normalizedTaskKey": "preserve-existing-exposure:cn_679bb8ac2d68899db3f5",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 0,
+        "sourceRawSha256": "3df2c098cb6db2800bf4aa68526394cf0bc5c65751814736384626a878fa1360",
+        "finalProblemId": "cn_466327791d22afc8a149",
+        "finalContentHash": "0abb0c895479749c6686ac3b37d9248670d4470d65e4e8d14d0de8daedaed9f3",
+        "normalizedTaskKey": "cn_466327791d22afc8a149",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 1,
+        "sourceRawSha256": "5731e78558cacdd2f74cbf4ad541c0c62a4b128547289acf538a91c098f03501",
+        "finalProblemId": "cn_b04b24695860a329f0d2",
+        "finalContentHash": "386902d2b91145bcdd67034e7c21c575e11abc6097031da45ccc90ca9b6b7959",
+        "normalizedTaskKey": "cn_b04b24695860a329f0d2",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 2,
+        "sourceRawSha256": "855e8e8b088dad6b5562298b4a6dd63b55635d2b045ee61cf15e6fd858fccc3e",
+        "finalProblemId": "cn_49f17c6fc86a370a6fef",
+        "finalContentHash": "a29daa758f470b6e99cb05f6922f11c735983046acef2f0f5f181636634a1385",
+        "normalizedTaskKey": "cn_49f17c6fc86a370a6fef",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 3,
+        "sourceRawSha256": "4305ec1ab282ca0fd4f99930837a3c937d3185604628c62b31d2ca6bac2f1c11",
+        "finalProblemId": "cn_1a213415ff4966fcf49e",
+        "finalContentHash": "c069e32f0ef88b66469531f9aaeb0c103d76265998ecc0c727d1527762ffb753",
+        "normalizedTaskKey": "cn_1a213415ff4966fcf49e",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 4,
+        "sourceRawSha256": "bde8bd4abb3f9d50af617fc3b86bd2ef1dc5beb0fb9472ba8dc7bd3e36d9bcee",
+        "finalProblemId": "cn_ea96002867f95fe7fb11",
+        "finalContentHash": "6d9b3e5d6b94c8ae5d9a64cee8dfabe11369c2129c3e37a4c04ad06270cebbd8",
+        "normalizedTaskKey": "cn_ea96002867f95fe7fb11",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 5,
+        "sourceRawSha256": "2fe44df53f9d4814e5f9ca5eda36b4ed6b1ab39e12058d1a2c29d789afc3b766",
+        "finalProblemId": "cn_dada11a470f25f714659",
+        "finalContentHash": "40c0997936245f32e638fedfa16aa8eb1e9388c54f9074228ae652454b5dcc8f",
+        "normalizedTaskKey": "cn_dada11a470f25f714659",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 6,
+        "sourceRawSha256": "6658766766207a66248bbf75ccb2dfc67dc16d8e5207c19444caa4a374a0de5d",
+        "finalProblemId": "cn_b4ca42fc02504ff23b41",
+        "finalContentHash": "2476fd3b3dec1ce8a12d2d133f7f6ec72025924dc4aa86aa04c7d77488db8173",
+        "normalizedTaskKey": "cn_b4ca42fc02504ff23b41",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-late-difficulty",
+        "familyId": "m3-multivariable-olympiad-lemniscate-petal-area",
+        "index": 7,
+        "sourceRawSha256": "8d0ffc92f79603386bf970acc671ba1d702313f70681689c8e06e97b1d359ea0",
+        "finalProblemId": "cn_dfd1355cc9d5840b6ba7",
+        "finalContentHash": "b1048f3466095a1a2374b0419d601f52887f9c22f85dfce045f408b7ff33f2f3",
+        "normalizedTaskKey": "cn_dfd1355cc9d5840b6ba7",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "index": 0,
+        "sourceRawSha256": "bc7eef48ab511d631144847417c5dc80c4ff4ba93e07ee4b01fff74fea1d534d",
+        "finalProblemId": "cn_b98fc5650f5ff4e73366",
+        "finalContentHash": "f15476b0fbede418e425aa903f69864f55a1b90934a03f775badd207c0269c1c",
+        "normalizedTaskKey": "m3-multivariable-hard-quadratic-eigenconstraint:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "index": 1,
+        "sourceRawSha256": "bfb9dfb786f4c5a3910c1356324539e31ad3d1ea7392222628b0254b2b4030bb",
+        "finalProblemId": "cn_0f6cbd56ae86bfb35bd6",
+        "finalContentHash": "92660a2e233be8e9f131124168b47e924ee90a84cfb75d25f981b1bf82e7cd87",
+        "normalizedTaskKey": "m3-multivariable-hard-quadratic-eigenconstraint:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "index": 0,
+        "sourceRawSha256": "d81d866cbd55ffb5ada3a881a725626b5754a0ebc50d343ca6bcfebc1d5df831",
+        "finalProblemId": "cn_6e3b543414a9e00df6a2",
+        "finalContentHash": "ad6ca7bd8606dfbf4d1c227964b4879226c60d0af3310b4ecbb214401392bc18",
+        "normalizedTaskKey": "m3-multivariable-hard-ellipsoid-inertia:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "index": 1,
+        "sourceRawSha256": "ef268617ee77060e80e1ddbfd0adf4a92068fd416ed80537671017f00dd247e8",
+        "finalProblemId": "cn_823abd1a48ceebb94089",
+        "finalContentHash": "85681dc0ce25ce686dfdbb8a40d1086d91f0db549df3383567cb3e2ff5cee100",
+        "normalizedTaskKey": "m3-multivariable-hard-ellipsoid-inertia:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 0,
+        "sourceRawSha256": "734436a6f167c4e53e5db314e25d41391410f2ad036c95ed05fa7056614a6f92",
+        "finalProblemId": "cn_951cc6860e4937d0493e",
+        "finalContentHash": "8a2005fc6029df077fd4f2f8d9a8b1c5ed368572b015b03cbfe1ed817db7cf65",
+        "normalizedTaskKey": "m3-multivariable-hard-nonlinear-Jacobian:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+        "index": 1,
+        "sourceRawSha256": "04b827560e1e935f9fbf1c080e4729c734049b60a00a05ca92faeb65fd60a7fd",
+        "finalProblemId": "cn_a0d7397599bcc36bbbb0",
+        "finalContentHash": "910715e5bec75ff4e1ab7cba297757969d90ac2e44b8cc1376d6d80d8918fc1f",
+        "normalizedTaskKey": "m3-multivariable-hard-nonlinear-Jacobian:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "index": 0,
+        "sourceRawSha256": "9413ff2088e16edbdc66a0124130323b5ca1585ed1459dd7c8526681f1aa2c83",
+        "finalProblemId": "cn_550b7f6608258a75c1f6",
+        "finalContentHash": "ccb29edac2a957c9c751630539e586949d68167b8ebf12a31b0e1855b4fef185",
+        "normalizedTaskKey": "m3-multivariable-hard-simplex-beta:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "index": 1,
+        "sourceRawSha256": "9cc812146211e7ea7c27b0b77bc2bf5610ed4af7ca6ed0558fa246a8efe9d6fb",
+        "finalProblemId": "cn_e45455ef4a7b31eef0c2",
+        "finalContentHash": "ed31b4fa757e893b28cc82920bb68c34b41c5f57c351f2a499394df480582bee",
+        "normalizedTaskKey": "m3-multivariable-hard-simplex-beta:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "index": 0,
+        "sourceRawSha256": "f9d3159063d27c801bbcb439ffb4908065076dd8b723b37c7507f64ffed8c637",
+        "finalProblemId": "cn_dc79be5884ca807998fa",
+        "finalContentHash": "867b3d8b9fb406b6eb5d96d6d778c24c0b200c803703174b54e5092c1bdf5514",
+        "normalizedTaskKey": "m3-multivariable-hard-surface-flux-graph:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "index": 1,
+        "sourceRawSha256": "74a254cf9d23856cb2603d088a9eb4c4a17587f4b76529a6b405747ad51d4886",
+        "finalProblemId": "cn_839e7e237c8aa45d8c5b",
+        "finalContentHash": "1fc510edbc967d967dd36c60c6ba6dd9b50ad8e936c5a41eb14900e43a39ef76",
+        "normalizedTaskKey": "m3-multivariable-hard-surface-flux-graph:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "index": 0,
+        "sourceRawSha256": "8ca99a36fb36fbd5d68cf2fa549f15a7de8fb41df5f9b7f6cfa28d02d5f11ca2",
+        "finalProblemId": "cn_7aedf8105a2ab0dec116",
+        "finalContentHash": "c1809a2e16ba8178575675ee2e7054df52409abb26409d0aadc5bcca562b14cf",
+        "normalizedTaskKey": "m3-multivariable-hard-Gaussian-precision:finite-fluency-m:14",
+        "sourceAndFinalDifficulty": "hard"
+      },
+      {
+        "route": "ode-mv-hard-headroom",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "index": 1,
+        "sourceRawSha256": "0c1ce052eff052ab532d2208f5bf66a04aa2d510a9958fe59dbbba9c3a028b75",
+        "finalProblemId": "cn_58df7e9d5fefbd2af6af",
+        "finalContentHash": "9ad5e9c622a10411855f7d0d553730b7f5b53b866396221b9d68071caf26996a",
+        "normalizedTaskKey": "m3-multivariable-hard-Gaussian-precision:finite-fluency-m:15",
+        "sourceAndFinalDifficulty": "hard"
+      }
+    ],
+    "remaining40PublishedOriginals": [
+      {
+        "problemId": "cn_96d369e4ba1fa71d589c",
+        "contentHash": "aba3950be2f29006f736df54e436f0aca6ac2754a4b165ecdf1d614e47ef94ce",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_96d369e4ba1fa71d589c"
+      },
+      {
+        "problemId": "cn_a8906485f4423d8b8737",
+        "contentHash": "b31011d6626063ce4baac2cbfef45484ae90421248086f15598784a4195def25",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_a8906485f4423d8b8737"
+      },
+      {
+        "problemId": "cn_836d94bba34fc7c93a07",
+        "contentHash": "4e684e088a9d343e8fbf761b8d8912d4536a5f9432996b9cad9e9c4fe1281084",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_836d94bba34fc7c93a07"
+      },
+      {
+        "problemId": "cn_6b2e4aba5d0fba785e67",
+        "contentHash": "9d02ac5b32b026d3633769f6acdd2418acb60aec80a286bfc516588538a1dc7a",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_6b2e4aba5d0fba785e67"
+      },
+      {
+        "problemId": "cn_284510e6b31a5ea18b96",
+        "contentHash": "4cb23dcee24c97519333652180a295cccc87e0fba27d9337f273a39e4c6a9591",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_284510e6b31a5ea18b96"
+      },
+      {
+        "problemId": "cn_f5a1f67573b16f11879c",
+        "contentHash": "a4af3960a9388b9d5227c4b910a48c0ec4fa48275294f431ca29e2792894b77c",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_f5a1f67573b16f11879c"
+      },
+      {
+        "problemId": "cn_c3d35112f5de00a020ec",
+        "contentHash": "336fff7bcb01e54f3bf5f02952e3c9b9efac725dd12f6ae84a1808ef8658fdaa",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_c3d35112f5de00a020ec"
+      },
+      {
+        "problemId": "cn_f80be8ad5444ba243fb6",
+        "contentHash": "dbcb99e2a0503ef8bf4644cddd5952bf864e1b2e817e2096f7ef8996c46790ce",
+        "familyId": "m3-multivariable-hard-surface-flux-graph",
+        "normalizedTaskKey": "cn_f80be8ad5444ba243fb6"
+      },
+      {
+        "problemId": "cn_d8e68ad59541cbdef7ec",
+        "contentHash": "a73247019351194c47f1b4e2fbc468b262b05e4dd5c9344fba6ec205013a2966",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_d8e68ad59541cbdef7ec"
+      },
+      {
+        "problemId": "cn_5b18283e0bb9d610938d",
+        "contentHash": "874efb5733760b628eb64bc8a40510b63081d16c28514a1eef3dff2d0de6965d",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_5b18283e0bb9d610938d"
+      },
+      {
+        "problemId": "cn_b6d00103c1b694dadf0f",
+        "contentHash": "522436b932493e07c33314ed70e712c9d2f940243dab3ec82dc95fef62a07ddc",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_b6d00103c1b694dadf0f"
+      },
+      {
+        "problemId": "cn_6b62a5d163e7c437206c",
+        "contentHash": "ba2243576df7a63e5935de4db0226635248f27016c58df063765733c3613d045",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_6b62a5d163e7c437206c"
+      },
+      {
+        "problemId": "cn_9562f916b3a5af5a7b00",
+        "contentHash": "78eff431dfc891c282a7c2b03b5a55ec938a3dfbe182c49d363cc180e44d149b",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_9562f916b3a5af5a7b00"
+      },
+      {
+        "problemId": "cn_fc40a9e4f1da40db4c8d",
+        "contentHash": "ccd041b5aa8094e5deb3c0f9b1a551b3593a3fc303da8b9736cce93538015a4c",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_fc40a9e4f1da40db4c8d"
+      },
+      {
+        "problemId": "cn_f064d8790f8d0b78602f",
+        "contentHash": "e09fb01a14d0e6843dc0f9505ccae0126ebd916380df875b2fe5a9a38a40c857",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_f064d8790f8d0b78602f"
+      },
+      {
+        "problemId": "cn_46a5e77d79ae8e35234c",
+        "contentHash": "e16dd5478e8303372d168c0ceb78412c135b21edbdccd75115c1c9caaf593352",
+        "familyId": "m3-multivariable-hard-quadratic-eigenconstraint",
+        "normalizedTaskKey": "cn_46a5e77d79ae8e35234c"
+      },
+      {
+        "problemId": "cn_fb73afeb10df4edc6404",
+        "contentHash": "18e14ac3622485855d2b3b1b6bceb6ba33cc17b07a1ac3385d9002ea25c8a12e",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_fb73afeb10df4edc6404"
+      },
+      {
+        "problemId": "cn_78f0f10c018de4424f8a",
+        "contentHash": "c24c83d2350bcc46f7b415bc037f7ceb9ee0ee6989c01d83aadeed0500bfaa97",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_78f0f10c018de4424f8a"
+      },
+      {
+        "problemId": "cn_0fb2f5497310c30087b1",
+        "contentHash": "5ddd3908c603607ca4d05a4bde6e4aacc4d7eafacc03a49d39a7a9132cfcf2bd",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_0fb2f5497310c30087b1"
+      },
+      {
+        "problemId": "cn_62872c7ee5f9cc4e6b61",
+        "contentHash": "7df00320767cf339619e4697253613c8c13fb6d586c88fa370f64a2ace08593a",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_62872c7ee5f9cc4e6b61"
+      },
+      {
+        "problemId": "cn_d17fab6dcc34b336f4fb",
+        "contentHash": "af2221116676e661c3de92499d36d2e020f77dcb59de3ab8dbdecb3c9e17274b",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_d17fab6dcc34b336f4fb"
+      },
+      {
+        "problemId": "cn_6d088ec732e2ba5e866d",
+        "contentHash": "f4cf48e63b033b043e7bf04116a2e742801467a1d8adcc5e9ee5c18dc7584cdb",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_6d088ec732e2ba5e866d"
+      },
+      {
+        "problemId": "cn_62acc27517db736ffac0",
+        "contentHash": "ed3078eb458c15b12a56733c4139efcdaa72cd180680723c9753410e5e2071d0",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_62acc27517db736ffac0"
+      },
+      {
+        "problemId": "cn_ccf39910178a757ec53e",
+        "contentHash": "10f44f316c0d0866e6dd833ee1bae782bea26d762c2fcd566f23c618a8c19b73",
+        "familyId": "m3-multivariable-hard-ellipsoid-inertia",
+        "normalizedTaskKey": "cn_ccf39910178a757ec53e"
+      },
+      {
+        "problemId": "cn_520e3d9ee007e7b4dd1a",
+        "contentHash": "28cec34611dcfcb8d1d679fc1052e18efbe658aa441db5ce665b9721fbe66e45",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_520e3d9ee007e7b4dd1a"
+      },
+      {
+        "problemId": "cn_c69baf06d678505c2b9a",
+        "contentHash": "ed14ca8feffce77e39b986c541eece84f02e8a6df7e728a9bc047761e3ca64a8",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_c69baf06d678505c2b9a"
+      },
+      {
+        "problemId": "cn_98629d7233a8c2c02638",
+        "contentHash": "ba9aed151ff534ed1c9e630ebea28b658063e0e400ae70242eebadc2744f0b19",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_98629d7233a8c2c02638"
+      },
+      {
+        "problemId": "cn_ed1a49dc05ebf9f24298",
+        "contentHash": "ead3f18f00b9c06e94964b512617b08d5c259cc081b01ff74cd4af61d4e92af9",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_ed1a49dc05ebf9f24298"
+      },
+      {
+        "problemId": "cn_8e0f4d82e3dec63a65a4",
+        "contentHash": "1755dc629b9ade1d3d4051c80e496fcd2101bfee63837d57c4aefc607be2e733",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_8e0f4d82e3dec63a65a4"
+      },
+      {
+        "problemId": "cn_51021255dbc4137e6f68",
+        "contentHash": "6a2925fed489522daa9c8ea9405b2caab3b409b5c043605f9441cd2a5e672c36",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_51021255dbc4137e6f68"
+      },
+      {
+        "problemId": "cn_649f22783bf7480a7f74",
+        "contentHash": "2a0d4253c25097f6f159eb7dee1a51fbe36953a081a2a25808bc85863fa92e04",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_649f22783bf7480a7f74"
+      },
+      {
+        "problemId": "cn_58ce6ccb9785e26201b6",
+        "contentHash": "66ee0cb4fb24e84c5873da87175b01de3405883e243b85d8b1d228b6cfe28ab5",
+        "familyId": "m3-multivariable-hard-simplex-beta",
+        "normalizedTaskKey": "cn_58ce6ccb9785e26201b6"
+      },
+      {
+        "problemId": "cn_94042b85c9060a1a3a9a",
+        "contentHash": "69ea52b311d03b1fe05edd05b010b5b9299ac6bea021fcf18b6b0baab7f1b359",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_94042b85c9060a1a3a9a"
+      },
+      {
+        "problemId": "cn_7411396946b805386087",
+        "contentHash": "79a8f70def3d2f81b65010689ccdfad0104d9a09ae5e523d8f25c96698d65459",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_7411396946b805386087"
+      },
+      {
+        "problemId": "cn_9b155ea22bfe61987127",
+        "contentHash": "e513e5d9dcbcde8d0cd514cb921b417c626bf440b181f9eb51d88ed03de553cb",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_9b155ea22bfe61987127"
+      },
+      {
+        "problemId": "cn_3e1f0cace36e38fc8a2e",
+        "contentHash": "d84085d0c362a0933949164f994a71196688ab52217379a55cab9d4e5ab85cf6",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_3e1f0cace36e38fc8a2e"
+      },
+      {
+        "problemId": "cn_38adb112451fd29f851f",
+        "contentHash": "2839ee6b7ddb2d2a1ee7b6f47f9d72fd305ee157e25487c3d58d68f8a70949c5",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_38adb112451fd29f851f"
+      },
+      {
+        "problemId": "cn_584970f1dcf6f66f828f",
+        "contentHash": "dc48955a461a7d17484953ae2d148f2a8435e65592228aea3fa86f7f87f6c4f5",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_584970f1dcf6f66f828f"
+      },
+      {
+        "problemId": "cn_972042cdd523b0f43478",
+        "contentHash": "6fc15ab63e795cf68c6745c6932320fe4f8eec080b55d53290a4d2ebaaa5c630",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_972042cdd523b0f43478"
+      },
+      {
+        "problemId": "cn_588d4222890854b32aa0",
+        "contentHash": "740aa4d279e1a593d5a5a8148f2b685edf291f9685e8d77bcb69981782c5d617",
+        "familyId": "m3-multivariable-hard-Gaussian-precision",
+        "normalizedTaskKey": "cn_588d4222890854b32aa0"
+      }
+    ],
+    "preservedFrozenHardInventory": [
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/difficulty-revisions.jsonl",
+        "sha256": "580c680ccebc3f1ce36794a265dd38e06191a00aa4f18178d1291f88845ffa98",
+        "rawHardRows": 24,
+        "families": {
+          "m3-multivariable-olympiad-simplex-log-partition": 8,
+          "m3-multivariable-olympiad-high-dimensional-lp-ball": 8,
+          "m3-multivariable-olympiad-log-simplex-moment": 8
+        }
+      },
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/hard-headroom-candidates.jsonl",
+        "sha256": "c933b0a8efe5aa401153fd27413489e3912c18a530369ab9ab8ffb33c129e8ed",
+        "rawHardRows": 12,
+        "families": {
+          "m3-multivariable-hard-quadratic-eigenconstraint": 2,
+          "m3-multivariable-hard-ellipsoid-inertia": 2,
+          "m3-multivariable-hard-nonlinear-Jacobian": 2,
+          "m3-multivariable-hard-simplex-beta": 2,
+          "m3-multivariable-hard-surface-flux-graph": 2,
+          "m3-multivariable-hard-Gaussian-precision": 2
+        }
+      },
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/late-difficulty-revisions.jsonl",
+        "sha256": "ac218627721ba5589f18eb03bd06fb1447d418300f5b0a6842a6ca8d183f4127",
+        "rawHardRows": 8,
+        "families": {
+          "m3-multivariable-olympiad-lemniscate-petal-area": 8
+        }
+      },
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sha256": "271d57d472b3a54ddf1526cf41d16ea46613effd30b800e384b6d7526027d191",
+        "rawHardRows": 24,
+        "families": {
+          "m3-multivariable-hard-quadratic-eigenconstraint": 2,
+          "m3-multivariable-hard-moving-domain-derivative": 2,
+          "m3-multivariable-hard-ellipsoid-inertia": 2,
+          "m3-multivariable-hard-nonlinear-Jacobian": 2,
+          "m3-multivariable-hard-simplex-beta": 2,
+          "m3-multivariable-hard-nonconservative-hole": 2,
+          "m3-multivariable-hard-Stokes-tilted-surface": 2,
+          "m3-multivariable-hard-boundary-versus-interior": 2,
+          "m3-multivariable-hard-surface-flux-graph": 2,
+          "m3-multivariable-hard-mixed-Hessian-coordinate": 2,
+          "m3-multivariable-hard-path-dependent-directional": 2,
+          "m3-multivariable-hard-Gaussian-precision": 2
+        }
+      },
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/lower-revisions-v2.jsonl",
+        "sha256": "296cc12c2b92c7aedf0fbaee18c3298941d042e7e9359488837d81495ea1db2a",
+        "rawHardRows": 8,
+        "families": {
+          "m3-multivariable-hard-nonlinear-Jacobian": 8
+        }
+      },
+      {
+        "path": "scripts/bank/quality/ode-mv/frozen/reviewed-candidates.jsonl",
+        "sha256": "d007dc6b960b0584bbe568b27609a4693e5bd7cf531bd6b18604ba396f4db274",
+        "rawHardRows": 26,
+        "families": {
+          "q4-multivariable-Hessian-boundary-determinant": 10,
+          "q4-multivariable-minimum-enclosing-ellipse": 6,
+          "q4-multivariable-optimizer-fourth-envelope-derivative": 10
+        }
+      }
+    ],
+    "twelveStaleRawHardRowsHonestlyDemoted": [
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "06649f95aa0093db00e073648fdf8e3e901d317dbdac242af1209f08351911c7",
+        "familyId": "m3-multivariable-hard-moving-domain-derivative",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_095d86f9a466627f20a5",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "The domain moves; treating only the integrand derivative would give zero.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "51e0cf42a535e2d773b8fe9bb4bb5bd0d0652548e7b8e370218773452187dc22",
+        "familyId": "m3-multivariable-hard-moving-domain-derivative",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_61a0624137e0fa611139",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "The domain moves; treating only the integrand derivative would give zero.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "39e507d91c847e7acd8034b1e8a33c4b6b61dd28f408dd03ba3321991ae1169b",
+        "familyId": "m3-multivariable-hard-nonconservative-hole",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_3c94ab25d3d7a53f45d2",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "Uses topology to diagnose a false application of Green theorem.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "2184f8f7428c280a2e158bad75620dc05ea0c94787931ebb615286008e182c3e",
+        "familyId": "m3-multivariable-hard-nonconservative-hole",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_d8bd56d879a84057bf2c",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "Uses topology to diagnose a false application of Green theorem.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "f89c18c0d3801d59135b5542d79b7d11d6eae7308672764d26aa462ee0092fd1",
+        "familyId": "m3-multivariable-hard-Stokes-tilted-surface",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_f3f0bcd7e2ad72bb4245",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "The surface area factor cancels through the vector area element; orientation is decisive.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "7877f0479671a0e80e92ca7ce2b63fd3923c5f80e8173db96634b2dc823f7138",
+        "familyId": "m3-multivariable-hard-Stokes-tilted-surface",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_cfc3108fa1dd2c8b1ebd",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "The surface area factor cancels through the vector area element; orientation is decisive.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "084b0aa64b27db8709972eeb394e58f7b8dd3014c726df2cd78b1e5d722dacc3",
+        "familyId": "m3-multivariable-hard-boundary-versus-interior",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_9309d8ba689f148fc9c1",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "A global algebraic bound proves boundary optimality without relying on interior stationary points.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "f0be339f29f90f2839b7b959a22dfd11a4414e98a1842573b0117cb4ffb96906",
+        "familyId": "m3-multivariable-hard-boundary-versus-interior",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_3938a66e8eca10dab1ba",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "A global algebraic bound proves boundary optimality without relying on interior stationary points.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "9a4edd5f8b4d839ec2b66d72f0c8880c57972bbf9ff48c85cfb78dde089658ee",
+        "familyId": "m3-multivariable-hard-mixed-Hessian-coordinate",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_9c7bc0382ff3a3f6860f",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "A mixed partial appears even though the original quadratic is diagonal.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "308aaeb8384a39fec233e5797571b9db30ebe257d97630f6111bcddc89aa893d",
+        "familyId": "m3-multivariable-hard-mixed-Hessian-coordinate",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_44239f9a049c5d769064",
+        "reviewedDifficulty": "medium",
+        "reviewedRoute": "A mixed partial appears even though the original quadratic is diagonal.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "20d62c71e153c7e527eea8813f285805098caa3e2fd800ea829a8b716769803c",
+        "familyId": "m3-multivariable-hard-path-dependent-directional",
+        "sourceIndex": 0,
+        "finalProblemId": "cn_308f1e5e46e0f88ac924",
+        "reviewedDifficulty": "easy",
+        "reviewedRoute": "A curved approach exposes behavior hidden from coordinate axes.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      },
+      {
+        "sourceFile": "scripts/bank/quality/ode-mv/frozen/lower-extensions-v2.jsonl",
+        "sourceRawSha256": "8e27d6631edf257fc9a3f9f0d55ab11a11745c839156e13e5379768ee8e94692",
+        "familyId": "m3-multivariable-hard-path-dependent-directional",
+        "sourceIndex": 1,
+        "finalProblemId": "cn_096edd88bb23004d1268",
+        "reviewedDifficulty": "easy",
+        "reviewedRoute": "A curved approach exposes behavior hidden from coordinate axes.",
+        "disposition": "Correct lower-level disposition, not an omitted eligible Hard case."
+      }
+    ],
+    "scope": "All final source-bound MV Hard admission-plan records and every raw-Hard record in the preserved ode-mv frozen bundles were reconciled. Superseded drafts and independently demoted lower-level cases are not extra eligible inventory."
+  },
+  "originalFailureEvidence": [
+    {
+      "seed": 1243212945,
+      "completedFreshRounds": 4,
+      "unseenBeforeRound5": 45,
+      "cap2CapacityBeforeRound5": 19,
+      "remainingByConstruction": {
+        "m3-multivariable-hard-Gaussian-precision": 5,
+        "m3-multivariable-hard-ellipsoid-inertia": 5,
+        "m3-multivariable-hard-nonlinear-Jacobian": 6,
+        "m3-multivariable-hard-quadratic-eigenconstraint": 6,
+        "m3-multivariable-hard-simplex-beta": 6,
+        "m3-multivariable-hard-surface-flux-graph": 5,
+        "m3-multivariable-olympiad-high-dimensional-lp-ball": 1,
+        "m3-multivariable-olympiad-lemniscate-petal-area": 0,
+        "m3-multivariable-olympiad-log-simplex-moment": 1,
+        "m3-multivariable-olympiad-simplex-log-partition": 1,
+        "q4-multivariable-Hessian-boundary-determinant": 5,
+        "q4-multivariable-minimum-enclosing-ellipse": 0,
+        "q4-multivariable-optimizer-fourth-envelope-derivative": 4
+      },
+      "round5Relaxation": "recent-problems",
+      "round5ExactEquivalentRepeats": 14,
+      "diagnosticReasons": [
+        "unseen-family-capacity-exhausted"
+      ]
+    },
+    {
+      "seed": 3940890553,
+      "completedFreshRounds": 4,
+      "unseenBeforeRound5": 45,
+      "cap2CapacityBeforeRound5": 18,
+      "remainingByConstruction": {
+        "m3-multivariable-hard-Gaussian-precision": 5,
+        "m3-multivariable-hard-ellipsoid-inertia": 4,
+        "m3-multivariable-hard-nonlinear-Jacobian": 7,
+        "m3-multivariable-hard-quadratic-eigenconstraint": 6,
+        "m3-multivariable-hard-simplex-beta": 5,
+        "m3-multivariable-hard-surface-flux-graph": 7,
+        "m3-multivariable-olympiad-high-dimensional-lp-ball": 0,
+        "m3-multivariable-olympiad-lemniscate-petal-area": 1,
+        "m3-multivariable-olympiad-log-simplex-moment": 1,
+        "m3-multivariable-olympiad-simplex-log-partition": 0,
+        "q4-multivariable-Hessian-boundary-determinant": 4,
+        "q4-multivariable-minimum-enclosing-ellipse": 0,
+        "q4-multivariable-optimizer-fourth-envelope-derivative": 5
+      },
+      "round5Relaxation": "recent-problems",
+      "round5ExactEquivalentRepeats": 15,
+      "diagnosticReasons": [
+        "unseen-family-capacity-exhausted"
+      ]
+    }
+  ],
+  "capacityArgument": {
+    "notation": "For normalized unseen counts U_f by construction, round size n=20 and family cap c=2, define C_h(U)=sum_f min(U_f,c*h).",
+    "finiteFeasibility": "C_H>=nH is sufficient for allocating H equal rounds with per-family cap c and no repeated mathematical item: for every k<=H, min(U_f,c*k)/k>=min(U_f,c*H)/H, so every subset of k identical rounds has capacity at least nk. This concerns family/item capacity only, not every other presentation or diversity condition.",
+    "reservationRule": "Before selecting a candidate, preserve C_(H-1)(remaining)>=n(H-1). Consuming one item lowers this potential by exactly 1 when its current family count U_f<=c(H-1), and by 0 otherwise; the implementation updates that exact discrete marginal.",
+    "prefixCompletionProof": "Let h=H-1, B=C_h(U)-nh, and Z=sum_f min(c,max(U_f-c*h,0)). Feasibility gives B>=0 and Z+B=C_H(U)-nh>=n. Z counts current-round choices with zero future-capacity cost; at most B unit-cost choices may be spent. A unit-cost choice never removes an unused zero-cost opportunity, and the round cap counts each consumed opportunity. Thus a feasible randomized prefix can be completed while preserving the future capacity budget; no prescribed family rotation is needed.",
+    "oneRoundLimit": "For H=1 the rule reserves no future capacity. It cannot repair a state that already has fewer than 20 capped unseen slots, which explains the original round-5 failures; the reservation must operate in earlier rounds.",
+    "actualMVHardPlanning": "With 125 normalized unseen items, floor(125/(1.2*20))=5 and C_5=113>=100. Subsequent fresh 20-item rounds plan 4,3,2,1 and preserve the required future capped capacity. The 1.2 planning divisor does not turn 13% effective capped headroom into 20%.",
+    "implementationConditions": [
+      "Reservation applies only to broad 20-question catalogs completely enumerable within the existing 320-slot probe bound and current cap 2.",
+      "Candidates are deduplicated by mathematical lineage before U_f is counted; retained attempted-history exclusions remain active.",
+      "Existing randomized exposure-based family weights choose among feasible candidates; no family schedule or content relabeling is introduced.",
+      "The argument assumes the measured eligible pool is stable during the finite sequence. Retirements, narrow filters, exhausted pools and larger sampled catalogs require their existing explicit handling.",
+      "Per-family cap 2 in a 20-item round permits a nonadjacent ordering; the separate ordering routine and matrix checks still validate that behavior."
+    ]
+  },
+  "validationEvidence": {
+    "reservationDevelopment": {
+      "path": ".bank-data/quality/final-candidates-v1/candidate-development-v2.json",
+      "passed": true,
+      "cells": 28,
+      "seedsPerCell": 20,
+      "roundsPerSeed": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5,
+        "olympiad": 10
+      },
+      "failures": 0
+    },
+    "reservedHeldout": {
+      "path": ".bank-data/quality/final-candidates-v1/candidate-heldout-v1.json",
+      "passed": true,
+      "cells": 28,
+      "seedsPerCell": 20,
+      "roundsPerSeed": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 5,
+        "olympiad": 10
+      },
+      "failures": 0,
+      "seedSetsDisjointFromDevelopmentPerCell": true
+    },
+    "syntheticRegression": {
+      "path": "tests/selection-quality.test.mjs",
+      "testName": "uneven small catalogs preserve future capped capacity instead of exhausting rare families early",
+      "constructionSizes": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        8,
+        8,
+        8,
+        8,
+        10,
+        1,
+        10
+      ],
+      "seeds": 25,
+      "roundsPerSeed": 5,
+      "scope": "Source inspected. Root executed the regression; this review independently inspected the bound development and heldout reports and did not rerun the full suite."
+    }
+  },
+  "rawContentIntegrity": {
+    "finalV7BoundFilesChecked": 134,
+    "hashFailures": [],
+    "privateV7CanonicalAndRetainedSnapshotsEqualBoundFinalSnapshots": true,
+    "lateRawPeerInputBindings": [
+      {
+        "rawFile": "scripts/bank/quality/late-final-raw/ode-nonnormal-options.jsonl",
+        "rawFileSha256": "a892149d59573f3685cb7b430d0f33bf3812cc28b0fe9848915d6ff7ceac0443",
+        "peerFile": "docs/bank/problem-quality/nonnormal-option-peer-v2.json",
+        "peerFileSha256": "d2ceb7225fb848f2c608ab3469401a4c40284378e8683209f722c6b1b7b201eb",
+        "inputBindingMatches": true
+      },
+      {
+        "rawFile": "scripts/bank/quality/late-final-raw/mv-density-classification.jsonl",
+        "rawFileSha256": "9fbebe6ddee887809ccbe693c37351fab72b418bf778af515da24885b7302d97",
+        "peerFile": "docs/bank/problem-quality/density-classification-peer-v1.json",
+        "peerFileSha256": "09c834e55395d6226768623f86c2d1b54305ce5a07d8e2e59f86a399cec42636",
+        "inputBindingMatches": true
+      },
+      {
+        "rawFile": "scripts/bank/quality/late-final-raw/ode-ground-options.jsonl",
+        "rawFileSha256": "80faac0a0b6b21eb8eff1d668843b59098d8409d4d0ae2e371abb1e8d6427073",
+        "peerFile": "docs/bank/problem-quality/ground-option-peer-v4.json",
+        "peerFileSha256": "985040f6c79daf569cb3a74bdc3c5cb235885e7f3014b74c8450a6ebb6d9c41f",
+        "inputBindingMatches": true
+      }
+    ],
+    "noAddedMathematicalContent": true
+  },
+  "limits": [
+    "Finite development and reserved heldout passes are evidence for the requested horizons, not unlimited novelty or zero future repetitions.",
+    "MV Hard retains 113 cap-effective items and 13% headroom; it remains below the approximate 20% planning target.",
+    "No source review, Hard/Olympiad threshold, normalized equivalence, construction count or exposure horizon was relaxed to improve metrics.",
+    "No unused reviewed cases were found that legitimately add at least 7 cap-effective items. Future purposeful authoring could improve headroom, but is not needed to conceal this resolved selector defect."
+  ]
+}

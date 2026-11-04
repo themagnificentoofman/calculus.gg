@@ -1,0 +1,1069 @@
+[
+  {
+    "problemId": "cn_04267066b06a8e487e17",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(9y)+D\\sin(9y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "2 \\sqrt{2} \\pi E\\left(\\frac{80}{81}\\right)",
+      "9 \\sqrt{2} E\\left(\\frac{80}{81}\\right)",
+      "18 \\sqrt{2} \\pi E\\left(\\frac{80}{81}\\right)",
+      "18 \\pi E\\left(\\frac{80}{81}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_0457365b5bd58cf359cb",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-72,\\\\y(0)=0,\\ y\\prime(0)=6,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(12 \\right)}",
+      "\\frac{\\tanh{\\left(6 \\right)}}{6}",
+      "\\tanh{\\left(6 \\right)}",
+      "\\tan{\\left(6 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_04a71e215111695c872c",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-128,\\\\y(0)=0,\\ y\\prime(0)=8,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tan{\\left(8 \\right)}",
+      "8 \\tanh{\\left(1 \\right)}",
+      "8 \\tanh{\\left(8 \\right)}",
+      "\\tanh{\\left(8 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_0504b12ebbd7c90da6ae",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{0}.\\textnormal{Evaluate }\\int_0^1r\\,J_{0}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{1}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{1}\\left(\\alpha\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_06cbbe31ff4c21620c80",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(100+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=101.\\\\y(\\frac{\\pi}{40})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{40} \\right)} + 10\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{40} \\right)} + 10\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{40} \\right)} + 20\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(2 \\tanh{\\left(\\frac{\\pi}{40} \\right)} + 10\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_0d2d8d85e9d5a8c62004",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/8)^2+y^2/64}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{64}\\right) - 63 \\log{\\left(\\frac{63}{64} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{64}\\right) - 63 \\log{\\left(\\frac{63}{64} \\right)}\\right)}{4}",
+      "\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{64}\\right) - 63 \\log{\\left(\\frac{63}{64} \\right)}\\right)",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{64}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_0f506ef25ccd0f64e434",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{1}.\\textnormal{Evaluate }\\int_0^1r\\,J_{1}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "J^{2}_{2}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{2}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_1095d73dae86afba8d1e",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{2}.\\textnormal{Evaluate }\\int_0^1r\\,J_{2}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{3}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{3}\\left(\\alpha\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_13b354d226d6cb221ee9",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(10y)+D\\sin(10y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "40 \\pi E\\left(\\frac{99}{100}\\right)",
+      "200 \\sqrt{2} \\pi E\\left(\\frac{99}{100}\\right)",
+      "20 \\sqrt{2} \\pi E\\left(\\frac{9801}{10000}\\right)",
+      "20 \\sqrt{2} \\pi E\\left(\\frac{99}{100}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_152e4d861a6a3be4cca3",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-98,\\\\y(0)=0,\\ y\\prime(0)=7,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(14 \\right)}",
+      "7 \\tanh{\\left(7 \\right)}",
+      "\\tanh{\\left(7 \\right)}",
+      "7 \\tanh{\\left(1 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_1599da0daab315719f5f",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le12,\\ |r_+-r_-|\\le\\sqrt{2}\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{\\pi \\operatorname{arccosh}{\\left(6 \\right)}}{2}",
+      "2 \\pi \\operatorname{arccosh}{\\left(6 \\right)}",
+      "\\pi \\operatorname{arcsinh}{\\left(6 \\right)}",
+      "\\pi \\operatorname{arccosh}{\\left(6 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_1b9244149572d1bda851",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{4}.\\textnormal{Evaluate }\\int_0^1r\\,J_{4}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{5}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{5}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_1bdf68c05a6ac3f4c744",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+1G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "\\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{4}",
+      "- \\frac{1}{2} + \\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{4}",
+      "-1 + \\frac{1}{2 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{2}",
+      "- \\frac{\\coth{\\left(1 \\right)}}{4} - \\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{1}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_1d7baf513459d85135f9",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le12,\\ |r_+-r_-|\\le1\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "4 \\pi",
+      "\\frac{2 \\pi \\operatorname{arcsinh}{\\left(6 \\right)}}{3}",
+      "\\frac{2 \\pi \\operatorname{arccosh}{\\left(6 \\right)}}{3}",
+      "\\frac{4 \\pi \\operatorname{arccosh}{\\left(6 \\right)}}{3}"
+    ]
+  },
+  {
+    "problemId": "cn_24dbf4c85e28cde28f30",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{3}.\\textnormal{Evaluate }\\int_0^1r\\,J_{3}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "J^{2}_{4}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{4}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_28bbf15e942a407a6e68",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(6y)+D\\sin(6y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "12 \\sqrt{2} \\pi E\\left(\\frac{1225}{1296}\\right)",
+      "12 \\sqrt{2} \\pi E\\left(\\frac{35}{36}\\right)",
+      "24 \\pi E\\left(\\frac{35}{36}\\right)",
+      "72 \\sqrt{2} \\pi E\\left(\\frac{35}{36}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_2ab53bb7cc302bdc4152",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(2,3,1)}{\\sqrt{14}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "2 \\arctan{\\left(\\frac{1}{\\sqrt{14} + 5} \\right)}",
+      "- \\frac{3 \\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{10} - \\frac{2 \\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{5} + \\frac{\\pi}{2}",
+      "\\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{5} + \\frac{3 \\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{20} + \\frac{\\pi}{4}",
+      "- \\frac{3 \\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{20} - \\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{5} + \\frac{\\pi}{4}"
+    ]
+  },
+  {
+    "problemId": "cn_305058fcd831279d2f93",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{100}\\le |Y|^2\\le\\frac{101}{100},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{201 \\sqrt{101}}{2000} + \\frac{\\operatorname{arcsinh}{\\left(10 \\right)}}{200} + \\frac{101}{100}",
+      "- \\frac{201 \\sqrt{101}}{2000} + \\frac{\\operatorname{arcsinh}{\\left(10 \\right)}}{20000} + \\frac{203}{202}",
+      "- \\frac{201 \\sqrt{101}}{2000} + \\frac{\\operatorname{arcsinh}{\\left(10 \\right)}}{20000} + \\frac{101}{100}",
+      "- \\frac{201 \\sqrt{101}}{2000} - \\frac{\\operatorname{arcsinh}{\\left(10 \\right)}}{20000} + \\frac{101}{100}"
+    ]
+  },
+  {
+    "problemId": "cn_33aa6acfe25c89de2a4e",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(64+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=65.\\\\y(\\frac{\\pi}{32})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{32} \\right)} + 8\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{32} \\right)} + 8\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(8 - \\tanh{\\left(\\frac{\\pi}{32} \\right)}\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{32} \\right)} + 16\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_33d43be16b313548afe4",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-162,\\\\y(0)=0,\\ y\\prime(0)=9,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(18 \\right)}",
+      "\\frac{\\tanh{\\left(9 \\right)}}{9}",
+      "\\tanh{\\left(9 \\right)}",
+      "\\tan{\\left(9 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_381d401cb0edb5e2140f",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/4)^2+y^2/16}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{16}\\right) - 15 \\log{\\left(\\frac{15}{16} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{16}\\right) - 15 \\log{\\left(\\frac{15}{16} \\right)}\\right)}{4}",
+      "\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{16}\\right) - 15 \\log{\\left(\\frac{15}{16} \\right)}\\right)",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{16}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_39aa3fca5e3ef53a6660",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+25G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{625} + \\frac{1}{50 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{250}",
+      "- \\frac{\\coth{\\left(5 \\right)}}{500} - \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{1}{1250}",
+      "- \\frac{1}{1250} - \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{500}",
+      "- \\frac{1}{1250} + \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{500}"
+    ]
+  },
+  {
+    "problemId": "cn_3e50ac2af8593717517e",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{25}\\le |Y|^2\\le\\frac{26}{25},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{51 \\sqrt{26}}{500} + \\frac{\\operatorname{arcsinh}{\\left(5 \\right)}}{2500} + \\frac{26}{25}",
+      "\\frac{392}{375} - \\frac{52 \\sqrt{26}}{375}",
+      "- \\frac{51 \\sqrt{26}}{250} + \\frac{\\operatorname{arcsinh}{\\left(5 \\right)}}{625} + \\frac{26}{25}",
+      "- \\frac{51 \\sqrt{26}}{250} + \\frac{\\operatorname{arcsinh}{\\left(5 \\right)}}{1250} + \\frac{26}{25}"
+    ]
+  },
+  {
+    "problemId": "cn_403fbfc5539f503074e1",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{0}.\\textnormal{Evaluate }\\int_0^1r\\,J_{0}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{1}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{1}\\left(\\alpha\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_438bfb54720583e0c5e7",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{2}.\\textnormal{Evaluate }\\int_0^1r\\,J_{2}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "J^{2}_{3}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{3}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_4bb519a5da10317a30f2",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{2})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{2})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{12 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}",
+      "\\frac{6 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{12 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{5 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_4d239cb364f286068941",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/10)^2+y^2/100}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{100}\\right) - 99 \\log{\\left(\\frac{99}{100} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{100}\\right) - 99 \\log{\\left(\\frac{99}{100} \\right)}\\right)}{4}",
+      "\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{100}\\right) - 99 \\log{\\left(\\frac{99}{100} \\right)}\\right)",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{100}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_501d352db65ded206940",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(49+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=50.\\\\y(\\frac{\\pi}{28})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\frac{\\sqrt{2} \\left(2 \\tanh{\\left(\\frac{\\pi}{28} \\right)} + 7\\right)}{2}",
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{28} \\right)} + 7\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{28} \\right)} + 7\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{28} \\right)} + 14\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_5663b3750169611d524e",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{6})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{6})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{466 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{315 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{256 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{315 \\pi}",
+      "\\frac{233 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{315 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_59149487a051afd9f83c",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-32,\\\\y(0)=0,\\ y\\prime(0)=4,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(4 \\right)}",
+      "\\tan{\\left(4 \\right)}",
+      "4 \\tanh{\\left(1 \\right)}",
+      "4 \\tanh{\\left(4 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_5cd26fc18a0d90833ce7",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(36+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=37.\\\\y(\\frac{\\pi}{24})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\frac{\\sqrt{2} \\left(6 - \\tanh{\\left(\\frac{\\pi}{24} \\right)}\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{24} \\right)} + 12\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{24} \\right)} + 6\\right)}{12}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{24} \\right)} + 6\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_5d63a1b57452665b8551",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le6,\\ |r_+-r_-|\\le\\sqrt{2}\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{\\pi \\operatorname{arccosh}{\\left(3 \\right)}}{2}",
+      "2 \\pi \\operatorname{arccosh}{\\left(3 \\right)}",
+      "\\pi \\operatorname{arcsinh}{\\left(3 \\right)}",
+      "\\pi \\operatorname{arccosh}{\\left(3 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_62339e6aa5659bd1c3ef",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{121}\\le |Y|^2\\le\\frac{122}{121},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{243 \\sqrt{122}}{2662} + \\frac{\\operatorname{arcsinh}{\\left(11 \\right)}}{29282} + \\frac{122}{121}",
+      "\\frac{4028}{3993} - \\frac{244 \\sqrt{122}}{3993}",
+      "- \\frac{243 \\sqrt{122}}{2662} + \\frac{\\operatorname{arcsinh}{\\left(11 \\right)}}{242} + \\frac{122}{121}",
+      "- \\frac{243 \\sqrt{122}}{2662} + \\frac{\\operatorname{arcsinh}{\\left(11 \\right)}}{14641} + \\frac{122}{121}"
+    ]
+  },
+  {
+    "problemId": "cn_632dad5c039c63b6865a",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{4})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{4})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{268 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{105 \\pi}",
+      "\\frac{134 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{105 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{64 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{105 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_6485770ef80ef3d542e8",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(11y)+D\\sin(11y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "22 \\sqrt{2} \\pi E\\left(\\frac{14400}{14641}\\right)",
+      "22 \\sqrt{2} \\pi E\\left(\\frac{120}{121}\\right)",
+      "22 \\pi E\\left(\\frac{120}{121}\\right)",
+      "242 \\sqrt{2} \\pi E\\left(\\frac{120}{121}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_67a9cc93a0335394868c",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{4}\\le |Y|^2\\le\\frac{5}{4},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{9 \\sqrt{5}}{32} + \\frac{\\operatorname{arcsinh}{\\left(2 \\right)}}{64} + \\frac{5}{4}",
+      "\\frac{4}{3} - \\frac{5 \\sqrt{5}}{12}",
+      "- \\frac{9 \\sqrt{5}}{16} + \\frac{\\operatorname{arcsinh}{\\left(2 \\right)}}{8} + \\frac{5}{4}",
+      "- \\frac{9 \\sqrt{5}}{16} + \\frac{\\operatorname{arcsinh}{\\left(2 \\right)}}{32} + \\frac{5}{4}"
+    ]
+  },
+  {
+    "problemId": "cn_68e714e07e7900c0664e",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le4,\\ |r_+-r_-|\\le\\sqrt{2}\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "2 \\pi \\operatorname{arccosh}{\\left(2 \\right)}",
+      "2 \\pi",
+      "\\pi \\operatorname{arccosh}{\\left(2 \\right)}",
+      "\\frac{\\pi \\operatorname{arccosh}{\\left(2 \\right)}}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_6b259a5d12f0295bf845",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{12})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{12})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{161102 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{45045 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{131072 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{45045 \\pi}",
+      "\\frac{161102 \\sqrt{2} \\sinh{\\left(\\frac{\\pi}{2} \\right)}}{45045 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_6b3c02e22109ff72fd62",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{14})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{14})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{1194436 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{109395 \\pi}",
+      "\\frac{1194436 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{109395 \\pi}",
+      "\\frac{597218 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{109395 \\pi}",
+      "\\frac{298609 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{109395 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_750aa519f6ad6c94733c",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(2,3,3)}{\\sqrt{22}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{22}}{11} \\right)}}{4} - \\frac{\\sqrt{13} \\arccos{\\left(\\frac{3 \\sqrt{22}}{22} \\right)}}{13} + \\frac{\\pi}{4}",
+      "- \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{22}}{11} \\right)}}{2} - \\frac{2 \\sqrt{13} \\arccos{\\left(\\frac{3 \\sqrt{22}}{22} \\right)}}{13} + \\frac{\\pi}{2}",
+      "- \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{22}}{11} \\right)}}{8} - \\frac{\\sqrt{13} \\arccos{\\left(\\frac{3 \\sqrt{22}}{22} \\right)}}{26} + \\frac{\\pi}{8}",
+      "- \\frac{3 \\sqrt{22} \\arccos{\\left(\\frac{\\sqrt{22}}{11} \\right)}}{44} - \\frac{\\sqrt{22} \\arccos{\\left(\\frac{3 \\sqrt{22}}{22} \\right)}}{22} + \\frac{\\pi}{4}"
+    ]
+  },
+  {
+    "problemId": "cn_7954c47b718d0830f996",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/9)^2+y^2/81}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{81}\\right) - 80 \\log{\\left(\\frac{80}{81} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(82 \\log{\\left(\\frac{80}{81} \\right)} - 1 + \\operatorname{Li}_{2}\\left(\\frac{1}{81}\\right)\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{81}\\right) - 80 \\log{\\left(\\frac{80}{81} \\right)}\\right)}{4}",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{81}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_799f178320b87fb31aa9",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le8,\\ |r_+-r_-|\\le1\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{4 \\pi \\operatorname{arccosh}{\\left(4 \\right)}}{3}",
+      "\\frac{8 \\pi}{3}",
+      "\\frac{2 \\pi \\operatorname{arcsinh}{\\left(4 \\right)}}{3}",
+      "\\frac{2 \\pi \\operatorname{arccosh}{\\left(4 \\right)}}{3}"
+    ]
+  },
+  {
+    "problemId": "cn_7a761d515f6945c8a55b",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/5)^2+y^2/25}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{25}\\right) - 24 \\log{\\left(\\frac{24}{25} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(26 \\log{\\left(\\frac{24}{25} \\right)} - 1 + \\operatorname{Li}_{2}\\left(\\frac{1}{25}\\right)\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{25}\\right) - 24 \\log{\\left(\\frac{24}{25} \\right)}\\right)}{4}",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{25}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_7d7934f4235db05e474a",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(8y)+D\\sin(8y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "8 \\sqrt{2} E\\left(\\frac{63}{64}\\right)",
+      "16 \\sqrt{2} \\pi E\\left(\\frac{63}{64}\\right)",
+      "16 \\pi E\\left(\\frac{63}{64}\\right)",
+      "32 \\pi E\\left(\\frac{63}{64}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_7eba366f84aed2c76b44",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(16+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=17.\\\\y(\\frac{\\pi}{16})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{16} \\right)} + 8\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(2 \\tanh{\\left(\\frac{\\pi}{16} \\right)} + 4\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_80434c77a86bbce6ff3d",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(2y)+D\\sin(2y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "8 \\pi E\\left(\\frac{3}{4}\\right)",
+      "8 \\sqrt{2} \\pi E\\left(\\frac{3}{4}\\right)",
+      "4 \\sqrt{2} \\pi E\\left(\\frac{9}{16}\\right)",
+      "4 \\sqrt{2} \\pi E\\left(\\frac{3}{4}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_80b2039aea9c7816d6af",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le10,\\ |r_+-r_-|\\le1\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{2 \\pi \\operatorname{arcsinh}{\\left(5 \\right)}}{3}",
+      "\\frac{2 \\pi \\operatorname{arccosh}{\\left(5 \\right)}}{3}",
+      "\\frac{4 \\pi \\operatorname{arccosh}{\\left(5 \\right)}}{3}",
+      "\\frac{10 \\pi}{3}"
+    ]
+  },
+  {
+    "problemId": "cn_8202df6c8237940798b8",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le8,\\ |r_+-r_-|\\le\\sqrt{2}\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\pi \\operatorname{arccosh}{\\left(4 \\right)}",
+      "\\frac{\\pi \\operatorname{arccosh}{\\left(4 \\right)}}{2}",
+      "4 \\pi",
+      "\\pi \\operatorname{arcsinh}{\\left(4 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_8469bc6aff9b7e127a09",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{10})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{10})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{16384 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{9009 \\pi}",
+      "\\frac{44780 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{9009 \\pi}",
+      "\\frac{22390 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{9009 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_86909355149d47a57a9d",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{16})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{16})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{18162886 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{2078505 \\pi}",
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{9081443 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{2078505 \\pi}",
+      "\\frac{36325772 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{2078505 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_8d0a420fc08da0053d1d",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(7y)+D\\sin(7y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "28 \\pi E\\left(\\frac{48}{49}\\right)",
+      "14 \\sqrt{2} \\pi E\\left(\\frac{2304}{2401}\\right)",
+      "14 \\sqrt{2} \\pi E\\left(\\frac{48}{49}\\right)",
+      "14 \\pi E\\left(\\frac{48}{49}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_8eaa2c9c70477a8bfe20",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{81}\\le |Y|^2\\le\\frac{82}{81},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{163 \\sqrt{82}}{1458} + \\frac{\\operatorname{arcsinh}{\\left(9 \\right)}}{6561} + \\frac{82}{81}",
+      "- \\frac{163 \\sqrt{82}}{1458} + \\frac{\\operatorname{arcsinh}{\\left(9 \\right)}}{13122} + \\frac{82}{81}",
+      "- \\frac{163 \\sqrt{82}}{1458} - \\frac{\\operatorname{arcsinh}{\\left(9 \\right)}}{13122} + \\frac{82}{81}",
+      "- \\frac{163 \\sqrt{82}}{2916} + \\frac{\\operatorname{arcsinh}{\\left(9 \\right)}}{26244} + \\frac{82}{81}"
+    ]
+  },
+  {
+    "problemId": "cn_911489e299970ea91f76",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-242,\\\\y(0)=0,\\ y\\prime(0)=11,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "11 \\tanh{\\left(1 \\right)}",
+      "\\frac{\\tanh{\\left(11 \\right)}}{11}",
+      "11 \\tanh{\\left(11 \\right)}",
+      "\\tanh{\\left(11 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_92a90a79e4b818cb1919",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+4G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{\\coth{\\left(2 \\right)}}{32} - \\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{1}{32}",
+      "- \\frac{1}{32} + \\frac{\\coth{\\left(2 \\right)}}{32}",
+      "- \\frac{1}{32} + \\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{32}",
+      "- \\frac{1}{16} + \\frac{1}{8 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{16}"
+    ]
+  },
+  {
+    "problemId": "cn_9a2a831997d185f27d4e",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,2,1)}{\\sqrt{6}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{2 \\sqrt{5} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{5} - \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{6}}{3} \\right)}}{2} + \\frac{\\pi}{2}",
+      "- \\frac{\\sqrt{6} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{6} - \\frac{\\sqrt{6} \\arccos{\\left(\\frac{\\sqrt{6}}{3} \\right)}}{12} + \\frac{\\pi}{4}",
+      "- \\frac{\\sqrt{5} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{5} - \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{6}}{3} \\right)}}{4} + \\frac{\\pi}{4}",
+      "2 \\arctan{\\left(\\frac{1}{\\sqrt{6} + 3} \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_9b8267974b695af75f83",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{18})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{18})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{2 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3 \\pi}",
+      "\\frac{35171047 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{4849845 \\pi}",
+      "\\frac{70342094 \\sqrt{2} \\sinh{\\left(\\frac{\\pi}{2} \\right)}}{4849845 \\pi}",
+      "\\frac{70342094 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{4849845 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_a6ca17ac579ce795ae7a",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,3,2)}{\\sqrt{14}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{3 \\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{52} - \\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{20} + \\frac{\\pi}{8}",
+      "\\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{10} + \\frac{3 \\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{26} + \\frac{\\pi}{4}",
+      "- \\frac{3 \\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{26} - \\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{10} + \\frac{\\pi}{4}",
+      "- \\frac{3 \\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{13} - \\frac{\\sqrt{5} \\arccos{\\left(\\frac{3 \\sqrt{14}}{14} \\right)}}{5} + \\frac{\\pi}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_ab89434ad5781317a285",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+36G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{2592} + \\frac{\\coth{\\left(6 \\right)}}{864}",
+      "- \\frac{1}{2592} - \\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{864}",
+      "- \\frac{1}{2592} + \\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{864}",
+      "- \\frac{\\coth{\\left(6 \\right)}}{864} - \\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{1}{2592}"
+    ]
+  },
+  {
+    "problemId": "cn_acd332167cfd28b17e60",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+81G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{13122} + \\frac{\\coth{\\left(9 \\right)}}{2916}",
+      "- \\frac{1}{13122} - \\frac{1}{324 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{2916}",
+      "- \\frac{1}{13122} + \\frac{1}{324 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{2916}",
+      "- \\frac{\\coth{\\left(9 \\right)}}{2916} - \\frac{1}{324 \\sinh^{2}{\\left(9 \\right)}} + \\frac{1}{13122}"
+    ]
+  },
+  {
+    "problemId": "cn_adf14183cc34463f7727",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+9G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{162} + \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}",
+      "- \\frac{\\coth{\\left(3 \\right)}}{108} - \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{1}{162}",
+      "- \\frac{1}{162} + \\frac{\\coth{\\left(3 \\right)}}{108}",
+      "- \\frac{1}{162} - \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}"
+    ]
+  },
+  {
+    "problemId": "cn_b335ebb59f9ff46c49df",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{16}\\le |Y|^2\\le\\frac{17}{16},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{33 \\sqrt{17}}{128} - \\frac{\\operatorname{arcsinh}{\\left(4 \\right)}}{512} + \\frac{17}{16}",
+      "- \\frac{33 \\sqrt{17}}{256} + \\frac{\\operatorname{arcsinh}{\\left(4 \\right)}}{1024} + \\frac{17}{16}",
+      "- \\frac{33 \\sqrt{17}}{128} + \\frac{\\operatorname{arcsinh}{\\left(4 \\right)}}{512} + \\frac{35}{34}",
+      "- \\frac{33 \\sqrt{17}}{128} + \\frac{\\operatorname{arcsinh}{\\left(4 \\right)}}{512} + \\frac{17}{16}"
+    ]
+  },
+  {
+    "problemId": "cn_b53d64517cad434f24ba",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{36}\\le |Y|^2\\le\\frac{37}{36},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{73 \\sqrt{37}}{432} + \\frac{\\operatorname{arcsinh}{\\left(6 \\right)}}{72} + \\frac{37}{36}",
+      "- \\frac{73 \\sqrt{37}}{432} + \\frac{\\operatorname{arcsinh}{\\left(6 \\right)}}{2592} + \\frac{37}{36}",
+      "- \\frac{73 \\sqrt{37}}{432} - \\frac{\\operatorname{arcsinh}{\\left(6 \\right)}}{2592} + \\frac{37}{36}",
+      "- \\frac{73 \\sqrt{37}}{864} + \\frac{\\operatorname{arcsinh}{\\left(6 \\right)}}{5184} + \\frac{37}{36}"
+    ]
+  },
+  {
+    "problemId": "cn_b6fe57b54ad1a94cf57f",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,1,1)}{\\sqrt{3}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "\\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{3}}{3} \\right)}}{2} + \\frac{\\pi}{4}",
+      "- \\frac{\\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{3}}{3} \\right)}}{2} + \\frac{\\pi}{4}",
+      "2 \\arctan{\\left(\\frac{1}{\\sqrt{3} + 2} \\right)}",
+      "- \\sqrt{2} \\arccos{\\left(\\frac{\\sqrt{3}}{3} \\right)} + \\frac{\\pi}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_b7dff99d886350ece9c5",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le10,\\ |r_+-r_-|\\le\\sqrt{2}\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\pi \\operatorname{arccosh}{\\left(5 \\right)}",
+      "\\frac{\\pi \\operatorname{arccosh}{\\left(5 \\right)}}{2}",
+      "2 \\pi \\operatorname{arccosh}{\\left(5 \\right)}",
+      "5 \\pi"
+    ]
+  },
+  {
+    "problemId": "cn_b8c6bc699fc512dc802b",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(121+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=122.\\\\y(\\frac{\\pi}{44})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{44} \\right)} + 22\\right)}{2}",
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{44} \\right)} + 11\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{44} \\right)} + 11\\right)}{22}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{44} \\right)} + 11\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_bd65033a6e24f11092df",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+49G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{2401} + \\frac{1}{98 \\sinh^{2}{\\left(7 \\right)}} + \\frac{\\coth{\\left(7 \\right)}}{686}",
+      "\\frac{1}{196 \\sinh^{2}{\\left(7 \\right)}} + \\frac{\\coth{\\left(7 \\right)}}{1372}",
+      "- \\frac{1}{4802} - \\frac{1}{196 \\sinh^{2}{\\left(7 \\right)}} + \\frac{\\coth{\\left(7 \\right)}}{1372}",
+      "- \\frac{1}{4802} + \\frac{1}{196 \\sinh^{2}{\\left(7 \\right)}} + \\frac{\\coth{\\left(7 \\right)}}{1372}"
+    ]
+  },
+  {
+    "problemId": "cn_bdc85c0589bf92ccf580",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/6)^2+y^2/36}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{36}\\right) - 35 \\log{\\left(\\frac{35}{36} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{36}\\right) - 35 \\log{\\left(\\frac{35}{36} \\right)}\\right)}{4}",
+      "\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{36}\\right) - 35 \\log{\\left(\\frac{35}{36} \\right)}\\right)",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{36}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_c0d0c6d0e28341c9bc21",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{1}.\\textnormal{Evaluate }\\int_0^1r\\,J_{1}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{2}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{2}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_c1d23060ae511c43390d",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,2,2)}{3}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{\\arccos{\\left(\\frac{1}{3} \\right)}}{3} - \\frac{\\arccos{\\left(\\frac{2}{3} \\right)}}{6} + \\frac{\\pi}{4}",
+      "- \\frac{\\sqrt{2} \\arccos{\\left(\\frac{1}{3} \\right)}}{4} - \\frac{\\sqrt{5} \\arccos{\\left(\\frac{2}{3} \\right)}}{10} + \\frac{\\pi}{4}",
+      "2 \\arctan{\\left(\\frac{1}{3} \\right)}",
+      "\\frac{\\sqrt{5} \\arccos{\\left(\\frac{2}{3} \\right)}}{10} + \\frac{\\sqrt{2} \\arccos{\\left(\\frac{1}{3} \\right)}}{4} + \\frac{\\pi}{4}"
+    ]
+  },
+  {
+    "problemId": "cn_c5d6e84b17a3af8ec1b9",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(3y)+D\\sin(3y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "12 \\pi E\\left(\\frac{8}{9}\\right)",
+      "18 \\sqrt{2} \\pi E\\left(\\frac{8}{9}\\right)",
+      "6 \\sqrt{2} \\pi E\\left(\\frac{8}{9}\\right)",
+      "6 \\pi E\\left(\\frac{8}{9}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_c5fc14b0e2e3b127bf5b",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(25+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=26.\\\\y(\\frac{\\pi}{20})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{20} \\right)} + 10\\right)}{2}",
+      "\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{20} \\right)} + 5\\right)",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{20} \\right)} + 5\\right)}{10}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{20} \\right)} + 5\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_c65eca9408f27642cd13",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+64G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{4096} + \\frac{1}{128 \\sinh^{2}{\\left(8 \\right)}} + \\frac{\\coth{\\left(8 \\right)}}{1024}",
+      "- \\frac{1}{8192} + \\frac{\\coth{\\left(8 \\right)}}{2048}",
+      "- \\frac{1}{8192} - \\frac{1}{256 \\sinh^{2}{\\left(8 \\right)}} + \\frac{\\coth{\\left(8 \\right)}}{2048}",
+      "- \\frac{1}{8192} + \\frac{1}{256 \\sinh^{2}{\\left(8 \\right)}} + \\frac{\\coth{\\left(8 \\right)}}{2048}"
+    ]
+  },
+  {
+    "problemId": "cn_c7b376781824df58306e",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/7)^2+y^2/49}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{49}\\right) - 48 \\log{\\left(\\frac{48}{49} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(50 \\log{\\left(\\frac{48}{49} \\right)} - 1 + \\operatorname{Li}_{2}\\left(\\frac{1}{49}\\right)\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{49}\\right) - 48 \\log{\\left(\\frac{48}{49} \\right)}\\right)}{4}",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{49}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_c94f4561391dac1b264c",
+    "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+    "statement": "\\int_0^\\infty\\int_0^\\infty\\exp\\left[-x^2+2\\cos(\\frac{\\pi}{7})xy-y^2\\right]\\,dx\\,dy",
+    "choices": [
+      "\\frac{3 \\pi}{7 \\sin{\\left(\\frac{\\pi}{7} \\right)}}",
+      "\\frac{\\pi}{14 \\sin{\\left(\\frac{\\pi}{7} \\right)}}",
+      "\\frac{\\pi}{4 \\sin{\\left(\\frac{\\pi}{7} \\right)}}",
+      "\\frac{\\pi}{2 \\sin{\\left(\\frac{\\pi}{7} \\right)}}"
+    ]
+  },
+  {
+    "problemId": "cn_ce79137c19dc5316ef2b",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(2,2,1)}{3}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "\\frac{2 \\sqrt{5} \\arccos{\\left(\\frac{2}{3} \\right)}}{5} + \\frac{\\pi}{4}",
+      "- \\frac{2 \\arccos{\\left(\\frac{2}{3} \\right)}}{3} + \\frac{\\pi}{4}",
+      "- \\frac{2 \\sqrt{5} \\arccos{\\left(\\frac{2}{3} \\right)}}{5} + \\frac{\\pi}{4}",
+      "- \\frac{4 \\sqrt{5} \\arccos{\\left(\\frac{2}{3} \\right)}}{5} + \\frac{\\pi}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_d0f3132e809e70890fe3",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{20})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{20})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{367829180 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{7436429 \\pi}",
+      "\\frac{183914590 \\sqrt{2} \\sinh{\\left(\\frac{\\pi}{2} \\right)}}{7436429 \\pi}",
+      "\\frac{367829180 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{7436429 \\pi}",
+      "\\frac{183914590 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{7436429 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_d2a652c58ab0f30e16aa",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{4}.\\textnormal{Evaluate }\\int_0^1r\\,J_{4}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{5}\\left(\\alpha\\right)}{2}",
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{5}\\left(\\alpha\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_d459cf5427c25d4f6e74",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le4,\\ |r_+-r_-|\\le1\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{2 \\pi \\operatorname{arcsinh}{\\left(2 \\right)}}{3}",
+      "\\frac{2 \\pi \\operatorname{arccosh}{\\left(2 \\right)}}{3}",
+      "\\frac{4 \\pi \\operatorname{arccosh}{\\left(2 \\right)}}{3}",
+      "\\frac{4 \\pi}{3}"
+    ]
+  },
+  {
+    "problemId": "cn_d69412da35b18854eddb",
+    "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+    "statement": "\\int_0^\\infty\\int_0^\\infty\\exp\\left[-x^2+2\\cos(\\frac{\\pi}{9})xy-y^2\\right]\\,dx\\,dy",
+    "choices": [
+      "\\frac{4 \\pi}{9 \\sin{\\left(\\frac{\\pi}{9} \\right)}}",
+      "\\frac{\\pi}{18 \\sin{\\left(\\frac{\\pi}{9} \\right)}}",
+      "\\frac{\\pi}{4 \\sin{\\left(\\frac{\\pi}{9} \\right)}}",
+      "\\frac{\\pi}{2 \\sin{\\left(\\frac{\\pi}{9} \\right)}}"
+    ]
+  },
+  {
+    "problemId": "cn_d6e7c7d8ee91d6a11bac",
+    "familyId": "q4-multivariable-confocal-distance-integral",
+    "statement": "r_\\pm(x,y)=\\sqrt{(x\\mp1)^2+y^2},\\quad\\Omega=\\{r_++r_-\\le6,\\ |r_+-r_-|\\le1\\}.\\textnormal{Evaluate }\\iint_\\Omega\\frac{\\mathrm dx\\,\\mathrm dy}{r_+r_-}.",
+    "choices": [
+      "\\frac{4 \\pi \\operatorname{arccosh}{\\left(3 \\right)}}{3}",
+      "2 \\pi",
+      "\\frac{2 \\pi \\operatorname{arcsinh}{\\left(3 \\right)}}{3}",
+      "\\frac{2 \\pi \\operatorname{arccosh}{\\left(3 \\right)}}{3}"
+    ]
+  },
+  {
+    "problemId": "cn_d80005baa8317ca604c8",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{64}\\le |Y|^2\\le\\frac{65}{64},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{129 \\sqrt{65}}{1024} + \\frac{\\operatorname{arcsinh}{\\left(8 \\right)}}{128} + \\frac{65}{64}",
+      "- \\frac{129 \\sqrt{65}}{1024} + \\frac{\\operatorname{arcsinh}{\\left(8 \\right)}}{4096} + \\frac{65}{64}",
+      "- \\frac{129 \\sqrt{65}}{1024} + \\frac{\\operatorname{arcsinh}{\\left(8 \\right)}}{8192} + \\frac{65}{64}",
+      "- \\frac{129 \\sqrt{65}}{2048} + \\frac{\\operatorname{arcsinh}{\\left(8 \\right)}}{16384} + \\frac{65}{64}"
+    ]
+  },
+  {
+    "problemId": "cn_dc917114afd341eaf1e8",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-50,\\\\y(0)=0,\\ y\\prime(0)=5,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(5 \\right)}",
+      "5 \\tanh{\\left(1 \\right)}",
+      "\\frac{\\tanh{\\left(5 \\right)}}{5}",
+      "5 \\tanh{\\left(5 \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_de0d36f1c6255b1f5da2",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(4y)+D\\sin(4y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "8 \\sqrt{2} \\pi E\\left(\\frac{15}{16}\\right)",
+      "8 \\pi E\\left(\\frac{15}{16}\\right)",
+      "16 \\pi E\\left(\\frac{15}{16}\\right)",
+      "2 \\sqrt{2} \\pi E\\left(\\frac{15}{16}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_e514277a055ec4c93553",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+16G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{1}{512} + \\frac{\\coth{\\left(4 \\right)}}{256}",
+      "\\frac{1}{64 \\sinh^{2}{\\left(4 \\right)}} + \\frac{\\coth{\\left(4 \\right)}}{256}",
+      "- \\frac{1}{512} + \\frac{1}{64 \\sinh^{2}{\\left(4 \\right)}} + \\frac{\\coth{\\left(4 \\right)}}{256}",
+      "- \\frac{1}{256} + \\frac{1}{32 \\sinh^{2}{\\left(4 \\right)}} + \\frac{\\coth{\\left(4 \\right)}}{128}"
+    ]
+  },
+  {
+    "problemId": "cn_e587a369fb8125e7395f",
+    "familyId": "q4-multivariable-Gaussian-trigonometric-nodal-length",
+    "statement": "\\textnormal{Let }A,B,C,D\\textnormal{ be independent real standard-normal random variables, each with density }(2\\pi)^{-1/2}e^{-u^2/2}.\\textnormal{Let }\\mathcal L\\textnormal{ be the total Euclidean curve length of the zero set in the displayed square; counting or omitting the boundary does not affect this length almost surely. Find its expectation. The elliptic integral uses the displayed parameter convention.}\\quad F(x,y)=A\\cos x+B\\sin x+C\\cos(5y)+D\\sin(5y),\\quad(x,y)\\in[0,2\\pi]^2,\\quad\\mathcal L=\\operatorname{Length}\\{F=0\\},\\qquad E(p)=\\int_0^{\\pi/2}\\sqrt{1-p\\sin^2\\theta}\\,\\mathrm d\\theta.",
+    "choices": [
+      "10 \\pi E\\left(\\frac{24}{25}\\right)",
+      "2 \\sqrt{2} \\pi E\\left(\\frac{24}{25}\\right)",
+      "5 \\sqrt{2} E\\left(\\frac{24}{25}\\right)",
+      "10 \\sqrt{2} \\pi E\\left(\\frac{24}{25}\\right)"
+    ]
+  },
+  {
+    "problemId": "cn_ecba4f3741dcbce286ea",
+    "familyId": "m3-multivariable-olympiad-squared-log-disk",
+    "statement": "\\iint_{x^2+y^2\\le1}\\left[\\log\\sqrt{(1-x/11)^2+y^2/121}\\right]^2\\,dA,\\quad \\operatorname{Li}_2(q)=\\sum_{n=1}^\\infty q^n/n^2.",
+    "choices": [
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{121}\\right) - 120 \\log{\\left(\\frac{120}{121} \\right)}\\right)}{2}",
+      "\\frac{\\pi \\left(122 \\log{\\left(\\frac{120}{121} \\right)} - 1 + \\operatorname{Li}_{2}\\left(\\frac{1}{121}\\right)\\right)}{2}",
+      "\\frac{\\pi \\left(-1 + \\operatorname{Li}_{2}\\left(\\frac{1}{121}\\right) - 120 \\log{\\left(\\frac{120}{121} \\right)}\\right)}{4}",
+      "\\frac{\\pi \\operatorname{Li}_{2}\\left(\\frac{1}{121}\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_f156bbd41e70a2d5ebd6",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,1,2)}{\\sqrt{6}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{\\sqrt{5} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{5} + \\frac{\\pi}{4}",
+      "2 \\arctan{\\left(\\frac{2}{2 + \\sqrt{6}} \\right)}",
+      "- \\frac{2 \\sqrt{5} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{5} + \\frac{\\pi}{2}",
+      "- \\frac{\\sqrt{5} \\arccos{\\left(\\frac{\\sqrt{6}}{6} \\right)}}{10} + \\frac{\\pi}{8}"
+    ]
+  },
+  {
+    "problemId": "cn_f787b74eb1922924a993",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{9}\\le |Y|^2\\le\\frac{10}{9},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "- \\frac{19 \\sqrt{10}}{54} - \\frac{\\operatorname{arcsinh}{\\left(3 \\right)}}{162} + \\frac{10}{9}",
+      "- \\frac{19 \\sqrt{10}}{108} + \\frac{\\operatorname{arcsinh}{\\left(3 \\right)}}{324} + \\frac{10}{9}",
+      "\\frac{92}{81} - \\frac{20 \\sqrt{10}}{81}",
+      "- \\frac{19 \\sqrt{10}}{54} + \\frac{\\operatorname{arcsinh}{\\left(3 \\right)}}{162} + \\frac{10}{9}"
+    ]
+  },
+  {
+    "problemId": "cn_f930d14ed19db5555c3c",
+    "familyId": "m3-multivariable-olympiad-Gaussian-wedge",
+    "statement": "\\int_0^\\infty\\int_0^\\infty\\exp\\left[-x^2+2\\cos(\\frac{\\pi}{11})xy-y^2\\right]\\,dx\\,dy",
+    "choices": [
+      "\\frac{5 \\pi}{11 \\sin{\\left(\\frac{\\pi}{11} \\right)}}",
+      "\\frac{\\pi}{22 \\sin{\\left(\\frac{\\pi}{11} \\right)}}",
+      "\\frac{\\pi}{4 \\sin{\\left(\\frac{\\pi}{11} \\right)}}",
+      "\\frac{\\pi}{2 \\sin{\\left(\\frac{\\pi}{11} \\right)}}"
+    ]
+  },
+  {
+    "problemId": "cn_f98141950e3b866a25a8",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{3}.\\textnormal{Evaluate }\\int_0^1r\\,J_{3}(\\alpha r)^2\\,\\mathrm dr.",
+    "choices": [
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}",
+      "J^{2}_{4}\\left(\\alpha\\right)",
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{4}",
+      "\\frac{\\alpha^{2} J^{2}_{4}\\left(\\alpha\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_fb4ae576ca2f2450372c",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,3,1)}{\\sqrt{11}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "2 \\arctan{\\left(\\frac{1}{\\sqrt{11} + 4} \\right)}",
+      "- \\frac{3 \\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{11}}{11} \\right)}}{40} - \\frac{\\sqrt{2} \\arccos{\\left(\\frac{3 \\sqrt{11}}{11} \\right)}}{8} + \\frac{\\pi}{8}",
+      "- \\frac{3 \\sqrt{11} \\arccos{\\left(\\frac{\\sqrt{11}}{11} \\right)}}{22} - \\frac{\\sqrt{11} \\arccos{\\left(\\frac{3 \\sqrt{11}}{11} \\right)}}{22} + \\frac{\\pi}{4}",
+      "- \\frac{3 \\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{11}}{11} \\right)}}{20} - \\frac{\\sqrt{2} \\arccos{\\left(\\frac{3 \\sqrt{11}}{11} \\right)}}{4} + \\frac{\\pi}{4}"
+    ]
+  },
+  {
+    "problemId": "cn_fb54d478f8124fc1f489",
+    "familyId": "q4-multivariable-disk-to-annulus-optimal-transport",
+    "statement": "\\textnormal{Let X be uniformly distributed on the closed unit disk in the real plane, and let Y be uniformly distributed on the annulus below. Among all joint distributions with these two marginals, find the smallest expected squared Euclidean distance.}\\quad \\frac{1}{49}\\le |Y|^2\\le\\frac{50}{49},\\qquad\\inf\\mathbb E\\bigl[|X-Y|^2\\bigr]=?\\textnormal{Here uniform means normalized planar area; dependence between X and Y may be chosen freely. The inverse hyperbolic sine has its real convention }\\operatorname{arcsinh}v=\\ln(v+\\sqrt{1+v^2}).",
+    "choices": [
+      "\\frac{1052}{1029} - \\frac{500 \\sqrt{2}}{1029}",
+      "- \\frac{495 \\sqrt{2}}{686} + \\frac{\\operatorname{arcsinh}{\\left(7 \\right)}}{4802} + \\frac{101}{100}",
+      "- \\frac{495 \\sqrt{2}}{686} + \\frac{\\operatorname{arcsinh}{\\left(7 \\right)}}{4802} + \\frac{50}{49}",
+      "- \\frac{495 \\sqrt{2}}{686} - \\frac{\\operatorname{arcsinh}{\\left(7 \\right)}}{4802} + \\frac{50}{49}"
+    ]
+  },
+  {
+    "problemId": "cn_fc65b448dc320d3af124",
+    "familyId": "m3-differential-equations-olympiad-darboux-oscillator",
+    "statement": "\\begin{gathered}y\\prime\\prime+(81+2\\operatorname{sech}^2t)y=0,\\\\y(0)=0,\\\\y\\prime(0)=82.\\\\y(\\frac{\\pi}{36})=?\\\\\\textnormal{Here sech t=1/cosh t.}\\end{gathered}",
+    "choices": [
+      "\\frac{\\sqrt{2} \\left(9 - \\tanh{\\left(\\frac{\\pi}{36} \\right)}\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{36} \\right)} + 18\\right)}{2}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{36} \\right)} + 9\\right)}{18}",
+      "\\frac{\\sqrt{2} \\left(\\tanh{\\left(\\frac{\\pi}{36} \\right)} + 9\\right)}{2}"
+    ]
+  },
+  {
+    "problemId": "cn_fd315e4ac5aaf282a956",
+    "familyId": "q4-differential-equations-nonlinear-damping-Melnikov-bound",
+    "statement": "x\\prime\\prime=x-x^3+\\varepsilon\\left[-(1+x^{8})x\\prime+A\\cos t\\right],\\qquad A>0.\\textnormal{Let }x_h\\textnormal{ be the positive unperturbed homoclinic orbit with its maximum at zero, and put }v_h=x_h\\prime.\\textnormal{Define the first-order Melnikov function by }M_A(\\phi)=\\int_{-\\infty}^{\\infty}v_h(t)\\left[-(1+x_h(t)^{8})v_h(t)+A\\cos(t+\\phi)\\right]\\,\\mathrm dt.\\textnormal{Find }\\inf\\{A>0:M_A\\textnormal{ has a simple real zero}\\}.",
+    "choices": [
+      "\\frac{6406 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3465 \\pi}",
+      "\\frac{4096 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3465 \\pi}",
+      "\\frac{12812 \\sqrt{2} \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3465 \\pi}",
+      "\\frac{12812 \\cosh{\\left(\\frac{\\pi}{2} \\right)}}{3465 \\pi}"
+    ]
+  },
+  {
+    "problemId": "cn_fe97e44f8d9dc5fab0a3",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+100G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "choices": [
+      "- \\frac{\\coth{\\left(10 \\right)}}{4000} - \\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{1}{20000}",
+      "\\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{4000}",
+      "- \\frac{1}{20000} + \\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{4000}",
+      "- \\frac{1}{10000} + \\frac{1}{200 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{2000}"
+    ]
+  },
+  {
+    "problemId": "cn_ff97147e8b3583c22961",
+    "familyId": "q4-multivariable-spherical-triangle-vector-area",
+    "statement": "\\textnormal{On the unit sphere, let S be the smaller spherical triangle in the positive octant bounded by the shorter great-circle arcs joining }A=(1,0,0),\\quad B=(0,1,0),\\quad C=\\frac{(1,2,3)}{\\sqrt{14}}.\\textnormal{Find }\\iint_S z\\,\\mathrm dS.",
+    "choices": [
+      "- \\frac{\\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{26} - \\frac{\\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{40} + \\frac{\\pi}{8}",
+      "\\frac{\\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{20} + \\frac{\\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{13} + \\frac{\\pi}{4}",
+      "- \\frac{\\sqrt{13} \\arccos{\\left(\\frac{\\sqrt{14}}{14} \\right)}}{13} - \\frac{\\sqrt{10} \\arccos{\\left(\\frac{\\sqrt{14}}{7} \\right)}}{20} + \\frac{\\pi}{4}",
+      "2 \\arctan{\\left(\\frac{3}{3 + \\sqrt{14}} \\right)}"
+    ]
+  },
+  {
+    "problemId": "cn_ffea6cc82f6bfd748900",
+    "familyId": "m3-differential-equations-olympiad-schwarzian-ivp",
+    "statement": "\\begin{gathered}\\frac{y\\prime\\prime\\prime}{y\\prime}-\\frac32\\left(\\frac{y\\prime\\prime}{y\\prime}\\right)^2=-200,\\\\y(0)=0,\\ y\\prime(0)=10,\\ y\\prime\\prime(0)=0.\\\\\\begin{gathered}\\textnormal{Take the real solution with y}\\\\\\textnormal{prime>0. Find}\\end{gathered}\\\\\\textnormal{y(1).}\\end{gathered}",
+    "choices": [
+      "\\tanh{\\left(20 \\right)}",
+      "10 \\tanh{\\left(10 \\right)}",
+      "\\tanh{\\left(10 \\right)}",
+      "10 \\tanh{\\left(1 \\right)}"
+    ]
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "author": "source_research",
+  "reviewer": "root",
+  "inputSha256": "d375ae2a5b287e5fea6616aa2edfef424f5ff89ecbd7dd847fbe5c8580ce69c5",
+  "originalsSha256": "848bde2bf06ca7198af3537f122be452ed66cc1e4617dd494bcbb33f2a9c7d10",
+  "reviewSources": {
+    "series_domain_patch.py": "cfe6e16d33245285950e7e57aec8f5a2bf7d1155457d3536cb6dd8b209946cf0",
+    "ode_mv_literal_choices.py": "a3b7203953ccd1edcc86c7f8ae4cf83cb43db0ab389620a19778c276d8f96646",
+    "series_intervals.py": "bb71f706ad7c41e3040a5043889d81e73e199a34792ceef7f5a430772eaedf52",
+    "rational_intervals.py": "8dc0cbe9cd0886f1c91f948165a6ed6a85305ecd93b326891ff1a65bb1de2076"
+  },
+  "records": [
+    {
+      "problemId": "cn_07f9f8471f9274bac8b9",
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "index": 0,
+      "sourceRawSHA256": "405530ada2e58c21398eb16cfb8099fd9a279ea0aad4f6a305db02ab2b764547",
+      "patchSha256": "6ccab5b2f6b7e679ff7f5cc8b584edfdea8ad346bb4279b94cb4761ebaf5f93b",
+      "independentAnswer": "Integer(4)",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": 1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "12",
+          "upper": "12"
+        },
+        {
+          "lower": "95/6",
+          "upper": "95/6"
+        },
+        {
+          "lower": "-4",
+          "upper": "-4"
+        },
+        {
+          "lower": "23/6",
+          "upper": "23/6"
+        },
+        {
+          "lower": "-16",
+          "upper": "-16"
+        },
+        {
+          "lower": "-119/6",
+          "upper": "-119/6"
+        }
+      ],
+      "route": "Differentiate the convergent power series n times inside its convergence interval and evaluate at its center. Only the nth monomial survives, giving n! times the literal coefficient.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_5a178a9f09c990290769",
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "index": 9,
+      "sourceRawSHA256": "c775604453c902271454f3a91aa1d973eaf6ff584ef453035b929c04bec946da",
+      "patchSha256": "642c51644bca8e6bf1999a68f6fcf766bc3ec814c4e925dcd0acbe52440277b2",
+      "independentAnswer": "Integer(-4151347200)",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": -1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-58118860800",
+          "upper": "-58118860800"
+        },
+        {
+          "lower": "-61950873600",
+          "upper": "-61950873600"
+        },
+        {
+          "lower": "-4151347200",
+          "upper": "-4151347200"
+        },
+        {
+          "lower": "-3832012800",
+          "upper": "-3832012800"
+        },
+        {
+          "lower": "53967513600",
+          "upper": "53967513600"
+        },
+        {
+          "lower": "57799526400",
+          "upper": "57799526400"
+        }
+      ],
+      "route": "Differentiate the convergent power series n times inside its convergence interval and evaluate at its center. Only the nth monomial survives, giving n! times the literal coefficient.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_5dfc0a749b042bab1d75",
+      "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+      "index": 7,
+      "sourceRawSHA256": "deb57149d52ea3ce876ad9259e763e190dab80ab1b9788ca0b4a0278a10df0b0",
+      "patchSha256": "ecb8806384df64ab7a55e8bddb8fcf5f849908026ead3db0b062791a06086f36",
+      "independentAnswer": "Mul(Pow(gamma(Rational(1, 6)), Integer(2)), Pow(gamma(Rational(1, 3)), Integer(-1)))",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": 1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "28914319449899971965685466679358948844916599329/1000000000000000000000000000000000000000000000",
+          "upper": "7228579862474992991421366723132464221386819763/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "5782863889979994393137093335871789768983319869/250000000000000000000000000000000000000000000",
+          "upper": "11565727779959988786274186757011942754218911621/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "34476647684495278344694003238053927834895618877/1000000000000000000000000000000000000000000000",
+          "upper": "34476647684495278344694003495085463992610569297/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-5782863889979994393137093378505971377109455811/1000000000000000000000000000000000000000000000",
+          "upper": "-5782863889979994393137093335871789768983319853/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "1390582058648826594752134139673744747494754879/250000000000000000000000000000000000000000000",
+          "upper": "2781164117297653189504268301277803553531645123/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "11345192124575300772145629894566768758962339401/1000000000000000000000000000000000000000000000",
+          "upper": "1418149015571912596518203747632697310521593257/125000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Rewrite as a Riemann sum for t^(-q)(1-t)^(-q). On any fixed interior interval convergence is ordinary; the two omitted tails are uniformly bounded by constants times cutoff^(1-q), tending to zero. The positive-argument beta integral gives Gamma(1-q)^2/Gamma(2-2q).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7aff2c8e88ced577e84c",
+      "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+      "index": 6,
+      "sourceRawSHA256": "e540bc4feddffa87f8849cd52febccce5a522d7b5a63ea2f70028d20f2455c0a",
+      "patchSha256": "15d8fd6a08be352fd35e10c447a84f7fb74129cca7585eb39e27ee910d8dd434",
+      "independentAnswer": "Mul(Pow(pi, Rational(-1, 2)), Pow(gamma(Rational(1, 4)), Integer(2)))",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": 1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "7162134783767293947753451616073033947808684993/1000000000000000000000000000000000000000000000",
+          "upper": "1790533695941823486938362913233572453781765757/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "2781112015952057877650775507421550303764941301/500000000000000000000000000000000000000000000",
+          "upper": "5562224031904115755301551041772957513255867289/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "3708149354602743836867700676562067071686588401/1000000000000000000000000000000000000000000000",
+          "upper": "741629870920548767373540138903061001767448971/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-1599910751863178192451900611161332301871195753/1000000000000000000000000000000000000000000000",
+          "upper": "-1599910751863178192451900601229933340278802377/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-3453985429164550110885750958418984806289818173/1000000000000000000000000000000000000000000000",
+          "upper": "-1726992714582275055442875469755483438061048289/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-370814935460274383686770069451530500883724487/200000000000000000000000000000000000000000000",
+          "upper": "-9270373386506859592169251691405167679216471/5000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Rewrite as a Riemann sum for t^(-q)(1-t)^(-q). On any fixed interior interval convergence is ordinary; the two omitted tails are uniformly bounded by constants times cutoff^(1-q), tending to zero. The positive-argument beta integral gives Gamma(1-q)^2/Gamma(2-2q).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7b14effdf2336331644a",
+      "familyId": "m3-series-easy-taylor-coefficient-derivative",
+      "index": 3,
+      "sourceRawSHA256": "0644f9d769e31402aa7ec672343652a9d4e640c98ec62d01bd51d65caa3163d8",
+      "patchSha256": "48d6dc1375b8f336569286f140a99e5acb650d582842c824b3b799c61d5c5098",
+      "independentAnswer": "Integer(-2240)",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": -1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "11289280",
+          "upper": "11289280"
+        },
+        {
+          "lower": "17600",
+          "upper": "17600"
+        },
+        {
+          "lower": "1920",
+          "upper": "1920"
+        },
+        {
+          "lower": "-11271680",
+          "upper": "-11271680"
+        },
+        {
+          "lower": "-11287360",
+          "upper": "-11287360"
+        },
+        {
+          "lower": "-15680",
+          "upper": "-15680"
+        }
+      ],
+      "route": "Differentiate the convergent power series n times inside its convergence interval and evaluate at its center. Only the nth monomial survives, giving n! times the literal coefficient.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_beb20410c10a5a949bde",
+      "familyId": "quality-series-olympiad-singular-cauchy-coefficient",
+      "index": 4,
+      "sourceRawSHA256": "99a12c61ce8baf51b91f1ed929ed0b925069f776fb8a961c3b557d4c5143b844",
+      "patchSha256": "3fd31f13998427babfc26fb9b41a56581b148e61a7081e5404cd3fa46c52174a",
+      "independentAnswer": "Mul(Pow(gamma(Rational(2, 5)), Integer(2)), Pow(gamma(Rational(4, 5)), Integer(-1)))",
+      "literalCorrectChoiceUnchanged": true,
+      "allGammaArgumentsInStatedPositiveDomain": true,
+      "sameCertifiedSignForAllChoices": 1,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "3169626902378796782703754588207800192538578327/1000000000000000000000000000000000000000000000",
+          "upper": "3169626902378796782703754608228766060721478439/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "264135575198233065225312882350650016044881527/250000000000000000000000000000000000000000000",
+          "upper": "1056542300792932260901251536076255353573826147/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "2476673192345798482621787334746692497174591289/500000000000000000000000000000000000000000000",
+          "upper": "990669276938319393048714941002850170627616909/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-528271150396466130450625768038127676786913073/250000000000000000000000000000000000000000000",
+          "upper": "-1056542300792932260901251529402600064179526109/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "1783719482312800182539820081285584801810604251/1000000000000000000000000000000000000000000000",
+          "upper": "1783719482312800182539820096785484792416606107/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "3896804083898664704342323140090784930169656469/1000000000000000000000000000000000000000000000",
+          "upper": "3896804083898664704342323168937995499564258399/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Rewrite as a Riemann sum for t^(-q)(1-t)^(-q). On any fixed interior interval convergence is ordinary; the two omitted tails are uniformly bounded by constants times cutoff^(1-q), tending to zero. The positive-argument beta integral gives Gamma(1-q)^2/Gamma(2-2q).",
+      "passed": true
+    }
+  ],
+  "instances": 6,
+  "literalPairInequalities": 36,
+  "scope": "Independent literal-answer derivations, exact outward rational bounds and stated-domain inspection. Gamma enclosures use separately implemented positive-real log-Gamma recurrence and signed Stirling remainder. No author constructor, expression field or numerical oracle is used. Final family screen and admission remain separate."
+}

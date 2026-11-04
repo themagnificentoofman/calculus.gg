@@ -1,0 +1,2978 @@
+{
+  "author": "source_research",
+  "reviewer": "root",
+  "inputSha256": "b13fbe4383a234345c55f22bf93e268c55e8fb91c47a2ecccff1cde8e966d9a0",
+  "originalsSha256": "848bde2bf06ca7198af3537f122be452ed66cc1e4617dd494bcbb33f2a9c7d10",
+  "reviewSources": {
+    "series_bracket_patch.py": "605b6e76bed309046b548a92b2afbd35369b2ae1c7078866318c29ea0ab6af7a",
+    "ode_mv_literal_choices.py": "a3b7203953ccd1edcc86c7f8ae4cf83cb43db0ab389620a19778c276d8f96646",
+    "limits_intervals.py": "4b2ea856d3ff95e0245e2c31aadc033e1ae7db910959cea49290be6cbe786760",
+    "series_intervals.py": "bb71f706ad7c41e3040a5043889d81e73e199a34792ceef7f5a430772eaedf52",
+    "rational_intervals.py": "8dc0cbe9cd0886f1c91f948165a6ed6a85305ecd93b326891ff1a65bb1de2076"
+  },
+  "instances": 80,
+  "literalPairInequalities": 480,
+  "records": [
+    {
+      "problemId": "cn_0565571e096015caef5d",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 9,
+      "sourceRawSHA256": "2890a2a8631d7599e4f54d048b690fe01e2c74424a5e3d93b1f414a657d458ff",
+      "patchSha256": "d0e60d78fded6280ce9f76d29fb42ba1ccca2147a1449cf0a761c7bb85aa12f2",
+      "independentAnswer": "Rational(1, 364)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/2730",
+          "upper": "1/2730"
+        },
+        {
+          "lower": "29/43680",
+          "upper": "29/43680"
+        },
+        {
+          "lower": "1/420",
+          "upper": "1/420"
+        },
+        {
+          "lower": "1/3360",
+          "upper": "1/3360"
+        },
+        {
+          "lower": "11/5460",
+          "upper": "11/5460"
+        },
+        {
+          "lower": "5/2912",
+          "upper": "5/2912"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_07da29bf43492c146f3b",
+      "familyId": "m3-series-hard-telescoping-arctan",
+      "index": 5,
+      "sourceRawSHA256": "e2c6aac8adf66bfd1b094f4c160ee2840e0903a7be4350a63929560f9263d91b",
+      "patchSha256": "78c49ccf6bd4133a587831867e725dd88a8b7ffa55cf10068802a26ec3178fcb",
+      "independentAnswer": "Add(Mul(Integer(-1), atan(Integer(9))), Mul(Rational(1, 2), pi))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "10159886452199763061753516452838835959899106344900495190324997504209007648068922974814775588838304668908763248851428836760064348164062679824835852926360859874643281726325986829406057621371931490744906558507014439927031476315119354342130551699598559093925337313636361568133744795970692448716109842512408731406/924586881653115774842546168501250909830866056408385676667289177914626714407279893227178441064955635618231382338817599179840306360149316833282863633432965253282355350460194919644197913972422385095081070245370077534835463807648889309028456250753278427072082890731516635192520104165773195035120013456620604413875",
+          "upper": "9365582071162408070856136647617728765562947227582035202744991988658860988751886710970644277056837245297810631392407374888403923046560810892252985014312041336825752805166970863501621592491163429154854217469231451309980702919789119341646196157301648945231323684414876096906449814926954908743951513531771/852302273532546936602363147590917597471694199642505170640129181870968043656710609707293197676789445920286005893024314078526403548774225955749769898565708914531983313646519918810002769120540246268779603309120277665727452807584813676325605336554734812858721833325359565115508696137643511206210126424437625"
+        },
+        {
+          "lower": "9998666986575266530376598450798243974616599/500000000000000000000000000000000000000000000",
+          "upper": "49993334932876332651882992253991219873083/2500000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "99668652491162027378446119878020590243278321/1000000000000000000000000000000000000000000000",
+          "upper": "24917163122790506844611529969505147560819581/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "360350611616676555202377782782198888689017/40000000000000000000000000000000000000000000",
+          "upper": "2252191322604228470014861142388743054306357/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "88680083808428408197752367545979074511270549/1000000000000000000000000000000000000000000000",
+          "upper": "11085010476053551024719045943247384313908819/125000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "39835659259005747158846461488212051147022561/500000000000000000000000000000000000000000000",
+          "upper": "637370548144091954541543383811392818352361/8000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "For positive integer k, atan(k+1)\u2212atan(k) lies in(0,\u03c0/2) and has tangent1/(k\u00b2+k+1). Thus it equals the displayed summand on the principal real branch. Telescoping and atan(k)\u2192\u03c0/2 give the answer; exact alternating bounds distinguish the revised omission choices.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_0ad8143ce0737e047359",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 9,
+      "sourceRawSHA256": "00bce8da7aed2c8e1e41b26f2d75b780b65c46863d7f0fb36a98992e604743a9",
+      "patchSha256": "adc962a32a5a67726a5cd7dfa3594e2e0a86d105e8f9e0b5b3e14ab550fe76b4",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "12/13",
+          "upper": "12/13"
+        },
+        {
+          "lower": "1/2",
+          "upper": "1/2"
+        },
+        {
+          "lower": "-1/13",
+          "upper": "-1/13"
+        },
+        {
+          "lower": "-1/2",
+          "upper": "-1/2"
+        },
+        {
+          "lower": "-11/26",
+          "upper": "-11/26"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_0ca5e7bf893a7381988d",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 3,
+      "sourceRawSHA256": "afdaa12c8fcecae0f62813dae2d33a74d3498850baee0cf1e9fba16c3f0ea7f0",
+      "patchSha256": "7142febdf3d22cc4d42b6832a1b5611e42de773aafc022791cfbddbfd7a0ef4c",
+      "independentAnswer": "Rational(1, 705894)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/4941258",
+          "upper": "1/4941258"
+        },
+        {
+          "lower": "1/823543",
+          "upper": "1/823543"
+        },
+        {
+          "lower": "-1/117649",
+          "upper": "-1/117649"
+        },
+        {
+          "lower": "5/4941258",
+          "upper": "5/4941258"
+        },
+        {
+          "lower": "-43/4941258",
+          "upper": "-43/4941258"
+        },
+        {
+          "lower": "-8/823543",
+          "upper": "-8/823543"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_0d4dccf490b476a34c52",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 5,
+      "sourceRawSHA256": "3356000e74b0bf5c5faf9505fe7ae737c39f73d4692dfff2cfee575f8ffa5f3d",
+      "patchSha256": "6a2513e3ad79d03fb835a04895d59b5ae67bc90b83da3d67e69ac7835b5b83bc",
+      "independentAnswer": "Rational(1, 162)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "25/4374",
+          "upper": "25/4374"
+        },
+        {
+          "lower": "19/16200",
+          "upper": "19/16200"
+        },
+        {
+          "lower": "20/9801",
+          "upper": "20/9801"
+        },
+        {
+          "lower": "-1987/437400",
+          "upper": "-1987/437400"
+        },
+        {
+          "lower": "-1945/529254",
+          "upper": "-1945/529254"
+        },
+        {
+          "lower": "21/24200",
+          "upper": "21/24200"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_0f10f73718f2461bc640",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 0,
+      "sourceRawSHA256": "e34f13eb28e9cbba8335d309adaba4cdc684ca2b2be1ad0f39aef1c486005981",
+      "patchSha256": "497070dc92de5674bec3303ba2af6b3651f208839937418c3f3f93dc4ca08571",
+      "independentAnswer": "Rational(1, 192)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/64",
+          "upper": "-1/64"
+        },
+        {
+          "lower": "-5/64",
+          "upper": "-5/64"
+        },
+        {
+          "lower": "-1/256",
+          "upper": "-1/256"
+        },
+        {
+          "lower": "-1/16",
+          "upper": "-1/16"
+        },
+        {
+          "lower": "3/256",
+          "upper": "3/256"
+        },
+        {
+          "lower": "19/256",
+          "upper": "19/256"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_0f2cf80b3db7de787294",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 2,
+      "sourceRawSHA256": "b8d61c462a4294ef63cb171112558d69a6aefaabb178dc3209932682f2daf29a",
+      "patchSha256": "7892a18e7fc577d893c720694b9b403e2f5ed06a90e55867235e60c653afbfe1",
+      "independentAnswer": "Rational(1, 72)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/81",
+          "upper": "1/81"
+        },
+        {
+          "lower": "-5/288",
+          "upper": "-5/288"
+        },
+        {
+          "lower": "-1/72",
+          "upper": "-1/72"
+        },
+        {
+          "lower": "-77/2592",
+          "upper": "-77/2592"
+        },
+        {
+          "lower": "-17/648",
+          "upper": "-17/648"
+        },
+        {
+          "lower": "1/288",
+          "upper": "1/288"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_109edc76c5ab0a2d24c3",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 1,
+      "sourceRawSHA256": "ae40c22ef9abf86b00bfa4e40e2f6d49dfa18d66d6529bd6ee41bca42c223fd9",
+      "patchSha256": "fa6ab37b86a339ecfbeb8f137665349cd1da6598ebeb0f58582b85227e228a45",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "4/5",
+          "upper": "4/5"
+        },
+        {
+          "lower": "1/2",
+          "upper": "1/2"
+        },
+        {
+          "lower": "-1/5",
+          "upper": "-1/5"
+        },
+        {
+          "lower": "-1/2",
+          "upper": "-1/2"
+        },
+        {
+          "lower": "-3/10",
+          "upper": "-3/10"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_12eb63b908bec0f225be",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 4,
+      "sourceRawSHA256": "7c52dcc2b37d5fe55be476bbefe7f7a09fbe766d27a48922466035289e593344",
+      "patchSha256": "24a3875226f78ad63c0b7623a409a60865b5237a08b6f4387cc679d9941884d0",
+      "independentAnswer": "Rational(1, 14680064)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-9/2097152",
+          "upper": "-9/2097152"
+        },
+        {
+          "lower": "-1/16777216",
+          "upper": "-1/16777216"
+        },
+        {
+          "lower": "-1/2097152",
+          "upper": "-1/2097152"
+        },
+        {
+          "lower": "71/16777216",
+          "upper": "71/16777216"
+        },
+        {
+          "lower": "1/262144",
+          "upper": "1/262144"
+        },
+        {
+          "lower": "-7/16777216",
+          "upper": "-7/16777216"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_1727bda2eb46c3f1aa54",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 3,
+      "sourceRawSHA256": "3d822a1effe53867dc220e9d08f2f71e4713572ca06c66e2c78857f2720733c7",
+      "patchSha256": "b5f44283880118852d72262ea8a4649f3ceeaf2efe55cc93759677a1e4518cf5",
+      "independentAnswer": "Rational(1, 7)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/56",
+          "upper": "1/56"
+        },
+        {
+          "lower": "2/63",
+          "upper": "2/63"
+        },
+        {
+          "lower": "-1/42",
+          "upper": "-1/42"
+        },
+        {
+          "lower": "1/72",
+          "upper": "1/72"
+        },
+        {
+          "lower": "-1/24",
+          "upper": "-1/24"
+        },
+        {
+          "lower": "-1/18",
+          "upper": "-1/18"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_18786ae72e39043212b4",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 2,
+      "sourceRawSHA256": "36e0b74e72d0398fbf4a70d2e046a7c8a518f18691e2bbf4dc4fe65d25f83b9c",
+      "patchSha256": "485da675e59d1524c940c29332895ed745be915ca03976231086dc9198b38b41",
+      "independentAnswer": "Rational(1, 38880)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "7/279936",
+          "upper": "7/279936"
+        },
+        {
+          "lower": "-1/46656",
+          "upper": "-1/46656"
+        },
+        {
+          "lower": "-1/7776",
+          "upper": "-1/7776"
+        },
+        {
+          "lower": "-13/279936",
+          "upper": "-13/279936"
+        },
+        {
+          "lower": "-43/279936",
+          "upper": "-43/279936"
+        },
+        {
+          "lower": "-5/46656",
+          "upper": "-5/46656"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_1fc33e68467dfb08d078",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 6,
+      "sourceRawSHA256": "3ca391002d29f7466582201cab2c5ebe4c7f8defc06d87ceffbd408394fa53fe",
+      "patchSha256": "6426101c69a7e07295f63f7fd4c6bc30be1b4a89d9316dc3deb7da506e2c5568",
+      "independentAnswer": "Rational(1, 220)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/1320",
+          "upper": "1/1320"
+        },
+        {
+          "lower": "-1/220",
+          "upper": "-1/220"
+        },
+        {
+          "lower": "-1/990",
+          "upper": "-1/990"
+        },
+        {
+          "lower": "-7/1320",
+          "upper": "-7/1320"
+        },
+        {
+          "lower": "-7/3960",
+          "upper": "-7/3960"
+        },
+        {
+          "lower": "7/1980",
+          "upper": "7/1980"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_1fda890b1a67836fe921",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 4,
+      "sourceRawSHA256": "931af5653dddf7f56130b417d0d618de5a5d71fa8dbabeabb49b7b9e06004645",
+      "patchSha256": "c71884217b83fb490fc15893d78f08eb5a2e6962ec3bd91fd5178c872a607c7a",
+      "independentAnswer": "Rational(1, 9)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-2/63",
+          "upper": "-2/63"
+        },
+        {
+          "lower": "-1/9",
+          "upper": "-1/9"
+        },
+        {
+          "lower": "-1/72",
+          "upper": "-1/72"
+        },
+        {
+          "lower": "-5/63",
+          "upper": "-5/63"
+        },
+        {
+          "lower": "1/56",
+          "upper": "1/56"
+        },
+        {
+          "lower": "7/72",
+          "upper": "7/72"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_22bd513e6da002b46437",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 5,
+      "sourceRawSHA256": "ca315aefb176f30b856b1c2359fad5a7608d97d3ff2bec52f0e8f6e860f491b1",
+      "patchSha256": "98301adafefbcdf0e422554897feb2d386b76e21e0235d09fbc72b29a1b9da42",
+      "independentAnswer": "Rational(1, 180)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/220",
+          "upper": "1/220"
+        },
+        {
+          "lower": "1/990",
+          "upper": "1/990"
+        },
+        {
+          "lower": "7/3960",
+          "upper": "7/3960"
+        },
+        {
+          "lower": "-7/1980",
+          "upper": "-7/1980"
+        },
+        {
+          "lower": "-1/360",
+          "upper": "-1/360"
+        },
+        {
+          "lower": "1/1320",
+          "upper": "1/1320"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_27724de75927f8e57cb1",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 4,
+      "sourceRawSHA256": "6800cd84940e1ca5167ae748293816983c68a639a8f2c656f16337481d0abbf5",
+      "patchSha256": "31a1c3b16d050e7c7c8112f2ef1b371eed7b1b10575be19b63ae301f063be568",
+      "independentAnswer": "Rational(1, 8)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/72",
+          "upper": "-1/72"
+        },
+        {
+          "lower": "-63/8",
+          "upper": "-63/8"
+        },
+        {
+          "lower": "-1/56",
+          "upper": "-1/56"
+        },
+        {
+          "lower": "-283/36",
+          "upper": "-283/36"
+        },
+        {
+          "lower": "-1/252",
+          "upper": "-1/252"
+        },
+        {
+          "lower": "55/7",
+          "upper": "55/7"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_297032565022a61e3071",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 3,
+      "sourceRawSHA256": "7ce09b7564444082e63cc8a319f95599bbba847f5f99abcffb32ae511058ee9f",
+      "patchSha256": "7966721460710ae5d8c85a4c976ec60fb4aaf25c48d6560f95c83c68cce4ddcb",
+      "independentAnswer": "Mul(Rational(1, 14), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "11368210220849666840634554526608168716747117/1000000000000000000000000000000000000000000000",
+          "upper": "5684105110424833420317277263304084358373559/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "609011261831232152176851135354009038397167/31250000000000000000000000000000000000000000",
+          "upper": "3897672075719885773931847266265657845741869/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-5684105110424833420317277263304084358373559/250000000000000000000000000000000000000000000",
+          "upper": "-11368210220849666840634554526608168716747117/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "4060075078874881014512340902360060255981113/500000000000000000000000000000000000000000000",
+          "upper": "8120150157749762029024681804720120511962227/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-34104630662549000521903663579824506150241353/1000000000000000000000000000000000000000000000",
+          "upper": "-4263078832818625065237957947478063268780169/125000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-2111239041014938127546417269227231333110179/50000000000000000000000000000000000000000000",
+          "upper": "-42224780820298762550928345384544626662203579/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_2aadb210d5eb710a14f1",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 2,
+      "sourceRawSHA256": "dbe442e18a103aed22a5c717d86ed36b2534415dcd058da1adcbfb1c5df953ce",
+      "patchSha256": "ea5a29eb3a2bf9827bf5803e58a94cf7b756661875496b302e2f2c011b5b0369",
+      "independentAnswer": "Rational(2, 63)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "4/4095",
+          "upper": "4/4095"
+        },
+        {
+          "lower": "-10/63",
+          "upper": "-10/63"
+        },
+        {
+          "lower": "-2/63",
+          "upper": "-2/63"
+        },
+        {
+          "lower": "-218/1365",
+          "upper": "-218/1365"
+        },
+        {
+          "lower": "-134/4095",
+          "upper": "-134/4095"
+        },
+        {
+          "lower": "8/63",
+          "upper": "8/63"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_2def467bf99536867b5d",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 9,
+      "sourceRawSHA256": "f469759cba7d53d4e9b5eee70e4e9a6625c31b9202ae9f528634b7346760f075",
+      "patchSha256": "c46dce590be6227ba511dab108e1733fca311d94fd380e6edf522f8c4d7bee80",
+      "independentAnswer": "Rational(2, 8191)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/8191",
+          "upper": "1/8191"
+        },
+        {
+          "lower": "1/4096",
+          "upper": "1/4096"
+        },
+        {
+          "lower": "4/67108863",
+          "upper": "4/67108863"
+        },
+        {
+          "lower": "4095/33550336",
+          "upper": "4095/33550336"
+        },
+        {
+          "lower": "-8189/67108863",
+          "upper": "-8189/67108863"
+        },
+        {
+          "lower": "-67092479/274877902848",
+          "upper": "-67092479/274877902848"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_2fbd5f0766f6e8a6e7a4",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 6,
+      "sourceRawSHA256": "3497c5cf91fc1eb8727f375b0418fd120048139f9e8a2623a30bc3b3b1b84ef0",
+      "patchSha256": "881ad3dee2bf603366cd52a109de47ad8ad1db557730086bcd2d4b0fac04c053",
+      "independentAnswer": "Rational(1, 200)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "21/24200",
+          "upper": "21/24200"
+        },
+        {
+          "lower": "-1/200",
+          "upper": "-1/200"
+        },
+        {
+          "lower": "-19/16200",
+          "upper": "-19/16200"
+        },
+        {
+          "lower": "-71/12100",
+          "upper": "-71/12100"
+        },
+        {
+          "lower": "-20/9801",
+          "upper": "-20/9801"
+        },
+        {
+          "lower": "31/8100",
+          "upper": "31/8100"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_35eca24b06e149acf084",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 8,
+      "sourceRawSHA256": "9eb0d5ce09d8caeb3e7d05170c06f0b3b43c93b1e252a5f1eee00f8dfe315276",
+      "patchSha256": "ef7a3386f9c7428c5e82e5ce8d5c3327fc78e3ac9184cbb7e182f10688902243",
+      "independentAnswer": "Rational(2, 4095)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-22/4095",
+          "upper": "-22/4095"
+        },
+        {
+          "lower": "-2/4095",
+          "upper": "-2/4095"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "4/819",
+          "upper": "4/819"
+        },
+        {
+          "lower": "-8168/4095",
+          "upper": "-8168/4095"
+        },
+        {
+          "lower": "-8188/4095",
+          "upper": "-8188/4095"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_378ab1946965122f8e5b",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 4,
+      "sourceRawSHA256": "2a3f026e3ff6582e1f371624d46c2f61d556fead7e4ba05371c3ab55c0c1fad1",
+      "patchSha256": "a453db6da4305e1cbfc4fa62937156f3c5c90e57cd770f06bdb4a2fc77826721",
+      "independentAnswer": "Rational(1, 144)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/504",
+          "upper": "-1/504"
+        },
+        {
+          "lower": "-1/720",
+          "upper": "-1/720"
+        },
+        {
+          "lower": "-1/144",
+          "upper": "-1/144"
+        },
+        {
+          "lower": "1/1680",
+          "upper": "1/1680"
+        },
+        {
+          "lower": "-5/1008",
+          "upper": "-5/1008"
+        },
+        {
+          "lower": "-1/180",
+          "upper": "-1/180"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_393bab488c4fd60a97cd",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 5,
+      "sourceRawSHA256": "cdd2973b6b8dd4b665f3b3019920c7ff77d1af0e6f68d4f236420a64cf635d6b",
+      "patchSha256": "b081b5335ea97d0afa01716513e41b374b10eca58d1d9b8cf1a4d29ca38579f1",
+      "independentAnswer": "Rational(1, 10)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/20",
+          "upper": "1/20"
+        },
+        {
+          "lower": "1/110",
+          "upper": "1/110"
+        },
+        {
+          "lower": "1/60",
+          "upper": "1/60"
+        },
+        {
+          "lower": "-9/220",
+          "upper": "-9/220"
+        },
+        {
+          "lower": "-1/30",
+          "upper": "-1/30"
+        },
+        {
+          "lower": "1/132",
+          "upper": "1/132"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_3a9f2813688190e42781",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 1,
+      "sourceRawSHA256": "c472531d553a29b8d59fda6bd4919ad25ad147d19def586d387e14313f7cc7ac",
+      "patchSha256": "cd6fabeda20043fba1fbe8b99c25d95b90f1d2a816d160f30ec83e6b2a977798",
+      "independentAnswer": "Rational(2, 31)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/16",
+          "upper": "1/16"
+        },
+        {
+          "lower": "4/1023",
+          "upper": "4/1023"
+        },
+        {
+          "lower": "1/31",
+          "upper": "1/31"
+        },
+        {
+          "lower": "-959/16368",
+          "upper": "-959/16368"
+        },
+        {
+          "lower": "-15/496",
+          "upper": "-15/496"
+        },
+        {
+          "lower": "29/1023",
+          "upper": "29/1023"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_3f7a23bfd761dbfdd932",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 6,
+      "sourceRawSHA256": "fa4d85ffc276fd6286eb4a2f32abee07adaa57d8c3fb49e42689f1d1d0855206",
+      "patchSha256": "0548c68b6bb444d6fedc11caf568dffcb7d3314965a871ebaf1efddc40477779",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "-9",
+          "upper": "-9"
+        },
+        {
+          "lower": "-999",
+          "upper": "-999"
+        },
+        {
+          "lower": "-10",
+          "upper": "-10"
+        },
+        {
+          "lower": "-1000",
+          "upper": "-1000"
+        },
+        {
+          "lower": "-990",
+          "upper": "-990"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_43de7e8ecec2a773a07b",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 5,
+      "sourceRawSHA256": "e19f92a92f103148adb5ef2241a19821ed1a13e876329f7f7b998142b8bbf4c0",
+      "patchSha256": "f4d6a7ee14d69be8c9b62a89a24aa173e1cc33663c40ebf3c62d2bd700600630",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "8/9",
+          "upper": "8/9"
+        },
+        {
+          "lower": "1/2",
+          "upper": "1/2"
+        },
+        {
+          "lower": "-1/9",
+          "upper": "-1/9"
+        },
+        {
+          "lower": "-1/2",
+          "upper": "-1/2"
+        },
+        {
+          "lower": "-7/18",
+          "upper": "-7/18"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_52ff4d63f64a16833ec1",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 2,
+      "sourceRawSHA256": "1a9bb88b9a701b001e7e9c89cfd4301d930258bc46f096e8e233b205a715916a",
+      "patchSha256": "d94a3dbf17bd33cc7200dd6e64e7341413d183db3e12a730d59934c53701036c",
+      "independentAnswer": "Rational(1, 7)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/14",
+          "upper": "1/14"
+        },
+        {
+          "lower": "-1/7",
+          "upper": "-1/7"
+        },
+        {
+          "lower": "-1/42",
+          "upper": "-1/42"
+        },
+        {
+          "lower": "-3/14",
+          "upper": "-3/14"
+        },
+        {
+          "lower": "-2/21",
+          "upper": "-2/21"
+        },
+        {
+          "lower": "5/42",
+          "upper": "5/42"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_531deb5467b1194b281c",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 3,
+      "sourceRawSHA256": "60f598316a6256f74dfb77ee178e9327e967c36f93d2d747cea72d226db7ff27",
+      "patchSha256": "815caa9d277151eeeef00363e1d92a966bd2c67e82fbc470ddf585208b376d2a",
+      "independentAnswer": "Rational(1, 98)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "15/6272",
+          "upper": "15/6272"
+        },
+        {
+          "lower": "16/3969",
+          "upper": "16/3969"
+        },
+        {
+          "lower": "-1/98",
+          "upper": "-1/98"
+        },
+        {
+          "lower": "17/10368",
+          "upper": "17/10368"
+        },
+        {
+          "lower": "-79/6272",
+          "upper": "-79/6272"
+        },
+        {
+          "lower": "-113/7938",
+          "upper": "-113/7938"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_586b4b86f67504602622",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 4,
+      "sourceRawSHA256": "0f7a335eaa32275ffb2e7c037bfd3c3a5a0764c982f783b1f0669047cb939cdf",
+      "patchSha256": "d6230dcd8f3c636c1c6faf0ea87aa771c6844f144640dd8f5914b0fbd0cd4813",
+      "independentAnswer": "Rational(2, 255)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-14/255",
+          "upper": "-14/255"
+        },
+        {
+          "lower": "-2/255",
+          "upper": "-2/255"
+        },
+        {
+          "lower": "496/255",
+          "upper": "496/255"
+        },
+        {
+          "lower": "508/255",
+          "upper": "508/255"
+        },
+        {
+          "lower": "4/85",
+          "upper": "4/85"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_5895dd68aa8998ee472e",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 6,
+      "sourceRawSHA256": "09118fc684c3e15f61c413129c221b7dfb27b4ba74a7c8ee157d99561534a5b1",
+      "patchSha256": "f52aac23789482f076640336a050c640d9e59c018fcf3e692e88a174e377887d",
+      "independentAnswer": "Mul(Rational(1, 20), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "3978873577297383394222094084312859050861491/500000000000000000000000000000000000000000000",
+          "upper": "7957747154594766788444188168625718101722983/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-3183098861837906715377675267450287240689193/200000000000000000000000000000000000000000000",
+          "upper": "-3978873577297383394222094084312859050861491/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-71619724391352901095997693517631462915506841/500000000000000000000000000000000000000000000",
+          "upper": "-1790493109783822527399942337940786572887671/12500000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-23873241463784300365332564505877154305168947/1000000000000000000000000000000000000000000000",
+          "upper": "-11936620731892150182666282252938577152584473/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-18899649492162571122554946900486080491592083/125000000000000000000000000000000000000000000",
+          "upper": "-151197195937300568980439575203888643932736663/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-127323954473516268615107010698011489627567717/1000000000000000000000000000000000000000000000",
+          "upper": "-31830988618379067153776752674502872406891929/250000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_5e74b8c667aaf3aec834",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 8,
+      "sourceRawSHA256": "5a077438336bcca294845481c7fcaa5a7bd97a4740de0d43c99a9b149a970b31",
+      "patchSha256": "31166934147f4dcb8943d5f4265a3f2e265a273957aab275d9523e0241d1495d",
+      "independentAnswer": "Rational(1, 8173092077568)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/8916100448256",
+          "upper": "-1/8916100448256"
+        },
+        {
+          "lower": "-1/743008370688",
+          "upper": "-1/743008370688"
+        },
+        {
+          "lower": "-13/743008370688",
+          "upper": "-13/743008370688"
+        },
+        {
+          "lower": "-11/8916100448256",
+          "upper": "-11/8916100448256"
+        },
+        {
+          "lower": "-155/8916100448256",
+          "upper": "-155/8916100448256"
+        },
+        {
+          "lower": "-1/61917364224",
+          "upper": "-1/61917364224"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_617e8db935a3d0e80e42",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 0,
+      "sourceRawSHA256": "ab85cd47761a661b3275a2a81e88860a2070c43e2198abdda1052ef6220313bf",
+      "patchSha256": "521f78efa70a226df880ec02006b4c2bf14490cbb7263a1229c4429325c20564",
+      "independentAnswer": "Rational(1, 4)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/12",
+          "upper": "-1/12"
+        },
+        {
+          "lower": "-1/20",
+          "upper": "-1/20"
+        },
+        {
+          "lower": "-15/4",
+          "upper": "-15/4"
+        },
+        {
+          "lower": "1/30",
+          "upper": "1/30"
+        },
+        {
+          "lower": "-11/3",
+          "upper": "-11/3"
+        },
+        {
+          "lower": "-37/10",
+          "upper": "-37/10"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_64ddf23b2376fafbe51f",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 2,
+      "sourceRawSHA256": "20730be5ce528bbd0fe2a406cb9c6517feeb806a9ea414380525dc46284bd8d2",
+      "patchSha256": "481849de1c3e39863c16b6439b95bb704fb35c467f1af6e43d3228dc39ecd13a",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "-1",
+          "upper": "-1"
+        },
+        {
+          "lower": "-35",
+          "upper": "-35"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-36",
+          "upper": "-36"
+        },
+        {
+          "lower": "-34",
+          "upper": "-34"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_65b4a925dee8572f0075",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 9,
+      "sourceRawSHA256": "cee634b1ff742b9c3185a9bda1528401191e56d92f69238bffd5ea3dc939a9da",
+      "patchSha256": "e0f2864ada203ec7eb0814f0e59d6507f4297cbde06ea30a325c7b65d39c2977",
+      "independentAnswer": "Rational(1, 279577021469772)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/3634501279107036",
+          "upper": "1/3634501279107036"
+        },
+        {
+          "lower": "1/302875106592253",
+          "upper": "1/302875106592253"
+        },
+        {
+          "lower": "14/3937376385699289",
+          "upper": "14/3937376385699289"
+        },
+        {
+          "lower": "11/3634501279107036",
+          "upper": "11/3634501279107036"
+        },
+        {
+          "lower": "155/47248516628391468",
+          "upper": "155/47248516628391468"
+        },
+        {
+          "lower": "1/3937376385699289",
+          "upper": "1/3937376385699289"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_67af98f2c9d1009a0822",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 7,
+      "sourceRawSHA256": "ddd58b553dd52453ed42272f17f6eca42ccec309d7b3c7d4225b32377c6cbf8a",
+      "patchSha256": "827c67295a31e2482106aa881a7978097aa93a711b1e4f62ec8af5c261cecb89",
+      "independentAnswer": "Rational(1, 259374246010)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/285311670611",
+          "upper": "1/285311670611"
+        },
+        {
+          "lower": "12/3138428376721",
+          "upper": "12/3138428376721"
+        },
+        {
+          "lower": "-12/25937424601",
+          "upper": "-12/25937424601"
+        },
+        {
+          "lower": "1/3138428376721",
+          "upper": "1/3138428376721"
+        },
+        {
+          "lower": "-133/285311670611",
+          "upper": "-133/285311670611"
+        },
+        {
+          "lower": "-1464/3138428376721",
+          "upper": "-1464/3138428376721"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_67ec1a605863cb42fffb",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 0,
+      "sourceRawSHA256": "af81cfb54ca4ab000c55016f8c45d88d69923c20a256727e6c7f1ad978535eb3",
+      "patchSha256": "63b531f836c6061c56391dcc90d80f97687c46feb1cd54d52f3c93e6e671f63c",
+      "independentAnswer": "Rational(1, 40)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/40",
+          "upper": "-1/40"
+        },
+        {
+          "lower": "-1/60",
+          "upper": "-1/60"
+        },
+        {
+          "lower": "-1/120",
+          "upper": "-1/120"
+        },
+        {
+          "lower": "1/120",
+          "upper": "1/120"
+        },
+        {
+          "lower": "1/60",
+          "upper": "1/60"
+        },
+        {
+          "lower": "1/120",
+          "upper": "1/120"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_684e779889d890bf9971",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 5,
+      "sourceRawSHA256": "8a16b26ee794db7731bafd7046189cb23718fa033d3097167277afea97ae5cdc",
+      "patchSha256": "ebe8f0abd732bc7eab692833432ad9c5ecd57a646f553449356bf014c193961c",
+      "independentAnswer": "Rational(2, 511)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "4/262143",
+          "upper": "4/262143"
+        },
+        {
+          "lower": "1/511",
+          "upper": "1/511"
+        },
+        {
+          "lower": "1/256",
+          "upper": "1/256"
+        },
+        {
+          "lower": "509/262143",
+          "upper": "509/262143"
+        },
+        {
+          "lower": "261119/67108608",
+          "upper": "261119/67108608"
+        },
+        {
+          "lower": "255/130816",
+          "upper": "255/130816"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_6ba0a19b64bdba7c8e94",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 1,
+      "sourceRawSHA256": "7ef068ff5cdd9baf53303d489c612fb926b3524914650f613511a543f4f8b0bc",
+      "patchSha256": "2c24e18d32c5bbed407ad8c65a6921656accb438ac350b4759069f45ab1a3232",
+      "independentAnswer": "Rational(1, 2500)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/3125",
+          "upper": "1/3125"
+        },
+        {
+          "lower": "6/15625",
+          "upper": "6/15625"
+        },
+        {
+          "lower": "1/12500",
+          "upper": "1/12500"
+        },
+        {
+          "lower": "1/15625",
+          "upper": "1/15625"
+        },
+        {
+          "lower": "-3/12500",
+          "upper": "-3/12500"
+        },
+        {
+          "lower": "-19/62500",
+          "upper": "-19/62500"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_6f489c8fe82f276b35e2",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 1,
+      "sourceRawSHA256": "66bc067dfca42eb4066269580ba862d5ec03840eb38c7edb17a7d9cf815b7377",
+      "patchSha256": "b7df4d4531126c8f4fecd6b73b1998c9e69d7b39155bcd598f4a65fa14135b38",
+      "independentAnswer": "Rational(1, 50)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "12/1225",
+          "upper": "12/1225"
+        },
+        {
+          "lower": "13/750",
+          "upper": "13/750"
+        },
+        {
+          "lower": "11/1800",
+          "upper": "11/1800"
+        },
+        {
+          "lower": "277/36750",
+          "upper": "277/36750"
+        },
+        {
+          "lower": "-13/3528",
+          "upper": "-13/3528"
+        },
+        {
+          "lower": "-101/9000",
+          "upper": "-101/9000"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_743b112d5d78126ec87b",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 3,
+      "sourceRawSHA256": "69ac242d6df15b4bad451693e0431f4b3dd99c9e6533c9d1a95a8637434af19b",
+      "patchSha256": "cca54a125f930879238c28c8d2fdb0cd0589d8110c5c7a842b5a35e40fb4a6a8",
+      "independentAnswer": "Rational(1, 8)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/72",
+          "upper": "1/72"
+        },
+        {
+          "lower": "1/40",
+          "upper": "1/40"
+        },
+        {
+          "lower": "-1/56",
+          "upper": "-1/56"
+        },
+        {
+          "lower": "1/90",
+          "upper": "1/90"
+        },
+        {
+          "lower": "-2/63",
+          "upper": "-2/63"
+        },
+        {
+          "lower": "-3/70",
+          "upper": "-3/70"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_750b5cf6c9d0c64bc044",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 4,
+      "sourceRawSHA256": "82f348605c15826f8da61b1377642a17a05ce66f50bf6710bc8e3ae1f66bbc33",
+      "patchSha256": "75b3e14c430b58624404d80b43b73699847592b2032dab1250ac7f65b66f043b",
+      "independentAnswer": "Rational(1, 128)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-15/6272",
+          "upper": "-15/6272"
+        },
+        {
+          "lower": "-7/1152",
+          "upper": "-7/1152"
+        },
+        {
+          "lower": "-1/128",
+          "upper": "-1/128"
+        },
+        {
+          "lower": "-13/3528",
+          "upper": "-13/3528"
+        },
+        {
+          "lower": "-17/3136",
+          "upper": "-17/3136"
+        },
+        {
+          "lower": "-1/576",
+          "upper": "-1/576"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_769725f128f01bb0fcc4",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 3,
+      "sourceRawSHA256": "7c953a960224d711ca8f4e5bd0d13dee3d9ec2a8a71689a985f481e8c61aabb0",
+      "patchSha256": "705a3c3e59a890a37520c08fbc5f1660cdee02ad821bbfbf39a68fd13cf840d0",
+      "independentAnswer": "Rational(2, 127)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/127",
+          "upper": "1/127"
+        },
+        {
+          "lower": "1/64",
+          "upper": "1/64"
+        },
+        {
+          "lower": "-2/127",
+          "upper": "-2/127"
+        },
+        {
+          "lower": "63/8128",
+          "upper": "63/8128"
+        },
+        {
+          "lower": "-3/127",
+          "upper": "-3/127"
+        },
+        {
+          "lower": "-255/8128",
+          "upper": "-255/8128"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7928b3ba4b4f75840a07",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 7,
+      "sourceRawSHA256": "f13663ed36f6bea245fa5f732b356c36938a2282c21317d12735d4b7bdd9fc2f",
+      "patchSha256": "112de9205c1b6e3a9b54d6bfb6d7eba95f9794677c8a4427122c5e3d073e699a",
+      "independentAnswer": "Rational(1, 12)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/84",
+          "upper": "1/84"
+        },
+        {
+          "lower": "1/24",
+          "upper": "1/24"
+        },
+        {
+          "lower": "-1/60",
+          "upper": "-1/60"
+        },
+        {
+          "lower": "5/168",
+          "upper": "5/168"
+        },
+        {
+          "lower": "-1/35",
+          "upper": "-1/35"
+        },
+        {
+          "lower": "-7/120",
+          "upper": "-7/120"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7e6a64d478c555f12b0b",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 1,
+      "sourceRawSHA256": "18f671809ff9e6ce0507d418ba6cacae42b860d206c37fbfda85c160e3499c74",
+      "patchSha256": "24cbd3787e6e6c314abc2412d1ac2388215bcc921ae42e37dbc0d274584e4266",
+      "independentAnswer": "Rational(1, 5)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "2/35",
+          "upper": "2/35"
+        },
+        {
+          "lower": "1/6",
+          "upper": "1/6"
+        },
+        {
+          "lower": "1/30",
+          "upper": "1/30"
+        },
+        {
+          "lower": "23/210",
+          "upper": "23/210"
+        },
+        {
+          "lower": "-1/42",
+          "upper": "-1/42"
+        },
+        {
+          "lower": "-2/15",
+          "upper": "-2/15"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7f41333dc68733fd517b",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 6,
+      "sourceRawSHA256": "1e813f41b4fd75d324e925349915c1ae4d9edb6478c5e1ab5d1974780a7f324e",
+      "patchSha256": "a9507466c092220a17d736faab957bf0869e6c41c99a09bf5dffd4e4fda44454",
+      "independentAnswer": "Rational(2, 1023)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/1023",
+          "upper": "1/1023"
+        },
+        {
+          "lower": "-2/1023",
+          "upper": "-2/1023"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-1/341",
+          "upper": "-1/341"
+        },
+        {
+          "lower": "-2047/1023",
+          "upper": "-2047/1023"
+        },
+        {
+          "lower": "-2044/1023",
+          "upper": "-2044/1023"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_7fe732e87e54ad6a4bd1",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 5,
+      "sourceRawSHA256": "d1bc3ed516e780e2027dcdab2f8ce6ecf3c81ab99421b00740d851fdeff05e67",
+      "patchSha256": "fda8ee41c22328eaf46956119c03d2a5af69165ca73a7b183c3290999bdaa506",
+      "independentAnswer": "Mul(Rational(1, 18), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "8732781513958591811735734615775822333852381/500000000000000000000000000000000000000000000",
+          "upper": "17465563027917183623471469231551644667704763/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "1768388256576614841876486259694604022605107/200000000000000000000000000000000000000000000",
+          "upper": "17269416568131004315200061129830117408253/1953125000000000000000000000000000000000000"
+        },
+        {
+          "lower": "3143801345025093052224864461679296040186857/200000000000000000000000000000000000000000000",
+          "upper": "15719006725125465261124322308396480200934287/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-8623621745034109414089037933078624554679227/1000000000000000000000000000000000000000000000",
+          "upper": "-4311810872517054707044518966539312277339613/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-1746556302791718362347146923155164466770477/1000000000000000000000000000000000000000000000",
+          "upper": "-436639075697929590586786730788791116692619/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "5501652353793912841393512807938768070327/800000000000000000000000000000000000000000",
+          "upper": "6877065442242391051741891009923460087908751/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_8363c5762d4f9b9d319a",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 9,
+      "sourceRawSHA256": "10940ba084d0e65bbb212622b1f7f8a3e241f864a6063d70678f63035611e17a",
+      "patchSha256": "25ddb65042b69e60a9770cccea5c70031745e394e5b13c8b36b908f798e1e65b",
+      "independentAnswer": "Rational(1, 13)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/182",
+          "upper": "1/182"
+        },
+        {
+          "lower": "2/195",
+          "upper": "2/195"
+        },
+        {
+          "lower": "1/14",
+          "upper": "1/14"
+        },
+        {
+          "lower": "1/210",
+          "upper": "1/210"
+        },
+        {
+          "lower": "6/91",
+          "upper": "6/91"
+        },
+        {
+          "lower": "167/2730",
+          "upper": "167/2730"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_8588f4cc573333ebed48",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 6,
+      "sourceRawSHA256": "d560372fff74fcd47c0a36432c58961f961cb931eb4f2309cb9b1e466d77c51c",
+      "patchSha256": "0b8638e3569be80bbfb75f3bb3776d58d9b3c62084015079ffe137a4ca77ec94",
+      "independentAnswer": "Rational(1, 10)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/110",
+          "upper": "1/110"
+        },
+        {
+          "lower": "-1/90",
+          "upper": "-1/90"
+        },
+        {
+          "lower": "-1/110",
+          "upper": "-1/110"
+        },
+        {
+          "lower": "-2/99",
+          "upper": "-2/99"
+        },
+        {
+          "lower": "-1/55",
+          "upper": "-1/55"
+        },
+        {
+          "lower": "1/495",
+          "upper": "1/495"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_89c7def864752edfa372",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 0,
+      "sourceRawSHA256": "98d0f7439ebd4080b6d9f8b9da23a32fedc819126d0bf2fc12cecde0537c7619",
+      "patchSha256": "2a4f30389851048b769297887a4472ce1ca164a3220076fa7915788b64a6816a",
+      "independentAnswer": "Mul(Rational(1, 8), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-155424749113179038836800550168471056674277/3906250000000000000000000000000000000000000",
+          "upper": "-39788735772973833942220940843128590508614911/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-23873241463784300365332564505877154305168947/200000000000000000000000000000000000000000000",
+          "upper": "-59683103659460750913331411264692885762922367/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-596831036594607509133314112646928857629223673/1000000000000000000000000000000000000000000000",
+          "upper": "-59683103659460750913331411264692885762922367/100000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-79577471545947667884441881686257181017229823/1000000000000000000000000000000000000000000000",
+          "upper": "-39788735772973833942220940843128590508614911/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-557042300821633675191093171803800267120608761/1000000000000000000000000000000000000000000000",
+          "upper": "-557042300821633675191093171803800267120608759/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-238732414637843003653325645058771543051689469/500000000000000000000000000000000000000000000",
+          "upper": "-59683103659460750913331411264692885762922367/125000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_965d1384bbcd4cd120c1",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 7,
+      "sourceRawSHA256": "a6947bbc68ac2da07f66e97fab6675cb6c7a764c7480dfbc85553f25c98ba325",
+      "patchSha256": "fc5af86ddce0b180c80b843a9c8daabda7259a6e27b0d903a255ad1a5ad24c05",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "1/2",
+          "upper": "1/2"
+        },
+        {
+          "lower": "-119/2",
+          "upper": "-119/2"
+        },
+        {
+          "lower": "-1/2",
+          "upper": "-1/2"
+        },
+        {
+          "lower": "-121/2",
+          "upper": "-121/2"
+        },
+        {
+          "lower": "-60",
+          "upper": "-60"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_9883b5338175c4905081",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 2,
+      "sourceRawSHA256": "52269a0083b6d77ff5f2230ef6a56e3b03cb2905154e08bf0b3a20cc62a55879",
+      "patchSha256": "c65ec05e8dcd1e9fcc4ff9e91318645411a326cc282657a4f316c2c0fc2a3da6",
+      "independentAnswer": "Rational(1, 6)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/7",
+          "upper": "1/7"
+        },
+        {
+          "lower": "-35/6",
+          "upper": "-35/6"
+        },
+        {
+          "lower": "-1/30",
+          "upper": "-1/30"
+        },
+        {
+          "lower": "-251/42",
+          "upper": "-251/42"
+        },
+        {
+          "lower": "-37/210",
+          "upper": "-37/210"
+        },
+        {
+          "lower": "29/5",
+          "upper": "29/5"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_9b464e92af2d058833b6",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 7,
+      "sourceRawSHA256": "77b4df23313c10dab704806423706a829aede841aad49d68dd88564474146e94",
+      "patchSha256": "affb3026288ec0f047c5a94d2b456a683bd9933da594ecff3b953c043791ecff",
+      "independentAnswer": "Rational(1, 242)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "24/20449",
+          "upper": "24/20449"
+        },
+        {
+          "lower": "31/7986",
+          "upper": "31/7986"
+        },
+        {
+          "lower": "-21/24200",
+          "upper": "-21/24200"
+        },
+        {
+          "lower": "3655/1349634",
+          "upper": "3655/1349634"
+        },
+        {
+          "lower": "-69/33800",
+          "upper": "-69/33800"
+        },
+        {
+          "lower": "-3793/798600",
+          "upper": "-3793/798600"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_9c88bc4926365a712fe2",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 0,
+      "sourceRawSHA256": "6823f5e22e91f10a5cd3668bb870820696b7e5880129a12f1b4ca1307f049a67",
+      "patchSha256": "ed52f598598e21ef7840f94bdf4b383d3d3033a4d0ec2f3d6561808c8e2b5ace",
+      "independentAnswer": "Rational(1, 32)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/32",
+          "upper": "-1/32"
+        },
+        {
+          "lower": "-7/288",
+          "upper": "-7/288"
+        },
+        {
+          "lower": "-3/32",
+          "upper": "-3/32"
+        },
+        {
+          "lower": "1/144",
+          "upper": "1/144"
+        },
+        {
+          "lower": "-1/16",
+          "upper": "-1/16"
+        },
+        {
+          "lower": "-5/72",
+          "upper": "-5/72"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_9f761e0667ee4a2393e3",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 5,
+      "sourceRawSHA256": "a590cbf89a00ba8e064e796b78e1e53e1dc5b4560e2a5d0750b66484949b2c21",
+      "patchSha256": "7d18b2d805f65a9b4a2f7cdbab9df27a220bcffb4fa54100b58005e0c63690a1",
+      "independentAnswer": "Rational(1, 344373768)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "10/3486784401",
+          "upper": "10/3486784401"
+        },
+        {
+          "lower": "1/3099363912",
+          "upper": "1/3099363912"
+        },
+        {
+          "lower": "1/387420489",
+          "upper": "1/387420489"
+        },
+        {
+          "lower": "-71/27894275208",
+          "upper": "-71/27894275208"
+        },
+        {
+          "lower": "-1/3486784401",
+          "upper": "-1/3486784401"
+        },
+        {
+          "lower": "7/3099363912",
+          "upper": "7/3099363912"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_9f7cee1ee58c42a42f14",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 2,
+      "sourceRawSHA256": "0e6813ae702172c543419a2004b14850595b76a9a29c88892afe1e8789c057b5",
+      "patchSha256": "a6a3aac5e795c9279c63bcefb29fc228f212aeaab619ca6b7158f03fb0eb928a",
+      "independentAnswer": "Mul(Rational(1, 12), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "6447248852102241611008022821803243832414453/250000000000000000000000000000000000000000000",
+          "upper": "12894497704204483222016045643606487664828907/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-928403834702722791985155286339667111867681269/1000000000000000000000000000000000000000000000",
+          "upper": "-185680766940544558397031057267933422373536253/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-51808249704393012945600183389490352224759/1953125000000000000000000000000000000000000",
+          "upper": "-26525823848649222628147293895419060339076607/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-477096415055565879214593688813440043598669541/500000000000000000000000000000000000000000000",
+          "upper": "-477096415055565879214593688813440043598669539/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-52314819257058189072179385182632035668734421/1000000000000000000000000000000000000000000000",
+          "upper": "-2615740962852909453608969259131601783436721/50000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "901878010854073569357007992444248051528604657/1000000000000000000000000000000000000000000000",
+          "upper": "901878010854073569357007992444248051528604661/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_a682abfaf335f848e8a5",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 6,
+      "sourceRawSHA256": "a63f69c50b26635dca0b46eec6573968b13d118c9ebe4ee2ff2b8028f845b77a",
+      "patchSha256": "6c6fac6bda3b25d3531d2504c65e540f92f9f43298b9cf21d0d493c128a2ee43",
+      "independentAnswer": "Rational(1, 11)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/132",
+          "upper": "1/132"
+        },
+        {
+          "lower": "-1/110",
+          "upper": "-1/110"
+        },
+        {
+          "lower": "-2/99",
+          "upper": "-2/99"
+        },
+        {
+          "lower": "-1/60",
+          "upper": "-1/60"
+        },
+        {
+          "lower": "-1/36",
+          "upper": "-1/36"
+        },
+        {
+          "lower": "-1/90",
+          "upper": "-1/90"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_ade41f4045e368854c21",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 4,
+      "sourceRawSHA256": "d8821a08906c9cf5b74084ed7ae491e98fb01a63e6b88a63b082f44b08386d25",
+      "patchSha256": "ac89fab30aeebd986c34571714a12da8ae2fd56b6e176b99c98fd8aca90033b2",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-7",
+          "upper": "-7"
+        },
+        {
+          "lower": "-63",
+          "upper": "-63"
+        },
+        {
+          "lower": "-511",
+          "upper": "-511"
+        },
+        {
+          "lower": "-56",
+          "upper": "-56"
+        },
+        {
+          "lower": "-504",
+          "upper": "-504"
+        },
+        {
+          "lower": "-448",
+          "upper": "-448"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_ae8d0227c46417acb473",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 0,
+      "sourceRawSHA256": "f9e38c73020f529b8c687c6ad5fc16c47a2c273129b7c98d7c27b4685a7d5f5a",
+      "patchSha256": "e8acf165973b47781e9701fb5680fd38b4b270473fcc8be0fa69336fd08ace07",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1",
+          "upper": "-1"
+        },
+        {
+          "lower": "-3",
+          "upper": "-3"
+        },
+        {
+          "lower": "-7",
+          "upper": "-7"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-6",
+          "upper": "-6"
+        },
+        {
+          "lower": "-4",
+          "upper": "-4"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_b9ecd609f66ed466aa88",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 7,
+      "sourceRawSHA256": "fe80f45c6f296c9550213c8c6f8a6a07ff562dcb2738e2f45ff660da1ee16a6e",
+      "patchSha256": "bb2dddb8b27d3214be08e101d716491f08eaab606aca2c5a61fcc46800b743e4",
+      "independentAnswer": "Rational(1, 264)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "25/24024",
+          "upper": "25/24024"
+        },
+        {
+          "lower": "1/312",
+          "upper": "1/312"
+        },
+        {
+          "lower": "-1/1320",
+          "upper": "-1/1320"
+        },
+        {
+          "lower": "1/462",
+          "upper": "1/462"
+        },
+        {
+          "lower": "-9/5005",
+          "upper": "-9/5005"
+        },
+        {
+          "lower": "-17/4290",
+          "upper": "-17/4290"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_bc39316493cced140fa1",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 8,
+      "sourceRawSHA256": "18e497c6e329e8296d305bb846e41a2ef5eda5d60133bc4ffb6b55468163f945",
+      "patchSha256": "e8b80f5c72eaaba24084494a9dfe528af329b437f05d6f157c69b67f2d7eb310",
+      "independentAnswer": "Rational(1, 12)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-143/12",
+          "upper": "-143/12"
+        },
+        {
+          "lower": "-1/132",
+          "upper": "-1/132"
+        },
+        {
+          "lower": "-1/156",
+          "upper": "-1/156"
+        },
+        {
+          "lower": "131/11",
+          "upper": "131/11"
+        },
+        {
+          "lower": "929/78",
+          "upper": "929/78"
+        },
+        {
+          "lower": "1/858",
+          "upper": "1/858"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_bcff494c058887728440",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 3,
+      "sourceRawSHA256": "f1b7aefa48c3d54cc870a9400dda492ae6bb5f78381b4b1a76e123bb23154d5f",
+      "patchSha256": "07f83e39d0973ecf819c7c508db23bc986602b860f07d91be2cdd3478208be83",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1",
+          "upper": "1"
+        },
+        {
+          "lower": "6/7",
+          "upper": "6/7"
+        },
+        {
+          "lower": "-48",
+          "upper": "-48"
+        },
+        {
+          "lower": "-1/7",
+          "upper": "-1/7"
+        },
+        {
+          "lower": "-49",
+          "upper": "-49"
+        },
+        {
+          "lower": "-342/7",
+          "upper": "-342/7"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_bf48d3a9e60876d03271",
+      "familyId": "m3-series-hard-borderline-exponential-comparison",
+      "index": 8,
+      "sourceRawSHA256": "7e4d711d14febd15a617578dff5ada736a00c73c5bac45e38a1d4d6a354a0725",
+      "patchSha256": "044bfb16eea79cfebfc775226a736f05cdbfc8a06bd399e767d09d7112e72bce",
+      "independentAnswer": "Integer(1)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-71",
+          "upper": "-71"
+        },
+        {
+          "lower": "-143",
+          "upper": "-143"
+        },
+        {
+          "lower": "-1727",
+          "upper": "-1727"
+        },
+        {
+          "lower": "-72",
+          "upper": "-72"
+        },
+        {
+          "lower": "-1656",
+          "upper": "-1656"
+        },
+        {
+          "lower": "-1584",
+          "upper": "-1584"
+        }
+      ],
+      "route": "The logarithm of the non-power factor is m k+k\u00b2 ln(1\u2212m/k)=\u2212m\u00b2/2+O(1/k). Its positive finite limit gives limit comparison with k^(\u2212p), whose exact convergence threshold is1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_bf7ff58ca5382d446d14",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 5,
+      "sourceRawSHA256": "c6e351d1723066a0621430bddc0846a913728c06850d0783016eaba042d13671",
+      "patchSha256": "2d1bab3ceae17f9c71b010905c871654290811d6b7e5a7162eda42c20e771c8e",
+      "independentAnswer": "Rational(1, 9)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/10",
+          "upper": "1/10"
+        },
+        {
+          "lower": "1/90",
+          "upper": "1/90"
+        },
+        {
+          "lower": "2/99",
+          "upper": "2/99"
+        },
+        {
+          "lower": "-4/45",
+          "upper": "-4/45"
+        },
+        {
+          "lower": "-79/990",
+          "upper": "-79/990"
+        },
+        {
+          "lower": "1/110",
+          "upper": "1/110"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_ca4b3f69f591d3a1fa6b",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 2,
+      "sourceRawSHA256": "376e898fcfcf86495c00190f570ab42f6a065219932760112f3a451bc55906bc",
+      "patchSha256": "3d2828d5af652ea6a4fcebff2689c575cac538b849878e0360beafe6954f2b67",
+      "independentAnswer": "Rational(1, 84)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/112",
+          "upper": "1/112"
+        },
+        {
+          "lower": "-1/336",
+          "upper": "-1/336"
+        },
+        {
+          "lower": "-1/84",
+          "upper": "-1/84"
+        },
+        {
+          "lower": "-1/84",
+          "upper": "-1/84"
+        },
+        {
+          "lower": "-1/48",
+          "upper": "-1/48"
+        },
+        {
+          "lower": "-1/112",
+          "upper": "-1/112"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_ca63253c86ef6dd380e6",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 8,
+      "sourceRawSHA256": "f1753e1399fc3438426a856a892f16ea406881acd236a797bbab4b910771eb32",
+      "patchSha256": "fdbc345e9cea7b34b132e07c4ce4c8c3876a2225e1dd1db26d3b74368cce9f7f",
+      "independentAnswer": "Rational(1, 312)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/2184",
+          "upper": "-1/2184"
+        },
+        {
+          "lower": "-1/312",
+          "upper": "-1/312"
+        },
+        {
+          "lower": "-1/1716",
+          "upper": "-1/1716"
+        },
+        {
+          "lower": "-1/364",
+          "upper": "-1/364"
+        },
+        {
+          "lower": "-1/8008",
+          "upper": "-1/8008"
+        },
+        {
+          "lower": "3/1144",
+          "upper": "3/1144"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_d4e409eff383e0079dd9",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 7,
+      "sourceRawSHA256": "0818802a4361f396172e60e844fe918ea29a152959a7b222a9ed789c1690155a",
+      "patchSha256": "5a75dc129a34eb601ddb3e72aace31fabaa65cb925328f5a6235253bb97e9c22",
+      "independentAnswer": "Rational(2, 2047)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/1024",
+          "upper": "1/1024"
+        },
+        {
+          "lower": "4/4194303",
+          "upper": "4/4194303"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-4190207/4294966272",
+          "upper": "-4190207/4294966272"
+        },
+        {
+          "lower": "-2049/1024",
+          "upper": "-2049/1024"
+        },
+        {
+          "lower": "-8388610/4194303",
+          "upper": "-8388610/4194303"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_d6545750f1d54670a252",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 0,
+      "sourceRawSHA256": "d30aceb4bf82dbcd9cddb32181b695a0323bc02577160c1811159db2a17fcded",
+      "patchSha256": "08ca847eea1484a4e6db63af76ae3b8617df313092a32420a4d06529d7f0475a",
+      "independentAnswer": "Rational(1, 5)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/20",
+          "upper": "-1/20"
+        },
+        {
+          "lower": "-2/15",
+          "upper": "-2/15"
+        },
+        {
+          "lower": "-1/5",
+          "upper": "-1/5"
+        },
+        {
+          "lower": "-1/12",
+          "upper": "-1/12"
+        },
+        {
+          "lower": "-3/20",
+          "upper": "-3/20"
+        },
+        {
+          "lower": "-1/15",
+          "upper": "-1/15"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_d67f83ca244a3271e3b9",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 9,
+      "sourceRawSHA256": "d3ca9a2f785c5520d99613b6087e5ecd35e1fef01a82392c555597e79a54c104",
+      "patchSha256": "252575656e9ec3b57d49053f2e6912b3d76632dcbf67c8956a8d5ff9c71d966a",
+      "independentAnswer": "Rational(1, 338)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "27/66248",
+          "upper": "27/66248"
+        },
+        {
+          "lower": "28/38025",
+          "upper": "28/38025"
+        },
+        {
+          "lower": "37/13182",
+          "upper": "37/13182"
+        },
+        {
+          "lower": "29/88200",
+          "upper": "29/88200"
+        },
+        {
+          "lower": "6199/2583672",
+          "upper": "6199/2583672"
+        },
+        {
+          "lower": "2047/988650",
+          "upper": "2047/988650"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_d7dc7c68e7e1cd094a2a",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 7,
+      "sourceRawSHA256": "5aadcf26005d287c1b1aac3a002dee2e33637e6cccf38ec2d0b797218e91e73e",
+      "patchSha256": "e44107d52920f047c1e5f6e546149e0bfc2fef3d5f676502a4beaff69c88cd15",
+      "independentAnswer": "Mul(Rational(1, 22), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1315330108197482113792427796467060843259997/100000000000000000000000000000000000000000000",
+          "upper": "13153301081974821137924277964670608432599971/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "7174527862895356984322333435274877326872711/500000000000000000000000000000000000000000000",
+          "upper": "14349055725790713968644666870549754653745423/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-144686311901723032517167057611376692758599679/1000000000000000000000000000000000000000000000",
+          "upper": "-144686311901723032517167057611376692758599677/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "1195754643815892830720388905879146221145451/1000000000000000000000000000000000000000000000",
+          "upper": "298938660953973207680097226469786555286363/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-157839612983697853655091335576047301191199649/1000000000000000000000000000000000000000000000",
+          "upper": "-4932487905740557926721604236751478162224989/31250000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-159035367627513746485811724481926447412345101/1000000000000000000000000000000000000000000000",
+          "upper": "-1590353676275137464858117244819264474123451/10000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_d9d932059411b98a11ad",
+      "familyId": "m3-series-hard-telescoping-arctan",
+      "index": 2,
+      "sourceRawSHA256": "58c085eee848d8d01e2c49abaefabf7065b130cbeb85365afaf6a44e80296625",
+      "patchSha256": "535176d6306f10347798110714d58a182d565a1db0237f05aef742180870b6cc",
+      "independentAnswer": "Add(Mul(Integer(-1), atan(Integer(6))), Mul(Rational(1, 2), pi))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "163130746313713462364251395302984783029954968671270315798125761939101902173248972264743260834750087768232563794985612725150827510924208742214982634186852997847098513690484041497220133880984639130542365079062407491838296051858192603240950954412775896300061883684698/7015886488589812970522793166021510493791330153512518546094308237208122757241964459663381559091477589450997964783418109214004808948054650576969150901912674249993141785454334433471766288191176298012631013537850617247227449126322373189488063662360988866341908204428625",
+          "upper": "28959834247064346238993679265575143445758027458063255068014514812551376206861170293758789425661297313728486382919512289215485089814345595990588076369048996599875468434312806940745630016152075116375353289377313596989854070066953465948457136200279760967898490931/1245497335094942831621301822478521301933486624092405209674118273958480872934841906561935302519346278972305692310210919441506268231502689610681546405452276628793385724383869063282756308927956026631036927665160769971103754504939175073582116751706193656371721676625"
+        },
+        {
+          "lower": "40793682867865403247773440480072428425216467/1000000000000000000000000000000000000000000000",
+          "upper": "40793682867865403247773440480072428425216469/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "141897054604163922812851617102553083007781757/1000000000000000000000000000000000000000000000",
+          "upper": "221714147819006129395080651722739192199659/1562500000000000000000000000000000000000000"
+        },
+        {
+          "lower": "3508412011480497556299353587736411486922313/200000000000000000000000000000000000000000000",
+          "upper": "1096378753587655486343547996167628589663223/62500000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "23729086358740201469314988912232542403435371/200000000000000000000000000000000000000000000",
+          "upper": "59322715896850503673287472280581356008588429/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "101103371736298519565078176622480654582565289/1000000000000000000000000000000000000000000000",
+          "upper": "25275842934074629891269544155620163645641323/250000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "For positive integer k, atan(k+1)\u2212atan(k) lies in(0,\u03c0/2) and has tangent1/(k\u00b2+k+1). Thus it equals the displayed summand on the principal real branch. Telescoping and atan(k)\u2192\u03c0/2 give the answer; exact alternating bounds distinguish the revised omission choices.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_dc18ff79f5b086aef80f",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 8,
+      "sourceRawSHA256": "44020dd43ffef4606405b12e801de19ebf9224aab9e05a8795213ef4489065fc",
+      "patchSha256": "dd83aa129595a908e14e185da5a13f9fafa330670bab1e847d4696eaf3ed37dd",
+      "independentAnswer": "Rational(1, 13)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-1/13",
+          "upper": "-1/13"
+        },
+        {
+          "lower": "-1/156",
+          "upper": "-1/156"
+        },
+        {
+          "lower": "-2/143",
+          "upper": "-2/143"
+        },
+        {
+          "lower": "11/156",
+          "upper": "11/156"
+        },
+        {
+          "lower": "9/143",
+          "upper": "9/143"
+        },
+        {
+          "lower": "-1/132",
+          "upper": "-1/132"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_dc5ee53dcfb83f871551",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 1,
+      "sourceRawSHA256": "1d89753a7db54a05419ee7300b970d492be7960c8600846dec35dff194a48712",
+      "patchSha256": "529287830421d1264e91dff72b60223c516497362a0a3e6bb7bdcd905855f7ff",
+      "independentAnswer": "Mul(Rational(1, 10), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "25464790894703253723021402139602297925513543/1000000000000000000000000000000000000000000000",
+          "upper": "3183098861837906715377675267450287240689193/125000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "30557749073643904467625682567522757510616251/1000000000000000000000000000000000000000000000",
+          "upper": "30557749073643904467625682567522757510616253/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "3978873577297383394222094084312859050861491/250000000000000000000000000000000000000000000",
+          "upper": "3183098861837906715377675267450287240689193/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "1273239544735162686151070106980114896275677/250000000000000000000000000000000000000000000",
+          "upper": "5092958178940650744604280427920459585102709/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-9549296585513720146133025802350861722067579/1000000000000000000000000000000000000000000000",
+          "upper": "-4774648292756860073066512901175430861033789/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-915140922778398180671081639391957581698143/62500000000000000000000000000000000000000000",
+          "upper": "-14642254764454370890737306230271321307170287/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e02f2ba6aafcfdf1b906",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 1,
+      "sourceRawSHA256": "094b0e2ddd4170e1008604d363ea97f69b3d33a53202b00d7b246c43c4970145",
+      "patchSha256": "cd3318c29eb4edde62d464c00c71046bd2d193f11c7dd629f4665abaab6b8eda",
+      "independentAnswer": "Rational(1, 60)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "13/1680",
+          "upper": "13/1680"
+        },
+        {
+          "lower": "1/84",
+          "upper": "1/84"
+        },
+        {
+          "lower": "1/210",
+          "upper": "1/210"
+        },
+        {
+          "lower": "1/240",
+          "upper": "1/240"
+        },
+        {
+          "lower": "-1/336",
+          "upper": "-1/336"
+        },
+        {
+          "lower": "-1/140",
+          "upper": "-1/140"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e0bb38872e58715b60ef",
+      "familyId": "m3-series-hard-floor-geometric-count",
+      "index": 0,
+      "sourceRawSHA256": "e0a2b760108d8c12ef27887fed69aabe4575094c1c303020dcfb7c31c040f93b",
+      "patchSha256": "ded4d6008adcf2f5fda014289073147f9ad85d1a420f4a425336ca190de2fd52",
+      "independentAnswer": "Rational(2, 15)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-2/15",
+          "upper": "-2/15"
+        },
+        {
+          "lower": "-2",
+          "upper": "-2"
+        },
+        {
+          "lower": "-2/5",
+          "upper": "-2/5"
+        },
+        {
+          "lower": "-28/15",
+          "upper": "-28/15"
+        },
+        {
+          "lower": "-4/15",
+          "upper": "-4/15"
+        },
+        {
+          "lower": "8/5",
+          "upper": "8/5"
+        }
+      ],
+      "route": "Write floor(k/m) as the number of positive multiples of m at most k. Tonelli sums the nonnegative geometric tails, giving2/(2^m\u22121).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e0e6975b054f64a549e5",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 9,
+      "sourceRawSHA256": "cec675c0d9cbb8b377273312d8b3979cc8044aa48b0f43f95a8fc0dedca1bad5",
+      "patchSha256": "b96f30b4b555018bebb0f4c67fb2403fd9887a250af47dca4b5bca55f6a29cd6",
+      "independentAnswer": "Rational(1, 14)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/210",
+          "upper": "1/210"
+        },
+        {
+          "lower": "1/112",
+          "upper": "1/112"
+        },
+        {
+          "lower": "1/28",
+          "upper": "1/28"
+        },
+        {
+          "lower": "1/240",
+          "upper": "1/240"
+        },
+        {
+          "lower": "13/420",
+          "upper": "13/420"
+        },
+        {
+          "lower": "3/112",
+          "upper": "3/112"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e47a60ddfac58992ce30",
+      "familyId": "m3-series-medium-alternating-error",
+      "index": 1,
+      "sourceRawSHA256": "73fb574aaf248d8093149092ef90193110dfe7026dd4396b529f92993d39b6c8",
+      "patchSha256": "f79566deb054c81f469fdd4c6121628f566bb736787791f02d2d518a3207d9a9",
+      "independentAnswer": "Rational(1, 6)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/24",
+          "upper": "1/24"
+        },
+        {
+          "lower": "1/12",
+          "upper": "1/12"
+        },
+        {
+          "lower": "1/42",
+          "upper": "1/42"
+        },
+        {
+          "lower": "1/24",
+          "upper": "1/24"
+        },
+        {
+          "lower": "-1/56",
+          "upper": "-1/56"
+        },
+        {
+          "lower": "-5/84",
+          "upper": "-5/84"
+        }
+      ],
+      "route": "The alternating-series bound is the positive magnitude of the first omitted term, indexed m+1.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e7bbb12fed748d934eb6",
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "index": 4,
+      "sourceRawSHA256": "54169d2006103c106897a0bb2f558b024180765d8dc40621ea636b4660939daa",
+      "patchSha256": "2640f3d554b3a89aebab0c00741d023d1f76cf43dd92e202de497887a9a5efdb",
+      "independentAnswer": "Mul(Rational(1, 16), Pow(pi, Integer(-1)))",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-139260575205408418797773292950950066780152191/1000000000000000000000000000000000000000000000",
+          "upper": "-139260575205408418797773292950950066780152189/1000000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-1253345176848675769179959636558550601021369713/1000000000000000000000000000000000000000000000",
+          "upper": "-313336294212168942294989909139637650255342427/250000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-155424749113179038836800550168471056674277/7812500000000000000000000000000000000000000",
+          "upper": "-3978873577297383394222094084312859050861491/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "-557042300821633675191093171803800267120608761/500000000000000000000000000000000000000000000",
+          "upper": "-557042300821633675191093171803800267120608759/500000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "59683103659460750913331411264692885762922367/500000000000000000000000000000000000000000000",
+          "upper": "23873241463784300365332564505877154305168947/200000000000000000000000000000000000000000000"
+        },
+        {
+          "lower": "308362702240547213052212291534246576441765563/250000000000000000000000000000000000000000000",
+          "upper": "1233450808962188852208849166136986305767062257/1000000000000000000000000000000000000000000000"
+        }
+      ],
+      "route": "Poisson summation for the Gaussian gives \u0398(a)=a^(\u22121/2)\u0398(1/a). Differentiate on a compact positive-a interval, justified by uniform Gaussian tails. With \u0398\u2032=\u2212\u03c0M, rearrangement gives the literal numerator \u0398(a)/(2\u03c0a).",
+      "passed": true
+    },
+    {
+      "problemId": "cn_e8e50a748d4ca2f40d51",
+      "familyId": "m3-series-easy-geometric-tail",
+      "index": 6,
+      "sourceRawSHA256": "1ca03a46b7bce786aa938fffb4384fbf6bbbc02685a46aa89efa8a50edf6e321",
+      "patchSha256": "abf66a576ecafa6e051e4e931dc6c7d5a4596eb440479b08285f18b13bb26ab6",
+      "independentAnswer": "Rational(1, 9000000000)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/90000000000",
+          "upper": "1/90000000000"
+        },
+        {
+          "lower": "-1/1000000000",
+          "upper": "-1/1000000000"
+        },
+        {
+          "lower": "-11/1000000000",
+          "upper": "-11/1000000000"
+        },
+        {
+          "lower": "-91/90000000000",
+          "upper": "-91/90000000000"
+        },
+        {
+          "lower": "-991/90000000000",
+          "upper": "-991/90000000000"
+        },
+        {
+          "lower": "-1/100000000",
+          "upper": "-1/100000000"
+        }
+      ],
+      "route": "Evaluate the geometric tail from its stated first index; the common ratio is1/m.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_f9e6eb8f52a32a4b3b99",
+      "familyId": "m3-series-easy-rational-telescope",
+      "index": 7,
+      "sourceRawSHA256": "54af7d0e636062a82a8cfe945e08b0002a9bd704857b518b9f046f5bd1f84f70",
+      "patchSha256": "69c803c6f13310972356b0c48517491c57f93524bf9f9459f4f0ecbd4bfc9c18",
+      "independentAnswer": "Rational(1, 11)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "2/143",
+          "upper": "2/143"
+        },
+        {
+          "lower": "1/12",
+          "upper": "1/12"
+        },
+        {
+          "lower": "-1/132",
+          "upper": "-1/132"
+        },
+        {
+          "lower": "119/1716",
+          "upper": "119/1716"
+        },
+        {
+          "lower": "-37/1716",
+          "upper": "-37/1716"
+        },
+        {
+          "lower": "-1/11",
+          "upper": "-1/11"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_f9e83198bf808b963586",
+      "familyId": "m3-series-medium-cubic-telescope",
+      "index": 3,
+      "sourceRawSHA256": "a1a3b66176845c119e9e04abf88a9d20730733a4a3947b2685a8b1c185465f14",
+      "patchSha256": "c8bcd031e81efd380c5e14fbaae21a1cc3485c59439a2c2fbb5771ab2e101949",
+      "independentAnswer": "Rational(1, 112)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "1/504",
+          "upper": "1/504"
+        },
+        {
+          "lower": "17/5040",
+          "upper": "17/5040"
+        },
+        {
+          "lower": "-1/112",
+          "upper": "-1/112"
+        },
+        {
+          "lower": "1/720",
+          "upper": "1/720"
+        },
+        {
+          "lower": "-11/1008",
+          "upper": "-11/1008"
+        },
+        {
+          "lower": "-31/2520",
+          "upper": "-31/2520"
+        }
+      ],
+      "route": "Subtract consecutive reciprocal factors; the finite partial sum has an explicit endpoint remainder tending to zero. Cubic factors contribute an additional factor one half.",
+      "passed": true
+    },
+    {
+      "problemId": "cn_ff8aff8007967b64f72c",
+      "familyId": "m3-series-medium-integral-tail-bound",
+      "index": 8,
+      "sourceRawSHA256": "c89517f444d581083656cfc13bcce7cbb7fc61530542638ec5808e0927e56398",
+      "patchSha256": "3922644e50b7f70a0d0f06d9a1880ce3a4b8e230b37e6ae5aad33b6771c3760b",
+      "independentAnswer": "Rational(1, 288)",
+      "correctLiteralChoiceUnchanged": true,
+      "sixLiteralPairEnclosures": [
+        {
+          "lower": "-11/7200",
+          "upper": "-11/7200"
+        },
+        {
+          "lower": "-1/288",
+          "upper": "-1/288"
+        },
+        {
+          "lower": "-23/34848",
+          "upper": "-23/34848"
+        },
+        {
+          "lower": "-7/3600",
+          "upper": "-7/3600"
+        },
+        {
+          "lower": "21/24200",
+          "upper": "21/24200"
+        },
+        {
+          "lower": "49/17424",
+          "upper": "49/17424"
+        }
+      ],
+      "route": "Integrate the displayed decreasing power x^(\u22123) from the stated endpoint to infinity.",
+      "passed": true
+    }
+  ],
+  "scope": "Finite literal statements independently solved; all corrected choices separately parsed and certified distinct by outward rational bounds. The arctangent subtraction identity includes its real range; no heuristic non-equality result is used. Final actual-ID full-family review and admission remain separate. Not a formal proof assistant or human calibration."
+}

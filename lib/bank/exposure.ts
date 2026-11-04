@@ -5,6 +5,7 @@ export type ExposureStage = 'issued' | 'displayed' | 'attempted';
 export interface Exposure {
   roundId: string;
   problemId: string;
+  lineageId?: string;
   familyId: string;
   idea: string;
   structure: string;
@@ -32,7 +33,7 @@ export function recordExposures(history: ExposureHistory, roundId: string, quest
     const key = entries.findIndex(e => e.roundId === roundId && e.problemId === question.problemId);
     if (key >= 0 && rank[entries[key].stage] >= rank[stage]) continue;
     const p = question.pedagogy, legacy = (legacyFeatures as Record<string,{idea:string;structure:string;technique:string;combination:string}>)[question.familyId];
-    const entry: Exposure = { roundId, problemId: question.problemId, familyId: question.familyId,
+    const entry: Exposure = { roundId, problemId: question.problemId, lineageId: question.lineageId || question.problemId, familyId: question.constructionFamilyId || question.familyId,
       idea: p?.relatedIdeaGroupId || legacy?.idea || question.familyId, structure: p?.structuralSignature || legacy?.structure || question.familyId,
       technique: p?.primaryTechnique || legacy?.technique || question.context?.techniqueTags?.[0] || question.familyId,
       combination: p ? [...p.reasoningDemand].sort().join('+') + ':' + p.primaryTechnique : legacy?.combination || question.familyId,

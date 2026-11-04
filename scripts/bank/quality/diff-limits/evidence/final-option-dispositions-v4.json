@@ -1,0 +1,1090 @@
+{
+  "records": 1405,
+  "families": 148,
+  "inputSha256": "7be2a6eafdccb09022af939a41583c9a9923f4193d78780235d2aeba66d39275",
+  "screenSha256": "e3159dfeedda2a06dfd82876df543ab95315a4afb8e71a3e867fd1c9a6caf710",
+  "noReplicatedNonPosition65PercentFlags": true,
+  "limitations": [
+    "New IDs remain deterministic author placeholders; rerun on final canonical IDs before admission.",
+    "No finite predictor suite proves absence of every possible option cue.",
+    "Do not change production answer-position shuffling to fit this audit permutation."
+  ],
+  "priorFailuresPreserved": [
+    "final-option-audit-v1.json",
+    "final-option-audit-v3.json",
+    "stages/13",
+    "lower-v2",
+    "lower-v3"
+  ],
+  "findings": [
+    {
+      "familyId": "m3-differentiation-easy-matching-piecewise-slopes",
+      "findings": [
+        {
+          "rule": "length-min",
+          "trainingAccuracy": 0.21666666666666665,
+          "heldoutAccuracy": 0.6333333333333334,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-easy-minimum-from-sign",
+      "findings": [
+        {
+          "rule": "numeric-max",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "numeric-rank-4",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.8,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-easy-derivative-definition",
+      "findings": [
+        {
+          "rule": "shuffled-position-3",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-medium-quotient-log",
+      "findings": [
+        {
+          "rule": "shuffled-position-4",
+          "trainingAccuracy": 0.6,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-medium-inverse-second",
+      "findings": [
+        {
+          "rule": "shuffled-position-1",
+          "trainingAccuracy": 0.4,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "length-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4333333333333333,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4666666666666667,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-medium-moving-integral-endpoints",
+      "findings": [
+        {
+          "rule": "numeric-rank-2",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.8,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-medium-piecewise-second-match",
+      "findings": [
+        {
+          "rule": "numeric-rank-3",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.8,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "findings": [
+        {
+          "rule": "numeric-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "absolute-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "numeric-rank-4",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "findings": [
+        {
+          "rule": "shuffled-position-4",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 1,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-envelope-derivative",
+      "findings": [
+        {
+          "rule": "shuffled-position-2",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "integerForm-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.8125,
+          "uniquePredictions": 3,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.4583333333333333,
+          "uniquePredictions": 1,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-Gaussian-moment-derivative",
+      "findings": [
+        {
+          "rule": "length-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "absolute-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-easy-radical-rationalization",
+      "findings": [
+        {
+          "rule": "numeric-rank-3",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.8,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.8,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-easy-rational-infinity",
+      "findings": [
+        {
+          "rule": "shuffled-position-4",
+          "trainingAccuracy": 0.2,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-easy-logarithm-standard",
+      "findings": [
+        {
+          "rule": "shuffled-position-3",
+          "trainingAccuracy": 0.6,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-medium-log-power-decay",
+      "findings": [
+        {
+          "rule": "shuffled-position-2",
+          "trainingAccuracy": 0.4,
+          "heldoutAccuracy": 0.8,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "integerForm-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-olympiad-central-binomial-shift",
+      "findings": [
+        {
+          "rule": "length-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-4",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "findings": [
+        {
+          "rule": "shuffled-position-4",
+          "trainingAccuracy": 0.5,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-4",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-global-inverse-curvature",
+      "findings": [
+        {
+          "rule": "shuffled-position-2",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "findings": [
+        {
+          "rule": "shuffled-position-3",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "findings": [
+        {
+          "rule": "shuffled-position-4",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "findings": [
+        {
+          "rule": "length-min",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "q2-repair-m3-limits-easy-rational-sequence-shift",
+      "findings": [
+        {
+          "rule": "length-max",
+          "trainingAccuracy": 0.6,
+          "heldoutAccuracy": 0.7666666666666667,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-eigenvalue-curvature",
+      "findings": [
+        {
+          "rule": "absolute-max",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-implicit-root-trace",
+      "findings": [
+        {
+          "rule": "numeric-rank-2",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "shuffled-position-1",
+          "trainingAccuracy": 0,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-log-derivative-root-count",
+      "findings": [
+        {
+          "rule": "rationalCube-max",
+          "trainingAccuracy": 0.125,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "rationalCube-minority",
+          "trainingAccuracy": 0.125,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "integer-divisible-5",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 2,
+          "expectedTieBrokenAccuracy": 0.625,
+          "uniquePredictions": 2,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 3,
+          "expectedTieBrokenAccuracy": 0.3125,
+          "uniquePredictions": 3,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-lorentzian-derivative-zero-window",
+      "findings": [
+        {
+          "rule": "numeric-min",
+          "trainingAccuracy": 0.3333333333333333,
+          "heldoutAccuracy": 0.6666666666666666,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "absolute-min",
+          "trainingAccuracy": 0.3333333333333333,
+          "heldoutAccuracy": 0.6666666666666666,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "numeric-rank-1",
+          "trainingAccuracy": 0.3333333333333333,
+          "heldoutAccuracy": 0.6666666666666666,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "numeric-rank-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.6666666666666666,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.3333333333333333,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 2
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-commuting-parabolic-jet",
+      "findings": [
+        {
+          "rule": "absolute-max",
+          "trainingAccuracy": 0.5,
+          "heldoutAccuracy": 0.6666666666666666,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.6666666666666666,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 4
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-abel-density-recovery",
+      "findings": [
+        {
+          "rule": "numeric-rank-2",
+          "trainingAccuracy": 0.3333333333333333,
+          "heldoutAccuracy": 0.6666666666666666,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 6,
+          "applicable": 6,
+          "expectedTieBrokenAccuracy": 0.16666666666666666,
+          "uniquePredictions": 6,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-peano-kernel-sharp-error",
+      "findings": [
+        {
+          "rule": "numeric-rank-2",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        },
+        {
+          "rule": "shuffled-position-3",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-dense-corner-series-derivative",
+      "findings": [
+        {
+          "rule": "shuffled-position-3",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "absolute-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-root-moment-extremum",
+      "findings": [
+        {
+          "rule": "shuffled-position-2",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-4",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      }
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-green-kernel-spectrum",
+      "findings": [
+        {
+          "rule": "shuffled-position-1",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "audit-position-only; fresh production shuffle"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-4",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-limits-olympiad-quadratic-gauss-magnitude",
+      "findings": [
+        {
+          "rule": "numeric-rank-2",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.75,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.75,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-limits-olympiad-matrix-commutator-limit",
+      "findings": [
+        {
+          "rule": "length-max",
+          "trainingAccuracy": 0.0625,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    },
+    {
+      "familyId": "q1-limits-hard-singular-riemann-renormalization",
+      "findings": [
+        {
+          "rule": "length-max",
+          "trainingAccuracy": 0.25,
+          "heldoutAccuracy": 0.625,
+          "disposition": "does-not-replicate-across-split; finite options-visible review retained"
+        }
+      ],
+      "selectedUsingTrainingOnly": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      }
+    }
+  ]
+}

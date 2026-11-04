@@ -1,0 +1,758 @@
+{
+  "developmentItems": 64,
+  "heldOutItems": 64,
+  "split": "indices 0..3 development, 4..7 held out, applied before testing; new 8/9 extension is development only and separately labeled",
+  "ruleSelection": "rank fixed question-blind rules by development success; evaluate same rule on held-out items without retuning",
+  "bestDevelopmentRule": {
+    "feature": "numericRank",
+    "mode": "max",
+    "development": {
+      "items": 64,
+      "decided": 64,
+      "correct": 19,
+      "accuracyWhenDecided": 0.296875,
+      "chanceFilledExpectedAccuracy": 0.296875
+    },
+    "heldOut": {
+      "items": 64,
+      "decided": 63,
+      "correct": 15,
+      "accuracyWhenDecided": 0.23809523809523808,
+      "chanceFilledExpectedAccuracy": 0.23828125
+    }
+  },
+  "allRules": [
+    {
+      "feature": "texLength",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 47,
+        "correct": 2,
+        "accuracyWhenDecided": 0.0425531914893617,
+        "chanceFilledExpectedAccuracy": 0.09765625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 47,
+        "correct": 5,
+        "accuracyWhenDecided": 0.10638297872340426,
+        "chanceFilledExpectedAccuracy": 0.14453125
+      }
+    },
+    {
+      "feature": "texLength",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 44,
+        "correct": 1,
+        "accuracyWhenDecided": 0.022727272727272728,
+        "chanceFilledExpectedAccuracy": 0.09375
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 47,
+        "correct": 2,
+        "accuracyWhenDecided": 0.0425531914893617,
+        "chanceFilledExpectedAccuracy": 0.09765625
+      }
+    },
+    {
+      "feature": "fractionCount",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 19,
+        "correct": 1,
+        "accuracyWhenDecided": 0.05263157894736842,
+        "chanceFilledExpectedAccuracy": 0.19140625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 15,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.19140625
+      }
+    },
+    {
+      "feature": "fractionCount",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 24,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.15625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 19,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.17578125
+      }
+    },
+    {
+      "feature": "radicalCount",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2421875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2421875
+      }
+    },
+    {
+      "feature": "radicalCount",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 4,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.234375
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 4,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.234375
+      }
+    },
+    {
+      "feature": "operatorCount",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 18,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.1796875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 17,
+        "correct": 1,
+        "accuracyWhenDecided": 0.058823529411764705,
+        "chanceFilledExpectedAccuracy": 0.19921875
+      }
+    },
+    {
+      "feature": "operatorCount",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 28,
+        "correct": 2,
+        "accuracyWhenDecided": 0.07142857142857142,
+        "chanceFilledExpectedAccuracy": 0.171875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 26,
+        "correct": 1,
+        "accuracyWhenDecided": 0.038461538461538464,
+        "chanceFilledExpectedAccuracy": 0.1640625
+      }
+    },
+    {
+      "feature": "integerTokenCount",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 29,
+        "correct": 1,
+        "accuracyWhenDecided": 0.034482758620689655,
+        "chanceFilledExpectedAccuracy": 0.15234375
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 27,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.14453125
+      }
+    },
+    {
+      "feature": "integerTokenCount",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 31,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.12890625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 27,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.14453125
+      }
+    },
+    {
+      "feature": "largestIntegerToken",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 41,
+        "correct": 2,
+        "accuracyWhenDecided": 0.04878048780487805,
+        "chanceFilledExpectedAccuracy": 0.12109375
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 39,
+        "correct": 2,
+        "accuracyWhenDecided": 0.05128205128205128,
+        "chanceFilledExpectedAccuracy": 0.12890625
+      }
+    },
+    {
+      "feature": "largestIntegerToken",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 39,
+        "correct": 2,
+        "accuracyWhenDecided": 0.05128205128205128,
+        "chanceFilledExpectedAccuracy": 0.12890625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 39,
+        "correct": 1,
+        "accuracyWhenDecided": 0.02564102564102564,
+        "chanceFilledExpectedAccuracy": 0.11328125
+      }
+    },
+    {
+      "feature": "hasPi",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 13,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.19921875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 8,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.21875
+      }
+    },
+    {
+      "feature": "hasPi",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2421875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 3,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.23828125
+      }
+    },
+    {
+      "feature": "hasLn",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2421875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 6,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2265625
+      }
+    },
+    {
+      "feature": "hasLn",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasGamma",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "hasGamma",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "isPlainInteger",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "isPlainInteger",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 6,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2265625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 5,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.23046875
+      }
+    },
+    {
+      "feature": "numericRank",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 64,
+        "correct": 9,
+        "accuracyWhenDecided": 0.140625,
+        "chanceFilledExpectedAccuracy": 0.140625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 63,
+        "correct": 9,
+        "accuracyWhenDecided": 0.14285714285714285,
+        "chanceFilledExpectedAccuracy": 0.14453125
+      }
+    },
+    {
+      "feature": "numericRank",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 64,
+        "correct": 19,
+        "accuracyWhenDecided": 0.296875,
+        "chanceFilledExpectedAccuracy": 0.296875
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 63,
+        "correct": 15,
+        "accuracyWhenDecided": 0.23809523809523808,
+        "chanceFilledExpectedAccuracy": 0.23828125
+      }
+    },
+    {
+      "feature": "numericSign",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 4,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.234375
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 2,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2421875
+      }
+    },
+    {
+      "feature": "numericSign",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "nearInteger",
+      "mode": "min",
+      "development": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 0,
+        "correct": 0,
+        "accuracyWhenDecided": null,
+        "chanceFilledExpectedAccuracy": 0.25
+      }
+    },
+    {
+      "feature": "nearInteger",
+      "mode": "max",
+      "development": {
+        "items": 64,
+        "decided": 6,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.2265625
+      },
+      "heldOut": {
+        "items": 64,
+        "decided": 5,
+        "correct": 0,
+        "accuracyWhenDecided": 0.0,
+        "chanceFilledExpectedAccuracy": 0.23046875
+      }
+    }
+  ],
+  "families": [
+    {
+      "familyId": "m3-series-hard-conditional-block-rearrangement",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-hard-log-integrated-geometric",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-hard-series-beta-integral",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-hard-trig-geometric",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-Fourier-fourth-sine",
+      "instances": 8,
+      "correctNumericRanks": [
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-binary-tangent-telescope",
+      "instances": 8,
+      "correctNumericRanks": [
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-cubic-root-exponential-filter",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        0,
+        3,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-elliptic-central-binomial-square",
+      "instances": 8,
+      "correctNumericRanks": [
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-over-shift",
+      "instances": 8,
+      "correctNumericRanks": [
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        3,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-harmonic-square-generating",
+      "instances": 8,
+      "correctNumericRanks": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-hypergeometric-beta",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-inverse-binomial-arcsine",
+      "instances": 8,
+      "correctNumericRanks": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-lattice-resolvent",
+      "instances": 8,
+      "correctNumericRanks": [
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-log-sine-product",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2,
+        0
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-theta-dual-moment",
+      "instances": 8,
+      "correctNumericRanks": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    },
+    {
+      "familyId": "m3-series-olympiad-totient-Lambert",
+      "instances": 8,
+      "correctNumericRanks": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "perfectOptionOnlyRules": [],
+      "blindDifficultyReview": "separate independent reviewer; these syntax/number heuristics cannot judge a proof"
+    }
+  ],
+  "limitations": [
+    "This is a bounded heuristic screen, not proof that no cue exists.",
+    "Unresolved numeric data are excluded from numeric rules; numerical values are presentation diagnostics only.",
+    "No statement or solution text is used by any heuristic.",
+    "A flagged family must receive authored option repair or be withheld; passing this screen does not establish Olympiad fit."
+  ]
+}

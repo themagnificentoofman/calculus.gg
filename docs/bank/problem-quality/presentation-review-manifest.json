@@ -1,0 +1,49 @@
+{
+  "version": "historical-presentation-review-v2",
+  "status": "reviewed-historical-presentation-only",
+  "baselineCommit": "23825701acf97fdc0be425f350d0dc7030f3eb0b",
+  "baselineManifest": "docs/bank/solution-quality/review-manifest.json",
+  "baselineManifestSha256": "60ed6e6bcf86bef85a31894a6197f18239724d33c83535fcd0247537a5500389",
+  "historicalInventoryReport": "docs/bank/problem-quality/historical-notation-audit.json",
+  "overrides": {
+    "lib/bank/solution-quality.mjs": {
+      "priorSha256": "cb5476f6c98cf305bdca018d84ef3ab845ccd60a3e03a6fdcc00af53f33b7b05",
+      "sha256": "0f0f8d8dbe07a28c8e4ed1575ea74e6b768cfd4cfa434114d1ebfcaf4d9a24ba",
+      "reviewedChange": "Apply canonical notation and hidden-formula checks to statements and choices, reject computer-function names and missing spacing-command backslashes. Complete historical inventory passed the stricter checks. Require braces around multidigit indices/exponents; the new rule exposed two old lp-ball statements, corrected with exact-source guards."
+    },
+    "lib/server/solution-presentation.mjs": {
+      "priorSha256": "0ea218d8d7526380e6e1fff7929891319ed301b72c68cf51e963af736950e97b",
+      "sha256": "8a1dbac33d47beb914f405e32b55228bea617cf55ae8ff89e3718a04f2301ae8",
+      "reviewedChange": "Exact-source-bound statement corrections and reviewed-content lookup; remove the standalone polynomial editorial bypass. The exact polynomial verifier remains a separate mathematical gate. Detect later source-bound clarifications by comparing normalized recorded/current steps even when the format-contract version is unchanged; never mutate the recorded explanation."
+    },
+    "lib/server/solution-reviews/finite.json": {
+      "priorSha256": "bea0389f482fa1fbab1c148ce89b072a47b5b72629e8068419c37a76152a8fe4",
+      "sha256": "2ab83daa91c23507f007cfdc26c0861c3cf27099b5843713983c30c3d898ecd8",
+      "reviewedChange": "24 harmonic statements,138 other statement corrections across18 families,8 binary-tangent multiplication corrections and8 anisotropic plus-negative exponent clarifications; preserve all original identities, hashes, answers and stored snapshots. Eight source-bound accumulation statements explicitly place the function and interval outside prose; exact FTC endpoint answers and all historical values remain unchanged. Original compact JSON format is preserved."
+    },
+    "lib/solution-format.mjs": {
+      "priorSha256": "9bd90f7eaaa5714eeba994ce17f6acfc95a9dfcd93b775f9df924ab7e0ec77ad",
+      "sha256": "b3c9856d73f4d596e3d5a7b3b4f9bb66ebf2be33f28c174c1f8ff2b1d46c78b1",
+      "reviewedChange": "Responsive statement prose extraction while preserving mathematical environments and complete fractions/cases; actual desktop/mobile components inspected with loaded fonts."
+    }
+  },
+  "evidenceFiles": {
+    "components/ProblemStatement.tsx": "87849be15f782672d51c70a69257bfd3551cd5df6aa8a97e87d1cc323f392fc4",
+    "tests/solution-quality.test.mjs": "ee450610707cbe9c753908b4f223963031f3f35e2453a2fc5b0ec3f1a2e10d4a",
+    "tests/solution-format.test.mjs": "5d833ca9a715309c62cbf67f02ae16eb520c626b6af3296c2654de766d41f457",
+    "tests/quality-delta.test.mjs": "e2d59efb39925ac0c099484b7e5e5fe9f424e464e0b10212ae9a83ed91ee8650",
+    "tests/fixtures/bank/harmonic-source-examples.json": "e9adc195eff927ae63c8a4cde5f23a300c74ce844f1cad6aaa5188d99b7bc90b",
+    "tests/fixtures/bank/statement-source-examples.json": "9d69d67e7ddc6ed6c3d53695f959f7bd07027c748f64a7a7a9d8ff6db73d7b51",
+    "tests/fixtures/bank/binary-tangent-source-examples.json": "10979fbaae9fb5c5db643d3177c5a661df1ef2ad281f6b894ec0c50e827b12f8",
+    "docs/bank/problem-quality/historical-notation-audit.json": "06b6dc9ca6bd6f9acf3a2282ed3f7a2653d039cc26fc7ceebff451e9e8684cd5",
+    "docs/bank/problem-quality/binary-tangent-presentation-corrections.json": "d8204b0d30527ca811fb5673457fee6d94161b5af76a0453f1f3c70c5920a050",
+    "docs/bank/problem-quality/statement-formatting-corrections.json": "9a6805e5e65b016e27791885bebe88f1e10449d9965fdf56305cbd2e9b6eb53a",
+    "docs/bank/problem-quality/component-qa.json": "914adfb25c0f61c972b7c77c0583ad1c9a569d77d4594f9083e09699250bdafb",
+    "docs/bank/problem-quality/integration/accumulation-presentation-root-review.json": "ca443f931ad79378c96035fa3373877ca82585981ce9f9133d1547c128a24755",
+    "docs/bank/problem-quality/integration/integration-accumulation-original-presentation-map.json": "151f4151c140c8bca4a8cc86dc2d33f1e3b5f7eb62b0df80d018b9b3b3933ec5",
+    "docs/bank/problem-quality/integration/finite-format-preservation.json": "270008185b0342e42687d02299da59b33734c1760d0b954ba44f15aa5ba13f71"
+  },
+  "mathematicalReview": "Binary tangent identity and limit independently checked in the source-bound correction report. Harmonic definitions and prose/math-boundary changes preserve mathematical meaning. Earlier family proofs remain pinned; new release content requires its own independent admission records.",
+  "validation": "Complete103304-record hash/render/format audit v8 passed408839 unique expressions after eight guarded accumulation presentation corrections. Priorv7 retained unchanged. Other application and component scopes are unchanged; final new-content and production gates remain pending.",
+  "notReleaseApproval": true
+}

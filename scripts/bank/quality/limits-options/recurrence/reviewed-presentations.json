@@ -1,0 +1,44 @@
+{
+  "cn_d9b934f6d9ba1541daff": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-limits-hard-recurrence-limit",
+    "revision": 1,
+    "sourceContentHash": "b7b54beba99356311507250e362631b8771d572240d1fb75add3b02e23498beb",
+    "steps": [
+      "g(u)=\\sqrt{12+u},\\qquad0\\le u\\le4\\ \\Longrightarrow\\ 0\\le g(u)\\le4",
+      "g(u)^2-u^2=12+u-u^2=(4-u)(u+3)\\ge0",
+      "\\textnormal{The nonnegative iterates therefore increase and stay bounded. Let their limit be denoted by the following symbol.}",
+      "\\ell=\\lim_{n\\to\\infty}a_n\\in[0,4],\\qquad\\ell^2-\\ell-12=0",
+      "(\\ell-4)(\\ell+3)=0\\quad\\Longrightarrow\\quad\\ell=4",
+      "4"
+    ]
+  },
+  "cn_c41e5bce2408ce7e4b65": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-limits-hard-recurrence-limit",
+    "revision": 1,
+    "sourceContentHash": "d7958a2736f230ed746cd505ded33f742fb294e2d7b4274468dd39ba6e7fda9e",
+    "steps": [
+      "g(u)=\\sqrt{56+u},\\qquad0\\le u\\le8\\ \\Longrightarrow\\ 0\\le g(u)\\le8",
+      "g(u)^2-u^2=56+u-u^2=(8-u)(u+7)\\ge0",
+      "\\textnormal{The nonnegative iterates therefore increase and stay bounded. Let their limit be denoted by the following symbol.}",
+      "\\ell=\\lim_{n\\to\\infty}a_n\\in[0,8],\\qquad\\ell^2-\\ell-56=0",
+      "(\\ell-8)(\\ell+7)=0\\quad\\Longrightarrow\\quad\\ell=8",
+      "8"
+    ]
+  },
+  "cn_71cb4649f7eeebf35a7c": {
+    "auditId": "coverage-v1",
+    "familyId": "m3-limits-hard-recurrence-limit",
+    "revision": 1,
+    "sourceContentHash": "e00a2b0f1b8a0a7d321e96e5c32c9e7e4777606eafd773b6665fd1e5a6db6677",
+    "steps": [
+      "g(u)=\\sqrt{90+u},\\qquad0\\le u\\le10\\ \\Longrightarrow\\ 0\\le g(u)\\le10",
+      "g(u)^2-u^2=90+u-u^2=(10-u)(u+9)\\ge0",
+      "\\textnormal{The nonnegative iterates therefore increase and stay bounded. Let their limit be denoted by the following symbol.}",
+      "\\ell=\\lim_{n\\to\\infty}a_n\\in[0,10],\\qquad\\ell^2-\\ell-90=0",
+      "(\\ell-10)(\\ell+9)=0\\quad\\Longrightarrow\\quad\\ell=10",
+      "10"
+    ]
+  }
+}

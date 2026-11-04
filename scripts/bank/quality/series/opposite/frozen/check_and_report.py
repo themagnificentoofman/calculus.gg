@@ -1,0 +1,25 @@
+"""Author verification of guarded option-only patches; not independent peer review."""
+from pathlib import Path
+import json,hashlib,collections,itertools,re
+import repairs
+from intervals import enclose,disjoint,dump
+HERE=Path(__file__).resolve().parent
+
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def compact(t):return re.sub(r'\\(?:,|!|;|quad|qquad|left|right)|\s','',t)
+def main():
+ patches=json.loads((HERE/'option-patches.json').read_text());sources=repairs.originals();records=[]
+ for p in patches:
+  r=sources[p['problemId']];assert repairs.verify_patch(p,r);assert p['sourceContentHash']==r['contentHash'] and p['sourceSemanticHash']==r['semanticHash'];correct=next(c for c in r['choices'] if c['choiceId']==r['answerChoiceId']);assert correct==next(c for c in p['choices'] if c['choiceId']==p['answerChoiceId'])
+  slug,A,pool,notes=repairs.make_pool(r);chosen,_=repairs.select(r,A,pool);values=[A]+[v for v,why in chosen];bounds=[enclose(v) for v in values];assert all(disjoint(a,b) for a,b in itertools.combinations(bounds,2));assert all(a[0]>0 for a in bounds) or all(a[1]<0 for a in bounds)
+  literals=[compact(c['math']) for c in p['choices']];literalpairs=[(a,b) for a,b in itertools.combinations(literals,2) if a=='-'+b or b=='-'+a];assert not literalpairs
+  if slug=='binomial-beta-cancellation':assert all(v.is_Rational and v.p==1 for v in values)
+  records.append({'problemId':r['problemId'],'familyId':r['familyId'],'instanceIndex':r['parameters']['instance'],'sourceRawSHA256':repairs.raw_hash(r),'sourceContentHash':r['contentHash'],'sourceSemanticHash':r['semanticHash'],'patchSHA256':repairs.raw_hash(p),'allFourSameCertifiedSign':True,'literalOppositePairs':0,'mathematicalOppositePairs':0,'exactPairwiseCertificates':6,'selectionEvidence':p['selectionEvidence'],'unchangedCorrectChoice':True,'preservesStatementExplanationAndExposureLineage':True})
+ screen=json.loads((HERE/'root-option-screen-v1.json').read_text());dispositions=[]
+ for f,g in screen['families'].items():
+  opposite=[q for q in g['results'] if q['rule'].startswith('opposite-pair-')];assert all(q['training']['applicable']==q['heldout']['applicable']==0 for q in opposite)
+  flags=g['flags'];nonposition=[q for q in flags if not q['rule'].startswith('shuffled-position-')];assert not nonposition
+  dispositions.append({'familyId':f,'oppositeRules':opposite,'flags':flags,'disposition':'No literal or mathematical opposite pair; no non-position form flag. Any shown position result uses a fixed diagnostic shuffle and does not replicate the training-selected rule. Production fresh shared shuffling remains parent-owned.','actualNumericRanks':dict(collections.Counter(r['selectionEvidence']['correctNumericRankZeroBased'] for r in records if r['familyId']==f))})
+ report={'status':'author-verified-awaiting-independent-peer-review-and-immutable-admission','records':records,'counts':{'records':len(records),'families':len(dispositions),'exactChoicePairCertificates':sum(r['exactPairwiseCertificates'] for r in records),'literalOppositePairs':0,'mathematicalOppositePairs':0,'changedStatements':0,'changedCorrectAnswers':0,'changedSolutions':0,'newIndependentIdeas':0},'familyDispositions':dispositions,'sourceFilesUnchanged':True,'intervalCertificateMethods':['Rational operations round outward at every step; constants have explicit series remainder bounds.','Cosine uses Taylor recurrence plus the Lagrange remainder; dilogarithm uses its positive interior series and geometric tail.','Positive Gamma values use recurrence and a convergent log-Gamma expansion with a geometric remainder; Euler constant is bracketed using harmonic sum/integral comparison. The expansion is equivalent to NIST DLMF5.7.E3 on the actual rational interval.','Equality to the preserved correct display is checked literally after harmless whitespace/natural-log normalization. For the two finite binomial families, independent finite sums additionally check the answer. Other original analytic proofs remain unchanged and were previously source-bound reviewed.'],'mathematicalReference':{'url':'https://dlmf.nist.gov/5.7.E3','role':'reference-only theorem background for interval arithmetic; no problem wording adapted','accessDate':'2026-11-04'},'firstCheckerIssue':'An initial internal cosine enclosure used separately rounded factorial coefficients, producing overly wide intervals. It was rejected before any patch artifact was emitted and replaced by a stable Taylor recurrence with the same rigorous remainder. This was a checker issue, not a source mathematical error.','guardAPI':'supports(original); build_patch(original); verify_patch(patch, original). Inputs must be the exact full canonical source record. The parent assigns final revision IDs/content hashes after independent review.','humanReviewed':False,'independentPeerReviewed':False,'formalProof':False,'productionImported':0}
+ (HERE/'author-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(report['counts'])
+if __name__=='__main__':main()

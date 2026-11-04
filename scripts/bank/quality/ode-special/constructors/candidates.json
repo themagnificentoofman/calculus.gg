@@ -1,0 +1,3603 @@
+[
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_4da20b3d829f607b",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_4da20b3d829f607b",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_78c68c8c740b3d1c",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "\\frac{J^{2}_{1}\\left(\\alpha\\right) \\alpha^{2}}{2}",
+        "misconception": "Omit the root scaling Jacobian"
+      },
+      {
+        "choiceId": "ch_5b3184cf85338ddf",
+        "expression": "Mul(Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "J^{2}_{1}\\left(\\alpha\\right) \\alpha^{2}",
+        "misconception": "Omit both the root scaling Jacobian and the boundary factor one half"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{1}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "d07d7bb8c217d65e001ef6395d7d64712a578b2846edac1e818d314b5d530b51",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 0,
+    "parameters": {
+      "nu": 0,
+      "rootOrdinal": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_0504b12ebbd7c90da6ae",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{0}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "98a86005c6ae618d2fa21128e78c688cbeeb541568389da5922b979f12fb2eb7",
+      "problemId": "cn_0504b12ebbd7c90da6ae",
+      "rawConstructorHash": "3a8e9c15b56c891793cf6919067ef0572605d10a3252bc8dc6b54d810e82aba2",
+      "revision": 1,
+      "semanticHash": "c9660d4bf19c935f1b0f0c5b460395abfdf621d2f9508d1cd5d12a1cba5233b5",
+      "sourceContentHash": "87a7c146b652e34404b949be1ed0b6a40019adb81c356f1d8f6296e4e3e5a40b"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{0}.\\textnormal{Evaluate }\\int_0^1r\\,J_{0}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-7, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(9, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(3, 2), Symbol('u', positive=True)), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5b3184cf85338ddf",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(3))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_4da20b3d829f607b",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_e1b1db02fca799bd",
+        "expression": "Integer(0)",
+        "math": "0",
+        "misconception": "Use the vanishing root value rather than the nonzero derivative in the boundary term"
+      },
+      {
+        "choiceId": "ch_4da20b3d829f607b",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_78c68c8c740b3d1c",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "\\frac{J^{2}_{1}\\left(\\alpha\\right) \\alpha^{2}}{2}",
+        "misconception": "Omit the root scaling Jacobian"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{1}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "d5abd1741c887c75e3008ec7d99ea1680dc5e684392dbdd2accb8e1b3961b0e8",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 1,
+    "parameters": {
+      "nu": 0,
+      "rootOrdinal": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_403fbfc5539f503074e1",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{0}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{1}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "ee3201dcb635f39962bf7db7a9e44709e79f873945dc42e4b72e4f7e659d0519",
+      "problemId": "cn_403fbfc5539f503074e1",
+      "rawConstructorHash": "63419c14c6a2e50c74c24134f4325556cce68f50216dc1428dcee650fedd3938",
+      "revision": 1,
+      "semanticHash": "657c891fb05e13b397b9d9a30e6040e981002227bba65c733c86fc4f2f8dfa15",
+      "sourceContentHash": "69b42415fdce222e70f0eb2dad5f39c6e85c33586bcc5dcb9836315dbd37d460"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{0}.\\textnormal{Evaluate }\\int_0^1r\\,J_{0}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_e1b1db02fca799bd",
+          "ch_4da20b3d829f607b"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e1b1db02fca799bd",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e1b1db02fca799bd",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4da20b3d829f607b",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_4b55ce43a33c73d3",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      },
+      {
+        "choiceId": "ch_bc99290ac01c8d09",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(-2)))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2 \\alpha^{2}}",
+        "misconception": "Divide by the root scaling Jacobian twice"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{2}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      },
+      {
+        "choiceId": "ch_4b55ce43a33c73d3",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "85aeb34b2a0ce53a6cf536b2168ef4df3dedf1e3f148a8fb997d6689511209ba",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 2,
+    "parameters": {
+      "nu": 1,
+      "rootOrdinal": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_0f506ef25ccd0f64e434",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{1}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "fab4bedb104b13367694adcba7d67298fb36f9fb0ebc9ee6a28cedc9f54ffb65",
+      "problemId": "cn_0f506ef25ccd0f64e434",
+      "rawConstructorHash": "c6cc19bd86fe75c6da8ec8ac8852f6fbf72ba24641f06fe3f1780283b82274e8",
+      "revision": 1,
+      "semanticHash": "666f7d39c3b2cc4036dd4fbd47c2086475a42fdfbae39ff55279b699585ed27e",
+      "sourceContentHash": "b95370d41957fee3351f3188e481e3e8bbeb6c300ce2fd34dac88da7903e4d1d"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{1}.\\textnormal{Evaluate }\\int_0^1r\\,J_{1}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_bc99290ac01c8d09"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(2))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-3)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(5)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Integer(2), Symbol('u', positive=True)), Integer(-7))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(9))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_4b55ce43a33c73d3",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_bc99290ac01c8d09",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(-2)))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2 \\alpha^{2}}",
+        "misconception": "Divide by the root scaling Jacobian twice"
+      },
+      {
+        "choiceId": "ch_4b55ce43a33c73d3",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_e1b1db02fca799bd",
+        "expression": "Integer(0)",
+        "math": "0",
+        "misconception": "Use the vanishing root value rather than the nonzero derivative in the boundary term"
+      },
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "9a087542bc61f7027ec9b39b3025cf4b2003a2efe086827d32e70a00486d6fcf",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 3,
+    "parameters": {
+      "nu": 1,
+      "rootOrdinal": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_c0d0c6d0e28341c9bc21",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{1}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{2}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "c4fdc210d6d1abab80e3186590d64eccd5aadc007b9ee535f456f92dc396e8ee",
+      "problemId": "cn_c0d0c6d0e28341c9bc21",
+      "rawConstructorHash": "c21923fee249e264e04ed7af24b3bc55e9af369b8a873777bb02f45bdc501556",
+      "revision": 1,
+      "semanticHash": "af011185183211068afdcbf37f7cff3104c5d06470b8c94b75852c88d512ad42",
+      "sourceContentHash": "3555f68c69eda6b9aa459029d3f7638806582e35b776889f8c9b20dc37536ebe"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{1}.\\textnormal{Evaluate }\\int_0^1r\\,J_{1}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_4b55ce43a33c73d3"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_e1b1db02fca799bd"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_9af6cbc4b3d336a3"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4b55ce43a33c73d3",
+          "ch_e1b1db02fca799bd"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4b55ce43a33c73d3",
+          "ch_9af6cbc4b3d336a3"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_e1b1db02fca799bd",
+          "ch_9af6cbc4b3d336a3"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_3a495b3d305aae70",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_3a495b3d305aae70",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_78c68c8c740b3d1c",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "\\frac{J^{2}_{3}\\left(\\alpha\\right) \\alpha^{2}}{2}",
+        "misconception": "Omit the root scaling Jacobian"
+      },
+      {
+        "choiceId": "ch_5b3184cf85338ddf",
+        "expression": "Mul(Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "J^{2}_{3}\\left(\\alpha\\right) \\alpha^{2}",
+        "misconception": "Omit both the root scaling Jacobian and the boundary factor one half"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{3}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "373eb0844230aa2d2b50a121bc318374c7e638226bb13a9dbe2434c3bf5201dd",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 4,
+    "parameters": {
+      "nu": 2,
+      "rootOrdinal": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_1095d73dae86afba8d1e",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{2}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "c0eeb10a715d607b1db0dda7732a338ca9b4e296589a1a7e8bb77f367bdb9a21",
+      "problemId": "cn_1095d73dae86afba8d1e",
+      "rawConstructorHash": "c8d6990a4b79b22d4baedbe964984af3b230c14216e0d0168fbc90d912d372cd",
+      "revision": 1,
+      "semanticHash": "4c057e21de79497f78c6d6a2a0daf70a562c14bd8c518b148e4ee5b9639a4e31",
+      "sourceContentHash": "a683826a6c1dff733c1b5df10311d8ce6051c169354560426ccc4db206d86222"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{2}.\\textnormal{Evaluate }\\int_0^1r\\,J_{2}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_3a495b3d305aae70",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_3a495b3d305aae70",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-7, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(9, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_3a495b3d305aae70",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(3, 2), Symbol('u', positive=True)), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(1))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5b3184cf85338ddf",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(3))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_3a495b3d305aae70",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{3}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      },
+      {
+        "choiceId": "ch_78c68c8c740b3d1c",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "\\frac{J^{2}_{3}\\left(\\alpha\\right) \\alpha^{2}}{2}",
+        "misconception": "Omit the root scaling Jacobian"
+      },
+      {
+        "choiceId": "ch_3a495b3d305aae70",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "7e44c2417b449c0738bf920d44cd2dd96f7686272330043870134fbd3b56349f",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 5,
+    "parameters": {
+      "nu": 2,
+      "rootOrdinal": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_438bfb54720583e0c5e7",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{2}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{3}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "dd2a8b47afdb48f00e95d6e63056c07221ccefc7e5315d0b1bd11f99ae053537",
+      "problemId": "cn_438bfb54720583e0c5e7",
+      "rawConstructorHash": "b97d4faccd7913a909ca83754c4d0e82f9d22a0c6abe3926aa60581c3cd18b2e",
+      "revision": 1,
+      "semanticHash": "bf5941cb81681552f1486edb226535cf0775fe1d10e5813d06f51bd7af71afef",
+      "sourceContentHash": "60f24289a04c4dd658a0b74cd673a4d8b3e7979f8ee9657a59a793818b4d8bba"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{2}.\\textnormal{Evaluate }\\int_0^1r\\,J_{2}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-3)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(5)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-7, 4))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(9, 4))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_78c68c8c740b3d1c",
+          "ch_3a495b3d305aae70"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(3, 2))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_d2d0bcb686acfdde",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      },
+      {
+        "choiceId": "ch_bc99290ac01c8d09",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(-2)))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2 \\alpha^{2}}",
+        "misconception": "Divide by the root scaling Jacobian twice"
+      },
+      {
+        "choiceId": "ch_d2d0bcb686acfdde",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_5b3184cf85338ddf",
+        "expression": "Mul(Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "J^{2}_{4}\\left(\\alpha\\right) \\alpha^{2}",
+        "misconception": "Omit both the root scaling Jacobian and the boundary factor one half"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "b951b8d1bdc43d427572fc1c06528f4f8d62193a21aed52e662ef48a5deb271f",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 6,
+    "parameters": {
+      "nu": 3,
+      "rootOrdinal": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_24dbf4c85e28cde28f30",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{3}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "19689660b7974e34a6a8e3a5d055f1c27bd033f0b97bb30ceb7deb5e874dad44",
+      "problemId": "cn_24dbf4c85e28cde28f30",
+      "rawConstructorHash": "94ec2377e8519d12e65793af6f5a44344410fa069a09b81c6a7d185f457ed435",
+      "revision": 1,
+      "semanticHash": "83446159c87f0ef71ce0ed1696585c5458a4bd0d45af7a0de27a2dfb20f70e6c",
+      "sourceContentHash": "35f77f1bc2cf004d30095bd285e5896487e7980d4e6c60345be05fb9c5ba5c6c"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{3}.\\textnormal{Evaluate }\\int_0^1r\\,J_{3}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_bc99290ac01c8d09"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(2))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-15, 4))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(17, 4))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Integer(2), Pow(Symbol('u', positive=True), Integer(2))), Mul(Integer(-1), Integer(16), Symbol('u', positive=True)), Integer(-31))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(2), Pow(Symbol('u', positive=True), Integer(2))), Mul(Integer(16), Symbol('u', positive=True)), Integer(33))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d2d0bcb686acfdde",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-7, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(9, 2))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_d2d0bcb686acfdde",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      },
+      {
+        "choiceId": "ch_bc99290ac01c8d09",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(-2)))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2 \\alpha^{2}}",
+        "misconception": "Divide by the root scaling Jacobian twice"
+      },
+      {
+        "choiceId": "ch_d2d0bcb686acfdde",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_e1b1db02fca799bd",
+        "expression": "Integer(0)",
+        "math": "0",
+        "misconception": "Use the vanishing root value rather than the nonzero derivative in the boundary term"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "581ede30a02bde864ea1e5942bba22f778142507600a27ce600182f175eb0ec3",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 7,
+    "parameters": {
+      "nu": 3,
+      "rootOrdinal": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_f98141950e3b866a25a8",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{3}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{4}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "37cf8019f5c48470581ac8985852e3978c6c73cbc57aeb0c027188732c798717",
+      "problemId": "cn_f98141950e3b866a25a8",
+      "rawConstructorHash": "85c837f71c247739a538118cadd350b36b232b9b0f53e455b7f7f98f62c18380",
+      "revision": 1,
+      "semanticHash": "03b9f85a98e02c96a64de20764193ac543f7e079eaa92ceb75d4fb1ac1f8b470",
+      "sourceContentHash": "27dbba5d12681362647216708907e86d0c41e9d08fb39d61821408a0effef366"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{3}.\\textnormal{Evaluate }\\int_0^1r\\,J_{3}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_bc99290ac01c8d09"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(2))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(4), Symbol('u', positive=True)), Integer(16))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(6))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_e1b1db02fca799bd"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_d2d0bcb686acfdde"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_bc99290ac01c8d09",
+          "ch_e1b1db02fca799bd"
+        ],
+        "difference": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Add(Mul(Integer(2), Symbol('u', positive=True)), Integer(8))",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d2d0bcb686acfdde",
+          "ch_e1b1db02fca799bd"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_2d146fa1d1b32201",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_2d146fa1d1b32201",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{5}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      },
+      {
+        "choiceId": "ch_5b3184cf85338ddf",
+        "expression": "Mul(Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "J^{2}_{5}\\left(\\alpha\\right) \\alpha^{2}",
+        "misconception": "Omit both the root scaling Jacobian and the boundary factor one half"
+      },
+      {
+        "choiceId": "ch_78c68c8c740b3d1c",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "\\frac{J^{2}_{5}\\left(\\alpha\\right) \\alpha^{2}}{2}",
+        "misconception": "Omit the root scaling Jacobian"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "d81130e52810ccdfda7b241bb62525742ada8a90d732391802900d04e12d6d27",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 8,
+    "parameters": {
+      "nu": 4,
+      "rootOrdinal": 1
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_1b9244149572d1bda851",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{4}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "2fcb3e4f5fd9c6127687ea55f20549a1f7dbfdadd73ec0636d68eaf1ef927498",
+      "problemId": "cn_1b9244149572d1bda851",
+      "rawConstructorHash": "54e7eb5edaeed191974f7691539c5284702213baeabcda252d01061bca3108f2",
+      "revision": 1,
+      "semanticHash": "dee57490a9f13f3ac7b3b672e1d6ea8d14b3a14610fd54988f1ae70b5d3d5bfd",
+      "sourceContentHash": "72f6dcd3e6c35e8fae2ca1b9e5bdd3b7ebc3c17e1f63bee7f8260680955559e8"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }1\\textnormal{-th positive zero of }J_{4}.\\textnormal{Evaluate }\\int_0^1r\\,J_{4}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_cfa6aea9a5fbee85"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(-1)",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-7, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(9, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Rational(-3, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Rational(5, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Rational(1, 2), Symbol('u', positive=True)), Integer(-1))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(3))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5b3184cf85338ddf",
+          "ch_78c68c8c740b3d1c"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(1, 2), Symbol('u', positive=True)), Integer(2))",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Rational(3, 2), Symbol('u', positive=True)), Integer(6))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "Termwise differentiation of the entire series gives the Bessel ODE, its derivative recurrence, and the regular-origin behavior. For order zero the derivative is O(z), and for positive integer order the function is O(z^n); these imply F(0)=0. A positive root and its derivative cannot both vanish by uniqueness for the nonsingular ODE at that point. Existence and ordering of positive Bessel zeros are standard oscillation-theory prerequisites, not asserted as machine proved. All positive zeros exceed two: on (0,2], the defining alternating series has decreasing term magnitudes; for positive integer order its first term strictly exceeds the second, and for order zero at z=2 the first two cancel but the remaining alternating tail is strictly positive. Thus alpha squared exceeds four. Together with the nonzero root derivative, this strictly orders all authored alternatives and certifies their inequivalence; symbolic non-simplification alone is not used as that proof."
+    ],
+    "answerChoiceId": "ch_2d146fa1d1b32201",
+    "assumptions": [
+      "The Bessel functions are defined by the displayed entire power series. Alpha is a positive root, hence nonzero; the chosen positive zeros exist and are simple."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_cfa6aea9a5fbee85",
+        "expression": "Symbol('B', positive=True)",
+        "math": "J^{2}_{5}\\left(\\alpha\\right)",
+        "misconception": "Omit the boundary identity factor one half"
+      },
+      {
+        "choiceId": "ch_2d146fa1d1b32201",
+        "expression": "Mul(Rational(1, 2), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_9af6cbc4b3d336a3",
+        "expression": "Mul(Rational(1, 4), Symbol('B', positive=True))",
+        "math": "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{4}",
+        "misconception": "Apply the boundary identity factor one half twice"
+      },
+      {
+        "choiceId": "ch_5b3184cf85338ddf",
+        "expression": "Mul(Symbol('B', positive=True), Pow(Symbol('alpha', positive=True), Integer(2)))",
+        "math": "J^{2}_{5}\\left(\\alpha\\right) \\alpha^{2}",
+        "misconception": "Omit both the root scaling Jacobian and the boundary factor one half"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "6767b3d31693f1633298a7d0f9184a80e8e0b0cf21e72dc2cdfc8ce10ca40ab1",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Bessel-zero-normalization",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "instanceIndex": 9,
+    "parameters": {
+      "nu": 4,
+      "rootOrdinal": 2
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Bessel-zero-normalization",
+      "difficultyRationale": "Normalize a singular-endpoint eigenfunction without integrating its square directly, using a differential identity and the root boundary condition.",
+      "prerequisites": [
+        "Bessel equation",
+        "integration by parts"
+      ],
+      "primaryTechnique": "Bessel-ODE-Lagrange-normalization",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "singular-eigenfunction-boundary-normalization",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Bessel-zero-weighted-square-boundary-normalization"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_d2a652c58ab0f30e16aa",
+    "review": {
+      "difficultyRationale": "The displayed series gives the Bessel equation; a boundary differential identity and derivative recurrence are needed to connect the integral to the adjacent-order root value. Positivity and alpha>2 alone leave at least two candidates. The repair preserves this mathematical decision, not a coverage-count label.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{The defining series solves }z^2J_n\\prime\\prime+zJ_n\\prime+(z^2-n^2)J_n=0.\\textnormal{Differentiate the expression }F(z)=\\frac{z^2}{2}J_n\\prime(z)^2+\\frac{z^2-n^2}{2}J_n(z)^2.\\textnormal{The equation gives }F\\prime(z)=zJ_n(z)^2.",
+      "\\textnormal{The series shows the lower endpoint contribution is zero. At the chosen root, }F(\\alpha)=\\frac{\\alpha^2}{2}J_{4}\\prime(\\alpha)^2.",
+      "\\textnormal{The series also gives the recurrence }J_n\\prime(z)=\\frac nzJ_n(z)-J_{n+1}(z).\\textnormal{At the root, use this relation and then substitute }z=\\alpha r\\textnormal{ in the requested integral.}",
+      "\\frac{J^{2}_{5}\\left(\\alpha\\right)}{2}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "ef734257885b9cb893bba54e6a415d08949fd5b861416cef03e7ef5b955fd694",
+      "problemId": "cn_d2a652c58ab0f30e16aa",
+      "rawConstructorHash": "1c8527e51be5926f5e026cb35e405dc84cd20df84877d2932471521a2c28c74a",
+      "revision": 1,
+      "semanticHash": "bd6d057112c732706ba6283b59c8df7c7eb685948b56edbce84aa4975025106e",
+      "sourceContentHash": "3a8afdf2d050bea51f13d566bf5ba9792f3230ed0cb13aa052e1917c760f2616"
+    },
+    "statement": "J_n(z)=\\sum_{k=0}^{\\infty}\\frac{(-1)^k(z/2)^{2k+n}}{k!(k+n)!}\\quad(n=0,1,2,\\ldots).\\textnormal{Let alpha be the }2\\textnormal{-th positive zero of }J_{4}.\\textnormal{Evaluate }\\int_0^1r\\,J_{4}(\\alpha r)^2\\,\\mathrm dr.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_2d146fa1d1b32201"
+        ],
+        "difference": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(2)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_9af6cbc4b3d336a3"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(5)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_cfa6aea9a5fbee85",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Integer(-3))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Integer(5))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_9af6cbc4b3d336a3"
+        ],
+        "difference": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(1)",
+          "sign": "positive"
+        },
+        "sum": {
+          "denominator": "Integer(4)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Integer(3)",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2d146fa1d1b32201",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-7, 2))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(9, 2))",
+          "sign": "positive"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9af6cbc4b3d336a3",
+          "ch_5b3184cf85338ddf"
+        ],
+        "difference": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Mul(Integer(-1), Symbol('u', positive=True)), Rational(-15, 4))",
+          "sign": "negative"
+        },
+        "sum": {
+          "denominator": "Integer(1)",
+          "domain": "B>0, u=alpha²−4>0",
+          "polynomial": "Add(Symbol('u', positive=True), Rational(17, 4))",
+          "sign": "positive"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_33886642d132b0b2",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_33886642d132b0b2",
+        "expression": "Add(Rational(-1, 2), Mul(Rational(1, 4), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 4), coth(Integer(1))))",
+        "math": "- \\frac{1}{2} + \\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{4}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_6d3df84603bbe05b",
+        "expression": "Add(Integer(-1), Mul(Rational(1, 2), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 2), coth(Integer(1))))",
+        "math": "-1 + \\frac{1}{2 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{2}",
+        "misconception": "Omit the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_655fc31d0812a18a",
+        "expression": "Add(Integer(-2), Pow(sinh(Integer(1)), Integer(-2)), coth(Integer(1)))",
+        "math": "-2 + \\frac{1}{\\sinh^{2}{\\left(1 \\right)}} + \\coth{\\left(1 \\right)}",
+        "misconception": "Count the two symmetric integration triangles twice after omitting the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_81bc3d3c5f3e921b",
+        "expression": "Add(Mul(Rational(1, 4), Pow(sinh(Integer(1)), Integer(-2))), Mul(Rational(1, 4), coth(Integer(1))))",
+        "math": "\\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{4}",
+        "misconception": "Omit the endpoint normalization derivative"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "49ceed553ce904c67b885902c32ac1780dbcf68c05733a8c95b8483969b61f25",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 0,
+    "parameters": {
+      "a": "1"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_1bdf68c05a6ac3f4c744",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }1.",
+      "- \\frac{1}{2} + \\frac{1}{4 \\sinh^{2}{\\left(1 \\right)}} + \\frac{\\coth{\\left(1 \\right)}}{4}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "c3f6cd4b71011103888627848ca2f5576360b8400b54260448416512d4561128",
+      "problemId": "cn_1bdf68c05a6ac3f4c744",
+      "rawConstructorHash": "03fb54c5631c16bc2fbd06326b757c60fee6ec99bacf2730d9cc8ddd9d81dd2f",
+      "revision": 1,
+      "semanticHash": "f01c83b0dd9befc948a92db461708bdcb14143d2c9381841c0e93d7d68474cc7",
+      "sourceContentHash": "2e446257e0380d3f1c26ed62dcb94e378cc0c3d9ee74fbb08964d79c3842f05b"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+1G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_33886642d132b0b2",
+          "ch_6d3df84603bbe05b"
+        ],
+        "difference": {
+          "lower": "-2318559154102610627759377253839900635712643/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-9274236616410442511037509015359602542850569/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "27822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "6955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_33886642d132b0b2",
+          "ch_655fc31d0812a18a"
+        ],
+        "difference": {
+          "lower": "-6955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-27822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2898198942628263284699221567299875794640803/62500000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "46371183082052212555187545076798012714252859/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_33886642d132b0b2",
+          "ch_81bc3d3c5f3e921b"
+        ],
+        "difference": {
+          "lower": "-1/2",
+          "sign": "negative",
+          "upper": "-1/2"
+        },
+        "sum": {
+          "lower": "518548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "64818559154102610627759377253839900635712643/125000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6d3df84603bbe05b",
+          "ch_655fc31d0812a18a"
+        ],
+        "difference": {
+          "lower": "-2318559154102610627759377253839900635712643/125000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-18548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "27822709849231327533112527046078807628551709/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "55645419698462655066225054092157615257103431/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_6d3df84603bbe05b",
+          "ch_81bc3d3c5f3e921b"
+        ],
+        "difference": {
+          "lower": "-490725763383589557488962490984640397457149431/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-122681440845897389372240622746160099364287357/250000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "527822709849231327533112527046078807628551709/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "131955677462307831883278131761519701907137929/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_655fc31d0812a18a",
+          "ch_81bc3d3c5f3e921b"
+        ],
+        "difference": {
+          "lower": "-472177290150768672466887472953921192371448291/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-118044322537692168116721868238480298092862071/250000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "34148198942628263284699221567299875794640803/62500000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "546371183082052212555187545076798012714252859/1000000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_729918fa7456467f",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_5f3592af24b97784",
+        "expression": "Add(Rational(-1, 32), Mul(Integer(-1), Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+        "math": "- \\frac{1}{32} - \\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{32}",
+        "misconception": "Reverse the derivative sign of hyperbolic cotangent"
+      },
+      {
+        "choiceId": "ch_3a758841a388fbba",
+        "expression": "Add(Rational(-1, 8), Mul(Rational(1, 4), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 8), coth(Integer(2))))",
+        "math": "- \\frac{1}{8} + \\frac{1}{4 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{8}",
+        "misconception": "Count the two symmetric integration triangles twice after omitting the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_d99ed0937d6fd4b8",
+        "expression": "Add(Mul(Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+        "math": "\\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{32}",
+        "misconception": "Omit the endpoint normalization derivative"
+      },
+      {
+        "choiceId": "ch_729918fa7456467f",
+        "expression": "Add(Rational(-1, 32), Mul(Rational(1, 16), Pow(sinh(Integer(2)), Integer(-2))), Mul(Rational(1, 32), coth(Integer(2))))",
+        "math": "- \\frac{1}{32} + \\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{32}",
+        "misconception": "correct"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "5357a24081dac91e42bf4148bd9487dbc59511cfc79152a2146653f0378cafd6",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 1,
+    "parameters": {
+      "a": "2"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_92a90a79e4b818cb1919",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }2.",
+      "- \\frac{1}{32} + \\frac{1}{16 \\sinh^{2}{\\left(2 \\right)}} + \\frac{\\coth{\\left(2 \\right)}}{32}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "632d99b896cb4a1f8c128356749db73ef898c09560514fca201acda30cabca79",
+      "problemId": "cn_92a90a79e4b818cb1919",
+      "rawConstructorHash": "5a181b57b4638c66a9a656e7e3dd5fdc777a5cd879a70ea1a5765b0580b3cb2d",
+      "revision": 1,
+      "semanticHash": "20121bfcc9b72616e86dd66be4bb285fd20a5cea680cc642270631344259554f",
+      "sourceContentHash": "21ecb84cdc846250b8284fa48ccd4eadd64f36af699432cec5201af7f793f529"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+4G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_5f3592af24b97784",
+          "ch_3a758841a388fbba"
+        ],
+        "difference": {
+          "lower": "-5451015378520970501044746372035531036516737/200000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-42586057644695082039412081031527586222787/1562500000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "10042259104158860545457607796444332137894667/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "20084518208317721090915215592888664275789339/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5f3592af24b97784",
+          "ch_d99ed0937d6fd4b8"
+        ],
+        "difference": {
+          "lower": "-40752728729758887406671626565277785385693801/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-203763643648794437033358132826388926928469/5000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "33582170045471755992363110297988794478899453/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "6716434009094351198472622059597758895779891/200000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5f3592af24b97784",
+          "ch_729918fa7456467f"
+        ],
+        "difference": {
+          "lower": "-9502728729758887406671626565277785385693801/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-47513643648794437033358132826388926928469/5000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2332170045471755992363110297988794478899453/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "466434009094351198472622059597758895779891/200000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_3a758841a388fbba",
+          "ch_d99ed0937d6fd4b8"
+        ],
+        "difference": {
+          "lower": "-337441295928850872536197367627503255077753/25000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-3374412959288508725361973676275032550777529/250000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "30418623469038304248793421079083224830741567/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "3041862346903830424879342107908322483074157/50000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_3a758841a388fbba",
+          "ch_729918fa7456467f"
+        ],
+        "difference": {
+          "lower": "443808704071149127463802632372496744922247/25000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "4438087040711491274638026323724967449222471/250000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "14793623469038304248793421079083224830741567/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1479362346903830424879342107908322483074157/50000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_d99ed0937d6fd4b8",
+          "ch_729918fa7456467f"
+        ],
+        "difference": {
+          "lower": "1/32",
+          "sign": "positive",
+          "upper": "1/32"
+        },
+        "sum": {
+          "lower": "43084898775230643399034736863266579864593253/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "5385612346903830424879342107908322483074157/125000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_aa21d9bde1fb7f6e",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_43fee13bc2eb9a72",
+        "expression": "Add(Rational(-1, 324), Mul(Rational(1, 72), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 216), coth(Integer(3))))",
+        "math": "- \\frac{1}{324} + \\frac{1}{72 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{216}",
+        "misconception": "Apply the parameter-chain factor one half twice"
+      },
+      {
+        "choiceId": "ch_fc4e417f99087774",
+        "expression": "Add(Rational(-1, 162), Mul(Integer(-1), Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+        "math": "- \\frac{1}{162} - \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}",
+        "misconception": "Reverse the derivative sign of hyperbolic cotangent"
+      },
+      {
+        "choiceId": "ch_abed552f3ef3e0ce",
+        "expression": "Add(Mul(Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+        "math": "\\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}",
+        "misconception": "Omit the endpoint normalization derivative"
+      },
+      {
+        "choiceId": "ch_aa21d9bde1fb7f6e",
+        "expression": "Add(Rational(-1, 162), Mul(Rational(1, 36), Pow(sinh(Integer(3)), Integer(-2))), Mul(Rational(1, 108), coth(Integer(3))))",
+        "math": "- \\frac{1}{162} + \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}",
+        "misconception": "correct"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "f6becd0b603d773c5377218ffa86a11dc0caec895e1ebcde5a4905ed2da5e719",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 2,
+    "parameters": {
+      "a": "3"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_adf14183cc34463f7727",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }3.",
+      "- \\frac{1}{162} + \\frac{1}{36 \\sinh^{2}{\\left(3 \\right)}} + \\frac{\\coth{\\left(3 \\right)}}{108}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "13e696c4b04df21fab140ee139604d247a16ebfe7b32cbc2c33f59e9faa7178a",
+      "problemId": "cn_adf14183cc34463f7727",
+      "rawConstructorHash": "5a924b1fa54c5d53a191cfadac59cb46bf1954dab0684f78690a4d214496f966",
+      "revision": 1,
+      "semanticHash": "acba5b8f21d785c081fcd2122963ba1ef8de35859c7bc24e4548dd2abed90d39",
+      "sourceContentHash": "9c6288391a0e3dc833603f61c215f0b12396a11a2536781350dd8aabc9b9e5e0"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+9G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_43fee13bc2eb9a72",
+          "ch_fc4e417f99087774"
+        ],
+        "difference": {
+          "lower": "-1151037244012471430703055246776743118252129/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-1151037244012471430703055246776743118252123/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "456026126216492880315391441758405248572671/100000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1140065315541232200788478604396013121431679/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_43fee13bc2eb9a72",
+          "ch_abed552f3ef3e0ce"
+        ],
+        "difference": {
+          "lower": "-984681439406133524049783636447061773738767/125000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-787745151524906819239826909157649418991013/100000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "5643337766700762782424564131191901778692359/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "2821668883350381391212282065595950889346181/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_43fee13bc2eb9a72",
+          "ch_aa21d9bde1fb7f6e"
+        ],
+        "difference": {
+          "lower": "-1704612009076228686225429585403654683737297/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-1704612009076228686225429585403654683737291/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2556918013614343029338144378105482025605939/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1278459006807171514669072189052741012802971/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_fc4e417f99087774",
+          "ch_abed552f3ef3e0ce"
+        ],
+        "difference": {
+          "lower": "-6726414271236596761695213844799751071658009/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-3363207135618298380847606922399875535829003/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2487542555482799399110436701832109335127369/200000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "12437712777413996995552183509160546675636849/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_fc4e417f99087774",
+          "ch_aa21d9bde1fb7f6e"
+        ],
+        "difference": {
+          "lower": "-553574765063757255522374338626911565485169/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-553574765063757255522374338626911565485167/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1252974654248231497875868800597541433892801/200000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "6264873271241157489379344002987707169464009/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_abed552f3ef3e0ce",
+          "ch_aa21d9bde1fb7f6e"
+        ],
+        "difference": {
+          "lower": "1/162",
+          "sign": "positive",
+          "upper": "1/162"
+        },
+        "sum": {
+          "lower": "3247821885619438562768639461946864560280503/250000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "6495643771238877125537278923893729120561009/500000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_c6863b4711521f6e",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_c6863b4711521f6e",
+        "expression": "Add(Rational(-1, 1250), Mul(Rational(1, 100), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 500), coth(Integer(5))))",
+        "math": "- \\frac{1}{1250} + \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{500}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_4baef29e95d07bee",
+        "expression": "Add(Rational(-1, 1250), Mul(Rational(1, 500), coth(Integer(5))))",
+        "math": "- \\frac{1}{1250} + \\frac{\\coth{\\left(5 \\right)}}{500}",
+        "misconception": "Omit the derivative of hyperbolic cotangent"
+      },
+      {
+        "choiceId": "ch_9924760d9411dd2c",
+        "expression": "Add(Rational(-1, 2500), Mul(Rational(1, 200), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 1000), coth(Integer(5))))",
+        "math": "- \\frac{1}{2500} + \\frac{1}{200 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{1000}",
+        "misconception": "Apply the parameter-chain factor one half twice"
+      },
+      {
+        "choiceId": "ch_1b22d48525b7f9ce",
+        "expression": "Add(Rational(-1, 1250), Mul(Integer(-1), Rational(1, 100), Pow(sinh(Integer(5)), Integer(-2))), Mul(Rational(1, 500), coth(Integer(5))))",
+        "math": "- \\frac{1}{1250} - \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{500}",
+        "misconception": "Reverse the derivative sign of hyperbolic cotangent"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "1996fd983acec8a77e72c5ff41581b7d38502f6a2f901dc353132c1c61b8ceea",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 4,
+    "parameters": {
+      "a": "5"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_39aa3fca5e3ef53a6660",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }5.",
+      "- \\frac{1}{1250} + \\frac{1}{100 \\sinh^{2}{\\left(5 \\right)}} + \\frac{\\coth{\\left(5 \\right)}}{500}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "728eaa4e8237ee1e433b1d135c12fe662c6205cd504aa25e6affffcbd824f470",
+      "problemId": "cn_39aa3fca5e3ef53a6660",
+      "rawConstructorHash": "8cce86562cb08602f4b530f7eb2f534cbab1d6bcaf46a84bab5385ef0d6bb3b0",
+      "revision": 1,
+      "semanticHash": "092724541655da302a44736e2b44928c8a51e98ad0fee4a20426196d14ed0a30",
+      "sourceContentHash": "332cd2f04ca2ac189604b53c911b8655e3388c8717667d81f546558c40fe8f69"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+25G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_c6863b4711521f6e",
+          "ch_4baef29e95d07bee"
+        ],
+        "difference": {
+          "lower": "72646483760760659356642108438818378837/40000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "908081047009508241958026355485229735463/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1201089689011048259315273867398860437396557/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "600544844505524129657636933699430218698279/250000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_c6863b4711521f6e",
+          "ch_9924760d9411dd2c"
+        ],
+        "difference": {
+          "lower": "600998885029028883778615946877172833566009/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "600998885029028883778615946877172833566011/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1802996655087086651335847840631518500698029/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1802996655087086651335847840631518500698031/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_c6863b4711521f6e",
+          "ch_1b22d48525b7f9ce"
+        ],
+        "difference": {
+          "lower": "72646483760760659356642108438818378837/20000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "3632324188038032967832105421940918941851/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2400363215928077502146631682086750415322189/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "240036321592807750214663168208675041532219/100000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4baef29e95d07bee",
+          "ch_9924760d9411dd2c"
+        ],
+        "difference": {
+          "lower": "149795680733752466823674973541550593523771/250000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "299591361467504933647349947083101187047543/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "56286890406033363589122868372517126288347/31250000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "900590246496533817425965893960274020613553/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_4baef29e95d07bee",
+          "ch_1b22d48525b7f9ce"
+        ],
+        "difference": {
+          "lower": "72646483760760659356642108438818378837/40000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "908081047009508241958026355485229735463/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2398547053834058485662715629375779955851263/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "479709410766811697132543125875155991170253/200000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_9924760d9411dd2c",
+          "ch_1b22d48525b7f9ce"
+        ],
+        "difference": {
+          "lower": "-597366560840990850810783841455231914624161/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-597366560840990850810783841455231914624159/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1799364330899048618368015735209577581756179/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1799364330899048618368015735209577581756181/1000000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_65a5b45eef584a28",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_65a5b45eef584a28",
+        "expression": "Add(Rational(-1, 2592), Mul(Rational(1, 144), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 864), coth(Integer(6))))",
+        "math": "- \\frac{1}{2592} + \\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{864}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_a36d09c6feb81f70",
+        "expression": "Add(Rational(-1, 1296), Mul(Rational(1, 72), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 432), coth(Integer(6))))",
+        "math": "- \\frac{1}{1296} + \\frac{1}{72 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{432}",
+        "misconception": "Omit the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_fd1449fa8094b7ef",
+        "expression": "Add(Mul(Rational(1, 144), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 864), coth(Integer(6))))",
+        "math": "\\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{864}",
+        "misconception": "Omit the endpoint normalization derivative"
+      },
+      {
+        "choiceId": "ch_dba4b2ce4c445cc2",
+        "expression": "Add(Rational(-1, 648), Mul(Rational(1, 36), Pow(sinh(Integer(6)), Integer(-2))), Mul(Rational(1, 216), coth(Integer(6))))",
+        "math": "- \\frac{1}{648} + \\frac{1}{36 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{216}",
+        "misconception": "Count the two symmetric integration triangles twice after omitting the derivative chain factor two"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "957bbc5876711e8c5e853897122d1d0f4100349e514c2a94af0005cb7bf754e9",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 5,
+    "parameters": {
+      "a": "6"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_ab89434ad5781317a285",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }6.",
+      "- \\frac{1}{2592} + \\frac{1}{144 \\sinh^{2}{\\left(6 \\right)}} + \\frac{\\coth{\\left(6 \\right)}}{864}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "c2cf49fc8773da09cb3d9a256db0138a2237f57972f9ba8b0570e41c16aa73e3",
+      "problemId": "cn_ab89434ad5781317a285",
+      "rawConstructorHash": "8ed1e53254eabc18afff7362ab508e8d8e70741be89a490cf75c172042137a66",
+      "revision": 1,
+      "semanticHash": "915a70f9cb5c59d01e4ccb1437030a9356e16cf5d3a00455bd0fcc2460016817",
+      "sourceContentHash": "ea81be066522afddc279b81833430ade2d45845ab4883eb9b4901c92b550acc6"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+36G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_65a5b45eef584a28",
+          "ch_a36d09c6feb81f70"
+        ],
+        "difference": {
+          "lower": "-771789835735460227857120640423673278242539/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-154357967147092045571424128084734655648507/200000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2315369507206380683571361921271019834727609/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1157684753603190341785680960635509917363807/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_65a5b45eef584a28",
+          "ch_fd1449fa8094b7ef"
+        ],
+        "difference": {
+          "lower": "-1/2592",
+          "sign": "negative",
+          "upper": "-1/2592"
+        },
+        "sum": {
+          "lower": "1929382140606722924850043749983149025620873/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "964691070303361462425021874991574512810439/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_65a5b45eef584a28",
+          "ch_dba4b2ce4c445cc2"
+        ],
+        "difference": {
+          "lower": "-1157684753603190341785680960635509917363807/500000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-2315369507206380683571361921271019834727609/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "3858949178677301139285603202118366391212683/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "3858949178677301139285603202118366391212689/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a36d09c6feb81f70",
+          "ch_fd1449fa8094b7ef"
+        ],
+        "difference": {
+          "lower": "385987366599657758721318171287870809106733/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "385987366599657758721318171287870809106737/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "675292994085545788176791097601705575965853/250000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "2701171976342183152707164390406822303863417/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_a36d09c6feb81f70",
+          "ch_dba4b2ce4c445cc2"
+        ],
+        "difference": {
+          "lower": "-385894917867730113928560320211836639121269/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-1543579671470920455714241280847346556485071/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "4630739014412761367142723842542039669455219/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "2315369507206380683571361921271019834727613/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_fd1449fa8094b7ef",
+          "ch_dba4b2ce4c445cc2"
+        ],
+        "difference": {
+          "lower": "-482391759517644553608889863033804341397953/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-1929567038070578214435559452135217365591807/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "2122375823906551804210702835627084430174243/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1061187911953275902105351417813542215087123/250000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_00b937ce95abf617",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_73ced4f3f469a766",
+        "expression": "Add(Rational(-1, 26244), Mul(Rational(1, 648), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 5832), coth(Integer(9))))",
+        "math": "- \\frac{1}{26244} + \\frac{1}{648 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{5832}",
+        "misconception": "Apply the parameter-chain factor one half twice"
+      },
+      {
+        "choiceId": "ch_16d0de992ca15d45",
+        "expression": "Add(Rational(-2, 6561), Mul(Rational(1, 81), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 729), coth(Integer(9))))",
+        "math": "- \\frac{2}{6561} + \\frac{1}{81 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{729}",
+        "misconception": "Count the two symmetric integration triangles twice after omitting the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_5a1091ab204b7d33",
+        "expression": "Add(Rational(-1, 6561), Mul(Rational(1, 162), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 1458), coth(Integer(9))))",
+        "math": "- \\frac{1}{6561} + \\frac{1}{162 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{1458}",
+        "misconception": "Omit the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_00b937ce95abf617",
+        "expression": "Add(Rational(-1, 13122), Mul(Rational(1, 324), Pow(sinh(Integer(9)), Integer(-2))), Mul(Rational(1, 2916), coth(Integer(9))))",
+        "math": "- \\frac{1}{13122} + \\frac{1}{324 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{2916}",
+        "misconception": "correct"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "30389491b0821bbb5b3bff79d3462665b7671aefbad1dd87eb6cbb41edce40f9",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 8,
+    "parameters": {
+      "a": "9"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_acd332167cfd28b17e60",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }9.",
+      "- \\frac{1}{13122} + \\frac{1}{324 \\sinh^{2}{\\left(9 \\right)}} + \\frac{\\coth{\\left(9 \\right)}}{2916}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "db53a03c1e0d142155e753f000102b34be841c11642c8fbd1b3def4dbbf5bb7f",
+      "problemId": "cn_acd332167cfd28b17e60",
+      "rawConstructorHash": "f65a99451d7c71035ccadbd9324b7d927dffb4a40a281aac0adfc552638d1e84",
+      "revision": 1,
+      "semanticHash": "ddf8981f7b92795234f8a6bf20fc04e84d66cc2b2f16bde50b429649d612712d",
+      "sourceContentHash": "1ea1b29215c024e3b6a2b3121c4e32c634b8f7bb0341d469520dcf15f83a9159"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+81G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_73ced4f3f469a766",
+          "ch_16d0de992ca15d45"
+        ],
+        "difference": {
+          "lower": "-233386852521398177695856275623187382559523/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-466773705042796355391712551246374765119039/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1200275241538619199578689417490677967448959/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "75017202596163699973668088593167372965561/62500000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_73ced4f3f469a766",
+          "ch_5a1091ab204b7d33"
+        ],
+        "difference": {
+          "lower": "-200045873589769866596448236248446327908163/500000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-200045873589769866596448236248446327908159/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "666819578632566221988160787494821093027199/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "66681957863256622198816078749482109302721/100000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_73ced4f3f469a766",
+          "ch_00b937ce95abf617"
+        ],
+        "difference": {
+          "lower": "-33340978931628311099408039374741054651361/250000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-133363915726513244397632157498964218605439/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "200045873589769866596448236248446327908159/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "200045873589769866596448236248446327908163/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_16d0de992ca15d45",
+          "ch_5a1091ab204b7d33"
+        ],
+        "difference": {
+          "lower": "533455662906052977590528629995856874421759/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "533455662906052977590528629995856874421769/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1600366988718158932771585889987570623265279/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "16003669887181589327715858899875706232653/10000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_16d0de992ca15d45",
+          "ch_00b937ce95abf617"
+        ],
+        "difference": {
+          "lower": "400091747179539733192896472496892655816319/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "16003669887181589327715858899875706232653/20000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "208381118322676944371300246092131591571/156250000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "666819578632566221988160787494821093027209/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_5a1091ab204b7d33",
+          "ch_00b937ce95abf617"
+        ],
+        "difference": {
+          "lower": "133363915726513244397632157498964218605439/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "53345566290605297759052862999585687442177/200000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "400091747179539733192896472496892655816319/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "16003669887181589327715858899875706232653/20000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  {
+    "analyticCertificate": [
+      "The homogeneous Dirichlet problem has only the zero solution, by integrating the positive energy, so the matched Green kernel is unique. Its compact-domain hyperbolic formula is smoothly parameter-dependent for positive a. Differentiating the inverse equation produces a source -2aG with zero boundaries; applying the same Green inverse proves the displayed resolvent identity. All compact integrals are continuous, so differentiation and integration commute."
+    ],
+    "answerChoiceId": "ch_41fe0855fe08f01e",
+    "assumptions": [
+      "Real a>0 in the derivation; s is the second position coordinate, not a parameter. coth means cosh divided by sinh."
+    ],
+    "choices": [
+      {
+        "choiceId": "ch_45062f4e57d10ab6",
+        "expression": "Add(Rational(-1, 5000), Mul(Rational(1, 100), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 1000), coth(Integer(10))))",
+        "math": "- \\frac{1}{5000} + \\frac{1}{100 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{1000}",
+        "misconception": "Count the two symmetric integration triangles twice after omitting the derivative chain factor two"
+      },
+      {
+        "choiceId": "ch_41fe0855fe08f01e",
+        "expression": "Add(Rational(-1, 20000), Mul(Rational(1, 400), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 4000), coth(Integer(10))))",
+        "math": "- \\frac{1}{20000} + \\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{4000}",
+        "misconception": "correct"
+      },
+      {
+        "choiceId": "ch_2186803176c88b9b",
+        "expression": "Add(Rational(-1, 20000), Mul(Integer(-1), Rational(1, 400), Pow(sinh(Integer(10)), Integer(-2))), Mul(Rational(1, 4000), coth(Integer(10))))",
+        "math": "- \\frac{1}{20000} - \\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{4000}",
+        "misconception": "Reverse the derivative sign of hyperbolic cotangent"
+      },
+      {
+        "choiceId": "ch_4b5a1f026ada89b5",
+        "expression": "Add(Rational(-1, 20000), Mul(Rational(1, 4000), coth(Integer(10))))",
+        "math": "- \\frac{1}{20000} + \\frac{\\coth{\\left(10 \\right)}}{4000}",
+        "misconception": "Omit the derivative of hyperbolic cotangent"
+      }
+    ],
+    "constructorVersion": "quality-green-bessel-option-overlay-v1",
+    "contentHash": "846a1497262543d090149913724ff3bcbc06de226457c20023636ffce5e7f45b",
+    "difficulty": "olympiad",
+    "familyId": "q4-differential-equations-Green-kernel-square-trace",
+    "finiteInstanceIndices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      8,
+      9
+    ],
+    "instanceIndex": 9,
+    "parameters": {
+      "a": "10"
+    },
+    "pedagogy": {
+      "alternativeTechniques": [],
+      "answerForm": "exact-real",
+      "constructionId": "q4-differential-equations-Green-kernel-square-trace",
+      "difficultyRationale": "Construct a Green kernel from matching and jump conditions, then relate its squared norm to a parameter derivative of its diagonal trace.",
+      "prerequisites": [
+        "Green functions",
+        "parameter differentiation"
+      ],
+      "primaryTechnique": "Green-kernel-resolvent-derivative",
+      "reasoningDemand": [
+        "reframing",
+        "synthesis"
+      ],
+      "relatedIdeaGroupId": "Green-resolvent-parameter-identity",
+      "responseFormat": "multiple-choice",
+      "sourceRecordIds": [],
+      "structuralSignature": "Dirichlet-Green-kernel-Hilbert-Schmidt-trace"
+    },
+    "provenance": {
+      "kind": "original",
+      "theoremReferenceURLs": []
+    },
+    "replacesPrivateProblemId": "cn_fe97e44f8d9dc5fab0a3",
+    "review": {
+      "difficultyRationale": "Construct the matched Green kernel, integrate its diagonal, then differentiate the resolvent parameter; an ordinary positive-integral sign check no longer selects the sole paired magnitude.",
+      "meaningChanged": false,
+      "newIndependentIdeas": 0,
+      "optionRepairReason": "Remove a confirmed opposite-pair or normalized-rank invariant using actual boundary, Jacobian, chain-factor and integration-count mistakes. All feasible coefficient ranks are allowed; no artificial middle-only rule.",
+      "preservePreviousLineage": true,
+      "sourceIndependentReview": "unsupported-peer/review-results.json",
+      "status": "pending-independent-root-review"
+    },
+    "solutionSteps": [
+      "\\textnormal{Matching homogeneous solutions and the unit derivative jump gives the symmetric kernel }G_a(t,s)=\\frac{\\sinh(a\\min\\{t,s\\})\\sinh(a(1-\\max\\{t,s\\}))}{a\\sinh a}.",
+      "\\textnormal{Its diagonal integral is }T(a)=\\int_0^1G_a(t,t)\\,\\mathrm dt=\\frac{\\coth a}{2a}-\\frac1{2a^2}.",
+      "\\textnormal{Differentiate the defining operator equation in a. The same zero-boundary Green inverse gives }\\partial_aG_a(t,s)=-2a\\int_0^1G_a(t,r)G_a(r,s)\\,\\mathrm dr.",
+      "\\textnormal{Set }s=t\\textnormal{, integrate, and use symmetry: the requested squared norm is }-\\frac{T\\prime(a)}{2a}\\textnormal{ evaluated at }10.",
+      "- \\frac{1}{20000} + \\frac{1}{400 \\sinh^{2}{\\left(10 \\right)}} + \\frac{\\coth{\\left(10 \\right)}}{4000}"
+    ],
+    "sourcePresentation": {
+      "source": "source-bound canonical preview"
+    },
+    "sourcePreview": {
+      "canonicalRawHash": "2a2d93b4c9215e89fbfa4c9af13ded2a19302a3602d55289caa7330dfaee787c",
+      "problemId": "cn_fe97e44f8d9dc5fab0a3",
+      "rawConstructorHash": "612fcc2ef15e526bddeecceddd95f0de93df41556e72421e3d3e616596a62298",
+      "revision": 1,
+      "semanticHash": "1c73d2e8e58887b3ad32316038f0c2a4a65974d079b1aeae517a39d80c8579cf",
+      "sourceContentHash": "14cc916355af1b51aa3d6bd5ec2a508442da39653c1de40de54e31d54fb0dc95"
+    },
+    "statement": "\\textnormal{For each }s\\in(0,1),\\textnormal{ let }G(t,s)\\textnormal{ be continuous in }t\\textnormal{, vanish at }t=0,1,\\textnormal{ and satisfy }-G_{tt}+100G=0\\quad(t\\ne s),\\quad G_t(s^+,s)-G_t(s^-,s)=-1.\\textnormal{Evaluate }\\int_0^1\\int_0^1G(t,s)^2\\,\\mathrm dt\\,\\mathrm ds.",
+    "topic": "differential equations",
+    "verificationEvidence": [
+      {
+        "choiceIds": [
+          "ch_45062f4e57d10ab6",
+          "ch_41fe0855fe08f01e"
+        ],
+        "difference": {
+          "lower": "120000012985267873617671816516116433456469/200000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "150000016231584842022089770645145541820591/250000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "62500006763160350842537404435477309091911/62500000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "500000054105282806740299235483818472735303/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_45062f4e57d10ab6",
+          "ch_2186803176c88b9b"
+        ],
+        "difference": {
+          "lower": "60000010614941198679368637895359678924049/100000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "600000106149411986793686378953596789240509/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "1000000066987492994775271174594622323512431/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "1000000066987492994775271174594622323512461/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_45062f4e57d10ab6",
+          "ch_4b5a1f026ada89b5"
+        ],
+        "difference": {
+          "lower": "300000042768937838720511365383544739130709/500000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "600000085537875677441022730767089478261437/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "62500005474939331507995926423820602155719/62500000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "500000043799514652063967411390564817245767/500000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_41fe0855fe08f01e",
+          "ch_2186803176c88b9b"
+        ],
+        "difference": {
+          "lower": "8244614523741065459274602924391629/200000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "20611536309352663648186507310979073/500000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "80000000412230725337382418402808031246017/200000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "400000002061153626686912092014040156230097/1000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_41fe0855fe08f01e",
+          "ch_4b5a1f026ada89b5"
+        ],
+        "difference": {
+          "lower": "10064226713551105296966068022939/488281250000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "20611536309352663648186507310979073/1000000000000000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "400000022672689936039575740200547467209157/1000000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "40000002267268993603957574020054746720917/100000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "choiceIds": [
+          "ch_2186803176c88b9b",
+          "ch_4b5a1f026ada89b5"
+        ],
+        "difference": {
+          "lower": "-20611536309352663648186507310979073/1000000000000000000000000000000000000000000000",
+          "sign": "negative",
+          "upper": "-10064226713551105296966068022939/488281250000000000000000000000000000000000"
+        },
+        "sum": {
+          "lower": "99999995362404329333562110956883211312753/250000000000000000000000000000000000000000000",
+          "sign": "positive",
+          "upper": "15999999257984692693369937753101313810041/40000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  }
+]

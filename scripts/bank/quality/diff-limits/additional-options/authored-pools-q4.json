@@ -1,0 +1,2208 @@
+[
+  {
+    "problemId": "cn_5184e16b1f1449a0db09",
+    "sourceContentHash": "abc2de85040c6ccc73c5cfe5b9a3df29a7c9bad43ab395c92225131665d955b6",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 2), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 1,
+      "ell": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 2), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 2), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 4), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Pow(pi, Integer(2)), sin(Mul(pi, Symbol('t', real=True))))",
+        "right": "Mul(Pow(pi, Integer(2)), sin(Mul(pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 4), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 4), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_55cbc6e5c351c9031287",
+    "sourceContentHash": "c471d4039e4edf621997286da289a69001f65b74b57e7c046c518256f8ed9697",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 8), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 2,
+      "ell": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 8), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 8), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 16), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 4), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(4), Pow(pi, Integer(2)), sin(Mul(Integer(2), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(4), Pow(pi, Integer(2)), sin(Mul(Integer(2), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 16), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 16), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_cbc9048504e71fba4110",
+    "sourceContentHash": "dbff040ba6a3ec0f673c7549b77da515e8e0e5f0b1e5bcac3bf4a3108a44657c",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 18), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 3,
+      "ell": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 18), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 18), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 36), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 9), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(9), Pow(pi, Integer(2)), sin(Mul(Integer(3), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(9), Pow(pi, Integer(2)), sin(Mul(Integer(3), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 36), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 36), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_cb4043472516d243b022",
+    "sourceContentHash": "11e14e84c245b5a21e3cdd6c2bdf358fbdd61325e9146855564be5d88da28c59",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 50), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 5,
+      "ell": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 50), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 50), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 100), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 25), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(25), Pow(pi, Integer(2)), sin(Mul(Integer(5), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(25), Pow(pi, Integer(2)), sin(Mul(Integer(5), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 100), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 100), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_1d97d6a4f724bc196594",
+    "sourceContentHash": "8ab1f2a224baa15ba6273b64e7be31dd12b34d4844b6b21533b4c75c26b396bf",
+    "answerExpression": "Add(Rational(4, 3), Mul(Integer(-1), Integer(2), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 1,
+      "ell": "2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(4, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Integer(2), Pow(pi, Integer(-2))), Rational(4, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-4, 3), Mul(Integer(2), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(4, 3), Mul(Integer(-1), Integer(2), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(4, 3), Mul(Integer(-1), Integer(4), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Rational(1, 4), Pow(pi, Integer(2)), sin(Mul(Rational(1, 2), pi, Symbol('t', real=True))))",
+        "right": "Mul(Rational(1, 4), Pow(pi, Integer(2)), sin(Mul(Rational(1, 2), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(1)",
+        "right": "Integer(1)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(4, 3), Mul(Integer(-1), Integer(2), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(4, 3), Mul(Integer(-1), Integer(2), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_28384923da1fc9f2543a",
+    "sourceContentHash": "0dbe8edf3f6f6d9d02be2ac349a53ac295316f59929b76a549f0a9e855c3bdba",
+    "answerExpression": "Add(Rational(4, 3), Mul(Integer(-1), Rational(2, 9), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 3,
+      "ell": "2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(4, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(2, 9), Pow(pi, Integer(-2))), Rational(4, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-4, 3), Mul(Rational(2, 9), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(4, 3), Mul(Integer(-1), Rational(2, 9), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(4, 3), Mul(Integer(-1), Rational(4, 9), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Rational(9, 4), Pow(pi, Integer(2)), sin(Mul(Rational(3, 2), pi, Symbol('t', real=True))))",
+        "right": "Mul(Rational(9, 4), Pow(pi, Integer(2)), sin(Mul(Rational(3, 2), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(1)",
+        "right": "Integer(1)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(4, 3), Mul(Integer(-1), Rational(2, 9), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(4, 3), Mul(Integer(-1), Rational(2, 9), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_fdb9da5721b37623ea6f",
+    "sourceContentHash": "61cb56c33d08b628e05acb3298534d117d7a495c5fd34e1ebe0388d7334984e1",
+    "answerExpression": "Add(Rational(1, 12), Mul(Integer(-1), Rational(1, 8), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 1,
+      "ell": "1/2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 12)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 8), Pow(pi, Integer(-2))), Rational(1, 12))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 12), Mul(Rational(1, 8), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 32), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 12), Mul(Integer(-1), Rational(1, 4), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(4), Pow(pi, Integer(2)), sin(Mul(Integer(2), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(4), Pow(pi, Integer(2)), sin(Mul(Integer(2), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 4)",
+        "right": "Rational(1, 4)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 32), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 32), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_91f860a80d864cfcebe8",
+    "sourceContentHash": "4a1eb6b1a7098dbee23c4c18c4c7adf49bd4dd36ac553d32294005b5cf43baf7",
+    "answerExpression": "Add(Rational(1, 12), Mul(Integer(-1), Rational(1, 32), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "n": 2,
+      "ell": "1/2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 12)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 32), Pow(pi, Integer(-2))), Rational(1, 12))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 12), Mul(Rational(1, 32), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 128), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 12), Mul(Integer(-1), Rational(1, 16), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(16), Pow(pi, Integer(2)), sin(Mul(Integer(4), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(16), Pow(pi, Integer(2)), sin(Mul(Integer(4), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 4)",
+        "right": "Rational(1, 4)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 128), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 48), Mul(Integer(-1), Rational(1, 128), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_5765888cf8f228830a9f",
+    "sourceContentHash": "cc9160b5bc64bbb50802d7bd0a71ac64e77f6358fa0002f4d99d6946a3d9ae35",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 72), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "ell": "1",
+      "n": 6
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 72), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 72), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 144), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 36), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(36), Pow(pi, Integer(2)), sin(Mul(Integer(6), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(36), Pow(pi, Integer(2)), sin(Mul(Integer(6), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 144), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 144), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_0347f66a86f3cf81bd2d",
+    "sourceContentHash": "d65ccc5e7d49a276bbe3040b877a393dbcb963cc8b2350724c68d2c28addfb77",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 98), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "ell": "1",
+      "n": 7
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 98), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 98), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 196), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 49), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(49), Pow(pi, Integer(2)), sin(Mul(Integer(7), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(49), Pow(pi, Integer(2)), sin(Mul(Integer(7), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 196), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 196), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_375e66423d3496af5769",
+    "sourceContentHash": "b9e4a00074dcb4414a2f573d317985b7b18e4d7d7f3114980a82474f586249e2",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 162), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "ell": "1",
+      "n": 9
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 162), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 162), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 324), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 81), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(81), Pow(pi, Integer(2)), sin(Mul(Integer(9), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(81), Pow(pi, Integer(2)), sin(Mul(Integer(9), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 324), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 324), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_e1e14cd26f800b8c0cd8",
+    "sourceContentHash": "6c65799e4f20ac0bfe63c1814ed07d0f1ad0ed142b7e2dbfc4431f82d2eaaf25",
+    "answerExpression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 200), Pow(pi, Integer(-2))))",
+    "parameters": {
+      "ell": "1",
+      "n": 10
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "replace the oscillatory weight by its mean before integrating"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 200), Pow(pi, Integer(-2))), Rational(1, 3))",
+        "misconception": "reverse the oscillatory correction"
+      },
+      {
+        "expression": "Add(Rational(-1, 3), Mul(Rational(1, 200), Pow(pi, Integer(-2))))",
+        "misconception": "reverse the perturbing potential sign"
+      },
+      {
+        "expression": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 400), Pow(pi, Integer(-2))))",
+        "misconception": "omit the eigenfunction normalization"
+      },
+      {
+        "expression": "Add(Rational(1, 3), Mul(Integer(-1), Rational(1, 100), Pow(pi, Integer(-2))))",
+        "misconception": "double the oscillatory correction"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "unperturbed ODE residual",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(100), Pow(pi, Integer(2)), sin(Mul(Integer(10), pi, Symbol('t', real=True))))",
+        "right": "Mul(Integer(100), Pow(pi, Integer(2)), sin(Mul(Integer(10), pi, Symbol('t', real=True))))"
+      },
+      {
+        "name": "normalization integral",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 2)",
+        "right": "Rational(1, 2)"
+      },
+      {
+        "name": "weighted perturbation integral",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 400), Pow(pi, Integer(-2))))",
+        "right": "Add(Rational(1, 6), Mul(Integer(-1), Rational(1, 400), Pow(pi, Integer(-2))))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_84b003d5dd4b94d431de",
+    "sourceContentHash": "61f6ba088d79969a66314a431c49f367c3f8269c7219a2d9f8a9af6dbad62a24",
+    "answerExpression": "Add(Integer(1), Mul(Integer(-1), log(Integer(2))))",
+    "parameters": {
+      "a": 1,
+      "b": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Integer(1)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(log(Integer(2)), Integer(1))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(log(Integer(2)), Integer(1))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Integer(-1), log(Integer(2)))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), log(Integer(4))))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "Mul(Integer(-1), log(Integer(2)))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(2), log(Integer(2))))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1))), Pow(Symbol('v', positive=True), Integer(-1)), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Symbol('v', positive=True), Integer(1))",
+        "right": "Add(Symbol('v', positive=True), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_2c2530f12f76d929b638",
+    "sourceContentHash": "ec3a90c99d85f8330a95ecb4187cc8421be5fe4434dd08846522015a15642f95",
+    "answerExpression": "Add(log(Rational(2, 3)), Rational(1, 2))",
+    "parameters": {
+      "a": 1,
+      "b": "2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 2)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(Rational(1, 2), Mul(Integer(-1), log(Rational(2, 3))))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Add(Rational(1, 2), log(Integer(2)))",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(Rational(1, 2), log(Integer(3)))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Rational(-1, 2), Mul(Integer(-1), log(Rational(2, 3))))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(log(Rational(2, 9)), Rational(1, 2))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "log(Rational(2, 3))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Mul(Integer(2), log(Rational(2, 3))), Rational(1, 2))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1))), Pow(Symbol('v', positive=True), Integer(-1)), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Symbol('v', positive=True), Integer(1))",
+        "right": "Add(Symbol('v', positive=True), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_d9255ed085199642138e",
+    "sourceContentHash": "784cf2fee652481a367f7295b80b4820d26c380962d6a72d07f304a66f35c22d",
+    "answerExpression": "Add(Integer(2), Mul(Integer(-1), log(Integer(3))))",
+    "parameters": {
+      "a": 1,
+      "b": "1/2"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Integer(2)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(log(Integer(3)), Integer(2))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), log(Integer(2))))",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(log(Rational(3, 2)), Integer(2))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Integer(-2), log(Integer(3)))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(log(Rational(2, 9)), Integer(2))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "Mul(Integer(-1), log(Integer(3)))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(2), log(Integer(3))))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1))), Pow(Symbol('v', positive=True), Integer(-1)), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Symbol('v', positive=True), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Symbol('v', positive=True), Integer(1))",
+        "right": "Add(Symbol('v', positive=True), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_0325e15800d0eda52bda",
+    "sourceContentHash": "baebe874407aedaf5c443d49d634e65d768c12285e2d29035b908c6cd5b9c9db",
+    "answerExpression": "Add(Integer(1), Mul(Integer(-1), Integer(2), log(Integer(3))))",
+    "parameters": {
+      "a": 2,
+      "b": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Integer(1)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(2), log(Integer(3))))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(2), log(Integer(3))))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Integer(-1), Mul(Integer(2), log(Integer(3))))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(2), log(Integer(9))))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(2), log(Integer(3)))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(4), log(Integer(3))))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Integer(4), Pow(Add(Mul(Integer(2), Symbol('v', positive=True)), Integer(1)), Integer(-1))), Mul(Integer(2), Pow(Symbol('v', positive=True), Integer(-1))), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Mul(Integer(2), Symbol('v', positive=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(2), Symbol('v', positive=True)), Integer(1))",
+        "right": "Add(Mul(Integer(2), Symbol('v', positive=True)), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_d97c2a1baf5a14db6812",
+    "sourceContentHash": "d4364dc508bb26d9c32d8d5f163ffc7c92855e119721ad32925a5a1c2f9d94c3",
+    "answerExpression": "Add(Integer(1), Mul(Integer(-1), Integer(3), log(Integer(4))))",
+    "parameters": {
+      "a": 3,
+      "b": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Integer(1)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(3), log(Integer(4))))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(3), log(Integer(4))))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Integer(-1), Mul(Integer(3), log(Integer(4))))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(3), log(Integer(16))))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(3), log(Integer(4)))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(6), log(Integer(4))))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Integer(9), Pow(Add(Mul(Integer(3), Symbol('v', positive=True)), Integer(1)), Integer(-1))), Mul(Integer(3), Pow(Symbol('v', positive=True), Integer(-1))), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Mul(Integer(3), Symbol('v', positive=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(3), Symbol('v', positive=True)), Integer(1))",
+        "right": "Add(Mul(Integer(3), Symbol('v', positive=True)), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_1da38ab06af4d35db1ef",
+    "sourceContentHash": "f7447e87562a357b8d93060614cd46c7548b33ed53edec91a1ae03abf2552c26",
+    "answerExpression": "Add(Integer(1), Mul(Integer(-1), Integer(4), log(Integer(5))))",
+    "parameters": {
+      "a": 4,
+      "b": "1"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Integer(1)",
+        "misconception": "drop the cubic correction"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(4), log(Integer(5))))",
+        "misconception": "reverse the logarithmic constant"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "omit the nonlinear denominator in separation"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(4), log(Integer(5))))",
+        "misconception": "keep only the wrong endpoint logarithm"
+      },
+      {
+        "expression": "Add(Integer(-1), Mul(Integer(4), log(Integer(5))))",
+        "misconception": "reverse the elapsed-time identity"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(4), log(Integer(25))))",
+        "misconception": "count the nonlinear denominator logarithm twice"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(4), log(Integer(5)))",
+        "misconception": "omit the initial reciprocal endpoint"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Integer(-1), Integer(8), log(Integer(5))))",
+        "misconception": "double both logarithmic terms in the separated primitive"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "separated elapsed-time derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(-1), Integer(16), Pow(Add(Mul(Integer(4), Symbol('v', positive=True)), Integer(1)), Integer(-1))), Mul(Integer(4), Pow(Symbol('v', positive=True), Integer(-1))), Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2))))",
+        "right": "Mul(Integer(-1), Pow(Symbol('v', positive=True), Integer(-2)), Pow(Add(Mul(Integer(4), Symbol('v', positive=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "reciprocal equation algebra",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(4), Symbol('v', positive=True)), Integer(1))",
+        "right": "Add(Mul(Integer(4), Symbol('v', positive=True)), Integer(1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_78d02b16e5cbbbd9303d",
+    "sourceContentHash": "bb990cfab9c9900979603c6c15fa2413b90afd1069bbcaaf8dafc112eb1dc08b",
+    "answerExpression": "Rational(1, 3)",
+    "parameters": {
+      "k": 1,
+      "a": "1/3"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(-1, 3)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Rational(2, 3)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(2, 3)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(1, 3)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(1, 6)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Rational(1, 6), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Rational(-2, 3)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)), exp(Symbol('t', real=True)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))), Mul(Integer(2), Add(Rational(-1, 3), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Mul(Integer(-1), Rational(1, 3), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('U', real=True))), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-1, 3))), Mul(Rational(1, 3), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True)))",
+        "right": "Mul(Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7c4e983ca520fc95d27c",
+    "sourceContentHash": "92d1d8e4f20d6054e5caea3f066cd3752c5eb97492fca2da119e0623d20c2d77",
+    "answerExpression": "Rational(1, 2)",
+    "parameters": {
+      "k": 1,
+      "a": "1/4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(-1, 2)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(3, 4)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(1, 4)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(1, 2)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(1, 4)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Rational(1, 4), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)), exp(Symbol('t', real=True)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))), Mul(Integer(2), Add(Rational(-1, 4), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Mul(Integer(-1), Rational(1, 2), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('U', real=True))), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-1, 4))), Mul(Rational(1, 2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True)))",
+        "right": "Mul(Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_28e60d795646c0eacfed",
+    "sourceContentHash": "f051503dcead1f3ab7fbec46750ad59f5ca28418b5d62cf37b8948e84e55fc37",
+    "answerExpression": "Rational(-1, 2)",
+    "parameters": {
+      "k": 1,
+      "a": "3/4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 2)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(1, 4)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(3, 4)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(-1, 2)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(-1, 4)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 4), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Integer(1)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)), exp(Symbol('t', real=True)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))), Mul(Integer(2), Add(Rational(-3, 4), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1))), Mul(Rational(1, 2), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('U', real=True))), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-3, 4))), Mul(Integer(-1), Rational(1, 2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-2)), exp(Symbol('t', real=True)))",
+        "right": "Mul(Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))), Pow(Add(exp(Symbol('t', real=True)), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_d1282566112ce4b5c550",
+    "sourceContentHash": "45ccddbfa52e0bf748db6ab0e63f294c12925d46895b2536a7293c8f2a53ea8a",
+    "answerExpression": "Rational(-2, 3)",
+    "parameters": {
+      "k": 2,
+      "a": "2/3"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(2, 3)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Rational(-4, 3)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(2, 3)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(4, 3)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(-4, 3)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(-1, 3)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 3), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Rational(4, 3)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(4), Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)), exp(Mul(Integer(2), Symbol('t', real=True))))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True)))), Mul(Integer(8), Add(Rational(-2, 3), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1))), Mul(Rational(4, 3), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True)))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Integer(2), Mul(Integer(-1), Integer(4), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(8), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-2, 3))), Mul(Integer(-1), Rational(4, 3), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(2), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True))))",
+        "right": "Mul(Integer(2), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ba557788e00f5ba2461e",
+    "sourceContentHash": "b22b0083b215e1d9c02af31b489689869742c8205caf90474af0449219d48db0",
+    "answerExpression": "Rational(-6, 5)",
+    "parameters": {
+      "k": 2,
+      "a": "4/5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(6, 5)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Rational(-12, 5)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(2, 5)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(8, 5)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(-12, 5)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(-3, 5)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(3, 5), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Rational(12, 5)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(4), Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)), exp(Mul(Integer(2), Symbol('t', real=True))))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True)))), Mul(Integer(8), Add(Rational(-4, 5), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1))), Mul(Rational(12, 5), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True)))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(2), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Integer(2), Mul(Integer(-1), Integer(4), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(8), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-4, 5))), Mul(Integer(-1), Rational(12, 5), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(2), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(2), Symbol('t', real=True))))",
+        "right": "Mul(Integer(2), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(2), Symbol('t', real=True))), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_c554c9e580429197c16f",
+    "sourceContentHash": "741e0386432b8ff82d360487aeaac76232b9d5d216e22dbab440739b7a5cda8f",
+    "answerExpression": "Rational(3, 5)",
+    "parameters": {
+      "k": 3,
+      "a": "2/5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(-3, 5)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Rational(6, 5)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(9, 5)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(6, 5)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(9, 5)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(3, 10)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Rational(3, 10), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Rational(-6, 5)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(9), Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)), exp(Mul(Integer(3), Symbol('t', real=True))))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True)))), Mul(Integer(18), Add(Rational(-2, 5), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1))), Mul(Integer(-1), Rational(9, 5), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True)))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(3), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Integer(3), Mul(Integer(-1), Integer(6), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(18), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-2, 5))), Mul(Rational(9, 5), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(3), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True))))",
+        "right": "Mul(Integer(3), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ecb470d325b381321b27",
+    "sourceContentHash": "1d554829bc8698dab5182dc7f558f41ab2df9fa74ce09a1e7f22bf3748870e6a",
+    "answerExpression": "Rational(-3, 5)",
+    "parameters": {
+      "k": 3,
+      "a": "3/5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(3, 5)",
+        "misconception": "reverse the front direction"
+      },
+      {
+        "expression": "Rational(-6, 5)",
+        "misconception": "double the damping normalization"
+      },
+      {
+        "expression": "Rational(6, 5)",
+        "misconception": "omit one equilibrium contribution"
+      },
+      {
+        "expression": "Rational(9, 5)",
+        "misconception": "use the unstable equilibrium as the speed fraction"
+      },
+      {
+        "expression": "Rational(-9, 5)",
+        "misconception": "use the reaction scale rather than its square root"
+      },
+      {
+        "expression": "Rational(-3, 10)",
+        "misconception": "halve the wave speed after matching"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(3, 10), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit the factor two in the reaction scale"
+      },
+      {
+        "expression": "Rational(6, 5)",
+        "misconception": "reverse the wave and double the matching coefficient"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "logistic front original ODE",
+        "method": "exact-symbolic-identity",
+        "left": "Add(Mul(Integer(9), Add(Integer(-1), Mul(Integer(2), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)), exp(Mul(Integer(3), Symbol('t', real=True))))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True)))), Mul(Integer(18), Add(Rational(-3, 5), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1))), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1))), Mul(Rational(9, 5), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True)))))",
+        "right": "Integer(0)"
+      },
+      {
+        "name": "phase-plane profile equation",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(3), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Integer(3), Mul(Integer(-1), Integer(6), Symbol('U', real=True))))",
+        "right": "Add(Mul(Integer(-1), Integer(18), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True))), Add(Symbol('U', real=True), Rational(-3, 5))), Mul(Integer(-1), Rational(9, 5), Symbol('U', real=True), Add(Integer(1), Mul(Integer(-1), Symbol('U', real=True)))))"
+      },
+      {
+        "name": "profile positive velocity magnitude",
+        "method": "exact-symbolic-identity",
+        "left": "Mul(Integer(3), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-2)), exp(Mul(Integer(3), Symbol('t', real=True))))",
+        "right": "Mul(Integer(3), Add(Integer(1), Mul(Integer(-1), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))), Pow(Add(exp(Mul(Integer(3), Symbol('t', real=True))), Integer(1)), Integer(-1)))"
+      },
+      {
+        "name": "bistable interior equilibrium",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_b266d4c3b3b2895afa77",
+    "sourceContentHash": "b19038dacda5bc53d32d480e220cf41679c9fe5df06639988d1f803f287fa6ec",
+    "answerExpression": "Rational(492, 625)",
+    "parameters": {
+      "a": 3,
+      "b": 2,
+      "c": 1,
+      "p": 2,
+      "q": 1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(82, 625)",
+        "misconception": "omit the fourth-derivative factorial"
+      },
+      {
+        "expression": "Rational(1968, 625)",
+        "misconception": "differentiate the quartic term while freezing the optimizing path"
+      },
+      {
+        "expression": "Rational(-492, 625)",
+        "misconception": "reverse the envelope sign"
+      },
+      {
+        "expression": "Rational(12, 5)",
+        "misconception": "use the quadratic response in place of the quartic correction"
+      },
+      {
+        "expression": "Integer(102)",
+        "misconception": "ignore the coupled Hessian inverse"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(2)], [Integer(1)]])",
+        "right": "ImmutableDenseMatrix([[Integer(2)], [Integer(1)]])"
+      },
+      {
+        "name": "cubic optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])",
+        "right": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])"
+      },
+      {
+        "name": "envelope cubic coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(82, 625)",
+        "right": "Rational(82, 625)"
+      },
+      {
+        "name": "independent substituted minimum fourth coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(492, 625)",
+        "right": "Rational(492, 625)"
+      },
+      {
+        "name": "positive definite Hessian",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7721b1e303ee94756c1a",
+    "sourceContentHash": "bd4e11d019f296320f3a429f2360d31876fb784b8d766f8ae517cb3758be5e97",
+    "answerExpression": "Rational(3, 4)",
+    "parameters": {
+      "a": 3,
+      "b": 3,
+      "c": 1,
+      "p": 1,
+      "q": -1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1, 8)",
+        "misconception": "omit the fourth-derivative factorial"
+      },
+      {
+        "expression": "Integer(3)",
+        "misconception": "differentiate the quartic term while freezing the optimizing path"
+      },
+      {
+        "expression": "Rational(-3, 4)",
+        "misconception": "reverse the envelope sign"
+      },
+      {
+        "expression": "Integer(3)",
+        "misconception": "use the quadratic response in place of the quartic correction"
+      },
+      {
+        "expression": "Integer(12)",
+        "misconception": "ignore the coupled Hessian inverse"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(1)], [Integer(-1)]])",
+        "right": "ImmutableDenseMatrix([[Integer(1)], [Integer(-1)]])"
+      },
+      {
+        "name": "cubic optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])",
+        "right": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])"
+      },
+      {
+        "name": "envelope cubic coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1, 8)",
+        "right": "Rational(1, 8)"
+      },
+      {
+        "name": "independent substituted minimum fourth coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(3, 4)",
+        "right": "Rational(3, 4)"
+      },
+      {
+        "name": "positive definite Hessian",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_630df983626ce8be921a",
+    "sourceContentHash": "7fd842f51e54f4b0b2466850e848247b7f9659d321bfa532bab4b9494a6ec308",
+    "answerExpression": "Rational(11526, 2401)",
+    "parameters": {
+      "a": 4,
+      "b": 2,
+      "c": 1,
+      "p": 2,
+      "q": -1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(1921, 2401)",
+        "misconception": "omit the fourth-derivative factorial"
+      },
+      {
+        "expression": "Rational(46104, 2401)",
+        "misconception": "differentiate the quartic term while freezing the optimizing path"
+      },
+      {
+        "expression": "Rational(-11526, 2401)",
+        "misconception": "reverse the envelope sign"
+      },
+      {
+        "expression": "Rational(366, 49)",
+        "misconception": "use the quadratic response in place of the quartic correction"
+      },
+      {
+        "expression": "Integer(102)",
+        "misconception": "ignore the coupled Hessian inverse"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(2)], [Integer(-1)]])",
+        "right": "ImmutableDenseMatrix([[Integer(2)], [Integer(-1)]])"
+      },
+      {
+        "name": "cubic optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])",
+        "right": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])"
+      },
+      {
+        "name": "envelope cubic coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(1921, 2401)",
+        "right": "Rational(1921, 2401)"
+      },
+      {
+        "name": "independent substituted minimum fourth coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(11526, 2401)",
+        "right": "Rational(11526, 2401)"
+      },
+      {
+        "name": "positive definite Hessian",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_5cef8602cbb140b8d14f",
+    "sourceContentHash": "21530c97323565fc146fe76545280cdaa3bd244ae480e064eb670ded45607ae3",
+    "answerExpression": "Rational(4834, 16875)",
+    "parameters": {
+      "a": 4,
+      "b": 4,
+      "c": 1,
+      "p": 2,
+      "q": 1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Rational(2417, 50625)",
+        "misconception": "omit the fourth-derivative factorial"
+      },
+      {
+        "expression": "Rational(19336, 16875)",
+        "misconception": "differentiate the quartic term while freezing the optimizing path"
+      },
+      {
+        "expression": "Rational(-4834, 16875)",
+        "misconception": "reverse the envelope sign"
+      },
+      {
+        "expression": "Rational(106, 75)",
+        "misconception": "use the quadratic response in place of the quartic correction"
+      },
+      {
+        "expression": "Integer(102)",
+        "misconception": "ignore the coupled Hessian inverse"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(2)], [Integer(1)]])",
+        "right": "ImmutableDenseMatrix([[Integer(2)], [Integer(1)]])"
+      },
+      {
+        "name": "cubic optimizer response",
+        "method": "exact-symbolic-identity",
+        "left": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])",
+        "right": "ImmutableDenseMatrix([[Integer(0)], [Integer(0)]])"
+      },
+      {
+        "name": "envelope cubic coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(2417, 50625)",
+        "right": "Rational(2417, 50625)"
+      },
+      {
+        "name": "independent substituted minimum fourth coefficient",
+        "method": "exact-symbolic-identity",
+        "left": "Rational(4834, 16875)",
+        "right": "Rational(4834, 16875)"
+      },
+      {
+        "name": "positive definite Hessian",
+        "method": "exact-finite-condition",
+        "holds": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_2c108579c68cef9aad0b",
+    "sourceContentHash": "46e8c639a877b66fc2e8cbc750cbf3c66df4bdfd944b5907a2e25680e108a1ce",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Integer(-1), Rational(1, 2), log(Integer(3))))",
+    "parameters": {
+      "a": 2,
+      "b": 2,
+      "c": 1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(3))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(3))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), log(Integer(3))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 2), log(Integer(3))), Integer(1), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(pi)), Integer(-1), Mul(Integer(-1), Rational(1, 2), log(Integer(3))))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_bf57ee2b042b8ef3cfbb",
+    "sourceContentHash": "4742bb8e800c833d5fea639e6e48bf3cd3782a4c0ee181cd70fd96b49e769935",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(8))), Integer(-1))",
+    "parameters": {
+      "a": 3,
+      "b": 3,
+      "c": 1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(8))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(8))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Integer(8))), Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Rational(1, 2), log(Integer(8))), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(pi)), Mul(Integer(-1), Rational(1, 2), log(Integer(8))), Integer(-1))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_b69ae2b6b67580929fa9",
+    "sourceContentHash": "8d8e7cbaa42e83737ff0242121bd98ded5f026c3ad3a4ae8405b436723ddee06",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(8))), Integer(-1))",
+    "parameters": {
+      "a": 3,
+      "b": 4,
+      "c": 2
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(8))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(8))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Integer(8))), Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Rational(1, 2), log(Integer(8))), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(pi)), Mul(Integer(-1), Rational(1, 2), log(Integer(8))), Integer(-1))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_e789c228e681c838f36d",
+    "sourceContentHash": "8101312ed3afa83dd19919b897ac15549103ca4a9cbabb47299c688865c6ebed",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(16))), Integer(-1))",
+    "parameters": {
+      "a": 4,
+      "b": 5,
+      "c": 2
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(16))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(16))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Integer(16))), Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Rational(1, 2), log(Integer(16))), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 2), log(Integer(16))), Mul(Integer(-1), log(pi)), Integer(-1))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_3e07cdb4f9e7b1b8cf72",
+    "sourceContentHash": "1d7b2faaba9bcf0cc961e7aa7db7eef43125f137ad3bbb7d1d47dbc56d36dcac",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(9))), Integer(-1))",
+    "parameters": {
+      "a": 2,
+      "b": 5,
+      "c": 1
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(9))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(9))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Integer(9))), Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Rational(1, 2), log(Integer(9))), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(pi)), Mul(Integer(-1), Rational(1, 2), log(Integer(9))), Integer(-1))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_34cc5ce18041ee730b6b",
+    "sourceContentHash": "893bc2e23f41c761ef8f4f0ebb32c973e7cbed9900c439341711bd4f23a66ba9",
+    "answerExpression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(11))), Integer(-1))",
+    "parameters": {
+      "a": 3,
+      "b": 5,
+      "c": 2
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/common.py": "563ee6207edf4e6be1d29b9c335fb3bbbeb61332554f6d784f9a11d0755dee25",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/ode.py": "74ef871bf659f76c65e212b3f5f51ad362f16acf95e2f30fae1fb2e0b0670b09",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/multivariable.py": "f3339f6af6fe75c778c3efbe4abdae28d18f712085c4ac9de6bb155647b1c1b1",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/ode-multivariable/advanced_reviewed.py": "7815f7dc6a153bbab3b7c13ac28268771e7113a59ef5d7aa9410156d3ace495a"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1), Mul(Rational(1, 2), log(Integer(11))))",
+        "misconception": "reverse the covariance determinant scaling"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Mul(Integer(2), pi))), Mul(Integer(-1), Rational(1, 2), log(Integer(11))))",
+        "misconception": "omit the mean quadratic contribution"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), log(Integer(11))), Mul(Integer(-1), log(Mul(Integer(2), pi))), Integer(-1))",
+        "misconception": "use the determinant rather than its square root in the Gaussian normalization"
+      },
+      {
+        "expression": "Add(Integer(1), Mul(Rational(1, 2), log(Integer(11))), log(Mul(Integer(2), pi)))",
+        "misconception": "return entropy rather than its negative"
+      },
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 2), log(Integer(11))), Mul(Integer(-1), log(pi)), Integer(-1))",
+        "misconception": "use the wrong Gaussian normalization"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "covariance quadratic expectation",
+        "method": "exact-symbolic-identity",
+        "left": "Integer(2)",
+        "right": "Integer(2)"
+      },
+      {
+        "name": "positive covariance",
+        "method": "exact-finite-condition",
+        "holds": true
+      },
+      {
+        "name": "scalar convexity second derivative",
+        "method": "exact-symbolic-identity",
+        "left": "Pow(Symbol('t', real=True), Integer(-1))",
+        "right": "Pow(Symbol('t', real=True), Integer(-1))"
+      }
+    ]
+  }
+]

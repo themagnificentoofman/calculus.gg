@@ -1,0 +1,49 @@
+{
+  "status": "stage14-source-bound-independent-review-complete",
+  "sourceCandidateSHA256": "296235acced50a128479245926ac67e0861eae82590e6230ead5c48579de4009",
+  "counts": {
+    "records": 163,
+    "independentlyChecked": 163,
+    "exactOrDomainChecks": 3171,
+    "pairwiseChoiceCertificates": 978,
+    "distinctNormalizedKeys": 157
+  },
+  "editorialCounts": {
+    "olympiad": 142,
+    "hard-options-bound-shortcut": 5,
+    "hard": 16
+  },
+  "advancedRawInReviewedScope": 142,
+  "advancedNormalizedInReviewedScope": 136,
+  "publicSymbolScopeFindings": [],
+  "replicated65PercentOptionFlags": [],
+  "scope": "All 117 non-AGM original new Limits cases, final 16 Hard AGM prefactor cases, all finite partition cases and 16 repaired product/Gauss cases. Other records in the author artifact are outside this review.",
+  "reviewDisclosure": "Original ten stage07 sample answers were visible from the parent. New AGM and partition samples were solved statement/options-first before reading author proofs. Repaired product/Gauss all-finite checks were independently implemented after inspecting source explanations; the parent owns their separate blind-first sample evidence.",
+  "mathCheckLimits": "Exact finite algebra and outward-rational interval certificates accompany separately reviewed analytic hypotheses. No author constructor or answer function was imported. This is AI peer review, not a formal or human proof.",
+  "reproduce": "Run review-code/rebind_stage14.py with --prior-stage --stage --prior-review-dir --out; then write_editorial_review.py, opposite_review.py and finalize_stage14.py using their explicit CLI paths. No author constructor is imported.",
+  "files": {
+    "all-finite-review.json": "4c805a508566d90a1905ede60e66dd9a6591e393b264964fd48045611382969f",
+    "editorial-and-options-review.json": "dd95abdec91bee9958a1571b2628909fbabe03100f274c621dc97ec88b5bd74d",
+    "gauss-stage14-option-review.json": "6ffa5b1f49bc793029d86b857608c7aaea6bc38954f41ccff95261002599efa9",
+    "opposite-pair-review.json": "76b6f75110dff0956bbdf5748b222959d7ab3abddbe100d54cfac344dd89ea89",
+    "review-code/finalize_stage14.py": "3bf16135a4f0f7615a85a8321ee7b2bec63f85ed496be7f012e277ce1085cd6a",
+    "review-code/opposite_review.py": "23daa38231ba81d10d3b71be160d37f767d0003d954766675a363180ff7d8f92",
+    "review-code/option_audit.py": "8f210a0a98b46947f5583473a9542a3716fc4f26c799671451a92b879d0334a2",
+    "review-code/rebind_stage14.py": "d0a2a52402e654af9eb37c24cbc48d901de6726cd3746bdd4131a44675d84efd",
+    "review-code/rigorous_intervals.py": "d371ab9f435947919f521e0d631769ca659ace593ea2e9e77903ae2eb0c2b2d1",
+    "review-code/verify_limits.py": "ce505a8f75e886f23c2beb8fba10bd9798aa3d5032912d086018de952df8d7bd",
+    "review-code/write_editorial_review.py": "465c7518f7cf8ca2bd421a08513f3d3ce12bed6fdf25fab7593c3a3da41bc34b",
+    "source-rebinding.json": "055a3a6b0d839bf77fd33c8da59cbd0b8c4559d0cf9dd8c0fd2ca50ef85ca502"
+  },
+  "humanReviewed": false,
+  "formalProof": false,
+  "productionImported": 0,
+  "priorManifestSHA256": "17de8a43b5430953b732aa8d6a9c50565eca1db8e64f786c5e032e4b104790e1",
+  "evidenceReuse": {
+    "unchangedRecords": 155,
+    "independentlyRecheckedGaussMenus": 8,
+    "newGaussPairCertificates": 48,
+    "statementAnswerSolutionLevelLineageUnchanged": true
+  },
+  "GaussOptionQualification": "The ignore-divisibility distractor also truncates a noninteger reduced linear coefficient in its erroneous arithmetic; this is explicitly disclosed in the peer report. The correct route enforces divisibility before reduction. All four choices per case are distinct nonnegative integers; a second square remains whenever the correct value is square, and the elementary orthogonality upper bound leaves at least two candidates."
+}

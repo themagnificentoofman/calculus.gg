@@ -1,3 +1,4 @@
+import {isLegacyProblem} from '../bank/legacy-origin.mjs';
 import {reviewSavedQuestion} from './solution-presentation.mjs';
 import { calculateProblemXp, calculateRatings, finite, TOPICS, type GameMode } from '../progression.ts';
 import { gamePlayers, nextUnanswered, type GameQuestion, type GameSession, type MatchSettings } from '../game-progress.ts';
@@ -19,14 +20,14 @@ export function publicProfile(profile: Data) {
 export function publicGame(game: GameSession) {
   const { questions = [], answers = {}, ratingSnapshot: _snapshots, roundSnapshot: _roundSnapshot, replaySequence: _replaySequence, replayChunkCount: _replayChunkCount, ...rest } = game;
   return { ...rest, questionCount: questions.length,
-    questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(q => ({ latexProblem: q.latexProblem, options: q.options, topic: q.topic, difficulty: q.difficulty, ...(q.problemId ? { problemId: q.problemId, problemRevision: q.problemRevision } : {}) })),
+    questions: ['waiting', 'cancelled'].includes(game.status) ? [] : questions.map(q => ({ ...(isLegacyProblem(q)?{legacy:true}:{}), latexProblem: q.latexProblem, options: q.options, topic: q.topic, difficulty: q.difficulty, ...(q.contentAttribution?{contentNotice:{credit:q.contentAttribution.credit,sourceUrl:q.contentAttribution.sourceUrl,sourceItem:q.contentAttribution.sourceItem,license:q.contentAttribution.license,licenseUrl:q.contentAttribution.licenseUrl}}:{}), ...(q.problemId ? { problemId: q.problemId, problemRevision: q.problemRevision } : {}) })),
     answers: Object.fromEntries(Object.entries(answers).map(([uid, values]) => [uid, Object.fromEntries(Object.entries(values).map(([i, { selectedOption: _selection, requestId:_requestId, serverEventId:_serverEventId, acceptedAt:_acceptedAt, ...a }]) => [i, a]))])),
   };
 }
 function ownProgress(game: GameSession, uid: string) {
   const answers = game.answers?.[uid] || {};
   return { answers, reviews: Object.fromEntries(Object.keys(answers).map(index => {
-    const q = game.questions![Number(index)]; const review=reviewSavedQuestion(q); return [index, { correctIndex: q.correctIndex, explanation: review?.steps||q.explanation, ...(review?{solutionReviewVersion:review.version,explanationClarified:review.clarified}:{}) }];
+    const q = game.questions![Number(index)]; const review=reviewSavedQuestion(q); return [index, { ...(q.contentAttribution?{contentAttribution:q.contentAttribution}:{}), correctIndex: q.correctIndex, explanation: review?.steps||q.explanation, ...(review?{solutionReviewVersion:review.version,explanationClarified:review.clarified}:{}) }];
   })) };
 }
 export const playerView = (game: GameSession, uid: string) => ({ game: publicGame(game), progress: ownProgress(game, uid) });
@@ -42,8 +43,8 @@ function patchProfile(profile: Data, patch: Data) {
   if (!patch || typeof patch !== 'object' || Array.isArray(patch) || Object.keys(patch).some(k => !allowed.includes(k))) throw new GameError('Only profile preferences can be changed.');
   for (const [k, v] of Object.entries(patch)) {
     if (k === 'settings') {
-      if (!v || Array.isArray(v) || typeof v !== 'object' || Object.keys(v).some(key => !['theme', 'notifications', 'soundEnabled'].includes(key)) ||
-        ('theme' in v && !['dark', 'light', 'system'].includes(v.theme)) || ['notifications', 'soundEnabled'].some(key => key in v && typeof v[key] !== 'boolean')) throw new GameError('Invalid settings.');
+      if (!v || Array.isArray(v) || typeof v !== 'object' || Object.keys(v).some(key => !['theme', 'notifications', 'soundEnabled', 'includeLegacyProblems'].includes(key)) ||
+        ('theme' in v && !['dark', 'light', 'system'].includes(v.theme)) || ['notifications', 'soundEnabled', 'includeLegacyProblems'].some(key => key in v && typeof v[key] !== 'boolean')) throw new GameError('Invalid settings.');
       profile.settings = { ...profile.settings, ...v }; continue;
     }
     if (typeof v !== 'string' || v.length > (k === 'photoURL' ? 300000 : k === 'displayName' ? 99 : 32)) throw new GameError('Invalid profile field.');
@@ -69,7 +70,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
     return store.transaction(async tx => {
       const existing = await tx.get(`users/${uid}`);
       const p = existing || { uid, displayName: typeof claims.name === 'string' ? claims.name.slice(0, 99) : 'Calculus Ninja', handle: `user${uid.slice(0, 6)}`, photoURL: typeof claims.picture === 'string' ? claims.picture : '', email: typeof claims.email === 'string' ? claims.email : '',
-        rating: 0, classification: 'Novice', gamesPlayed: 0, wins: 0, losses: 0, draws: 0, ratedGames: 0, answeredQuestions: 0, correctAnswers: 0, xp: 0, topicXp: {}, topicRatings: {}, topicRatedGames: {}, friends: [], settings: { theme: 'dark', notifications: true, soundEnabled: true }, createdAt: new Date(now()) };
+        rating: 0, classification: 'Novice', gamesPlayed: 0, wins: 0, losses: 0, draws: 0, ratedGames: 0, answeredQuestions: 0, correctAnswers: 0, xp: 0, topicXp: {}, topicRatings: {}, topicRatedGames: {}, friends: [], settings: { theme: 'dark', notifications: true, soundEnabled: true, includeLegacyProblems: false }, createdAt: new Date(now()) };
       p.uid = uid; patchProfile(p, patch); p.lastActive = now(); saveProfile(tx, uid, p); return p;
     });
   }

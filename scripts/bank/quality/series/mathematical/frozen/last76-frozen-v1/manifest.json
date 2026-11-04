@@ -1,0 +1,42 @@
+{
+  "status": "76-proposed-option-revisions-awaiting-independent-parent-review",
+  "records": 76,
+  "families": 8,
+  "files": {
+    "support_patches.py": "97f3905995290811c01912ac1442a9073da2d41e6c806878fa8b4059726d6cbe",
+    "literal_math.py": "a38589054a0a73aba53ebaeaab2f6263b471c15dc93fa9732e1aa22380d8ac25",
+    "enclosures.py": "7bd88cff491cb437a4b698eb238dd8cfeb120b0045e32bf4cc607f00877168a6",
+    "intervals.py": "d09fe51182402b0b446165a176affe00d1b71b19180d65018814249ad22a7328",
+    "intervals_base.py": "d371ab9f435947919f521e0d631769ca659ace593ea2e9e77903ae2eb0c2b2d1",
+    "full-source-records.jsonl": "848bde2bf06ca7198af3537f122be452ed66cc1e4617dd494bcbb33f2a9c7d10",
+    "support-option-patches.json": "cd251b4e864fbb178fa13f5f1050fab2c0df7a98a3cb9e31f78eaad90430b7df"
+  },
+  "API": "support_patches.supports(original), build_patch(original), verify_patch(patch,original)",
+  "preserved": "The previous frozen80 and6 patches are unchanged; every new patch preserves exact original statement, correct choice object, solution and semantic lineage.",
+  "checks": {
+    "literalInequalityCertificates": 456,
+    "allFourRanksPerFamily": true,
+    "cycleJensenAndPointwiseBoundRetainsWrongChoice": true
+  },
+  "difficultyRecommendations": [
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "index": 9,
+      "recommendedDifficulty": "medium",
+      "reason": "These three lower alternatives are eliminated by the first three positive factors plus convergence of the infinite product; the actual menu admits a shorter Medium route."
+    },
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "index": 1,
+      "recommendedDifficulty": "medium",
+      "reason": "These three lower alternatives are eliminated by the first three positive factors plus convergence of the infinite product; the actual menu admits a shorter Medium route."
+    },
+    {
+      "familyId": "m3-series-hard-dyadic-infinite-product",
+      "index": 5,
+      "recommendedDifficulty": "medium",
+      "reason": "These three lower alternatives are eliminated by the first three positive factors plus convergence of the infinite product; the actual menu admits a shorter Medium route."
+    }
+  ],
+  "intrinsicException": "Factorial ratio-test outcomes0/infinity remain unchanged. Rank extremity follows the mathematical outcome classes and is documented separately."
+}

@@ -1,0 +1,87 @@
+{
+  "evaluatedDatabaseSha256": "28804a2568a71a79c0722121cbe8e629491df299aad3d745a8eacd2afd6c6765",
+  "finalDatabaseSha256": "f52f2ae832eac84b5eef71421a7ec3b1d8fa44b5a3b404ff60f132cdb3df415e",
+  "baselineDatabaseSha256": "ea2f92bc6541e1180c8ff3e30597f3b59e0b4a7626d89f886fec27d6a950ea86",
+  "matchingTables": {
+    "cbank_shared": {
+      "rows": 846,
+      "sha256": "aaee6e26eec5601e6724b73c39bdc02001360a0febc373c14937b3e169a40c3d"
+    },
+    "cbank_problems": {
+      "rows": 106596,
+      "sha256": "fb62a5ffa049cf56907b0d8b0111ba7d7606620694b0e0dcfb01a6beaa615fb7"
+    },
+    "cbank_publication": {
+      "rows": 106596,
+      "sha256": "f0b02f02c3298435f75512da6ee448f33a1bce4b2888e51239aa8c6297765d9d"
+    },
+    "cbank_selection_features": {
+      "rows": 5796,
+      "sha256": "bf87c077dbb5d55218489f6ef99dd61ee6a0b9d1398977d0316b51a7c07bdd39"
+    },
+    "cbank_pools": {
+      "rows": 2048,
+      "sha256": "315b052a5189a4e2802138133d69f0fc8bfa6678a386f60447978c29ac0d3d7f"
+    },
+    "cbank_slots": {
+      "rows": 274014,
+      "sha256": "a9f187ce1d5a8cb5b4956a903192d862812291eebfc1671d2250986a63f88006"
+    },
+    "cbank_release_sources": {
+      "rows": 3,
+      "sha256": "f220c1dcac03c7b7246b03a6895b0c5cab5b3464f21058bf1e47ef70eb6cc203"
+    },
+    "cbank_release_exclusions": {
+      "rows": 1389,
+      "sha256": "5d45d6a2bd9c686229b2c59185d4a5ea58f53c2d1fb27773da1ff17f45292edf"
+    },
+    "cbank_withdrawn_families": {
+      "rows": 72,
+      "sha256": "7bc3f05b30c6880206e3959e385a6e7ed7368baa4998fbba772a078fe7fb8a98"
+    },
+    "cbank_problem_lineage": {
+      "rows": 234,
+      "sha256": "2d352862e919d925b0c6105317a9fb6bfd1701282aa76f4ec08d119e1eea246d"
+    },
+    "cbank_family_lineage": {
+      "rows": 72,
+      "sha256": "8f594e3703c05a92b0bf8bdcc6f3a0c159b4d47c48a4eb010c6f34ac1fdecfb9"
+    },
+    "cbank_config": {
+      "rows": 1,
+      "sha256": "5e025b53b0d261d5908c9514818de0fd2e8ef73b65146e6d81c2fb40b533730f"
+    }
+  },
+  "historicalPreservation": {
+    "cbank_shared": {
+      "rows": 385,
+      "sha256": "fa53436243a9ebb0d573e98b68a7b62e7556bb7ae1fc7e0963a34f6d1e96dcea"
+    },
+    "cbank_problems": {
+      "rows": 103304,
+      "sha256": "607b2525d7eeb6da831dcd35af812a27468c269cf6b5f3f226587e44e3c2840e"
+    },
+    "cbank_publication": {
+      "rows": 103304,
+      "sha256": "46b1285e396e92e17e0e14a96bd256af0aad9f0da1f002a1f31ec50c50c9b29e"
+    },
+    "cbank_selection_features": {
+      "rows": 2504,
+      "sha256": "de9756d4afd6f84b21946f8d5f7da4814d6ad7d5c8af36510195347ccde60753"
+    },
+    "cbank_pools": {
+      "rows": 1045,
+      "sha256": "e9c18cde097ec84aee6cbe8ef8ff0be0fd000b6babfb1ea5dfa9c0f397ad654d"
+    },
+    "cbank_slots": {
+      "rows": 267272,
+      "sha256": "8a58e64e80639922e64046b3db39344079bc1b106e44de38206508ed2c38b49d"
+    }
+  },
+  "compactManifestBinding": {
+    "release": "cn-2026-11-04-quality-v4",
+    "fullManifestSha256": "4eaa8be80a481e08be9d3b58566e1de109ef022da3a88a33304cbed63429ef8e"
+  },
+  "passed": true,
+  "scope": "Every selector-relevant logical row is identical to the evaluated local catalog. The new oversized audit manifest is replaced only by its verified compact reference. Every original canonical payload, publication row, feature, pool, slot and release manifest is byte-identical."
+}

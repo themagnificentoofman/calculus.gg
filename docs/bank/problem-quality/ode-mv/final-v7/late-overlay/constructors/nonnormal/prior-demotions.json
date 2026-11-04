@@ -1,0 +1,188 @@
+{
+  "records": [
+    {
+      "problemId": "cn_c0a62ae21083901ddd7f",
+      "sourceContentHash": "a313fc8be6229575799fd621616ef060144e1a652491b742d92cdf61de4bd8c4",
+      "semanticHash": "83816cdc0c10aacdec8bcdbf40dd2cdb7a304b5e665eeb51a31632849d1e568c",
+      "sourceCanonicalRawHash": "f51e24277802aeb74f0a7e6b3366673aef6f6635fcb62594a1aa3899002827a2",
+      "index": 0,
+      "literalShear": "5/2",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "1/2",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_47ae798905a921a3a5e3",
+      "sourceContentHash": "392d6085a9cf1adefffe7914aa1f85a80e0dcfccfb0a02bcaaa78d797683c096",
+      "semanticHash": "98a4824e299802f39df05b94e191a4ff1e81ca5248069311eb10caa9e8d20a83",
+      "sourceCanonicalRawHash": "fa225c2c88847a60e1805a76a87eb2bda8dbae2be446dfb756288f1a3e280aba",
+      "index": 1,
+      "literalShear": "3",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "1",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_bf941d2c8a14359e496b",
+      "sourceContentHash": "321fcd584c4d3214873edee8df09b49d94ec4d4bed644ca8a39e306df73e5bce",
+      "semanticHash": "94426a6dc288230953a6f46d2990bb2285f982eb6801ffe9475cec6620b1a554",
+      "sourceCanonicalRawHash": "908433e4c7ed2c44e85a907b49d63d9d102f66f385027c8562d7be355323c0ca",
+      "index": 2,
+      "literalShear": "7/2",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "3/2",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "threeWrongValueForms": [
+        "Integer(1)",
+        "Mul(Rational(1, 2), Add(Rational(7, 2), Mul(Integer(-1), Rational(1, 2), Pow(Integer(33), Rational(1, 2)))), exp(Mul(Integer(-1), Rational(1, 7), Pow(Integer(33), Rational(1, 2)))))",
+        "Mul(Rational(1, 2), Add(Mul(Rational(1, 2), Pow(Integer(33), Rational(1, 2))), Rational(7, 2)), exp(Mul(Integer(-1), Rational(1, 2), Pow(Integer(33), Rational(1, 2)))))"
+      ],
+      "exactRadicalComparisonWitness": "6",
+      "strictWrongBounds": [
+        "1 equals1.",
+        "Since sqrt(K\u00b2\u22124)>K\u22122,0<K\u2212sqrt(K\u00b2\u22124)<2; dividing this numerator by2 exp(sqrt(K\u00b2\u22124)/K) gives a value strictly below1.",
+        "The positive exponential series gives exp(z)>1+z>(K+z)/2 because K\u2212z<2. Thus (K+z)/(2 exp(z))<1."
+      ],
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage."
+    },
+    {
+      "problemId": "cn_e045c6cf325512069014",
+      "sourceContentHash": "b453a4a2a14dcc6c19317725bdfff10093d930c1a810325ab20e26f57b1434bd",
+      "semanticHash": "8fcbc6f265f166a0b842e83a25a9f025964a6a90436111e8c47ec1110ed5a27c",
+      "sourceCanonicalRawHash": "a2c9ccf98fbe048c9cd99af536b71ec2f9b8f59b96f5be55a53e59b73212b345",
+      "index": 3,
+      "literalShear": "4",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "2",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_31f8e18c5cb2cb1d96c7",
+      "sourceContentHash": "d825b704ad807ec49331433772ce82fd0c9de0d1e697d3d90b4034b2fa36ee31",
+      "semanticHash": "e26dcac7fa8bf09b05ff7b14c1a4ef90fa6b62d758caf5ba529f2bec1b03cbe4",
+      "sourceCanonicalRawHash": "ec30dda3c1f635dd3f6139ff078d129ed19584e7b5fd6ad7e730edc67cfb53c4",
+      "index": 4,
+      "literalShear": "5",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "3",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_ece8ec3b89e15d2e465b",
+      "sourceContentHash": "da1d1520a8689225eee9c32c43303ad9a01d4d6ab9ebafd3c4ee47ad30f5d4fe",
+      "semanticHash": "744dac6eb1ad88d73dd77dc6eebf63a1a19da719783b8edf177a8a4147354d76",
+      "sourceCanonicalRawHash": "22f414f7912b865d186ee1b3f59ee76d65da547cb697f65068bab68ceae75ff4",
+      "index": 5,
+      "literalShear": "6",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "4",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "threeWrongValueForms": [
+        "Integer(1)",
+        "Mul(Rational(1, 2), Add(Integer(6), Mul(Integer(-1), Integer(4), Pow(Integer(2), Rational(1, 2)))), exp(Mul(Integer(-1), Rational(2, 3), Pow(Integer(2), Rational(1, 2)))))",
+        "Mul(Rational(1, 2), Add(Mul(Integer(4), Pow(Integer(2), Rational(1, 2))), Integer(6)), exp(Mul(Integer(-1), Integer(4), Pow(Integer(2), Rational(1, 2)))))"
+      ],
+      "exactRadicalComparisonWitness": "16",
+      "strictWrongBounds": [
+        "1 equals1.",
+        "Since sqrt(K\u00b2\u22124)>K\u22122,0<K\u2212sqrt(K\u00b2\u22124)<2; dividing this numerator by2 exp(sqrt(K\u00b2\u22124)/K) gives a value strictly below1.",
+        "The positive exponential series gives exp(z)>1+z>(K+z)/2 because K\u2212z<2. Thus (K+z)/(2 exp(z))<1."
+      ],
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage."
+    },
+    {
+      "problemId": "cn_7daaa5f788a5b7e3775e",
+      "sourceContentHash": "6614bfec6e3d7811edb3e3f3e6232efb8cf7a6f40a236637031d39b5237d3b63",
+      "semanticHash": "f41218a9de0f68fd613469adca2c92490bec2c80935187edd378cddfd7b8d6aa",
+      "sourceCanonicalRawHash": "3e29ec3c756b443ac49ea0ea2bb5524629c1490c206e05f383428345ae9ad4d8",
+      "index": 6,
+      "literalShear": "7",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "5",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_6a90eb744424e9a6ff42",
+      "sourceContentHash": "d0dbc4b700906f0ca24795a42d842f81dcfb63ff166590447d0451c9aadd3147",
+      "semanticHash": "2087b8a1e008d0102102f950dd78f3ba1852fb8ac269482d273a52fc558727a2",
+      "sourceCanonicalRawHash": "1bf7c949f61fdfc7dcafa58177dbfe7c22acd00ec2fea6cf686c0d61546203d4",
+      "index": 7,
+      "literalShear": "8",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "6",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    },
+    {
+      "problemId": "cn_ff9725d01be218687a7e",
+      "sourceContentHash": "10725d87d635fee20089edc529858d8f8509cd9df49a375ede52320d21eb8c08",
+      "semanticHash": "b5bf2bfa73dff31d8e4d616bcca434cd9660c00798341ad68356b6210018095d",
+      "sourceCanonicalRawHash": "fc2d236790170e826476706818ea6ee5cadf348021d3cf78963b0d7bfee4ff1e",
+      "index": 8,
+      "literalShear": "9",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "7",
+      "recommendedDifficulty": "hard",
+      "qualifiedOlympiad": false,
+      "threeWrongValueForms": [
+        "Integer(1)",
+        "Mul(Rational(1, 2), Add(Integer(9), Mul(Integer(-1), Pow(Integer(77), Rational(1, 2)))), exp(Mul(Integer(-1), Rational(1, 9), Pow(Integer(77), Rational(1, 2)))))",
+        "Mul(Rational(1, 2), Add(Pow(Integer(77), Rational(1, 2)), Integer(9)), exp(Mul(Integer(-1), Pow(Integer(77), Rational(1, 2)))))"
+      ],
+      "exactRadicalComparisonWitness": "28",
+      "strictWrongBounds": [
+        "1 equals1.",
+        "Since sqrt(K\u00b2\u22124)>K\u22122,0<K\u2212sqrt(K\u00b2\u22124)<2; dividing this numerator by2 exp(sqrt(K\u00b2\u22124)/K) gives a value strictly below1.",
+        "The positive exponential series gives exp(z)>1+z>(K+z)/2 because K\u2212z<2. Thus (K+z)/(2 exp(z))<1."
+      ],
+      "easiestOptionsVisibleRoute": "At t=0 use initial unit vector(1,1)/sqrt2. Its squared-norm derivative is K\u22122>0, so the requested supremum is strictly greater than1. Each wrong option is at most1 by the displayed elementary inequalities. No singular-value optimization is needed.",
+      "difficultyRationale": "The actual menu reduces the problem to an initial norm-growth test plus short positive-exponential bounds. The longer global optimization proof is unnecessary, so these three instances should be Hard. Preserve original group and normalized lineage."
+    },
+    {
+      "problemId": "cn_e142b054434f8746a95a",
+      "sourceContentHash": "b3f2633b623e5e5708160ea14931f9d3aba52107a1e397e3c3b1b70fe7cee2ba",
+      "semanticHash": "54a4a8ec73e4d138612973e65a1899e28446e330c76f04cacbb3560aff11b836",
+      "sourceCanonicalRawHash": "4c1d6025a17a0b28f4d583265c5f70c2fddd1a79d9bd2966762986269b9b64c8",
+      "index": 9,
+      "literalShear": "10",
+      "answerIndependentlyReconstructed": true,
+      "initialSquaredNormDerivative": "8",
+      "recommendedDifficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The lower bound M>1 does not isolate the correct option in this menu. The existing separate reviewer qualification remains applicable; this bounded shortcut pass does not assert a new full proof/option clearance.",
+      "difficultyRationale": "At least one other visible option is strictly above1. The identified initial-growth shortcut does not decide this item."
+    }
+  ],
+  "demotions": [
+    2,
+    5,
+    8
+  ],
+  "scope": "Independent literal-options shortcut audit, all10 answers compared with the closed form and three exact menu isolations proved analytically. No author constructor imported. Parent final actual-ID screen and source-bound admission override still required.",
+  "sourceSha256": {
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/ode-mv-previews-v2/canonical-previews.jsonl": "456b670e36ccff6abfca419a28fbc1c463f42c76ea3a346a02b8d0925f3d9724",
+    "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/problem-quality/.bank-data/quality/ode-mv-previews-v2/retained-originals.jsonl": "f0411aa26cb5c30c3b37cc1e1f3564ae369fd683214a28c0d29687d99c373efe"
+  },
+  "reviewerSha256": "dac46c5406fe1cdc775e547ae9be0fc993577923231e3d05505e62ce1d214330"
+}

@@ -1,0 +1,1779 @@
+{
+  "cn_5184e16b1f1449a0db09": {
+    "sourceContentHash": "abc2de85040c6ccc73c5cfe5b9a3df29a7c9bad43ab395c92225131665d955b6",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=\\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(\\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(\\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(\\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(\\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(\\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{4 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{2 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_55cbc6e5c351c9031287": {
+    "sourceContentHash": "c471d4039e4edf621997286da289a69001f65b74b57e7c046c518256f8ed9697",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=4 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(2 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(2 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(2 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(2 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(2 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{16 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{8 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_cbc9048504e71fba4110": {
+    "sourceContentHash": "dbff040ba6a3ec0f673c7549b77da515e8e0e5f0b1e5bcac3bf4a3108a44657c",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=9 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(3 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(3 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(3 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(3 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(3 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{36 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{18 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_cb4043472516d243b022": {
+    "sourceContentHash": "11e14e84c245b5a21e3cdd6c2bdf358fbdd61325e9146855564be5d88da28c59",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=25 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(5 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(5 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(5 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(5 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(5 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{100 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{50 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_1d97d6a4f724bc196594": {
+    "sourceContentHash": "8ab1f2a224baa15ba6273b64e7be31dd12b34d4844b6b21533b4c75c26b396bf",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(2)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=\\frac{\\pi^{2}}{4}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(\\frac{\\pi}{2} t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{2}t^2\\sin^2(\\frac{\\pi}{2} t)\\,\\mathrm dt}{\\int_0^{2}\\sin^2(\\frac{\\pi}{2} t)\\,\\mathrm dt}.",
+      "\\int_0^{2}\\sin^2(\\frac{\\pi}{2} t)\\,\\mathrm dt=1,\\quad \\int_0^{2}t^2\\sin^2(\\frac{\\pi}{2} t)\\,\\mathrm dt=\\frac{4}{3} - \\frac{2}{\\pi^{2}}.",
+      "\\frac{4}{3} - \\frac{2}{\\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_28384923da1fc9f2543a": {
+    "sourceContentHash": "0dbe8edf3f6f6d9d02be2ac349a53ac295316f59929b76a549f0a9e855c3bdba",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(2)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=\\frac{9 \\pi^{2}}{4}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(\\frac{3 \\pi}{2} t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{2}t^2\\sin^2(\\frac{3 \\pi}{2} t)\\,\\mathrm dt}{\\int_0^{2}\\sin^2(\\frac{3 \\pi}{2} t)\\,\\mathrm dt}.",
+      "\\int_0^{2}\\sin^2(\\frac{3 \\pi}{2} t)\\,\\mathrm dt=1,\\quad \\int_0^{2}t^2\\sin^2(\\frac{3 \\pi}{2} t)\\,\\mathrm dt=\\frac{4}{3} - \\frac{2}{9 \\pi^{2}}.",
+      "\\frac{4}{3} - \\frac{2}{9 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_fdb9da5721b37623ea6f": {
+    "sourceContentHash": "61cb56c33d08b628e05acb3298534d117d7a495c5fd34e1ebe0388d7334984e1",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(\\frac{1}{2})=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=4 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(2 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{\\frac{1}{2}}t^2\\sin^2(2 \\pi t)\\,\\mathrm dt}{\\int_0^{\\frac{1}{2}}\\sin^2(2 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{\\frac{1}{2}}\\sin^2(2 \\pi t)\\,\\mathrm dt=\\frac{1}{4},\\quad \\int_0^{\\frac{1}{2}}t^2\\sin^2(2 \\pi t)\\,\\mathrm dt=\\frac{1}{48} - \\frac{1}{32 \\pi^{2}}.",
+      "\\frac{1}{12} - \\frac{1}{8 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_91f860a80d864cfcebe8": {
+    "sourceContentHash": "4a1eb6b1a7098dbee23c4c18c4c7adf49bd4dd36ac553d32294005b5cf43baf7",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(\\frac{1}{2})=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=16 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(4 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{\\frac{1}{2}}t^2\\sin^2(4 \\pi t)\\,\\mathrm dt}{\\int_0^{\\frac{1}{2}}\\sin^2(4 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{\\frac{1}{2}}\\sin^2(4 \\pi t)\\,\\mathrm dt=\\frac{1}{4},\\quad \\int_0^{\\frac{1}{2}}t^2\\sin^2(4 \\pi t)\\,\\mathrm dt=\\frac{1}{48} - \\frac{1}{128 \\pi^{2}}.",
+      "\\frac{1}{12} - \\frac{1}{32 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_5765888cf8f228830a9f": {
+    "sourceContentHash": "cc9160b5bc64bbb50802d7bd0a71ac64e77f6358fa0002f4d99d6946a3d9ae35",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=36 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(6 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(6 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(6 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(6 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(6 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{144 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{72 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_0347f66a86f3cf81bd2d": {
+    "sourceContentHash": "d65ccc5e7d49a276bbe3040b877a393dbcb963cc8b2350724c68d2c28addfb77",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=49 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(7 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(7 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(7 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(7 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(7 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{196 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{98 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_375e66423d3496af5769": {
+    "sourceContentHash": "b9e4a00074dcb4414a2f573d317985b7b18e4d7d7f3114980a82474f586249e2",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=81 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(9 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(9 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(9 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(9 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(9 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{324 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{162 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_e1e14cd26f800b8c0cd8": {
+    "sourceContentHash": "6c65799e4f20ac0bfe63c1814ed07d0f1ad0ed142b7e2dbfc4431f82d2eaaf25",
+    "revision": 1,
+    "statement": "-y\\prime\\prime+\\varepsilon t^2y=\\lambda(\\varepsilon)y,\\quad y(0)=y(1)=0.\\textnormal{Let the eigenvalue branch satisfy }\\lambda(0)=100 \\pi^{2}\\textnormal{. Find }\\lambda\\prime(0).",
+    "steps": [
+      "\\textnormal{At zero perturbation choose }y_0(t)=\\sin(10 \\pi t).\\textnormal{Differentiate the equation with respect to the parameter and multiply by the unperturbed eigenfunction.}",
+      "\\textnormal{The terms involving the eigenfunction derivative cancel after two integrations by parts: both it and the eigenfunction vanish at the endpoints. Hence }\\lambda\\prime(0)=\\frac{\\int_0^{1}t^2\\sin^2(10 \\pi t)\\,\\mathrm dt}{\\int_0^{1}\\sin^2(10 \\pi t)\\,\\mathrm dt}.",
+      "\\int_0^{1}\\sin^2(10 \\pi t)\\,\\mathrm dt=\\frac{1}{2},\\quad \\int_0^{1}t^2\\sin^2(10 \\pi t)\\,\\mathrm dt=\\frac{1}{6} - \\frac{1}{400 \\pi^{2}}.",
+      "\\frac{1}{3} - \\frac{1}{200 \\pi^{2}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_84b003d5dd4b94d431de": {
+    "sourceContentHash": "61f6ba088d79969a66314a431c49f367c3f8269c7219a2d9f8a9af6dbad62a24",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+1y),\\quad y(0)=1.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-1\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+1/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{1}+1\\ln\\!\\left(\\frac{y(1+1)}{1(1+1y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+1y(t)),\\textnormal{which both tend to zero.}",
+      "1 - \\ln{\\left(2 \\right)}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_2c2530f12f76d929b638": {
+    "sourceContentHash": "ec3a90c99d85f8330a95ecb4187cc8421be5fe4434dd08846522015a15642f95",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+1y),\\quad y(0)=2.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-1\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+1/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{2}+1\\ln\\!\\left(\\frac{y(1+2)}{2(1+1y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+1y(t)),\\textnormal{which both tend to zero.}",
+      "\\ln{\\left(\\frac{2}{3} \\right)} + \\frac{1}{2}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_d9255ed085199642138e": {
+    "sourceContentHash": "784cf2fee652481a367f7295b80b4820d26c380962d6a72d07f304a66f35c22d",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+1y),\\quad y(0)=\\frac{1}{2}.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-1\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+1/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{\\frac{1}{2}}+1\\ln\\!\\left(\\frac{y(1+\\frac{1}{2})}{\\frac{1}{2}(1+1y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+1y(t)),\\textnormal{which both tend to zero.}",
+      "2 - \\ln{\\left(3 \\right)}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_0325e15800d0eda52bda": {
+    "sourceContentHash": "baebe874407aedaf5c443d49d634e65d768c12285e2d29035b908c6cd5b9c9db",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+2y),\\quad y(0)=1.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-2\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+2/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{1}+2\\ln\\!\\left(\\frac{y(1+2)}{1(1+2y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+2y(t)),\\textnormal{which both tend to zero.}",
+      "1 - 2 \\ln{\\left(3 \\right)}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_d97c2a1baf5a14db6812": {
+    "sourceContentHash": "d4364dc508bb26d9c32d8d5f163ffc7c92855e119721ad32925a5a1c2f9d94c3",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+3y),\\quad y(0)=1.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-3\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+3/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{1}+3\\ln\\!\\left(\\frac{y(1+3)}{1(1+3y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+3y(t)),\\textnormal{which both tend to zero.}",
+      "1 - 3 \\ln{\\left(4 \\right)}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_1da38ab06af4d35db1ef": {
+    "sourceContentHash": "f7447e87562a357b8d93060614cd46c7548b33ed53edec91a1ae03abf2552c26",
+    "revision": 1,
+    "statement": "y\\prime=-y^2(1+4y),\\quad y(0)=1.\\textnormal{Find }\\lim_{t\\to\\infty}\\left(\\frac1{y(t)}-t-4\\ln t\\right).",
+    "steps": [
+      "\\textnormal{The solution decreases, stays positive, and tends to zero. The reciprocal }v=1/y\\textnormal{ satisfies }v\\prime=1+4/v,\\textnormal{ so }v(t)/t\\to1\\quad\\textnormal{and}\\quad t y(t)\\to1.",
+      "\\textnormal{Separating the original equation gives the exact identity }t=\\frac1y-\\frac1{1}+4\\ln\\!\\left(\\frac{y(1+4)}{1(1+4y)}\\right).",
+      "\\textnormal{Rearrange the requested expression. The remaining time-dependent logarithms are multiples of }\\ln(t y(t))\\quad\\textnormal{and}\\quad\\ln(1+4y(t)),\\textnormal{which both tend to zero.}",
+      "1 - 4 \\ln{\\left(5 \\right)}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_78d02b16e5cbbbd9303d": {
+    "sourceContentHash": "bb990cfab9c9900979603c6c15fa2413b90afd1069bbcaaf8dafc112eb1dc08b",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+2y(1-y)(y-\\frac{1}{3})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{1t}},\\quad y\\prime=-1y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-2u(1-u)(u-\\frac{1}{3}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "\\frac{1}{3}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_7c4e983ca520fc95d27c": {
+    "sourceContentHash": "92d1d8e4f20d6054e5caea3f066cd3752c5eb97492fca2da119e0623d20c2d77",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+2y(1-y)(y-\\frac{1}{4})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{1t}},\\quad y\\prime=-1y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-2u(1-u)(u-\\frac{1}{4}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "\\frac{1}{2}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_28e60d795646c0eacfed": {
+    "sourceContentHash": "f051503dcead1f3ab7fbec46750ad59f5ca28418b5d62cf37b8948e84e55fc37",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+2y(1-y)(y-\\frac{3}{4})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{1t}},\\quad y\\prime=-1y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-2u(1-u)(u-\\frac{3}{4}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "- \\frac{1}{2}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_d1282566112ce4b5c550": {
+    "sourceContentHash": "45ccddbfa52e0bf748db6ab0e63f294c12925d46895b2536a7293c8f2a53ea8a",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+8y(1-y)(y-\\frac{2}{3})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{2t}},\\quad y\\prime=-2y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-8u(1-u)(u-\\frac{2}{3}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "- \\frac{2}{3}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_ba557788e00f5ba2461e": {
+    "sourceContentHash": "b22b0083b215e1d9c02af31b489689869742c8205caf90474af0449219d48db0",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+8y(1-y)(y-\\frac{4}{5})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{2t}},\\quad y\\prime=-2y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-8u(1-u)(u-\\frac{4}{5}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "- \\frac{6}{5}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_c554c9e580429197c16f": {
+    "sourceContentHash": "741e0386432b8ff82d360487aeaac76232b9d5d216e22dbab440739b7a5cda8f",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+18y(1-y)(y-\\frac{2}{5})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{3t}},\\quad y\\prime=-3y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-18u(1-u)(u-\\frac{2}{5}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "\\frac{3}{5}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_ecb470d325b381321b27": {
+    "sourceContentHash": "1d554829bc8698dab5182dc7f558f41ab2df9fa74ce09a1e7f22bf3748870e6a",
+    "revision": 1,
+    "statement": "y\\prime\\prime+c y\\prime+18y(1-y)(y-\\frac{3}{5})=0.\\textnormal{Find the unique real c for which there is a strictly decreasing classical solution with }\\lim_{t\\to-\\infty}(y,y\\prime)=(1,0),\\quad\\lim_{t\\to\\infty}(y,y\\prime)=(0,0).",
+    "steps": [
+      "\\textnormal{A candidate monotone profile is }y(t)=\\frac1{1+e^{3t}},\\quad y\\prime=-3y(1-y).\\textnormal{Substitution gives the displayed speed.}",
+      "\\textnormal{To see uniqueness, write any decreasing front as }p(u)=-y\\prime>0,\\quad u=y\\in(0,1).\\textnormal{Then }p\\frac{\\mathrm dp}{\\mathrm du}=cp-18u(1-u)(u-\\frac{3}{5}).",
+      "\\textnormal{The positive slope of p near zero increases strictly with c, whereas the positive coefficient of p near one decreases strictly with c. Thus if a larger speed had a second front, its p-graph would begin above the first and end below it.}",
+      "\\textnormal{At any intersection of two positive phase graphs, their derivative difference equals their speed difference. A larger-speed graph therefore cannot cross from above to below. This contradiction proves uniqueness.}",
+      "- \\frac{3}{5}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_b266d4c3b3b2895afa77": {
+    "sourceContentHash": "b19038dacda5bc53d32d480e220cf41679c9fe5df06639988d1f803f287fa6ec",
+    "revision": 1,
+    "statement": "m(t)=\\min_{x,y\\in\\mathbb R}\\left\\{- t \\left(2 x + y\\right) + \\frac{x^{4}}{4} + \\frac{3 x^{2}}{2} + x y + \\frac{y^{4}}{4} + y^{2}\\right\\}.\\textnormal{Find }m^{(4)}(0).",
+    "steps": [
+      "\\textnormal{The quadratic matrix }A=\\left[\\begin{matrix}3 & 1\\\\1 & 2\\end{matrix}\\right]\\textnormal{ is positive definite. The quartic terms are convex and coercive, so the global minimizer is unique. Its stationarity equation is }Az+z^{\\circ3}=t v,\\quad v=\\left[\\begin{matrix}2\\\\1\\end{matrix}\\right].",
+      "\\textnormal{The implicit function theorem and odd symmetry give }z(t)=t w+t^3r+O(t^5),\\quad w=A^{-1}v=\\left[\\begin{matrix}\\frac{3}{5}\\\\\\frac{1}{5}\\end{matrix}\\right],\\quad r=-A^{-1}w^{\\circ3}.",
+      "\\textnormal{The envelope identity is }m\\prime(t)=-v^{\\mathsf T}z(t).\\textnormal{Since A is symmetric, }-v^{\\mathsf T}r=w^{\\mathsf T}w^{\\circ3}=w_1^4+w_2^4.",
+      "\\textnormal{Integrate the cubic coefficient of the derivative, or differentiate it three times, to obtain }m^{(4)}(0)=6(w_1^4+w_2^4).",
+      "\\frac{492}{625}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_7721b1e303ee94756c1a": {
+    "sourceContentHash": "bd4e11d019f296320f3a429f2360d31876fb784b8d766f8ae517cb3758be5e97",
+    "revision": 1,
+    "statement": "m(t)=\\min_{x,y\\in\\mathbb R}\\left\\{- t \\left(x - y\\right) + \\frac{x^{4}}{4} + \\frac{3 x^{2}}{2} + x y + \\frac{y^{4}}{4} + \\frac{3 y^{2}}{2}\\right\\}.\\textnormal{Find }m^{(4)}(0).",
+    "steps": [
+      "\\textnormal{The quadratic matrix }A=\\left[\\begin{matrix}3 & 1\\\\1 & 3\\end{matrix}\\right]\\textnormal{ is positive definite. The quartic terms are convex and coercive, so the global minimizer is unique. Its stationarity equation is }Az+z^{\\circ3}=t v,\\quad v=\\left[\\begin{matrix}1\\\\-1\\end{matrix}\\right].",
+      "\\textnormal{The implicit function theorem and odd symmetry give }z(t)=t w+t^3r+O(t^5),\\quad w=A^{-1}v=\\left[\\begin{matrix}\\frac{1}{2}\\\\- \\frac{1}{2}\\end{matrix}\\right],\\quad r=-A^{-1}w^{\\circ3}.",
+      "\\textnormal{The envelope identity is }m\\prime(t)=-v^{\\mathsf T}z(t).\\textnormal{Since A is symmetric, }-v^{\\mathsf T}r=w^{\\mathsf T}w^{\\circ3}=w_1^4+w_2^4.",
+      "\\textnormal{Integrate the cubic coefficient of the derivative, or differentiate it three times, to obtain }m^{(4)}(0)=6(w_1^4+w_2^4).",
+      "\\frac{3}{4}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_630df983626ce8be921a": {
+    "sourceContentHash": "7fd842f51e54f4b0b2466850e848247b7f9659d321bfa532bab4b9494a6ec308",
+    "revision": 1,
+    "statement": "m(t)=\\min_{x,y\\in\\mathbb R}\\left\\{- t \\left(2 x - y\\right) + \\frac{x^{4}}{4} + 2 x^{2} + x y + \\frac{y^{4}}{4} + y^{2}\\right\\}.\\textnormal{Find }m^{(4)}(0).",
+    "steps": [
+      "\\textnormal{The quadratic matrix }A=\\left[\\begin{matrix}4 & 1\\\\1 & 2\\end{matrix}\\right]\\textnormal{ is positive definite. The quartic terms are convex and coercive, so the global minimizer is unique. Its stationarity equation is }Az+z^{\\circ3}=t v,\\quad v=\\left[\\begin{matrix}2\\\\-1\\end{matrix}\\right].",
+      "\\textnormal{The implicit function theorem and odd symmetry give }z(t)=t w+t^3r+O(t^5),\\quad w=A^{-1}v=\\left[\\begin{matrix}\\frac{5}{7}\\\\- \\frac{6}{7}\\end{matrix}\\right],\\quad r=-A^{-1}w^{\\circ3}.",
+      "\\textnormal{The envelope identity is }m\\prime(t)=-v^{\\mathsf T}z(t).\\textnormal{Since A is symmetric, }-v^{\\mathsf T}r=w^{\\mathsf T}w^{\\circ3}=w_1^4+w_2^4.",
+      "\\textnormal{Integrate the cubic coefficient of the derivative, or differentiate it three times, to obtain }m^{(4)}(0)=6(w_1^4+w_2^4).",
+      "\\frac{11526}{2401}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_5cef8602cbb140b8d14f": {
+    "sourceContentHash": "21530c97323565fc146fe76545280cdaa3bd244ae480e064eb670ded45607ae3",
+    "revision": 1,
+    "statement": "m(t)=\\min_{x,y\\in\\mathbb R}\\left\\{- t \\left(2 x + y\\right) + \\frac{x^{4}}{4} + 2 x^{2} + x y + \\frac{y^{4}}{4} + 2 y^{2}\\right\\}.\\textnormal{Find }m^{(4)}(0).",
+    "steps": [
+      "\\textnormal{The quadratic matrix }A=\\left[\\begin{matrix}4 & 1\\\\1 & 4\\end{matrix}\\right]\\textnormal{ is positive definite. The quartic terms are convex and coercive, so the global minimizer is unique. Its stationarity equation is }Az+z^{\\circ3}=t v,\\quad v=\\left[\\begin{matrix}2\\\\1\\end{matrix}\\right].",
+      "\\textnormal{The implicit function theorem and odd symmetry give }z(t)=t w+t^3r+O(t^5),\\quad w=A^{-1}v=\\left[\\begin{matrix}\\frac{7}{15}\\\\\\frac{2}{15}\\end{matrix}\\right],\\quad r=-A^{-1}w^{\\circ3}.",
+      "\\textnormal{The envelope identity is }m\\prime(t)=-v^{\\mathsf T}z(t).\\textnormal{Since A is symmetric, }-v^{\\mathsf T}r=w^{\\mathsf T}w^{\\circ3}=w_1^4+w_2^4.",
+      "\\textnormal{Integrate the cubic coefficient of the derivative, or differentiate it three times, to obtain }m^{(4)}(0)=6(w_1^4+w_2^4).",
+      "\\frac{4834}{16875}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_2c108579c68cef9aad0b": {
+    "sourceContentHash": "46e8c639a877b66fc2e8cbc750cbf3c66df4bdfd944b5907a2e25680e108a1ce",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}2 & 1\\\\1 & 2\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - 1 - \\frac{\\ln{\\left(3 \\right)}}{2}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_bf57ee2b042b8ef3cfbb": {
+    "sourceContentHash": "4742bb8e800c833d5fea639e6e48bf3cd3782a4c0ee181cd70fd96b49e769935",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}3 & 1\\\\1 & 3\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - \\frac{\\ln{\\left(8 \\right)}}{2} - 1"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_b69ae2b6b67580929fa9": {
+    "sourceContentHash": "8d8e7cbaa42e83737ff0242121bd98ded5f026c3ad3a4ae8405b436723ddee06",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}3 & 2\\\\2 & 4\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - \\frac{\\ln{\\left(8 \\right)}}{2} - 1"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_e789c228e681c838f36d": {
+    "sourceContentHash": "8101312ed3afa83dd19919b897ac15549103ca4a9cbabb47299c688865c6ebed",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}4 & 2\\\\2 & 5\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - \\frac{\\ln{\\left(16 \\right)}}{2} - 1"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_3e07cdb4f9e7b1b8cf72": {
+    "sourceContentHash": "1d7b2faaba9bcf0cc961e7aa7db7eef43125f137ad3bbb7d1d47dbc56d36dcac",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}2 & 1\\\\1 & 5\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - \\frac{\\ln{\\left(9 \\right)}}{2} - 1"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_34cc5ce18041ee730b6b": {
+    "sourceContentHash": "893bc2e23f41c761ef8f4f0ebb32c973e7cbed9900c439341711bd4f23a66ba9",
+    "revision": 1,
+    "statement": "\\textnormal{Let rho range over probability densities on the real plane with mean zero, finite entropy integral, and covariance matrix }\\Sigma=\\left[\\begin{matrix}3 & 2\\\\2 & 5\\end{matrix}\\right].\\textnormal{Find the minimum of }\\iint_{\\mathbb R^2}\\rho(x,y)\\ln\\rho(x,y)\\,\\mathrm dx\\,\\mathrm dy,\\textnormal{using the convention that zero times its logarithm is zero.}",
+    "steps": [
+      "\\textnormal{Let g be the centered Gaussian with the specified covariance: }g(X)=\\frac{\\exp(-X^{\\mathsf T}\\Sigma^{-1}X/2)}{2\\pi\\sqrt{\\det\\Sigma}}.",
+      "\\textnormal{The pointwise inequality }h\\ln h-h+1\\ge0\\quad(h\\ge0)\\textnormal{with }h=\\rho/g\\textnormal{gives }\\iint\\rho\\ln(\\rho/g)\\,\\mathrm dX\\ge0.",
+      "\\textnormal{The moment constraints imply }\\iint\\rho\\,X^{\\mathsf T}\\Sigma^{-1}X\\,\\mathrm dX=\\operatorname{tr}(\\Sigma^{-1}\\Sigma)=2.",
+      "\\textnormal{Thus the integral of rho times ln g is fixed, equal to }-\\ln(2\\pi)-\\frac12\\ln\\det\\Sigma-1.\\textnormal{The Gaussian attains this lower bound, and the strict equality condition makes it the unique minimizer up to null sets.}",
+      "- \\ln{\\left(2 \\pi \\right)} - \\frac{\\ln{\\left(11 \\right)}}{2} - 1"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_99dbbbdbce04740fc5c6": {
+    "sourceContentHash": "34cc9960d7226963d3d2684b7cd0b724d46f91071e6f69be24ae31c1bd6a05b8",
+    "revision": 1,
+    "statement": "\\textnormal{C is the boundary of }z=13x+y,\\ 0\\le x,y\\le1,\\textnormal{ oriented by the upward normal. Find }\\oint_C(-y\\,\\mathrm{d}x+x\\,\\mathrm{d}y+z\\,\\mathrm{d}z).",
+    "steps": [
+      "\\mathbf F=(-y,x,z),\\qquad\\nabla\\times\\mathbf F=(0,0,2)",
+      "\\mathbf r(x,y)=(x,y,13x+y),\\quad\\mathbf r_x\\times\\mathbf r_y=(-13,-1,1)",
+      "\\textnormal{This vector area element points upward, matching the boundary orientation.}",
+      "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\int_0^1\\int_0^1(0,0,2)\\cdot(-13,-1,1)\\,\\mathrm{d}x\\,\\mathrm{d}y=2",
+      "2"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_cc9095a795e4f19785c2": {
+    "sourceContentHash": "f7502da0abd566c3dbd54372dd3a8b9168d76f946c87691c43aaa2a82f0eaf6a",
+    "revision": 1,
+    "statement": "y\\prime+y=ty^2,\\quad y(0)=-\\frac1{13}.\\quad y(1)=?",
+    "steps": [
+      "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-13",
+      "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 14 e^{t} + 1",
+      "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+      "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 14 e}",
+      "\\frac{1}{2 - 14 e}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_7d1774564fa482f87ed4": {
+    "sourceContentHash": "7a7c989ddf06951f93231a075a9decad244bd9cc6cd2892651c8c98e4535a875",
+    "revision": 1,
+    "statement": "y\\prime=\\frac yt+\\left(\\frac yt\\right)^2,\\quad y(1)=-\\frac1{12}.\\quad y(e)=?",
+    "steps": [
+      "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+      "-\\frac1v=\\ln t+12,\\qquad y(t)=-\\frac{t}{12+\\ln t}",
+      "\\textnormal{The denominator remains positive between the initial and requested times.}",
+      "y(e)=- \\frac{e}{13}",
+      "- \\frac{e}{13}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_b82588f913e24fde6e80": {
+    "sourceContentHash": "d8fb906cde16015943437cf27461d7f93f782bb0cb4470bf2cb1429faed37079",
+    "revision": 1,
+    "statement": "y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\quad y(12\\pi)=?",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(12\\pi)=- 6 \\pi",
+      "- 6 \\pi"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_3448210af97d3408277e": {
+    "sourceContentHash": "e4db2bc7ac1577a518e3758f3eb8e2c9c83de0a4e8fb04988f7cae198c770e3d",
+    "revision": 1,
+    "statement": "ty\\prime\\prime-(t+1)y\\prime+y=0,\\quad y(1)=12,\\quad y\\prime(1)=0.\\quad y(2)=?",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=12,\\quad A+Be=0",
+      "y(t)=12 t - 12 e^{t - 1} + 12,\\qquad y(2)=36 - 12 e",
+      "36 - 12 e"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_418839406e75c9d1d7cf": {
+    "sourceContentHash": "ec4ff27c46af5868e5b9ea752a8db3f09ee3ee1d36736b469e41be404e3a2a65",
+    "revision": 1,
+    "statement": "ty\\prime\\prime-(t+1)y\\prime+y=0,\\quad y(1)=13,\\quad y\\prime(1)=0.\\quad y(2)=?",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=13,\\quad A+Be=0",
+      "y(t)=13 t - 13 e^{t - 1} + 13,\\qquad y(2)=39 - 13 e",
+      "39 - 13 e"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_a6e0b52d8f5eaceb8fd0": {
+    "sourceContentHash": "871b19cdd9cc39bb41b2576067e32ac71884e45bba6e50996e3a7aae1d4524a1",
+    "revision": 1,
+    "statement": "y\\prime\\prime+2ty\\prime+(t^2+170)y=0,\\ y(0)=1,\\ y\\prime(0)=0.\\quad y(\\frac{\\pi}{13})=?",
+    "steps": [
+      "y(t)=e^{-t^2/2}u(t)",
+      "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+      "u\\prime\\prime+169u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+      "y(t)=e^{-t^2/2}\\cos(13t)",
+      "y(\\frac{\\pi}{13})=- \\frac{1}{e^{\\frac{\\pi^{2}}{338}}}",
+      "- \\frac{1}{e^{\\frac{\\pi^{2}}{338}}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_3c66b0b5863b5880a5f7": {
+    "sourceContentHash": "d208cb1270daaa174c18ead2cfe809950b81ba3e9adfc08a9238de94300801e3",
+    "revision": 1,
+    "statement": "u\\prime=-u-13v,\\quad v\\prime=13u-v,\\quad (u(0),v(0))=(1,0).\\quad u(\\frac{\\pi}{13})=?",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+13i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(13t),\\qquad v(t)=e^{-t}\\sin(13t)",
+      "u(\\frac{\\pi}{13})=- \\frac{1}{e^{\\frac{\\pi}{13}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{13}}}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_6d1fe6e7a7c623a1e578": {
+    "sourceContentHash": "223c259f7bf2b59fe97d7c24400932a04c00d614a9f6123ef26621eb760dbf5e",
+    "revision": 1,
+    "statement": "\\mathbf u\\prime=\\begin{pmatrix}a&13\\\\-1&a-26\\end{pmatrix}\\mathbf u.\\quad\\textnormal{The origin is asymptotically stable exactly for }a<c.\\textnormal{Find }c.",
+    "steps": [
+      "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+      "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+      "\\operatorname{tr}A=2a-26,\\qquad \\det A=a^2-26a+13",
+      "\\operatorname{tr}A<0\\iff a<13",
+      "\\det A>0\\iff a<13 - 2 \\sqrt{39}\\ \\textnormal{or}\\ a>2 \\sqrt{39} + 13",
+      "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+      "13 - 2 \\sqrt{39}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_16c6a186af2b9d6122c1": {
+    "sourceContentHash": "421c46fb5cce5f0f2b5f506b83688270ccbf37187265128cf008c2552cea1b50",
+    "revision": 2,
+    "statement": "y\\prime=8y^2,\\quad y(0)=\\frac1{9}.\\textnormal{Find the finite right endpoint of the maximal real solution interval.}",
+    "steps": [
+      "\\textnormal{The positive initial value allows reciprocal differentiation.}",
+      "(1/y)\\prime=-8,\\quad y(t)=\\frac1{9-8t}.",
+      "\\textnormal{The first forward denominator zero is a pole, so the solution cannot extend continuously across it.}",
+      "t=\\frac{9}{8}",
+      "\\frac{9}{8}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_67df743a60c7b64f1258": {
+    "sourceContentHash": "fdf3099b46a6523d68cde5d0dcbb0d12af8d3dcb2de78f28be45aa2d5ba930ee",
+    "revision": 2,
+    "statement": "y\\prime=10y^2,\\quad y(0)=\\frac1{11}.\\textnormal{Find the finite right endpoint of the maximal real solution interval.}",
+    "steps": [
+      "\\textnormal{The positive initial value allows reciprocal differentiation.}",
+      "(1/y)\\prime=-10,\\quad y(t)=\\frac1{11-10t}.",
+      "\\textnormal{The first forward denominator zero is a pole, so the solution cannot extend continuously across it.}",
+      "t=\\frac{11}{10}",
+      "\\frac{11}{10}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_7ded25f275ec4cb897da": {
+    "sourceContentHash": "07ffc61e13260db5b66e829531e056e3ce2be4422714a516ed8c7f879b571734",
+    "revision": 2,
+    "statement": "y\\prime+\\frac yt=t^{7},\\quad y(1)=0.\\quad y(2)=?",
+    "steps": [
+      "\\textnormal{Multiply the equation by the positive independent variable to form a product derivative.}",
+      "(ty)\\prime=t^{8},\\qquad ty=\\int_1^t s^{8}\\,\\mathrm{d}s=\\frac{t^{9}-1}{9}",
+      "y(t)=\\frac{t^{9} - 1}{9 t}",
+      "y(2)=\\frac{511}{18}",
+      "\\frac{511}{18}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_ebb524e0b705a7b705f2": {
+    "sourceContentHash": "811c65c9be39fc3ba5119bfa4270d3e46de390f4d2923ca79e18e95a6694f5cc",
+    "revision": 2,
+    "statement": "y\\prime+\\frac yt=t^{10},\\quad y(1)=0.\\quad y(2)=?",
+    "steps": [
+      "\\textnormal{Multiply the equation by the positive independent variable to form a product derivative.}",
+      "(ty)\\prime=t^{11},\\qquad ty=\\int_1^t s^{11}\\,\\mathrm{d}s=\\frac{t^{12}-1}{12}",
+      "y(t)=\\frac{t^{12} - 1}{12 t}",
+      "y(2)=\\frac{1365}{8}",
+      "\\frac{1365}{8}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_4cf57d70d9d18d32b965": {
+    "sourceContentHash": "5e25ae08e489ddb72d28a9859c067a4dbebb15e02526af59333201ada56d1102",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{4}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{4},\\quad q=\\frac{1}{2},\\quad r=\\frac{1}{4},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(2 \\right)}}{2} + \\frac{\\ln{\\left(4 \\right)}}{2}",
+      "\\frac{\\ln{\\left(2 \\right)}}{2} + \\frac{\\ln{\\left(4 \\right)}}{2}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_dcee350e2c76681fa504": {
+    "sourceContentHash": "c2cd7318271281f2b6f3993808c0fb33512418c27cbf7e215607013042b9061f",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{5}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{5},\\quad q=\\frac{2}{5},\\quad r=\\frac{2}{5},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(5 \\right)}}{5} - \\frac{4 \\ln{\\left(\\frac{2}{5} \\right)}}{5}",
+      "\\frac{\\ln{\\left(5 \\right)}}{5} - \\frac{4 \\ln{\\left(\\frac{2}{5} \\right)}}{5}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_225a523cb329f2dbdd81": {
+    "sourceContentHash": "16130d7434afa48ce9576ed5c9f661ec8eba526c5cfd43643cac5eed0916a4a8",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{6}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{6},\\quad q=\\frac{1}{3},\\quad r=\\frac{1}{2},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(6 \\right)}}{6} + \\frac{\\ln{\\left(2 \\right)}}{2} + \\frac{\\ln{\\left(3 \\right)}}{3}",
+      "\\frac{\\ln{\\left(6 \\right)}}{6} + \\frac{\\ln{\\left(2 \\right)}}{2} + \\frac{\\ln{\\left(3 \\right)}}{3}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_f222ffac5647a14954e8": {
+    "sourceContentHash": "46d418e0af44dff4bb6f055009e927c7f3af6961ed7e9412dec0ba3bc25f6ed2",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{7}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{7},\\quad q=\\frac{2}{7},\\quad r=\\frac{4}{7},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(7 \\right)}}{7} - \\frac{4 \\ln{\\left(\\frac{4}{7} \\right)}}{7} - \\frac{2 \\ln{\\left(\\frac{2}{7} \\right)}}{7}",
+      "\\frac{\\ln{\\left(7 \\right)}}{7} - \\frac{4 \\ln{\\left(\\frac{4}{7} \\right)}}{7} - \\frac{2 \\ln{\\left(\\frac{2}{7} \\right)}}{7}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_54715096fe81d0586881": {
+    "sourceContentHash": "73b8040b9b547528a7fef534ff52c9ea3a5510b5d2e6c4d8a8ab934a2a60efc8",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{9}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{9},\\quad q=\\frac{2}{9},\\quad r=\\frac{2}{3},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(9 \\right)}}{9} - \\frac{2 \\ln{\\left(\\frac{2}{3} \\right)}}{3} - \\frac{2 \\ln{\\left(\\frac{2}{9} \\right)}}{9}",
+      "\\frac{\\ln{\\left(9 \\right)}}{9} - \\frac{2 \\ln{\\left(\\frac{2}{3} \\right)}}{3} - \\frac{2 \\ln{\\left(\\frac{2}{9} \\right)}}{9}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_7bca75c8830a1128c6f7": {
+    "sourceContentHash": "7132eb250824a24ac1be394bfc27c11e1f1cc56bfa139badd76424a26c1f1a43",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{10}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{10},\\quad q=\\frac{1}{5},\\quad r=\\frac{7}{10},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(10 \\right)}}{10} - \\frac{7 \\ln{\\left(\\frac{7}{10} \\right)}}{10} + \\frac{\\ln{\\left(5 \\right)}}{5}",
+      "\\frac{\\ln{\\left(10 \\right)}}{10} - \\frac{7 \\ln{\\left(\\frac{7}{10} \\right)}}{10} + \\frac{\\ln{\\left(5 \\right)}}{5}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_dc6bff959e970376d5f3": {
+    "sourceContentHash": "38bca4893cc5f091714c1b65fa6ca7ab57b9d9f715c944930404c3b388db5523",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{11}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{11},\\quad q=\\frac{2}{11},\\quad r=\\frac{8}{11},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(11 \\right)}}{11} - \\frac{8 \\ln{\\left(\\frac{8}{11} \\right)}}{11} - \\frac{2 \\ln{\\left(\\frac{2}{11} \\right)}}{11}",
+      "\\frac{\\ln{\\left(11 \\right)}}{11} - \\frac{8 \\ln{\\left(\\frac{8}{11} \\right)}}{11} - \\frac{2 \\ln{\\left(\\frac{2}{11} \\right)}}{11}"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_e1d3be4a71292941405e": {
+    "sourceContentHash": "12fe58957658e3bb7ca330626812315f4273489c1306f8d4d262f09f67a6d65e",
+    "revision": 2,
+    "statement": "\\textnormal{C is the boundary of }z=5x+y,\\ 0\\le x,y\\le1,\\textnormal{ oriented by the upward normal. Find }\\oint_C(-y\\,\\mathrm{d}x+x\\,\\mathrm{d}y+z\\,\\mathrm{d}z).",
+    "steps": [
+      "\\mathbf F=(-y,x,z),\\qquad\\nabla\\times\\mathbf F=(0,0,2)",
+      "\\mathbf r(x,y)=(x,y,5x+y),\\quad\\mathbf r_x\\times\\mathbf r_y=(-5,-1,1)",
+      "\\textnormal{This vector area element points upward, matching the boundary orientation.}",
+      "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\int_0^1\\int_0^1(0,0,2)\\cdot(-5,-1,1)\\,\\mathrm{d}x\\,\\mathrm{d}y=2",
+      "2"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_0bf657265939c5b19a60": {
+    "sourceContentHash": "96bebc211f104753bbda323d23f15967d9604742d3e37c53e1f2c477448391ee",
+    "revision": 2,
+    "statement": "\\textnormal{C is the boundary of }z=7x+y,\\ 0\\le x,y\\le1,\\textnormal{ oriented by the upward normal. Find }\\oint_C(-y\\,\\mathrm{d}x+x\\,\\mathrm{d}y+z\\,\\mathrm{d}z).",
+    "steps": [
+      "\\mathbf F=(-y,x,z),\\qquad\\nabla\\times\\mathbf F=(0,0,2)",
+      "\\mathbf r(x,y)=(x,y,7x+y),\\quad\\mathbf r_x\\times\\mathbf r_y=(-7,-1,1)",
+      "\\textnormal{This vector area element points upward, matching the boundary orientation.}",
+      "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\int_0^1\\int_0^1(0,0,2)\\cdot(-7,-1,1)\\,\\mathrm{d}x\\,\\mathrm{d}y=2",
+      "2"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_4b6107f3115b99c0fd0d": {
+    "sourceContentHash": "66592cdcd202aaadbad07c754ac3398a344b9807806759f09d5fc9875e8a421c",
+    "revision": 2,
+    "statement": "\\textnormal{C is the boundary of }z=9x+y,\\ 0\\le x,y\\le1,\\textnormal{ oriented by the upward normal. Find }\\oint_C(-y\\,\\mathrm{d}x+x\\,\\mathrm{d}y+z\\,\\mathrm{d}z).",
+    "steps": [
+      "\\mathbf F=(-y,x,z),\\qquad\\nabla\\times\\mathbf F=(0,0,2)",
+      "\\mathbf r(x,y)=(x,y,9x+y),\\quad\\mathbf r_x\\times\\mathbf r_y=(-9,-1,1)",
+      "\\textnormal{This vector area element points upward, matching the boundary orientation.}",
+      "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\int_0^1\\int_0^1(0,0,2)\\cdot(-9,-1,1)\\,\\mathrm{d}x\\,\\mathrm{d}y=2",
+      "2"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_9d3a59c847eee367d5f6": {
+    "sourceContentHash": "ecdedb2c5443ad95daa49ef2f24bc86f8cfcb30a83e6722c3906e6be6a733032",
+    "revision": 2,
+    "statement": "\\textnormal{C is the boundary of }z=11x+y,\\ 0\\le x,y\\le1,\\textnormal{ oriented by the upward normal. Find }\\oint_C(-y\\,\\mathrm{d}x+x\\,\\mathrm{d}y+z\\,\\mathrm{d}z).",
+    "steps": [
+      "\\mathbf F=(-y,x,z),\\qquad\\nabla\\times\\mathbf F=(0,0,2)",
+      "\\mathbf r(x,y)=(x,y,11x+y),\\quad\\mathbf r_x\\times\\mathbf r_y=(-11,-1,1)",
+      "\\textnormal{This vector area element points upward, matching the boundary orientation.}",
+      "\\oint_C\\mathbf F\\cdot d\\mathbf r=\\int_0^1\\int_0^1(0,0,2)\\cdot(-11,-1,1)\\,\\mathrm{d}x\\,\\mathrm{d}y=2",
+      "2"
+    ],
+    "source": "guarded-canonical-preview"
+  },
+  "cn_f474da5dace52c738006": {
+    "sourceContentHash": "3bfef0a4c7b42058128093e50ac8a57f4e5176b81c6ce772f9320e722cd87a79",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime+y=ty^2,\\\\y(0)=-\\frac1{5}.\\\\y(1)=?\\end{gathered}",
+    "steps": [
+      "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-5",
+      "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 6 e^{t} + 1",
+      "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+      "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 6 e}",
+      "\\frac{1}{2 - 6 e}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+      "revision": 1,
+      "sourceContentHash": "3bfef0a4c7b42058128093e50ac8a57f4e5176b81c6ce772f9320e722cd87a79",
+      "steps": [
+        "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-5",
+        "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 6 e^{t} + 1",
+        "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+        "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 6 e}",
+        "\\frac{1}{2 - 6 e}"
+      ]
+    }
+  },
+  "cn_5eccd2de0d42ac73a9e6": {
+    "sourceContentHash": "683730d42aa700e5045c46c1d1f2d930ecdcd4ff673976e74a501f6b97f407ea",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime+y=ty^2,\\\\y(0)=-\\frac1{7}.\\\\y(1)=?\\end{gathered}",
+    "steps": [
+      "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-7",
+      "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 8 e^{t} + 1",
+      "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+      "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 8 e}",
+      "\\frac{1}{2 - 8 e}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+      "revision": 1,
+      "sourceContentHash": "683730d42aa700e5045c46c1d1f2d930ecdcd4ff673976e74a501f6b97f407ea",
+      "steps": [
+        "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-7",
+        "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 8 e^{t} + 1",
+        "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+        "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 8 e}",
+        "\\frac{1}{2 - 8 e}"
+      ]
+    }
+  },
+  "cn_ba6eb475e1f8db0f84a1": {
+    "sourceContentHash": "35a5b544f9f51967163165d20722615b802618578c233a1de870c3cfec54f22f",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime+y=ty^2,\\\\y(0)=-\\frac1{9}.\\\\y(1)=?\\end{gathered}",
+    "steps": [
+      "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-9",
+      "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 10 e^{t} + 1",
+      "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+      "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 10 e}",
+      "\\frac{1}{2 - 10 e}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+      "revision": 1,
+      "sourceContentHash": "35a5b544f9f51967163165d20722615b802618578c233a1de870c3cfec54f22f",
+      "steps": [
+        "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-9",
+        "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 10 e^{t} + 1",
+        "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+        "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 10 e}",
+        "\\frac{1}{2 - 10 e}"
+      ]
+    }
+  },
+  "cn_cc92c206dd8a1d98182f": {
+    "sourceContentHash": "69f26ca70e447d244812a60c0ebcd86d6672a92e66e3d2d943e72c6689693294",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime+y=ty^2,\\\\y(0)=-\\frac1{11}.\\\\y(1)=?\\end{gathered}",
+    "steps": [
+      "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-11",
+      "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 12 e^{t} + 1",
+      "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+      "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 12 e}",
+      "\\frac{1}{2 - 12 e}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-bernoulli-reciprocal",
+      "revision": 1,
+      "sourceContentHash": "69f26ca70e447d244812a60c0ebcd86d6672a92e66e3d2d943e72c6689693294",
+      "steps": [
+        "v=\\frac1y\\quad\\Longrightarrow\\quad v\\prime-v=-t,\\qquad v(0)=-11",
+        "(e^{-t}v)\\prime=-te^{-t},\\qquad v(t)=t - 12 e^{t} + 1",
+        "\\textnormal{This reciprocal stays negative on the requested interval, so inversion is valid.}",
+        "y(1)=\\frac1{v(1)}=\\frac{1}{2 - 12 e}",
+        "\\frac{1}{2 - 12 e}"
+      ]
+    }
+  },
+  "cn_70978e69b371af149a49": {
+    "sourceContentHash": "ef525a93be5268ebfe1c0a4eba95527f16a5b41fea092e37ac4b2d3ecb056dc0",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime=\\frac yt+\\left(\\frac yt\\right)^2,\\\\y(1)=-\\frac1{4}.\\\\y(e)=?\\end{gathered}",
+    "steps": [
+      "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+      "-\\frac1v=\\ln t+4,\\qquad y(t)=-\\frac{t}{4+\\ln t}",
+      "\\textnormal{The denominator remains positive between the initial and requested times.}",
+      "y(e)=- \\frac{e}{5}",
+      "- \\frac{e}{5}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+      "revision": 1,
+      "sourceContentHash": "ef525a93be5268ebfe1c0a4eba95527f16a5b41fea092e37ac4b2d3ecb056dc0",
+      "steps": [
+        "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+        "-\\frac1v=\\ln t+4,\\qquad y(t)=-\\frac{t}{4+\\ln t}",
+        "\\textnormal{The denominator remains positive between the initial and requested times.}",
+        "y(e)=- \\frac{e}{5}",
+        "- \\frac{e}{5}"
+      ]
+    }
+  },
+  "cn_48b256b5533a797302b2": {
+    "sourceContentHash": "0dd592403436a3181ed18209098a508e0eeb6aefe992b3500b61d556ee7d0a64",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime=\\frac yt+\\left(\\frac yt\\right)^2,\\\\y(1)=-\\frac1{6}.\\\\y(e)=?\\end{gathered}",
+    "steps": [
+      "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+      "-\\frac1v=\\ln t+6,\\qquad y(t)=-\\frac{t}{6+\\ln t}",
+      "\\textnormal{The denominator remains positive between the initial and requested times.}",
+      "y(e)=- \\frac{e}{7}",
+      "- \\frac{e}{7}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+      "revision": 1,
+      "sourceContentHash": "0dd592403436a3181ed18209098a508e0eeb6aefe992b3500b61d556ee7d0a64",
+      "steps": [
+        "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+        "-\\frac1v=\\ln t+6,\\qquad y(t)=-\\frac{t}{6+\\ln t}",
+        "\\textnormal{The denominator remains positive between the initial and requested times.}",
+        "y(e)=- \\frac{e}{7}",
+        "- \\frac{e}{7}"
+      ]
+    }
+  },
+  "cn_5b477965f88761363bc6": {
+    "sourceContentHash": "5461c688e94c4417ad0528f54f0cac4a6d4dec62c5b066c7ee2cafedd2f17c7f",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime=\\frac yt+\\left(\\frac yt\\right)^2,\\\\y(1)=-\\frac1{8}.\\\\y(e)=?\\end{gathered}",
+    "steps": [
+      "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+      "-\\frac1v=\\ln t+8,\\qquad y(t)=-\\frac{t}{8+\\ln t}",
+      "\\textnormal{The denominator remains positive between the initial and requested times.}",
+      "y(e)=- \\frac{e}{9}",
+      "- \\frac{e}{9}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+      "revision": 1,
+      "sourceContentHash": "5461c688e94c4417ad0528f54f0cac4a6d4dec62c5b066c7ee2cafedd2f17c7f",
+      "steps": [
+        "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+        "-\\frac1v=\\ln t+8,\\qquad y(t)=-\\frac{t}{8+\\ln t}",
+        "\\textnormal{The denominator remains positive between the initial and requested times.}",
+        "y(e)=- \\frac{e}{9}",
+        "- \\frac{e}{9}"
+      ]
+    }
+  },
+  "cn_004cd0b22f1442bda766": {
+    "sourceContentHash": "a1264372691ac58b619a79232b4515c7868f0719af881595a8b9a6e59192fb8d",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime=\\frac yt+\\left(\\frac yt\\right)^2,\\\\y(1)=-\\frac1{10}.\\\\y(e)=?\\end{gathered}",
+    "steps": [
+      "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+      "-\\frac1v=\\ln t+10,\\qquad y(t)=-\\frac{t}{10+\\ln t}",
+      "\\textnormal{The denominator remains positive between the initial and requested times.}",
+      "y(e)=- \\frac{e}{11}",
+      "- \\frac{e}{11}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-homogeneous-ratio",
+      "revision": 1,
+      "sourceContentHash": "a1264372691ac58b619a79232b4515c7868f0719af881595a8b9a6e59192fb8d",
+      "steps": [
+        "v(t)=\\frac{y(t)}t\\quad\\Longrightarrow\\quad tv\\prime=v^2",
+        "-\\frac1v=\\ln t+10,\\qquad y(t)=-\\frac{t}{10+\\ln t}",
+        "\\textnormal{The denominator remains positive between the initial and requested times.}",
+        "y(e)=- \\frac{e}{11}",
+        "- \\frac{e}{11}"
+      ]
+    }
+  },
+  "cn_8a1e3444d07637fa25da": {
+    "sourceContentHash": "e924dcd8e58a004651ef7521c2e3d2461fb3e175d79f4d0027362fc4fde23eba",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(4\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(4\\pi)=- 2 \\pi",
+      "- 2 \\pi"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "e924dcd8e58a004651ef7521c2e3d2461fb3e175d79f4d0027362fc4fde23eba",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(4\\pi)=- 2 \\pi",
+        "- 2 \\pi"
+      ]
+    }
+  },
+  "cn_f0770eae45950b4b75c2": {
+    "sourceContentHash": "5cd545caadd609a2cbae74adc448b9f0097ac3cf71aed282b1bbeaef28a65982",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(5\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(5\\pi)=\\frac{5 \\pi}{2}",
+      "\\frac{5 \\pi}{2}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "5cd545caadd609a2cbae74adc448b9f0097ac3cf71aed282b1bbeaef28a65982",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(5\\pi)=\\frac{5 \\pi}{2}",
+        "\\frac{5 \\pi}{2}"
+      ]
+    }
+  },
+  "cn_92711490425dfcf87311": {
+    "sourceContentHash": "038fd5cb966db558e8a2d9a3901c92161ed13a8314e4361867c7216740efb125",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(6\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(6\\pi)=- 3 \\pi",
+      "- 3 \\pi"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "038fd5cb966db558e8a2d9a3901c92161ed13a8314e4361867c7216740efb125",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(6\\pi)=- 3 \\pi",
+        "- 3 \\pi"
+      ]
+    }
+  },
+  "cn_ec644d72e8e4eb1cd2ff": {
+    "sourceContentHash": "8505cf14d7c0f5166ae083737ffcdd350849407104fe7568bc7db080d7599e82",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(9\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(9\\pi)=\\frac{9 \\pi}{2}",
+      "\\frac{9 \\pi}{2}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "8505cf14d7c0f5166ae083737ffcdd350849407104fe7568bc7db080d7599e82",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(9\\pi)=\\frac{9 \\pi}{2}",
+        "\\frac{9 \\pi}{2}"
+      ]
+    }
+  },
+  "cn_4d63f54ea86e40611014": {
+    "sourceContentHash": "051ea0bab2346253fa1d12e07091e3e0740d0cc1eb2e80983047b7fc1a003f6d",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(10\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(10\\pi)=- 5 \\pi",
+      "- 5 \\pi"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "051ea0bab2346253fa1d12e07091e3e0740d0cc1eb2e80983047b7fc1a003f6d",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(10\\pi)=- 5 \\pi",
+        "- 5 \\pi"
+      ]
+    }
+  },
+  "cn_8c828212840304efe8b5": {
+    "sourceContentHash": "b9009d36e1ba8469765cd8eb73cd05d8b3b8cbb5ca4044dd6e9b1e53d06f3d39",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+y=\\sin t,\\ y(0)=y\\prime(0)=0.\\\\y(11\\pi)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+      "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+      "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+      "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+      "y(11\\pi)=\\frac{11 \\pi}{2}",
+      "\\frac{11 \\pi}{2}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-medium-resonant-forcing",
+      "revision": 1,
+      "sourceContentHash": "b9009d36e1ba8469765cd8eb73cd05d8b3b8cbb5ca4044dd6e9b1e53d06f3d39",
+      "steps": [
+        "\\textnormal{The forcing is a homogeneous mode, so a resonant particular solution needs an extra factor of time.}",
+        "y_p(t)=-\\frac12t\\cos t,\\qquad y_p\\prime\\prime+y_p=\\sin t",
+        "\\textnormal{The initial derivative is corrected by a homogeneous sine term.}",
+        "y(t)=\\frac{\\sin t-t\\cos t}{2}",
+        "y(11\\pi)=\\frac{11 \\pi}{2}",
+        "\\frac{11 \\pi}{2}"
+      ]
+    }
+  },
+  "cn_138b71d97c1ed17e5368": {
+    "sourceContentHash": "23cd6bf1a9ff943caa8abc2090dd4c02697a56782015ac9e5c0063de1dc60a1c",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=4,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=4,\\quad A+Be=0",
+      "y(t)=4 t - 4 e^{t - 1} + 4,\\qquad y(2)=12 - 4 e",
+      "12 - 4 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "23cd6bf1a9ff943caa8abc2090dd4c02697a56782015ac9e5c0063de1dc60a1c",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=4,\\quad A+Be=0",
+        "y(t)=4 t - 4 e^{t - 1} + 4,\\qquad y(2)=12 - 4 e",
+        "12 - 4 e"
+      ]
+    }
+  },
+  "cn_a8493bb57f4f0ba0ef11": {
+    "sourceContentHash": "97b74d393526b0cf9ae91db29ce6f8184bc2d8b4038db3b960949aa90322b788",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=5,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=5,\\quad A+Be=0",
+      "y(t)=5 t - 5 e^{t - 1} + 5,\\qquad y(2)=15 - 5 e",
+      "15 - 5 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "97b74d393526b0cf9ae91db29ce6f8184bc2d8b4038db3b960949aa90322b788",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=5,\\quad A+Be=0",
+        "y(t)=5 t - 5 e^{t - 1} + 5,\\qquad y(2)=15 - 5 e",
+        "15 - 5 e"
+      ]
+    }
+  },
+  "cn_9c7738aa06461061609d": {
+    "sourceContentHash": "6eafee7e277fc98458b39007d1faa3bafd8fd65f52658e6f366b2b374aa49b4c",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=6,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=6,\\quad A+Be=0",
+      "y(t)=6 t - 6 e^{t - 1} + 6,\\qquad y(2)=18 - 6 e",
+      "18 - 6 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "6eafee7e277fc98458b39007d1faa3bafd8fd65f52658e6f366b2b374aa49b4c",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=6,\\quad A+Be=0",
+        "y(t)=6 t - 6 e^{t - 1} + 6,\\qquad y(2)=18 - 6 e",
+        "18 - 6 e"
+      ]
+    }
+  },
+  "cn_518c292aa8433eed70d6": {
+    "sourceContentHash": "9df6cb9638f973e992e7a9db8aa0364a9d7ddbadd6925071696ecb5faf0dfdb7",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=7,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=7,\\quad A+Be=0",
+      "y(t)=7 t - 7 e^{t - 1} + 7,\\qquad y(2)=21 - 7 e",
+      "21 - 7 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "9df6cb9638f973e992e7a9db8aa0364a9d7ddbadd6925071696ecb5faf0dfdb7",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=7,\\quad A+Be=0",
+        "y(t)=7 t - 7 e^{t - 1} + 7,\\qquad y(2)=21 - 7 e",
+        "21 - 7 e"
+      ]
+    }
+  },
+  "cn_88254ac449e02c3f468e": {
+    "sourceContentHash": "52a691fd6f7dc11d5db1430bf21c80b873c5e52c44a3f3e519e6cbb3484739b7",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=8,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=8,\\quad A+Be=0",
+      "y(t)=8 t - 8 e^{t - 1} + 8,\\qquad y(2)=24 - 8 e",
+      "24 - 8 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "52a691fd6f7dc11d5db1430bf21c80b873c5e52c44a3f3e519e6cbb3484739b7",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=8,\\quad A+Be=0",
+        "y(t)=8 t - 8 e^{t - 1} + 8,\\qquad y(2)=24 - 8 e",
+        "24 - 8 e"
+      ]
+    }
+  },
+  "cn_7cc0c04f03f376506790": {
+    "sourceContentHash": "be3d96ac66bcf4e754528d8a2a77a4812d2e6a2e5f1a0b3d89599d329c5b29e0",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=9,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=9,\\quad A+Be=0",
+      "y(t)=9 t - 9 e^{t - 1} + 9,\\qquad y(2)=27 - 9 e",
+      "27 - 9 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "be3d96ac66bcf4e754528d8a2a77a4812d2e6a2e5f1a0b3d89599d329c5b29e0",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=9,\\quad A+Be=0",
+        "y(t)=9 t - 9 e^{t - 1} + 9,\\qquad y(2)=27 - 9 e",
+        "27 - 9 e"
+      ]
+    }
+  },
+  "cn_d20069ed7b3151f597fb": {
+    "sourceContentHash": "d7a710af92c4106e62cdfdd98f83d2cb526055ff7d5194b6a41c43b7391efaff",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=10,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=10,\\quad A+Be=0",
+      "y(t)=10 t - 10 e^{t - 1} + 10,\\qquad y(2)=30 - 10 e",
+      "30 - 10 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "d7a710af92c4106e62cdfdd98f83d2cb526055ff7d5194b6a41c43b7391efaff",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=10,\\quad A+Be=0",
+        "y(t)=10 t - 10 e^{t - 1} + 10,\\qquad y(2)=30 - 10 e",
+        "30 - 10 e"
+      ]
+    }
+  },
+  "cn_1f68af550033ab0c1422": {
+    "sourceContentHash": "b0c71fb59e7e36073de4034aae14c766e50b1be5810970d3fc4d958433f4d9b2",
+    "revision": 1,
+    "statement": "\\begin{gathered}ty\\prime\\prime-(t+1)y\\prime+y=0,\\\\y(1)=11,\\\\y\\prime(1)=0.\\\\y(2)=?\\end{gathered}",
+    "steps": [
+      "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+      "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+      "y(t)=A(t+1)+Be^t,\\quad 2A+Be=11,\\quad A+Be=0",
+      "y(t)=11 t - 11 e^{t - 1} + 11,\\qquad y(2)=33 - 11 e",
+      "33 - 11 e"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-variable-second-order-basis",
+      "revision": 1,
+      "sourceContentHash": "b0c71fb59e7e36073de4034aae14c766e50b1be5810970d3fc4d958433f4d9b2",
+      "steps": [
+        "\\textnormal{Substitution shows that the following two functions solve the homogeneous equation.}",
+        "y_1(t)=t+1,\\qquad y_2(t)=e^t,\\qquad y_1y_2\\prime-y_1\\prime y_2=te^t\\ne0\\quad(t>0)",
+        "y(t)=A(t+1)+Be^t,\\quad 2A+Be=11,\\quad A+Be=0",
+        "y(t)=11 t - 11 e^{t - 1} + 11,\\qquad y(2)=33 - 11 e",
+        "33 - 11 e"
+      ]
+    }
+  },
+  "cn_d1b5401c5e64e028cb14": {
+    "sourceContentHash": "a7d7bc606da7488fe75a87297e8f5a28434bcc111f8b810168597ffee6d39deb",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+2ty\\prime+(t^2+26)y=0,\\ y(0)=1,\\ y\\prime(0)=0.\\\\y(\\frac{\\pi}{5})=?\\end{gathered}",
+    "steps": [
+      "y(t)=e^{-t^2/2}u(t)",
+      "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+      "u\\prime\\prime+25u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+      "y(t)=e^{-t^2/2}\\cos(5t)",
+      "y(\\frac{\\pi}{5})=- \\frac{1}{e^{\\frac{\\pi^{2}}{50}}}",
+      "- \\frac{1}{e^{\\frac{\\pi^{2}}{50}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-remove-first-derivative",
+      "revision": 1,
+      "sourceContentHash": "a7d7bc606da7488fe75a87297e8f5a28434bcc111f8b810168597ffee6d39deb",
+      "steps": [
+        "y(t)=e^{-t^2/2}u(t)",
+        "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+        "u\\prime\\prime+25u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+        "y(t)=e^{-t^2/2}\\cos(5t)",
+        "y(\\frac{\\pi}{5})=- \\frac{1}{e^{\\frac{\\pi^{2}}{50}}}",
+        "- \\frac{1}{e^{\\frac{\\pi^{2}}{50}}}"
+      ]
+    }
+  },
+  "cn_f95d2b2ac9ad638333a4": {
+    "sourceContentHash": "bb9e1dc688833cfe71bd889ed85d7f188553539ac5b26563d3d6074ce6124d66",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+2ty\\prime+(t^2+50)y=0,\\ y(0)=1,\\ y\\prime(0)=0.\\\\y(\\frac{\\pi}{7})=?\\end{gathered}",
+    "steps": [
+      "y(t)=e^{-t^2/2}u(t)",
+      "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+      "u\\prime\\prime+49u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+      "y(t)=e^{-t^2/2}\\cos(7t)",
+      "y(\\frac{\\pi}{7})=- \\frac{1}{e^{\\frac{\\pi^{2}}{98}}}",
+      "- \\frac{1}{e^{\\frac{\\pi^{2}}{98}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-remove-first-derivative",
+      "revision": 1,
+      "sourceContentHash": "bb9e1dc688833cfe71bd889ed85d7f188553539ac5b26563d3d6074ce6124d66",
+      "steps": [
+        "y(t)=e^{-t^2/2}u(t)",
+        "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+        "u\\prime\\prime+49u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+        "y(t)=e^{-t^2/2}\\cos(7t)",
+        "y(\\frac{\\pi}{7})=- \\frac{1}{e^{\\frac{\\pi^{2}}{98}}}",
+        "- \\frac{1}{e^{\\frac{\\pi^{2}}{98}}}"
+      ]
+    }
+  },
+  "cn_b42e40f5cac672332edf": {
+    "sourceContentHash": "5e7e708ae81f5a3c07c69ddefd579c78de04299795252972f06975c153de0572",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+2ty\\prime+(t^2+82)y=0,\\ y(0)=1,\\ y\\prime(0)=0.\\\\y(\\frac{\\pi}{9})=?\\end{gathered}",
+    "steps": [
+      "y(t)=e^{-t^2/2}u(t)",
+      "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+      "u\\prime\\prime+81u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+      "y(t)=e^{-t^2/2}\\cos(9t)",
+      "y(\\frac{\\pi}{9})=- \\frac{1}{e^{\\frac{\\pi^{2}}{162}}}",
+      "- \\frac{1}{e^{\\frac{\\pi^{2}}{162}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-remove-first-derivative",
+      "revision": 1,
+      "sourceContentHash": "5e7e708ae81f5a3c07c69ddefd579c78de04299795252972f06975c153de0572",
+      "steps": [
+        "y(t)=e^{-t^2/2}u(t)",
+        "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+        "u\\prime\\prime+81u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+        "y(t)=e^{-t^2/2}\\cos(9t)",
+        "y(\\frac{\\pi}{9})=- \\frac{1}{e^{\\frac{\\pi^{2}}{162}}}",
+        "- \\frac{1}{e^{\\frac{\\pi^{2}}{162}}}"
+      ]
+    }
+  },
+  "cn_12c9d6ebd48589a6b5a4": {
+    "sourceContentHash": "da6903a17dcdb0a7d742b78ff2adfe51bf7834217b82ea04901dc97b38e118eb",
+    "revision": 1,
+    "statement": "\\begin{gathered}y\\prime\\prime+2ty\\prime+(t^2+122)y=0,\\ y(0)=1,\\ y\\prime(0)=0.\\\\y(\\frac{\\pi}{11})=?\\end{gathered}",
+    "steps": [
+      "y(t)=e^{-t^2/2}u(t)",
+      "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+      "u\\prime\\prime+121u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+      "y(t)=e^{-t^2/2}\\cos(11t)",
+      "y(\\frac{\\pi}{11})=- \\frac{1}{e^{\\frac{\\pi^{2}}{242}}}",
+      "- \\frac{1}{e^{\\frac{\\pi^{2}}{242}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-remove-first-derivative",
+      "revision": 1,
+      "sourceContentHash": "da6903a17dcdb0a7d742b78ff2adfe51bf7834217b82ea04901dc97b38e118eb",
+      "steps": [
+        "y(t)=e^{-t^2/2}u(t)",
+        "\\textnormal{Differentiate this product twice and substitute; the first-derivative terms cancel.}",
+        "u\\prime\\prime+121u=0,\\qquad u(0)=1,\\quad u\\prime(0)=0",
+        "y(t)=e^{-t^2/2}\\cos(11t)",
+        "y(\\frac{\\pi}{11})=- \\frac{1}{e^{\\frac{\\pi^{2}}{242}}}",
+        "- \\frac{1}{e^{\\frac{\\pi^{2}}{242}}}"
+      ]
+    }
+  },
+  "cn_0414993cc1b4a3c201f9": {
+    "sourceContentHash": "bd6e09ab956fe85c52c59720cb0cb67ba44b21049fbfefd3cb86416f5c941d9f",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-4v,\\\\v\\prime=4u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{4})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+4i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(4t),\\qquad v(t)=e^{-t}\\sin(4t)",
+      "u(\\frac{\\pi}{4})=- \\frac{1}{e^{\\frac{\\pi}{4}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{4}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "bd6e09ab956fe85c52c59720cb0cb67ba44b21049fbfefd3cb86416f5c941d9f",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+4i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(4t),\\qquad v(t)=e^{-t}\\sin(4t)",
+        "u(\\frac{\\pi}{4})=- \\frac{1}{e^{\\frac{\\pi}{4}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{4}}}"
+      ]
+    }
+  },
+  "cn_733e6eed35ccdf80cb93": {
+    "sourceContentHash": "820669fcfff8994e917d9d3c6ec432db2122b7020e16b3323d6c2ea8bfd68406",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-5v,\\\\v\\prime=5u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{5})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+5i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(5t),\\qquad v(t)=e^{-t}\\sin(5t)",
+      "u(\\frac{\\pi}{5})=- \\frac{1}{e^{\\frac{\\pi}{5}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{5}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "820669fcfff8994e917d9d3c6ec432db2122b7020e16b3323d6c2ea8bfd68406",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+5i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(5t),\\qquad v(t)=e^{-t}\\sin(5t)",
+        "u(\\frac{\\pi}{5})=- \\frac{1}{e^{\\frac{\\pi}{5}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{5}}}"
+      ]
+    }
+  },
+  "cn_3e88363ad3e4e04d9053": {
+    "sourceContentHash": "00e563e3623bf3ef5137d0fae6e3186477d1c2cc52706757d64be10ca5e78762",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-7v,\\\\v\\prime=7u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{7})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+7i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(7t),\\qquad v(t)=e^{-t}\\sin(7t)",
+      "u(\\frac{\\pi}{7})=- \\frac{1}{e^{\\frac{\\pi}{7}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{7}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "00e563e3623bf3ef5137d0fae6e3186477d1c2cc52706757d64be10ca5e78762",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+7i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(7t),\\qquad v(t)=e^{-t}\\sin(7t)",
+        "u(\\frac{\\pi}{7})=- \\frac{1}{e^{\\frac{\\pi}{7}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{7}}}"
+      ]
+    }
+  },
+  "cn_0f3abc0b4951c2e2289d": {
+    "sourceContentHash": "ce42f716ccd46e6ae93c57c2783ffccbe1432e8df026e2c09753ef4f6959bfcb",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-8v,\\\\v\\prime=8u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{8})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+8i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(8t),\\qquad v(t)=e^{-t}\\sin(8t)",
+      "u(\\frac{\\pi}{8})=- \\frac{1}{e^{\\frac{\\pi}{8}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{8}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "ce42f716ccd46e6ae93c57c2783ffccbe1432e8df026e2c09753ef4f6959bfcb",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+8i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(8t),\\qquad v(t)=e^{-t}\\sin(8t)",
+        "u(\\frac{\\pi}{8})=- \\frac{1}{e^{\\frac{\\pi}{8}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{8}}}"
+      ]
+    }
+  },
+  "cn_f515463bb8ec0f3c7d7d": {
+    "sourceContentHash": "740468b7afefbf77d2d1ccf597663f96fd25d9f74c22e47f259022e42c32b2da",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-9v,\\\\v\\prime=9u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{9})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+9i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(9t),\\qquad v(t)=e^{-t}\\sin(9t)",
+      "u(\\frac{\\pi}{9})=- \\frac{1}{e^{\\frac{\\pi}{9}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{9}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "740468b7afefbf77d2d1ccf597663f96fd25d9f74c22e47f259022e42c32b2da",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+9i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(9t),\\qquad v(t)=e^{-t}\\sin(9t)",
+        "u(\\frac{\\pi}{9})=- \\frac{1}{e^{\\frac{\\pi}{9}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{9}}}"
+      ]
+    }
+  },
+  "cn_08b67166218d6113948e": {
+    "sourceContentHash": "ee127e437b4dae0a3b9b23e72eae4667e4d4478d1219dbb3c94debff5ff21500",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-10v,\\\\v\\prime=10u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{10})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+10i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(10t),\\qquad v(t)=e^{-t}\\sin(10t)",
+      "u(\\frac{\\pi}{10})=- \\frac{1}{e^{\\frac{\\pi}{10}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{10}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "ee127e437b4dae0a3b9b23e72eae4667e4d4478d1219dbb3c94debff5ff21500",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+10i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(10t),\\qquad v(t)=e^{-t}\\sin(10t)",
+        "u(\\frac{\\pi}{10})=- \\frac{1}{e^{\\frac{\\pi}{10}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{10}}}"
+      ]
+    }
+  },
+  "cn_affeb78522b8b9e66d11": {
+    "sourceContentHash": "40cce35154aae90bbf2eab27f7ae6867bce8d2382364e35b1c262fee790d9bff",
+    "revision": 1,
+    "statement": "\\begin{gathered}u\\prime=-u-11v,\\\\v\\prime=11u-v,\\\\(u(0),v(0))=(1,0).\\\\u(\\frac{\\pi}{11})=?\\end{gathered}",
+    "steps": [
+      "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+11i)z,\\quad z(0)=1",
+      "u(t)=e^{-t}\\cos(11t),\\qquad v(t)=e^{-t}\\sin(11t)",
+      "u(\\frac{\\pi}{11})=- \\frac{1}{e^{\\frac{\\pi}{11}}}",
+      "- \\frac{1}{e^{\\frac{\\pi}{11}}}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-rotating-linear-system",
+      "revision": 1,
+      "sourceContentHash": "40cce35154aae90bbf2eab27f7ae6867bce8d2382364e35b1c262fee790d9bff",
+      "steps": [
+        "z(t)=u(t)+iv(t)\\quad\\Longrightarrow\\quad z\\prime=(-1+11i)z,\\quad z(0)=1",
+        "u(t)=e^{-t}\\cos(11t),\\qquad v(t)=e^{-t}\\sin(11t)",
+        "u(\\frac{\\pi}{11})=- \\frac{1}{e^{\\frac{\\pi}{11}}}",
+        "- \\frac{1}{e^{\\frac{\\pi}{11}}}"
+      ]
+    }
+  },
+  "cn_50d871773be122f74ad7": {
+    "sourceContentHash": "b94077efdfd4548147ab5d5ac2d5f4c31c09e54004b1ef197a3d54bfe59799b0",
+    "revision": 1,
+    "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&5\\\\-1&a-10\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+    "steps": [
+      "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+      "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+      "\\operatorname{tr}A=2a-10,\\qquad \\det A=a^2-10a+5",
+      "\\operatorname{tr}A<0\\iff a<5",
+      "\\det A>0\\iff a<5 - 2 \\sqrt{5}\\ \\textnormal{or}\\ a>2 \\sqrt{5} + 5",
+      "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+      "5 - 2 \\sqrt{5}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-linear-stability-bound",
+      "revision": 1,
+      "sourceContentHash": "b94077efdfd4548147ab5d5ac2d5f4c31c09e54004b1ef197a3d54bfe59799b0",
+      "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&5\\\\-1&a-10\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+      "steps": [
+        "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+        "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+        "\\operatorname{tr}A=2a-10,\\qquad \\det A=a^2-10a+5",
+        "\\operatorname{tr}A<0\\iff a<5",
+        "\\det A>0\\iff a<5 - 2 \\sqrt{5}\\ \\textnormal{or}\\ a>2 \\sqrt{5} + 5",
+        "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+        "5 - 2 \\sqrt{5}"
+      ]
+    }
+  },
+  "cn_9b50b641037305c89fcb": {
+    "sourceContentHash": "8d6ee2b206f2addfd69bf45f7e3b17d14ae0d9dc5d32e4f4bb1f855bb710a9e4",
+    "revision": 1,
+    "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&7\\\\-1&a-14\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+    "steps": [
+      "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+      "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+      "\\operatorname{tr}A=2a-14,\\qquad \\det A=a^2-14a+7",
+      "\\operatorname{tr}A<0\\iff a<7",
+      "\\det A>0\\iff a<7 - \\sqrt{42}\\ \\textnormal{or}\\ a>\\sqrt{42} + 7",
+      "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+      "7 - \\sqrt{42}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-linear-stability-bound",
+      "revision": 1,
+      "sourceContentHash": "8d6ee2b206f2addfd69bf45f7e3b17d14ae0d9dc5d32e4f4bb1f855bb710a9e4",
+      "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&7\\\\-1&a-14\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+      "steps": [
+        "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+        "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+        "\\operatorname{tr}A=2a-14,\\qquad \\det A=a^2-14a+7",
+        "\\operatorname{tr}A<0\\iff a<7",
+        "\\det A>0\\iff a<7 - \\sqrt{42}\\ \\textnormal{or}\\ a>\\sqrt{42} + 7",
+        "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+        "7 - \\sqrt{42}"
+      ]
+    }
+  },
+  "cn_df44038a5409f551b7d9": {
+    "sourceContentHash": "e56f9206c4f660000523d6231fc8b758456035fcd71237f1940151c4d559c1eb",
+    "revision": 1,
+    "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&9\\\\-1&a-18\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+    "steps": [
+      "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+      "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+      "\\operatorname{tr}A=2a-18,\\qquad \\det A=a^2-18a+9",
+      "\\operatorname{tr}A<0\\iff a<9",
+      "\\det A>0\\iff a<9 - 6 \\sqrt{2}\\ \\textnormal{or}\\ a>6 \\sqrt{2} + 9",
+      "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+      "9 - 6 \\sqrt{2}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-linear-stability-bound",
+      "revision": 1,
+      "sourceContentHash": "e56f9206c4f660000523d6231fc8b758456035fcd71237f1940151c4d559c1eb",
+      "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&9\\\\-1&a-18\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+      "steps": [
+        "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+        "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+        "\\operatorname{tr}A=2a-18,\\qquad \\det A=a^2-18a+9",
+        "\\operatorname{tr}A<0\\iff a<9",
+        "\\det A>0\\iff a<9 - 6 \\sqrt{2}\\ \\textnormal{or}\\ a>6 \\sqrt{2} + 9",
+        "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+        "9 - 6 \\sqrt{2}"
+      ]
+    }
+  },
+  "cn_26b8894d1a75eb35e770": {
+    "sourceContentHash": "46c87697c4e5482fbdd1bf34b63e2dad45502b864cd48eae2052d87c35bf44ae",
+    "revision": 1,
+    "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&11\\\\-1&a-22\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+    "steps": [
+      "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+      "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+      "\\operatorname{tr}A=2a-22,\\qquad \\det A=a^2-22a+11",
+      "\\operatorname{tr}A<0\\iff a<11",
+      "\\det A>0\\iff a<11 - \\sqrt{110}\\ \\textnormal{or}\\ a>\\sqrt{110} + 11",
+      "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+      "11 - \\sqrt{110}"
+    ],
+    "source": "guarded-current-finite-review",
+    "entry": {
+      "auditId": "supplemental-v1",
+      "familyId": "m3-differential-equations-hard-linear-stability-bound",
+      "revision": 1,
+      "sourceContentHash": "46c87697c4e5482fbdd1bf34b63e2dad45502b864cd48eae2052d87c35bf44ae",
+      "statement": "\\begin{gathered}\\mathbf u\\prime=\\begin{pmatrix}a&11\\\\-1&a-22\\end{pmatrix}\\mathbf u.\\\\\\begin{gathered}\\textnormal{The origin is asymptotically}\\\\\\textnormal{stable exactly}\\end{gathered}\\\\\\textnormal{for }a<c.\\textnormal{ Find }c.\\end{gathered}",
+      "steps": [
+        "\\textnormal{Let }A\\textnormal{ denote the coefficient matrix of the given system.}",
+        "\\textnormal{A real two-dimensional linear system is asymptotically stable exactly when its coefficient matrix has negative trace and positive determinant.}",
+        "\\operatorname{tr}A=2a-22,\\qquad \\det A=a^2-22a+11",
+        "\\operatorname{tr}A<0\\iff a<11",
+        "\\det A>0\\iff a<11 - \\sqrt{110}\\ \\textnormal{or}\\ a>\\sqrt{110} + 11",
+        "\\textnormal{Only the lower determinant branch meets the trace condition.}",
+        "11 - \\sqrt{110}"
+      ]
+    }
+  },
+  "cn_ef0f06fc42ad46703e8f": {
+    "sourceContentHash": "132895665040356a66df1f29b79cf0645cb668938725eb17acebba89abcd6e78",
+    "revision": 2,
+    "statement": "\\inf_{x,y\\in\\mathbb R}\\left[\\ln(1+e^x+e^y)-\\frac{x+2y}{8}\\right]",
+    "steps": [
+      "\\textnormal{Define the three positive normalized weights of the logarithmic partition function.}",
+      "Z=1+e^x+e^y,\\qquad p=\\frac{e^x}{Z},\\quad q=\\frac{e^y}{Z},\\quad r=\\frac1Z,\\quad p+q+r=1",
+      "\\textnormal{Vanishing first derivatives require the following weights and therefore give an explicit critical point.}",
+      "p=\\frac{1}{8},\\quad q=\\frac{1}{4},\\quad r=\\frac{5}{8},\\qquad x=\\ln\\frac{p}{r},\\quad y=\\ln\\frac{q}{r}",
+      "H=\\begin{pmatrix}p(1-p)&-pq\\\\-pq&q(1-q)\\end{pmatrix},\\quad H_{11}>0,\\quad\\det H=pqr>0",
+      "\\textnormal{This Hessian is positive definite everywhere, so the critical point is the unique global minimum.}",
+      "\\min=-p\\ln p-q\\ln q-r\\ln r=\\frac{\\ln{\\left(8 \\right)}}{8} - \\frac{5 \\ln{\\left(\\frac{5}{8} \\right)}}{8} + \\frac{\\ln{\\left(4 \\right)}}{4}",
+      "\\frac{\\ln{\\left(8 \\right)}}{8} - \\frac{5 \\ln{\\left(\\frac{5}{8} \\right)}}{8} + \\frac{\\ln{\\left(4 \\right)}}{4}"
+    ],
+    "source": "guarded-canonical-preview"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "checks": [
+    {
+      "sample": 0,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 382,
+      "scrollableMath": 1,
+      "width": 390
+    },
+    {
+      "sample": 1,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 15,
+      "pageWidth": 382,
+      "scrollableMath": 9,
+      "width": 390
+    },
+    {
+      "sample": 2,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 382,
+      "scrollableMath": 1,
+      "width": 390
+    },
+    {
+      "sample": 3,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 21,
+      "pageWidth": 382,
+      "scrollableMath": 4,
+      "width": 390
+    },
+    {
+      "sample": 4,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 382,
+      "scrollableMath": 3,
+      "width": 390
+    },
+    {
+      "sample": 5,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 14,
+      "pageWidth": 382,
+      "scrollableMath": 5,
+      "width": 390
+    },
+    {
+      "sample": 6,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 11,
+      "pageWidth": 382,
+      "scrollableMath": 3,
+      "width": 390
+    },
+    {
+      "sample": 7,
+      "viewport": "mobile",
+      "mathErrors": 0,
+      "mathNodes": 13,
+      "pageWidth": 382,
+      "scrollableMath": 0,
+      "width": 390
+    },
+    {
+      "sample": 0,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 1,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 15,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 2,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 3,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 21,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 4,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 10,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 5,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 14,
+      "pageWidth": 1272,
+      "scrollableMath": 2,
+      "width": 1280
+    },
+    {
+      "sample": 6,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 11,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    },
+    {
+      "sample": 7,
+      "viewport": "desktop",
+      "mathErrors": 0,
+      "mathNodes": 13,
+      "pageWidth": 1272,
+      "scrollableMath": 0,
+      "width": 1280
+    }
+  ],
+  "console": [],
+  "preferenceSaveOnAndOff": true,
+  "scope": "Actual components with exact final served records in a temporary local QA route; local state for preference save. Persistence covered separately by emulator tests.",
+  "visualInspection": [
+    "mobile short and piecewise",
+    "mobile longest solution",
+    "mobile special function",
+    "mobile multivariable",
+    "desktop piecewise"
+  ],
+  "limitations": [
+    "Long formulas use intentional horizontally scrollable math containers.",
+    "Full-page screenshots include the fixed navbar at its capture position."
+  ]
+}

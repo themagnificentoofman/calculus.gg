@@ -1,0 +1,1 @@
+CREATE INDEX `cbank_exclusion_lookup` ON `cbank_release_exclusions` (`problem_ref`,`release_id`);

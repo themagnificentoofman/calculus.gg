@@ -1,4 +1,5 @@
 'use client';
+import { ProblemStatement } from '@/components/ProblemStatement';
 
 import {useReplayCapture,ReplayCaptureStatus,observeReplay,useRoundUrl,capturedView,clearRoundUrl} from '@/components/ReplayCapture';
 import { useState, useEffect, useRef } from 'react';
@@ -6,6 +7,7 @@ import { useAuth } from '@/components/AuthProvider';
 import { motion, AnimatePresence } from 'motion/react';
 import { ProblemReference } from '@/components/ProblemReference';
 import { MathDisplay } from '@/components/MathDisplay';
+import { ContentAttribution } from '@/components/ContentAttribution';
 import { SolutionSteps } from '@/components/SolutionSteps';
 import { LastAnswerReview, type AnsweredQuestion } from '@/components/LastAnswerReview';
 import { Users, RefreshCw, Home, Play, CheckCircle2, XCircle, ArrowRight, Swords, Info } from 'lucide-react';
@@ -30,8 +32,11 @@ interface ChatMessage {
 }
 
 interface Question {
+  contentNotice?: import('@/lib/bank/contracts').ContentNotice;
+  contentAttribution?: import('@/lib/bank/contracts').ContentCredit;
   problemId?: string;
   problemRevision?: number;
+  legacy?: boolean;
   latexProblem: string;
   options: string[];
   correctIndex: number;
@@ -796,7 +801,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
               className="bg-zinc-900 border border-zinc-800 rounded-3xl p-4 sm:p-8 mb-8"
             >
               <div className="text-xl sm:text-2xl mb-6 sm:mb-12 w-full overflow-x-auto py-4">
-                <MathDisplay math={q.latexProblem} block />
+                <ProblemStatement math={q.latexProblem} legacy={q.legacy} /><ContentAttribution credit={q.contentNotice} />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -877,6 +882,7 @@ function PvPMatch({ onPlayAgain }: { onPlayAgain: () => void }) {
               <h4 className="text-zinc-300 font-medium mb-2">Explanation:</h4>
               <div className="text-zinc-400 leading-relaxed w-full flex flex-col gap-4">
                 <SolutionSteps steps={q.explanation} />
+                  <ContentAttribution credit={q.contentAttribution} />
               </div>
             </div>
 

@@ -1,0 +1,3051 @@
+{
+  "reviewer": "root-independent-review",
+  "author": "frozen-M3-content",
+  "artifactSha256": "a1560877edf65819f2f7241f7366f072a737b7914bd1dc7e6caecb09b18f2105",
+  "verifierSha256": "d3a3ee48b5f4f08ec8cee319b069d9d426ffaf70166cea5fe3947fd7a32cec04",
+  "instances": 152,
+  "passed": 152,
+  "reviewScope": "Independent finite answers, literal expression-choice binding, pairwise exact inequivalence and options-visible editorial routes. Existing proof certificates subsequently inspected; not a fully blind review, formal proof or human certification. Full option-screen dispositions remain required.",
+  "results": [
+    {
+      "problemId": "cn_eb2ac67a8f87c76c707a",
+      "sourceContentHash": "33e5e7dcebf59029022c70eb5a8c1f48d8c2b79b0193f729541bc958e4e993a6",
+      "semanticHash": "c154cc062ebf2f6a9b4401b6f67ec6896bb9b94ad8abc23c29485024e36b5a19",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(336)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_eb2ac67a8f87c76c707a",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a62ee2e6ec7023e6f665",
+      "sourceContentHash": "ef882e550a8aa0e49a4a5282a16b13df9f9a89133e1f7cbe6fe267f2995540af",
+      "semanticHash": "5cd11600af24715b75556de5acd6edcd63a7ba1ea018379b843c84fc105e8a77",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(5040)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_a62ee2e6ec7023e6f665",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_42541307c81a4f42d1f5",
+      "sourceContentHash": "e39c70aa576a54e1e1b866cd83c7f9d1183ba8f31fd0744ea0a0f9c61a62ba86",
+      "semanticHash": "d5248a09568f1b0f479ca554f5ea63d40ffa125c093248f6b488c50ad95adb4b",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(95040)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_42541307c81a4f42d1f5",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_44e8bc32137c4351306a",
+      "sourceContentHash": "115af74aa99bdaec2865be0a9c1a92f766a38c85d511f7e37259d72519f2b130",
+      "semanticHash": "edf4222c2fac92a1db8c007a7b710f2ce579a5f4d656d027d7daa31106b849c9",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(2162160)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_44e8bc32137c4351306a",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_5abf531ea4f50285a799",
+      "sourceContentHash": "3b999d18fdac64d8cd2a99946d285b69c761f654f38c668725b3aa3d56013be7",
+      "semanticHash": "73eef211d8c37b2755d198362bbb8003d3816cab4fc390a92610ae116e2b3824",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(57657600)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_5abf531ea4f50285a799",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9235a80d0c11fff42844",
+      "sourceContentHash": "e39bc6c970a970e335f58c3f694cbacbf578ff052620dd77513f04594f95f1d1",
+      "semanticHash": "532f9a58008c83f7352483e7005497d5676a815441b44e394e169e8be1a6a18d",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(1764322560)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_9235a80d0c11fff42844",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0fb3336bf198d8ea1e87",
+      "sourceContentHash": "6c6ae9e42a293444563c0bb94b6de286d73339bb0964c67bb522a65a7fefc2bd",
+      "semanticHash": "8b56e5d0073fb476654654dfab164a02bf41b9165be80955cafa5dee94987580",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(60949324800)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_0fb3336bf198d8ea1e87",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_688514ead55c6e82a3ad",
+      "sourceContentHash": "e2d08d3cec44fc87835d417fe8ff389e239aa01739efd4c2b18564a7a19fc683",
+      "semanticHash": "72420c213f685db7db84c0cf88c0fce9ca821e095212f6080afe98f47ccfd014",
+      "familyId": "m3-differentiation-olympiad-implicit-series-inversion",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(2346549004800)",
+      "checks": [
+        {
+          "description": "Chosen algebraic branch satisfies the equation",
+          "left": "Add(Mul(Integer(-1), Symbol('x', real=True), Pow(Add(Integer(1), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1)))), Integer(2))), Mul(Rational(1, 2), Pow(Symbol('x', real=True), Integer(-1)), Add(Mul(Integer(-1), Integer(2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Add(Integer(1), Mul(Integer(-1), Integer(4), Symbol('x', real=True))), Rational(1, 2))), Integer(1))))",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Solve the quadratic for the branch vanishing at zero; a binomial expansion gives the requested coefficient. Lagrange inversion is optional.",
+      "normalizedLineageKey": "cn_688514ead55c6e82a3ad",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_154a74ba36bb1a5c167c",
+      "sourceContentHash": "15111e40f5495fbc01de8926ece97b3da5bc5c03d92953a08f1e0d5e9c4a9f63",
+      "semanticHash": "073c8834aa076cfdbba48a100a032683d22d8266445fa89ff2a112d9f6978de9",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Rational(1, 1156)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_154a74ba36bb1a5c167c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_5453bba1e4b9aaee4526",
+      "sourceContentHash": "e8155894ad32862bbe664896e8aa2fe421606301d36004b07f41b66dd02b5f5a",
+      "semanticHash": "ce803d81eeb14dc20efae3ec3a8467640a2517787814ee9770e4bacd4ffb3c7c",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(1, 7921)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_5453bba1e4b9aaee4526",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0f7ad91f24df7474d407",
+      "sourceContentHash": "f4b3a2b2274752883abaa2b316b724ce915f5f3ed378f4849acb0a022cfb2514",
+      "semanticHash": "18ec34505695dcde57d657f4daff773bd8960de670096203bd808b3b86425266",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Rational(1, 54289)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_0f7ad91f24df7474d407",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_697960ca8b2e6929d682",
+      "sourceContentHash": "db3907df0ef56a894a4aa37b70b59a20f9f3bcfb6f2d11afe80a35c5750419d7",
+      "semanticHash": "d8b0d299b52b46999c0caf0bcf3e501ae607a159242091db289c79cf239fa0b4",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(1, 372100)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_697960ca8b2e6929d682",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_dcd70b0b61100f784fcc",
+      "sourceContentHash": "c437c387e68e89bb4311209bf26e7e994a4c77a48ec00a9cf01c4529fa006bb2",
+      "semanticHash": "928ffe53e5eedc3a99223b3202e4a80c003ecd26929d4efb62c26eebcb56437a",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Rational(1, 2550409)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_dcd70b0b61100f784fcc",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_f851246556264ed8a6e5",
+      "sourceContentHash": "42858efa983cdbcc1aeb10b506241892f46491204b11f9df382effae10a58b0b",
+      "semanticHash": "812b81ea67fe2992a8c6e1a132710026deab4354c5d93b4ebac45f5c11d3a949",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(1, 17480761)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_f851246556264ed8a6e5",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_6ab98f48ca10bbe98cc4",
+      "sourceContentHash": "6cbdd77724045e8c9eab0e47621973827a308116685e7a5c98691619031a756d",
+      "semanticHash": "2e5049377d880166f974aef6686a8d7a8951f1c9cef0bcc97b439d67440efd3c",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Rational(1, 119814916)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_6ab98f48ca10bbe98cc4",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1847490ac1f381e395ea",
+      "sourceContentHash": "82edb19b4e3a26e462c24be6bc8ffb2cdbef7f56639a48d09148864a2b90c9ac",
+      "semanticHash": "a3be12e6658de5b7fecaf26bbf351b1832922900989fb8602409a19a0b99633c",
+      "familyId": "m3-differentiation-olympiad-iterated-Mobius",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(1, 821223649)",
+      "checks": [
+        {
+          "description": "Composition matrix determinant",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Compose the two-by-two fractional-linear matrix and use its determinant-one derivative. Four through eleven iterations add computation, not another decision.",
+      "normalizedLineageKey": "cn_1847490ac1f381e395ea",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7dbfbbb8024a0d18ef0e",
+      "sourceContentHash": "4f06e0bcb3ec7ab80abf46d6eaa5e645e04a1911cd756c02d878a394c45f6858",
+      "semanticHash": "17ff61851b4d41def362a90591778c8778c2c286275778bd6161e511adea30f5",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(73)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_7dbfbbb8024a0d18ef0e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_38d4f98ff03ed6a62fd6",
+      "sourceContentHash": "0e29cf3f8d29ff185341c609b7759f58b7d80cbd21cb8ee9328802be6ec9372d",
+      "semanticHash": "9531e4e40a8ed93968a5ac20b5be402447940a786fd5fc5b6dc0292db8e74ce3",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(501)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_38d4f98ff03ed6a62fd6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_743ba159a717639c879e",
+      "sourceContentHash": "1612f7c6005a6080e3527e451bb11fbd4e2655c5ea0e3404a65bd71622fe6e44",
+      "semanticHash": "f0335e01087f9c750154d1b54beb28051cd46d7bb9f1f47740143a504fc87f3b",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(4051)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_743ba159a717639c879e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c7e022008a513cce61fc",
+      "sourceContentHash": "a53355ab9588ce8f05faa9590e0f52df74c917a6a00bd9f6c44d98edf398be9a",
+      "semanticHash": "3bf4c3295508b378e856d8fade204821bbbe252df06e89c484a0f324d9398457",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(37633)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_c7e022008a513cce61fc",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_18e6b4f944bcf8787390",
+      "sourceContentHash": "f3d81c0588c034d641a8bd2cfd435d243174ddd4c06c3438384738718339767e",
+      "semanticHash": "9bc5607653fb3855423b99f479801455b80625314cfaa5920c6062da4cb89200",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(394353)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_18e6b4f944bcf8787390",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b2e807d519ec5e29968e",
+      "sourceContentHash": "693a5d5cf9e685a769be66fc3ebcc935f34a6efba18875a3adabbad196ba84d8",
+      "semanticHash": "4541ba0c76850b2ec15d5404d26c13767775dfe6e4cd314743ebbfa59c195f40",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(4596553)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_b2e807d519ec5e29968e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_5966c285e8238f645342",
+      "sourceContentHash": "3b88b2d6d47fa262967b0c19281f09aa963660f4175a87bee82db5f7add08749",
+      "semanticHash": "0480b0dc28ba114d69ad40f6409336df0e82db8e38f691b1588c640c173a1a61",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(58941091)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_5966c285e8238f645342",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_2882171ad105b48217e5",
+      "sourceContentHash": "08e14dddc4708316cb07066e17450a9c841642ea3bc9c4ffbd0f9abb09eaa7fe",
+      "semanticHash": "4b1529d5c58ef5445ba16a9e559374b7385c7baef38c6f19ecd5e9e3cfb26886",
+      "familyId": "m3-differentiation-olympiad-exponential-partition-coefficient",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(824073141)",
+      "checks": [
+        {
+          "description": "Derivative differential equation",
+          "left": "Mul(Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(2)), Add(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-2))), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))), exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1)))))",
+          "right": "exp(Mul(Symbol('x', real=True), Pow(Add(Integer(1), Mul(Integer(-1), Symbol('x', real=True))), Integer(-1))))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Expand exp(x/(1-x)) to the finite requested order, or use its first-order differential recurrence. No partition theorem is required.",
+      "normalizedLineageKey": "cn_2882171ad105b48217e5",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_3e5f89964706f8a7c2b6",
+      "sourceContentHash": "dbde8f3e74964f2ef6945acf6b1e16141403d5d96c79c613d75cb3388953544a",
+      "semanticHash": "a8485d8e85c142b58c8977661345c6786ec51e1ce4ac6d5d60430b13244e1def",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_3e5f89964706f8a7c2b6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b15af6c3a2cf26c45827",
+      "sourceContentHash": "8c3ee8000c7b2768eeaa3ff6e01a1969c507d0ef946ec9e0577344a59ce6d838",
+      "semanticHash": "204731f1d58ebdf8d4f05c36794994ffe7b95b694201dd11870592dec7dd4420",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_b15af6c3a2cf26c45827",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_110f030e163601d83db7",
+      "sourceContentHash": "470c414a4a9dc0e67ebbb838736bd8d58361b8c7020c23ffea42363c411d326f",
+      "semanticHash": "82affef54506a400a11608f3424118c0f16063cc5fac66eba13e7011576ec7f2",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_110f030e163601d83db7",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a22de8bf7ee50d93a65b",
+      "sourceContentHash": "cfa50c0cccb2277ae2b241823be0d75d3ffb8540b62eb18c30d9426adf736bf5",
+      "semanticHash": "58aebbd0cb6e664cf0f8a81ddf493b4c2436510ee1e99c76d5912b61d919ee2d",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_a22de8bf7ee50d93a65b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_19c2c3e41c22130120af",
+      "sourceContentHash": "70b05ba79396b922aa5c3aaf070b2e0e95caaca43e810174934a0af55e83dbd7",
+      "semanticHash": "d5c7aaa5d778eaf67bdebc84e76a0339df3dd6933b8882b772754e5e14e76ece",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_19c2c3e41c22130120af",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_cc691d993fd0f53e9e4b",
+      "sourceContentHash": "afb8e0257fef0bc3baeb945a6705f9724cfe6b686e94dfa5974fe87d64ba13a3",
+      "semanticHash": "4999ef8c17bfa4b3356ce987f492a655c518ab29b7a646e8de0468b69a6cd004",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_cc691d993fd0f53e9e4b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_d00469eb6cb635396527",
+      "sourceContentHash": "b229a714b9fdf55bdb6ec7b356eb648772a87a8ab3aa055787e2243d2e2dbeb6",
+      "semanticHash": "f3d73e4a773a880d3f4cf8450f949a1f8c9947f67a5b89e116ec987868b313cc",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_d00469eb6cb635396527",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_79ce2460503e88d1d102",
+      "sourceContentHash": "f4ee763fb6fe75b30444684695b79bed2cae1323845dd491ccf9367ff3e107f5",
+      "semanticHash": "945b9e0ec840fc36f8c05e1e0951c146faf4bb8ecfc302b6cae3623a61ef3b1b",
+      "familyId": "m3-differentiation-olympiad-noncommuting-operator",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [
+        {
+          "description": "The literal function is an eigenfunction",
+          "left": "Add(Mul(Integer(2), Symbol('x', real=True), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))), Mul(Add(Integer(1), Mul(Integer(-1), Integer(2), Symbol('x', real=True))), exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))))",
+          "right": "exp(Add(Mul(Integer(-1), Pow(Symbol('x', real=True), Integer(2))), Symbol('x', real=True)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "medium",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Differentiate the displayed exponential once: it is an eigenfunction of L with eigenvalue one. Every iterate has value one.",
+      "normalizedLineageKey": "cn_79ce2460503e88d1d102",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b497ad2fd13d5a4f097e",
+      "sourceContentHash": "3e919d473340aa0db9722fd3547bd54b0e248f2265dc3743d5c7dcef4ec17efb",
+      "semanticHash": "18eaa768879fcec145149aaad9051d846b853ba0d87bbe26c8ab077fd059c30a",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Rational(-4, 5)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_b497ad2fd13d5a4f097e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_4d77714ebbe5f86a7006",
+      "sourceContentHash": "f9c566ee09126b17b3f4228ca404d8aeea5ec2f0e7222f8d603d5f3bd4438ef3",
+      "semanticHash": "8114f5d1cdff0f5ba514020ce26d6dd935f9f7216205de80525376b11e3073e1",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(-5, 6)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_4d77714ebbe5f86a7006",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_61c91ce5e7fcd49a4e28",
+      "sourceContentHash": "099bdfa7a2102f576f2637924de9fa5a311f37eda69540680c28f31676c12d11",
+      "semanticHash": "f245822d8038b251ea7a78d7b1d6f459d99df0aa56fa0c7bd58edf9591ef9d14",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Rational(-6, 7)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_61c91ce5e7fcd49a4e28",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_f596c141dcaae6ed2ab9",
+      "sourceContentHash": "5d972e865c84e87b1cd4a935502dc6a9248ffd7888961919ba12cf2a4584f36b",
+      "semanticHash": "1edd881e5a9ee28934d65a0c738504e3fb6df23e5e55b338933d25c6e06cd32a",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(-7, 8)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_f596c141dcaae6ed2ab9",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0d270f8af0eed1839e28",
+      "sourceContentHash": "448bc511944e2cdcd333242ae1a4728ae26b7bdf48ed701e8ad5d1a58258f582",
+      "semanticHash": "1294c2cf4be5379c00ac1f6c394a4e4f7317dbf73dff00846646316e50e63afd",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Rational(-8, 9)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_0d270f8af0eed1839e28",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c7911f817c2e2bef7bc2",
+      "sourceContentHash": "2b345f4729bca7af84d902b0d89ce16d306051c6a4444b3c7864c0dada6b1d44",
+      "semanticHash": "0647b653c26cea791a9b79a561f3564e27cd6478dea14ded13f53837e1339086",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(-9, 10)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_c7911f817c2e2bef7bc2",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b68114cf8655e83a175b",
+      "sourceContentHash": "e6a96f1f01cca4dc6b2c22d870af5b4dceec6250688d82fd6036d5a5b427cd02",
+      "semanticHash": "7736e5bb2582a239d0319187f027c3f4888cf737a1792fc3f5def03232912149",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Rational(-10, 11)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10), Rational(1, 11))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10), Rational(1, 11))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_b68114cf8655e83a175b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_adc4a3374505d527328a",
+      "sourceContentHash": "fc1f9091a44f617881144b64f9cd60db345eca5e1045a846bd61d7c3e84b7780",
+      "semanticHash": "ccbc4eba440bc8128f45ab29e53ed5b82ecf7587b1179b482d17e6d94fe4cee8",
+      "familyId": "m3-differentiation-olympiad-interpolation-derivative",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(-11, 12)",
+      "checks": [
+        {
+          "description": "Rational interpolation nodes",
+          "left": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10), Rational(1, 11), Rational(1, 12))",
+          "right": "Tuple(Integer(1), Rational(1, 2), Rational(1, 3), Rational(1, 4), Rational(1, 5), Rational(1, 6), Rational(1, 7), Rational(1, 8), Rational(1, 9), Rational(1, 10), Rational(1, 11), Rational(1, 12))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct (x+1)P(x)-1, use its prescribed zeros and its value at minus one, then differentiate. The rational remainder supplies the central reframing.",
+      "normalizedLineageKey": "cn_adc4a3374505d527328a",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a200919241a46a2afeb9",
+      "sourceContentHash": "c55547042128bcaafc2a046e6999a22ddbea915121fee2a8a018a2e7bafdcd12",
+      "semanticHash": "7c72bdcff05b4daa56e7731e4f5664a1f185bd0e67fa26a4765fd4443c18cc32",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(4)",
+          "right": "Integer(4)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_a200919241a46a2afeb9",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b44af8029ce93adfe322",
+      "sourceContentHash": "fae3b090dca3aaa73e183ed3c21ae8417d08f6d123ca5acbe8fdfb0833e41fc5",
+      "semanticHash": "6f264d1925b09d48cead3c321b3247a89b6f2b1561739bcc123f0927ec52fb51",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 5), Pow(Integer(5), Rational(4, 5)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(5)",
+          "right": "Integer(5)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_b44af8029ce93adfe322",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c01b0ded9a288b741611",
+      "sourceContentHash": "cb87ab08571adc1921a530baff2c88d8289b83087547f1439561cbf19474bb6e",
+      "semanticHash": "0bd823868619449700fc7bafe0c9a007ed5833e74a39f76a067710f171d15d75",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 6), Pow(Integer(6), Rational(5, 6)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(6)",
+          "right": "Integer(6)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_c01b0ded9a288b741611",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_2f54d8573ab39876addd",
+      "sourceContentHash": "53606c2abf8474175224281add34ce2d7eb6d04320de382a79b118ca24e87670",
+      "semanticHash": "2e1e348cec3cfb2024a3f4f9af55fda5581db8ffd94980b7a252210622536335",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 7), Pow(Integer(7), Rational(6, 7)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(7)",
+          "right": "Integer(7)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_2f54d8573ab39876addd",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7762cefd4307eeabeb09",
+      "sourceContentHash": "b8cead58a1de28d534e8ab5aa879d0e20ffb37403fbe6a3c485c4c3e12f0ad64",
+      "semanticHash": "507613a91e973ece9091ea6baeac464af8953b057a184fe0d73b605f1b26cf47",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(Integer(2), Rational(5, 8)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(8)",
+          "right": "Integer(8)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_7762cefd4307eeabeb09",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1daf9aafe672033b0e9d",
+      "sourceContentHash": "2e45b47ede8a908297ed24085c4d57870731700987c118e1ff64caf96f7831a6",
+      "semanticHash": "f4f9d83c59cbe6dcca1067bc0d5a7ed48e71b822a94d64325182c116057af481",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 3), Pow(Integer(3), Rational(7, 9)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(9)",
+          "right": "Integer(9)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_1daf9aafe672033b0e9d",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_8ea4a96b0c795d65427c",
+      "sourceContentHash": "364a80a86391cab1c8c2e7b80e6fe398c371ca2295d9958e210f8c104f1e3852",
+      "semanticHash": "4c8aae0e53f80bec0470eed863d9fc7bb8297fef6815b742b55fd56a9546ebde",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 10), Pow(Integer(10), Rational(9, 10)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(10)",
+          "right": "Integer(10)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_8ea4a96b0c795d65427c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_6eaf1dc9e3cc9acd9ba8",
+      "sourceContentHash": "4ae5e1af86c2e5c68ad15372f1736c90eb33b1be66876a99acaedcc9f2eb99fe",
+      "semanticHash": "6096690a17629d83e78eb1290deb2d8208f666179be3ef9f2e8160ccac979a06",
+      "familyId": "m3-limits-olympiad-nonlinear-recursion-rate",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 11), Pow(Integer(11), Rational(10, 11)))",
+      "checks": [
+        {
+          "description": "Reciprocal-power increment at infinity",
+          "left": "Integer(11)",
+          "right": "Integer(11)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove monotone decay to zero and choose the reciprocal power whose successive increments tend to a nonzero constant; Cesaro averaging gives the scale.",
+      "normalizedLineageKey": "cn_6eaf1dc9e3cc9acd9ba8",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_43b46e79a0f8909b70b0",
+      "sourceContentHash": "4385d7d10a4123217d75ab9651f6b0a4ba787dc5666103a2568117000705b0b0",
+      "semanticHash": "2563d992605d5ca00c84c72549f024a089ef8bffc9b4f93e1eb5c25137d3e141",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 4), gamma(Rational(1, 4)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_43b46e79a0f8909b70b0",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0b1b804d8335c6c13f91",
+      "sourceContentHash": "1e3084678a71a6dd9600085dd73d13c40359b31ab3066d9a2305071985e7d151",
+      "semanticHash": "0842fd9bbf6674533371fe6758c3b99301fc9f6843793c1a0f7e1997ccecb16a",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 5), gamma(Rational(1, 5)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_0b1b804d8335c6c13f91",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a5d5d275ea68cfb07830",
+      "sourceContentHash": "c31eff324cb107bbc1cee59bd3d6acab21d624d4c470fdb710cf817b993ab41b",
+      "semanticHash": "9f75b54b4b1f677627a00e4c37fc2adc5e4dbe4e7452cc1c5b27983505cc0a9a",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 6), gamma(Rational(1, 6)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_a5d5d275ea68cfb07830",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c3bc9674dc7c53b1a264",
+      "sourceContentHash": "3a73af28ba312095f7e89826ac46e3ed2641d3dedc5f3c0d50a150ae108dcab4",
+      "semanticHash": "d663f21f36c95cdd89351ca89850be9589ebbb0e3be011317177e2fb7d5f09f5",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 7), gamma(Rational(1, 7)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_c3bc9674dc7c53b1a264",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_793acb8f592aa2426cb1",
+      "sourceContentHash": "aa01c4ff100adc6b7c67478d190203fe11a50e5d65cb6411b76170f5601aea49",
+      "semanticHash": "4e0a805b703821d1854624bb3026477eedce10a716ff74ffddcb471464558c60",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 8), gamma(Rational(1, 8)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_793acb8f592aa2426cb1",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_038c4306a113a1046d04",
+      "sourceContentHash": "1c375959c93dfc375930ec7304d1bc4570333913eda9051637cb711d92e582f5",
+      "semanticHash": "d1f3f7c5a2a2a86afa0b0576437b0f0139ba9dc2a31f6077a3fe7be7d036b2b1",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 9), gamma(Rational(1, 9)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_038c4306a113a1046d04",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7adab673f109a08281d7",
+      "sourceContentHash": "f91fef5fca8d982340d24eebb812ccb08dbaf33835b5d190ebe7e4509adc7224",
+      "semanticHash": "dd77773abb1a1dc96b1da3946c67a518254323f843196bf62514a260f105b256",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 10), gamma(Rational(1, 10)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_7adab673f109a08281d7",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_85c3841516c53c4b6829",
+      "sourceContentHash": "751c098fae8bc452a125e85372723986afa3c5237dd1cee660b85b2820f7383b",
+      "semanticHash": "ae041aa0e1714ea958c88aad298b2fd7a2257e51113430813e8bd118997e783c",
+      "familyId": "m3-limits-olympiad-Laplace-degenerate-endpoint",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 11), gamma(Rational(1, 11)))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "One power rescaling gives the increasing-cutoff Gamma integral directly. Same difficulty and global idea as the integration boundary-asymptotic construction.",
+      "normalizedLineageKey": "cn_85c3841516c53c4b6829",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9c067f764183fec0ef1f",
+      "sourceContentHash": "f7a39e2b3621e7de0ad1163da7ddcd202573f05fde68e2e95d0e59fdef5e2ea3",
+      "semanticHash": "6673310c79a49d58affe82b409fb3d440e34d5bb1e19fbfb55d38a27dde31e5c",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Rational(2, 9)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_9c067f764183fec0ef1f",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7f8084b394a3d4fbd37e",
+      "sourceContentHash": "6ede3aac3ae38b590276bdcedfd3b1f2ac38340cc839904af14d43565e448ec3",
+      "semanticHash": "6e1c2b8a2e8332957773ff7db6e16f945e8ab979bb425073f07f67260bc76d3e",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(23, 96)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_7f8084b394a3d4fbd37e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1f9b28698dc65b24e26f",
+      "sourceContentHash": "89a9c32495888074bfba2e4def65fb1ef60e6b987438838fb4c14b52badb8fcf",
+      "semanticHash": "d32dc1e5f1183f5f746f949d8c139ef7a37a57dc48e77f273b119dd3653d9c5a",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Rational(19, 75)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_1f9b28698dc65b24e26f",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_6a818898bb239b0abbfc",
+      "sourceContentHash": "9de0066e97b1b6c04e7d04c4236c6d4656688d96127c9ecde05b8c2b031ba1d8",
+      "semanticHash": "6430296b6f6a69f2704bbc756b065647c22aa58a262b48cdb6647babe86310c9",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(19, 72)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_6a818898bb239b0abbfc",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b30de89eb03e9428cf5c",
+      "sourceContentHash": "36e6699aae493ee89992d9185d100d3ba578e92e70d0c66b04a4733651a66875",
+      "semanticHash": "bc5fbe368976694e67322a1cb48805703139f9a5daafca10975bfc11ffe164dd",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Rational(40, 147)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_b30de89eb03e9428cf5c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_8a98c4f4ef304a6322e8",
+      "sourceContentHash": "72f1ef5473f1f6199754f2d80613c09ec082cda5ff23bfdaf558f92064c4d077",
+      "semanticHash": "482c1e8b5f4dd142cd82d18df88d55e5e4ffe42f1aa2254f27f190acdeaeabf3",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(107, 384)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_8a98c4f4ef304a6322e8",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_3347851cb6a13e372827",
+      "sourceContentHash": "5c03e1a88097714feee71f419f4cf41795dc45c4f6bdfe2c92831fc66271c6dc",
+      "semanticHash": "c3b670c69a16c1541cd4871dc542d9039efb4aca746b6b47ca662ead49f2c29e",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Rational(23, 81)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_3347851cb6a13e372827",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_413b2117165ed9c1b4c5",
+      "sourceContentHash": "5a128fa8a73d4940c5c6699ed8979663cf4a43b80aa9d8c271869e313e9d42a6",
+      "semanticHash": "4acab6ec5220da0a2e67a8ab29b06681d6a8ce206d47bfa27b07e5d1350edc63",
+      "familyId": "m3-limits-olympiad-irrational-rotation-correlation",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(173, 600)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Establish equidistribution using geometric sums, then integrate the correlated, piecewise quadratic product across its wrap point.",
+      "normalizedLineageKey": "cn_413b2117165ed9c1b4c5",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0d137de2f401c05104ea",
+      "sourceContentHash": "ff3e9ff85922f1c171253edb1a3f94dc8b840b008dddba793274aa50563dd6d3",
+      "semanticHash": "f80910935c60929828a0e65e8e53649792d66d8cd5e01eb3fdfcdd8ffcab1b39",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(2), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(2)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_0d137de2f401c05104ea",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_99c116abf9b4cfafc06c",
+      "sourceContentHash": "a25d83b8514355ffa9842c20d8c4d2c207d05cb5b020cefa7960ce24db5578d0",
+      "semanticHash": "cd60484824611d5bacc5abcdcb3149b2e86450bb757cccaf779467410e0fc86e",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(3), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(3)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_99c116abf9b4cfafc06c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_20021b2ed4c382488e3b",
+      "sourceContentHash": "f0ad590c07690780fe6c59e695a771aceba25bdcf6ed2cd71a004bdbb6ccbbd5",
+      "semanticHash": "cec7abdfdcc7d1d08e6157df4e441e9fa3931867f34963ca800b77799c7855c5",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(4), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(4)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_20021b2ed4c382488e3b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0141e298b5217584fa42",
+      "sourceContentHash": "f5b28e5ffc5723287984d6e2293d2b4cc2bcf819ee89d325f4238f29d9ffb6fb",
+      "semanticHash": "afeed30b4a69407255745beaaabee225d4964a6f09b29785b74285b779e7188c",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(5), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(5)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_0141e298b5217584fa42",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_90fdb8cda854e17cc3d4",
+      "sourceContentHash": "f7f45abce3d15371f6398ca3708bb13be2fcb82a26f00244fe1c3fee1e948202",
+      "semanticHash": "736efd3ccdb8276cdb0d70da8c55a1563d4ec1ca06de383d6231cac07df99ce0",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(6), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(6)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_90fdb8cda854e17cc3d4",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7b62b5de7bc50e72c1ba",
+      "sourceContentHash": "3cb7229c9e25fd89dbb23dab79c02d123aa17b3403be76e9505040ee454354a6",
+      "semanticHash": "f7f6575e3ad15f3ac0a230d041d0bef935cd7984a3ed4f86702c4d3059d0717a",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(7), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(7)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_7b62b5de7bc50e72c1ba",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_39dd0cd6d7ffdda242a4",
+      "sourceContentHash": "8a02baea4f68c530541166210d5d1374d36f9ddd6df2727d415dd2a1a25aefd8",
+      "semanticHash": "68b0635fb24cf47009fa4791524f7d2e33baa5e4b2d9cb1a5081aa522e835b34",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(8), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(8)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_39dd0cd6d7ffdda242a4",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9e87a5b5ec66a3db4aab",
+      "sourceContentHash": "92e885e1dad8efd99c1e34fd08cc5e67038e5aec0dce8906a7e6c0c9287a8b34",
+      "semanticHash": "f07fabae705b574e2e1128e81d24e5f71fd704d19a529a33b805577a1f670ea5",
+      "familyId": "m3-limits-olympiad-Newton-double-exponential-rate",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Add(Integer(9), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Pow(Add(Pow(Integer(2), Rational(1, 2)), Integer(9)), Integer(-1)))",
+      "checks": [
+        {
+          "description": "Exact cross-ratio conjugacy",
+          "left": "Mul(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2))), Pow(Symbol('x', real=True), Integer(-1))), Pow(Add(Mul(Rational(1, 2), Symbol('x', real=True)), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('x', real=True), Integer(-1))), Integer(-1)))",
+          "right": "Mul(Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)))), Integer(2)), Pow(Add(Symbol('x', real=True), Pow(Integer(2), Rational(1, 2))), Integer(-2)))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Find the cross ratio that conjugates the Newton map to squaring and control the remaining root-limit factor; mere convergence is insufficient.",
+      "normalizedLineageKey": "cn_9e87a5b5ec66a3db4aab",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_d84dbdd7cdea457d61d2",
+      "sourceContentHash": "bdfd1d5de50e8c4538300c169343d00a48c2ccd5e726f95cbc8a4f0c8c160632",
+      "semanticHash": "283acfff2b12c67143c37551ee31ae984a61a259b480dd19bcfa1fee29e89294",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(5)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(25), Symbol('a')), Mul(Integer(20), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(5), Symbol('a')), Mul(Integer(5), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(5), Symbol('a'), Add(Mul(Integer(-1), Integer(5), Symbol('a')), Mul(Integer(5), Symbol('b')))), Mul(Integer(-1), Integer(5), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_d84dbdd7cdea457d61d2",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_450f3383446858b43232",
+      "sourceContentHash": "a5ff54dc898bdb28280da488050cf4e794d945be495c080c889026dd12cecf47",
+      "semanticHash": "9bc81adf3a6e3242caae2dff1767b424c76ee3bb550a0ac58f8681f632eba309",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(11)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(77), Symbol('a')), Mul(Integer(38), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(11), Symbol('a')), Mul(Integer(7), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(11), Symbol('a'), Add(Mul(Integer(-1), Integer(11), Symbol('a')), Mul(Integer(7), Symbol('b')))), Mul(Integer(-1), Integer(11), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_450f3383446858b43232",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9523676c0b6904499108",
+      "sourceContentHash": "3a610bb2739e2ed7e3718b9bdaa1fd452d3ef2adc000a9675afce5b5843d4caa",
+      "semanticHash": "19f4cd0e5e567645aeb8a7b657dfbd817ba6c0ecf3627bd7a84d8abcc66d3bcd",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(19)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(171), Symbol('a')), Mul(Integer(62), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(19), Symbol('a')), Mul(Integer(9), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(19), Symbol('a'), Add(Mul(Integer(-1), Integer(19), Symbol('a')), Mul(Integer(9), Symbol('b')))), Mul(Integer(-1), Integer(19), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_9523676c0b6904499108",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9b71bede9d755e2c5642",
+      "sourceContentHash": "cd83f7ac0358be6c26dbdf94c2e03af17936ee2d56892b848628446255104966",
+      "semanticHash": "cd926c7a0d1e4add9b34ce5883e352a3ba19056b13becee4809b777024990cf1",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(29)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(319), Symbol('a')), Mul(Integer(92), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(29), Symbol('a')), Mul(Integer(11), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(29), Symbol('a'), Add(Mul(Integer(-1), Integer(29), Symbol('a')), Mul(Integer(11), Symbol('b')))), Mul(Integer(-1), Integer(29), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_9b71bede9d755e2c5642",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1becde62f9ab527014ab",
+      "sourceContentHash": "122750d90d94f4fc4c658f9b5b159052d473c71a5429cc6a7ca2a6ee92290e5f",
+      "semanticHash": "c034051c572d583c0701a06f95a79ba5a85f0d4da4ff1b6dc51a39c29d7a5091",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(41)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(533), Symbol('a')), Mul(Integer(128), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(41), Symbol('a')), Mul(Integer(13), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(41), Symbol('a'), Add(Mul(Integer(-1), Integer(41), Symbol('a')), Mul(Integer(13), Symbol('b')))), Mul(Integer(-1), Integer(41), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_1becde62f9ab527014ab",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_ea60b6ceb56b3e6dd20d",
+      "sourceContentHash": "6dc13106cc74e48323209009fc054b40d1f4e96e0137debfbcacaeba4f386c8d",
+      "semanticHash": "9cfad76bdad2ba1e127f99d8db5643345319b402d9c226039d0701ec42504d40",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(55)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(825), Symbol('a')), Mul(Integer(170), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(55), Symbol('a')), Mul(Integer(15), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(55), Symbol('a'), Add(Mul(Integer(-1), Integer(55), Symbol('a')), Mul(Integer(15), Symbol('b')))), Mul(Integer(-1), Integer(55), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_ea60b6ceb56b3e6dd20d",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_6d720df1372cf60dc6f6",
+      "sourceContentHash": "0ee98be3320c1484ed242e553ee0f69a2bd144024ce8c841e6211631372f2288",
+      "semanticHash": "2c46aecb2f34766c40da93cf98bf7a33f027de67b980bf5069dbf9daea23c7dc",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(71)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(1207), Symbol('a')), Mul(Integer(218), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(71), Symbol('a')), Mul(Integer(17), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(71), Symbol('a'), Add(Mul(Integer(-1), Integer(71), Symbol('a')), Mul(Integer(17), Symbol('b')))), Mul(Integer(-1), Integer(71), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_6d720df1372cf60dc6f6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_eecdae086e0c9789da8a",
+      "sourceContentHash": "1299f42bde84138a6523d142846951bddcfeff5de59280cb35222a0c69bbe145",
+      "semanticHash": "99d2827de56f04a48ecf5894c5c3ab81e36de6666aa1d7526feae8d18ed3af4b",
+      "familyId": "m3-limits-olympiad-recurrence-Hankel-growth",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(89)",
+      "checks": [
+        {
+          "description": "Adjacent determinant recurrence",
+          "left": "Add(Mul(Symbol('b'), Add(Mul(Integer(-1), Integer(1691), Symbol('a')), Mul(Integer(272), Symbol('b')))), Mul(Integer(-1), Pow(Add(Mul(Integer(-1), Integer(89), Symbol('a')), Mul(Integer(19), Symbol('b'))), Integer(2))))",
+          "right": "Add(Mul(Integer(89), Symbol('a'), Add(Mul(Integer(-1), Integer(89), Symbol('a')), Mul(Integer(19), Symbol('b')))), Mul(Integer(-1), Integer(89), Pow(Symbol('b'), Integer(2))))",
+          "result": "exact equality"
+        },
+        {
+          "description": "Positive initial determinant",
+          "left": "Integer(5)",
+          "right": "5",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The dominant roots cancel in the adjacent two-by-two determinant. Derive its exact first-order determinant recurrence and positivity before taking roots.",
+      "normalizedLineageKey": "cn_eecdae086e0c9789da8a",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_d4287d4e210a86a3a65a",
+      "sourceContentHash": "aa830cd47c2a9a8f638d9c5c5cc339da8257f4393612bc3ef5dd6c171f6ff097",
+      "semanticHash": "9ec4bcf867fc29d91ca19835d119677787705f3665f275cce5df9e3e04898cb0",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(3)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_d4287d4e210a86a3a65a",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_ce0746eefea6bf499c10",
+      "sourceContentHash": "21464cd670b7cb96949a1a89856e15605092682ad6634a8a48f9c0c889fd4470",
+      "semanticHash": "36d0556eec7492dd34ba9e17e55485bf66c5867df8936d7c9f8cc2960774c7e3",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(4)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_ce0746eefea6bf499c10",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_02571ba471c151158303",
+      "sourceContentHash": "1c083e046f8edb1430b50fc462072a977df57587e88a8d01bfc1d2e82c51afc4",
+      "semanticHash": "45967115803c8c9f876cc5d6cb3b396de65c44714065deb04031867d0515ea4d",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(5)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_02571ba471c151158303",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c5fe63168e7cc41adafc",
+      "sourceContentHash": "1fc6597e72d6fb5d9bcc6d8ef15d70b09c4cc45f8cc2722cd6ab2a1b96e099f7",
+      "semanticHash": "3ca064c73240cb10356ddb3a29373bdda03906f3748e04ab348800ce960cbd1f",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(6)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_c5fe63168e7cc41adafc",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a99d5051311b781662f6",
+      "sourceContentHash": "1df3f84c13cb488e7dc61ecc196513d285617afd53d933ff4d78395bc3fc001d",
+      "semanticHash": "bc45bc6bdf40bbd459304c7df7ccf56a9fc3e3730dcf34c538672be99b57431a",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(7)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_a99d5051311b781662f6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0aab80326ffec7176bf6",
+      "sourceContentHash": "b3be619cb64196b7a10a4ee9f67168a1e1376a26b19a38398dc22a8775fdfdfb",
+      "semanticHash": "c75af6f53635b8fe521562192d527a2c732c1354664b28f048802c7b2bb8084d",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(8)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_0aab80326ffec7176bf6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c341a719849bbdaff00e",
+      "sourceContentHash": "16aa0b08c9830f7cd0a014432e6c8a857f89d5c9b9940c0236926b5ee16c0851",
+      "semanticHash": "1858fde6c322f293aaf9b36f4b56e4bdf25bb4b0293b378d1044ff430d773cfb",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(9)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_c341a719849bbdaff00e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_f5ebc98d1519278f1829",
+      "sourceContentHash": "d91ca7094f0fc09ccff4798742fba2c8812d8d49eeadf39b045ffa56a2a90b17",
+      "semanticHash": "c1080b86fdecd733f719cb14d2f68626626de6f30551fde08ff79bf7612f3571",
+      "familyId": "m3-limits-olympiad-Dirichlet-endpoint-trace",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 2), Pow(pi, Integer(10)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Recognize the odd Dirichlet kernel and its two endpoint traces; justify the Fourier boundary value instead of applying ordinary oscillatory cancellation.",
+      "normalizedLineageKey": "cn_f5ebc98d1519278f1829",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_8e4a68b4656549ec2c19",
+      "sourceContentHash": "d4c43e8c38d94b76918db7e4bea6324a64ad8c0bdf2795dc51b3d3e2ce39cced",
+      "semanticHash": "68833840ff17f06bbdd9822f978bcafbcbbd31bc7a0011c6726aa905968b1133",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(1)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b724004e796a7523b302",
+      "sourceContentHash": "5be77c7b2b245fd8cc0b30719a41467f2f449448ddd3de81b125c30c910424b9",
+      "semanticHash": "9ad5f4dff56a153cd23df061c8bfa2273278502466e6e813b30c2ba2f230d17d",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Rational(3, 2)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_f7576b9c7e89fac7dc8f",
+      "sourceContentHash": "6c0f7a354ecf57044b8db82bd81dbffaf5161797b5d3feadbbb344bd5e876ee2",
+      "semanticHash": "c32ac51298031670ee130a28280b5f5ef54c9d9aebc0f7ff04be0333d60c2963",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(2)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b9fb590b72ba63e32c94",
+      "sourceContentHash": "9020245dc270d069cbb624930d25f1c04422983607fe9d44cef564920e504d58",
+      "semanticHash": "a477fd433994ae1bc33a64d3fd1252bec4779ec64a02cd267e51a6249e431b25",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Rational(5, 2)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c8a2c466e2e5115ab522",
+      "sourceContentHash": "61dd6f05516e735239c03a7b8fdd9e9199e0fbcb493b361607182cdf73217099",
+      "semanticHash": "ca2375c400f4bcf4465885958a38006bc6d30b648b17ef707734e3f9049f9486",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(3)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_03f70d0839d0632c711a",
+      "sourceContentHash": "aa50fc318105e1c615a27d8e40517ce2f8fcca14478206494fa2d54686406bcf",
+      "semanticHash": "9916772585a5b9eb2d8234c7d837025a7d16508d91393e1bc517e3c76f8f6739",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Rational(7, 2)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_5baae462b75d3c4f1bdb",
+      "sourceContentHash": "13e5da5ee6c0b4a40e66bdef548b955e9016a10f4c059fdc49ea9996cee42c6a",
+      "semanticHash": "ea036d3c80fc5e68c4516ac3b1d35e4d35cdba71ba71c397a727c60f6b69952a",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(4)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_4cc32bcfc735998dce1d",
+      "sourceContentHash": "9365c249c7df8a3bbf5f65a6312b3fa8a708f82e6f8d32542973b54a57dbd524",
+      "semanticHash": "f5a504dd6dd07c19770c8900eb3e675ee2d76d0f82b1d0172243bb250d0f9acf",
+      "familyId": "m3-limits-olympiad-monic-minimax-rate",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Rational(9, 2)",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove a matching Chebyshev upper bound and alternating-node lower bound; interval length is a pure scaling and contributes one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-monic-minimax-rate:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c63023d156494ef9bba8",
+      "sourceContentHash": "3bb0c8c219bb5443e300df8a96aa54eb2837b85962642ec00399940a750c88bc",
+      "semanticHash": "401ca7325d8133fc3b60048fc4b15c02a219c2c86cfe2fcccb02deb11d5724bf",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_c63023d156494ef9bba8",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1f30524e0d1243089588",
+      "sourceContentHash": "e6d2012ebf5aff041d5caa8c686c4cb322199b22daedff3e203ae9a7971d43ed",
+      "semanticHash": "443c16446b9d511c4c9d0985ef2fd314602f5123d07dc68bf2847126a82066d7",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(3, 4), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_1f30524e0d1243089588",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_77293be1db81d00125ba",
+      "sourceContentHash": "0670f6d983195dbfe0e160af2cb8fe0ebc33d7b9982487c013f837088445d285",
+      "semanticHash": "c90ce05deb9c1c12eb30ce78c408ed693d906253848c476b1e341bc3843ba0ea",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Pow(Integer(2), Rational(1, 2)))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_77293be1db81d00125ba",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_3649ed8c26ca1ffb439b",
+      "sourceContentHash": "8451a20db621fa6a3d4e4260363ea91ac578a835d82ee37620a6dc6d55a21398",
+      "semanticHash": "7ff898f6025ce75893b18f6fb3019e23177d15645c7f489011f0a0ec5d53d5c5",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(5, 4), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_3649ed8c26ca1ffb439b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_dd634f39ccff1d3b87ac",
+      "sourceContentHash": "0ccda3308fac1c96f6d61384a97bf3dd0ed61918cffecf8eb16238739b311dea",
+      "semanticHash": "33458256f28a8403c0b40b1cf790e7c1466d94e7cbcc5de4df35274461d5e273",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(3, 2), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_dd634f39ccff1d3b87ac",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b9930b59b6ca6af121e7",
+      "sourceContentHash": "9456cc4de22dbac6a19ef1c9c32a9e34135ee3911a75d7abcfbd5da9493d6cdc",
+      "semanticHash": "de022ea79e261c3c9495fe97d9f78ec714650ff2a70d18bc546870d1f6395926",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(7, 4), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_b9930b59b6ca6af121e7",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_d88dcf3197a373582a08",
+      "sourceContentHash": "997509c1e3f06c5f44230fe36a9dc5044908ed91234c0daac6cb18b27ffaa206",
+      "semanticHash": "a21819a1ec4decc2fc569a79dace2107c379b6eee463b6fa6b15c7cdcbd4092a",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Integer(2), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_d88dcf3197a373582a08",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_594bbafa400160a7536e",
+      "sourceContentHash": "eb759898f6d5dffe7dd0ea6b7a94e0b719881556c59e5479bfcce932a3e852a7",
+      "semanticHash": "9db5b5860bab091289ff05da8178d27cfbeb4597288a6b6e03d673ceb19285c5",
+      "familyId": "m3-limits-olympiad-binomial-moving-threshold",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Add(Mul(Rational(1, 2), erf(Mul(Rational(9, 4), Pow(Integer(2), Rational(1, 2))))), Rational(1, 2))",
+      "checks": [],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Identify a fair-binomial distribution and standardize its moving threshold in the central limit theorem. The displayed error function requires only the normal-CDF conversion.",
+      "normalizedLineageKey": "cn_594bbafa400160a7536e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_3fe228aadeb75f5c1748",
+      "sourceContentHash": "84cef96a2d0adcb1d32737fb7cd7ca1e09fe9db002ec50cb1e65896af5e46fe3",
+      "semanticHash": "2cbac8165767e0ea22f021e54b422cf393b2d98e0a25b8fb56711c0de16d4327",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 2))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_3fe228aadeb75f5c1748",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_33292739f843829d3fa1",
+      "sourceContentHash": "0b4399c1e2880b11a215a04efa0bd986963e954ace3121226e80a915edb15596",
+      "semanticHash": "be3782fbc4d9a954e76132b16090f6495cc6f1b0111505183afe826ec93b2d09",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 3))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_33292739f843829d3fa1",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_51ce925546a29449d446",
+      "sourceContentHash": "68949bd551d904073cdb5a3eeed1381842fb47894cb4ce8d84857e2c84300f7c",
+      "semanticHash": "411477cc3ffd48c06761417d3b80b3952897fe6b78b6657908ea776f989b87aa",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 4))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_51ce925546a29449d446",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_efe106f0ce06eef03546",
+      "sourceContentHash": "5bfa665d7c88cff81c6a1b25ca82d1723517cb6d831fa0f430c49bf8ac3713a6",
+      "semanticHash": "f1ad31baf124a03bdfe6f911c0150abd7817e89a67f581e275eaf69e8410b828",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 5))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_efe106f0ce06eef03546",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7197ff63d1140ce22bae",
+      "sourceContentHash": "353d56e67722307786b82bb28f81497154df8a42e6c466f2d9dd5840960803a2",
+      "semanticHash": "1161ec33e58b6839e0a28f1eae4d1da94b1e1aabfa0496b46949e7b3c1287fe5",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 6))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_7197ff63d1140ce22bae",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_15919a3c2603471b7f82",
+      "sourceContentHash": "aa04d6d204bd7d55a0dd756f30be3439fdb7a2c8d590dc5fc1cf7080c2284362",
+      "semanticHash": "7a11d990cfccd7d24a38e96c0d8691a3deec09cd18232e8289709d29d25f751a",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 7))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_15919a3c2603471b7f82",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_50bdc35302a73e80d1cd",
+      "sourceContentHash": "1c76b0200d9ea61cdde448d06449de874cc20f9938cbdecdfe34cc93fe89997c",
+      "semanticHash": "ee0d47e9e784d160e04061fa0af6007979e20af822ac84b1efa0ac9887a231cf",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 8))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_50bdc35302a73e80d1cd",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0e22a9afed7401751639",
+      "sourceContentHash": "141f7e7b27095e42c348ef33d289a6f7c66adfc09723d511073b94d0b90e00e4",
+      "semanticHash": "ce7db9f656f3f3e3b71e0d1c66407c3d4a0a502e26a4f16ae7cc5563d5399ed0",
+      "familyId": "m3-limits-olympiad-coupon-coverage-window",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "exp(Rational(-1, 9))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use empty-box inclusion-exclusion, pass fixed factorial moments to the exponential law, and sandwich the alternating partial sums before removing the truncation.",
+      "normalizedLineageKey": "cn_0e22a9afed7401751639",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_506a51909cea4e66b665",
+      "sourceContentHash": "c3c70e68056e43d299458970ad9558dcdb0127122c1602fd2f98530b4cc41761",
+      "semanticHash": "2d981c370531225f418420f874fb0e041fdefe57644f89c10ae9197f634d475e",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(3, 2), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_18032e078beb46402486",
+      "sourceContentHash": "b9602a1213d900ee6b7b106a1c330bc79964070fd02b2ebaff289a7ff6815a3c",
+      "semanticHash": "0d54f6f1a0949d664a3b2702c4afc4ef9b9252fb23fd4e138a67fa7e1fcb3a09",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(2, 3), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_ba04ad62137162881e70",
+      "sourceContentHash": "6f911192c435870e38f0089c7fb2ed5f42d684ab2da59710c3c51cca6b27a5cc",
+      "semanticHash": "ff488a93ed66a88da20c75f04c7ce89d0812364b9a32723338445fb783eb33d8",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(3, 8), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1f4035215a8a3cdf7395",
+      "sourceContentHash": "15982e820098dfc4f187626ec69919aafc5c8bd22d97dd693b3fe9b2c66a9bf7",
+      "semanticHash": "2b7c3deb384f66f6581476cbe18cce633b313194a4dc6ea573879a280d315fae",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(6, 25), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_441bfb4e0673f8493cde",
+      "sourceContentHash": "e77bdd7c4e60d41be88f5c89e66019c2cec1f844b67d05beefdde007c30f3273",
+      "semanticHash": "10478c3e515e02e901300f4cf4174da0fc34b534463a2c20b2666b7d0f0aa101",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(1, 6), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_162614cd460b7f831a3d",
+      "sourceContentHash": "6914098b8a15224b449494c891016a2862d44cbe9029fea41051a1639fc873c1",
+      "semanticHash": "71f879107652143298c7a7cb0d52f082218bd6b93be7b16a62f86d081b3007ed",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(6, 49), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_d252d923d8c2069073ea",
+      "sourceContentHash": "9ecd05230e86f7c92db56915a82452329e7db86d84547b3f19db213d15de96f1",
+      "semanticHash": "ca884d064c09e9ae2d06255f90a7066dde75e2649a4a096d1cf3512488485bff",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(3, 32), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b8080f135042eb458b03",
+      "sourceContentHash": "3a54663b4c48512c1ad2c9a09dfc32d594327f2d4377dde10a31c13d2edf83e1",
+      "semanticHash": "420b088db59da359bcae19070f0b29a89f0d69c0df58510336dcb494d158a8c2",
+      "familyId": "m3-limits-olympiad-gcd-pair-density",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Mul(Rational(2, 27), Pow(pi, Integer(-2)))",
+      "checks": [],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Use Mobius inversion with a summable tail to establish the coprime density. Prescribing a different fixed gcd is a pure lattice scaling: one advanced lineage.",
+      "normalizedLineageKey": "m3-limits-olympiad-gcd-pair-density:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_fc260a4feebb9d24fac5",
+      "sourceContentHash": "aef9bfb05073e64b09f452ce2cbafd8443d47d1969dda896835accd04ce73d7a",
+      "semanticHash": "1ec699e32a755077b9731c4601136e3fcec622d0922e89e73ad57501c7726ca6",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(16)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(16)",
+          "right": "Integer(16)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_fc260a4feebb9d24fac5",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a73758c5efbbb05b4ef7",
+      "sourceContentHash": "8452c7606f6da4745133b6fbc73100d1fec5d58fb64dda78e7eb6b64470384cc",
+      "semanticHash": "43b00c5675fd1369ff91404034ed40f6ab94008a0ab2189cf991cdfdb1eb3e86",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(25)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(25)",
+          "right": "Integer(25)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_a73758c5efbbb05b4ef7",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_61487fde3bd0c983ecb6",
+      "sourceContentHash": "4e7ef60ba39543fec24bda12bd1affbc5d6d8ba6bf0304e7dd282468953c1a73",
+      "semanticHash": "7443cb792fa657d03455b8a67068d38ea6b25f6fe6272678906efd642c4af155",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(36)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(36)",
+          "right": "Integer(36)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_61487fde3bd0c983ecb6",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_ed80a7ec1d7143709ef8",
+      "sourceContentHash": "933c1101f955094e9bd28be668196789a877a52b640017fdaf4d72fc0fd32d02",
+      "semanticHash": "59afac5f054e01625f6a768ee2b6993aa1f2de8aebc2b3d1decbd04c12d9610b",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(49)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(49)",
+          "right": "Integer(49)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_ed80a7ec1d7143709ef8",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b2b355e804bd47face7c",
+      "sourceContentHash": "5003925ad8b93aa79cea64363c6d5dbed522422a71c4a7c67e41397389a482ef",
+      "semanticHash": "8528287241191bd3a21815b945ec7726a8a89bbfcf985fe629f03af085f40111",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(64)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(64)",
+          "right": "Integer(64)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_b2b355e804bd47face7c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_cc62f6119d4b12133013",
+      "sourceContentHash": "8e12b60aecf29eb106a9a0abb5d4ff152653e150f965827afc71e14fcc6336f8",
+      "semanticHash": "819902d422e580f5220057fd4d0fd071003e551172feafcf81816b2a06892828",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(81)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(81)",
+          "right": "Integer(81)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_cc62f6119d4b12133013",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_dfeef042b6ddce81d2b3",
+      "sourceContentHash": "4d03df17bfdd7339987f1eda1e5f5822afa5ba2405f2b15eaaf375ceecd1f4a1",
+      "semanticHash": "cc7d2ad0eb845686052f98e50b77473cc8d37af4e6486db79367d42db12dc71c",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(100)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(100)",
+          "right": "Integer(100)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_dfeef042b6ddce81d2b3",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7dc3cf3efb2c6d9f164b",
+      "sourceContentHash": "be3c9553edb544e64d0c09f4da4ed05c6c5a7816b08d226756aada8f0d46f0ff",
+      "semanticHash": "b931dc3a41644da429f4c78674bc254f7ad8990a9c34a284b5199f4b877e411a",
+      "familyId": "m3-differentiation-olympiad-sharp-endpoint-derivative",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(121)",
+      "checks": [
+        {
+          "description": "Endpoint derivative of an attaining polynomial",
+          "left": "Integer(121)",
+          "right": "Integer(121)",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Prove the sharp endpoint bound from alternating interpolation weights and exhibit a Chebyshev extremizer; the degree changes the actual extremal polynomial.",
+      "normalizedLineageKey": "cn_7dc3cf3efb2c6d9f164b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a5a6be91084d29c9da9b",
+      "sourceContentHash": "ed2bd5fc58430f2c6f66cce4d4e60505bcf20ac63916f3d8f68b1b27736d7655",
+      "semanticHash": "dfcb476bf0ce991d4c79422f42cbd5b0f4dbacf88cd65d93547b946fbc80a222",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(40)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "The four-by-four literal determinant factors directly into x(x+2)^2(x+4); its second coefficient is a routine calculation.",
+      "normalizedLineageKey": "cn_a5a6be91084d29c9da9b",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_c1c34b0892d8a3aa8d91",
+      "sourceContentHash": "60fbc912aa2c0b1353a2b7222163cfb8d9c4a0d923dfd1cdcea8fb12819e6edb",
+      "semanticHash": "522b5901f35e57698b614871aa6177abfa5782eac49c92b3edcb620bef32ffaa",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(100)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_c1c34b0892d8a3aa8d91",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_72b536e1f1d55a3f9a6f",
+      "sourceContentHash": "ca837c3fb3de181a06e6d2c02016d912a6daefe665b612ec51503b6c1499759d",
+      "semanticHash": "ad4eae7b177681ac64b9f11983151b2b69f0a8e89678c2cc02986931e0829420",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(210)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_72b536e1f1d55a3f9a6f",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_965b4f8450625bde1d79",
+      "sourceContentHash": "4778ee53ccd140e99707058ffbaf4de98a83cf09e21532611f8cdead1c14fd4e",
+      "semanticHash": "9f94752f1579cc66194ba61dbb6d1dd4622a82195e66023bbf935faf7f8052bd",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(392)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_965b4f8450625bde1d79",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_a094e2af88c2003fa3a0",
+      "sourceContentHash": "884246f0ae3e7a30a455c9b80f311ec468934a54088a2198da5a07b4768513d7",
+      "semanticHash": "c800631b99e9ce95250e665cdb120171f8640ba569d9a5f9f232a327c5587d88",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(672)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_a094e2af88c2003fa3a0",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_1cc7ca05b83b7bc3225d",
+      "sourceContentHash": "9b412e3f547e7f8c9b9ddf102804ae17e836b9214e1bf2b622e418495cc72d9b",
+      "semanticHash": "12a07e3ef26ea5885f6f65bf7bf624543178d6baae28697ed04c5ccf32f923aa",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(1080)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_1cc7ca05b83b7bc3225d",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_ba6f08e072ba6ef190f8",
+      "sourceContentHash": "6c78f7cd633e004fe965355e47d9c2433224bcd20525cf218fe9726a1820b424",
+      "semanticHash": "947d3eca58f376e1976e4244668d0da250e30e6c921800b378981632025abb4c",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(1650)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_ba6f08e072ba6ef190f8",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_eb25ea3617b1d2681e1c",
+      "sourceContentHash": "c63456dec280d8e37f764c284fecf7cb8cb87a97e330283c0939132877a39d25",
+      "semanticHash": "58ba2dceff5b0a0e609e25ed9724b9321d12f55b09bdf5a8a359f9d72007a7c8",
+      "familyId": "m3-differentiation-olympiad-cyclic-determinant-second-derivative",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(2420)",
+      "checks": [
+        {
+          "description": "Cycle zero row sum",
+          "left": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "right": "MutableDenseMatrix([[Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)], [Integer(0)]])",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Count two-deleted principal minors of the cycle Laplacian, including path lengths; a general determinant formula alone does not resolve the zero mode.",
+      "normalizedLineageKey": "cn_eb25ea3617b1d2681e1c",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9d075fb7cdb971812999",
+      "sourceContentHash": "87a4616df72b583988f29518f3e42f1727fe2f5a246530a00c8b93994744267f",
+      "semanticHash": "fd01ea8b20f3596612fab551169d0b2eb54a2b42132214cc005bc7fdc2638567",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(5), Integer(4))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 5
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_9d075fb7cdb971812999",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_49f66938065eec523f62",
+      "sourceContentHash": "491050cbca521edb503822bbc695afa2484c3bdf1647cce27ba43750e00501a4",
+      "semanticHash": "362b63e0c5c7351d52d70cc5bf8798fb36f85f2d21450df1ce27623f8f3bd44b",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(6), Integer(5))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 6
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_49f66938065eec523f62",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_9115acfcbd0740e3e49e",
+      "sourceContentHash": "5b07ca01a72981d44d277119b437d71d8ee2da694bfe80ec1318ef4e5bef6584",
+      "semanticHash": "db64fee4f69301a3dd6db9c763f79db4b27c5eff2ffe8ee444e0e5e23c0539f7",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(7), Integer(6))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 7
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_9115acfcbd0740e3e49e",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7982c8bed9e6107019e2",
+      "sourceContentHash": "f02d53d97ddd40dfc34037fcd55d757043ef3997a43339697afb10cac9adf380",
+      "semanticHash": "030e8fc35ca803bc909307552de1255a64e45f048cd2e1555fa78d8510ffc228",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(8), Integer(7))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 8
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_7982c8bed9e6107019e2",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_926889ed4dc996673b88",
+      "sourceContentHash": "79bcf5f0c67457fa3492dcf209b61fbe264e5df57338b69fcb8daff763cf96de",
+      "semanticHash": "06e827691e81584d53489a7ee4676f010b66f30753b4489c730720e1f0df0b2f",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(9), Integer(8))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 9
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_926889ed4dc996673b88",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_e13f65974cfb0ea711a3",
+      "sourceContentHash": "905a981d4245f87b135cc73d93bfa2eb23b8e71baa1d088e9dbb5fe6b4745e32",
+      "semanticHash": "76fb3f7c9ff0bb4a1c00cfbf9d80dc2476278cdd3cb48da7d96fa4b0a35a29e4",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(10), Integer(9))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 10
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_e13f65974cfb0ea711a3",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_99d5cba828369920847d",
+      "sourceContentHash": "3137b7456277cf47258a0e37a1fc7fad1e3ed25ef5032d2c9ac8aa8998160d61",
+      "semanticHash": "363f05423f70e1490295b558f563d030ee317a54e16a1401505558fb877f8a23",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(11), Integer(10))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 11
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_99d5cba828369920847d",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_0bfb08eb57aa019e6e55",
+      "sourceContentHash": "61a6d080b5776ad9990d71dcafae21633deda4d639269556b95453c54ceb1e66",
+      "semanticHash": "4b739ef8a7a5495b00263394321990d930336d4929cf076aa47e8705322bb83f",
+      "familyId": "m3-differentiation-olympiad-oscillatory-regularity-pair",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Tuple(Integer(12), Integer(11))",
+      "checks": [
+        {
+          "description": "Exact differentiation through the sharp continuity threshold",
+          "result": "executed symbolic differentiation",
+          "order": 12
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate existence of a derivative at zero from continuity there; induction identifies the leading oscillatory term, and phase sequences show sharp failure.",
+      "normalizedLineageKey": "cn_0bfb08eb57aa019e6e55",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_329ebd2a45ea68834d78",
+      "sourceContentHash": "d080913a979e2d00af32589e6f8eb0e5fd995a668909edc716b9ee4f5de917ed",
+      "semanticHash": "04e08850c2882f5c667f7383672f04084474de8fb03f4ef99d5f649a4d2cdaa8",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 0,
+      "passed": true,
+      "independentAnswer": "Integer(688905)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_917f349ae2efc45a8e73",
+      "sourceContentHash": "dcfcda882a01f24bdce8f63bcb400864f142e4b722e9c03ef5a4bc973744c36c",
+      "semanticHash": "cff6a3be56b8691b5a9b51094c6a4ea1d5fbc8459f32dca75ebebaf4e11d0f5c",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 1,
+      "passed": true,
+      "independentAnswer": "Integer(5160960)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_bdd667e4310076b57714",
+      "sourceContentHash": "836c4f491822cfdc870f37362f2499e8ad4065d7432bfd48222c5326c07d0d90",
+      "semanticHash": "d2589756dfb1bb8e26b251e75a0d9ed3f6b3df11b2787aac7164d8637254145d",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 2,
+      "passed": true,
+      "independentAnswer": "Integer(24609375)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_f1c35495ff7e54b97f00",
+      "sourceContentHash": "d76db24f8c6f8e38e26892c81654c92f7ad57aa6ef65ca50475362277d8d3f7a",
+      "semanticHash": "9bea8904dc248e9aaa8368a71f443b24f0bacd4d1ce848538820ae324e083fea",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 3,
+      "passed": true,
+      "independentAnswer": "Integer(88179840)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_7cb0681749e129ac335f",
+      "sourceContentHash": "db8e3e3e01fb38e551df131d872736b2e4743f292030593778b7ed7361664fe9",
+      "semanticHash": "fa77fa36f358922d0723e3ad7b9acc780646e8f6585aeeb0bd055b820f49a637",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 4,
+      "passed": true,
+      "independentAnswer": "Integer(259416045)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_b4d416fe2f892c75c5d3",
+      "sourceContentHash": "a6a90a9a8acdf854c376fc8be5a780c641159438bdfd61776b2720c8bb9678db",
+      "semanticHash": "8f0ffd20b7557c87d2c31e947205be073c27079ebd6cf1b8d1d2e0ec5cc8cee2",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 5,
+      "passed": true,
+      "independentAnswer": "Integer(660602880)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_8d0e2949fd635b81c96b",
+      "sourceContentHash": "03514a68e02ac07b535971c056f6a629cb5986fa7d2522bdec9ea1fc0353939d",
+      "semanticHash": "70d8f02d39a6b411db68219c855c05074c3234633f179605bc9a3cbf95eab113",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 6,
+      "passed": true,
+      "independentAnswer": "Integer(1506635235)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    },
+    {
+      "problemId": "cn_6a1346164e80bc8bf80e",
+      "sourceContentHash": "82299fc0dde37fdb9b7f8dc61042fd91aaaae885e2d84939186b04462404d481",
+      "semanticHash": "509139b93321b4a283b967301eed41db89d16091a7dd4999d2ddb1a7b44c9804",
+      "familyId": "m3-differentiation-olympiad-newton-iteration-jet",
+      "index": 7,
+      "passed": true,
+      "independentAnswer": "Integer(3150000000)",
+      "checks": [
+        {
+          "description": "Fixed point and zero first derivative",
+          "left": "Tuple(Integer(1), Integer(0))",
+          "right": "Tuple(Integer(1), Integer(0))",
+          "result": "exact equality"
+        },
+        {
+          "description": "No lower error survives",
+          "left": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "right": "Tuple(Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0), Integer(0))",
+          "result": "exact equality"
+        }
+      ],
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Track the first nonzero local error through three compositions. Only the quadratic coefficient enters, so the eight power parameters share one advanced coefficient-scaling lineage.",
+      "normalizedLineageKey": "m3-differentiation-olympiad-newton-iteration-jet:normalized",
+      "admission": "Mathematics and editorial verdict only; any unresolved option-screen defects still block admission."
+    }
+  ]
+}

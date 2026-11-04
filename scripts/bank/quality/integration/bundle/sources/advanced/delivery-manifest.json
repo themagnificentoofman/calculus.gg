@@ -1,0 +1,155 @@
+{
+  "version": "integration-new-frozen-v2",
+  "status": "frozen-awaiting-independent-finite-review-and-parent-admission",
+  "proposedTopicLocalGroups": 10,
+  "rawFiniteItems": 108,
+  "proposedNormalizedItems": 108,
+  "executedIndependentChecks": 777,
+  "strictKatexExpressions": 1952,
+  "renderFailures": 0,
+  "literalNotationIssues": 0,
+  "replicatedPerFamily65PercentOptionRules": 0,
+  "actualAdaptations": 0,
+  "productionImportedItems": 0,
+  "humanReviewed": false,
+  "formalProof": false,
+  "API": {
+    "catalog": "integrals.catalog() -> list",
+    "build": "integrals.build(familyId,instanceIndex) -> raw candidate",
+    "verify": "verify_integrals.verify(raw) -> report with status passed; not Boolean admission"
+  },
+  "files": {
+    "option_audit.py": "8f210a0a98b46947f5583473a9542a3716fc4f26c799671451a92b879d0334a2",
+    "source-register.json": "bc3062dc6a8a92772cd03dcff79abd8be9d44bffbf4847f28f1065b1b2e90001",
+    "plan.json": "afce81e048c5e1a3df7c9b6e06437e4ff063f5882f71365f5420e439b16dbe64",
+    "inventory-review.json": "ec8268bbf7494e0c581d98db9a090e89e4040bfe3b9f1f2898700c24ad9501d7",
+    "generate.py": "66fd4daa8ed2417b0ca6ea8ef6b09667b55f20f9bed17f8f2814468a02512743",
+    "parent-first-solves-02.json": "a3e48cf6f8bea2dc1c926db6ffc2e5612ef3df05464e537ab0f4b6bdbddf87c1",
+    "editorial-dispositions.json": "166d994ca50107a4eb6165f6ddaf740d99ea37a0bf4b314f98db64baa6a6327d",
+    "render-report.json": "92e5a4502a8f9699160609b45adff9809a335f34a77ec7f3ae6bc0ea4997d731",
+    "README.md": "669db8eb57e614e4a54d511c427cc4fbbfeb6b06130a82ab156a5b3fdafc9adc",
+    "review_inventory.py": "6ce367a405e343beb2e36817f4a4e8131cfaee289fc4bb33ee74577c74a59af8",
+    "render-check.cjs": "55059b6c7c0b89a3f0bcacc6ccdbb7844d5eaf1185a0acf53ccd4421d8954acb",
+    "verify_integrals.py": "a7f563ab0345204b3d44a8fc668d5b781c6a4668728f343d7c9b59941a37ec3b",
+    "common.py": "31db8ad7e9aaca03d4950c2e375b7ac92595a0c69ebc0b76c8870312a0029e06",
+    "candidates.jsonl": "3d5fc04112b449d729a85594e68db4a2b2283d8657bd624510c7258b44856e9c",
+    "verification.json": "4c0492b8db4f38aa66258831e6514b57b4d4665005f11a4b6e366d48c069d21f",
+    "integrals.py": "d11e87d6051fc3c457e2c47cd43ce259d9e70467827fbaee508347b747c3d5c1",
+    "catalog.json": "2bfbeb50454525ca6b09866960980a03b6e89ba0245aeed80b9a572592e99c5f",
+    "first-samples.json": "8c585e2318080b4b18228a330258d7175cc016c9d7eda00bab1b7c33e7bff73c",
+    "first-samples-private-map.json": "2c4de2158e1ac1e14d5605967f7b9af88623d6b706363a9d1ca2ce6f9603d846"
+  },
+  "reviewScope": "Parent has independently solved first samples1\u20137 from earlier exact snapshots. Final changes include symmetric Gamma-form alternatives, three changed competing-well parameter cases and yes/no attainment labeling; those require exact final rebinding. Samples8\u201310 and all finite indices await final parent review.",
+  "capacityLimit": "Parent provisional fit retains101 of108 new cases as Olympiad; with139 retained normalized cases, provisional240 across31 groups, still subject to complete finite/alias review.",
+  "supersedes": "integration-new-frozen-v1",
+  "proposedOlympiadItemsAfterParentDispositions": 101,
+  "newFiniteCases": [
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "instanceIndex": 10,
+      "mean": "6/5",
+      "problemId": "cn_qs_0e85244f893cce11aa95",
+      "sourceContentHash": "5b7214ffaf177dfb312acbbb332303f39ea530fdb8bc553acff529f17a16f7d7"
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "instanceIndex": 11,
+      "mean": "8/5",
+      "problemId": "cn_qs_433954f5f7400e43e93e",
+      "sourceContentHash": "d29570f3cafdabfed8d48dd4bb378fc992b54d7caf9b49ff1a658c33a4fc8d78"
+    }
+  ],
+  "newIndependentIdeasFromExtension": 0,
+  "changedExistingMetadata": [
+    {
+      "problemId": "cn_qs_655b6873b8dd3ae3393f",
+      "oldContentHash": "9ea55a2f5237a88f7abe0f273751159c7d500285f2ba16aec7a98ba7838804f6",
+      "sourceContentHash": "8a61594a6ed2a7fdf973e512cf2408832525db893efd9d5dd794dddf95a959fe",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_52c4c246767c20fd248b",
+      "oldContentHash": "e6d8ecb3ed52307c8ce117cb2906bb4d5fe35f38d96b2d43b710835d90229712",
+      "sourceContentHash": "09e5c2801e1f4c9294ba9eb562fbc3463a0613409c43866ca17a85591947c841",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_5a23dd3d01dbaec8a83a",
+      "oldContentHash": "f3d1aeceef2d77b54bc22ad974b4f8b56ddad84f385b07aa489936a7a65b902f",
+      "sourceContentHash": "bb714a5280a21cfbdad729a890e1adc8ff266d4e4566b55664174e46048f4347",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_ca4696e5c4031426d2e5",
+      "oldContentHash": "622b771188dcdfdf630095c6e94fbe1f327f08dcb66ae6cb3f77904e208872c9",
+      "sourceContentHash": "831b6f2f82f23380dd31a9860d66d08153a131cff94bd56859017a50ad998c0a",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_71a16de2858e218a3068",
+      "oldContentHash": "f2629855b24f6c8ac0921d469139cf6ce18c11a107590bdfbd887f2597216435",
+      "sourceContentHash": "7655f043c18dd098690d85b6bcd9c88e7a5f7c1733f59f98f8cd678b2c280576",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_0a532c0472ffa7b772a9",
+      "oldContentHash": "59b888d2754badbead016bb85ad9304d6d40f9f7c425259d35fa602c0bca51b3",
+      "sourceContentHash": "3db94b116837f8519b699c9911091c7ed46050d9a5f957c0fe9a0254a1cd8d69",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_9ab6d4c24f3833de505f",
+      "oldContentHash": "6b05c226062c399041518e7875e09b95d442aa3f8989e4825ce95e29bcb1df82",
+      "sourceContentHash": "30c64f8f044a1b63d58c426407a454edb4cafa008bc015a2c2bffc675d6188bf",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_7ad3e8aaae7b8895eb60",
+      "oldContentHash": "182f813ae92a0afef0e980947025e406314963e9fcca161192afc06d59eb4cbb",
+      "sourceContentHash": "0c9d075f6664390a9b33b98a8dfff5fc4e2981532022cccc24f6806c630f338f",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_f300efd407822c85be50",
+      "oldContentHash": "1b8a81a5099f6e129845367135a9dffd3b517bbd45a488cb338026a72fae5cc5",
+      "sourceContentHash": "da141f383184009371df31ba66d49a3f4b93a59e231def26be73ebed6dcb2955",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    },
+    {
+      "problemId": "cn_qs_e9a6825edbfca4fe6f4e",
+      "oldContentHash": "58d02ae0ed327bfef53c661ef2da89e8cef2f86a145fd376b32c55474a80c525",
+      "sourceContentHash": "29947cec6a183efad6a3d2f48368096a4494ac411a358e1b7265b2c8dc1cc878",
+      "changedFields": [
+        "contentHash",
+        "finiteInstanceIndices"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "reviewed-nonmathematical-evidence-amendment",
+  "priorManifest": "docs/bank/problem-quality/presentation-review-manifest.json",
+  "priorManifestSha256": "d564c8647786261fd75fd595ca6a128464890517a4749ee5e5b36971b27fd7e3",
+  "scope": "Only the Legacy badge and strengthened release regression evidence; no constructor, content hash, historical answer, solution text, formatting rule or grade changes. Preserve the prior review manifest unchanged.",
+  "overrides": {
+    "components/ProblemStatement.tsx": {
+      "priorSha256": "87849be15f782672d51c70a69257bfd3551cd5df6aa8a97e87d1cc323f392fc4",
+      "sha256": "23592324a2ab3647e51db646e8a41d7046d0b9df56279ebbfcaa89f3da7ac29a",
+      "reviewedChange": "Adds an optional Legacy badge before the existing statement renderer. The formatProblemStatement mapping, math strings and rendered mathematical meaning are unchanged. Actual final components were inspected at390x844 and1280x900 with exact served examples, working math fonts, no formula fallbacks and no page overflow. The complete historical content audit remains valid because no formatter/content source changed.",
+      "evidencePaths": [
+        "docs/bank/problem-quality/final-ui-qa/browser-checks.json",
+        "docs/bank/problem-quality/final-ui-qa/source-binding.json"
+      ]
+    },
+    "tests/quality-delta.test.mjs": {
+      "priorSha256": "e2d59efb39925ac0c099484b7e5e5fe9f424e464e0b10212ae9a83ed91ee8650",
+      "sha256": "89e4424bb02e477c0bd0b5b208a8a62ece31bf95c1164c7ead2713c3015addb1",
+      "reviewedChange": "Extends immutable-delta coverage for exact source-bound test fixtures, transitive membership, withdrawals and a compact serving manifest bound to the full audit manifest. These are test changes, not historical mathematics or presentation data. The five operator/delta tests and complete397-step Worker rehearsal pass.",
+      "evidencePaths": [
+        "docs/bank/problem-quality/final-release-v1/operator-and-delta-tests.log",
+        "docs/bank/problem-quality/final-release-v1/rehearsal-final.json"
+      ]
+    }
+  },
+  "evidenceFiles": {
+    "docs/bank/problem-quality/final-ui-qa/browser-checks.json": "4bfe2a4ffd89dabee1df24d4147f9999b8c3da75deac7b6178eab53de7979763",
+    "docs/bank/problem-quality/final-ui-qa/source-binding.json": "fb8dea3e74be26b022ce865c3c1a6b50395876bd70efd1512efcbda2a2a09c41",
+    "docs/bank/problem-quality/final-release-v1/operator-and-delta-tests.log": "a115142a49383c55959fe79e06898add2cfd4636dbca0fd484283bdb80f6cb45",
+    "docs/bank/problem-quality/final-release-v1/rehearsal-final.json": "0b910703730fc6a77f3c87df77042823ffb0efa919010af5e081d8489a55f14e"
+  }
+}

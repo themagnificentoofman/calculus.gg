@@ -33,6 +33,7 @@ interface UserProfile {
     theme?: string;
     notifications?: boolean;
     soundEnabled?: boolean;
+    includeLegacyProblems?: boolean;
   };
   friends?: string[];
   lastActive?: number;

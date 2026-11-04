@@ -1,0 +1,61 @@
+{
+  "status": "finite-proposal-local-validation-awaiting-owner-peer",
+  "sourceArtifacts": [
+    {
+      "path": ".bank-data/quality/series-final-review-v6/served-records.jsonl",
+      "sha256": "2ae26e9576dec2807bc440bd5fdfe84d3149b302ac64744e308bad8de0ffaa88"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/lattice-display-proposal-v2/lattice-display-proposal.json",
+      "sha256": "1b54f190a6348f32af5b9e4f9a52b428fad18e9a406d641c32459defd841e553"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/lattice-display-proposal-v2/proposed-served705.jsonl",
+      "sha256": "dfc6a9ce271410bdb18afe5c96e4957a35dec78aed65069dea6aac50dfec8dbb"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/lattice-display-proposal-v2/proposed-option-audit.json",
+      "sha256": "0eb00bb0d08ac5cced0bdf02b1c5e25cd85945a64c24e93244b3f3f0701ebc4b"
+    },
+    {
+      "path": "docs/bank/problem-quality/series/lattice-display-proposal-v2/proposed-served-render.json",
+      "sha256": "d01c2b7df920cfd6e5b1d3f0e44415184607216ec3d51e2cdb2fc9a37c9f916c"
+    }
+  ],
+  "unchangedCompleteServedRecords": 697,
+  "changedOnlyChoicesAndEquivalentFinalConclusion": 8,
+  "latticeFamilyFlags": [],
+  "leadingSignScores": {
+    "rule": "opposite-pair-negative",
+    "learnedOnlyFromTraining": false,
+    "training": {
+      "items": 4,
+      "applicable": 0,
+      "expectedTieBrokenAccuracy": 0.25,
+      "uniquePredictions": 0,
+      "uniqueCorrect": 0
+    },
+    "heldout": {
+      "items": 4,
+      "applicable": 0,
+      "expectedTieBrokenAccuracy": 0.25,
+      "uniquePredictions": 0,
+      "uniqueCorrect": 0
+    }
+  },
+  "replicatedNonPositionSignals": [],
+  "strictRender": {
+    "records": 705,
+    "expressions": 12443,
+    "strict": true,
+    "sourceArtifactSha256": "dfc6a9ce271410bdb18afe5c96e4957a35dec78aed65069dea6aac50dfec8dbb",
+    "failures": [],
+    "scope": "Every source expression and actual formatter math fragment. Mathematical proof, option-only editorial review, source admission and visual browser inspection are separate gates."
+  },
+  "preservedFailure": "docs/bank/problem-quality/series/lattice-display-proposal-v1/proposed-served-render.json",
+  "limitations": [
+    "Same actual v6 IDs used solely for a stable diagnostic comparison. Owner must create immutable revisions and rerun on their final destination IDs.",
+    "No new mathematical claim, difficulty, group, normalized-task capacity or historical exposure is introduced.",
+    "Independent owner peer, immutable registration, final admission and deployment remain outstanding."
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "cn_c0a62ae21083901ddd7f": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:0",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 0,
+    "rawSha256": "5c92fb854fad27bd457d32193bb9938e6b3d2c8b6c22eaaa09800c90e17d90e8",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:fd03d96243153435f768ac45",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_47ae798905a921a3a5e3": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:1",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 1,
+    "rawSha256": "1e28c3b62f85f5726dee2b636d46038c59b8a01f2f6abe7c2a37e48546658c87",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:8c70a508dd76c675c23c0660",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_bf941d2c8a14359e496b": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:2",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 2,
+    "rawSha256": "3bf46a6871b751222a381464ed3eb83388c5760d1132235b05b38129e9eb224a",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:623c0966a3eefd210a4a7e7e",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_e045c6cf325512069014": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:3",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 3,
+    "rawSha256": "5dcd3ea507ffdf6ffa2e1a2060df91c881c5bb05359ba2d054f06156775a4ba4",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:1bc1f04d549e4c6a33a43bdc",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_31f8e18c5cb2cb1d96c7": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:4",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 4,
+    "rawSha256": "a5a5c661b104cd928225672e87bb370ae70fb34420cb2be948792750865fce54",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:033121135ea96bf640a44299",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_ece8ec3b89e15d2e465b": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:5",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 5,
+    "rawSha256": "57933829b802ad41eea0896e70bbea4b62d77f2b2b6450292475407bee32bd25",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:c35b8783a319770236fa72de",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_7daaa5f788a5b7e3775e": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:6",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 6,
+    "rawSha256": "b94181f8d3860cc080058c36097c98c2d95bf5860f4e2da62cfed769198e32ae",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:082e231120c28eae5f04f693",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_6a90eb744424e9a6ff42": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:7",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 7,
+    "rawSha256": "c56357ff35bb80d64700bdbbe4b78682045808da05677c8a31eac7436e75e154",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:0f72d333cf9aab96c3407cf3",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_ff9725d01be218687a7e": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:8",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 8,
+    "rawSha256": "372d9a8560d3286f041b0155319f08614c5d7adb677fec80c7dfd0bde79eb445",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:29620c1d9de4a165e8f415b6",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "cn_e142b054434f8746a95a": {
+    "reviewId": "quality-review:ode-mv-advanced:q4-differential-equations-nonnormal-transient-maximum:9",
+    "module": "ode-mv-advanced",
+    "familyId": "q4-differential-equations-nonnormal-transient-maximum",
+    "index": 9,
+    "rawSha256": "200a0059300a16a83653e85a8effb149ec3342cab1c339b0d2427be784bd1381",
+    "verifier": "isolated-finite-reconstruction-and-independent-ODE-MV-review-v1",
+    "finiteDomain": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "review": {
+      "status": "independently-reviewed",
+      "author": "integration_research",
+      "reviewer": "root-and-coverage-independent-reviews",
+      "report": "scripts/bank/quality/ode-mv/source-joins.json",
+      "reportSha256": "46da71b36b1330d098aed37e6cd8e775ab15fee3ef8a8d4f27da05335c5ddbcc",
+      "centralDecision": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "nearestNeighbor": "Distinct from Floquet growth: the system is autonomous and asymptotically stable, while the requested quantity is its finite-time operator-norm maximum.",
+      "easiestOptionsVisibleRoute": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficultyRationale": "Negative eigenvalues do not exclude finite-time amplification; optimize the largest singular value of the full flow over time and initial direction.",
+      "difficulty": "olympiad",
+      "qualifiedOlympiad": true,
+      "relatedIdeaGroupId": "nonnormal-flow-transient-growth",
+      "normalizedLineageKey": "q4-normalized:q4-differential-equations-nonnormal-transient-maximum:b8b582bd80c207babffdff72",
+      "optionAuditReport": "PRIVATE-PENDING-FINAL-ID-OPTION-SCREEN",
+      "optionAuditSha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  }
+}

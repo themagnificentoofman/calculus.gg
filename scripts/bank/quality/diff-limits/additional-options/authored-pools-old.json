@@ -1,0 +1,3059 @@
+[
+  {
+    "problemId": "cn_99dbbbdbce04740fc5c6",
+    "sourceContentHash": "34cc9960d7226963d3d2684b7cd0b724d46f91071e6f69be24ae31c1bd6a05b8",
+    "answerExpression": "Integer(2)",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Integer(0)",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Mul(Integer(6), Pow(Integer(19), Rational(1, 2)))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "Integer(26)",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Integer(-2)",
+        "misconception": "use the downward orientation"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_cc9095a795e4f19785c2",
+    "sourceContentHash": "f7502da0abd566c3dbd54372dd3a8b9168d76f946c87691c43aaa2a82f0eaf6a",
+    "answerExpression": "Pow(Add(Integer(2), Mul(Integer(-1), Integer(14), E)), Integer(-1))",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Pow(Add(Integer(2), Mul(Integer(14), E)), Integer(-1))",
+        "misconception": "wrong homogeneous sign"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(14), E))",
+        "misconception": "forget to invert back"
+      },
+      {
+        "expression": "Pow(Add(Integer(1), Mul(Integer(-1), Integer(13), E)), Integer(-1))",
+        "misconception": "omit forcing contribution"
+      },
+      {
+        "expression": "Mul(Integer(-1), Pow(Add(Integer(2), Mul(Integer(-1), Integer(14), E)), Integer(-1)))",
+        "misconception": "lose sign of initial value"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear reciprocal equation",
+        "passed": true
+      },
+      {
+        "name": "original nonlinear residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7d1774564fa482f87ed4",
+    "sourceContentHash": "7a7c989ddf06951f93231a075a9decad244bd9cc6cd2892651c8c98e4535a875",
+    "answerExpression": "Mul(Integer(-1), Rational(1, 13), E)",
+    "parameters": {
+      "m": "12"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Rational(1, 13), E)",
+        "misconception": "wrong sign"
+      },
+      {
+        "expression": "Rational(-1, 13)",
+        "misconception": "forget y=tv"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 11), E)",
+        "misconception": "wrong sign in reciprocal integral"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(12), E)",
+        "misconception": "invert initial ratio"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "homogeneous ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_b82588f913e24fde6e80",
+    "sourceContentHash": "d8fb906cde16015943437cf27461d7f93f782bb0cb4470bf2cb1429faed37079",
+    "answerExpression": "Mul(Integer(-1), Integer(6), pi)",
+    "parameters": {
+      "m": "12"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(6), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(12), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_3448210af97d3408277e",
+    "sourceContentHash": "e4db2bc7ac1577a518e3758f3eb8e2c9c83de0a4e8fb04988f7cae198c770e3d",
+    "answerExpression": "Add(Integer(36), Mul(Integer(-1), Integer(12), E))",
+    "parameters": {
+      "m": "12"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(12), E), Integer(36))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(24), Mul(Integer(-1), Integer(12), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(36), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-36), Mul(Integer(12), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_418839406e75c9d1d7cf",
+    "sourceContentHash": "ec4ff27c46af5868e5b9ea752a8db3f09ee3ee1d36736b469e41be404e3a2a65",
+    "answerExpression": "Add(Integer(39), Mul(Integer(-1), Integer(13), E))",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(13), E), Integer(39))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(26), Mul(Integer(-1), Integer(13), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(39), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-39), Mul(Integer(13), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_a6e0b52d8f5eaceb8fd0",
+    "sourceContentHash": "871b19cdd9cc39bb41b2576067e32ac71884e45bba6e50996e3a7aae1d4524a1",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 338), Pow(pi, Integer(2)))))",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 338), Pow(pi, Integer(2))))",
+        "misconception": "miss half-period sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 169), Pow(pi, Integer(2)))))",
+        "misconception": "double Gaussian exponent"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "omit Gaussian envelope"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 676), Pow(pi, Integer(2)))))",
+        "misconception": "halve Gaussian exponent"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "normal-form residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_3c66b0b5863b5880a5f7",
+    "sourceContentHash": "d208cb1270daaa174c18ead2cfe809950b81ba3e9adfc08a9238de94300801e3",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 13), pi)))",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 13), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(2, 13), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_6d1fe6e7a7c623a1e578",
+    "sourceContentHash": "223c259f7bf2b59fe97d7c24400932a04c00d614a9f6123ef26621eb760dbf5e",
+    "answerExpression": "Add(Integer(13), Mul(Integer(-1), Integer(2), Pow(Integer(39), Rational(1, 2))))",
+    "parameters": {
+      "m": "13"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(2), Pow(Integer(39), Rational(1, 2))), Integer(13))",
+        "misconception": "choose the upper determinant root"
+      },
+      {
+        "expression": "Integer(13)",
+        "misconception": "use trace only"
+      },
+      {
+        "expression": "Mul(Integer(2), Pow(Integer(39), Rational(1, 2)))",
+        "misconception": "omit trace shift"
+      },
+      {
+        "expression": "Add(Integer(-13), Mul(Integer(2), Pow(Integer(39), Rational(1, 2))))",
+        "misconception": "reverse threshold sign"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "matrix trace",
+        "passed": true
+      },
+      {
+        "name": "matrix determinant",
+        "passed": true
+      },
+      {
+        "name": "threshold determinant",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_16c6a186af2b9d6122c1",
+    "sourceContentHash": "421c46fb5cce5f0f2b5f506b83688270ccbf37187265128cf008c2552cea1b50",
+    "answerExpression": "Rational(9, 8)",
+    "parameters": {
+      "m": "8"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/ode-mv-opposite-layer/capture_pools.py": "57a731ad43fb5ebd30793dcdb3a41146a00b858e08fc5798253e53472aaff2f6"
+    },
+    "pool": [
+      {
+        "expression": "Rational(8, 9)",
+        "misconception": "Invert the pole time"
+      },
+      {
+        "expression": "Rational(9, 16)",
+        "misconception": "Count the growth coefficient twice"
+      },
+      {
+        "expression": "Rational(9, 4)",
+        "misconception": "Halve the growth coefficient"
+      },
+      {
+        "expression": "Rational(1, 8)",
+        "misconception": "Omit the initial reciprocal offset"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "literal changed finite-blowup residual",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_67df743a60c7b64f1258",
+    "sourceContentHash": "fdf3099b46a6523d68cde5d0dcbb0d12af8d3dcb2de78f28be45aa2d5ba930ee",
+    "answerExpression": "Rational(11, 10)",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/ode-mv-opposite-layer/capture_pools.py": "57a731ad43fb5ebd30793dcdb3a41146a00b858e08fc5798253e53472aaff2f6"
+    },
+    "pool": [
+      {
+        "expression": "Rational(10, 11)",
+        "misconception": "Invert the pole time"
+      },
+      {
+        "expression": "Rational(11, 20)",
+        "misconception": "Count the growth coefficient twice"
+      },
+      {
+        "expression": "Rational(11, 5)",
+        "misconception": "Halve the growth coefficient"
+      },
+      {
+        "expression": "Rational(1, 10)",
+        "misconception": "Omit the initial reciprocal offset"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "literal changed finite-blowup residual",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7ded25f275ec4cb897da",
+    "sourceContentHash": "07ffc61e13260db5b66e829531e056e3ce2be4422714a516ed8c7f879b571734",
+    "answerExpression": "Rational(511, 18)",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Rational(256, 9)",
+        "misconception": "drop initial endpoint"
+      },
+      {
+        "expression": "Rational(511, 9)",
+        "misconception": "forget to divide by integrating factor"
+      },
+      {
+        "expression": "Rational(255, 8)",
+        "misconception": "omit the multiplying t"
+      },
+      {
+        "expression": "Rational(-511, 18)",
+        "misconception": "reverse the integration limits"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ebb524e0b705a7b705f2",
+    "sourceContentHash": "811c65c9be39fc3ba5119bfa4270d3e46de390f4d2923ca79e18e95a6694f5cc",
+    "answerExpression": "Rational(1365, 8)",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Rational(512, 3)",
+        "misconception": "drop initial endpoint"
+      },
+      {
+        "expression": "Rational(1365, 4)",
+        "misconception": "forget to divide by integrating factor"
+      },
+      {
+        "expression": "Rational(2047, 11)",
+        "misconception": "omit the multiplying t"
+      },
+      {
+        "expression": "Rational(-1365, 8)",
+        "misconception": "reverse the integration limits"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_4cf57d70d9d18d32b965",
+    "sourceContentHash": "5e25ae08e489ddb72d28a9859c067a4dbebb15e02526af59333201ada56d1102",
+    "answerExpression": "Add(Mul(Rational(1, 2), log(Integer(2))), Mul(Rational(1, 2), log(Integer(4))))",
+    "parameters": {
+      "m": "4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 2), log(Integer(4))), Mul(Integer(-1), Rational(1, 2), log(Integer(2))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 2), log(Integer(2))), Mul(Rational(1, 4), log(Integer(4))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(4))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Rational(1, 4), log(Integer(4)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_dcee350e2c76681fa504",
+    "sourceContentHash": "c2cd7318271281f2b6f3993808c0fb33512418c27cbf7e215607013042b9061f",
+    "answerExpression": "Add(Mul(Rational(1, 5), log(Integer(5))), Mul(Integer(-1), Rational(4, 5), log(Rational(2, 5))))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Rational(4, 5), log(Rational(2, 5))), Mul(Integer(-1), Rational(1, 5), log(Integer(5))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 5), log(Integer(5))), Mul(Integer(-1), Rational(2, 5), log(Rational(2, 5))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(5))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(2, 5), log(Rational(2, 5)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_225a523cb329f2dbdd81",
+    "sourceContentHash": "16130d7434afa48ce9576ed5c9f661ec8eba526c5cfd43643cac5eed0916a4a8",
+    "answerExpression": "Add(Mul(Rational(1, 6), log(Integer(6))), Mul(Rational(1, 2), log(Integer(2))), Mul(Rational(1, 3), log(Integer(3))))",
+    "parameters": {
+      "m": "6"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 3), log(Integer(3))), Mul(Integer(-1), Rational(1, 2), log(Integer(2))), Mul(Integer(-1), Rational(1, 6), log(Integer(6))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 6), log(Integer(6))), Mul(Rational(1, 3), log(Integer(3))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(6))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Rational(1, 2), log(Integer(2)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_f222ffac5647a14954e8",
+    "sourceContentHash": "46d418e0af44dff4bb6f055009e927c7f3af6961ed7e9412dec0ba3bc25f6ed2",
+    "answerExpression": "Add(Mul(Rational(1, 7), log(Integer(7))), Mul(Integer(-1), Rational(4, 7), log(Rational(4, 7))), Mul(Integer(-1), Rational(2, 7), log(Rational(2, 7))))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Rational(2, 7), log(Rational(2, 7))), Mul(Rational(4, 7), log(Rational(4, 7))), Mul(Integer(-1), Rational(1, 7), log(Integer(7))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 7), log(Integer(7))), Mul(Integer(-1), Rational(2, 7), log(Rational(2, 7))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(7))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(4, 7), log(Rational(4, 7)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_54715096fe81d0586881",
+    "sourceContentHash": "73b8040b9b547528a7fef534ff52c9ea3a5510b5d2e6c4d8a8ab934a2a60efc8",
+    "answerExpression": "Add(Mul(Rational(1, 9), log(Integer(9))), Mul(Integer(-1), Rational(2, 3), log(Rational(2, 3))), Mul(Integer(-1), Rational(2, 9), log(Rational(2, 9))))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Rational(2, 9), log(Rational(2, 9))), Mul(Rational(2, 3), log(Rational(2, 3))), Mul(Integer(-1), Rational(1, 9), log(Integer(9))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 9), log(Integer(9))), Mul(Integer(-1), Rational(2, 9), log(Rational(2, 9))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(9))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(2, 3), log(Rational(2, 3)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7bca75c8830a1128c6f7",
+    "sourceContentHash": "7132eb250824a24ac1be394bfc27c11e1f1cc56bfa139badd76424a26c1f1a43",
+    "answerExpression": "Add(Mul(Rational(1, 10), log(Integer(10))), Mul(Integer(-1), Rational(7, 10), log(Rational(7, 10))), Mul(Rational(1, 5), log(Integer(5))))",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 5), log(Integer(5))), Mul(Rational(7, 10), log(Rational(7, 10))), Mul(Integer(-1), Rational(1, 10), log(Integer(10))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 10), log(Integer(10))), Mul(Rational(1, 5), log(Integer(5))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(10))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(7, 10), log(Rational(7, 10)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_dc6bff959e970376d5f3",
+    "sourceContentHash": "38bca4893cc5f091714c1b65fa6ca7ab57b9d9f715c944930404c3b388db5523",
+    "answerExpression": "Add(Mul(Rational(1, 11), log(Integer(11))), Mul(Integer(-1), Rational(8, 11), log(Rational(8, 11))), Mul(Integer(-1), Rational(2, 11), log(Rational(2, 11))))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Rational(2, 11), log(Rational(2, 11))), Mul(Rational(8, 11), log(Rational(8, 11))), Mul(Integer(-1), Rational(1, 11), log(Integer(11))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 11), log(Integer(11))), Mul(Integer(-1), Rational(2, 11), log(Rational(2, 11))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(11))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(8, 11), log(Rational(8, 11)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_e1d3be4a71292941405e",
+    "sourceContentHash": "12fe58957658e3bb7ca330626812315f4273489c1306f8d4d262f09f67a6d65e",
+    "answerExpression": "Integer(2)",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Integer(0)",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Mul(Integer(6), Pow(Integer(3), Rational(1, 2)))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "Integer(10)",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Integer(-2)",
+        "misconception": "use the downward orientation"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_0bf657265939c5b19a60",
+    "sourceContentHash": "96bebc211f104753bbda323d23f15967d9604742d3e37c53e1f2c477448391ee",
+    "answerExpression": "Integer(2)",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Integer(0)",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Mul(Integer(2), Pow(Integer(51), Rational(1, 2)))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "Integer(14)",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Integer(-2)",
+        "misconception": "use the downward orientation"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_4b6107f3115b99c0fd0d",
+    "sourceContentHash": "66592cdcd202aaadbad07c754ac3398a344b9807806759f09d5fc9875e8a421c",
+    "answerExpression": "Integer(2)",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Integer(0)",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Mul(Integer(2), Pow(Integer(83), Rational(1, 2)))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "Integer(18)",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Integer(-2)",
+        "misconception": "use the downward orientation"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_9d3a59c847eee367d5f6",
+    "sourceContentHash": "ecdedb2c5443ad95daa49ef2f24bc86f8cfcb30a83e6722c3906e6be6a733032",
+    "answerExpression": "Integer(2)",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Integer(0)",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Mul(Integer(2), Pow(Integer(123), Rational(1, 2)))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "Integer(22)",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Integer(-2)",
+        "misconception": "use the downward orientation"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  },
+  {
+    "problemId": "cn_f474da5dace52c738006",
+    "sourceContentHash": "3bfef0a4c7b42058128093e50ac8a57f4e5176b81c6ce772f9320e722cd87a79",
+    "answerExpression": "Pow(Add(Integer(2), Mul(Integer(-1), Integer(6), E)), Integer(-1))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Pow(Add(Integer(2), Mul(Integer(6), E)), Integer(-1))",
+        "misconception": "wrong homogeneous sign"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(6), E))",
+        "misconception": "forget to invert back"
+      },
+      {
+        "expression": "Pow(Add(Integer(1), Mul(Integer(-1), Integer(5), E)), Integer(-1))",
+        "misconception": "omit forcing contribution"
+      },
+      {
+        "expression": "Mul(Integer(-1), Pow(Add(Integer(2), Mul(Integer(-1), Integer(6), E)), Integer(-1)))",
+        "misconception": "lose sign of initial value"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear reciprocal equation",
+        "passed": true
+      },
+      {
+        "name": "original nonlinear residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_5eccd2de0d42ac73a9e6",
+    "sourceContentHash": "683730d42aa700e5045c46c1d1f2d930ecdcd4ff673976e74a501f6b97f407ea",
+    "answerExpression": "Pow(Add(Integer(2), Mul(Integer(-1), Integer(8), E)), Integer(-1))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Pow(Add(Integer(2), Mul(Integer(8), E)), Integer(-1))",
+        "misconception": "wrong homogeneous sign"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(8), E))",
+        "misconception": "forget to invert back"
+      },
+      {
+        "expression": "Pow(Add(Integer(1), Mul(Integer(-1), Integer(7), E)), Integer(-1))",
+        "misconception": "omit forcing contribution"
+      },
+      {
+        "expression": "Mul(Integer(-1), Pow(Add(Integer(2), Mul(Integer(-1), Integer(8), E)), Integer(-1)))",
+        "misconception": "lose sign of initial value"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear reciprocal equation",
+        "passed": true
+      },
+      {
+        "name": "original nonlinear residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ba6eb475e1f8db0f84a1",
+    "sourceContentHash": "35a5b544f9f51967163165d20722615b802618578c233a1de870c3cfec54f22f",
+    "answerExpression": "Pow(Add(Integer(2), Mul(Integer(-1), Integer(10), E)), Integer(-1))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Pow(Add(Integer(2), Mul(Integer(10), E)), Integer(-1))",
+        "misconception": "wrong homogeneous sign"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(10), E))",
+        "misconception": "forget to invert back"
+      },
+      {
+        "expression": "Pow(Add(Integer(1), Mul(Integer(-1), Integer(9), E)), Integer(-1))",
+        "misconception": "omit forcing contribution"
+      },
+      {
+        "expression": "Mul(Integer(-1), Pow(Add(Integer(2), Mul(Integer(-1), Integer(10), E)), Integer(-1)))",
+        "misconception": "lose sign of initial value"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear reciprocal equation",
+        "passed": true
+      },
+      {
+        "name": "original nonlinear residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_cc92c206dd8a1d98182f",
+    "sourceContentHash": "69f26ca70e447d244812a60c0ebcd86d6672a92e66e3d2d943e72c6689693294",
+    "answerExpression": "Pow(Add(Integer(2), Mul(Integer(-1), Integer(12), E)), Integer(-1))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Pow(Add(Integer(2), Mul(Integer(12), E)), Integer(-1))",
+        "misconception": "wrong homogeneous sign"
+      },
+      {
+        "expression": "Add(Integer(2), Mul(Integer(-1), Integer(12), E))",
+        "misconception": "forget to invert back"
+      },
+      {
+        "expression": "Pow(Add(Integer(1), Mul(Integer(-1), Integer(11), E)), Integer(-1))",
+        "misconception": "omit forcing contribution"
+      },
+      {
+        "expression": "Mul(Integer(-1), Pow(Add(Integer(2), Mul(Integer(-1), Integer(12), E)), Integer(-1)))",
+        "misconception": "lose sign of initial value"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "linear reciprocal equation",
+        "passed": true
+      },
+      {
+        "name": "original nonlinear residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_70978e69b371af149a49",
+    "sourceContentHash": "ef525a93be5268ebfe1c0a4eba95527f16a5b41fea092e37ac4b2d3ecb056dc0",
+    "answerExpression": "Mul(Integer(-1), Rational(1, 5), E)",
+    "parameters": {
+      "m": "4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Rational(1, 5), E)",
+        "misconception": "wrong sign"
+      },
+      {
+        "expression": "Rational(-1, 5)",
+        "misconception": "forget y=tv"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 3), E)",
+        "misconception": "wrong sign in reciprocal integral"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(4), E)",
+        "misconception": "invert initial ratio"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "homogeneous ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_48b256b5533a797302b2",
+    "sourceContentHash": "0dd592403436a3181ed18209098a508e0eeb6aefe992b3500b61d556ee7d0a64",
+    "answerExpression": "Mul(Integer(-1), Rational(1, 7), E)",
+    "parameters": {
+      "m": "6"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Rational(1, 7), E)",
+        "misconception": "wrong sign"
+      },
+      {
+        "expression": "Rational(-1, 7)",
+        "misconception": "forget y=tv"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 5), E)",
+        "misconception": "wrong sign in reciprocal integral"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(6), E)",
+        "misconception": "invert initial ratio"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "homogeneous ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_5b477965f88761363bc6",
+    "sourceContentHash": "5461c688e94c4417ad0528f54f0cac4a6d4dec62c5b066c7ee2cafedd2f17c7f",
+    "answerExpression": "Mul(Integer(-1), Rational(1, 9), E)",
+    "parameters": {
+      "m": "8"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Rational(1, 9), E)",
+        "misconception": "wrong sign"
+      },
+      {
+        "expression": "Rational(-1, 9)",
+        "misconception": "forget y=tv"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 7), E)",
+        "misconception": "wrong sign in reciprocal integral"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(8), E)",
+        "misconception": "invert initial ratio"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "homogeneous ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_004cd0b22f1442bda766",
+    "sourceContentHash": "a1264372691ac58b619a79232b4515c7868f0719af881595a8b9a6e59192fb8d",
+    "answerExpression": "Mul(Integer(-1), Rational(1, 11), E)",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Rational(1, 11), E)",
+        "misconception": "wrong sign"
+      },
+      {
+        "expression": "Rational(-1, 11)",
+        "misconception": "forget y=tv"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 9), E)",
+        "misconception": "wrong sign in reciprocal integral"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(10), E)",
+        "misconception": "invert initial ratio"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "homogeneous ODE residual",
+        "passed": true
+      },
+      {
+        "name": "initial datum",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_8a1e3444d07637fa25da",
+    "sourceContentHash": "e924dcd8e58a004651ef7521c2e3d2461fb3e175d79f4d0027362fc4fde23eba",
+    "answerExpression": "Mul(Integer(-1), Integer(2), pi)",
+    "parameters": {
+      "m": "4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(2), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(4), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_f0770eae45950b4b75c2",
+    "sourceContentHash": "5cd545caadd609a2cbae74adc448b9f0097ac3cf71aed282b1bbeaef28a65982",
+    "answerExpression": "Mul(Rational(5, 2), pi)",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(-1), Rational(5, 2), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(5), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_92711490425dfcf87311",
+    "sourceContentHash": "038fd5cb966db558e8a2d9a3901c92161ed13a8314e4361867c7216740efb125",
+    "answerExpression": "Mul(Integer(-1), Integer(3), pi)",
+    "parameters": {
+      "m": "6"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(3), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(6), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ec644d72e8e4eb1cd2ff",
+    "sourceContentHash": "8505cf14d7c0f5166ae083737ffcdd350849407104fe7568bc7db080d7599e82",
+    "answerExpression": "Mul(Rational(9, 2), pi)",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(-1), Rational(9, 2), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(9), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_4d63f54ea86e40611014",
+    "sourceContentHash": "051ea0bab2346253fa1d12e07091e3e0740d0cc1eb2e80983047b7fc1a003f6d",
+    "answerExpression": "Mul(Integer(-1), Integer(5), pi)",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(5), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(-1), Integer(10), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_8c828212840304efe8b5",
+    "sourceContentHash": "b9009d36e1ba8469765cd8eb73cd05d8b3b8cbb5ca4044dd6e9b1e53d06f3d39",
+    "answerExpression": "Mul(Rational(11, 2), pi)",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Mul(Integer(-1), Rational(11, 2), pi)",
+        "misconception": "wrong resonant sign"
+      },
+      {
+        "expression": "Integer(0)",
+        "misconception": "assume forcing-period cancellation"
+      },
+      {
+        "expression": "Mul(Integer(11), pi)",
+        "misconception": "omit factor two in resonance"
+      },
+      {
+        "expression": "Mul(Rational(1, 2), pi)",
+        "misconception": "omit secular growth factor"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "forced residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_138b71d97c1ed17e5368",
+    "sourceContentHash": "23cd6bf1a9ff943caa8abc2090dd4c02697a56782015ac9e5c0063de1dc60a1c",
+    "answerExpression": "Add(Integer(12), Mul(Integer(-1), Integer(4), E))",
+    "parameters": {
+      "m": "4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(4), E), Integer(12))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(8), Mul(Integer(-1), Integer(4), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(12), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-12), Mul(Integer(4), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_a8493bb57f4f0ba0ef11",
+    "sourceContentHash": "97b74d393526b0cf9ae91db29ce6f8184bc2d8b4038db3b960949aa90322b788",
+    "answerExpression": "Add(Integer(15), Mul(Integer(-1), Integer(5), E))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(5), E), Integer(15))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(10), Mul(Integer(-1), Integer(5), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(15), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-15), Mul(Integer(5), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_9c7738aa06461061609d",
+    "sourceContentHash": "6eafee7e277fc98458b39007d1faa3bafd8fd65f52658e6f366b2b374aa49b4c",
+    "answerExpression": "Add(Integer(18), Mul(Integer(-1), Integer(6), E))",
+    "parameters": {
+      "m": "6"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(6), E), Integer(18))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(12), Mul(Integer(-1), Integer(6), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(18), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-18), Mul(Integer(6), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_518c292aa8433eed70d6",
+    "sourceContentHash": "9df6cb9638f973e992e7a9db8aa0364a9d7ddbadd6925071696ecb5faf0dfdb7",
+    "answerExpression": "Add(Integer(21), Mul(Integer(-1), Integer(7), E))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(7), E), Integer(21))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(14), Mul(Integer(-1), Integer(7), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(21), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-21), Mul(Integer(7), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_88254ac449e02c3f468e",
+    "sourceContentHash": "52a691fd6f7dc11d5db1430bf21c80b873c5e52c44a3f3e519e6cbb3484739b7",
+    "answerExpression": "Add(Integer(24), Mul(Integer(-1), Integer(8), E))",
+    "parameters": {
+      "m": "8"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(8), E), Integer(24))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(16), Mul(Integer(-1), Integer(8), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(24), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-24), Mul(Integer(8), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_7cc0c04f03f376506790",
+    "sourceContentHash": "be3d96ac66bcf4e754528d8a2a77a4812d2e6a2e5f1a0b3d89599d329c5b29e0",
+    "answerExpression": "Add(Integer(27), Mul(Integer(-1), Integer(9), E))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(9), E), Integer(27))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(18), Mul(Integer(-1), Integer(9), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(27), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-27), Mul(Integer(9), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_d20069ed7b3151f597fb",
+    "sourceContentHash": "d7a710af92c4106e62cdfdd98f83d2cb526055ff7d5194b6a41c43b7391efaff",
+    "answerExpression": "Add(Integer(30), Mul(Integer(-1), Integer(10), E))",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(10), E), Integer(30))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(20), Mul(Integer(-1), Integer(10), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(30), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-30), Mul(Integer(10), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_1f68af550033ab0c1422",
+    "sourceContentHash": "b0c71fb59e7e36073de4034aae14c766e50b1be5810970d3fc4d958433f4d9b2",
+    "answerExpression": "Add(Integer(33), Mul(Integer(-1), Integer(11), E))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(11), E), Integer(33))",
+        "misconception": "wrong exponential coefficient"
+      },
+      {
+        "expression": "Add(Integer(22), Mul(Integer(-1), Integer(11), E))",
+        "misconception": "omit affine constant"
+      },
+      {
+        "expression": "Add(Integer(33), Mul(Integer(-1), E))",
+        "misconception": "forget scale on exponential"
+      },
+      {
+        "expression": "Add(Integer(-33), Mul(Integer(11), E))",
+        "misconception": "reverse basis coefficients"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "exponential mode residual",
+        "passed": true
+      },
+      {
+        "name": "affine mode residual",
+        "passed": true
+      },
+      {
+        "name": "Wronskian",
+        "passed": true
+      },
+      {
+        "name": "full residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_d1b5401c5e64e028cb14",
+    "sourceContentHash": "a7d7bc606da7488fe75a87297e8f5a28434bcc111f8b810168597ffee6d39deb",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 50), Pow(pi, Integer(2)))))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 50), Pow(pi, Integer(2))))",
+        "misconception": "miss half-period sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 25), Pow(pi, Integer(2)))))",
+        "misconception": "double Gaussian exponent"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "omit Gaussian envelope"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 100), Pow(pi, Integer(2)))))",
+        "misconception": "halve Gaussian exponent"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "normal-form residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_f95d2b2ac9ad638333a4",
+    "sourceContentHash": "bb9e1dc688833cfe71bd889ed85d7f188553539ac5b26563d3d6074ce6124d66",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 98), Pow(pi, Integer(2)))))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 98), Pow(pi, Integer(2))))",
+        "misconception": "miss half-period sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 49), Pow(pi, Integer(2)))))",
+        "misconception": "double Gaussian exponent"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "omit Gaussian envelope"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 196), Pow(pi, Integer(2)))))",
+        "misconception": "halve Gaussian exponent"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "normal-form residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_b42e40f5cac672332edf",
+    "sourceContentHash": "5e7e708ae81f5a3c07c69ddefd579c78de04299795252972f06975c153de0572",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 162), Pow(pi, Integer(2)))))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 162), Pow(pi, Integer(2))))",
+        "misconception": "miss half-period sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 81), Pow(pi, Integer(2)))))",
+        "misconception": "double Gaussian exponent"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "omit Gaussian envelope"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 324), Pow(pi, Integer(2)))))",
+        "misconception": "halve Gaussian exponent"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "normal-form residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_12c9d6ebd48589a6b5a4",
+    "sourceContentHash": "da6903a17dcdb0a7d742b78ff2adfe51bf7834217b82ea04901dc97b38e118eb",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 242), Pow(pi, Integer(2)))))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 242), Pow(pi, Integer(2))))",
+        "misconception": "miss half-period sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 121), Pow(pi, Integer(2)))))",
+        "misconception": "double Gaussian exponent"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "omit Gaussian envelope"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 484), Pow(pi, Integer(2)))))",
+        "misconception": "halve Gaussian exponent"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "normal-form residual",
+        "passed": true
+      },
+      {
+        "name": "initial value",
+        "passed": true
+      },
+      {
+        "name": "initial slope",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_0414993cc1b4a3c201f9",
+    "sourceContentHash": "bd6e09ab956fe85c52c59720cb0cb67ba44b21049fbfefd3cb86416f5c941d9f",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 4), pi)))",
+    "parameters": {
+      "m": "4"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 4), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 2), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_733e6eed35ccdf80cb93",
+    "sourceContentHash": "820669fcfff8994e917d9d3c6ec432db2122b7020e16b3323d6c2ea8bfd68406",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 5), pi)))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 5), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(2, 5), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_3e88363ad3e4e04d9053",
+    "sourceContentHash": "00e563e3623bf3ef5137d0fae6e3186477d1c2cc52706757d64be10ca5e78762",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 7), pi)))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 7), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(2, 7), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_0f3abc0b4951c2e2289d",
+    "sourceContentHash": "ce42f716ccd46e6ae93c57c2783ffccbe1432e8df026e2c09753ef4f6959bfcb",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 8), pi)))",
+    "parameters": {
+      "m": "8"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 8), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 4), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_f515463bb8ec0f3c7d7d",
+    "sourceContentHash": "740468b7afefbf77d2d1ccf597663f96fd25d9f74c22e47f259022e42c32b2da",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 9), pi)))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 9), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(2, 9), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_08b67166218d6113948e",
+    "sourceContentHash": "ee127e437b4dae0a3b9b23e72eae4667e4d4478d1219dbb3c94debff5ff21500",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 10), pi)))",
+    "parameters": {
+      "m": "10"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 10), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 5), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_affeb78522b8b9e66d11",
+    "sourceContentHash": "40cce35154aae90bbf2eab27f7ae6867bce8d2382364e35b1c262fee790d9bff",
+    "answerExpression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(1, 11), pi)))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "exp(Mul(Integer(-1), Rational(1, 11), pi))",
+        "misconception": "miss rotation sign"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), pi)))",
+        "misconception": "use wrong elapsed decay time"
+      },
+      {
+        "expression": "Integer(-1)",
+        "misconception": "ignore damping"
+      },
+      {
+        "expression": "Mul(Integer(-1), exp(Mul(Integer(-1), Rational(2, 11), pi)))",
+        "misconception": "double damping"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "first system residual",
+        "passed": true
+      },
+      {
+        "name": "second system residual",
+        "passed": true
+      },
+      {
+        "name": "initial u",
+        "passed": true
+      },
+      {
+        "name": "initial v",
+        "passed": true
+      },
+      {
+        "name": "evaluation",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_50d871773be122f74ad7",
+    "sourceContentHash": "b94077efdfd4548147ab5d5ac2d5f4c31c09e54004b1ef197a3d54bfe59799b0",
+    "answerExpression": "Add(Integer(5), Mul(Integer(-1), Integer(2), Pow(Integer(5), Rational(1, 2))))",
+    "parameters": {
+      "m": "5"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(2), Pow(Integer(5), Rational(1, 2))), Integer(5))",
+        "misconception": "choose the upper determinant root"
+      },
+      {
+        "expression": "Integer(5)",
+        "misconception": "use trace only"
+      },
+      {
+        "expression": "Mul(Integer(2), Pow(Integer(5), Rational(1, 2)))",
+        "misconception": "omit trace shift"
+      },
+      {
+        "expression": "Add(Integer(-5), Mul(Integer(2), Pow(Integer(5), Rational(1, 2))))",
+        "misconception": "reverse threshold sign"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "matrix trace",
+        "passed": true
+      },
+      {
+        "name": "matrix determinant",
+        "passed": true
+      },
+      {
+        "name": "threshold determinant",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_9b50b641037305c89fcb",
+    "sourceContentHash": "8d6ee2b206f2addfd69bf45f7e3b17d14ae0d9dc5d32e4f4bb1f855bb710a9e4",
+    "answerExpression": "Add(Integer(7), Mul(Integer(-1), Pow(Integer(42), Rational(1, 2))))",
+    "parameters": {
+      "m": "7"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Pow(Integer(42), Rational(1, 2)), Integer(7))",
+        "misconception": "choose the upper determinant root"
+      },
+      {
+        "expression": "Integer(7)",
+        "misconception": "use trace only"
+      },
+      {
+        "expression": "Pow(Integer(42), Rational(1, 2))",
+        "misconception": "omit trace shift"
+      },
+      {
+        "expression": "Add(Integer(-7), Pow(Integer(42), Rational(1, 2)))",
+        "misconception": "reverse threshold sign"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "matrix trace",
+        "passed": true
+      },
+      {
+        "name": "matrix determinant",
+        "passed": true
+      },
+      {
+        "name": "threshold determinant",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_df44038a5409f551b7d9",
+    "sourceContentHash": "e56f9206c4f660000523d6231fc8b758456035fcd71237f1940151c4d559c1eb",
+    "answerExpression": "Add(Integer(9), Mul(Integer(-1), Integer(6), Pow(Integer(2), Rational(1, 2))))",
+    "parameters": {
+      "m": "9"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(6), Pow(Integer(2), Rational(1, 2))), Integer(9))",
+        "misconception": "choose the upper determinant root"
+      },
+      {
+        "expression": "Integer(9)",
+        "misconception": "use trace only"
+      },
+      {
+        "expression": "Mul(Integer(6), Pow(Integer(2), Rational(1, 2)))",
+        "misconception": "omit trace shift"
+      },
+      {
+        "expression": "Add(Integer(-9), Mul(Integer(6), Pow(Integer(2), Rational(1, 2))))",
+        "misconception": "reverse threshold sign"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "matrix trace",
+        "passed": true
+      },
+      {
+        "name": "matrix determinant",
+        "passed": true
+      },
+      {
+        "name": "threshold determinant",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_26b8894d1a75eb35e770",
+    "sourceContentHash": "46c87697c4e5482fbdd1bf34b63e2dad45502b864cd48eae2052d87c35bf44ae",
+    "answerExpression": "Add(Integer(11), Mul(Integer(-1), Pow(Integer(110), Rational(1, 2))))",
+    "parameters": {
+      "m": "11"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/ode.py": "5ffc787f7da049882205aaa2726f637ddf0619d722c90a598de1833946b2381c",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Pow(Integer(110), Rational(1, 2)), Integer(11))",
+        "misconception": "choose the upper determinant root"
+      },
+      {
+        "expression": "Integer(11)",
+        "misconception": "use trace only"
+      },
+      {
+        "expression": "Pow(Integer(110), Rational(1, 2))",
+        "misconception": "omit trace shift"
+      },
+      {
+        "expression": "Add(Integer(-11), Pow(Integer(110), Rational(1, 2)))",
+        "misconception": "reverse threshold sign"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "name": "matrix trace",
+        "passed": true
+      },
+      {
+        "name": "matrix determinant",
+        "passed": true
+      },
+      {
+        "name": "threshold determinant",
+        "passed": true
+      }
+    ]
+  },
+  {
+    "problemId": "cn_ef0f06fc42ad46703e8f",
+    "sourceContentHash": "132895665040356a66df1f29b79cf0645cb668938725eb17acebba89abcd6e78",
+    "answerExpression": "Add(Mul(Rational(1, 8), log(Integer(8))), Mul(Integer(-1), Rational(5, 8), log(Rational(5, 8))), Mul(Rational(1, 4), log(Integer(4))))",
+    "parameters": {
+      "m": "8"
+    },
+    "sourceFiles": {
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/coverage.py": "1f7dcfc3158532ead7ee4ca28b687f41bb5b39dfb802d8880e660c2465d5881d",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/multivariable.py": "eda8220d7d69a8ad803b8eda43bd6138cbb7264e7c71ae7ad372d44e7847db31",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/distractors.py": "4351bdb3d83928329a6590b8e857bc58becd67c10faf8f4c912fe1783dc544f8",
+      "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/quality-research/differentiation-limits/lower-v3/frozen_content/authored_options.py": "3987b0a887bb819d02585beca5a860554a12e26147c2afdb8e2e585ac3b8aca2"
+    },
+    "pool": [
+      {
+        "expression": "Add(Mul(Integer(-1), Rational(1, 4), log(Integer(4))), Mul(Rational(5, 8), log(Rational(5, 8))), Mul(Integer(-1), Rational(1, 8), log(Integer(8))))",
+        "misconception": "omit a geometric or derivative contribution"
+      },
+      {
+        "expression": "Add(Mul(Rational(1, 8), log(Integer(8))), Mul(Rational(1, 4), log(Integer(4))))",
+        "misconception": "use an incorrect constraint or normalization"
+      },
+      {
+        "expression": "log(Integer(8))",
+        "misconception": "choose an invalid branch or boundary"
+      },
+      {
+        "expression": "Mul(Integer(-1), Rational(5, 8), log(Rational(5, 8)))",
+        "misconception": "retain only the remaining probability-weight entropy term"
+      }
+    ],
+    "executedOriginalConstructorChecks": [
+      {
+        "checkIndex": 0,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 1,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 2,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      },
+      {
+        "checkIndex": 3,
+        "passed": true,
+        "scope": "exact constructor assertion; see trusted build source"
+      }
+    ]
+  }
+]

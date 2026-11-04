@@ -1,0 +1,42 @@
+{
+  "status": "frozen-awaiting-independent-peer-verdict",
+  "families": 27,
+  "newOlympiadFamilies": 23,
+  "newOlympiadFiniteInstances": 177,
+  "newHardFamilies": 4,
+  "newHardFiniteInstances": 40,
+  "contentHashPolicy": "Raw candidate hashes only; destination canonical identity/admission supplied by root.",
+  "rejectedDraftEvidence": "../rejected-initial/",
+  "capacityLimitations": [
+    "Euler harmonic weight-three retains one meaningful finite instance; seven prefix-only variants excluded.",
+    "Four standard generating-function/Euler-factor routes are Hard and do not count toward advanced coverage.",
+    "Old nine retained series groups are provisional pending independent options-visible review."
+  ],
+  "files": {
+    "option_audit.py": "8f210a0a98b46947f5583473a9542a3716fc4f26c799671451a92b879d0334a2",
+    "advanced.py": "556796f679925310d653476b220a92aabcaa1eebe66fcbe59d99ac8a08dd1901",
+    "advanced-verification.json": "3db1ec1968d3c1a8573bb611460e3f8e404d45fcc02eca747815ae5678a9e788",
+    "advanced-catalog.json": "47a6095b4091c3104729a92b97917301171d44ce97357a5882a3670f64d391df",
+    "advanced-candidates.jsonl": "2f33b91156fa51585f3e25aae446fc47345bb5abf480d44258a76adcafea04c1",
+    "generate_advanced.py": "a2757bfd6a4085c897df44bc514eec1ee6c443c3de5868b0a136ad2d501030d2",
+    "advanced_replacements.py": "8bbd9adff69cfb3015e4e608ed12c64d8043818bb9f700c6141c698ca01df032",
+    "render-report.json": "47000e60e1548b8b436a445104315746166399723ef2535fc44e299509e01542",
+    "render-check.cjs": "55059b6c7c0b89a3f0bcacc6ccdbb7844d5eaf1185a0acf53ccd4421d8954acb",
+    "common.py": "31db8ad7e9aaca03d4950c2e375b7ac92595a0c69ebc0b76c8870312a0029e06",
+    "verify_advanced.py": "239b177211c0ddbe427b4d3d0026831adb849261b8425b2bda2ddaa37c890697",
+    "advanced-option-audit.json": "e91cef34e7290e1b440795d14e79878f7bc8780ef098cbd8ed800052070b5221"
+  },
+  "verification": {
+    "instances": 217,
+    "exactChecks": 1947,
+    "strictKatexExpressions": 2949,
+    "renderFailures": 0,
+    "perfectMultiInstanceOptionOnlyRules": 0,
+    "singleInstanceCaveat": "Euler one-item family has smallest correct rank in its only item; no cross-instance statistic is inferred."
+  },
+  "humanReviewed": false,
+  "formalProof": false,
+  "version": "advanced-frozen-v2",
+  "supersedes": "advanced-frozen",
+  "reviewChanges": "Only Dirichlet support instances0 and4 replaced with a noninteger target in each pair."
+}

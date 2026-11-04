@@ -1,0 +1,1586 @@
+{
+  "reviewer": "root-independent-review",
+  "author": "integration_research",
+  "inputs": {
+    "lower-revisions.jsonl": "db83a3eb0771fc0918d3379525f6a4a45bd7466882f0e4c3411b84ac1207e1b1",
+    "lower-extensions.jsonl": "bfc2a86c9e8b4a70ce539efa0dc4b71c35e2b475486427a3fea2362ef4c418ac"
+  },
+  "verifierSha256": "ff1431c3b45996bac3a5f754663af44fc3bdc1c49e3fe0a973aa7c8a4bca69ad",
+  "instances": 40,
+  "passed": 40,
+  "results": [
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 0,
+      "parameter": 4,
+      "rawSha256": "f57e027674d4043039dd4dcb983b1fba3cda0e5ec3b0983815a4d2ff7cecc730",
+      "rawContentHash": "424f2dd21677ae6d811043dde0a5ec3f28af2db43f322013c471c1c314c92a8e",
+      "previous": {
+        "contentHash": "ac03a2e35f77dae6374ae72e64a2de7773a70670a37461c0db7cf559ab8d69fe",
+        "meaningChanged": true,
+        "problemId": "cn_ad662da0479948b4735f",
+        "problemRevision": 1,
+        "semanticHash": "49c1294fde180289c14223cafc3b1fb8168255c207093b4a4ce69ac362233245"
+      },
+      "independentAnswer": "Rational(25, 6)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-4)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-5, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Rational(-3, 2)), Integer(2))), Rational(25, 6))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 1,
+      "parameter": 5,
+      "rawSha256": "7c7e5dbe5d7cfd9f9fbd215efe8fdc4571d89da1d0c4b23b45b62a1afc9a1482",
+      "rawContentHash": "f0212049629cf0c3e002be2256bd5663bd4b3babd0534cec01db76130c712f31",
+      "previous": {
+        "contentHash": "dfad1334cae8e153b9007f5d6c825fdb4152ac46a454581ef58414ba6d11cdbf",
+        "meaningChanged": true,
+        "problemId": "cn_28df41c826512a850628",
+        "problemRevision": 1,
+        "semanticHash": "7875c38bdd0203cc64820f763255541981e03645124111301b8ae887b2141e5d"
+      },
+      "independentAnswer": "Integer(6)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-5)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Integer(-2)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Integer(-2)), Integer(2))), Integer(6))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 2,
+      "parameter": 6,
+      "rawSha256": "f4064af1a44e23ed69ff15fac66c605e1e80870aac215b3810c33d822cc546ac",
+      "rawContentHash": "449a625c2a4db8b0dc42ee068fff897f01026708a17ebf175cee2d028905902b",
+      "previous": {
+        "contentHash": "45f621fe32a2f3a7a8b638780f36e47dc0aa7d73af28690d16ca4f00dfa52e38",
+        "meaningChanged": true,
+        "problemId": "cn_b94398920f790adea0b2",
+        "problemRevision": 1,
+        "semanticHash": "5023edfccc2da60a89151a678753d0ec7f8270a1bcd18ef35562820e79ce4901"
+      },
+      "independentAnswer": "Rational(49, 6)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-6)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-7, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Rational(-5, 2)), Integer(2))), Rational(49, 6))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 3,
+      "parameter": 7,
+      "rawSha256": "c73e3fcd13da1bb74fb1f2577a72c001cc0a9cc38ed30dfacb4418a6eb88835e",
+      "rawContentHash": "5f34fa246224415943e8e07a8deeb3f16c38b2adb0fe592a39a24430a3623209",
+      "previous": {
+        "contentHash": "05259458e7345f4cbb0d159523475a94fa37b44c5b5db25e118c45315f3326d4",
+        "meaningChanged": true,
+        "problemId": "cn_932d5aa16dadaf8ae173",
+        "problemRevision": 1,
+        "semanticHash": "81344a356d4fb032e2e02149082fda51161a9ca4bc730a3ddc56aa2ab7823efb"
+      },
+      "independentAnswer": "Rational(32, 3)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-7)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-8, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Integer(-3)), Integer(2))), Rational(32, 3))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 4,
+      "parameter": 8,
+      "rawSha256": "9fcc37124c33dd57167d3c7a6326cdc993b226eb9b5252003505fed89c6fd927",
+      "rawContentHash": "1c7d6f10d98350bc507baff2ac98827fbcb49339b812185f65cc3d14b37e630f",
+      "previous": {
+        "contentHash": "00aa81dc494dd131e2e37592213bf070bab57a842443937e571c87d8cadf2dde",
+        "meaningChanged": true,
+        "problemId": "cn_fe05e5f3a0448c956ab1",
+        "problemRevision": 1,
+        "semanticHash": "e8050749ec8fd8043ec8474539fcd6dec104435320cb22b9fa7860dcf0aa3e66"
+      },
+      "independentAnswer": "Rational(27, 2)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-8)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Integer(-3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Rational(-7, 2)), Integer(2))), Rational(27, 2))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 5,
+      "parameter": 9,
+      "rawSha256": "8affa9a5d471e424c15119e75d209d78bda551c2be8cf4938a4b7ae141b3db47",
+      "rawContentHash": "ab80ac6e2dcca34e26333e4570f01df88bf19c51c1d042d2bdad19cba4478368",
+      "previous": {
+        "contentHash": "9feb0f03b5d1b208fa068af8af993d748f4e4ed97da1297bca352002ce669f80",
+        "meaningChanged": true,
+        "problemId": "cn_dd6cb7e2d4f26d2ffa59",
+        "problemRevision": 1,
+        "semanticHash": "eec9257df96f1e18b9957b64acb8a1305323ea246e5df1ddc2c28c56ed590569"
+      },
+      "independentAnswer": "Rational(50, 3)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-9)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-10, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Integer(-4)), Integer(2))), Rational(50, 3))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 6,
+      "parameter": 10,
+      "rawSha256": "ce7e844edddb64fb522ce1f2b22e3f937f9e76b7c5df93029d01ae498d5da742",
+      "rawContentHash": "2b5e56766743493583faec1f44db3d8560d93b371083795ad9cfca13fd1ba48a",
+      "previous": {
+        "contentHash": "3a1738c0f8f186615f4d7b0d718ea1268eb633cc3787af2bf204720682426787",
+        "meaningChanged": true,
+        "problemId": "cn_ce199bcfe1c5298a5480",
+        "problemRevision": 1,
+        "semanticHash": "7d4b6683613838edfba9a0664588ccabbaeee141683ebea476f41626818c0da5"
+      },
+      "independentAnswer": "Rational(121, 6)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-10)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-11, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Rational(-9, 2)), Integer(2))), Rational(121, 6))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 7,
+      "parameter": 11,
+      "rawSha256": "cbda529a5e3532ea367e7953ac2b6cb675b75620edaf6fc6a917115b8e7ff6f7",
+      "rawContentHash": "b8756d5191e62a1bf449517b11115a240d6a78031413245ad6851c4f1e3094cd",
+      "previous": {
+        "contentHash": "445d45d377ac32cdc674fa4c11f61e259a5359363a346084b9073e99ce0ffcfc",
+        "meaningChanged": true,
+        "problemId": "cn_80f01953538b61a839cc",
+        "problemRevision": 1,
+        "semanticHash": "123b9e431f7c505eaa53f9bb4114d0c600367f183207947faa22412f55a3d92d"
+      },
+      "independentAnswer": "Integer(24)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-11)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Integer(-4)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Integer(-5)), Integer(2))), Integer(24))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 0,
+      "parameter": 4,
+      "rawSha256": "cb10ce1719791e23af618e4801e0d2b43dd0c8c5226bdd69f97c54f15a34147a",
+      "rawContentHash": "e9086b408cc9c8ee873d7a04ecb9f5976d973a22ed5271c70d79753ee62ffc0e",
+      "previous": {
+        "contentHash": "5f39268b63d65eb9924c523551456e9de3ace27f25e4e06f565d8e20917b23ce",
+        "meaningChanged": true,
+        "problemId": "cn_27f8617d7af320fb234a",
+        "problemRevision": 1,
+        "semanticHash": "586e5743f98c2df2722ca5a3d74129695c050a80a8626591dd22cf8de1cac3f2"
+      },
+      "independentAnswer": "Mul(Rational(3, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 1,
+      "parameter": 5,
+      "rawSha256": "5cd0fb02d6ca9acabbdf93de09a667bdcf7d4740071f2db0fc0bd5f0f02b2095",
+      "rawContentHash": "649be0a6615298742225db296deab1f4d69b611dfa0d997dd26511a0482805c6",
+      "previous": {
+        "contentHash": "8e936cf94d6f56b90e33714296a5c8da7feea633aeced51138db4a5b99da983e",
+        "meaningChanged": true,
+        "problemId": "cn_42e6c07dc4128bfc120a",
+        "problemRevision": 1,
+        "semanticHash": "323d8cec8ea900902666293db391ad6542ede2b096131195e8ce898a9f4df3c3"
+      },
+      "independentAnswer": "Mul(Integer(2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 2,
+      "parameter": 6,
+      "rawSha256": "48741fc911cfaf0b3fa52036dee4cc6115b496a5af4cbac6c9c74b2bcd7a72f8",
+      "rawContentHash": "e35dc43bc9b1dc3fcd07c317388ce51a674a333d678ea6d88b62919d2b32f7e4",
+      "previous": {
+        "contentHash": "694c31a287ba9fcbc702ceed89e2b6c8f106262c6131b90479234dbaa9648e2d",
+        "meaningChanged": true,
+        "problemId": "cn_2535f3d1f7d80928d97f",
+        "problemRevision": 1,
+        "semanticHash": "ed05389f16c9e5e8a847c79113c5862e4a299e3cd59ce94d67fd2245de293f74"
+      },
+      "independentAnswer": "Mul(Rational(5, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 3,
+      "parameter": 7,
+      "rawSha256": "9b39cf78492211e675381458542546a8047f16024af732f89acbf25151dedb1d",
+      "rawContentHash": "1b06593aa5b5f7d8522a31f56e49492cec967e7a0616dfb475371e5fb346b5f0",
+      "previous": {
+        "contentHash": "fc30407cc15bf832eb1a203e292fa1e59543533876ca97a8001ec274845e9e18",
+        "meaningChanged": true,
+        "problemId": "cn_2013cdd6925e830c54a1",
+        "problemRevision": 1,
+        "semanticHash": "60c86c175920bc699db077615bc4b7171d69df190e8e1f188c3a6170a778e120"
+      },
+      "independentAnswer": "Mul(Integer(3), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 4,
+      "parameter": 8,
+      "rawSha256": "136ee185c4033387a6e779716e5f790744dd48a67f23c2ca31e402bf0298fbd8",
+      "rawContentHash": "0acfefa8d48f26782d81ffbc2670dddacb195fc2754ef111c4d12f203327d008",
+      "previous": {
+        "contentHash": "f748249d72336823226efe5f74f4f7e20f63e7251b53dc71ccb122720eb0c7e0",
+        "meaningChanged": true,
+        "problemId": "cn_b66862af2e9a44347a08",
+        "problemRevision": 1,
+        "semanticHash": "d74e4725b2d95f8bd7a26744d1741d4c839f3270f238d2c062875e679628ee2a"
+      },
+      "independentAnswer": "Mul(Rational(7, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 5,
+      "parameter": 9,
+      "rawSha256": "150fa0bdddb57f8798c263c41a61338398df4220b7ae4c29ea61c6611daf748d",
+      "rawContentHash": "160d3bb96a550c71e6144bf7d410a8a305b59c89310d1bf1a9c2a69118fd5924",
+      "previous": {
+        "contentHash": "7553907b43773c772c65468249ae5712b9e1540986babe47f490e4eead3754a4",
+        "meaningChanged": true,
+        "problemId": "cn_531df583481307a3c34b",
+        "problemRevision": 1,
+        "semanticHash": "79f2df896b6e1db54ee090c0e312894570c12610aba4e07572e72aec477db0b4"
+      },
+      "independentAnswer": "Mul(Integer(4), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 6,
+      "parameter": 10,
+      "rawSha256": "56b6c5e61cef165ae187bc3a8154ef80d967beed1d2320ba3ac9f39cf2db613e",
+      "rawContentHash": "e5baf13385e8dd7f6d5d1256559ef257325db5bd2f0dc8381b3d37d9d47e2ace",
+      "previous": {
+        "contentHash": "3a44e25c64849636d690176c7f01819f1945647857e047ed9b3fc4f0ceb15071",
+        "meaningChanged": true,
+        "problemId": "cn_b6857d32bc91872370b4",
+        "problemRevision": 1,
+        "semanticHash": "b0b96e80d85842f1a00bda8069c0edc456ef0cad536eeded474ffa1a4835dd76"
+      },
+      "independentAnswer": "Mul(Rational(9, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 7,
+      "parameter": 11,
+      "rawSha256": "6fee63a21445f5aea0beb933f8d1d52a6378cb589305720b584faaa641d4f80a",
+      "rawContentHash": "d0489a10a14e1e953cc3ecdf11e1208833e32ac57395aac0d02af202e9f5577c",
+      "previous": {
+        "contentHash": "721bcd4d7a9cdad5264d1d5db2e86ad2823dd9712c6d1ba9896f4b201f3be418",
+        "meaningChanged": true,
+        "problemId": "cn_9f54e59882ebd43451a6",
+        "problemRevision": 1,
+        "semanticHash": "73bbc42a811af453c91886bdd4b833bae59dab3e7c64c25bfa76b3629d5a30a9"
+      },
+      "independentAnswer": "Mul(Integer(5), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 0,
+      "parameter": 4,
+      "rawSha256": "b17bfe34f62fa7e90756f2f0b6add7008b4d3c5f0d693b248af6028f4242df2e",
+      "rawContentHash": "ed8e30559bc5ac8c30920e1b7748bbf5546a6898ca0d27a7f510c5a1078b32fd",
+      "previous": {
+        "contentHash": "89423bf9af0580d9f00f14daa213f2f247c2f81340277eaeee4304f534f07b89",
+        "meaningChanged": true,
+        "problemId": "cn_af54a165fcaffc89f949",
+        "problemRevision": 1,
+        "semanticHash": "8506ab6e15f5af4dbd34f308d5e10c5ae8b69e0fb1af7a5e2994f3721a28ce57"
+      },
+      "independentAnswer": "Rational(4, 3)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 4)",
+          "right": "Rational(1, 4)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(3), Pow(Add(Integer(4), Mul(Integer(-1), Integer(3), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(3), Pow(Add(Integer(4), Mul(Integer(-1), Integer(3), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 1,
+      "parameter": 5,
+      "rawSha256": "a44a2dfb9b5c92fde12c47f8a0e02ac536a0d177e508f99e2244181cf5a90f79",
+      "rawContentHash": "519ab240a05e8c34d5cfc6580766468aa76808964749daae7ddcfbbbdc70b58e",
+      "previous": {
+        "contentHash": "187a26e439479438eb8db06f5eca67f4a883224c3a71ab5133aeb1bdecf1a7aa",
+        "meaningChanged": true,
+        "problemId": "cn_ca654e9baeff0aeff226",
+        "problemRevision": 1,
+        "semanticHash": "9a2ab95a650756a41f50e2cee98efb04c4fbfeef581cf300eb58ed37ca24eca8"
+      },
+      "independentAnswer": "Rational(5, 4)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 5)",
+          "right": "Rational(1, 5)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(4), Pow(Add(Integer(5), Mul(Integer(-1), Integer(4), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(4), Pow(Add(Integer(5), Mul(Integer(-1), Integer(4), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 2,
+      "parameter": 6,
+      "rawSha256": "9f046053ff005e63f0a65b6e30c5102fe21a99a8817eb8e0d94b2db2dbe67191",
+      "rawContentHash": "9848fc1999590cd24089e9d38a95f5cf4cde597603addc9e823b6cc6a4023409",
+      "previous": {
+        "contentHash": "d09f3f56ac8c1d71d95fd4baa301d4c0f3765974d4a05411cb6eb5a802ed9020",
+        "meaningChanged": true,
+        "problemId": "cn_42ac4c68d94210124b76",
+        "problemRevision": 1,
+        "semanticHash": "d6d5989ed1ec355c3dcb5ebe353813c64ffd90d30899b41a6799003d31b87091"
+      },
+      "independentAnswer": "Rational(6, 5)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 6)",
+          "right": "Rational(1, 6)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(5), Pow(Add(Integer(6), Mul(Integer(-1), Integer(5), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(5), Pow(Add(Integer(6), Mul(Integer(-1), Integer(5), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 3,
+      "parameter": 7,
+      "rawSha256": "cbf2e613e4c29e6147d7167ff0e0d99fc3ecb6b15c7d0c2d95a9ce743541c816",
+      "rawContentHash": "5ad12a4595de2d90dc8ed66965f73a75d1f237369dcc36a0b9979226a310be77",
+      "previous": {
+        "contentHash": "da18698be7f9e01e08914a26e4284eca3cb7c5378ae780604a685d381d6438b1",
+        "meaningChanged": true,
+        "problemId": "cn_21792266426f1920529e",
+        "problemRevision": 1,
+        "semanticHash": "c3d39ea2178a2b0f42694e474b18d391cfea3130aec8d86658894532d643c598"
+      },
+      "independentAnswer": "Rational(7, 6)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 7)",
+          "right": "Rational(1, 7)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(6), Pow(Add(Integer(7), Mul(Integer(-1), Integer(6), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(6), Pow(Add(Integer(7), Mul(Integer(-1), Integer(6), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 4,
+      "parameter": 8,
+      "rawSha256": "7739dffac67d261a1044e087cea324df0359c971ab81e35db64e7136d9df0402",
+      "rawContentHash": "a5aad7407d4c09c13a554ad31a54be5f329609eea29904399a8e2d274c761f3f",
+      "previous": {
+        "contentHash": "2e2f0dcac071347d7a1d4acddc9b4a1346eb9475f670a4c081e0b48a6488a55c",
+        "meaningChanged": true,
+        "problemId": "cn_90809b243e3b7ffd5591",
+        "problemRevision": 1,
+        "semanticHash": "1f8585449991c0c260e19854a5abeb7993d79884e09e8acc60cfd76c8998a5df"
+      },
+      "independentAnswer": "Rational(8, 7)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 8)",
+          "right": "Rational(1, 8)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(7), Pow(Add(Integer(8), Mul(Integer(-1), Integer(7), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(7), Pow(Add(Integer(8), Mul(Integer(-1), Integer(7), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 5,
+      "parameter": 9,
+      "rawSha256": "82e8e32e2bfde2446a3023baebfefac355277bdb8a619d32f24c7bef31be4ae7",
+      "rawContentHash": "5ec1d4944e0dfc17798b3c9264ecefc095bde8e0769d535866d584039c0e48dd",
+      "previous": {
+        "contentHash": "e9ab5781e531b478b8bb0aa8c24701632f6fc343f88865246a858dde142b30fe",
+        "meaningChanged": true,
+        "problemId": "cn_16c6a186af2b9d6122c1",
+        "problemRevision": 1,
+        "semanticHash": "04b9e46409c8fbb0f10f13ec0fc3c51b53ea2e2b1e5c82e57883814be424aeb6"
+      },
+      "independentAnswer": "Rational(9, 8)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 9)",
+          "right": "Rational(1, 9)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(8), Pow(Add(Integer(9), Mul(Integer(-1), Integer(8), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(8), Pow(Add(Integer(9), Mul(Integer(-1), Integer(8), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 6,
+      "parameter": 10,
+      "rawSha256": "b4e016cdbf63e95d3c574cfde099aeaf687ba16f322192cba031c8b653b2f9eb",
+      "rawContentHash": "b72ce0c5e33c368118ec1763b8a86a8a3ee1e16cb86099d746b8783e072a857b",
+      "previous": {
+        "contentHash": "497763d8828f380b1ee55ae90c56735dc8bd44dbfd631f1b31f192f2dd453f3a",
+        "meaningChanged": true,
+        "problemId": "cn_9deda3079591391b30c6",
+        "problemRevision": 1,
+        "semanticHash": "3b8d59a8444af3893f3eadd0c3ef1a7965484909bf705e4e987db0b34d350b1c"
+      },
+      "independentAnswer": "Rational(10, 9)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 10)",
+          "right": "Rational(1, 10)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(9), Pow(Add(Integer(10), Mul(Integer(-1), Integer(9), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(9), Pow(Add(Integer(10), Mul(Integer(-1), Integer(9), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 7,
+      "parameter": 11,
+      "rawSha256": "fa377a27941b8f16d27850ce20e5acc0605961987ac1e9d940f3a62e63b96403",
+      "rawContentHash": "357bd2cc5fc1ce3e7284c804edf4a09b672665b8cf9a9ce201df48c869b18e6d",
+      "previous": {
+        "contentHash": "423f6be5d309619451909e186e4db34941c195e937c7b6a5cc4cd71bfb2c794e",
+        "meaningChanged": true,
+        "problemId": "cn_67df743a60c7b64f1258",
+        "problemRevision": 1,
+        "semanticHash": "41b48be79ac61d8e8e5abb9b013a5ef697f5851786e908c2b2b0ccff20546af6"
+      },
+      "independentAnswer": "Rational(11, 10)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 11)",
+          "right": "Rational(1, 11)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(10), Pow(Add(Integer(11), Mul(Integer(-1), Integer(10), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(10), Pow(Add(Integer(11), Mul(Integer(-1), Integer(10), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 0,
+      "parameter": 4,
+      "rawSha256": "a60d2f3b8d709ed047ba7f536c41bfc3eec7cb18443db30c95105df92c1a3352",
+      "rawContentHash": "23e8b5603848a6e21b64bd32abfb606b711553c61370449a880763cb68495064",
+      "previous": {
+        "contentHash": "52c09b13b1bfb57f6e2c150bd055b73dc28bb538d990ee0ba52fe51a45630d1b",
+        "meaningChanged": true,
+        "problemId": "cn_6b875abe9812c3484f4c",
+        "problemRevision": 1,
+        "semanticHash": "d1a03ef0cdc3fd08ab174b5aa7d3b658221171de72b24861563a9afcc87a960f"
+      },
+      "independentAnswer": "Mul(Rational(1, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(16), Symbol('t', real=True), exp(Mul(Integer(4), Symbol('t', real=True)))), Mul(Integer(8), Add(Mul(Integer(2), Symbol('t', real=True)), Integer(1)), exp(Mul(Integer(4), Symbol('t', real=True)))), Mul(Integer(-1), Integer(8), exp(Mul(Integer(4), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(1, 2), log(Integer(2)))",
+          "right": "Mul(Rational(1, 2), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 1,
+      "parameter": 5,
+      "rawSha256": "47f61f579a5c4ca18b34dc9fd57790c4e450e0c796c0e2af2e7ada64241c7394",
+      "rawContentHash": "623f115792ac233f8613fc5201d342fbeb4ba3ab4731d64565a3b4624bc66d00",
+      "previous": {
+        "contentHash": "01e95b16caf789eebdba481bdf89bf6f3a9ccae3d7e629e9f42c8c78968ce788",
+        "meaningChanged": true,
+        "problemId": "cn_5b9530ae2091028c687a",
+        "problemRevision": 1,
+        "semanticHash": "35e0f074241e1c5ce41d50dc753898f52042db02fb5f7cdf2017ba553e00b585"
+      },
+      "independentAnswer": "Mul(Rational(2, 5), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(25), Symbol('t', real=True), exp(Mul(Integer(5), Symbol('t', real=True)))), Mul(Integer(5), Add(Mul(Integer(5), Symbol('t', real=True)), Integer(2)), exp(Mul(Integer(5), Symbol('t', real=True)))), Mul(Integer(-1), Integer(10), exp(Mul(Integer(5), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(2, 5), log(Integer(2)))",
+          "right": "Mul(Rational(2, 5), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 2,
+      "parameter": 6,
+      "rawSha256": "b9dc33708e3616757c89693e02f91a95eb17f8c80d273a590b41913fe3d64025",
+      "rawContentHash": "e91e9d02074d91da0ca70f9b9e29868fdd76a88483f532fb0a2243f5934c5025",
+      "previous": {
+        "contentHash": "16ff12420bd478f21a73c932219764cc5141fbe2b2af0657d00e541a0e3717f0",
+        "meaningChanged": true,
+        "problemId": "cn_f02e890279b43478866d",
+        "problemRevision": 1,
+        "semanticHash": "241bc4330e9982c0c1b0eda137eb84c1602f54b22651b7d58c6a8b9b50fd3ead"
+      },
+      "independentAnswer": "Mul(Rational(1, 3), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(36), Symbol('t', real=True), exp(Mul(Integer(6), Symbol('t', real=True)))), Mul(Integer(12), Add(Mul(Integer(3), Symbol('t', real=True)), Integer(1)), exp(Mul(Integer(6), Symbol('t', real=True)))), Mul(Integer(-1), Integer(12), exp(Mul(Integer(6), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(1, 3), log(Integer(2)))",
+          "right": "Mul(Rational(1, 3), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 3,
+      "parameter": 7,
+      "rawSha256": "4a433b69e7639c55310368e84d344dc59078cc372e876bb95854cff7d0caa998",
+      "rawContentHash": "91122d45313c9cb2f5a937228eb15c9644c2031552c9c25ff6d77f0fb5c8e3fa",
+      "previous": {
+        "contentHash": "4dfe0db668610e40c37faac376d95a0eaf150260ee7a221ef4eff666080ca85a",
+        "meaningChanged": true,
+        "problemId": "cn_d37edd3d23a13e0034c3",
+        "problemRevision": 1,
+        "semanticHash": "27d80b70db03ea40b5a1a28d7b69ab25c2aefad3f99bb091489844ad771211b1"
+      },
+      "independentAnswer": "Mul(Rational(2, 7), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(49), Symbol('t', real=True), exp(Mul(Integer(7), Symbol('t', real=True)))), Mul(Integer(7), Add(Mul(Integer(7), Symbol('t', real=True)), Integer(2)), exp(Mul(Integer(7), Symbol('t', real=True)))), Mul(Integer(-1), Integer(14), exp(Mul(Integer(7), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(2, 7), log(Integer(2)))",
+          "right": "Mul(Rational(2, 7), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 4,
+      "parameter": 8,
+      "rawSha256": "b206697c77d45e53a470939610a70c552f9bd8767fbb850559978b95a29eff8c",
+      "rawContentHash": "b4554ed91a17c9b513d6376c68202b08092ee67c18e1aca4ce5821d6ab15a5c7",
+      "previous": {
+        "contentHash": "ab415509709b0e8641509b5f9842c6ab94905879bd369ceae1ee56685d5a935f",
+        "meaningChanged": true,
+        "problemId": "cn_174a21b3ea9851ac09d6",
+        "problemRevision": 1,
+        "semanticHash": "f16d911714670b01258eab8924f54496839192cbc034fe4f23ef18a267b7c110"
+      },
+      "independentAnswer": "Mul(Rational(1, 4), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(64), Symbol('t', real=True), exp(Mul(Integer(8), Symbol('t', real=True)))), Mul(Integer(16), Add(Mul(Integer(4), Symbol('t', real=True)), Integer(1)), exp(Mul(Integer(8), Symbol('t', real=True)))), Mul(Integer(-1), Integer(16), exp(Mul(Integer(8), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(1, 4), log(Integer(2)))",
+          "right": "Mul(Rational(1, 4), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 5,
+      "parameter": 9,
+      "rawSha256": "1d4f856561733ff6b8d3d805f1fb36cd0c7dc0ac396fbc9d11bebfdf1972fdd7",
+      "rawContentHash": "eec7666359232b9e95063c7dd68c56e46740f9eb381a609662157b48bfc8bf60",
+      "previous": {
+        "contentHash": "cfcb326014f749d914063db155448926f34be653d93754fce1ea8cbebceb877e",
+        "meaningChanged": true,
+        "problemId": "cn_4856b03741ab5824fa77",
+        "problemRevision": 1,
+        "semanticHash": "f3e88d53801b76ed774836d3b1a81e1c9602654a51c2326b7c4f9d0f95874acc"
+      },
+      "independentAnswer": "Mul(Rational(2, 9), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(81), Symbol('t', real=True), exp(Mul(Integer(9), Symbol('t', real=True)))), Mul(Integer(9), Add(Mul(Integer(9), Symbol('t', real=True)), Integer(2)), exp(Mul(Integer(9), Symbol('t', real=True)))), Mul(Integer(-1), Integer(18), exp(Mul(Integer(9), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(2, 9), log(Integer(2)))",
+          "right": "Mul(Rational(2, 9), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 6,
+      "parameter": 10,
+      "rawSha256": "0066dbd8c509bc08eef0d38022fb7cc4e07d1d4bfc59376796b909062443c4ad",
+      "rawContentHash": "786afea21f58bd79c83120948683cea838e2273a74c3b7f9cde1ebdaff2fccba",
+      "previous": {
+        "contentHash": "6ca0e14f5d3b08045b5821aaf293afcec77081f021a8fc35f12e266d90926361",
+        "meaningChanged": true,
+        "problemId": "cn_eb2aac217028161b0246",
+        "problemRevision": 1,
+        "semanticHash": "81eb3ad00fbd5077ab26b00d865a446fe5f755055ca91c57f0875186f7a77d97"
+      },
+      "independentAnswer": "Mul(Rational(1, 5), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(100), Symbol('t', real=True), exp(Mul(Integer(10), Symbol('t', real=True)))), Mul(Integer(20), Add(Mul(Integer(5), Symbol('t', real=True)), Integer(1)), exp(Mul(Integer(10), Symbol('t', real=True)))), Mul(Integer(-1), Integer(20), exp(Mul(Integer(10), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(1, 5), log(Integer(2)))",
+          "right": "Mul(Rational(1, 5), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 7,
+      "parameter": 11,
+      "rawSha256": "2326d64f95dc053a269219a81d7e67a65b36aa06332484a3072e34be643ff07f",
+      "rawContentHash": "2366a46c5656905bbcbf849f29dd68199c795a70c129a52b8a6400dcfd27e01f",
+      "previous": {
+        "contentHash": "dc956ac1ea62964592141664372d1d7d4f721b7adb63f4cda31bb375792b06e8",
+        "meaningChanged": true,
+        "problemId": "cn_6727c5966e827f307023",
+        "problemRevision": 1,
+        "semanticHash": "253918fa838b8e0c8e0bcf472b207415e8ce3c6ee7cd3fb78be2acafa747ea8a"
+      },
+      "independentAnswer": "Mul(Rational(2, 11), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(121), Symbol('t', real=True), exp(Mul(Integer(11), Symbol('t', real=True)))), Mul(Integer(11), Add(Mul(Integer(11), Symbol('t', real=True)), Integer(2)), exp(Mul(Integer(11), Symbol('t', real=True)))), Mul(Integer(-1), Integer(22), exp(Mul(Integer(11), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(2, 11), log(Integer(2)))",
+          "right": "Mul(Rational(2, 11), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 0,
+      "parameter": 12,
+      "rawSha256": "283d702db23280e01d14e8d1415b90eae62cd866c561066753199e846bf1f099",
+      "rawContentHash": "c422ea1aa107b6818b5d2f8a7064aca301305bd2cc94ccb2fdc0cb502b4cde75",
+      "previous": null,
+      "independentAnswer": "Rational(169, 6)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-12)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-13, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Rational(-11, 2)), Integer(2))), Rational(169, 6))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-medium-quadratic-critical-value",
+      "index": 1,
+      "parameter": 13,
+      "rawSha256": "a1f52f092b48667c2bf1ab81939cca98ce50b9c6ca532f0248e8a01280429bf1",
+      "rawContentHash": "825a45af7f7a9e21056982589b8d23a58434a0097e74f6d3e130e5def0b89405",
+      "previous": null,
+      "independentAnswer": "Rational(98, 3)",
+      "checks": [
+        {
+          "description": "Exact positive-square completion",
+          "left": "Add(Pow(Symbol('x', real=True), Integer(2)), Pow(Add(Symbol('x', real=True), Mul(Integer(-1), Symbol('y', real=True)), Integer(-1)), Integer(2)), Pow(Add(Symbol('x', real=True), Symbol('y', real=True), Integer(-13)), Integer(2)))",
+          "right": "Add(Mul(Integer(3), Pow(Add(Symbol('x', real=True), Rational(-14, 3)), Integer(2))), Mul(Integer(2), Pow(Add(Symbol('y', real=True), Integer(-6)), Integer(2))), Rational(98, 3))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Complete two positive squares or solve the diagonal gradient system; positivity makes the critical point the global minimum.",
+      "nearestNeighbor": "The added incompatible squared residual prevents the old always-zero minimum; direct positive quadratic minimization remains Medium.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 0,
+      "parameter": 12,
+      "rawSha256": "eb08c0d34522355510ea2e6856f8b8e682f4010a3b748b50c94a22900b88f724",
+      "rawContentHash": "1a173f9c18f1f870b682320b0347c363fd456dc56cff498c392bc08f612eb607",
+      "previous": null,
+      "independentAnswer": "Mul(Rational(11, 2), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-multivariable-hard-nonlinear-Jacobian",
+      "index": 1,
+      "parameter": 13,
+      "rawSha256": "73503218deed5f37ffb12f533642c113b3931e1b513b0f30d2ed5ea7baad1c02",
+      "rawContentHash": "35720707e40b2300e1fa948ae469044d8c5bd99cb02683829384d61e2d62a723",
+      "previous": null,
+      "independentAnswer": "Mul(Integer(6), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Inverse coordinate product",
+          "left": "Symbol('u', positive=True)",
+          "right": "Symbol('u', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Inverse coordinate ratio",
+          "left": "Symbol('v', positive=True)",
+          "right": "Symbol('v', positive=True)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Oriented inverse Jacobian",
+          "left": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "right": "Mul(Integer(-1), Rational(1, 2), Pow(Symbol('v', positive=True), Integer(-1)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "hard",
+      "easiestOptionsVisibleRoute": "Use product and ratio as coordinates, prove the positive-quadrant inverse is single-valued, then integrate the inverse Jacobian over the transformed rectangle.",
+      "nearestNeighbor": "Unlike an affine area multiplier, the Jacobian varies with the ratio coordinate.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 0,
+      "parameter": 12,
+      "rawSha256": "63cf239ecb40bf9a93aa60b99b6885444407c980960f1eea058f0aa20a1b8c2a",
+      "rawContentHash": "b3bb9df584d77bb9de9b67250a507ebcae669a7ba4021541abf5bca804386c21",
+      "previous": null,
+      "independentAnswer": "Rational(12, 11)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 12)",
+          "right": "Rational(1, 12)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(11), Pow(Add(Integer(12), Mul(Integer(-1), Integer(11), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(11), Pow(Add(Integer(12), Mul(Integer(-1), Integer(11), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-finite-blowup",
+      "index": 1,
+      "parameter": 13,
+      "rawSha256": "57c997e56584830a7a7af102f4faea0dd6c8da6eb8d708777202d45f92d246fe",
+      "rawContentHash": "fde3fa8e147494a14b26eb53f24fad16e0b05468ad8f415e7ed5b0e2c87c1578",
+      "previous": null,
+      "independentAnswer": "Rational(13, 12)",
+      "checks": [
+        {
+          "description": "Literal initial value",
+          "left": "Rational(1, 13)",
+          "right": "Rational(1, 13)",
+          "result": "exact equality"
+        },
+        {
+          "description": "Differential equation residual",
+          "left": "Mul(Integer(12), Pow(Add(Integer(13), Mul(Integer(-1), Integer(12), Symbol('t', real=True))), Integer(-2)))",
+          "right": "Mul(Integer(12), Pow(Add(Integer(13), Mul(Integer(-1), Integer(12), Symbol('t', real=True))), Integer(-2)))",
+          "result": "exact equality"
+        },
+        {
+          "description": "First positive denominator root",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Separate variables, use the initial reciprocal value, and locate the first future pole. Smoothness of the vector field guarantees uniqueness up to that pole.",
+      "nearestNeighbor": "Direct reciprocal separation; a different endpoint computation from fixed-zero-time or sign-only examples.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 0,
+      "parameter": 12,
+      "rawSha256": "1ef28f8212e391218c7c19cde04f17f5fe288ce1b818eab058d08675824be120",
+      "rawContentHash": "0b3ef3c71fb261dd7ca3dc552add1be894f98e02728480033b5f858e5971d117",
+      "previous": null,
+      "independentAnswer": "Mul(Rational(1, 6), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(144), Symbol('t', real=True), exp(Mul(Integer(12), Symbol('t', real=True)))), Mul(Integer(24), Add(Mul(Integer(6), Symbol('t', real=True)), Integer(1)), exp(Mul(Integer(12), Symbol('t', real=True)))), Mul(Integer(-1), Integer(24), exp(Mul(Integer(12), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(1, 6), log(Integer(2)))",
+          "right": "Mul(Rational(1, 6), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    },
+    {
+      "familyId": "m3-differential-equations-medium-repeated-root",
+      "index": 1,
+      "parameter": 13,
+      "rawSha256": "2943c0c4d08c4f57053c20c8362a4cd4b6889ce6f41ab026e4c50b7de1bbfd5b",
+      "rawContentHash": "c4edaed27dc3aca11ebc91217ca99d5fad717123acb0e4f5c76730bdd8bba537",
+      "previous": null,
+      "independentAnswer": "Mul(Rational(2, 13), log(Integer(2)))",
+      "checks": [
+        {
+          "description": "Second-order equation residual",
+          "left": "Add(Mul(Integer(-1), Integer(169), Symbol('t', real=True), exp(Mul(Integer(13), Symbol('t', real=True)))), Mul(Integer(13), Add(Mul(Integer(13), Symbol('t', real=True)), Integer(2)), exp(Mul(Integer(13), Symbol('t', real=True)))), Mul(Integer(-1), Integer(26), exp(Mul(Integer(13), Symbol('t', real=True)))))",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial displacement",
+          "left": "Integer(0)",
+          "right": "0",
+          "result": "exact equality"
+        },
+        {
+          "description": "Initial velocity",
+          "left": "Integer(1)",
+          "right": "1",
+          "result": "exact equality"
+        },
+        {
+          "description": "Displayed logarithmic-time evaluation",
+          "left": "Mul(Rational(2, 13), log(Integer(2)))",
+          "right": "Mul(Rational(2, 13), log(Integer(2)))",
+          "result": "exact equality"
+        }
+      ],
+      "fourLiteralChoicesIndependentlyParsed": true,
+      "sixPairwiseInequivalenceChecksPassed": true,
+      "difficultyRecommended": "medium",
+      "easiestOptionsVisibleRoute": "Factor the constant-coefficient operator, use both initial conditions, and evaluate the resulting exponential times a linear factor.",
+      "nearestNeighbor": "The repeated characteristic root forces the linear prefactor, unlike a distinct-root exponential combination.",
+      "meaningfulCapacity": "Parameter-specific elementary/Hard fluency, zero additional independent groups. Existing IDs preserve exposure through semantic revision.",
+      "passed": true
+    }
+  ],
+  "scope": "All32 revised and8 new-extension semantic tasks independently solved from the displayed formulas. Literal options parsed separately, all six inequalities and exact residuals/completions checked. No author constructor imported; analytic uniqueness/domain arguments are prose, not formal proof. Final option-only screens remain separate."
+}

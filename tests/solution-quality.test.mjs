@@ -24,6 +24,10 @@ test('admission rejects ambiguous symbols, noncanonical notation, broken formula
   [String.raw`\log x`,last],
   [String.raw`\begin{gathered}\textnormal{Do this}\\\textnormal{then that}\end{gathered}`,last],
   [String.raw`\textnormal{Use x^2 for the function.}`,last],
+  [String.raw`x=1,quad y=2`,last],
+  [String.raw`x=1,qquad y=2`,last],
+  [String.raw`a_12=3`,last],
+  [String.raw`x^12=3`,last],
   [String.raw`\frac{1}{`,last],
   [...p.solutionSteps,'not the verified answer']
  ];
@@ -51,4 +55,54 @@ test('the reported symmetry example and uncommon-notation examples are exact-sou
   assert.throws(()=>assertSolutionQuality(presentBankProblem({...original,contentHash:'f'.repeat(64)})),/source-bound/);
  }
  const p=presentBankProblem(records[0]);assert.equal(p.problemId,'cn_c05d5e5ff7186cb58716');assert.ok(!p.solutionSteps.some(s=>/\bm=/.test(s)));assert.match(p.solutionSteps.join(' '),/odd/);assert.equal(p.solutionSteps.at(-1),'1');
+});
+
+test('all 24 harmonic statements use the same defined harmonic notation as their solutions',()=>{
+ const records=JSON.parse(readFileSync(new URL('./fixtures/bank/harmonic-source-examples.json',import.meta.url)));
+ assert.equal(records.length,24);assert.equal(new Set(records.map(p=>p.familyId)).size,3);
+ for(const original of records){
+  assert.match(original.statement,/operatorname\{harmonic\}/);
+  const p=presentBankProblem(original);assertSolutionQuality(p);
+  assert.doesNotMatch([p.statement,...p.solutionSteps,...p.choices.map(c=>c.math)].join(' '),/operatorname\{harmonic\}/);
+  assert.match(p.statement,/H_k/);assert.match(p.statement,/H_n=/);
+  assert.equal(p.contentHash,original.contentHash);assert.equal(p.answerChoiceId,original.answerChoiceId);
+  assert.equal(p.problemRevision,original.problemRevision);
+  assert.ok(solutionQualityIssues({...p,statement:original.statement}).some(s=>s.includes('computer function')));
+ }
+});
+
+test('statement clarifications keep equations out of prose and bind to unchanged source identities',()=>{
+ const records=JSON.parse(readFileSync(new URL('./fixtures/bank/statement-source-examples.json',import.meta.url)));
+ assert.equal(records.length,138);assert.equal(new Set(records.map(p=>p.familyId)).size,18);
+ for(const original of records){
+  const p=presentBankProblem(original);assertSolutionQuality(p);
+  assert.notEqual(p.statement,original.statement);assert.equal(p.contentHash,original.contentHash);
+  assert.equal(p.answerChoiceId,original.answerChoiceId);assert.equal(p.problemRevision,original.problemRevision);
+  assert.deepEqual(p.choices.map(c=>c.choiceId),original.choices.map(c=>c.choiceId));
+  assert.throws(()=>assertSolutionQuality(presentBankProblem({...original,contentHash:'f'.repeat(64)})),/source-bound/);
+ }
+ const p=reviewed();
+ assert.ok(solutionQualityIssues({...p,statement:String.raw`\textnormal{Find x/y.}`}).some(s=>s.includes('plain prose')));
+ assert.ok(!solutionQualityIssues({...p,statement:String.raw`\textnormal{A flow of 2 L/min and concentration 3 g/L.}`}).some(s=>s.includes('plain prose')));
+});
+
+test('dyadic tangent explanations use explicit numeric multiplication without rewriting saved questions',()=>{
+ const records=JSON.parse(readFileSync(new URL('./fixtures/bank/binary-tangent-source-examples.json',import.meta.url)));
+ assert.equal(records.length,8);
+ for(const original of records){
+  const before=structuredClone(original),p=presentBankProblem(original),m=original.provenance.authoring.builderParameters.m;
+  assertSolutionQuality(p);assert.deepEqual(original,before);
+  assert.equal(p.contentHash,original.contentHash);assert.equal(p.semanticHash,original.semanticHash);
+  assert.equal(p.answerChoiceId,original.answerChoiceId);
+  const snapshot={...original,solutionReviewVersion:'worked-solutions-v1',explanation:original.solutionSteps};
+  const saved=structuredClone(snapshot);
+  assert.equal(reviewSavedQuestion(snapshot).clarified,true,'a later correction under the same format contract remains visible as a clarification');
+  assert.deepEqual(snapshot,saved,'the recorded explanation is immutable');
+  assert.equal(reviewSavedQuestion({...snapshot,explanation:p.solutionSteps}).clarified,false);
+  const text=p.solutionSteps.join('\n');
+  for(const exponent of ['k','N']){
+   assert.ok(text.includes(String.raw`\frac1{${m}\cdot2^${exponent}}`));
+   assert.ok(!text.includes(String.raw`\frac1{${m}2^${exponent}}`));
+  }
+ }
 });

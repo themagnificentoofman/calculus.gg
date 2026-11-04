@@ -1,0 +1,129 @@
+{
+  "author": "coverage_research",
+  "reviewer": "root",
+  "method": "First sample statements and options inspected before authored solutions; all96 finite answers then checked using separate implementations. See mathematical report for precise methods and limitations.",
+  "sourceArtifactSha256": "16be4808c0c67c7267bd6fd9973c2d41bbe17ac6adededdeed13e5b01104b80b",
+  "families": [
+    {
+      "familyId": "q1-differentiation-olympiad-hilbert-representer-bound",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Recognize a derivative functional in the constrained inner-product space; construct the correct representer and prove attainment.",
+      "nearestNeighborDistinction": "Different from uniform Chebyshev/Markov bounds: quadratic integral geometry, with point/mean constraints.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-eigenvalue-curvature",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Differentiate the simple eigenvalue equation, eliminate eigenvector derivatives using spectral gaps, and retain their signs.",
+      "nearestNeighborDistinction": "Unlike determinant derivatives, the question isolates one local spectral branch and its interactions.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-implicit-root-trace",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Turn implicit root derivatives into a symmetric rational trace without solving for individual roots.",
+      "nearestNeighborDistinction": "Different from a Vieta sum of roots: reciprocal polynomial derivatives require quotient-algebra/interpolation structure.",
+      "pending": [
+        "Explicitly state complex roots; the default real-variable convention is insufficient."
+      ],
+      "status": "mathematics-checked; final revision and choice review pending"
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-log-derivative-root-count",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Use strict monotonicity between logarithmic-derivative poles, then restore solutions lost on division by the polynomial.",
+      "nearestNeighborDistinction": "Rolle alone bounds zeros but does not count all solutions of the shifted derivative equation with repeated roots.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-schwarz-pick-jet",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Normalize two disk maps, identify the shifted derivative disk, and construct the extremizing map.",
+      "nearestNeighborDistinction": "A coefficient bound alone misses the prescribed first jet and nonzero-center translation.",
+      "pending": [
+        "Resolve option-length screen and bind the revised finite source before admission."
+      ],
+      "status": "mathematics-checked; final revision and choice review pending"
+    },
+    {
+      "familyId": "q1-differentiation-olympiad-exponential-chebyshev-zero-bound",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Prove the global bound by weighted Rolle, then establish sharpness using finite-dimensional interpolation.",
+      "nearestNeighborDistinction": "This is a nonperiodic maximum-zero problem, unlike periodic orthogonality lower bounds.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-padic-digit-extrema",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Translate factorial valuations into digit sums, combine a digit-length upper bound with a sharp subsequence.",
+      "nearestNeighborDistinction": "Different from cancellation of Stirling terms: prime valuations have discrete digit fluctuations.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-pell-liminf",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Pair an integer-norm obstruction with a Pell subsequence and justify eventual nearest-integer status.",
+      "nearestNeighborDistinction": "A generic irrational approximation bound cannot identify the sharp constant.",
+      "pending": [
+        "Resolve option-length screen and bind the revised finite source before admission."
+      ],
+      "status": "mathematics-checked; final revision and choice review pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-poisson-coefficient-limit",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "hard",
+      "easiestOptionsVisibleRoute": "For coefficient one, differentiate the finite product at zero and combine elementary product/sum limits.",
+      "nearestNeighborDistinction": "Uniform analytic convergence is a valid elegant route, but the simpler displayed-options route controls editorial difficulty.",
+      "pending": [
+        "Reclassify all finite cases; do not count this group toward Olympiad floor."
+      ],
+      "status": "mathematics-checked; final revision and choice review pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-binomial-large-deviation",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Find the maximal term in the upper tail, sandwich by a polynomial number of copies, and retain the exponential Stirling scale.",
+      "nearestNeighborDistinction": "Different from central-limit normalization: the threshold remains away from the mean.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-nilpotent-matrix-asymptotics",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "hard",
+      "easiestOptionsVisibleRoute": "Shift by the eigenvalue and use the standard finite binomial expansion for a nilpotent matrix.",
+      "nearestNeighborDistinction": "Advanced matrix notation does not itself make the routine Jordan-asymptotic calculation Olympiad.",
+      "pending": [
+        "Reclassify all finite cases; do not count this group toward Olympiad floor."
+      ],
+      "status": "mathematics-checked; final revision and choice review pending"
+    },
+    {
+      "familyId": "q1-limits-olympiad-divisor-hyperbola-constant",
+      "independentMathInstances": 8,
+      "optionsVisibleDifficulty": "olympiad",
+      "easiestOptionsVisibleRoute": "Count lattice pairs by two short hyperbola arms so the floor error is small enough to recover the linear constant.",
+      "nearestNeighborDistinction": "A direct termwise floor replacement loses order n, precisely the scale needed for the requested constant.",
+      "pending": [],
+      "status": "math-and-difficulty-reviewed; final source binding pending"
+    }
+  ],
+  "reviewerCorrection": "An initial mental arithmetic sum for the first exponential-polynomial dimension was corrected from6 to5; the author answer4 was already correct. The independent finite check confirms dimension-minus-one across every case.",
+  "humanReviewed": false,
+  "admittedCount": 0
+}

@@ -1,0 +1,2806 @@
+{
+  "records": 48,
+  "scope": "Exact difference inventory; current code is not used to simulate the baseline.",
+  "differences": [
+    {
+      "problemId": "cn_b53afdc1d7839268b6ce",
+      "publishedContentHash": "bd8ea3363f17714f76ec2973decef6903bb83eaa5ff8559fbb753b8a165a8bbc",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 4^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{16 \\ln{\\left(\\frac{3}{4} \\right)}}{9}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\ln{\\left(\\frac{3}{4} \\right)}",
+          "\\frac{1}{4} - \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}"
+        ],
+        "answer": "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{4}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 4^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{16 \\ln{\\left(\\frac{3}{4} \\right)}}{9}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\ln{\\left(\\frac{3}{4} \\right)}",
+          "\\frac{1}{4} - \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}"
+        ],
+        "answer": "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{4}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}",
+          "- \\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}}{3}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_0c61f469b0807a4a01b1",
+      "publishedContentHash": "e73e161a3786b541d68f3fff3ed5e74adc4e351c1f673bcd1e61d130c26ba67a",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 5^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "\\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{6}{5} \\right)}}{4}"
+        ],
+        "answer": "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{5}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 5^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "\\frac{1}{5} - \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{6}{5} \\right)}}{4}"
+        ],
+        "answer": "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{5}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}}{4}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_598fca8cb6dc3d26bf7b",
+      "publishedContentHash": "ec95fd1b3a5b4077b2a21f63c254d1a48154a01261d92a04d71d5eef026de866",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 6^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{6} - \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\ln{\\left(\\frac{5}{6} \\right)}",
+          "\\frac{1}{6}"
+        ],
+        "answer": "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{6}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 6^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{6} - \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\ln{\\left(\\frac{5}{6} \\right)}",
+          "\\frac{1}{6}"
+        ],
+        "answer": "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{6}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}}{5}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_b1242ba76b701aa863da",
+      "publishedContentHash": "4f2005e832a575e8177d32f3e71b586ba1ce47eac78ff6f243404dba1e2e0ab3",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 7^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{49 \\ln{\\left(\\frac{6}{7} \\right)}}{36}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "\\frac{1}{7}",
+          "\\frac{1}{7} - \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}"
+        ],
+        "answer": "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{7}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 7^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{49 \\ln{\\left(\\frac{6}{7} \\right)}}{36}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "\\frac{1}{7}",
+          "\\frac{1}{7} - \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}"
+        ],
+        "answer": "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{7}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}",
+          "- \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}}{6}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_c9bb0915095c96f13d90",
+      "publishedContentHash": "054b4b7e2787c00957d3c76c54b4a8a233f4b098e0b5c79720ae3e0d35bebba6",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 8^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{64 \\ln{\\left(\\frac{7}{8} \\right)}}{49}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\ln{\\left(\\frac{7}{8} \\right)}",
+          "\\frac{8 \\ln{\\left(\\frac{9}{8} \\right)}}{7}"
+        ],
+        "answer": "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{8}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 8^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{64 \\ln{\\left(\\frac{7}{8} \\right)}}{49}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\ln{\\left(\\frac{7}{8} \\right)}",
+          "\\frac{8 \\ln{\\left(\\frac{9}{8} \\right)}}{7}"
+        ],
+        "answer": "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{8}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}",
+          "- \\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}}{7}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_999a30087e6b60e0df64",
+      "publishedContentHash": "8daf634e09f180ab1d1e8c7389579f0369658a0dd5007df690723be3b666c8f3",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 9^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{9} - \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "\\frac{1}{9}",
+          "\\frac{9 \\ln{\\left(\\frac{10}{9} \\right)}}{8}"
+        ],
+        "answer": "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{9}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 9^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{1}{9} - \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "\\frac{1}{9}",
+          "\\frac{9 \\ln{\\left(\\frac{10}{9} \\right)}}{8}"
+        ],
+        "answer": "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{9}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}",
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}}{8}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_6516e1f4126a9294bcf6",
+      "publishedContentHash": "e90be6c07e19679a2e3f66dec35d79c61b069cc195bf22b235e2b27cb11c7f74",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 10^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{100 \\ln{\\left(\\frac{9}{10} \\right)}}{81}",
+          "- \\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "\\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}"
+        ],
+        "answer": "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{10}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 10^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{100 \\ln{\\left(\\frac{9}{10} \\right)}}{81}",
+          "- \\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "\\frac{1}{10} - \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}"
+        ],
+        "answer": "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{10}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}",
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}}{9}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_280b345c21b43227471d",
+      "publishedContentHash": "5ebc118063bef47494442da125f35779311a55594bd97e29a6d29f83d243d8b6",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 11^{- k} \\operatorname{harmonic}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\ln{\\left(\\frac{10}{11} \\right)}",
+          "\\frac{1}{11}",
+          "\\frac{1}{11} - \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}"
+        ],
+        "answer": "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{11}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 11^{- k} H_k\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\ln{\\left(\\frac{10}{11} \\right)}",
+          "\\frac{1}{11}",
+          "\\frac{1}{11} - \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}"
+        ],
+        "answer": "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+        "assumptions": [
+          "Tonelli applies to nonnegative terms; the final logarithm is finite."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad r=\\frac{1}{11}\\in(0,1)",
+          "\\textnormal{All terms in the expanded double sum are nonnegative, so Tonelli permits reversing the triangular summation region.}",
+          "\\sum_{k=1}^\\infty H_kr^k=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty r^k=\\frac1{1-r}\\sum_{j=1}^\\infty\\frac{r^j}{j}",
+          "\\sum_{j=1}^\\infty\\frac{r^j}{j}=\\int_0^r\\frac{\\mathrm dt}{1-t}=-\\ln(1-r)",
+          "\\sum_{k=1}^\\infty H_kr^k=-\\frac{\\ln(1-r)}{1-r}=- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}",
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}}{10}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_9d39d3aad34f9b90103b",
+      "publishedContentHash": "72f4469ad728f8f76c56c1f57cf000ff91b871cf8b2ce9f011418a6588f5a6b2",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 4\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{4} + \\frac{\\pi^{2}}{24}",
+          "\\frac{\\pi^{2}}{24} + \\frac{121}{144}",
+          "\\frac{\\pi^{2}}{24} + \\frac{569}{720}",
+          "\\frac{\\pi^{2}}{24} + \\frac{85}{144}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+4)}",
+          "\\frac1{k(k+4)}=\\frac1{4}\\left(\\frac1k-\\frac1{k+4}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "4S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+4}\\right)=\\sum_{q=0}^{3}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{3}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{3}\\frac1q\\right)^2+\\sum_{q=1}^{3}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{11}{6}\\right)^2+\\frac{49}{36}\\right]",
+          "S=\\frac1{4}\\left(\\frac{\\pi^2}6+\\frac{85}{36}\\right)=\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+          "\\frac{\\pi^{2}}{24} + \\frac{85}{144}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 4\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{4} + \\frac{\\pi^{2}}{24}",
+          "\\frac{\\pi^{2}}{24} + \\frac{121}{144}",
+          "\\frac{\\pi^{2}}{24} + \\frac{569}{720}",
+          "\\frac{\\pi^{2}}{24} + \\frac{85}{144}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+4)}",
+          "\\frac1{k(k+4)}=\\frac1{4}\\left(\\frac1k-\\frac1{k+4}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "4S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+4}\\right)=\\sum_{q=0}^{3}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{3}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{3}\\frac1q\\right)^2+\\sum_{q=1}^{3}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{11}{6}\\right)^2+\\frac{49}{36}\\right]",
+          "S=\\frac1{4}\\left(\\frac{\\pi^2}6+\\frac{85}{36}\\right)=\\frac{\\pi^{2}}{24} + \\frac{85}{144}",
+          "\\frac{\\pi^{2}}{24} + \\frac{85}{144}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_1a7632ac5d58298fa17e",
+      "publishedContentHash": "8d1582d3e5034470ac74a0221ce5baca9cf81a98885b3d12646d03a23a935612",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 5\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{30}",
+          "\\frac{\\pi^{2}}{30} + \\frac{107}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{59}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{83}{144}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{30} + \\frac{83}{144}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+5)}",
+          "\\frac1{k(k+5)}=\\frac1{5}\\left(\\frac1k-\\frac1{k+5}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "5S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+5}\\right)=\\sum_{q=0}^{4}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{4}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{4}\\frac1q\\right)^2+\\sum_{q=1}^{4}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{25}{12}\\right)^2+\\frac{205}{144}\\right]",
+          "S=\\frac1{5}\\left(\\frac{\\pi^2}6+\\frac{415}{144}\\right)=\\frac{\\pi^{2}}{30} + \\frac{83}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{83}{144}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 5\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{30}",
+          "\\frac{\\pi^{2}}{30} + \\frac{107}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{59}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{83}{144}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{30} + \\frac{83}{144}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+5)}",
+          "\\frac1{k(k+5)}=\\frac1{5}\\left(\\frac1k-\\frac1{k+5}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "5S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+5}\\right)=\\sum_{q=0}^{4}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{4}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{4}\\frac1q\\right)^2+\\sum_{q=1}^{4}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{25}{12}\\right)^2+\\frac{205}{144}\\right]",
+          "S=\\frac1{5}\\left(\\frac{\\pi^2}6+\\frac{415}{144}\\right)=\\frac{\\pi^{2}}{30} + \\frac{83}{144}",
+          "\\frac{\\pi^{2}}{30} + \\frac{83}{144}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_f6a6e83623534a77f080",
+      "publishedContentHash": "5e219cacb1466cbff2097a6e931a70c985a857f7268adccb89b1acce53bf061c",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 6\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{7}",
+          "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+          "\\frac{\\pi^{2}}{36} + \\frac{5}{16}",
+          "\\frac{\\pi^{2}}{36} + \\frac{62533}{151200}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+6)}",
+          "\\frac1{k(k+6)}=\\frac1{6}\\left(\\frac1k-\\frac1{k+6}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "6S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+6}\\right)=\\sum_{q=0}^{5}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{5}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{5}\\frac1q\\right)^2+\\sum_{q=1}^{5}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{137}{60}\\right)^2+\\frac{5269}{3600}\\right]",
+          "S=\\frac1{6}\\left(\\frac{\\pi^2}6+\\frac{12019}{3600}\\right)=\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+          "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 6\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{7}",
+          "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+          "\\frac{\\pi^{2}}{36} + \\frac{5}{16}",
+          "\\frac{\\pi^{2}}{36} + \\frac{62533}{151200}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+6)}",
+          "\\frac1{k(k+6)}=\\frac1{6}\\left(\\frac1k-\\frac1{k+6}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "6S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+6}\\right)=\\sum_{q=0}^{5}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{5}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{5}\\frac1q\\right)^2+\\sum_{q=1}^{5}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{137}{60}\\right)^2+\\frac{5269}{3600}\\right]",
+          "S=\\frac1{6}\\left(\\frac{\\pi^2}6+\\frac{12019}{3600}\\right)=\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}",
+          "\\frac{\\pi^{2}}{36} + \\frac{12019}{21600}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_a3bdd7ae9a532248902d",
+      "publishedContentHash": "30086e87d96d28022dd63a5c370fc9de23a2272131d1457a7c3b50dd391b44ee",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 7\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{8}",
+          "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{2377}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{343}{400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+7)}",
+          "\\frac1{k(k+7)}=\\frac1{7}\\left(\\frac1k-\\frac1{k+7}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "7S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+7}\\right)=\\sum_{q=0}^{6}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{6}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{6}\\frac1q\\right)^2+\\sum_{q=1}^{6}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{49}{20}\\right)^2+\\frac{5369}{3600}\\right]",
+          "S=\\frac1{7}\\left(\\frac{\\pi^2}6+\\frac{13489}{3600}\\right)=\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 7\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{8}",
+          "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{2377}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{343}{400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+7)}",
+          "\\frac1{k(k+7)}=\\frac1{7}\\left(\\frac1k-\\frac1{k+7}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "7S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+7}\\right)=\\sum_{q=0}^{6}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{6}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{6}\\frac1q\\right)^2+\\sum_{q=1}^{6}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{49}{20}\\right)^2+\\frac{5369}{3600}\\right]",
+          "S=\\frac1{7}\\left(\\frac{\\pi^2}6+\\frac{13489}{3600}\\right)=\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}",
+          "\\frac{\\pi^{2}}{42} + \\frac{1927}{3600}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_26e5c958665a412b6b4f",
+      "publishedContentHash": "d29c4aa89ada1cc24ca098be797bdca97ef61ad2f2d2ac97d7cfb32917406367",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 8\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{48}",
+          "\\frac{\\pi^{2}}{48} + \\frac{131769}{156800}",
+          "\\frac{\\pi^{2}}{48} + \\frac{469}{1440}",
+          "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+8)}",
+          "\\frac1{k(k+8)}=\\frac1{8}\\left(\\frac1k-\\frac1{k+8}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "8S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+8}\\right)=\\sum_{q=0}^{7}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{7}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{7}\\frac1q\\right)^2+\\sum_{q=1}^{7}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{363}{140}\\right)^2+\\frac{266681}{176400}\\right]",
+          "S=\\frac1{8}\\left(\\frac{\\pi^2}6+\\frac{726301}{176400}\\right)=\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}",
+          "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 8\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{48}",
+          "\\frac{\\pi^{2}}{48} + \\frac{131769}{156800}",
+          "\\frac{\\pi^{2}}{48} + \\frac{469}{1440}",
+          "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+8)}",
+          "\\frac1{k(k+8)}=\\frac1{8}\\left(\\frac1k-\\frac1{k+8}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "8S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+8}\\right)=\\sum_{q=0}^{7}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{7}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{7}\\frac1q\\right)^2+\\sum_{q=1}^{7}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{363}{140}\\right)^2+\\frac{266681}{176400}\\right]",
+          "S=\\frac1{8}\\left(\\frac{\\pi^2}6+\\frac{726301}{176400}\\right)=\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}",
+          "\\frac{\\pi^{2}}{48} + \\frac{726301}{1411200}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_1bae0781f3ffd8f3f624",
+      "publishedContentHash": "f2d9c4e1cd873cbd76006c06d272c581cdfe598e63435ec4409bd4820a53f34d",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 9\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{10}",
+          "\\frac{\\pi^{2}}{54}",
+          "\\frac{\\pi^{2}}{54} + \\frac{2509879}{6350400}",
+          "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+9)}",
+          "\\frac1{k(k+9)}=\\frac1{9}\\left(\\frac1k-\\frac1{k+9}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "9S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+9}\\right)=\\sum_{q=0}^{8}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{8}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{8}\\frac1q\\right)^2+\\sum_{q=1}^{8}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{761}{280}\\right)^2+\\frac{1077749}{705600}\\right]",
+          "S=\\frac1{9}\\left(\\frac{\\pi^2}6+\\frac{3144919}{705600}\\right)=\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}",
+          "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 9\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{10}",
+          "\\frac{\\pi^{2}}{54}",
+          "\\frac{\\pi^{2}}{54} + \\frac{2509879}{6350400}",
+          "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+9)}",
+          "\\frac1{k(k+9)}=\\frac1{9}\\left(\\frac1k-\\frac1{k+9}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "9S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+9}\\right)=\\sum_{q=0}^{8}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{8}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{8}\\frac1q\\right)^2+\\sum_{q=1}^{8}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{761}{280}\\right)^2+\\frac{1077749}{705600}\\right]",
+          "S=\\frac1{9}\\left(\\frac{\\pi^2}6+\\frac{3144919}{705600}\\right)=\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}",
+          "\\frac{\\pi^{2}}{54} + \\frac{3144919}{6350400}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_36f27d67491ff0919528",
+      "publishedContentHash": "f6a5b7cbe29156f5fe265221d3f6237f9f283278683e1168e2ae1eec755995c6",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 10\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{60} + \\frac{269800301}{698544000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{396808301}{698544000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{50822641}{63504000}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+10)}",
+          "\\frac1{k(k+10)}=\\frac1{10}\\left(\\frac1k-\\frac1{k+10}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "10S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+10}\\right)=\\sum_{q=0}^{9}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{9}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{9}\\frac1q\\right)^2+\\sum_{q=1}^{9}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{7129}{2520}\\right)^2+\\frac{9778141}{6350400}\\right]",
+          "S=\\frac1{10}\\left(\\frac{\\pi^2}6+\\frac{30300391}{6350400}\\right)=\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 10\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{\\pi^{2}}{60} + \\frac{269800301}{698544000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{396808301}{698544000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{50822641}{63504000}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+10)}",
+          "\\frac1{k(k+10)}=\\frac1{10}\\left(\\frac1k-\\frac1{k+10}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "10S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+10}\\right)=\\sum_{q=0}^{9}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{9}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{9}\\frac1q\\right)^2+\\sum_{q=1}^{9}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{7129}{2520}\\right)^2+\\frac{9778141}{6350400}\\right]",
+          "S=\\frac1{10}\\left(\\frac{\\pi^2}6+\\frac{30300391}{6350400}\\right)=\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}",
+          "\\frac{\\pi^{2}}{60} + \\frac{30300391}{63504000}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_dbe920c347621e958afe",
+      "publishedContentHash": "3b470758179c851ed5bb951013a635102c14b25a1b0d03e93707978352c8b591",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{\\operatorname{harmonic}{\\left(k \\right)}}{k \\left(k + 11\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{12}",
+          "\\frac{\\pi^{2}}{66} + \\frac{16103}{50400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{3452873}{6350400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+11)}",
+          "\\frac1{k(k+11)}=\\frac1{11}\\left(\\frac1k-\\frac1{k+11}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "11S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+11}\\right)=\\sum_{q=0}^{10}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{10}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{10}\\frac1q\\right)^2+\\sum_{q=1}^{10}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{7381}{2520}\\right)^2+\\frac{1968329}{1270080}\\right]",
+          "S=\\frac1{11}\\left(\\frac{\\pi^2}6+\\frac{32160403}{6350400}\\right)=\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty \\frac{H_k}{k \\left(k + 11\\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.",
+        "menu": [
+          "\\frac{1}{12}",
+          "\\frac{\\pi^{2}}{66} + \\frac{16103}{50400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{3452873}{6350400}"
+        ],
+        "answer": "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+        "assumptions": [
+          "Tonelli applies; H_k/[k(k+m)]=O(log k/k squared)."
+        ],
+        "solutionSteps": [
+          "H_k=\\sum_{j=1}^k\\frac1j,\\qquad S=\\sum_{k=1}^\\infty\\frac{H_k}{k(k+11)}",
+          "\\frac1{k(k+11)}=\\frac1{11}\\left(\\frac1k-\\frac1{k+11}\\right)",
+          "\\textnormal{Expand each harmonic number into its positive terms. Tonelli permits summing first over the outer index, and the inner difference then telescopes.}",
+          "11S=\\sum_{j=1}^\\infty\\frac1j\\sum_{k=j}^\\infty\\left(\\frac1k-\\frac1{k+11}\\right)=\\sum_{q=0}^{10}\\sum_{j=1}^\\infty\\frac1{j(j+q)}",
+          "\\sum_{j=1}^\\infty\\frac1{j^2}=\\frac{\\pi^2}{6},\\qquad\\sum_{j=1}^\\infty\\frac1{j(j+q)}=\\frac{H_q}{q}\\quad(q\\in\\mathbb Z_{>0})",
+          "\\textnormal{For the second identity, partial fractions leave the first harmonic block and a vanishing final block. The finite triangular sum counts every off-diagonal reciprocal pair once and every diagonal pair once.}",
+          "\\sum_{q=1}^{10}\\frac{H_q}{q}=\\frac12\\left[\\left(\\sum_{q=1}^{10}\\frac1q\\right)^2+\\sum_{q=1}^{10}\\frac1{q^2}\\right]=\\frac12\\left[\\left(\\frac{7381}{2520}\\right)^2+\\frac{1968329}{1270080}\\right]",
+          "S=\\frac1{11}\\left(\\frac{\\pi^2}6+\\frac{32160403}{6350400}\\right)=\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}",
+          "\\frac{\\pi^{2}}{66} + \\frac{2923673}{6350400}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_fb6efac19477e8bfcbe5",
+      "publishedContentHash": "851b4872e95317cf6a627870e5ab3b8c88d55825126e7bef4df4e5d164726c87",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{4} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{8} \\right)}}{2} + 4",
+          "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+          "\\frac{1}{4} - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + 4"
+        ],
+        "answer": "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{42^k}=2^{-k}\\cot\\frac1{42^k}-2^{-(k-1)}\\cot\\frac1{42^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{42^k}=2^{-N}\\cot\\frac1{42^N}-\\cot\\frac1{4}",
+          "u_N=\\frac1{42^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=4\\,u_N\\cot u_N\\longrightarrow4",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{42^k}=4-\\cot\\frac1{4}",
+          "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{4} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{8} \\right)}}{2} + 4",
+          "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+          "\\frac{1}{4} - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}} + 4"
+        ],
+        "answer": "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{4\\cdot2^k}=2^{-k}\\cot\\frac1{4\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{4\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{4\\cdot2^k}=2^{-N}\\cot\\frac1{4\\cdot2^N}-\\cot\\frac1{4}",
+          "u_N=\\frac1{4\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=4\\,u_N\\cot u_N\\longrightarrow4",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{4\\cdot2^k}=4-\\cot\\frac1{4}",
+          "4 - \\frac{1}{\\tan{\\left(\\frac{1}{4} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_84a3f0b901bc6d22d72b",
+      "publishedContentHash": "8759c1978a2d19752a4ba402bfaca37e3e9c98b196c54b2b9a2924b27aac953d",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{5} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+          "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}",
+          "\\frac{5}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{5} \\right)}}"
+        ],
+        "answer": "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{52^k}=2^{-k}\\cot\\frac1{52^k}-2^{-(k-1)}\\cot\\frac1{52^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{52^k}=2^{-N}\\cot\\frac1{52^N}-\\cot\\frac1{5}",
+          "u_N=\\frac1{52^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=5\\,u_N\\cot u_N\\longrightarrow5",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{52^k}=5-\\cot\\frac1{5}",
+          "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{5} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{10} \\right)}}{2} + 5",
+          "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}",
+          "\\frac{5}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{5} \\right)}}"
+        ],
+        "answer": "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{5\\cdot2^k}=2^{-k}\\cot\\frac1{5\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{5\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{5\\cdot2^k}=2^{-N}\\cot\\frac1{5\\cdot2^N}-\\cot\\frac1{5}",
+          "u_N=\\frac1{5\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=5\\,u_N\\cot u_N\\longrightarrow5",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{5\\cdot2^k}=5-\\cot\\frac1{5}",
+          "5 - \\frac{1}{\\tan{\\left(\\frac{1}{5} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_f6773739ddb0c4c4283b",
+      "publishedContentHash": "f669d351e230aa15034617be921b92a098779435d2f85f13338e12ff47cf08e7",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{6} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2} + 6",
+          "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+          "\\frac{1}{6} - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2}"
+        ],
+        "answer": "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{62^k}=2^{-k}\\cot\\frac1{62^k}-2^{-(k-1)}\\cot\\frac1{62^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{62^k}=2^{-N}\\cot\\frac1{62^N}-\\cot\\frac1{6}",
+          "u_N=\\frac1{62^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=6\\,u_N\\cot u_N\\longrightarrow6",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{62^k}=6-\\cot\\frac1{6}",
+          "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{6} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2} + 6",
+          "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+          "\\frac{1}{6} - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{12} \\right)}}{2}"
+        ],
+        "answer": "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{6\\cdot2^k}=2^{-k}\\cot\\frac1{6\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{6\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{6\\cdot2^k}=2^{-N}\\cot\\frac1{6\\cdot2^N}-\\cot\\frac1{6}",
+          "u_N=\\frac1{6\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=6\\,u_N\\cot u_N\\longrightarrow6",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{6\\cdot2^k}=6-\\cot\\frac1{6}",
+          "6 - \\frac{1}{\\tan{\\left(\\frac{1}{6} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_bfa2bb14b0f03e050627",
+      "publishedContentHash": "10dff706a96cbc0adf26fbc07686554a6d4bfd6755e61acdfd27c1503a68f4dd",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{7} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2} + 7",
+          "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + 7",
+          "\\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2}"
+        ],
+        "answer": "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{72^k}=2^{-k}\\cot\\frac1{72^k}-2^{-(k-1)}\\cot\\frac1{72^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{72^k}=2^{-N}\\cot\\frac1{72^N}-\\cot\\frac1{7}",
+          "u_N=\\frac1{72^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=7\\,u_N\\cot u_N\\longrightarrow7",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{72^k}=7-\\cot\\frac1{7}",
+          "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{7} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2} + 7",
+          "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}} + 7",
+          "\\frac{\\tan{\\left(\\frac{1}{14} \\right)}}{2}"
+        ],
+        "answer": "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{7\\cdot2^k}=2^{-k}\\cot\\frac1{7\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{7\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{7\\cdot2^k}=2^{-N}\\cot\\frac1{7\\cdot2^N}-\\cot\\frac1{7}",
+          "u_N=\\frac1{7\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=7\\,u_N\\cot u_N\\longrightarrow7",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{7\\cdot2^k}=7-\\cot\\frac1{7}",
+          "7 - \\frac{1}{\\tan{\\left(\\frac{1}{7} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_59b96a09cb74e517a91f",
+      "publishedContentHash": "be195844609e54a0e1682176665f45119bde5d429d3563fe18d939e157911c67",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{8} \\right)}",
+        "menu": [
+          "4 - \\frac{1}{2 \\tan{\\left(\\frac{1}{8} \\right)}}",
+          "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+          "\\frac{1}{8} - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}} + 8"
+        ],
+        "answer": "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{82^k}=2^{-k}\\cot\\frac1{82^k}-2^{-(k-1)}\\cot\\frac1{82^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{82^k}=2^{-N}\\cot\\frac1{82^N}-\\cot\\frac1{8}",
+          "u_N=\\frac1{82^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=8\\,u_N\\cot u_N\\longrightarrow8",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{82^k}=8-\\cot\\frac1{8}",
+          "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{8} \\right)}",
+        "menu": [
+          "4 - \\frac{1}{2 \\tan{\\left(\\frac{1}{8} \\right)}}",
+          "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+          "\\frac{1}{8} - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}} + 8"
+        ],
+        "answer": "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{8\\cdot2^k}=2^{-k}\\cot\\frac1{8\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{8\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{8\\cdot2^k}=2^{-N}\\cot\\frac1{8\\cdot2^N}-\\cot\\frac1{8}",
+          "u_N=\\frac1{8\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=8\\,u_N\\cot u_N\\longrightarrow8",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{8\\cdot2^k}=8-\\cot\\frac1{8}",
+          "8 - \\frac{1}{\\tan{\\left(\\frac{1}{8} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_3b07434ee15a968ad479",
+      "publishedContentHash": "f60256f85ea48d3f38b40ed20c37b4c9ce07ed7254a298e59b45b63902c9193c",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{9} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2} + 9",
+          "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}",
+          "\\frac{9}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{9} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2}"
+        ],
+        "answer": "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{92^k}=2^{-k}\\cot\\frac1{92^k}-2^{-(k-1)}\\cot\\frac1{92^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{92^k}=2^{-N}\\cot\\frac1{92^N}-\\cot\\frac1{9}",
+          "u_N=\\frac1{92^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=9\\,u_N\\cot u_N\\longrightarrow9",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{92^k}=9-\\cot\\frac1{9}",
+          "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{9} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2} + 9",
+          "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}",
+          "\\frac{9}{2} - \\frac{1}{2 \\tan{\\left(\\frac{1}{9} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{18} \\right)}}{2}"
+        ],
+        "answer": "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{9\\cdot2^k}=2^{-k}\\cot\\frac1{9\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{9\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{9\\cdot2^k}=2^{-N}\\cot\\frac1{9\\cdot2^N}-\\cot\\frac1{9}",
+          "u_N=\\frac1{9\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=9\\,u_N\\cot u_N\\longrightarrow9",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{9\\cdot2^k}=9-\\cot\\frac1{9}",
+          "9 - \\frac{1}{\\tan{\\left(\\frac{1}{9} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_12f8c08d90251975c780",
+      "publishedContentHash": "c9414bb27df595f0d0127c3853ad3cf774794d4bea2b79abd7eeaff8ee4f9839",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{10} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+          "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + 10"
+        ],
+        "answer": "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{102^k}=2^{-k}\\cot\\frac1{102^k}-2^{-(k-1)}\\cot\\frac1{102^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{102^k}=2^{-N}\\cot\\frac1{102^N}-\\cot\\frac1{10}",
+          "u_N=\\frac1{102^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=10\\,u_N\\cot u_N\\longrightarrow10",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{102^k}=10-\\cot\\frac1{10}",
+          "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{10} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} - \\frac{\\tan{\\left(\\frac{1}{20} \\right)}}{2} + 10",
+          "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}",
+          "\\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}} + 10"
+        ],
+        "answer": "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{10\\cdot2^k}=2^{-k}\\cot\\frac1{10\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{10\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{10\\cdot2^k}=2^{-N}\\cot\\frac1{10\\cdot2^N}-\\cot\\frac1{10}",
+          "u_N=\\frac1{10\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=10\\,u_N\\cot u_N\\longrightarrow10",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{10\\cdot2^k}=10-\\cot\\frac1{10}",
+          "10 - \\frac{1}{\\tan{\\left(\\frac{1}{10} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_2008c16f13329aac12aa",
+      "publishedContentHash": "18ecb3d832c07bc77249464326edcf3a785c645867cd7bb18384c707ef505035",
+      "comparison": {
+        "statement": true,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": false,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{11} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2} + 11",
+          "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+          "\\frac{1}{11} - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2}"
+        ],
+        "answer": "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{112^k}=2^{-k}\\cot\\frac1{112^k}-2^{-(k-1)}\\cot\\frac1{112^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{112^k}=2^{-N}\\cot\\frac1{112^N}-\\cot\\frac1{11}",
+          "u_N=\\frac1{112^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=11\\,u_N\\cot u_N\\longrightarrow11",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{112^k}=11-\\cot\\frac1{11}",
+          "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 2^{- k} \\tan{\\left(\\frac{2^{- k}}{11} \\right)}",
+        "menu": [
+          "- \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}} + \\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2} + 11",
+          "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+          "\\frac{1}{11} - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+          "\\frac{\\tan{\\left(\\frac{1}{22} \\right)}}{2}"
+        ],
+        "answer": "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}",
+        "assumptions": [
+          "Arguments lie in (0,1/8], so no poles occur, and terms are bounded by a geometric multiple."
+        ],
+        "solutionSteps": [
+          "\\tan u=\\cot u-2\\cot(2u)",
+          "2^{-k}\\tan\\frac1{11\\cdot2^k}=2^{-k}\\cot\\frac1{11\\cdot2^k}-2^{-(k-1)}\\cot\\frac1{11\\cdot2^{k-1}}",
+          "\\sum_{k=1}^N2^{-k}\\tan\\frac1{11\\cdot2^k}=2^{-N}\\cot\\frac1{11\\cdot2^N}-\\cot\\frac1{11}",
+          "u_N=\\frac1{11\\cdot2^N}\\longrightarrow0^+,\\qquad2^{-N}\\cot u_N=11\\,u_N\\cot u_N\\longrightarrow11",
+          "\\textnormal{All angles used here are positive and at most one quarter of a radian, so no trigonometric pole is crossed.}",
+          "\\sum_{k=1}^\\infty2^{-k}\\tan\\frac1{11\\cdot2^k}=11-\\cot\\frac1{11}",
+          "11 - \\frac{1}{\\tan{\\left(\\frac{1}{11} \\right)}}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_7924a7325881d4ccd942",
+      "publishedContentHash": "9b7eede076ab10bd641db16cf3736983f5ce44d54ea55b0ae9f4d55a8aa9df07",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 4^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{1}{4} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}"
+        ],
+        "answer": "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{4}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 4^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{1}{4} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}"
+        ],
+        "answer": "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{4}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}",
+          "\\frac{4 \\ln{\\left(\\frac{3}{4} \\right)}^{2}}{3} + \\frac{4 \\operatorname{Li}_{2}\\left(\\frac{1}{4}\\right)}{3}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_a4caec79afc2a401d35e",
+      "publishedContentHash": "a653b83cace872a18711d7afe98842eb5bcedea2c16d2a90a740e27d5c17e77f",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 5^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{5} + \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}"
+        ],
+        "answer": "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{5}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 5^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{5} + \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "- \\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}"
+        ],
+        "answer": "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{5}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}",
+          "\\frac{5 \\ln{\\left(\\frac{4}{5} \\right)}^{2}}{4} + \\frac{5 \\operatorname{Li}_{2}\\left(\\frac{1}{5}\\right)}{4}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_0fdd36ec13a6516b5081",
+      "publishedContentHash": "cbcda599dc3341bde2d4d6b16d9d9ea39620649a63466b65fa0c20ca2876d316",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 6^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{6} + \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{1}{6} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}"
+        ],
+        "answer": "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{6}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 6^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{6} + \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "- \\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{1}{6} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}"
+        ],
+        "answer": "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{6}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}",
+          "\\frac{6 \\ln{\\left(\\frac{5}{6} \\right)}^{2}}{5} + \\frac{6 \\operatorname{Li}_{2}\\left(\\frac{1}{6}\\right)}{5}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_7de1fab07d7706f1a551",
+      "publishedContentHash": "88f386a0af154060d9c5ca0743133e1a4cf3257fec15e6bcabb62b420f73564c",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 7^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{7} + \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{1}{7}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}"
+        ],
+        "answer": "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{7}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 7^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{1}{7} + \\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{1}{7}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}"
+        ],
+        "answer": "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{7}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}",
+          "\\frac{7 \\ln{\\left(\\frac{6}{7} \\right)}^{2}}{6} + \\frac{7 \\operatorname{Li}_{2}\\left(\\frac{1}{7}\\right)}{6}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_c4559552176acdfb57d6",
+      "publishedContentHash": "31ede74cd7fcd6ae14f679449ef9ce4d9ecdf946f880b73d70408a13cf78973c",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 8^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "\\frac{1}{8}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{1}{8} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}"
+        ],
+        "answer": "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{8}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 8^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "\\frac{1}{8}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{1}{8} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}"
+        ],
+        "answer": "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{8}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}",
+          "\\frac{8 \\ln{\\left(\\frac{7}{8} \\right)}^{2}}{7} + \\frac{8 \\operatorname{Li}_{2}\\left(\\frac{1}{8}\\right)}{7}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_b6120328eba27ea84ef4",
+      "publishedContentHash": "ab9670f4f17c9c7631222dd6cecd9dcecc66cb450089902d1469279b3c0c19c0",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 9^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}"
+        ],
+        "answer": "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{9}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 9^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}"
+        ],
+        "answer": "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{9}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}",
+          "\\frac{9 \\ln{\\left(\\frac{8}{9} \\right)}^{2}}{8} + \\frac{9 \\operatorname{Li}_{2}\\left(\\frac{1}{9}\\right)}{8}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_2721a1096ee04deef393",
+      "publishedContentHash": "d5911719ef3996572dfaa5c92fa313e463c3dfd78ae1a55947b32305fb7d396b",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 10^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{1}{10} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}"
+        ],
+        "answer": "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{10}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 10^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{1}{10} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}"
+        ],
+        "answer": "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{10}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}",
+          "\\frac{10 \\ln{\\left(\\frac{9}{10} \\right)}^{2}}{9} + \\frac{10 \\operatorname{Li}_{2}\\left(\\frac{1}{10}\\right)}{9}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_3378e38f803f5b0e1e31",
+      "publishedContentHash": "5ecc6e23add9c35871d6f7a930f3b597f1e5e337db186d3193708f75f0d2eee6",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=1}^\\infty 11^{- k} \\operatorname{harmonic}^{2}{\\left(k \\right)}\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "- \\frac{1}{11} + \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{1}{11}"
+        ],
+        "answer": "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{11}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=1}^\\infty 11^{- k} H_k^2\\quad H_n=\\sum_{j=1}^n\\frac1j,\\quad H_n^{(2)}=\\sum_{j=1}^n\\frac1{j^2}.\\quad \\operatorname{Li}_2(r)=\\sum_{j=1}^\\infty r^j/j^2\\quad(|r|<1).",
+        "menu": [
+          "- \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "- \\frac{1}{11} + \\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{1}{11}"
+        ],
+        "answer": "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+        "assumptions": [
+          "All series converge absolutely for r=1/m<1, so the differences and integrations are justified."
+        ],
+        "solutionSteps": [
+          "H_0=0,\\qquad H_k=\\sum_{j=1}^k\\frac1j,\\qquad G(r)=\\sum_{k=1}^\\infty H_k^2r^k\\quad(0<r<1)",
+          "H_k^2-H_{k-1}^2=\\frac{2H_{k-1}}k+\\frac1{k^2}",
+          "(1-r)G(r)=2\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k+\\operatorname{Li}_2(r),\\qquad\\operatorname{Li}_2(r)=\\sum_{k=1}^\\infty\\frac{r^k}{k^2}",
+          "J(r)=\\sum_{k=1}^\\infty\\frac{H_{k-1}}k r^k,\\qquad J\\prime(r)=\\sum_{j=0}^\\infty H_jr^j=-\\frac{\\ln(1-r)}{1-r}",
+          "\\textnormal{The harmonic generating function follows by expanding each harmonic number and summing the resulting geometric tails. All series converge absolutely inside the unit disk.}",
+          "J(0)=0,\\qquad J(r)=\\int_0^r-\\frac{\\ln(1-t)}{1-t}\\,\\mathrm dt=\\frac12\\ln^2(1-r)",
+          "G(r)=\\frac{\\operatorname{Li}_2(r)+\\ln^2(1-r)}{1-r},\\qquad r=\\frac{1}{11}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}",
+          "\\frac{11 \\ln{\\left(\\frac{10}{11} \\right)}^{2}}{10} + \\frac{11 \\operatorname{Li}_{2}\\left(\\frac{1}{11}\\right)}{10}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_ae8d0227c46417acb473",
+      "publishedContentHash": "1cd8714788b11ad1284f17c7cb302df9586d8140db0250caed3cfa97621c771f",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=5}^\\infty\\frac{e^{4k}(1-4/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "4",
+          "8"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{4k}\\left(1-\\frac{4}k\\right)^{k^2}>0\\qquad(k>4)",
+          "\\ln b_k=4k+k^2\\ln\\left(1-\\frac{4}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{4}k",
+          "\\ln b_k=4k-4k-\\frac{16}2+O(k^{-1})\\longrightarrow-8",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-8}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=5}^\\infty\\frac{e^{4k}(1-4/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "4",
+          "8"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{4k}\\left(1-\\frac{4}k\\right)^{k^2}>0\\qquad(k>4)",
+          "\\ln b_k=4k+k^2\\ln\\left(1-\\frac{4}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{4}k",
+          "\\ln b_k=4k-4k-\\frac{16}2+O(k^{-1})\\longrightarrow-8",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-8}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_109edc76c5ab0a2d24c3",
+      "publishedContentHash": "ec71f6d86b94d51305e2f8f39f8a355d845ffb67bc8f36adad4e41195875f9c2",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=6}^\\infty\\frac{e^{5k}(1-5/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{25}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{5k}\\left(1-\\frac{5}k\\right)^{k^2}>0\\qquad(k>5)",
+          "\\ln b_k=5k+k^2\\ln\\left(1-\\frac{5}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{5}k",
+          "\\ln b_k=5k-5k-\\frac{25}2+O(k^{-1})\\longrightarrow-\\frac{25}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{25}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=6}^\\infty\\frac{e^{5k}(1-5/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{25}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{5k}\\left(1-\\frac{5}k\\right)^{k^2}>0\\qquad(k>5)",
+          "\\ln b_k=5k+k^2\\ln\\left(1-\\frac{5}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{5}k",
+          "\\ln b_k=5k-5k-\\frac{25}2+O(k^{-1})\\longrightarrow-\\frac{25}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{25}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_64ddf23b2376fafbe51f",
+      "publishedContentHash": "b1fc97e625d1642481a9d1d1f71f41335c5ec16b24e90b0c2e32861921d47cdf",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=7}^\\infty\\frac{e^{6k}(1-6/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "18",
+          "6"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{6k}\\left(1-\\frac{6}k\\right)^{k^2}>0\\qquad(k>6)",
+          "\\ln b_k=6k+k^2\\ln\\left(1-\\frac{6}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{6}k",
+          "\\ln b_k=6k-6k-\\frac{36}2+O(k^{-1})\\longrightarrow-18",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-18}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=7}^\\infty\\frac{e^{6k}(1-6/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "18",
+          "6"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{6k}\\left(1-\\frac{6}k\\right)^{k^2}>0\\qquad(k>6)",
+          "\\ln b_k=6k+k^2\\ln\\left(1-\\frac{6}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{6}k",
+          "\\ln b_k=6k-6k-\\frac{36}2+O(k^{-1})\\longrightarrow-18",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-18}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_bcff494c058887728440",
+      "publishedContentHash": "71259e33be902570280cd59dcaae9b70909f37c6a0c819f40b3a93fb68dc0631",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=8}^\\infty\\frac{e^{7k}(1-7/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{49}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{7k}\\left(1-\\frac{7}k\\right)^{k^2}>0\\qquad(k>7)",
+          "\\ln b_k=7k+k^2\\ln\\left(1-\\frac{7}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{7}k",
+          "\\ln b_k=7k-7k-\\frac{49}2+O(k^{-1})\\longrightarrow-\\frac{49}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{49}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=8}^\\infty\\frac{e^{7k}(1-7/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{49}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{7k}\\left(1-\\frac{7}k\\right)^{k^2}>0\\qquad(k>7)",
+          "\\ln b_k=7k+k^2\\ln\\left(1-\\frac{7}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{7}k",
+          "\\ln b_k=7k-7k-\\frac{49}2+O(k^{-1})\\longrightarrow-\\frac{49}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{49}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_ade41f4045e368854c21",
+      "publishedContentHash": "2c1f829ce48f5c16c2ecbfb468029a6a9569acf810843806c236d5bdb3526732",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=9}^\\infty\\frac{e^{8k}(1-8/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "32",
+          "8"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{8k}\\left(1-\\frac{8}k\\right)^{k^2}>0\\qquad(k>8)",
+          "\\ln b_k=8k+k^2\\ln\\left(1-\\frac{8}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{8}k",
+          "\\ln b_k=8k-8k-\\frac{64}2+O(k^{-1})\\longrightarrow-32",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-32}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=9}^\\infty\\frac{e^{8k}(1-8/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "32",
+          "8"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{8k}\\left(1-\\frac{8}k\\right)^{k^2}>0\\qquad(k>8)",
+          "\\ln b_k=8k+k^2\\ln\\left(1-\\frac{8}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{8}k",
+          "\\ln b_k=8k-8k-\\frac{64}2+O(k^{-1})\\longrightarrow-32",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-32}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_43de7e8ecec2a773a07b",
+      "publishedContentHash": "e53335d3cfa7c6e3f19265c18e48f591a1dce6e2ee7f4ea682fc493d404b01ba",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=10}^\\infty\\frac{e^{9k}(1-9/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{81}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{9k}\\left(1-\\frac{9}k\\right)^{k^2}>0\\qquad(k>9)",
+          "\\ln b_k=9k+k^2\\ln\\left(1-\\frac{9}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{9}k",
+          "\\ln b_k=9k-9k-\\frac{81}2+O(k^{-1})\\longrightarrow-\\frac{81}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{81}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=10}^\\infty\\frac{e^{9k}(1-9/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{81}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{9k}\\left(1-\\frac{9}k\\right)^{k^2}>0\\qquad(k>9)",
+          "\\ln b_k=9k+k^2\\ln\\left(1-\\frac{9}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{9}k",
+          "\\ln b_k=9k-9k-\\frac{81}2+O(k^{-1})\\longrightarrow-\\frac{81}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{81}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_3f7a23bfd761dbfdd932",
+      "publishedContentHash": "c15e080d0798c7f04ec3ab9aee97aaf49b772a5de1f41f830adb014f12daedc0",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=11}^\\infty\\frac{e^{10k}(1-10/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "10",
+          "50"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{10k}\\left(1-\\frac{10}k\\right)^{k^2}>0\\qquad(k>10)",
+          "\\ln b_k=10k+k^2\\ln\\left(1-\\frac{10}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{10}k",
+          "\\ln b_k=10k-10k-\\frac{100}2+O(k^{-1})\\longrightarrow-50",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-50}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=11}^\\infty\\frac{e^{10k}(1-10/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "10",
+          "50"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{10k}\\left(1-\\frac{10}k\\right)^{k^2}>0\\qquad(k>10)",
+          "\\ln b_k=10k+k^2\\ln\\left(1-\\frac{10}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{10}k",
+          "\\ln b_k=10k-10k-\\frac{100}2+O(k^{-1})\\longrightarrow-50",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-50}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_965d1384bbcd4cd120c1",
+      "publishedContentHash": "60d28c985acf85518fc5dd522ba1c2e992dbd9c5c45f220793bffc3553f423bc",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\sum_{k=12}^\\infty\\frac{e^{11k}(1-11/k)^{k^2}}{k^p}\\begin{gathered}\\textnormal{ converges exactly for p>c.}\\\\\\textnormal{Find c.}\\end{gathered}",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{121}{2}",
+          "\\frac{1}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{11k}\\left(1-\\frac{11}k\\right)^{k^2}>0\\qquad(k>11)",
+          "\\ln b_k=11k+k^2\\ln\\left(1-\\frac{11}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{11}k",
+          "\\ln b_k=11k-11k-\\frac{121}2+O(k^{-1})\\longrightarrow-\\frac{121}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{121}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\sum_{k=12}^\\infty\\frac{e^{11k}(1-11/k)^{k^2}}{k^p}\\textnormal{ converges exactly for }p>c.\\textnormal{ Find }c.",
+        "menu": [
+          "0",
+          "1",
+          "\\frac{121}{2}",
+          "\\frac{1}{2}"
+        ],
+        "answer": "1",
+        "assumptions": [
+          "For k>m the base is positive.",
+          "For k>=2m, the log Taylor third derivative is uniformly bounded on [0,m/k], so k squared times the remainder is O(1/k)."
+        ],
+        "solutionSteps": [
+          "b_k=e^{11k}\\left(1-\\frac{11}k\\right)^{k^2}>0\\qquad(k>11)",
+          "\\ln b_k=11k+k^2\\ln\\left(1-\\frac{11}k\\right)",
+          "\\ln(1-u)=-u-\\frac{u^2}{2}+O(u^3)\\quad(u\\to0),\\qquad u=\\frac{11}k",
+          "\\ln b_k=11k-11k-\\frac{121}2+O(k^{-1})\\longrightarrow-\\frac{121}{2}",
+          "\\frac{b_k/k^p}{1/k^p}=b_k\\longrightarrow e^{-\\frac{121}{2}}\\in(0,\\infty)",
+          "\\textnormal{Limit comparison gives exactly the convergence range of the positive power series in the denominator.}",
+          "\\sum k^{-p}\\textnormal{ converges exactly when }p>1,\\qquad c=1",
+          "1"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_5b5375f8ba911c78b1d2",
+      "publishedContentHash": "abc920bcf8dfe2a4d8be480a498f81fb3900f4aa7ab37d524584c9dcb802e225",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\0\\le a_n\\le\\frac1{n^{\\frac{1}{2}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{1}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows both of the following sequences.}",
+          "a_n=0\\quad\\textnormal{gives convergence},\\qquad a_n=b_n\\quad\\textnormal{gives divergence}",
+          "\\textnormal{The bound alone therefore does not determine convergence.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }0\\le a_n\\le\\frac1{n^{\\frac{1}{2}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{1}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows both of the following sequences.}",
+          "a_n=0\\quad\\textnormal{gives convergence},\\qquad a_n=b_n\\quad\\textnormal{gives divergence}",
+          "\\textnormal{The bound alone therefore does not determine convergence.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_c6b463ecc96c29af02b9",
+      "publishedContentHash": "a807a1251cdcabb684124efbde471dd5c276efe88a5f3cc0d938cc248ab3ec75",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\a_n\\ge\\frac1{n^{\\frac{5}{16}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Divergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{5}{16}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The original terms are bounded below by this divergent positive benchmark. Their partial sums are therefore unbounded, so divergence is forced.}",
+          "\\textnormal{Divergence is forced.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }a_n\\ge\\frac1{n^{\\frac{5}{16}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Divergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{5}{16}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The original terms are bounded below by this divergent positive benchmark. Their partial sums are therefore unbounded, so divergence is forced.}",
+          "\\textnormal{Divergence is forced.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_70aac53b62778b5e1255",
+      "publishedContentHash": "698f4d55a472b2c74f0044e383cba0c44e05ca2d06049bb6756df6c8b3702493",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\0\\le a_n\\le\\frac1{n^{\\frac{3}{2}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Convergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{3}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{All terms are nonnegative and bounded above by this convergent benchmark. Their partial sums are increasing and bounded, so convergence is forced.}",
+          "\\textnormal{Convergence is forced.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }0\\le a_n\\le\\frac1{n^{\\frac{3}{2}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Convergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{3}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{All terms are nonnegative and bounded above by this convergent benchmark. Their partial sums are increasing and bounded, so convergence is forced.}",
+          "\\textnormal{Convergence is forced.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_7726de4037b715de8866",
+      "publishedContentHash": "2a22399cda3bce82c7b27d2e33eab1467118c7b9e415b3880e66da48950a821c",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\a_n\\ge\\frac1{n^{\\frac{7}{4}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{7}{4}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows the convergent benchmark and also the divergent constant sequence.}",
+          "a_n=b_n\\quad\\textnormal{or}\\quad a_n=1,\\qquad b_n\\le1\\quad(n\\ge1)",
+          "\\textnormal{Thus either behavior is possible under the same bound.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }a_n\\ge\\frac1{n^{\\frac{7}{4}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{7}{4}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows the convergent benchmark and also the divergent constant sequence.}",
+          "a_n=b_n\\quad\\textnormal{or}\\quad a_n=1,\\qquad b_n\\le1\\quad(n\\ge1)",
+          "\\textnormal{Thus either behavior is possible under the same bound.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_9f25813c0174582d02d2",
+      "publishedContentHash": "1de3b95729422da4e7aa79f60761092f4a5210821dc879ce39aee376c2738942",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\0\\le a_n\\le\\frac1{n^{1}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-1},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows both of the following sequences.}",
+          "a_n=0\\quad\\textnormal{gives convergence},\\qquad a_n=b_n\\quad\\textnormal{gives divergence}",
+          "\\textnormal{The bound alone therefore does not determine convergence.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }0\\le a_n\\le\\frac1{n^{1}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-1},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows both of the following sequences.}",
+          "a_n=0\\quad\\textnormal{gives convergence},\\qquad a_n=b_n\\quad\\textnormal{gives divergence}",
+          "\\textnormal{The bound alone therefore does not determine convergence.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_e9c76ceeb602b147c8af",
+      "publishedContentHash": "90e89a9f63eba108a692a7114fab87049785cd57ca83ed82a421dbe588ced1a1",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\a_n\\ge\\frac1{n^{\\frac{9}{16}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Divergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{9}{16}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The original terms are bounded below by this divergent positive benchmark. Their partial sums are therefore unbounded, so divergence is forced.}",
+          "\\textnormal{Divergence is forced.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }a_n\\ge\\frac1{n^{\\frac{9}{16}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Divergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{9}{16}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ diverges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The original terms are bounded below by this divergent positive benchmark. Their partial sums are therefore unbounded, so divergence is forced.}",
+          "\\textnormal{Divergence is forced.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_279f0051bf244f4302ca",
+      "publishedContentHash": "722868a899d3c6031bcd146e81c090208137610150d21e8e96812d47693f85c2",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\0\\le a_n\\le\\frac1{n^{\\frac{5}{2}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Convergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{5}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{All terms are nonnegative and bounded above by this convergent benchmark. Their partial sums are increasing and bounded, so convergence is forced.}",
+          "\\textnormal{Convergence is forced.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }0\\le a_n\\le\\frac1{n^{\\frac{5}{2}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Convergence is forced.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{5}{2}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{All terms are nonnegative and bounded above by this convergent benchmark. Their partial sums are increasing and bounded, so convergence is forced.}",
+          "\\textnormal{Convergence is forced.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    },
+    {
+      "problemId": "cn_06076924a8b1c4aec1ac",
+      "publishedContentHash": "504b7812703f4e24306581abc5991c60adc65d2a58e58601bd4d294cc585c182",
+      "comparison": {
+        "statement": false,
+        "unorderedMenu": true,
+        "markedAnswer": true,
+        "solutionSteps": true,
+        "assumptions": true,
+        "orderedMenu": true
+      },
+      "pinnedTask": {
+        "statement": "\\begin{gathered}\\textnormal{A real sequence satisfies}\\\\a_n\\ge\\frac1{n^{\\frac{11}{4}}}\\\\\\textnormal{ for every integer n>=1. What}\\\\\\textnormal{follows about}\\\\\\sum_{n=1}^\\infty a_n\\\\\\textnormal{ from this bound alone?}\\end{gathered}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{11}{4}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows the convergent benchmark and also the divergent constant sequence.}",
+          "a_n=b_n\\quad\\textnormal{or}\\quad a_n=1,\\qquad b_n\\le1\\quad(n\\ge1)",
+          "\\textnormal{Thus either behavior is possible under the same bound.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "currentTask": {
+        "statement": "\\textnormal{A real sequence satisfies }a_n\\ge\\frac1{n^{\\frac{11}{4}}}\\textnormal{ for every integer }n\\ge1.\\textnormal{ What follows about }\\sum_{n=1}^\\infty a_n\\textnormal{ from this bound alone?}",
+        "menu": [
+          "\\textnormal{Convergence is forced.}",
+          "\\textnormal{Divergence is forced.}",
+          "\\textnormal{Either behavior is possible.}",
+          "\\textnormal{No such sequence exists.}"
+        ],
+        "answer": "\\textnormal{Either behavior is possible.}",
+        "assumptions": [
+          "All terms are nonnegative by the displayed bound; no other hypothesis is supplied."
+        ],
+        "solutionSteps": [
+          "b_n=n^{-\\frac{11}{4}},\\qquad\\sum_{n=1}^\\infty b_n\\textnormal{ converges}",
+          "\\textnormal{This benchmark classification follows from the positive p-series exponent threshold.}",
+          "\\textnormal{The bound allows the convergent benchmark and also the divergent constant sequence.}",
+          "a_n=b_n\\quad\\textnormal{or}\\quad a_n=1,\\qquad b_n\\le1\\quad(n\\ge1)",
+          "\\textnormal{Thus either behavior is possible under the same bound.}",
+          "\\textnormal{Either behavior is possible.}"
+        ]
+      },
+      "disposition": "Recorded difference only; no general semantic equivalence or repaired statement inherited."
+    }
+  ]
+}

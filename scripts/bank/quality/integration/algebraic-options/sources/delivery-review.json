@@ -1,0 +1,352 @@
+{
+  "status": "author-finite-source-binding-complete-independent-peer-and-final-id-audit-pending",
+  "counts": {
+    "records": 58,
+    "primary55": 55,
+    "parserAddendum3": 3,
+    "baselineRevisions": 48,
+    "privateReplacements": 10,
+    "inheritedPriorSemanticChanges": 2,
+    "newIndependentIdeas": 0,
+    "authorExactIntermediateChecks": 130,
+    "literalPairsDistinct": 348,
+    "strictRenderExpressions": 664,
+    "renderErrors": 0
+  },
+  "sourceArtifacts": {
+    "candidates.jsonl": "60fd61fb19edb365928d608a93c8258f007fbb5bf3d5d69974fca0db124ba285",
+    "addendum-candidates.jsonl": "210738d2af53bf253d77ac972ee73f31c9c0eb202c1cd76e4bb53d21c5e833da",
+    "combined-candidates.jsonl": "f6fe8902b1bae0e920184e563cc02398b76e445f9dbcb59df552b9cb61f67ced",
+    "source-joins.json": "6995d0cdb426d8955782265add212e4fa93edbbf106983472310b714846ac667",
+    "verification.json": "30f17d20348f42c63d32fc6984bdfeb488054ecc190f4d0b61202c001b9d9c04",
+    "reconstruction-report.json": "3f4dccd01b4ac4a583a9cd92ea61a8f46774499087f38708323f3bdb58a1d513",
+    "final-v2-render.json": "424fc74e4e051cec2389a93da64ee9035969858a0e7308e56da4e2af73c656b5",
+    "unsupported-scope-review.json": "09d3f7472b00eb7dc36d0e55fd64e824dfc8d8eb7e9ab2d81cd25675567ec32a",
+    "fullpool-provisional-input-v2.jsonl": "1df49539745a2e6e1747f1a3588de4caabe1afe555f55c82d55bcbd9f8432846",
+    "fullpool-provisional-screen-v2.json": "8643796e6eaa2a6f26e7936bf4f03c610c3a58f4301d581088a1959392dda5de"
+  },
+  "familyOptionDispositions": [
+    {
+      "familyId": "io3-bernoulli-product",
+      "items": 8,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "numeric-rank-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "io3-jensen-radius",
+      "items": 8,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.5,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 4,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 4,
+          "uniqueCorrect": 1
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-easy-exponential-rate",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "opposite-pair-negative",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.65,
+          "uniquePredictions": 3,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 4,
+          "expectedTieBrokenAccuracy": 0.25,
+          "uniquePredictions": 1,
+          "uniqueCorrect": 1
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-easy-log-recognition",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "fraction-max",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.45,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.35,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-easy-odd-even",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.4,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-easy-signed-area",
+      "items": 10,
+      "flags": [
+        {
+          "rule": "shuffled-position-4",
+          "accuracy": 0.8,
+          "unique": 5,
+          "uniqueCorrect": 4
+        }
+      ],
+      "trainingSelected": {
+        "rule": "shuffled-position-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.8,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 4
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "Only a randomized audit-position outcome is flagged; production shuffles separately, so there is no stable mathematical form cue to repair."
+    },
+    {
+      "familyId": "m3-integration-hard-half-angle-quadratic",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-3",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-hard-mixed-log-endpoints",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "length-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.7,
+          "uniquePredictions": 2,
+          "uniqueCorrect": 2
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.3,
+          "uniquePredictions": 2,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-hard-reciprocal-quartic",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-2",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-medium-exponential-trig",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-4",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.2,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 1
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-medium-partial-fractions",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "negative-min",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.41666666666666663,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.41666666666666663,
+          "uniquePredictions": 0,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    },
+    {
+      "familyId": "m3-integration-medium-parts-log",
+      "items": 10,
+      "flags": [],
+      "trainingSelected": {
+        "rule": "shuffled-position-1",
+        "learnedOnlyFromTraining": false,
+        "training": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0.6,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 3
+        },
+        "heldout": {
+          "items": 5,
+          "applicable": 5,
+          "expectedTieBrokenAccuracy": 0,
+          "uniquePredictions": 5,
+          "uniqueCorrect": 0
+        }
+      },
+      "disposition": "No reported family flags in this provisional766-pool screen. This is a finite diagnostic, not proof of absence of all possible shortcuts."
+    }
+  ],
+  "answerFormScope": {
+    "forms": [
+      "exact-expression",
+      "exact-real",
+      "convergence-and-value",
+      "ordered-real-pair"
+    ],
+    "flaggedForms": 0,
+    "limitation": "All current766 effective source-ID items were included. Newly minted final private IDs can alter deterministic diagnostic splits/shuffles, so parent must rerun the actual final-ID screen before admission."
+  },
+  "completePairScope": {
+    "initialParsedScalars": 609,
+    "expandedParsedScalars": 57,
+    "finalScalarMenus": 666,
+    "menusWithTwoOppositePairsAfterOverlays": 210,
+    "menusWithNoOppositePair": 456,
+    "remainingSingletonPairs": 0,
+    "nonScalarNotApplicable": 100,
+    "method": "Source-bound union: original diagnostic had402zero+152double+55single; expanded grammar found54zero+3single; all58single menus now have2exact pairs. No unchanged menu is inferred from a new constructor."
+  },
+  "standingRules": [
+    "Audit exact algebraic relationships among choices, not only literal sign strings; logarithm reciprocal identities, expanded polynomials, and trigonometric constants can hide opposite pairs.",
+    "A leading minus before the first summand is not negation of a complete composite value. Use explicit whole-expression grouping and verify both literal rendering and exact mathematical interpretation.",
+    "Unsupported tuple, categorical and interval answers require explicit scope dispositions and their earlier proof/choice certificates; never count a parser failure as either a pass or a mathematical defect.",
+    "When layering an option-only change over an unpublished semantic revision, keep the baseline previous identity and inherit the already reviewed meaning-change declaration rather than silently reset it."
+  ],
+  "scope": "This bundle is an author correction asset. Its exact checks and source guards do not claim independent peer approval, human certification, formal proof, empirical difficulty calibration, or release admission. Earlier peer evidence is preserved separately, and parent will independently check all58 literal answers and new choices."
+}

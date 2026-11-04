@@ -1,0 +1,1740 @@
+{
+  "reviewer": "root-independent-review",
+  "author": "source_research",
+  "inputSha256": "3d5fc04112b449d729a85594e68db4a2b2283d8657bd624510c7258b44856e9c",
+  "verifierSha256": "a64389a0191e36be514f6fc7ecf1d0e8cb21c2f789eb839672a70d8d0dd68a1e",
+  "parserSha256": "01fa4134b233dd55fbce8587c616b8f62f9ff7700516341b6dfe468c79468437",
+  "instances": 108,
+  "passed": 108,
+  "results": [
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 0,
+      "rawSha256": "9ec0c936447ebd5a339e15ebb9de17f998e972056fb65c048771e3c6b92c9c14",
+      "contentHash": "b140ee5c85fecd1c9a504c8604d0ad846ebfc687967d0026ca32aeae9f5246b4",
+      "independentAnswer": "pi/2",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:3;rational-moment:2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 1,
+      "rawSha256": "aacb3b0167e09e65a7dae223cf405232ce7137f31586c0d6337b6cfc8cdba359",
+      "contentHash": "26a79e74da945a724b5e30a7b2a4ef5aef30f8454b0d569d9e8cfe59fe6712df",
+      "independentAnswer": "3*pi/8",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:4;rational-moment:3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 2,
+      "rawSha256": "2c8e261aa863963979ec7678234d79c07975a7cb621b2651e1267ea832b3dad4",
+      "contentHash": "43e1d3cb7cc92e80e44042b0829c1746ff38a14dad598e26b808583564f8ce35",
+      "independentAnswer": "5*pi/16",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:4;rational-moment:4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 3,
+      "rawSha256": "8cf9078385892bdc66b98cfb67da145a5da1bee59d3e9ffedfec519da7c488ea",
+      "contentHash": "5ac116b9c3a529ad08ad2badd8b3ec8d7e492663a270e5a90a3a9156c496f0d3",
+      "independentAnswer": "35*pi/128",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:4;rational-moment:5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 4,
+      "rawSha256": "f458c2ca480122632991b1a0b463fcade4c83a8bdf32dde35ed7c2aaf96856e6",
+      "contentHash": "84dfbff5f9e04275a170f19e5bc582e21fc743687a7e2de71628b18375e8df03",
+      "independentAnswer": "63*pi/256",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:4;rational-moment:6",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 5,
+      "rawSha256": "cf41052509bfb47429ddb9402188bccf3bfb4b3beb15add298853d93b3247042",
+      "contentHash": "a28e64d4d3e3979581ea1842cbe79e6223ad3727a9c69d101df8706466351e58",
+      "independentAnswer": "pi/2",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:5;rational-moment:2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 6,
+      "rawSha256": "bc3c61463676dbcd673b1b66b8eac6db9cb074b07f1cc1e603ccb2e61608b0b9",
+      "contentHash": "6a1d69d0aaaf53f0ce55f7377150903100b588becebaab5edca18d275477a6e5",
+      "independentAnswer": "3*pi/8",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:5;rational-moment:3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 7,
+      "rawSha256": "78642f7c78b006b2f2cddae4250ec1253db48a6401969fad78b72778bf589747",
+      "contentHash": "1cf2878756546aedf13c71654bde136b58a7dec1de7bae5b863d427192b91ab4",
+      "independentAnswer": "5*pi/16",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:5;rational-moment:4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 8,
+      "rawSha256": "def3dfb7cf5388fbfa581c4585975fce897d1caa76f7f61c1637e727a25dc6f8",
+      "contentHash": "50fd4f7c3d654d22e57362acdd2027948e368586f5532a0482a898c7cb5c3b2b",
+      "independentAnswer": "35*pi/128",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:5;rational-moment:5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-rational-inverse-branch-trace",
+      "index": 9,
+      "rawSha256": "37c97f836ae3fb4183efd9d037a83227736877ab29f9cf81bfd7c224d41d46ee",
+      "contentHash": "3474976bb0fc4335d69d31b4b5b95e3fd259dcafbed3ecb5aa67a4e8e1e18e71",
+      "independentAnswer": "63*pi/256",
+      "checks": [
+        "Exact cleared-polynomial trace derivative and nonzero pole values; independent integration-by-parts recurrence for the remaining moment. Positive residues give onto monotonic branches; nonnegative substitutions justify the improper limit."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Every pole interval maps monotonically onto the line. Clear denominators and differentiate the Vieta root sum; the positive inverse Jacobians sum to one. Integrate the transformed cosine-power moment.",
+      "normalizedLineageKey": "inverse-branch-count:5;rational-moment:6",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 0,
+      "rawSha256": "b2eb767764169b7fe83670f56d45f1215fae0692f23ad7ad81c6c44220271379",
+      "contentHash": "53bdd963594bb58c5b1b3b1352b6c725a2b1f65c6a9ec0f82ee2f748da473b89",
+      "independentAnswer": "(1/16, -1)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 1,
+      "rawSha256": "9e1b144ebe29131b9ea136650f8e4fdf4d7002fa6d7e9f75783c93e754ab07d7",
+      "contentHash": "07f3aff87940507aa560df43a3283464954c3b275427b1643db340ca014656b4",
+      "independentAnswer": "(1/32, -5/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:6",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 2,
+      "rawSha256": "1334697e3a383eb35f860183cbdd504affe382f4fff78b0d58c36109608c6a9f",
+      "contentHash": "4c893b67715954e3fb84bdee178b70736c2069e65bcdaaf88857a5cc5aa6a36e",
+      "independentAnswer": "(1/64, -3/2)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:7",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 3,
+      "rawSha256": "9b31f83801030cf14ffae185f82451e3452cbda15041cc461fae01cc1d1dd1b8",
+      "contentHash": "240c94cfade3eda16cf9ec913a5a51e2349d1342be8bcfc09fd3eed55f37593f",
+      "independentAnswer": "(1/128, -7/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:8",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 4,
+      "rawSha256": "f34c97f94fb35006ba0229f051406fc5805470c3e52f5929d09f93dcfa22ad38",
+      "contentHash": "a0105bfc1eff5032200adc7ea9b9e9d454fa7d3fb9e402bb24b9382b15409aa5",
+      "independentAnswer": "(1/256, -2)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:9",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 5,
+      "rawSha256": "40d4dfa81d570fd21a860c12e31441c020c30a8334b0031e2ba62921da1e94ff",
+      "contentHash": "e21da673d8691b2a8f548b57404584dd281b37d12cf2c46e44d5e287f1bd6f9e",
+      "independentAnswer": "(1/512, -9/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:10",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 6,
+      "rawSha256": "98259efd4e8388bfa07f5a53c4b9d737e09a432e3021eba2218c260e8cb094db",
+      "contentHash": "b4b6b083d3cd93756e946921f3e43d102f276e745ed0b427cd013257202a9f18",
+      "independentAnswer": "(1/1024, -5/2)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:11",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 7,
+      "rawSha256": "a13d7d8e7eb1733dc2d6f880b48ee6774209c74db04ead1ba61c5c515ae22325",
+      "contentHash": "a60f02a250882cb12b270b08f0d7740639b2650645872134f3b67b104840eb72",
+      "independentAnswer": "(1/2048, -11/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:12",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 8,
+      "rawSha256": "c4adec9e6480169ea42d18df6897f23d47d68ebfc8880858ba2d207276252c41",
+      "contentHash": "f4100006d5737774839959014427fbd770f2bc1632b9ac1f36b7aa9054383a55",
+      "independentAnswer": "(1/4096, -3)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:13",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 9,
+      "rawSha256": "726f62c6c9df73f9b3372ee899a6ecd2ee35add2d5679cc9cd83a89647de660d",
+      "contentHash": "25ccd24b0d19d085d8c5d2b2a6f4c7b8c26fd06f4b3a0301f0ffcd1908819ab9",
+      "independentAnswer": "(1/8192, -13/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:14",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 10,
+      "rawSha256": "7329d2e2222e36cb78448929693db40608af66e7ba055b9c7055c49329dcbf0b",
+      "contentHash": "5032c8a0c8c02c9cc55d5e66702a0be93363c03f128bdd9794ec33707dd11794",
+      "independentAnswer": "(1/16384, -7/2)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:15",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-monic-L1-polynomial-extremum",
+      "index": 11,
+      "rawSha256": "49f99fa7beabc15cf63ec125daeb2a809ae833f48423a79625a0dd82d55a4b45",
+      "contentHash": "99234793f59be2ddf0884fb5aeb6d4be099cc359131e7910989a1567c0d1c1ee",
+      "independentAnswer": "(1/32768, -15/4)",
+      "checks": [
+        "Independent monic recurrence verifies the polynomial coefficient. All n sign moments vanish exactly after reduction modulo the primitive2(n+1)-root cyclotomic polynomial. The absolute sine-lobe integral is2, giving the norm."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "The sign of the monic Chebyshev-U polynomial annihilates every smaller-degree monomial. This dual sign gives the L1 bound; equality forces all n sign-changing roots and hence the unique monic polynomial.",
+      "normalizedLineageKey": "monic-L1-degree:16",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 0,
+      "rawSha256": "c0aa7571141b041f24d7ab85cba10705103c206981d116fa0b4ef34d5204914a",
+      "contentHash": "1671ecf1297f12aa2fbc58a0e1c8a39baf47a95bbe01f4c4e0fe990daa5fb2c8",
+      "independentAnswer": "2*sqrt(2) + sqrt(10) + 4*sqrt(5)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"1\",\"1\",\"1\",\"8/5\",\"2\",\"16/5\",\"17/5\",\"17/5\",\"17/5\",\"18/5\",\"18/5\",\"5\",\"26/5\",\"29/5\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 1,
+      "rawSha256": "b33bba18f38aff7fb075ce935d2fa0b4adc354569d321d63c02bf1986cd3d018",
+      "contentHash": "6fa28b1472e543bf08ee61e7409620bf1fcf93e7a572ff77b24464f7e8a6a956",
+      "independentAnswer": "sqrt(13) + sqrt(17) + 2*sqrt(10) + 5*sqrt(2)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"5/4\",\"5/4\",\"13/8\",\"17/8\",\"9/4\",\"13/4\",\"37/8\",\"37/8\",\"5\",\"41/8\",\"41/8\",\"41/8\",\"53/8\",\"53/8\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 2,
+      "rawSha256": "d9bda4d57a70127edc87f6093bf2f58cf0f4b410c36fbb89a7647880fbe5134d",
+      "contentHash": "71bc9b64b0cf88daf53d5710de544d358a27c5d67491249aca145c6d37d4a2a8",
+      "independentAnswer": "sqrt(10) + sqrt(13) + 3*sqrt(2) + 2*sqrt(5) + sqrt(29)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"13/10\",\"9/5\",\"2\",\"29/10\",\"37/10\",\"41/10\",\"41/10\",\"5\",\"53/10\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 3,
+      "rawSha256": "fb8fea770eddbad3bde094290c84ded706fc3afcbfadf6e73aa4ff3e3a844cca",
+      "contentHash": "a5218dd116a6414b97bc53514bf2a05ce4c87ee0079ea38a972610dc66c74868",
+      "independentAnswer": "2*sqrt(5) + 2*sqrt(13) + 3*sqrt(10)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"1\",\"2\",\"2\",\"2\",\"13/5\",\"13/5\",\"5\",\"5\",\"5\",\"26/5\",\"29/5\",\"37/5\",\"8\",\"8\",\"41/5\",\"41/5\",\"9\",\"10\",\"10\",\"52/5\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 4,
+      "rawSha256": "1c860022728f6bc51d3441b5d449d11db1830b4ba1c7c018f633559f70ece785",
+      "contentHash": "5c30907a6c77cf67910d3e290ca3bb1584c3142eba7e784fe24ae1ea0b0f57cd",
+      "independentAnswer": "2 + sqrt(10) + 2*sqrt(5) + 9*sqrt(2)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"5/4\",\"5/4\",\"2\",\"2\",\"2\",\"5/2\",\"17/4\",\"9/2\",\"5\",\"5\",\"25/4\",\"25/4\",\"29/4\",\"17/2\",\"9\",\"37/4\",\"10\",\"41/4\",\"41/4\",\"41/4\",\"41/4\",\"45/4\",\"49/4\",\"53/4\",\"53/4\",\"53/4\",\"16\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 5,
+      "rawSha256": "e135b65091365b0ffc619093b0bd946a91c4186d8584277f1b4320908a056665",
+      "contentHash": "4099c8aadb98c0c2b3a0ad0c10e74510e803187d5e6c3f399a9eb4c0919554ee",
+      "independentAnswer": "sqrt(10) + 5*sqrt(2) + 2*sqrt(13) + 2*sqrt(17)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"5/4\",\"13/8\",\"13/8\",\"17/8\",\"17/8\",\"9/4\",\"17/4\",\"9/2\",\"37/8\",\"5\",\"13/2\",\"13/2\",\"53/8\",\"61/8\",\"8\",\"65/8\",\"65/8\",\"65/8\",\"17/2\",\"41/4\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 6,
+      "rawSha256": "fa0227682520997154698a59952c94b3fd9fe4dfcb17d7dc531de0eef9934cb0",
+      "contentHash": "a7fd3f4ef851face5337e9f66d89ed0b9264d3bd498950d151a136a3b5db3cff",
+      "independentAnswer": "sqrt(10) + sqrt(17) + 6*sqrt(2) + 3*sqrt(13)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"13/10\",\"13/10\",\"13/10\",\"17/10\",\"9/5\",\"9/5\",\"18/5\",\"37/10\",\"4\",\"5\",\"26/5\",\"26/5\",\"53/10\",\"61/10\",\"13/2\",\"13/2\",\"34/5\",\"73/10\",\"41/5\",\"41/5\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 7,
+      "rawSha256": "a243a27c63b8b835bbbaf96cf92b9768f125cd69bd28dafaf8258ad2742d8f33",
+      "contentHash": "d5d118c08d9478302a2724918cd2910e3e3ab110eaab75276d2bb0d4a40f4104",
+      "independentAnswer": "3 + sqrt(13) + 3*sqrt(2) + 2*sqrt(17) + 4*sqrt(5)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"13/9\",\"17/9\",\"17/9\",\"2\",\"20/9\",\"20/9\",\"34/9\",\"5\",\"50/9\",\"50/9\",\"53/9\",\"61/9\",\"65/9\",\"65/9\",\"8\",\"73/9\",\"9\",\"82/9\",\"89/9\",\"10\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 8,
+      "rawSha256": "e5cab3aae6488e53531a64b1bed60981697edfefc47f09d250728922a97f6a9d",
+      "contentHash": "bfa37f99aa6a2834552bc318f882b714cd83857403d80c228d23622be8c512a1",
+      "independentAnswer": "sqrt(13) + sqrt(17) + 3*sqrt(2) + 5 + sqrt(29) + 2*sqrt(10)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"1\",\"13/10\",\"17/10\",\"9/5\",\"5/2\",\"29/10\",\"4\",\"41/10\",\"9/2\",\"9/2\",\"32/5\",\"13/2\",\"13/2\",\"34/5\",\"36/5\",\"37/5\",\"81/10\",\"17/2\",\"9\",\"109/10\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 9,
+      "rawSha256": "15307827442adbe6af9cf0d8cdc1bba03c9d1779f01db57c922e569379c69367",
+      "contentHash": "553d094b1f636da701b563e0f1398318e24dff589aa123cf639fca66432c7b7e",
+      "independentAnswer": "sqrt(10) + sqrt(17) + 5 + 6*sqrt(2) + 4*sqrt(5)",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"17/10\",\"9/5\",\"9/5\",\"2\",\"2\",\"5/2\",\"4\",\"5\",\"26/5\",\"29/5\",\"13/2\",\"13/2\",\"36/5\",\"37/5\",\"8\",\"41/5\",\"17/2\",\"9\",\"10\",\"109/10\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 10,
+      "rawSha256": "3e6f6f9b0b74e0cf39bad9f4c5b8b6a1652c645f4544c38762a402cd2c45db25",
+      "contentHash": "45a4de4e1e1d148b915e126c3d116bc2dc7da8c693be2ee318b71c6a22135481",
+      "independentAnswer": "2*sqrt(5) + 2*sqrt(13) + 3*sqrt(10) + 10",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"1\",\"1\",\"13/10\",\"13/10\",\"2\",\"5/2\",\"5/2\",\"37/10\",\"37/10\",\"5\",\"5\",\"5\",\"61/10\",\"61/10\",\"32/5\",\"73/10\",\"8\",\"8\",\"8\",\"17/2\",\"9\",\"9\",\"9\",\"49/5\",\"10\",\"109/10\",\"121/10\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-support-function-perimeter",
+      "index": 11,
+      "rawSha256": "71238fd4739e3f71c78a09c79da287a40fc271cd5f90f79d12684df867ee4699",
+      "contentHash": "9f334b265ad5cd393e642a83eda6eb769b9a080fa97310bd1800ad1e1ddee154",
+      "independentAnswer": "2*sqrt(2) + sqrt(10) + 2*sqrt(17) + 4*sqrt(5) + 10",
+      "checks": [
+        "Independent all-pairs supporting-half-plane enumeration constructs every boundary edge; degree-two boundary incidence and exact radical perimeter checked. Inactive points and translations contribute no extra angular integral."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Identify the active convex-hull vertices. Integrating their linear support pieces between adjacent outward normals telescopes to the hull perimeter.",
+      "normalizedLineageKey": "support-shape:[\"1\",\"5/4\",\"17/8\",\"17/8\",\"5/2\",\"5/2\",\"25/8\",\"25/8\",\"13/4\",\"45/8\",\"13/2\",\"29/4\",\"29/4\",\"65/8\",\"37/4\",\"37/4\",\"10\",\"41/4\",\"85/8\",\"89/8\",\"97/8\",\"25/2\",\"101/8\",\"101/8\",\"53/4\",\"113/8\",\"65/4\",\"65/4\"]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 0,
+      "rawSha256": "984d839aaaf0bfdc798cb8e4b0e641c9110f06f722aa00275d2f6e06995bc8e2",
+      "contentHash": "58b746facffccfcfcfbfc7c00d604d0dc0d94c143adbd5dc8d112f13300bc37c",
+      "independentAnswer": "gamma(1/4)/(4*(gamma(1/4)/4 + sqrt(pi)))",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:1:2:0",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 1,
+      "rawSha256": "b2e1e8eff6ef4162664b9298e8905640b870310d46031258b0d7f6751308c867",
+      "contentHash": "c342f6957636cde57f902fc25d081d6a403809a2566ec9bf06af1aca8b0db13d",
+      "independentAnswer": "0",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:2:1:-1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 2,
+      "rawSha256": "266d10827732aa7c762ca99c672feb066739c924a4d4b2f6297ab223b6523dcd",
+      "contentHash": "d540d30b58c395edd3f0fd095ab70d22dd82503530c00ea61e698d2e58c9f0d3",
+      "independentAnswer": "1",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:1:3:1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 3,
+      "rawSha256": "82ad62c6c770e940e4c7e18460f5339aff6fa886169b9537ef44b98eddbd9091",
+      "contentHash": "617f52eb7e8144d24741b2bc1ae25601b0cbd0b38d862ad50ba17a1a865d6327",
+      "independentAnswer": "3*gamma(1/4)/(3*gamma(1/4) + 4*gamma(1/6))",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:3:2:0",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 4,
+      "rawSha256": "8f372221b9600b0e25beebd44d0190dc3e3b981c92bc5b6e504918b41c4da353",
+      "contentHash": "7b5a851e710a8f638ed87794d55a76a4201e202239f119eb168a7cbfc0423bd6",
+      "independentAnswer": "0",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:3:1:-1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 5,
+      "rawSha256": "94fc4a08f8c0c87169c93324123f7f4e7ea30c1c47bf1f8f9775e4136df21b88",
+      "contentHash": "a8d30328cb8bbf94b12c36e69ffb1a5e43e1e33919d1bfaba95ed5d6350c1aed",
+      "independentAnswer": "1",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:3:2:1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 6,
+      "rawSha256": "f30f28f6997bd570ab9cc93becbd5266978ba89584358858bb778e20b240742a",
+      "contentHash": "08ad3c47c78e68044101588a66c53bb298a6b5a6bc02f12d05ca8108822ed087",
+      "independentAnswer": "gamma(1/4)/(4*(gamma(1/4)/4 + gamma(1/8)/4))",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:4:2:0",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 7,
+      "rawSha256": "5297745d09eb1f1de6f442fd5a49310431d627c21d09740d4e6eb8dc1612518b",
+      "contentHash": "e80fcc00d4bd79391b2e9f74e5a0848fb8f2812fa9ffb13f27d1c9873bddcded",
+      "independentAnswer": "0",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:4:2:-1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 8,
+      "rawSha256": "afedaccd496d0ba7491598d5442e864bc08ce9b1b00698aacb872cf1a9303539",
+      "contentHash": "517da92694f60b663d92c017f909d716ba1f60ca30a7116c5cef68d9f304ad03",
+      "independentAnswer": "1",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:1:4:1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 9,
+      "rawSha256": "4c4104b92a4a406ed98111ecd3712a3888e7ad837b1275511eb84a35e1446125",
+      "contentHash": "f6de2570b93f0114de8725d7dc801572b9a0a3308df0f9c94e5b0d0a19ad41a9",
+      "independentAnswer": "2*gamma(1/6)/(2*gamma(1/6) + 3*gamma(1/8))",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:4:3:0",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 10,
+      "rawSha256": "49b0ed3a44c8673444e799641c8dddba2a25c4bac3afd28c9c51c58f15b53f2b",
+      "contentHash": "54795db6e385969bd49d8312d54549170c39187e76eda578f2144921ff1c4c56",
+      "independentAnswer": "0",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:4:1:-1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-competing-laplace-wells",
+      "index": 11,
+      "rawSha256": "65a856a3d0a89b0091145e49c35cef24e7650e23d776af869d2007780ebebe6b",
+      "contentHash": "317a794eddcf5b780e429b6d384f53a3d4c1ce238f135d0031abc18d333e5b1d",
+      "independentAnswer": "1",
+      "checks": [
+        "Independent local substitutions yield full-line constant Gamma(1/(2p))/p and half-line constant Gamma(1/(2q))/(2q). Exact rational powers determine the regime. Fixed neighborhoods, positive phase away from the wells, and absorbing the residual linear tilt into the local even power justify dominated convergence."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Compare the distinct interior and endpoint localization scales, including the logarithmic tilt. At equal powers retain both gamma masses, with the endpoint half-line factor.",
+      "normalizedLineageKey": "competing-wells:4:3:1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 0,
+      "rawSha256": "95af35377f74da250f9c9f2aeb7ac3cf8d2f273b787d0e9f29aa2a6c38390a27",
+      "contentHash": "4e078a49403d5d34229135d1f2c9624e0b0b55f19c2a9dbdc9ba7cb5662e709e",
+      "independentAnswer": "(31/384, 49/384)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:1/2:3/16",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 1,
+      "rawSha256": "afbe7fb374979e0a5bd2ed2a6855e96796831d77ed15a040ed5515ba6767ad49",
+      "contentHash": "8f0093ffbd4a5f790b65884d88baaf06b6dddd063f96608a4dbd41c0106c660f",
+      "independentAnswer": "(91/648, 59/324)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:2/3:5/18",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 2,
+      "rawSha256": "ea54b7c1b38b1cc7c7bb958f98fd020033ad203999a074a0fcee26a213ea086d",
+      "contentHash": "7430acbd2f60a18066b28e0c3626dbcbc7903cb2a00ce22288280c4e94b6a90f",
+      "independentAnswer": "(163/3000, 149/1500)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:2/5:7/50",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 3,
+      "rawSha256": "b0ca0f6e8c33820331090d8159b247bf162d778f282866f61c856e8c07485524",
+      "contentHash": "5b0a4d3b16a438ce01152b42307b919c1823052d694b36255ca4e6754c5b6e0d",
+      "independentAnswer": "(49/375, 23/125)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:3/5:13/50",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 4,
+      "rawSha256": "474b552fe43090f5a17b5b2c2af67b50d9a3a5622a85d15a36e3c8fba7abd3d1",
+      "contentHash": "7c11af7df6b34bea9bbd32b807e009ce358143749fed13685f865218c44f49a5",
+      "independentAnswer": "(37/192, 15/64)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:3/4:11/32",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 5,
+      "rawSha256": "112e123c69bef35c4de1dd1c21126cb6c968685e2be2c817222fa73f67ad7b96",
+      "contentHash": "76640a061832cd04344ba52411dd8f4a3b8bc6e49bb4aaf94fc54a29b1477fdd",
+      "independentAnswer": "(13/243, 25/243)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:1/3:7/54",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 6,
+      "rawSha256": "896233e0df3ab266dcff2f4bec048cca1bd8f722b7aa83eee0f47420fc260315",
+      "contentHash": "d78d9ea06f2f840afd18540659ff58d312a4dcdc4014a08fe14a1e9f8245c73e",
+      "independentAnswer": "(1339/6000, 391/1500)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:4/5:19/50",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 7,
+      "rawSha256": "0f0761684804dcdad1c15e589c564b0de434b31ed3ba9e0e8af2289f832e57e5",
+      "contentHash": "24424591928ef6bc4f0ec1869ff8b34e2d391f3ec270d238eb79485a07aefa23",
+      "independentAnswer": "(79/1029, 45/343)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:3/7:17/98",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 8,
+      "rawSha256": "95dc9768e73f41ba50fbfdbd97d7242c919781ecaccdb5b32517df5f79dd3de4",
+      "contentHash": "b98455e38b855ba901109c967d76b034ebfce3177966268f58957a340be96f83",
+      "independentAnswer": "(139/735, 5/21)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:5/7:33/98",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-capped-two-moment-extrema",
+      "index": 9,
+      "rawSha256": "2fc69786f03d987c0a6db932d5e5bb73e16c29fc29243b94cb659520b45ea12c",
+      "contentHash": "930a2242c38b46e97c34daf435aa00948045bf66b3374175605b1fa57a55c28f",
+      "independentAnswer": "(61/588, 22/147)",
+      "checks": [
+        "Independent exact boundary-equation solve; interval validity and both second-moment integrals checked. Pointwise capped-density signs prove the universal inequalities; the indicators satisfy the measurable admissibility conditions."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Solve the two constraints for a filled middle interval and for two filled endpoint intervals. Quadratic sign certificates cancel the lower moments and prove both attained extrema.",
+      "normalizedLineageKey": "capped-density:4/7:11/49",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 0,
+      "rawSha256": "9b1a00c224e40658c8972a1d65fed807e4797f8af3012650a1f48133bc5fc56a",
+      "contentHash": "f47ad8b2c7b20eb79ca5bec86d3cb0a8ca1fba98e99f83ae36a81ba6b3ea32e5",
+      "independentAnswer": "-pi/3",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:1/3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 1,
+      "rawSha256": "8a5bd509fe8fb1501a0d48004f8221ebfb752dfa2cfa5afacc9df6566f1df0ac",
+      "contentHash": "1e5e4d9baf96ffc2b83227123bcf16ca6e8af7be8e36d7c53db18323b96bbb84",
+      "independentAnswer": "-2*pi/5",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:2/5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 2,
+      "rawSha256": "dd8bbe2c957a4dbca673b8c0c2acd459d4bd23adef10c7c194d0ffe3cf05578c",
+      "contentHash": "ca72d69f19b0ca7f181c2b6c7b0914b79691e68d13ef15ea7b6278f4447fb072",
+      "independentAnswer": "-3*pi/7",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:3/7",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 3,
+      "rawSha256": "2b8ab55b82611e92302235fe609bbf80fcce04fd030ff38086bda6990f3cce0f",
+      "contentHash": "0a38b32e7c9dfe0d9a42f09932b016ebaf9a5e8a86aa616995ac7f2b6fd4ac96",
+      "independentAnswer": "-4*pi/9",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:4/9",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 4,
+      "rawSha256": "28942add04889ae62acd211c7655cb8036d4e31ee98ea8e9ea83b3a06847ff00",
+      "contentHash": "b1200e923a04bdc5c120e92416f131ec8af0fa344a43946fb43d527c994335c2",
+      "independentAnswer": "-2*pi/7",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:2/7",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 5,
+      "rawSha256": "b98ed73315aa11b8a106182a66f9b60ca12031bfc3ff308e62f461a308e981f2",
+      "contentHash": "2ef9e196f8865a7ef1fa5a5ec914449ae20fe58f93456a624681858c0f57872e",
+      "independentAnswer": "-3*pi/8",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:3/8",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 6,
+      "rawSha256": "4662307014ada95031c238233fd190631e0f3f5aa4be44dd56fa3dc7c0693570",
+      "contentHash": "60091b5aa4fd2982eba53604081942b4184718b31c1c69e6ebb2b5bbc56a0c3c",
+      "independentAnswer": "-5*pi/11",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:5/11",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 7,
+      "rawSha256": "59b299bae3e90c792710dc99e672a1ba8bc8aba761bf4566e9fdaaa4fd2f7fc2",
+      "contentHash": "f3e9bc00b9ac03e8efc13cfe00d1ce7eaaa1b8d9c9df549c4fceec8422f68d43",
+      "independentAnswer": "-4*pi/11",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:4/11",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 8,
+      "rawSha256": "d5c96451ae0e779b1de629b610e082a0e75a49201a607582b1eef2fadd63a908",
+      "contentHash": "34f0e2783274b418c1dfe0137cb340f6fa2746b7044e4196c6638074c3912238",
+      "independentAnswer": "-5*pi/13",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:5/13",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-semicircle-interior-pole",
+      "index": 9,
+      "rawSha256": "ed93e3a1cfd37668574ff0fb7f871052a1e84282df67dfb647b53235cf0bd450",
+      "contentHash": "b90228be560524a88a7da25c095c8efa58c1635969ad9a6c38d334a84d0a91f0",
+      "independentAnswer": "-7*pi/15",
+      "checks": [
+        "Independent algebraic decomposition and exact logarithmic derivative. Smooth local substitution preserves the limiting ratio of the original symmetric cutoffs; endpoint arcsine singularities are integrable. The pole is strictly inside the support."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Separate the semicircle numerator into an odd/constant arcsine mass and an arcsine pole. Cosine and half-angle substitution give a logarithmic primitive; the exact transformed cutoff-distance ratio tends to one, cancelling the PV remainder.",
+      "normalizedLineageKey": "semicircle-PV-absolute-pole:7/15",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 0,
+      "rawSha256": "afdc193ae8c9acb53ee58cd4617bb8840c3eda2bde27d75996beb665428eb0fb",
+      "contentHash": "93555f187962dc4104e81efcfbf8864eb75ac2d8bd922146152d151ec3c3767a",
+      "independentAnswer": "(23/1152, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:1/3:[1/12, 5/8, 7/24]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 1,
+      "rawSha256": "a6ea31c38018400f3fa425bd818efd5290a9ab004c5bdcaa0886e2f4ed722a68",
+      "contentHash": "2781c8492c4b992328fec572a5dfa484459f1e0e5db964918a58736a38968acb",
+      "independentAnswer": "(121/8100, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:2/5:[1/10, 2/3, 7/30]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 2,
+      "rawSha256": "7ea9895b5aa76a067bc398dd64d8e9e7d42c597d8ec64de3edb4ffd3b118e660",
+      "contentHash": "ef151de146ad51ec4422cd484069b3f666d71b45550fd5904fc80c16452391b5",
+      "independentAnswer": "(37/2688, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:3/7:[1/7, 5/8, 13/56]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 3,
+      "rawSha256": "19a580bbf612aa86182eaffa3ebedbba445789f9d43a364adc3da234bb0aecac",
+      "contentHash": "c5c74b7067e3ccf08927decde41d56285c19dab1bcc754be682d2d57f6956882",
+      "independentAnswer": "(629/24500, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:2/7:[1/14, 3/5, 23/70]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 4,
+      "rawSha256": "7e680900c2139f76cea23909ad984d59082e0b7710dfd069050474ff6fa36e92",
+      "contentHash": "4b5459541bc31fa2292b89d598d081f3e9d895db21330e9fd462dda512b73cef",
+      "independentAnswer": "(277/16000, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:3/8:[1/8, 3/5, 11/40]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 5,
+      "rawSha256": "82df2cda8c2da47b14930fc5cb796666bc9525d520aa391714684af1377a1a2d",
+      "contentHash": "d465227a8e089035d2b17382bbdfa232bda5a3a9aad7cdaa8cf1542e53571a47",
+      "independentAnswer": "(563/40500, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:4/9:[1/9, 7/10, 17/90]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 6,
+      "rawSha256": "bd023e33cb97802a1de88217e03f8915ed0f2e2cfa1de7ee1244fb972f67e109",
+      "contentHash": "2ce650a9c0fd51cd2c27d359445c3374054da005ae51f907544319cc150dc61f",
+      "independentAnswer": "(641/20736, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:1/4:[1/16, 7/12, 17/48]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 7,
+      "rawSha256": "48f1c5fa370db80f8d48a1eee71a2a4d50b30290872032ba7e1d1ab34c5457c7",
+      "contentHash": "419babe698bf9b50de63508f53837014ca73edec3c613e4d7978e73527c86c1e",
+      "independentAnswer": "(2857/166012, False)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:4/11:[1/11, 9/14, 41/154]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 8,
+      "rawSha256": "c07c353dca5915e155762a341e00a199f585066a5fb22006bbb6dcf740d5b95a",
+      "contentHash": "bd5ef8045b41c5a793e0e8cad1d3b9b42a266f23757b97632ae500d9b9c6accc",
+      "independentAnswer": "(1/24, True)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:1/3:[1/4, 3/8, 3/8]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-three-node-Peano-sharpness",
+      "index": 9,
+      "rawSha256": "7c328c6f16aa02f9bde3a543be81789278701f1575da6929455ff4d4d4226e4f",
+      "contentHash": "a941fe652a17c49d97d42af8698d46da9c9dd2784f059424bb3c03a9434627b6",
+      "independentAnswer": "(1/30, True)",
+      "checks": [
+        "Exact affine cancellation, independently generated kernel and all root-split polynomial integrals. For sign changes, norm equality would force discontinuous second derivatives; smooth bounded approximations show sharp nonattainment. One-sign cases have a direct quadratic extremizer and are Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "Construct the hinge kernel, integrate its absolute value, and distinguish a continuous saturating second derivative from discontinuous sign data. A one-sign kernel admits a quadratic; sign-changing kernels require an approximating sequence.",
+      "normalizedLineageKey": "peano-three-nodes:2/5:[1/4, 5/12, 1/3]",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 0,
+      "rawSha256": "8f8a50804a05f8b9cf0448e977f3230bc6d9c29a5adad8c0cc9a4c51cc0ba7ae",
+      "contentHash": "cbab0b632556b390eb47006d963c3b4450df7a393aeaa01f080a7ae210d1355b",
+      "independentAnswer": "4*atan(1/3)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 1,
+      "rawSha256": "8c1cf2e5801cae8b242e292c2338290ded9726189500c2bc322383ffd933080c",
+      "contentHash": "8ca5db3fd8ed3e3ea353d0c1ef594de72b72471a0e1be138fa94909c209a3e7b",
+      "independentAnswer": "4*atan(1/2)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 2,
+      "rawSha256": "48413d5bd94f75a3faf51636c164622cfef475db2035413c05a2c85b37e3b98f",
+      "contentHash": "6330488fcf6b93783cd3ba89878dd8b7d63ece8f3cdba2883f845c400c76c613",
+      "independentAnswer": "4*atan(3/5)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 3,
+      "rawSha256": "842236c9ae3097dfa7a77fd53c485b5ee68c4eedbf210321ef66e9fa0378ce8b",
+      "contentHash": "ac8dc9deefb94095721db0c0b642ad0aebec631404594f06b29798755e706caf",
+      "independentAnswer": "4*atan(2/3)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 4,
+      "rawSha256": "4ec8e1714e839277ce553a6bb77e7ca3b72543d86d3046266ef79408d933c509",
+      "contentHash": "210b6525f70f22693aeaad05c07a446b2213151c2103685beb89816b5004c1af",
+      "independentAnswer": "4*atan(1/5)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:3/2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 5,
+      "rawSha256": "b966a7a2ebe6d36ae78dcc993c610ca44076a712ee0e584a1eae90d1a1fd9137",
+      "contentHash": "04daf8f0a0dcf5bde2bb5aca097596a664a8de7967e8daab78cfdb5d90cc163d",
+      "independentAnswer": "4*atan(3/7)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:5/2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 6,
+      "rawSha256": "1dc7e36471607bca70ea7d25e586e7cfe4f9e1059ad5697d6cb9ae23a2b28edf",
+      "contentHash": "6494012bbd20e2cbd1078b1f53e58430876f080e68b1fe28f490b3d59d0c901c",
+      "independentAnswer": "4*atan(5/9)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:7/2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 7,
+      "rawSha256": "560181d8bdc8a11d344a817a5260f87c184a22602c7f5b5838cb86ad177a16ba",
+      "contentHash": "b214f61ef8e640151da7bed1494fc9e538d00ce8c29627fa52b5529ba9f642ac",
+      "independentAnswer": "4*atan(1/7)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:4/3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 8,
+      "rawSha256": "0045e6dfb801a48e1693025e34a37e16775a98ba2622ce89a1ba044963b2cab9",
+      "contentHash": "7f6aaee971120d425e4299aee1fe24b037afa47ea45b100e5da52a1b0ecf542d",
+      "independentAnswer": "4*atan(1/4)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:5/3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-coupled-endpoint-sharp-energy",
+      "index": 9,
+      "rawSha256": "2f2fd119c90978ad1ac4d1390e7730f1864b345bb8e80b3a855a3b1502e071d2",
+      "contentHash": "74febf71b245015a7a6fdf2d0cad632115bfbbdbac9dcbfc21f224b6cfba3831",
+      "independentAnswer": "4*atan(2/5)**2",
+      "checks": [
+        "Exact half-angle identities verify phi(1)=k phi(0) and phi prime(0)=k phi prime(1). The positive cosine-plus-sine state on0\u2264alpha x<pi/2 satisfies the ODE. Square completion applies to every C1 admissible function; the state attains equality. Reciprocal ratios are the same reflection task."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Derive both coupled value and natural derivative boundaries, solve their phase determinant, then prove the global bound with the positive ground-state square identity and its cancelled endpoint term.",
+      "normalizedLineageKey": "coupled-endpoint-ratio:7/3",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 0,
+      "rawSha256": "8a971d7e57cf8e32ba605f1507b2a2c2099fe14b836af3e8c65523e73bbc6d77",
+      "contentHash": "8a61594a6ed2a7fdf973e512cf2408832525db893efd9d5dd794dddf95a959fe",
+      "independentAnswer": "(0, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:0",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 1,
+      "rawSha256": "e804000d1ea37d63811a42608f2e063410c84329f3602172654936a7c066eb65",
+      "contentHash": "09e5c2801e1f4c9294ba9eb562fbc3463a0613409c43866ca17a85591947c841",
+      "independentAnswer": "(0, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:1/4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 2,
+      "rawSha256": "37be210984a0489a25c73f231a9c9a05723e1ca7cd0e89d47205f79077259b73",
+      "contentHash": "bb714a5280a21cfbdad729a890e1adc8ff266d4e4566b55664174e46048f4347",
+      "independentAnswer": "(0, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:1/2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 3,
+      "rawSha256": "cfdc34acb9299773bc0b503c7476e78048aadce8cc77edb47d983792ca245b43",
+      "contentHash": "831b6f2f82f23380dd31a9860d66d08153a131cff94bd56859017a50ad998c0a",
+      "independentAnswer": "(0, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:3/4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 4,
+      "rawSha256": "79ceea1c913732b4f4dc51e876a5e522ceaf86392752a2173cf3665925a46b88",
+      "contentHash": "7655f043c18dd098690d85b6bcd9c88e7a5f7c1733f59f98f8cd678b2c280576",
+      "independentAnswer": "(0, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "hard",
+      "qualifiedOlympiad": false,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:1",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 5,
+      "rawSha256": "88e7da1ca0316f5193c7f05b9a23fdc21c04d054752050fff1520a3971b0f167",
+      "contentHash": "3db94b116837f8519b699c9911091c7ed46050d9a5f957c0fe9a0254a1cd8d69",
+      "independentAnswer": "(289/4096, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:9/8",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 6,
+      "rawSha256": "3909608ac630204fd2ecf831b392383d5142948d65776d6c42104aa3ad48e9e9",
+      "contentHash": "30c64f8f044a1b63d58c426407a454edb4cafa008bc015a2c2bffc675d6188bf",
+      "independentAnswer": "(81/256, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:5/4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 7,
+      "rawSha256": "e7c95ce8557abe08f07df4b96db4757a235577785a1ba0b46c1134d2c9979c33",
+      "contentHash": "0c9d075f6664390a9b33b98a8dfff5fc4e2981532022cccc24f6806c630f338f",
+      "independentAnswer": "(3249/4096, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:11/8",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 8,
+      "rawSha256": "893989de7fe55dfe38f81bfa47afb83b3993c3bfdb4c6435c14b875366b3afef",
+      "contentHash": "da141f383184009371df31ba66d49a3f4b93a59e231def26be73ebed6dcb2955",
+      "independentAnswer": "(25/16, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:3/2",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 9,
+      "rawSha256": "2cf88580799f8ab94005270cbc44486cc04357d68ee0a42ac1ff4e4bd22c974d",
+      "contentHash": "29947cec6a183efad6a3d2f48368096a4494ac411a358e1b7265b2c8dc1cc878",
+      "independentAnswer": "(1089/256, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:7/4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 10,
+      "rawSha256": "348304b86ed336dcb4a9b4d037d22f102d042f64a7c08caa957bdec405e855e1",
+      "contentHash": "5b7214ffaf177dfb312acbbb332303f39ea530fdb8bc553acff529f17a16f7d7",
+      "independentAnswer": "(121/625, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:6/5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonconvex-mean-relaxation",
+      "index": 11,
+      "rawSha256": "12201cbf4cc6ff7214cc200653ae65fbb0025db30192c999fef47168e8de7f52",
+      "contentHash": "d29570f3cafdabfed8d48dd4bb378fc992b54d7caf9b49ff1a658c33a4fc8d78",
+      "independentAnswer": "(1521/625, False)",
+      "checks": [
+        "Exact mean of the endpoint-ramp/constant-middle recovery sequence; outer tangent defect factors into a square times a strictly positive quadratic. For inner means, exact two-phase ramp cost is92delta/15 and the phase position sets the mean. Endpoints prevent zero cost; outer strict support forces an inadmissible constant. First five cases are honestly Hard."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "For mixed/pure-well means use nonnegativity and exact-mean thin transition sequences. For outer means prove the global supporting-line bound despite the nonconvex quartic, then enforce the mean with a near-constant plateau and shrinking endpoint ramps. Continuity prevents equality.",
+      "normalizedLineageKey": "quartic-fixed-endpoints-mean:8/5",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 0,
+      "rawSha256": "b94977f25857443423fc8b9ff7527bc5776068b7f34a7f0e6c4b0086feea3fc4",
+      "contentHash": "4f4c6ec47492a065e470f5c3a54f77ac14e6b904f141dec2755e98d57500b144",
+      "independentAnswer": "(pi/4, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:4",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 1,
+      "rawSha256": "5753619de11df90b913458ee8566892eca20fd6ea430cf17db035c936d107429",
+      "contentHash": "7d45fb5aa50f32a2bd714e9ded69d415dde997cb9f92f45b0138c6aca1eb7f4d",
+      "independentAnswer": "(3*pi/16, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:6",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 2,
+      "rawSha256": "98860cedee50ffd2c34b5c6d2e66171512c3abf6c45711bb44da563c1f73a900",
+      "contentHash": "5b241a60348753d8f6dd4b781528dd661ba69f7c9855464b4bb40e48477eeec9",
+      "independentAnswer": "(5*pi/32, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:8",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 3,
+      "rawSha256": "520b659add4ee0c2528a37df21649c1ccc7b5d5cc9b32f831a5eae7306675ebe",
+      "contentHash": "a77ae9040a9c6c3068485b0871a305fe67b09f062d3f81573157fbcf123ad6e2",
+      "independentAnswer": "(35*pi/256, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:10",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 4,
+      "rawSha256": "517cb635e801f841786f2d5068e53c078e90c8392ff91dc83e121901990e9651",
+      "contentHash": "56a420b2a04a7b263031524cd03d9b9c0f86088dc325c03071bc21a8f82edcdc",
+      "independentAnswer": "(63*pi/512, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:12",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 5,
+      "rawSha256": "462ac8bf8e963288d1335312e4bf2b08f4457cf1e71542bce6d8cc7581822bb6",
+      "contentHash": "e0c3d30c82e812773b6da81601169be733bb52b3932afc88d7d591b79e52d4e3",
+      "independentAnswer": "(231*pi/2048, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:14",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 6,
+      "rawSha256": "59f4c4e027e22822d458ebda37b18dde7ee27125c7285ab0de7d480439ffe756",
+      "contentHash": "78ef885d75a591e52361f4b297837ada94ae29cb10eb4ffdd42aebc239ded67a",
+      "independentAnswer": "(429*pi/4096, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:16",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 7,
+      "rawSha256": "cabcdb879388bb4c8de623cd4b2b701013a5d0d479e4bd905124e4e3e3aff4de",
+      "contentHash": "e03348c7c846e229ead34778247ed0e8b1955be02eef8a1a5541d6d4ffe2bde5",
+      "independentAnswer": "(6435*pi/65536, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:18",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 8,
+      "rawSha256": "1b290654c48d0d3062ce9bb6391b1d773a0d69ac8479ef6645fd72451842ac88",
+      "contentHash": "3d79cc8683237f7cecb20f3de9c5bccc9b40d05dfc9500e1b24b80ea76d3051b",
+      "independentAnswer": "(12155*pi/131072, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:20",
+      "passed": true
+    },
+    {
+      "familyId": "quality-integration-olympiad-nonlinear-uniform-bound-threshold",
+      "index": 9,
+      "rawSha256": "273b0f9421c04ce9d7e5d3d7fb8219b8e101b7bf20e6b81d914ea709db3256b2",
+      "contentHash": "3cc72088ef09b7f4045c7ce45b7f1bc8c81bb2f505c2443ff26b957ecb724429",
+      "independentAnswer": "(46189*pi/524288, False)",
+      "checks": [
+        "Independent cosine-power recurrence evaluates the positive blowup-time integral. The majorant derivative inequality uses nonnegative monotone growth; continuous truncated trajectories satisfy equality before the join and the original inequality after it. The endpoint is strictly excluded."
+      ],
+      "sixLiteralChoicePairsDistinct": true,
+      "difficultyRecommended": "olympiad",
+      "qualifiedOlympiad": true,
+      "easiestOptionsVisibleRoute": "Bound the accumulated integral majorant through the reciprocal growth integral. Below its finite endpoint invert the bound; at and beyond the endpoint, exact trajectories stopped at arbitrary finite heights disprove a uniform bound.",
+      "normalizedLineageKey": "nonlinear-uniform-growth-degree:22",
+      "passed": true
+    }
+  ],
+  "scope": "All ten samples solved before reading author proofs. No author constructor imported; all finite mathematical answers and literal choices checked independently. Analytic convergence, sharpness and uniqueness are reasoned arguments, not machine or human certification. Final option screens, amended choices and source-binding admission remain separate."
+}

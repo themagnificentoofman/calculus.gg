@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Operator-only CLI: local private files or D1 SQL export; never included in Worker/client bundles.
+import {contentAttribution} from '../../lib/bank/content-attribution.mjs';
 import {presentBankProblem} from '../../lib/server/solution-presentation.mjs';
 import {assertSolutionQuality} from '../../lib/bank/solution-quality.mjs';
 import { spawnSync } from 'node:child_process';
@@ -31,6 +32,7 @@ export function validateRecord(p) {
     const verified=spawnSync(existsSync(resolve(root,'.bank-venv/bin/python'))?resolve(root,'.bank-venv/bin/python'):'python3',['-c',"import sys,json;sys.path.insert(0,'scripts/bank');from content_pipeline import verify;verify(json.load(sys.stdin))"],{cwd:root,input:JSON.stringify(p),encoding:'utf8'});
     if(verified.status!==0)throw Error('Standalone solution certificate failed independent reconstruction');
   }
+  contentAttribution(p);
   assertSolutionQuality(presentBankProblem(p));
   return p;
 }

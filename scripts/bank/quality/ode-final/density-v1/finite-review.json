@@ -1,0 +1,643 @@
+{
+  "proof": "For positive increasing w(x)=x^n, pair x and1\u2212x in the first centered moment: integral_(1/2)^1 (x\u22121/2)[w(x)\u2212w(1\u2212x)]dx>0. Hence mean>1/2; positive density inside(0,1) gives mean<1. Direct integration independently gives(n+1)/(n+2).",
+  "records": [
+    {
+      "rawSha256": "e72364c84dbdfe1f1139d9ed69d02d761f92923a85a55316eacd952ce884f01b",
+      "sourceProblemId": "cn_31537d29d580d03172eb",
+      "sourceCanonicalRawHash": "e43ac250b8acf945ab8b7c8052e8cdb2556d63f55caafb2aac536928b295dc5d",
+      "sourceContentHash": "100bd2711e969e9d679c8c4721a47e96b75805f668f9fe62730dcb236aad0869",
+      "sourceRevision": 1,
+      "exponent": 12,
+      "uniqueIntervalChoiceId": "ch_fd5959a52a7007a3",
+      "literalValues": [
+        "1/14",
+        "14/13",
+        "1",
+        "13/14"
+      ],
+      "exactAnswer": "13/14",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_617d04471441c12d",
+            "ch_dc9f50375afaa0f0"
+          ],
+          "exactDifference": "-183/182"
+        },
+        {
+          "choiceIds": [
+            "ch_617d04471441c12d",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-13/14"
+        },
+        {
+          "choiceIds": [
+            "ch_617d04471441c12d",
+            "ch_fd5959a52a7007a3"
+          ],
+          "exactDifference": "-6/7"
+        },
+        {
+          "choiceIds": [
+            "ch_dc9f50375afaa0f0",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "1/13"
+        },
+        {
+          "choiceIds": [
+            "ch_dc9f50375afaa0f0",
+            "ch_fd5959a52a7007a3"
+          ],
+          "exactDifference": "27/182"
+        },
+        {
+          "choiceIds": [
+            "ch_3f02791adb171778",
+            "ch_fd5959a52a7007a3"
+          ],
+          "exactDifference": "1/14"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "6f94a7538dbdbaaba1cd65673171e37a29eff5fd24a8f8bbe6196a51845fb906",
+      "sourceProblemId": "cn_ceb6294864ddd3521a38",
+      "sourceCanonicalRawHash": "1fe20aa3c0d8e2259934ca4d0fd4c10c7516a90baf8815073fc945f90e3eaae6",
+      "sourceContentHash": "9a2f3183276a9e8456dd45db4cad2dd0417ad46b1dac7408e79b4a970c644b4f",
+      "sourceRevision": 1,
+      "exponent": 13,
+      "uniqueIntervalChoiceId": "ch_b8ddaaf30fcf2f08",
+      "literalValues": [
+        "1/2",
+        "14/15",
+        "1/15",
+        "15/14"
+      ],
+      "exactAnswer": "14/15",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_b8ddaaf30fcf2f08"
+          ],
+          "exactDifference": "-13/30"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_d25ba7c080d57b9f"
+          ],
+          "exactDifference": "13/30"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_c3c4e4a1c2100d4c"
+          ],
+          "exactDifference": "-4/7"
+        },
+        {
+          "choiceIds": [
+            "ch_b8ddaaf30fcf2f08",
+            "ch_d25ba7c080d57b9f"
+          ],
+          "exactDifference": "13/15"
+        },
+        {
+          "choiceIds": [
+            "ch_b8ddaaf30fcf2f08",
+            "ch_c3c4e4a1c2100d4c"
+          ],
+          "exactDifference": "-29/210"
+        },
+        {
+          "choiceIds": [
+            "ch_d25ba7c080d57b9f",
+            "ch_c3c4e4a1c2100d4c"
+          ],
+          "exactDifference": "-211/210"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "564dc692cf32d5bdfa31f7d65ff92f57ac0296d4dbb81eaac14642f7073bbe6d",
+      "sourceProblemId": "cn_e4e58a811b467fdd0122",
+      "sourceCanonicalRawHash": "ab1401fb0ad9e307be467286a2ee852fb8283b4c386e32a359e7149822fc7d4d",
+      "sourceContentHash": "ee657e254d29b563451baa7ea495627952d58602b3faac4e4da370ce0c70e5e1",
+      "sourceRevision": 1,
+      "exponent": 4,
+      "uniqueIntervalChoiceId": "ch_685c2f5077665f84",
+      "literalValues": [
+        "5/6",
+        "1/6",
+        "6/5",
+        "1"
+      ],
+      "exactAnswer": "5/6",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_685c2f5077665f84",
+            "ch_dd88077aa0c05d7c"
+          ],
+          "exactDifference": "2/3"
+        },
+        {
+          "choiceIds": [
+            "ch_685c2f5077665f84",
+            "ch_8ff11100239f908e"
+          ],
+          "exactDifference": "-11/30"
+        },
+        {
+          "choiceIds": [
+            "ch_685c2f5077665f84",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/6"
+        },
+        {
+          "choiceIds": [
+            "ch_dd88077aa0c05d7c",
+            "ch_8ff11100239f908e"
+          ],
+          "exactDifference": "-31/30"
+        },
+        {
+          "choiceIds": [
+            "ch_dd88077aa0c05d7c",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-5/6"
+        },
+        {
+          "choiceIds": [
+            "ch_8ff11100239f908e",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "1/5"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "e8d8965c9a3c8e76e78d0e617bf785abd926113f5babe38328de8f91d3685181",
+      "sourceProblemId": "cn_83b031cb60d1ac5369e1",
+      "sourceCanonicalRawHash": "0f52facf0d7e0b1105967fa19171053fac872fac23209c397987534590e85bea",
+      "sourceContentHash": "396b33b030ab8801e8bed514cffe111ebbf5637e57da1de686f59e4f00147db1",
+      "sourceRevision": 1,
+      "exponent": 5,
+      "uniqueIntervalChoiceId": "ch_041e802fba7cf7e8",
+      "literalValues": [
+        "6/7",
+        "1/2",
+        "1/7",
+        "1"
+      ],
+      "exactAnswer": "6/7",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_041e802fba7cf7e8",
+            "ch_a97d973330d36673"
+          ],
+          "exactDifference": "5/14"
+        },
+        {
+          "choiceIds": [
+            "ch_041e802fba7cf7e8",
+            "ch_87fb39e30d169925"
+          ],
+          "exactDifference": "5/7"
+        },
+        {
+          "choiceIds": [
+            "ch_041e802fba7cf7e8",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/7"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_87fb39e30d169925"
+          ],
+          "exactDifference": "5/14"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/2"
+        },
+        {
+          "choiceIds": [
+            "ch_87fb39e30d169925",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-6/7"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "7276480d1680da741fdb050e94e7725c239557591970ef3ee81ae3533eae9d48",
+      "sourceProblemId": "cn_a6678ed31e561207d897",
+      "sourceCanonicalRawHash": "9c72e25662ec7f95c3666c75004285fc521ad87dd0f19040b510aa345c89f151",
+      "sourceContentHash": "c7c572d9491b9685499fba8a4529fd291df1ed8a937a9a386590c27c7a8c295c",
+      "sourceRevision": 1,
+      "exponent": 6,
+      "uniqueIntervalChoiceId": "ch_1068872c5657b0a6",
+      "literalValues": [
+        "7/8",
+        "1/8",
+        "8/7",
+        "1"
+      ],
+      "exactAnswer": "7/8",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_1068872c5657b0a6",
+            "ch_8f624d39e8401f84"
+          ],
+          "exactDifference": "3/4"
+        },
+        {
+          "choiceIds": [
+            "ch_1068872c5657b0a6",
+            "ch_f64deadd90591ebb"
+          ],
+          "exactDifference": "-15/56"
+        },
+        {
+          "choiceIds": [
+            "ch_1068872c5657b0a6",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/8"
+        },
+        {
+          "choiceIds": [
+            "ch_8f624d39e8401f84",
+            "ch_f64deadd90591ebb"
+          ],
+          "exactDifference": "-57/56"
+        },
+        {
+          "choiceIds": [
+            "ch_8f624d39e8401f84",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-7/8"
+        },
+        {
+          "choiceIds": [
+            "ch_f64deadd90591ebb",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "1/7"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "915024ab553e87a02abd5ed200d2f25d33c2a1587005d567ad0adf5b1d8d85da",
+      "sourceProblemId": "cn_ff21ed22a4baa8f1359d",
+      "sourceCanonicalRawHash": "654a917ca2b64561d8931f0dd9501e3336e23079edadc8e79edd95419b17e1b7",
+      "sourceContentHash": "ecd15fd69de1ce888e6a0f5cc60cfb0cb9cfc9d594313cba7f755d6afb3ffbd9",
+      "sourceRevision": 1,
+      "exponent": 7,
+      "uniqueIntervalChoiceId": "ch_81271815649dd8ac",
+      "literalValues": [
+        "8/9",
+        "1/2",
+        "1/9",
+        "1"
+      ],
+      "exactAnswer": "8/9",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_81271815649dd8ac",
+            "ch_a97d973330d36673"
+          ],
+          "exactDifference": "7/18"
+        },
+        {
+          "choiceIds": [
+            "ch_81271815649dd8ac",
+            "ch_c85c0234c29fec81"
+          ],
+          "exactDifference": "7/9"
+        },
+        {
+          "choiceIds": [
+            "ch_81271815649dd8ac",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/9"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_c85c0234c29fec81"
+          ],
+          "exactDifference": "7/18"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/2"
+        },
+        {
+          "choiceIds": [
+            "ch_c85c0234c29fec81",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-8/9"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "10d577ae89c73d72aa556930a6ffbf022a4202d424186957f52a106e7f981659",
+      "sourceProblemId": "cn_06fb93f6b876fa90e744",
+      "sourceCanonicalRawHash": "81358d1aae30b892637c067cd604b44878e7da7b055b30ade207e537e49fadbb",
+      "sourceContentHash": "6e8ac5c64de0a2867992d22e8ea80b9a6c26e8fc01c3a4301bd6e5663421bc17",
+      "sourceRevision": 1,
+      "exponent": 8,
+      "uniqueIntervalChoiceId": "ch_f9c49c2729c5ac8e",
+      "literalValues": [
+        "9/10",
+        "1/10",
+        "10/9",
+        "1"
+      ],
+      "exactAnswer": "9/10",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_f9c49c2729c5ac8e",
+            "ch_cb23a9c66f4984ce"
+          ],
+          "exactDifference": "4/5"
+        },
+        {
+          "choiceIds": [
+            "ch_f9c49c2729c5ac8e",
+            "ch_fb639b0fa0f0c308"
+          ],
+          "exactDifference": "-19/90"
+        },
+        {
+          "choiceIds": [
+            "ch_f9c49c2729c5ac8e",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/10"
+        },
+        {
+          "choiceIds": [
+            "ch_cb23a9c66f4984ce",
+            "ch_fb639b0fa0f0c308"
+          ],
+          "exactDifference": "-91/90"
+        },
+        {
+          "choiceIds": [
+            "ch_cb23a9c66f4984ce",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-9/10"
+        },
+        {
+          "choiceIds": [
+            "ch_fb639b0fa0f0c308",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "1/9"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "ae2a5494ca1b58def4717cd591796140eac6b73526fa40bad97f50d4b1c21ddd",
+      "sourceProblemId": "cn_70ff6f2fffec3caee9b8",
+      "sourceCanonicalRawHash": "9d97514d2b93dbba006159b471950579772a6467cd0f8440e6b84e4796de5e3d",
+      "sourceContentHash": "07c767702c38f2ab2a04e7fca9aabf6a8fb805b8fbe16d9b5122b3c875ebb210",
+      "sourceRevision": 1,
+      "exponent": 9,
+      "uniqueIntervalChoiceId": "ch_c981c45980830405",
+      "literalValues": [
+        "10/11",
+        "1/2",
+        "1/11",
+        "1"
+      ],
+      "exactAnswer": "10/11",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_c981c45980830405",
+            "ch_a97d973330d36673"
+          ],
+          "exactDifference": "9/22"
+        },
+        {
+          "choiceIds": [
+            "ch_c981c45980830405",
+            "ch_6ce9548ccc860454"
+          ],
+          "exactDifference": "9/11"
+        },
+        {
+          "choiceIds": [
+            "ch_c981c45980830405",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/11"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_6ce9548ccc860454"
+          ],
+          "exactDifference": "9/22"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/2"
+        },
+        {
+          "choiceIds": [
+            "ch_6ce9548ccc860454",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-10/11"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "01dcc8458893a04dc736a61ae0181b5a17c38875eb9e934aaf208d9fce6a5079",
+      "sourceProblemId": "cn_1f7d107b4817cd884b7d",
+      "sourceCanonicalRawHash": "b90fd3412e76afc31813f48ec36825d84604cfbc1eb415418b1e95732f5353bd",
+      "sourceContentHash": "c469ce8a1751c94adbf752bf52265c5b2ede44366f7a37f6df2f38d07c874b9a",
+      "sourceRevision": 1,
+      "exponent": 10,
+      "uniqueIntervalChoiceId": "ch_15fa6a3144050062",
+      "literalValues": [
+        "11/12",
+        "1/12",
+        "12/11",
+        "1"
+      ],
+      "exactAnswer": "11/12",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_15fa6a3144050062",
+            "ch_b10b8d7603d1bb49"
+          ],
+          "exactDifference": "5/6"
+        },
+        {
+          "choiceIds": [
+            "ch_15fa6a3144050062",
+            "ch_8823f16755a6598c"
+          ],
+          "exactDifference": "-23/132"
+        },
+        {
+          "choiceIds": [
+            "ch_15fa6a3144050062",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/12"
+        },
+        {
+          "choiceIds": [
+            "ch_b10b8d7603d1bb49",
+            "ch_8823f16755a6598c"
+          ],
+          "exactDifference": "-133/132"
+        },
+        {
+          "choiceIds": [
+            "ch_b10b8d7603d1bb49",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-11/12"
+        },
+        {
+          "choiceIds": [
+            "ch_8823f16755a6598c",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "1/11"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    },
+    {
+      "rawSha256": "9e157545c366765803bdcc9f489c8c3b7ee6d0e6214a359e930f8fc5461fef59",
+      "sourceProblemId": "cn_99047134c1e6b4b2ebe9",
+      "sourceCanonicalRawHash": "33e8ede64b10778df2eeea48dbc9d16cafaa3bd7cc25ecc147c45d37e00ca00b",
+      "sourceContentHash": "d247da606bacd7d09bd47aba2b9ba5b40ea59e1b9c8f85905d0d7f706ab547e3",
+      "sourceRevision": 1,
+      "exponent": 11,
+      "uniqueIntervalChoiceId": "ch_992a9a3159bf6663",
+      "literalValues": [
+        "12/13",
+        "1/2",
+        "1/13",
+        "1"
+      ],
+      "exactAnswer": "12/13",
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_992a9a3159bf6663",
+            "ch_a97d973330d36673"
+          ],
+          "exactDifference": "11/26"
+        },
+        {
+          "choiceIds": [
+            "ch_992a9a3159bf6663",
+            "ch_e070da67d6f723f6"
+          ],
+          "exactDifference": "11/13"
+        },
+        {
+          "choiceIds": [
+            "ch_992a9a3159bf6663",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/13"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_e070da67d6f723f6"
+          ],
+          "exactDifference": "11/26"
+        },
+        {
+          "choiceIds": [
+            "ch_a97d973330d36673",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-1/2"
+        },
+        {
+          "choiceIds": [
+            "ch_e070da67d6f723f6",
+            "ch_3f02791adb171778"
+          ],
+          "exactDifference": "-12/13"
+        }
+      ],
+      "recommendedDifficulty": "easy",
+      "qualifiedOlympiad": false,
+      "passed": true
+    }
+  ],
+  "counts": {
+    "records": 10,
+    "retainedPublicRevisions": 8,
+    "privateReplacements": 2,
+    "uniqueQualitativeSelections": 10,
+    "pairDistinctions": 60
+  },
+  "scope": "Classification-only author finite review; independent confirmation remains required."
+}

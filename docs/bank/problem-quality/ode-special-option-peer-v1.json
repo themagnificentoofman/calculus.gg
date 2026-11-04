@@ -1,0 +1,1980 @@
+{
+  "author": "coverage_research",
+  "reviewer": "root",
+  "inputSha256": "cca9b50fc64db0b2ae6aa9fe20e7edb47dd8e965f83eb887272c673fa0174e21",
+  "reviewSources": {
+    "ode_special_options.py": "d4e619324a9eb77ab056cec5c4fe9179b865e7fad77aae98db9fe86666949b75",
+    "limits_intervals.py": "4b2ea856d3ff95e0245e2c31aadc033e1ae7db910959cea49290be6cbe786760",
+    "series_intervals.py": "bb71f706ad7c41e3040a5043889d81e73e199a34792ceef7f5a430772eaedf52",
+    "rational_intervals.py": "8dc0cbe9cd0886f1c91f948165a6ed6a85305ecd93b326891ff1a65bb1de2076"
+  },
+  "instances": 17,
+  "pairInequalities": 102,
+  "oppositeSumChecks": 102,
+  "besselDomainArgument": {
+    "derivation": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+    "rootDomain": "For nu>=1 and0<z<=2, the normalized alternating series exceeds1-z\u00b2/[4(nu+1)]>=nu/(nu+1)>0. For nu=0 the first pair is positive for z<2; at z=2 the next pair1/4-1/36>0 and the remaining alternating tail is positive. Thus alpha>2. Coefficient ratios decrease, justifying each bound.",
+    "positiveScale": "At alpha>0 the ODE is regular. A common zero of J_nu and J_(nu+1) would also have derivative zero by the coefficient-checked recurrence, contradicting uniqueness and the nonzero defining series. Hence B=J_(nu+1)(alpha)^2>0.",
+    "exactCoefficientChecks": 2,
+    "lagrangeIdentityChecked": true
+  },
+  "records": [
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 0,
+      "rawSha256": "13da4fb078775de89c4ca708b9aea705c9ace4d8505860ccd893a8c4f7ead27f",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_4da20b3d829f607b",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 3/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 5/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4da20b3d829f607b",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 7/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 9/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4da20b3d829f607b",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3*q/2 + 6",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5b3184cf85338ddf",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 3",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 1,
+      "rawSha256": "b08b5a63e761fab3ff6f934bfe789a353acfc43b30b7474d07d34ed07d7113ec",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_e1b1db02fca799bd",
+            "ch_4da20b3d829f607b"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_e1b1db02fca799bd",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_e1b1db02fca799bd",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4da20b3d829f607b",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 3/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 5/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4da20b3d829f607b",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 2,
+      "rawSha256": "406a16448852bf6ef6ef14521f2da32ab81296feb3c00c4d8af3b93174e50253",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_bc99290ac01c8d09"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 2",
+            "positiveDenominator": "4*q + 16"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 6",
+            "positiveDenominator": "4*q + 16"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-3",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "5",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_4b55ce43a33c73d3"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-2*q - 7",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "2*q + 9",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_4b55ce43a33c73d3"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_4b55ce43a33c73d3"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 3,
+      "rawSha256": "4e007c40159b0b0e190b14261373c3433a223e7568b42c666013db458b5b1dd2",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_4b55ce43a33c73d3"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_e1b1db02fca799bd"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_9af6cbc4b3d336a3"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 2",
+            "positiveDenominator": "4*q + 16"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 6",
+            "positiveDenominator": "4*q + 16"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4b55ce43a33c73d3",
+            "ch_e1b1db02fca799bd"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4b55ce43a33c73d3",
+            "ch_9af6cbc4b3d336a3"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_e1b1db02fca799bd",
+            "ch_9af6cbc4b3d336a3"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "4"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 4,
+      "rawSha256": "459561a3534bddd2790ce187bf1b5e938a6df998e2cbf6d686cd19f84b54f904",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_3a495b3d305aae70",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 3/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 5/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_3a495b3d305aae70",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 7/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 9/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_3a495b3d305aae70",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3*q/2 + 6",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5b3184cf85338ddf",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 3",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 5,
+      "rawSha256": "1a41c93fdc06d8f8a7d813909779098c57da208e422275430540761b63bdbc83",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-3",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "5",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 7/4",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 9/4",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_3a495b3d305aae70"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_3a495b3d305aae70"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_78c68c8c740b3d1c",
+            "ch_3a495b3d305aae70"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 5/2",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 6,
+      "rawSha256": "b2c3848e8c4d0638f31506c6181ef5f9c455cfde9fdd02e823cd7dafc64a2c52",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_bc99290ac01c8d09"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 2",
+            "positiveDenominator": "4*q + 16"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 6",
+            "positiveDenominator": "4*q + 16"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_d2d0bcb686acfdde"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 15/4",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 17/4",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_d2d0bcb686acfdde"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-2*q**2 - 16*q - 31",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "2*q**2 + 16*q + 33",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_d2d0bcb686acfdde",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 7/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 9/2",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 7,
+      "rawSha256": "4b8f95bac438955c69697f67af58007a3ab60e6668aea794d22ad610becb2f9d",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_bc99290ac01c8d09"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 2",
+            "positiveDenominator": "4*q + 16"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 6",
+            "positiveDenominator": "4*q + 16"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_d2d0bcb686acfdde"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_e1b1db02fca799bd"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_d2d0bcb686acfdde"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_bc99290ac01c8d09",
+            "ch_e1b1db02fca799bd"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2*q + 8"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2*q + 8"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_d2d0bcb686acfdde",
+            "ch_e1b1db02fca799bd"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 8,
+      "rawSha256": "456ce8c40102162031b08f6b88d268982c2c6516c9cc4565f4496953e4c7d5d7",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_2d146fa1d1b32201",
+            "ch_cfa6aea9a5fbee85"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_2d146fa1d1b32201",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 7/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 9/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_2d146fa1d1b32201",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 3/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 5/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q/2 - 1",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 3",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5b3184cf85338ddf",
+            "ch_78c68c8c740b3d1c"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q/2 + 2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3*q/2 + 6",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Bessel-zero-normalization",
+      "index": 9,
+      "rawSha256": "0548636e20e7ace1ecbb3306244565a6fef0c0c9b5ca0a780cd1e5e59b9675da",
+      "independentAnswer": "B/2",
+      "route": "Differentiate the Sturm equation in lambda for u(r)=J_nu(lambda*r). Lagrange identity gives [r(v*uprime-u*vprime)]_0^1=2lambda integral(r*u^2). The defining series makes the zero endpoint vanish. At a root, v(1)=Jprime(alpha), uprime(1)=alpha*Jprime(alpha); division gives integral=Jprime(alpha)^2/2=J_(nu+1)(alpha)^2/2.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_2d146fa1d1b32201"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "2"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "2"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_9af6cbc4b3d336a3"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "5",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_cfa6aea9a5fbee85",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 3",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 5",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_2d146fa1d1b32201",
+            "ch_9af6cbc4b3d336a3"
+          ],
+          "difference": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "1",
+            "positiveDenominator": "4"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "3",
+            "positiveDenominator": "4"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_2d146fa1d1b32201",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 7/2",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 9/2",
+            "positiveDenominator": "1"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9af6cbc4b3d336a3",
+            "ch_5b3184cf85338ddf"
+          ],
+          "difference": {
+            "sign": -1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "-q - 15/4",
+            "positiveDenominator": "1"
+          },
+          "sum": {
+            "sign": 1,
+            "positiveVariable": "q=alpha^2-4",
+            "numerator": "q + 17/4",
+            "positiveDenominator": "1"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 0,
+      "rawSha256": "546aa95c992273891fa6ea03f178de21335e4faf44f31f71544e4636b2b4e340",
+      "independentAnswer": "-1/2 + 1/(4*sinh(1)**2) + coth(1)/4",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_33886642d132b0b2",
+            "ch_6d3df84603bbe05b"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-2318559154102610627759377253839900635712643/250000000000000000000000000000000000000000000",
+            "upper": "-9274236616410442511037509015359602542850569/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "27822709849231327533112527046078807628551707/1000000000000000000000000000000000000000000000",
+            "upper": "5564541969846265506622505409215761525710343/200000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_33886642d132b0b2",
+            "ch_655fc31d0812a18a"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-5564541969846265506622505409215761525710343/200000000000000000000000000000000000000000000",
+            "upper": "-27822709849231327533112527046078807628551707/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "9274236616410442511037509015359602542850569/200000000000000000000000000000000000000000000",
+            "upper": "46371183082052212555187545076798012714252859/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_33886642d132b0b2",
+            "ch_81bc3d3c5f3e921b"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-1/2",
+            "upper": "-1/2"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "259274236616410442511037509015359602542850563/500000000000000000000000000000000000000000000",
+            "upper": "518548473232820885022075018030719205085701149/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_6d3df84603bbe05b",
+            "ch_655fc31d0812a18a"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-2318559154102610627759377253839900635712643/125000000000000000000000000000000000000000000",
+            "upper": "-18548473232820885022075018030719205085701139/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "55645419698462655066225054092157615257103419/1000000000000000000000000000000000000000000000",
+            "upper": "5564541969846265506622505409215761525710343/100000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_6d3df84603bbe05b",
+            "ch_81bc3d3c5f3e921b"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-490725763383589557488962490984640397457149457/1000000000000000000000000000000000000000000000",
+            "upper": "-245362881691794778744481245492320198728574687/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "527822709849231327533112527046078807628551653/1000000000000000000000000000000000000000000000",
+            "upper": "527822709849231327533112527046078807628551741/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_655fc31d0812a18a",
+            "ch_81bc3d3c5f3e921b"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-118044322537692168116721868238480298092862079/250000000000000000000000000000000000000000000",
+            "upper": "-472177290150768672466887472953921192371448233/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "546371183082052212555187545076798012714252791/1000000000000000000000000000000000000000000000",
+            "upper": "109274236616410442511037509015359602542850577/200000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 1,
+      "rawSha256": "e2a77217d79df5137d64bf32cf25e5ff2ed8c800f1b669c3e1650818883b4e68",
+      "independentAnswer": "-1/32 + 1/(16*sinh(2)**2) + coth(2)/32",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_5f3592af24b97784",
+            "ch_3a758841a388fbba"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-1090203075704194100208949274407106207303353/40000000000000000000000000000000000000000000",
+            "upper": "-27255076892604852505223731860177655182582571/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "20084518208317721090915215592888664275788517/1000000000000000000000000000000000000000000000",
+            "upper": "10042259104158860545457607796444332137894721/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5f3592af24b97784",
+            "ch_d99ed0937d6fd4b8"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-40752728729758887406671626565277785385694013/1000000000000000000000000000000000000000000000",
+            "upper": "-20376364364879443703335813282638892692845133/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1679108502273587799618155514899439723944971/50000000000000000000000000000000000000000000",
+            "upper": "33582170045471755992363110297988794478899479/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5f3592af24b97784",
+            "ch_729918fa7456467f"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-190054574595177748133432531305555707713877/20000000000000000000000000000000000000000000",
+            "upper": "-1900545745951777481334325313055557077138759/200000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1166085022735877996181555148994397239449727/500000000000000000000000000000000000000000000",
+            "upper": "466434009094351198472622059597758895779891/200000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_3a758841a388fbba",
+            "ch_d99ed0937d6fd4b8"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-13497651837154034901447894705100130203110189/1000000000000000000000000000000000000000000000",
+            "upper": "-13497651837154034901447894705100130203108947/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "3041862346903830424879342107908322483073893/50000000000000000000000000000000000000000000",
+            "upper": "30418623469038304248793421079083224830741727/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_3a758841a388fbba",
+            "ch_729918fa7456467f"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "8876174081422982549276052647449934898444579/500000000000000000000000000000000000000000000",
+            "upper": "710093926513838603942084211795994791875599/40000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "2958724693807660849758684215816644966148193/100000000000000000000000000000000000000000000",
+            "upper": "29587246938076608497586842158166449661483291/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_d99ed0937d6fd4b8",
+            "ch_729918fa7456467f"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1/32",
+            "upper": "1/32"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "21542449387615321699517368431633289932294759/500000000000000000000000000000000000000000000",
+            "upper": "1077122469380766084975868421581664496614837/25000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 2,
+      "rawSha256": "51fc5d4a945fe6db25c2365998b9ca70e4bd4fdd235cdd38bdb36826f6be5a8c",
+      "independentAnswer": "-1/162 + 1/(36*sinh(3)**2) + coth(3)/108",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_43fee13bc2eb9a72",
+            "ch_fc4e417f99087774"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-1151037244012471430703055246776743118305279/1000000000000000000000000000000000000000000000",
+            "upper": "-230207448802494286140611049355348623636897/200000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1140065315541232200788478604396013121404563/250000000000000000000000000000000000000000000",
+            "upper": "182410450486597152126156576703362099431111/40000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_43fee13bc2eb9a72",
+            "ch_abed552f3ef3e0ce"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-3938725757624534096199134545788247095136949/500000000000000000000000000000000000000000000",
+            "upper": "-3938725757624534096199134545788247094723607/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "11286675533401525564849128262383803556721459/1000000000000000000000000000000000000000000000",
+            "upper": "2821668883350381391212282065595950889476479/250000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_43fee13bc2eb9a72",
+            "ch_aa21d9bde1fb7f6e"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-170461200907622868622542958540365468381601/100000000000000000000000000000000000000000000",
+            "upper": "-852306004538114343112714792701827341818561/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "5113836027228686058676288756210964051090253/1000000000000000000000000000000000000000000000",
+            "upper": "5113836027228686058676288756210964051269141/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_fc4e417f99087774",
+            "ch_abed552f3ef3e0ce"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-6726414271236596761695213844799751071792147/1000000000000000000000000000000000000000000000",
+            "upper": "-3363207135618298380847606922399875535807837/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "2487542555482799399110436701832109335127291/200000000000000000000000000000000000000000000",
+            "upper": "12437712777413996995552183509160546675636861/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_fc4e417f99087774",
+            "ch_aa21d9bde1fb7f6e"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-553574765063757255522374338626911565485719/1000000000000000000000000000000000000000000000",
+            "upper": "-553574765063757255522374338626911565484911/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "3132436635620578744689672001493853584731803/500000000000000000000000000000000000000000000",
+            "upper": "1252974654248231497875868800597541433892803/200000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_abed552f3ef3e0ce",
+            "ch_aa21d9bde1fb7f6e"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1/162",
+            "upper": "1/162"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "12991287542477754251074557847787458241040253/1000000000000000000000000000000000000000000000",
+            "upper": "811955471404859640692159865486716140075667/62500000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 4,
+      "rawSha256": "0fed8f19f30c845760937d8a6559b77053629340ff2b8a78d85e5cbd88a8a7b8",
+      "independentAnswer": "-1/1250 + 1/(100*sinh(5)**2) + coth(5)/500",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_c6863b4711521f6e",
+            "ch_4baef29e95d07bee"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1816162094019016483916052710970459461371/1000000000000000000000000000000000000000000000",
+            "upper": "908081047009508241958026355485229741699/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "240217937802209651863054773479772010468033/100000000000000000000000000000000000000000000",
+            "upper": "2402179378022096518630547734797721561365339/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_c6863b4711521f6e",
+            "ch_9924760d9411dd2c"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "75124860628628610472326993359646443444063/125000000000000000000000000000000000000000000",
+            "upper": "600998885029028883778615946877173005338837/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1802996655087086651335847840631514642657513/1000000000000000000000000000000000000000000000",
+            "upper": "1802996655087086651335847840631519016016509/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_c6863b4711521f6e",
+            "ch_1b22d48525b7f9ce"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1816162094019016483916052710970459461371/500000000000000000000000000000000000000000000",
+            "upper": "908081047009508241958026355485229741699/250000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1200181607964038751073315841043375207628877/500000000000000000000000000000000000000000000",
+            "upper": "1200181607964038751073315841043375207661921/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4baef29e95d07bee",
+            "ch_9924760d9411dd2c"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "599182722935009867294699894166201091967791/1000000000000000000000000000000000000000000000",
+            "upper": "59918272293500986729469989416620254534883/100000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "2251475616241334543564914734900680233841/1250000000000000000000000000000000000000000",
+            "upper": "1801180492993067634851931787920548556026503/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_4baef29e95d07bee",
+            "ch_1b22d48525b7f9ce"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1816162094019016483916052710970459461371/1000000000000000000000000000000000000000000000",
+            "upper": "908081047009508241958026355485229741699/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "2398547053834058485662715629375779186902963/1000000000000000000000000000000000000000000000",
+            "upper": "1199273526917029242831357814687890320692663/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_9924760d9411dd2c",
+            "ch_1b22d48525b7f9ce"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-74670820105123856351347980181904010669853/125000000000000000000000000000000000000000000",
+            "upper": "-597366560840990850810783841455230636383077/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "899682165449524309184007867604786865744043/500000000000000000000000000000000000000000000",
+            "upper": "112460270681190538648000983450598631002281/62500000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 5,
+      "rawSha256": "4a84c548f80e101dec8611fc2da8786c469c16e10a33c3dbf154556cda70b0fd",
+      "independentAnswer": "-1/2592 + 1/(144*sinh(6)**2) + coth(6)/864",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_65a5b45eef584a28",
+            "ch_a36d09c6feb81f70"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-771789835735460227857120640423693411846597/1000000000000000000000000000000000000000000000",
+            "upper": "-771789835735460227857120640423666916702541/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "18522956057651045468570895370168006000861/8000000000000000000000000000000000000000000",
+            "upper": "2315369507206380683571361921271027245251681/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_65a5b45eef584a28",
+            "ch_fd1449fa8094b7ef"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-1/2592",
+            "upper": "-1/2592"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "241172767575840365606255468747891640316613/125000000000000000000000000000000000000000000",
+            "upper": "1929382140606722924850043749983265591905747/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_65a5b45eef584a28",
+            "ch_dba4b2ce4c445cc2"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-2315369507206380683571361921271027245251681/1000000000000000000000000000000000000000000000",
+            "upper": "-18522956057651045468570895370168006000861/8000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "964737294669325284821400800529583645878177/250000000000000000000000000000000000000000000",
+            "upper": "771789835735460227857120640423693411846597/200000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_a36d09c6feb81f70",
+            "ch_fd1449fa8094b7ef"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "1206210520623930496004119285274586336171/3125000000000000000000000000000000000000000",
+            "upper": "38598736659965775872131817128789412906621/100000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1350585988171091576353582195203400019617723/500000000000000000000000000000000000000000000",
+            "upper": "2701171976342183152707164390406985498896399/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_a36d09c6feb81f70",
+            "ch_dba4b2ce4c445cc2"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-1543579671470920455714241280847360328549139/1000000000000000000000000000000000000000000000",
+            "upper": "-1543579671470920455714241280847333833405083/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "926147802882552273428544768508405599071861/200000000000000000000000000000000000000000000",
+            "upper": "4630739014412761367142723842542054490503361/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_fd1449fa8094b7ef",
+            "ch_dba4b2ce4c445cc2"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-964783519035289107217779726067666971523757/500000000000000000000000000000000000000000000",
+            "upper": "-482391759517644553608889863033800365244951/250000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "4244751647813103608421405671254133872640529/1000000000000000000000000000000000000000000000",
+            "upper": "4244751647813103608421405671254425312877703/1000000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 8,
+      "rawSha256": "45ffcad11be03e34f675a953702c4de75591a236a429f0d6458dedc46f22c310",
+      "independentAnswer": "-1/13122 + 1/(324*sinh(9)**2) + coth(9)/2916",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_73ced4f3f469a766",
+            "ch_16d0de992ca15d45"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-233386852521398177695856309612250428518709/250000000000000000000000000000000000000000000",
+            "upper": "-466773705042796355391712513599252575070603/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "600137620769309599789344705609859717362267/500000000000000000000000000000000000000000000",
+            "upper": "18754300649040924993417022521849403140637/15625000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_73ced4f3f469a766",
+            "ch_5a1091ab204b7d33"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-400091747179539733192896500585215511184411/1000000000000000000000000000000000000000000000",
+            "upper": "-200045873589769866596448235203286572454089/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "41676223664535388874260045857076122774161/62500000000000000000000000000000000000000000",
+            "upper": "33340978931628311099408044230321489788387/50000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_73ced4f3f469a766",
+            "ch_00b937ce95abf617"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-33340978931628311099408044230321489788387/250000000000000000000000000000000000000000000",
+            "upper": "-26672783145302648879526429348528718575463/200000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "200045873589769866596448235203286572454089/500000000000000000000000000000000000000000000",
+            "upper": "400091747179539733192896500585215511184411/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_16d0de992ca15d45",
+            "ch_5a1091ab204b7d33"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "533455662906052977590528617149216737785493/1000000000000000000000000000000000000000000000",
+            "upper": "533455662906052977590528647327859104061727/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1600366988718158932771585881626292579632713/1000000000000000000000000000000000000000000000",
+            "upper": "800183494359079466385792955902467472954473/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_16d0de992ca15d45",
+            "ch_00b937ce95abf617"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "200045873589769866596448235203286572454089/250000000000000000000000000000000000000000000",
+            "upper": "80018349435907946638579297099178865609259/100000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "41676223664535388874260045857076122774161/31250000000000000000000000000000000000000000",
+            "upper": "333409789316283110994080404579911940038579/250000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_5a1091ab204b7d33",
+            "ch_00b937ce95abf617"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "26672783145302648879526429348528718575463/100000000000000000000000000000000000000000000",
+            "upper": "16670489465814155549704020228995597001929/62500000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "200045873589769866596448235203286572454089/250000000000000000000000000000000000000000000",
+            "upper": "80018349435907946638579297099178865609259/100000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    },
+    {
+      "familyId": "q4-differential-equations-Green-kernel-square-trace",
+      "index": 9,
+      "rawSha256": "456e14406ec79960b128b0b3be8c34e161c815f4520e033067061901274d2611",
+      "independentAnswer": "-1/20000 + 1/(400*sinh(10)**2) + coth(10)/4000",
+      "route": "Explicitly verify the matched zero-boundary Green kernel and jump. Integrate its square first over0<t<s<1, using the elementary primitive of sinh\u00b2, then double by symmetry. This independently yields the displayed hyperbolic expression.",
+      "correctAnswerPassed": true,
+      "literalPairCertificates": [
+        {
+          "choiceIds": [
+            "ch_45062f4e57d10ab6",
+            "ch_41fe0855fe08f01e"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "18750002028948105252761189359428854821349/31250000000000000000000000000000000000000000",
+            "upper": "300000032463169684044179735906735690728641/500000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "50000005410528280674029908907397680882303/50000000000000000000000000000000000000000000",
+            "upper": "200000021642113122696119729783707258674153/200000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_45062f4e57d10ab6",
+            "ch_2186803176c88b9b"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "6000001061494119867936853558746676854921/10000000000000000000000000000000000000000000",
+            "upper": "37500006634338249174605423011657046606581/62500000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "500000033493746497387635440887475533306839/500000000000000000000000000000000000000000000",
+            "upper": "1000000066987492994775271352545514335730567/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_45062f4e57d10ab6",
+            "ch_4b5a1f026ada89b5"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "300000042768937838720510853844097759943817/500000000000000000000000000000000000000000000",
+            "upper": "600000085537875677441023119999992063581289/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "1000000087599029304127934529961452342129869/1000000000000000000000000000000000000000000000",
+            "upper": "500000043799514652063967500366012657275333/500000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_41fe0855fe08f01e",
+            "ch_2186803176c88b9b"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "41223072618705327296373014194997071/1000000000000000000000000000000000000000000000",
+            "upper": "41223072618705327296373014680162267/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "100000000515288406671728023003510038408463/250000000000000000000000000000000000000000000",
+            "upper": "400000002061153626686912092014041123964247/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_41fe0855fe08f01e",
+            "ch_4b5a1f026ada89b5"
+          ],
+          "difference": {
+            "sign": 1,
+            "lower": "4122307261870532729637301419499707/200000000000000000000000000000000000000000000",
+            "upper": "20611536309352663648186507582663731/1000000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "200000011336344968019787764459284244024623/500000000000000000000000000000000000000000000",
+            "upper": "400000022672689936039575999689126905514181/1000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "choiceIds": [
+            "ch_2186803176c88b9b",
+            "ch_4b5a1f026ada89b5"
+          ],
+          "difference": {
+            "sign": -1,
+            "lower": "-20611536309352663648186507582663731/1000000000000000000000000000000000000000000000",
+            "upper": "-4122307261870532729637301419499707/200000000000000000000000000000000000000000000"
+          },
+          "sum": {
+            "sign": 1,
+            "lower": "399999981449617317334248232545575640320773/1000000000000000000000000000000000000000000000",
+            "upper": "399999981449617317334248703316085541266167/1000000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "mathematicalOppositePairs": [],
+      "passed": true
+    }
+  ],
+  "scope": "Independent literal mathematics and domain review. Final family/form screen, classification, lineage and admission remain separate; no formal or human certification."
+}
