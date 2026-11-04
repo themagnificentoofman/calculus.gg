@@ -1,0 +1,1835 @@
+{
+  "polynomial-area": {
+    "familyId": "polynomial-area",
+    "kind": "integral",
+    "kernels": [
+      "x",
+      "x^{2}",
+      "x^{3}"
+    ],
+    "values": [
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}x\\,dx=\\frac{1}{2}",
+      "\\int_{0}^{1}x^{2}\\,dx=\\frac{1}{3}",
+      "\\int_{0}^{1}x^{3}\\,dx=\\frac{1}{4}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "exponential-area": {
+    "familyId": "exponential-area",
+    "kind": "integral",
+    "kernels": [
+      "e^{x}",
+      "e^{2 x}",
+      "e^{3 x}"
+    ],
+    "values": [
+      "-1 + e",
+      "- \\frac{1}{2} + \\frac{e^{2}}{2}",
+      "- \\frac{1}{3} + \\frac{e^{3}}{3}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}e^{x}\\,dx=-1 + e",
+      "\\int_{0}^{1}e^{2 x}\\,dx=- \\frac{1}{2} + \\frac{e^{2}}{2}",
+      "\\int_{0}^{1}e^{3 x}\\,dx=- \\frac{1}{3} + \\frac{e^{3}}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "trig-area": {
+    "familyId": "trig-area",
+    "kind": "integral",
+    "kernels": [
+      "\\sin{\\left(x \\right)}",
+      "\\cos{\\left(x \\right)}",
+      "\\sin{\\left(2 x \\right)}"
+    ],
+    "values": [
+      "1",
+      "1",
+      "1"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{\\frac{\\pi}{2}}\\sin{\\left(x \\right)}\\,dx=1",
+      "\\int_{0}^{\\frac{\\pi}{2}}\\cos{\\left(x \\right)}\\,dx=1",
+      "\\int_{0}^{\\frac{\\pi}{2}}\\sin{\\left(2 x \\right)}\\,dx=1"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, pi/2); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "\\frac{\\pi}{2}"
+  },
+  "polynomial-exponential": {
+    "familyId": "polynomial-exponential",
+    "kind": "integral",
+    "kernels": [
+      "x e^{x}",
+      "x^{2} e^{x}",
+      "x^{3} e^{x}"
+    ],
+    "values": [
+      "1",
+      "-2 + e",
+      "6 - 2 e"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}x e^{x}\\,dx=1",
+      "\\int_{0}^{1}x^{2} e^{x}\\,dx=-2 + e",
+      "\\int_{0}^{1}x^{3} e^{x}\\,dx=6 - 2 e"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "quadratic-substitution": {
+    "familyId": "quadratic-substitution",
+    "kind": "integral",
+    "kernels": [
+      "\\frac{2 x}{x^{2} + 1}",
+      "\\frac{4 x}{\\left(x^{2} + 1\\right)^{2}}",
+      "\\frac{6 x}{\\left(x^{2} + 1\\right)^{3}}"
+    ],
+    "values": [
+      "\\log{\\left(2 \\right)}",
+      "1",
+      "\\frac{9}{8}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}\\frac{2 x}{x^{2} + 1}\\,dx=\\log{\\left(2 \\right)}",
+      "\\int_{0}^{1}\\frac{4 x}{\\left(x^{2} + 1\\right)^{2}}\\,dx=1",
+      "\\int_{0}^{1}\\frac{6 x}{\\left(x^{2} + 1\\right)^{3}}\\,dx=\\frac{9}{8}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "rational-decomposition": {
+    "familyId": "rational-decomposition",
+    "kind": "integral",
+    "kernels": [
+      "\\frac{1}{\\left(x + 1\\right) \\left(x + 2\\right)}",
+      "\\frac{1}{\\left(x + 1\\right) \\left(x + 3\\right)}",
+      "\\frac{1}{\\left(x + 2\\right) \\left(x + 4\\right)}"
+    ],
+    "values": [
+      "\\log{\\left(\\frac{4}{3} \\right)}",
+      "- \\frac{\\log{\\left(2 \\right)}}{2} + \\frac{\\log{\\left(3 \\right)}}{2}",
+      "\\log{\\left(\\frac{\\sqrt{30}}{5} \\right)}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 2\\right)}\\,dx=\\log{\\left(\\frac{4}{3} \\right)}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 1\\right) \\left(x + 3\\right)}\\,dx=- \\frac{\\log{\\left(2 \\right)}}{2} + \\frac{\\log{\\left(3 \\right)}}{2}",
+      "\\int_{0}^{1}\\frac{1}{\\left(x + 2\\right) \\left(x + 4\\right)}\\,dx=\\log{\\left(\\frac{\\sqrt{30}}{5} \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "log-moments": {
+    "familyId": "log-moments",
+    "kind": "integral",
+    "kernels": [
+      "\\log{\\left(x \\right)}",
+      "x \\log{\\left(x \\right)}",
+      "x^{2} \\log{\\left(x \\right)}"
+    ],
+    "values": [
+      "-1",
+      "- \\frac{1}{4}",
+      "- \\frac{1}{9}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}\\log{\\left(x \\right)}\\,dx=-1",
+      "\\int_{0}^{1}x \\log{\\left(x \\right)}\\,dx=- \\frac{1}{4}",
+      "\\int_{0}^{1}x^{2} \\log{\\left(x \\right)}\\,dx=- \\frac{1}{9}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "trig-products": {
+    "familyId": "trig-products",
+    "kind": "integral",
+    "kernels": [
+      "\\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}",
+      "\\sin^{4}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}",
+      "\\sin^{6}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}"
+    ],
+    "values": [
+      "\\frac{\\pi}{16}",
+      "\\frac{\\pi}{32}",
+      "\\frac{5 \\pi}{256}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{\\frac{\\pi}{2}}\\sin^{2}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}\\,dx=\\frac{\\pi}{16}",
+      "\\int_{0}^{\\frac{\\pi}{2}}\\sin^{4}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}\\,dx=\\frac{\\pi}{32}",
+      "\\int_{0}^{\\frac{\\pi}{2}}\\sin^{6}{\\left(x \\right)} \\cos^{2}{\\left(x \\right)}\\,dx=\\frac{5 \\pi}{256}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, pi/2); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "\\frac{\\pi}{2}"
+  },
+  "improper-rational": {
+    "familyId": "improper-rational",
+    "kind": "integral",
+    "kernels": [
+      "\\frac{1}{\\left(x + 1\\right)^{2}}",
+      "\\frac{x}{\\left(x + 1\\right)^{3}}",
+      "\\frac{x^{2}}{\\left(x + 1\\right)^{4}}"
+    ],
+    "values": [
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{\\infty}\\frac{1}{\\left(x + 1\\right)^{2}}\\,dx=1",
+      "\\int_{0}^{\\infty}\\frac{x}{\\left(x + 1\\right)^{3}}\\,dx=\\frac{1}{2}",
+      "\\int_{0}^{\\infty}\\frac{x^{2}}{\\left(x + 1\\right)^{4}}\\,dx=\\frac{1}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, oo); endpoint singularities use one-sided improper limits."
+    ],
+    "lo": "0",
+    "hi": "\\infty"
+  },
+  "polynomial-slope": {
+    "familyId": "polynomial-slope",
+    "kind": "derivative",
+    "kernels": [
+      "x^{2}",
+      "x^{3}",
+      "x^{4}"
+    ],
+    "values": [
+      "2",
+      "3",
+      "4"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{2})\\right|_{x=1}=2",
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{3})\\right|_{x=1}=3",
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{4})\\right|_{x=1}=4"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "trig-slope": {
+    "familyId": "trig-slope",
+    "kind": "derivative",
+    "kernels": [
+      "\\sin{\\left(x \\right)}",
+      "\\cos{\\left(x \\right)}",
+      "\\sin{\\left(2 x \\right)}"
+    ],
+    "values": [
+      "1",
+      "0",
+      "2"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\sin{\\left(x \\right)})\\right|_{x=0}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\cos{\\left(x \\right)})\\right|_{x=0}=0",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\sin{\\left(2 x \\right)})\\right|_{x=0}=2"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "0",
+    "order": "1"
+  },
+  "exp-log-slope": {
+    "familyId": "exp-log-slope",
+    "kind": "derivative",
+    "kernels": [
+      "e^{x}",
+      "\\log{\\left(x \\right)}",
+      "\\sqrt{x}"
+    ],
+    "values": [
+      "e",
+      "1",
+      "\\frac{1}{2}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(e^{x})\\right|_{x=1}=e",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\log{\\left(x \\right)})\\right|_{x=1}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\sqrt{x})\\right|_{x=1}=\\frac{1}{2}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "product-rule": {
+    "familyId": "product-rule",
+    "kind": "derivative",
+    "kernels": [
+      "x e^{x}",
+      "x^{2} \\log{\\left(x \\right)}",
+      "x \\sin{\\left(x \\right)}"
+    ],
+    "values": [
+      "2 e",
+      "1",
+      "\\cos{\\left(1 \\right)} + \\sin{\\left(1 \\right)}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(x e^{x})\\right|_{x=1}=2 e",
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{2} \\log{\\left(x \\right)})\\right|_{x=1}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(x \\sin{\\left(x \\right)})\\right|_{x=1}=\\cos{\\left(1 \\right)} + \\sin{\\left(1 \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "quotient-rule": {
+    "familyId": "quotient-rule",
+    "kind": "derivative",
+    "kernels": [
+      "\\frac{x}{x^{2} + 1}",
+      "\\frac{e^{x}}{x + 1}",
+      "\\frac{\\log{\\left(x \\right)}}{x + 1}"
+    ],
+    "values": [
+      "0",
+      "\\frac{e}{4}",
+      "\\frac{1}{2}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\frac{x}{x^{2} + 1})\\right|_{x=1}=0",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\frac{e^{x}}{x + 1})\\right|_{x=1}=\\frac{e}{4}",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\frac{\\log{\\left(x \\right)}}{x + 1})\\right|_{x=1}=\\frac{1}{2}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "nested-chain": {
+    "familyId": "nested-chain",
+    "kind": "derivative",
+    "kernels": [
+      "e^{x^{2}}",
+      "\\log{\\left(x^{2} + 1 \\right)}",
+      "\\sin{\\left(x^{2} \\right)}"
+    ],
+    "values": [
+      "2 e",
+      "1",
+      "2 \\cos{\\left(1 \\right)}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(e^{x^{2}})\\right|_{x=1}=2 e",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\log{\\left(x^{2} + 1 \\right)})\\right|_{x=1}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\sin{\\left(x^{2} \\right)})\\right|_{x=1}=2 \\cos{\\left(1 \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "fourth-derivative": {
+    "familyId": "fourth-derivative",
+    "kind": "derivative",
+    "kernels": [
+      "x^{3} e^{x}",
+      "x^{2} \\cos{\\left(x \\right)}",
+      "\\log{\\left(x + 1 \\right)}"
+    ],
+    "values": [
+      "24",
+      "-12",
+      "-6"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{4}}{dx^{4}}(x^{3} e^{x})\\right|_{x=0}=24",
+      "\\left.\\frac{d^{4}}{dx^{4}}(x^{2} \\cos{\\left(x \\right)})\\right|_{x=0}=-12",
+      "\\left.\\frac{d^{4}}{dx^{4}}(\\log{\\left(x + 1 \\right)})\\right|_{x=0}=-6"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "0",
+    "order": "4"
+  },
+  "log-differentiation": {
+    "familyId": "log-differentiation",
+    "kind": "derivative",
+    "kernels": [
+      "x^{x}",
+      "x^{x^{2}}",
+      "\\left(x + 1\\right)^{x}"
+    ],
+    "values": [
+      "1",
+      "1",
+      "1 + \\log{\\left(4 \\right)}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{x})\\right|_{x=1}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(x^{x^{2}})\\right|_{x=1}=1",
+      "\\left.\\frac{d^{1}}{dx^{1}}(\\left(x + 1\\right)^{x})\\right|_{x=1}=1 + \\log{\\left(4 \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "1",
+    "order": "1"
+  },
+  "parametric-curvature": {
+    "familyId": "parametric-curvature",
+    "kind": "derivative",
+    "kernels": [
+      "\\sin^{3}{\\left(x \\right)}",
+      "\\cos^{3}{\\left(x \\right)}",
+      "e^{x} \\cos{\\left(x \\right)}"
+    ],
+    "values": [
+      "- \\frac{15 \\sqrt{2}}{4}",
+      "\\frac{15 \\sqrt{2}}{4}",
+      "- 2 \\sqrt{2} e^{\\frac{\\pi}{4}}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{3}}{dx^{3}}(\\sin^{3}{\\left(x \\right)})\\right|_{x=\\frac{\\pi}{4}}=- \\frac{15 \\sqrt{2}}{4}",
+      "\\left.\\frac{d^{3}}{dx^{3}}(\\cos^{3}{\\left(x \\right)})\\right|_{x=\\frac{\\pi}{4}}=\\frac{15 \\sqrt{2}}{4}",
+      "\\left.\\frac{d^{3}}{dx^{3}}(e^{x} \\cos{\\left(x \\right)})\\right|_{x=\\frac{\\pi}{4}}=- 2 \\sqrt{2} e^{\\frac{\\pi}{4}}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "\\frac{\\pi}{4}",
+    "order": "3"
+  },
+  "polynomial-continuity": {
+    "familyId": "polynomial-continuity",
+    "kind": "limit",
+    "kernels": [
+      "x^{2}",
+      "x^{3}",
+      "x^{4}"
+    ],
+    "values": [
+      "1",
+      "1",
+      "1"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 1^{+}}(x^{2})=1",
+      "\\lim_{x\\to 1^{+}}(x^{3})=1",
+      "\\lim_{x\\to 1^{+}}(x^{4})=1"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "1"
+  },
+  "removable-factor": {
+    "familyId": "removable-factor",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{x^{2} - 1}{x - 1}",
+      "\\frac{x^{3} - 1}{x - 1}",
+      "\\frac{x^{4} - 1}{x - 1}"
+    ],
+    "values": [
+      "2",
+      "3",
+      "4"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 1^{+}}(\\frac{x^{2} - 1}{x - 1})=2",
+      "\\lim_{x\\to 1^{+}}(\\frac{x^{3} - 1}{x - 1})=3",
+      "\\lim_{x\\to 1^{+}}(\\frac{x^{4} - 1}{x - 1})=4"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "1"
+  },
+  "standard-trig-limits": {
+    "familyId": "standard-trig-limits",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{\\sin{\\left(x \\right)}}{x}",
+      "\\frac{\\sin{\\left(2 x \\right)}}{x}",
+      "\\frac{\\sin{\\left(3 x \\right)}}{x}"
+    ],
+    "values": [
+      "1",
+      "2",
+      "3"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{\\sin{\\left(x \\right)}}{x})=1",
+      "\\lim_{x\\to 0^{+}}(\\frac{\\sin{\\left(2 x \\right)}}{x})=2",
+      "\\lim_{x\\to 0^{+}}(\\frac{\\sin{\\left(3 x \\right)}}{x})=3"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "exponential-cancellation": {
+    "familyId": "exponential-cancellation",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{e^{x} - 1}{x}",
+      "\\frac{e^{2 x} - 1}{x}",
+      "\\frac{e^{3 x} - 1}{x}"
+    ],
+    "values": [
+      "1",
+      "2",
+      "3"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{e^{x} - 1}{x})=1",
+      "\\lim_{x\\to 0^{+}}(\\frac{e^{2 x} - 1}{x})=2",
+      "\\lim_{x\\to 0^{+}}(\\frac{e^{3 x} - 1}{x})=3"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "rational-at-infinity": {
+    "familyId": "rational-at-infinity",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{x^{2} + 1}{2 x^{2} + 3}",
+      "\\frac{x^{3} - 1}{3 x^{3} + x}",
+      "\\frac{x^{4} + x}{4 x^{4} + 1}"
+    ],
+    "values": [
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to \\infty}(\\frac{x^{2} + 1}{2 x^{2} + 3})=\\frac{1}{2}",
+      "\\lim_{x\\to \\infty}(\\frac{x^{3} - 1}{3 x^{3} + x})=\\frac{1}{3}",
+      "\\lim_{x\\to \\infty}(\\frac{x^{4} + x}{4 x^{4} + 1})=\\frac{1}{4}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "\\infty"
+  },
+  "logarithmic-cancellation": {
+    "familyId": "logarithmic-cancellation",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{\\log{\\left(x + 1 \\right)}}{x}",
+      "\\frac{\\log{\\left(2 x + 1 \\right)}}{x}",
+      "\\frac{\\log{\\left(3 x + 1 \\right)}}{x}"
+    ],
+    "values": [
+      "1",
+      "2",
+      "3"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{\\log{\\left(x + 1 \\right)}}{x})=1",
+      "\\lim_{x\\to 0^{+}}(\\frac{\\log{\\left(2 x + 1 \\right)}}{x})=2",
+      "\\lim_{x\\to 0^{+}}(\\frac{\\log{\\left(3 x + 1 \\right)}}{x})=3"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "third-order-exponential": {
+    "familyId": "third-order-exponential",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{- \\frac{x^{2}}{2} - x + e^{x} - 1}{x^{3}}",
+      "\\frac{- 2 x^{2} - 2 x + e^{2 x} - 1}{x^{3}}",
+      "\\frac{- \\frac{9 x^{2}}{2} - 3 x + e^{3 x} - 1}{x^{3}}"
+    ],
+    "values": [
+      "\\frac{1}{6}",
+      "\\frac{4}{3}",
+      "\\frac{9}{2}"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{- \\frac{x^{2}}{2} - x + e^{x} - 1}{x^{3}})=\\frac{1}{6}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- 2 x^{2} - 2 x + e^{2 x} - 1}{x^{3}})=\\frac{4}{3}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- \\frac{9 x^{2}}{2} - 3 x + e^{3 x} - 1}{x^{3}})=\\frac{9}{2}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "trig-cancellation": {
+    "familyId": "trig-cancellation",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{x - \\sin{\\left(x \\right)}}{x^{3}}",
+      "\\frac{- x + \\tan{\\left(x \\right)}}{x^{3}}",
+      "\\frac{- x \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)}}{x^{3}}"
+    ],
+    "values": [
+      "\\frac{1}{6}",
+      "\\frac{1}{3}",
+      "\\frac{1}{3}"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{x - \\sin{\\left(x \\right)}}{x^{3}})=\\frac{1}{6}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- x + \\tan{\\left(x \\right)}}{x^{3}})=\\frac{1}{3}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- x \\cos{\\left(x \\right)} + \\sin{\\left(x \\right)}}{x^{3}})=\\frac{1}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "radical-cancellation": {
+    "familyId": "radical-cancellation",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{- \\frac{x}{2} + \\sqrt{x + 1} - 1}{x^{2}}",
+      "\\frac{- \\frac{x}{3} + \\sqrt[3]{x + 1} - 1}{x^{2}}",
+      "\\frac{- \\frac{x}{4} + \\sqrt[4]{x + 1} - 1}{x^{2}}"
+    ],
+    "values": [
+      "- \\frac{1}{8}",
+      "- \\frac{1}{9}",
+      "- \\frac{3}{32}"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{- \\frac{x}{2} + \\sqrt{x + 1} - 1}{x^{2}})=- \\frac{1}{8}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- \\frac{x}{3} + \\sqrt[3]{x + 1} - 1}{x^{2}})=- \\frac{1}{9}",
+      "\\lim_{x\\to 0^{+}}(\\frac{- \\frac{x}{4} + \\sqrt[4]{x + 1} - 1}{x^{2}})=- \\frac{3}{32}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "geometric-series": {
+    "familyId": "geometric-series",
+    "kind": "series",
+    "kernels": [
+      "\\left(\\frac{1}{2}\\right)^{n}",
+      "\\left(\\frac{1}{3}\\right)^{n}",
+      "\\left(\\frac{1}{4}\\right)^{n}"
+    ],
+    "values": [
+      "2",
+      "\\frac{3}{2}",
+      "\\frac{4}{3}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{2}\\right)^{n}\\right)=2",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{3}\\right)^{n}\\right)=\\frac{3}{2}",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{4}\\right)^{n}\\right)=\\frac{4}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "telescoping-series": {
+    "familyId": "telescoping-series",
+    "kind": "series",
+    "kernels": [
+      "\\frac{1}{\\left(n + 1\\right) \\left(n + 2\\right)}",
+      "\\frac{1}{\\left(n + 2\\right) \\left(n + 3\\right)}",
+      "\\frac{1}{\\left(n + 3\\right) \\left(n + 4\\right)}"
+    ],
+    "values": [
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 1\\right) \\left(n + 2\\right)}\\right)=1",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 2\\right) \\left(n + 3\\right)}\\right)=\\frac{1}{2}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 3\\right) \\left(n + 4\\right)}\\right)=\\frac{1}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "even-geometric-series": {
+    "familyId": "even-geometric-series",
+    "kind": "series",
+    "kernels": [
+      "\\left(\\frac{1}{2}\\right)^{2 n}",
+      "\\left(\\frac{1}{3}\\right)^{2 n}",
+      "\\left(\\frac{1}{4}\\right)^{2 n}"
+    ],
+    "values": [
+      "\\frac{4}{3}",
+      "\\frac{9}{8}",
+      "\\frac{16}{15}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{2}\\right)^{2 n}\\right)=\\frac{4}{3}",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{3}\\right)^{2 n}\\right)=\\frac{9}{8}",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{1}{4}\\right)^{2 n}\\right)=\\frac{16}{15}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "weighted-geometric": {
+    "familyId": "weighted-geometric",
+    "kind": "series",
+    "kernels": [
+      "2^{- n} n",
+      "3^{- n} n",
+      "4^{- n} n"
+    ],
+    "values": [
+      "2",
+      "\\frac{3}{4}",
+      "\\frac{4}{9}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(2^{- n} n\\right)=2",
+      "\\sum_{n=0}^{\\infty}\\left(3^{- n} n\\right)=\\frac{3}{4}",
+      "\\sum_{n=0}^{\\infty}\\left(4^{- n} n\\right)=\\frac{4}{9}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "exponential-series": {
+    "familyId": "exponential-series",
+    "kind": "series",
+    "kernels": [
+      "\\frac{1}{n!}",
+      "\\frac{2^{n}}{n!}",
+      "\\frac{3^{n}}{n!}"
+    ],
+    "values": [
+      "e",
+      "e^{2}",
+      "e^{3}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{n!}\\right)=e",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{2^{n}}{n!}\\right)=e^{2}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{3^{n}}{n!}\\right)=e^{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "alternating-log-series": {
+    "familyId": "alternating-log-series",
+    "kind": "series",
+    "kernels": [
+      "\\frac{\\left(-1\\right)^{n + 1}}{n}",
+      "\\frac{\\left(-1\\right)^{n + 1} \\cdot 2^{- n}}{n}",
+      "\\frac{\\left(-1\\right)^{n + 1} \\cdot 3^{- n}}{n}"
+    ],
+    "values": [
+      "\\log{\\left(2 \\right)}",
+      "\\log{\\left(\\frac{3}{2} \\right)}",
+      "\\log{\\left(\\frac{4}{3} \\right)}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(-1\\right)^{n + 1}}{n}\\right)=\\log{\\left(2 \\right)}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(-1\\right)^{n + 1} \\cdot 2^{- n}}{n}\\right)=\\log{\\left(\\frac{3}{2} \\right)}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(-1\\right)^{n + 1} \\cdot 3^{- n}}{n}\\right)=\\log{\\left(\\frac{4}{3} \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "1"
+  },
+  "quadratic-geometric": {
+    "familyId": "quadratic-geometric",
+    "kind": "series",
+    "kernels": [
+      "2^{- n} n^{2}",
+      "3^{- n} n^{2}",
+      "4^{- n} n^{2}"
+    ],
+    "values": [
+      "6",
+      "\\frac{3}{2}",
+      "\\frac{20}{27}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(2^{- n} n^{2}\\right)=6",
+      "\\sum_{n=0}^{\\infty}\\left(3^{- n} n^{2}\\right)=\\frac{3}{2}",
+      "\\sum_{n=0}^{\\infty}\\left(4^{- n} n^{2}\\right)=\\frac{20}{27}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "cubic-telescoping": {
+    "familyId": "cubic-telescoping",
+    "kind": "series",
+    "kernels": [
+      "\\frac{1}{\\left(n + 1\\right) \\left(n + 2\\right) \\left(n + 3\\right)}",
+      "\\frac{1}{\\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right)}",
+      "\\frac{1}{\\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right)}"
+    ],
+    "values": [
+      "\\frac{1}{4}",
+      "\\frac{1}{12}",
+      "\\frac{1}{24}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 1\\right) \\left(n + 2\\right) \\left(n + 3\\right)}\\right)=\\frac{1}{4}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right)}\\right)=\\frac{1}{12}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{1}{\\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right)}\\right)=\\frac{1}{24}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "0"
+  },
+  "zeta-even": {
+    "familyId": "zeta-even",
+    "kind": "series",
+    "kernels": [
+      "\\frac{1}{n^{2}}",
+      "\\frac{1}{n^{4}}",
+      "\\frac{1}{n^{6}}"
+    ],
+    "values": [
+      "\\frac{\\pi^{2}}{6}",
+      "\\frac{\\pi^{4}}{90}",
+      "\\frac{\\pi^{6}}{945}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{1}{n^{2}}\\right)=\\frac{\\pi^{2}}{6}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{1}{n^{4}}\\right)=\\frac{\\pi^{4}}{90}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{1}{n^{6}}\\right)=\\frac{\\pi^{6}}{945}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Each component series converges; linearity applies to the indicated partial sums."
+    ],
+    "start": "1"
+  },
+  "polynomial-initial-value": {
+    "familyId": "polynomial-initial-value",
+    "kind": "ode",
+    "kernels": [
+      "x",
+      "x^{2}",
+      "x^{3}"
+    ],
+    "values": [
+      "1",
+      "1",
+      "1"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 1,\\quad u{\\left(0 \\right)} = 0=1",
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 2 x,\\quad u{\\left(0 \\right)} = 0=1",
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 3 x^{2},\\quad u{\\left(0 \\right)} = 0=1"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "1",
+    "operator": [
+      "0",
+      "1"
+    ]
+  },
+  "exponential-initial-value": {
+    "familyId": "exponential-initial-value",
+    "kind": "ode",
+    "kernels": [
+      "e^{x}",
+      "e^{2 x}",
+      "e^{3 x}"
+    ],
+    "values": [
+      "e",
+      "e^{2}",
+      "e^{3}"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = e^{x},\\quad u{\\left(0 \\right)} = 1=e",
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 2 e^{2 x},\\quad u{\\left(0 \\right)} = 1=e^{2}",
+      "\\textnormal{Find }u(1)\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 3 e^{3 x},\\quad u{\\left(0 \\right)} = 1=e^{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "1",
+    "operator": [
+      "0",
+      "1"
+    ]
+  },
+  "trig-initial-value": {
+    "familyId": "trig-initial-value",
+    "kind": "ode",
+    "kernels": [
+      "\\sin{\\left(x \\right)}",
+      "\\cos{\\left(x \\right)}",
+      "\\sin{\\left(2 x \\right)}"
+    ],
+    "values": [
+      "1",
+      "0",
+      "0"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = \\cos{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 0=1",
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = - \\sin{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 1=0",
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }\\frac{d}{d x} u{\\left(x \\right)} = 2 \\cos{\\left(2 x \\right)},\\quad u{\\left(0 \\right)} = 0=0"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, pi/2]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "\\frac{\\pi}{2}",
+    "operator": [
+      "0",
+      "1"
+    ]
+  },
+  "linear-integrating-factor": {
+    "familyId": "linear-integrating-factor",
+    "kind": "ode",
+    "kernels": [
+      "x e^{x}",
+      "x^{2} e^{x}",
+      "x^{3} e^{x}"
+    ],
+    "values": [
+      "e",
+      "e",
+      "e"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(1)\\textnormal{ for }- u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = e^{x},\\quad u{\\left(0 \\right)} = 0=e",
+      "\\textnormal{Find }u(1)\\textnormal{ for }- u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = 2 x e^{x},\\quad u{\\left(0 \\right)} = 0=e",
+      "\\textnormal{Find }u(1)\\textnormal{ for }- u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = 3 x^{2} e^{x},\\quad u{\\left(0 \\right)} = 0=e"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "1",
+    "operator": [
+      "-1",
+      "1"
+    ]
+  },
+  "variable-integrating-factor": {
+    "familyId": "variable-integrating-factor",
+    "kind": "ode",
+    "kernels": [
+      "e^{- x^{2}}",
+      "x e^{- x^{2}}",
+      "x^{2} e^{- x^{2}}"
+    ],
+    "values": [
+      "e^{-1}",
+      "e^{-1}",
+      "e^{-1}"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(1)\\textnormal{ for }2 x u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = 0,\\quad u{\\left(0 \\right)} = 1=e^{-1}",
+      "\\textnormal{Find }u(1)\\textnormal{ for }2 x u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = e^{- x^{2}},\\quad u{\\left(0 \\right)} = 0=e^{-1}",
+      "\\textnormal{Find }u(1)\\textnormal{ for }2 x u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = 2 x e^{- x^{2}},\\quad u{\\left(0 \\right)} = 0=e^{-1}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "1",
+    "operator": [
+      "2 x",
+      "1"
+    ]
+  },
+  "linear-trig-forcing": {
+    "familyId": "linear-trig-forcing",
+    "kind": "ode",
+    "kernels": [
+      "\\sin{\\left(x \\right)}",
+      "\\cos{\\left(2 x \\right)}",
+      "\\sin{\\left(3 x \\right)}"
+    ],
+    "values": [
+      "\\frac{\\sqrt{2}}{2}",
+      "0",
+      "\\frac{\\sqrt{2}}{2}"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(\\frac{\\pi}{4})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = \\sin{\\left(x \\right)} + \\cos{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 0=\\frac{\\sqrt{2}}{2}",
+      "\\textnormal{Find }u(\\frac{\\pi}{4})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = - 2 \\sin{\\left(2 x \\right)} + \\cos{\\left(2 x \\right)},\\quad u{\\left(0 \\right)} = 1=0",
+      "\\textnormal{Find }u(\\frac{\\pi}{4})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d}{d x} u{\\left(x \\right)} = \\sin{\\left(3 x \\right)} + 3 \\cos{\\left(3 x \\right)},\\quad u{\\left(0 \\right)} = 0=\\frac{\\sqrt{2}}{2}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, pi/4]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "\\frac{\\pi}{4}",
+    "operator": [
+      "1",
+      "1"
+    ]
+  },
+  "resonant-second-order": {
+    "familyId": "resonant-second-order",
+    "kind": "ode",
+    "kernels": [
+      "x e^{x}",
+      "x^{2} e^{x}",
+      "x^{3} e^{x}"
+    ],
+    "values": [
+      "e",
+      "e",
+      "e"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(1)\\textnormal{ for }u{\\left(x \\right)} - 2 \\frac{d}{d x} u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = 0,\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 1=e",
+      "\\textnormal{Find }u(1)\\textnormal{ for }u{\\left(x \\right)} - 2 \\frac{d}{d x} u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = 2 e^{x},\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 0=e",
+      "\\textnormal{Find }u(1)\\textnormal{ for }u{\\left(x \\right)} - 2 \\frac{d}{d x} u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = 6 x e^{x},\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 0=e"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "1",
+    "operator": [
+      "1",
+      "-2",
+      "1"
+    ]
+  },
+  "oscillator-resonance": {
+    "familyId": "oscillator-resonance",
+    "kind": "ode",
+    "kernels": [
+      "x \\sin{\\left(x \\right)}",
+      "x \\cos{\\left(x \\right)}",
+      "x^{2} \\sin{\\left(x \\right)}"
+    ],
+    "values": [
+      "\\frac{\\pi}{2}",
+      "0",
+      "\\frac{\\pi^{2}}{4}"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = 2 \\cos{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 0=\\frac{\\pi}{2}",
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = - 2 \\sin{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 1=0",
+      "\\textnormal{Find }u(\\frac{\\pi}{2})\\textnormal{ for }u{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} = 4 x \\cos{\\left(x \\right)} + 2 \\sin{\\left(x \\right)},\\quad u{\\left(0 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=0 }} = 0=\\frac{\\pi^{2}}{4}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [0, pi/2]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "\\frac{\\pi}{2}",
+    "operator": [
+      "1",
+      "0",
+      "1"
+    ]
+  },
+  "euler-cauchy": {
+    "familyId": "euler-cauchy",
+    "kind": "ode",
+    "kernels": [
+      "x^{2}",
+      "x^{2} \\log{\\left(x \\right)}",
+      "x^{2} \\log{\\left(x \\right)}^{2}"
+    ],
+    "values": [
+      "4",
+      "\\log{\\left(16 \\right)}",
+      "4 \\log{\\left(2 \\right)}^{2}"
+    ],
+    "componentOperations": [
+      "\\textnormal{Find }u(2)\\textnormal{ for }x^{2} \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} - 3 x \\frac{d}{d x} u{\\left(x \\right)} + 4 u{\\left(x \\right)} = 0,\\quad u{\\left(1 \\right)} = 1,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=1 }} = 2=4",
+      "\\textnormal{Find }u(2)\\textnormal{ for }x^{2} \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} - 3 x \\frac{d}{d x} u{\\left(x \\right)} + 4 u{\\left(x \\right)} = 0,\\quad u{\\left(1 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=1 }} = 1=\\log{\\left(16 \\right)}",
+      "\\textnormal{Find }u(2)\\textnormal{ for }x^{2} \\frac{d^{2}}{d x^{2}} u{\\left(x \\right)} - 3 x \\frac{d}{d x} u{\\left(x \\right)} + 4 u{\\left(x \\right)} = 2 x^{2},\\quad u{\\left(1 \\right)} = 0,\\quad \\left. \\frac{d}{d x} u{\\left(x \\right)} \\right|_{\\substack{ x=1 }} = 0=4 \\log{\\left(2 \\right)}^{2}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Unique classical solution on a neighborhood of [1, 2]; continuous coefficients and nonzero leading coefficient."
+    ],
+    "point": "2",
+    "operator": [
+      "4",
+      "- 3 x",
+      "x^{2}"
+    ]
+  },
+  "partial-x": {
+    "familyId": "partial-x",
+    "kind": "partial",
+    "kernels": [
+      "x^{2} y",
+      "x y^{2}",
+      "x^{3} y^{2}"
+    ],
+    "values": [
+      "2",
+      "1",
+      "3"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{1}\\partial y^{0}}(x^{2} y)\\right|_{(x,y)=(1,1)}=2",
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{1}\\partial y^{0}}(x y^{2})\\right|_{(x,y)=(1,1)}=1",
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{1}\\partial y^{0}}(x^{3} y^{2})\\right|_{(x,y)=(1,1)}=3"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "dx": "1",
+    "dy": "0",
+    "px": "1",
+    "py": "1"
+  },
+  "partial-y": {
+    "familyId": "partial-y",
+    "kind": "partial",
+    "kernels": [
+      "x y^{2}",
+      "x^{2} y^{3}",
+      "x y^{4}"
+    ],
+    "values": [
+      "2",
+      "3",
+      "4"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{0}\\partial y^{1}}(x y^{2})\\right|_{(x,y)=(1,1)}=2",
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{0}\\partial y^{1}}(x^{2} y^{3})\\right|_{(x,y)=(1,1)}=3",
+      "\\left.\\frac{\\partial^{1}}{\\partial x^{0}\\partial y^{1}}(x y^{4})\\right|_{(x,y)=(1,1)}=4"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "dx": "0",
+    "dy": "1",
+    "px": "1",
+    "py": "1"
+  },
+  "rectangle-area": {
+    "familyId": "rectangle-area",
+    "kind": "double",
+    "kernels": [
+      "x",
+      "y",
+      "x y"
+    ],
+    "values": [
+      "\\frac{1}{2}",
+      "\\frac{1}{2}",
+      "\\frac{1}{4}"
+    ],
+    "componentOperations": [
+      "\\int_0^{1}\\int_0^{1}x\\,dy\\,dx=\\frac{1}{2}",
+      "\\int_0^{1}\\int_0^{1}y\\,dy\\,dx=\\frac{1}{2}",
+      "\\int_0^{1}\\int_0^{1}x y\\,dy\\,dx=\\frac{1}{4}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Domain: 0 <= x <= 1, 0 <= y <= 1."
+    ],
+    "yhi": "1"
+  },
+  "mixed-partials": {
+    "familyId": "mixed-partials",
+    "kind": "partial",
+    "kernels": [
+      "x^{2} y^{3}",
+      "e^{x y}",
+      "\\log{\\left(x y + 1 \\right)}"
+    ],
+    "values": [
+      "6",
+      "2 e",
+      "\\frac{1}{4}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{\\partial^{2}}{\\partial x^{1}\\partial y^{1}}(x^{2} y^{3})\\right|_{(x,y)=(1,1)}=6",
+      "\\left.\\frac{\\partial^{2}}{\\partial x^{1}\\partial y^{1}}(e^{x y})\\right|_{(x,y)=(1,1)}=2 e",
+      "\\left.\\frac{\\partial^{2}}{\\partial x^{1}\\partial y^{1}}(\\log{\\left(x y + 1 \\right)})\\right|_{(x,y)=(1,1)}=\\frac{1}{4}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "dx": "1",
+    "dy": "1",
+    "px": "1",
+    "py": "1"
+  },
+  "triangle-integral": {
+    "familyId": "triangle-integral",
+    "kind": "double",
+    "kernels": [
+      "x y",
+      "x^{2} y",
+      "x y^{2}"
+    ],
+    "values": [
+      "\\frac{1}{8}",
+      "\\frac{1}{10}",
+      "\\frac{1}{15}"
+    ],
+    "componentOperations": [
+      "\\int_0^{1}\\int_0^{x}x y\\,dy\\,dx=\\frac{1}{8}",
+      "\\int_0^{1}\\int_0^{x}x^{2} y\\,dy\\,dx=\\frac{1}{10}",
+      "\\int_0^{1}\\int_0^{x}x y^{2}\\,dy\\,dx=\\frac{1}{15}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Domain: 0 <= x <= 1, 0 <= y <= x."
+    ],
+    "yhi": "x"
+  },
+  "laplacian": {
+    "familyId": "laplacian",
+    "kind": "laplacian",
+    "kernels": [
+      "x^{2} y^{2}",
+      "e^{x} \\cos{\\left(y \\right)}",
+      "x^{4} + y^{4}"
+    ],
+    "values": [
+      "4",
+      "0",
+      "24"
+    ],
+    "componentOperations": [
+      "\\left.(\\partial_x^2+\\partial_y^2)(x^{2} y^{2})\\right|_{(x,y)=(1,1)}=4",
+      "\\left.(\\partial_x^2+\\partial_y^2)(e^{x} \\cos{\\left(y \\right)})\\right|_{(x,y)=(1,1)}=0",
+      "\\left.(\\partial_x^2+\\partial_y^2)(x^{4} + y^{4})\\right|_{(x,y)=(1,1)}=24"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "px": "1",
+    "py": "1"
+  },
+  "high-mixed-partials": {
+    "familyId": "high-mixed-partials",
+    "kind": "partial",
+    "kernels": [
+      "e^{x y}",
+      "\\log{\\left(x + y + 1 \\right)}",
+      "\\sin{\\left(x \\right)} \\cos{\\left(y \\right)}"
+    ],
+    "values": [
+      "2",
+      "-6",
+      "0"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}(e^{x y})\\right|_{(x,y)=(0,0)}=2",
+      "\\left.\\frac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}(\\log{\\left(x + y + 1 \\right)})\\right|_{(x,y)=(0,0)}=-6",
+      "\\left.\\frac{\\partial^{4}}{\\partial x^{2}\\partial y^{2}}(\\sin{\\left(x \\right)} \\cos{\\left(y \\right)})\\right|_{(x,y)=(0,0)}=0"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "dx": "2",
+    "dy": "2",
+    "px": "0",
+    "py": "0"
+  },
+  "curved-domain-integral": {
+    "familyId": "curved-domain-integral",
+    "kind": "double",
+    "kernels": [
+      "x y",
+      "x^{2} y^{2}",
+      "x^{3} y"
+    ],
+    "values": [
+      "\\frac{1}{12}",
+      "\\frac{1}{27}",
+      "\\frac{1}{16}"
+    ],
+    "componentOperations": [
+      "\\int_0^{1}\\int_0^{x^{2}}x y\\,dy\\,dx=\\frac{1}{12}",
+      "\\int_0^{1}\\int_0^{x^{2}}x^{2} y^{2}\\,dy\\,dx=\\frac{1}{27}",
+      "\\int_0^{1}\\int_0^{x^{2}}x^{3} y\\,dy\\,dx=\\frac{1}{16}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Domain: 0 <= x <= 1, 0 <= y <= x**2."
+    ],
+    "yhi": "x^{2}"
+  },
+  "laplacian-products": {
+    "familyId": "laplacian-products",
+    "kind": "laplacian",
+    "kernels": [
+      "e^{x y}",
+      "\\log{\\left(x^{2} + y^{2} + 1 \\right)}",
+      "x^{3} y^{3}"
+    ],
+    "values": [
+      "2 e",
+      "\\frac{4}{9}",
+      "12"
+    ],
+    "componentOperations": [
+      "\\left.(\\partial_x^2+\\partial_y^2)(e^{x y})\\right|_{(x,y)=(1,1)}=2 e",
+      "\\left.(\\partial_x^2+\\partial_y^2)(\\log{\\left(x^{2} + y^{2} + 1 \\right)})\\right|_{(x,y)=(1,1)}=\\frac{4}{9}",
+      "\\left.(\\partial_x^2+\\partial_y^2)(x^{3} y^{3})\\right|_{(x,y)=(1,1)}=12"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "px": "1",
+    "py": "1"
+  },
+  "transformed-beta-log": {
+    "familyId": "transformed-beta-log",
+    "kind": "integral",
+    "kernels": [
+      "\\frac{x \\log{\\left(\\frac{x}{x + 1} \\right)}^{2}}{\\left(x + 1\\right)^{5}}",
+      "- \\frac{x^{2} \\log{\\left(\\frac{x}{x + 1} \\right)}^{3}}{\\left(x + 1\\right)^{7}}",
+      "\\frac{x^{3} \\log{\\left(\\frac{x}{x + 1} \\right)}^{4}}{\\left(x + 1\\right)^{7}}"
+    ],
+    "values": [
+      "\\frac{115}{864}",
+      "\\frac{20111}{720000}",
+      "\\frac{361711}{32400000}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{\\infty}\\frac{x \\log{\\left(\\frac{x}{x + 1} \\right)}^{2}}{\\left(x + 1\\right)^{5}}\\,dx=\\frac{115}{864}",
+      "\\int_{0}^{\\infty}- \\frac{x^{2} \\log{\\left(\\frac{x}{x + 1} \\right)}^{3}}{\\left(x + 1\\right)^{7}}\\,dx=\\frac{20111}{720000}",
+      "\\int_{0}^{\\infty}\\frac{x^{3} \\log{\\left(\\frac{x}{x + 1} \\right)}^{4}}{\\left(x + 1\\right)^{7}}\\,dx=\\frac{361711}{32400000}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, oo); endpoint singularities use one-sided improper limits.",
+      "Positive integer beta exponents guarantee both transformed endpoint integrals converge."
+    ],
+    "lo": "0",
+    "hi": "\\infty"
+  },
+  "concealed-reflection": {
+    "familyId": "concealed-reflection",
+    "kind": "integral",
+    "kernels": [
+      "\\frac{x^{3} \\left(1 - x\\right) \\left(x + 1\\right)^{2}}{x^{2} \\left(x + 1\\right)^{2} + \\left(1 - x\\right)^{2} \\left(2 - x\\right)^{2}}",
+      "\\frac{x^{5} \\left(1 - x\\right)^{2} \\left(x + 1\\right)^{2}}{x^{3} \\left(x + 1\\right)^{2} + \\left(1 - x\\right)^{3} \\left(2 - x\\right)^{2}}",
+      "\\frac{x^{5} \\left(1 - x\\right)^{3} \\left(x + 1\\right)^{3}}{x^{2} \\left(x + 1\\right)^{3} + \\left(1 - x\\right)^{2} \\left(2 - x\\right)^{3}}"
+    ],
+    "values": [
+      "\\frac{1}{12}",
+      "\\frac{1}{60}",
+      "\\frac{1}{280}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}\\frac{x^{3} \\left(1 - x\\right) \\left(x + 1\\right)^{2}}{x^{2} \\left(x + 1\\right)^{2} + \\left(1 - x\\right)^{2} \\left(2 - x\\right)^{2}}\\,dx=\\frac{1}{12}",
+      "\\int_{0}^{1}\\frac{x^{5} \\left(1 - x\\right)^{2} \\left(x + 1\\right)^{2}}{x^{3} \\left(x + 1\\right)^{2} + \\left(1 - x\\right)^{3} \\left(2 - x\\right)^{2}}\\,dx=\\frac{1}{60}",
+      "\\int_{0}^{1}\\frac{x^{5} \\left(1 - x\\right)^{3} \\left(x + 1\\right)^{3}}{x^{2} \\left(x + 1\\right)^{3} + \\left(1 - x\\right)^{2} \\left(2 - x\\right)^{3}}\\,dx=\\frac{1}{280}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits.",
+      "Each denominator is a sum of nonnegative factors, never simultaneously zero on [0,1]."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "frullani-cancellation": {
+    "familyId": "frullani-cancellation",
+    "kind": "integral",
+    "kernels": [
+      "- \\frac{\\left(1 - x^{2}\\right)^{2}}{\\log{\\left(x \\right)}}",
+      "- \\frac{x \\left(1 - x^{3}\\right)^{3}}{\\log{\\left(x \\right)}}",
+      "- \\frac{x^{2} \\left(1 - x^{4}\\right)^{4}}{\\log{\\left(x \\right)}}"
+    ],
+    "values": [
+      "\\log{\\left(\\frac{9}{5} \\right)}",
+      "\\log{\\left(\\frac{1375}{1024} \\right)}",
+      "\\log{\\left(\\frac{40516875}{33659659} \\right)}"
+    ],
+    "componentOperations": [
+      "\\int_{0}^{1}- \\frac{\\left(1 - x^{2}\\right)^{2}}{\\log{\\left(x \\right)}}\\,dx=\\log{\\left(\\frac{9}{5} \\right)}",
+      "\\int_{0}^{1}- \\frac{x \\left(1 - x^{3}\\right)^{3}}{\\log{\\left(x \\right)}}\\,dx=\\log{\\left(\\frac{1375}{1024} \\right)}",
+      "\\int_{0}^{1}- \\frac{x^{2} \\left(1 - x^{4}\\right)^{4}}{\\log{\\left(x \\right)}}\\,dx=\\log{\\left(\\frac{40516875}{33659659} \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integration interval: (0, 1); endpoint singularities use one-sided improper limits.",
+      "The numerator vanishes at 1; grouped Frullani differences converge at both endpoints."
+    ],
+    "lo": "0",
+    "hi": "1"
+  },
+  "removable-exponential-derivative": {
+    "familyId": "removable-exponential-derivative",
+    "kind": "derivative",
+    "kernels": [
+      "\\frac{\\left(e^{x} - 1\\right)^{4} e^{x}}{x^{4}}",
+      "\\frac{\\left(e^{x} - 1\\right)^{4} e^{2 x}}{x^{4}}",
+      "\\frac{\\left(e^{x} - 1\\right)^{4} e^{3 x}}{x^{4}}"
+    ],
+    "values": [
+      "\\frac{24673}{21}",
+      "\\frac{228833}{42}",
+      "\\frac{396121}{21}"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\frac{\\left(e^{x} - 1\\right)^{4} e^{x}}{x^{4}})\\right|_{x=0}=\\frac{24673}{21}",
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\frac{\\left(e^{x} - 1\\right)^{4} e^{2 x}}{x^{4}})\\right|_{x=0}=\\frac{228833}{42}",
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\frac{\\left(e^{x} - 1\\right)^{4} e^{3 x}}{x^{4}})\\right|_{x=0}=\\frac{396121}{21}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "0",
+    "order": "6"
+  },
+  "implicit-inverse-series": {
+    "familyId": "implicit-inverse-series",
+    "kind": "derivative",
+    "kernels": [
+      "u_{1}{\\left(x \\right)}",
+      "u_{2}{\\left(x \\right)}",
+      "u_{3}{\\left(x \\right)}"
+    ],
+    "values": [
+      "8239680",
+      "23227920",
+      "26485920"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{6}}{dx^{6}}(u_{1}{\\left(x \\right)})\\right|_{x=0}=8239680",
+      "\\left.\\frac{d^{6}}{dx^{6}}(u_{2}{\\left(x \\right)})\\right|_{x=0}=23227920",
+      "\\left.\\frac{d^{6}}{dx^{6}}(u_{3}{\\left(x \\right)})\\right|_{x=0}=26485920"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "The implicit-function derivative with respect to u equals one at (0,0); |u_i|<1 locally."
+    ],
+    "point": "0",
+    "order": "6"
+  },
+  "roots-of-unity-product": {
+    "familyId": "roots-of-unity-product",
+    "kind": "derivative",
+    "kernels": [
+      "\\left(x^{2} + 1\\right)^{2} \\left(x^{2} + 2 x + 1\\right) e^{x}",
+      "\\left(x^{2} - 2 x \\left(- \\frac{1}{4} + \\frac{\\sqrt{5}}{4}\\right) + 1\\right)^{2} \\left(x^{2} - 2 x \\left(- \\frac{\\sqrt{5}}{4} - \\frac{1}{4}\\right) + 1\\right)^{2} e^{2 x}",
+      "\\left(x^{2} - x + 1\\right)^{2} \\left(x^{2} + x + 1\\right)^{2} \\left(x^{2} + 2 x + 1\\right) e^{3 x}"
+    ],
+    "values": [
+      "3823",
+      "20848",
+      "56655"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\left(x^{2} + 1\\right)^{2} \\left(x^{2} + 2 x + 1\\right) e^{x})\\right|_{x=0}=3823",
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\left(x^{2} - 2 x \\left(- \\frac{1}{4} + \\frac{\\sqrt{5}}{4}\\right) + 1\\right)^{2} \\left(x^{2} - 2 x \\left(- \\frac{\\sqrt{5}}{4} - \\frac{1}{4}\\right) + 1\\right)^{2} e^{2 x})\\right|_{x=0}=20848",
+      "\\left.\\frac{d^{6}}{dx^{6}}(\\left(x^{2} - x + 1\\right)^{2} \\left(x^{2} + x + 1\\right)^{2} \\left(x^{2} + 2 x + 1\\right) e^{3 x})\\right|_{x=0}=56655"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "point": "0",
+    "order": "6"
+  },
+  "finite-difference-log-limit": {
+    "familyId": "finite-difference-log-limit",
+    "kind": "limit",
+    "kernels": [
+      "\\frac{5 \\left(x + 1\\right)^{6} \\log{\\left(x + 1 \\right)}^{2} - 10 \\left(2 x + 1\\right)^{6} \\log{\\left(2 x + 1 \\right)}^{2} + 10 \\left(3 x + 1\\right)^{6} \\log{\\left(3 x + 1 \\right)}^{2} - 5 \\left(4 x + 1\\right)^{6} \\log{\\left(4 x + 1 \\right)}^{2} + \\left(5 x + 1\\right)^{6} \\log{\\left(5 x + 1 \\right)}^{2}}{x^{5}}",
+      "\\frac{5 \\left(x + 1\\right)^{7} \\log{\\left(x + 1 \\right)}^{3} - 10 \\left(2 x + 1\\right)^{7} \\log{\\left(2 x + 1 \\right)}^{3} + 10 \\left(3 x + 1\\right)^{7} \\log{\\left(3 x + 1 \\right)}^{3} - 5 \\left(4 x + 1\\right)^{7} \\log{\\left(4 x + 1 \\right)}^{3} + \\left(5 x + 1\\right)^{7} \\log{\\left(5 x + 1 \\right)}^{3}}{x^{5}}",
+      "\\frac{5 \\left(x + 1\\right)^{8} \\log{\\left(x + 1 \\right)}^{4} - 10 \\left(2 x + 1\\right)^{8} \\log{\\left(2 x + 1 \\right)}^{4} + 10 \\left(3 x + 1\\right)^{8} \\log{\\left(3 x + 1 \\right)}^{4} - 5 \\left(4 x + 1\\right)^{8} \\log{\\left(4 x + 1 \\right)}^{4} + \\left(5 x + 1\\right)^{8} \\log{\\left(5 x + 1 \\right)}^{4}}{x^{5}}"
+    ],
+    "values": [
+      "1160",
+      "1470",
+      "720"
+    ],
+    "componentOperations": [
+      "\\lim_{x\\to 0^{+}}(\\frac{5 \\left(x + 1\\right)^{6} \\log{\\left(x + 1 \\right)}^{2} - 10 \\left(2 x + 1\\right)^{6} \\log{\\left(2 x + 1 \\right)}^{2} + 10 \\left(3 x + 1\\right)^{6} \\log{\\left(3 x + 1 \\right)}^{2} - 5 \\left(4 x + 1\\right)^{6} \\log{\\left(4 x + 1 \\right)}^{2} + \\left(5 x + 1\\right)^{6} \\log{\\left(5 x + 1 \\right)}^{2}}{x^{5}})=1160",
+      "\\lim_{x\\to 0^{+}}(\\frac{5 \\left(x + 1\\right)^{7} \\log{\\left(x + 1 \\right)}^{3} - 10 \\left(2 x + 1\\right)^{7} \\log{\\left(2 x + 1 \\right)}^{3} + 10 \\left(3 x + 1\\right)^{7} \\log{\\left(3 x + 1 \\right)}^{3} - 5 \\left(4 x + 1\\right)^{7} \\log{\\left(4 x + 1 \\right)}^{3} + \\left(5 x + 1\\right)^{7} \\log{\\left(5 x + 1 \\right)}^{3}}{x^{5}})=1470",
+      "\\lim_{x\\to 0^{+}}(\\frac{5 \\left(x + 1\\right)^{8} \\log{\\left(x + 1 \\right)}^{4} - 10 \\left(2 x + 1\\right)^{8} \\log{\\left(2 x + 1 \\right)}^{4} + 10 \\left(3 x + 1\\right)^{8} \\log{\\left(3 x + 1 \\right)}^{4} - 5 \\left(4 x + 1\\right)^{8} \\log{\\left(4 x + 1 \\right)}^{4} + \\left(5 x + 1\\right)^{8} \\log{\\left(5 x + 1 \\right)}^{4}}{x^{5}})=720"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "0"
+  },
+  "riemann-product-limit": {
+    "familyId": "riemann-product-limit",
+    "kind": "limit",
+    "kernels": [
+      "N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{2} \\left(1 - \\frac{j}{N}\\right)^{2}}{N^{4} \\left(1 + \\frac{j}{N}\\right)}\\right) - 1\\right)",
+      "N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{3} \\left(1 - \\frac{j}{N}\\right)^{2}}{N^{5} \\left(2 + \\frac{j}{N}\\right)}\\right) - 1\\right)",
+      "N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{2} \\left(1 - \\frac{j}{N}\\right)^{3}}{N^{4} \\left(3 + \\frac{j}{N}\\right)}\\right) - 1\\right)"
+    ],
+    "values": [
+      "- \\frac{11}{4} + \\log{\\left(16 \\right)}",
+      "\\log{\\left(\\frac{4722366482869645213696}{22528399544939174411840147874772641} \\right)} + \\frac{146}{5}",
+      "- \\frac{1657}{10} + \\log{\\left(\\frac{61172327492847069472032393719205726809135813743440799050195397570919697796091958321786863938157971792315844506873509046544459008355036150650333616890210625686064472971480622053109783197015954399612052812141827922088117778074833698589048132156300022844899841969874763871624802603515651998113045708569927237462546233168834543264678118409417047146496}{66350273672982482434306891576157631672689672925812719816425261384529414930593927318955908046569318750032887032063251514730545423930897589175580509482961477591637132783061926910520117393240456588418004008136860862595161557813923710281149781340349753455564872656712827265393921} \\right)}"
+    ],
+    "componentOperations": [
+      "\\lim_{N\\to \\infty}(N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{2} \\left(1 - \\frac{j}{N}\\right)^{2}}{N^{4} \\left(1 + \\frac{j}{N}\\right)}\\right) - 1\\right))=- \\frac{11}{4} + \\log{\\left(16 \\right)}",
+      "\\lim_{N\\to \\infty}(N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{3} \\left(1 - \\frac{j}{N}\\right)^{2}}{N^{5} \\left(2 + \\frac{j}{N}\\right)}\\right) - 1\\right))=\\log{\\left(\\frac{4722366482869645213696}{22528399544939174411840147874772641} \\right)} + \\frac{146}{5}",
+      "\\lim_{N\\to \\infty}(N \\left(\\prod_{j=1}^{N} \\left(1 + \\frac{j^{2} \\left(1 - \\frac{j}{N}\\right)^{3}}{N^{4} \\left(3 + \\frac{j}{N}\\right)}\\right) - 1\\right))=- \\frac{1657}{10} + \\log{\\left(\\frac{61172327492847069472032393719205726809135813743440799050195397570919697796091958321786863938157971792315844506873509046544459008355036150650333616890210625686064472971480622053109783197015954399612052812141827922088117778074833698589048132156300022844899841969874763871624802603515651998113045708569927237462546233168834543264678118409417047146496}{66350273672982482434306891576157631672689672925812719816425261384529414930593927318955908046569318750032887032063251514730545423930897589175580509482961477591637132783061926910520117393240456588418004008136860862595161557813923710281149781340349753455564872656712827265393921} \\right)}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain.",
+      "For the defined product, u=f(j/N)/N^2 is nonnegative and at most 1/N^2; sum(u^2)<=1/N^3. The logarithm remainder and exponential remainder vanish after multiplication by N."
+    ],
+    "point": "\\infty"
+  },
+  "second-order-riemann-limit": {
+    "familyId": "second-order-riemann-limit",
+    "kind": "limit",
+    "kernels": [
+      "N^{2} \\left(- \\frac{31}{30} + \\frac{\\sum_{j=1}^{N} \\frac{j^{2} \\left(1 + \\frac{j}{N}\\right)^{2}}{N^{2}}}{N} - \\frac{2}{N}\\right)",
+      "N^{2} \\left(- \\frac{59}{30} + \\frac{\\sum_{j=1}^{N} \\frac{j^{3} \\left(2 + \\frac{j}{N}\\right)^{2}}{N^{3}}}{N} - \\frac{9}{2 N}\\right)",
+      "N^{2} \\left(- \\frac{1063}{60} + \\frac{\\sum_{j=1}^{N} \\frac{j^{2} \\left(3 + \\frac{j}{N}\\right)^{3}}{N^{2}}}{N} - \\frac{32}{N}\\right)"
+    ],
+    "values": [
+      "1",
+      "\\frac{11}{4}",
+      "\\frac{44}{3}"
+    ],
+    "componentOperations": [
+      "\\lim_{N\\to \\infty}(N^{2} \\left(- \\frac{31}{30} + \\frac{\\sum_{j=1}^{N} \\frac{j^{2} \\left(1 + \\frac{j}{N}\\right)^{2}}{N^{2}}}{N} - \\frac{2}{N}\\right))=1",
+      "\\lim_{N\\to \\infty}(N^{2} \\left(- \\frac{59}{30} + \\frac{\\sum_{j=1}^{N} \\frac{j^{3} \\left(2 + \\frac{j}{N}\\right)^{2}}{N^{3}}}{N} - \\frac{9}{2 N}\\right))=\\frac{11}{4}",
+      "\\lim_{N\\to \\infty}(N^{2} \\left(- \\frac{1063}{60} + \\frac{\\sum_{j=1}^{N} \\frac{j^{2} \\left(3 + \\frac{j}{N}\\right)^{3}}{N^{2}}}{N} - \\frac{32}{N}\\right))=\\frac{44}{3}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Limit is from the right through the real domain."
+    ],
+    "point": "\\infty"
+  },
+  "stirling-beta-series": {
+    "familyId": "stirling-beta-series",
+    "kind": "series",
+    "kernels": [
+      "\\frac{n^{2}}{\\left(n + 1\\right) \\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right)}",
+      "\\frac{n^{3}}{\\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right) \\left(n + 7\\right) \\left(n + 8\\right)}",
+      "\\frac{n^{4}}{\\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right) \\left(n + 7\\right) \\left(n + 8\\right) \\left(n + 9\\right) \\left(n + 10\\right)}"
+    ],
+    "values": [
+      "\\frac{7}{7200}",
+      "\\frac{23}{151200}",
+      "\\frac{481}{12700800}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{n^{2}}{\\left(n + 1\\right) \\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right)}\\right)=\\frac{7}{7200}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{n^{3}}{\\left(n + 2\\right) \\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right) \\left(n + 7\\right) \\left(n + 8\\right)}\\right)=\\frac{23}{151200}",
+      "\\sum_{n=0}^{\\infty}\\left(\\frac{n^{4}}{\\left(n + 3\\right) \\left(n + 4\\right) \\left(n + 5\\right) \\left(n + 6\\right) \\left(n + 7\\right) \\left(n + 8\\right) \\left(n + 9\\right) \\left(n + 10\\right)}\\right)=\\frac{481}{12700800}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Degree of the denominator exceeds numerator degree by at least two. Partial fractions have zero total residue; exact harmonic tails cancel."
+    ],
+    "start": "0"
+  },
+  "binomial-beta-series": {
+    "familyId": "binomial-beta-series",
+    "kind": "series",
+    "kernels": [
+      "3^{- n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 2}",
+      "\\left(\\frac{2}{5}\\right)^{n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 3}",
+      "\\left(\\frac{3}{7}\\right)^{n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 4}"
+    ],
+    "values": [
+      "\\log{\\left(\\frac{64}{729} \\right)} + 3",
+      "- \\frac{45 \\log{\\left(3 \\right)}}{8} - \\frac{5}{2} + \\frac{45 \\log{\\left(5 \\right)}}{8}",
+      "- \\frac{448 \\log{\\left(7 \\right)}}{81} + \\frac{91}{27} + \\frac{896 \\log{\\left(2 \\right)}}{81}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=0}^{\\infty}\\left(3^{- n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 2}\\right)=\\log{\\left(\\frac{64}{729} \\right)} + 3",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{2}{5}\\right)^{n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 3}\\right)=- \\frac{45 \\log{\\left(3 \\right)}}{8} - \\frac{5}{2} + \\frac{45 \\log{\\left(5 \\right)}}{8}",
+      "\\sum_{n=0}^{\\infty}\\left(\\left(\\frac{3}{7}\\right)^{n} \\sum_{j=0}^{n} \\frac{\\left(-1\\right)^{j} {\\binom{n}{j}}}{j + 4}\\right)=- \\frac{448 \\log{\\left(7 \\right)}}{81} + \\frac{91}{27} + \\frac{896 \\log{\\left(2 \\right)}}{81}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "The inner binomial sum is the nonnegative beta integral. Tonelli sums it to t^(c-1)/(1-r+rt); 0<r<1 gives an integrable bound."
+    ],
+    "start": "0"
+  },
+  "fourier-cosine-square": {
+    "familyId": "fourier-cosine-square",
+    "kind": "series",
+    "kernels": [
+      "\\frac{\\left(\\cos{\\left(\\frac{\\pi n}{3} \\right)} - \\cos{\\left(\\frac{2 \\pi n}{3} \\right)}\\right)^{2}}{n^{2}}",
+      "\\frac{\\left(\\cos{\\left(\\frac{\\pi n}{4} \\right)} - \\cos{\\left(\\frac{3 \\pi n}{4} \\right)}\\right)^{2}}{n^{2}}",
+      "\\frac{\\left(\\cos{\\left(\\frac{2 \\pi n}{5} \\right)} - \\cos{\\left(\\frac{3 \\pi n}{5} \\right)}\\right)^{2}}{n^{2}}"
+    ],
+    "values": [
+      "\\frac{\\pi^{2}}{6}",
+      "\\frac{\\pi^{2}}{4}",
+      "\\frac{\\pi^{2}}{10}"
+    ],
+    "componentOperations": [
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(\\cos{\\left(\\frac{\\pi n}{3} \\right)} - \\cos{\\left(\\frac{2 \\pi n}{3} \\right)}\\right)^{2}}{n^{2}}\\right)=\\frac{\\pi^{2}}{6}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(\\cos{\\left(\\frac{\\pi n}{4} \\right)} - \\cos{\\left(\\frac{3 \\pi n}{4} \\right)}\\right)^{2}}{n^{2}}\\right)=\\frac{\\pi^{2}}{4}",
+      "\\sum_{n=1}^{\\infty}\\left(\\frac{\\left(\\cos{\\left(\\frac{2 \\pi n}{5} \\right)} - \\cos{\\left(\\frac{3 \\pi n}{5} \\right)}\\right)^{2}}{n^{2}}\\right)=\\frac{\\pi^{2}}{10}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Squared cosine differences are at most 4; comparison with sum 4/n^2 proves absolute convergence."
+    ],
+    "start": "1"
+  },
+  "hidden-riccati": {
+    "familyId": "hidden-riccati",
+    "kind": "special-ode",
+    "kernels": [
+      "x",
+      "x^{2}",
+      "x^{3}"
+    ],
+    "values": [],
+    "componentOperations": [],
+    "assumptions": [
+      "Real variables; parameters are integers 1 through 16."
+    ]
+  },
+  "clairaut-envelope": {
+    "familyId": "clairaut-envelope",
+    "kind": "special-ode",
+    "kernels": [
+      "x",
+      "x^{2}",
+      "x^{3}"
+    ],
+    "values": [],
+    "componentOperations": [],
+    "assumptions": [
+      "Real variables; parameters are integers 1 through 16."
+    ]
+  },
+  "euler-double-resonance": {
+    "familyId": "euler-double-resonance",
+    "kind": "special-ode",
+    "kernels": [
+      "x",
+      "x^{2}",
+      "x^{3}"
+    ],
+    "values": [],
+    "componentOperations": [],
+    "assumptions": [
+      "Real variables; parameters are integers 1 through 16."
+    ]
+  },
+  "unbounded-dirichlet-integral": {
+    "familyId": "unbounded-dirichlet-integral",
+    "kind": "double",
+    "kernels": [
+      "\\frac{x y^{2}}{\\left(x + y + 1\\right)^{7}}",
+      "\\frac{x y^{3}}{\\left(x + y + 1\\right)^{9}}",
+      "\\frac{x^{2} y^{3}}{\\left(x + y + 1\\right)^{9}}"
+    ],
+    "values": [
+      "\\frac{1}{360}",
+      "\\frac{1}{3360}",
+      "\\frac{1}{3360}"
+    ],
+    "componentOperations": [
+      "\\int_0^{\\infty}\\int_0^{\\infty}\\frac{x y^{2}}{\\left(x + y + 1\\right)^{7}}\\,dy\\,dx=\\frac{1}{360}",
+      "\\int_0^{\\infty}\\int_0^{\\infty}\\frac{x y^{3}}{\\left(x + y + 1\\right)^{9}}\\,dy\\,dx=\\frac{1}{3360}",
+      "\\int_0^{\\infty}\\int_0^{\\infty}\\frac{x^{2} y^{3}}{\\left(x + y + 1\\right)^{9}}\\,dy\\,dx=\\frac{1}{3360}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Domain: 0 <= x <= oo, 0 <= y <= oo."
+    ],
+    "yhi": "\\infty",
+    "xhi": "\\infty"
+  },
+  "rotated-disk-moment": {
+    "familyId": "rotated-disk-moment",
+    "kind": "disk",
+    "kernels": [
+      "\\left(x - y\\right)^{4} \\left(x + y\\right)^{2} \\left(x^{2} + y^{2}\\right)",
+      "\\left(x - y\\right)^{6} \\left(x + y\\right)^{2} \\left(x^{2} + y^{2}\\right)^{2}",
+      "\\left(x - y\\right)^{6} \\left(x + y\\right)^{4} \\left(x^{2} + y^{2}\\right)"
+    ],
+    "values": [
+      "\\frac{\\pi}{10}",
+      "\\frac{5 \\pi}{56}",
+      "\\frac{3 \\pi}{56}"
+    ],
+    "componentOperations": [
+      "\\iint_{x^2+y^2\\le 1}\\left(x - y\\right)^{4} \\left(x + y\\right)^{2} \\left(x^{2} + y^{2}\\right)\\,dx\\,dy=\\frac{\\pi}{10}",
+      "\\iint_{x^2+y^2\\le 1}\\left(x - y\\right)^{6} \\left(x + y\\right)^{2} \\left(x^{2} + y^{2}\\right)^{2}\\,dx\\,dy=\\frac{5 \\pi}{56}",
+      "\\iint_{x^2+y^2\\le 1}\\left(x - y\\right)^{6} \\left(x + y\\right)^{4} \\left(x^{2} + y^{2}\\right)\\,dx\\,dy=\\frac{3 \\pi}{56}"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16.",
+      "Integrate over the closed unit disk x^2+y^2 <= 1."
+    ]
+  },
+  "radial-log-mixed-derivative": {
+    "familyId": "radial-log-mixed-derivative",
+    "kind": "partial",
+    "kernels": [
+      "\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{2}",
+      "\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{3}",
+      "\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{4}"
+    ],
+    "values": [
+      "-144000",
+      "302400",
+      "-345600"
+    ],
+    "componentOperations": [
+      "\\left.\\frac{\\partial^{10}}{\\partial x^{4}\\partial y^{6}}(\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{2})\\right|_{(x,y)=(0,0)}=-144000",
+      "\\left.\\frac{\\partial^{10}}{\\partial x^{4}\\partial y^{6}}(\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{3})\\right|_{(x,y)=(0,0)}=302400",
+      "\\left.\\frac{\\partial^{10}}{\\partial x^{4}\\partial y^{6}}(\\log{\\left(x^{2} + y^{2} + 1 \\right)}^{4})\\right|_{(x,y)=(0,0)}=-345600"
+    ],
+    "assumptions": [
+      "All variables are real.",
+      "Parameters a, b, c are integers from 1 through 16."
+    ],
+    "dx": "4",
+    "dy": "6",
+    "px": "0",
+    "py": "0"
+  }
+}

@@ -6,14 +6,16 @@ Other standalone routes require their own reviewed verifier, never a bypass.
 import hashlib,json
 import re
 import sympy as s
-VERSION='standalone-polynomial-v1'
+VERSION='standalone-polynomial-v2'
+LEGACY_VERSION='standalone-polynomial-v1'
 x=s.Symbol('x',real=True)
 def canonical(v):return json.dumps(v,sort_keys=True,separators=(',',':'),ensure_ascii=False)
 def digest(v):return hashlib.sha256(canonical(v).encode()).hexdigest()
 def rational(value):
  if not isinstance(value,list) or len(value)!=2 or any(type(v)is not int or abs(v)>1000000 for v in value) or value[1]<=0:raise ValueError('Bounded exact rational required')
  return s.Rational(*value)
-def build(spec):
+def build(spec,version=VERSION):
+ if version not in [VERSION,LEGACY_VERSION]:raise ValueError('Unsupported standalone version')
  if set(spec)-{'revision'}!={'slug','coefficients','operation','point','upper','distractors','pedagogy','topic','difficulty'}:raise ValueError('Unknown standalone contract field')
  revision=spec.get('revision',1)
  if not isinstance(spec['slug'],str) or not re.fullmatch('[a-z][a-z0-9-]{2,79}',spec['slug']):raise ValueError('Bounded stable slug required')
@@ -26,9 +28,15 @@ def build(spec):
   F=sum(c*x**(i+1)/s.Integer(i+1) for i,c in enumerate(coeffs));answer=s.simplify(F.subs(x,b)-F.subs(x,a))
   assert s.simplify(s.diff(F,x)-f)==0 and s.integrate(f,(x,a,b))==answer
   statement=r'\int_{'+s.latex(a)+'}^{'+s.latex(b)+'}'+s.latex(f)+r'\,dx';steps=[r'F(x)='+s.latex(F),r'F(b)-F(a)='+s.latex(answer)]
+  if version==VERSION:
+   statement=statement.replace(r'\,dx',r'\,\mathrm{d}x')
+   steps=[r'\textnormal{Choose the following antiderivative of the displayed polynomial.}',r'F(x)='+s.latex(F),r'F\prime(x)='+s.latex(f),r'F\left('+s.latex(b)+r'\right)-F\left('+s.latex(a)+r'\right)='+s.latex(F.subs(x,b))+r'-\left('+s.latex(F.subs(x,a))+r'\right)='+s.latex(answer),s.latex(answer)]
  elif spec['operation']=='derivative-at-point':
   d=sum(i*c*x**(i-1) for i,c in enumerate(coeffs) if i);answer=s.simplify(d.subs(x,a));assert s.simplify(s.diff(f,x)-d)==0
   statement=r'\left.\frac{d}{dx}\left('+s.latex(f)+r'\right)\right|_{x='+s.latex(a)+'}';steps=[r'f\prime(x)='+s.latex(d),r'f\prime(a)='+s.latex(answer)]
+  if version==VERSION:
+   statement=statement.replace(r'\frac{d}{dx}',r'\frac{\mathrm{d}}{\mathrm{d}x}')
+   steps=[r'\textnormal{Name the displayed polynomial }f(x)='+s.latex(f)+'.',r'\textnormal{Differentiate each power, then substitute the specified point.}',r'f\prime(x)='+s.latex(d),r'f\prime\left('+s.latex(a)+r'\right)='+s.latex(answer),s.latex(answer)]
  else:raise ValueError('No verifier for this operation')
  if len(spec['distractors'])!=3:raise ValueError('Three authored distractors required')
  values=[answer]+[rational(v['value']) for v in spec['distractors']]
@@ -37,10 +45,12 @@ def build(spec):
  if any(not c['misconception'] for c in choices):raise ValueError('Missing misconception')
  fid='standalone-'+spec['slug'];m=spec['pedagogy'];assert m['constructionId']==fid
  p={'schemaVersion':2,'problemId':'cn_'+digest(fid)[:20],'problemRevision':revision,'familyId':fid,'templateVersion':VERSION,'parameters':{},'semanticHash':digest({'operation':spec['operation'],'coefficients':[str(c) for c in coeffs],'point':str(a),'upper':str(b)}),'statement':statement,'choices':choices,'answerChoiceId':choices[0]['choiceId'],'solutionSteps':steps,'assumptions':['Real polynomial, continuous and differentiable on the real line.'],'topic':spec['topic'],'difficulty':spec['difficulty'],'subtopic':m['relatedIdeaGroupId'],'techniqueTags':[m['primaryTechnique']]+m['alternativeTechniques'],'pedagogy':m,'provenance':{'kind':'original','sourceUrl':None,'sourceItem':None,'license':'LicenseRef-CalculusNinja-Original','attribution':'Standalone original Calculus Ninja exercise; exact rational polynomial certificate.','authoring':{'standaloneSpec':spec}},'validation':{'status':'passed','methods':['exact-rational-coefficient-calculus','independent-symbolic-operation','pairwise-exact-choice-check'],'evidence':{'verificationRoute':VERSION,'parameterDomain':{'standalone':True},'assumptionsChecked':True,'solutionDerivationChecked':True,'uniqueCorrectOption':True},'humanReviewed':False},'estimates':{'difficulty':spec['difficulty'],'solveSeconds':60,'basis':m['difficultyRationale']}}
+ p['templateVersion']=version
+ p['validation']['evidence']['verificationRoute']=version
  p['contentHash']=digest(p);return p
 
 def verify(p):
- if p!=build(p['provenance']['authoring']['standaloneSpec']):raise ValueError('Standalone certificate/content mismatch')
+ if p!=build(p['provenance']['authoring']['standaloneSpec'],p.get('templateVersion')):raise ValueError('Standalone certificate/content mismatch')
  return True
 
 if __name__=='__main__':

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 // Operator-only CLI: local private files or D1 SQL export; never included in Worker/client bundles.
+import {presentBankProblem} from '../../lib/server/solution-presentation.mjs';
+import {assertSolutionQuality} from '../../lib/bank/solution-quality.mjs';
 import { spawnSync } from 'node:child_process';
 import { DatabaseSync } from 'node:sqlite';
 import { createHash } from 'node:crypto';
@@ -25,6 +27,11 @@ export function validateRecord(p) {
   }
   if (!validQuestionResponse([{latexProblem:p.statement,options:p.choices.map(c=>c.math),correctIndex:p.choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty}],{category:p.topic,difficulty:p.difficulty,count:1}))throw Error('Gameplay payload bounds rejected');
   if (!questionMathIsRenderable({latexProblem:p.statement,options:p.choices.map(c=>c.math),explanation:p.solutionSteps})) throw Error('KaTeX rejected mathematical content');
+  if(p.templateVersion==='standalone-polynomial-v2'){
+    const verified=spawnSync(existsSync(resolve(root,'.bank-venv/bin/python'))?resolve(root,'.bank-venv/bin/python'):'python3',['-c',"import sys,json;sys.path.insert(0,'scripts/bank');from content_pipeline import verify;verify(json.load(sys.stdin))"],{cwd:root,input:JSON.stringify(p),encoding:'utf8'});
+    if(verified.status!==0)throw Error('Standalone solution certificate failed independent reconstruction');
+  }
+  assertSolutionQuality(presentBankProblem(p));
   return p;
 }
 export function openDatabase(path) {

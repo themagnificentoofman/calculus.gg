@@ -5,6 +5,15 @@ sys.path.insert(0,str(Path(__file__).parent));sys.path.insert(0,str(Path(__file_
 import standalone
 from content_pipeline import verify,build
 class StandaloneContract(unittest.TestCase):
+ def test_legacy_and_current_solution_versions(self):
+  old=standalone.build(self.spec(),standalone.LEGACY_VERSION)
+  current=standalone.build(self.spec())
+  self.assertTrue(verify(old));self.assertTrue(verify(current))
+  self.assertEqual(old['templateVersion'],'standalone-polynomial-v1')
+  self.assertEqual(old['validation']['evidence']['verificationRoute'],'standalone-polynomial-v1')
+  self.assertNotEqual(old['contentHash'],current['contentHash'])
+  self.assertFalse(any('F(b)-F(a)' in v for v in current['solutionSteps']))
+  self.assertEqual(current['solutionSteps'][-1],current['choices'][0]['math'])
  def spec(self):
   return {'slug':'certificate-test','coefficients':[[0,1],[3,1],[1,2]],'operation':'definite-integral','point':[0,1],'upper':[2,1],'distractors':[{'value':[6,1],'misconception':'Omit the quadratic contribution'},{'value':[28,3],'misconception':'Double the quadratic contribution'},{'value':[11,3],'misconception':'Divide by the interval length'}],'pedagogy':{'constructionId':'standalone-certificate-test','relatedIdeaGroupId':'polynomial-area','structuralSignature':'quadratic-area','primaryTechnique':'power-rule','alternativeTechniques':[],'prerequisites':['polynomial-antiderivatives'],'reasoningDemand':['execution'],'answerForm':'rational','difficultyRationale':'Verifier test fixture, not new curricular coverage.','sourceRecordIds':[],'responseFormat':'multiple-choice'},'topic':'integration','difficulty':'easy'}
  def test_round_trip(self):

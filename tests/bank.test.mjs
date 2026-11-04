@@ -29,14 +29,14 @@ function memoryStore(){
 const request=(resource,body,uid='player-123')=>new Request('https://test.invalid/api/'+resource,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+uid},body:JSON.stringify(body)});
 test('release identity excludes run timing while retaining artifact and coverage identity',()=>{assert.deepEqual(releaseContract({releaseId:'r',artifactSha256:'a',elapsedSeconds:1,generatedThisRun:10}),releaseContract({releaseId:'r',artifactSha256:'a',elapsedSeconds:99,generatedThisRun:0}));});
 test('every family sample has a valid immutable hash, provenance, four choices, and renderable solution',()=>{assert.equal(samples.length,72);for(const p of samples)validateRecord(p);assert.equal(new Set(samples.map(p=>p.topic+'/'+p.difficulty)).size,24);});
-test('imports are idempotent, revisions immutable and consecutive, and cosmetic duplicates cannot change identity',()=>{
+test('imports are idempotent and immutable, and unreviewed revisions or cosmetic duplicates are rejected',()=>{
  const {sql}=fixture();const p=samples[0];assert.equal(insertProblem(sql,p),false);
  assert.throws(()=>insertProblem(sql,{...p,statement:'tampered'}),/hash/);
- const different={...p,statement:p.statement+'+0'};delete different.contentHash;different.contentHash=hash(different);assert.throws(()=>insertProblem(sql,different),/revision conflict/);
- const revision={...p,problemRevision:2,solutionSteps:[...p.solutionSteps,String.raw`\textnormal{An additional check.}`]};delete revision.contentHash;revision.contentHash=hash(revision);assert.equal(insertProblem(sql,revision),true);
+ const different={...p,statement:p.statement+'+0'};delete different.contentHash;different.contentHash=hash(different);assert.throws(()=>insertProblem(sql,different),/source-bound/);
+ const revision={...p,problemRevision:2,solutionSteps:[...p.solutionSteps,String.raw`\textnormal{An additional check.}`]};delete revision.contentHash;revision.contentHash=hash(revision);assert.throws(()=>insertProblem(sql,revision),/source-bound/,'new immutable revisions need their own solution review');
  assert.throws(()=>sql.prepare('UPDATE bank_problems SET payload_json=?').run('{}'),/new problem revision/);
  assert.throws(()=>sql.exec('DELETE FROM bank_problems'),/historical/);
- const duplicate={...p,problemId:'cn_'+'a'.repeat(20)};delete duplicate.contentHash;duplicate.contentHash=hash(duplicate);assert.throws(()=>insertProblem(sql,duplicate),/Duplicate/);sql.close();
+ const duplicate={...p,problemId:'cn_'+'a'.repeat(20)};delete duplicate.contentHash;duplicate.contentHash=hash(duplicate);assert.throws(()=>insertProblem(sql,duplicate),/source-bound/);sql.close();
 });
 test('indexed selection preserves filters, stable identities, unique round problems, and bounded repetition relaxation',async()=>{
  const {sql,db}=fixture();const input={category:'integration',difficulty:'medium',count:3};

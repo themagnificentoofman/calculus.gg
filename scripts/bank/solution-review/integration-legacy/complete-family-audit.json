@@ -1,0 +1,3278 @@
+{
+  "scopeFamilies": 110,
+  "scopeInstances": 101104,
+  "families": [
+    {
+      "familyId": "polynomial-area",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "polynomial-area",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{2}",
+          "\\frac{1}{3}",
+          "\\frac{1}{4}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.005
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "exponential-area",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "exponential-area",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "-1 + e",
+          "- \\frac{1}{2} + \\frac{e^{2}}{2}",
+          "- \\frac{1}{3} + \\frac{e^{3}}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.057
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "trig-area",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, pi/2); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "trig-area",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "1",
+          "1"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.009
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "polynomial-exponential",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "polynomial-exponential",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "-2 + e",
+          "6 - 2 e"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.027
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "quadratic-substitution",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "quadratic-substitution",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\log{\\left(2 \\right)}",
+          "1",
+          "\\frac{9}{8}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.039
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "rational-decomposition",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "rational-decomposition",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\log{\\left(\\frac{4}{3} \\right)}",
+          "- \\frac{\\log{\\left(2 \\right)}}{2} + \\frac{\\log{\\left(3 \\right)}}{2}",
+          "\\log{\\left(\\frac{\\sqrt{30}}{5} \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.066
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "log-moments",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "log-moments",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "-1",
+          "- \\frac{1}{4}",
+          "- \\frac{1}{9}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.06
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "trig-products",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, pi/2); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "trig-products",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\pi}{16}",
+          "\\frac{\\pi}{32}",
+          "\\frac{5 \\pi}{256}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.023
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "improper-rational",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, oo); endpoint singularities use one-sided improper limits."
+      ],
+      "finiteCertificate": {
+        "familyId": "improper-rational",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{1}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.037
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "polynomial-slope",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "polynomial-slope",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "3",
+          "4"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.002
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "trig-slope",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "trig-slope",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "0",
+          "2"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.001
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "exp-log-slope",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "exp-log-slope",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "e",
+          "1",
+          "\\frac{1}{2}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.001
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "product-rule",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "product-rule",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "2 e",
+          "1",
+          "\\cos{\\left(1 \\right)} + \\sin{\\left(1 \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.012
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "quotient-rule",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "quotient-rule",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "0",
+          "\\frac{e}{4}",
+          "\\frac{1}{2}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.006
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "nested-chain",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "nested-chain",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "2 e",
+          "1",
+          "2 \\cos{\\left(1 \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.005
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "fourth-derivative",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "fourth-derivative",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "24",
+          "-12",
+          "-6"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.007
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "log-differentiation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "log-differentiation",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "1",
+          "1 + \\log{\\left(4 \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.005
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "parametric-curvature",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "parametric-curvature",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "- \\frac{15 \\sqrt{2}}{4}",
+          "\\frac{15 \\sqrt{2}}{4}",
+          "- 2 \\sqrt{2} e^{\\frac{\\pi}{4}}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.017
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "polynomial-continuity",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "polynomial-continuity",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "1",
+          "1"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.002
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "removable-factor",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "removable-factor",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "3",
+          "4"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.012
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "standard-trig-limits",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "standard-trig-limits",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "2",
+          "3"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.001
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "exponential-cancellation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "exponential-cancellation",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "2",
+          "3"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.021
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "rational-at-infinity",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "rational-at-infinity",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{2}",
+          "\\frac{1}{3}",
+          "\\frac{1}{4}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.015
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "logarithmic-cancellation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "logarithmic-cancellation",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "2",
+          "3"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.003
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "third-order-exponential",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "third-order-exponential",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{6}",
+          "\\frac{4}{3}",
+          "\\frac{9}{2}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.048
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "trig-cancellation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "trig-cancellation",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{6}",
+          "\\frac{1}{3}",
+          "\\frac{1}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.014
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "radical-cancellation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "radical-cancellation",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "- \\frac{1}{8}",
+          "- \\frac{1}{9}",
+          "- \\frac{3}{32}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.019
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "geometric-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "geometric-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "\\frac{3}{2}",
+          "\\frac{4}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.096
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "telescoping-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "telescoping-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "\\frac{1}{2}",
+          "\\frac{1}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.035
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "even-geometric-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "even-geometric-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{4}{3}",
+          "\\frac{9}{8}",
+          "\\frac{16}{15}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.067
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "weighted-geometric",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "weighted-geometric",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "\\frac{3}{4}",
+          "\\frac{4}{9}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.14
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "exponential-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "exponential-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "e",
+          "e^{2}",
+          "e^{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 1.147
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "alternating-log-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "alternating-log-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\log{\\left(2 \\right)}",
+          "\\log{\\left(\\frac{3}{2} \\right)}",
+          "\\log{\\left(\\frac{4}{3} \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.201
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "quadratic-geometric",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "quadratic-geometric",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "6",
+          "\\frac{3}{2}",
+          "\\frac{20}{27}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.172
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "cubic-telescoping",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "cubic-telescoping",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{4}",
+          "\\frac{1}{12}",
+          "\\frac{1}{24}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.417
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "zeta-even",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Each component series converges; linearity applies to the indicated partial sums."
+      ],
+      "finiteCertificate": {
+        "familyId": "zeta-even",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\pi^{2}}{6}",
+          "\\frac{\\pi^{4}}{90}",
+          "\\frac{\\pi^{6}}{945}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.025
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "polynomial-initial-value",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "polynomial-initial-value",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "1",
+          "1"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.003
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "exponential-initial-value",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "exponential-initial-value",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "e",
+          "e^{2}",
+          "e^{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.004
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "trig-initial-value",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, pi/2]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "trig-initial-value",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "0",
+          "0"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.003
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "linear-integrating-factor",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "linear-integrating-factor",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "e",
+          "e",
+          "e"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.002
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "variable-integrating-factor",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "variable-integrating-factor",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "e^{-1}",
+          "e^{-1}",
+          "e^{-1}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.004
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "linear-trig-forcing",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, pi/4]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "linear-trig-forcing",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\sqrt{2}}{2}",
+          "0",
+          "\\frac{\\sqrt{2}}{2}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.007
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "resonant-second-order",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, 1]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "resonant-second-order",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "e",
+          "e",
+          "e"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.002
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "oscillator-resonance",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [0, pi/2]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "oscillator-resonance",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\pi}{2}",
+          "0",
+          "\\frac{\\pi^{2}}{4}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.005
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "euler-cauchy",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Unique classical solution on a neighborhood of [1, 2]; continuous coefficients and nonzero leading coefficient."
+      ],
+      "finiteCertificate": {
+        "familyId": "euler-cauchy",
+        "kind": "ode",
+        "instances": 1400,
+        "basisValues": [
+          "4",
+          "\\log{\\left(16 \\right)}",
+          "4 \\log{\\left(2 \\right)}^{2}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.015
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "partial-x",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "partial-x",
+        "kind": "partial",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "1",
+          "3"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.003
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "partial-y",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "partial-y",
+        "kind": "partial",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "3",
+          "4"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.003
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "rectangle-area",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Domain: 0 <= x <= 1, 0 <= y <= 1."
+      ],
+      "finiteCertificate": {
+        "familyId": "rectangle-area",
+        "kind": "double",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{2}",
+          "\\frac{1}{2}",
+          "\\frac{1}{4}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.01
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "mixed-partials",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "mixed-partials",
+        "kind": "partial",
+        "instances": 1400,
+        "basisValues": [
+          "6",
+          "2 e",
+          "\\frac{1}{4}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.007
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "triangle-integral",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Domain: 0 <= x <= 1, 0 <= y <= x."
+      ],
+      "finiteCertificate": {
+        "familyId": "triangle-integral",
+        "kind": "double",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{8}",
+          "\\frac{1}{10}",
+          "\\frac{1}{15}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.01
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "laplacian",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "laplacian",
+        "kind": "laplacian",
+        "instances": 1400,
+        "basisValues": [
+          "4",
+          "0",
+          "24"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.004
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "high-mixed-partials",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "high-mixed-partials",
+        "kind": "partial",
+        "instances": 1400,
+        "basisValues": [
+          "2",
+          "-6",
+          "0"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.007
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "curved-domain-integral",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Domain: 0 <= x <= 1, 0 <= y <= x**2."
+      ],
+      "finiteCertificate": {
+        "familyId": "curved-domain-integral",
+        "kind": "double",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{12}",
+          "\\frac{1}{27}",
+          "\\frac{1}{16}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.009
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "laplacian-products",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "laplacian-products",
+        "kind": "laplacian",
+        "instances": 1400,
+        "basisValues": [
+          "2 e",
+          "\\frac{4}{9}",
+          "12"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.007
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "transformed-beta-log",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, oo); endpoint singularities use one-sided improper limits.",
+        "Positive integer beta exponents guarantee both transformed endpoint integrals converge."
+      ],
+      "finiteCertificate": {
+        "familyId": "transformed-beta-log",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{115}{864}",
+          "\\frac{20111}{720000}",
+          "\\frac{361711}{32400000}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.368
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "concealed-reflection",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits.",
+        "Each denominator is a sum of nonnegative factors, never simultaneously zero on [0,1]."
+      ],
+      "finiteCertificate": {
+        "familyId": "concealed-reflection",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{12}",
+          "\\frac{1}{60}",
+          "\\frac{1}{280}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.056
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "frullani-cancellation",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integration interval: (0, 1); endpoint singularities use one-sided improper limits.",
+        "The numerator vanishes at 1; grouped Frullani differences converge at both endpoints."
+      ],
+      "finiteCertificate": {
+        "familyId": "frullani-cancellation",
+        "kind": "integral",
+        "instances": 1400,
+        "basisValues": [
+          "\\log{\\left(\\frac{9}{5} \\right)}",
+          "\\log{\\left(\\frac{1375}{1024} \\right)}",
+          "\\log{\\left(\\frac{40516875}{33659659} \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.027
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "removable-exponential-derivative",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "removable-exponential-derivative",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{24673}{21}",
+          "\\frac{228833}{42}",
+          "\\frac{396121}{21}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.311
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "implicit-inverse-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "The implicit-function derivative with respect to u equals one at (0,0); |u_i|<1 locally."
+      ],
+      "finiteCertificate": {
+        "familyId": "implicit-inverse-series",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "8239680",
+          "23227920",
+          "26485920"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 1.206
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "roots-of-unity-product",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "roots-of-unity-product",
+        "kind": "derivative",
+        "instances": 1400,
+        "basisValues": [
+          "3823",
+          "20848",
+          "56655"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.188
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "finite-difference-log-limit",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "finite-difference-log-limit",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1160",
+          "1470",
+          "720"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.358
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "riemann-product-limit",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain.",
+        "For the defined product, u=f(j/N)/N^2 is nonnegative and at most 1/N^2; sum(u^2)<=1/N^3. The logarithm remainder and exponential remainder vanish after multiplication by N."
+      ],
+      "finiteCertificate": {
+        "familyId": "riemann-product-limit",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "- \\frac{11}{4} + \\log{\\left(16 \\right)}",
+          "\\log{\\left(\\frac{4722366482869645213696}{22528399544939174411840147874772641} \\right)} + \\frac{146}{5}",
+          "- \\frac{1657}{10} + \\log{\\left(\\frac{61172327492847069472032393719205726809135813743440799050195397570919697796091958321786863938157971792315844506873509046544459008355036150650333616890210625686064472971480622053109783197015954399612052812141827922088117778074833698589048132156300022844899841969874763871624802603515651998113045708569927237462546233168834543264678118409417047146496}{66350273672982482434306891576157631672689672925812719816425261384529414930593927318955908046569318750032887032063251514730545423930897589175580509482961477591637132783061926910520117393240456588418004008136860862595161557813923710281149781340349753455564872656712827265393921} \\right)}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.051
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "second-order-riemann-limit",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Limit is from the right through the real domain."
+      ],
+      "finiteCertificate": {
+        "familyId": "second-order-riemann-limit",
+        "kind": "limit",
+        "instances": 1400,
+        "basisValues": [
+          "1",
+          "\\frac{11}{4}",
+          "\\frac{44}{3}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.075
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "stirling-beta-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Degree of the denominator exceeds numerator degree by at least two. Partial fractions have zero total residue; exact harmonic tails cancel."
+      ],
+      "finiteCertificate": {
+        "familyId": "stirling-beta-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{7}{7200}",
+          "\\frac{23}{151200}",
+          "\\frac{481}{12700800}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.193
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "binomial-beta-series",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "The inner binomial sum is the nonnegative beta integral. Tonelli sums it to t^(c-1)/(1-r+rt); 0<r<1 gives an integrable bound."
+      ],
+      "finiteCertificate": {
+        "familyId": "binomial-beta-series",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\log{\\left(\\frac{64}{729} \\right)} + 3",
+          "- \\frac{45 \\log{\\left(3 \\right)}}{8} - \\frac{5}{2} + \\frac{45 \\log{\\left(5 \\right)}}{8}",
+          "- \\frac{448 \\log{\\left(7 \\right)}}{81} + \\frac{91}{27} + \\frac{896 \\log{\\left(2 \\right)}}{81}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.055
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "fourier-cosine-square",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Squared cosine differences are at most 4; comparison with sum 4/n^2 proves absolute convergence."
+      ],
+      "finiteCertificate": {
+        "familyId": "fourier-cosine-square",
+        "kind": "series",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\pi^{2}}{6}",
+          "\\frac{\\pi^{2}}{4}",
+          "\\frac{\\pi^{2}}{10}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.027
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "hidden-riccati",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the transformed unknown, derives its equation and initial or singular-branch condition, reconstructs the original unknown and evaluates the actual target.",
+      "conditions": [
+        "Real variables; parameters are integers 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "hidden-riccati",
+        "kind": "special-ode",
+        "instances": 1400,
+        "basisValues": [],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+        "elapsedSeconds": 0.024
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "clairaut-envelope",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the transformed unknown, derives its equation and initial or singular-branch condition, reconstructs the original unknown and evaluates the actual target.",
+      "conditions": [
+        "Real variables; parameters are integers 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "clairaut-envelope",
+        "kind": "special-ode",
+        "instances": 1400,
+        "basisValues": [],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+        "elapsedSeconds": 0.013
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "euler-double-resonance",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the transformed unknown, derives its equation and initial or singular-branch condition, reconstructs the original unknown and evaluates the actual target.",
+      "conditions": [
+        "Real variables; parameters are integers 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "euler-double-resonance",
+        "kind": "special-ode",
+        "instances": 1400,
+        "basisValues": [],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "Symbolic residual and branch/initial conditions for bounded parameters, not linear superposition.",
+        "elapsedSeconds": 0.047
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "unbounded-dirichlet-integral",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Domain: 0 <= x <= oo, 0 <= y <= oo."
+      ],
+      "finiteCertificate": {
+        "familyId": "unbounded-dirichlet-integral",
+        "kind": "double",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{1}{360}",
+          "\\frac{1}{3360}",
+          "\\frac{1}{3360}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.203
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "rotated-disk-moment",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16.",
+        "Integrate over the closed unit disk x^2+y^2 <= 1."
+      ],
+      "finiteCertificate": {
+        "familyId": "rotated-disk-moment",
+        "kind": "disk",
+        "instances": 1400,
+        "basisValues": [
+          "\\frac{\\pi}{10}",
+          "\\frac{5 \\pi}{56}",
+          "\\frac{3 \\pi}{56}"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.025
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "radial-log-mixed-derivative",
+      "inventory": 1400,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Each supplied identity is now tied to the actual fixed components; unrelated tag-selected identities removed. Operator derivatives, endpoint evaluations, convergence conditions and the final coefficient combination are explicitly present. Special ODEs use their own residual/branch argument rather than superposition.",
+      "conditions": [
+        "All variables are real.",
+        "Parameters a, b, c are integers from 1 through 16."
+      ],
+      "finiteCertificate": {
+        "familyId": "radial-log-mixed-derivative",
+        "kind": "partial",
+        "instances": 1400,
+        "basisValues": [
+          "-144000",
+          "302400",
+          "-345600"
+        ],
+        "exactBasisRecalculated": true,
+        "immutableBasisResultsAgree": true,
+        "certificateScope": "All coefficient triples in [1,16]^3 by linearity; special ODEs use symbolic residual, initial/branch and domain checks.",
+        "elapsedSeconds": 0.009
+      },
+      "representativeEdgeInstancesChecked": 4,
+      "checks": [
+        "symbol meanings and actual-instance mapping",
+        "decisive step to result",
+        "domains and convergence or uniqueness",
+        "no irrelevant parameter dump",
+        "natural logarithm and inverse trigonometric notation",
+        "primitive constants or explicit chosen primitives",
+        "immutable source answer agreement",
+        "strict KaTeX syntax",
+        "no ASCII formulas in prose"
+      ],
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-weighted-complement",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the complementary ratio, invariant weight and target integral; supplies the weight substitution.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-reciprocal-quartic",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the target and states the reciprocal substitution before the monotone substitution.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-inverse-moment",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Makes the inverse domain/range explicit and displays the actual Jacobian and power contributions.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-chebyshev-absolute",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Explains the recurrence identity, absolute-value substitution and counted half-periods.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-floor-laplace",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the staircase representation and proves the nonnegative interchange before summing tails.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-gamma-unit-average",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the sliding function and its improper endpoint extension, constant and log-sine derivation.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-log-fourier-coefficient",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Maps the ratio and frequency to the actual instance and displays orthogonality.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-arctan-parameter",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the parameter family, differentiability condition, partial fractions and initial value.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-gaussian-fourier",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the parameter family with the actual Gaussian coefficient, its ODE and normalization.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-reciprocal-gaussian",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the varying parameter and the inversion in its differentiated integral.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-sinc-overlap",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the cosine-difference integral and connects product-to-sum, Dirichlet and the actual frequencies.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-mixed-beta-log",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines Gamma, beta and harmonic notation and maps the mixed derivative to the instance.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-thermal-derivative",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Gives the exact Laplace moment and frequency power after the positive series expansion.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-mellin-cyclotomic",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the reflection exponent and transformed differential with its strict convergence domain.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-cauchy-convolution",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the rational function, actual pole parameters and both explicit residue contributions.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-binomial-exponential",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Transforms both bounds and the differential and gives the integer factorial evaluation.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-agm-parameter",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the integral family, entire-line substitution, symmetry factor and uniqueness argument.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-abel-recovery",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the target; justifies absolute Fubini and evaluates the resulting finite polynomial integral.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-boundary-asymptotic",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the target limit and zero-extended rescaled function; states pointwise convergence and domination.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-integral-equation",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the kernel operator and actual coefficient; gives both ODE necessity and original-residual sufficiency.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 32
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-convolution-laplace",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the actual Laplace parameter, transforms, supports, translation and recurrence.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-poisson-log-potential",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the harmonic function and actual height/displacement; verifies its zero is below the domain.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-jensen-radius",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the actual radius and explains the vanishing full-period Fourier modes.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-fresnel",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the regulator, coefficient, square-root branch and uniform tail estimate needed for the ordinary integral.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines both scales; supplies the angular moment identity, Fubini condition and tangent substitution.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-rodrigues-moment",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Justifies all endpoint cancellations and evaluates the final integral by a finite monomial sum.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-bernoulli-product",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines Bernoulli numbers, product integrals and recurrence domains; displays the final endpoint jump.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-principal-value",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Separates ordinary divergence, the symmetric-cutoff correction and reciprocal reduction before reflection.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-oscillatory-regularization",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Separates the nonconvergent cutoff from the well-defined positive-damping limit.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-concentration",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the integral sequence and its exact substituted value for every positive parameter.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-binary-product",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Connects the binary product to a finite polynomial before integrating; harmonic convention is in the question.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-fejer-fourth",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the geometric exponential sum and connects its modulus to the displayed trigonometric ratio.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-scaled-frullani",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Uses actual bounds for the parameter integral and justifies the interchange by nonnegativity.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-sech-fourier",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the actual frequency and complex beta exponent with its strip condition.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 8
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-variational-energy",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the functional, coefficient, feasible candidate and residual; expands the cross term explicitly.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 32
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-moment-projection",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the prescribed moment, centered basis, variance and candidate; verifies feasibility and orthogonality.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 24
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-quadrature-defect",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the nodes and leading coefficient role; supplies exactness for every cubic basis monomial.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 40
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    },
+    {
+      "familyId": "io3-rearrangement",
+      "inventory": 8,
+      "status": "solution-correction-ready",
+      "mathematicalResultAgreement": true,
+      "logicalReview": "Defines the level sets and their lengths, gives sharp set-moment inequalities and feasible extremizers.",
+      "finiteChecks": {
+        "instances": 8,
+        "executedSourceIdentityChecks": 16
+      },
+      "allFiniteInstancesReviewed": true,
+      "humanReviewed": false
+    }
+  ],
+  "statementChoiceIdentityChanges": false,
+  "humanReviewed": false
+}

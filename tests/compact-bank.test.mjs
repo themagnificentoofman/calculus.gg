@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync,writeFileSync,mkdtempSync,rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { openDatabase,insertProblem,hash } from '../scripts/bank/admin.mjs';
+import { openDatabase,insertProblem,hash,canonical as canonicalRecord } from '../scripts/bank/admin.mjs';
 import { openCompact,syncCompact,verifyCompact,activateCompact } from '../scripts/bank/compact.mjs';
 import { exportCompact,loadPlan,runImport,localImportAdapter,verifyImported,activateVerified,collectMeta } from '../scripts/bank/compact-import.mjs';
 import { sqliteD1 } from '../scripts/bank/sqlite-d1.mjs';
@@ -26,7 +26,11 @@ test('compact conversion reconstructs canonical evidence, preserves immutable re
     syncCompact(f.source,f.target,'test-release');assert.equal(verifyCompact(f.target,f.source).verified,72);
     const p=samples[0],before=f.target.prepare('SELECT problem_ref FROM cbank_problems WHERE problem_id=?').get(p.problemId).problem_ref;
     const revision={...p,problemRevision:2,solutionSteps:[...p.solutionSteps,String.raw`\textnormal{An additional check.}`]};delete revision.contentHash;revision.contentHash=hash(revision);
-    insertProblem(f.source,revision);f.source.prepare("UPDATE bank_publication SET state='retired',retirement_reason='Verified correction' WHERE problem_id=? AND revision=1").run(p.problemId);
+    // Storage-conversion fixture only: explicitly bypass admission to simulate an
+    // already stored historical revision. New content must fail its review gate.
+    assert.throws(()=>insertProblem(f.source,revision),/source-bound/);
+    f.source.prepare('INSERT INTO bank_problems VALUES (?,?,?,?,?,?,?,?)').run(revision.problemId,2,revision.contentHash,revision.semanticHash,revision.topic,revision.difficulty,revision.familyId,canonicalRecord(revision));
+    f.source.prepare("INSERT INTO bank_publication VALUES (?,2,'approved',NULL)").run(revision.problemId);f.source.prepare("UPDATE bank_publication SET state='retired',retirement_reason='Verified correction' WHERE problem_id=? AND revision=1").run(p.problemId);
     syncCompact(f.source,f.target,'test-release');assert.equal(verifyCompact(f.target,f.source).verified,73);
     assert.equal(f.target.prepare('SELECT problem_ref FROM cbank_problems WHERE problem_id=? AND revision=1').get(p.problemId).problem_ref,before);
     assert.equal(f.target.prepare('SELECT count(*) AS n FROM cbank_problems WHERE problem_id=?').get(p.problemId).n,2);

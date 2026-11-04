@@ -1,3 +1,4 @@
+import {presentBankProblem} from './solution-presentation.mjs';
 import type { BankProblem, RoundSnapshot, SelectionDiagnostics } from '../bank/contracts.ts';
 import type { GameQuestion } from '../game-progress.ts';
 import { decodeCompact } from '../bank/compact-codec.mjs';
@@ -137,11 +138,12 @@ export async function selectBankQuestions(db:D1Database,input:{category:string;d
  if(rows.length!==input.count)throw new BankUnavailableError();
  const decoded=await Promise.all(rows.map(async row=>await decodeCompact(row) as BankProblem)),byId=new Map(decoded.map(p=>[p.problemId,p]));
  const questions:GameQuestion[]=selected.map(candidate=>{
-  const p=byId.get(candidate.problem_id);
+  const original=byId.get(candidate.problem_id);
+  const p=original?presentBankProblem(original) as BankProblem & {solutionQuality?:{version:string}}:null;
   if(!p||p.familyId!==candidate.family_id||p.difficulty!==input.difficulty||input.category!=='all'&&p.topic!==input.category||input.tag&&input.tag!=='*'&&!p.techniqueTags.includes(input.tag))throw Error('Bank pool/content mismatch');
   const choices=shuffled(p.choices,rng);
   return {problemId:p.problemId,problemRevision:p.problemRevision,contentHash:p.contentHash,bankRelease:pools[0].active_release,
-   familyId:p.familyId,...(p.pedagogy?{pedagogy:p.pedagogy}:{}),context:{assumptions:p.assumptions,subtopic:p.subtopic,techniqueTags:p.techniqueTags,parameters:p.parameters},
+   familyId:p.familyId,templateVersion:p.templateVersion,...(p.solutionQuality?{solutionReviewVersion:p.solutionQuality.version}:{}),...(p.pedagogy?{pedagogy:p.pedagogy}:{}),context:{assumptions:p.assumptions,subtopic:p.subtopic,techniqueTags:p.techniqueTags,parameters:p.parameters},
    choiceOrder:choices.map(c=>c.choiceId),latexProblem:p.statement,options:choices.map(c=>c.math),correctIndex:choices.findIndex(c=>c.choiceId===p.answerChoiceId),explanation:p.solutionSteps,topic:p.topic,difficulty:p.difficulty};
  });
  return {questions,relaxation,diagnostics:{policy:'exposure-weighted-v2' as const,candidateCount:candidates.size,probes,statements,catalogFamilies:familyCount,exhaustedInventory:exhausted,reasons}};

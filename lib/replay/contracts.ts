@@ -27,7 +27,8 @@ export interface ReplayState {
   startTime:number|null; deadline:number|null; logicalEndAt:number|null; result:Record<string,any>|null; gap:boolean;
   accepted:Record<string,{selectedOption:number;correct:boolean;xp:number;serverEventId:string;at:number}>;
 }
-export interface ReplayData {manifest:ReplayManifest;content:ReplayContent;events:ReplayEvent[];status:ReplayStatus;gaps:string[];playerId:string}
+export interface SolutionReview {steps:string[];version:string;sourceContentHash:string;clarified:boolean}
+export interface ReplayData {solutionReviews?:Record<string,SolutionReview>;manifest:ReplayManifest;content:ReplayContent;events:ReplayEvent[];status:ReplayStatus;gaps:string[];playerId:string}
 export const replayStatus = (capability:unknown,terminal:boolean,summary:any,settledAt:number|null,now=Date.now(),expected?:{indices:number[];feedback:boolean}):ReplayStatus => {
   if(capability!==1)return 'Legacy';
   if(!terminal)return summary?.failed?'Partial':'Recording';

@@ -1,0 +1,219 @@
+{
+  "scope": "Bounded independent read-only review; all 12 advanced ODE and all 12 advanced multivariable branches read, plus six statement-clarification families checked against immutable artifact. Selected high-risk displayed identities checked independently below. Not a fresh 944-instance full validation.",
+  "sourceSha256": "9cf1ecc6497343302852d3857c7c918fe5ec83e3deea5decf9d6d3d6a766395d",
+  "checks": [
+    {
+      "check": "Darboux operator identity on an arbitrary differentiable test function",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Darboux IVP residual",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Darboux initial value",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Darboux initial derivative",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Ground-state square completion pointwise identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Positive power-coordinate chain identity",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Pinney squared-solution equation 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Two-centre rational primitive 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility explicit particular 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility left endpoint 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility right endpoint 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Pinney squared-solution equation 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Two-centre rational primitive 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility explicit particular 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility left endpoint 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Boundary compatibility right endpoint 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 4",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 4",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 5",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 5",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 6",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 6",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 7",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 7",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 8",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 8",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 9",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 9",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 10",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 10",
+      "passed": true
+    },
+    {
+      "check": "Winding factorization 11",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "check": "Winding coefficient decrease for an explicit enlarged radius 11",
+      "passed": true
+    },
+    {
+      "check": "Vandermonde identity on zero-sum plane",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "checkCount": 33,
+  "incorrectFinalFormulaFound": false,
+  "findings": [
+    {
+      "type": "undefined-result-label",
+      "families": [
+        "simplex-beta",
+        "Gaussian-wedge",
+        "planar-log-potential",
+        "two-centre-resolvent",
+        "log-simplex-moment",
+        "squared-log-disk"
+      ],
+      "finding": "Source integral is unnamed but I is used without introduction.",
+      "ownerResponse": "Targeted I definition added; owner also naming area/volume labels.",
+      "resolution": "Confirmed targeted I definitions and explicit A/V introductions in current source."
+    },
+    {
+      "type": "missing-theorem-base-value",
+      "family": "log-simplex-moment",
+      "finding": "Gamma recurrence alone does not determine trigamma at one; supply its convergent reciprocal-square series or initial value pi^2/6.",
+      "ownerResponse": "Owner agreed and added trigamma series.",
+      "resolution": "Confirmed psi1 reciprocal-square series and initial value in current source."
+    },
+    {
+      "type": "indefinite-integral-constant",
+      "family": "log-phase-average-limsup",
+      "finding": "Displayed indefinite cosine-log antiderivative omits +C. Use a named chosen primitive with an explicit derivative or include the constant.",
+      "status": "sent to owner for correction"
+    },
+    {
+      "type": "definite-line-integral-notation",
+      "family": "potential-endpoints",
+      "finding": "Restore explicit source endpoints (0,0) to (m,1) on the line-integral left-hand side; the current unbounded integral sign looks indefinite despite the correct endpoint difference.",
+      "status": "sent to owner for correction; no answer error"
+    }
+  ],
+  "statementClarificationsMeaningPreserved": [
+    "path-dependent-directional",
+    "nonlinear-energy-speed",
+    "periodic-floquet-multiplier",
+    "sharp-lifetime-comparison",
+    "schwarzian-ivp",
+    "darboux-oscillator"
+  ],
+  "theoremBridgesReviewed": [
+    "Positive-power transform is invertible exactly while the original unknown stays positive.",
+    "Ground-state square completion uses the stated rapid decay and the Gaussian attains equality.",
+    "Pinney squared solution stays strictly positive.",
+    "The winding root bound uses an enlarged radius, avoiding any boundary-root gap; the argument principle then supplies winding two.",
+    "Log-partition Hessian positive definiteness plus an explicit stationary point proves its unique global minimum.",
+    "Anisotropic integral is compared above and below by the same power, including logarithmic divergence at the threshold.",
+    "Feynman parameter interchange is nonnegative and the displayed inverse-hyperbolic primitive has argument strictly inside its real domain."
+  ],
+  "humanReviewed": false,
+  "filesModifiedOutsideOwnDirectory": false
+}

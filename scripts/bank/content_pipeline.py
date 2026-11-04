@@ -105,7 +105,7 @@ def require_admission(raw):
  elif raw.get('editorialStatus')!='admitted' or raw.get('validation',{}).get('status')!='verified':
   raise ValueError('Mathematical/editorial admission unresolved: '+str(raw.get('editorialStatus')))
 def verify(p):
- if p.get('templateVersion')=='standalone-polynomial-v1':
+ if p.get('templateVersion') in ['standalone-polynomial-v1','standalone-polynomial-v2']:
   import standalone
   return standalone.verify(p)
  if p.get('templateVersion')!=VERSION:raise ValueError('Unsupported version; require explicit verifier')

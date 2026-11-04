@@ -1,0 +1,28 @@
+{
+  "scope": "Bounded read-only AI mathematical/editorial peer audit of five io3 solution routes; legacy renderer excluded. No formal/human verification claim and no source file edits.",
+  "source": "/Users/zhenxg/Documents/Codex/2026-11-03/sign/work/solution-research/integration-legacy/io3_solutions.py",
+  "sourceSha256": "6740377725417995e3dffa6049eeb3a6a1971ec311b6b5564e79528f980aa209",
+  "findings": [
+    {
+      "family": "cauchy-convolution",
+      "result": "Both upper-plane residues have the displayed positive formulas; their sum gives the stated real value. Quartic decay makes the large semicircle vanish."
+    },
+    {
+      "family": "bernoulli-product",
+      "result": "Recurrence boundaries vanish for r>=2,s>=1; the terminal r=1 boundary jump yields B_(s+1)/(s+1), with the zero integral of B_(s+1). Factorial/sign accumulation is correct."
+    },
+    {
+      "family": "fresnel",
+      "result": "For epsilon>=0, g(x)=exp(-epsilon*x^2)/x is decreasing to zero. Oscillatory integration by parts gives boundary plus variation at most 1/(aR), uniformly, so the damping limit equals the ordinary improper integral."
+    },
+    {
+      "family": "principal-value",
+      "result": "The transformed symmetric-cutoff ratio tends to one, removing any logarithmic shift. Folding the upper tail gives the displayed exponent difference; digamma reflection has the positive pi*cot(pi*r) sign.",
+      "notationIssue": "I should be introduced before PV I. Sent to author and root."
+    },
+    {
+      "family": "quadrature-defect",
+      "result": "The monic q has the two Gaussian nodes; subtracting c*q^2 leaves a cubic. Exact monomial moments through degree3 give the two-node rule; integral q^2=1/180 yields the stated defect."
+    }
+  ]
+}

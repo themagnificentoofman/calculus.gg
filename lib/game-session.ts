@@ -1,3 +1,4 @@
+import {withCurrentReviews} from './solution-review-view.mjs';
 import {observeReplay} from './replay/browser-events';
 import { auth, db } from '@/firebase';
 import { collection, doc, onSnapshot, query, where } from 'firebase/firestore';
@@ -15,8 +16,14 @@ export function gameView(game: any, progress: any = {}) {
   return { ...game, questions: (game.questions || []).map((q: any, index: number) => ({ ...q, correctIndex: -1, explanation: [], ...progress.reviews?.[index] })),
     answers: { ...game.answers, ...(auth.currentUser && progress.answers ? { [auth.currentUser.uid]: progress.answers } : {}) } } as GameSession;
 }
+const currentReviews=new Map<string,Record<string,any>>();
+const reviewKey=(uid:string,id:string)=>uid+':'+id;
 const command = async (action: string, gameId?: string, data = {}) => {
   const result = await apiRequest('games', { action, ...(gameId ? { gameId } : {}), ...data });
+  if(gameId&&auth.currentUser&&result.progress?.reviews){
+    currentReviews.set(reviewKey(auth.currentUser.uid,gameId),result.progress.reviews);
+    if(currentReviews.size>32)currentReviews.delete(currentReviews.keys().next().value!);
+  }
   if (result.game) result.game = gameView(result.game, result.progress);
   return result;
 };
@@ -44,7 +51,7 @@ export const gameProgress = {
       if (!game || !progress) return;
       const committed = Object.keys(game.answers?.[uid] || {}), reviewed = Object.keys(progress.answers || {});
       if (committed.length !== reviewed.length || committed.some(i => !progress.answers?.[i])) return;
-      callback(gameView(game, progress));
+      callback(gameView(game, withCurrentReviews(progress,currentReviews.get(reviewKey(uid,id)))));
     };
     const a = onSnapshot(doc(db, 'games', id), s => { if (s.exists()) { game = s.data(); emit(); } }, onError);
     const b = onSnapshot(doc(db, 'games', id, 'reviews', uid), s => { progress = s.data() || {}; emit(); }, onError);

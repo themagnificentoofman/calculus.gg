@@ -14,7 +14,8 @@
     "test:integration": "node --experimental-strip-types --test tests/game-progress.test.mjs tests/history.test.mjs tests/account-auth.test.mjs",
     "bank:verify": ".bank-venv/bin/python scripts/bank/test_math.py",
     "bank:benchmark": "node --experimental-strip-types scripts/bank/benchmark.mjs",
-    "bank:pilot": ".bank-venv/bin/python scripts/bank/pipeline.py --stage pilot"
+    "bank:pilot": ".bank-venv/bin/python scripts/bank/pipeline.py --stage pilot",
+    "bank:solutions": "node scripts/bank/verify-solution-review.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
