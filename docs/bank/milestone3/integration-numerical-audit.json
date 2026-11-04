@@ -1,0 +1,696 @@
+{
+  "precisionDigits": 40,
+  "seedCoverage": [
+    0,
+    7
+  ],
+  "supplementaryOnly": true,
+  "checks": [
+    {
+      "familyId": "io3-weighted-complement",
+      "seed": 0,
+      "passed": true,
+      "method": "trigonometric endpoint removal; direct quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-weighted-complement",
+      "seed": 7,
+      "passed": true,
+      "method": "trigonometric endpoint removal; direct quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-reciprocal-quartic",
+      "seed": 0,
+      "passed": true,
+      "method": "direct rational quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-reciprocal-quartic",
+      "seed": 7,
+      "passed": true,
+      "method": "direct rational quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-inverse-moment",
+      "seed": 0,
+      "passed": true,
+      "method": "numeric inverse by bisection then direct quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-20",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-inverse-moment",
+      "seed": 7,
+      "passed": true,
+      "method": "numeric inverse by bisection then direct quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-20",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-chebyshev-absolute",
+      "seed": 0,
+      "passed": true,
+      "method": "direct absolute polynomial quadrature split at every zero",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-chebyshev-absolute",
+      "seed": 7,
+      "passed": true,
+      "method": "direct absolute polynomial quadrature split at every zero",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-floor-laplace",
+      "seed": 0,
+      "passed": true,
+      "method": "direct interval quadrature through160; omitted tail bounded by integral x exp(-a x)",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-floor-laplace",
+      "seed": 7,
+      "passed": true,
+      "method": "direct interval quadrature through160; omitted tail bounded by integral x exp(-a x)",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-gamma-unit-average",
+      "seed": 0,
+      "passed": true,
+      "method": "direct log-gamma quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-gamma-unit-average",
+      "seed": 7,
+      "passed": true,
+      "method": "direct log-gamma quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-log-fourier-coefficient",
+      "seed": 0,
+      "passed": true,
+      "method": "direct smooth logarithmic quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-log-fourier-coefficient",
+      "seed": 7,
+      "passed": true,
+      "method": "direct smooth logarithmic quadrature",
+      "absoluteError": "2.242077542919707313477967333263865810048e-43",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-arctan-parameter",
+      "seed": 0,
+      "passed": true,
+      "method": "direct improper quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-arctan-parameter",
+      "seed": 7,
+      "passed": true,
+      "method": "direct improper quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-gaussian-fourier",
+      "seed": 0,
+      "passed": true,
+      "method": "direct oscillatory Gaussian quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-gaussian-fourier",
+      "seed": 7,
+      "passed": true,
+      "method": "direct oscillatory Gaussian quadrature",
+      "absoluteError": "2.802596928649634141847459166579832262561e-45",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-reciprocal-gaussian",
+      "seed": 0,
+      "passed": true,
+      "method": "direct two-endpoint-decaying quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-reciprocal-gaussian",
+      "seed": 7,
+      "passed": true,
+      "method": "direct two-endpoint-decaying quadrature",
+      "absoluteError": "1.793662034335765850782373866611092648039e-43",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-sinc-overlap",
+      "seed": 0,
+      "passed": true,
+      "method": "oscillatory quadrature with common integer-frequency period",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-18",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-sinc-overlap",
+      "seed": 7,
+      "passed": true,
+      "method": "oscillatory quadrature with common integer-frequency period",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-18",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-mixed-beta-log",
+      "seed": 0,
+      "passed": true,
+      "method": "direct logarithmic beta quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-mixed-beta-log",
+      "seed": 7,
+      "passed": true,
+      "method": "direct logarithmic beta quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-thermal-derivative",
+      "seed": 0,
+      "passed": true,
+      "method": "direct stable thermal-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-thermal-derivative",
+      "seed": 7,
+      "passed": true,
+      "method": "direct stable thermal-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-mellin-cyclotomic",
+      "seed": 0,
+      "passed": true,
+      "method": "direct convergent Mellin quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-mellin-cyclotomic",
+      "seed": 7,
+      "passed": true,
+      "method": "direct convergent Mellin quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-cauchy-convolution",
+      "seed": 0,
+      "passed": true,
+      "method": "direct two-kernel quadrature split near peaks",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-cauchy-convolution",
+      "seed": 7,
+      "passed": true,
+      "method": "direct two-kernel quadrature split near peaks",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-binomial-exponential",
+      "seed": 0,
+      "passed": true,
+      "method": "direct exponential quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-binomial-exponential",
+      "seed": 7,
+      "passed": true,
+      "method": "direct exponential quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-agm-parameter",
+      "seed": 0,
+      "passed": true,
+      "method": "independent quadrature of both elliptic integrals at certified parameter",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-agm-parameter",
+      "seed": 7,
+      "passed": true,
+      "method": "independent quadrature of both elliptic integrals at certified parameter",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-abel-recovery",
+      "seed": 0,
+      "passed": true,
+      "method": "numeric Abel equation at two t values plus direct mass integral",
+      "absoluteError": "5.739718509874450722503596373155496473724e-42",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-abel-recovery",
+      "seed": 7,
+      "passed": true,
+      "method": "numeric Abel equation at two t values plus direct mass integral",
+      "absoluteError": "2.869859254937225361251798186577748236862e-42",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-boundary-asymptotic",
+      "seed": 0,
+      "passed": true,
+      "method": "finite-n rescaled integral at n100000; convergence diagnostic only",
+      "absoluteError": "0.000003323333661419077231419566056600631432153",
+      "relativeScaleTolerance": "0.00002",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-boundary-asymptotic",
+      "seed": 7,
+      "passed": true,
+      "method": "finite-n rescaled integral at n100000; convergence diagnostic only",
+      "absoluteError": "0.0000005845451404497649813637969420325309724986",
+      "relativeScaleTolerance": "0.00002",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-integral-equation",
+      "seed": 0,
+      "passed": true,
+      "method": "direct original integral-equation residual at three interior/endpoints and solution mass",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-integral-equation",
+      "seed": 7,
+      "passed": true,
+      "method": "direct original integral-equation residual at three interior/endpoints and solution mass",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-convolution-laplace",
+      "seed": 0,
+      "passed": true,
+      "method": "direct piecewise inclusion-exclusion density quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-convolution-laplace",
+      "seed": 7,
+      "passed": true,
+      "method": "direct piecewise inclusion-exclusion density quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-poisson-log-potential",
+      "seed": 0,
+      "passed": true,
+      "method": "direct shifted log-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-poisson-log-potential",
+      "seed": 7,
+      "passed": true,
+      "method": "direct shifted log-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-jensen-radius",
+      "seed": 0,
+      "passed": true,
+      "method": "direct circle quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-jensen-radius",
+      "seed": 7,
+      "passed": true,
+      "method": "direct circle quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-fresnel",
+      "seed": 0,
+      "passed": true,
+      "method": "ordinary oscillatory quadrature at exact phase zeros",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-20",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-fresnel",
+      "seed": 7,
+      "passed": true,
+      "method": "ordinary oscillatory quadrature at exact phase zeros",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-20",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "seed": 0,
+      "passed": true,
+      "method": "direct special-function quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-bessel-laplace",
+      "seed": 7,
+      "passed": true,
+      "method": "direct special-function quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-rodrigues-moment",
+      "seed": 0,
+      "passed": true,
+      "method": "direct differentiated-polynomial quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-rodrigues-moment",
+      "seed": 7,
+      "passed": true,
+      "method": "direct differentiated-polynomial quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-bernoulli-product",
+      "seed": 0,
+      "passed": true,
+      "method": "independent mpmath Bernoulli polynomial quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-bernoulli-product",
+      "seed": 7,
+      "passed": true,
+      "method": "independent mpmath Bernoulli polynomial quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-principal-value",
+      "seed": 0,
+      "passed": true,
+      "method": "symmetric x cutoffs at1\u00b11e-12; finite cutoff error diagnostic",
+      "absoluteError": "6.666666666666666704931457678552508118292e-13",
+      "relativeScaleTolerance": "0.0000000001",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-principal-value",
+      "seed": 7,
+      "passed": true,
+      "method": "symmetric x cutoffs at1\u00b11e-12; finite cutoff error diagnostic",
+      "absoluteError": "5.000000000000000011479432111857221899633e-13",
+      "relativeScaleTolerance": "0.0000000001",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-oscillatory-regularization",
+      "seed": 0,
+      "passed": true,
+      "method": "positive damping numerical integral; separate primitive certifies ordinary divergence",
+      "absoluteError": "7.345922535665892661648756020080844432856e-27",
+      "relativeScaleTolerance": "1.0e-18",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-oscillatory-regularization",
+      "seed": 7,
+      "passed": true,
+      "method": "positive damping numerical integral; separate primitive certifies ordinary divergence",
+      "absoluteError": "1.632427230147975987596431619061000915535e-27",
+      "relativeScaleTolerance": "1.0e-18",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-concentration",
+      "seed": 0,
+      "passed": true,
+      "method": "direct finite-n concentrated-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-concentration",
+      "seed": 7,
+      "passed": true,
+      "method": "direct finite-n concentrated-kernel quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-binary-product",
+      "seed": 0,
+      "passed": true,
+      "method": "direct finite-product quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-binary-product",
+      "seed": 7,
+      "passed": true,
+      "method": "direct finite-product quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-fejer-fourth",
+      "seed": 0,
+      "passed": true,
+      "method": "direct fourth-power oscillatory quadrature split by lobes",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-fejer-fourth",
+      "seed": 7,
+      "passed": true,
+      "method": "direct fourth-power oscillatory quadrature split by lobes",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-scaled-frullani",
+      "seed": 0,
+      "passed": true,
+      "method": "direct grouped-cancellation quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-scaled-frullani",
+      "seed": 7,
+      "passed": true,
+      "method": "direct grouped-cancellation quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-sech-fourier",
+      "seed": 0,
+      "passed": true,
+      "method": "direct hyperbolic Fourier quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-sech-fourier",
+      "seed": 7,
+      "passed": true,
+      "method": "direct hyperbolic Fourier quadrature",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-variational-energy",
+      "seed": 0,
+      "passed": true,
+      "method": "direct energy of certified minimizer; analytic square completion proves lower bound",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-variational-energy",
+      "seed": 7,
+      "passed": true,
+      "method": "direct energy of certified minimizer; analytic square completion proves lower bound",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-moment-projection",
+      "seed": 0,
+      "passed": true,
+      "method": "direct norm of certified minimizer; analytic orthogonality proves lower bound",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-moment-projection",
+      "seed": 7,
+      "passed": true,
+      "method": "direct norm of certified minimizer; analytic orthogonality proves lower bound",
+      "absoluteError": "9.183549615799121156005754197048794357958e-41",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-quadrature-defect",
+      "seed": 0,
+      "passed": true,
+      "method": "independent quartic realization including arbitrary cubic residual",
+      "absoluteError": "2.29588740394978028900143854926219858949e-41",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-quadrature-defect",
+      "seed": 7,
+      "passed": true,
+      "method": "independent quartic realization including arbitrary cubic residual",
+      "absoluteError": "4.591774807899560578002877098524397178979e-41",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-rearrangement",
+      "seed": 0,
+      "passed": true,
+      "method": "direct integration of both attaining functions; analytic layer-cake bound required",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    },
+    {
+      "familyId": "io3-rearrangement",
+      "seed": 7,
+      "passed": true,
+      "method": "direct integration of both attaining functions; analytic layer-cake bound required",
+      "absoluteError": "0.0",
+      "relativeScaleTolerance": "1.0e-25",
+      "usedAsProof": false
+    }
+  ],
+  "passed": 76,
+  "failed": 0
+}

@@ -1,7 +1,8 @@
 import { calculateProblemXp, calculateRatings, finite, TOPICS, type GameMode } from '../progression.ts';
 import { gamePlayers, nextUnanswered, type GameQuestion, type GameSession, type MatchSettings } from '../game-progress.ts';
 import { recordTransition } from './replay-recording.ts';
-import type { RoundSnapshot } from '../bank/contracts.ts';
+import type { RoundSnapshot, SelectionDiagnostics } from '../bank/contracts.ts';
+import { recordExposures } from '../bank/exposure.ts';
 import type { Store, Transaction, Data } from './firestore-admin.ts';
 
 export class GameError extends Error { status: number; constructor(message: string, status = 400) { super(message); this.status = status; } }
@@ -71,15 +72,15 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       p.uid = uid; patchProfile(p, patch); p.lastActive = now(); saveProfile(tx, uid, p); return p;
     });
   }
-  async function storeQuestions(uid: string, mode: GameMode, category: string, difficulty: string, questions: GameQuestion[], relaxation: RoundSnapshot['relaxation'] = 'none') {
+  async function storeQuestions(uid: string, mode: GameMode, category: string, difficulty: string, questions: GameQuestion[], relaxation: RoundSnapshot['relaxation'] = 'none', diagnostics?: SelectionDiagnostics) {
     const id = crypto.randomUUID().replaceAll('-', '').slice(0, 24);
     await store.transaction(async tx => {
       const recent = await tx.get(`bankRecent/${uid}`) || {};
       await tx.get(`questionSets/${id}`);
       const refs = questions.filter(q => q.problemId && q.choiceOrder).map((q, ordinal) => ({ ordinal, problemId: q.problemId!, problemRevision: q.problemRevision!, contentHash: q.contentHash!, bankRelease: q.bankRelease!, familyId: q.familyId!, choiceOrder: q.choiceOrder! }));
-      const roundSnapshot: RoundSnapshot | undefined = refs.length === questions.length ? { schemaVersion: 1, selectionPolicy: 'family-uniform-v1', relaxation, questions: refs } : undefined;
+      const roundSnapshot: RoundSnapshot | undefined = refs.length === questions.length ? { schemaVersion: diagnostics ? 2 : 1, selectionPolicy: diagnostics ? 'exposure-weighted-v2' : 'family-uniform-v1', relaxation, questions: refs, ...(diagnostics ? { diagnostics } : {}) } : undefined;
       tx.set(`questionSets/${id}`, { uid, mode, category, difficulty, questions, ...(roundSnapshot ? { roundSnapshot } : {}), expiresAt: new Date(now() + 30 * 60_000) });
-      if (refs.length) tx.set(`bankRecent/${uid}`, { problems: [...(recent.problems || []), ...refs.map(q => q.problemId)].slice(-100), families: [...(recent.families || []), ...refs.map(q => q.familyId)].slice(-20) });
+      if (refs.length) tx.set(`bankRecent/${uid}`, recordExposures(recent, id, questions, 'issued', now()));
     });
     return { questionSetId: id, questionCount: questions.length };
   }
@@ -114,7 +115,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
       if (!joining) requireMember(game, uid);
       const ids = [...new Set([...game.players, ...(joining ? [uid] : [])])];
       const docs = await Promise.all(ids.map(p => tx.get(`users/${p}`)));
-      const recent = joining ? await tx.get(`bankRecent/${uid}`) || {} : null;
+      const recent = joining || action === 'answer' ? await tx.get(`bankRecent/${uid}`) || {} : null;
       if (docs.some(p => !p)) throw new GameError('A player profile is unavailable.', 409);
       const profiles = Object.fromEntries(ids.map((p, i) => [p, docs[i]!]));
       const changed = new Set<string>();
@@ -143,7 +144,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
         if (joining) {
           if (game.status !== 'waiting' || game.players.length >= (game.mode === 'pvp' ? 2 : 10)) throw new GameError('Game is full or already started.', 409);
           game.players.push(uid); game.scores[uid] = 0; modified = true;
-          if (recent && game.roundSnapshot) tx.set(`bankRecent/${uid}`, { problems: [...(recent.problems || []), ...game.roundSnapshot.questions.map(q => q.problemId)].slice(-100), families: [...(recent.families || []), ...game.roundSnapshot.questions.map(q => q.familyId)].slice(-20) });
+          if (recent && game.roundSnapshot) tx.set(`bankRecent/${uid}`, recordExposures(recent, id, game.questions || [], 'issued', time));
           if (game.mode === 'pvp') { game.status = 'active'; game.startTime = time + 3000; game.deadline = game.startTime + 30 * 60_000; }
           game.ratingSnapshot = Object.fromEntries(game.players.map(p => [p, snapshot(profiles[p])]));
         }
@@ -169,6 +170,7 @@ export function createServerGames(store: Store, now: () => number = Date.now) {
           const correct = selectedOption === q.correctIndex, xp = correct ? calculateProblemXp(game.mode, q.difficulty) : 0;
           answer = { selectedOption, correct, xp, timeMs: time - game.startTime! };
           (game.answers![uid] ||= {})[index] = answer;
+          if (recent && q.problemId) tx.set(`bankRecent/${uid}`, recordExposures(recent, id, [q], 'attempted', time));
           game.scores[uid] = finite(game.scores[uid]) + (correct ? 1 : game.mode === 'multiplayer' && game.settings?.penalties ? -1 : 0);
           if (nextUnanswered(game, uid) === game.questions!.length) game.completedPlayers = [...new Set([...game.completedPlayers!, uid])];
           if (game.mode === 'rapid' && !correct) game.deadline! -= 5000;

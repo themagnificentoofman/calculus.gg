@@ -2,6 +2,7 @@ import type {Store,Data} from './firestore-admin.ts';
 import {REPLAY_LIMITS,replayStatus,legacyMessage,type ClientEvent,type ReplayEvent} from '../replay/contracts.ts';
 import {serverChunkPath} from './replay-recording.ts';
 import {readBoundedJson} from './questions-policy.mjs';
+import {recordExposures} from '../bank/exposure.ts';
 const reply=(body:unknown,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 class ReplayError extends Error {status:number;constructor(message:string,status=400){super(message);this.status=status;}}
 const id=(s:unknown)=>{if(typeof s!=='string'||!/^[a-zA-Z0-9_-]{5,128}$/.test(s)||['constructor','prototype','__proto__'].includes(s))throw new ReplayError('Invalid replay reference.');return s;};
@@ -67,9 +68,18 @@ export function createReplayApi(deps:{store:Store;verify:(token:string)=>Promise
       if(events[0].monotonicMs<segment.lastMono||segment.clientAnchorMs!==null&&(segment.clientAnchorMs!==input.anchorMs||segment.uncertaintyMs!==input.uncertaintyMs))throw new ReplayError('Clock segment conflict.',409);
       if(summary.events+events.length>REPLAY_LIMITS.eventsPerPlayer){if(!summary.failed){summary.failed=true;tx.set(capturePath(round,uid),summary);}return {limited:true,replayStatus:'Partial'};}
       if(input.closed&&events.at(-1)?.type!=='session_closed')throw new ReplayError('Missing segment closure.');
+      const displayed=events.filter(e=>e.type==='question_displayed'&&e.questionIndex!==undefined);
+      // Only map reports to this member's immutable server snapshot. Client
+      // reports never award XP, calibrate difficulty, or become attempts.
+      const privateGame=displayed.length?await tx.get(`gameSecrets/${round}`):null;
+      const recent=privateGame?await tx.get(`bankRecent/${uid}`)||{}:null;
+      if(privateGame&&displayed.some(e=>!privateGame.questions?.[e.questionIndex!]))throw new ReplayError('Invalid displayed question.');
       summary.observed ||= {};for(const event of events)if(event.questionIndex!==undefined){const seen=summary.observed[event.type]||[];if(!seen.includes(event.questionIndex))summary.observed[event.type]=[...seen,event.questionIndex];}
       segment.clientAnchorMs=input.anchorMs;segment.uncertaintyMs=input.uncertaintyMs;segment.nextChunk++;segment.nextSequence+=events.length;segment.events+=events.length;segment.closed=input.closed;segment.lastMono=events.at(-1)!.monotonicMs;segment.gap ||= segment.clockUncertain||events.some(e=>e.type==='capture_gap');summary.failed ||= segment.gap;summary.events+=events.length;
       tx.set(clientPath(round,uid,segmentId,chunkIndex),{roundId:round,playerId:uid,segmentId,chunkIndex,hash:digest,receivedAt,events});tx.set(capturePath(round,uid),summary);
+      // Late uploads retain the original round time rather than renewing a
+      // stale novelty penalty whenever a queued replay is delivered.
+      if(privateGame&&recent)tx.set(`bankRecent/${uid}`,recordExposures(recent,round,displayed.map(e=>privateGame.questions[e.questionIndex!]),'displayed',Math.min(receivedAt,privateGame.finishedAt||receivedAt),receivedAt));
       return {acknowledged:true,nextChunk:segment.nextChunk,nextSequence:segment.nextSequence};
     }));
    }

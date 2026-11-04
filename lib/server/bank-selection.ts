@@ -5,7 +5,7 @@ export class BankUnavailableError extends Error {
   constructor() { super('There are not enough approved problems for these filters. Choose another topic or difficulty, or try again after a bank update.'); }
 }
 type Pool = { release_id: string; topic: string; difficulty: string; tag: string; family_id: string; item_count: number };
-export type RecentProblems = { problems?: string[]; families?: string[] };
+export type RecentProblems = import('../bank/exposure.ts').ExposureHistory;
 export const POOL_SQL = `SELECT p.* FROM bank_pools p JOIN bank_releases r ON r.release_id=p.release_id
   WHERE p.release_id=(SELECT value FROM bank_config WHERE key='active_release') AND r.state='published'
   AND p.difficulty=? AND p.tag=? AND (?='all' OR p.topic=?) ORDER BY p.topic,p.family_id LIMIT 193`;
